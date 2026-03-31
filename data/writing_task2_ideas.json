@@ -1,0 +1,85 @@
+{
+  "units": [
+    {
+      "id": "unit_1",
+      "title": "Government Roles",
+      "mind_map": [
+        {
+          "category": "Physiological Needs",
+          "points": [
+            "Providing basic necessities like food and water",
+            "Ensuring access to clean air and primary healthcare",
+            "Maintaining basic infrastructure for survival"
+          ]
+        },
+        {
+          "category": "Safety Needs",
+          "points": [
+            "Establishing law and order through police and judiciary",
+            "Protecting citizens from crime and external threats",
+            "Ensuring workplace safety and consumer protection"
+          ]
+        }
+      ],
+      "vocabulary": [
+        {"word": "Basic necessities", "meaning": "Nhu cầu cơ bản"},
+        {"word": "Law and order", "meaning": "Trật tự và pháp luật"},
+        {"word": "Primary healthcare", "meaning": "Chăm sóc sức khỏe ban đầu"}
+      ]
+    },
+    {
+      "id": "unit_2",
+      "title": "Government's Responsibility towards Global Community",
+      "mind_map": [
+        {
+          "category": "Environmental Protection",
+          "points": [
+            "Cooperating on climate change agreements",
+            "Reducing carbon emissions globally",
+            "Protecting international waters and biodiversity"
+          ]
+        },
+        {
+          "category": "Humanitarian Aid",
+          "points": [
+            "Providing aid to countries in crisis",
+            "Supporting refugee resettlement programs",
+            "Investing in global health initiatives (e.g., vaccines)"
+          ]
+        }
+      ],
+      "vocabulary": [
+        {"word": "Climate change", "meaning": "Biến đổi khí hậu"},
+        {"word": "Humanitarian aid", "meaning": "Viện trợ nhân đạo"},
+        {"word": "Global community", "meaning": "Cộng đồng toàn cầu"}
+      ]
+    },
+    {
+      "id": "unit_3",
+      "title": "Changes in Family Structure",
+      "mind_map": [
+        {
+          "category": "Nuclear vs Extended Family",
+          "points": [
+            "Shift towards nuclear families in urban areas",
+            "Loss of traditional support systems from grandparents",
+            "Increased independence but potentially higher stress for parents"
+          ]
+        },
+        {
+          "category": "Gender Roles",
+          "points": [
+            "More women entering the workforce",
+            "Shared household responsibilities",
+            "Impact on child-rearing dynamics"
+          ]
+        }
+      ],
+      "vocabulary": [
+        {"word": "Nuclear family", "meaning": "Gia đình hạt nhân"},
+        {"word": "Extended family", "meaning": "Gia đình đa thế hệ"},
+        {"word": "Gender equality", "meaning": "Bình đẳng giới"}
+      ]
+    }
+  ]
+}

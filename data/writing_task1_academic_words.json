@@ -1,0 +1,582 @@
+{
+  "units": [
+    {
+      "id": "maps",
+      "title": "Unit 1: Maps",
+      "icon": "map",
+      "color": "indigo",
+      "samples": [
+        {
+          "id": "maps-s1",
+          "title": "Sample 1 – Theater Renovation (2010 vs 2012)",
+          "exam_note": "Actual test, January 23, 2021",
+          "sample_text": "The plans illustrate how much a theater has changed between 2010 and 2012. It seems that the theater was expanded sideways to build more facilities.\n\nOverall, a number of changes took place all over the layout of the building, some of which involved the conversion and relocation of some features. The only exception was the center as it remained relatively unchanged.\n\nIn 2010, the theater could be entered from the main entrance to the South, through which a cafe could be easily spotted in the right corner. A ticket office and administration office were situated opposite the cafe. After 2 years, the ticket office, however, was relocated to the bottom right corner where the cafe had been demolished, while the administration office was moved to the back. This was to make way for a new restaurant area in the left rear corner.\n\nThe old media room and storage room had been moved to the top left and right side respectively, both of which could now be accessed from the new hallway. The space which used to be occupied by the media room was reduced by two times so that the stage in front could be expanded.",
+          "vocab": [
+            {
+              "phrase": "The plans/diagrams illustrate how much + Noun + change",
+              "vi": "Mẫu câu mở bài – mệnh đề danh từ 'how much + N + V' đứng sau 'illustrate'.",
+              "example_en": "The diagrams show how much a college will have changed by 2020.",
+              "example_vi": "Bản đồ cho thấy một trường đại học sẽ thay đổi như thế nào đến năm 2020."
+            },
+            {
+              "phrase": "some of which involved the conversion and relocation of some features",
+              "vi": "Mệnh đề quan hệ 'some of which' thay cho một phần sự vật đã nhắc trước.",
+              "example_en": "A number of changes took place, some of which involved the conversion and relocation of features.",
+              "example_vi": "Nhiều thay đổi đã xảy ra, một số trong đó liên quan đến việc chuyển đổi và di dời các vật."
+            },
+            {
+              "phrase": "could be easily spotted in the [location]",
+              "vi": "Cấu trúc miêu tả vị trí vật thể – 'spot' = phát hiện/nhìn thấy.",
+              "example_en": "A new hall could be easily spotted in place of the old media room.",
+              "example_vi": "Một phòng hội trường mới có thể dễ dàng được phát hiện thay cho vị trí phòng truyền thông cũ."
+            },
+            {
+              "phrase": "[location] where [feature] had been demolished",
+              "vi": "Mệnh đề quan hệ với 'where' miêu tả vị trí từng thuộc về vật khác.",
+              "example_en": "The ticket office was relocated to the bottom right corner where the cafe had been demolished.",
+              "example_vi": "Văn phòng bán vé được chuyển đến góc dưới cùng bên phải nơi quán cafe đã bị dỡ bỏ."
+            },
+            {
+              "phrase": "The space which used to be occupied by [feature]",
+              "vi": "'occupy' = chiếm dụng/sử dụng không gian. Dùng thay cho cách nói vị trí thông thường.",
+              "example_en": "The space which used to be occupied by the cafe in 2005 has been taken up by the gallery shop.",
+              "example_vi": "Không gian từng dành cho quán cà phê năm 2005 đã được sử dụng bởi cửa hàng trưng bày mới."
+            },
+            {
+              "phrase": "was reduced by two times",
+              "vi": "Diễn đạt sự giảm kích thước. Tương đương: to be halved / go through a reduction in size.",
+              "example_en": "The hall has been reduced two times in size to make room for a bathroom.",
+              "example_vi": "Hội trường đã được giảm kích thước hai lần để nhường chỗ cho phòng tắm."
+            }
+          ],
+          "practice": {
+            "ex1_fill": {
+              "question": "The maps illustrate how much the layout of an art gallery (1)____ from 2005 to now. Overall, a number of internal modifications have taken place, (2)____ addition of several new rooms. In 2005, a line of three exhibition rooms (3)____ in the right wall. The space which used to be (4)____ in 2005 has been taken up by the new gallery shop. A new vending machine facility has been placed outside the gallery shop (5)____.",
+              "blanks": ["has changed", "some of which involve", "could be easily spotted", "occupied by the cafe", "where the gallery used to be"]
+            },
+            "ex2_rewrite": [
+              "The diagrams illustrate the changes a student accommodation has gone through from 2010 to the present. (use: how much + Noun + change)",
+              "The building has witnessed several changes, some modifications involve the transformation and relocation of features. (use: some of which + conversion)",
+              "In 2010, a large hall and a bathroom were in the southwest part. (use: could easily be spotted)",
+              "The garden to the south was demolished to make way for parking. (use: where clause)",
+              "2022 has witnessed a 2-time reduction in size of the hall. (use: reduced by 2 times + occupied)"
+            ],
+            "answers_ex2": [
+              "The diagrams illustrate how much a student accommodation has changed from 2010 to the present.",
+              "The building has witnessed several changes all over its layout, some of which involves the conversion and relocation of some features.",
+              "In 2010, a large hall and a bathroom could easily be spotted in the southwest part.",
+              "A parking area has been added to the south where a garden used to be located.",
+              "The space which used to be occupied by the hall was reduced by 2 times to make room for a bathroom."
+            ]
+          }
+        },
+        {
+          "id": "maps-s2",
+          "title": "Sample 2 – College Redevelopment (Present vs Future)",
+          "exam_note": "Actual test, October 24, 2020",
+          "sample_text": "The maps show the current and future layout of a college.\n\nOverall, the college will undergo radical modifications, including the elimination of a garden as well as room rearrangements to create a space that can accommodate a larger student population.\n\nAt present, to the north situates a garden separated from the main building by a footpath running from West to East. The main building can be accessed from the entrance to the North.\n\nFuture proposed redevelopments will involve the expansion of the car park and the main building, at the expense of the garden and both footpaths.",
+          "vocab": [
+            {
+              "phrase": "undergo radical modifications",
+              "vi": "'undergo' = trải qua; 'radical' = toàn bộ, đáng kể. Dùng trong Overview của dạng Map.",
+              "example_en": "The village of Stokeford underwent radical changes, including the conversion from farmland to residential areas.",
+              "example_vi": "Ngôi làng Stokeford đã trải qua những thay đổi đáng kể, bao gồm việc chuyển đổi từ đất nông nghiệp sang khu dân cư."
+            },
+            {
+              "phrase": "accommodate a larger [population/number of visitors]",
+              "vi": "'accommodate' = đáp ứng được lượng người dùng lớn hơn. Dùng khi số lượng cơ sở vật chất tăng lên.",
+              "example_en": "The cinema has been developed in size to accommodate a larger volume of movie-goers.",
+              "example_vi": "Rạp chiếu phim đã được mở rộng để phục vụ được nhiều khách xem phim hơn."
+            },
+            {
+              "phrase": "To the [direction] situates/lies/stands [feature]",
+              "vi": "Cấu trúc đảo ngữ: [Trạng từ chỉ nơi chốn] + [Động từ] + [Chủ ngữ].",
+              "example_en": "Opposite the cafe lay a ticket office and administration office.",
+              "example_vi": "Đối diện với quán cà phê là văn phòng bán vé và văn phòng điều hành."
+            },
+            {
+              "phrase": "with a footpath running from [direction] to [direction]",
+              "vi": "Miêu tả hướng của lối đi/con đường. Dùng khi bản đồ có đường đi vào địa điểm.",
+              "example_en": "A garden separated from the main building by a footpath running from West to East.",
+              "example_vi": "Khu vườn được ngăn cách với tòa nhà chính bằng một lối đi bộ chạy từ Tây sang Đông."
+            },
+            {
+              "phrase": "Future proposed redevelopments will involve + N/V-ing",
+              "vi": "'redevelopment' = sự tái phát triển. 'involve' + danh từ/danh động từ.",
+              "example_en": "Future proposed redevelopments will involve the expansion of the car park and the main building.",
+              "example_vi": "Kế hoạch tái phát triển trong tương lai liên quan đến việc mở rộng bãi đỗ xe và tòa nhà chính."
+            },
+            {
+              "phrase": "at the expense of [feature]",
+              "vi": "Hi sinh thứ gì đó để làm thứ khác. Tương đương: 'make way for / make room for'.",
+              "example_en": "The village became more residential at the expense of natural forests and farms.",
+              "example_vi": "Ngôi làng trở thành khu dân cư hơn nhưng trả giá bằng việc mất rừng tự nhiên và trang trại."
+            }
+          ],
+          "practice": {
+            "ex1_fill": {
+              "question": "The town of Islip will (1)____, including the construction of a ring road. The new road (2)____ the residential area from the commercial area. Currently along either side of the main road (3)____ a row of shops. However, (4)____ will involve the addition of a bus station (5)____ the shops along the north side.",
+              "blanks": ["undergo radical modifications", "separating", "lie", "future proposed redevelopments", "at the expense of"]
+            }
+          }
+        },
+        {
+          "id": "maps-s3",
+          "title": "Sample 3 – Bell Hill Farm to Environment Centre (1976 vs 2006)",
+          "exam_note": "Actual test, January 31, 2022",
+          "sample_text": "The maps depict the layout of Bell Hill Farm in 1976 and its renovation into an Environment Centre in 2006.\n\nOverall, it is apparent that this area underwent major alterations to be repurposed into the Environment Centre, with all agricultural facilities replaced to make way for the new amenities. The sole exceptions left intact were the farmhouse and the entrance to the site.",
+          "vocab": [
+            {
+              "phrase": "to be repurposed into [new use]",
+              "vi": "'repurpose' = thay đổi mục đích sử dụng. Tương đương: 'to be converted into'.",
+              "example_en": "It is obvious that the town of Stokeford underwent major alterations to be repurposed from farmland to a more residential region.",
+              "example_vi": "Rõ ràng là thị trấn Stokeford đã trải qua những thay đổi lớn để chuyển mục đích từ đất nông nghiệp sang khu dân cư."
+            },
+            {
+              "phrase": "The sole exceptions left intact were [features]",
+              "vi": "Miêu tả những điểm không thay đổi. Tương đương: 'The only feature remaining unchanged was...'",
+              "example_en": "The sole exceptions left intact were the farmhouse and the entrance to the site.",
+              "example_vi": "Ngoại lệ duy nhất còn nguyên vẹn là trang trại và lối vào địa điểm."
+            },
+            {
+              "phrase": "The site could only be accessed via a road running from [direction] to [direction]",
+              "vi": "Miêu tả lối vào/đường vào địa điểm.",
+              "example_en": "In 1976, the site could be only accessed via a road running from North to South.",
+              "example_vi": "Năm 1976, chỉ có thể tiếp cận địa điểm này qua một con đường chạy từ Bắc vào Nam."
+            },
+            {
+              "phrase": "was bifurcated at the [direction] end",
+              "vi": "'bifurcate' = phân thành hai nhánh. Dùng khi đường rẽ đôi.",
+              "example_en": "The site could be accessed via a road running from North to South which was bifurcated at the Southern end.",
+              "example_vi": "Địa điểm chỉ có thể được tiếp cận qua một con đường từ Bắc vào Nam được chia đôi ở đầu phía Nam."
+            },
+            {
+              "phrase": "[A] was built in the original site of [B]",
+              "vi": "Miêu tả vật A được xây dựng tại vị trí vật B từng ở đó.",
+              "example_en": "A multimedia room was built in the original site of the old barn.",
+              "example_vi": "Một phòng đa phương tiện được xây dựng tại địa điểm ban đầu của nhà kho cũ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "title": "Unit 2: Process",
+      "icon": "git-branch",
+      "color": "emerald",
+      "samples": [
+        {
+          "id": "process-s1",
+          "title": "Sample 1 – Soft Cheese Production",
+          "exam_note": "Actual test, April 30, 2022",
+          "sample_text": "The given flow chart illustrates the linear production of making soft cheese.\n\nIn general, it can be seen that the process is comprised of five main stages, each of which requires a specific temperature and different duration, commencing with the blend of ingredients and culminating with the final product all set to be consumed.\n\nIn the first stage, two main ingredients, namely milk and fresh water, are well combined in a mixer. Then, the resulting mixture is ready for the second step in which it is stored in cooling equipment. After 2 hours, salt is added to the mixture before being heated constantly for a six-hour time span to allow for fermentation.\n\nThe fourth stage involves letting off steam via evaporation using more heat, which is up to 100 Celsius degrees. In the final stage, there is another filtration step to refine any impurities to produce final soft cheese.",
+          "vocab": [
+            {
+              "phrase": "the linear production of [product]",
+              "vi": "'linear' = tuyến tính (có điểm đầu, điểm cuối). KHÔNG dùng cho chu kỳ vòng lặp.",
+              "example_en": "The given flow chart depicts the linear manufacturing process of making chocolate bars.",
+              "example_vi": "Biểu đồ mô tả quy trình sản xuất tuyến tính tạo ra các thanh sô cô la."
+            },
+            {
+              "phrase": "each of which requires a specific temperature and different duration",
+              "vi": "Dùng trong Overview khi quy trình có ghi chú nhiệt độ và thời gian ở mỗi bước.",
+              "example_en": "The process is comprised of five main stages, each of which requires a specific temperature.",
+              "example_vi": "Quy trình bao gồm năm giai đoạn chính, mỗi giai đoạn đòi hỏi một nhiệt độ cụ thể."
+            },
+            {
+              "phrase": "commencing with [start] and culminating with [end]",
+              "vi": "'commence' = bắt đầu; 'culminate' = kết thúc. Dùng trong Overview sau khi nêu số bước.",
+              "example_en": "The process begins with harvesting and culminates with distributing the final product.",
+              "example_vi": "Quy trình bắt đầu bằng thu hoạch và kết thúc bằng việc phân phối sản phẩm cuối cùng."
+            },
+            {
+              "phrase": "the resulting mixture/compound/combination",
+              "vi": "Thay cho việc lặp lại 'the mixture of A and B' – 'resulting' = đã được tạo ra ở bước trước.",
+              "example_en": "The resulting mixture is subsequently fermented for two days.",
+              "example_vi": "Hỗn hợp tạo thành sau đó được lên men trong hai ngày."
+            },
+            {
+              "phrase": "[A] is added to [B] before being [Vpp] for [time] to allow for [next step]",
+              "vi": "Liên kết 2 bước bằng 'before + Vp(ii)'. Sau 'before' dùng quá khứ phân từ (bị động).",
+              "example_en": "Salt is added to the mixture before being heated constantly for a six-hour time span to allow for fermentation.",
+              "example_vi": "Muối được thêm vào hỗn hợp trước khi bị đun nóng liên tục trong 6 giờ để chuẩn bị cho bước lên men."
+            },
+            {
+              "phrase": "[Stage] involves [N/Ving]",
+              "vi": "Miêu tả một bước gồm các hoạt động nhỏ nào. Sau 'involve' dùng N/V-ing.",
+              "example_en": "The fourth stage involves letting off steam via evaporation using more heat.",
+              "example_vi": "Giai đoạn thứ tư liên quan đến quá trình bốc hơi nước khi sử dụng nhiều nhiệt hơn."
+            },
+            {
+              "phrase": "refine any impurities / eliminate any residue",
+              "vi": "Dùng khi có bước lọc/tinh luyện trong quy trình. Dấu hiệu: 'filter', 'purify', 'clean'.",
+              "example_en": "There is a filtration step to refine any impurities to produce final soft cheese.",
+              "example_vi": "Có một giai đoạn lọc để loại bỏ các chất cặn bã trước khi sản xuất ra thành phẩm."
+            }
+          ]
+        },
+        {
+          "id": "process-s2",
+          "title": "Sample 2 – Sugar from Sugar Cane",
+          "exam_note": "Cambridge Practice Test 16, Test 2",
+          "sample_text": "The diagram illustrates the linear production of making sugar from sugar cane.\n\nOverall, this is a capital-intensive process that involves seven steps, from the initial cultivation of sugar canes, followed by various treatment stages, to the eventual production of the final sugar.\n\nInitially, it takes sugar canes from 1–1.5 years to be grown on fields until they are ready for harvest, either by hand or by the industrial reaper. Then, they proceed to be squeezed in a crusher to extract sugar cane juice. In the final stage, the sugar is dried and chilled, ready to be packed and consumed.",
+          "vocab": [
+            {
+              "phrase": "capital-intensive process",
+              "vi": "Quy trình yêu cầu vốn/máy móc lớn. Tương đương: 'labor-intensive' (cần nhiều nhân lực).",
+              "example_en": "This is a capital-intensive process involving eleven stages.",
+              "example_vi": "Đây là một quy trình sử dụng nhiều vốn bao gồm mười một giai đoạn."
+            },
+            {
+              "phrase": "from the initial [N] … to the eventual [N]",
+              "vi": "Cấu trúc tổng quan: 'initial' = bước đầu, 'eventual' = bước cuối.",
+              "example_en": "A process involving seven steps, from the initial cultivation of sugar canes to the eventual production of sugar.",
+              "example_vi": "Quy trình bảy bước, từ bước đầu tiên là trồng mía đến bước cuối là sản xuất thành đường."
+            },
+            {
+              "phrase": "It takes [subject] [time] to be [Vpp]",
+              "vi": "Cấu trúc nêu thời gian cần thiết cho một bước. Tương đương: '[Subject] takes [time] to V'.",
+              "example_en": "It takes sugar canes from 1–1.5 years to be grown on fields until ready for harvest.",
+              "example_vi": "Mía cần 1–1,5 năm để mọc trên đồng cho đến khi được thu hoạch."
+            },
+            {
+              "phrase": "either [method A] or [method B]",
+              "vi": "Dùng khi một bước có nhiều cách thực hiện (mũi tên rẽ thành nhiều nhánh).",
+              "example_en": "They are ready for harvest, either by hand or by the industrial reaper.",
+              "example_vi": "Chúng sẵn sàng để thu hoạch, hoặc bằng tay hoặc bằng máy gặt công nghiệp."
+            },
+            {
+              "phrase": "proceed to be [Vpp] / proceed to be squeezed/crushed",
+              "vi": "'proceed to V' = tiến hành làm gì tiếp theo. Dùng khi một vật được ép/nghiền.",
+              "example_en": "They proceed to be squeezed in a crusher to extract sugar cane juice.",
+              "example_vi": "Chúng tiến hành được ép trong máy ép để lấy nước mía."
+            },
+            {
+              "phrase": "ready to be packed and consumed",
+              "vi": "Cụm từ kết thúc quy trình sản xuất thương mại. Dùng ở giai đoạn cuối.",
+              "example_en": "In the final stage, the sugar is dried and chilled, ready to be packed and consumed.",
+              "example_vi": "Ở công đoạn cuối cùng, đường được sấy khô và làm lạnh, chuẩn bị đóng gói và tiêu thụ."
+            }
+          ]
+        },
+        {
+          "id": "process-s3",
+          "title": "Sample 3 – Chocolate Production from Cacao",
+          "exam_note": "Actual test, January 9, 2021",
+          "sample_text": "The diagram details the process of making chocolate from cacao.\n\nOverall, there are nine steps involved. The process begins with harvesting ripe red pods that grow on cacao trees and ends with the molding stage to produce chocolate bars ready to be consumed or sold.\n\nFollowing a 10–12-day process of fermentation, cacao beans are sun-dried and then roasted at temperatures between 120 to 150 degrees Celsius. After being roughly treated with heat, the inner parts are separated from the shell. The removed parts are pressed to produce a liquid and this stage is referred to as conching. The mixture is molded to make chocolate bars, the ultimate product of this process.",
+          "vocab": [
+            {
+              "phrase": "The diagram details the process of [Ving]",
+              "vi": "'detail' (v) = trình bày chi tiết. Thay thế cho 'illustrate/show/present'.",
+              "example_en": "The diagram details the process of recycling used bottles.",
+              "example_vi": "Sơ đồ cho thấy chi tiết quá trình tái chế chai nhựa."
+            },
+            {
+              "phrase": "to prepare them for further stages",
+              "vi": "Cụm từ giới thiệu các bước đầu tiên như là sự chuẩn bị cho giai đoạn tiếp theo.",
+              "example_en": "The first stage involves collecting olives and cleaning them to prepare them for further stages.",
+              "example_vi": "Giai đoạn đầu tiên liên quan đến việc thu thập và làm sạch ô liu để chuẩn bị cho các giai đoạn tiếp theo."
+            },
+            {
+              "phrase": "Following a [time/duration] process of [step]",
+              "vi": "Liên kết 2 giai đoạn liền kề: 'Following + Noun, Subject + Verb'.",
+              "example_en": "Following a 10–12-day process of fermentation, cacao beans are sun-dried.",
+              "example_vi": "Sau quá trình lên men kéo dài 10–12 ngày, hạt cacao được phơi khô dưới nắng."
+            },
+            {
+              "phrase": "after being roughly treated with heat",
+              "vi": "'treat' (v) = xử lý. 'roughly' = thô. Dùng trong quy trình nhân tạo có bước gia nhiệt.",
+              "example_en": "After being treated with heat, the pellets transform into raw materials.",
+              "example_vi": "Sau khi được xử lý nhiệt, viên nén biến thành nguyên liệu thô."
+            },
+            {
+              "phrase": "this stage is referred to as [name]",
+              "vi": "Dùng khi đề bài đặt tên cho một giai đoạn cụ thể. Tương đương: 'is known as'.",
+              "example_en": "The combination of ingredients is heated and this step is referred to as Melting.",
+              "example_vi": "Sự kết hợp các thành phần được nung nóng và bước này được gọi là Nóng chảy."
+            },
+            {
+              "phrase": "the ultimate product of this process",
+              "vi": "'ultimate' = cuối cùng. Dùng khi đề cập sản phẩm đầu ra ở bước cuối cùng.",
+              "example_en": "New glass items are formed to make the ultimate products of this process.",
+              "example_vi": "Các mặt hàng thủy tinh mới được tạo ra là sản phẩm cuối cùng của quá trình này."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "title": "Unit 3: Table",
+      "icon": "table",
+      "color": "amber",
+      "samples": [
+        {
+          "id": "table-s1",
+          "title": "Sample 1 – Medical Care in Europe (1980–2000)",
+          "exam_note": "Actual test, April 10, 2021",
+          "sample_text": "The table compares the healthcare systems in Austria, France, and Sweden in 1980, 1990, and 2000.\n\nOverall, the figures for Sweden in all aspects were significantly higher than those of France and Austria. Hospital beds in all three nations witnessed steady, though small, increases.\n\nBy 2000, Austria saw a modest increase to 1 for every 1000 Austrians, while the opposite was true for France's figure. The corresponding figure for Sweden went down from 3.8 to 3 by 1990, but picked up again in 2000. Hospital beds per 1000 people were 6.9 in Sweden, 3.7 in Austria, and 1.6 in France, marking relatively large growths recorded in 3 years.",
+          "vocab": [
+            {
+              "phrase": "witnessed steady, though small, increases",
+              "vi": "'though + adjective' bổ sung thông tin tương phản. Tương đương: 'albeit modest'.",
+              "example_en": "Oil manufacturing in Nigeria witnessed a generally steady, though small, increase.",
+              "example_vi": "Sản xuất dầu ở Nigeria chứng kiến sự gia tăng nhìn chung ổn định, mặc dù nhỏ."
+            },
+            {
+              "phrase": "for every 1000 [Nationality]",
+              "vi": "Thay thế cho 'per 1000' – dùng với dữ liệu theo dạng X/1000.",
+              "example_en": "The number of physicians per 1000 people in Austria saw a modest increase to 1 for every 1000 Austrians.",
+              "example_vi": "Số bác sĩ trên 1000 người ở Áo tăng khiêm tốn lên 1 trên 1000 người Áo."
+            },
+            {
+              "phrase": "the opposite was true for [subject] / the same was true for [subject]",
+              "vi": "So sánh xu hướng – 'opposite' khi trái chiều, 'same' khi tương đồng.",
+              "example_en": "Export values of equipment went up 13%, while the opposite was true for clothing.",
+              "example_vi": "Giá trị xuất khẩu thiết bị tăng 13%, trong khi điều ngược lại đúng với quần áo."
+            },
+            {
+              "phrase": "the corresponding/equivalent figure for [subject]",
+              "vi": "Thay cho việc lặp lại thông tin năm/danh mục. 'corresponding' = tương ứng.",
+              "example_en": "The corresponding figure for Sweden went down from 3.8 to 3 by 1990.",
+              "example_vi": "Con số tương ứng của Thụy Điển giảm từ 3,8 xuống 3 vào năm 1990."
+            },
+            {
+              "phrase": "picked up again",
+              "vi": "Tăng trở lại sau khi đã giảm. Tương đương: 'increase once more/again'.",
+              "example_en": "The proportion plummeted from 2004 to 2006, but picked up again and reached 97%.",
+              "example_vi": "Tỷ lệ giảm mạnh từ 2004–2006, nhưng sau đó đã tăng trở lại và đạt 97%."
+            },
+            {
+              "phrase": "marking relatively large growths recorded in [time period]",
+              "vi": "Nhận xét về số liệu: đưa ra con số trước rồi nhận xét mức độ tăng/giảm.",
+              "example_en": "Hospital beds were 6.9 in Sweden, 3.7 in Austria, and 1.6 in France, marking relatively large growths.",
+              "example_vi": "Giường bệnh viện có tỷ lệ 6,9 ở Thụy Điển, 3,7 ở Áo và 1,6 ở Pháp, đánh dấu mức tăng tương đối lớn."
+            }
+          ]
+        },
+        {
+          "id": "table-s2",
+          "title": "Sample 2 – International Tourist Arrivals (2009 & 2010)",
+          "exam_note": "Actual test, October 2, 2021",
+          "sample_text": "The table illustrates the statistics in the arrivals of tourists in nine countries in 2009 and 2010.\n\nOverall, France remained the most popular tourist destination, while the opposite was true for Hong Kong. All countries, except for Turkey, China and Germany, documented no significant changes in their figures after one year.\n\nInitiating with the same figure as Spain, the UK experienced a similar ascent of 1.8%, resulting in 57 million tourists. While Turkey and China recorded considerable growth rates, a 12 million augmentation from 11 million tourists in 2009 was seen in Germany's figure.",
+          "vocab": [
+            {
+              "phrase": "All [N1], except for [N2], documented [trend]",
+              "vi": "Mô tả xu hướng chung với ngoại lệ. 'document' (v) = ghi nhận. 'except' là giới từ/liên từ, không chia.",
+              "example_en": "All categories, except clothing, witnessed an upward trend in value over 1 year.",
+              "example_vi": "Tất cả các loại hàng hóa, ngoại trừ quần áo, đều ghi nhận xu hướng tăng trong 1 năm."
+            },
+            {
+              "phrase": "in [year], after which [S + V]",
+              "vi": "Miêu tả sự thay đổi sau một mốc thời gian. 'after which' = sau mốc thời gian đó.",
+              "example_en": "Figures were 44M, 55M and 66M respectively in 2009, after which they all increased by 1 million.",
+              "example_vi": "Con số lần lượt là 44, 55 và 66 triệu vào 2009, sau đó tất cả đều tăng thêm 1 triệu."
+            },
+            {
+              "phrase": "Initiating with the same figure as [B], [A] experienced...",
+              "vi": "'initiate' = bắt đầu. So sánh bằng 'the same...as' để vừa mô tả vừa so sánh.",
+              "example_en": "Initiating with the same figure as Spain, the UK experienced a similar ascent of 1.8%.",
+              "example_vi": "Bắt đầu với con số tương tự như Tây Ban Nha, Vương quốc Anh có mức tăng tương tự là 1,8%."
+            },
+            {
+              "phrase": "experienced a similar ascent/descent of [%/number]",
+              "vi": "'ascent' = sự tăng lên. Vừa mô tả xu hướng vừa so sánh với đối tượng khác.",
+              "example_en": "Initiating with the same figure, the UK experienced a similar ascent of 1.8%.",
+              "example_vi": "Bắt đầu với con số tương tự, Vương quốc Anh có mức tăng tương tự là 1,8%."
+            },
+            {
+              "phrase": "a [number] augmentation from [starting point]",
+              "vi": "'augmentation' = sự tăng thêm một lượng lớn vào đối tượng đã có sẵn.",
+              "example_en": "A 12 million augmentation from 11 million tourists in 2009 was seen in Germany's figure.",
+              "example_vi": "Số liệu của Đức tăng thêm 12 triệu từ mức 11 triệu du khách vào năm 2009."
+            }
+          ]
+        },
+        {
+          "id": "table-s3",
+          "title": "Sample 3 – Export Values (2009 & 2010)",
+          "exam_note": "Actual test, February 25, 2021",
+          "sample_text": "The table illustrates the changes in the value of certain products in 2009 and 2010.\n\nOverall, equipment was the most valuable export by a wide margin. Metal exports saw the most significant increase, far surpassing any other products.\n\nMetal export values, albeit lagging behind in 2009 at only 2.3 billion, also saw a twofold boost to hit an all-time high of 5.1 billion in 2010.",
+          "vocab": [
+            {
+              "phrase": "by a wide margin",
+              "vi": "Vượt trội rõ ràng so với các đối tượng còn lại.",
+              "example_en": "Equipment was the most valuable export by a wide margin.",
+              "example_vi": "Thiết bị là mặt hàng xuất khẩu có giá trị cao nhất một cách rõ ràng."
+            },
+            {
+              "phrase": "far surpassing any other [category]",
+              "vi": "Vượt xa tất cả các đối tượng khác.",
+              "example_en": "Metal exports saw the most significant increase, far surpassing any other products.",
+              "example_vi": "Xuất khẩu kim loại có mức tăng đáng kể nhất, vượt xa bất kỳ sản phẩm nào khác."
+            },
+            {
+              "phrase": "albeit lagging behind / albeit starting low",
+              "vi": "'albeit' = mặc dù (formal). Dùng để nhượng bộ trước khi nêu sự tăng đột biến.",
+              "example_en": "Metal exports, albeit lagging behind at only 2.3 billion, saw a twofold boost.",
+              "example_vi": "Xuất khẩu kim loại, dù tụt hậu ở mức 2,3 tỷ, đã có mức tăng gấp đôi."
+            },
+            {
+              "phrase": "hit an all-time high/low of [number]",
+              "vi": "Đạt mức cao/thấp nhất mọi thời đại trong khoảng thời gian khảo sát.",
+              "example_en": "Metal saw a twofold boost to hit an all-time high of 5.1 billion in 2010.",
+              "example_vi": "Kim loại có mức tăng gấp đôi để đạt mức cao nhất mọi thời đại là 5,1 tỷ vào năm 2010."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line-graph",
+      "title": "Unit 4: Line Graph",
+      "icon": "trending-up",
+      "color": "sky",
+      "samples": [
+        {
+          "id": "line-s1",
+          "title": "Sample 1 – General Line Graph Phrases",
+          "exam_note": "Tổng hợp từ vựng quan trọng cho dạng Line Graph",
+          "sample_text": "Line graphs thường yêu cầu miêu tả xu hướng theo thời gian. Dưới đây là các cụm từ thiết yếu.",
+          "vocab": [
+            {
+              "phrase": "experienced a dramatic/sharp/significant surge/plunge",
+              "vi": "Tăng/giảm mạnh và đột ngột. surge = tăng vọt, plunge = giảm mạnh.",
+              "example_en": "The number of visitors experienced a dramatic surge from 2 million to 8 million.",
+              "example_vi": "Số lượng du khách tăng vọt từ 2 triệu lên 8 triệu."
+            },
+            {
+              "phrase": "remained relatively stable / leveled off at [number]",
+              "vi": "Ổn định, không thay đổi hoặc đi ngang sau một thời gian tăng/giảm.",
+              "example_en": "The figure remained relatively stable throughout the period, hovering around 50%.",
+              "example_vi": "Con số vẫn tương đối ổn định trong suốt giai đoạn, dao động quanh 50%."
+            },
+            {
+              "phrase": "fluctuated throughout the period",
+              "vi": "Dao động, tăng rồi giảm xen kẽ. 'fluctuation' (n) = sự dao động.",
+              "example_en": "The price of oil fluctuated throughout the period, with several peaks and troughs.",
+              "example_vi": "Giá dầu dao động trong suốt giai đoạn, với nhiều đỉnh và đáy."
+            },
+            {
+              "phrase": "peaked/bottomed out at [number] in [year]",
+              "vi": "Đạt đỉnh cao nhất (peaked) hoặc chạm đáy thấp nhất (bottomed out) ở một thời điểm.",
+              "example_en": "The figure peaked at 45% in 2005 before declining sharply.",
+              "example_vi": "Con số đạt đỉnh ở 45% vào năm 2005 trước khi giảm mạnh."
+            },
+            {
+              "phrase": "saw a [gradual/steady/dramatic] [upward/downward] trend",
+              "vi": "Miêu tả xu hướng chung của một đường. Kết hợp tính từ mức độ + hướng.",
+              "example_en": "Both countries saw a steady upward trend in tourism revenue throughout the decade.",
+              "example_vi": "Cả hai quốc gia đều có xu hướng tăng đều đặn về doanh thu du lịch trong suốt thập kỷ."
+            },
+            {
+              "phrase": "with [A] consistently/always above/below [B]",
+              "vi": "So sánh hai đường biểu đồ khi một đường luôn cao/thấp hơn đường kia.",
+              "example_en": "Throughout the period, USA's figures remained consistently above those of the UK.",
+              "example_vi": "Trong suốt giai đoạn, con số của Mỹ luôn cao hơn của Anh."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pie-chart",
+      "title": "Unit 5: Pie Chart",
+      "icon": "pie-chart",
+      "color": "rose",
+      "samples": [
+        {
+          "id": "pie-s1",
+          "title": "Sample 1 – Pie Chart Key Phrases",
+          "exam_note": "Tổng hợp từ vựng thiết yếu cho dạng Pie Chart",
+          "sample_text": "Pie charts yêu cầu miêu tả tỷ lệ phần trăm của các thành phần trong một tổng thể.",
+          "vocab": [
+            {
+              "phrase": "accounted for / made up / constituted [%] of the total",
+              "vi": "Chiếm [x]% của tổng số. Ba động từ có thể thay thế nhau.",
+              "example_en": "Agriculture accounted for nearly a third of the country's GDP.",
+              "example_vi": "Nông nghiệp chiếm gần một phần ba GDP của đất nước."
+            },
+            {
+              "phrase": "represented the largest/smallest proportion of",
+              "vi": "Chiếm tỷ lệ lớn nhất/nhỏ nhất trong tổng thể.",
+              "example_en": "The service sector represented the largest proportion of employment at 68%.",
+              "example_vi": "Khu vực dịch vụ chiếm tỷ lệ lớn nhất trong cơ cấu việc làm ở mức 68%."
+            },
+            {
+              "phrase": "dwarfed all other categories",
+              "vi": "'dwarf' (v) = làm cho cái khác trông nhỏ bé. Dùng khi một phần chiếm đa số áp đảo.",
+              "example_en": "At 72%, personal car use dwarfed all other categories of transport.",
+              "example_vi": "Ở tỷ lệ 72%, sử dụng xe cá nhân vượt xa tất cả các phương tiện giao thông khác."
+            },
+            {
+              "phrase": "compared the [categories] in [two time periods]",
+              "vi": "Cấu trúc viết mở bài khi có 2 bánh pie chart ở hai thời điểm khác nhau.",
+              "example_en": "The charts compare the distribution of household expenditure in 1990 and 2020.",
+              "example_vi": "Các biểu đồ so sánh sự phân bổ chi tiêu hộ gia đình năm 1990 và 2020."
+            },
+            {
+              "phrase": "while [A] saw an increase to [%], [B] declined to [%]",
+              "vi": "Cấu trúc so sánh sự thay đổi ngược chiều giữa hai thành phần ở hai pie chart.",
+              "example_en": "While manufacturing increased to 35%, agriculture declined to just 10%.",
+              "example_vi": "Trong khi sản xuất tăng lên 35%, nông nghiệp giảm xuống chỉ còn 10%."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bar-chart",
+      "title": "Unit 6: Bar Chart",
+      "icon": "bar-chart-2",
+      "color": "violet",
+      "samples": [
+        {
+          "id": "bar-s1",
+          "title": "Sample 1 – Bar Chart Key Phrases",
+          "exam_note": "Tổng hợp từ vựng thiết yếu cho dạng Bar Chart",
+          "sample_text": "Bar charts so sánh dữ liệu giữa các nhóm/danh mục, thường tại một hoặc nhiều thời điểm.",
+          "vocab": [
+            {
+              "phrase": "was the most/least [adjective] with [number]",
+              "vi": "Cấu trúc nêu mức cao nhất/thấp nhất kèm số liệu cụ thể.",
+              "example_en": "Japan was the most productive with 120 units per worker.",
+              "example_vi": "Nhật Bản có năng suất cao nhất với 120 đơn vị mỗi nhân viên."
+            },
+            {
+              "phrase": "was roughly [number] times as high/large as that of [B]",
+              "vi": "So sánh bội số. 'roughly' = khoảng, xấp xỉ.",
+              "example_en": "The figure for Canada was roughly three times as high as that of Australia.",
+              "example_vi": "Con số của Canada cao gấp khoảng ba lần so với Úc."
+            },
+            {
+              "phrase": "stood at [number] and [rose/fell] to [number] by [year]",
+              "vi": "Miêu tả điểm xuất phát và điểm kết thúc của một cột.",
+              "example_en": "The figure stood at 20% in 2000 and rose to 45% by 2010.",
+              "example_vi": "Con số đứng ở mức 20% năm 2000 và tăng lên 45% vào năm 2010."
+            },
+            {
+              "phrase": "the gap between [A] and [B] widened/narrowed",
+              "vi": "Chênh lệch giữa hai đối tượng ngày càng rộng ra (widened) hoặc thu hẹp (narrowed).",
+              "example_en": "The gap between male and female employment widened significantly from 1970 to 2000.",
+              "example_vi": "Khoảng cách giữa tỷ lệ việc làm nam và nữ đã nở rộng đáng kể từ 1970 đến 2000."
+            },
+            {
+              "phrase": "In contrast / By contrast / Conversely, [B] showed the opposite trend",
+              "vi": "Cụm từ chuyển sang đối tượng/xu hướng ngược chiều.",
+              "example_en": "In contrast, spending on leisure activities showed the opposite trend.",
+              "example_vi": "Ngược lại, chi tiêu cho các hoạt động giải trí cho thấy xu hướng trái ngược."
+            },
+            {
+              "phrase": "shared a similar pattern / followed a comparable trend",
+              "vi": "Hai đối tượng có xu hướng tương tự nhau.",
+              "example_en": "The UK and Germany shared a similar pattern of growth throughout the period.",
+              "example_vi": "Vương quốc Anh và Đức có mô hình tăng trưởng tương tự nhau trong suốt giai đoạn."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

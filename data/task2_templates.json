@@ -1,0 +1,377 @@
+[
+  {
+    "id": "opinion-partly",
+    "type": "Opinion",
+    "title": "DẠNG 1: OPINION (HƯỚNG 1: PARTLY AGREE/DISAGREE)",
+    "description": "Đồng ý hoặc không đồng ý một phần. Thân bài chia làm 2 đoạn: một đoạn nói về phần đồng ý, một đoạn nói về phần không đồng ý.",
+    "question": "Some people believe that children should play outdoor games. To what extent do you agree or disagree?",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "description": "Câu đầu Paraphrase đề bài, câu hai nêu quan điểm.",
+        "subsections": [
+          {
+            "label": "Sentence 1: Suggested structures",
+            "items": [
+              "Many people argue that ....",
+              "It is true that ...",
+              "It is sometimes argued that ..."
+            ]
+          },
+          {
+            "label": "Sentence 2: Suggested structures",
+            "items": [
+              "While there are some benefits/drawbacks to..., I maintain/ am of the opinion that ...",
+              "Many people believe that ..., whereas I believe/ am of the opinion that ...",
+              "Although some people argue that ..., I partly agree with this notion due to ..."
+            ]
+          }
+        ],
+        "sample": "“Many people believe that children should engage in outdoor activities. While there are some benefits to this practice, I partly disagree with this notion due to the risk it presents”"
+      },
+      {
+        "name": "2. Body Paragraph 1 (Agree)",
+        "description": "Phân tích hướng Agree.",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+              "On the one hand, the option to ... is attractive for several reasons.",
+              "On the one hand, the idea of ... is beneficial to some extent.",
+              "The argument that ... is reasonable to some extent."
+            ]
+          },
+          {
+            "label": "Point 1 Introduction",
+            "items": [
+              "Firstly, ....",
+              "The first reason for this is ..."
+            ]
+          },
+          {
+            "label": "Point 1 Explanation/Example/Result",
+            "items": [
+              "This is because ...",
+              "This is mainly due to ...",
+              "This could be explained by the fact ...",
+              "For example, ...",
+              "This is perfectly exemplified in case of ...",
+              "As a result, ...",
+              "Consequently, ...",
+              "Therefore, ..."
+            ]
+          }
+        ],
+        "sample": "“On the one hand, the option to let children play outdoor games is attractive for several reasons. Firstly, ... This is mainly due to ... Secondly, ... For example, ...”"
+      },
+      {
+        "name": "3. Body Paragraph 2 (Disagree)",
+        "description": "Phân tích hướng Disagree.",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+              "Nevertheless, I believe that ...",
+              "On the other hand, there are a variety of reasons why I also believe ...",
+              "Despite the above-mentioned advantages, I believe that ..."
+            ]
+          },
+          {
+            "label": "Point 1 Introduction",
+            "items": [
+              "The main one is ...",
+              "The first reason relates to ...",
+              "The first reason is that ...",
+              "Firstly, ..."
+            ]
+          }
+        ],
+        "sample": "“On the other hand, there are a variety of reasons why I also believe that children should not be allowed to play these games. The first reason is ... This is because ... The second reason relates to ... For example ...”"
+      },
+      {
+        "name": "4. Conclusion",
+        "description": "Tóm tắt ý và đưa Final Thought (Dự đoán/Khuyên).",
+        "subsections": [
+          {
+            "label": "Suggested structures",
+            "items": [
+              "In conclusion, while there are many benefits/drawbacks regarding ..., I still believe that it is more beneficial/disadvantageous to ... because ... It is advisable that ...",
+              "In conclusion, although ... presents certain advantages/disadvantages, I contend that it should/should not be encouraged due to ... It can be predicted that ..."
+            ]
+          }
+        ],
+        "sample": "“In conclusion, although letting children freely engage in outdoor games presents physical health benefits, I contend that it should not be encouraged due to the risk these games pose to children. It is advisable that parents take the appropriate measures to protect their offspring from the health hazard that outdoor activities present”"
+      }
+    ]
+  },
+  {
+    "id": "opinion-completely",
+    "type": "Opinion",
+    "title": "DẠNG 1: OPINION (HƯỚNG 2: COMPLETELY AGREE/DISAGREE)",
+    "description": "Đồng ý hoặc không đồng ý hoàn toàn.",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "subsections": [
+          {
+            "label": "Sentence 1: Paraphrase the Question",
+            "items": ["Many people argue that ....", "It is true that ...", "It is sometimes argued that ..."]
+          },
+          {
+            "label": "Sentence 2: State your opinion and ideas",
+            "items": ["Personally, I completely agree with this view.", "In my opinion, it would be wrong/right to..."]
+          }
+        ],
+        "sample": "“Many people believe that children should engage in outdoor activities. Personally, I completely agree with this view”"
+      },
+      {
+        "name": "4. Conclusion",
+        "subsections": [
+          {
+            "label": "Suggested structures",
+            "items": [
+              "In conclusion, it seems to me that ... because ... It is advisable that ...",
+              "In conclusion, for the reasons I have mentioned above, I maintain that ... It can be predicted that ..."
+            ]
+          }
+        ],
+        "sample": "“In conclusion, for the reasons I have mentioned above, I maintain that children should be encouraged to engage in outdoor activities. It is advisable that parents take the appropriate initiatives to facilitate an environment most suitable for this practice”"
+      }
+    ]
+  },
+  {
+    "id": "discussion",
+    "type": "Discussion",
+    "title": "DẠNG 2: DISCUSSION",
+    "description": "Discuss both views and give your opinion. Phân tích cả hai mặt và đưa ra quan điểm cá nhân.",
+    "question": "Some people think that zoos are cruel and should be closed down. Others, however, believe that zoos can be useful in protecting wild animals. Discuss both views and give your opinion",
+    "sections": [
+       {
+        "name": "1. Introduction",
+        "subsections": [
+          {
+            "label": "Sentence 1",
+            "items": ["Many people argue that ....", "It is true that ...", "It is sometimes argued that ..."]
+          },
+          {
+            "label": "Sentence 2",
+            "items": [
+               "While there are some benefits/drawbacks/reasons to..., I maintain/ am of the opinion that ...",
+               "Many people believe that ..., whereas I believe/ am of the opinion that ...",
+               "Although some people argue that ..., I partly agree with this notion due to ..."
+            ]
+          }
+        ],
+        "sample": "“It is true that the existence of zoos is a topic of much debate. While there might be some reasons to support their existence, I am of the opinion that they should be completely abolished”"
+      },
+      {
+        "name": "2. Body Paragraph 1 (View 2)",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+               "On the one hand, the option to ... is attractive for several reasons.",
+               "On the one hand, the idea of ... is beneficial to some extent.",
+               "The argument that ... is reasonable to some extent."
+            ]
+          },
+          {
+            "label": "Point 1 / Point 2 (Explanation/Example)",
+            "items": ["Firstly, ...", "Secondly, ...", "This is because ...", "This is mainly due to ...", "For example, ..."]
+          }
+        ],
+        "sample": "“On the one hand, the option to allow zoos to exist is attractive for several reasons. Firstly, ... This is mainly due to ... Secondly, ... For example, ...”"
+      },
+      {
+        "name": "3. Body Paragraph 2 (View 1 & Opinion)",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+               "Nevertheless, I believe that ...",
+               "On the other hand, there are a variety of reasons why I believe ...",
+               "Despite the above-mentioned advantages, I believe that ..."
+            ]
+          }
+        ],
+        "sample": "“Nevertheless, I believe that zoos are unethical and therefore musted be banned from operating. Firstly, ... This is mainly due to ... Secondly, ... This can be perfectly exemplified in the case of ...”"
+      },
+      {
+        "name": "4. Conclusion",
+        "subsections": [
+          {
+            "label": "Suggested structures",
+            "items": [
+               "In conclusion, while there are many benefits/drawbacks regarding ..., I still believe that it is more beneficial/disadvantageous to ... because ... It is advisable that ...",
+               "In conclusion, although ... presents certain advantages/disadvantages, I contend that it should/should not be encouraged due to ... It can be predicted that ..."
+            ]
+          }
+        ],
+        "sample": "“In conclusion, although preserving zoos can somewhat contribute to the survival of animals, I contend that zoos should not be kept open due to the cruelty these facilities exert to animals. It is advisable that governments take the initiative to close down these venues in the near future”"
+      }
+    ]
+  },
+  {
+    "id": "cause-solution",
+    "type": "Problem-Solution",
+    "title": "DẠNG 3: PROBLEM-SOLUTION (HƯỚNG 1: CAUSE - SOLUTION)",
+    "description": "Nêu nguyên nhân và giải pháp.",
+    "question": "Many offenders commit more crimes after serving the first punishment in prison. Why is this happening, and what measures can be taken to tackle this problem?",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "subsections": [
+          {
+            "label": "Sentence 2",
+            "items": [
+              "There are a number of reasons behind this phenomenon/tendency/trend/view and several solutions should be adopted by ... to improve the situation.",
+              "This phenomenon can be attributed to a number of reasons, and solutions should be taken by ... to alleviate the circumstance."
+            ]
+          }
+        ],
+        "sample": "“It is true that many offenders recommit crimes after being released from prison. There are a number of reasons behind this phenomenon, and several solutions should be adopted by the governments to improve the situation.”"
+      },
+      {
+        "name": "2. Body Paragraph 1 (Causes)",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+               "There are two primary reasons why the ...",
+               "This issue can be explained by two main reasons.",
+               "There are two main reasons associated with this phenomenon."
+            ]
+          }
+        ],
+        "sample": "“There are two primary reasons why criminals recommit after serving their sentence. One reason is ... This is due to ... Furthermore, ... According to a study conducted by IELTS Xuan Phi in 2019, ...”"
+      },
+      {
+        "name": "3. Body Paragraph 2 (Solutions)",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+               "Fortunately, several measures could be taken to alleviate this problem.",
+               "However, several solutions could be implemented to tackle this issue.",
+               "There are several solutions that can be adopted by ... to resolve this problem."
+            ]
+          }
+        ],
+        "sample": "“Fortunately, several measures could be taken to alleviate this problem. The first solution would be ... This could be done by ... Another solution is ... According to some research, ...”"
+      },
+      {
+        "name": "4. Conclusion",
+        "subsections": [
+          {
+            "label": "Suggested structures",
+            "items": [
+              "In conclusion, it is clear that there are various reasons for ..., and steps need to be taken by ... to tackle this problem. It can be predicted that ...",
+              "In conclusion, this phenomenon can be explained by the ... However, solutions can be taken to resolve this issue. In the near future, it is predicted that ..."
+            ]
+          }
+        ],
+        "sample": "“In conclusion, it is clear that there are various reasons for ex-prisoners to commit more crimes, and steps need to be taken by the government and individuals to tackle this problem. It can be predicted that with appropriate funding and implementation of these suggested measures, this issue would likely be alleviated in the next 10 years”"
+      }
+    ]
+  },
+  {
+    "id": "two-part-question",
+    "type": "Two-Part Question",
+    "title": "DẠNG 4: TWO-PART QUESTION",
+    "description": "Trả lời hai câu hỏi khác nhau cho cùng một chủ đề.",
+    "question": "These days more fathers stay at home and take care of their children while mothers go out to work. What could be the reasons for this? Do you think it is a negative or positive development?",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "sample": "“The phenomenon of mothers becoming the chief breadwinners and fathers becoming stay-at-home husbands has been growing in popularity. This change can be attributed to a number of reasons, and I consider this a positive development”"
+      },
+      {
+        "name": "3. Body Paragraph 2 (Positive/Negative)",
+        "subsections": [
+          {
+            "label": "Topic sentence",
+            "items": [
+              "Personally, I deem this a positive/negative development",
+              "I consider this trend as progress for several reasons.",
+              "I am of the opinion that this is a negative trend considering its adverse impacts on ..."
+            ]
+          }
+        ],
+        "sample": "“Personally, I deem this a positive/negative development. Firstly, ... This is mainly due to ... Secondly, ... For example, ...”"
+      },
+      {
+        "name": "4. Conclusion",
+        "sample": "“In conclusion, while the role-swap between husband and wife can be attributed to the changes in people’s perception and the ever-increasing living expenses, I consider this a positive development given the flexibility and financial security it provides for families. It is recommended that this practice be encouraged for the benefits of women in particular and the economy as a whole”"
+      }
+    ]
+  },
+  {
+    "id": "advantages-outweigh",
+    "type": "Advantages-Disadvantages",
+    "title": "DẠNG: DO THE ADVANTAGES OUTWEIGH THE DISADVANTAGES?",
+    "description": "Ưu điểm có vượt trội hơn nhược điểm không?",
+    "question": "It is suggested that primary children should learn how to grow vegetables and keep animals. Do the advantages outweigh the disadvantages?",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "subsections": [
+          {
+            "label": "Sentence 2",
+            "items": [
+               "While there are some drawbacks to..., I maintain/ am of the opinion that the strengths will likely be more significant.",
+               "Although there can be no doubt that ... can be beneficial to society to a certain extent, I assert/ hold a belief that ... will do more harm than good."
+            ]
+          }
+        ],
+        "sample": "“Many believe that the teaching of horticulture and animal domestication should be included in the school’ s curriculum. While there are some advantages to this proposal, I am of the opinion that the drawbacks will likely be more significant”"
+      },
+      {
+        "name": "4. Conclusion",
+        "subsections": [
+          {
+            "label": "Suggested structures",
+            "items": [
+              "In conclusion, while there are many advantages/ disadvantages regarding ..., I believe the benefits/ drawbacks that result from this trend/ practice is of more vital significance. It is recommended that...",
+              "In conclusion, this trend might possess many advantages/ disadvantages. However, I am more inclined to the view that the disadvantages/ advantages will likely prevail."
+            ]
+          }
+        ],
+        "sample": "“In conclusion, while there may disadvantage regarding teaching children cultivation and domestication skills, I believe that drawback that result from this trend is of more vital significance. It is recommended that an extracurricular program relevant to these activities should be imparted in the study timetable”"
+      }
+    ]
+  },
+  {
+    "id": "advantages-and-disadvantages",
+    "type": "Advantages-Disadvantages",
+    "title": "DẠNG: WHAT ARE THE ADVANTAGES AND DISADVANTAGES?",
+    "description": "Nêu cả ưu điểm và nhược điểm.",
+    "sections": [
+      {
+        "name": "1. Introduction",
+        "subsections": [
+          {
+            "label": "Sentence 2",
+            "items": [
+              "This essay will elaborate the strengths and weaknesses of ...",
+              "While... can exert certain benefits, this also imposes many detrimental benefits for..."
+            ]
+          }
+        ],
+        "sample": "“The practice of relocating factories and industrial firms from the metropolitan centers to the rural regions has been a topic of interest. This essay will elaborate the strengths and weaknesses of this movement.”"
+      },
+      {
+        "name": "4. Conclusion",
+        "subsections": [
+          {
+            "label": "Suggested structures",
+            "items": [
+              "In conclusion, while there are many advantages/ disadvantages regarding ..., its/ their demerits are worth considering. It is recommended that...",
+              "In conclusion, this trend might possess many advantages/ disadvantages. However, the demerits/ merits of ... should not be overlooked."
+            ]
+          }
+        ],
+        "sample": "“In conclusion, this trend might possess many advantages. However, the demerits of business relocation from the urban areas to the rural ones should not be overlooked”"
+      }
+    ]
+  }
+]

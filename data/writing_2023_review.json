@@ -1,0 +1,251 @@
+{
+  "exams": [
+    {
+      "date": "05/01/2023",
+      "task_1": {
+        "type": "Bar Chart",
+        "title": "People Born In and Outside Australia Living in Different Areas",
+        "question": "The charts below show the percentage of people born in and outside of Australia living in cities, towns, and rural areas in 1950 and 2010.",
+        "overview": [
+          "Sống ở thành phố phổ biến nhất ở cả 2 nhóm trong 2 năm.",
+          "Phần trăm số người ở cả 2 nhóm sống ở thành phố tăng."
+        ],
+        "body_1": "Năm 1950: 50% người sinh ra ở Úc sống ở thành phố, 20% ở thị trấn, 30% ở nông thôn. Năm 2010: sống ở thành phố tăng lên 65%, nông thôn và thị trấn giảm xuống còn khoảng 15%.",
+        "body_2": "Năm 1950: Khỏng 60% người sinh ngoài nước Úc sống ở thành phố. Năm 2010: tăng lên 80%. Tỉ lệ người sống ở nông thôn giảm mạnh từ 40% (1950) xuống còn 5% (2010).",
+        "key_vocab": [
+          {"word": "in terms of", "meaning": "khi xét về"},
+          {"word": "to be far more common", "meaning": "trở nên thông thường hơn cả"},
+          {"word": "substantially", "meaning": "đáng kể, rõ rệt"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Opinion Essay",
+        "title": "Other Types of Help vs Financial Aid",
+        "question": "Rich countries often give money to poorer countries, but it does not solve poverty. Therefore, developed countries should give other types of help to poorer countries rather than financial aid. To what extent do you agree or disagree?",
+        "topic_vi": "Các quốc gia nghèo nên được hỗ trợ bằng các phương thức khác hay hỗ trợ tài chính?",
+        "view_1": "Đồng ý: Hỗ trợ giáo dục (vệ sinh, kiến thức canh tác) và tiếp cận công nghệ, máy móc mang lại lợi ích dài hạn giúp thoát nghèo đói tốt hơn tài chính.",
+        "view_2": "Không đồng ý: Mọi hình thức hỗ trợ đều cần chi phí. Nếu không có tiền để cung cấp nước sạch, dinh dưỡng thì giáo dục hay thuốc men cũng vô dụng. Cốt lõi nằm ở thái độ lạc quan và chăm chỉ.",
+        "opinion": "Tùy thuộc người viết có thể đồng ý rằng giáo dục và công nghệ mang lợi ích dài hạn, hoặc phản biện rằng tài chính là cốt lõi để duy trì các dạng hỗ trợ khác.",
+        "key_vocab": [
+          {"word": "a better standard of living", "meaning": "mức sống tốt hơn"},
+          {"word": "preventable disease and infection", "meaning": "bệnh tật có thể phòng tránh được"},
+          {"word": "ward off hunger and disease", "meaning": "ngăn chặn nạn đói và bệnh tật"},
+          {"word": "resilience", "meaning": "thái độ kiên cường, lạc quan"},
+          {"word": "destitute", "meaning": "nghèo đói, neo đơn"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    },
+    {
+      "date": "07/01/2023",
+      "task_1": {
+        "type": "Line Chart",
+        "title": "Overseas Visitors to Three Different Areas in a European Country",
+        "question": "The graph below shows the number of overseas visitors to three different areas in a European country between 1987 and 2007.",
+        "overview": [
+          "Khu vực bờ biển thu hút lượng khách lớn nhất trong hầu hết các năm.",
+          "Khu vực đồi núi hầu như kém hấp dẫn nhất.",
+          "Lượng khách du lịch tới ba địa điểm này tăng đều qua giai đoạn."
+        ],
+        "body_1": "Năm 1987, khoảng 40,000 khách thăm bờ biển, giảm xuống 35,000 (1992) rồi tăng lên 75,000 (2007). Vùng đồi núi dao động 20,000 - 30,000 nửa đầu giai đoạn, tăng lên 35,000 vào 2007.",
+        "body_2": "Lượng du khách thăm hồ (lakes) tăng liên tục 15 năm đầu, đạt mốc cao nhất 75,000 (2002), sau đó giảm rõ rệt và chạm mốc 50,000 (2007).",
+        "key_vocab": [
+          {"word": "appeared to be the least popular", "meaning": "thu hút ít sự chú ý nhất"},
+          {"word": "peaking at", "meaning": "đạt mức cao nhất tại"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Opinion Essay",
+        "title": "Specialised Sports Facilities vs Public Facilities",
+        "question": "Some countries achieve international success by building specialised facilities to train top athletes instead of providing sports facilities that everyone can use. Is it a positive or negative development?",
+        "topic_vi": "Xây dựng cơ sở vật chất dành riêng cho thể thao chuyên nghiệp - tích cực hay tiêu cực?",
+        "view_1": "Sự phát triển tích cực: Nâng cao sức khoẻ cộng đồng sẽ tiết kiệm chi phí, nhưng đầu tư cơ sở vật chất đỉnh cao cho vận động viên là thiết yếu để đạt thành tích quốc tế. Chỉ tài năng trẻ mới cần khu tập chất lượng cao.",
+        "view_2": "Sự phát triển tiêu cực: Xây dựng cơ sở cho chuyên nghiệp mang danh tiếng và lợi ích giới hạn, nhưng tạo môi trường tập luyện toàn dân mang lại lợi ích sức khỏe và hạnh phúc xã hội quy mô lớn.",
+        "opinion": "Tùy thuộc trọng tâm người viết, nhưng ưu tiên xây dựng cơ sở thể thao công cộng thường mang lại lợi ích quy mô tổng thể cho xã hội cao hơn.",
+        "key_vocab": [
+          {"word": "top-level athletes", "meaning": "những vận động viên hàng đầu"},
+          {"word": "cater to the general public", "meaning": "dành cho toàn dân phổ thông"},
+          {"word": "excel in sport", "meaning": "có khả năng vượt trội trong thể thao"},
+          {"word": "chasing international sporting success", "meaning": "theo đuổi thành tích thể thao quốc tế"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    },
+    {
+      "date": "12/01/2023",
+      "task_1": {
+        "type": "Bar Chart",
+        "title": "Hours of Teaching Per Year Done by Each Teacher",
+        "question": "The graph below shows the hours of teaching per year done by each teacher in four different categories.",
+        "overview": [
+          "Các giáo viên từ Mỹ dạy nhiều hơn các giáo viên từ 3 nước còn lại.",
+          "Các giáo viên trung học phổ thông thường làm việc nhiều giờ hơn các giáo viên còn lại."
+        ],
+        "body_1": "USA: THPT 1100 giờ/năm, THCS thấp hơn 1100 một chút, tiểu học <900 giờ/năm. Ireland: THCS và THPT khoảng 800 giờ/năm, tiểu học khoảng 600.",
+        "body_2": "Nhật Bản và Tây Ban Nha: GV tiểu học và THCS khoảng 600 giờ/năm. Tại Nhật bản, GV THPT dạy khoảng 600 giờ/năm, trong khi ở TBN là xấp xỉ 1000 giờ/năm.",
+        "key_vocab": [
+          {"word": "counterparts", "meaning": "đối tượng tương ứng ở nhóm kia"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Two-Part Question",
+        "title": "Preservation of Old Buildings",
+        "question": "Some people believe that certain old buildings should be preserved more than others. What types of old buildings should be preserved? Do you think the advantages of preserving old buildings outweigh the disadvantages?",
+        "topic_vi": "Kiến trúc cổ nào nên được bảo tồn và Lợi ích có lấn át bất lợi không?",
+        "view_1": "Nhóm kiến trúc: Tòa nhà tôn giáo, đền thờ, tượng đài lịch sử, hoặc những tòa nhà thể hiện rõ phong cách kiến trúc của một thời đại văn hóa.",
+        "view_2": "Lợi và Hại: Bảo tồn tiêu tốn nhiều tiền bạc và không gian đô thị. Lợi ích là duy trì kết nối với quá khứ, bảo vệ giá trị thẩm mỹ và thúc đẩy ngành công nghiệp du lịch.",
+        "opinion": "Lợi ích của việc bảo tồn văn hóa và phát triển du lịch thông qua các tòa nhà này lớn hơn nhiều so với việc ngăn cản sự phát triển đô thị.",
+        "key_vocab": [
+          {"word": "significant amount of historical and cultural value", "meaning": "nhiều giá trị văn hóa và lịch sử"},
+          {"word": "aesthetic quality", "meaning": "chất lượng thẩm mỹ"},
+          {"word": "impede the progress of a city", "meaning": "ngăn cản sự phát triển của thành phố"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    },
+    {
+      "date": "14/01/2023",
+      "task_1": {
+        "type": "Line Chart",
+        "title": "Percentage of Workers Absent Due to Illness",
+        "question": "The graph below shows the percentage of workers from five different European countries that were absent for a day or more due to illness from 1991 to 2001.",
+        "overview": [
+          "Hà Lan (Netherlands) có tỉ lệ người nghỉ ốm cao nhất trong tất cả các năm.",
+          "Đức (Germany) có tỉ lệ người nghỉ ốm thấp nhất."
+        ],
+        "body_1": "Năm 1991: Hà Lan và Pháp xấp xỉ nhau ở ~5%. Năm 1996, Hà Lan giảm mạnh còn 4%, Pháp giảm còn 3%. Pháp duy trì mức 3% đến cuối kỳ. Trong khi đó, Hà Lan tăng lại lên ~5.5% vào 2001.",
+        "body_2": "Thụy Điển (Sweden) tăng từ 3% (1991) lên trên 4.5% (2001). Anh (UK) dao động ngay trên 2%, còn Đức (Germany) duy trì ngay dưới mức 2% suốt toàn bộ giai đoạn.",
+        "key_vocab": [
+          {"word": "taking leave from work due to illness", "meaning": "không đi làm vì ốm"},
+          {"word": "hover slightly above", "meaning": "quanh quẩn ngay trên mức"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Opinion Essay",
+        "title": "Video Records vs Written Documents",
+        "question": "Video records are a better way to learn about the way other people in the world live rather than written documents. To what extent do you agree or disagree?",
+        "topic_vi": "Học hỏi văn hóa qua video có ưu việt hơn so với văn bản không?",
+        "view_1": "Video: Hình ảnh sinh động, dễ tiếp cận qua Internet, không khô khan và rất được mọi người ưa thích.",
+        "view_2": "Văn bản: Yêu cầu sự tập trung tuyệt đối mang lại tỷ lệ ghi nhớ thông tin chi tiết cao. Thông tin trong sách được biên soạn và kiểm duyệt độ đáng tin cậy cao hơn hẳn các video mạng dễ gây hiểu lầm.",
+        "opinion": "Rất nhiều người coi trọng và chọn ủng hộ việc đọc sách hoặc xem cả hai nhưng đánh giá văn bản giáo dục sâu sắc hơn.",
+        "key_vocab": [
+          {"word": "information retention", "meaning": "sự ghi nhớ thông tin"},
+          {"word": "passive activity", "meaning": "hoạt động bị động"},
+          {"word": "visually exciting", "meaning": "sống động về mặt hình ảnh"},
+          {"word": "reliable source of information", "meaning": "nguồn thông tin đáng tin cậy"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    },
+    {
+      "date": "19/01/2023",
+      "task_1": {
+        "type": "Process",
+        "title": "Rainwater Collection Process for Drinking Water",
+        "question": "The diagram shows how rainwater is collected for the use of drinking water in an Australian town.",
+        "overview": [
+          "Có 5 bước chính trong quá trình xử lí nước mưa thành nước uống.",
+          "Quá trình bắt đầu bằng việc thu nước trên mái nhà và kết thúc là nước uống sạch ở vòi."
+        ],
+        "body_1": "Nước mưa thu lượm trên mái nhà, mương theo đường ống chảy vào hệ thống. Tất cả được thu lại đi qua khu vực màng lọc, sau đó chuyển tới các bồn dự trữ lớn (storage tanks).",
+        "body_2": "Nước lưu trữ được bơm sang bồn xử lí hóa chất diệt khuẩn. Quá trình này tạo nước sạch sẵn sàng phân bổ về các vòi nước tại hệ thống dân cư hộ cá thể.",
+        "key_vocab": [
+          {"word": "harvested, treated, and stored", "meaning": "thu lượm, xử lí và tích trữ"},
+          {"word": "drainage pipes", "meaning": "đường ống dẫn thoát nước"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Opinion Essay",
+        "title": "Team Sports for Teaching Cooperation",
+        "question": "The best way to teach children to cooperate is through team sports at school. To what extent do you agree or disagree?",
+        "topic_vi": "Chơi thể thao đồng đội có phải là cách tốt nhất để dạy trẻ hợp tác?",
+        "view_1": "Đồng ý: Thể thao đồng đội bắt buộc trẻ phối hợp cùng đồng đội qua lời nói và ngôn ngữ cơ thể. Thành công đi kèm mục đích chung giúp trẻ hiểu tầm quan trọng của hợp tác.",
+        "view_2": "Không đồng ý: Nhiều đứa trẻ không đủ năng lực thể chất dễ cảm thấy tự ti thất vọng và ác cảm hợp tác. Mặt khác, trẻ có thể học hợp tác qua trò chơi điện tử hay các hoạt động nghệ thuật yêu thích.",
+        "opinion": "Thể thao đồng đội hữu ích nhưng không thể coi là cách 'tốt nhất' duy nhất cho mọi đứa trẻ. Cần các phương án dạy học đa dạng hướng tới niềm vui chung.",
+        "key_vocab": [
+          {"word": "engage somebody in", "meaning": "khuyến khích/bắt ai tham gia vào việc gì"},
+          {"word": "verbal communication", "meaning": "giao tiếp bằng lời nói"},
+          {"word": "lack of athleticism", "meaning": "sự thiếu tố chất thể thao"},
+          {"word": "feelings of low self-esteem", "meaning": "tự ti"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    },
+    {
+      "date": "28/01/2023",
+      "task_1": {
+        "type": "Pie Chart",
+        "title": "Percentage of the Day Working Adults Spent Doing Different Activities",
+        "question": "The charts below show the percentage of the day working adults spent doing different activities in a particular country in 1958 and in 2008.",
+        "overview": [
+          "Người đi làm dành phần lớn thời gian trong ngày cho công việc.",
+          "Thời gian làm việc tăng lên trong khi thời gian cho việc ngủ giảm xuống qua 50 năm (mối quan hệ nghịch đảo)."
+        ],
+        "body_1": "Năm 1958: Sự phân bổ chính bao gồm Công việc (1/3 ngày), Ngủ (dưới 1/3 một chút), và Đi chơi gia đình bạn bè (19%). Di chuyển đến chỗ làm chiếm thấp nhất 2%.",
+        "body_2": "Năm 2008: Thời gian làm việc tăng đáng kể lên 42%, đi ngủ giảm mạnh xuống 25%. Thời gian thư giãn ở nhà tăng (13%), đi chơi giảm (6%). Việc di chuyển đến chỗ làm tăng lên gấp 4 lần đạt 8%.",
+        "key_vocab": [
+          {"word": "inverse relationship", "meaning": "mối quan hệ nghịch đảo"},
+          {"word": "quadrupled", "meaning": "tăng gấp 4 lần"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Cause and Effect",
+        "title": "Fewer University Students Choosing Science Subjects",
+        "question": "Nowadays, not enough students choose science subjects in university in many countries. Why? What are the effects on society?",
+        "topic_vi": "Nguyên nhân và hệ quả của việc sinh viên ít chọn môn khoa học",
+        "view_1": "Nguyên nhân: Sự nghiệp ngành Khoa học hiện thiếu sức hút về cơ hội tài chính và hình ảnh hào nhoáng (glamorous lifestyle) so với nghề như CEO, Marketing hay Software Developer.",
+        "view_2": "Ảnh hưởng: Gây nên tình trạng khan hiếm nguồn nhân lực khoa học. Thiếu khoa học dẫn đến sự chậm trễ ra đời các loại thuốc mới chữa bệnh và chậm khắc phục khủng hoảng môi trường.",
+        "opinion": "Tình trạng này nếu không can thiệp kịp thời sẽ đem tới ảnh hưởng bất lợi lâu dài đến mức độ tiến bộ công nghệ và y tế xã hội.",
+        "key_vocab": [
+          {"word": "glamorous lifestyle", "meaning": "lối sống hào nhoáng"},
+          {"word": "lucrative salaries", "meaning": "tiền lương hậu hĩnh"},
+          {"word": "shortage in the workforce", "meaning": "sự khan hiếm nhân lực"},
+          {"word": "scientific breakthroughs", "meaning": "những bước đột phá khoa học"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    },
+    {
+      "date": "02/02/2023",
+      "task_1": {
+        "type": "Table",
+        "title": "Changes in Number of International Travellers",
+        "question": "The table describes the changes of people who went for international travel in 1990, 1995, 2000 and 2005. (million)",
+        "overview": [
+          "Tổng số khách tham quan quốc tế tăng rõ rệt ở tất cả các khu vực.",
+          "Châu Âu luôn dẫn đầu về lượng du khách trong toàn bộ giai đoạn khảo sát."
+        ],
+        "body_1": "Năm 1990: Châu Âu với >280 triệu người dẫn đầu, kế đến là người Châu Mỹ (80 triệu) và Châu Á - Thái Bình Dương (60 triệu). Châu Phi có 18.2 triệu và Trung Đông xếp cuối với 9.8 triệu.",
+        "body_2": "Năm 2005: Khách châu Âu vẫn mạnh nhất đạt 400.2 triệu. Châu Á TBD tăng nhanh lên trên 138 triệu (2005). Người Châu Mỹ từng chạm đỉnh 118 triệu (2000) rồi rớt nhẹ còn 113.2 triệu. Các khu vực nhỏ ghi nhận mức tăng trưởng đều đặn (châu Phi 28.7m, Trung Đông 15.8m).",
+        "key_vocab": [
+          {"word": "travelled abroad", "meaning": "đã đi du lịch nước ngoài"},
+          {"word": "accounted for the largest number", "meaning": "chiếm lượng lốn nhất"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      },
+      "task_2": {
+        "type": "Opinion Essay",
+        "title": "Vocational Training vs University Study",
+        "question": "While many people go to university for academic study, more people should be encouraged to do vocational training because there is a lack of qualified workers such as electricians and plumbers. Do you agree or disagree?",
+        "topic_vi": "Bạn có đồng ý nên khuyến khích người dân học nghề thay vì đại học không?",
+        "view_1": "Đồng ý: Học nghề tập trung cho sinh viên kĩ năng làm việc trực tiếp (đáp ứng đúng lao động thực tiễn), khóa học diễn ra với thời gian ngắn và chi phí đào tạo lại thấp hơn đáng kể.",
+        "view_2": "Không đồng ý: Nhu cầu mỗi cá nhân với khả năng chuyên môn là khác nhau; đại học cung cấp kiến thức nền vững bền. Giáo dục ngay tại doanh nghiệp (On-the-job training) nhiều lúc thay thế được khóa học hướng nghiệp.",
+        "opinion": "Học nghề là một giải pháp thiết thực lấp khoảng trống kỹ năng hiện tại, tuy vậy không thể áp dụng chuẩn chung để đẩy toàn bộ người trẻ không hướng theo đại học.",
+        "key_vocab": [
+          {"word": "vocational training", "meaning": "học nghề"},
+          {"word": "academic study", "meaning": "nghiên cứu hàn lâm, đại học"},
+          {"word": "qualified workers", "meaning": "công nhân kỹ thuật lành nghề"},
+          {"word": "job-specific skills", "meaning": "kỹ năng riêng cho công việc"},
+          {"word": "career aspirations", "meaning": "định hướng việc làm, khát vọng nghề nghiệp"}
+        ],
+        "band": {"TR": 7, "CC": 7, "LR": 7, "GRA": 7, "overall": 7.0}
+      }
+    }
+  ]
+}

@@ -1,0 +1,23258 @@
+const UNITS_DATA = [
+            {
+                id: "unit1",
+                title: "Unit 1: Government Roles",
+                category: "Government",
+                description: "Vai trò của chính phủ trong việc đảm bảo nhu cầu cơ bản (Physiological), an toàn (Safety), kiến thức (Knowledge), thẩm mỹ (Aesthetics) và trách nhiệm toàn cầu.",
+                questions: [
+                    "To what extent should the government intervene in the economy and citizens' lives?",
+                    "Should governments be responsible for providing free healthcare and education?",
+                    "Does the government have a responsibility towards the global community?"
+                ],
+                vocab: ["physiological needs", "safety needs", "social stability", "prosperity", "intervention", "humanitarian aid", "public image"],
+                ideas: [
+                    { section: "Basic Needs", points: ["Physiological: Food, Housing, Water.", "Safety: Media violence, Healthcare."] },
+                    { section: "Higher Needs", points: ["Knowledge: Free tuition (Benefits vs Drawbacks).", "Aesthetics: National image, Social cohesion."] },
+                    { section: "Global Role", points: ["Peace/Stability, Human Rights, Global challenges, Trade."] }
+                ],
+                reading: [
+                    {
+                        title: "1. Meet the physiological needs",
+                        content: [
+                            {
+                                heading: "FOOD SHORTAGES",
+                                text: "Food shortages are a serious problem that affects millions of people around the world. One of the main causes of food shortages is natural disasters such as droughts, floods, storms, which destroy crops and disrupt food supply chains. In addition, geographical reasons such as dry or less fertile soil can make it difficult to grow crops and produce enough food for local people. These challenges often lead to food insecurity.",
+                                keywords: [
+                                    { en: "food shortage", vi: "sự khan hiếm thực phẩm" },
+                                    { en: "natural disaster", vi: "thảm họa thiên nhiên" },
+                                    { en: "destroy crops", vi: "phá hoại mùa màng" },
+                                    { en: "disrupt food supply chains", vi: "ngắt quãng chuỗi cung ứng thực phẩm" },
+                                    { en: "geographical reasons", vi: "lý do địa lý" }
+                                ]
+                            },
+                            {
+                                heading: "HOUSING SITUATION",
+                                text: "As of 2023, the global housing situation remains a challenge. In developed nations, the high cost of housing has made it difficult for low-income families to find reasonable housing. Meanwhile, in many developing countries, the lack of housing remains a significant issue. These problems lead millions of people to live in poor conditions without access to basic amenities such as clean water and sanitation. As a result, many choose to deforest to make way for new construction, resulting in a deteriorating national image.",
+                                keywords: [
+                                    { en: "high cost of housing", vi: "giá nhà cao" },
+                                    { en: "lack of housing", vi: "sự thiếu hụt nhà ở" },
+                                    { en: "deteriorating national image", vi: "ảnh hưởng xấu đến hình ảnh quốc gia" },
+                                    { en: "basic amenities", vi: "tiện nghi cơ bản" }
+                                ]
+                            },
+                            {
+                                heading: "WATER SHORTAGE",
+                                text: "Water shortage stems from many factors. One of the main causes is the lack of education about use and conservation. Many people believe that water is an unlimited resource, leading to misuse and waste. Besides, pollution is a significant problem, with many areas not having proper waste treatment. Also, overpopulation worsens the problem. Finally, natural factors such as climate change, natural disasters and geographical factors can also lead to water stress.",
+                                keywords: [
+                                    { en: "lack of education", vi: "sự thiếu hiểu biết" },
+                                    { en: "overpopulation", vi: "sự quá tải dân số" },
+                                    { en: "natural factors", vi: "các yếu tố tự nhiên" },
+                                    { en: "water stress", vi: "tình trạng thiếu nước" }
+                                ]
+                            }
+                        ],
+                        summary: "Food shortages result from natural disasters and geographical reasons. Global housing challenges stem from high costs and lack of supply. Water shortage is caused by lack of education, overpopulation, and natural factors."
+                    },
+                    {
+                        title: "2. Meet the safety needs",
+                        content: [
+                            {
+                                heading: "VIOLENCE IN MEDIA",
+                                text: "Violence in the media can take many forms: Physical violence (using weapons), Sexual content (harassment and rape), wars and terrorism, domestic violence, and cyberbullying. These can stimulate negative actions such as normalizing violence. Solutions include education, parents limiting exposure, and an effective rating system.",
+                                keywords: [
+                                    { en: "physical violence", vi: "bạo lực thể chất" },
+                                    { en: "sexual content", vi: "nội dung tình dục" },
+                                    { en: "violence normalization", vi: "sự bình thường hóa bạo lực" },
+                                    { en: "cyberbullying", vi: "bắt nạt qua mạng" }
+                                ]
+                            },
+                            {
+                                heading: "HEALTHCARE CHALLENGES",
+                                text: "Challenges include increasing price of medications, changing drug effectiveness, lack of healthcare facilities or degraded infrastructure, and overwhelming workload for staff with low wages. Solutions involve increasing funding, establishing partnerships with private companies, offering public insurance, and promoting healthy lifestyles.",
+                                keywords: [
+                                    { en: "medication price", vi: "giá thuốc" },
+                                    { en: "degraded infrastructure", vi: "hạ tầng xuống cấp" },
+                                    { en: "overwhelming workload", vi: "khối lượng công việc khổng lồ" },
+                                    { en: "public insurance", vi: "bảo hiểm công cộng" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Knowledge & Aesthetics needs",
+                        content: [
+                            {
+                                heading: "FREE TUITION FEE",
+                                text: "Providing free education creates equal opportunities and leads to a more educated workforce. However, it may burden taxpayers and disadvantage other sectors. Without proper monitoring, it may result in a lack of motivation or potential job market saturation.",
+                                keywords: [
+                                    { en: "free-of-charge education", vi: "giáo dục miễn phí" },
+                                    { en: "equal opportunities", vi: "cơ hội công bằng" },
+                                    { en: "national budget", vi: "ngân sách quốc gia" },
+                                    { en: "job market saturation", vi: "bão hòa thị trường việc làm" }
+                                ]
+                            },
+                            {
+                                heading: "AESTHETICS NEEDS",
+                                text: "Investing in aesthetics can boost national image, the economy (attract tourism), and promote social cohesion. However, aesthetics is subjective and using taxpayers' money for it may cause resentment if urgent issues are ignored.",
+                                keywords: [
+                                    { en: "aesthetic needs", vi: "nhu cầu thẩm mỹ" },
+                                    { en: "boost national image", vi: "nâng cao hình ảnh quốc gia" },
+                                    { en: "social cohesion", vi: "sự gắn kết xã hội" },
+                                    { en: "subjective", vi: "tính chủ quan" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "4. Global Community Responsibility",
+                        content: [
+                            {
+                                heading: "MUTUAL RESPONSIBILITY",
+                                text: "Governments promote global peace and stability (resolving conflicts, humanitarian aid), protect human rights, address global challenges (climate change, poverty), and support trade cooperation (AFTA) for mutual prosperity.",
+                                keywords: [
+                                    { en: "global peace and stability", vi: "hòa bình và ổn định toàn cầu" },
+                                    { en: "human rights", vi: "quyền con người" },
+                                    { en: "climate change", vi: "biến đổi khí hậu" },
+                                    { en: "trade cooperation", vi: "hợp tác thương mại" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Meet the physiological needs",
+                        instruction: "Hoàn thành sơ đồ tư duy dựa trên các từ khóa: public housing, lack of education, set maximum limits, natural disasters, disrupt food supply chains, prevent real estate bubbles.",
+                        sampleAnswer: "Food shortages: Causes (Natural disasters, disrupt supply chains). Housing: Solutions (Public housing, prevent bubbles). Water: Solutions (Set maximum limits)."
+                    },
+                    {
+                        title: "Writing Task: Arts Investment",
+                        instruction: "Government investment in the arts is a waste of money. Public services come first. To what extent do you agree?",
+                        sampleAnswer: "Agree side: Urgent needs (healthcare, education) are more critical. Disagree side: Arts boost national image, attract tourism, and preserve heritage. Opinion: Moderate investment is key."
+                    }
+                ]
+            },
+            {
+                id: "unit2",
+                title: "Unit 2: Environment",
+                category: "Environment",
+                description: "Các vấn đề môi trường cấp bách: Suy giảm đa dạng sinh học, cạn kiệt tài nguyên, năng lượng và xã hội vứt bỏ.",
+                questions: [
+                    "Environmental problems are too big for individual countries to be solved. Discuss.",
+                    "The consumption of natural resources is increasing. Causes and solutions?",
+                    "Should governments or individuals be in charge of solving environmental problems?"
+                ],
+                vocab: ["habitat destruction", "fossil fuels", "greenhouse gases", "resource depletion", "renewable energy", "throw-away society", "consumerism"],
+                ideas: [
+                    { section: "Biodiversity", points: ["Causes: Habitat destruction (overpopulation), Fossil fuels (climate change), Overfishing/Poaching."] },
+                    { section: "Energy", points: ["Non-renewable: Reliable/Affordable vs Pollution/Finite.", "Renewable: Green/Secure vs Weather-dependent/Expensive."] },
+                    { section: "Throw-away Society", points: ["Causes: Food waste, Fast fashion, Disposable materials, Consumerism.", "Effects: Landfills, Social inequality, Financial insecurity."] },
+                    { section: "Solutions", points: ["Government: Laws, Conservation, Incentives.", "Individuals: 3R principle, Green lifestyle.", "Organizations: Sustainable practices."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The decline of animals and plants",
+                        content: [
+                            {
+                                heading: "HUMAN-MADE ACTIVITIES",
+                                text: "One major cause of the decline of animals and plants is habitat destruction, primarily due to overpopulation. As human populations increase, the demand for housing leads to deforestation for settlements, factories and farms. Human activities such as burning fossil fuels release huge amounts of CO2, leading to global warming and climate change, which disrupts breeding and feeding patterns. Overfishing and poaching are also significant threats, depleting fish populations and endangering species like elephants and rhinos.",
+                                keywords: [
+                                    { en: "habitat destruction", vi: "sự phá hủy môi trường sống" },
+                                    { en: "fossil fuels", vi: "nhiên liệu hóa thạch" },
+                                    { en: "CO2 and greenhouse gases", vi: "khí CO2 và khí nhà kính" },
+                                    { en: "overfishing and poaching", vi: "đánh bắt quá mức và săn trộm" }
+                                ]
+                            }
+                        ],
+                        summary: "Habitat destruction, fossil fuels, overfishing, and poaching are the main factors posing a threat to biodiversity."
+                    },
+                    {
+                        title: "2. Consumption of natural resources",
+                        content: [
+                            {
+                                heading: "FAST CONSUMPTION",
+                                text: "The fast consumption of natural resources leads to environmental degradation and resource depletion. Deforestation for agriculture results in soil erosion, loss of biodiversity, and increased CO2 emissions. The depletion of water and energy resources results in water scarcity and energy insecurity. This also brings economic risks as commodity prices increase.",
+                                keywords: [
+                                    { en: "environmental degradation", vi: "sự xuống cấp môi trường" },
+                                    { en: "resource depletion", vi: "sự cạn kiệt tài nguyên" },
+                                    { en: "energy insecurity", vi: "sự khủng hoảng năng lượng" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Energy Sources: Non-renewable vs Renewable",
+                        content: [
+                            {
+                                heading: "NON-RENEWABLE ENERGY",
+                                text: "Non-renewable sources (coal, oil, gas) are reliable and affordable, providing consistent energy for industrial purposes. However, they cause pollution and are finite resources. Reliance on foreign imports can also lead to political and economic instability.",
+                                keywords: [
+                                    { en: "high energy density", vi: "mật độ năng lượng cao" },
+                                    { en: "finite resources", vi: "tài nguyên hữu hạn" },
+                                    { en: "political and economic instability", vi: "bất ổn chính trị và kinh tế" }
+                                ]
+                            },
+                            {
+                                heading: "RENEWABLE ENERGY",
+                                text: "Renewable energy (solar, wind, hydro) reduces greenhouse gas emissions and improves air quality. It offers energy security and creates jobs. However, it is weather-dependent and requires a large amount of land and resources, making it expensive to set up and maintain.",
+                                keywords: [
+                                    { en: "abundant", vi: "dồi dào" },
+                                    { en: "less predictable", vi: "khó dự đoán hơn" },
+                                    { en: "expensive to set up", vi: "đắt đỏ để lắp đặt" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "4. Throw-away society",
+                        content: [
+                            {
+                                heading: "CAUSES & EFFECTS",
+                                text: "Causes include food fashion (discarding edible food for appearance), fast fashion (low-quality materials), disposable materials (convenience, hygiene), and consumerism (advertising for status). Effects include environmental degradation, health risks from toxins (plastics), and financial insecurity from constant upgrading.",
+                                keywords: [
+                                    { en: "throw-away society", vi: "xã hội vứt bỏ" },
+                                    { en: "fast fashion", vi: "thời trang nhanh" },
+                                    { en: "consumerism", vi: "chủ nghĩa tiêu dùng" },
+                                    { en: "leach toxic chemicals", vi: "rỉ ra chất độc hại" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "5. Who is in charge?",
+                        content: [
+                            {
+                                heading: "RESPONSIBILITY",
+                                text: "Governments should enforce strict penalties, build natural reserves, and invest in green technology. Individuals can apply the 3R principle (Reduce, Reuse, Recycle) and switch to green vehicles. Organizations must implement environmentally sustainable practices in production.",
+                                keywords: [
+                                    { en: "strict penalties", vi: "hình phạt nghiêm khắc" },
+                                    { en: "3R principles", vi: "nguyên tắc 3R" },
+                                    { en: "sustainable practices", vi: "biện pháp bền vững" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Energy Sources",
+                        instruction: "Liệt kê ưu và nhược điểm của năng lượng hóa thạch và năng lượng tái tạo dựa trên bài đọc.",
+                        sampleAnswer: "Fossil fuels: Pro (Reliable, Cheap), Con (Pollution, Finite). Renewable: Pro (Clean, Secure), Con (Weather-dependent, Costly)."
+                    },
+                    {
+                        title: "Writing: Individual vs Government",
+                        instruction: "Ai chịu trách nhiệm chính trong việc bảo vệ môi trường: Chính phủ hay cá nhân?",
+                        sampleAnswer: "Both are responsible. Government provides laws and infrastructure. Individuals change habits (REDUCE waste). Cooperation is essential."
+                    }
+                ]
+            },
+            {
+                id: "unit3",
+                title: "Unit 3: Changes in Family",
+                category: "Society",
+                description: "Sự thay đổi cấu trúc gia đình, khoảng cách thế hệ và tác động của các xu hướng xã hội hiện đại.",
+                questions: [
+                    "What are the reasons for the change in family structure?",
+                    "Should household duties be divided equally all the time?",
+                    "In some countries, more and more people are becoming parents later in life. What are the reasons and effects?"
+                ],
+                vocab: ["nuclear family", "extended family", "dispersed families", "delayed parenthood", "social values", "transnational families", "self-discipline"],
+                ideas: [
+                    { section: "Structure Causes", points: ["Economic: Income levels, Job opportunities, Cost of living.", "Technology: Reduced interaction, Reproductive tech.", "Social: Accepted diversity (single parents, same-sex)."] },
+                    { section: "Legal Aspects", points: ["Same-sex marriage legalization.", "Immigration: Multicultural and transnational families."] },
+                    { section: "Effects", points: ["Smaller families: Financial stability vs Loneliness.", "Delayed parenthood: Career focus vs Health risk/Workforce shortage.", "Independent living: Freedom vs Expense."] }
+                ],
+                reading: [
+                    {
+                        title: "1. Changes in family structure",
+                        content: [
+                            {
+                                heading: "ECONOMIC & SOCIAL FACTORS",
+                                text: "Income levels significantly impact family formation; lower-income families often live as extended families to share costs, while higher-income families tend toward nuclear households. Job opportunities in cities lead to dispersed families. Additionally, changing social values have made single-parent, same-sex, or single-person households more widely accepted.",
+                                keywords: [
+                                    { en: "income level", vi: "mức thu nhập" },
+                                    { en: "extended family", vi: "gia đình đa thế hệ" },
+                                    { en: "dispersed families", vi: "gia đình phân tán" },
+                                    { en: "social values", vi: "giá trị xã hội" }
+                                ]
+                            },
+                            {
+                                heading: "TECHNOLOGICAL ADVANCES",
+                                text: "Technology often reduces face-to-face interaction among family members, leading to a more solitary lifestyle. However, advances in reproductive technology (like egg freezing) have made delayed childbearing easier and more common, allowing individuals to focus on self-development first.",
+                                keywords: [
+                                    { en: "reproductive technology", vi: "công nghệ sinh sản" },
+                                    { en: "delayed childbearing", vi: "trì hoãn việc mang thai" },
+                                    { en: "solitary lifestyle", vi: "lối sống đơn độc" }
+                                ]
+                            }
+                        ],
+                        summary: "Family structures are evolving due to economic needs, technological changes, and modern social values accepting diversity."
+                    },
+                    {
+                        title: "2. Effects of Modern Trends",
+                        content: [
+                            {
+                                heading: "DELAYED PARENTHOOD",
+                                text: "Delaying parenthood allows for career advancement and financial stability. However, it increases health risks (complications, fertility decline) and contributes to an aging population, which can lead to a workforce shortage and heavier burdens on young taxpayers.",
+                                keywords: [
+                                    { en: "climb up the career ladder", vi: "thăng tiến sự nghiệp" },
+                                    { en: "fertility declines", vi: "khả năng sinh sản giảm" },
+                                    { en: "shortage of the workforce", vi: "thiếu hụt lao động" }
+                                ]
+                            },
+                            {
+                                heading: "LIVING INDEPENDENTLY",
+                                text: "Living alone offers freedom and autonomy, promoting self-discovery and personal responsibility. Conversely, it can be expensive and lead to social isolation or loneliness. It also requires significant self-discipline to manage finances and health independently.",
+                                keywords: [
+                                    { en: "freedom and autonomy", vi: "tự do và tự chủ" },
+                                    { en: "social isolation", vi: "sự cô lập xã hội" },
+                                    { en: "self-discipline", vi: "kỷ luật cá nhân" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Smaller vs Larger Families",
+                        instruction: "Liệt kê lợi ích và bất lợi của việc sống trong một gia đình ít người (smaller-sized family).",
+                        sampleAnswer: "Benefits: Financial stability, higher quality of life, flexibility. Drawbacks: Lack of socialization with siblings, overprotective parents, loneliness."
+                    },
+                    {
+                        title: "Writing: Delayed Parenthood",
+                        instruction: "Tại sao nhiều người chọn có con muộn? Hãy phân tích ảnh hưởng của xu hướng này lên xã hội.",
+                        sampleAnswer: "Reasons: Career focus, financial stability. Effects on Society: Aging population, lack of productivity, pressure on welfare systems."
+                    }
+                ]
+            },
+            {
+                id: "unit4",
+                title: "Unit 4: Work",
+                category: "Work",
+                description: "Môi trường làm việc: Sự cân bằng hài lòng - ổn định, cân bằng công việc - cuộc sống, sự khác biệt thế hệ và giới tính, và tố chất lãnh đạo.",
+                questions: [
+                    "Is job satisfaction more important than job security?",
+                    "What are the difficulties in achieving work-life balance and how can we solve them?",
+                    "Should older people be encouraged to retire to make room for younger employees?",
+                    "In the modern workplace, who are more competitive: men or women?",
+                    "What qualities make a good leader?"
+                ],
+                vocab: ["job security", "job satisfaction", "work-life balance", "sole breadwinner", "turnover rate", "mentoring", "tech-savviness", "detail-oriented", "resilience", "self-awareness"],
+                ideas: [
+                    { section: "Security vs Satisfaction", points: ["Security: Financial peace, stability vs Complacency, lack of innovation.", "Satisfaction: Productivity, engagement, loyalty vs Reluctance to change."] },
+                    { section: "Work-Life Balance", points: ["Difficulties: Technology (always connected), Culture (long hours), High expectations, Financial pressure.", "Solutions: Set boundaries, Self-care, Time management, Outsourcing."] },
+                    { section: "Old vs Young", points: ["Old: Experience, Stability, Reliability, Mentoring.", "Young: Adaptability, Energy, Creativity, Tech-savviness."] },
+                    { section: "Gender & Leadership", points: ["Men: Risk-taking, Technical expertise, Physical strength.", "Women: Empathetic, Detail-oriented, Team-oriented.", "Leadership: Skills, Experience, Personality (Resilience), Communication."] }
+                ],
+                reading: [
+                    {
+                        title: "1. Job Security vs Job Satisfaction",
+                        content: [
+                            {
+                                heading: "JOB SECURITY",
+                                text: "Job security provides stability and financial security, allowing employees to plan for the future (loans, mortgages). However, it can hinder innovation and lead to complacency. Without the threat of job loss, productivity may decline.",
+                                keywords: [
+                                    { en: "financial security", vi: "sự an tâm về tài chính" },
+                                    { en: "hinder innovation", vi: "cản trở sự đổi mới" },
+                                    { en: "complacency", vi: "sự tự mãn" }
+                                ]
+                            },
+                            {
+                                heading: "JOB SATISFACTION",
+                                text: "Satisfied employees show higher motivation, engagement, and loyalty. They are more likely to put in extra effort and stay longer with a company. However, excessive satisfaction might make them resistant to change or reluctant to take on new challenges.",
+                                keywords: [
+                                    { en: "job loyalty", vi: "trung thành với công việc" },
+                                    { en: "burnout", vi: "kiệt sức" },
+                                    { en: "resistant to change", vi: "ngại thay đổi" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Work-Life Balance",
+                        content: [
+                            {
+                                heading: "DIFFICULTIES",
+                                text: "Technology makes it hard to 'switch off' outside office hours. Workplace cultures promoting long hours and high performance expectations also contribute. Financial pressure often forces the sole breadwinner to overwork, leading to a lack of boundaries.",
+                                keywords: [
+                                    { en: "switch off", vi: "ngắt kết nối/nghỉ ngơi" },
+                                    { en: "sole breadwinner", vi: "trụ cột duy nhất" },
+                                    { en: "lack of boundaries", vi: "thiếu ranh giới" }
+                                ]
+                            },
+                            {
+                                heading: "SOLUTIONS",
+                                text: "Set specific work hours and turn off notifications. Prioritize self-care (exercise, meditation). Develop time management using tools like calendars. Communicate needs clearly to employers and outsource non-essential tasks.",
+                                keywords: [
+                                    { en: "set boundaries", vi: "thiết lập ranh giới" },
+                                    { en: "prioritize self-care", vi: "ưu tiên chăm sóc bản thân" },
+                                    { en: "outsource or delegate", vi: "thuê ngoài hoặc ủy quyền" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. The Old and Young at the Workplace",
+                        content: [
+                            {
+                                heading: "THE OLD",
+                                text: "Older workers bring industry-specific knowledge and problem-solving skills. They are stable and committed, reducing recruitment costs. They can mentor younger staff, passing on expertise. However, they may be slower to adopt new technology or have higher salary expectations.",
+                                keywords: [
+                                    { en: "industry-specific knowledge", vi: "kiến thức chuyên ngành" },
+                                    { en: "lower turnover rates", vi: "tỉ lệ bỏ việc thấp" },
+                                    { en: "mentoring", vi: "hướng dẫn/kèm cặp" }
+                                ]
+                            },
+                            {
+                                heading: "THE YOUNG",
+                                text: "Younger workers are adaptable, energetic, and tech-savvy. They bring fresh perspectives and creative solutions. However, they often lack experience, have higher turnover rates, and may be overconfident.",
+                                keywords: [
+                                    { en: "tech-savviness", vi: "sự thành thạo công nghệ" },
+                                    { en: "fresh perspective", vi: "quan điểm mới mẻ" },
+                                    { en: "high turnover rate", vi: "tỉ lệ luân chuyển nhân sự cao" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "4. Gender & Leadership",
+                        content: [
+                            {
+                                heading: "MALE & FEMALE TRAITS",
+                                text: "Men are often seen as risk-takers with technical expertise and physical strength. Women are typically detail-oriented, empathetic, and team-oriented. However, gender should not dictate occupational roles; both genders succeed in diverse fields today.",
+                                keywords: [
+                                    { en: "risk-taking", vi: "chấp nhận rủi ro" },
+                                    { en: "detail-oriented", vi: "tỉ mỉ/chi tiết" },
+                                    { en: "empathetic", vi: "thấu cảm" }
+                                ]
+                            },
+                            {
+                                heading: "LEADERSHIP QUALITIES",
+                                text: "A good leader needs relevant skills (technical/creative), experience to handle challenges, and specific personality traits like resilience, self-awareness, and adaptability. Crucially, effective communication skills build trust and clarify goals.",
+                                keywords: [
+                                    { en: "resilience", vi: "sự kiên cường" },
+                                    { en: "self-awareness", vi: "sự thấu hiểu bản thân" },
+                                    { en: "build trust", vi: "xây dựng lòng tin" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Old vs Young",
+                        instruction: "Hãy liệt kê các ưu điểm của nhân viên trẻ so với nhân viên lớn tuổi dựa trên bài đọc.",
+                        sampleAnswer: "Young workers: Adaptable, energetic, creative, tech-savvy. Old workers: Experienced, stable, reliable, good mentors."
+                    },
+                    {
+                        title: "Writing: Work-Life Balance",
+                        instruction: "Tại sao nhiều người gặp khó khăn trong việc cân bằng công việc và cuộc sống? Hãy đưa ra 2 giải pháp.",
+                        sampleAnswer: "Reasons: Technology (always connected), high expectations. Solutions: 1. Set clear boundaries (designated work hours). 2. Prioritize self-care."
+                    }
+                ]
+            },
+            {
+                id: "unit5",
+                title: "Unit 5: Education",
+                category: "Education",
+                description: "Tiếp cận giáo dục: Học bổng, phổ cập giáo dục, các môn học cốt lõi và kỹ năng mềm, giáo dục toàn diện và các yếu tố ảnh hưởng đến việc học.",
+                questions: [
+                    "Should scholarships be given to students who make progress or the best-performing students?",
+                    "Should education be universal for all citizens or only focus on the younger generation?",
+                    "Is a well-rounded education better than specializing in a narrow range of subjects?",
+                    "Is it more important to learn national or international history and literature?",
+                    "What factors contribute to the effectiveness of the learning process?",
+                    "Can online learning completely replace traditional schools?"
+                ],
+                vocab: ["scholarship", "universal access", "core subjects", "soft skills", "well-rounded education", "specialized fields", "cultural identity", "social responsibilities", "rote memorization", "student-centered"],
+                ideas: [
+                    { section: "Scholarships", points: ["Progress: Encouragement, Promote equity (low income/geographical strains), Diversity.", "Best-performing: Recognition of excellence, Reputation, Innovation breakthroughs."] },
+                    { section: "Universal Access", points: ["Benefits: Break cycle of poverty, Reduce social disparities (gender/race), Health outcomes, Democracy.", "Adult Challenges: Cognitive decline (memory), Time (work/family), Lack of motivation (past failure).", "Invest in Young: Flexible mindset, Tech-receptive, Competitive workforce."] },
+                    { section: "Curriculum", points: ["Core Subjects: Foundation of knowledge, Critical thinking, Career/Academic opportunities, Exam success.", "Soft Skills: Teamwork, Leadership, Personal development, Competitive edge in job market.", "Honing: Discussions/Projects at school, Role models/Chores at home."] },
+                    { section: "Breadth vs Depth", points: ["Well-rounded: Interconnectedness, Adaptability, Versatility vs Time constraints, Lack of expertise.", "Narrow range: Expertise, Efficiency, Career preparation vs Narrow perspective, Obsolete skills."] },
+                    { section: "National vs Global", points: ["National: Cultural identity/heritage, Contextual understanding, Language subtleties.", "International: Global issues (environment), Social responsibilities, Job opportunities in multinationals."] },
+                    { section: "Learning Effectiveness", points: ["Internal: Motivation, Health (ADHD), Technology distractions.", "External: Teaching methods (student-centered vs rote), Curriculum relevance, Environment (noise/lighting).", "Online vs Traditional: Flexibility/Access vs Socialization/Hands-on/Labs."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Purpose of Scholarships",
+                        content: [
+                            {
+                                heading: "SCHOLARSHIPS FOR PROGRESS",
+                                text: "Scholarships for students who make progress serve as encouragement to continue striving. They promote equity for those facing financial strains or geographical difficulties who may take longer to reach their potential. This approach fosters diversity by supporting students from low-income or single-parent families.",
+                                keywords: [
+                                    { en: "promote equity", vi: "thúc đẩy sự công bằng" },
+                                    { en: "financial strains", vi: "khó khăn tài chính" },
+                                    { en: "strive", vi: "phấn đấu/nỗ lực" }
+                                ]
+                            },
+                            {
+                                heading: "SCHOLARSHIPS FOR EXCELLENCE",
+                                text: "Rewarding the best-performing students recognizes their commitment to excellence. These talented individuals help raise the school's reputation and often create future innovations or breakthroughs for the country. Recognition is a powerful motivator for continued high performance.",
+                                keywords: [
+                                    { en: "commitment to excellence", vi: "cam kết hướng tới sự xuất sắc" },
+                                    { en: "raise the reputation", vi: "nâng cao danh tiếng" },
+                                    { en: "breakthroughs", vi: "những đột phá" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Universal Access to Education",
+                        content: [
+                            {
+                                heading: "BENEFITS OF UNIVERSAL ACCESS",
+                                text: "Universal access is crucial for breaking the cycle of poverty and reducing social disparities like gender or racial inequality. Education also leads to better health outcomes (understanding hygiene/nutrition) and enhances democratic participation by creating informed citizens who critically analyze issues.",
+                                keywords: [
+                                    { en: "break the cycle of poverty", vi: "phá vỡ vòng lặp nghèo đói" },
+                                    { en: "social disparities", vi: "sự chênh lệch xã hội" },
+                                    { en: "informed citizens", vi: "những công dân có kiến thức" }
+                                ]
+                            },
+                            {
+                                heading: "CHALLENGES FOR ADULT LEARNERS",
+                                text: "Illiterate adults face limited cognitive abilities as they age, making it harder to remember information. They also have limited time due to full-time jobs and family responsibilities. Past negative experiences can lead to a lack of motivation or confidence in their ability to learn.",
+                                keywords: [
+                                    { en: "cognitive abilities", vi: "khả năng nhận thức" },
+                                    { en: "limited time", vi: "thời gian hạn hẹp" },
+                                    { en: "lack of motivation", vi: "thiếu động lực" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Core Subjects and Soft Skills",
+                        content: [
+                            {
+                                heading: "FOUNDATION OF KNOWLEDGE",
+                                text: "Core subjects (Math, Science, Language Arts) provide a foundation of knowledge essential for engaging with the world. They foster critical thinking and problem solving, allowing students to analyze information and find logical solutions. Moreover, they are essential for passing national exams and securing university admission.",
+                                keywords: [
+                                    { en: "foundation of knowledge", vi: "nền tảng kiến thức" },
+                                    { en: "critical thinking", vi: "tư duy phản biện" },
+                                    { en: "academic assessments", vi: "các bài đánh giá học thuật" }
+                                ]
+                            },
+                            {
+                                heading: "THE ROLE OF SOFT SKILLS",
+                                text: "Soft skills like teamwork, leadership, and communication are crucial for personal development and building relationships. In business, these skills make individuals desirable and competitive. Students can hone them through extracurricular activities at school or household duties and parent role-modeling at home.",
+                                keywords: [
+                                    { en: "hone soft skills", vi: "rèn luyện kỹ năng mềm" },
+                                    { en: "team-oriented", vi: "hướng tới tinh thần đồng đội" },
+                                    { en: "role models", vi: "hình mẫu" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "4. Breadth vs Specialization",
+                        content: [
+                            {
+                                heading: "WELL-ROUNDED EDUCATION",
+                                text: "A broad education across humanities, sciences, and arts helps students understand the interconnectedness of different disciplines. It fosters versatility and adaptability, preparing them for a rapidly changing job market. However, it can lead to time constraints and a lack of deep expertise in any single field.",
+                                keywords: [
+                                    { en: "interconnectedness", vi: "sự liên kết lẫn nhau" },
+                                    { en: "versatility", vi: "sự đa năng" },
+                                    { en: "time constraints", vi: "hạn chế về thời gian" }
+                                ]
+                            },
+                            {
+                                heading: "NARROW RANGE FOCUS",
+                                text: "Specializing in a few subjects allows for deep expertise and efficient career preparation. It optimize the learning journey for those with specific aspirations. Yet, it may result in a narrow perspective and leaves individuals vulnerable to job market disruptions if their specialized skills become obsolete.",
+                                keywords: [
+                                    { en: "deep expertise", vi: "chuyên môn sâu" },
+                                    { en: "career aspirations", vi: "nguyện vọng nghề nghiệp" },
+                                    { en: "vulnerable", vi: "dễ bị tổn thương/ảnh hưởng" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "5. National vs International Studies",
+                        content: [
+                            {
+                                heading: "NATIONAL IDENTITY",
+                                text: "Studying national literature and history shapes cultural identity and pride. It provides contextual understanding of the country's present situation, aiding in wise decision-making. It also enhances native language skills by exposing students to linguistic subtleties and idioms.",
+                                keywords: [
+                                    { en: "cultural identity", vi: "bản sắc văn hóa" },
+                                    { en: "contextual understanding", vi: "hiểu biết theo ngữ cảnh/tình hình" },
+                                    { en: "linguistic subtleties", vi: "sự tinh tế của ngôn ngữ" }
+                                ]
+                            },
+                            {
+                                heading: "GLOBAL PERSPECTIVE",
+                                text: "International studies broaden knowledge of the world and foster empathy by exposing students to diverse perspectives. It raises awareness of social responsibilities regarding global issues like climate change. Furthermore, it provides a competitive edge in multinational companies and global marketplaces.",
+                                keywords: [
+                                    { en: "foster empathy", vi: "nuôi dưỡng sự thấu cảm" },
+                                    { en: "social responsibilities", vi: "trách nhiệm xã hội" },
+                                    { en: "competitive edge", vi: "lợi thế cạnh tranh" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "6. Effective Learning & Online Education",
+                        content: [
+                            {
+                                heading: "FACTORS FOR SUCCESS",
+                                text: "Effective learning depends on student-centered teaching methods and a relevant curriculum. Distractions from technology and social media must be managed with clear usage policies. Additionally, environmental factors like noise, lighting, and classroom culture (peer influence) play a significant role.",
+                                keywords: [
+                                    { en: "student-centered", vi: "lấy học sinh làm trung tâm" },
+                                    { en: "relevance of curriculum", vi: "tính thực tiễn của chương trình học" },
+                                    { en: "mitigate distractions", vi: "giảm thiểu sự sao nhãng" }
+                                ]
+                            },
+                            {
+                                heading: "ONLINE VS TRADITIONAL",
+                                text: "Online learning offers flexibility and access to vast resources, benefiting busy professionals and remote students. However, traditional schools provide indispensable face-to-face interaction, holistic development through socialization, and access to specialized facilities like science labs or art studios.",
+                                keywords: [
+                                    { en: "flexibility", vi: "sự linh hoạt" },
+                                    { en: "indispensable role", vi: "vai trò không thể thiếu" },
+                                    { en: "holistic development", vi: "phát triển toàn diện" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Progress vs Excellence",
+                        instruction: "Liệt kê các lý do tại sao học bổng nên dành cho học sinh có sự tiến bộ (progress).",
+                        sampleAnswer: "1. Encouragement to continue. 2. Promote equity for those with financial/geographical strains. 3. Foster diversity."
+                    },
+                    {
+                        title: "Writing: Online Learning",
+                        instruction: "Liệt kê 2 ưu điểm của Online Learning và 2 lý do tại sao trường học truyền thống vẫn cần thiết.",
+                        sampleAnswer: "Online Pros: Flexibility, accessibility. Traditional Necessities: Socialization, hands-on experience/labs."
+                    }
+                ]
+            },
+            {
+                id: "unit6",
+                title: "Unit 6: Media and Communication",
+                category: "Media",
+                description: "Sự phát triển của truyền thông: Truyền hình (TV), báo in (Print Media), Internet và sự so sánh giữa giao tiếp bằng lời (Spoken) và văn bản (Written).",
+                questions: [
+                    "Does television have more positive or negative effects on children's development?",
+                    "Do you agree that traditional newspapers will disappear in the future?",
+                    {
+                        title: "1. The Evolution of News",
+                        content: [
+                            {
+                                heading: "PRINT VS DIGITAL",
+                                text: "Traditional newspapers are valued for their tactile experience and editorial credibility. However, they are struggling to compete with digital platforms that offer instant updates. Many argue that the digital footprint of online news is more efficient, though it often leads to information overload.",
+                                keywords: [
+                                    { en: "tactile", vi: "thuộc về xúc giác" },
+                                    { en: "credibility", vi: "sự uy tín/đáng tin" },
+                                    { en: "information overload", vi: "quá tải thông tin" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. The Impact of the Internet",
+                        content: [
+                            {
+                                heading: "SOCIAL CONNECTION VS ISOLATION",
+                                text: "While the Internet allows for face-to-face communication across borders, it can also lead to social isolation as people spend more time online than with family. Furthermore, the lack of censorship online has contributed to the rise of cybercrime and fake news.",
+                                keywords: [
+                                    { en: "face-to-face", vi: "trực tiếp" },
+                                    { en: "censorship", vi: "sự kiểm duyệt" },
+                                    { en: "cybercrime", vi: "tội phạm mạng" }
+                                ]
+                            }
+                        ],
+                        summary: "Truyền thông số mang lại sự tiện lợi vượt trội nhưng đòi hỏi người dùng phải có kỹ năng lọc thông tin và cân bằng với các mối quan hệ thực tế."
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Phân loại ưu nhược điểm",
+                        instruction: "Hãy liệt kê 3 ưu điểm của Internet và 3 nhược điểm đối với việc tiếp nhận tin tức.",
+                        sampleAnswer: "Pros: Speed, variety, cost. Cons: Fake news, lack of depth, eye strain."
+                    }
+                ]
+            },
+            {
+                id: "unit7",
+                title: "Unit 7: Technology",
+                category: "Technology",
+                description: "Tác động của công nghệ hiện đại: Trí tuệ nhân tạo (AI) và Robot, Công nghệ Vũ trụ (Space Tech), Xe tự lái và quyền kiểm soát các nghiên cứu khoa học.",
+                questions: [
+                    "Will AI and robots lead to job displacement or improved efficiency?",
+                    "Should governments prioritize space exploration or Earth-bound problems like poverty?",
+                    "What are the benefits and drawbacks of driverless cars?",
+                    "Who should control scientific research: governments, private companies, or individuals?"
+                ],
+                vocab: ["AI and robots", "job displacement", "repetitive tasks", "mass production", "space exploration", "national security", "driverless cars", "technical glitches", "citizen science", "financial return"],
+                ideas: [
+                    { section: "AI & Robots", points: ["Benefits: Efficiency/Productivity, High accuracy (no fatigue), Customer experience (social cues), Safety in harsh environments.", "Drawbacks: Job displacement (redundancy), Dependence on tech, Privacy concerns (information leaks), Lack of human emotion."] },
+                    { section: "Space Tech", points: ["Necessity: Scientific exploration (Hubble), National security (satellites), Environment (monitoring), Communication (GPS/broadcasting), Economy.", "Difficulties: High cost/Infrastructure, Needs international collaboration, Prioritizing other sectors (education/healthcare)."] },
+                    { section: "Driverless Cars", points: ["Benefits: Safety (eliminate human error), Mobility for disabled, Reduced congestion/emissions.", "Drawbacks: Increased unemployment (drivers), Hacker risks, Technical glitches/Dependability."] },
+                    { section: "Research Control", points: ["Government: Stability, Ethical methods, Security vs Political bias, Suppression of research.", "Private Companies: Abundant funds, Quick development vs Profit-driven (skip basic research), Conflicts of interest.", "Individuals: Citizen science projects, Personal interest funding."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Rise of AI and Robots",
+                        content: [
+                            {
+                                heading: "EFFICIENCY & SAFETY",
+                                text: "AI and robots excel at repetitive and mundane tasks, allowing humans to focus on complex and creative work. They operate tirelessly 24/7 without fatigue or distractions, ensuring high accuracy and reducing errors. Furthermore, they are essential for operating in harsh environments like space or nuclear plants, ensuring human safety.",
+                                keywords: [
+                                    { en: "mundane tasks", vi: "những công việc tẻ nhạt" },
+                                    { en: "tirelessly", vi: "không mệt mỏi" },
+                                    { en: "harsh environments", vi: "môi trường khắc nghiệt" }
+                                ]
+                            },
+                            {
+                                heading: "JOB DISPLACEMENT & DEPENDENCE",
+                                text: "The superiority of AI puts many traditional jobs, like bank tellers, at risk of displacement. Excessive reliance on technology can also lead to a decline in human skills and abilities. Moreover, privacy concerns arise from potential information leaks, and working solely with machines may cause a lack of emotional sensitivity in humans.",
+                                keywords: [
+                                    { en: "job displacement", vi: "sự thay thế công việc" },
+                                    { en: "redundant", vi: "dư thừa" },
+                                    { en: "insensitive", vi: "vô cảm" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. The Necessity of Space Technology",
+                        content: [
+                            {
+                                heading: "GLOBAL IMPORTANCE",
+                                text: "Space tech is vital for scientific exploration (understanding the universe), national security (intelligence gathering), and environmental monitoring (predicting disasters). It has revolutionized global communication through satellites and driven economic growth by fostering new industries like space tourism and GPS-based services.",
+                                keywords: [
+                                    { en: "scientific exploration", vi: "khám phá khoa học" },
+                                    { en: "intelligence gathering", vi: "thu thập tình báo" },
+                                    { en: "environmental monitoring", vi: "giám sát môi trường" }
+                                ]
+                            },
+                            {
+                                heading: "FINANCIAL & POLITICAL HURDLES",
+                                text: "The primary challenge is the astronomical cost of missions, requiring massive funding and high-level infrastructure that many countries lack. Furthermore, space projects demand long-term planning and international collaboration, which can be difficult for nations facing economic instability or limited diplomatic relationships.",
+                                keywords: [
+                                    { en: "astronomical cost", vi: "chi phí cực kỳ cao" },
+                                    { en: "economic instability", vi: "sự bất ổn kinh tế" },
+                                    { en: "diplomatic relationships", vi: "quan hệ ngoại giao" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. The Future of Driverless Cars",
+                        content: [
+                            {
+                                heading: "SAFETY & MOBILITY",
+                                text: "Self-driving cars aim to eliminate human errors like distracted driving or speeding, potentially saving thousands of lives. They offer unprecedented mobility for people with disabilities, providing them with independence. They can also optimize traffic flow, reducing congestion and harmful carbon emissions.",
+                                keywords: [
+                                    { en: "eliminate human errors", vi: "loại bỏ lỗi của con người" },
+                                    { en: "disabilities", vi: "người khuyết tật" },
+                                    { en: "carbon emissions", vi: "khí thải các-bon" }
+                                ]
+                            },
+                            {
+                                heading: "UNEMPLOYMENT & CYBER RISKS",
+                                text: "The prevalence of automated vehicles threatens traditional driving jobs, risking widespread unemployment and economic disruption. Additionally, these complex software systems are vulnerable to hacking, where a breach could lead to a loss of vehicle control. Technical glitches also raise concerns about their consistent dependability.",
+                                keywords: [
+                                    { en: "vulnerable to hacking", vi: "dễ bị tin tặc tấn công" },
+                                    { en: "dependability", vi: "tính đáng tin cậy" },
+                                    { en: "technical glitches", vi: "sự cố kỹ thuật" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "4. Control of Scientific Research",
+                        content: [
+                            {
+                                heading: "GOVERNMENT VS PRIVATE FUNDING",
+                                text: "Governments provide stable funding for basic research that lacks immediate profit, ensuring ethical methods and preventing criminal misuse of sensitive science like nuclear power. Conversely, private companies have abundant funds for quick product development but may prioritize profit over quality or suppress unfavorable findings.",
+                                keywords: [
+                                    { en: "basic research", vi: "nghiên cứu cơ bản" },
+                                    { en: "profit motives", vi: "động cơ lợi nhuận" },
+                                    { en: "conflicts of interest", vi: "xung đột lợi ích" }
+                                ]
+                            },
+                            {
+                                heading: "INDIVIDUAL CONTRIBUTIONS",
+                                text: "Individuals also contribute through citizen science projects, allowing the public to help collect data or participate in experiments. Personal funding enables people to support niche areas of interest that might be overlooked by larger organizations, fostering diverse scientific exploration.",
+                                keywords: [
+                                    { en: "citizen science", vi: "khoa học công dân" },
+                                    { en: "personal funding", vi: "tài chính cá nhân" },
+                                    { en: "overlooked", vi: "bị bỏ qua" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Space Exploration",
+                        instruction: "Tại sao thám hiểm không gian lại quan trọng đối với an ninh quốc gia?",
+                        sampleAnswer: "Satellites are used for intelligence gathering, communication, and navigation. They monitor missile launches and track movements, which are vital for a country's safety."
+                    },
+                    {
+                        title: "Analysis: AI & Jobs",
+                        instruction: "Liệt kê 2 công việc dễ bị AI thay thế và giải thích tại sao.",
+                        sampleAnswer: "1. Bank tellers: Automated transaction models can work 24/7 without fatigue. 2. Factory assembly: Robots can handle repetitive tasks with higher accuracy and lower error rates."
+                    }
+                ]
+            },
+            {
+                id: "unit8",
+                title: "Unit 8: Crime",
+                category: "Crime",
+                description: "Tội phạm và hình phạt: Nguyên nhân sinh học, tâm lý và kinh tế xã hội; các biện pháp giải quyết (Bỏ tù, Cải tạo, Giáo dục, Công nghệ) và Tội phạm mạng (Cybercrime).",
+                questions: [
+                    "What are the main causes of crime in the 21st century?",
+                    "Should imprisonment or rehabilitation be the primary response to criminal behavior?",
+                    "How can technology and education help reduce crime rates?",
+                    "What are the causes and effects of cybercrime on individuals and society?"
+                ],
+                vocab: ["genetic disorders", "personality disorders", "socio-economic factors", "nurturing environment", "imprisonment", "rehabilitation", "vocational training", "cybercrime", "interconnectivity", "anonymity"],
+                ideas: [
+                    { section: "Causes", points: ["Biological/Psychological: Genetic disorders, personality disorders (lack of empathy), pressure (anxiety/depression).", "Socio-economic: Nurturing environment (poor parenting, abuse, bullying), Financial burdens (survival theft), Inequality (resentment/anger)."] },
+                    { section: "Common Practices", points: ["Imprisonment: Isolate dangerous criminals, deterrent, justice for victims vs Violent alliances, social isolation/stigma upon release.", "Rehabilitation: Counseling/Therapy, vocational training (carpentry, coding) vs Cost, ineffectiveness for ingrained behavior, understaffing."] },
+                    { section: "Other Measures", points: ["Education: Family (parenting courses, values), School (laws, non-violence culture), Government (outreach).", "Technology: Surveillance (CCTV), DNA technology (fingerprinting), Mobile apps (anonymous reporting).", "Collaboration: Professional help, law enforcement partnerships, international cooperation."] },
+                    { section: "Cybercrime", points: ["Causes: Lack of awareness, interconnectivity, online anonymity, financial gain, political motivation.", "Effects: Financial losses, identity theft, reputation damage, disruption of essential services (power/hospitals), psychological trauma.", "Solutions: Stricter regulations, encryption/firewalls, transparency, international cooperation."] }
+                ],
+                reading: [
+                    {
+                        title: "1. Understanding the Roots of Crime",
+                        content: [
+                            {
+                                heading: "BIOLOGICAL & PSYCHOLOGICAL FACTORS",
+                                text: "Some individuals are born with genetic disorders or brain injuries that impair impulse control, making them unable to act like others in society. Psychological personality disorders can lead to a lack of empathy and morality. Furthermore, extreme pressure during development can cause anxiety and depression, leading individuals to rebel against social norms.",
+                                keywords: [
+                                    { en: "genetic disorders", vi: "rối loạn gen" },
+                                    { en: "impulse control", vi: "kiểm soát xung động" },
+                                    { en: "lack of empathy", vi: "thiếu sự thấu cảm" }
+                                ]
+                            },
+                            {
+                                heading: "SOCIO-ECONOMIC FACTORS",
+                                text: "Nurturing environments are crucial; poor parenting, abuse, or domestic separation can lead to antisocial behaviors. Financial burdens often drive vulnerable people to seek quick money through illegal means for survival. Inequality also plays a role, as a sense of injustice and resentment can manifest in criminal acts.",
+                                keywords: [
+                                    { en: "nurturing environment", vi: "môi trường nuôi dưỡng" },
+                                    { en: "make ends meet", vi: "xoay sở đủ sống" },
+                                    { en: "sense of injustice", vi: "cảm giác bất công" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Effectiveness of Crime Solutions",
+                        content: [
+                            {
+                                heading: "PRISON VS REHABILITATION",
+                                text: "Imprisonment isolates dangerous offenders and serves as a deterrent through the loss of freedom. However, prisons can become 'crime schools' where inmates form alliances and learn new criminal behaviors. Rehabilitation centers offer a better path for juveniles through counseling and vocational training, though they are often understaffed and expensive to operate.",
+                                keywords: [
+                                    { en: "form alliances", vi: "hình thành băng đảng/liên minh" },
+                                    { en: "vocational training", vi: "đào tạo nghề" },
+                                    { en: "understaffing", vi: "thiếu nhân lực" }
+                                ]
+                            },
+                            {
+                                heading: "PREVENTATIVE MEASURES",
+                                text: "Education is a long-term solution, starting with family values and school lessons on law. Modern technology like CCTV and DNA fingerprinting has revolutionized crime-solving by providing reliable evidence. Collaboration between governments and law enforcement agencies is also essential to combat international criminal organizations.",
+                                keywords: [
+                                    { en: "instilling values", vi: "thấm nhuần các giá trị" },
+                                    { en: "DNA fingerprinting", vi: "xét nghiệm/dấu vân tay DNA" },
+                                    { en: "combat organizations", vi: "chiến đấu với các tổ chức" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. The Emerging Threat: Cybercrime",
+                        content: [
+                            {
+                                heading: "CAUSES OF ONLINE CRIME",
+                                text: "Cybercrime is driven by the relative ease of anonymity online and the increasing interconnectivity of devices. Many criminals are motivated by financial gain (stealing credit card data) or political agendas. A lack of cybersecurity awareness among users creates vulnerabilities that hackers exploit for ego gratification or revenge.",
+                                keywords: [
+                                    { en: "anonymity online", vi: "sự ẩn danh trực tuyến" },
+                                    { en: "financial gain", vi: "lợi ích tài chính" },
+                                    { en: "ego gratification", vi: "sự hài lòng về cái tôi" }
+                                ]
+                            },
+                            {
+                                heading: "SEVERE CONSEQUENCES",
+                                text: "The effects are far-reaching, from personal identity theft to the disruption of critical infrastructure like hospitals or power grids, which can even endanger lives. Victims often suffer from psychological distress and trauma. Solutions require stringent regulations, advanced firewalls, and greater transparency from tech companies.",
+                                keywords: [
+                                    { en: "critical infrastructure", vi: "cơ sở hạ tầng trọng yếu" },
+                                    { en: "identity theft", vi: "đánh cắp danh tính" },
+                                    { en: "stringent regulations", vi: "quy định nghiêm ngặt" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Causes of Crime",
+                        instruction: "Liệt kê 2 nguyên nhân sinh học/tâm lý và 2 nguyên nhân kinh tế xã hội dẫn đến tội phạm.",
+                        sampleAnswer: "Biological: Genetic disorders, personality disorders. Socio-economic: Poor parenting/abuse, financial burdens/poverty."
+                    },
+                    {
+                        title: "Debate: Prison vs Rehab",
+                        instruction: "Nêu 1 ưu điểm và 1 nhược điểm của việc bỏ tù (imprisonment).",
+                        sampleAnswer: "Benefit: Isolate dangerous criminals to maintain peace. Drawback: Social isolation/stigma makes reintegration difficult, leading to reoffending."
+                    }
+                ]
+            },
+            {
+                id: "unit9",
+                title: "Unit 9: Travel & Tourism",
+                category: "Travel",
+                description: "Du lịch và lữ hành: Lợi ích của việc đi du lịch và gap year (mở mang đầu óc, kỹ năng, kinh tế); Tác động tiêu cực của du lịch (môi trường, kinh tế, văn hóa) và những rủi ro của gap year.",
+                questions: [
+                    "What are the main benefits of traveling abroad for study or leisure?",
+                    "How does tourism affect the economy and environment of a destination?",
+                    "What are the potential drawbacks of taking a gap year before university?",
+                    "Can international tourism cause cultural clashes between locals and visitors?"
+                ],
+                vocab: ["broaden horizons", "immerse", "gap year", "financial constraints", "deforestation", "habitat loss", "inflationary pressures", "cultural identity", "authenticity", "sustainable practices"],
+                ideas: [
+                    { section: "Benefits", points: ["Broaden horizons: Exposure to new cultures/perspectives/backgrounds, first-hand knowledge.", "Acquiring skills: Language immersion (local accents), soft skills (time/budget management).", "Discoveries: Contribution to biotechnology/medicine (Amazon traditional remedies).", "Economy: Job opportunities (30% in Bali), ripple effect on retailing (Japan souvenirs).", "Well-being: Expand social circles, boost confidence (stepping out of comfort zone)."] },
+                    { section: "Gap Year Drawbacks", points: ["Delayed progress: Postponed graduation, setback in career momentum.", "Financial constraints: Stress from lack of regular income, careful budgeting required.", "Danger: Exposure to accidents, health issues, or hazardous/unsafe job environments."] },
+                    { section: "Tourism Drawbacks", points: ["Environment: Pollution (transportation greenhouse gases, cruise water contamination), resource depletion (excessive water use), habitat loss (infrastructure construction).", "Economy: Vulnerability to uncontrollable factors (COVID-19, natural disasters), inflation (driving up costs for locals).", "Culture: Erosion of traditions (commercial exploitation), loss of authenticity, cultural clashes (disrespect for sacred places)."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Positive Impact of International Travel",
+                        content: [
+                            {
+                                heading: "BROADENING HORIZONS & SKILL ACQUISITION",
+                                text: "Traveling abroad, whether for study or work, significantly broadens a person's horizons by exposing them to different ways of living. This first-hand experience helps individuals appreciate others' beliefs and values. Furthermore, long-term stays allow for language immersion, where one can pick up local accents and phrases not found in textbooks. Being on one's own also fosters necessary life skills like problem-solving and budget management.",
+                                keywords: [
+                                    { en: "broaden one's horizons", vi: "mở mang tầm mắt/kiến thức" },
+                                    { en: "first-hand experience", vi: "trải nghiệm trực tiếp" },
+                                    { en: "language immersion", vi: "sự đắm mình vào ngôn ngữ" }
+                                ]
+                            },
+                            {
+                                heading: "BOOSTING ECONOMY & WELL-BEING",
+                                text: "Tourism is a vital economic driver, creating millions of jobs in hospitality and transportation. It also supports local retailing as tourists purchase souvenirs and local products. On a personal level, traveling enhances well-being by providing adventure and helping individuals break out of routines, which leads to increased life satisfaction and confidence.",
+                                keywords: [
+                                    { en: "economic driver", vi: "động lực kinh tế" },
+                                    { en: "ripple effect", vi: "hiệu ứng lan tỏa" },
+                                    { en: "step out of comfort zone", vi: "bước ra khỏi vùng an toàn" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Challenges of Travel and the Gap Year",
+                        content: [
+                            {
+                                heading: "DRAWBACKS OF TAKING A GAP YEAR",
+                                text: "A primary concern of a gap year is the disruption of one's education timeline, which may lead to challenges in readjusting to academic routines later. Financial constraints can also cause significant stress without a regular income. Additionally, adventurous travelers may face inherent risks like accidents or encountering unsafe environments in unfamiliar destinations.",
+                                keywords: [
+                                    { en: "educational timeline", vi: "tiến trình học tập" },
+                                    { en: "financial constraints", vi: "hạn chế về tài chính" },
+                                    { en: "inherent risks", vi: "rủi ro tiềm ẩn" }
+                                ]
+                            },
+                            {
+                                heading: "ENVIRONMENTAL & CULTURAL IMPACTS",
+                                text: "Tourism can lead to environmental degradation through pollution from the transportation sector and the depletion of local resources like water. Culturally, the influx of tourists can erode local traditions as communities modify practices for commercial interests, leading to a loss of authenticity. Misunderstandings between locals and visitors can also spark cultural clashes and hostility.",
+                                keywords: [
+                                    { en: "environmental degradation", vi: "suy thoái môi trường" },
+                                    { en: "loss of authenticity", vi: "mất đi tính xác thực" },
+                                    { en: "cultural clashes", vi: "xung đột văn hóa" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Benefits of Travel",
+                        instruction: "Liệt kê 3 lợi ích chính của việc đi du lịch nước ngoài.",
+                        sampleAnswer: "1. Broaden horizons/exposure to new cultures. 2. Acquire new skills (language, management). 3. Enhance personal well-being and confidence."
+                    },
+                    {
+                        title: "Analysis: The Gap Year",
+                        instruction: "Tại sao một số sinh viên lại gặp khó khăn sau khi kết thúc gap year?",
+                        sampleAnswer: "Because they may find it difficult to readjust to academic routines and might have fallen behind their peers in their education timeline."
+                    }
+                ]
+            },
+            {
+                id: "unit10",
+                title: "Unit 10: Health",
+                category: "Health",
+                description: "Sức khỏe hiện đại: Lối sống thụ động (Sedentary lifestyle), tiêu thụ thức ăn nhanh/nhiều đường, phẫu thuật thẩm mỹ và lợi ích của thể thao/tập thể dục.",
+                questions: [
+                    "What are the main causes and effects of a sedentary lifestyle in modern society?",
+                    "How can governments and individuals reduce the consumption of sugary foods?",
+                    "What are the pros and cons of undergoing cosmetic surgery?",
+                    "Why is playing team sports beneficial for a person's physical and social development?"
+                ],
+                vocab: ["sedentary lifestyle", "metabolism", "cardiovascular ability", "calorie-dense", "nutritional deficiencies", "reward center", "birth defects", "self-esteem", "bone density", "endorphins"],
+                ideas: [
+                    { section: "Sedentary Lifestyle", points: ["Causes: Widespread technology (smartphones/streaming), lack of time (busy schedules), urbanization (lack of green spaces/bike lanes), mental health (depression/anxiety).", "Effects: Physical (weaker metabolism, obesity, diabetes), Mental (brain stress, sleep deprivation), Social (isolation, low confidence).", "Solutions: Reduce screen time, regular walking, join fitness clubs, stand-and-sit workstations."] },
+                    { section: "Sugary/Fast Food", points: ["Causes: Availability/Convenience (vending machines/fast-food rest.), Addiction (dopamine/reward center), Lack of awareness (nutrition).", "Effects: Mental (mood swings, irritability, cognitive impairment), Physical (weight gain, chronic diseases, digestive issues).", "Solutions: Govt (Sugar taxes, education campaigns, marketing regulation), Individuals (Read labels, cut back gradually, balanced diet)."] },
+                    { section: "Cosmetic Surgery", points: ["Reasons: Medical (birth defects like cleft lip, injuries), Social pressure (media standards), Idolization (emulating celebrities), Career (modeling/acting).", "Pros: Enhance appearance, boost self-esteem, improve employability.", "Cons: Health risks (postoperative complications, scarring), Addiction/Financial strain, Perpetuating unrealistic stereotypes."] },
+                    { section: "Sports/Exercise", points: ["Physical: Weight management (burn calories), strengthen bones/muscles (bone density), reduce chronic risks (insulin sensitivity).", "Mental: Release endorphins (reduce pain, induce happiness), sense of belonging, alleviate loneliness.", "Soft Skills: Communication (listening/responding), Collaboration (coordinating efforts), Leadership (motivating others, decision-making)."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Modern Health Epidemic: Sedentary Lifestyles",
+                        content: [
+                            {
+                                heading: "THE TECH & URBANIZATION IMPACT",
+                                text: "The widespread use of smartphones and streaming services has led to people sitting for long hours without moving much. Urbanization also plays a role; as cities grow more congested, a lack of green spaces and safe bike lanes discourages walking. This lifestyle reduces the body's ability to function efficiently, leading to weaker metabolism and chronic diseases like diabetes.",
+                                keywords: [
+                                    { en: "sedentary lifestyle", vi: "lối sống thụ động/ít vận động" },
+                                    { en: "weaker metabolism", vi: "sự trao đổi chất yếu hơn" },
+                                    { en: "urbanization", vi: "sự đô thị hóa" }
+                                ]
+                            },
+                            {
+                                heading: "MENTAL & SOCIAL CONSEQUENCES",
+                                text: "Constant brain activity from device usage causes stress and sleep deprivation, which impairs learning ability. Many individuals, especially students, may isolate themselves from society, gradually losing confidence in face-to-face communication.",
+                                keywords: [
+                                    { en: "sleep deprivation", vi: "sự thiếu ngủ" },
+                                    { en: "social isolation", vi: "sự cô lập xã hội" },
+                                    { en: "face-to-face communication", vi: "giao tiếp trực tiếp" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Diet and Cosmetic Surgery",
+                        content: [
+                            {
+                                heading: "THE SUGAR CYCLE",
+                                text: "Sugary foods stimulate the reward center of the brain, releasing dopamine and creating an addictive cycle of 'emotional eating' to cope with stress. Governments can intervene by imposing sugar taxes and regulating food marketing to children to promote healthier diets.",
+                                keywords: [
+                                    { en: "reward center", vi: "trung tâm (kích thích) sự thỏa mãn" },
+                                    { en: "emotional eating", vi: "ăn uống theo cảm xúc" },
+                                    { en: "sugar taxes", vi: "thuế đường" }
+                                ]
+                            },
+                            {
+                                heading: "REASONS FOR COSMETIC SURGERY",
+                                text: "While some undergo surgery for medical reasons like birth defects or injuries, others feel social pressure to conform to media-promoted beauty standards. Although it can boost self-esteem and employability, risks include postoperative complications and the danger of addiction leading to financial strain.",
+                                keywords: [
+                                    { en: "birth defects", vi: "khiếm khuyết bẩm sinh" },
+                                    { en: "conform to societal expectations", vi: "tuân theo kỳ vọng của xã hội" },
+                                    { en: "postoperative complications", vi: "biến chứng sau phẫu thuật" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. The Power of Physical Activity",
+                        content: [
+                            {
+                                heading: "STRENGTHENING BODY AND MIND",
+                                text: "Exercise helps maintain weight and increase bone density, reducing the risk of osteoporosis. Mentally, the release of endorphins induces feelings of pleasure and induces a sense of belonging in a team environment.",
+                                keywords: [
+                                    { en: "bone density", vi: "mật độ xương" },
+                                    { en: "induce feelings of pleasure", vi: "tạo ra cảm giác vui vẻ" },
+                                    { en: "osteoporosis", vi: "loãng xương" }
+                                ]
+                            },
+                            {
+                                heading: "DEVELOPING ESSENTIAL SOFT SKILLS",
+                                text: "Team sports foster effective communication, where individuals must listen and respond appropriately to reach a shared goal. Participants also learn collaboration—sharing responsibilities and coordinating efforts—and leadership skills like motivating others and making decisions under pressure.",
+                                keywords: [
+                                    { en: "collaboratively", vi: "một cách cộng tác" },
+                                    { en: "shared goal", vi: "mục tiêu chung" },
+                                    { en: "leadership skills", vi: "kỹ năng lãnh đạo" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Sedentary Lifestyle",
+                        instruction: "Nêu 2 nguyên nhân và 2 hậu quả của lối sống thụ động.",
+                        sampleAnswer: "Causes: Widespread technology, busy schedules/lack of time. Effects: Obesity, mental stress/anxiety."
+                    },
+                    {
+                        title: "Analysis: Sugar and Health",
+                        instruction: "Chính phủ có thể làm gì để giảm việc tiêu thụ đường?",
+                        sampleAnswer: "Impose sugar taxes, launch public education campaigns, and regulate food marketing to children."
+                    }
+                ]
+            },
+            {
+                id: "unit11",
+                title: "Unit 11: Business",
+                category: "Business",
+                description: "Kinh tế và Doanh nghiệp: Quảng cáo (Lợi ích/Tác hại), Mua sắm (Trực tuyến vs Truyền thống), và Xuất nhập khẩu (Tác động kinh tế/văn hóa).",
+                questions: [
+                    "What are the primary benefits and drawbacks of advertising for companies and consumers?",
+                    "Compare the advantages and disadvantages of online shopping versus traditional shopping.",
+                    "How do imported goods affect a country's economy and its domestic culture?",
+                    "Should governments regulate advertising that targets vulnerable groups like children?"
+                ],
+                vocab: ["brand recognition", "trust and goodwill", "testimonials", "intrusive", "misleading information", "stereotyping", "outflow of foreign exchange", "currency devaluation", "trade deficit", "diversify supply chain"],
+                ideas: [
+                    { section: "Advertising", points: ["Benefits: Raise awareness (first-time buyers), build trust (testimonials/social proof), reach new audiences (different platforms), differentiate brand (competitive edge).", "Drawbacks: Intrusive/annoying (pop-up ads), misleading (unsupported claims), promote unnecessary spending (sense of urgency), perpetuate stereotypes (beauty standards).", "Corporate Drawbacks: High cost (strain on budget), ineffectiveness (wrong audience), potential backlash."] },
+                    { section: "Shopping", points: ["Online Benefits: Convenience (shop anytime), better deals (lower overhead), easy access to info (reviews), wider selection.", "Online Drawbacks: Shipping costs, impulse buying, fraud/scammers, longer wait times.", "Traditional Benefits: Personal experience (touch/try on), social interaction (employees/shoppers), immediate gratification, bargaining.", "Traditional Drawbacks: Time-consuming (waiting in line), limited accessibility (remote areas), limited variety/hours."] },
+                    { section: "Imports", points: ["Benefits: Cut manufacturing costs (cheaper raw materials), improve efficiency (specialized components), reduce risks (diversified supply chain), increase variety for consumers, job creation (logistics/retail).", "Drawbacks: Outflow of foreign exchange (currency devaluation), dependency on foreign supplies (vulnerability), impact on domestic culture (eroding local industries/traditions)."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Dual Nature of Advertising",
+                        content: [
+                            {
+                                heading: "BENEFITS FOR CONSUMERS AND COMPANIES",
+                                text: "Advertising is a vital tool for raising awareness among first-time buyers and invoking curiosity about innovative features. For companies, it builds trust through testimonials and validates brand reliability with social proof. Iconic campaigns, like Nike's 'Just Do It', help businesses differentiate themselves and become industry leaders by highlighting unique value propositions.",
+                                keywords: [
+                                    { en: "brand recognition", vi: "độ nhận diện thương hiệu" },
+                                    { en: "trust and goodwill", vi: "niềm tin và thiện chí" },
+                                    { en: "competitive edge", vi: "lợi thế cạnh tranh" }
+                                ]
+                            },
+                            {
+                                heading: "THE DARK SIDE OF COMMERCIALS",
+                                text: "However, advertising can be intrusive and annoying, such as pop-up ads that interrupt the user experience. Misleading information can lead to consumer frustration if products fail to deliver on promises. Furthermore, constant exposure to certain advertisements can reinforce social prejudices and perpetuate unrealistic beauty standards, leading to negative body images among young people.",
+                                keywords: [
+                                    { en: "intrusive and annoying", vi: "cản trở và gây phiền nhiễu" },
+                                    { en: "misleading information", vi: "thông tin sai lệch" },
+                                    { en: "promote stereotyping", vi: "thúc đẩy sự rập khuôn" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. The Evolution of Shopping",
+                        content: [
+                            {
+                                heading: "ONLINE SHOPPING AND ITS DISRUPTIONS",
+                                text: "Online commerce offers unparalleled convenience, allowing busy people to shop anytime and compare prices across multiple retailers easily. However, it carries risks like fraud from fake websites and impulse buying. Shipping costs and delivery delays can also interfere with a shopper's schedule.",
+                                keywords: [
+                                    { en: "impulse buying", vi: "mua sắm không dự tính/ngẫu hứng" },
+                                    { en: "fraud", vi: "sự lừa lọc" },
+                                    { en: "convenience", vi: "sự thuận tiện" }
+                                ]
+                            },
+                            {
+                                heading: "THE VALUE OF TRADITIONAL RETAIL",
+                                text: "Traditional shopping remains relevant through personal experience—the ability to touch and try products—and social interaction with staff. It also provides immediate gratification and opportunities for bargaining. Conversely, it is often time-consuming and less accessible for those in remote areas or with limited mobility.",
+                                keywords: [
+                                    { en: "immediate gratification", vi: "sự hài lòng ngay lập tức" },
+                                    { en: "bargaining", vi: "sự mặc cả/trả giá" },
+                                    { en: "time-consuming", vi: "tốn thời gian" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Impact of International Trade",
+                        content: [
+                            {
+                                heading: "ADVANTAGES OF IMPORTS",
+                                text: "Importing raw materials and finished goods helps businesses cut manufacturing costs and streamline production. Diversifying the supply chain reduces the risk of disruptions from political instability. Moreover, imports provide consumers with a wider variety of specialized products not produced domestically, such as exotic fruits.",
+                                keywords: [
+                                    { en: "cut manufacturing costs", vi: "cắt giảm chi phí sản xuất" },
+                                    { en: "diversify supply chain", vi: "đa dạng hóa chuỗi cung ứng" },
+                                    { en: "streamline production", vi: "hợp lý hóa sản xuất" }
+                                ]
+                            },
+                            {
+                                heading: "ECONOMIC AND CULTURAL CHALLENGES",
+                                text: "Over-reliance on imports can cause an outflow of foreign exchange and lead to a trade deficit or currency devaluation. Culturally, the dominance of foreign goods can erode domestic industries and traditional values, as seen when local preferences shift toward international brands.",
+                                keywords: [
+                                    { en: "outflow of foreign exchange", vi: "dòng ngoại tệ ra (khỏi nước)" },
+                                    { en: "trade deficit", vi: "thâm hụt thương mại" },
+                                    { en: "erode domestic industries", vi: "làm suy giảm các ngành công nghiệp nội địa" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Advertising Impact",
+                        instruction: "Tác động tiêu cực của quảng cáo đối với giới trẻ là gì?",
+                        sampleAnswer: "Quảng cáo có thể củng cố các định kiến xã hội (stereotypes) và duy trì các tiêu chuẩn về vẻ đẹp phi thực tế (unrealistic beauty standards), dẫn đến tâm lý tự ti về ngoại hình."
+                    },
+                    {
+                        title: "Analysis: Online vs Traditional",
+                        instruction: "Tại sao mua sắm truyền thống vẫn có lợi thế so với trực tuyến?",
+                        sampleAnswer: "Because it offers physical interaction with products (touching/trying on), immediate gratification (taking items home instantly), and social interaction with staff/other shoppers."
+                    }
+                ]
+            },
+            {
+                id: "unit12",
+                title: "Unit 12: Historic - Cultural Values",
+                category: "Culture",
+                description: "Văn hóa và giá trị lịch sử: Sự suy giảm của truyền thống, vai trò của ngôn ngữ toàn cầu, bảo tàng số và tác động của toàn cầu hóa.",
+                questions: [
+                    "What are the main causes and effects of the decline in traditional customs and practices?",
+                    "Does the dominance of English as a global language lead to the disappearance of minority languages?",
+                    "Compare the benefits and drawbacks of traditional museums versus digital museums.",
+                    "Is globalization a purely positive development for cultural identity?"
+                ],
+                vocab: ["cultural assimilation", "social disintegration", "cultural identity", "dissemination of knowledge", "immediate gratification", "interactive features", "humanitarian aid", "environmental degradation", "prestige", "indigenous"],
+                ideas: [
+                    { section: "Traditions", points: ["Causes: Migration/Urbanization (loss of roots), Globalization (cultural assimilation), Changing values (individualism), Technology (fast-paced life).", "Effects: Loss of cultural identity, social disintegration (Tet example), loss of historical knowledge (calligraphy example), economic impact (craft decline)."] },
+                    { section: "Language", points: ["Decline Causes: Dominance of majority language (prestige), Demographic factors (population decline), Govt policies (limited education).", "English Advantages: Dissemination of scientific/academic knowledge, language of top universities (Harvard/Oxford), international business clarity.", "Effects of Common Language: Loss of cultural heritage (uniqueness), social exclusion (isolation), economic disadvantages (barrier to employment)."] },
+                    { section: "Museums", points: ["Traditional: Engagement (immersive/scale), social experience (friends/family), guided tours (context). Drawbacks: Expensive/time-consuming, crowded, fragile access.", "Digital: Accessibility/Affordability (explore from anywhere), high-resolution images, interactive features (quizzes). Drawbacks: No physical sense of scale/texture, copyright limits."] },
+                    { section: "Globalization", points: ["Advantages: Fostering economic growth (larger markets), access to new knowledge (medicine/engineering), promoting diversity (understanding), addressing global issues (UN/WHO).", "Disadvantages: Threaten local traditions (Westernization), harsher competition for jobs (outsourcing), environmental harm (travel/overpopulation)."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Erosion of Tradition",
+                        content: [
+                            {
+                                heading: "URBANIZATION AND ASSIMILATION",
+                                text: "As people migrate from rural to urban centers, they often lose touch with their cultural roots and adopt 'urban' lifestyles focused on individualism and personal success. Globalization further accelerates this through 'cultural assimilation', where Western fashion and fast food replace unique local dress and cuisine, often commercializing sacred traditions like the lion dance for tourism.",
+                                keywords: [
+                                    { en: "migration and urbanization", vi: "sự di cư và đô thị hóa" },
+                                    { en: "cultural assimilation", vi: "sự đồng hóa văn hóa" },
+                                    { en: "individualism", vi: "tính cá nhân" }
+                                ]
+                            },
+                            {
+                                heading: "SOCIAL AND ECONOMIC CONSEQUENCES",
+                                text: "The decline of traditions like the Tet holiday leads to social disintegration and a breakdown of community cohesion, particularly alienating the elderly. Furthermore, losing skills like calligraphy results in a loss of historical knowledge, while the decline of traditional crafts like weaving in Mexico leads to unemployment and local economic poverty.",
+                                keywords: [
+                                    { en: "social disintegration", vi: "sự tan rã xã hội/mất kết nối" },
+                                    { en: "loss of historical knowledge", vi: "mất kiến thức lịch sử" },
+                                    { en: "economic impact", vi: "tác động kinh tế" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Language and Global Connection",
+                        content: [
+                            {
+                                heading: "THE DOMINANCE OF ENGLISH",
+                                text: "English facilitates the dissemination of scientific and academic knowledge worldwide, serving as the language of renowned institutions like Oxford and Cambridge. In international business, it streamlines processes and prevents confusion between parties. However, this dominance often marginalizes minority languages that lack the prestige and resources to compete on media platforms.",
+                                keywords: [
+                                    { en: "dissemination of knowledge", vi: "sự truyền bá kiến thức" },
+                                    { en: "prestige", vi: "uy tín/thế lực" },
+                                    { en: "streamline processes", vi: "hợp lý hóa quy trình" }
+                                ]
+                            },
+                            {
+                                heading: "THE COST OF A COMMON TONGUE",
+                                text: "While a common language is convenient, it results in a less diverse and vibrant world. When a language dies, the unique identity and beauty of its community are lost forever. Those not proficient in the dominant language face social exclusion and struggle to sustain their lives due to employment barriers.",
+                                keywords: [
+                                    { en: "loss of cultural heritage", vi: "đánh mất di sản văn hóa" },
+                                    { en: "social exclusion", vi: "sự tách biệt xã hội" },
+                                    { en: "sustain their life", vi: "duy trì cuộc sống" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Museums and Globalization",
+                        content: [
+                            {
+                                heading: "TRADITIONAL VS. DIGITAL MUSEUMS",
+                                text: "Traditional museums like the Louvre offer an immersive experience where visitors can appreciate the scale and texture of the Mona Lisa in person. In contrast, digital museums provide accessibility and affordability, allowing anyone to view high-resolution images from home. However, digital tours cannot replicate the physical sense of scale, and many works remain locked behind copyright restrictions.",
+                                keywords: [
+                                    { en: "see in person", vi: "xem trực tiếp" },
+                                    { en: "affordability", vi: "khả năng chi trả/giá rẻ" },
+                                    { en: "replicate the physical sense", vi: "mô phỏng cảm giác thực tế" }
+                                ]
+                            },
+                            {
+                                heading: "GLOBALIZATION: A DOUBLE-EDGED SWORD",
+                                text: "Globalization fosters economic growth and enables collective action on global issues like climate change through the UN. Yet, it also threatens national identity as foreign cultures spread. Harsher competition for jobs arises when operations move to lower-cost labor markets, and increased international travel contributes to environmental degradation.",
+                                keywords: [
+                                    { en: "foster economic growth", vi: "thúc đẩy tăng trưởng kinh tế" },
+                                    { en: "environmental degradation", vi: "sự xuống cấp môi trường" },
+                                    { en: "threaten national identity", vi: "đe dọa bản sắc dân tộc" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Tradition Decline",
+                        instruction: "Tại sao việc mất đi các ngôn ngữ thiểu số lại là một vấn đề nghiêm trọng?",
+                        sampleAnswer: "Because language conveys unique culture, traditions, and identity. Its loss leads to a less diverse and vibrant world and erodes the cultural heritage of the community."
+                    },
+                    {
+                        title: "Analysis: Globalization Impact",
+                        instruction: "Nêu 2 lợi ích và 2 tác hại của toàn cầu hóa.",
+                        sampleAnswer: "Benefits: Economic growth, access to new technology. Harm: Threat to local traditions, environmental damage (pollution/overpopulation)."
+                    }
+                ]
+            },
+                        {
+                id: "unit13",
+                title: "Unit 13: Animals",
+                category: "Animals",
+                description: "Động vật: Thử nghiệm trên động vật (Lợi ích và tác hại) và vai trò của vườn thú (Bảo tồn, giáo dục và đạo đức).",
+                questions: [
+                    "Is it necessary to use animals for testing medicines intended for human use?",
+                    "Are zoos cruel and unnecessary, or useful in protecting wild animals?",
+                    "What are the ethical concerns surrounding animal research?",
+                    "Should governments focus more on natural habitat preservation than captive breeding?"
+                ],
+                vocab: ["endangered animals", "poachers", "habitat destruction", "breed in captivity", "reintroduce into natural habitats", "veterinary staff", "animal testing", "morally wrong", "biodiversity", "replicate physiological reactions"],
+                ideas: [
+                    { section: "Animal Testing", points: ["Benefits: Historically discovered life-saving drugs (smallpox vaccine from cows, insulin from dogs), no alternatives for complex immune/genetic studies, biological similarity to humans.", "Drawbacks: Morally wrong (animals have rights), risk of physical pain (radiation/genetic modification), biological differences (human-specific viruses like HIV), potential for side effects in humans despite animal success."] },
+                    { section: "Zoos", points: ["Benefits: Preserve endangered species (protection from poachers/habitat loss), breeding and reintroduction programs, medical care (specialized veterinary staff), educational value (guided tours/public awareness), scientific research (behavior/genetics).", "Drawbacks: Abuse and exploitation for entertainment (forcing tricks), unsuitable for all species (stress/aggression in small enclosures for large animals), limited conservation capacity (can only hold small numbers), deceptive educational value (focus on common species)."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Dilemma of Animal Testing",
+                        content: [
+                            {
+                                heading: "MEDICAL NECESSITY",
+                                text: "Historically, animal testing has been crucial for medical breakthroughs. For example, testing on cows led to the eradication of smallpox, and experiments on dogs helped discover insulin for diabetes. Modern complex research into immune and genetic-related diseases often has no reliable alternative to animal models due to biological and genetic similarities between certain species and humans.",
+                                keywords: [
+                                    { en: "animal testing", vi: "thử nghiệm trên động vật" },
+                                    { en: "life-saving drugs", vi: "thuốc cứu mạng" },
+                                    { en: "biological and genetic similarity", vi: "sự tương đồng về sinh học và di truyền" }
+                                ]
+                            },
+                            {
+                                heading: "ETHICAL AND BIOLOGICAL CONCERNS",
+                                text: "Opponents argue that animals possess their own rights and should not be subjected to physical pain, radiation, or deliberate infection. Biologically, success in animals does not always translate to humans. For instance, HIV specifically infects human cells and cannot be accurately modeled in other animals, making some research findings misleading or dangerous.",
+                                keywords: [
+                                    { en: "morally wrong", vi: "sai trái về mặt đạo đức" },
+                                    { en: "physical pain", vi: "nỗi đau thể xác" },
+                                    { en: "replicate human reactions", vi: "mô phỏng phản ứng của con người" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. The Role of Modern Zoos",
+                        content: [
+                            {
+                                heading: "CONSERVATION AND EDUCATION",
+                                text: "Zoos play a vital role in protecting endangered species from poachers and habitat destruction. Through captive breeding and reintroduction programs, they help stabilize populations facing extinction. Additionally, specialized veterinary staff provide medical care unavailable in the wild, while interactive exhibits raise public awareness about environmental protection.",
+                                keywords: [
+                                    { en: "endangered species", vi: "loài có nguy cơ tuyệt chủng" },
+                                    { en: "breed in captivity", vi: "nhân giống trong nuôi nhốt" },
+                                    { en: "veterinary staff", vi: "nhân viên thú y" }
+                                ]
+                            },
+                            {
+                                heading: "CRITICISMS OF CAPTIVITY",
+                                text: "However, critics point to the exploitation of animals for entertainment, such as forcing them to perform tricks. Large animals like elephants often suffer from stress and aggression when confined to small enclosures. Furthermore, zoos can only protect a tiny fraction of total species, suggesting that funding might be better spent on protecting huge swathes of natural habitat.",
+                                keywords: [
+                                    { en: "abuse and exploitation", vi: "lạm dụng và bóc lột" },
+                                    { en: "limited capacity", vi: "khả năng hạn chế" },
+                                    { en: "natural state", vi: "trạng thái tự nhiên" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Animal Testing Ethics",
+                        instruction: "Tại sao một số người phản đối thử nghiệm trên động vật bất chấp lợi ích y tế?",
+                        sampleAnswer: "Because they believe animals have rights and it is morally wrong to deliberately infect them with diseases or subject them to physical pain and radiation."
+                    },
+                    {
+                        title: "Analysis: Zoo Effectiveness",
+                        instruction: "Liệt kê 2 lợi ích và 2 hạn chế của vườn thú.",
+                        sampleAnswer: "Benefits: Protecting animals from poachers, breeding/reintroducing endangered species. Drawbacks: Unsuitable for large animals (stress), potentially limited educational value if focused only on popular species."
+                    }
+                ]
+            },
+            {
+                id: "unit14",
+                title: "Unit 14: Housing - Building",
+                category: "Architecture",
+                description: "Kiến trúc và xây dựng: Công năng và thẩm mỹ, thành phố theo chiều dọc vs chiều ngang, và sự đồng bộ vs khác biệt.",
+                questions: [
+                    "Should the function of a building be prioritized over its outward appearance?",
+                    "Which is better for modern society: horizontal cities or vertical cities with high-rises?",
+                    "Does urban uniformity promote unity or lead to a monotonous environment?",
+                    "How can architectural uniqueness contribute to a city's economy and identity?"
+                ],
+                vocab: ["compact design", "dispersed layout", "monotony of concrete buildings", "social cohesion", "optimize land use", "fire-resistant materials", "structural integrity", "social fragmentation", "zoning regulations", "iconic landmarks"],
+                ideas: [
+                    { section: "Function vs Appearance", points: ["Function: Determines layout/materials/safety, improves quality of life (lighting/air), enhances work performance.", "Appearance: Breaks monotony, creates iconic landmarks (Landmark 81), increases property value and local revenue."] },
+                    { section: "Horizontal vs Vertical", points: ["Horizontal: Prioritizes public spaces/social interaction, easier emergency response, but higher land/energy demand.", "Vertical: Highly efficient land use, optimizes space, strict fire measures, but lacks community-oriented public space."] },
+                    { section: "Uniformity vs Uniqueness", points: ["Uniformity: Well-organized/efficient planning, sense of unity/common identity, but can be dull and lack character.", "Uniqueness: Visually attractive/appealing (Amsterdam/Hoi An), caters to diverse lifestyles, but costly to maintain and can cause discord."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Purpose of Design",
+                        content: [
+                            {
+                                heading: "FUNCTIONALITY AND WELL-BEING",
+                                text: "The intended use of a building determines critical factors such as layout, building materials, and safety standards. For instance, a hospital requires patient rooms and medical storage, while a stilt house uses wood to reflect cultural values. Functional design also improves quality of life by utilizing natural lighting and air circulation, thereby boosting occupant health and productivity through ergonomic environments.",
+                                keywords: [
+                                    { en: "intended use", vi: "mục đích sử dụng" },
+                                    { en: "quality of life", vi: "chất lượng cuộc sống" },
+                                    { en: "air circulation", vi: "sự lưu thông không khí" }
+                                ]
+                            },
+                            {
+                                heading: "THE POWER OF AESTHETICS",
+                                text: "Appearance plays an equally vital role by breaking the monotony of concrete structures and creating a vibrant cityscape. Architecturally unique buildings often become iconic landmarks, like Landmark 81 in Vietnam, generating revenue and jobs through tourism. Furthermore, a visually pleasing design increases its own property value and attracts high-quality tenants, yielding higher demand and prices.",
+                                keywords: [
+                                    { en: "break the monotony", vi: "phá vỡ sự đơn điệu" },
+                                    { en: "iconic landmarks", vi: "địa danh biểu tượng" },
+                                    { en: "property value", vi: "giá trị tài sản" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. City Planning: Vertical vs Horizontal",
+                        content: [
+                            {
+                                heading: "SOCIETY AND SPACE",
+                                text: "Horizontal cities prioritize communal public spaces like parks and pedestrian zones, fostering social cohesion and a sense of community. In contrast, vertical cities often lack these due to limited availability of land, prioritizing private amenities like pools within high-rises to provide a sense of exclusivity. This shift can weaken the overall sense of community among residents.",
+                                keywords: [
+                                    { en: "social cohesion", vi: "sự gắn kết xã hội" },
+                                    { en: "community-oriented spaces", vi: "không gian hướng đến cộng đồng" },
+                                    { en: "sense of exclusivity", vi: "sự riêng tư/đặc quyền" }
+                                ]
+                            },
+                            {
+                                heading: "ECONOMIC AND SAFETY FACTORS",
+                                text: "Vertical cities are more economically efficient, optimizing land use to accommodate large populations. They feature strict fire safety measures (sprinkler systems) and reduce street-level crime exposure. However, horizontal cities allow emergency vehicles to navigate more easily and are often safer during elevator malfunctions or power outages, which require constant maintenance and inspection in tall buildings.",
+                                keywords: [
+                                    { en: "optimize land use", vi: "tối ưu hóa sử dụng đất" },
+                                    { en: "fire safety measures", vi: "các biện pháp an toàn cháy nổ" },
+                                    { en: "street-level crime", vi: "tội phạm đường phố" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Function vs Appearance",
+                        instruction: "Tại sao công năng thường được ưu tiên hơn vẻ ngoài?",
+                        sampleAnswer: "Because it determines the layout, materials, and safety standards necessary for the building's purpose and improves the health and productivity of occupants."
+                    }
+                ]
+            },
+            {
+                id: "unit15",
+                title: "Unit 15: Urbanization",
+                category: "Urbanization",
+                description: "Đô thị hóa: Cuộc sống thành thị vs nông thôn, và các phương tiện giao thông (Xe đạp vs Xe hơi).",
+                questions: [
+                    "What are the main benefits and drawbacks of living in a city for individuals and companies?",
+                    "How does rural life compare to city life in terms of quality of life and career?",
+                    "Should cities promote the use of bicycles over cars to reduce pollution?",
+                    "What are the environmental and social impacts of rapid urbanization?"
+                ],
+                vocab: ["career advancement", "prestigious schools", "medical facilities", "urban living", "financial strain", "traffic congestion", "social inequality", "tight-knit communities", "low population density", "fossil fuels"],
+                ideas: [
+                    { section: "Urban vs Rural", points: ["Urban: Job opportunities (concentration of companies), better facilities (healthcare/education), convenient transport, cultural diversity. Drawbacks: High cost, congestion, pollution, crime.", "Rural: Lower living costs, exposure to nature, less noise/pollution, tight-knit community. Drawbacks: Limited career options, less access to modern facilities, car dependence."] },
+                    { section: "Transport", points: ["Bikes: Cost-effective (no fuel/insurance), eco-friendly (no emissions), health benefits (exercise), easy to park. Cons: Weather exposure, limited range/speed.", "Cars: Convenience for long distances, privacy/security, versatile (more storage). Cons: High operating cost, environmental impact (greenhouse gases), depreciation."] }
+                ],
+                reading: [
+                    {
+                        title: "1. The Urban-Rural Divide",
+                        content: [
+                            {
+                                heading: "THE ATTRACTION OF CITIES",
+                                text: "Cities offer a concentration of companies and job opportunities, leading to career advancement and higher salaries. Residents benefit from prestigious universities and advanced medical facilities with specialist doctors. Furthermore, advanced public transport like London's 'Tube' provides mobility, while diverse populations broaden individuals' horizons through exposure to different customs.",
+                                keywords: [
+                                    { en: "career advancement", vi: "sự thăng tiến sự nghiệp" },
+                                    { en: "medical facilities", vi: "cơ sở vật chất y tế" },
+                                    { en: "broaden horizons", vi: "mở mang tầm mắt" }
+                                ]
+                            },
+                            {
+                                heading: "RURAL TRANQUILITY VS. URBAN STRAIN",
+                                text: "City life is often marred by high costs, traffic congestion (spending hundreds of hours in traffic), and severe pollution. In contrast, rural areas provide a lower cost of living and a tighter-knit community where neighbors help each other. However, rural dwellers often sacrifice career diversity and face limited access to modern medical treatments, requiring long-distance car travel.",
+                                keywords: [
+                                    { en: "financial burden", vi: "gánh nặng tài chính" },
+                                    { en: "traffic congestion", vi: "tắc nghẽn giao thông" },
+                                    { en: "tight-knit communities", vi: "cộng đồng gắn bó mật thiết" }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        title: "2. Urban Mobility: Bikes vs. Cars",
+                        content: [
+                            {
+                                heading: "THE PROMISE OF CYCLING",
+                                text: "Bicycles are a cost-effective and environmentally friendly mode of transport, requiring no fossil fuels and producing zero emissions. Cities like Amsterdam and Copenhagen have seen improved public health outcomes and reduced air pollution due to extensive bike lanes. Cycling also promotes physical activity, reducing the risk of chronic diseases such as obesity and diabetes.",
+                                keywords: [
+                                    { en: "cost-effective", vi: "tiết kiệm chi phí" },
+                                    { en: "fossil fuels", vi: "nhiên liệu hóa thạch" },
+                                    { en: "public health outcomes", vi: "kết quả sức khỏe cộng đồng" }
+                                ]
+                            },
+                            {
+                                heading: "THE CONVENIENCE OF PRIVATE VEHICLES",
+                                text: "While eco-friendly, bikes offer little protection from extreme weather and have limited storage capacity. Cars remain versatile for long-distance travel and provide a sense of privacy and security. However, they significantly contribute to greenhouse gas emissions and environmental degradation, alongside being a heavy financial burden due to depreciation and fuel costs.",
+                                keywords: [
+                                    { en: "weather exposure", vi: "tiếp xúc với thời tiết" },
+                                    { en: "versatile", vi: "đa năng" },
+                                    { en: "greenhouse gas emissions", vi: "khí thải nhà kính" }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                detailedPractices: [
+                    {
+                        title: "Practice: Urban Challenges",
+                        instruction: "Nêu 2 nhược điểm lớn nhất của cuộc sống thành thị cho cá nhân.",
+                        sampleAnswer: "High cost of living (financial burden) and traffic congestion/pollution which impacts mental and physical health."
+                    },
+                    {
+                        title: "Comparison: Transport Choice",
+                        instruction: "Tại sao xe hơi vẫn phổ biến bất chấp ô nhiễm môi trường?",
+                        sampleAnswer: "Because of their convenience for long-distance travel, versatility for storage, and the sense of privacy and security they provide."
+                    }
+                ]
+            }
+        ];
+
+        // --- APP LOGIC ---
+        
+        const IDEAS_LIBRARY = [
+    {
+        "id": "I1",
+        "category": "ADVERTISING",
+        "title_en": "POSITIVES OF ADVERTISING",
+        "title_vi": "Những mặt tích cực của ngành quảng cáo",
+        "points": [
+            {
+                "en": "Advertising is a key part of modern business",
+                "vi": "Quảng cáo là một phần quan trọng trong kinh doanh hiện đại"
+            },
+            {
+                "en": "Companies need to tell customers about their products",
+                "vi": "Các công ty cần nói với khách hàng về sản phẩm của họ"
+            },
+            {
+                "en": "Advertisements inform us about the choices we have",
+                "vi": "Quảng cáo thông báo cho chúng ta về những lựa chọn mà chúng ta có"
+            },
+            {
+                "en": "Advertising is a creative industry that employs many people",
+                "vi": "Quảng cáo là một ngành công nghiệp sáng tạo mà sử dụng nhiều người"
+            },
+            {
+                "en": "Without advertising we would have less choice",
+                "vi": "Nếu không có quảng cáo chúng ta sẽ có sự lựa chọn ít"
+            },
+            {
+                "en": "Without advertising there would be higher unemployment",
+                "vi": "Nếu không có quảng cáo sẽ có tỷ lệ thất nghiệp cao hơn"
+            },
+            {
+                "en": "Advertising is a form of modern art",
+                "vi": "Quảng cáo là một hình thức nghệ thuật hiện đại"
+            },
+            {
+                "en": "People enjoy adverts",
+                "vi": "Mọi người thưởng thức quảng cáo."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Thorough insights into",
+                "vi": "Hiểu biết cặn kẽ về cái gì"
+            },
+            {
+                "en": "Patriotism",
+                "vi": "Lòng yêu nước"
+            },
+            {
+                "en": "Sovereignty",
+                "vi": "Chủ quyền"
+            },
+            {
+                "en": "Take pride in their origin",
+                "vi": "Tự hào về lòng yêu nước"
+            },
+            {
+                "en": "Traditional values and identity",
+                "vi": "Những giá trị truyền thống và con người"
+            },
+            {
+                "en": "Well-rounded perspective of life",
+                "vi": "Một cái nhìn quan điểm toàn diện hơn về cuộc sống"
+            },
+            {
+                "en": "Historical backgrounds",
+                "vi": "Bối cảnh lịch sử"
+            },
+            {
+                "en": "Company culture",
+                "vi": "Văn hóa doanh nghiệp"
+            },
+            {
+                "en": "Public health challenges",
+                "vi": "những thách thức về sức khỏe cộng đồng"
+            },
+            {
+                "en": "Excessive consumption of meat",
+                "vi": "sự tiêu thụ thịt quá đà"
+            },
+            {
+                "en": "Enjoy better health",
+                "vi": "tận hưởng sức khỏe tốt hơn"
+            },
+            {
+                "en": "Alternative meat products",
+                "vi": "các sản phẩm thay thế thịt"
+            },
+            {
+                "en": "Contain high levels of protein",
+                "vi": "chứa hàm lượng Protein cao"
+            },
+            {
+                "en": "Receive little endorsement",
+                "vi": "nhận được rất ít sự ủng hộ"
+            },
+            {
+                "en": "Plant-based medicines",
+                "vi": "các loại thuốc làm từ thực vật"
+            },
+            {
+                "en": "Fulfill our needs",
+                "vi": "đáp ứng nhu cầu của chúng ta"
+            },
+            {
+                "en": "Justify the suffering of animals",
+                "vi": "bào chữa cho sự chịu đựng của động vật"
+            },
+            {
+                "en": "The dominance of men sports programs on television",
+                "vi": "Sự chiếm ưu thế của chương trình thể"
+            },
+            {
+                "en": "thao nam so với thể thao nữ",
+                "vi": ""
+            },
+            {
+                "en": "Show a greater preference for",
+                "vi": "Thể hiện sự ưa chuộng thể thao hơn"
+            },
+            {
+                "en": "Play at a much higher level",
+                "vi": "Thi đấu thể thao ở một cấp độ cao hơn"
+            },
+            {
+                "en": "Provide equal sports coverage of both genders",
+                "vi": "Cân bằng thời lượng phát sóng cho nam và"
+            },
+            {
+                "en": "nữ",
+                "vi": ""
+            },
+            {
+                "en": "Create gender equality in society",
+                "vi": "Tạo sự cân bằng giới tính giữa nam và nữ trong xã hội"
+            },
+            {
+                "en": "178",
+                "vi": ""
+            },
+            {
+                "en": "Receive full recognition",
+                "vi": "Nhận được sự chú ý đầy đủ"
+            },
+            {
+                "en": "Make money from endorsements",
+                "vi": "Kiếm tiền từ các hoạt động quảng cáo (từ người nổi tiếng)"
+            }
+        ]
+    },
+    {
+        "id": "I3",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "ARGUMENTS FOR ANIMAL TESTING",
+        "title_vi": "Các lý lẽ ủng hộ thử nghiệm trên động vật",
+        "points": [
+            {
+                "en": "Animal testing has helped researchers to develop vaccines",
+                "vi": "Thử nghiệm trên động vật đã giúp các nhà nghiên cứu phát triển vắc-xin"
+            },
+            {
+                "en": "It is necessary to ensure that new drugs are safe",
+                "vi": "Nó cần thiết để đảm bảo rằng các loại thuốc mới là an toàn"
+            },
+            {
+                "en": "Human lives should be prioritized over animals",
+                "vi": "Cuộc sống của con người nên được ưu tiên hơn động vật"
+            }
+        ],
+        "phrases": [
+            { "en": "Medical breakthroughs", "vi": "Những đột phá về y tế" },
+            { "en": "Crucial for research", "vi": "Quan trọng cho nghiên cứu" }
+        ]
+    },
+    {
+        "id": "I4",
+        "category": "CITIES",
+        "title_en": "PROBLEMS IN CITIES",
+        "title_vi": "Các vấn đề trong thành phố",
+        "points": [
+            {
+                "en": "Cities are often overcrowded",
+                "vi": "Thành phố thường quá đông đúc"
+            },
+            {
+                "en": "Pollution is a major problem in urban areas",
+                "vi": "Ô nhiễm là một vấn đề lớn ở các khu vực đô thị"
+            },
+            {
+                "en": "The cost of living in cities is high",
+                "vi": "Chi phí sinh hoạt ở các thành phố cao"
+            }
+        ],
+        "phrases": [
+            { "en": "Urban sprawl", "vi": "Sự mở rộng đô thị" },
+            { "en": "High-rise buildings", "vi": "Các tòa nhà cao tầng" }
+        ]
+    },
+    {
+        "id": "I5",
+        "category": "CRIME",
+        "title_en": "CAUSES AND PUNISHMENTS",
+        "title_vi": "Nguyên nhân và hình phạt tội phạm",
+        "points": [
+            {
+                "en": "Poverty is a main cause of crime",
+                "vi": "Nghèo đói là nguyên nhân chính của tội phạm"
+            },
+            {
+                "en": "Prison is the best way to punish criminals",
+                "vi": "Nhà tù là cách tốt nhất để trừng phạt tội phạm"
+            },
+            {
+                "en": "Rehabilitation is more effective than punishment",
+                "vi": "Cải tạo hiệu quả hơn là trừng phạt"
+            }
+        ],
+        "phrases": [
+            { "en": "Capital punishment", "vi": "Hình phạt tử hình" },
+            { "en": "Community service", "vi": "Dịch vụ cộng đồng" },
+            { "en": "Deterrent", "vi": "Sự răn đe" }
+        ]
+    },
+    {
+        "id": "I6",
+        "category": "EDUCATION",
+        "title_en": "BENEFITS OF HIGHER EDUCATION",
+        "title_vi": "Lợi ích của giáo dục đại học",
+        "points": [
+            {
+                "en": "University graduates earn higher salaries",
+                "vi": "Sinh viên tốt nghiệp đại học kiếm được mức lương cao hơn"
+            },
+            {
+                "en": "Education helps to reduce unemployment",
+                "vi": "Giáo dục giúp giảm tỷ lệ thất nghiệp"
+            },
+            {
+                "en": "It provides opportunities for personal growth",
+                "vi": "Nó cung cấp cơ hội cho sự phát triển cá nhân"
+            }
+        ],
+        "phrases": [
+            { "en": "Academic qualifications", "vi": "Bằng cấp học thuật" },
+            { "en": "Tuition fees", "vi": "Học phí" },
+            { "en": "Vocational training", "vi": "Đào tạo nghề" }
+        ]
+    },
+    {
+        "id": "I7",
+        "category": "ENVIRONMENT",
+        "title_en": "ENVIRONMENTAL PROBLEMS",
+        "title_vi": "Các vấn đề môi trường",
+        "points": [
+            {
+                "en": "Global warming is a serious threat",
+                "vi": "Sự nóng lên toàn cầu là một mối đe dọa nghiêm trọng"
+            },
+            {
+                "en": "Plastic pollution is damaging the oceans",
+                "vi": "Ô nhiễm nhựa đang gây hại cho các đại dương"
+            },
+            {
+                "en": "We should use more renewable energy",
+                "vi": "Chúng ta nên sử dụng nhiều năng lượng tái tạo hơn"
+            }
+        ],
+        "phrases": [
+            { "en": "Carbon footprint", "vi": "Dấu chân carbon" },
+            { "en": "Eco-friendly", "vi": "Thân thiện với môi trường" },
+            { "en": "Sustainable development", "vi": "Phát triển bền vững" }
+        ]
+    },
+    {
+        "id": "I8",
+        "category": "FAMILY",
+        "title_en": "CHANGES IN FAMILY STRUCTURE",
+        "title_vi": "Những thay đổi trong cấu trúc gia đình",
+        "points": [
+            {
+                "en": "Nuclear families are more common now",
+                "vi": "Gia đình hạt nhân phổ biến hơn hiện nay"
+            },
+            {
+                "en": "The role of women in families has changed",
+                "vi": "Vai trò của phụ nữ trong gia đình đã thay đổi"
+            },
+            {
+                "en": "Family values are decreasing in many cultures",
+                "vi": "Giá trị gia đình đang giảm trong nhiều nền văn hóa"
+            }
+        ],
+        "phrases": [
+            { "en": "Extended family", "vi": "Gia đình đa thế hệ" },
+            { "en": "Generation gap", "vi": "Khoảng cách thế hệ" },
+            { "en": "Parental guidance", "vi": "Sự hướng dẫn của cha mẹ" }
+        ]
+    },
+    {
+        "id": "I9",
+        "category": "GLOBALIZATION",
+        "title_en": "IMPACTS OF GLOBALIZATION",
+        "title_vi": "Tác động của toàn cầu hóa",
+        "points": [
+            {
+                "en": "Globalization has improved international trade",
+                "vi": "Toàn cầu hóa đã cải thiện thương mại quốc tế"
+            },
+            {
+                "en": "It leads to the spread of different cultures",
+                "vi": "Nó dẫn đến sự lan truyền của các nền văn hóa khác nhau"
+            },
+            {
+                "en": "Poor countries might be exploited by rich ones",
+                "vi": "Các nước nghèo có thể bị các nước giàu bóc lột"
+            }
+        ],
+        "phrases": [
+            { "en": "Cultural homogenization", "vi": "Sự đồng nhất văn hóa" },
+            { "en": "Global village", "vi": "Làng toàn cầu" },
+            { "en": "Multinational corporations", "vi": "Các tập đoàn đa quốc gia" }
+        ]
+    },
+    {
+        "id": "I10",
+        "category": "GOVERNMENT",
+        "title_en": "GOVERNMENT SPENDING",
+        "title_vi": "Chi tiêu chính phủ",
+        "points": [
+            {
+                "en": "Governments should prioritize public services",
+                "vi": "Chính phủ nên ưu tiên các dịch vụ công"
+            },
+            {
+                "en": "Spending on arts is often criticized as a waste",
+                "vi": "Chi tiêu cho nghệ thuật thường bị chỉ trích là lãng phí"
+            },
+            {
+                "en": "Taxes should be used to improve infrastructure",
+                "vi": "Thuế nên được sử dụng để cải thiện cơ sở hạ tầng"
+            }
+        ],
+        "phrases": [
+            { "en": "National budget", "vi": "Ngân sách quốc gia" },
+            { "en": "Public funding", "vi": "Nguồn vốn công" },
+            { "en": "Welfare state", "vi": "Nhà nước phúc lợi" }
+        ]
+    },
+    {
+        "id": "I11",
+        "category": "HEALTH",
+        "title_en": "PUBLIC HEALTH CHALLENGES",
+        "title_vi": "Các thách thức sức khỏe cộng đồng",
+        "points": [
+            {
+                "en": "Obesity is a major problem in many countries",
+                "vi": "Béo phì là một vấn đề lớn ở nhiều nước"
+            },
+            {
+                "en": "Governments should encourage exercise and healthy eating",
+                "vi": "Chính phủ nên khuyến khích tập thể dục và ăn uống lành mạnh"
+            },
+            {
+                "en": "Fast food is a primary cause of health problems",
+                "vi": "Thức ăn nhanh là nguyên nhân chính gây ra các vấn đề sức khỏe"
+            }
+        ],
+        "phrases": [
+            { "en": "Lifestyles", "vi": "Lối sống" },
+            { "en": "Preventive medicine", "vi": "Y học dự phòng" },
+            { "en": "Sedentary lifestyle", "vi": "Lối sống ít vận động" }
+        ]
+    },
+    {
+        "id": "I12",
+        "category": "MEDIA",
+        "title_en": "INFLUENCE OF THE MEDIA",
+        "title_vi": "Ảnh hưởng của truyền thông",
+        "points": [
+            {
+                "en": "The media has a powerful influence on public opinion",
+                "vi": "Truyền thông có ảnh hưởng mạnh mẽ đến dư luận"
+            },
+            {
+                "en": "News coverage is often sensationalized",
+                "vi": "Tin tức thường được giật gân hóa"
+            },
+            {
+                "en": "The internet has changed how we consume news",
+                "vi": "Internet đã thay đổi cách chúng ta tiêu thụ tin tức"
+            }
+        ],
+        "phrases": [
+            { "en": "Censorship", "vi": "Sự kiểm duyệt" },
+            { "en": "Mass media", "vi": "Truyền thông đại chúng" },
+            { "en": "Unbiased information", "vi": "Thông tin không thiên vị" }
+        ]
+    },
+    {
+        "id": "I13",
+        "category": "MONEY",
+        "title_en": "MONEY AND HAPPINESS",
+        "title_vi": "Tiền bạc và hạnh phúc",
+        "points": [
+            {
+                "en": "Money is necessary for a basic standard of living",
+                "vi": "Tiền bạc cần thiết cho một mức sống cơ bản"
+            },
+            {
+                "en": "Happiness does not necessarily come from wealth",
+                "vi": "Hạnh phúc không nhất thiết đến từ sự giàu có"
+            },
+            {
+                "en": "Financial security reduces stress",
+                "vi": "Sự an toàn tài chính làm giảm căng thẳng"
+            }
+        ],
+        "phrases": [
+            { "en": "Accumulate wealth", "vi": "Tích lũy của cải" },
+            { "en": "Disposable income", "vi": "Thu nhập khả dụng" },
+            { "en": "Materialistic society", "vi": "Xã hội duy vật" }
+        ]
+    },
+    {
+        "id": "I14",
+        "category": "TOURISM",
+        "title_en": "IMPACTS OF TOURISM",
+        "title_vi": "Tác động của du lịch",
+        "points": [
+            {
+                "en": "Tourism creates jobs and boosts the economy",
+                "vi": "Du lịch tạo ra việc làm và thúc đẩy nền kinh tế"
+            },
+            {
+                "en": "It can lead to environmental damage in natural spots",
+                "vi": "Nó có thể dẫn đến thiệt hại môi trường ở các điểm tham quan tự nhiên"
+            },
+            {
+                "en": "Tourists should respect local traditions",
+                "vi": "Du khách nên tôn trọng các truyền thống địa phương"
+            }
+        ],
+        "phrases": [
+            { "en": "Eco-tourism", "vi": "Du lịch sinh thái" },
+            { "en": "Local inhabitants", "vi": "Cư dân địa phương" },
+            { "en": "Tourist attraction", "vi": "Điểm thu hút khách du lịch" }
+        ]
+    },
+    {
+        "id": "I15",
+        "category": "TRANSPORT",
+        "title_en": "PUBLIC VS PRIVATE TRANSPORT",
+        "title_vi": "Giao thông công cộng và cá nhân",
+        "points": [
+            {
+                "en": "Public transport reduces traffic congestion",
+                "vi": "Giao thông công cộng làm giảm tắc nghẽn giao thông"
+            },
+            {
+                "en": "Cars provide more convenience and privacy",
+                "vi": "Xe hơi cung cấp nhiều tiện lợi và riêng tư hơn"
+            },
+            {
+                "en": "Governments should invest in better rail systems",
+                "vi": "Chính phủ nên đầu tư vào hệ thống đường sắt tốt hơn"
+            }
+        ],
+        "phrases": [
+            { "en": "Commute", "vi": "Đi làm bằng phương tiện công cộng" },
+            { "en": "Infrastructure", "vi": "Cơ sở hạ tầng" },
+            { "en": "Traffic jam", "vi": "Tắc đường" }
+        ]
+    },
+    {
+        "id": "I16",
+        "category": "WORK",
+        "title_en": "JOB SATISFACTION",
+        "title_vi": "Sự hài lòng trong công việc",
+        "points": [
+            {
+                "en": "Job satisfaction is as important as salary",
+                "vi": "Sự hài lòng trong công việc quan trọng như tiền lương"
+            },
+            {
+                "en": "Many people choose jobs for security rather than passion",
+                "vi": "Nhiều người chọn công việc vì sự an toàn hơn là niềm đam mê"
+            },
+            {
+                "en": "Flexible working hours improve work-life balance",
+                "vi": "Giờ làm việc linh hoạt cải thiện sự cân bằng giữa công việc và cuộc sống"
+            }
+        ],
+        "phrases": [
+            { "en": "Career prospects", "vi": "Triển vọng nghề nghiệp" },
+            { "en": "Employee loyalty", "vi": "Lòng trung thành của nhân viên" },
+            { "en": "Workaholic", "vi": "Người nghiện công việc" }
+        ]
+    },
+    {
+        "id": "I17",
+        "category": "GENETIC ENGINEERING",
+        "title_en": "GENETIC ENGINEERING PROS AND CONS",
+        "title_vi": "Ưu và nhược điểm của kỹ thuật di truyền",
+        "points": [
+            {
+                "en": "Genetic engineering can help to cure diseases",
+                "vi": "Kỹ thuật di truyền có thể giúp chữa trị các bệnh tật"
+            },
+            {
+                "en": "It can be used to improve crop yields",
+                "vi": "Nó có thể được sử dụng để cải thiện năng suất cây trồng"
+            },
+            {
+                "en": "Ethical concerns about 'designer babies'",
+                "vi": "Những lo ngại về đạo đức về 'em bé thiết kế'"
+            }
+        ],
+        "phrases": [
+            { "en": "Cloning", "vi": "Nhân bản" },
+            { "en": "DNA modification", "vi": "Sửa đổi DNA" },
+            { "en": "Ethical dilemma", "vi": "Thế lưỡng nan về đạo đức" }
+        ]
+    },
+    {
+        "id": "I18",
+        "category": "GUN CONTROL",
+        "title_en": "GUN CONTROL POLICIES",
+        "title_vi": "Chính sách kiểm soát súng",
+        "points": [
+            {
+                "en": "Strict gun control reduces crime rates",
+                "vi": "Kiểm soát súng nghiêm ngặt làm giảm tỷ lệ tội phạm"
+            },
+            {
+                "en": "The right to bear arms is a controversial issue",
+                "vi": "Quyền mang vũ khí là một vấn đề gây tranh cãi"
+            },
+            {
+                "en": "Guns should be banned for private citizens",
+                "vi": "Súng nên bị cấm đối với công dân tư nhân"
+            }
+        ],
+        "phrases": [
+            { "en": "Self-defense", "vi": "Tự vệ" },
+            { "en": "Weaponry", "vi": "Vũ khí" },
+            { "en": "Zero tolerance", "vi": "Không khoan nhượng" }
+        ]
+    },
+    {
+        "id": "I19",
+        "category": "SPACE EXPLORATION",
+        "title_en": "COSTS VS BENEFITS OF SPACE TRAVEL",
+        "title_vi": "Chi phí so với lợi ích của việc du hành vũ trụ",
+        "points": [
+            {
+                "en": "Space exploration drives scientific innovation",
+                "vi": "Khám phá không gian thúc đẩy sự đổi mới khoa học"
+            },
+            {
+                "en": "The money could be better spent on Earth's problems",
+                "vi": "Số tiền có thể được chi tiêu tốt hơn cho các vấn đề của Trái đất"
+            },
+            {
+                "en": "Searching for habitable planets is crucial for the future",
+                "vi": "Tìm kiếm các hành tinh có thể ở được là rất quan trọng cho tương lai"
+            }
+        ],
+        "phrases": [
+            { "en": "Astronomy", "vi": "Thiên văn học" },
+            { "en": "Outer space", "vi": "Không gian bên ngoài" },
+            { "en": "Unsolvable problems", "vi": "Những vấn đề không thể giải quyết" }
+        ]
+    },
+    {
+        "id": "I20",
+        "category": "JUVENILE DELINQUENCY",
+        "title_en": "CAUSES OF YOUTH CRIME",
+        "title_vi": "Nguyên nhân tội phạm vị thành niên",
+        "points": [
+            {
+                "en": "Lack of parental supervision is a key factor",
+                "vi": "Sự thiếu giám sát của cha mẹ là một yếu tố then chốt"
+            },
+            {
+                "en": "Peer pressure leads many teenagers into crime",
+                "vi": "Áp lực từ bạn bè dẫn dắt nhiều thanh thiếu niên vào con đường tội lỗi"
+            },
+            {
+                "en": "Violent video games may influence behavior",
+                "vi": "Trò chơi điện tử bạo lực có thể ảnh hưởng đến hành vi"
+            }
+        ],
+        "phrases": [
+            { "en": "Correctional facility", "vi": "Cơ sở cải huấn" },
+            { "en": "Minor offenses", "vi": "Những vi phạm nhỏ" },
+            { "en": "Reform", "vi": "Cải tạo" }
+        ]
+    },
+    {
+        "id": "I21",
+        "category": "LANGUAGES",
+        "title_en": "IMPORTANCE OF LEARNING LANGUAGES",
+        "title_vi": "Tầm quan trọng của việc học ngôn ngữ",
+        "points": [
+            {
+                "en": "Learning a new language opens up career opportunities",
+                "vi": "Học một ngôn ngữ mới mở ra các cơ hội nghề nghiệp"
+            },
+            {
+                "en": "It helps to understand different cultures and perspectives",
+                "vi": "Nó giúp hiểu rõ hơn về các nền văn hóa và quan điểm khác nhau"
+            },
+            {
+                "en": "Minority languages reflect a nation's heritage",
+                "vi": "Các ngôn ngữ thiểu số phản ánh di sản của một quốc gia"
+            }
+        ],
+        "phrases": [
+            { "en": "Bilingualism", "vi": "Sự song ngữ" },
+            { "en": "Linguistic diversity", "vi": "Sự đa dạng ngôn ngữ" },
+            { "en": "Mother tongue", "vi": "Tiếng mẹ đẻ" }
+        ]
+    },
+    {
+        "id": "I22",
+        "category": "TRADITIONAL CULTURE",
+        "title_en": "PRESERVING TRADITIONS",
+        "title_vi": "Gìn giữ các truyền thống",
+        "points": [
+            {
+                "en": "Traditional customs help maintain a national identity",
+                "vi": "Các phong tục truyền thống giúp duy trì bản sắc dân tộc"
+            },
+            {
+                "en": "Cultural heritage should be protected for future generations",
+                "vi": "Di sản văn hóa nên được bảo vệ cho các thế hệ tương lai"
+            },
+            {
+                "en": "Some traditions are becoming obsolete in the modern world",
+                "vi": "Một số truyền thống đang trở nên lỗi thời trong thế giới hiện đại"
+            }
+        ],
+        "phrases": [
+            { "en": "Ancestors", "vi": "Tổ tiên" },
+            { "en": "Cultural identity", "vi": "Bản sắc văn hóa" },
+            { "en": "Indigenous people", "vi": "Người bản xứ" }
+        ]
+    },
+    {
+        "id": "I2",
+        "category": "ADVERTISING",
+        "title_en": "NEGATIVES OF ADVERTISING",
+        "title_vi": "Những mặt tiêu cực của quảng cáo",
+        "points": [
+            {
+                "en": "Advertising manipulates people",
+                "vi": "Quảng cáo thao túng con người"
+            },
+            {
+                "en": "",
+                "vi": "Nó nhằm mục đích thuyết phục mọi người rằng mua một sản phẩm sẽ làm cho họ hạnh phúc"
+            },
+            {
+                "en": "Advertisers focus on selling a brand image",
+                "vi": "Các nhà quảng cáo tập trung vào việc bán một hình ảnh thương hiệu"
+            },
+            {
+                "en": "They use glamorous, successful people",
+                "vi": "Họ sử dụng những người thành công và quyến rũ"
+            },
+            {
+                "en": "We now live in a consumer culture",
+                "vi": "Bây giờ chúng ta đang sống trong một nền văn hoá tiêu dùng"
+            },
+            {
+                "en": "We are persuaded to follow the latest trend",
+                "vi": "Chúng ta được thuyết phục theo xu hướng mới nhất"
+            },
+            {
+                "en": "We are encouraged to associate certain brands with a higher status",
+                "vi": "Chúng ta được khuyến khích liên kết một số thương hiệu nhất định có địa vị cao hơn"
+            },
+            {
+                "en": "Advertisers often aim their marketing at children",
+                "vi": "Các nhà quảng cáo thường hướng tới tiếp thị ở trẻ em"
+            },
+            {
+                "en": "Children can easily be influenced by advertisements.",
+                "vi": "Trẻ em có thể dễ bị ảnh hưởng bởi quảng cáo."
+            },
+            {
+                "en": "Children put pressure on parents to buy them things",
+                "vi": "Trẻ em đặt áp lực lên cha mẹ để mua cho họ mọi thứ"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Tend to pay a visit to museums",
+                "vi": "Có xu hướng đi thăm bảo tang"
+            },
+            {
+                "en": "Visually unattractive to local residents",
+                "vi": "Không thu hút được dân cư địa phương vì bề"
+            },
+            {
+                "en": "ngoài",
+                "vi": ""
+            },
+            {
+                "en": "Pick tourists’ curiosity",
+                "vi": "Lấy được sự tò mò từ du khách"
+            },
+            {
+                "en": "Education and entertainment purposes",
+                "vi": "Mục đích giáo dục và giải trí"
+            },
+            {
+                "en": "Didactic as well as recreational competitions",
+                "vi": "Những cuộc thi vừa giải trí vừa mang"
+            },
+            {
+                "en": "tính giáo dục",
+                "vi": ""
+            },
+            {
+                "en": "To undertake parenting courses",
+                "vi": "tham gia khoá học nuôi dạy trẻ"
+            },
+            {
+                "en": "To equip parents with necessary skills and knowledge",
+                "vi": "trang bị cho bố mẹ kỹ năng"
+            },
+            {
+                "en": "và kiến thức cần thiết",
+                "vi": ""
+            },
+            {
+                "en": "Proper instruction",
+                "vi": "sự hướng dẫn đúng đắn"
+            },
+            {
+                "en": "New born infant",
+                "vi": "trẻ sơ sinh"
+            },
+            {
+                "en": "Adolescence",
+                "vi": "giai đoạn thanh thiếu niên"
+            },
+            {
+                "en": "An innate skill",
+                "vi": "một kĩ năng bẩm sinh"
+            },
+            {
+                "en": "Their own upbringing",
+                "vi": "quá trình nuôi dưỡng"
+            },
+            {
+                "en": "Cultural influences",
+                "vi": "những ảnh hưởng về văn hoá"
+            },
+            {
+                "en": "Form of communication",
+                "vi": "truyền đạt hoặc trao đổi thông tin"
+            },
+            {
+                "en": "Mode of communication",
+                "vi": "cách thức giao tiếp"
+            },
+            {
+                "en": "Connect with their listeners on an emotional level",
+                "vi": "kết nối về cảm xúc với người nghe"
+            },
+            {
+                "en": "To inspire and influence others",
+                "vi": "truyền cảm hứng và ảnh hưởng đến người khác"
+            },
+            {
+                "en": "Misunderstandings",
+                "vi": "Sự hiểu lầm, hiểu sai"
+            },
+            {
+                "en": "Miscommunication",
+                "vi": "tránh hiểu sai"
+            },
+            {
+                "en": "Legal matters",
+                "vi": "Thủ tục pháp lý"
+            }
+        ]
+    },
+    {
+        "id": "I3",
+        "category": "ADVERTISING",
+        "title_en": "OPINIONS ABOUT ADVERTISING",
+        "title_vi": "Các quan điểm cá nhân về quảng cáo",
+        "points": [
+            {
+                "en": "Advertising should be regulated",
+                "vi": "Quảng cáo phải được quy định"
+            },
+            {
+                "en": "Advertising aimed at children should be controlled or even banned",
+                "vi": "Quảng cáo nhằm vào trẻ em nên được kiểm soát hoặc thậm chí bị cấm"
+            },
+            {
+                "en": "Unhealthy foods should not be marketed in a way that attracts children",
+                "vi": "Thực phẩm không lành mạnh không nên được bán trên thị trường theo cách thu hút trẻ em"
+            },
+            {
+                "en": "Products that can be risk to healthy should display warnings",
+                "vi": "Các sản phẩm có thể nguy cơ cho sức khoẻ nên hiển thị các cảnh báo"
+            },
+            {
+                "en": "",
+                "vi": "Ở một số quốc gia, việc quảng cáo thuốc lá trên truyền hình là bất hợp pháp"
+            },
+            {
+                "en": "Warnings must be displayed on cigarette packets",
+                "vi": "Cảnh báo phải được hiển thị trên bao bì thuốc lá"
+            },
+            {
+                "en": "However, advertising is necessary in free market economies",
+                "vi": "Tuy nhiên, quảng cáo là cần thiết trong nền kinh tế thị trường tự do"
+            },
+            {
+                "en": "",
+                "vi": "Nó tạo ra nhu cầu về sản phẩm"
+            },
+            {
+                "en": "Governments should only censor false information or products that are harmful",
+                "vi": "Chính phủ chỉ nên kiểm duyệt thông tin sai lệch hoặc các sản phẩm có hại."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To hold the most vital position",
+                "vi": "Giữ vai trò thiết yếu"
+            },
+            {
+                "en": "To access huge storage of news",
+                "vi": "Tiếp cận trữ lượng thông tin lớn"
+            },
+            {
+                "en": "To take over the position of printed newspaper",
+                "vi": "Chiếm lấy vị trí của báo in"
+            },
+            {
+                "en": "To unfold the possibility to upload videos and voice records",
+                "vi": "Mở ra khả năng đăng tải"
+            },
+            {
+                "en": "video và băng ghi âm",
+                "vi": ""
+            },
+            {
+                "en": "The most crucial source of information",
+                "vi": "Nguồn thông tin quan trọng nhấ"
+            },
+            {
+                "en": "Increasing the minimum age for getting a driving licence",
+                "vi": "tăng độ tuổi tối thiểu để"
+            },
+            {
+                "en": "đạt được bằng lái xe",
+                "vi": ""
+            },
+            {
+                "en": "More mature and have more life experience",
+                "vi": "trưởng thành hơn và có nhiều kinh"
+            },
+            {
+                "en": "nghiệm cuộc sống hơn",
+                "vi": ""
+            },
+            {
+                "en": "To make quicker and wiser decisions",
+                "vi": "đưa ra quyết định nhanh hơn và thông minh"
+            },
+            {
+                "en": "hơn",
+                "vi": ""
+            },
+            {
+                "en": "To sharpen their driving skills",
+                "vi": "nâng cao kĩ năng lái xe"
+            },
+            {
+                "en": "To attend defensive driving courses",
+                "vi": "tham gia khoá học lái xe an toàn"
+            },
+            {
+                "en": "Stringent traffic regulations",
+                "vi": "luật giao thông nghiêm khắc hơn"
+            },
+            {
+                "en": "To act as a deterrent to would-be traffic law breakers",
+                "vi": "đóng vai trò như một sự răn"
+            },
+            {
+                "en": "163",
+                "vi": ""
+            },
+            {
+                "en": "đe tới những người có ý định vi phạm luật trong tương lai",
+                "vi": ""
+            },
+            {
+                "en": "To allocate financial resources to improving public transport",
+                "vi": "phân bố nguồn lực tài"
+            },
+            {
+                "en": "chính để cải thiện phương tiện công cộng",
+                "vi": ""
+            },
+            {
+                "en": "Advancement of digital technology",
+                "vi": "Sự phát triển của công nghệ tiên tiến"
+            },
+            {
+                "en": "Creative outlet",
+                "vi": "Phương thức sáng tạo"
+            },
+            {
+                "en": "To shoot and edit short films",
+                "vi": "Ghi hình và điều chỉnh các đoạn phim ngắn"
+            },
+            {
+                "en": "Upload the content",
+                "vi": "Đăng tải nội dung"
+            },
+            {
+                "en": "To formally study",
+                "vi": "Theo học chính thống"
+            },
+            {
+                "en": "A natural talent for",
+                "vi": "Tài năng bẩn sinh cho việc gì đó"
+            },
+            {
+                "en": "Release them to the mainstream public",
+                "vi": "Phát hành phim cho công chúng"
+            },
+            {
+                "en": "A greater diversity of films",
+                "vi": "Sự đa dạng hơn cho các bộ phim"
+            },
+            {
+                "en": "To inform people about pressing issues",
+                "vi": "Thông báo cho mọi người về vấn đề cấp"
+            },
+            {
+                "en": "bách",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I4",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "ARGUMENTS FOR ANIMAL TESTING",
+        "title_vi": "Những lý do ủng hộ thí nghiệm trên động vật",
+        "points": [
+            {
+                "en": "Animals are used in important scientific research",
+                "vi": "Động vật được sử dụng trong nghiên cứu khoa học quan trọng"
+            },
+            {
+                "en": "",
+                "vi": "Thực sự cần thiết để làm những xét nghiệm y khoa về các loại thuốc mới"
+            },
+            {
+                "en": "Animal testing helps to advance medical and scientific knowledge",
+                "vi": "Thí nghiệm trên động vật giúp nâng cao kiến thức khoa học và y học"
+            },
+            {
+                "en": "Many important medical discoveries involved experimentation on animals",
+                "vi": "Nhiều khám phá y khoa quan trọng liên quan đến việc thí nghiệm trên động vật"
+            },
+            {
+                "en": "Researchers aim to minimize the suffering that animals experience",
+                "vi": "Các nhà nghiên cứu nhằm mục đích giảm thiểu những đau khổ mà thú vật trải qua"
+            },
+            {
+                "en": "Testing for the cosmetics industry is now banned in many countries",
+                "vi": "Thử nghiệm cho ngành công nghiệp mỹ phẩm hiện đang bị cấm ở nhiều nước"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Illegality",
+                "vi": "Hành động bất hợp pháp"
+            },
+            {
+                "en": "Social endorsement",
+                "vi": "Sự ủng hộ từ xã hội"
+            },
+            {
+                "en": "Eliminate the problem from its root",
+                "vi": "Loại bỏ nguồn góc của vấn đề"
+            },
+            {
+                "en": "To be of necessity",
+                "vi": "Là một sự cần thiết không thể thiếu (nhấn mạnh)"
+            },
+            {
+                "en": "Social security",
+                "vi": "An ninh xã hội"
+            },
+            {
+                "en": "To be imprisoned",
+                "vi": "Bị bỏ tù"
+            },
+            {
+                "en": "Heinous actions",
+                "vi": "Hành động tội ác"
+            },
+            {
+                "en": "153",
+                "vi": ""
+            },
+            {
+                "en": "To be a deterrent against sth",
+                "vi": "Là một rào cản chống lại cái gì đó"
+            },
+            {
+                "en": "To be condemned to jail",
+                "vi": "Bị tống vào tù"
+            },
+            {
+                "en": "To serve as a remedy for the origin of crimes",
+                "vi": "Như là một liều thuốc cho nguồn gốc"
+            },
+            {
+                "en": "của tội phạm",
+                "vi": ""
+            },
+            {
+                "en": "To heighten people’s intellect",
+                "vi": "Nâng cao dân trí"
+            },
+            {
+                "en": "A civilized society",
+                "vi": "Một xã hội văn minh"
+            },
+            {
+                "en": "Vocational training",
+                "vi": "Học nghề"
+            },
+            {
+                "en": "To dispel any ideas of committing crimes",
+                "vi": "Loại bỏ bất kì ý định muốn phạm tội"
+            },
+            {
+                "en": "The proliferation of online news sources",
+                "vi": "sự bùng nổ của nguồn thông tin mạng"
+            },
+            {
+                "en": "A digital world",
+                "vi": "thế giới điện tử"
+            },
+            {
+                "en": "Senior citizens",
+                "vi": "người già"
+            },
+            {
+                "en": "A more reliable source of information",
+                "vi": "một nguồn thông tin đáng tin cậy hơn"
+            },
+            {
+                "en": "Professional journalists",
+                "vi": "nhà báo chuyên nghiệp"
+            },
+            {
+                "en": "To be thoroughly checked, edited and censored prior to their publication",
+                "vi": "được"
+            },
+            {
+                "en": "kiểm tra, chỉnh sửa và kiểm duỵêt kỹ lưỡng trước khi xuất bản",
+                "vi": ""
+            },
+            {
+                "en": "An increasingly dominant news source",
+                "vi": "nguồn đọc tin tức càng ngày càng phát triển"
+            },
+            {
+                "en": "Portable devices",
+                "vi": "các loại thiết bị có thể cầm tay, mang đi được"
+            },
+            {
+                "en": "To access a huge storage of news in just a few clicks",
+                "vi": "truy cập vào lượng lớn thông"
+            },
+            {
+                "en": "tin với chỉ một vài cú clicks",
+                "vi": ""
+            },
+            {
+                "en": "The constant advancement in technology",
+                "vi": "sự phát triển liên tục của công nghệ"
+            },
+            {
+                "en": "Physical attributes = phys-ical characteristics",
+                "vi": "Đặc điểm về thể chất"
+            },
+            {
+                "en": "A strong physical body",
+                "vi": "Một thể trạng mạnh khỏe, cường tráng"
+            },
+            {
+                "en": "High level of coordination",
+                "vi": "Khả năng phối hợp cao"
+            },
+            {
+                "en": "To perform to a high level",
+                "vi": "Thể hiện tốt trong thi đấu"
+            },
+            {
+                "en": "Mental conditioning",
+                "vi": "Sự tôi luyện về mặt tinh thần"
+            },
+            {
+                "en": "Powerful, conditioned mus-cles",
+                "vi": "Hệ cơ bắp khỏe mạnh, dẻo dai"
+            },
+            {
+                "en": "High levels of strength and fitness",
+                "vi": "Tình trạng sức khỏe tốt"
+            },
+            {
+                "en": "Consistently perform at a very high level",
+                "vi": "Thể hiện tốt trong thời gian dài"
+            }
+        ]
+    },
+    {
+        "id": "I5",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "ARGUMENTS AGAINST ANIMAL TESTING",
+        "title_vi": "Những lý do chống lại thí nghiệm trên động vật",
+        "points": [
+            {
+                "en": "The benefits of research using animals do not justify the suffering caused",
+                "vi": "Lợi ích của nghiên cứu sử dụng động vật không biện minh cho những đau khổ đã gây ra"
+            },
+            {
+                "en": "There are alternative methods of research",
+                "vi": "Có nhiều phương pháp nghiên cứu thay thế khác"
+            },
+            {
+                "en": "The lives of animals should be respected",
+                "vi": "Mạng sống của động vật nên được tôn trọng"
+            },
+            {
+                "en": "Humans have no moral right to do experiments on animals",
+                "vi": "Con người không có quyền đạo đức để thực hiện các thí nghiệm trên động vật."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Satisfy children of different preferences for entertainment",
+                "vi": "Thỏa mãn trẻ em với"
+            },
+            {
+                "en": "những sở thích giải trí khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "Develop a passive lifestyle",
+                "vi": "Phát triển lối sống thụ động"
+            },
+            {
+                "en": "If exposed frequently",
+                "vi": "Nếu tiếp xúc thường xuyên"
+            },
+            {
+                "en": "Exposure to technology could lead to deterioration in health",
+                "vi": "sự tiếp xúc với công"
+            },
+            {
+                "en": "nghệ có thể dẫn đến tình trạng sức khỏe bị giảm sút",
+                "vi": ""
+            },
+            {
+                "en": "Personal possessions reflect wealth, social status, and appearance",
+                "vi": "tài sản cá nhân"
+            },
+            {
+                "en": "phản ánh sự giàu sang, địa vị xã hội, và bề ngoài",
+                "vi": ""
+            },
+            {
+                "en": "To enhance people’s appearance",
+                "vi": "làm đẹp vẻ bề ngoài"
+            },
+            {
+                "en": "Luxurious brands",
+                "vi": "nhãn hàng xa xỉ"
+            },
+            {
+                "en": "To be sold at exorbitant prices",
+                "vi": "được bán với giá rất cao"
+            },
+            {
+                "en": "To show off their social status or their wealth",
+                "vi": "khoe địa vị xã hội hay sự giàu có"
+            },
+            {
+                "en": "The strongest economic superpower",
+                "vi": "cường quốc kinh tế mạnh nhất"
+            },
+            {
+                "en": "Dominant brand names",
+                "vi": "nhãn hàng thịnh hành"
+            },
+            {
+                "en": "To maintain their positions",
+                "vi": "giữ vững vị thế"
+            },
+            {
+                "en": "To prevent large-scale monopoly",
+                "vi": "ngăn cản thế độc quyền theo quy mô lớn"
+            },
+            {
+                "en": "Consuming sugar-based drinks",
+                "vi": "Sự tiêu thụ của đồ uống có đường"
+            },
+            {
+                "en": "179",
+                "vi": ""
+            },
+            {
+                "en": "Soft drinks and energy drinks",
+                "vi": "Nước ngọt hoặc đồ uống năng lượng (bò húc)"
+            },
+            {
+                "en": "Increase their mental alertness",
+                "vi": "Tăng cường sự tỉnh táo"
+            },
+            {
+                "en": "Maintain high levels of concentration",
+                "vi": "Duy trì sự tập trung cao độ"
+            },
+            {
+                "en": "Lack of awareness and knowledge",
+                "vi": "Sự thiếu nhận thức và kiến thức về một chế độ ăn uống"
+            },
+            {
+                "en": "và lối sống lành mạnh",
+                "vi": ""
+            },
+            {
+                "en": "Dominance of fast food",
+                "vi": "Sự thống trị của đồ ăn nhanh"
+            },
+            {
+                "en": "Sedentary lifestyles",
+                "vi": "Những lối sống ít vận động"
+            },
+            {
+                "en": "Convenient but nutrient-poor meals",
+                "vi": "Những bữa ăn tiện lợi nhưng ít dinh dưỡng"
+            }
+        ]
+    },
+    {
+        "id": "I6",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "ARGUMENTS FOR VEGETARIANISM",
+        "title_vi": "Những lý do ủng hộ việc ăn chay",
+        "points": [
+            {
+                "en": "Vegetarians do not eat foods that are produced by killing animals",
+                "vi": "Người ăn chay không ăn thức ăn được sản xuất bằng cách giết động vật"
+            },
+            {
+                "en": "Many people choose a vegetarian diet for moral or health reasons",
+                "vi": "Nhiều người chọn một chế độ ăn chay vì lý do đạo đức hoặc sức khoẻ"
+            },
+            {
+                "en": "A healthy diet is possible without eating meat",
+                "vi": "Một chế độ ăn uống lành mạnh là có thể mà không ăn thịt"
+            },
+            {
+                "en": "",
+                "vi": "Không cần phải giết động vật để làm thức ăn"
+            },
+            {
+                "en": "A vegetarian diet may reduce the risk of disease like cancer",
+                "vi": "Chế độ ăn chay có thể làm giảm nguy cơ bệnh như ung thư"
+            },
+            {
+                "en": "Many people question the treatment of animals in factory farms",
+                "vi": "Nhiều người đặt câu hỏi về việc đối xử động vật ở các trang trại nhà máy"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Tackle congested roads",
+                "vi": "Giải quyết tắc đường"
+            },
+            {
+                "en": "Alleviate the current travelling overload",
+                "vi": "Giảm nhẹ tình trạng quá tải"
+            },
+            {
+                "en": "Relieves the density of passengers on public vehicles",
+                "vi": "Giảm thiểu sự đông đúc cúa"
+            },
+            {
+                "en": "hành",
+                "vi": ""
+            },
+            {
+                "en": "khác trên những phương tiện công cộng",
+                "vi": ""
+            },
+            {
+                "en": "Exceeds the capacity of the current system",
+                "vi": "Vươt quá khả năng của hệ thống hiện tại"
+            },
+            {
+                "en": "The enhancement of living standards",
+                "vi": "Sự tăng lên về mức sống"
+            },
+            {
+                "en": "To implement those decisions",
+                "vi": "thực thi những quyết định đó"
+            },
+            {
+                "en": "To misinterpret a decision",
+                "vi": "hiểu nhầm một quyết định nào đó"
+            },
+            {
+                "en": "Effective communication and implementation of decisions",
+                "vi": "sự giao tiếp và thực thi"
+            },
+            {
+                "en": "quyết định một cách hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "The reliability and availability of good workers",
+                "vi": "sự đáng tin cậy và có sẵn của người"
+            },
+            {
+                "en": "164",
+                "vi": ""
+            },
+            {
+                "en": "lao động chất lượng tốt",
+                "vi": ""
+            },
+            {
+                "en": "A skilled and reliable work force",
+                "vi": "nguồn lao động đáng tin cậy và lành nghề"
+            },
+            {
+                "en": "Infiltrated",
+                "vi": "Thâm nhập vào đâu đó/cái gì đó"
+            },
+            {
+                "en": "Facilitate communication",
+                "vi": "Thúc đẩy sự giao tiếp"
+            },
+            {
+                "en": "Globally connect with",
+                "vi": "Kết nối toàn cầu với ai"
+            },
+            {
+                "en": "Share common interests",
+                "vi": "Có những mối quan tâm giống nhau"
+            },
+            {
+                "en": "Live streaming services",
+                "vi": "Dịch vụ live stream"
+            },
+            {
+                "en": "Have free access to",
+                "vi": "Có thể tiếp cận tới cái gì"
+            },
+            {
+                "en": "Fall prey to online communication abuse",
+                "vi": "Trở thành nạn nhân của sự lạm dụng giao"
+            },
+            {
+                "en": "tiếp trên mạng (tạm dịch)",
+                "vi": ""
+            },
+            {
+                "en": "Online bullying and harassment",
+                "vi": "Sự quấy rối và bắt nạt trên mạng"
+            },
+            {
+                "en": "A toxic environment",
+                "vi": "Một môi trường độc hại"
+            },
+            {
+                "en": "Be verbally abused",
+                "vi": "Bị tấn công bằng lời nói"
+            },
+            {
+                "en": "Hateful or abusive contents",
+                "vi": "Những nội dung cây động"
+            },
+            {
+                "en": "Reclusive users",
+                "vi": "Những người dùng không thích sự giao thiệp thực tế (tạm dịch)"
+            }
+        ]
+    },
+    {
+        "id": "I7",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "ARGUMENTS AGAINST VEGETARIANISM",
+        "title_vi": "Lý do không ủng hộ việc ăn chay",
+        "points": [
+            {
+                "en": "Vegetarians do not eat a balanced diet",
+                "vi": "Người ăn chay không ăn một chế độ ăn uống cân bằng"
+            },
+            {
+                "en": "",
+                "vi": "Trong nhiều nền văn hoá, thịt là thành phần chính trong các bữa ăn truyền thống"
+            },
+            {
+                "en": "Meat-eaters argue that animals are below humans in the food chain",
+                "vi": "Những người ăn thịt cho rằng động vật ở dưới con người trong chuỗi thức ăn"
+            },
+            {
+                "en": "",
+                "vi": "Thật là tự nhiên khi chúng ta giết chúng để ăn"
+            },
+            {
+                "en": "Our aim should be improve farming methods",
+                "vi": "Mục tiêu của chúng ta là cải tiến phương pháp canh tác"
+            },
+            {
+                "en": "Farms should produce organic food",
+                "vi": "Trang trại nên sản xuất thực phẩm hữu cơ"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "A great deal of rewarding experience",
+                "vi": "có nhiều kinh nghiệm quý báu"
+            },
+            {
+                "en": "Have profound understanding of",
+                "vi": "Có hiểu biết sâu về cái gì"
+            },
+            {
+                "en": "Fosters a great sense of humanity and altruism",
+                "vi": "Gia tăng tính cộng đồng và long vị"
+            },
+            {
+                "en": "tha",
+                "vi": ""
+            },
+            {
+                "en": "Heighten social living standards",
+                "vi": "Nâng cao mức sống xã hội"
+            },
+            {
+                "en": "To obtain information about art, history or culture",
+                "vi": "lấy thông tin về nghệ thuật, lịch"
+            },
+            {
+                "en": "sử và văn hóa",
+                "vi": ""
+            },
+            {
+                "en": "To provide us with sufficient understanding of something",
+                "vi": "cung cấp cho chúng ta đủ"
+            },
+            {
+                "en": "sự hiểu biết về cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "To be in the presence of something",
+                "vi": "tận mắt chiêm ngưỡng"
+            },
+            {
+                "en": "A country’s architectural style",
+                "vi": "phong cách kiến trúc của một quốc gia phản ánh văn"
+            },
+            {
+                "en": "hóa và lịch sử quốc gia đó",
+                "vi": ""
+            },
+            {
+                "en": "To admire the grandeur of these places",
+                "vi": "ngắm nhìn sự trang nghiêm oai vệ của những địa"
+            },
+            {
+                "en": "điểm này",
+                "vi": ""
+            },
+            {
+                "en": "To exhibit a huge collection of priceless national masterpieces",
+                "vi": "trưng bày một bộ sưu"
+            },
+            {
+                "en": "tầm khổng lồ các kiệt tác của quốc gia",
+                "vi": ""
+            },
+            {
+                "en": "The aesthetic appeal of French architecture",
+                "vi": "sức hấp dẫn về mặt thẩm mỹ của kiến"
+            },
+            {
+                "en": "trúc nước Pháp",
+                "vi": ""
+            },
+            {
+                "en": "To use imagination to visualize something",
+                "vi": "Dùng trí tưởng tượng để hình dung cái gì đó"
+            },
+            {
+                "en": "To enhance one’s imagination and creativity",
+                "vi": "Tăng trí tưởng tượng và khả năng sáng tạo"
+            },
+            {
+                "en": "It/this/that can hardly be the case for something",
+                "vi": "Điều tương tự thì khó có thể đúng với cái"
+            },
+            {
+                "en": "gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Verbal ability",
+                "vi": "khả năng ngôn ngữ."
+            },
+            {
+                "en": "To advance one’s ability to do something",
+                "vi": "Nâng cao khả năng làm một việc gì đó"
+            },
+            {
+                "en": "Key element",
+                "vi": "yếu tố quan trọng"
+            }
+        ]
+    },
+    {
+        "id": "I8",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "POSITIVES OF ZOOS",
+        "title_vi": "Những mặt tích cực của sở thú",
+        "points": [
+            {
+                "en": "Zoos play an important role in wildlife conservation",
+                "vi": "Vườn thú đóng một vai trò quan trọng trong bảo tồn động vật hoang dã"
+            },
+            {
+                "en": "They can help to protect endangered species",
+                "vi": "Chúng có thể giúp bảo vệ các loài nguy cấp"
+            },
+            {
+                "en": "Zoos allow scientists to study animals and their behavior",
+                "vi": "Vườn thú cho phép các nhà khoa học nghiên cứu động vật và hành vi của chúng"
+            },
+            {
+                "en": "Zoos are educational, interesting and fun",
+                "vi": "Sở thú là giáo dục, thú vị và vui nhộn"
+            },
+            {
+                "en": "Children, in particular, enjoy learning about animals",
+                "vi": "Trẻ em đặc biệt thích học hỏi về động vật"
+            },
+            {
+                "en": "Zoos provide job opportunities.",
+                "vi": "Vườn thú cung cấp cơ hội việc làm."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Nuclear family",
+                "vi": "gia đình cơ bản gồm có bố mẹ và con cái"
+            },
+            {
+                "en": "Breadwinner",
+                "vi": "trụ cột gia đình"
+            },
+            {
+                "en": "Single-earner family",
+                "vi": "gia đình chỉ có một trụ cột"
+            },
+            {
+                "en": "154",
+                "vi": ""
+            },
+            {
+                "en": "Spouse",
+                "vi": "người chồng hoặc vợ"
+            },
+            {
+                "en": "A stay-at-home parent",
+                "vi": "bố hoặc mẹ ở nhà để chăm sóc con cái và làm việc nhà"
+            },
+            {
+                "en": "At liberty to do sth",
+                "vi": "có thể tự do làm gì đó"
+            },
+            {
+                "en": "Personal possessions reflect wealth, social status, and appearance",
+                "vi": "tài sản cá nhân"
+            },
+            {
+                "en": "phản ánh sự giàu sang, địa vị xã hội, và bề ngoài",
+                "vi": ""
+            },
+            {
+                "en": "To enhance people’s appearance",
+                "vi": "làm đẹp vẻ bề ngoài"
+            },
+            {
+                "en": "Luxurious brands",
+                "vi": "nhãn hàng xa xỉ"
+            },
+            {
+                "en": "To be sold at exorbitant prices",
+                "vi": "được bán với giá rất cao"
+            },
+            {
+                "en": "To show off their social status or their wealth",
+                "vi": "khoe địa vị xã hội hay sự giàu có"
+            },
+            {
+                "en": "The strongest economic superpower",
+                "vi": "cường quốc kinh tế mạnh nhất"
+            },
+            {
+                "en": "Dominant brand names",
+                "vi": "nhãn hàng thịnh hành"
+            },
+            {
+                "en": "To maintain their positions",
+                "vi": "giữ vững vị thế"
+            },
+            {
+                "en": "To prevent large-scale monopoly",
+                "vi": "ngăn cản thế độc quyền theo quy mô lớn"
+            },
+            {
+                "en": "Brick-and-motar stores",
+                "vi": "Cửa hàng truyền thống (có cửa tiệm hữu hình)"
+            },
+            {
+                "en": "Group together",
+                "vi": "nhóm lại, tập hợp lại"
+            },
+            {
+                "en": "180",
+                "vi": ""
+            },
+            {
+                "en": "Exhaust fumes (luôn ở dạng số nhiều)",
+                "vi": "khí thải"
+            },
+            {
+                "en": "Marine species",
+                "vi": "sinh vật biển"
+            },
+            {
+                "en": "To worsen the problem",
+                "vi": "làm vấn đề tồi tệ hơn"
+            },
+            {
+                "en": "Database administrator",
+                "vi": "quản trị viên dữ liệu"
+            },
+            {
+                "en": "E-commerce (electronic commerce)",
+                "vi": "thương mại điện tử"
+            },
+            {
+                "en": "Face something",
+                "vi": "đối mặt với điều gì đó, thường là không dễ chịu"
+            },
+            {
+                "en": "Place a burden on somebody to do something",
+                "vi": "tạo sức ép cho ai đó để làm cái gì đó"
+            },
+            {
+                "en": "Tax-payer",
+                "vi": "người nộp thuế"
+            }
+        ]
+    },
+    {
+        "id": "I9",
+        "category": "ANIMAL RIGHTS",
+        "title_en": "NEGATIVES OF ZOOS",
+        "title_vi": "Những mặt tiêu cực của sở thú",
+        "points": [
+            {
+                "en": "Zoo animals are kept in artificial environments",
+                "vi": "Động vật trong vườn thú được giữ trong môi trường nhân tạo"
+            },
+            {
+                "en": "They are kept in cages or have limited space",
+                "vi": "Chúng được giữ trong lồng hoặc có không gian hạn chế"
+            },
+            {
+                "en": "Zoo animals rely on humans",
+                "vi": "Động vật hoang dã phụ thuộc vào con người"
+            },
+            {
+                "en": "They lose the freedom to hunt for food",
+                "vi": "Chúng mất quyền tự do săn tìm thức ăn"
+            },
+            {
+                "en": "They best way to save endangered species is by protecting natural habitats.",
+                "vi": "Cách tốt nhất để cứu những loài nguy cấp là bảo vệ môi trường sống tự nhiên."
+            },
+            {
+                "en": "Some people believe that zoos are unethical",
+                "vi": "Một số người tin rằng vườn thú là phi đạo đức"
+            },
+            {
+                "en": "Zoos exhibits animals with the aim of making money",
+                "vi": "Vườn thú trưng bày động vật với mục đích kiếm tiền"
+            },
+            {
+                "en": "We have no right to use animals for entertainment and profit.",
+                "vi": "Chúng ta không có quyền sử dụng động vật để giải trí và lợi nhuận."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Telecasts",
+                "vi": "Chương trình TV"
+            },
+            {
+                "en": "Cultural diversity",
+                "vi": "sự đa dạng văn hóa"
+            },
+            {
+                "en": "Depraved customs",
+                "vi": "hủ tục"
+            },
+            {
+                "en": "Cultural assimilation",
+                "vi": "sự hòa tan văn hóa"
+            },
+            {
+                "en": "Exotic practices",
+                "vi": "tục lệ xa lạ"
+            },
+            {
+                "en": "Long-standing ethics",
+                "vi": "chuẩn mực đạo đức lâu đời"
+            },
+            {
+                "en": "To change and evolve to meet the demands of modern society",
+                "vi": "thay đổi và phát triển"
+            },
+            {
+                "en": "để đáp ứng yêu cầu của xã hội hiện đại",
+                "vi": ""
+            },
+            {
+                "en": "To adapt to something",
+                "vi": "thích nghi với cái gì đó"
+            },
+            {
+                "en": "The developments in hi-tech machines and artificial intelligence",
+                "vi": "những sự phát triển"
+            },
+            {
+                "en": "của máy móc công nghệ cao và trí thông minh nhân tạo",
+                "vi": ""
+            },
+            {
+                "en": "165",
+                "vi": ""
+            },
+            {
+                "en": "Be replaced by automated processes",
+                "vi": "bị thay thế bởi những quy trình tự động"
+            },
+            {
+                "en": "The ever-increasing desire to cut expenses and increase profits",
+                "vi": "nhu cầu tăng lên về"
+            },
+            {
+                "en": "việc cắt giảm chi tiêu và tối đa lợi nhuận",
+                "vi": ""
+            },
+            {
+                "en": "Outsourced",
+                "vi": "thực hiện bởi một bên khác"
+            },
+            {
+                "en": "Autonomous vehicles",
+                "vi": "phương tiện tự động"
+            },
+            {
+                "en": "To incorporate technology into their process",
+                "vi": "kết hợp công nghệ vào trong quy trình"
+            },
+            {
+                "en": "To keep up to date with something",
+                "vi": "cập nhật với cái gì đó (xu hướng, công nghệ…)"
+            },
+            {
+                "en": "Credibility",
+                "vi": "độ tín nhiệm"
+            },
+            {
+                "en": "Organizational commitment",
+                "vi": "sự gắn bó với tổ chức"
+            },
+            {
+                "en": "Work stress or burnout",
+                "vi": "áp lực công việc và sự quá tải, kiệt sức"
+            },
+            {
+                "en": "Turnover rate",
+                "vi": "tỷ lệ nghỉ việc"
+            }
+        ]
+    },
+    {
+        "id": "I10",
+        "category": "CITIES",
+        "title_en": "REASONS FOR URBANIZATION",
+        "title_vi": "Những lý do ủng hộ cho việc đô thị hóa",
+        "points": [
+            {
+                "en": "People move to cities in search of job opportunities",
+                "vi": "Mọi người di chuyển đến các thành phố để tìm kiếm cơ hội việc làm"
+            },
+            {
+                "en": "Cities offer greater employment possibilities and a higher standard of living",
+                "vi": "Các thành phố cung cấp nhiều khả năng việc làm và mức sống cao hơn"
+            },
+            {
+                "en": "People migrate to cities from the countryside",
+                "vi": "Người di cư đến các thành phố từ nông thôn"
+            },
+            {
+                "en": "Traditional activities like farming need fewer workers nowadays",
+                "vi": "Các hoạt động truyền thống như canh tác ngày càng ít người lao động hơn"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Affordable commodities",
+                "vi": "mặt hàng giá rẻ"
+            },
+            {
+                "en": "Purchasing power",
+                "vi": "sức mua"
+            },
+            {
+                "en": "The market’s demand",
+                "vi": "nhu cầu của thị trường"
+            },
+            {
+                "en": "Commodities’ exorbitant price",
+                "vi": "giá cả đắt đỏ của hàng hóa"
+            },
+            {
+                "en": "Quality products",
+                "vi": "hàng chất lượng"
+            },
+            {
+                "en": "Toxic waste and exhaust",
+                "vi": "chất khí thải độc hại"
+            },
+            {
+                "en": "A source of entertainment = a form of entertainment",
+                "vi": "một loại hình giải trí, thư giãn"
+            },
+            {
+                "en": "A part of the entertainment industry",
+                "vi": "một phần của nền công nghiệp giải trí"
+            },
+            {
+                "en": "A multibillion-dollar industry",
+                "vi": "nền công nghiệp hàng tỉ đô"
+            },
+            {
+                "en": "To generate a lot of money",
+                "vi": "tạo ra rất nhiều tiền"
+            },
+            {
+                "en": "Morals and values are shaped by what they watch",
+                "vi": "giá trị đạo đức được hình thành"
+            },
+            {
+                "en": "bởi những gì họ xem",
+                "vi": ""
+            },
+            {
+                "en": "To have a strong sense of patriotism",
+                "vi": "có một tinh thần yêu nước mãnh liệt"
+            },
+            {
+                "en": "Categorized",
+                "vi": "phân loại"
+            },
+            {
+                "en": "Sport-minded",
+                "vi": "quan tâm thể thao"
+            },
+            {
+                "en": "Capture attention",
+                "vi": "thu hút sự chú ý"
+            },
+            {
+                "en": "Disproportionately",
+                "vi": "không đều"
+            }
+        ]
+    },
+    {
+        "id": "I11",
+        "category": "CITIES",
+        "title_en": "NEGATIVES OF CITY LIFE",
+        "title_vi": "Những mặt tiêu cực của đời sống thành phố",
+        "points": [
+            {
+                "en": "Life in cities has its drawbacks",
+                "vi": "Cuộc sống ở các thành phố có những hạn chế"
+            },
+            {
+                "en": "The cost of living is higher than in rural areas",
+                "vi": "Chi phí sinh hoạt cao hơn ở nông thôn"
+            },
+            {
+                "en": "Some people d not manage to find work",
+                "vi": "Một số người không thể tìm được việc làm"
+            },
+            {
+                "en": "Housing is usually much more expensive",
+                "vi": "Nhà ở thường đắt hơn nhiều"
+            },
+            {
+                "en": "Homelessness and poverty are common on cities",
+                "vi": "Tình trạng vô gia cư và đói nghèo phổ biến ở các thành phố"
+            },
+            {
+                "en": "There is a gap between rich and poor",
+                "vi": "Có khoảng cách giữa người giàu và người nghèo"
+            },
+            {
+                "en": "Life in cities can be extremely stressful",
+                "vi": "Cuộc sống ở các thành phố có thể rất căng thẳng"
+            },
+            {
+                "en": "There are problems like traffic congestion and crime",
+                "vi": "Có những vấn đề như tắc nghẽn giao thông và tội phạm"
+            },
+            {
+                "en": "Cities lack a sense of community",
+                "vi": "Các thành phố thiếu ý thức về cộng đồng"
+            },
+            {
+                "en": "People do not even know their neighbor",
+                "vi": "Mọi người thậm chí không biết người hàng xóm của họ"
+            },
+            {
+                "en": "Cities are sometimes described as “concrete jungles”.",
+                "vi": "Các thành phố đôi khi được mô tả là \"những khu rừng bê tông \"."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "International aids to deprived regions",
+                "vi": "Hỗ trợ quốc tế đến những vùng nghèo khó"
+            },
+            {
+                "en": "The underprivileged",
+                "vi": "Người nghèo, người bất hạnh"
+            },
+            {
+                "en": "The well-being of their citizens",
+                "vi": "Sự sung túc của công dân"
+            },
+            {
+                "en": "Any acts of global assistance",
+                "vi": "Bất kì hành động trợ giúp quốc tế nào"
+            },
+            {
+                "en": "Underdeveloped countries",
+                "vi": "Những nước kém phát triển"
+            },
+            {
+                "en": "Domestic poverty",
+                "vi": "Đói nghèo trong nước"
+            },
+            {
+                "en": "Affluent nations",
+                "vi": "Những nước giàu có"
+            },
+            {
+                "en": "To compete with something or somebody",
+                "vi": "cạnh tranh với cái gì đó, ai đó"
+            },
+            {
+                "en": "To be threatened with something",
+                "vi": "bị đe dọa bởi cái gì đó"
+            },
+            {
+                "en": "A rise in something",
+                "vi": "sự tăng lên ở cái gì đó"
+            },
+            {
+                "en": "Increasing bankruptcies among small town-center shops",
+                "vi": "sự phá sản nhiều của"
+            },
+            {
+                "en": "những cửa hàng nhỏ",
+                "vi": ""
+            },
+            {
+                "en": "To cause a significant loss for the economy of any city",
+                "vi": "gây ra tổn thất lớn cho nền"
+            },
+            {
+                "en": "kinh tế của bất cứ thành phố nào",
+                "vi": ""
+            },
+            {
+                "en": "Traffic congestion",
+                "vi": "tắc đường"
+            },
+            {
+                "en": "To adversely affect human health",
+                "vi": "ảnh hưởng tiêu cực tới sức khoẻ con người"
+            },
+            {
+                "en": "To be faced with overpopulation and consequently ever-growing pressure on",
+                "vi": ""
+            },
+            {
+                "en": "housing supply systems",
+                "vi": "đối mặt với quá tải dân số và hậu quả là áp lực đè nặng về"
+            },
+            {
+                "en": "vấn",
+                "vi": ""
+            },
+            {
+                "en": "đề cung cấp chỗ ở",
+                "vi": ""
+            },
+            {
+                "en": "Scale of production",
+                "vi": "mức độ sản xuất"
+            },
+            {
+                "en": "Brand image",
+                "vi": "hình ảnh thương hiệu"
+            },
+            {
+                "en": "Bombarded",
+                "vi": "tấn công dồn dập"
+            },
+            {
+                "en": "Develop an aversion",
+                "vi": "trở nên ghét"
+            }
+        ]
+    },
+    {
+        "id": "I12",
+        "category": "CITIES",
+        "title_en": "PEDESTRIAN AREAS",
+        "title_vi": "Những mặt thuận lợi của khu vực đi bộ",
+        "points": [
+            {
+                "en": "Pedestrian zones in city centre can improve the local environment",
+                "vi": "Khu dành cho người đi bộ ở trung tâm thành phố có thể cải thiện môi trường địa phương"
+            },
+            {
+                "en": "Banning cars encourages people to walk or cycle",
+                "vi": "Việc cấm xe khuyến khích mọi người đi bộ hoặc đi xe đạp"
+            },
+            {
+                "en": "Many European cities have built bicycle lanes",
+                "vi": "Nhiều thành phố châu Âu đã xây dựng làn đường cho xe đạp"
+            },
+            {
+                "en": "Dependence on cars is linked to health problems like obesity",
+                "vi": "Sự phụ thuộc vào xe hơi có liên quan đến các vấn đề sức khoẻ như béo phì"
+            },
+            {
+                "en": "People who walk or cycle regularly are generally healthier",
+                "vi": "Những người đi bộ hoặc đi xe đạp thường xuyên thường khoẻ hơn"
+            },
+            {
+                "en": "Pedestrian areas are safer and more attractive for both residents and tourists",
+                "vi": "Các khu vực dành cho người đi bộ an toàn và hấp dẫn hơn cho cả người dân và khách du lịch"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Universe study",
+                "vi": "nghiên cứu vũ trụ"
+            },
+            {
+                "en": "A new habitable environment",
+                "vi": "môi trường có thể sinh sống"
+            },
+            {
+                "en": "The increasingly harsh living conditions",
+                "vi": "điều kiện sống ngày càng khắc nghiệt"
+            },
+            {
+                "en": "The population explosion",
+                "vi": "Bùng nổ dân số"
+            },
+            {
+                "en": "Space studies",
+                "vi": "Nghiên cứu không gian"
+            },
+            {
+                "en": "The lack of land and accommodation",
+                "vi": "thiếu hụt đất đai và chỗ ở"
+            },
+            {
+                "en": "155",
+                "vi": ""
+            },
+            {
+                "en": "Rate of birth",
+                "vi": "tỉ lệ sinh"
+            },
+            {
+                "en": "Densely populated cities",
+                "vi": "thành phố mật độ dân số cao"
+            },
+            {
+                "en": "Depletion of natural resources",
+                "vi": "cạn kiệt tài nguyên thiên nhiên"
+            },
+            {
+                "en": "Fossil fuel and water reservoir",
+                "vi": "bể chứa nước và nguyên liệu hóa thạch"
+            },
+            {
+                "en": "Over-exploited",
+                "vi": "khai thác quá đà"
+            },
+            {
+                "en": "Sustaining life",
+                "vi": "duy trì sự sống"
+            },
+            {
+                "en": "The survival of the human race",
+                "vi": "sự sống còn của loài người"
+            },
+            {
+                "en": "To have longer life expectancy than before",
+                "vi": "có tuổi thọ dài hơn trước đó"
+            },
+            {
+                "en": "Senior citizens",
+                "vi": "người dân lớn tuổi"
+            },
+            {
+                "en": "To shoulder much more responsibilities",
+                "vi": "gánh trên vai nhiều trách nhiệm hơn"
+            },
+            {
+                "en": "166",
+                "vi": ""
+            },
+            {
+                "en": "To contribute free labor to ameliorating their communities",
+                "vi": "đóng góp nhân lực miễn"
+            },
+            {
+                "en": "phí cho sự cải thiện cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "To engage in charity work",
+                "vi": "tham gia vào công việc từ thiện"
+            },
+            {
+                "en": "To instil a great sense of responsibility and altruism into the young generation",
+                "vi": ""
+            },
+            {
+                "en": "truyền bá tinh thần trách nhiệm và lòng vị tha tới thế hệ trẻ",
+                "vi": ""
+            },
+            {
+                "en": "To pay for increased retirement pensions and health care costs",
+                "vi": "trả khoản lương hưu"
+            },
+            {
+                "en": "và các chi phí chăm sóc sức khoẻ cao",
+                "vi": ""
+            },
+            {
+                "en": "To bear a greater financial burden",
+                "vi": "chịu gánh nặng tài chính cao hơn"
+            },
+            {
+                "en": "Feeling of togetherness",
+                "vi": "sự hoà mình với đám đông"
+            },
+            {
+                "en": "Have personal interaction",
+                "vi": "có tương tác cá nhân"
+            },
+            {
+                "en": "Distractors",
+                "vi": "thứ gây mất tập trung"
+            },
+            {
+                "en": "Make a difference",
+                "vi": "Disturb their experience: ảnh hưởng trải nghiệm"
+            }
+        ]
+    },
+    {
+        "id": "I13",
+        "category": "CRIME",
+        "title_en": "POLICE AND CRIME PREVENTION",
+        "title_vi": "Giải pháp ngăn ngừa tội phạm",
+        "points": [
+            {
+                "en": "The job of the polices is to catch criminals",
+                "vi": "Công việc của các cảnh sách là bắt bọn tội phạm"
+            },
+            {
+                "en": "They must also prevent crime and make communities safer",
+                "vi": "Họ cũng phải ngăn ngừa tội phạm và làm cho cộng đồng an toàn hơn"
+            },
+            {
+                "en": "There should be an increase in the number of police officers on the streets",
+                "vi": "Cần tăng số lượng cảnh sát trên đường phố"
+            },
+            {
+                "en": "Police officers should be seen as part of the community",
+                "vi": "Các nhân viên cảnh sát nên được xem như là một phần của cộng đồng"
+            },
+            {
+                "en": "They should be involved with education and prevention",
+                "vi": "Họ nên tham gia vào việc giáo dục và phòng ngừa"
+            },
+            {
+                "en": "The police should be in close contact with schools",
+                "vi": "Công an nên tiếp xúc gần gũi với các trường học"
+            },
+            {
+                "en": "They should focus on young people who have dropped out of school.",
+                "vi": "Họ nên tập trung vào những người trẻ tuổi đã bỏ học."
+            },
+            {
+                "en": "These teenagers may become involved with gangs",
+                "vi": "Những thanh thiếu niên này có thể trở nên tham gia với các băng nhóm"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Accumulated more experience",
+                "vi": "Tích lũy nhiều kinh nghiệm hơn"
+            },
+            {
+                "en": "Social unrest and crime escalation",
+                "vi": "Bất ổn xã hội và leo thang tội phạm"
+            },
+            {
+                "en": "Great versatility and creativity",
+                "vi": "sự linh hoạt lớn và tính sáng tạo"
+            },
+            {
+                "en": "Old-age pensions and medical care",
+                "vi": "Lương hưu và chăm sóc y tế"
+            },
+            {
+                "en": "Retirement age",
+                "vi": "Tuổi nghỉ hưu"
+            },
+            {
+                "en": "The existence of human beings",
+                "vi": "sự tồn tại của loài người"
+            },
+            {
+                "en": "A severe lack of understanding",
+                "vi": "sự thiếu hiểu biết trầm trọng"
+            },
+            {
+                "en": "The role that nature plays in their lives",
+                "vi": "vai trò của thiên nhiên trong cuộc sống của họ"
+            },
+            {
+                "en": "Nothing more than concrete jungles",
+                "vi": "không có gì hơn ngoài bê tông cốt thép"
+            },
+            {
+                "en": "Devoid of any",
+                "vi": "không có bất kì"
+            },
+            {
+                "en": "Staring at a smartphone or TV screen",
+                "vi": "nhìn chằm chằm vào điện thoại hay TV"
+            },
+            {
+                "en": "Disconnect them from the natural world",
+                "vi": "ngăn cách họ khỏi thiên nhiên"
+            },
+            {
+                "en": "Incorporate larger green spaces",
+                "vi": "tập hợp những không gian xanh lớn hơn"
+            },
+            {
+                "en": "Be lined with trees",
+                "vi": "được viền với cây"
+            },
+            {
+                "en": "Large communal spaces",
+                "vi": "không gian chung rộng hơn"
+            },
+            {
+                "en": "A compulsory part of every child’s education",
+                "vi": "phần bắt buộc trong giáo dục của mỗi"
+            },
+            {
+                "en": "trẻ em",
+                "vi": ""
+            },
+            {
+                "en": "Live in harmony with it",
+                "vi": "sống hài hòa với nó"
+            },
+            {
+                "en": "Being close to nature",
+                "vi": "gần gũi với môi trường"
+            },
+            {
+                "en": "A deep understanding and appreciation",
+                "vi": "sự hiểu biết và trân trọng sâu sắc"
+            },
+            {
+                "en": "The human race",
+                "vi": "loài người"
+            },
+            {
+                "en": "Catastrophic consequences",
+                "vi": "thảm họa tồi tệ"
+            },
+            {
+                "en": "Tạo ra sự khác biệt",
+                "vi": ""
+            },
+            {
+                "en": "Boycott something",
+                "vi": "tẩy chay cái gì đó"
+            },
+            {
+                "en": "181",
+                "vi": ""
+            },
+            {
+                "en": "At the expense of somebody/ something",
+                "vi": "dựa trên tổn thất, sự hy sinh của ai đó/cái gì đó"
+            },
+            {
+                "en": "Suffice to do something",
+                "vi": "đủ để làm điều gì đó"
+            },
+            {
+                "en": "To assume responsibility",
+                "vi": "gánh vác trách nhiệm."
+            },
+            {
+                "en": "Environmental degradation",
+                "vi": "sự suy thoái môi trường."
+            },
+            {
+                "en": "Respiratory disease",
+                "vi": "bệnh về đường hô hấp"
+            },
+            {
+                "en": "To be synonymous with something",
+                "vi": "đồng nghĩa với cái gì/điều gì đó"
+            }
+        ]
+    },
+    {
+        "id": "I14",
+        "category": "CRIME",
+        "title_en": "PUNISHMENTS/PRISONS",
+        "title_vi": "Những hình phạt cho người phạm tội",
+        "points": [
+            {
+                "en": "Fines are used as punishment for minor crimes",
+                "vi": "Tiền phạt được dùng làm hình phạt đối với tội phạm nhỏ"
+            },
+            {
+                "en": "",
+                "vi": "Nếu tội phạm nghiêm trọng hơn, nhà tù là hình phạt phổ biến nhất"
+            },
+            {
+                "en": "Some criminals pose a threat to society",
+                "vi": "Một số tội phạm gây ra một mối đe dọa cho xã hội"
+            },
+            {
+                "en": "They are put in prison to ensure the safety of other citizens",
+                "vi": "Họ bị đưa vào trại giam để đảm bảo sự an toàn của người dân khác"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To delay childbirth",
+                "vi": "Trì hoãn sinh con"
+            },
+            {
+                "en": "The propensity for prioritizing their careers over taking parental roles",
+                "vi": "xu hướng coi trọng"
+            },
+            {
+                "en": "nghề nghiệp trước khi có con",
+                "vi": ""
+            },
+            {
+                "en": "Adopted a fear of taking unwanted custody",
+                "vi": "Có nỗi sợ phải nuôi con không mong"
+            },
+            {
+                "en": "muốn sau khi li hôn",
+                "vi": ""
+            },
+            {
+                "en": "Marital harmony",
+                "vi": "Sự hòa thuận trong hôn nhân"
+            },
+            {
+                "en": "The possibility of infertility",
+                "vi": "Khả năng vô sinh"
+            },
+            {
+                "en": "The occupational prioritization and the hesitation over the likelihood of singleparent",
+                "vi": ""
+            },
+            {
+                "en": "responsibility",
+                "vi": "Sự coi trọng nghề nghiệp và sự đắn đo trước khả năng phải nhận trách nhiệm"
+            },
+            {
+                "en": "của bố/mẹ độc thân",
+                "vi": ""
+            },
+            {
+                "en": "A growing trend in food culture",
+                "vi": "xu hướng đang thịnh hành về văn hóa ẩm thực"
+            },
+            {
+                "en": "A vast array of",
+                "vi": "một chuỗi rất đa dạng"
+            },
+            {
+                "en": "A highly nutritious diet",
+                "vi": "chế độ ăn giàu dinh dưỡng"
+            },
+            {
+                "en": "To promote health and prevent disease",
+                "vi": "nâng cao sức khỏe & ngăn chặn bệnh tật"
+            },
+            {
+                "en": "Losing their own access to their food sources",
+                "vi": "không thể tiếp cận được với những"
+            },
+            {
+                "en": "nguồn thực phẩm của họ",
+                "vi": ""
+            },
+            {
+                "en": "Contributes to climate change",
+                "vi": "góp phần gây ra biến đổi khí hậu"
+            },
+            {
+                "en": "167",
+                "vi": ""
+            },
+            {
+                "en": "Carbon emissions produced by transportation",
+                "vi": "khí thải carbon từ vận chuyển hàng hóa"
+            },
+            {
+                "en": "Treated with chemicals and preservatives",
+                "vi": "được xử lý bằng hóa chất và chất bảo quản"
+            },
+            {
+                "en": "Be exposed to something",
+                "vi": "được tiếp xúc với cái gì đó"
+            },
+            {
+                "en": "In the flesh",
+                "vi": "bằng xương bằng thịt"
+            },
+            {
+                "en": "Prevalence of something",
+                "vi": "sự thịnh hành của cái gì đó"
+            },
+            {
+                "en": "To flourish",
+                "vi": "phát triển hưng thịnh"
+            },
+            {
+                "en": "To escape poverty",
+                "vi": "thoát nghèo"
+            }
+        ]
+    },
+    {
+        "id": "I15",
+        "category": "CRIME",
+        "title_en": "NEGATIVES OF PRISONS",
+        "title_vi": "Những tiêu cực của việc ở trại giam",
+        "points": [
+            {
+                "en": "Criminals are put together",
+                "vi": "Tội phạm được kết hợp với nhau"
+            },
+            {
+                "en": "They make friends with other offenders",
+                "vi": "Họ kết bạn với những người vi phạm khác"
+            },
+            {
+                "en": "Many prisoners re-offend when they are released",
+                "vi": "Nhiều tù nhân lại tái phạm khi họ được thả"
+            },
+            {
+                "en": "A criminal record makes finding a job more difficult",
+                "vi": "Một hồ sơ hình sự làm cho việc tìm kiếm một công việc khó khăn hơn"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Disinterest in science subjects",
+                "vi": "Không hứng thú với những môn khoa học"
+            },
+            {
+                "en": "Diligence as well as a great deal of patience and intelligence",
+                "vi": "Sự chăm chỉ cũng như"
+            },
+            {
+                "en": "là rất nhiều kiên nhẫn và sự thông minh",
+                "vi": ""
+            },
+            {
+                "en": "Higher level of both difficulty and commitment",
+                "vi": "Độ khó và độ cam kết cao"
+            },
+            {
+                "en": "The scarcity of human resources",
+                "vi": "Thiếu hụt nguồn nhân lực"
+            },
+            {
+                "en": "The imbalance in future workforce",
+                "vi": "Sự mất cân bằng lực lượng lao động tương lai"
+            },
+            {
+                "en": "A major human resource crisis",
+                "vi": "Khủng hoảng nguồn nhân lực"
+            },
+            {
+                "en": "156",
+                "vi": ""
+            },
+            {
+                "en": "The traditional lifestyles",
+                "vi": "lối sống truyền thống"
+            },
+            {
+                "en": "The freedom to do as they please",
+                "vi": "tự do làm theo ý bản thân mong muốn"
+            },
+            {
+                "en": "Constant judgement or criticism",
+                "vi": "sự đánh giá hoặc phê bình liên tục"
+            },
+            {
+                "en": "Hectic, fast-paced lifestyle",
+                "vi": "lối sống hối hả, bận rộn"
+            },
+            {
+                "en": "Slower-paced, healthier life",
+                "vi": "lối sống chậm rãi, lành mạnh"
+            },
+            {
+                "en": "During their retirement",
+                "vi": "trong suốt thời gian nghỉ hưu"
+            },
+            {
+                "en": "Physical and mental health problems",
+                "vi": "những vấn đề sức khỏe thể chất và tinh thần"
+            },
+            {
+                "en": "Lack the care and attention they need",
+                "vi": "thiếu sự chăm sóc và quan tâm cần thiết"
+            },
+            {
+                "en": "Interaction and influence from grandparents",
+                "vi": "sự tương tác và ảnh hưởng từ ông bà"
+            },
+            {
+                "en": "Important life lessons",
+                "vi": "những bài học cuộc sống quan trọng"
+            },
+            {
+                "en": "Valuable life experience",
+                "vi": "kinh nghiệm sống quý giá"
+            },
+            {
+                "en": "Important traditions and customs",
+                "vi": "những phong tục và truyền thống quan trọng"
+            },
+            {
+                "en": "Poor family bonds",
+                "vi": "tình cảm gia đình thiếu thân thiết, gắn bó"
+            },
+            {
+                "en": "Cost effectively",
+                "vi": "hiệu quả về chi phí"
+            },
+            {
+                "en": "Leave something for somebody",
+                "vi": "để cái gì đó cho ai đó tiếp quản, xử lý"
+            },
+            {
+                "en": "To shoulder something",
+                "vi": "gánh vác việc gì đó/cái gì đó"
+            }
+        ]
+    },
+    {
+        "id": "I16",
+        "category": "CRIME",
+        "title_en": "REHABILITATION",
+        "title_vi": "Những mặt tích cực của sự cải tạo",
+        "points": [
+            {
+                "en": "Another aim of prisons is rehabilitation",
+                "vi": "Một mục đích khác của nhà tù là cải tạo"
+            },
+            {
+                "en": "Prisoners receive education of vocational training",
+                "vi": "Tù nhân được đào tạo nghề"
+            },
+            {
+                "en": "Prisoners should learn personal skills and specific job skills",
+                "vi": "Các tù nhân nên học các kỹ năng cá nhân và kỹ năng công việc cụ thể"
+            },
+            {
+                "en": "Punishment could make prisoners’ behavior worse",
+                "vi": "Sự trừng phạt có thể làm cho hành vi của các tù nhân tồi tệ hơn"
+            },
+            {
+                "en": "Rehabilitation aims to make them better citizens",
+                "vi": "Cải tạo nhằm mục đích làm cho họ trở thành công dân tốt hơn"
+            },
+            {
+                "en": "Rehabilitated prisoners are less likely to re-offend",
+                "vi": "Những tù nhân cải tạo ít có khả năng tái phạm"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Approach education",
+                "vi": "Tiếp cận giáo dục"
+            },
+            {
+                "en": "Acquire a great deal of knowledge from the online platform",
+                "vi": "Có được lượng lón kiến"
+            },
+            {
+                "en": "thức từ Internet",
+                "vi": ""
+            },
+            {
+                "en": "An effective studying environment",
+                "vi": "Môi trường học tập hiệu quả"
+            },
+            {
+                "en": "Their scholastic competence and characteristics",
+                "vi": "Khả năng học tập và tính cách"
+            },
+            {
+                "en": "A futile exercise",
+                "vi": "một việc làm vô ích"
+            },
+            {
+                "en": "Both perspectives are of equal importance",
+                "vi": "cả hai quan điểm đều có tầm quan trọng"
+            },
+            {
+                "en": "như nhau",
+                "vi": ""
+            },
+            {
+                "en": "Simultaneously",
+                "vi": "xảy ra đồng thời"
+            },
+            {
+                "en": "Have goals and dreams to strive towards",
+                "vi": "có mục tiêu và mơ ước để phấn đấu"
+            },
+            {
+                "en": "A sense of purpose and direction",
+                "vi": "ý thức về mục đích và định hướng"
+            },
+            {
+                "en": "To achieve and fulfil these goals",
+                "vi": "để đạt được và hoàn thành các mục tiêu"
+            },
+            {
+                "en": "One of the key elements",
+                "vi": "một trong những yếu tố then chốt"
+            },
+            {
+                "en": "The future is uncertain",
+                "vi": "tương lai bất định, luôn thay đổi"
+            },
+            {
+                "en": "A backup plan",
+                "vi": "kế hoạch dự phòng"
+            },
+            {
+                "en": "Too many factors that influence our future",
+                "vi": "quá nhiều nhân tố ảnh hưởng đến"
+            },
+            {
+                "en": "tương lai của chúng ta",
+                "vi": ""
+            },
+            {
+                "en": "Out of our control",
+                "vi": "ngoài tầm kiểm soát"
+            },
+            {
+                "en": "To react and respond appropriately",
+                "vi": "để phản ứng lại một cách phù hợp"
+            },
+            {
+                "en": "Our current situation and needs",
+                "vi": "những nhu cầu và tình hình hiện tại của chúng ta"
+            },
+            {
+                "en": "To live your life to the fullest",
+                "vi": "sống hết mình"
+            },
+            {
+                "en": "Each passing moment",
+                "vi": "mỗi giây phút trôi qua"
+            },
+            {
+                "en": "168",
+                "vi": ""
+            },
+            {
+                "en": "To maintain a balance",
+                "vi": "để duy trì cân bằng"
+            },
+            {
+                "en": "To adapt to the current changing situations and circumstances",
+                "vi": "để thích nghi với"
+            },
+            {
+                "en": "các tình huống, hoàn cảnh đang thay đổi ở hiện tại",
+                "vi": ""
+            },
+            {
+                "en": "Extra labour",
+                "vi": "lao động ngoài giờ"
+            },
+            {
+                "en": "Entail heavy workload",
+                "vi": "đòi hỏi khối lượng công việc nặng"
+            },
+            {
+                "en": "Emotional distress",
+                "vi": "lo âu về mặt tinh thần"
+            },
+            {
+                "en": "Antisocial behaviors",
+                "vi": "hành vi chống đối xã hội"
+            },
+            {
+                "en": "Shape personality and perception",
+                "vi": "định hướng tính cách và nhận thức"
+            }
+        ]
+    },
+    {
+        "id": "I17",
+        "category": "CRIME",
+        "title_en": "CAPITAL PUNISHMENT",
+        "title_vi": "Những lý do ủng hộ án tử hình",
+        "points": [
+            {
+                "en": "Supporters say that capital punishment deters crime",
+                "vi": "Những người ủng hộ nói rằng án tử hình sẽ ngăn chặn tội ác"
+            },
+            {
+                "en": "Fear of the death penalty stops people from committing offences",
+                "vi": "Nỗi sợ án tử hình ngăn chặn con người từ việc phạm tội"
+            },
+            {
+                "en": "The death penalty shows that crime is not tolerated",
+                "vi": "Hình phạt tử hình cho thấy tội ác không được dung thứ"
+            },
+            {
+                "en": "",
+                "vi": "Đó là một hình thức trả thù"
+            },
+            {
+                "en": "The cost of imprisonment is avoided",
+                "vi": "Chi phí bỏ tù được tránh khỏi"
+            },
+            {
+                "en": "The offender cannot pose a threat to others",
+                "vi": "Người phạm tội không thể gây nguy hiểm cho người khác"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Media and sport celebrities",
+                "vi": "Người nổi tiếng trên truyền hình hoặc thể thao"
+            },
+            {
+                "en": "Role models",
+                "vi": "Hình tượng (tạm dịch)"
+            },
+            {
+                "en": "Famous entertainment stars",
+                "vi": "Những ngôi sao nổi tiếng trong ngành giải trí"
+            },
+            {
+                "en": "Changing patterns of fashion and behavior",
+                "vi": "Thay đổi cách ăn mặc và cư xử"
+            },
+            {
+                "en": "Show a propensity for",
+                "vi": "Có xu hướng cho cái gì"
+            },
+            {
+                "en": "Value the beauty and elegance of clothes",
+                "vi": "Trân trọng vẻ đẹp và sự lịch lãm của trang"
+            },
+            {
+                "en": "phục",
+                "vi": ""
+            },
+            {
+                "en": "Reverence for celebrities in the field of entertainment",
+                "vi": "Sự hâm hộ những người nổi"
+            },
+            {
+                "en": "tiếng trong ngành giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Cause irritation for the locals",
+                "vi": "Gây nên sự khó chịu cho người địa phương"
+            },
+            {
+                "en": "Sugar-coat",
+                "vi": "Nói giảm"
+            },
+            {
+                "en": "Idolize media and sport celebrated individuals",
+                "vi": "Hâm mộ những cá nhân nổi tiếng trên"
+            },
+            {
+                "en": "truyền hình và thể thao",
+                "vi": ""
+            },
+            {
+                "en": "Immerse in a complex storyline",
+                "vi": "hòa mình vào một cốt truyện phức tạp"
+            },
+            {
+                "en": "Trigger the imagination and curiosity",
+                "vi": "khơi dậy trí tưởng tượng và sự tò mò"
+            },
+            {
+                "en": "Physically demanding",
+                "vi": "đòi hỏi nhiều về sức khỏe thể chất"
+            },
+            {
+                "en": "Calorie expenditure",
+                "vi": "việc tiêu thụ ca-lo"
+            },
+            {
+                "en": "Establish connections with others",
+                "vi": "thiết lập quan hệ với người khác"
+            },
+            {
+                "en": "Budget cut",
+                "vi": "giảm nhân sách"
+            },
+            {
+                "en": "Private funder",
+                "vi": "quỹ tư nhân"
+            },
+            {
+                "en": "Undertake research",
+                "vi": "thực hiện nghiên cứu"
+            },
+            {
+                "en": "Dictate",
+                "vi": "điều khiển"
+            },
+            {
+                "en": "Profit-driven program",
+                "vi": "dự án vì lợi nhuận"
+            }
+        ]
+    },
+    {
+        "id": "I18",
+        "category": "CRIME",
+        "title_en": "AGAINST CAPITAL PUNISHMENT",
+        "title_vi": "Những lý do phản đối án tử hình",
+        "points": [
+            {
+                "en": "",
+                "vi": "Những người vô tội có thể bị kết án và hành hình sai"
+            },
+            {
+                "en": "Crime rates are not necessarily reduced",
+                "vi": "Tỉ lệ tội phạm không nhất thiết phải giảm"
+            },
+            {
+                "en": "Many criminals do not think they will be caught",
+                "vi": "Nhiều tội phạm không nghĩ rằng họ sẽ bị bắt"
+            },
+            {
+                "en": "Capital punishment is not a good deterrent",
+                "vi": "Hình phạt tử hình không phải là một biện pháp ngăn chặn tốt"
+            },
+            {
+                "en": "Executing prisoners creates a violent culture and encourages revenge",
+                "vi": "Việc hành hình các tù nhân tạo ra một nền văn hoá bạo lực và khuyến khích sự trả thù"
+            },
+            {
+                "en": "We have no right to take another human life",
+                "vi": "Chúng ta không có quyền để lấy đi sinh mạng của người khác"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "An item of some fundamental needs",
+                "vi": "Vật dụng đáp ứng nhu cầu cơ bản"
+            },
+            {
+                "en": "The availability of their personal vehicle",
+                "vi": "Sự sẵn có của phương tiện cá nhân"
+            },
+            {
+                "en": "A perfect choice of recreation",
+                "vi": "Lựa chọn giải trí hoàn hảo"
+            },
+            {
+                "en": "In possession of a fridge",
+                "vi": "Sở hữu một tủ lạnh"
+            },
+            {
+                "en": "Private form of transport",
+                "vi": "Loại hình di chuyển cả nhân"
+            },
+            {
+                "en": "The growth in customers’ demand",
+                "vi": "Sự gia tăng của nhu cầu khách hàng"
+            },
+            {
+                "en": "Newly-hired staff",
+                "vi": "nhân viên mới được nhận làm việc"
+            },
+            {
+                "en": "Be attributable to",
+                "vi": "được quy cho (nguyên nhân)"
+            },
+            {
+                "en": "Work in small separate spaces or cubicles",
+                "vi": "làm việc trong những không gian nhỏ hoặc những"
+            },
+            {
+                "en": "phòng được ngăn cách",
+                "vi": ""
+            },
+            {
+                "en": "Is assigned particular tasks",
+                "vi": "được giao những công việc nhất định"
+            },
+            {
+                "en": "Place more emphasis on",
+                "vi": "chú trọng vào thứ gì đó hơn"
+            },
+            {
+                "en": "Entering the workforce",
+                "vi": "gia nhập lực lượng lao động"
+            },
+            {
+                "en": "Extensive expertise",
+                "vi": "chuyên môn sâu rộng"
+            },
+            {
+                "en": "Colleague interaction",
+                "vi": "sự tương tác giữa đồng nghiệp"
+            },
+            {
+                "en": "Projects could be more teamwork-orientated",
+                "vi": "những dự án có thể được định hướng"
+            },
+            {
+                "en": "làm việc theo nhóm",
+                "vi": ""
+            },
+            {
+                "en": "Count towards",
+                "vi": "được tính vào"
+            },
+            {
+                "en": "To place a huge burden on somebody",
+                "vi": "tạo ra cho ai đó một gánh nặng to lớn"
+            },
+            {
+                "en": "182",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I19",
+        "category": "CRIME",
+        "title_en": "COMMUNITY SERVICE",
+        "title_vi": "Những mặt tích cực của lao động công ích.",
+        "points": [
+            {
+                "en": "Community service is a way to reform offenders",
+                "vi": "Dịch vụ cộng đồng là một cách để cải tạo người phạm tội"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể là một giải pháp cho nhà tù quá tải"
+            },
+            {
+                "en": "",
+                "vi": "Nó tránh được chi phí bị phạt tù"
+            },
+            {
+                "en": "",
+                "vi": "Nó làm cho người phạm tội có ích trong cộng đồng địa phương của họ"
+            },
+            {
+                "en": "They are required to clean streets or talk to school groups",
+                "vi": "Họ phải vệ sinh đường phố hoặc nói chuyện với các nhóm học sinh"
+            },
+            {
+                "en": "Offenders repay their community",
+                "vi": "Người phạm tội trả tiền lại cộng đồng của họ"
+            },
+            {
+                "en": "They avoid the negative influence that prison can have",
+                "vi": "Họ tránh những ảnh hưởng tiêu cực mà nhà tù có thể có"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Reducing unemployment and improving standards of living",
+                "vi": "giảm thất nghiệp và cải"
+            },
+            {
+                "en": "thiện mức sóng",
+                "vi": ""
+            },
+            {
+                "en": "The distribution of social benefits",
+                "vi": "Phân phát phúc lợi xã hội"
+            },
+            {
+                "en": "Take any further obligation for providing support for local communities",
+                "vi": "Có trách"
+            },
+            {
+                "en": "nhiệm bắt buộc giúp đỡ cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "157",
+                "vi": ""
+            },
+            {
+                "en": "Survive in this competitive world",
+                "vi": "Sống sót trong thế giới cạnh tranh"
+            },
+            {
+                "en": "Ameliorate local living standards",
+                "vi": "Cải thiện mức sống của vùng xung quanh"
+            },
+            {
+                "en": "To come into contact with",
+                "vi": "tiếp cận với một thứ gì đó"
+            },
+            {
+                "en": "Frequent exposure",
+                "vi": "tiếp cận thường xuyên"
+            },
+            {
+                "en": "To weigh up pros and cons",
+                "vi": "cân nhắc lợi hại"
+            },
+            {
+                "en": "To exaggerate",
+                "vi": "phóng đại"
+            },
+            {
+                "en": "To create art",
+                "vi": "tạo ra nghệ thuật"
+            },
+            {
+                "en": "Special talent",
+                "vi": "tài năng đặc biệt"
+            },
+            {
+                "en": "Naturally gifted",
+                "vi": "có năng khiếu bẩm sinh"
+            },
+            {
+                "en": "Personal expression",
+                "vi": "sự thể hiện cá nhân"
+            },
+            {
+                "en": "Subjective",
+                "vi": "chủ quan, phụ thuộc vào từng cá nhân"
+            },
+            {
+                "en": "Work of art",
+                "vi": "tác phẩm nghệ thuật"
+            },
+            {
+                "en": "Unique expression",
+                "vi": "sự thể hiện độc đáo"
+            },
+            {
+                "en": "Express an idea, emotion, or feeling",
+                "vi": "thể hiện ý tưởng, tâm trạng hoặc cảm xúc"
+            },
+            {
+                "en": "Medium",
+                "vi": "hình thức thể hiện nghệ thuật (tranh vẽ, âm nhạc, thơ ca,…)"
+            },
+            {
+                "en": "Give up",
+                "vi": "bỏ cuộc"
+            },
+            {
+                "en": "Natural talent",
+                "vi": "tài năng bẩm sinh"
+            }
+        ]
+    },
+    {
+        "id": "I20",
+        "category": "CRIME",
+        "title_en": "AGAINST COMMUNITY SERVICE",
+        "title_vi": "Những lý do phản đối lao động công ích",
+        "points": [
+            {
+                "en": "Community service is not a sufficient punishment",
+                "vi": "Dịch vụ cộng đồng không phải là một sự trừng phạt đủ"
+            },
+            {
+                "en": "Criminals should be locked up, away from their victims",
+                "vi": "Những người phạm tội nên bị giam giữ, tránh xa các nạn nhân của họ"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "The uncommon use of bicycles",
+                "vi": "Sự sử dụng không phổ biến của xe đạp"
+            },
+            {
+                "en": "To fail to benefit major city dwellers in particular",
+                "vi": "Không có lợi ích với những người"
+            },
+            {
+                "en": "sống ở thành phố lớn",
+                "vi": ""
+            },
+            {
+                "en": "To eclipse the values of using bicycles to the environment",
+                "vi": "Che lấp những giá trị của"
+            },
+            {
+                "en": "việc sử dụng xe đạp đối với môi trường",
+                "vi": ""
+            },
+            {
+                "en": "To be rather impractical to expect cycling",
+                "vi": "Khá là phi thực tế để hi vọng mọi người sẽ"
+            },
+            {
+                "en": "dùng xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "The use of this environmentally friendly vehicle",
+                "vi": "Việc sử dụng phương tiện thân thiện"
+            },
+            {
+                "en": "với môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Monthly green days",
+                "vi": "Những ngày vì môi trường hàng tháng"
+            },
+            {
+                "en": "Form a habit of cycling",
+                "vi": "Tạo thói quen dùng xe đạp"
+            },
+            {
+                "en": "The lack of uniformity",
+                "vi": "sự đồng điệu, sự giống nhau"
+            },
+            {
+                "en": "To be free to decide",
+                "vi": "được tự do quyết định"
+            },
+            {
+                "en": "To demonstrate a consistent style",
+                "vi": "thể hiện một phong cách đồng nhất, nhất quán"
+            },
+            {
+                "en": "To break this uniformity",
+                "vi": "phá hủy sự đồng nhất"
+            },
+            {
+                "en": "169",
+                "vi": ""
+            },
+            {
+                "en": "To be more worthy of consideration",
+                "vi": "đáng để cân nhắc hơn"
+            },
+            {
+                "en": "To give the city a more cosmopolitan atmosphere",
+                "vi": "mang lại cho thành phố bầu"
+            },
+            {
+                "en": "không khí dễ thích nghi cho mọi người trên thế giới",
+                "vi": ""
+            },
+            {
+                "en": "To reflect a variety of architectural designs",
+                "vi": "phản ánh sự đa dạng trong thiết kế kiến trúc"
+            },
+            {
+                "en": "The freedom of choice",
+                "vi": "sự tự do lựa chọn"
+            },
+            {
+                "en": "Physical nature",
+                "vi": "bản chất vận động"
+            },
+            {
+                "en": "Disparaging sport",
+                "vi": "coi thường thể thao"
+            },
+            {
+                "en": "Life expectancy",
+                "vi": "tuổi thọ"
+            },
+            {
+                "en": "Work producitivity",
+                "vi": "hiệu quả công việc"
+            },
+            {
+                "en": "Hectic",
+                "vi": "cực kỳ bận rộn"
+            }
+        ]
+    },
+    {
+        "id": "I21",
+        "category": "CRIME",
+        "title_en": "CRIME IN THE MEDIA",
+        "title_vi": "Tội phạm trong truyền thông",
+        "points": [
+            {
+                "en": "Crime is one of the main subjects of most news programs.",
+                "vi": "Tội phạm là một trong những chủ đề chính của hầu hết các chương trình tin tức."
+            },
+            {
+                "en": "The mass media focus on violent and sensational crimes",
+                "vi": "Các phương tiện thông tin đại chúng tập trung vào tội phạm bạo lực và tội phạm tày trời."
+            },
+            {
+                "en": "This lead to fear of crime among the public",
+                "vi": "Điều này dẫn đến sự sợ hãi của tội phạm trong công chúng."
+            },
+            {
+                "en": "Sensational stories attract more viewers or readers",
+                "vi": "Các câu chuyện cảm xúc thu hút nhiều người xem hoặc độc giả hơn"
+            },
+            {
+                "en": "The media report crime stories in order to increase their audience",
+                "vi": "Các phương tiện truyền thông báo cáo các câu chuyện tội phạm để gia tăng khán giả của họ"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Human resistance against a vast number of illnesses",
+                "vi": "Sức chống lại rất nhiều bệnh"
+            },
+            {
+                "en": "tật",
+                "vi": ""
+            },
+            {
+                "en": "Leading a sedentary lifestyle",
+                "vi": "có lối sống ít vận động"
+            },
+            {
+                "en": "Launch propagation campaigns to heighten social awareness",
+                "vi": "Thực hiện những chiến"
+            },
+            {
+                "en": "dịch tuyên truyền nâng cao nhận thức xã hội",
+                "vi": ""
+            },
+            {
+                "en": "The necessity of treatment and the development of healthcare services",
+                "vi": "Sự cần thiết"
+            },
+            {
+                "en": "của sự điều trị và sự phát triển của dịch vụ chăm sóc sức khỏe",
+                "vi": ""
+            },
+            {
+                "en": "No less important and imperative",
+                "vi": "không kém phần quan trọng và cấp bách"
+            },
+            {
+                "en": "A well-developed tourism industry",
+                "vi": "một ngành công nghiệp du lịch được phát triển tốt"
+            },
+            {
+                "en": "An influx of money",
+                "vi": "dòng tiền"
+            },
+            {
+                "en": "To improve international relations with other countries",
+                "vi": "tăng cường mối quan hệ với"
+            },
+            {
+                "en": "các nước khác",
+                "vi": ""
+            },
+            {
+                "en": "To share a country’s customs and culture",
+                "vi": "chia sẻ những phong tục tập quán và văn"
+            },
+            {
+                "en": "hóa của quốc gia",
+                "vi": ""
+            },
+            {
+                "en": "To help to facilitate this experience",
+                "vi": "giúp tạo điều kiện mang đến trải nghiệm này"
+            },
+            {
+                "en": "A major cause of environmental pollution and destruction",
+                "vi": "một nguyên nhân chính"
+            },
+            {
+                "en": "gây ô nhiễm và phá hủy môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Mountains of plastic waste",
+                "vi": "những núi rác thải nhựa"
+            },
+            {
+                "en": "Appropriate recycling facilities",
+                "vi": "những cơ sở tái chế rác chuyên nghiệp, đúng cách"
+            },
+            {
+                "en": "The invasion of tourists",
+                "vi": "sự tràn ngập khách du lịch"
+            },
+            {
+                "en": "To disrupt the local wildlife and eco-systems",
+                "vi": "phá vỡ cuộc sống hoang dã và hệ sinh"
+            },
+            {
+                "en": "thái tại địa phương",
+                "vi": ""
+            },
+            {
+                "en": "The environmental and cultural impacts",
+                "vi": "những ảnh hưởng liên quan đến môi"
+            },
+            {
+                "en": "trường và văn hóa",
+                "vi": ""
+            },
+            {
+                "en": "To be closely monitored and minimised",
+                "vi": "được điều chỉnh và giảm thiểu một cách"
+            },
+            {
+                "en": "chặt chẽ",
+                "vi": ""
+            },
+            {
+                "en": "Be of great help",
+                "vi": "có ích rất nhiều"
+            },
+            {
+                "en": "To offer somebody a competitive edge",
+                "vi": "cho ai đó một lợi thế cạnh tranh"
+            },
+            {
+                "en": "Pursuit",
+                "vi": "mối quan tâm, sở thích"
+            },
+            {
+                "en": "Stress relieving activity",
+                "vi": "hoạt động giải trí"
+            },
+            {
+                "en": "The former",
+                "vi": "Cái được nhắc đến đầu tiên (trong bài này, “the former” được dùng để chỉ"
+            },
+            {
+                "en": "“playing sport or taking a rest”)",
+                "vi": ""
+            },
+            {
+                "en": "The latter",
+                "vi": "Cái được nhắc đến sau (trong bài này, “the latter” được dùng để chỉ “further"
+            },
+            {
+                "en": "research related to their chosen subjects”)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I22",
+        "category": "EDUCATION",
+        "title_en": "BENEFITS OF EDUCATION",
+        "title_vi": "Lợi ích của giáo dục",
+        "points": [
+            {
+                "en": "Education gives people knowledge and skills",
+                "vi": "Giáo dục cho cho con người kiến thức và kỹ năng"
+            },
+            {
+                "en": "People with qualification are more likely to find work",
+                "vi": "Những người có bằng cấp có nhiều khả năng tìm việc hơn"
+            },
+            {
+                "en": "They can earn a higher salary",
+                "vi": "Họ có thể kiếm được mức lương cao hơn"
+            },
+            {
+                "en": "They can contribute positively to society",
+                "vi": "Họ có thể đóng góp tích cực cho xã hội"
+            },
+            {
+                "en": "Schools aim to teach young people moral values such as tolerance and sharing",
+                "vi": "Các trường học nhằm mục đích dạy trẻ những giá trị đạo đức như khoan dung và chia sẻ"
+            },
+            {
+                "en": "Schools prepare children to be members of a society",
+                "vi": "Các trường trang bị cho trẻ em trở thành thành viên của một xã hội"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "High-resolution graphics",
+                "vi": "Hình ảnh phân giải cao"
+            },
+            {
+                "en": "The lack of care as well as encouragement from parents",
+                "vi": "Sự thiếu quan tâm cũng"
+            },
+            {
+                "en": "như khuyến khích từ phụ huynh",
+                "vi": ""
+            },
+            {
+                "en": "Restrict the amount of time allowed for watching TV",
+                "vi": "Giới hạn thời gian được phép"
+            },
+            {
+                "en": "xem phim",
+                "vi": ""
+            },
+            {
+                "en": "Resort to drastic measures",
+                "vi": "Dụng đến những biện pháp quyết liệt"
+            },
+            {
+                "en": "The traditional lifestyles",
+                "vi": "lối sống truyền thống"
+            },
+            {
+                "en": "The freedom to do as they please",
+                "vi": "tự do làm theo ý bản thân mong muốn"
+            },
+            {
+                "en": "Constant judgement or criticism",
+                "vi": "sự đánh giá hoặc phê bình liên tục"
+            },
+            {
+                "en": "Hectic, fast-paced lifestyle",
+                "vi": "lối sống hối hả, bận rộn"
+            },
+            {
+                "en": "Slower-paced, healthier life",
+                "vi": "lối sống chậm rãi, lành mạnh"
+            },
+            {
+                "en": "During their retirement",
+                "vi": "trong suốt thời gian nghỉ hưu"
+            },
+            {
+                "en": "Physical and mental health problems",
+                "vi": "những vấn đề sức khỏe thể chất và tinh thần"
+            },
+            {
+                "en": "Lack the care and attention they need",
+                "vi": "thiếu sự chăm sóc và quan tâm cần thiết"
+            },
+            {
+                "en": "Interaction and influence from grandparents",
+                "vi": "sự tương tác và ảnh hưởng từ ông bà"
+            },
+            {
+                "en": "170",
+                "vi": ""
+            },
+            {
+                "en": "Important life lessons",
+                "vi": "những bài học cuộc sống quan trọng"
+            },
+            {
+                "en": "Valuable life experience",
+                "vi": "kinh nghiệm sống quý giá"
+            },
+            {
+                "en": "Important traditions and customs",
+                "vi": "những phong tục và truyền thống quan trọng"
+            },
+            {
+                "en": "Poor family bonds",
+                "vi": "tình cảm gia đình thiếu thân thiết, gắn bó"
+            },
+            {
+                "en": "Remedy",
+                "vi": "phương thuốc"
+            },
+            {
+                "en": "is sponsored by",
+                "vi": "được tài trợ bởi"
+            },
+            {
+                "en": "cover various expenses",
+                "vi": "trang trải các chi phí khác nhau"
+            },
+            {
+                "en": "primary objectives",
+                "vi": "mục tiêu chủ yếu 5. to prevent losses and stay profitable: để ngăn ngừa"
+            },
+            {
+                "en": "thua lỗ và duy trì lợi nhuận",
+                "vi": ""
+            },
+            {
+                "en": "183",
+                "vi": ""
+            },
+            {
+                "en": "profit-oriented companies",
+                "vi": "công ty định hướng lợi nhuận"
+            },
+            {
+                "en": "to maximize earnings",
+                "vi": "tối đa hóa thu nhập"
+            },
+            {
+                "en": "To succumb to disease",
+                "vi": "không qua khỏi bệnh tật"
+            },
+            {
+                "en": "To fulfill a duty",
+                "vi": "làm tròn một nghĩa vụ"
+            },
+            {
+                "en": "To allocate the national budget to something",
+                "vi": "phân bố ngân sách quốc gia cho việc gì"
+            },
+            {
+                "en": "for the sake of people’s health",
+                "vi": "vì sức khỏe của con người"
+            }
+        ]
+    },
+    {
+        "id": "I23",
+        "category": "EDUCATION",
+        "title_en": "BENEFITS OF STUDYING ABROAD",
+        "title_vi": "Lợi ích của việc du học",
+        "points": [
+            {
+                "en": "Foreign institutions may offer better courses",
+                "vi": "Các trường đại học nước ngoài có thể đưa ra/cung cấp các khóa học tốt hơn"
+            },
+            {
+                "en": "Many students want to attend a prestigious university",
+                "vi": "Nhiều sinh viên muốn theo học một trường đại học uy tín"
+            },
+            {
+                "en": "The best universities employ teachers who are experts in their fields",
+                "vi": "Các trường đại học tốt nhất thuê những giáo viên mà họ là những chuyên gia trong lĩnh vực"
+            },
+            {
+                "en": "Qualifications gained abroad can open the door to better job opportunitie",
+                "vi": "Bằng cấp đạt được ở nước ngoài có thể mở ra cơ hội việc làm tốt hơn"
+            },
+            {
+                "en": "Living abroad can broaden students’ horizons",
+                "vi": "Việc sống ở nước ngoài có thể mở rộng chân trời của học sinh"
+            },
+            {
+                "en": "Overseas students are exposed to different cultures and customs.",
+                "vi": "Sinh viên du học đang tiếp xúc với văn hoá và phong tục khác nhau."
+            },
+            {
+                "en": "They become more independent",
+                "vi": "Họ trở nên độc lập hơn"
+            },
+            {
+                "en": "They are responsible for cooking, cleaning and paying bills",
+                "vi": "Họ có trách nhiệm trong việc nấu ăn, làm sạch và thanh toán hóa đơn"
+            },
+            {
+                "en": "They will learn a foreign language",
+                "vi": "Họ sẽ học một ngoại ngữ"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Have a thorough plan of what they are going to buy",
+                "vi": "Có kê hoạch cẩn thận về những"
+            },
+            {
+                "en": "158",
+                "vi": ""
+            },
+            {
+                "en": "gì họ định mua",
+                "vi": ""
+            },
+            {
+                "en": "Vague ideas of what meals or foodstuffs they might consume",
+                "vi": "Ý tưởng mờ nhạt về"
+            },
+            {
+                "en": "bữa ăn hay thức ăn mà họ định tiêu thụ",
+                "vi": ""
+            },
+            {
+                "en": "Poor choices for their diet",
+                "vi": "Những lựa chọn tệ cho chế độ ăn của họ"
+            },
+            {
+                "en": "Saves a lot of unnecessary food",
+                "vi": "Tiết kiệm rất nhiều thực phẩm không cần thiết"
+            },
+            {
+                "en": "To have significant knowledge of their own culture and history",
+                "vi": "có hiểu biết sâu rộng"
+            },
+            {
+                "en": "về văn hóa lịch sử địa phương",
+                "vi": ""
+            },
+            {
+                "en": "To upgrade",
+                "vi": "nâng cấp"
+            },
+            {
+                "en": "Rotating artefacts and displays",
+                "vi": "xoay vòng những đồ tạo tác và vật phẩm trưng bày"
+            },
+            {
+                "en": "To arouse more interest from locals",
+                "vi": "khơi dậy sự quan tâm nhiều hơn từ người dân"
+            },
+            {
+                "en": "địa phương",
+                "vi": ""
+            },
+            {
+                "en": "Exhibitions",
+                "vi": "triển lãm"
+            },
+            {
+                "en": "To encourage and fund annual trips",
+                "vi": "khuyến khích và tài trợ các chuyến tham quan"
+            },
+            {
+                "en": "hàng năm.",
+                "vi": ""
+            },
+            {
+                "en": "cultural traits",
+                "vi": "các đặc trưng văn hóa"
+            },
+            {
+                "en": "from different perspectives",
+                "vi": "từ các quan điểm khác nhau"
+            },
+            {
+                "en": "Abundant",
+                "vi": "phong phú, dồi dào"
+            },
+            {
+                "en": "in contemporary society",
+                "vi": "trong xã hội đương đại"
+            },
+            {
+                "en": "first-hand experience",
+                "vi": "trải nghiệm trực tiếp"
+            },
+            {
+                "en": "To get direct exposure to something",
+                "vi": "được tiếp xúc trực tiếp với điều gì"
+            },
+            {
+                "en": "others’ subjective viewpoints",
+                "vi": "ý kiến chủ quan của người khác"
+            }
+        ]
+    },
+    {
+        "id": "I24",
+        "category": "EDUCATION",
+        "title_en": "DRAWBACK OF STUDYING ABROAD",
+        "title_vi": "Hạn chế của việc du học",
+        "points": [
+            {
+                "en": "Living and studying abroad can be difficult",
+                "vi": "Sống và học tập ở nước ngoài có thể khó khan."
+            },
+            {
+                "en": "Students have problems with paperwork such as visa applications",
+                "vi": "Học sinh gặp vấn đề về giấy tờ như hồ sơ xin thị thực"
+            },
+            {
+                "en": "The language barrier can be a problem",
+                "vi": "Rào cản ngôn ngữ có thể là một vấn đề"
+            },
+            {
+                "en": "Students have to find accommodation and pay bills",
+                "vi": "Sinh viên phải tìm chỗ ở và trả các hóa đơn"
+            },
+            {
+                "en": "Studying in a foreign language is challenging",
+                "vi": "Học tập bằng ngoại ngữ là một thách thức"
+            },
+            {
+                "en": "Living alone in an unfamiliar culture can cause homesickness",
+                "vi": "Sống một mình trong một nền văn hoá không quen thuộc có thể gây ra nỗi nhớ nhà"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "A huge proportion of national budget",
+                "vi": "Một phần lớn ngân sách nhà nước"
+            },
+            {
+                "en": "To dispense educational services and general knowledge about all aspects of life",
+                "vi": ""
+            },
+            {
+                "en": "đem đến những dịch vụ giáo dục và kiến thức chung về tất cả các khía cạnh của",
+                "vi": ""
+            },
+            {
+                "en": "cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "To pour their money into improving the Internet",
+                "vi": "Đổ tiền vào nâng cấp Internet"
+            },
+            {
+                "en": "To be equivalent to the enormous amount of governmental funding",
+                "vi": "Cân xứng với"
+            },
+            {
+                "en": "khối lượng kinh phí khổng lồ từ chính phủ",
+                "vi": ""
+            },
+            {
+                "en": "To be used to the absence of the Internet",
+                "vi": "Quen với việc không có Internet"
+            },
+            {
+                "en": "To serve as one of the embodiments of justice and fairness in society",
+                "vi": "phục vụ như"
+            },
+            {
+                "en": "một trong những hiện thân của công lý trong xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Unlawful act",
+                "vi": "hành vi phạm pháp"
+            },
+            {
+                "en": "Be it a misdemeanour or a felony",
+                "vi": "dù là tội nhẹ hay nặng"
+            },
+            {
+                "en": "To fall into chaos",
+                "vi": "rơi vào hỗn loạn"
+            },
+            {
+                "en": "Innocent people",
+                "vi": "người vô tội"
+            },
+            {
+                "en": "The consequences of violating the law",
+                "vi": "hậu quả của việc phạm pháp"
+            },
+            {
+                "en": "To enhance a person’s awareness and employability",
+                "vi": "nâng cao nhận thức và khả năng có"
+            },
+            {
+                "en": "việc làm",
+                "vi": ""
+            },
+            {
+                "en": "Elements that induce a person to become a criminal",
+                "vi": "những yếu tố có thể biến một"
+            },
+            {
+                "en": "người thành tội phạm",
+                "vi": ""
+            },
+            {
+                "en": "Heinous crimes",
+                "vi": "tội ác kinh hoàng"
+            },
+            {
+                "en": "Well-educated people",
+                "vi": "những người được giáo dục tốt"
+            },
+            {
+                "en": "Infamous sexual assault",
+                "vi": "vụ xâm hại tình dục khét tiếng"
+            },
+            {
+                "en": "Morally bad by nature",
+                "vi": "bản chất đạo đức không tốt"
+            },
+            {
+                "en": "Psychologically unstable",
+                "vi": "tâm lý không ổn định"
+            },
+            {
+                "en": "To show a propensity for crime",
+                "vi": "có khuynh hướng phạm tội"
+            },
+            {
+                "en": "The ultimate answer to",
+                "vi": "phương án tối ưu cho điều gì"
+            },
+            {
+                "en": "171",
+                "vi": ""
+            },
+            {
+                "en": "Undesirable consequences",
+                "vi": "hậu quả không mong muốn"
+            },
+            {
+                "en": "The mortality rate",
+                "vi": "tỷ lệ tử vong"
+            },
+            {
+                "en": "To operate (vehicle) at high speeds",
+                "vi": "điều khiển xe ở tốc độ cao"
+            },
+            {
+                "en": "To collide with something",
+                "vi": "va chạm với cái gì → collision: sự va chạm"
+            },
+            {
+                "en": "To take something into consideration",
+                "vi": "xem xét điều gì"
+            },
+            {
+                "en": "Strict speed limits",
+                "vi": "giới hạn tốc độ nghiêm ngặt"
+            },
+            {
+                "en": "Simultaneously",
+                "vi": "đồng thời"
+            },
+            {
+                "en": "Be designated for something",
+                "vi": "được chỉ định cho cái gì"
+            }
+        ]
+    },
+    {
+        "id": "I25",
+        "category": "EDUCATION",
+        "title_en": "TECHNOLOGY IN EDUCATION: ADVANTAGES",
+        "title_vi": "Những thuận lợi trong việc áp dụng công nghệ trong giáo dục",
+        "points": [
+            {
+                "en": "Technology is a powerful tool to engage students",
+                "vi": "Công nghệ là một công cụ mạnh mẽ để thu hút sinh viên"
+            },
+            {
+                "en": "Technology can make lessons much more interesting",
+                "vi": "Công nghệ có thể làm cho bài học thú vị hơn nhiều"
+            },
+            {
+                "en": "Students can do research using online resources",
+                "vi": "Sinh viên có thể nghiên cứu bằng việc sử dụng tài nguyên trực tuyến"
+            },
+            {
+                "en": "Students can study at their own place",
+                "vi": "Sinh viên có thể học tại nơi riêng của họ"
+            },
+            {
+                "en": "Adults can take distance learning courses",
+                "vi": "Người lớn có thể học các khóa học từ xa"
+            },
+            {
+                "en": "Students can study whenever and wherever they want",
+                "vi": "Sinh viên có thể học bất cứ khi nào và ở bất cứ đâu họ muốn"
+            },
+            {
+                "en": "Students also learn skills which are useful for their future jobs",
+                "vi": "Học sinh cũng học các kỹ năng hữu ích cho công việc tương lai của họ"
+            },
+            {
+                "en": "For example, they learn to write reports using a word processor",
+                "vi": "Ví dụ, họ học cách viết báo cáo bằng cách sử dụng một trình xử lý văn bản"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "The two classes of society",
+                "vi": "2 tầng lớp xã hội"
+            },
+            {
+                "en": "To live on the breadline",
+                "vi": "Sống nghèo đói"
+            },
+            {
+                "en": "Income inequality",
+                "vi": "Bất bình đẳng thu nhập"
+            },
+            {
+                "en": "The breeding ground for social unrest and political instability",
+                "vi": "Là nơi sản sinh ra rối"
+            },
+            {
+                "en": "loạn xã hội và bất ổn chính trị",
+                "vi": ""
+            },
+            {
+                "en": "The onset of social anarchy",
+                "vi": "Sự bắt đầu của sự hỗn độn trong xã hội"
+            },
+            {
+                "en": "To resort to violence and opt for the life of criminals",
+                "vi": "Tìm đến bạo lực và lựa chọn"
+            },
+            {
+                "en": "con đường tội phạm",
+                "vi": ""
+            },
+            {
+                "en": "To reduce the amount of income inequality in society",
+                "vi": "Giảm lượng bất bình đẳng thu"
+            },
+            {
+                "en": "nhập trong xã hội",
+                "vi": ""
+            },
+            {
+                "en": "To place much importance on individual competence to determine the amount of",
+                "vi": ""
+            },
+            {
+                "en": "money one might earn",
+                "vi": "Nhấn mạnh vào khả năng cá nhân để quyết định số tiền mà"
+            },
+            {
+                "en": "một người sẽ nhận",
+                "vi": ""
+            },
+            {
+                "en": "Locally grown food",
+                "vi": "thức ăn được trồng ở địa phương"
+            },
+            {
+                "en": "To reduce the negative effects of carbon emissions",
+                "vi": "cắt giảm những hệ quả tiêu cực"
+            },
+            {
+                "en": "của việc thải khí CO2",
+                "vi": ""
+            },
+            {
+                "en": "To enhance their standards of living",
+                "vi": "nâng cao tiêu chuẩn cuộc sống"
+            },
+            {
+                "en": "Non-locally grown foods",
+                "vi": "thức ăn được trồng ở nơi khác"
+            },
+            {
+                "en": "To experience specialties and healthy products",
+                "vi": "trải nghiệm đặc sản và thức ăn tốt"
+            },
+            {
+                "en": "cho sức khỏe",
+                "vi": ""
+            },
+            {
+                "en": "Price manipulation",
+                "vi": "thao túng giá cả"
+            },
+            {
+                "en": "Local merchants",
+                "vi": "thương nhân địa phương"
+            },
+            {
+                "en": "Cognitive abilities",
+                "vi": "khả năng nhận thức"
+            },
+            {
+                "en": "The aging process",
+                "vi": "quá trình lão hóa"
+            },
+            {
+                "en": "Postgraduate study courses",
+                "vi": "các khóa học sau đại học"
+            },
+            {
+                "en": "Not to mention",
+                "vi": "(từ nối) huống chi là, chưa kể đến"
+            },
+            {
+                "en": "To produce offspring",
+                "vi": "sinh con cái"
+            },
+            {
+                "en": "To face an aging population",
+                "vi": "đối diện với dân số già"
+            },
+            {
+                "en": "A shortage in the workforce",
+                "vi": "sự thiếu hụt trong lực lượng lao động"
+            },
+            {
+                "en": "To perform physically-demanding jobs",
+                "vi": "thực hiện các công việc đòi hỏi nhiều thể lực"
+            },
+            {
+                "en": "To be reared in a dysfunctional family",
+                "vi": "được nuôi dưỡng trong một gia đình đổ vỡ"
+            },
+            {
+                "en": "184",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I26",
+        "category": "EDUCATION",
+        "title_en": "TECHNOLOGY IN EDUCATION: DISADVANTAGES",
+        "title_vi": "Những bất lợi trong việc áp dụng công nghệ vào trong giáo dục",
+        "points": [
+            {
+                "en": "People rely too much on computers",
+                "vi": "Con người phụ thuộc quá nhiều vào máy tính"
+            },
+            {
+                "en": "Young learners do not become proficient in some basic skills",
+                "vi": "Những người học trẻ không thông thạo một số kỹ năng cơ bản"
+            },
+            {
+                "en": "They use word processors and spelling may suffer",
+                "vi": "Họ sử dụng bộ vi xử lý văn bản và chính tả có thể bị ảnh hưởng"
+            },
+            {
+                "en": "People should be able to write a letter by hand",
+                "vi": "Mọi người nên viết một lá thư bằng tay"
+            },
+            {
+                "en": "Technology is no substitute for a real teacher",
+                "vi": "Công nghệ không thể thay thế cho một giáo viên thực sự"
+            },
+            {
+                "en": "Learners need a structured course",
+                "vi": "Người học cần một khóa học có cấu trúc"
+            },
+            {
+                "en": "An experienced teacher knows what materials to choose",
+                "vi": "Một giáo viên có kinh nghiệm biết những vật liệu nào cần lựa chọn"
+            },
+            {
+                "en": "Computers are expensive to maintain and can be unreliable",
+                "vi": "Các máy tính là đắt tiền để duy trì và có thể không đáng tin cậy"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Reading for enjoyment",
+                "vi": "đọc sách vì niềm vui"
+            },
+            {
+                "en": "To stimulates people’s brains",
+                "vi": "thúc đẩy hoạt động của não bộ"
+            },
+            {
+                "en": "To use their imagination to visualise the characters and plot of the story",
+                "vi": "sử dụng trí"
+            },
+            {
+                "en": "tưởng tượng để hình dung các nhân vật và cốt truyện",
+                "vi": ""
+            },
+            {
+                "en": "Imaginative thinking skills",
+                "vi": "kỹ năng sử dụng trí tưởng tượng / sáng tạo"
+            },
+            {
+                "en": "To expand their vocabulary and learn different grammatical structures",
+                "vi": "mở rộng vốn"
+            },
+            {
+                "en": "từ vựng và học nhiều cấu trúc từ vựng khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "At a fast pace",
+                "vi": "ở một nhịp độ nhanh"
+            },
+            {
+                "en": "A source of entertainment",
+                "vi": "một nguồn giải trí"
+            },
+            {
+                "en": "To enhance a person's language skills",
+                "vi": "phát triển khả năng ngôn ngữ của ai đó"
+            },
+            {
+                "en": "expand their housing areas horizontally",
+                "vi": "mở rộng diện tích nhà ở theo chiều ngang"
+            },
+            {
+                "en": "alleviate traffic congestion",
+                "vi": "giảm ùn tắc giao thông"
+            },
+            {
+                "en": "population density",
+                "vi": "mật độ dân số"
+            },
+            {
+                "en": "To be encroached",
+                "vi": "bị lấn chiếm"
+            }
+        ]
+    },
+    {
+        "id": "I27",
+        "category": "EDUCATION",
+        "title_en": "TECHNOLOGY IN EDUCATION: OPINION",
+        "title_vi": "Các quan điểm về công nghệ trong giáo dục",
+        "points": [
+            {
+                "en": "",
+                "vi": "Các trường đại học nên bổ sung việc giảng dạy truyền thống với việc sử dụng công nghệ."
+            },
+            {
+                "en": "Technology is part of everyday life",
+                "vi": "Công nghệ là một phần của cuộc sống hàng ngày"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể cải thiện bài giảng của giáo viên"
+            },
+            {
+                "en": "Students can use online resources to help with homework",
+                "vi": "Sinh viên có thể sử dụng tài nguyên trực tuyến để giúp đỡ với bài tập về nhà"
+            },
+            {
+                "en": "Students must still learn to write by hand",
+                "vi": "Học sinh vẫn phải học cách viết tay"
+            },
+            {
+                "en": "They should still use traditional sources of information such as books",
+                "vi": "Họ vẫn nên sử dụng các nguồn thông tin truyền thống như sách"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Mainstream media channels",
+                "vi": "các kênh truyền thông chính thống"
+            },
+            {
+                "en": "A higher frequency of news stories",
+                "vi": "tần suất phát sóng tin tức cao hơn"
+            },
+            {
+                "en": "To hesitate to do something",
+                "vi": "ngại ngùng, lưỡng lự làm cái gì đó"
+            },
+            {
+                "en": "In fear of suffering from a terrorist attack",
+                "vi": "sợ phải chịu từ những cuộc tấn công"
+            },
+            {
+                "en": "khủng bố",
+                "vi": ""
+            },
+            {
+                "en": "Tabloids",
+                "vi": "báo lá cải"
+            },
+            {
+                "en": "The scandals of celebrities",
+                "vi": "scandals của người nổi tiếng"
+            },
+            {
+                "en": "Switch to a healthier lifestyle",
+                "vi": "chuyển qua một cuộc sống khỏe mạnh hơn"
+            },
+            {
+                "en": "suffice to pay",
+                "vi": "đủ để trả"
+            },
+            {
+                "en": "money-related assistance and care services",
+                "vi": "các dịch vụ hỗ trợ và chăm sóc về tài chính"
+            },
+            {
+                "en": "regular free-of-charge health checkups and discounted medicines",
+                "vi": "khám sức khỏe định kỳ"
+            },
+            {
+                "en": "miễn phí và giảm giá thuốc",
+                "vi": ""
+            },
+            {
+                "en": "non-essential expenses",
+                "vi": "các chi tiêu không cấp thiết"
+            },
+            {
+                "en": "public welfare",
+                "vi": "phúc lợi xã hội"
+            },
+            {
+                "en": "housing crisis",
+                "vi": "khủng hoảng nhà ở"
+            }
+        ]
+    },
+    {
+        "id": "I28",
+        "category": "EDUCATION",
+        "title_en": "EDUCATION IN DEVELOPING COUNTRIES: PROBLEMS",
+        "title_vi": "Những vấn đề giáo dục trong các nước phát triển",
+        "points": [
+            {
+                "en": "Children often have to work from an early age",
+                "vi": "Trẻ em thường phải làm việc từ khi còn nhỏ"
+            },
+            {
+                "en": "There are no schools in many areas",
+                "vi": "Không có trường học ở nhiều khu vực"
+            },
+            {
+                "en": "Families do not have access to books or computers",
+                "vi": "Nhiều gia đình không có quyền truy cập vào sách hoặc máy tính"
+            },
+            {
+                "en": "Literacy rates are often low",
+                "vi": "Tỷ lệ biết chữ thường thấp"
+            },
+            {
+                "en": "People in developing countries need knowledge and skills",
+                "vi": "Người dân ở các nước đang phát triển cần kiến thức và kỹ năng"
+            },
+            {
+                "en": "Education is the key to improving the economy of these countries",
+                "vi": "Giáo dục là chìa khóa để đối với việc cải thiện nền kinh tế của các nước này"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Examination results",
+                "vi": "kết quả từ các kỳ thi"
+            },
+            {
+                "en": "To have an advantage in",
+                "vi": "có lợi thế trong việc nào đó"
+            },
+            {
+                "en": "172",
+                "vi": ""
+            },
+            {
+                "en": "Academic performance",
+                "vi": "năng lực học thuật (lực học)"
+            },
+            {
+                "en": "Academic subjects equip students with fundamental knowledge",
+                "vi": "các môn học thuật"
+            },
+            {
+                "en": "trang bị cho học sinh những kiến thức cơ bản và quan trọng",
+                "vi": ""
+            },
+            {
+                "en": "To prepare healthy and affordable meals",
+                "vi": "chuẩn bị các bữa ăn rẻ và tốt cho sức khỏe"
+            },
+            {
+                "en": "Attending skill building classes",
+                "vi": "tham gia các lớp kỹ năng"
+            },
+            {
+                "en": "To be conscious of self-improvement",
+                "vi": "có ý thức hoàn thiện bản thân"
+            },
+            {
+                "en": "Proactive students",
+                "vi": "những sinh viên chủ động"
+            },
+            {
+                "en": "To have a thirst for self-improvement",
+                "vi": "có khao khát hoàn thiện bản thân"
+            },
+            {
+                "en": "To be adept at organizing their time",
+                "vi": "thành thạo trong việc tổ chức thời gian"
+            },
+            {
+                "en": "To procrastinate",
+                "vi": "trì hoãn 6. To hone their leadership skills: mài giữ kỹ năng lãnh đạo"
+            },
+            {
+                "en": "To seize such opportunities",
+                "vi": "nắm bắt những cơ hội như vậy"
+            }
+        ]
+    },
+    {
+        "id": "I29",
+        "category": "EDUCATION",
+        "title_en": "EDUCATION IN DEVELOPING COUNTRIES: SOLUTIONS",
+        "title_vi": "Những giải pháp về giáo dục ở các nước đang phát triển",
+        "points": [
+            {
+                "en": "Developed countries could help developing nations by providing money",
+                "vi": "Các nước phát triển có thể giúp các nước đang phát triển bằng cách cung cấp tiền"
+            },
+            {
+                "en": "They could invest in schools and technology",
+                "vi": "Họ có thể đầu tư vào các trường học và công nghệ"
+            },
+            {
+                "en": "They could supply the funds to build schools and pay for teachers",
+                "vi": "Họ có thể cung cấp ngân quỹ để xây dựng trường học và trả tiền cho giáo viên"
+            },
+            {
+                "en": "Children need to have access to free schooling",
+                "vi": "Trẻ em cần được tiếp cận với giáo dục miễn phí"
+            },
+            {
+                "en": "Computer equipment could be donated",
+                "vi": "Thiết bị máy tính có thể được tặng"
+            },
+            {
+                "en": "The Internet can expose students to a world of knowledge and information",
+                "vi": ""
+            },
+            {
+                "en": "Governments should make education compulsory for all children",
+                "vi": "Chính phủ nên bắt buộc học tập cho tất cả trẻ em"
+            },
+            {
+                "en": "They should encourage parents to send their children to school",
+                "vi": "Họ nên khuyến khích phụ huynh gửi con đến trường"
+            },
+            {
+                "en": "Governments of developed and developing countries must work together",
+                "vi": "Chính phủ các nước phát triển và đang phát triển phải hợp tác với nhau"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To struggle to deal with something",
+                "vi": "gặp khó khăn giải quyết vấn đề gì đó."
+            },
+            {
+                "en": "To keep up with something",
+                "vi": "bắt kịp với cái gì đó (xu thế, giá cả…)"
+            },
+            {
+                "en": "To make ends meet",
+                "vi": "duy trì nhu cầu cơ bản nhất trong cuộc sống."
+            },
+            {
+                "en": "To have many negative effects on something",
+                "vi": "có ảnh hưởng tiêu cực vào cái gì đó."
+            },
+            {
+                "en": "To cause people with financial problems to turn to crime",
+                "vi": "khiến cho những người gặp"
+            },
+            {
+                "en": "vấn đề tài chính phạm tội.",
+                "vi": ""
+            },
+            {
+                "en": "To budget their income more effectively",
+                "vi": "chi tiêu thu nhập một cách hiệu quả hơn."
+            },
+            {
+                "en": "To adhere to a strict budget",
+                "vi": "tuân thủ chi tiêu nghiêm khắc."
+            },
+            {
+                "en": "To enact laws",
+                "vi": "ban hành luật."
+            },
+            {
+                "en": "Squander their time and money on",
+                "vi": "phung phí tiền bạc và thời gian"
+            },
+            {
+                "en": "Flashy clothing and tech gadgets",
+                "vi": "các thiết bị công nghệ và quần áo hào nhoáng"
+            },
+            {
+                "en": "A desirable lavish lifestyle",
+                "vi": "một lối sống xa hoa đáng mơ ước"
+            },
+            {
+                "en": "With an aim of",
+                "vi": "với mục tiêu"
+            },
+            {
+                "en": "Drives young people to the edge of bankruptcy",
+                "vi": "đẩy người trẻ đến bờ vực phá sản"
+            },
+            {
+                "en": "To dwindle",
+                "vi": "(nội động từ) bị suy yếu"
+            }
+        ]
+    },
+    {
+        "id": "I30",
+        "category": "EDUCATION",
+        "title_en": "",
+        "title_vi": "Những lợi ích trong việc học cao",
+        "points": [
+            {
+                "en": "",
+                "vi": "Có rất nhiều lợi ích đối với việc đi học đại học"
+            },
+            {
+                "en": "",
+                "vi": "Một bằng cấp có thể mở ra cánh cửa cho triển vọng việc làm tốt hơn"
+            },
+            {
+                "en": "",
+                "vi": "Các nền kinh tế đang trở nên ngày càng dựa vào tri thức"
+            },
+            {
+                "en": "",
+                "vi": "Hầu hết các công việc đòi hỏi kiến thức và kỹ năng cụ thể"
+            },
+            {
+                "en": "",
+                "vi": "Công nhân lành nghề là cần thiết cho các ngành như công nghệ thông tin và kỹ thuật"
+            },
+            {
+                "en": "",
+                "vi": "Các công việc thủ công lặp đi lặp lại được thực hiện bằng máy"
+            },
+            {
+                "en": "",
+                "vi": "Nhiều nhà máy đã chuyển sang các nước đang phát triển"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To play an important role in something",
+                "vi": "đóng một vài trò quan trọng vào cái gì đó"
+            },
+            {
+                "en": "To preserve endangered animals by keeping them safe from poachers",
+                "vi": "bảo vệ các"
+            },
+            {
+                "en": "loài động vật quý hiếm từ những kẻ săn bắt",
+                "vi": ""
+            },
+            {
+                "en": "Habitat destruction",
+                "vi": "sự phá huỷ môi trường sống"
+            },
+            {
+                "en": "The spread of urbanisation",
+                "vi": "sự gia tăng đô thị hoá"
+            },
+            {
+                "en": "To raise awareness amongst the public",
+                "vi": "nâng cao nhận thức của cộng đồng"
+            },
+            {
+                "en": "To create and fund conservation programs",
+                "vi": "tạo ra và trợ cấp cho các chương trình"
+            },
+            {
+                "en": "cải tạo",
+                "vi": ""
+            },
+            {
+                "en": "To be locked up in cages for their entire life",
+                "vi": "bị nhốt trong lồng."
+            },
+            {
+                "en": "Expand their horizons",
+                "vi": "mở rộng kiến thức"
+            },
+            {
+                "en": "Widen their knowledge of",
+                "vi": "mở rộng kiến thức về"
+            },
+            {
+                "en": "A golden opportunity",
+                "vi": "một cơ hội quý báu"
+            },
+            {
+                "en": "To integrate into the local community",
+                "vi": "hòa nhập vào cộng đồng địa phương"
+            },
+            {
+                "en": "185",
+                "vi": ""
+            },
+            {
+                "en": "Trial and error",
+                "vi": "quá trình học hỏi từ sai lầm và thử thách"
+            },
+            {
+                "en": "To overcome language difficulties",
+                "vi": "vượt qua khó khăn về ngôn ngữ"
+            },
+            {
+                "en": "To pursue knowledge of cultures and tradition",
+                "vi": "theo đuổi kiến thức về truyền thống và văn"
+            },
+            {
+                "en": "hóa",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I31",
+        "category": "EDUCATION",
+        "title_en": "HIGHER EDUCATION: DISADVANTAGES",
+        "title_vi": "Những bất lợi của giáo dục cao",
+        "points": [
+            {
+                "en": "A healthy economy needs a wide range of workers",
+                "vi": "Một nền kinh tế lành mạnh cần nhiều/hàng loạt công nhân"
+            },
+            {
+                "en": "Some manual workers will always be needed",
+                "vi": "Một số công nhân thủ công sẽ luôn luôn là cần thiết"
+            },
+            {
+                "en": "A university degree is not necessary for many service professions",
+                "vi": "Bằng cấp đại học không cần thiết đối với nhiều ngành dịch vụ"
+            },
+            {
+                "en": "Practical training is more important in some industries",
+                "vi": "Đào tạo thực tế ứng dụng quan trọng hơn trong một số ngành"
+            },
+            {
+                "en": "",
+                "vi": "Tại Anh, ví dụ, hiện tại đang có sự thiếu hụt thợ ống nước"
+            },
+            {
+                "en": "Their services are therefore becoming more and more expensive",
+                "vi": "Các dịch vụ của họ ngày càng trở nên đắt đỏ hơn"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Biodegradable, recyclable, or environmentally friendly materials",
+                "vi": "các nguyên liệu tự"
+            },
+            {
+                "en": "hủy sinh học, tái chế được hoặc thân thiện với môi trường.",
+                "vi": ""
+            },
+            {
+                "en": "Boycotting certain products",
+                "vi": "tẩy chay một số sản phẩm nhất định"
+            },
+            {
+                "en": "Adhere to",
+                "vi": "tuân theo một cách nghiêm ngặt"
+            },
+            {
+                "en": "Environmental destruction",
+                "vi": "sự phá hủy về môi trường"
+            },
+            {
+                "en": "Academic skills",
+                "vi": "kĩ năng chuyên môn"
+            },
+            {
+                "en": "Advance one’s career",
+                "vi": "phát triển sự nghiệp"
+            },
+            {
+                "en": "Get a promotion",
+                "vi": "được thăng tiến"
+            },
+            {
+                "en": "Stellar credentials",
+                "vi": "bằng cấp tốt"
+            },
+            {
+                "en": "Interpersonal skills",
+                "vi": "kĩ năng làm việc với người khác"
+            },
+            {
+                "en": "Collaboration skills",
+                "vi": "kĩ năng làm việc nhóm"
+            },
+            {
+                "en": "Trigger conflict",
+                "vi": "gây ra mâu thuẫn"
+            },
+            {
+                "en": "Climb the career ladder",
+                "vi": "được thăng tiến"
+            },
+            {
+                "en": "Escalating living cost",
+                "vi": "chi phí sống tăng cao"
+            },
+            {
+                "en": "Take on more responsibilities",
+                "vi": "đảm nhận thêm trách nhiệm"
+            },
+            {
+                "en": "Facilitate one’s life",
+                "vi": "làm cuộc sống ai dễ dàng hơn"
+            },
+            {
+                "en": "Make one’s health deteriorate",
+                "vi": "làm hại sức khoẻ ai"
+            },
+            {
+                "en": "Accelerate one’s professional growth",
+                "vi": "tăng tốc sự phát triển trong công việc"
+            }
+        ]
+    },
+    {
+        "id": "I32",
+        "category": "EDUCATION",
+        "title_en": "ADVANTAGE OF HOME-SCHOOLING",
+        "title_vi": "Những thuận lợi trong việc học ở nhà",
+        "points": [
+            {
+                "en": "Some parents decide to educate their children at home",
+                "vi": "Một số cha mẹ quyết định giáo dục con mình ở nhà"
+            },
+            {
+                "en": "Some families live in isolated areas with poor transport",
+                "vi": "Một số gia đình sống ở các khu vực biệt lập với giao thông kém"
+            },
+            {
+                "en": "Other parents are not satisfied with local schools",
+                "vi": "Các bậc cha mẹ khác không hài lòng với các trường học địa phương"
+            },
+            {
+                "en": "Parents can respond to what their children need and how they learn best",
+                "vi": "Cha mẹ có thể đáp ứng những gì con của họ cần và làm thế nào để chúng học tốt nhất"
+            },
+            {
+                "en": "One-to-one lessons allow much faster progress",
+                "vi": "Các bài học một - một cho phép tiến bộ nhanh hơn nhiều"
+            },
+            {
+                "en": "The child can work at his or her own pace",
+                "vi": "Trẻ có thể làm việc theo tốc độ của chính mình"
+            },
+            {
+                "en": "Discipline problems are avoided by home-schooling",
+                "vi": "Các vấn đề kỷ luật được tránh bằng cách học tại nhà"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "173",
+                "vi": ""
+            },
+            {
+                "en": "The responsibility falls upon something/someone",
+                "vi": "trách nhiệm đổ lên đầu ai hoặc cái"
+            },
+            {
+                "en": "gì đó",
+                "vi": ""
+            },
+            {
+                "en": "To impose new laws against something",
+                "vi": "ban hành luật chống lại việc gì đó"
+            },
+            {
+                "en": "The overuse of plastic products",
+                "vi": "việc sử dụng quá nhiều sản phẩm nhựa"
+            },
+            {
+                "en": "Long-term imprisonment",
+                "vi": "việc bỏ tù dài hạn"
+            },
+            {
+                "en": "Shift towards something",
+                "vi": "chuyển hướng sang việc gì đó"
+            },
+            {
+                "en": "To dive into water to pick up trash",
+                "vi": "lặn xuống nước để nhặt rác"
+            },
+            {
+                "en": "Money that is allocated to",
+                "vi": "tiền được dành cho"
+            },
+            {
+                "en": "Has a decent standard of living",
+                "vi": "có mức sống ổn định"
+            },
+            {
+                "en": "Important issues that need addressing",
+                "vi": "các vấn đề quan trọng cần giải quyết"
+            },
+            {
+                "en": "Considerably large",
+                "vi": "tương đối lớn"
+            },
+            {
+                "en": "To pollute the planet",
+                "vi": "gây ô nhiễm cho hành tinh"
+            },
+            {
+                "en": "Destroying the environment at a rapid rate",
+                "vi": "phá hủy môi trường với tốc độ nhanh chóng"
+            },
+            {
+                "en": "No real action in place",
+                "vi": "chưa có hành động thiết thực nào"
+            },
+            {
+                "en": "A global environmental catastrophe",
+                "vi": "thảm họa môi trường toàn cầu"
+            },
+            {
+                "en": "To restore the environment",
+                "vi": "phục hồi môi trường"
+            },
+            {
+                "en": "Future generations",
+                "vi": "các thế hệ tương lai"
+            },
+            {
+                "en": "To be ludicrous",
+                "vi": "lố bịch"
+            },
+            {
+                "en": "Make a huge difference",
+                "vi": "tạo ra sự khác biệt to lớn"
+            },
+            {
+                "en": "By funding programs",
+                "vi": "bằng việc gây quỹ các chương trình"
+            },
+            {
+                "en": "186",
+                "vi": ""
+            },
+            {
+                "en": "To educate, feed, and house",
+                "vi": "giáo dục, cung cấp thức ăn và chỗ ở"
+            },
+            {
+                "en": "The disadvantaged, impoverished, and sick people of the world",
+                "vi": "những người khuyết tật,"
+            },
+            {
+                "en": "nghèo và người bệnh trên thế giới",
+                "vi": ""
+            },
+            {
+                "en": "To be completely addressed",
+                "vi": "hoàn toàn được giải quyết"
+            }
+        ]
+    },
+    {
+        "id": "I33",
+        "category": "EDUCATION",
+        "title_en": "DISADVANTAGES OF HOME-SCHOOLING",
+        "title_vi": "Những bất tiện việc học ở nhà",
+        "points": [
+            {
+                "en": "Most parents do not have the time to educate their children at home",
+                "vi": "Hầu hết phụ huynh không có thời gian để giáo dục con mình ở nhà"
+            },
+            {
+                "en": "One parent would need to give up work",
+                "vi": "Một phụ huynh cần nghỉ việc"
+            },
+            {
+                "en": "School subjects are normally taught by up to ten different teachers",
+                "vi": "Các môn học thường được dạy bởi 10 giáo viên khác nhau"
+            },
+            {
+                "en": "Most parents do not have the necessary knowledge or resources",
+                "vi": "Hầu hết phụ huynh không có kiến thức hoặc nguồn lực cần thiết"
+            },
+            {
+                "en": "Private tutors are expensive",
+                "vi": "Gia sư riêng đắt tiền"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Chemical by-products",
+                "vi": "sản phẩm hóa học phụ (trong quá trình sản xuất)"
+            },
+            {
+                "en": "Manufacturing process / production lines",
+                "vi": "quy trình sản suất"
+            },
+            {
+                "en": "Marine and terrestrial animals",
+                "vi": "động vật trên cạn và dưới nước"
+            },
+            {
+                "en": "Single-use product",
+                "vi": "sản phẩm dùng một lần"
+            },
+            {
+                "en": "Non-biodegradable",
+                "vi": "không phân hủy được"
+            },
+            {
+                "en": "Short lifespan",
+                "vi": "vòng đời ngắn"
+            },
+            {
+                "en": "Landfill",
+                "vi": "bãi rác"
+            },
+            {
+                "en": "Eco-friendlier materials",
+                "vi": "vật liệu thân thiện với môi trường"
+            },
+            {
+                "en": "Tax breaks",
+                "vi": "khoản miễn thuế"
+            },
+            {
+                "en": "national news = domestic news",
+                "vi": "tin tức trong nước"
+            },
+            {
+                "en": "world news = international news",
+                "vi": "tin tức quốc tế"
+            },
+            {
+                "en": "keep abreast of = keep up-todate with = keep sb informed",
+                "vi": "cập nhật những thông tin mới"
+            },
+            {
+                "en": "nhất về một chủ đề hay tình huống nào đó",
+                "vi": ""
+            },
+            {
+                "en": "global environmental issues",
+                "vi": "các vấn đề môi trường toàn cầu"
+            },
+            {
+                "en": "climate change",
+                "vi": "biến đổi khí hậu"
+            },
+            {
+                "en": "urgency",
+                "vi": "cấp bách"
+            },
+            {
+                "en": "preventive measures",
+                "vi": "biện pháp phòng ngừa"
+            },
+            {
+                "en": "job market",
+                "vi": "thị trường việc làm"
+            },
+            {
+                "en": "timely corresponding adjustments",
+                "vi": "điều chỉnh tương ứng kịp thời"
+            },
+            {
+                "en": "national politics",
+                "vi": "chính trị quốc gia"
+            },
+            {
+                "en": "election",
+                "vi": "cuộc bầu cử. cast vote for: bỏ phiếu cho ai đó"
+            }
+        ]
+    },
+    {
+        "id": "I34",
+        "category": "EDUCATION",
+        "title_en": "BAD BEHAVIOR IN SCHOOLS: CAUSES",
+        "title_vi": "Những nguyên nhân gây ra hành vi xấu ở trường học",
+        "points": [
+            {
+                "en": "Bad behavior is due to a lack of structure and discipline",
+                "vi": "Hành vi xấu là do thiếu cơ cấu và kỷ luật"
+            },
+            {
+                "en": "There are too many children in some classes",
+                "vi": "Có quá nhiều trẻ em ở một số lớp học"
+            },
+            {
+                "en": "Large classes are difficult to manage",
+                "vi": "Các lớp học lớn khó quản lý"
+            },
+            {
+                "en": "May disruptive students come from an unstable family background",
+                "vi": "Có thể sinh viên gây rối xuất phát từ một nền tảng gia đình không ổn định"
+            },
+            {
+                "en": "Other parents are too lenient and spoil their children",
+                "vi": "Các bậc phụ huynh khác quá khoan hồng và làm hỏng các con của họ"
+            },
+            {
+                "en": "Some children are used to getting whatever they want",
+                "vi": "Một số trẻ em quen với việc có được bất cứ điều gì họ muốn"
+            },
+            {
+                "en": "Schools can do very little if they are not supported by parents",
+                "vi": "Các trường học có thể làm rất ít nếu họ không được cha mẹ hỗ trợ"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Relaxation tools /stress relievers",
+                "vi": "công cụ giải trí/ xả stress"
+            },
+            {
+                "en": "Face-to-face interaction",
+                "vi": "tương tác trực tiếp"
+            },
+            {
+                "en": "A society of people leading sedentary lifestyles",
+                "vi": "một xã hội của những người với lối"
+            },
+            {
+                "en": "sống thụ động",
+                "vi": ""
+            },
+            {
+                "en": "To make people vulnerable to",
+                "vi": "làm ai đó trở nên dễ bị ảnh hưởng bởi điều gì đó"
+            },
+            {
+                "en": "không tốt",
+                "vi": ""
+            },
+            {
+                "en": "Deterioration of health",
+                "vi": "sự xuống cấp tình hình sức khoẻ"
+            },
+            {
+                "en": "Mixed-ability class",
+                "vi": "lớp học hỗn hợp các học sinh với năng lực khác nhau"
+            },
+            {
+                "en": "Stream",
+                "vi": "nhóm những học sinh có khả năng tương tự nhau và ở cùng độ tuổi để dạy"
+            },
+            {
+                "en": "Vice versa",
+                "vi": "ngược lại"
+            },
+            {
+                "en": "Well-rounded individuals",
+                "vi": "những cá nhân toàn diện"
+            },
+            {
+                "en": "Teamwork skills",
+                "vi": "kỹ năng làm việc nhóm"
+            },
+            {
+                "en": "Separate",
+                "vi": "tách ra, chia ra"
+            },
+            {
+                "en": "Acquire knowledge",
+                "vi": "tiếp thu kiến thức"
+            },
+            {
+                "en": "For the sake of",
+                "vi": "vì lợi ích của"
+            }
+        ]
+    },
+    {
+        "id": "I35",
+        "category": "EDUCATION",
+        "title_en": "BAD BEHAVIOR IN SCHOOLS: SOLUTIONS",
+        "title_vi": "Những giải pháp cho những hành vi xấu ở trường",
+        "points": [
+            {
+                "en": "Schools need a clear code of conduct",
+                "vi": "Các trường học cần có bộ quy tắc ứng xử rõ ràng"
+            },
+            {
+                "en": "Schools need a clear set of rules about behavior",
+                "vi": "Các trường học cần có một bộ quy tắc rõ ràng về hành vi"
+            },
+            {
+                "en": "They need to create a positive working atmosphere",
+                "vi": "Họ cần tạo ra bầu không khí làm việc tích cực"
+            },
+            {
+                "en": "Teachers must have the power to punish disruptive students",
+                "vi": "Giáo viên phải có quyền trừng phạt những học sinh gây rối"
+            },
+            {
+                "en": "Schools should remove difficult children from lessons",
+                "vi": "Các trường học nên loại bỏ các trẻ em khó khăn khỏi bài học"
+            },
+            {
+                "en": "Schools need to work closely with parents",
+                "vi": "Các trường học cần làm việc chặt chẽ với phụ huynh"
+            },
+            {
+                "en": "Discipline could be lacking at home",
+                "vi": "Kỷ luật có thể thiếu ở nhà"
+            },
+            {
+                "en": "Parents must support the school rules",
+                "vi": "Phụ huynh phải hỗ trợ các quy tắc của nhà trường"
+            },
+            {
+                "en": "They should take responsibility for their children’s behavior",
+                "vi": "Họ nên chịu trách nhiệm về hành vi của con mình"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Commercialization",
+                "vi": "sự thương mai hoá."
+            },
+            {
+                "en": "Give somebody a false impression",
+                "vi": "cho ai đó một ấn tượng sai."
+            },
+            {
+                "en": "Do permanent damage",
+                "vi": "gây ra những tổn thương vĩnh viễn."
+            },
+            {
+                "en": "Heighten awareness",
+                "vi": "nâng cao nhận thức"
+            },
+            {
+                "en": "Gathering public attention and support",
+                "vi": "nhận đợc sự chú ý và ủng hộ từ dư luận"
+            },
+            {
+                "en": "To be readily available",
+                "vi": "sẵn có"
+            },
+            {
+                "en": "2,4. Far + tính từ (far too busy; far more convenient)",
+                "vi": "rất nhiều"
+            },
+            {
+                "en": "To cook a meal",
+                "vi": "nấu một bữa ăn"
+            },
+            {
+                "en": "To pick up some fast food",
+                "vi": "mua vội một số thức ăn nhanh"
+            },
+            {
+                "en": "To be extremely unhealthy",
+                "vi": "cực kỳ không lành mạnh"
+            },
+            {
+                "en": "serious health concerns",
+                "vi": "những vấn đề sức khỏe nghiêm trọng"
+            },
+            {
+                "en": "187",
+                "vi": ""
+            },
+            {
+                "en": "obesity, diabetes, and heart disease",
+                "vi": "béo phì, đái tháo đường và bệnh tim"
+            },
+            {
+                "en": "In the short term >< in the long term",
+                "vi": "trong ngắn hạn >< về lâu dài"
+            },
+            {
+                "en": "develop a chronic illness",
+                "vi": "phát triển bệnh mạn tính"
+            },
+            {
+                "en": "on a low budget",
+                "vi": "có ngân sách thấp"
+            },
+            {
+                "en": "suffer the consequences",
+                "vi": "chịu các hậu quả"
+            },
+            {
+                "en": "large medical bills",
+                "vi": "các chi phí ý tế cao"
+            },
+            {
+                "en": "To put a massive burden on",
+                "vi": "đặt một gánh nặng to lớn lên"
+            }
+        ]
+    },
+    {
+        "id": "I36",
+        "category": "EDUCATION",
+        "title_en": "CORPORAL PUNISHMENT: OPINION",
+        "title_vi": "Quan điểm về hình phạt thể xác",
+        "points": [
+            {
+                "en": "Corporal Punishment is not a good idea",
+                "vi": "Sự trừng phạt thể xác không phải là một ý tưởng hay"
+            },
+            {
+                "en": "Physical punishment is a way of controlling children using fear",
+                "vi": "Hình phạt thể xác là cách kiểm soát trẻ em sử dụng sự sợ hãi"
+            },
+            {
+                "en": "This does not promote trust between adults and children",
+                "vi": "Điều này không thúc đẩy sự tin tưởng giữa người lớn và trẻ em"
+            },
+            {
+                "en": "Children who are punished physically may become shy or resentful",
+                "vi": "Trẻ em bị trừng phạt thể chất có thể trở nên nhút nhát hoặc oán giận"
+            },
+            {
+                "en": "Corporal punishment creates an atmosphere of fear and anger",
+                "vi": "Sự trừng phạt thân thể tạo ra một bầu không khí sợ hãi và tức giận"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "174",
+                "vi": ""
+            },
+            {
+                "en": "Put a heavy financial burden on someone",
+                "vi": "đặt gánh nặng tài chính lên ai đó"
+            },
+            {
+                "en": "Harness",
+                "vi": "khai thác"
+            },
+            {
+                "en": "Shift towards doing something",
+                "vi": "chuyển qua việc làm gì đó"
+            },
+            {
+                "en": "Petroleum-powered vehicles and factories",
+                "vi": "phương tiện và nhà máy chạy bằng ga"
+            },
+            {
+                "en": "hoặc xăng",
+                "vi": ""
+            },
+            {
+                "en": "Finite resources",
+                "vi": "nguồn tài nguyên hữu hạn"
+            },
+            {
+                "en": "Throw away",
+                "vi": "vứt đi"
+            },
+            {
+                "en": "Feasible solutions",
+                "vi": "những biện pháp khả thi"
+            },
+            {
+                "en": "Advanced agricultural technologies",
+                "vi": "công nghệ nông nghiệp tiên tiến"
+            },
+            {
+                "en": "Streamlined",
+                "vi": "được cải tiến hoặc làm cho đơn giản hơn"
+            },
+            {
+                "en": "A detailed plan",
+                "vi": "một kế hoạch chi tiết"
+            },
+            {
+                "en": "Food products = food items = foodstuffs",
+                "vi": "thực phẩm"
+            },
+            {
+                "en": "Imposing a heavy fine",
+                "vi": "đưa ra một hình phạt nặng (tiền phạt)"
+            },
+            {
+                "en": "Ingredients",
+                "vi": "nguyên liệu"
+            }
+        ]
+    },
+    {
+        "id": "I37",
+        "category": "EDUCATION",
+        "title_en": "SINGLE SEX EDUCATION: ADVANTAGES",
+        "title_vi": "Những thuận lợi trong việc giáo dục đơn giới tính",
+        "points": [
+            {
+                "en": "Some people believe that male and female students should go to separate schools",
+                "vi": "Một số người tin rằng sinh viên nam và nữ nên đến các trường tách biệt"
+            },
+            {
+                "en": "This is often for religious or cultural reasons",
+                "vi": "Điều này thường do các lý do tôn giáo hoặc văn hoá"
+            },
+            {
+                "en": "Discipline problems might be avoided by separating boys and girls",
+                "vi": "Các vấn đề về kỷ luật có thể tránh được bằng cách tách các chàng trai và cô gái"
+            },
+            {
+                "en": "Boys and girls may learn in different ways and have different needs",
+                "vi": "Con trai và con gái có thể học theo những cách khác nhau và có những nhu cầu khác nhau"
+            },
+            {
+                "en": "Student at single-sex schools often get better exam grades.",
+                "vi": "Học sinh tại các trường học đơn giới tính thường có điểm thi tốt hơn."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Influential cultures",
+                "vi": "Những nền văn hóa có ảnh hưởng lớn"
+            },
+            {
+                "en": "The notion of modernism in terms of dressing",
+                "vi": "Ý niệm về cách ăn mặc hiện đại"
+            },
+            {
+                "en": "Reshapes fashion patterns of the indigenous",
+                "vi": "Định hình lại cách ăn mặc của người"
+            },
+            {
+                "en": "bản xứ",
+                "vi": ""
+            },
+            {
+                "en": "159",
+                "vi": ""
+            },
+            {
+                "en": "The age of globalization",
+                "vi": "Thời đại toàn cầu hóa"
+            },
+            {
+                "en": "Underestimate the value and meaning of their traditional clothes",
+                "vi": "Coi thường giá trị"
+            },
+            {
+                "en": "và ý nghĩa của quần áo truyền thống",
+                "vi": ""
+            },
+            {
+                "en": "To compete with something or somebody",
+                "vi": "Cạnh tranh với cái gì đó, ai đó."
+            },
+            {
+                "en": "To be threatened with something",
+                "vi": "Bị đe doạ bởi cái gì đó."
+            },
+            {
+                "en": "A rise in something",
+                "vi": "Sự tăng lên ở cái gì đó."
+            },
+            {
+                "en": "Increasing bankruptcies among small town-center shops",
+                "vi": "Sự phá sản nhiều của"
+            },
+            {
+                "en": "những cửa hàng nhỏ.",
+                "vi": ""
+            },
+            {
+                "en": "To cause a significant loss for the economy of any city",
+                "vi": "Gây ra tổn thất lớn cho nền"
+            },
+            {
+                "en": "kinh tế của bất cứ thành phố nào.",
+                "vi": ""
+            },
+            {
+                "en": "Traffic congestion",
+                "vi": "Tắc đường."
+            },
+            {
+                "en": "To adversely affect human health",
+                "vi": "Ảnh hưởng tiêu cực tới sức khoẻ con người."
+            },
+            {
+                "en": "To be faced with overpopulation and consequently ever-growing pressure on housing",
+                "vi": ""
+            },
+            {
+                "en": "supply systems",
+                "vi": "Đối mặt với quá tải dân số và hậu quả là áp lực đè nặng về vấn đề cung cấp"
+            },
+            {
+                "en": "chỗ ở.",
+                "vi": ""
+            },
+            {
+                "en": "To boom",
+                "vi": "Bùng nổ"
+            },
+            {
+                "en": "A form of transportation",
+                "vi": "Phương tiện đi lai"
+            },
+            {
+                "en": "Combustion engine vehicles",
+                "vi": "Những phương tiện sử dụng động cơ chạy bằng năng lượng"
+            },
+            {
+                "en": "hóa thạch",
+                "vi": ""
+            },
+            {
+                "en": "The automotive and petroleum industries",
+                "vi": "Ngành công nghiệp xe hơi và xăng dầu"
+            },
+            {
+                "en": "To generate millions of dollars in taxes",
+                "vi": "Tạo ra hàng triệu đô-la tiền thuế"
+            },
+            {
+                "en": "To burn fossil fuels",
+                "vi": "Đốt cháy năng lượng hóa thạch"
+            },
+            {
+                "en": "To harness energy from the sun",
+                "vi": "Khai thác năng lượng từ mặt trời"
+            },
+            {
+                "en": "Alternative forms of energy",
+                "vi": "Những dạng năng lượng thay thế"
+            },
+            {
+                "en": "Safe cycling zones",
+                "vi": "Khu vực đạp xe an toàn"
+            },
+            {
+                "en": "To minimise the risk",
+                "vi": "Giảm thiểu rủi ro"
+            },
+            {
+                "en": "Public transportation infrastructure",
+                "vi": "Cơ sở hạ tầng dành cho phương tiện giao thông công"
+            },
+            {
+                "en": "cộng",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I38",
+        "category": "EDUCATION",
+        "title_en": "SINGLE-SEX EDUCATION: DISADVANTAGES",
+        "title_vi": "Những bất lợi trong việc giáo dục đơn giới tính",
+        "points": [
+            {
+                "en": "Separating boys and girls is unnecessary",
+                "vi": "Việc tách biệt các em trai và bé gái là không cần thiết"
+            },
+            {
+                "en": "",
+                "vi": "Thật sự nó không lành mạnh về phát triển xã hội của trẻ em"
+            },
+            {
+                "en": "Many coeducational schools are extremely successful",
+                "vi": "Nhiều trường trung học phổ thông rất thành công"
+            },
+            {
+                "en": "A mixed-sex environment is more representative of real life",
+                "vi": "Một môi trường hỗn hợp giới tính là đại diện của cuộc sống thực"
+            },
+            {
+                "en": "Coeducational schools provide children with better social skills for adult life",
+                "vi": "Các trường học cung cấp cho trẻ những kỹ năng xã hội tốt hơn cho cuộc sống người trưởng"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Empowered people to conveniently keep in touch with friends and relatives",
+                "vi": "Giúp con"
+            },
+            {
+                "en": "người có thể giữ liên lạc với bạn bè và người thân một cách tiện lợi",
+                "vi": ""
+            },
+            {
+                "en": "The ability to effectively interact with each other",
+                "vi": "Khả năng tương tác hiệu quả với"
+            },
+            {
+                "en": "nhau",
+                "vi": ""
+            },
+            {
+                "en": "Refrain from using new appealing applications and games",
+                "vi": "Kiềm chế sử dụng những"
+            },
+            {
+                "en": "ứng dụng và trò chơi thú vị",
+                "vi": ""
+            },
+            {
+                "en": "Too engrossed in their games",
+                "vi": "quá đắm chìm vào việc chơi game"
+            },
+            {
+                "en": "Plays an integral role in",
+                "vi": "Đóng một vài trò quan trọng trong"
+            },
+            {
+                "en": "Oppose the idea of using animals in medical investigation",
+                "vi": "Phản đối ý tưởng sử dụng"
+            },
+            {
+                "en": "động vật trong nghiên cứu y học",
+                "vi": ""
+            },
+            {
+                "en": "Animals which are subjected to medical investigation",
+                "vi": "Những động vật mà được sử"
+            },
+            {
+                "en": "dụng trong nghiên cứu y học",
+                "vi": ""
+            },
+            {
+                "en": "Be susceptible to",
+                "vi": "Dễ bị ảnh hưởng bởi"
+            },
+            {
+                "en": "Implement research on animals",
+                "vi": "Tiến hành nghiên cứu trên động vật"
+            },
+            {
+                "en": "National budget will be expended on",
+                "vi": "Ngân sách quốc gia cần được giành cho việc"
+            },
+            {
+                "en": "Biological similarities",
+                "vi": "Sự giống nhau về mặt sinh học"
+            },
+            {
+                "en": "The above mentioned disadvantages",
+                "vi": "Những mặt bất lợi đã được nêu phía trên"
+            },
+            {
+                "en": "The elderly generation",
+                "vi": "Thế hệ người già"
+            },
+            {
+                "en": "To take a large proportion of responsibility",
+                "vi": "Lấy phần nhiều trách nhiệm"
+            },
+            {
+                "en": "188",
+                "vi": ""
+            },
+            {
+                "en": "To provide a certain level of care",
+                "vi": "Cung cấp một mức độ quan tâm nhất định"
+            },
+            {
+                "en": "Free healthcare and discounted medicine",
+                "vi": "Chăm sóc sức khỏe miễn phí và giảm giá thuốc"
+            },
+            {
+                "en": "thang",
+                "vi": ""
+            },
+            {
+                "en": "To care for and nurture",
+                "vi": "Quan tâm và nuôi dưỡng"
+            },
+            {
+                "en": "The needs of the younger generation",
+                "vi": "Những nhu cầu của thế hệ trẻ"
+            },
+            {
+                "en": "The backbone of a country’s economy",
+                "vi": "Xương sống của kinh tế quốc gia"
+            },
+            {
+                "en": "To invest in their health and education",
+                "vi": "Đầu tư vào sức khỏe và giáo dục của họ (thế hệ trẻ)"
+            },
+            {
+                "en": "To continue to develop and prosper",
+                "vi": "Tiếp tục phát triển và thịnh vượng"
+            },
+            {
+                "en": "An intelligent and healthy population",
+                "vi": "Dân số khỏe mạnh và thông minh"
+            },
+            {
+                "en": "An ethical and positive manner",
+                "vi": "Một cách tích cực và có đạo đức"
+            }
+        ]
+    },
+    {
+        "id": "I39",
+        "category": "EDUCATION",
+        "title_en": "ADVANTAGES OF STREAMING (GROUPING CHILDREN ACCORDING TO ABILITY)",
+        "title_vi": "Những thuận lợi trong việc sắp xếp học viên theo năng lực",
+        "points": [
+            {
+                "en": "Some schools separate students according to their academic ability",
+                "vi": "Một số trường tách biệt học sinh theo khả năng học tập của họ"
+            },
+            {
+                "en": "Teachers can work at the right speed for their students",
+                "vi": "Giáo viên có thể làm việc đúng tốc độ cho học sinh của mình"
+            },
+            {
+                "en": "Teachers can plan more suitable lessons",
+                "vi": "Giáo viên có thể lên kế hoạch cho các bài học phù hợp hơn"
+            },
+            {
+                "en": "High-level groups may progress faster",
+                "vi": "Các nhóm mức độ cao có thể tiến bộ nhanh hơn"
+            },
+            {
+                "en": "Lower level groups can benefits from a slower pace",
+                "vi": "Các nhóm cấp dưới có thể hưởng lợi từ một tốc độ chậm hơn"
+            },
+            {
+                "en": "Some teachers and parents support streaming for these reasons",
+                "vi": "Một số giáo viên và phụ huynh hỗ trợ việc sắp xếp học viên theo năng lực vì những lý do này"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Brings no relevant values to the present or future",
+                "vi": "Không đem lại giá trị thực tiến cho"
+            },
+            {
+                "en": "hiện tại và tương lai",
+                "vi": ""
+            },
+            {
+                "en": "No guarantee of the accuracy of information obtained",
+                "vi": "Không có gì đảm bảo về sự"
+            },
+            {
+                "en": "chính xác của thông tin",
+                "vi": ""
+            },
+            {
+                "en": "Thorough insights into their own culture and how their country has evolved",
+                "vi": "Kiến"
+            },
+            {
+                "en": "thức cụ thể về văn hóa và nước nhà đã tiến hóa như thế nào",
+                "vi": ""
+            },
+            {
+                "en": "Develop their patriotism and pride",
+                "vi": "Phát triển lòng yêu nước và sự tự hào"
+            },
+            {
+                "en": "To catch up on some unfinished work",
+                "vi": "Hoàn thành nốt những công việc chưa xong."
+            },
+            {
+                "en": "To plan their work schedule",
+                "vi": "Lên kế hoạch cho công việc."
+            },
+            {
+                "en": "175",
+                "vi": ""
+            },
+            {
+                "en": "Be stuck in traffic jams during rush hours",
+                "vi": "Mắc kẹt do tắc đường vào giờ cao điểm."
+            },
+            {
+                "en": "Breathing in toxic fumes",
+                "vi": "Hít phải những khí thải độc hại."
+            },
+            {
+                "en": "To lead to a number of serious health issues",
+                "vi": "Dẫn đến nhiều vấn đề nghiêm trọng về"
+            },
+            {
+                "en": "sức khoẻ.",
+                "vi": ""
+            },
+            {
+                "en": "To leaves less time for other more important activities",
+                "vi": "Dẫn đến ít thời gian cho các"
+            },
+            {
+                "en": "hoạt động khác quan trọng hơn.",
+                "vi": ""
+            },
+            {
+                "en": "Spending time with loved ones",
+                "vi": "Dành thời gian với những người yêu thương."
+            },
+            {
+                "en": "Pursuing one’s hobbies",
+                "vi": "Theo đuổi sở thích của một ai đó."
+            },
+            {
+                "en": "To keep their eyes glued to their smartphone",
+                "vi": "Dán mắt vào màn hình điện thoại."
+            },
+            {
+                "en": "An waste of time",
+                "vi": "Một cách đốt thời gian không tốt cho sức khoẻ."
+            },
+            {
+                "en": "To be allocated to",
+                "vi": "Được phân bổ cho cái gì"
+            },
+            {
+                "en": "To ensure that",
+                "vi": "Đảm bảo điều gì"
+            },
+            {
+                "en": "No action in place",
+                "vi": "Chưa có hành động gì diễn ra"
+            },
+            {
+                "en": "A global environmental catastrophe",
+                "vi": "Thảm họa môi trường toàn cầu"
+            },
+            {
+                "en": "To restore the environment",
+                "vi": "Khôi phục môi trường"
+            },
+            {
+                "en": "Future generations",
+                "vi": "Những thế hệ tương lai"
+            },
+            {
+                "en": "To be ludicrous",
+                "vi": "Vô lý"
+            },
+            {
+                "en": "To make a huge difference",
+                "vi": "Tạo ra sự khác biệt lớn"
+            },
+            {
+                "en": "To educate, feed, and house",
+                "vi": "Giáo dục, nuôi dưỡng, và cho ở"
+            },
+            {
+                "en": "The disadvantaged, impoverished",
+                "vi": "Những người nghèo đói và thiếu thốn"
+            }
+        ]
+    },
+    {
+        "id": "I40",
+        "category": "EDUCATION",
+        "title_en": "DISADVANTAGES OF STREAMING",
+        "title_vi": "Những bất lợi trong việc sắp xếp học viên theo năng lực",
+        "points": [
+            {
+                "en": "Grouping by ability may have a negative impact on students",
+                "vi": "Phân nhóm theo khả năng có thể có ảnh hưởng tiêu cực đến sinh viên"
+            },
+            {
+                "en": "Children do not want to be seen as less intelligent than others",
+                "vi": "Trẻ em không muốn bị coi là kém thông minh hơn những người khác"
+            },
+            {
+                "en": "Streaming could damage students’ self esteem",
+                "vi": "Việc phân loại học sinh theo năng lực có thể phá hủy lòng tự trọng của học sinh"
+            },
+            {
+                "en": "They may lose motivation",
+                "vi": "Họ có thể mất động lực"
+            },
+            {
+                "en": "Students from wealthier families tend to be better prepared",
+                "vi": "Học sinh từ các gia đình giàu có xu hướng được chuẩn bị tốt hơn"
+            },
+            {
+                "en": "Children from poorer families may receive less support from parents",
+                "vi": "Trẻ em từ các gia đình nghèo có thể nhận được ít sự hỗ trợ từ cha mẹ"
+            },
+            {
+                "en": "Mixed ability classes encourage everyone to achieve their potential.",
+                "vi": "Các lớp đa năng lực khuyến khích tất cả mọi người đạt được tiềm năng của họ."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "A detriment to people’s health conditions",
+                "vi": "Điều gây hại cho sức khỏe con người"
+            },
+            {
+                "en": "Excessive food intake",
+                "vi": "Lượng thức ăn vào quá nhiều"
+            },
+            {
+                "en": "Numerous health-related problems",
+                "vi": "Nhiều vấn đề liên quan đến sức khỏe"
+            },
+            {
+                "en": "Approach prospective customers",
+                "vi": "Tiếp cận khách hàng tiềm năng"
+            },
+            {
+                "en": "Their profit declines as a result of this prohibition policy",
+                "vi": "Lợi nhuận giảm vì cấm sách"
+            },
+            {
+                "en": "này",
+                "vi": ""
+            },
+            {
+                "en": "To hold the most vital position",
+                "vi": "Giữ vai trò thiết yếu."
+            },
+            {
+                "en": "To access huge storage of news",
+                "vi": "Tiếp cận trữ lượng thông tin lớn."
+            },
+            {
+                "en": "To take over the position of printed newspaper",
+                "vi": "Chiếm lấy vị trí của báo in."
+            },
+            {
+                "en": "To unfold the possibility to upload videos and voice records",
+                "vi": "Mở ra khả năng đăng tải"
+            },
+            {
+                "en": "video và băng ghi âm.",
+                "vi": ""
+            },
+            {
+                "en": "The crucial source of information",
+                "vi": "Nguồn thông tin quan trọng nhất."
+            },
+            {
+                "en": "Prolonging procedures including editing and printing",
+                "vi": "những quy trình kéo dài bao"
+            },
+            {
+                "en": "gồm việc biên tập và in ấn.",
+                "vi": ""
+            },
+            {
+                "en": "A method of advertising",
+                "vi": "Một phương thức quảng cáo"
+            },
+            {
+                "en": "To require millions of dollars to organise and coordinate",
+                "vi": "Đòi hỏi hàng triệu đô-la để tổ chức"
+            },
+            {
+                "en": "và điều phối",
+                "vi": ""
+            },
+            {
+                "en": "To cover the costs",
+                "vi": "Chi trả chi phí"
+            },
+            {
+                "en": "To face bankruptcy",
+                "vi": "Đối mặt với sự phá sản"
+            },
+            {
+                "en": "Alcohol and tobacco companies",
+                "vi": "Các công ty rượu bia và thuốc lá"
+            },
+            {
+                "en": "To be exposed to something",
+                "vi": "Tiếp xúc với cái gì"
+            },
+            {
+                "en": "To develop a positive association with something",
+                "vi": "Phát triển một mối liên quan với cái gì"
+            },
+            {
+                "en": "Positive and negative outcomes",
+                "vi": "Những kết quả tích cực và tiêu cực"
+            }
+        ]
+    },
+    {
+        "id": "I41",
+        "category": "ENVIRONMENT",
+        "title_en": "GLOBAL WARMING",
+        "title_vi": "Các vấn đề nóng lên toàn cầu",
+        "points": [
+            {
+                "en": "Gases such as carbon dioxide trap heat from the sun",
+                "vi": "Các loại khí như carbon dioxide giữ nhiệt từ mặt trời"
+            },
+            {
+                "en": "This causes global temperatures to rise",
+                "vi": "Điều này làm cho nhiệt độ toàn cầu tăng lên"
+            },
+            {
+                "en": "This process is known as the greenhouse effect",
+                "vi": "Quá trình này được gọi là hiệu ứng nhà kính"
+            },
+            {
+                "en": "Human activity is a major factor in the rise of the greenhouse gases",
+                "vi": "Hoạt động của con người là một nhân tố chính trong việc gia tăng khí nhà kính"
+            },
+            {
+                "en": "Factories and vehicles produce emissions and exhaust fumes",
+                "vi": "Các nhà máy và xe cộ tạo ra khí thải và khói thải"
+            },
+            {
+                "en": "Many developing countries are becoming industrialized",
+                "vi": "Nhiều nước đang phát triển đang trở nên công nghiệp hóa"
+            },
+            {
+                "en": "The number of cars on our streets is growing",
+                "vi": "Số lượng ô tô trên đường phố đang tăng lên"
+            },
+            {
+                "en": "Cheap air travel is allowing more people to fly",
+                "vi": "Du lịch hàng không giá rẻ đang cho phép nhiều người bay hơn"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "The current rate of exploitation",
+                "vi": "Tốc độ khai thác hiện nay"
+            },
+            {
+                "en": "Energy scarcity",
+                "vi": "Khan hiếm năng lượng"
+            },
+            {
+                "en": "The future development of the human race",
+                "vi": "Sự phát triển trong tương lai của loài"
+            },
+            {
+                "en": "người",
+                "vi": ""
+            },
+            {
+                "en": "Environmental degradation",
+                "vi": "Sự thoái hóa của môi trường"
+            },
+            {
+                "en": "160",
+                "vi": ""
+            },
+            {
+                "en": "The combustion of fossil fuels",
+                "vi": "Sự đốt cháy năng lượng hóa thạch"
+            },
+            {
+                "en": "An unlimited amount of inexpensive energy",
+                "vi": "Một lượng bất tận năng lượng rẻ"
+            },
+            {
+                "en": "Pure altruism",
+                "vi": "lòng vị tha chân thật"
+            },
+            {
+                "en": "Severe environmental degradation and widespread poverty",
+                "vi": "sự hủy hoại môi trường"
+            },
+            {
+                "en": "nghiêm trọng hoặc đói nghèo đang lan rộng",
+                "vi": ""
+            },
+            {
+                "en": "The livelihood of our future generation",
+                "vi": "kế sinh nhai của thế hệ tương lai"
+            },
+            {
+                "en": "Justify economic progress",
+                "vi": "biện minh cho sự phát triển về kinh tế"
+            },
+            {
+                "en": "Poor, unsanitary conditions",
+                "vi": "điều kiện nghèo khổ và không đảm bảo vệ sinh"
+            },
+            {
+                "en": "On our doorstep",
+                "vi": "rất gần với nơi chúng ta sống"
+            },
+            {
+                "en": "Make a paradigm change to our today’s society",
+                "vi": "thay đổi cơ bản xã hội ngày nay"
+            },
+            {
+                "en": "Nurturing our children’s altruistic behavior",
+                "vi": "nuôi dưỡng phẩm chất vị tha ở trẻ em"
+            },
+            {
+                "en": "Affect the trajectory of a child’s personality development",
+                "vi": "ảnh hưởng đến hướng phát"
+            },
+            {
+                "en": "triển của tính cách ở trẻ em",
+                "vi": ""
+            },
+            {
+                "en": "To bring meaning to a person’s life",
+                "vi": "Đem lại ý nghĩa cho cuộc sống của ai đó"
+            },
+            {
+                "en": "189",
+                "vi": ""
+            },
+            {
+                "en": "The highest level of satisfaction",
+                "vi": "Mức độ thỏa mãn cao nhất"
+            },
+            {
+                "en": "To enrich our lives",
+                "vi": "Làm giàu cho cuộc sống của chúng ta"
+            },
+            {
+                "en": "A sense of purpose and fulfilment",
+                "vi": "Cảm giác về mục đích và sự hài lòng"
+            },
+            {
+                "en": "A low sense of self-worth",
+                "vi": "Cảm giác đánh giá thấp bản thân"
+            },
+            {
+                "en": "To suffer from some form of mental illness",
+                "vi": "Chịu đựng bệnh tâm lý"
+            },
+            {
+                "en": "To have the luxury of doing something",
+                "vi": "Có may mắn được làm gì"
+            },
+            {
+                "en": "To find meaning in",
+                "vi": "Tìm thấy mục đích trong việc gì đó"
+            },
+            {
+                "en": "To raise their children",
+                "vi": "Nuôi dạy con cái"
+            },
+            {
+                "en": "To take care of their family",
+                "vi": "Chăm sóc gia đình"
+            },
+            {
+                "en": "To pursue their passions",
+                "vi": "Theo đuổi đam mê"
+            },
+            {
+                "en": "To make a living",
+                "vi": "Kiếm sống"
+            }
+        ]
+    },
+    {
+        "id": "I42",
+        "category": "ENVIRONMENT",
+        "title_en": "EFFECTS OF GLOBAL WARMING",
+        "title_vi": "Những tác động của việc nóng lên toàn cầu",
+        "points": [
+            {
+                "en": "Global warming will have a significant impact on our planet",
+                "vi": "Nóng lên toàn cầu sẽ có một tác động đáng kể trên hành tinh của chúng ta"
+            },
+            {
+                "en": "Rising temperature will cause melting of the polar ice caps",
+                "vi": "Nhiệt độ tăng gây ra sự tan chảy của các tảng băng ở các cực"
+            },
+            {
+                "en": "Sea levels will rise",
+                "vi": "Mực nước biển sẽ tăng"
+            },
+            {
+                "en": "We can expect more extreme weather conditions",
+                "vi": "Chúng ta có thể mong đợi điều kiện thời tiết khắc nghiệt hơn"
+            },
+            {
+                "en": "Flooding and droughts may become more common",
+                "vi": "Lũ lụt và hạn hán có thể trở nên phổ biến hơn"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Disparities in the types of job compatible for males or females",
+                "vi": "sự phân biệt trong"
+            },
+            {
+                "en": "loại công việc tương thích với đàn ông và phụ nữ",
+                "vi": ""
+            },
+            {
+                "en": "Distinct physical and mental strengths",
+                "vi": "Những điểm mạnh khác biệt về thể chất và"
+            },
+            {
+                "en": "tinh thần",
+                "vi": ""
+            },
+            {
+                "en": "The distribution of the types of jobs among the two sexes",
+                "vi": "Sự phân bố các loại"
+            },
+            {
+                "en": "công việc giữa những người khác giới",
+                "vi": ""
+            },
+            {
+                "en": "Occupational compatibility regarding gender",
+                "vi": "Sự tương thích nghề nghiệp dựa trên"
+            },
+            {
+                "en": "giới tính",
+                "vi": ""
+            },
+            {
+                "en": "Great versatility in various jobs",
+                "vi": "Khả năng có thể đảm nhiệm tốt nhiều loại công"
+            },
+            {
+                "en": "việc",
+                "vi": ""
+            },
+            {
+                "en": "Both brains and brawn",
+                "vi": "Cả trí não lẫn thể chất"
+            },
+            {
+                "en": "Gender-specific career pursuit",
+                "vi": "Sự theo đuổi nghề nghiệp tùy theo giới tính (tạm"
+            },
+            {
+                "en": "dịch...)",
+                "vi": ""
+            },
+            {
+                "en": "The aforementioned disparity in job selection",
+                "vi": "Sự phân biệt trong việc chọn lựa"
+            },
+            {
+                "en": "ngành nghề vừa đề cập đến ở trên",
+                "vi": ""
+            },
+            {
+                "en": "To gain social endorsement",
+                "vi": "nhận được sự ủng hộ của xã hội"
+            },
+            {
+                "en": "176",
+                "vi": ""
+            },
+            {
+                "en": "Law breaker (n)",
+                "vi": "người phạm luật, tội phạm"
+            },
+            {
+                "en": "Felony (n)",
+                "vi": "tội nghiêm trọng"
+            },
+            {
+                "en": "Justice and fairness",
+                "vi": "công lý và công bằng"
+            },
+            {
+                "en": "A deterrent against something",
+                "vi": "cái ngăn chặn điều gì"
+            },
+            {
+                "en": "Be condemned to",
+                "vi": "bị kết tội/kết án"
+            },
+            {
+                "en": "A unique and healthy form of self-expression",
+                "vi": "một cách thể hiện bản thân độc đáo và lành"
+            },
+            {
+                "en": "mạnh",
+                "vi": ""
+            },
+            {
+                "en": "Mind-numbing television programs",
+                "vi": "các chương trình TV không hấp dẫn"
+            },
+            {
+                "en": "Violent computer games",
+                "vi": "các trò chơi máy tính bạo lực"
+            },
+            {
+                "en": "To express themselves emotionally",
+                "vi": "bày tỏ cảm xúc bản thân"
+            },
+            {
+                "en": "A much better ability to connect with and express their emotions",
+                "vi": "khả năng kết nối và bày tỏ"
+            },
+            {
+                "en": "cảm xúc tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "A healthy manner",
+                "vi": "một cách lành mạnh"
+            }
+        ]
+    },
+    {
+        "id": "I43",
+        "category": "ENVIRONMENT",
+        "title_en": "IMPACTS OF HUMANS ON THE ENVIRONMENT",
+        "title_vi": "Những tác động của con người lên môi trường",
+        "points": [
+            {
+                "en": "The increasing world population is putting pressure on natural resources",
+                "vi": "Dân số thế giới ngày càng tăng đang gây áp lực lên các nguồn tài nguyên thiên nhiên"
+            },
+            {
+                "en": "Fossil fuels like oil and gas are running out",
+                "vi": "Các nhiên liệu hóa thạch như dầu và khí đốt đang cạn kiệt."
+            },
+            {
+                "en": "We are destroying wildlife habitats",
+                "vi": "Chúng ta đang hủy hoại môi trường sống động vật hoang dã."
+            },
+            {
+                "en": "We have cut down enormous areas of rainforest",
+                "vi": "Chúng ta đã phá hủy/chặt gỗ nhiều khu vực lớn rừng nhiệt đới"
+            },
+            {
+                "en": "This has led to the extinction of many species of animals and plants",
+                "vi": "Điều này đã dẫn đến sự tuyệt chủng của nhiều loài động vật và thực vật"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Acquire tertiary degrees",
+                "vi": "Lấy bằng đại học"
+            },
+            {
+                "en": "Equal in intelligence and scholastic capability",
+                "vi": "Giống nhau về trí tuệ cũng như"
+            },
+            {
+                "en": "khả năng học vấn",
+                "vi": ""
+            },
+            {
+                "en": "Providing free tertiary education",
+                "vi": "Cung cấp giáo dục đại học miễn phí"
+            },
+            {
+                "en": "Exerts a fairly significant impact on how each student interacts with teachers and",
+                "vi": ""
+            },
+            {
+                "en": "their peers",
+                "vi": "Có ảnh hưởng khá đáng kể đến việc từng học sinh tương tác với nhau"
+            },
+            {
+                "en": "cũng như với thầy cô như thế nào.",
+                "vi": ""
+            },
+            {
+                "en": "Facility and infrastructural development",
+                "vi": "phát triển về mặt cơ sở vật chất và hạ tầng"
+            },
+            {
+                "en": "Exerting dire consequences on natural habitats",
+                "vi": "tạo ra ảnh hưởng xấu lên môi trường"
+            },
+            {
+                "en": "sống tự nhiên",
+                "vi": ""
+            },
+            {
+                "en": "Lay much pressure on local people",
+                "vi": "Đặt nhiều áp lực lên người dân trong vùng"
+            },
+            {
+                "en": "A detriment to domestic travel",
+                "vi": "Ngăn cản du lịch trong nước"
+            },
+            {
+                "en": "Costs of hotel rooms and other services",
+                "vi": "Giá cả của phòng khách sạn và những loại"
+            },
+            {
+                "en": "dịch vụ khác",
+                "vi": ""
+            },
+            {
+                "en": "Enhance tourism industries",
+                "vi": "Phát triển ngành du lịch"
+            },
+            {
+                "en": "Enormously benefit from the burgeoning tourism industry",
+                "vi": "được hưởng lợi to lớn từ"
+            },
+            {
+                "en": "ngành công nghiệp du lịch đang bùng nổ",
+                "vi": ""
+            },
+            {
+                "en": "Fellow employees",
+                "vi": "đồng nghiệp"
+            },
+            {
+                "en": "To lack emotions",
+                "vi": "thiếu cảm xúc"
+            },
+            {
+                "en": "Misinterpreted",
+                "vi": "bị hiểu sai"
+            },
+            {
+                "en": "Tensions between employees",
+                "vi": "căng thẳng giữa các nhân viên"
+            },
+            {
+                "en": "To feel inferior",
+                "vi": "cảm thấy kém cỏi"
+            },
+            {
+                "en": "A friendly tone or smile",
+                "vi": "một giọng điệu hoặc nụ cười thân thiện"
+            },
+            {
+                "en": "Low productivity",
+                "vi": "năng suất thấp"
+            },
+            {
+                "en": "To hold a meeting",
+                "vi": "tổ chức một cuộc họp"
+            },
+            {
+                "en": "To double check",
+                "vi": "đối chiếu"
+            },
+            {
+                "en": "Misunderstanding",
+                "vi": "hiểu lầm"
+            },
+            {
+                "en": "Enormous amounts of time and money",
+                "vi": "lượng thời gian và tiền bạc khổng lồ"
+            }
+        ]
+    },
+    {
+        "id": "I44",
+        "category": "ENVIRONMENT",
+        "title_en": "SOLUTIONS TO ENVIRONMENT PROBLEMS",
+        "title_vi": "Những giải pháp đối với vấn đề về môi trường",
+        "points": [
+            {
+                "en": "Governments could introduce laws to limit emissions from factories",
+                "vi": "Các chính phủ có thể đưa ra luật hạn chế phát thải từ các nhà máy"
+            },
+            {
+                "en": "They should invest in renewable energy from solar, wind or water power",
+                "vi": "Họ nên đầu tư vào năng lượng tái tạo từ mặt trời, gió hoặc nước"
+            },
+            {
+                "en": "They could impose “green taxes” on drivers and airlines companies",
+                "vi": "Họ có thể áp đặt \"thuế xanh\" cho các tài xế và hãng hàng không"
+            },
+            {
+                "en": "Government campaigns should promote recycling",
+                "vi": "Các chiến dịch của chính phủ nên thúc đẩy việc tái chế"
+            },
+            {
+                "en": "Natural areas and wild animals should be protected",
+                "vi": "Khu vực tự nhiên và động vật hoang dã cần được bảo vệ"
+            },
+            {
+                "en": "We should take fewer flights abroad for holidays",
+                "vi": "Chúng ta nên có ít thực hiện chuyến bay ra nước ngoài cho các kỳ nghỉ lễ"
+            },
+            {
+                "en": "We should take public transport rather than driving",
+                "vi": "Chúng ta nên sử dụng phương tiện công cộng hơn việc lái xe"
+            },
+            {
+                "en": "We should choose products with less packaging",
+                "vi": "Chúng ta nên chọn các sản phẩm có bao bì ít hơn"
+            },
+            {
+                "en": "We should recycle as much as possible",
+                "vi": "Chúng ta nên tái chế càng nhiều càng tốt"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Not only population explosion but also migration from the countryside",
+                "vi": "Không chỉ"
+            },
+            {
+                "en": "bùng nổ dân số mà còn di cư từ nông thôn",
+                "vi": ""
+            },
+            {
+                "en": "Public transportation overload",
+                "vi": "Hiện trạng quả tải phương tiện giao thông công cộng"
+            },
+            {
+                "en": "Adequate employment opportunities",
+                "vi": "Đầy đủ cơ hội nghề nghiệp"
+            },
+            {
+                "en": "Find a decent profession equivalent to their qualifications and competence",
+                "vi": "Tìm được"
+            },
+            {
+                "en": "một ngành tốt xứng với bằng cấp và khả năng",
+                "vi": ""
+            },
+            {
+                "en": "161",
+                "vi": ""
+            },
+            {
+                "en": "Grab the headlines",
+                "vi": "là tiêu điểm của báo chí"
+            },
+            {
+                "en": "Ubiquitous (a)",
+                "vi": "có ở khắp nơi, tràn lan"
+            },
+            {
+                "en": "Tedious teaching method (noun phrase)",
+                "vi": "phương pháp giảng dạy nhàm chán"
+            },
+            {
+                "en": "To be eager to do something",
+                "vi": "hào hứng, thích thú làm gì"
+            },
+            {
+                "en": "Starring role",
+                "vi": "vai chính"
+            },
+            {
+                "en": "Tailor (v)",
+                "vi": "thay đổi, chỉnh sửa để phù hợp"
+            },
+            {
+                "en": "Arouse someone’s interest",
+                "vi": "khơi gợi sự hứng thú"
+            },
+            {
+                "en": "Motion image",
+                "vi": "hình ảnh động"
+            },
+            {
+                "en": "Vivid sound effect",
+                "vi": "hiệu ứng âm thanh sống động"
+            },
+            {
+                "en": "Appealing (a)",
+                "vi": "thu hút, hấp dẫn"
+            },
+            {
+                "en": "190",
+                "vi": ""
+            },
+            {
+                "en": "The food and beverage industry",
+                "vi": "ngành công nghiệp đồ ăn thức uống"
+            },
+            {
+                "en": "To far outweigh",
+                "vi": "quan trọng hơn nhiều"
+            },
+            {
+                "en": "Single-use plastic packaging",
+                "vi": "bao bì nhựa dùng một lần"
+            },
+            {
+                "en": "Take-away products",
+                "vi": "các sản phẩm mang đi"
+            },
+            {
+                "en": "Always on the go",
+                "vi": "luôn di chuyển"
+            },
+            {
+                "en": "Demanding schedules",
+                "vi": "lịch trình bận rộn"
+            },
+            {
+                "en": "The long-term destruction",
+                "vi": "sự tàn phá lâu dài"
+            },
+            {
+                "en": "A plastic pollution crisis",
+                "vi": "cuộc khủng hoảng ô nhiễm nhựa"
+            },
+            {
+                "en": "Unrecyclable plastic waste",
+                "vi": "rác thải nhựa không tái chế được"
+            },
+            {
+                "en": "Toxic fumes",
+                "vi": "các khí độc hại"
+            },
+            {
+                "en": "To suffer the health effects of something",
+                "vi": "chịu đựng các tác động lên sức khoẻ từ việc gì đó"
+            },
+            {
+                "en": "Recyclable or biodegradable materials",
+                "vi": "vật liệu có thể tái chế hoặc phân huỷ sinh học"
+            },
+            {
+                "en": "To make a habit of something",
+                "vi": "tạo thói quen làm việc gì đó"
+            },
+            {
+                "en": "Reusable containers",
+                "vi": "đồ chứa có thể tái sử dụng"
+            }
+        ]
+    },
+    {
+        "id": "I45",
+        "category": "ENVIRONMENT",
+        "title_en": "WASTE/RUBBISH",
+        "title_vi": "Những vấn đề liên quan đến rác thải",
+        "points": [
+            {
+                "en": "The amount of waster we produce has increased",
+                "vi": "Lượng chất thải của chúng ta tạo ra đã tăng lên"
+            },
+            {
+                "en": "This problem is a result of our consumer culture",
+                "vi": "Vấn đề này là kết quả của văn hoá tiêu dùng"
+            },
+            {
+                "en": "Products are not made to last",
+                "vi": "Sản phẩm được tạo ra không kéo dài thời hạn sử dụng"
+            },
+            {
+                "en": "",
+                "vi": "Nếu một cái gì đó bị hư, chúng ta ném nó và mua một cái mới"
+            },
+            {
+                "en": "Advertisers encourage is to buy the newest fashions",
+                "vi": "Nhà quảng cáo khuyến khích mua những thời trang mới nhất"
+            },
+            {
+                "en": "Packaging is an important part of selling",
+                "vi": "Việc đóng gói là một phần quan trọng trong việc bán hàng"
+            },
+            {
+                "en": "Most foods are sold in non-biodegradable plastics packaging",
+                "vi": "Hầu hết các thực phẩm được bán trong bao bì nhựa không phân huỷ sinh học"
+            },
+            {
+                "en": "The amount of household waste is growing",
+                "vi": "Số lượng rác thải sinh hoạt đang gia tăng"
+            },
+            {
+                "en": "This waste ends up in landfill sites",
+                "vi": "Chất thải này kết thúc ở bãi chôn lấp"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Details about newly launched products",
+                "vi": "Thông tin chi tiết về những sản phẩm mới"
+            },
+            {
+                "en": "được công bố",
+                "vi": ""
+            },
+            {
+                "en": "Commercialize their commodities",
+                "vi": "Thương mại hóa sản phẩm"
+            },
+            {
+                "en": "Publicity materials",
+                "vi": "Nghĩa là những thứ giúp cho một sản phẩm mới đươc người khác"
+            },
+            {
+                "en": "biết đến (tạm dịch)",
+                "vi": ""
+            },
+            {
+                "en": "Approach prospective customers",
+                "vi": "Tiếp cận với khách hàng tiềm năng"
+            },
+            {
+                "en": "To be bombarded with all kinds of advertisements",
+                "vi": "Bị “bỏ bom” bởi đủ các thể loại"
+            },
+            {
+                "en": "quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "Information overload",
+                "vi": "Quá tải thông tin"
+            },
+            {
+                "en": "Stimulate people to purchase products that are being advertised",
+                "vi": "Kích thích mọi"
+            },
+            {
+                "en": "người mua hàng hóa đang được quảng cáo.",
+                "vi": ""
+            },
+            {
+                "en": "The demand for domestically produced food",
+                "vi": "nhu cầu cho thực phẩm được sản xuất"
+            },
+            {
+                "en": "trong nước",
+                "vi": ""
+            },
+            {
+                "en": "A reduction in unemployment rates",
+                "vi": "sự giảm của tỷ lệ thất nghiệp"
+            },
+            {
+                "en": "Safe, hygienic food standards",
+                "vi": "tiêu chuẩn thức ăn an toàn và sạch"
+            },
+            {
+                "en": "Putting barriers on importing food",
+                "vi": "đặt rào cản cho việc nhập khẩu thức ăn"
+            },
+            {
+                "en": "177",
+                "vi": ""
+            },
+            {
+                "en": "Countries can play their part in",
+                "vi": "các nước đóng vai trò quan trọng trong việc"
+            },
+            {
+                "en": "Cultures and customs",
+                "vi": "phong tục và văn hoá"
+            },
+            {
+                "en": "To experience something firsthand",
+                "vi": "trải nghiệm điều gì đó trực tiếp"
+            },
+            {
+                "en": "Up-to-date",
+                "vi": "cập nhật"
+            },
+            {
+                "en": "Comprehensive",
+                "vi": "toàn diện"
+            },
+            {
+                "en": "A deeper insight",
+                "vi": "một hiểu biết sâu sắc hơn"
+            },
+            {
+                "en": "Create memories that will last a lifetime",
+                "vi": "tạo ra những kỷ niệm kéo dài suốt đời"
+            }
+        ]
+    },
+    {
+        "id": "I46",
+        "category": "ENVIRONMENT",
+        "title_en": "LITTER",
+        "title_vi": "Rác thải",
+        "points": [
+            {
+                "en": "People do not think about the consequences of dropping rubbish",
+                "vi": "Mọi người không nghĩ về hậu quả của việc bỏ rác"
+            },
+            {
+                "en": "Plastic packaging does not break down easily",
+                "vi": "Bao bì bằng nhựa không dễ vỡ"
+            },
+            {
+                "en": "Most of the litter seen on streets is fast food packaging",
+                "vi": "Hầu hết rác thải được chứng kiến trên đường phố là túi thức ăn nhanh"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Travel expenses",
+                "vi": "Chi phí du lịch"
+            },
+            {
+                "en": "Famous tourist destinations",
+                "vi": "Điểm đến du lịch nổi tiếng"
+            },
+            {
+                "en": "Complicated and tedious prerequisite procedures",
+                "vi": "Công đoạn bắt buộc nhàm chán và"
+            },
+            {
+                "en": "phức tạp",
+                "vi": ""
+            },
+            {
+                "en": "Lay much pressure on local people",
+                "vi": "Đặt nhiều áp lực lên người dân trong vùng"
+            },
+            {
+                "en": "A detriment to domestic travel",
+                "vi": "Ngăn cản du lịch trong nước"
+            },
+            {
+                "en": "Costs of hotel rooms and other services",
+                "vi": "Giá cả của phòng khách sạn và những loại"
+            },
+            {
+                "en": "dịch vụ khác",
+                "vi": ""
+            },
+            {
+                "en": "Numbers of fascinating experiences of exotic cuisine and culture",
+                "vi": "Nhiều trải nghiệm"
+            },
+            {
+                "en": "thú vị về thực phẩm và văn hóa xa lạ",
+                "vi": ""
+            },
+            {
+                "en": "Enhance tourism industries",
+                "vi": "Phát triển ngành du lịch"
+            },
+            {
+                "en": "Have a detrimental impact",
+                "vi": "có ảnh hưởng xấu"
+            },
+            {
+                "en": "Manipulate (v)",
+                "vi": "lôi kéo"
+            },
+            {
+                "en": "Marketing strategy",
+                "vi": "chiến lược tiếp thị"
+            },
+            {
+                "en": "The concept of advertising",
+                "vi": "khái niệm quảng cáo"
+            },
+            {
+                "en": "A prosperous economy",
+                "vi": "một nền kinh tế thịnh vượng"
+            },
+            {
+                "en": "Provide temporary financial support",
+                "vi": "cung cấp hỗ trợ tài chính tạm thời"
+            },
+            {
+                "en": "The nurture and nourishment",
+                "vi": "nuôi nấng và chăm sóc"
+            },
+            {
+                "en": "Strong family bonds",
+                "vi": "mối liên kết gia đình bền chặt"
+            },
+            {
+                "en": "Moral values",
+                "vi": "các giá trị đạo đức"
+            },
+            {
+                "en": "To develop emotionally and socially",
+                "vi": "phát triển về mặt tình cảm và xã hội"
+            },
+            {
+                "en": "Immediate family",
+                "vi": "gia đình trực hệ"
+            },
+            {
+                "en": "To bear the consequences of decisions",
+                "vi": "chịu hậu quả của các quyết định"
+            },
+            {
+                "en": "To fall in with the wrong crowd",
+                "vi": "tham gia nhầm nhóm người"
+            },
+            {
+                "en": "Neural pathways",
+                "vi": "các dây thần kinh"
+            }
+        ]
+    },
+    {
+        "id": "I47",
+        "category": "ENVIRONMENT",
+        "title_en": "RECYCLING AND OTHER SOLUTIONS",
+        "title_vi": "Việc tái chế và những giải pháp khác",
+        "points": [
+            {
+                "en": "Companies should make goods that last longer",
+                "vi": "Các công ty nên làm cho hàng hoá kéo dài hơn thời gian"
+            },
+            {
+                "en": "They should not use so much packaging",
+                "vi": "Họ không nên sử dụng quá nhiều bao bì"
+            },
+            {
+                "en": "Governments should be stricter, about waster produced by companies",
+                "vi": "Chính phủ các nước cần nghiêm ngặt hơn, về các chất thải do các công ty sản xuất"
+            },
+            {
+                "en": "They should put legal limits on packaging",
+                "vi": "Họ nên đặt các giới hạn pháp lý về đóng gói"
+            },
+            {
+                "en": "Consumers should avoid buying over-packaged products",
+                "vi": "Người tiêu dùng nên tránh mua các sản phẩm đóng gói"
+            },
+            {
+                "en": "We should recycle and reuse useful materials.",
+                "vi": "Chúng ta nên tái chế và tái sử dụng các vật liệu hữu ích."
+            },
+            {
+                "en": "There are collection banks for glass, paper and plastic bottles",
+                "vi": "Có những vựa thu mua thủy tinh, giấy và chai nhựa"
+            },
+            {
+                "en": "Households can use several rubbish bins to separate waste",
+                "vi": "Các hộ gia đình có thể sử dụng một số thùng rác để tách chất thải"
+            },
+            {
+                "en": "Recycling saves energy and raw materials.",
+                "vi": "Việc tái chế tiết kiệm năng lượng và nguyên liệu."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Sharpen some important skills",
+                "vi": "Mài giũa một số kĩ năng quan trọng"
+            },
+            {
+                "en": "Cultivate their creativity and problem solving skills",
+                "vi": "Phát triển sự sáng tạo và khả"
+            },
+            {
+                "en": "năng giải quyết vấn đề",
+                "vi": ""
+            },
+            {
+                "en": "Tremendous focus and extremely fast reflexes",
+                "vi": "Sự tập trung cao độ và phản xạ cực"
+            },
+            {
+                "en": "nhanh",
+                "vi": ""
+            },
+            {
+                "en": "This form of entertainment is a grave detriment",
+                "vi": "Loại hình giải trí này là sự gây hại"
+            },
+            {
+                "en": "Players are exposed to them on a frequent basis",
+                "vi": "Người chơi tiếp xúc với game"
+            },
+            {
+                "en": "thường xuyên",
+                "vi": ""
+            },
+            {
+                "en": "Healthy, educational and less time- consuming options",
+                "vi": "Những sự lựa chọn lành"
+            },
+            {
+                "en": "162",
+                "vi": ""
+            },
+            {
+                "en": "mạnh, mang tính giáo dục và ít tốn thời gian hơn",
+                "vi": ""
+            },
+            {
+                "en": "Widespread popularity",
+                "vi": "sự phổ biến rộng rãi"
+            },
+            {
+                "en": "Cross-cultural communication",
+                "vi": "giao tiếp liên văn hoá"
+            },
+            {
+                "en": "Boost multilateral trade and cultural exchange",
+                "vi": "thúc đẩy thương mại đa phương và"
+            },
+            {
+                "en": "trao đổi văn hoá",
+                "vi": ""
+            },
+            {
+                "en": "Incredible growth",
+                "vi": "sự phát triển đáng kinh ngạc"
+            },
+            {
+                "en": "Cultural identity",
+                "vi": "bản sắc văn hoá"
+            },
+            {
+                "en": "Weakened social cohesion",
+                "vi": "sự gắn kết xã hội bị suy yếu"
+            },
+            {
+                "en": "An absolute necessary life skill",
+                "vi": "một kỹ năng sống tuyệt đối cần thiết"
+            },
+            {
+                "en": "No negative sides to this argument",
+                "vi": "không có mặt tiêu cực nào đối với lập luận này"
+            },
+            {
+                "en": "191",
+                "vi": ""
+            },
+            {
+                "en": "The basic necessities of life",
+                "vi": "những nhu cầu cơ bản của cuộc sống"
+            },
+            {
+                "en": "It only serves to reason that",
+                "vi": "nó chỉ phục vụ cho lý do đó"
+            },
+            {
+                "en": "The current state of the world",
+                "vi": "tình trạng hiện tại của thế giới"
+            },
+            {
+                "en": "Causes more problems than it solves",
+                "vi": "gây ra nhiều vấn đề hơn là giải quyết vấn đề"
+            },
+            {
+                "en": "Smaller, community-based societies",
+                "vi": "các xã hội nhỏ hơn, dựa trên nền tảng cộng đồng"
+            },
+            {
+                "en": "This is still the case",
+                "vi": "đây vẫn là trường hợp cần lưu tâm"
+            },
+            {
+                "en": "Sense of independence and freedom",
+                "vi": "ý thức độc lập và tự do"
+            },
+            {
+                "en": "To connect with nature",
+                "vi": "kết nối với thiên nhiên"
+            },
+            {
+                "en": "The most effective stress relieving activities",
+                "vi": "các hoạt động giảm căng thẳng hiệu quả nhất"
+            },
+            {
+                "en": "A closer connection and better awareness of something",
+                "vi": "kết nối chặt chẽ hơn và nhận thức"
+            },
+            {
+                "en": "tốt hơn về điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Make smarter dietary choices",
+                "vi": "thực hiện các lựa chọn chế độ ăn uống thông minh hơn"
+            },
+            {
+                "en": "Genetically modified and chemically grown foods",
+                "vi": "thực phẩm biến đổi gen và được trồng"
+            },
+            {
+                "en": "bằng hóa chất",
+                "vi": ""
+            },
+            {
+                "en": "Negatively impact one’s health",
+                "vi": "tác động tiêu cực đến sức khỏe của một người"
+            },
+            {
+                "en": "To create societies of healthier people",
+                "vi": "xã hội của những người khỏe mạnh hơn"
+            },
+            {
+                "en": "Countless positive outcomes",
+                "vi": "vô số kết quả tích cực"
+            }
+        ]
+    },
+    {
+        "id": "I48",
+        "category": "ENVIRONMENT",
+        "title_en": "NUCLEAR POWER: POSITIVES",
+        "title_vi": "Những mặt tích cực của năng lượng hạt nhân.",
+        "points": [
+            {
+                "en": "There are several benefits to build more nuclear power stations",
+                "vi": "Có nhiều lợi ích để xây dựng thêm các nhà máy điện hạt nhân"
+            },
+            {
+                "en": "Fossil fuel like oil and gas are running out",
+                "vi": "Nhiên liệu hóa thạch như dầu và khí đang cạn kiệt"
+            },
+            {
+                "en": "Nuclear power is a sustainable energy source",
+                "vi": "Năng lượng hạt nhân là nguồn năng lượng bền vững"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể được sử dụng để sản xuất điện mà không lãng phí tài nguyên thiên nhiên"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể được thay thế bằng việc sử dụng các nguồn tài nguyên thiên nhiên như than, dầu"
+            },
+            {
+                "en": "Nuclear power stations are cleaner than fossil fuel power stations",
+                "vi": "Các trạm điện hạt nhân sạch hơn các nhà máy điện nhiên liệu hóa thạch"
+            },
+            {
+                "en": "They could help to reduce carbon emissions that cause global warming",
+                "vi": "Họ có thể giúp giảm khí thải carbon gây ra sự nóng lên toàn cầu"
+            },
+            {
+                "en": "The risks of accidents are being reduced",
+                "vi": "Nguy cơ tai nạn đang giảm"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "An early commencement of study",
+                "vi": "việc học sớm"
+            },
+            {
+                "en": "Head start",
+                "vi": "khởi đầu trước"
+            },
+            {
+                "en": "Formal schooling",
+                "vi": "việc học chính thức"
+            },
+            {
+                "en": "Vital soft skills including teamwork and communication skills",
+                "vi": "kĩ năng mềm quan"
+            },
+            {
+                "en": "trọng bao gồm kĩ năng làm việc nhóm và giao tiếp",
+                "vi": ""
+            },
+            {
+                "en": "Well-advised",
+                "vi": "khôn ngoan"
+            },
+            {
+                "en": "Possible solutions to alleviate any serious impacts",
+                "vi": "các giải pháp khả thi để giảm thiểu bất kỳ"
+            },
+            {
+                "en": "tác động tiêu cực",
+                "vi": ""
+            },
+            {
+                "en": "To sustain themselves for the course of their retirement",
+                "vi": "tự chu cấp cho bản thân trong thời"
+            },
+            {
+                "en": "gian nghỉ hưu",
+                "vi": ""
+            },
+            {
+                "en": "Tax-payer’s money",
+                "vi": "tiền của người đóng thuế"
+            },
+            {
+                "en": "Provide pensions for retired people",
+                "vi": "cung cấp lương hưu cho người về hưu"
+            },
+            {
+                "en": "Financial contributions",
+                "vi": "sự đóng góp về mặt tài chính"
+            },
+            {
+                "en": "Without placing a burden on government budgets",
+                "vi": "không đặt gánh nặng lên ngân sách nhà"
+            },
+            {
+                "en": "nước",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I49",
+        "category": "ENVIRONMENT",
+        "title_en": "NUCLEAR POWER: NEGATIVES",
+        "title_vi": "Những mặt tiêu cực của năng lượng hạt nhân",
+        "points": [
+            {
+                "en": "Opponents of nuclear power worry about the safety of power stations",
+                "vi": "Những người phản đối sức mạnh hạt nhân lo ngại về sự an toàn của các nhà máy điện"
+            },
+            {
+                "en": "The building of new nuclear power stations is unpopular",
+                "vi": "Việc xây dựng các nhà máy điện hạt nhân mới là không phổ biến"
+            },
+            {
+                "en": "Nobody wants to live near one",
+                "vi": "Không ai muốn sống gần một nhà máy điện hạt nhân"
+            },
+            {
+                "en": "Nuclear waste disposal is a significant problem",
+                "vi": "Việc xử lý chất thải hạt nhân là một vấn đề đáng kể"
+            },
+            {
+                "en": "There is currently no way to decontaminate radioactive material",
+                "vi": "Hiện nay không có cách nào để khử nhiễm các chất phóng xạ"
+            },
+            {
+                "en": "People worry that terrorists could steal radioactive materials",
+                "vi": "Mọi người lo ngại rằng bọn khủng bố có thể ăn cắp vật liệu phóng xạ"
+            },
+            {
+                "en": "",
+                "vi": "Thật sự toàn hơn để sản xuất năng lượng từ năng lượng mặt trời, gió hoặc nước."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To gain a good sense of something",
+                "vi": "có được cảm nhận tốt về điều gì đó"
+            },
+            {
+                "en": "To increase an ability to express oneself",
+                "vi": "tăng khả năng thể hiện bản thân"
+            },
+            {
+                "en": "A myriad of negative impacts",
+                "vi": "vô số tác động tiêu cực"
+            },
+            {
+                "en": "To stimulate students’ artistic intelligence",
+                "vi": "kích thích trí thông minh nghệ thuật của học sinh"
+            },
+            {
+                "en": "A break from the monotony",
+                "vi": "thoát khỏi sự đơn điệu"
+            },
+            {
+                "en": "Logic-based subjects",
+                "vi": "các môn học dựa trên logic"
+            },
+            {
+                "en": "192",
+                "vi": ""
+            },
+            {
+                "en": "Something is no exception",
+                "vi": "cái gì đó không phải ngoại lệ"
+            },
+            {
+                "en": "Too much attention given to something",
+                "vi": "quá nhiều sự chú ý dành cho cái gì đó"
+            },
+            {
+                "en": "To drive a country’s economy",
+                "vi": "thúc đẩy nền kinh tế của một quốc gia"
+            },
+            {
+                "en": "To hold an important place",
+                "vi": "giữ một vị trí quan trọng"
+            },
+            {
+                "en": "To hold in high regard",
+                "vi": "xem trọng"
+            }
+        ]
+    },
+    {
+        "id": "I50",
+        "category": "FAMILY",
+        "title_en": "FAMILY SIZE",
+        "title_vi": "Kích cỡ gia đình",
+        "points": [
+            {
+                "en": "Families in many countries are not as large as they used to be",
+                "vi": "Các gia đình ở nhiều nước không lớn như trước đây"
+            },
+            {
+                "en": "We tend to live in small nuclear families rather than large extended families",
+                "vi": "Chúng ta có xu hướng sống trong những gia đình hạt nhân nhỏ hơn là những gia đình lớn mở"
+            },
+            {
+                "en": "Parents tend to have fewer children",
+                "vi": "Cha mẹ có xu hướng có ít con hơn"
+            },
+            {
+                "en": "Young children are no longer expected to work",
+                "vi": "Trẻ nhỏ không còn mong đợi để làm việc nữa"
+            },
+            {
+                "en": "Nowadays both parents often work",
+                "vi": "Ngày nay cả cha và mẹ đều làm việc"
+            },
+            {
+                "en": "",
+                "vi": "Nó tốn chi phí quá nhiều để nuôi con"
+            },
+            {
+                "en": "",
+                "vi": "Khó khăn hơn khi nuôi một gia đình lớn"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "A part of nature",
+                "vi": "một phần của thiên nhiên"
+            },
+            {
+                "en": "Detrimental effects",
+                "vi": "tác động bất lợi"
+            },
+            {
+                "en": "Stimulate and strengthen muscles",
+                "vi": "kích thích và tăng cường cơ bắp"
+            },
+            {
+                "en": "Improve posture and wellbeing",
+                "vi": "cải thiện tư thế và sức khỏe"
+            },
+            {
+                "en": "Mentally and emotionally stable",
+                "vi": "ổn định về tinh thần và cảm xúc"
+            },
+            {
+                "en": "Poses several risks",
+                "vi": "gây ra một số rủi ro"
+            },
+            {
+                "en": "Musculoskeletal problems",
+                "vi": "các vấn đề về xương khớp"
+            },
+            {
+                "en": "The negative impacts far outweigh any benefit",
+                "vi": "các tác động tiêu cực vượt xa mọi lợi ích"
+            }
+        ]
+    },
+    {
+        "id": "I51",
+        "category": "FAMILY",
+        "title_en": "",
+        "title_vi": "Cha mẹ làm việc",
+        "points": [
+            {
+                "en": "",
+                "vi": "Con cái và cha mẹ dường như ít gần nhau hơn ngày nay"
+            },
+            {
+                "en": "",
+                "vi": "Cha mẹ dành ít thời gian hơn với con cái của họ"
+            },
+            {
+                "en": "",
+                "vi": "Phụ nữ thường ở nhà để nấu ăn, vệ sinh và chăm sóc con"
+            },
+            {
+                "en": "",
+                "vi": "Ngày nay cả hai bố mẹ đều làm việc toàn thời gian"
+            },
+            {
+                "en": "",
+                "vi": "Con nhỏ có thể bị bỏ lại một mình, hoặc với nannies hoặc babysitters"
+            },
+            {
+                "en": "",
+                "vi": "Bố mẹ bận rộn có ít sự tiếp xúc với con cái"
+            },
+            {
+                "en": "",
+                "vi": "Nhiều gia đình không còn ăn các bữa ăn với nhau"
+            },
+            {
+                "en": "",
+                "vi": "Trẻ em dành nhiều thời gian hơn với bạn bè hoặc lướt Internet"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To be free to do as one pleases",
+                "vi": "được tự do làm theo ý một người"
+            },
+            {
+                "en": "To deteriorate into chaos",
+                "vi": "trở nên tệ thành hỗn loạn"
+            },
+            {
+                "en": "To set boundaries",
+                "vi": "thiết lập ranh giới"
+            },
+            {
+                "en": "To be conducive to",
+                "vi": "có lợi cho"
+            },
+            {
+                "en": "To enforce those rules",
+                "vi": "thực thi các quy định"
+            },
+            {
+                "en": "An upheaval",
+                "vi": "sự biến động"
+            },
+            {
+                "en": "To cause more harm than good",
+                "vi": "gây hại nhiều hơn lợi"
+            },
+            {
+                "en": "To favour the rich and oppose the poor",
+                "vi": "ủng hộ người giàu và chống lại người nghèo"
+            },
+            {
+                "en": "Innate goodwill and intelligence",
+                "vi": "thiện chí và trí thông minh bẩm sinh"
+            },
+            {
+                "en": "The endless amounts of something",
+                "vi": "vô số thứ gì đó"
+            }
+        ]
+    },
+    {
+        "id": "I52",
+        "category": "FAMILY",
+        "title_en": "NEGATIVE EFFECTS ON CHILDREN",
+        "title_vi": "Những ảnh hưởng tiêu cực lên con cái",
+        "points": [
+            {
+                "en": "The lack of closeness in families can have a negative effect on children",
+                "vi": "Thiếu sự gần gũi trong gia đình có thể có ảnh hưởng tiêu cực đến trẻ em"
+            },
+            {
+                "en": "Many parents have no idea how their children spend their time",
+                "vi": "Nhiều bậc cha mẹ không biết con mình dành thời gian như thế nào"
+            },
+            {
+                "en": "Friends, television and the Internet become the main influence on children’s behavior",
+                "vi": "Bạn bè, truyền hình và Internet trở thành sự ảnh hưởng chính đối với hành vi của trẻ"
+            },
+            {
+                "en": "Teenagers are influenced by peer pressure",
+                "vi": "Thanh thiếu niên bị ảnh hưởng bởi áp lực của bạn bè"
+            },
+            {
+                "en": "Some of them join gangs",
+                "vi": "Một số người trong số họ tham gia băng nhóm"
+            },
+            {
+                "en": "",
+                "vi": "Tình trạng phạm pháp vị thành niên đang gia tăng"
+            },
+            {
+                "en": "Parents should be more involved with their children’s upbringing",
+                "vi": "Cha mẹ nên tham gia nhiều hơn vào việc nuôi dạy con cái của họ"
+            },
+            {
+                "en": "Young people need positive role models",
+                "vi": "Những người trẻ cần các mô hình vai trò tích cực"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "To be subject to",
+                "vi": "tiếp xúc với cái gì"
+            },
+            {
+                "en": "A tool for relaxation",
+                "vi": "một công cụ để thư giãn"
+            },
+            {
+                "en": "To incorporate ideology",
+                "vi": "kết hợp hệ tư tưởng"
+            },
+            {
+                "en": "A violation of freedom",
+                "vi": "vi phạm sự tự do"
+            },
+            {
+                "en": "Artistic expression",
+                "vi": "biểu cảm nghệ thuật"
+            },
+            {
+                "en": "To spread propaganda",
+                "vi": "tuyên truyền"
+            },
+            {
+                "en": "An unbiased opinion",
+                "vi": "ý kiến không thiên vị"
+            },
+            {
+                "en": "193",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I53",
+        "category": "FAMILY",
+        "title_en": "DIVORCE",
+        "title_vi": "Ly dị",
+        "points": [
+            {
+                "en": "",
+                "vi": "Trong quá khứ, ly hôn là không thể chấp nhận"
+            },
+            {
+                "en": "",
+                "vi": "Nó đã được coi là xấu hổ cho một gia đình"
+            },
+            {
+                "en": "People stayed together for religious or family reasons",
+                "vi": "Mọi người ở lại với nhau vì lý do tôn giáo hoặc gia đình"
+            },
+            {
+                "en": "Divorce is more socially acceptable nowadays",
+                "vi": "Ly hôn ngày càng được xã hội chấp nhận ngày nay"
+            },
+            {
+                "en": "",
+                "vi": "Nó đã trở nên phổ biến hơn"
+            },
+            {
+                "en": "Divorce can be extremely stressful",
+                "vi": "Ly hôn có thể cực kỳ căng thẳng"
+            },
+            {
+                "en": "Lone parents may face financial difficulties",
+                "vi": "Cha mẹ đơn độc có thể gặp khó khăn về tài chính"
+            },
+            {
+                "en": "Many single parents have to rely on benefits paid by the state",
+                "vi": "Nhiều cha mẹ đơn thân phải dựa vào các khoản trợ cấp do nhà nước chi trả"
+            },
+            {
+                "en": "Divorce can have a negative effect on children",
+                "vi": "Ly hôn có thể có ảnh hưởng tiêu cực đến trẻ em"
+            },
+            {
+                "en": "Children from single-parent families are more likely to get lower grades or drop out of school.",
+                "vi": "Trẻ em từ các gia đình độc thân có nhiều khả năng bị điểm thấp hơn hoặc bỏ học."
+            },
+            {
+                "en": "The rise in divorce rates may be connected to some social problems",
+                "vi": "Sự gia tăng tỷ lệ ly hôn có thể liên quan đến một số vấn đề xã hội"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "A ridiculous idea",
+                "vi": "một ý tưởng buồn cười"
+            },
+            {
+                "en": "Be free to make their own decisions",
+                "vi": "tự do đưa ra quyết định của chính họ"
+            },
+            {
+                "en": "A much healthier population",
+                "vi": "dân số khoẻ mạnh hơn"
+            },
+            {
+                "en": "To reduce the burdens",
+                "vi": "giảm gánh nặng"
+            },
+            {
+                "en": "The over-consumption of something",
+                "vi": "sự tiêu thụ quá nhiều thứ gì đó"
+            },
+            {
+                "en": "Addictive fast foods, soft drinks, and junk food",
+                "vi": "các thức ăn nhanh, đồ uống có gas và đồ ăn"
+            },
+            {
+                "en": "vặt gây nghiện",
+                "vi": ""
+            },
+            {
+                "en": "Widespread",
+                "vi": "phổ biến"
+            },
+            {
+                "en": "Vast ramifications",
+                "vi": "phân nhánh rộng lớn"
+            },
+            {
+                "en": "Obesity",
+                "vi": "béo phì"
+            },
+            {
+                "en": "Diabetes",
+                "vi": "tiểu đường"
+            },
+            {
+                "en": "Heart disease",
+                "vi": "bệnh tim"
+            },
+            {
+                "en": "Poor diets and sedentary lifestyles",
+                "vi": "chế độ ăn nghèo nàn và lối sống thụ động"
+            },
+            {
+                "en": "Prosperous",
+                "vi": "thịnh vượng"
+            },
+            {
+                "en": "A tendency to put on weight",
+                "vi": "có xu hướng tăng cân"
+            },
+            {
+                "en": "A genetic predisposition",
+                "vi": "khuynh hướng di truyền"
+            },
+            {
+                "en": "To maintain a healthy body",
+                "vi": "duy trì cơ thể khoẻ mạnh"
+            },
+            {
+                "en": "Absurd",
+                "vi": "ngớ ngẩn"
+            },
+            {
+                "en": "Focus their efforts",
+                "vi": "tập trung các nỗ lực"
+            },
+            {
+                "en": "The advertisement and promotion of something",
+                "vi": "quảng cáo và thúc đẩy cái gì đó"
+            }
+        ]
+    },
+    {
+        "id": "I54",
+        "category": "FAMILY",
+        "title_en": "CARE FOR OLD PEOPLE",
+        "title_vi": "Sự chăm sóc cho người cao tuổi",
+        "points": [
+            {
+                "en": "Caring for elderly people was traditionally the responsibility of families",
+                "vi": "Chăm sóc người cao tuổi theo truyền thống là trách nhiệm của các gia đình"
+            },
+            {
+                "en": "Adults had to look after their elderly parents",
+                "vi": "Người lớn phải chăm sóc cha mẹ già của họ"
+            },
+            {
+                "en": "A woman’s job was to stay at home taking care of her family",
+                "vi": "Công việc của một người phụ nữ là ở nhà chăm sóc gia đình"
+            },
+            {
+                "en": "Nowadays, fewer elderly people are looked after by their relatives",
+                "vi": "Ngày nay, ít người già được chăm sóc bởi người thân của họ"
+            },
+            {
+                "en": "Residential homes provide care for large number of elderly people",
+                "vi": "Nhà dân cư cung cấp dịch vụ chăm sóc cho số lượng lớn người cao tuổi"
+            },
+            {
+                "en": "Some families are unable to look after elderly relatives",
+                "vi": "Một số gia đình không thể chăm sóc người thân cao tuổi"
+            },
+            {
+                "en": "Families tend to be smaller these days, and women often have full-time jobs",
+                "vi": "Các gia đình có xu hướng nhỏ hơn những ngày này, và phụ nữ thường có việc làm toàn thời"
+            },
+            {
+                "en": "Cares homes provide a professional service for senior citizens",
+                "vi": "Nhà chăm sóc cung cấp một dịch vụ chuyên nghiệp cho người già"
+            },
+            {
+                "en": "Nurses are better trained than family members",
+                "vi": "Y tá được huấn luyện tốt hơn các thành viên trong gia đình"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Pursue",
+                "vi": "theo đuổi"
+            },
+            {
+                "en": "Detrimental",
+                "vi": "bất lợi"
+            },
+            {
+                "en": "Trait",
+                "vi": "dấu hiệu"
+            },
+            {
+                "en": "Mediocre outcomes",
+                "vi": "kết quả tầm thường"
+            },
+            {
+                "en": "Irrelevant",
+                "vi": "không liên quan"
+            },
+            {
+                "en": "Erode social relationships",
+                "vi": "phá hủy các mối quan hệ xã hội"
+            },
+            {
+                "en": "Dissuade collaborative behaviors",
+                "vi": "ngăn cản những hành vi hợp tác"
+            },
+            {
+                "en": "Suffer from low-self esteem",
+                "vi": "chịu đựng lòng tự trọng thấp"
+            }
+        ]
+    },
+    {
+        "id": "I55",
+        "category": "FAMILY",
+        "title_en": "CARE FOR OLD PEOPLE: OPINION",
+        "title_vi": "Những quan điểm về việc chăm sóc cho người già",
+        "points": [
+            {
+                "en": "The best form of care for the elderly depends on the family situation",
+                "vi": "Hình thức chăm sóc tốt nhất cho người cao tuổi phụ thuộc vào tình hình gia đình"
+            },
+            {
+                "en": "",
+                "vi": "Nó phụ thuộc vào việc các thành viên trong gia đình có nguồn lực thời gian hay không"
+            },
+            {
+                "en": "We all have a responsibility towards the older people in our society",
+                "vi": "Tất cả chúng ta đều có trách nhiệm đối với người lớn tuổi trong xã hội chúng ta"
+            },
+            {
+                "en": "Governments should invest money in facilities and training for care workers.",
+                "vi": "Chính phủ nên đầu tư tiền vào các cơ sở và đào tạo cho nhân viên chăm sóc."
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Technological advancements",
+                "vi": "những cải tiến trong công nghệ"
+            },
+            {
+                "en": "Endless options",
+                "vi": "những sự lựa chọn bất tận"
+            },
+            {
+                "en": "Indecision",
+                "vi": "thiếu sự quyết đoán"
+            },
+            {
+                "en": "194",
+                "vi": ""
+            },
+            {
+                "en": "Gauge the correct size of items",
+                "vi": "ước chừng kích cỡ của sản phẩm"
+            },
+            {
+                "en": "Limited in mobility",
+                "vi": "hạn chế trong việc di chuyển"
+            },
+            {
+                "en": "Delivery",
+                "vi": "vận chuyển"
+            }
+        ]
+    },
+    {
+        "id": "I56",
+        "category": "GENDER",
+        "title_en": "GENDER AND EDUCATION",
+        "title_vi": "Giới tính và giáo dục",
+        "points": [
+            {
+                "en": "Men and women should have access to the same educational opportunities",
+                "vi": "Nam giới và phụ nữ nên có cùng cơ hộ giáo dục"
+            },
+            {
+                "en": "Males and females should be accepted onto courses according to their abilities",
+                "vi": "Nam và nữ nên được chấp nhận vào các khóa học theo khả năng của họ"
+            },
+            {
+                "en": "",
+                "vi": "Thật sự sai lầm khi phân biệt đối xử với học sinh vì giới tính của họ"
+            },
+            {
+                "en": "Gender should be irrelevant in education",
+                "vi": "Giới tính nên không liên quan đến giáo dục"
+            },
+            {
+                "en": "Student’s achievements should depend on hard work and individual merit",
+                "vi": "Thành tích của học sinh nên phụ thuộc vào sự làm việc chăm chỉ và thành tích cá nhân"
+            },
+            {
+                "en": "",
+                "vi": "Ở Anh, có một số sinh viên nam và nữ tương tự trong giáo dục đại học"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "An integral part",
+                "vi": "một phần quan trọng"
+            },
+            {
+                "en": "Have a solid understanding",
+                "vi": "có một kiến thức nền vững"
+            },
+            {
+                "en": "Arithmetic",
+                "vi": "số học"
+            },
+            {
+                "en": "Algebra",
+                "vi": "đại số"
+            },
+            {
+                "en": "Outsource this skill",
+                "vi": "tìm nguồn khác cho kỹ năng này"
+            },
+            {
+                "en": "Encompass",
+                "vi": "bao gồm"
+            }
+        ]
+    },
+    {
+        "id": "I57",
+        "category": "GENDER",
+        "title_en": "GENDER AND WORK",
+        "title_vi": "Giới tính và công việc",
+        "points": [
+            {
+                "en": "Men and women should have access to the same professional opportunities",
+                "vi": "Nam giới và phụ nữ nên có quyền tiếp cận với các cơ hội nghề nghiệp giống nhau"
+            },
+            {
+                "en": "Both men and women should be able to pursue a career",
+                "vi": "Cả nam và nữ đều có thể theo đuổi sự nghiệp"
+            },
+            {
+                "en": "They should earn equal salaries",
+                "vi": "Họ phải kiếm được mức lương bình đẳng"
+            },
+            {
+                "en": "They should be employed according to their abilities, qualifications and experience",
+                "vi": "Họ nên được thuê theo khả năng, trình độ/bằng cấp và kinh nghiệm của họ"
+            },
+            {
+                "en": "Traditionally women have been restricted to certain roles",
+                "vi": "Theo truyền thống, phụ nữ đã bị giới hạn ở những vai trò nhất định"
+            },
+            {
+                "en": "They were often employed as secretaries or receptionists",
+                "vi": "Họ thường được thuê làm thư kí hoặc tiếp tân"
+            },
+            {
+                "en": "Nowadays, a range of occupations is available to both sexes",
+                "vi": "Ngày nay, một loạt các ngành nghề có sẵn cho cả hai giới tính"
+            },
+            {
+                "en": "Career success depends on individual merit",
+                "vi": "Sự nghiệp thành công phụ thuộc vào thành tích cá nhân"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "Diverse in genres",
+                "vi": "đa dạng trong thể loại"
+            },
+            {
+                "en": "Dominant role",
+                "vi": "vai trò lớn"
+            },
+            {
+                "en": "Find no interest in",
+                "vi": "không có sự hứng thú"
+            },
+            {
+                "en": "Genre",
+                "vi": "thể loại"
+            },
+            {
+                "en": "Practical value",
+                "vi": "giá trị thực tế"
+            },
+            {
+                "en": "Reluctance",
+                "vi": "miễn cưỡng"
+            },
+            {
+                "en": "195",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "I58",
+        "category": "GENDER",
+        "title_en": "",
+        "title_vi": "Vai trò của phụ nữ và nam giới trong gia đình",
+        "points": [
+            {
+                "en": "",
+                "vi": "Một số người cho rằng một người mẹ không nên làm việc"
+            },
+            {
+                "en": "",
+                "vi": "Cô ấy nên ở nhà và nuôi dưỡng con cái"
+            },
+            {
+                "en": "",
+                "vi": "Người cha nên là trụ cột của gia đình"
+            },
+            {
+                "en": "",
+                "vi": "Những người khác tin rằng cả cha lẫn mẹ nên chia sẻ những trách nhiệm này"
+            },
+            {
+                "en": "",
+                "vi": "Phụ nữ làm việc có thể nghỉ phép thai sản trong và sau khi mang thai"
+            },
+            {
+                "en": "",
+                "vi": "Nhiều bà mẹ tiếp tục làm việc sau thời kỳ này"
+            },
+            {
+                "en": "",
+                "vi": "Nhiều cha và mẹ chia sẻ trách nhiệm trong nhà và nuôi dạy con cái"
+            },
+            {
+                "en": "",
+                "vi": "Họ đóng góp bình đẳng vào việc chăm sóc trẻ em, nấu ăn và dọn dẹp"
+            },
+            {
+                "en": "",
+                "vi": "Một số phụ nữ có nhiều triển vọng nghề nghiệp tốt hơn chồng."
+            },
+            {
+                "en": "",
+                "vi": "“Paternity leave” và \"househusbands\" đang trở nên phổ biến hơn"
+            },
+            {
+                "en": "",
+                "vi": "Vai trò giới tính truyền thống đang dần dần thay đổi"
+            },
+            {
+                "en": "",
+                "vi": "Các gia đình có thể phân chia vai trò và trách nhiệm một cách thuận tiện nhất."
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I59",
+        "category": "GENETIC ENGINEERING",
+        "title_en": "POSITIVES OF GENETIC ENGINEERING",
+        "title_vi": "Những tích cực của công nghệ di truyền",
+        "points": [
+            {
+                "en": "Genetic engineering is the practice of manipulating the genes of an organism",
+                "vi": "Kỹ thuật di truyền là một ứng dụng trong việc kiểm soát các gen của một sinh vật"
+            },
+            {
+                "en": "",
+                "vi": "Nó được sử dụng để sản xuất các loại cây trồng mà kháng cự nhiều hơn đối với côn trùng và"
+            },
+            {
+                "en": "Some genetically modified crops grow more quickly",
+                "vi": "Một số cây trồng biến đổi gen phát triển nhanh hơn"
+            },
+            {
+                "en": "Some drugs and vaccines are produced by genetic engineering",
+                "vi": "Một số thuốc và văcxin được sản xuất bằng kỹ thuật di truyền"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể thay đổi đặc tính di truyền của con người."
+            },
+            {
+                "en": "Scientists may use genetic engineering to cure diseases.",
+                "vi": "Các nhà khoa học có thể sử dụng kỹ thuật di truyền để chữa bệnh."
+            },
+            {
+                "en": "",
+                "vi": "Các bệnh thừa kế/di truyền sẽ không còn tồn tại nữa"
+            },
+            {
+                "en": "Genes could be changed before a baby is born",
+                "vi": "Gen có thể được thay đổi trước khi sinh em bé/một em bé được sinh ra."
+            },
+            {
+                "en": "",
+                "vi": "Nó cũng có thể nhân bản các cơ quan của con người"
+            },
+            {
+                "en": "We could all have replacement body part",
+                "vi": "Tất cả chúng ta đều có bộ phận cơ thể thay thế"
+            },
+            {
+                "en": "Humans could live longer, healthier lives",
+                "vi": "Con người có thể sống lâu hơn, cuộc sống khỏe mạnh hơn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I60",
+        "category": "GENETIC ENGINEERING",
+        "title_en": "NEGATIVES OF GENETIC ENGINEERING",
+        "title_vi": "Những mặt tiêu cực của công nghệ di truyền",
+        "points": [
+            {
+                "en": "There are ethical concerns about human genetic engineering",
+                "vi": "Có những mối quan tâm đạo đức về kỹ thuật di truyền của con người"
+            },
+            {
+                "en": "Parents might want to choose their children’s characteristics",
+                "vi": "Cha mẹ có thể muốn chọn đặc điểm của con mình"
+            },
+            {
+                "en": "This would be unnatural",
+                "vi": "Điều này sẽ không tự nhiên"
+            },
+            {
+                "en": "",
+                "vi": "Nó sẽ là không thể chấp nhận trong hầu hết các tôn giáo"
+            },
+            {
+                "en": "Soldiers could be cloned from the genes of the strongest people",
+                "vi": "Những người lính có thể được nhân bản từ gen của những người mạnh nhất"
+            },
+            {
+                "en": "Clones might be used like robots to do certain jobs",
+                "vi": "Các nhân bản/các dòng vô tính có thể được sử dụng như robot để làm những công việc nhất"
+            },
+            {
+                "en": "Clones might even be developed just for organ replacements",
+                "vi": "Các nhân bản/các dòng vô tính thậm chí có thể được phát triển chỉ để thay thế cơ quan"
+            },
+            {
+                "en": "Society and human evolution would change completely",
+                "vi": "Xã hội và sự tiến hóa của con người sẽ thay đổi hoàn toàn"
+            },
+            {
+                "en": "Currently, human genetic engineering is prohibited",
+                "vi": "Hiện nay, kỹ thuật di truyền của con người bị cấm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I61",
+        "category": "GENETIC ENGINEERING",
+        "title_en": "GENETICALLY-MODIFIED (GM) FOODS: ADVANTAGES",
+        "title_vi": "Những mặt tích cực của thực phẩm chỉnh sửa gen",
+        "points": [
+            {
+                "en": "Farmers can produce crops that grow bigger and faster",
+                "vi": "Nông dân có thể sản xuất các loại mùa vụ/cây trồng phát triển lớn hơn và nhanh hơn"
+            },
+            {
+                "en": "Some GM crops are more resistant to disease or insects",
+                "vi": "Một số loại cây biến đổi gen có khả năng kháng bệnh hoặc côn trùng tốt hơn"
+            },
+            {
+                "en": "This could be important for food production in developing countries",
+                "vi": "Điều này có thể rất quan trọng đối với sản xuất lương thực ở các nước đang phát triển"
+            },
+            {
+                "en": "Faster growing cereals, fruit and vegetables will mean more profit",
+                "vi": "Ngũ cốc, trái cây và rau quả tăng trưởng nhanh hơn sẽ mang lại nhiều lợi nhuận hơn"
+            },
+            {
+                "en": "GM foods can be modified to look perfect",
+                "vi": "Thực phẩm GM có thể được sửa đổi để trông hoàn hảo"
+            },
+            {
+                "en": "They may be more attractive to customers",
+                "vi": "Chúng có thể hấp dẫn hơn đối với khách hàng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I62",
+        "category": "GENETIC ENGINEERING",
+        "title_en": "GENETICALLY-MODIFIED (GM) FOODS: DISADVANTAGES",
+        "title_vi": "Những mặt tiêu cực của thực phẩm chỉnh sửa gen",
+        "points": [
+            {
+                "en": "There may be risks involved in the genetic engineering of foods.",
+                "vi": "Có thể có những rủi ro liên quan đến kỹ thuật di truyền của thực phẩm."
+            },
+            {
+                "en": "GM crops might change whole ecosystems",
+                "vi": "Cây trồng biến đổi gen có thể thay đổi toàn bộ hệ sinh thái"
+            },
+            {
+                "en": "Food chains could be broken if crops are resistant to predators",
+                "vi": "Chuỗi thực phẩm có thể bị phá vỡ nếu cây trồng chống lại động vật ăn thịt"
+            },
+            {
+                "en": "Organic foods are produced without chemicals or genetic modification",
+                "vi": "Thực phẩm hữu cơ được sản xuất mà không có hóa chất hoặc biến đổi gien"
+            },
+            {
+                "en": "Organic farming may be slower and more expensive",
+                "vi": "Nông nghiệp hữu cơ có thể chậm và đắt hơn"
+            },
+            {
+                "en": "However, the environment is not damaged by fertilizers or pesticides.",
+                "vi": "Tuy nhiên, môi trường không bị phá hủy bởi phân bón hóa học thuốc trừ sâu."
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I63",
+        "category": "GLOBAL ISSUES",
+        "title_en": "PROBLEMS IN DEVELOPING COUNTRIES",
+        "title_vi": "Những vấn đề ở các nước đang phát triển",
+        "points": [
+            {
+                "en": "Developing countries face a range if problems",
+                "vi": "Các nước đang phát triển phải đối mặt với một loạt vấn đề"
+            },
+            {
+                "en": "Standards of healthcare and education are low",
+                "vi": "Các tiêu chuẩn về chăm sóc sức khoẻ và giáo dục thấp"
+            },
+            {
+                "en": "Life expectancy is usually lower than in developed countries",
+                "vi": "Tuổi thọ thường thấp hơn ở các nước phát triển"
+            },
+            {
+                "en": "There is a lack of infrastructure, employment and good quality housing",
+                "vi": "Thiếu cơ sở hạ tầng, việc làm và nhà ở chất lượng tốt"
+            },
+            {
+                "en": "Many people are forced to live in poverty",
+                "vi": "Nhiều người buộc phải sống trong nghèo đói"
+            },
+            {
+                "en": "Food, drinking water and basic medicines are in short supply",
+                "vi": "Thực phẩm, nước uống và thuốc cơ bản thiếu nguồn cung cấp"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I64",
+        "category": "GLOBAL ISSUES",
+        "title_en": "HOW TO HELP DEVELOPING COUNTRIES",
+        "title_vi": "Cách để giúp các nước đang phát triển",
+        "points": [
+            {
+                "en": "The best form of help for developing countries is development aid",
+                "vi": "Hình thức trợ giúp tốt nhất cho các nước đang phát triển là viện trợ phát triển"
+            },
+            {
+                "en": "Richer nations can help by investing in long-term projects",
+                "vi": "Các quốc gia giàu có có thể giúp đỡ bằng cách đầu tư vào các dự án dài hạn"
+            },
+            {
+                "en": "Governments and charities can help by building new houses and schools",
+                "vi": "Chính phủ và các tổ chức từ thiện có thể giúp bằng việc xây dựng nhà ở và trường học mới"
+            },
+            {
+                "en": "Globalization may also help developing countries",
+                "vi": "Việc toàn cầu hoá cũng có thể giúp các nước đang phát triển"
+            },
+            {
+                "en": "Multi-national companies can creating jobs in developing countries",
+                "vi": "Các công ty đa quốc gia có thể tạo việc làm ở các nước đang phát triển"
+            },
+            {
+                "en": "On the other hand, many people emigrate to find work in richer countries",
+                "vi": "Mặt khác, nhiều người di cư tìm việc ở các nước giàu hơn"
+            },
+            {
+                "en": "They often sand money back home to their families",
+                "vi": "Họ thường gửi tiền về nhà cho gia đình của họ"
+            },
+            {
+                "en": "This money helps to improve the standard of living in developing countries",
+                "vi": "Số tiền này giúp cải thiện mức sống ở các nước đang phát triển"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I65",
+        "category": "GLOBAL ISSUES",
+        "title_en": "IMMIGRATION",
+        "title_vi": "Việc nhập cư",
+        "points": [
+            {
+                "en": "Some people move to another countries in search of a better life",
+                "vi": "Một số người di chuyển đến một quốc gia khác để tìm kiếm cuộc sống tốt đẹp hơn"
+            },
+            {
+                "en": "Many immigrants come from less developed countries",
+                "vi": "Nhiều người nhập cư đến từ các nước kém phát triển"
+            },
+            {
+                "en": "Richer, industrialized countries may offer opportunities for employment",
+                "vi": "Các quốc gia giàu có hơn, công nghiệp hóa có thể tạo cơ hội cho việc làm"
+            },
+            {
+                "en": "Free healthcare and schooling are available in some developed countries",
+                "vi": "Chăm sóc y tế và giáo dục miễn phí có ở một số nước phát triển"
+            },
+            {
+                "en": "Other people migrate to a foreign country to improve their academic qualifications",
+                "vi": "Những người khác di cư ra nước ngoài để nâng cao trình độ học vấn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I66",
+        "category": "GLOBAL ISSUES",
+        "title_en": "POSITIVES OF IMMIGRATION AND MULTI-CULTURAL SOCIETIES",
+        "title_vi": "Những mặt tích cực của việc nhập cư và các xã hội đa văn hóa",
+        "points": [
+            {
+                "en": "From an economic perspective, immigration can be extremely positive",
+                "vi": "Từ quan điểm kinh tế, việc nhập cư có thể cực kỳ tích cực"
+            },
+            {
+                "en": "Many immigrants have skills that are needed in the country they move to",
+                "vi": "Nhiều người nhập cư có những kỹ năng cần thiết trong nước mà họ chuyển đến"
+            },
+            {
+                "en": "",
+                "vi": "Những người nhập cư tìm việc làm góp phần vào nền kinh tế của đất nước mới"
+            },
+            {
+                "en": "Many immigrants send money home to help family members",
+                "vi": "Nhiều người nhập cư gửi tiền về nhà để giúp thành viên gia đình"
+            },
+            {
+                "en": "",
+                "vi": "Nhập cư cũng tạo ra sự đa dạng văn hoá"
+            },
+            {
+                "en": "People of many different nationalities learn to live together",
+                "vi": "Con người của nhiều dân tộc khác nhau học cách sống cùng nhau"
+            },
+            {
+                "en": "This can help people to become more open-minded and tolerant",
+                "vi": "Điều này có thể giúp mọi người trở nên cởi mở và khoan dung"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I67",
+        "category": "GLOBAL ISSUES",
+        "title_en": "NEGATIVES OF IMMIGRATION",
+        "title_vi": "Những mặt tiêu cực của việc nhập cư",
+        "points": [
+            {
+                "en": "Some people believe that immigrants take jobs that should go to local people",
+                "vi": "Một số người tin rằng người nhập cư chiếm lấy việc làm mà đáng lẽ ra nó là của người dân địa"
+            },
+            {
+                "en": "Some immigrant workers work longer hours for less money",
+                "vi": "Một số công nhân nhập cư làm việc lâu hơn với số tiền ít hơn"
+            },
+            {
+                "en": "Companies might pay lower salaries to immigrant workers",
+                "vi": "Các công ty có thể trả mức lương thấp hơn cho những công nhân nhập cư"
+            },
+            {
+                "en": "Unemployment rates could rise if there are too many immigrants",
+                "vi": "Tỷ lệ thất nghiệp có thể tăng nếu có quá nhiều người nhập cư"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I68",
+        "category": "GLOBAL ISSUES",
+        "title_en": "OPINIONS ABOUT IMMIGRATION",
+        "title_vi": "Các quan điểm về việc nhập cư",
+        "points": [
+            {
+                "en": "",
+                "vi": "Việc nhập cư có thể giúp nền kinh tế của một quốc gia"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể tạo ra xã hội đa văn hoá"
+            },
+            {
+                "en": "However, immigration needs to be controlled",
+                "vi": "Tuy nhiên, việc nhập cư cần phải được kiểm soát"
+            },
+            {
+                "en": "",
+                "vi": "Ở nhiều quốc gia, người nhập cư cần thị thực hoặc giấy phép làm việc"
+            },
+            {
+                "en": "Governments should stop companies from exploiting immigrant workers",
+                "vi": "Các chính phủ nên ngăn chặn các công ty từ việc khai thác nhân công nhập cư"
+            },
+            {
+                "en": "Foreign and local workers should have the right to equal pay and conditions",
+                "vi": "Công nhân nước ngoài và địa phương nên có quyền được trả lương và điều kiện bình đẳng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I69",
+        "category": "GLOBAL ISSUES",
+        "title_en": "POSITIVES OF GLOBALIZATION",
+        "title_vi": "Những mặt thuận lợi của toàn cầu hóa",
+        "points": [
+            {
+                "en": "Business of becoming increasingly international",
+                "vi": "Kinh doanh ngày càng trở nên quốc tế"
+            },
+            {
+                "en": "Multi-national companies do business across the world",
+                "vi": "Các công ty đa quốc gia kinh doanh trên toàn thế giới"
+            },
+            {
+                "en": "Companies like MacDonald’s can be seen on high streets in most cities",
+                "vi": "Các công ty như MacDonald's có thể được nhìn thấy trên đường cao tốc ở hầu hết các thành"
+            },
+            {
+                "en": "Goods are produced in one country and sold in many others",
+                "vi": "Hàng hoá được sản xuất tại một quốc gia và được bán ở nhiều nước khác"
+            },
+            {
+                "en": "A global economy means free trade between countries",
+                "vi": "Nền kinh tế toàn cầu có nghĩa là thương mại tự do giữa các quốc gia"
+            },
+            {
+                "en": "This can strengthen political relationships",
+                "vi": "Điều này có thể tăng cường các mối quan hệ chính trị"
+            },
+            {
+                "en": "Globalization can also create opportunities for employment",
+                "vi": "Toàn cầu hoá cũng có thể tạo cơ hội cho việc làm"
+            },
+            {
+                "en": "",
+                "vi": "Nó khuyến khích đầu tư vào các nước kém phát triển hơn"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể làm giảm đói nghèo ở các nước đang phát triển"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I70",
+        "category": "GLOBAL ISSUES",
+        "title_en": "NEGATIVES OF GLOBALIZATION",
+        "title_vi": "Những mặt hạn chế của toàn cầu hóa",
+        "points": [
+            {
+                "en": "Globalization is not always beneficial to everyone",
+                "vi": "Toàn cầu hoá không phải lúc nào cũng có lợi cho mọi người"
+            },
+            {
+                "en": "Companies can move to countries where labour is cheap",
+                "vi": "Các công ty có thể chuyển sang các nước có lao động rẻ tiền"
+            },
+            {
+                "en": "This creates redundancies, or job losses",
+                "vi": "Điều này tạo dư thừa, hoặc mất việc làm"
+            },
+            {
+                "en": "Employees cannot be confident that they have stable jobs",
+                "vi": "Nhân viên không thể tin tưởng rằng họ có công việc ổn định"
+            },
+            {
+                "en": "Companies sometimes exploit their employees in developing countries",
+                "vi": "Đôi khi các công ty khai thác nhân viên của họ ở các nước đang phát triển"
+            },
+            {
+                "en": "Global trade creates more waste and pollution",
+                "vi": "Thương mại toàn cầu tạo ra nhiều chất thải và ô nhiễm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I71",
+        "category": "GLOBAL ISSUES",
+        "title_en": "THE FUTURE OF GLOBALIZATION",
+        "title_vi": "Tương lai của tòa cầu hóa",
+        "points": [
+            {
+                "en": "There should be global regulations for salaries and working conditions",
+                "vi": "Nên có các quy định chung/tòa cầu về lương và điều kiện làm việc"
+            },
+            {
+                "en": "Governments should impose laws to protect the environment",
+                "vi": "Chính phủ nên áp đặt các luật để bảo vệ môi trường"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I72",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "WHAT GOVERNMENTS CAN DO",
+        "title_vi": "Những điều mà chính phủ có thể làm",
+        "points": [
+            {
+                "en": "Governments provide public services like healthcare and education",
+                "vi": "Các chính phủ cung cấp các dịch vụ công cộng như y tế và giáo dục"
+            },
+            {
+                "en": "They support people who are living in poverty or unable to work",
+                "vi": "Họ hỗ trợ những người đang sống trong cảnh đói nghèo hoặc không thể làm việc"
+            },
+            {
+                "en": "Governments raise money by taxing working people",
+                "vi": "Chính phủ tăng tiền/gây quỹ bằng cách đánh thuế cho người lao động"
+            },
+            {
+                "en": "They can spend money on resources and campaigns",
+                "vi": "Họ có thể chi tiền cho nguồn lực và chiến dịch"
+            },
+            {
+                "en": "They can introduce new laws",
+                "vi": "Họ có thể đưa ra luật mới"
+            },
+            {
+                "en": "They can impose taxes",
+                "vi": "Họ có thể áp đặt thuế"
+            },
+            {
+                "en": "They can raise people’s awareness of issues (e.g climate change/healthy eating)",
+                "vi": "Họ có thể nâng cao nhận thức của mọi người về các vấn đề (ví dụ như thay đổi khí hậu / ăn"
+            },
+            {
+                "en": "They can influence people’s habits and opinions",
+                "vi": "Họ có thể ảnh hưởng đến thói quen và quan điểm của người dân"
+            },
+            {
+                "en": "They can create jobs",
+                "vi": "Họ có thể tạo việc làm"
+            },
+            {
+                "en": "They can regulate the activities of companies such as banks",
+                "vi": "Họ có thể điều chỉnh hoạt động của các công ty như ngân hàng"
+            },
+            {
+                "en": "They can provide resources for schools",
+                "vi": "Họ có thể cung cấp nguồn lực cho các trường học"
+            },
+            {
+                "en": "They are also responsible for the security and well-being of their citizens",
+                "vi": "Họ cũng chịu trách nhiệm về an ninh và phúc lợi của công dân của họ"
+            },
+            {
+                "en": "They control armed forces and police forces",
+                "vi": "Họ kiểm soát lực lượng vũ trang và lực lượng cảnh sát"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I73",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "PUBLIC SERVICES",
+        "title_vi": "Dịch vụ cộng đồng",
+        "points": [
+            {
+                "en": "Governments pay the salaries of public sector workers like police officers and teachers",
+                "vi": "Chính phủ trả lương của công nhân khu vực công như công an và giáo viên"
+            },
+            {
+                "en": "The necessary money is raised by taxing people’s income",
+                "vi": "Số tiền cần thiết được tăng lên bằng cách đánh thuế thu nhập của người dân"
+            },
+            {
+                "en": "Free education and healthcare may be provided by the state",
+                "vi": "Giáo dục miễn phí và chăm sóc sức khoẻ có thể được cung cấp bởi nhà nước"
+            },
+            {
+                "en": "Some governments control public transport systems and even TV channels",
+                "vi": "Một số chính phủ kiểm soát hệ thống giao thông công cộng và thậm chí các kênh truyền hình"
+            },
+            {
+                "en": "",
+                "vi": "Ở các nước khác, các dịch vụ này được cung cấp bởi các công ty tư nhân"
+            },
+            {
+                "en": "Some people believe that competition between private companies is good",
+                "vi": "Một số người tin rằng sự cạnh tranh giữa các công ty tư nhân là tốt"
+            },
+            {
+                "en": "",
+                "vi": "Nó giúp nâng cao chất lượng trong khi hạ giá thành"
+            },
+            {
+                "en": "Other people think that essential services should be free",
+                "vi": "Người khác nghĩ rằng các dịch vụ cần thiết phải được miễn phí"
+            },
+            {
+                "en": "Governments should pay for them",
+                "vi": "Chính phủ nên trả tiền cho họ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I74",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "CENSORSHIP: OPINION",
+        "title_vi": "Quan điểm về sự kiểm duyệt",
+        "points": [
+            {
+                "en": "Governments can censor what public sees or reads in the media",
+                "vi": "Các chính phủ có thể kiểm duyệt những gì công chúng nhìn thấy hoặc đọc trên báo chí"
+            },
+            {
+                "en": "To a certain extent censorship is necessary",
+                "vi": "Để một mức độ nhất định kiểm duyệt là cần thiết"
+            },
+            {
+                "en": "We should use censorship to protect children from violent images",
+                "vi": "Chúng ta nên sử dụng kiểm duyệt để bảo vệ trẻ em khỏi những hình ảnh bạo lực"
+            },
+            {
+                "en": "Some computer games involve killing people or committing crimes",
+                "vi": "Một số trò chơi máy tính liên quan đến giết người hoặc phạm tội"
+            },
+            {
+                "en": "The Internet also needs to be controlled",
+                "vi": ""
+            },
+            {
+                "en": "Many websites show pornography and violence",
+                "vi": "Nhiều trang web cho thấy nội dung khiêu dâm và bạo lực"
+            },
+            {
+                "en": "There should be age limits for websites and computers games",
+                "vi": "Nên có giới hạn tuổi cho các trang web và trò chơi trên máy tính"
+            },
+            {
+                "en": "Parents need to take responsibility for checking what their children watch",
+                "vi": "Cha mẹ cần phải có trách nhiệm kiểm tra những gì con cái họ xem"
+            },
+            {
+                "en": "",
+                "vi": "Không thể nào các chính phủ kiểm soát mọi thứ chúng ta thấy"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I75",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "VIDEO CAMERAS IN PUBLIC PLACES",
+        "title_vi": "Máy quay video ở những nơi công cộng",
+        "points": [
+            {
+                "en": "The use of CCTV is becoming widespread",
+                "vi": "Việc sử dụng CCTV đang trở nên phổ biến"
+            },
+            {
+                "en": "Video cameras have been installed in many public places",
+                "vi": "Máy quay video đã được cài đặt ở nhiều nơi công cộng"
+            },
+            {
+                "en": "They are supposed to protect us and deter criminals",
+                "vi": "Chúng được cho là để bảo vệ chúng ta và ngăn chặn bọn tội phạm"
+            },
+            {
+                "en": "Many people think that this surveillance violates our privacy",
+                "vi": "Nhiều người nghĩ rằng sự giám sát này vi phạm sự riêng tư của chúng tôi"
+            },
+            {
+                "en": "The authorities could build databases with our pictures and identities",
+                "vi": "Các cơ quan có thẩm quyền có thể xây dựng cơ sở dữ liệu với hình ảnh và danh tính của"
+            },
+            {
+                "en": "We should not be treated like criminals",
+                "vi": "Chúng ta không nên được đối xử như bọn tội phạm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I76",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "SMART CARDS: POSITIVES",
+        "title_vi": "Những mặt tích cực của thẻ thông minh",
+        "points": [
+            {
+                "en": "Governments will probably introduce a digital identification card system",
+                "vi": "Các chính phủ có thể sẽ giới thiệu một hệ thống thẻ nhận dạng kỹ thuật số"
+            },
+            {
+                "en": "Smart cards will have benefits and drawbacks",
+                "vi": "Thẻ thông minh sẽ có những lợi ích và hạn chế"
+            },
+            {
+                "en": "They could help to reduce crime",
+                "vi": "Chúng có thể giúp giảm tội phạm"
+            },
+            {
+                "en": "They could hold personal information, such as DNA",
+                "vi": "Chúng có thể chứa thông tin cá nhân, chẳng hạn như DNA"
+            },
+            {
+                "en": "Digital bank cards could contain fingerprint information",
+                "vi": "Thẻ ngân hàng kỹ thuật số có thể chứa thông tin về dấu vân tay"
+            },
+            {
+                "en": "",
+                "vi": "Sẽ rất khó khăn cho bọn tội phạm sử dụng thẻ bị đánh cắp"
+            },
+            {
+                "en": "",
+                "vi": "Sẽ dễ dàng hơn cho cảnh sát để xác định người và bắt bọn tội phạm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I77",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "SMART CARDS: NEGATIVES",
+        "title_vi": "Những mặt tiêu cực của thẻ thông minh",
+        "points": [
+            {
+                "en": "Many people are worried about losing their privacy",
+                "vi": "Nhiều người lo lắng về việc mất sự riêng tư"
+            },
+            {
+                "en": "Governments could store all our personal and medical information",
+                "vi": "Chính phủ có thể lưu giữ tất cả thông tin cá nhân và thông tin y tế của chúng ta"
+            },
+            {
+                "en": "This information could be used by insurance companies",
+                "vi": "Thông tin này có thể được sử dụng bởi các công ty bảo hiểm"
+            },
+            {
+                "en": "Employers could check our health records",
+                "vi": "Người sử dụng lao động có thể kiểm tra hồ sơ sức khoẻ của chúng ta"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I78",
+        "category": "GOVERNMENT AND SOCIETY",
+        "title_en": "PEOPLE WITH DISABILITIES",
+        "title_vi": "Người khuyết tật",
+        "points": [
+            {
+                "en": "People with disabilities should be treated the same as everybody else",
+                "vi": "Người khuyết tật cần được đối xử như những người khác"
+            },
+            {
+                "en": "They should have the same rights as other people",
+                "vi": "Họ nên có các quyền như những người khác"
+            },
+            {
+                "en": "They should have access to the same jobs as other citizens",
+                "vi": "Họ nên có quyền tiếp cận với công việc tương tự như công dân khác"
+            },
+            {
+                "en": "Discriminations against disabled people is illegal in many countries",
+                "vi": "Việc phân biệt đối xử với người tàn tật là sai trái ở nhiều quốc gia"
+            },
+            {
+                "en": "Ramps and lifts for wheelchairs should be installed in public buildings",
+                "vi": "Đường hầm và thang máy cho xe lăn phải được lắp đặt trong các tòa nhà công cộng"
+            },
+            {
+                "en": "Support teacher can be employed to help children with learning difficulties",
+                "vi": "Giáo viên hỗ trợ có thể được thuê để giúp trẻ em gặp khó khăn trong học tập"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I79",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "WHY GUNS SHOULD BE LEGAL:",
+        "title_vi": "Tại sao sung nên là hợp pháp",
+        "points": [
+            {
+                "en": "",
+                "vi": "Ở một số quốc gia, người ta được phép sở hữu vũ khí"
+            },
+            {
+                "en": "",
+                "vi": "Các cá nhân có quyền tự bảo vệ mình"
+            },
+            {
+                "en": "People can use guns in self defence",
+                "vi": "Mọi người có thể sử dụng súng phòng vệ"
+            },
+            {
+                "en": "This deters criminals",
+                "vi": "Điều này ngăn chặn bọn tội phạm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I80",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "WHY GUN OWNERSHIP SHOULD BE ILLEGAL:",
+        "title_vi": "Tại sao việc sử dụng súng không hợp pháp",
+        "points": [
+            {
+                "en": "There is a risk of accidents with guns",
+                "vi": "Có nguy cơ xảy ra tai nạn bằng súng"
+            },
+            {
+                "en": "The number of violent crimes increases when guns are available",
+                "vi": "Số lượng các tội phạm bạo lực tăng khi súng có sẵn"
+            },
+            {
+                "en": "Criminals may be armed",
+                "vi": "Những tên tội phạm có thể được vũ trang"
+            },
+            {
+                "en": "The police then need to use guns",
+                "vi": "Cảnh sát sau đó cần sử dụng súng"
+            },
+            {
+                "en": "Suicide rates have been shown to rise when guns are available",
+                "vi": "Tỷ lệ tự sát đã cho thất tăng lên khi súng có sẵn"
+            },
+            {
+                "en": "Guns create violent societies with high murder rates",
+                "vi": "Súng gây ra những xã hội bạo lực với tỷ lệ giết người cao"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I81",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "WHY POLICES SHOULD USE GUNS",
+        "title_vi": "Tại sao cảnh sát nên sử dụng súng",
+        "points": [
+            {
+                "en": "Many criminals use weapons",
+                "vi": "Nhiều tội phạm sử dụng vũ khí"
+            },
+            {
+                "en": "The threat of a gun can deter criminals",
+                "vi": "Sự đe dọa của súng có thể ngăn chặn bọn tội phạm"
+            },
+            {
+                "en": "Police officers can forces a criminal to surrender",
+                "vi": "Cảnh sát có thể buộc một tội phạm đầu hàng"
+            },
+            {
+                "en": "",
+                "vi": "Dễ bắt giữ ai hơn và tránh bạo lực thể xác"
+            },
+            {
+                "en": "The police may shoot violent criminals in self defence",
+                "vi": "Cảnh sát có thể bắn tội phạm bạo lực trong sự tự vệ"
+            },
+            {
+                "en": "They can protect the public",
+                "vi": "Họ có thể bảo vệ công chúng"
+            },
+            {
+                "en": "They can shoot an escaping criminal who poses a serious danger to the public",
+                "vi": "Họ có thể bắn một tên tội phạm chạy trốn mà gây nguy hiểm nghiêm trọng cho công chúng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I82",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "WHY POLICE SHOULD NOT CARRY GUNS",
+        "title_vi": "Tại sao cảnh sát không nên mang súng",
+        "points": [
+            {
+                "en": "There is a risk of accidents and mistakes",
+                "vi": "Có nguy cơ về những tai nạn và sai lầm"
+            },
+            {
+                "en": "The police might shoot an unarmed criminal or an innocent person",
+                "vi": "Cảnh sát có thể bắn một tên tội phạm không vũ trang hoặc một người vô tội"
+            },
+            {
+                "en": "Accidents can happen in public places",
+                "vi": "Tai nạn có thể xảy ra ở những nơi công cộng"
+            },
+            {
+                "en": "There are several alternatives to guns (e.g tear gas, sprays and electric shock weapons)",
+                "vi": "Có nhiều lựa chọn thay thế cho súng (ví dụ: hơi cay, bình xịt hơi cay và vũ khí gây sốc điện)"
+            },
+            {
+                "en": "Only special police units should use guns",
+                "vi": "Chỉ những đơn vị cảnh sát đặc biệt nên sử dụng súng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I83",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "ARM TRADE: POSITIVES",
+        "title_vi": "Những mặt tích của việc thương mại vũ khí",
+        "points": [
+            {
+                "en": "The export of arms, or weapons, is an extremely controversial issue",
+                "vi": "Việc xuất khẩu vũ khí, hoặc vũ khí, là một vấn đề cực kỳ gây tranh cãi"
+            },
+            {
+                "en": "Governments of rich, industrialized countries sell arms to each other",
+                "vi": "Các chính phủ của các quốc gia giàu có và công nghiệp hóa bán vũ khí cho nhau"
+            },
+            {
+                "en": "This industry creates jobs and wealth",
+                "vi": "Ngành công nghiệp này tạo ra công ăn việc làm và sự giàu có"
+            },
+            {
+                "en": "The trade of weapons may improve relationships between governments",
+                "vi": "Thương mại vũ khí có thể cải thiện mối quan hệ giữa các chính phủ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I84",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "ARMS TRADE: NEGATIVES",
+        "title_vi": "Những mặt tiêu cực của việc thương mại vũ khí",
+        "points": [
+            {
+                "en": "Weapons may be used in conflicts and wars",
+                "vi": "Vũ khí có thể được sử dụng trong các cuộc xung đột và chiến tranh"
+            },
+            {
+                "en": "The supply of arms could be responsible for deaths",
+                "vi": "Việc cung cấp vũ khí có thể gây ra cái chết"
+            },
+            {
+                "en": "Governments are promoting war in order to make a profit",
+                "vi": "Các chính phủ đang thúc đẩy chiến tranh nhằm tạo ra lợi nhuận"
+            },
+            {
+                "en": "Rich countries can influence the politics of other nations",
+                "vi": "Các nước giàu có có thể ảnh hưởng đến chính trị của các quốc gia khác"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I86",
+        "category": "A85. NUCLEAR WEAPONS",
+        "title_en": "NUCLEAR WEAPONS: OPINION",
+        "title_vi": "Những quan điểm về vũ khí hạt nhân",
+        "points": [
+            {
+                "en": "Nuclear weapons should be prohibited",
+                "vi": "Vũ khí hạt nhân nên bị cấm"
+            },
+            {
+                "en": "Governments should limit the production of nuclear weapons",
+                "vi": "Chính phủ các nước nên hạn chế sản xuất vũ khí hạt nhân"
+            },
+            {
+                "en": "There is a danger of nuclear weapons being obtained by terrorists",
+                "vi": "Có nguy cơ/nguy hiểm về vũ khí hạt nhân khi những tay khủng bố thu được"
+            },
+            {
+                "en": "Nuclear weapons cannot be used against terrorist organizations",
+                "vi": "Vũ khí hạt nhân không thể được sử dụng chống lại các tổ chức khủng bố"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I87",
+        "category": "A85. NUCLEAR WEAPONS",
+        "title_en": "ARMED FORCES: POSITIVES",
+        "title_vi": "Những mặt tích cực của lực lượng vũ trang",
+        "points": [
+            {
+                "en": "Armed forces provide security and protection",
+                "vi": "Lực lượng vũ trang cung cấp sự an ninh và bảo vệ"
+            },
+            {
+                "en": "They deter military attack by another country",
+                "vi": "Họ ngăn chặn cuộc tấn công quân sự bởi một quốc gia khác"
+            },
+            {
+                "en": "They can also be sued to maintain peace within countries",
+                "vi": "Họ cũng có thể được sử dụng duy trì hòa bình trong các quốc gia"
+            },
+            {
+                "en": "They can be sued to give the police extra support",
+                "vi": "Họ có thể được sử dụng để cung cấp sự hỗ trợ thêm cho cảnh sát"
+            },
+            {
+                "en": "Soldiers are also used to help in emergency situations, such as after a natural disaster",
+                "vi": "Những người lính cũng được sử dụng để giúp đỡ trong các tình huống khẩn cấp, chẳng hạn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I88",
+        "category": "A85. NUCLEAR WEAPONS",
+        "title_en": "ARMED FORCES: NEGATIVES",
+        "title_vi": "Những mặt tiêu cực của lực lượng vũ trang",
+        "points": [
+            {
+                "en": "Armies require a lot of funding from governments",
+                "vi": "Quân đội yêu cầu rất nhiều nguồn tài trợ từ các chính phủ"
+            },
+            {
+                "en": "Too much money is spent on weapons and military technology",
+                "vi": "Quá nhiều tiền được dành cho vũ khí và công nghệ quân sự"
+            },
+            {
+                "en": "This money could be spent on schools, hospitals and other public services",
+                "vi": "Số tiền này có thể được dùng cho trường học, bệnh viện và các dịch vụ công cộng khác"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I89",
+        "category": "HEALTH",
+        "title_en": "DIET",
+        "title_vi": "Chế độ ăn",
+        "points": [
+            {
+                "en": "The human body requires a balanced diet",
+                "vi": "Cơ thể con người đòi hỏi một chế độ ăn uống cân bằng"
+            },
+            {
+                "en": "An unhealthy diet can cause various health problems",
+                "vi": "Chế độ ăn uống không lành mạnh có thể gây ra nhiều vấn đề về sức khoẻ"
+            },
+            {
+                "en": "Obesity, diabetes and heart disease are on the increase",
+                "vi": "Béo phì, tiểu đường và bệnh tim ngày càng gia tăng"
+            },
+            {
+                "en": "Many people nowadays rely on fast food or pre-prepared meals",
+                "vi": "Nhiều người ngày nay dựa vào thức ăn nhanh hoặc các bữa ăn chuẩn bị trước"
+            },
+            {
+                "en": "These foods often contain too much fat, salt and sugar",
+                "vi": "Những thực phẩm này thường chứa quá nhiều chất béo, muối và đường"
+            },
+            {
+                "en": "They are cheap to buy and very easy to prepare",
+                "vi": "Chúng rẻ để mua và rất dễ chuẩn bị"
+            },
+            {
+                "en": "Many young people have grown up on a diet of convenience foods",
+                "vi": "Nhiều thanh thiếu niên đã lớn lên trên một chế độ ăn uống của các loại thực phẩm tiện lợi"
+            },
+            {
+                "en": "Populations in developed countries are increasingly overweight",
+                "vi": "Dân số ở các nước phát triển ngày càng thừa cân"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I90",
+        "category": "HEALTH",
+        "title_en": "EXERCISE",
+        "title_vi": "Tập thể dục",
+        "points": [
+            {
+                "en": "Regular exercise is essential in maintaining a healthy body",
+                "vi": "Tập thể dục thường xuyên là cần thiết trong việc duy trì một cơ thể khỏe mạnh"
+            },
+            {
+                "en": "Exercise burns calories and helps to build healthy bones and muscles",
+                "vi": "Tập thể dục đốt cháy calo và giúp xây dựng xương và cơ khỏe mạnh"
+            },
+            {
+                "en": "Doctors advise exercising at least three times a week for 20 minutes",
+                "vi": "Các bác sĩ khuyên nên tập thể dục ít nhất ba lần một tuần trong 20 phút"
+            },
+            {
+                "en": "Most people nowadays lead a sedentary lifestyle",
+                "vi": "Hầu hết mọi người ngày nay đều có lối sống thụ động"
+            },
+            {
+                "en": "We tend to walk less and do desk jobs",
+                "vi": "Chúng tôi có xu hướng đi bộ ít hơn và làm công việc văn phòng"
+            },
+            {
+                "en": "Most adults relax by watching television",
+                "vi": "Hầu hết người lớn thư giãn bằng cách xem truyền hình"
+            },
+            {
+                "en": "Children play video games rather than doing outdoor sports",
+                "vi": "Trẻ em chơi trò chơi điện tử thay vì chơi thể thao ngoài trời"
+            },
+            {
+                "en": "",
+                "vi": "Trong quá khứ, người dân đã tích cực hơn trong công việc và ở nhà"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I91",
+        "category": "HEALTH",
+        "title_en": "",
+        "title_vi": "Vai trò của chính phủ",
+        "points": [
+            {
+                "en": "",
+                "vi": "Chính phủ có vai trò quan trọng trong việc giảm béo phì"
+            },
+            {
+                "en": "",
+                "vi": "Ngày càng có nhiều người, kể cả trẻ nhỏ bị thừa cân nặng một cách nghiêm trọng"
+            },
+            {
+                "en": "",
+                "vi": "Họ có nguy cơ mắc bệnh tim và tiểu đường"
+            },
+            {
+                "en": "",
+                "vi": "Tình hình này sẽ làm tăng gánh nặng cho bệnh viện và người nộp thuế"
+            },
+            {
+                "en": "",
+                "vi": "Các bệnh viện dựa vào chính phủ về tiền bạc và nguồn lực"
+            },
+            {
+                "en": "",
+                "vi": "Các chính phủ nên thúc đẩy chế độ ăn uống lành mạnh và tập thể dục thường xuyên"
+            },
+            {
+                "en": "",
+                "vi": "Cần có nhiều thời gian hơn cho thể thao trên lịch trình trên trường học"
+            },
+            {
+                "en": "",
+                "vi": "Thức ăn vặt không lành mạnh nên bị cấm từ thực đơn của trường học"
+            },
+            {
+                "en": "",
+                "vi": "Mọi người cần thông tin về những điều gì thực phẩm chứa đựng"
+            },
+            {
+                "en": "",
+                "vi": "Việc đóng gói thực phẩm phải thể hiện nội dung dinh dưỡng của thực phẩm"
+            },
+            {
+                "en": "",
+                "vi": "Chính phủ Anh khuyến cáo ăn 5 phần trái cây và rau mỗi ngày"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I92",
+        "category": "HEALTH",
+        "title_en": "STATE HEALTH SYSTEM: ADVANTAGES",
+        "title_vi": "Những mặt thuận lợi về hệ thống chăm sóc sức khỏe nhà nước",
+        "points": [
+            {
+                "en": "Good healthcare should be available to everyone for free",
+                "vi": "Chăm sóc sức khoẻ tốt nên có sẵn miễn phí cho tất cả mọi người"
+            },
+            {
+                "en": "State healthcare is paid by the governments using money from taxes",
+                "vi": "Y tế nhà nước được trả tiền bởi chính phủ bằng việc sử dụng tiền từ thuế"
+            },
+            {
+                "en": "Everyone has access to the same quality of care and treatment",
+                "vi": "Mọi người đều có quyền tiếp cận với cùng một chất lượng chăm sóc và điều trị"
+            },
+            {
+                "en": "Private healthcare is unfair because only wealthy people can afford it",
+                "vi": "Chăm sóc sức khoẻ tư nhân là không công bằng bởi chỉ có những người giàu có mới đủ khả"
+            },
+            {
+                "en": "The National Health Service in the UK provides free healthcare for every resident",
+                "vi": "Dịch vụ Y tế Quốc gia ở Anh cung cấp chăm sóc sức khoẻ miễn phí cho mọi cư dân"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I93",
+        "category": "HEALTH",
+        "title_en": "PRIVATE HEALTHCARE: ADVANTAGES",
+        "title_vi": "Những thuận lợi của dịch vụ sức khỏe tư nhân",
+        "points": [
+            {
+                "en": "State hospitals are often very large and difficult to run",
+                "vi": "Các bệnh viện nhà nước thường rất lớn và khó điều hành"
+            },
+            {
+                "en": "Private hospitals have shorter waiting lists for operations and appointments",
+                "vi": "Các bệnh viện tư nhân có danh sách chờ đợi ngắn hơn cho các phẫu thuật và các cuộc hẹn"
+            },
+            {
+                "en": "Patients can benefit from faster treatment",
+                "vi": "Bệnh nhân có thể được lợi từ điều trị nhanh hơn"
+            },
+            {
+                "en": "Many people prefer to pay for more a personal service",
+                "vi": "Nhiều người thích trả thêm phí dịch vụ cá nhân"
+            },
+            {
+                "en": "Patients have their own room and more comfortable facilities",
+                "vi": "Bệnh nhân có phòng riêng và nhiều tiện nghi thoải mái hơn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I94",
+        "category": "HEALTH",
+        "title_en": "ALTERNATIVE MEDICINE: POSITIVES",
+        "title_vi": "Những mặt tích cực của các loại thuốc thay thế",
+        "points": [
+            {
+                "en": "People are increasingly using alternative medicines to treat illnesses.",
+                "vi": "Con người đang ngày càng sử dụng các loại thuốc thay thế để chữa bệnh."
+            },
+            {
+                "en": "For example, acupuncture can be used to treat backache",
+                "vi": "Ví dụ, châm cứu có thể được sử dụng để điều trị chứng đau lưng"
+            },
+            {
+                "en": "Herbal medicines can be used to treat allergies or viruses",
+                "vi": "Thuốc thảo dược có thể được sử dụng để điều trị dị ứng hoặc siêu vi khuẩn"
+            },
+            {
+                "en": "Many patients report positive experiences with these treatments",
+                "vi": "Nhiều bệnh nhân báo cáo những trải nghiệm tích cực với các phương pháp điều trị này"
+            },
+            {
+                "en": "Some traditional cures have been used for hundreds of years",
+                "vi": "Một số phương pháp chữa bệnh truyền thống đã được sử dụng hàng trăm năm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I95",
+        "category": "HEALTH",
+        "title_en": "ALTERNATIVE MEDICINE: NEGATIVES",
+        "title_vi": "Những mặt tiêu cực của các loại thuốc thay thế",
+        "points": [
+            {
+                "en": "Many alternative medicines have not been tested scientifically",
+                "vi": "Nhiều loại thuốc thay thế chưa được kiểm tra khoa học"
+            },
+            {
+                "en": "They may have no beneficial effect at all",
+                "vi": "Chúng có thể không có tác dụng có lợi"
+            },
+            {
+                "en": "They may cause unknown side effects",
+                "vi": "Chúng có thể gây ra các phản ứng phụ không rõ"
+            },
+            {
+                "en": "People should trust the opinions of qualified doctors",
+                "vi": "Mọi người nên tin tưởng ý kiến của bác sĩ có trình độ/chuyên môn"
+            },
+            {
+                "en": "An illness could get worse without treatment from a doctor",
+                "vi": "Một căn bệnh có thể trở nên tồi tệ hơn mà không có sự điều trị từ bác sĩ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I96",
+        "category": "HEALTH",
+        "title_en": "STRESS",
+        "title_vi": "Căng thẳng",
+        "points": [
+            {
+                "en": "Modern lifestyles are increasingly stressful",
+                "vi": "Lối sống hiện đại ngày càng căng thẳng"
+            },
+            {
+                "en": "People work long hours with strict deadlines",
+                "vi": "Mọi người làm việc nhiều giờ với thời hạn nghiêm ngặt"
+            },
+            {
+                "en": "Our busy lifestyles mean we have less time to relax",
+                "vi": "Lối sống bận rộn của chúng ta có nghĩa là chúng ta có ít thời gian để thư giãn"
+            },
+            {
+                "en": "Unemployment is a major cause of stress",
+                "vi": "Thất nghiệp là nguyên nhân chính gây căng thẳng"
+            },
+            {
+                "en": "Children may be affected by their parents’ relationship problems",
+                "vi": "Trẻ em có thể bị ảnh hưởng bởi các vấn đề về mối quan hệ của cha mẹ"
+            },
+            {
+                "en": "Tests and exams can also cause stress’",
+                "vi": "Các bài kiểm tra và các kỳ thi cũng có thể gây căng thẳng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I97",
+        "category": "HEALTH",
+        "title_en": "HOW TO REDUCE STRESS",
+        "title_vi": "Cách để giảm căng thẳng",
+        "points": [
+            {
+                "en": "Stress can be reduced by taking regular exercise and eating a healthy diet",
+                "vi": "Căng thẳng có thể giảm bằng cách tập thể dục thường xuyên và ăn uống lành mạnh"
+            },
+            {
+                "en": "",
+                "vi": "Điều quan trọng là phải có đủ giấc ngủ và dành thời gian giải trí ưu tiên"
+            },
+            {
+                "en": "People should work less overtime and take regular holidays",
+                "vi": "Mọi người nên làm việc ít giờ hơn và đi nghỉ thường xuyên"
+            },
+            {
+                "en": "Schools have started to employ psychologists",
+                "vi": "Các trường học đã bắt đầu tuyển dụng các nhà tâm lý học"
+            },
+            {
+                "en": "They can offer emotional support to students",
+                "vi": "Họ có thể hỗ trợ tinh thần cho học sinh"
+            },
+            {
+                "en": "They can help students to cope with exam stress",
+                "vi": "Họ có thể giúp học sinh đối phó với stress"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I98",
+        "category": "HOUSING AND ARCHITECTURE",
+        "title_en": "STATE/COUNCIL HOUSING",
+        "title_vi": "Nhà ở tiểu bang/hội đồng",
+        "points": [
+            {
+                "en": "",
+                "vi": "Ở một số quốc gia, chính phủ cung cấp nhà ở của nhà nước hoặc của hội đồng"
+            },
+            {
+                "en": "This helps people who cannot afford to buy their own house",
+                "vi": "Điều này giúp những người không có khả năng mua nhà riêng"
+            },
+            {
+                "en": "",
+                "vi": "Có thể lập luận rằng nhà ở của nhà nước tạo ra sự phụ thuộc vào chính phủ"
+            },
+            {
+                "en": "People should be rely on the government to look after them",
+                "vi": "Mọi người nên dựa vào chính phủ để chăm sóc họ"
+            },
+            {
+                "en": "People have no incentive to earn money and buy their own home",
+                "vi": "Mọi người không có động cơ để kiếm tiền và mua nhà riêng"
+            },
+            {
+                "en": "Council properties are often made with cheap, poor-quality materials.",
+                "vi": "Tài sản của hội đồng thường được làm bằng vật liệu giá rẻ, kém chất lượng."
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I99",
+        "category": "HOUSING AND ARCHITECTURE",
+        "title_en": "OLD BUILDINGS",
+        "title_vi": "Những tòa nhà cũ",
+        "points": [
+            {
+                "en": "Historic buildings are part of a country’s heritage",
+                "vi": "Các tòa nhà lịch sử là một phần của di sản của một quốc gia"
+            },
+            {
+                "en": "They should be protected",
+                "vi": "Chúng nên được bảo vệ"
+            },
+            {
+                "en": "Old buildings are often considered to be works or art",
+                "vi": "Các tòa nhà cũ thường được coi là các công trình hoặc nghệ thuật"
+            },
+            {
+                "en": "They give character to cities and attract tourists",
+                "vi": "Chúng cho những đặc trưng đối với thành phố và thu hút khách du lịch"
+            },
+            {
+                "en": "They show us how people lived in the past",
+                "vi": "Chúng cho chúng ta biết cách mọi người sống trong quá khứ"
+            },
+            {
+                "en": "We identify countries by architectural symbols like the pyramids in Egypt",
+                "vi": "Chúng ta xác định các quốc gia bằng các biểu tượng kiến trúc như các kim tự tháp ở Ai Cập"
+            },
+            {
+                "en": "Governments should spend money on looking after historic buildings",
+                "vi": "Các chính phủ nên chi tiền để chăm sóc các tòa nhà lịch sử"
+            },
+            {
+                "en": "They need regular repairs and maintenance",
+                "vi": "Chúng cần được sửa chữa và bảo trì thường xuyên"
+            },
+            {
+                "en": "New buildings should be designed to complement them",
+                "vi": "Các tòa nhà mới cần được thiết kế để bổ sung cho họ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I100",
+        "category": "HOUSING AND ARCHITECTURE",
+        "title_en": "MODERN/GREEN BUILDINGS",
+        "title_vi": "Các tòa nhà hiện đại",
+        "points": [
+            {
+                "en": "Modern buildings should be designed to be environmentally friendly",
+                "vi": "Các tòa nhà hiện đại phải được thiết kế thân thiện với môi trường"
+            },
+            {
+                "en": "They should use less energy and produce less waste",
+                "vi": "Chúng nên sử dụng ít năng lượng hơn và ít thải hơn"
+            },
+            {
+                "en": "Modern insulation can make houses more energy-efficient",
+                "vi": "Cách nhiệt hiện đại có thể làm cho ngôi nhà hiệu quả năng lượng hơn"
+            },
+            {
+                "en": "Solar and wind power can be used to generate electricity",
+                "vi": "Năng lượng mặt trời và gió có thể được sử dụng để tạo ra điện"
+            },
+            {
+                "en": "Rainwater and waste water can be recycled and used to flush toilets.",
+                "vi": "Nước mưa và nước thải có thể được tái chế và sử dụng để xả nhà vệ sinh."
+            },
+            {
+                "en": "Modern glass buildings take advantage if natural light",
+                "vi": "Các tòa nhà kính hiện đại tận dụng lợi thế của ánh sáng tự nhiên"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I101",
+        "category": "LANGUAGE",
+        "title_en": "ENGLISH AS AN INTERNATIONAL LANGUAGE",
+        "title_vi": "Tiếng Anh là một ngôn ngữ quốc tế",
+        "points": [
+            {
+                "en": "English is widely used around the world",
+                "vi": "Tiếng Anh được sử dụng rộng rãi trên toàn thế giới"
+            },
+            {
+                "en": "",
+                "vi": "Nó đang trở thành ngôn ngữ thứ hai toàn cầu"
+            },
+            {
+                "en": "",
+                "vi": "Đây là ngôn ngữ chiếm ưu thế của công nghệ, khoa học và kinh doanh quốc tế"
+            },
+            {
+                "en": "",
+                "vi": "Các cuộc họp kinh doanh quốc tế được tổ chức thường xuyên bằng tiếng Anh"
+            },
+            {
+                "en": "The most important textbooks and journals are published in English",
+                "vi": "Các sách giáo khoa và tạp chí quan trọng nhất được xuất bản bằng tiếng Anh"
+            },
+            {
+                "en": "The ability to speak English is a necessary skill in the modern world",
+                "vi": "Khả năng nói tiếng Anh là một kỹ năng cần thiết trong thế giới hiện đại"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I102",
+        "category": "LANGUAGE",
+        "title_en": "NEGATIVE OF ENGLISH AS AN INTERNATIONAL LANGUAGE",
+        "title_vi": "Tiêu cực của tiếng Anh như là một ngôn ngữ quốc tế",
+        "points": [
+            {
+                "en": "",
+                "vi": "Nếu một ngôn ngữ chiếm ưu thế, ngôn ngữ khác có thể biến mất"
+            },
+            {
+                "en": "The dominant language brings its own culture",
+                "vi": "Ngôn ngữ chi phối mang lại văn hóa riêng của nó"
+            },
+            {
+                "en": "American culture has become popular around the world",
+                "vi": "Văn hoá Mỹ đã trở nên phổ biến khắp thế giới"
+            },
+            {
+                "en": "Other cultures may be damaged",
+                "vi": "Các nền văn hoá khác có thể bị hủy"
+            },
+            {
+                "en": "As an alternative to English, a new global language could be invented",
+                "vi": "Là một sự thay thế cho tiếng Anh, một ngôn ngữ toàn cầu mới có thể được phát minh ra"
+            },
+            {
+                "en": "",
+                "vi": "Nó sẽ không có quốc tịch hoặc văn hoá gắn liền với nó"
+            },
+            {
+                "en": "This could help to promote international peace and understanding",
+                "vi": "Điều này có thể giúp thúc đẩy hoà bình và hiểu biết quốc tế"
+            },
+            {
+                "en": "Esperanto is an example of a language that was invented with this aim",
+                "vi": "Esperanto là một ví dụ về một ngôn ngữ đã được phát minh với mục tiêu này"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I103",
+        "category": "MONEY",
+        "title_en": "MONEY AND SOCIETY",
+        "title_vi": "Tiền bạc và xã hội",
+        "points": [
+            {
+                "en": "Society has become increasingly materialistic",
+                "vi": "Xã hội ngày càng trở nên vật chất"
+            },
+            {
+                "en": "People aspire to earn more money",
+                "vi": "Mọi người mong muốn kiếm được nhiều tiền hơn"
+            },
+            {
+                "en": "They want a bigger house or a better car",
+                "vi": "Họ muốn có một căn nhà lớn hơn hoặc một chiếc xe tốt hơn"
+            },
+            {
+                "en": "We connect wealth and material possessions with happiness and success",
+                "vi": "Chúng ta kết nối sự giàu có và tài sản vật chất với hạnh phúc và thành công"
+            },
+            {
+                "en": "Brands like “Armani” or ”Mercedes” are status symbols",
+                "vi": "Các thương hiệu như \"Armani\" hoặc \"Mercedes\" là các biểu tượng địa vị xã hội"
+            },
+            {
+                "en": "Advertising creates new desires and needs",
+                "vi": "Quảng cáo tạo ra những ham muốn và nhu cầu mới"
+            },
+            {
+                "en": "",
+                "vi": "Nó thuyết phục chúng ta mua những phong cách mới nhất"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I104",
+        "category": "MONEY",
+        "title_en": "HAPPINESS",
+        "title_vi": "Hạnh phúc",
+        "points": [
+            {
+                "en": "Happiness means different things to different people",
+                "vi": "Hạnh phúc có ý nghĩa khác nhau đối với những người khác nhau"
+            },
+            {
+                "en": "",
+                "vi": "Nó có thể được mô tả như là một cảm giác của niềm vui hoặc hưởng thụ"
+            },
+            {
+                "en": "People enjoy spending time with family and friends",
+                "vi": "Mọi người thích tận hưởng thời gian với gia đình và bạn bè"
+            },
+            {
+                "en": "Hobbies, sports and games can be a source of fun and enjoyment",
+                "vi": "Sở thích, thể thao và trò chơi có thể là một nguồn vui chơi giải trí"
+            },
+            {
+                "en": "Some people see money as a source of happiness",
+                "vi": "Một số người coi tiền là nguồn hạnh phúc"
+            },
+            {
+                "en": "Other people define happiness as something deeper",
+                "vi": "Người khác định nghĩa hạnh phúc là điều sâu sắc hơn"
+            },
+            {
+                "en": "",
+                "vi": "Để thực sự hạnh phúc, cần phải sống một cuộc sống tốt đẹp"
+            },
+            {
+                "en": "We need to feel that we are doing something useful with our lives",
+                "vi": "Chúng ta cần cảm thấy rằng chúng ta đang làm một cái gì đó hữu ích trong cuộc sống của"
+            },
+            {
+                "en": "Some people get a sense of achievement from their work",
+                "vi": "Một số người có được một cảm giác thành tích từ công việc của họ"
+            },
+            {
+                "en": "Others find happiness in bringing up their children",
+                "vi": "Những người khác tìm thấy hạnh phúc trong việc nuôi dạy con cái"
+            },
+            {
+                "en": "Religion or a sense of purpose can also be a source of happiness",
+                "vi": "Tôn giáo hay ý thức về mục đích cũng có thể là nguồn hạnh phúc"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I105",
+        "category": "MONEY",
+        "title_en": "SUCCESS",
+        "title_vi": "Thành công",
+        "points": [
+            {
+                "en": "People define success in different ways",
+                "vi": "Người ta định nghĩa thành công theo những cách khác nhau"
+            },
+            {
+                "en": "Some people get a sense of achievement from raising a family",
+                "vi": "Một số người có được một cảm giác thành tích từ nuôi một gia đình"
+            },
+            {
+                "en": "For others, success is defined by wealth or status",
+                "vi": "Đối với những người khác, thành công được định nghĩa bởi sự giàu có hay tình trạng"
+            },
+            {
+                "en": "We often think of rich and famous people as being successful in life",
+                "vi": "Chúng ta thường nghĩ đến những người giàu có và nổi tiếng như là thành công trong cuộc"
+            },
+            {
+                "en": "Millionaires like Bill Gates are considered to be successful",
+                "vi": "Những nhà triệu phú như Bill Gates được coi là thành công"
+            },
+            {
+                "en": "They have risen to the top in their chosen professions",
+                "vi": "Họ đã đứng đầu trong các ngành nghề đã chọn của họ"
+            },
+            {
+                "en": "For some, being successful means achieving personal or professional goals",
+                "vi": "Đối với một số người, thành công là đạt được các mục tiêu cá nhân hoặc nghề nghiệp"
+            },
+            {
+                "en": "They see success as the result of hard work",
+                "vi": "Họ thấy thành công là kết quả của sự làm việc chăm chỉ"
+            },
+            {
+                "en": "Success in any field requires long-term planning and effort",
+                "vi": "Thành công trong bất kỳ lĩnh vực nào đòi hỏi phải có kế hoạch và nỗ lực dài hạn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I106",
+        "category": "MONEY",
+        "title_en": "NATURE OR NURTURE",
+        "title_vi": "Tự nhiên hay nuôi dưỡng",
+        "points": [
+            {
+                "en": "Some people believe that our personalities are determined mainly by genetics",
+                "vi": "Một số người tin rằng tính cách của chúng tôi được xác định chủ yếu bằng di truyền học"
+            },
+            {
+                "en": "We inherit our abilities and talents from our parents",
+                "vi": "Chúng ta thừa hưởng năng lực và tài năng của chúng ta từ cha mẹ"
+            },
+            {
+                "en": "Others think that our education and upbringing are more important",
+                "vi": "Những người khác lại nghĩ rằng việc giáo dục và nuôi dạy của chúng ta quan trọng hơn"
+            },
+            {
+                "en": "We develop according to the influences around us",
+                "vi": "Chúng ta phát triển theo những ảnh hưởng xung quanh chúng ta"
+            },
+            {
+                "en": "Our personalities and achievements depend more on nurture than nature",
+                "vi": "Nhân cách và thành tựu của chúng ta phụ thuộc nhiều hơn vào việc nuôi dưỡng hơn tự nhiên"
+            },
+            {
+                "en": "Many people argue that we control our own destinies",
+                "vi": "Nhiều người cho rằng chúng ta kiểm soát vận mệnh của mình"
+            },
+            {
+                "en": "We can shape our own personalities",
+                "vi": "Chúng ta có thể định hình cá tính của chúng ta"
+            },
+            {
+                "en": "By working hard we can achieve and goal that we put our minds to",
+                "vi": "Bằng cách làm việc chăm chỉ chúng ta có thể đạt được và mục tiêu mà chúng ta đặt tâm trí"
+            },
+            {
+                "en": "Many successful people are “self-made”",
+                "vi": "Nhiều người thành công là \"tự lập\""
+            },
+            {
+                "en": "We are not limited by our genetic characteristic or upbringing",
+                "vi": "Chúng tôi không bị hạn chế bởi đặc tính di truyền hoặc sự giáo dục của chúng tôi"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I107",
+        "category": "SPORT AND LEISURE",
+        "title_en": "ARGUMENTS AGAINST PROFESSIONAL/COMPETITIVE SPORT",
+        "title_vi": "Những tranh cãi không ủng hộ các môn thể theo chuyên nghiệp/cạnh tranh",
+        "points": [
+            {
+                "en": "Sport has become a business",
+                "vi": "Thể thao đã trở thành một loại hình kinh doanh"
+            },
+            {
+                "en": "Professional sport encourages people to compete for money",
+                "vi": "Thể thao chuyên nghiệp khuyến khích mọi người cạnh tranh để kiếm tiền"
+            },
+            {
+                "en": "Many sports stars are only concerned about money and fame",
+                "vi": "Nhiều ngôi sao thể thao chỉ quan tâm đến tiền bạc và danh vọng"
+            },
+            {
+                "en": "Some athletes take drugs in order to win at any cost",
+                "vi": "Một số vận động viên uống thuốc để giành chiến thắng bằng mọi giá"
+            },
+            {
+                "en": "Competitors are often selfish and rude",
+                "vi": "Các đối thủ cạnh tranh thường ích kỷ và thô lỗ"
+            },
+            {
+                "en": "They are not good role models for children",
+                "vi": "Họ không phải là hình mẫu tốt cho trẻ em"
+            },
+            {
+                "en": "All sports should be amateur",
+                "vi": "Tất cả các môn thể thao nên là nghiệp dư"
+            },
+            {
+                "en": "Sports should be leisure activities rather than jobs",
+                "vi": "Thể thao nên là hoạt động giải trí chứ không phải là việc làm"
+            },
+            {
+                "en": "People should do sporting activities for enjoyment and health reasons",
+                "vi": "Mọi người nên làm các hoạt động thể thao vì mục đích giải trí và sức khoẻ"
+            },
+            {
+                "en": "Taking part is more important than winning",
+                "vi": "Việc tham gia là quan trọng hơn chiến thắng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I108",
+        "category": "SPORT AND LEISURE",
+        "title_en": "ARGUMENTS FOR PROFESSIONAL SPORT",
+        "title_vi": "Những quan điểm ủng hộ cho các môn thể thao chuyên nghiệp",
+        "points": [
+            {
+                "en": "Professional sports are the same as any other business",
+                "vi": "Thể thao chuyên nghiệp cũng giống như bất kỳ hoạt động kinh doanh khác"
+            },
+            {
+                "en": "Many people are employed in the sports industry",
+                "vi": "Nhiều người được thuê làm việc trong ngành thể thao"
+            },
+            {
+                "en": "People should be able to use their talents to earn a salary",
+                "vi": "Mọi người nên có khả năng sử dụng tài năng của mình để kiếm tiền"
+            },
+            {
+                "en": "Sports stars entertain millions of people",
+                "vi": "Các ngôi sao thể thao giải trí hàng triệu người"
+            },
+            {
+                "en": "Money is necessary to improve facilities and train athletes",
+                "vi": "Tiền là cần thiết để cải thiện cơ sở vật chất và đào tạo vận động viên"
+            },
+            {
+                "en": "The level of professional sport is much higher than that of amateur sport",
+                "vi": "Mức độ của môn thể thao chuyên nghiệp cao hơn nhiều so với môn thể thao nghiệp dư"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I109",
+        "category": "SPORT AND LEISURE",
+        "title_en": "ARGUMENTS FOR COMPETITIVE SPORT",
+        "title_vi": "Những quan điểm ủng hộ cho thể thao cạnh tranh",
+        "points": [
+            {
+                "en": "Competition is a natural instinct in humans",
+                "vi": "Cạnh tranh là bản năng tự nhiên ở con người."
+            },
+            {
+                "en": "",
+                "vi": "Trong cuộc sống hàng ngày, chúng tôi cạnh tranh để có được việc làm hoặc điểm cao nhất"
+            },
+            {
+                "en": "Sports are a safe form of competition",
+                "vi": "Thể thao là một hình thức thi đấu/cạnh tranh an toàn."
+            },
+            {
+                "en": "Competition is healthy because it pushes us to give our best",
+                "vi": "Sự cạnh tranh là lành mạnh vì nó thúc đẩy chúng ta nỗ lực hết mình"
+            },
+            {
+                "en": "Competitors and fans can release energy and aggression",
+                "vi": "Các đối thủ và người hâm mộ có thể giải phóng năng lượng và sự gây hấn"
+            },
+            {
+                "en": "Supporters of teams feel a sense of belonging to a community",
+                "vi": "Những người ủng hộ các đội cảm thấy thuộc về một cộng đồng"
+            },
+            {
+                "en": "Cạnh tranh là một bản năng tự nhiên ở con người",
+                "vi": ""
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I110",
+        "category": "SPORT AND LEISURE",
+        "title_en": "OPINION: PROFESSIONAL SPORT SALARIES ARE TOO HIGH",
+        "title_vi": "Quan điểm về mức lương thể thao chuyên nghiệp quá cao",
+        "points": [
+            {
+                "en": "Sports professionals earn too much money",
+                "vi": "Các chuyên gia thể thao kiếm được nhiều tiền"
+            },
+            {
+                "en": "They do not provide a vital service",
+                "vi": "Họ không cung cấp dịch vụ quan trọng"
+            },
+            {
+                "en": "Football players, for example, earn enormous salaries by simply kicking a ball",
+                "vi": "Các cầu thủ bóng đá, ví dụ, kiếm được khoản tiền lương to lớn bằng cách chỉ đơn giản là đá"
+            },
+            {
+                "en": "We could all live happily without professional football",
+                "vi": "Tất cả chúng ta đều có thể sống hạnh phúc mà không có bóng đá chuyên nghiệp"
+            },
+            {
+                "en": "Life would be difficult without doctors, engineers and other vital professionals.",
+                "vi": "Cuộc sống sẽ khó khăn nếu không có bác sĩ, kỹ sư và các chuyên gia quan trọng khác."
+            },
+            {
+                "en": "Society does not seem to value these professions as highly as professional sport",
+                "vi": "Xã hội dường như không đánh giá cao những ngành nghề như thể thao chuyên nghiệp"
+            },
+            {
+                "en": "Sports salaries should be compatible with the wages most people earn",
+                "vi": "Lương thể thao phải tương xứng với mức lương mà hầu hết mọi người kiếm được"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I111",
+        "category": "SPORT AND LEISURE",
+        "title_en": "OPINION: PROFESSIONAL SPORT SALARIES ARE FAIR",
+        "title_vi": "Quan điểm về mức lương các môn thể thao chuyên nghiệp là ngang bằng",
+        "points": [
+            {
+                "en": "",
+                "vi": "Thực sự công bằng rằng các chuyên gia giỏi nhất kiếm được nhiều tiền"
+            },
+            {
+                "en": "Sport is a multi-million-pound industry",
+                "vi": "Thể thao là một ngành công nghiệp nhiều triệu pound"
+            },
+            {
+                "en": "There is a large audience of sports fans",
+                "vi": "Có rất nhiều khán giả hâm mộ thể thao"
+            },
+            {
+                "en": "Sports on television attract many viewers",
+                "vi": "Thể thao trên truyền hình thu hút nhiều người xem"
+            },
+            {
+                "en": "Sports stars have dedicated hours of practice to developing their fitness and skills",
+                "vi": "Các ngôi sao thể thao đã dành thời gian luyện tập để phát triển thể lực và kỹ năng"
+            },
+            {
+                "en": "Only the most talented among them will reach the top",
+                "vi": "Chỉ có tài năng nhất trong số họ sẽ lên đến đỉnh cao"
+            },
+            {
+                "en": "A sports career many only last 10 years",
+                "vi": "Một sự nghiệp thể thao chỉ kéo dài 10 năm"
+            },
+            {
+                "en": "Sports fans are willing to pay to support their teams",
+                "vi": "Người hâm mộ thể thao sẵn sàng trả tiền để hỗ trợ đội của họ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I112",
+        "category": "SPORT AND LEISURE",
+        "title_en": "SPORTS AND POLITICS",
+        "title_vi": "Thể thao và chính trị",
+        "points": [
+            {
+                "en": "Some people think that sport and politics should remain separate",
+                "vi": "Một số người cho rằng môn thể thao và chính trị nên tách riêng"
+            },
+            {
+                "en": "Governments are involved in the hosting of sporting events such as the Olympics.",
+                "vi": "Các chính phủ tham gia vào việc tổ chức các sự kiện thể thao như Thế vận hội."
+            },
+            {
+                "en": "These events attract investment and create jobs.",
+                "vi": "Những sự kiện này thu hút đầu tư và tạo việc làm."
+            },
+            {
+                "en": "The Olympic Games are an advertisement for the host nation",
+                "vi": "Thế vận hội là một quảng cáo cho nước chủ nhà"
+            },
+            {
+                "en": "They attract huge numbers of visitors and sports fans",
+                "vi": "Họ thu hút được rất nhiều du khách và những người hâm mộ thể thao"
+            },
+            {
+                "en": "Wealthy countries tend to hold these events",
+                "vi": "Các quốc gia giàu có có khuynh hướng tổ chức những sự kiện này"
+            },
+            {
+                "en": "Developing countries should be given the chance to become hosts",
+                "vi": "Các nước đang phát triển nên có cơ hội trở thành chủ nhà"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I113",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "POSITIVES OF TELEVISION",
+        "title_vi": "Những mặt tích cực của Ti vi",
+        "points": [
+            {
+                "en": "Watching television is a good way to relax",
+                "vi": "Xem truyền hình là một cách tốt để thư giãn"
+            },
+            {
+                "en": "",
+                "vi": "Đó là cách yêu thích của nhiều người để thư giãn sau một ngày làm việc vất vả"
+            },
+            {
+                "en": "Television programs can be entertaining and enjoyable",
+                "vi": "Các chương trình truyền hình có thể mang tính giải trí và thú vị"
+            },
+            {
+                "en": "Viewers have access to a huge variety of entertainment channels",
+                "vi": "Người xem có quyền truy cập vào rất nhiều kênh giải trí"
+            },
+            {
+                "en": "Television brings the best comedians, musicians and actors into our homes",
+                "vi": "Truyền hình mang đến những diễn viên hài, nhạc sĩ và diễn viên giỏi nhất vào nhà của chúng"
+            },
+            {
+                "en": "Programmers can also be informative and educational",
+                "vi": "Các chương trình cũng có thể là thông tin và giáo dục"
+            },
+            {
+                "en": "News coverage makes the public aware of events around the world",
+                "vi": "Việc cung cấp tin tức làm cho công chúng biết về các sự kiện trên khắp thế giới"
+            },
+            {
+                "en": "Documentaries can make learning more interesting",
+                "vi": "Phim tài liệu có thể làm cho việc học thú vị hơn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I114",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "NEGATIVES OF TELEVISION",
+        "title_vi": "Những mặt hạn chế của Ti vi",
+        "points": [
+            {
+                "en": "Television is having a negative impact on society",
+                "vi": "Truyền hình đang có một tác động tiêu cực đến xã hội"
+            },
+            {
+                "en": "Some people link violence on television with crime rates in the real world",
+                "vi": "Một số người liên kết bạo lực trên truyền hình với tỷ lệ tội phạm trong thế giới thực"
+            },
+            {
+                "en": "Children copy the behavior they see on the screen",
+                "vi": "Trẻ em sao chép hành vi họ nhìn thấy trên màn hình"
+            },
+            {
+                "en": "Children are less healthy because they spend less time palying",
+                "vi": "Trẻ em kém khỏe mạnh hơn vì chúng giành it thời gian hơn trong việc vui chơi"
+            },
+            {
+                "en": "Advertisers direct their marketing at children",
+                "vi": "Các nhà quảng cáo hướng quảng cáo của họ trực tiếp đến trẻ nhỏ"
+            },
+            {
+                "en": "Most programs do not require much thought",
+                "vi": "Hầu hết các chương trình không đòi hỏi nhiều suy nghĩ"
+            },
+            {
+                "en": "Watching TV is a waste of time",
+                "vi": "Xem TV là một sự lãng phí thời gian"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I115",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "OPINIONS ABOUT TELEVISION",
+        "title_vi": "Các quan điểm về ti vi",
+        "points": [
+            {
+                "en": "Television has many benefits",
+                "vi": "Truyền hình có nhiều lợi ích"
+            },
+            {
+                "en": "However, it can be addictive",
+                "vi": "Tuy nhiên, nó có thể gây nghiện"
+            },
+            {
+                "en": "Children should play outside rather than sit in front of a screen all day",
+                "vi": "Trẻ em nên chơi bên ngoài thay vì ngồi trước màn hình cả ngày"
+            },
+            {
+                "en": "Behaviour shown on TV can influence people",
+                "vi": "Hành vi được thể hiện trên TV có thể ảnh hưởng đến mọi người"
+            },
+            {
+                "en": "Parents should choose carefully what their children watch",
+                "vi": "Cha mẹ nên chọn cẩn thận những gì con cái của họ xem"
+            },
+            {
+                "en": "Children should not be exposed to violence, swearing or sexual images",
+                "vi": "Trẻ em không nên được tiếp xúc với bạo lực, chửi thề hoặc hình ảnh tình dục"
+            },
+            {
+                "en": "Advertising during children’s programs should be strictly controlled",
+                "vi": "Quảng cáo trong các chương trình của trẻ em cần được kiểm soát chặt chẽ"
+            },
+            {
+                "en": "TV companies should make more positive, educational programs",
+                "vi": "Các công ty truyền hình nên có những chương trình giáo dục tích cực hơn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I116",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "POSITIVES OF THE INTERNET",
+        "title_vi": "Những mặt tích cực trên internet",
+        "points": [
+            {
+                "en": "There are many advantages to using the Internet",
+                "vi": "Có nhiều lợi ích khi sử dụng Internet"
+            },
+            {
+                "en": "",
+                "vi": "Nó cho phép chúng ta truy cập nhanh thông tin về hầu hết các chủ đề"
+            },
+            {
+                "en": "Shops and other services are now available online",
+                "vi": "Các cửa hàng và các dịch vụ khác hiện có trên mạng"
+            },
+            {
+                "en": "People can buy goods and services from the comfort of their homes",
+                "vi": "Mọi người có thể mua hàng hóa và dịch vụ từ sự thoải mái trong nhà"
+            },
+            {
+                "en": "The Internet is starting to replace other forms of entertainment",
+                "vi": ""
+            },
+            {
+                "en": "",
+                "vi": "Nó đã cách mạng truyền thông"
+            },
+            {
+                "en": "We can keep in touch by email or instant messenger services",
+                "vi": "Chúng tôi có thể giữ liên lạc bằng email hoặc dịch vụ tin nhắn nhanh"
+            },
+            {
+                "en": "Video messaging is becoming common for business meetings",
+                "vi": "Tin nhắn video đang trở nên phổ biến trong các cuộc họp kinh doanh"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I117",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "NEGATIVES OF THE INTERNET",
+        "title_vi": "Những mặt tiêu cực của internet",
+        "points": [
+            {
+                "en": "Many websites contain offensive content",
+                "vi": "Nhiều trang web chứa nội dung xúc phạm"
+            },
+            {
+                "en": "Some sites show violent or sexual images",
+                "vi": "Một số trang web hiển thị hình ảnh bạo lực hoặc tình dục"
+            },
+            {
+                "en": "Parents find it difficult to control what their children see online",
+                "vi": "Cha mẹ cảm thấy khó kiểm soát những gì con cái của họ xem trực tuyến"
+            },
+            {
+                "en": "They do not always know who their children are chatting to",
+                "vi": "Họ không phải lúc nào cũng biết những đứa trẻ đang trò chuyện với ai"
+            },
+            {
+                "en": "With so many websites it is difficult to search for good information",
+                "vi": "Với rất nhiều trang web rất khó để tìm kiếm thông tin tốt"
+            },
+            {
+                "en": "Criminals increasingly use the Internet to steal people’s money",
+                "vi": "Tội phạm ngày càng sử dụng Internet để ăn cắp tiền của người"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I118",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "INTERNET COMPARED TO NEWSPAPER AND BOOKS",
+        "title_vi": "Internet so sánh với báo giấy và sách",
+        "points": [
+            {
+                "en": "Newspapers and books are now published online as well as in print",
+                "vi": "Báo và sách bây giờ đã được xuất bản trực tuyến cũng như in"
+            },
+            {
+                "en": "We can read the news in any language from any country in the world",
+                "vi": "Chúng ta có thể đọc tin tức bằng bất kỳ ngôn ngữ nào từ bất kỳ quốc gia nào trên thế giới"
+            },
+            {
+                "en": "",
+                "vi": "Nó không tốn chi phí để xuất bản hoặc truy cập thông tin trên Internet"
+            },
+            {
+                "en": "The Internet allows anybody to publish their own writing",
+                "vi": ""
+            },
+            {
+                "en": "Newspaper articles and books are written by professionals",
+                "vi": "Các bài báo và sách được viết bởi các chuyên gia"
+            },
+            {
+                "en": "Professionals produce better quality writing than amateur",
+                "vi": "Chuyên gia tạo ra các bài viết chất lượng tốt hơn so với nghiệp dư"
+            },
+            {
+                "en": "People still buy newspapers and books because they are portable",
+                "vi": "Mọi người vẫn mua báo và sách bởi vì chúng là xách tay"
+            },
+            {
+                "en": "People do not like reading from a screen",
+                "vi": "Mọi người không thích đọc sách từ màn hình"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I119",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "POSITIVES OF MOBILE PHONES",
+        "title_vi": "Những mặt tích cực của điện thoại di động",
+        "points": [
+            {
+                "en": "The mobile phone is the most popular gadget in today’s world",
+                "vi": "Điện thoại di động là tiện ích phổ biến nhất trong thế giới ngày nay"
+            },
+            {
+                "en": "Mobile phones have revolutionized the way we communicate",
+                "vi": "Điện thoại di động đã cách mạng hóa cách chúng tôi giao tiếp"
+            },
+            {
+                "en": "We can stay in touch with family, friends and colleagues wherever we are",
+                "vi": "Chúng tôi có thể giữ liên lạc với gia đình, bạn bè và đồng nghiệp bất cứ chúng ta ở nơi đâu"
+            },
+            {
+                "en": "Users can send text messages, surf the Internet, take photos and listen to music",
+                "vi": "Người dùng có thể gửi tin nhắn văn bản, lướt Internet, chụp ảnh và nghe nhạc"
+            },
+            {
+                "en": "Mobiles have also become fashion accessories",
+                "vi": "Điện thoại di động cũng đã trở thành phụ kiện thời trang"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I120",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "NEGATIVES OF MOBILE PHONES",
+        "title_vi": "Những mặt tiêu cực của điện thoại di đông",
+        "points": [
+            {
+                "en": "Mobiles phones can be a problem in some public places",
+                "vi": "Điện thoại di động có thể là một vấn đề ở một số nơi công cộng"
+            },
+            {
+                "en": "Ringing phones cause disturbance in cinemas and school lessons",
+                "vi": "Việc rung chuông điện thoại gây rối loạn trong rạp chiếu phim và các bài học ở trường"
+            },
+            {
+                "en": "Some people are not aware that others can hear their conversations",
+                "vi": "Một số người không nhận thức được rằng người khác có thể nghe thấy cuộc trò chuyện của"
+            },
+            {
+                "en": "Mobile phones may also interfere with electronic equipment",
+                "vi": "Điện thoại di động cũng có thể can thiệp vào thiết bị điện tử"
+            },
+            {
+                "en": "Their waves could cause damage to our brains",
+                "vi": "Sóng của họ có thể gây ra thiệt hại cho bộ não của chúng ta"
+            },
+            {
+                "en": "Mobile phones can also be a dangerous distraction",
+                "vi": "Điện thoại di động cũng có thể là một sự phân tâm nguy hiểm"
+            },
+            {
+                "en": "Using a phone while driving reduces the driver’s concentration",
+                "vi": "Sử dụng điện thoại trong khi lái xe làm giảm sự tập của người lái xe"
+            },
+            {
+                "en": "Mobile phones are a popular target for thieves",
+                "vi": "Điện thoại di động là một mục tiêu phổ biến cho kẻ trộm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I121",
+        "category": "TELEVISION, INTERNET, PHONES",
+        "title_en": "OPINION ABOUT MOBILE PHONES",
+        "title_vi": "Quan điểm về điện thoại di động",
+        "points": [
+            {
+                "en": "The benefits of mobile phones outweigh the drawbacks",
+                "vi": "Lợi ích của điện thoại di động lớn hơn/vượt qua những hạn chế"
+            },
+            {
+                "en": "We need to use these phones with care",
+                "vi": "Chúng ta cần phải cẩn thận khi sử dụng các điện thoại này"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I122",
+        "category": "TOURISM",
+        "title_en": "POSITIVES OF TOURISM",
+        "title_vi": "Những mặt tích cực của du lịch",
+        "points": [
+            {
+                "en": "Tourism is a popular leisure activity",
+                "vi": "Du lịch là một hoạt động giải trí phổ biến"
+            },
+            {
+                "en": "People go on holiday to relax and have fun",
+                "vi": "Mọi người đi nghỉ để thư giãn và vui chơi"
+            },
+            {
+                "en": "Tourists can experience different cultures",
+                "vi": "Du khách có thể trải nghiệm những nền văn hoá khác nhau"
+            },
+            {
+                "en": "They can sunbathe on beaches or go sight-seeing",
+                "vi": "Họ có thể tắm nắng trên bãi biển hoặc đi tham quan"
+            },
+            {
+                "en": "Travelling abroad opens our minds",
+                "vi": "Du lịch nước ngoài mở rộng tầm nhìn của chúng ta"
+            },
+            {
+                "en": "We can learn to speak other languages",
+                "vi": "Chúng ta có thể học cách nói các ngôn ngữ khác"
+            },
+            {
+                "en": "The tourist trade is vital for some economies",
+                "vi": "Thương mại du lịch rất quan trọng đối với một số nền kinh tế"
+            },
+            {
+                "en": "",
+                "vi": "Nó tạo việc làm trong các dịch vụ như chỗ ở, vận chuyển và giải trí"
+            },
+            {
+                "en": "Some areas rely on tourism for their income",
+                "vi": "Một số khu vực dựa vào du lịch để kiếm thu nhập"
+            },
+            {
+                "en": "Tourists spend money",
+                "vi": "Khách du lịch chi tiền"
+            },
+            {
+                "en": "Tourism attracts investment from multi-national companies",
+                "vi": "Du lịch thu hút đầu tư từ các công ty đa quốc gia"
+            },
+            {
+                "en": "It helps to improve the standard of living",
+                "vi": "Nó giúp nâng cao mức sống"
+            },
+            {
+                "en": "Low-cost airlines are making it cheaper to travel abroad",
+                "vi": "Các hãng hàng không giá rẻ đang làm cho việc đi lại ở nước ngoài càng rẻ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I123",
+        "category": "TOURISM",
+        "title_en": "NEGATIVE EFFECTS OF TOURISM",
+        "title_vi": "Những tác động tiêu cực của du lịch",
+        "points": [
+            {
+                "en": "Tourism can have a negative effect on the natural environment",
+                "vi": "Du lịch có thể có tác động tiêu cực đến môi trường tự nhiên"
+            },
+            {
+                "en": "The building of facilities and infrastructure can destroy the habitat of wild animals",
+                "vi": "Việc xây dựng cơ sở vật chất và cơ sở hạ tầng có thể phá huỷ môi trường sống của động vật"
+            },
+            {
+                "en": "Beautiful beaches are spoilt by the building of hotels",
+                "vi": "Những bãi biển đẹp bị hư hỏng bởi việc xây dựng các khách sạn"
+            },
+            {
+                "en": "Tourism creates pollution and waste",
+                "vi": "Du lịch tạo ra ô nhiễm và lãng phí"
+            },
+            {
+                "en": "",
+                "vi": "Nó gây áp lực lên các nguồn lực địa phương"
+            },
+            {
+                "en": "Local traditional and cultures may be endangered",
+                "vi": "Các truyền thống và văn hoá địa phương có thể bị nguy hiểm"
+            },
+            {
+                "en": "A rise in the cost of living affects local people",
+                "vi": "Sự gia tăng chi phí sinh hoạt ảnh hưởng đến người dân địa phương"
+            },
+            {
+                "en": "The price of goods, services and housing may increase significantly",
+                "vi": "Giá hàng hóa, dịch vụ và nhà ở có thể tăng đáng kể"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I124",
+        "category": "TOURISM",
+        "title_en": "THE FUTURE OF TOURISM",
+        "title_vi": "Tương lai của du lịch",
+        "points": [
+            {
+                "en": "Government should introduce laws to protect natural environments and local cultures",
+                "vi": "Chính phủ nên đưa ra luật để bảo vệ môi trường tự nhiên và văn hóa địa phương"
+            },
+            {
+                "en": "Tourism should have a low impact on wildlife",
+                "vi": "Du lịch nên có tác động thấp đến động vật hoang dã"
+            },
+            {
+                "en": "Renewable resources like solar or water power should be used",
+                "vi": "Các nguồn tái tạo như năng lượng mặt trời hoặc điện nước nên được sử dụng"
+            },
+            {
+                "en": "Waste should be recycled",
+                "vi": "Chất thải nên được tái chế"
+            },
+            {
+                "en": "Local businesses such as farms should be supported",
+                "vi": "Các doanh nghiệp địa phương như nông trại cần được hỗ trợ"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I125",
+        "category": "TRADITIONAL VS MODERN",
+        "title_en": "LOSING TRADITIONAL SKILLS",
+        "title_vi": "Việc mất đi những kỹ năng truyền thống",
+        "points": [
+            {
+                "en": "Because of industrialization and global trade, many traditions have disappeared",
+                "vi": "Do công nghiệp hóa và thương mại toàn cầu, nhiều truyền thống đã biến mất"
+            },
+            {
+                "en": "Global advertising encourages everyone to buy the same products",
+                "vi": "Quảng cáo toàn cầu khuyến khích tất cả mọi người mua cùng một sản phẩm"
+            },
+            {
+                "en": "Most products are now made in factories",
+                "vi": "Hầu hết các sản phẩm hiện đang được sản xuất tại các nhà máy"
+            },
+            {
+                "en": "Machinery has replaced skilled human labour",
+                "vi": "Máy móc đã thay thế lao động con người có kỹ năng"
+            },
+            {
+                "en": "Factory work is boring and leaves people feeling unfulfilled",
+                "vi": "Công việc nhà máy là nhàm chán và khiến mọi người cảm thấy không được hoàn thành"
+            },
+            {
+                "en": "Goods are produced very quickly and in large numbers",
+                "vi": "Hàng hoá được sản xuất rất nhanh và với số lượng lớn"
+            },
+            {
+                "en": "Products are cheaper, which means that more people can buy them",
+                "vi": "Sản phẩm rẻ hơn, có nghĩa là nhiều người có thể mua chúng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I126",
+        "category": "TRADITIONAL VS MODERN",
+        "title_en": "EXAMPLES",
+        "title_vi": "",
+        "points": [
+            {
+                "en": "Clothes are mass produced in standard sizes",
+                "vi": ""
+            },
+            {
+                "en": "People wear similar clothes, rather than traditional costumes",
+                "vi": ""
+            },
+            {
+                "en": "",
+                "vi": ""
+            },
+            {
+                "en": "Historic buildings took skilled craftsmen years to build",
+                "vi": ""
+            },
+            {
+                "en": "Modern concrete, steel and glass buildings are built in only weeks or months",
+                "vi": ""
+            },
+            {
+                "en": "There are fewer people who can create hand-made goods",
+                "vi": ""
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I127",
+        "category": "TRADITIONAL VS MODERN",
+        "title_en": "TRADITIONAL CUSTOMS",
+        "title_vi": "Phong tục truyền thống",
+        "points": [
+            {
+                "en": "Traditional customs are still important during weddings and religious festivals",
+                "vi": "Phong tục truyền thống vẫn quan trọng trong các lễ cưới và các lễ hội tôn giáo"
+            },
+            {
+                "en": "People wear traditional costumers and eat special foods",
+                "vi": "Người ta thường mặc trang phục truyền thống và ăn các loại thực phẩm đặc biệt"
+            },
+            {
+                "en": "",
+                "vi": "Điều quan trọng là phải duy trì bản sắc văn hoá khác nhau"
+            },
+            {
+                "en": "We should celebrate festivals, teach traditional skills and protect historic places",
+                "vi": "Chúng ta nên ăn mừng lễ hội, dạy các kỹ năng truyền thống và bảo vệ các di tích lịch sử"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I128",
+        "category": "TRANSPORT",
+        "title_en": "TRAFFIC PROBLEMS",
+        "title_vi": "Các vấn đề về giao thông",
+        "points": [
+            {
+                "en": "Traffic congestion is caused by commuters travelling to work",
+                "vi": "Ùn tắc giao thông được gây ra bởi người đi lại làm việc"
+            },
+            {
+                "en": "Most people live in the suburbs outside city centre",
+                "vi": "Hầu hết mọi người sống ở ngoại ô bên ngoài trung tâm thành phố"
+            },
+            {
+                "en": "Commuters tend to travel at the same time of day",
+                "vi": "Người đi làm có xu hướng di chuyển vào cùng thời điểm trong ngày"
+            },
+            {
+                "en": "They tend to travel alone",
+                "vi": "Họ có xu hướng đi du lịch một mình"
+            },
+            {
+                "en": "Cars and road space are not used efficiently",
+                "vi": "Ô tô và không gian đường bộ không được sử dụng hiệu quả"
+            },
+            {
+                "en": "This causes traffic jams during the rush hour",
+                "vi": "Điều này gây ùn tắc giao thông trong giờ cao điểm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I129",
+        "category": "TRANSPORT",
+        "title_en": "TRAFFIC SOLUTIONS",
+        "title_vi": "Các giải pháp về giao thông",
+        "points": [
+            {
+                "en": "",
+                "vi": "Để giảm lưu lượng chúng ta nên thay đổi thói quen làm việc"
+            },
+            {
+                "en": "The internet can now be used to connect people",
+                "vi": ""
+            },
+            {
+                "en": "More people could work from home",
+                "vi": "Nhiều người có thể làm việc ở nhà"
+            },
+            {
+                "en": "Meetings can be held as video conferences",
+                "vi": "Các cuộc họp có thể được tổ chức dưới dạng hội thảo video"
+            },
+            {
+                "en": "Workers could be given flexible timetables",
+                "vi": "Công nhân có thể được cung cấp lịch trình linh hoạt"
+            },
+            {
+                "en": "Another solution would be to tax drivers",
+                "vi": "Một giải pháp khác sẽ là đánh thuế cho các tài xế"
+            },
+            {
+                "en": "Workers should share their cars and travel together",
+                "vi": "Người lao động nên chia sẻ xe của họ và đi du lịch cùng nhau"
+            },
+            {
+                "en": "",
+                "vi": "Ví dụ ở London, có một khoản phí tắc nghẽn"
+            },
+            {
+                "en": "This helps to raise money for better public transport",
+                "vi": "Điều này giúp kiếm tiền cho giao thông công cộng tốt hơn"
+            },
+            {
+                "en": "Public transport needs to be reliable and efficient",
+                "vi": "Giao thông công cộng cần phải được tin cậy và hiệu quả"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I130",
+        "category": "TRANSPORT",
+        "title_en": "POSITIVES OF PUBLIC TRANSPORT",
+        "title_vi": "Những mặt tích cực của giao thông công cộng",
+        "points": [
+            {
+                "en": "We need to reduce our dependence on cars",
+                "vi": "Chúng ta cần phải giảm sự lệ thuộc vào xe ô tô"
+            },
+            {
+                "en": "Parking a car can be extremely difficult in big cities",
+                "vi": "Việc đỗ xe hơi có thể vô cùng khó khăn ở các thành phố lớn"
+            },
+            {
+                "en": "Well-designed transport systems are comfortable and convenient",
+                "vi": "Các hệ thống giao thông được thiết kế đẹp và thoải mái"
+            },
+            {
+                "en": "Modern public transport can be fast and cheap",
+                "vi": "Phương tiện giao thông công cộng hiện đại có thể nhanh và rẻ"
+            },
+            {
+                "en": "Public transport can help to reduce pollution in cities",
+                "vi": "Giao thông công cộng có thể giúp làm giảm ô nhiễm ở các thành phố"
+            },
+            {
+                "en": "",
+                "vi": "Đầu tư vào xe buýt và tàu hỏa sẽ làm giảm tắc nghẽn giao thông"
+            },
+            {
+                "en": "Buses can be given special lands to avoid traffic",
+                "vi": ""
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I131",
+        "category": "TRANSPORT",
+        "title_en": "NEGATIVES OF PUBLIC TRANSPORT",
+        "title_vi": "Những mặt hạn chế của giao thông công cộng",
+        "points": [
+            {
+                "en": "Public transport if often slow and unreliable",
+                "vi": "Giao thông công cộng là thường chậm và không đáng tin cậy"
+            },
+            {
+                "en": "Metro systems and trains are often dirty and crowded",
+                "vi": "Hệ thống tàu điện ngầm và tàu hỏa thường bẩn và đông đúc"
+            },
+            {
+                "en": "People feel like “sardines in a can”",
+                "vi": "Mọi người cảm thấy như \"cá mòi trong một lon\""
+            },
+            {
+                "en": "Cars are much more comfortable",
+                "vi": "Ô tô thoải mái hơn nhiều"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I132",
+        "category": "TRANSPORT",
+        "title_en": "ROAD SAFETY",
+        "title_vi": "Sự an toàn đường đi",
+        "points": [
+            {
+                "en": "Driving while tired or drunk is extremely dangerous",
+                "vi": "Lái xe trong khi mệt mỏi hoặc say rượu là cực kỳ nguy hiểm"
+            },
+            {
+                "en": "Mobile phones can be a dangerous distraction for drivers",
+                "vi": "Điện thoại di động có thể là một sự phân tâm nguy hiểm cho những tài xế"
+            },
+            {
+                "en": "They draw the driver’s attention away from the road",
+                "vi": "Chúng thu hút sự chú ý của người lái xe băng ra khỏi đường"
+            },
+            {
+                "en": "The use of phones while driving has been banned in many countries",
+                "vi": "Việc sử dụng điện thoại trong khi lái xe đã bị cấm ở nhiều quốc gia"
+            },
+            {
+                "en": "Punishments are becoming stricter",
+                "vi": "Các hình phạt đang trở nên khắc nghiệt"
+            },
+            {
+                "en": "Television campaigns are used to remind people to drive safely",
+                "vi": "Các chiến dịch truyền hình được sử dụng để nhắc nhở mọi người lái xe một cách an toàn"
+            },
+            {
+                "en": "Speed cameras have become more common",
+                "vi": "Máy quay tốc độ đã trở nên phổ biến hơn"
+            },
+            {
+                "en": "Speed bumps are another form of traffic calming",
+                "vi": "Tốc độ bumps là một hình thức khác trong việc ổn định giao thông"
+            },
+            {
+                "en": "Many streets are designed with the aim of slowing traffic down",
+                "vi": "Nhiều đường phố được thiết kế với mục đích làm chậm lưu lượng giao thông."
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I133",
+        "category": "WATER",
+        "title_en": "IMPORTANCE OF CLEAN WATER",
+        "title_vi": "Tầm quan trọng của nước sạch",
+        "points": [
+            {
+                "en": "Water is as necessary natural resource",
+                "vi": "Nước là tài nguyên thiên nhiên cần thiết"
+            },
+            {
+                "en": "Humans need access to clean, safe drinking water in order to live",
+                "vi": "Con người cần được tiếp cận nước sạch và an toàn để sống"
+            },
+            {
+                "en": "Poor water quality is a major cause of disease and death in some countries",
+                "vi": "Chất lượng nước kém là nguyên nhân chính gây ra bệnh tật và tử vong ở một số nước"
+            },
+            {
+                "en": "Water usually needs to be treated before we can drink it",
+                "vi": "Nước thường cần phải được xử lý trước khi chúng ta có thể uống nó"
+            },
+            {
+                "en": "Developing countries often lack the means to treat and supply water to citizens",
+                "vi": "Các nước đang phát triển thường thiếu phương tiện để xử lý và cấp nước cho người dân"
+            },
+            {
+                "en": "Developed countries tend to have much better sanitation",
+                "vi": "Các nước phát triển có xu hướng có vệ sinh tốt hơn"
+            },
+            {
+                "en": "Citizens have access to clean tap water",
+                "vi": "Công dân có nước sạch"
+            },
+            {
+                "en": "Drinking water is not contaminated by sewage or waste water",
+                "vi": "Nước uống không bị ô nhiễm bởi nước thải hoặc nước thải"
+            },
+            {
+                "en": "The supply of clean water would improve public health in many developing countries",
+                "vi": "Việc cung cấp nước sạch sẽ cải thiện sức khoẻ cộng đồng ở nhiều nước đang phát triển"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I134",
+        "category": "WATER",
+        "title_en": "WATER SUPPLY",
+        "title_vi": "Nguồn cung cấp nước",
+        "points": [
+            {
+                "en": "Urban life would be impossible without water supply systems",
+                "vi": "Cuộc sống đô thị sẽ không thể nếu không có hệ thống cung cấp nước"
+            },
+            {
+                "en": "These systems are massive engineering projects",
+                "vi": "Những hệ thống này là những dự án kỹ thuật khổng lồ"
+            },
+            {
+                "en": "Many professionals are involved in their planning, construction and maintenance",
+                "vi": "Nhiều chuyên gia tham gia vào việc lập kế hoạch, xây dựng và bảo trì"
+            },
+            {
+                "en": "The supply and distribution of water are major concerns",
+                "vi": "Việc cung cấp và phân phối nước là mối quan tâm lớn"
+            },
+            {
+                "en": "Water is becoming scarce in some countries",
+                "vi": "Nước đang trở nên khan hiếm ở một số nước"
+            },
+            {
+                "en": "Areas that suffer droughts often need to import water",
+                "vi": "Những khu vực bị hạn hán thường cần phải nhập khẩu nước"
+            },
+            {
+                "en": "As populations grow, there is more pressure on water supplies",
+                "vi": "Khi dân số tăng lên, sẽ có nhiều áp lực đối với nguồn cung cấp nước"
+            },
+            {
+                "en": "This could lead to a water crisis",
+                "vi": "Điều này có thể dẫn đến một cuộc khủng hoảng nước"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I135",
+        "category": "WATER",
+        "title_en": "WATER AND POLITICS",
+        "title_vi": "Nước uống và chính trị",
+        "points": [
+            {
+                "en": "The supply of water is also an important political issue",
+                "vi": "Việc cung cấp nước cũng là một vấn đề chính trị quan trọng"
+            },
+            {
+                "en": "Huge amount of water are needed for agriculture and industry",
+                "vi": "Rất nhiều nước cần cho nông nghiệp và công nghiệp"
+            },
+            {
+                "en": "The irrigation of crops accounts for a large proportions of water use",
+                "vi": "Việc tưới tiêu cho cây trồng chiếm tỷ lệ lớn trong việc sử dụng nước"
+            },
+            {
+                "en": "A water crisis could lead to political conflicts or even wars",
+                "vi": "Một cuộc khủng hoảng nước có thể dẫn đến xung đột chính trị hoặc thậm chí chiến tranh"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I136",
+        "category": "WATER",
+        "title_en": "ARGUMENT: WATER SHOULD BE FREE",
+        "title_vi": "Những tranh cãi: Nước uống nên miễn phí",
+        "points": [
+            {
+                "en": "Some people believe that water should be free for everyone",
+                "vi": "Một số người tin rằng nước nên là miễn phí cho tất cả mọi người"
+            },
+            {
+                "en": "Governments should supply water to all homes at no cost",
+                "vi": "Chính phủ nên cung cấp nước cho tất cả các hộ dân miễn phí"
+            },
+            {
+                "en": "Private companies should not be allowed to profit from this natural resource",
+                "vi": "Các công ty tư nhân không nên được hưởng lợi từ tài nguyên thiên nhiên này"
+            },
+            {
+                "en": "Money from taxes can be used to pay for water supply systems",
+                "vi": "Tiền từ thuế có thể được sử dụng để trả cho các hệ thống cấp nước"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I137",
+        "category": "WATER",
+        "title_en": "ARGUMENT: WATER SHOULD NOT BE FREE",
+        "title_vi": "Những tranh cãi: nước uống không nên miễn phí",
+        "points": [
+            {
+                "en": "",
+                "vi": "Nếu nước là miễn phí, mọi người coi nó như là điều hiển nhiên"
+            },
+            {
+                "en": "They do not think about how much water they waste",
+                "vi": "Họ không nghĩ đến lượng nước họ thải ra"
+            },
+            {
+                "en": "They leave taps running while washing or brushing their teeth",
+                "vi": "Họ để lại vòi nước chảy trong khi rửa hoặc đánh răng"
+            },
+            {
+                "en": "",
+                "vi": "Nếu phải trả tiền nước, chúng ta sẽ sử dụng nó một cách có trách nhiệm hơn"
+            },
+            {
+                "en": "Water supply systems are extremely expensive",
+                "vi": "Hệ thống cấp nước cực kỳ đắt"
+            },
+            {
+                "en": "",
+                "vi": "Cần đầu tư để duy trì và cải tiến chúng"
+            },
+            {
+                "en": "Private companies may provide a better service than governments",
+                "vi": "Các công ty tư nhân có thể cung cấp một dịch vụ tốt hơn các chính phủ"
+            },
+            {
+                "en": "",
+                "vi": "Nếu họ cung cấp một dịch vụ hiệu quả, họ sẽ kiếm được nhiều tiền hơn"
+            },
+            {
+                "en": "They will repair leaks to avoid losing money",
+                "vi": "Họ sẽ sửa chữa rò rỉ để tránh mất tiền"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I138",
+        "category": "WATER",
+        "title_en": "BOTTLED WATER: OPINIONS",
+        "title_vi": "",
+        "points": [
+            {
+                "en": "Một số người mang chai nước bất cứ nơi nào họ đi",
+                "vi": ""
+            },
+            {
+                "en": "Ví dụ: họ mang chai nước để đi làm việc hoặc đến phòng tập thể dục",
+                "vi": ""
+            },
+            {
+                "en": "Họ tin rằng nước đóng chai lành mạnh hơn nước máy",
+                "vi": ""
+            },
+            {
+                "en": "Họ cũng cho rằng nó ngon hơn",
+                "vi": ""
+            },
+            {
+                "en": "Tuy nhiên, những người khác tin rằng chúng ta nên tiêu thụ ít nước đóng chai hơn",
+                "vi": ""
+            },
+            {
+                "en": "Chai nước nhựa thêm vào rác và các vấn đề chất thải",
+                "vi": ""
+            },
+            {
+                "en": "Các công ty không nên có khả năng thu được lợi nhuận từ nước",
+                "vi": ""
+            },
+            {
+                "en": "Thực sự vô đạo đức để kiếm tiền bằng cách bán nước đóng gói",
+                "vi": ""
+            },
+            {
+                "en": "Không có sự khác biệt về chất lượng giữa nước đóng chai và nước máy",
+                "vi": ""
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I139",
+        "category": "WORK",
+        "title_en": "THE BENEFITS OF STAYING IN THE SAME JOB FOR LIFE",
+        "title_vi": "Những lợi ích của làm cùng một công việc kiếm sống",
+        "points": [
+            {
+                "en": "Employees have a stable career with one employer",
+                "vi": "Người lao động có một sự nghiệp ổn định với một người sử dụng lao động"
+            },
+            {
+                "en": "They have a good pension and health insurance",
+                "vi": "Họ có bảo hiểm hưu trí và bảo hiểm sức khoẻ tốt"
+            },
+            {
+                "en": "Their salaries gradually increase",
+                "vi": "Lương của họ tăng dần"
+            },
+            {
+                "en": "They may be promoted within the organization",
+                "vi": "Họ có thể được thăng tiến trong tổ chức đó"
+            },
+            {
+                "en": "They demonstrate loyalty",
+                "vi": "Họ chứng tỏ lòng trung thành"
+            },
+            {
+                "en": "Experienced staff can be trusted with more responsibility",
+                "vi": "Đội ngũ nhân viên có kinh nghiệm có thể được tin tưởng với nhiều trách nhiệm hơn"
+            },
+            {
+                "en": "They become part of a team",
+                "vi": "Họ trở thành thành viên của nhóm"
+            },
+            {
+                "en": "There is a clearly defined path for development",
+                "vi": "Có một con đường rõ ràng để phát triển"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I140",
+        "category": "WORK",
+        "title_en": "THE BENEFITS OF NOT STAYING IN THE SAME JOB",
+        "title_vi": "Những lợi ích khi thay đổi nghề nghiệp",
+        "points": [
+            {
+                "en": "People often change jobs in order to further their career",
+                "vi": "Mọi người thường thay đổi công việc để tiếp tục sự nghiệp"
+            },
+            {
+                "en": "Another company may offer a promotion or a higher salary",
+                "vi": "Công ty khác có thể thăng chức hoặc có mức lương cao hơn"
+            },
+            {
+                "en": "People who change jobs can gain experience",
+                "vi": "Những người thay đổi công việc có thể có được kinh nghiệm"
+            },
+            {
+                "en": "They can learn different skills",
+                "vi": "Họ có thể học các kỹ năng khác nhau"
+            },
+            {
+                "en": "Changing jobs is interesting and challenging",
+                "vi": "Thay đổi công việc là thú vị và đầy thử thách"
+            },
+            {
+                "en": "People can retrain in a different occupation",
+                "vi": "Mọi người có thể đào tạo lại trong một nghề khác"
+            },
+            {
+                "en": "",
+                "vi": "Trong một công nhân thế giới thay đổi nhanh chóng cần phải linh hoạt"
+            },
+            {
+                "en": "People need to develop a range of experience and skills",
+                "vi": "Con người cần phải phát triển một loạt các kinh nghiệm và kỹ năng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I141",
+        "category": "WORK",
+        "title_en": "SELF-EMPLOYMENT",
+        "title_vi": "Tự chủ công việc",
+        "points": [
+            {
+                "en": "Nowadays, it is easy to set up a company",
+                "vi": "Ngày nay, rất dễ dàng để thiết lập một công ty"
+            },
+            {
+                "en": "The Internet provides a global marketplace",
+                "vi": ""
+            },
+            {
+                "en": "Self-employment offers greater freedom than working for a company",
+                "vi": "Tự làm chủ tạo ra sự tự do hơn là làm việc cho một công ty"
+            },
+            {
+                "en": "However, there are risks to starting a new business",
+                "vi": "Tuy nhiên, có những rủi ro để bắt đầu một doanh nghiệp mới"
+            },
+            {
+                "en": "Self-employed people may face financial difficulties",
+                "vi": "Những người tự làm chủ có thể phải đối mặt với những khó khăn về tài chính"
+            },
+            {
+                "en": "Many businesses fail to make a profit",
+                "vi": "Nhiều doanh nghiệp không kiếm được lợi nhuận"
+            },
+            {
+                "en": "There is less stability in self-employment",
+                "vi": "Có ít sự ổn định hơn trong việc tự làm chủ"
+            },
+            {
+                "en": "There are no benefits like pensions, sick pay and holiday pay",
+                "vi": "Không có trợ cấp như lương hưu, tiền lương ốm đau và tiền nghỉ lễ"
+            },
+            {
+                "en": "Self-employment involved hard work, long hours and total responsibility",
+                "vi": "Tự làm chủ liên quan đến công việc khó khăn, nhiều giờ và toàn bộ trách nhiệm"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I142",
+        "category": "WORK",
+        "title_en": "UNEMPLOYMENT",
+        "title_vi": "",
+        "points": [
+            {
+                "en": "Thất nghiệp là một vấn đề lớn đối với cá nhân, cộng đồng và xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Một số người không thể tìm được việc làm",
+                "vi": ""
+            },
+            {
+                "en": "Họ có thể không có trình độ học vấn hoặc bằng cấp đủ",
+                "vi": ""
+            },
+            {
+                "en": "Họ có thể thấy mình vô gia cư",
+                "vi": ""
+            },
+            {
+                "en": "Thất nghiệp gây ra sự thất vọng và căng thẳng",
+                "vi": ""
+            },
+            {
+                "en": "Những người thất nghiệp có thể tham gia vào tội phạm như là một phương tiện để kiếm tiền",
+                "vi": ""
+            },
+            {
+                "en": "Những lời khuyên nghề nghiệp cần thiết cho người thất nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Các chính phủ cần cung cấp các khóa học hướng nghiệp và đào tạo lại",
+                "vi": ""
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I143",
+        "category": "WORK",
+        "title_en": "UNEMPLOYMENT BENEFITS: POSITIVES",
+        "title_vi": "Những mặt tích cực: những lợi ích không có việc làm",
+        "points": [
+            {
+                "en": "Some governments pay unemployment benefits in order to help jobless people",
+                "vi": "Một số chính phủ trợ cấp trợ cấp thất nghiệp để giúp người thất nghiệp"
+            },
+            {
+                "en": "Unemployed people need financial support until they find a new job",
+                "vi": "Những người thất nghiệp cần hỗ trợ tài chính cho đến khi họ tìm được một công việc mới"
+            },
+            {
+                "en": "By claiming benefits they can continue to pay for their homes",
+                "vi": "Bằng cách đòi quyền lợi họ có thể tiếp tục trả tiền nhà"
+            },
+            {
+                "en": "The benefits system helps to reduce poverty, homelessness and crime",
+                "vi": "Hệ thống phúc lợi giúp giảm đói nghèo, vô gia cư và tội ác"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I144",
+        "category": "WORK",
+        "title_en": "UNEMPLOYMENT BENEFITS: NEGATIVES",
+        "title_vi": "Những mặt tiêu cực: những lợi ích không có việc làm",
+        "points": [
+            {
+                "en": "Some people claim benefits rather than working",
+                "vi": "Một số người đòi quyền lợi hơn là làm việc"
+            },
+            {
+                "en": "They become dependent on the government",
+                "vi": "Họ trở nên phụ thuộc vào chính phủ"
+            },
+            {
+                "en": "They are not motivated to find a job",
+                "vi": "Họ không có động lực để tìm một công việc"
+            },
+            {
+                "en": "The benefits system is a burden on taxpayers",
+                "vi": "Hệ thống phúc lợi là một gánh nặng cho người nộp thuế"
+            },
+            {
+                "en": "All citizens should work to earn a living and support themselves",
+                "vi": "Tất cả mọi công dân nên làm việc để kiếm sống và hỗ trợ bản thân"
+            },
+            {
+                "en": "Receiving benefits affects people’s self esteem",
+                "vi": "Nhận trợ cấp ảnh hưởng đến lòng tự trọng của người dân"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I145",
+        "category": "WORK",
+        "title_en": "TECHNOLOGY AND WORK",
+        "title_vi": "Cân bằng công việc và cuộc sống",
+        "points": [
+            {
+                "en": "",
+                "vi": "Điều quan trọng là đạt được sự cân bằng giữa thời gian làm việc và thời gian giải trí hoặc gia"
+            },
+            {
+                "en": "Too much work can result in stress and poor health",
+                "vi": "Quá nhiều công việc có thể dẫn đến căng thẳng và sức khoẻ kém"
+            },
+            {
+                "en": "",
+                "vi": ""
+            },
+            {
+                "en": "People need to take regular holidays",
+                "vi": "Mọi người cần nghỉ thường xuyên"
+            },
+            {
+                "en": "Companies should be expect employees to work overtime",
+                "vi": "Các công ty nên mong đợi nhân viên làm thêm giờ"
+            },
+            {
+                "en": "Nowadays, many people work part-time or have flexible working hours",
+                "vi": "Ngày nay, nhiều người làm việc bán thời gian hoặc có giờ làm việc linh hoạt"
+            },
+            {
+                "en": "Technology allow people to work from home",
+                "vi": "Công nghệ cho phép mọi người làm việc ở nhà"
+            },
+            {
+                "en": "Many companies provide childcare facilities",
+                "vi": "Nhiều công ty cung cấp các cơ sở chăm sóc trẻ em"
+            },
+            {
+                "en": "A good work/ life balance can raise job satisfaction",
+                "vi": "Một sự cân bằng công việc / cuộc sống tốt có thể làm tăng sự hài lòng công việc"
+            },
+            {
+                "en": "Happy, healthy workers are more productive",
+                "vi": "Những người lao động hạnh phúc, khỏe mạnh làm việc hiệu quả hơn"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I146",
+        "category": "WORK",
+        "title_en": "CHILD LABOUR",
+        "title_vi": "Công nghệ và việc làm",
+        "points": [
+            {
+                "en": "",
+                "vi": ""
+            },
+            {
+                "en": "Workers can communicate via email, online networks and video conferencing",
+                "vi": "Người lao động có thể giao tiếp qua email, mạng lưới trực tuyến và hội nghị truyền hình"
+            },
+            {
+                "en": "Technology can connect workers in different countries",
+                "vi": "Công nghệ có thể kết nối công nhân ở các quốc gia khác nhau"
+            },
+            {
+                "en": "",
+                "vi": "Nó cho phép mọi người tự do hơn"
+            },
+            {
+                "en": "",
+                "vi": "Nó cũng có thể tiết kiệm thời gian và tiền bạc"
+            },
+            {
+                "en": "Some people believe that offices could disappear in the future",
+                "vi": "Một số người tin rằng văn phòng có thể biến mất trong tương lai"
+            },
+            {
+                "en": "Virtual online offices may replace them",
+                "vi": "Văn phòng trực tuyến ảo có thể thay thế chúng"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "A85",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "Nuclear weapons",
+        "title_vi": "",
+        "points": [
+            {
+                "en": "Nuclear weapons are capable of destroying whole cities",
+                "vi": ""
+            },
+            {
+                "en": "A nuclear war between two countries would destroy both countries",
+                "vi": ""
+            },
+            {
+                "en": "Nuclear weapons are used as a deterrent",
+                "vi": ""
+            },
+            {
+                "en": "They prevent wars from starting",
+                "vi": ""
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I85",
+        "category": "GUNS AND WEAPONS",
+        "title_en": "",
+        "title_vi": "Vũ khí hạt nhân",
+        "points": [
+            {
+                "en": "",
+                "vi": "Vũ khí hạt nhân có khả năng huỷ hoại toàn bộ các thành phố"
+            },
+            {
+                "en": "",
+                "vi": "Một cuộc chiến tranh hạt nhân giữa hai nước sẽ tiêu diệt cả hai nước"
+            },
+            {
+                "en": "",
+                "vi": "Vũ khí hạt nhân được sử dụng như một lực cản/sự cản trở"
+            },
+            {
+                "en": "",
+                "vi": "Họ ngăn chặn cuộc chiến bắt đầu/sự bắt đầu của một cuộc chiến"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "A126",
+        "category": "TRADITIONAL VS MODERN",
+        "title_en": "",
+        "title_vi": "Những ví dụ",
+        "points": [
+            {
+                "en": "",
+                "vi": "Quần áo được sản xuất hàng loạt theo kích cỡ tiêu chuẩn"
+            },
+            {
+                "en": "",
+                "vi": "Mọi người mặc trang phục tương tự, chứ không phải trang phục truyền thống"
+            },
+            {
+                "en": "",
+                "vi": ""
+            },
+            {
+                "en": "",
+                "vi": "Các tòa nhà lịch sử đã làm thợ thủ công lành nghề mất nhiều năm để xây dựng"
+            },
+            {
+                "en": "",
+                "vi": "Các tòa nhà bê tông, thép và thủy tinh hiện đại được xây dựng chỉ trong vài tuần hoặc vài"
+            },
+            {
+                "en": "",
+                "vi": "Có rất ít người hơn có thể tạo ra hàng hoá làm bằng tay"
+            }
+        ],
+        "phrases": []
+    },
+    {
+        "id": "I147",
+        "category": "WORK",
+        "title_en": "Child labour",
+        "title_vi": "Lao động trẻ em",
+        "points": [
+            {
+                "en": "",
+                "vi": "Ở một số quốc gia, trẻ em bị khai thác"
+            },
+            {
+                "en": "They do repetitive jobs for very low pay",
+                "vi": "Họ làm công việc lặp đi lặp lại với mức lương rất thấp"
+            },
+            {
+                "en": "Children are often used in agriculture and factory work",
+                "vi": "Trẻ em thường được sử dụng trong nông nghiệp và làm việc nhà máy"
+            },
+            {
+                "en": "The employment of children is prohibited in other countries",
+                "vi": "Việc sử dụng/thuê trẻ em bị cấm ở các nước khác"
+            },
+            {
+                "en": "Many people think that children should be free to enjoy their childhood",
+                "vi": "Nhiều người nghĩ rằng trẻ em nên được tự do để tận hưởng thời thơ ấu"
+            },
+            {
+                "en": "Governments should make education a priority",
+                "vi": "Các chính phủ nên ưu tiên giáo dục"
+            },
+            {
+                "en": "They should build new schools",
+                "vi": "Họ nên xây dựng trường mới"
+            },
+            {
+                "en": "They should supply the resources to educate children",
+                "vi": "Họ nên cung cấp các nguồn lực để giáo dục trẻ em"
+            },
+            {
+                "en": "Children need to be given the knowledge and skills for adult life",
+                "vi": "Trẻ em cần được cung cấp kiến thức và kỹ năng cho cuộc sống người trưởng thành"
+            }
+        ],
+        "phrases": [
+            {
+                "en": "1",
+                "vi": ""
+            },
+            {
+                "en": "2",
+                "vi": ""
+            },
+            {
+                "en": "3",
+                "vi": ""
+            },
+            {
+                "en": "4",
+                "vi": ""
+            },
+            {
+                "en": "5",
+                "vi": ""
+            },
+            {
+                "en": "6",
+                "vi": ""
+            },
+            {
+                "en": "7",
+                "vi": ""
+            },
+            {
+                "en": "8",
+                "vi": ""
+            },
+            {
+                "en": "9",
+                "vi": ""
+            },
+            {
+                "en": "10",
+                "vi": ""
+            },
+            {
+                "en": "11",
+                "vi": ""
+            },
+            {
+                "en": "12",
+                "vi": ""
+            },
+            {
+                "en": "13",
+                "vi": ""
+            },
+            {
+                "en": "14",
+                "vi": ""
+            },
+            {
+                "en": "15",
+                "vi": ""
+            },
+            {
+                "en": "16",
+                "vi": ""
+            },
+            {
+                "en": "17",
+                "vi": ""
+            },
+            {
+                "en": "18",
+                "vi": ""
+            },
+            {
+                "en": "82",
+                "vi": ""
+            },
+            {
+                "en": "INTERNET",
+                "vi": ""
+            },
+            {
+                "en": "19",
+                "vi": ""
+            },
+            {
+                "en": "20",
+                "vi": ""
+            },
+            {
+                "en": "21",
+                "vi": ""
+            },
+            {
+                "en": "22",
+                "vi": ""
+            },
+            {
+                "en": "23",
+                "vi": ""
+            },
+            {
+                "en": "24",
+                "vi": ""
+            },
+            {
+                "en": "25",
+                "vi": ""
+            },
+            {
+                "en": "26",
+                "vi": ""
+            },
+            {
+                "en": "27",
+                "vi": ""
+            },
+            {
+                "en": "28",
+                "vi": ""
+            },
+            {
+                "en": "29",
+                "vi": ""
+            },
+            {
+                "en": "30",
+                "vi": ""
+            },
+            {
+                "en": "31",
+                "vi": ""
+            },
+            {
+                "en": "32",
+                "vi": ""
+            },
+            {
+                "en": "33",
+                "vi": ""
+            },
+            {
+                "en": "34",
+                "vi": ""
+            },
+            {
+                "en": "35",
+                "vi": ""
+            },
+            {
+                "en": "36",
+                "vi": ""
+            },
+            {
+                "en": "37",
+                "vi": ""
+            },
+            {
+                "en": "38",
+                "vi": ""
+            },
+            {
+                "en": "39",
+                "vi": ""
+            },
+            {
+                "en": "40",
+                "vi": ""
+            },
+            {
+                "en": "41",
+                "vi": ""
+            },
+            {
+                "en": "42",
+                "vi": ""
+            },
+            {
+                "en": "43",
+                "vi": ""
+            },
+            {
+                "en": "44",
+                "vi": ""
+            },
+            {
+                "en": "45",
+                "vi": ""
+            },
+            {
+                "en": "46",
+                "vi": ""
+            },
+            {
+                "en": "47",
+                "vi": ""
+            },
+            {
+                "en": "48",
+                "vi": ""
+            },
+            {
+                "en": "49",
+                "vi": ""
+            },
+            {
+                "en": "50",
+                "vi": ""
+            },
+            {
+                "en": "51",
+                "vi": ""
+            },
+            {
+                "en": "52",
+                "vi": ""
+            },
+            {
+                "en": "53",
+                "vi": ""
+            },
+            {
+                "en": "54",
+                "vi": ""
+            },
+            {
+                "en": "83",
+                "vi": ""
+            },
+            {
+                "en": "ECONOMY vs ENVIRONMENT",
+                "vi": ""
+            },
+            {
+                "en": "CARS vs COMPUTER",
+                "vi": ""
+            },
+            {
+                "en": "INVENTIONS",
+                "vi": ""
+            },
+            {
+                "en": "PHYSICAL EXERCISE",
+                "vi": ""
+            },
+            {
+                "en": "55",
+                "vi": ""
+            },
+            {
+                "en": "56",
+                "vi": ""
+            },
+            {
+                "en": "57",
+                "vi": ""
+            },
+            {
+                "en": "58",
+                "vi": ""
+            },
+            {
+                "en": "59",
+                "vi": ""
+            },
+            {
+                "en": "60",
+                "vi": ""
+            },
+            {
+                "en": "61",
+                "vi": ""
+            },
+            {
+                "en": "62",
+                "vi": ""
+            },
+            {
+                "en": "63",
+                "vi": ""
+            },
+            {
+                "en": "64",
+                "vi": ""
+            },
+            {
+                "en": "65",
+                "vi": ""
+            },
+            {
+                "en": "66",
+                "vi": ""
+            },
+            {
+                "en": "67",
+                "vi": ""
+            },
+            {
+                "en": "68",
+                "vi": ""
+            },
+            {
+                "en": "69",
+                "vi": ""
+            },
+            {
+                "en": "70",
+                "vi": ""
+            },
+            {
+                "en": "71",
+                "vi": ""
+            },
+            {
+                "en": "72",
+                "vi": ""
+            },
+            {
+                "en": "73",
+                "vi": ""
+            },
+            {
+                "en": "74",
+                "vi": ""
+            },
+            {
+                "en": "75",
+                "vi": ""
+            },
+            {
+                "en": "76",
+                "vi": ""
+            },
+            {
+                "en": "77",
+                "vi": ""
+            },
+            {
+                "en": "78",
+                "vi": ""
+            },
+            {
+                "en": "79",
+                "vi": ""
+            },
+            {
+                "en": "80",
+                "vi": ""
+            },
+            {
+                "en": "81",
+                "vi": ""
+            },
+            {
+                "en": "82",
+                "vi": ""
+            },
+            {
+                "en": "83",
+                "vi": ""
+            },
+            {
+                "en": "84",
+                "vi": ""
+            },
+            {
+                "en": "85",
+                "vi": ""
+            },
+            {
+                "en": "86",
+                "vi": ""
+            },
+            {
+                "en": "87",
+                "vi": ""
+            },
+            {
+                "en": "88",
+                "vi": ""
+            },
+            {
+                "en": "89",
+                "vi": ""
+            },
+            {
+                "en": "90",
+                "vi": ""
+            },
+            {
+                "en": "84",
+                "vi": ""
+            },
+            {
+                "en": "INTERNET",
+                "vi": ""
+            },
+            {
+                "en": "91",
+                "vi": ""
+            },
+            {
+                "en": "92",
+                "vi": ""
+            },
+            {
+                "en": "93",
+                "vi": ""
+            },
+            {
+                "en": "94",
+                "vi": ""
+            },
+            {
+                "en": "95",
+                "vi": ""
+            },
+            {
+                "en": "96",
+                "vi": ""
+            },
+            {
+                "en": "97",
+                "vi": ""
+            },
+            {
+                "en": "98",
+                "vi": ""
+            },
+            {
+                "en": "99",
+                "vi": ""
+            },
+            {
+                "en": "100",
+                "vi": ""
+            },
+            {
+                "en": "101",
+                "vi": ""
+            },
+            {
+                "en": "102",
+                "vi": ""
+            },
+            {
+                "en": "103",
+                "vi": ""
+            },
+            {
+                "en": "104",
+                "vi": ""
+            },
+            {
+                "en": "105",
+                "vi": ""
+            },
+            {
+                "en": "106",
+                "vi": ""
+            },
+            {
+                "en": "107",
+                "vi": ""
+            },
+            {
+                "en": "108",
+                "vi": ""
+            },
+            {
+                "en": "109",
+                "vi": ""
+            },
+            {
+                "en": "110",
+                "vi": ""
+            },
+            {
+                "en": "111",
+                "vi": ""
+            },
+            {
+                "en": "112",
+                "vi": ""
+            },
+            {
+                "en": "113",
+                "vi": ""
+            },
+            {
+                "en": "114",
+                "vi": ""
+            },
+            {
+                "en": "115",
+                "vi": ""
+            },
+            {
+                "en": "116",
+                "vi": ""
+            },
+            {
+                "en": "117",
+                "vi": ""
+            },
+            {
+                "en": "118",
+                "vi": ""
+            },
+            {
+                "en": "119",
+                "vi": ""
+            },
+            {
+                "en": "120",
+                "vi": ""
+            },
+            {
+                "en": "121",
+                "vi": ""
+            },
+            {
+                "en": "122",
+                "vi": ""
+            },
+            {
+                "en": "123",
+                "vi": ""
+            },
+            {
+                "en": "124",
+                "vi": ""
+            },
+            {
+                "en": "125",
+                "vi": ""
+            },
+            {
+                "en": "85",
+                "vi": ""
+            },
+            {
+                "en": "CARS vs COMPUTER",
+                "vi": ""
+            },
+            {
+                "en": "ECONOMY vs ENVIRONMENT",
+                "vi": ""
+            },
+            {
+                "en": "59",
+                "vi": ""
+            },
+            {
+                "en": "118",
+                "vi": ""
+            },
+            {
+                "en": "123",
+                "vi": ""
+            },
+            {
+                "en": "58",
+                "vi": ""
+            },
+            {
+                "en": "87",
+                "vi": ""
+            },
+            {
+                "en": "54",
+                "vi": ""
+            },
+            {
+                "en": "28",
+                "vi": ""
+            },
+            {
+                "en": "72",
+                "vi": ""
+            },
+            {
+                "en": "12",
+                "vi": ""
+            },
+            {
+                "en": "50",
+                "vi": ""
+            },
+            {
+                "en": "9",
+                "vi": ""
+            },
+            {
+                "en": "4",
+                "vi": ""
+            },
+            {
+                "en": "85",
+                "vi": ""
+            },
+            {
+                "en": "70",
+                "vi": ""
+            },
+            {
+                "en": "83",
+                "vi": ""
+            },
+            {
+                "en": "2",
+                "vi": ""
+            },
+            {
+                "en": "34",
+                "vi": ""
+            },
+            {
+                "en": "98",
+                "vi": ""
+            },
+            {
+                "en": "82",
+                "vi": ""
+            },
+            {
+                "en": "56",
+                "vi": ""
+            },
+            {
+                "en": "26",
+                "vi": ""
+            },
+            {
+                "en": "104",
+                "vi": ""
+            },
+            {
+                "en": "110",
+                "vi": ""
+            },
+            {
+                "en": "68",
+                "vi": ""
+            },
+            {
+                "en": "108",
+                "vi": ""
+            },
+            {
+                "en": "121",
+                "vi": ""
+            },
+            {
+                "en": "10",
+                "vi": ""
+            },
+            {
+                "en": "23",
+                "vi": ""
+            },
+            {
+                "en": "24",
+                "vi": ""
+            },
+            {
+                "en": "30",
+                "vi": ""
+            },
+            {
+                "en": "31",
+                "vi": ""
+            },
+            {
+                "en": "35",
+                "vi": ""
+            },
+            {
+                "en": "71",
+                "vi": ""
+            },
+            {
+                "en": "86",
+                "vi": ""
+            },
+            {
+                "en": "103",
+                "vi": ""
+            },
+            {
+                "en": "125",
+                "vi": ""
+            },
+            {
+                "en": "111",
+                "vi": ""
+            },
+            {
+                "en": "119",
+                "vi": ""
+            },
+            {
+                "en": "36",
+                "vi": ""
+            },
+            {
+                "en": "76",
+                "vi": ""
+            },
+            {
+                "en": "57",
+                "vi": ""
+            },
+            {
+                "en": "66",
+                "vi": ""
+            },
+            {
+                "en": "102",
+                "vi": ""
+            },
+            {
+                "en": "7",
+                "vi": ""
+            },
+            {
+                "en": "21",
+                "vi": ""
+            },
+            {
+                "en": "38",
+                "vi": ""
+            },
+            {
+                "en": "89",
+                "vi": ""
+            },
+            {
+                "en": "55",
+                "vi": ""
+            },
+            {
+                "en": "16",
+                "vi": ""
+            },
+            {
+                "en": "100",
+                "vi": ""
+            },
+            {
+                "en": "105",
+                "vi": ""
+            },
+            {
+                "en": "112",
+                "vi": ""
+            },
+            {
+                "en": "114",
+                "vi": ""
+            },
+            {
+                "en": "15",
+                "vi": ""
+            },
+            {
+                "en": "20",
+                "vi": ""
+            },
+            {
+                "en": "78",
+                "vi": ""
+            },
+            {
+                "en": "14",
+                "vi": ""
+            },
+            {
+                "en": "64",
+                "vi": ""
+            },
+            {
+                "en": "95",
+                "vi": ""
+            },
+            {
+                "en": "117",
+                "vi": ""
+            },
+            {
+                "en": "11",
+                "vi": ""
+            },
+            {
+                "en": "74",
+                "vi": ""
+            },
+            {
+                "en": "97",
+                "vi": ""
+            },
+            {
+                "en": "29",
+                "vi": ""
+            },
+            {
+                "en": "84",
+                "vi": ""
+            },
+            {
+                "en": "INTERNET",
+                "vi": ""
+            },
+            {
+                "en": "INTERNET",
+                "vi": ""
+            },
+            {
+                "en": "INVENTIONS",
+                "vi": ""
+            },
+            {
+                "en": "120",
+                "vi": ""
+            },
+            {
+                "en": "65",
+                "vi": ""
+            },
+            {
+                "en": "61",
+                "vi": ""
+            },
+            {
+                "en": "60",
+                "vi": ""
+            },
+            {
+                "en": "73",
+                "vi": ""
+            },
+            {
+                "en": "87",
+                "vi": ""
+            },
+            {
+                "en": "3",
+                "vi": ""
+            },
+            {
+                "en": "81",
+                "vi": ""
+            },
+            {
+                "en": "27",
+                "vi": ""
+            },
+            {
+                "en": "22",
+                "vi": ""
+            },
+            {
+                "en": "25",
+                "vi": ""
+            },
+            {
+                "en": "52",
+                "vi": ""
+            },
+            {
+                "en": "18",
+                "vi": ""
+            },
+            {
+                "en": "43",
+                "vi": ""
+            },
+            {
+                "en": "90",
+                "vi": ""
+            },
+            {
+                "en": "63",
+                "vi": ""
+            },
+            {
+                "en": "79",
+                "vi": ""
+            },
+            {
+                "en": "80",
+                "vi": ""
+            },
+            {
+                "en": "51",
+                "vi": ""
+            },
+            {
+                "en": "37",
+                "vi": ""
+            },
+            {
+                "en": "33",
+                "vi": ""
+            },
+            {
+                "en": "88",
+                "vi": ""
+            },
+            {
+                "en": "32",
+                "vi": ""
+            },
+            {
+                "en": "PHYSICAL EXERCISE",
+                "vi": ""
+            },
+            {
+                "en": "106",
+                "vi": ""
+            },
+            {
+                "en": "53",
+                "vi": ""
+            },
+            {
+                "en": "5",
+                "vi": ""
+            },
+            {
+                "en": "101",
+                "vi": ""
+            },
+            {
+                "en": "107",
+                "vi": ""
+            },
+            {
+                "en": "109",
+                "vi": ""
+            },
+            {
+                "en": "113",
+                "vi": ""
+            },
+            {
+                "en": "115",
+                "vi": ""
+            },
+            {
+                "en": "122",
+                "vi": ""
+            },
+            {
+                "en": "94",
+                "vi": ""
+            },
+            {
+                "en": "1",
+                "vi": ""
+            },
+            {
+                "en": "39",
+                "vi": ""
+            },
+            {
+                "en": "46",
+                "vi": ""
+            },
+            {
+                "en": "77",
+                "vi": ""
+            },
+            {
+                "en": "86",
+                "vi": ""
+            },
+            {
+                "en": "44",
+                "vi": ""
+            },
+            {
+                "en": "48",
+                "vi": ""
+            },
+            {
+                "en": "49",
+                "vi": ""
+            },
+            {
+                "en": "93",
+                "vi": ""
+            },
+            {
+                "en": "88",
+                "vi": ""
+            },
+            {
+                "en": "47",
+                "vi": ""
+            },
+            {
+                "en": "91",
+                "vi": ""
+            },
+            {
+                "en": "92",
+                "vi": ""
+            },
+            {
+                "en": "99",
+                "vi": ""
+            },
+            {
+                "en": "116",
+                "vi": ""
+            },
+            {
+                "en": "17",
+                "vi": ""
+            },
+            {
+                "en": "41",
+                "vi": ""
+            },
+            {
+                "en": "62",
+                "vi": ""
+            },
+            {
+                "en": "96",
+                "vi": ""
+            },
+            {
+                "en": "13",
+                "vi": ""
+            },
+            {
+                "en": "19",
+                "vi": ""
+            },
+            {
+                "en": "69",
+                "vi": ""
+            },
+            {
+                "en": "6",
+                "vi": ""
+            },
+            {
+                "en": "67",
+                "vi": ""
+            },
+            {
+                "en": "40",
+                "vi": ""
+            },
+            {
+                "en": "42",
+                "vi": ""
+            },
+            {
+                "en": "75",
+                "vi": ""
+            },
+            {
+                "en": "124",
+                "vi": ""
+            },
+            {
+                "en": "8",
+                "vi": ""
+            },
+            {
+                "en": "45",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P1",
+        "category": "WORK – LIFE",
+        "title_en": "SPORTS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Phát triển kĩ năng giao tiếp và làm việc với người khác",
+                "vi": ""
+            },
+            {
+                "en": "Kĩ năng làm việc nhóm và giao tiếp",
+                "vi": ""
+            },
+            {
+                "en": "Tương tác xã hội hàng ngày",
+                "vi": ""
+            },
+            {
+                "en": "Có lợi cho công việc",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển tinh thần đoàn kết, bạn bè và thể thao giữa những người chơi",
+                "vi": ""
+            },
+            {
+                "en": "Thêm giá trị vào cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "Cảm thấy như một phần của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển kĩ năng cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Quản lý cảm xúc, giải toả căng thẳng",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao sự tự tin và lòng tự trọng",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển tư duy tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Vượt qua bất cứ trở ngại nào gặp phải",
+                "vi": ""
+            },
+            {
+                "en": "Thử thách bản thân bằng việc đặt ra mục tiêu và đạt được những gì tốt nhất",
+                "vi": ""
+            },
+            {
+                "en": "89",
+                "vi": ""
+            },
+            {
+                "en": "Sức khoẻ thể chất và tinh thần",
+                "vi": ""
+            },
+            {
+                "en": "Develop interpersonal skills",
+                "vi": ""
+            },
+            {
+                "en": "Team work and communication skills",
+                "vi": ""
+            },
+            {
+                "en": "Day-to-day social interactions",
+                "vi": ""
+            },
+            {
+                "en": "Benefit people in their workplace",
+                "vi": ""
+            },
+            {
+                "en": "Develop a sense of unity, friendship, and sportsmanship between teammates",
+                "vi": ""
+            },
+            {
+                "en": "Add value to people’s lives",
+                "vi": ""
+            },
+            {
+                "en": "Feel a part of something",
+                "vi": ""
+            },
+            {
+                "en": "Enhance their personal skills",
+                "vi": ""
+            },
+            {
+                "en": "Manage emotions, cope with stress",
+                "vi": ""
+            },
+            {
+                "en": "Build confidence and self-esteem",
+                "vi": ""
+            },
+            {
+                "en": "Develop a strong mindset",
+                "vi": ""
+            },
+            {
+                "en": "Overcome any setbacks they may face",
+                "vi": ""
+            },
+            {
+                "en": "To challenge themselves by setting goals and achieving personal bests",
+                "vi": ""
+            },
+            {
+                "en": "Mental and physical health",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P2",
+        "category": "WORK – LIFE",
+        "title_en": "CITY LIFE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Khuyến khích ai đó làm gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Mật độ phương tiện lớn",
+                "vi": ""
+            },
+            {
+                "en": "Giảm chất lượng không khí",
+                "vi": ""
+            },
+            {
+                "en": "Là nguyên nhân chính cho việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bệnh liên quan đến hô hấp",
+                "vi": ""
+            },
+            {
+                "en": "Bị tiếp xúc quá nhiều với cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Tình trạng hỗn loạn xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Có ảnh hưởng trực tiếp tới cái gì",
+                "vi": ""
+            },
+            {
+                "en": "To encourage somebody to do something",
+                "vi": ""
+            },
+            {
+                "en": "High volumes of traffic",
+                "vi": ""
+            },
+            {
+                "en": "The degradation of air quality",
+                "vi": ""
+            },
+            {
+                "en": "Be a significant contributor to something",
+                "vi": ""
+            },
+            {
+                "en": "Respiratory disease",
+                "vi": ""
+            },
+            {
+                "en": "Be bombarded with something",
+                "vi": ""
+            },
+            {
+                "en": "Social anarchy",
+                "vi": ""
+            },
+            {
+                "en": "90",
+                "vi": ""
+            },
+            {
+                "en": "To have a direct impact on something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P3",
+        "category": "WORK – LIFE",
+        "title_en": "LIBRARY AND COMPUTER TECHNOLOGY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Chưa một lượng thông tin lớn",
+                "vi": ""
+            },
+            {
+                "en": "Lịch bận rộn",
+                "vi": ""
+            },
+            {
+                "en": "Phương pháp tiếp cận thông tin",
+                "vi": ""
+            },
+            {
+                "en": "Người lớn tuổi",
+                "vi": ""
+            },
+            {
+                "en": "Sự có sẵn của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Người không giỏi về công nghệ",
+                "vi": ""
+            },
+            {
+                "en": "Nguồn thông tin đáng tin cậy",
+                "vi": ""
+            },
+            {
+                "en": "Lượng lớn thông tin không chính xác và không đáng tin trên mạng Internet",
+                "vi": ""
+            },
+            {
+                "en": "To store a huge amount of information",
+                "vi": ""
+            },
+            {
+                "en": "A hectic schedule",
+                "vi": ""
+            },
+            {
+                "en": "Means of accessing information",
+                "vi": ""
+            },
+            {
+                "en": "Senior citizens",
+                "vi": ""
+            },
+            {
+                "en": "The availability of something",
+                "vi": ""
+            },
+            {
+                "en": "Technophobes",
+                "vi": ""
+            },
+            {
+                "en": "Reliable source of information",
+                "vi": ""
+            },
+            {
+                "en": "An abundance of inaccurate and unreliable information on the Internet",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P4",
+        "category": "WORK – LIFE",
+        "title_en": "BUSINESS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đạt được sự yêu thích",
+                "vi": ""
+            },
+            {
+                "en": "Sự hạn chế về mặt kĩ thuật",
+                "vi": ""
+            },
+            {
+                "en": "Sử dụng cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Đường truyền Internet chậm và trục trặc mạng",
+                "vi": ""
+            },
+            {
+                "en": "Sự thiếu tương tác thực tế",
+                "vi": ""
+            },
+            {
+                "en": "Là chìa khoá cho cái gì",
+                "vi": ""
+            },
+            {
+                "en": "Bị sao nhãng bởi cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Làm cho cái gì đó khả thi hơn, dễ dàng hơn",
+                "vi": ""
+            },
+            {
+                "en": "To gain enormous popularity in",
+                "vi": ""
+            },
+            {
+                "en": "The technical limitations",
+                "vi": ""
+            },
+            {
+                "en": "To make use of something",
+                "vi": ""
+            },
+            {
+                "en": "Slow internet connection and platform malfunction",
+                "vi": ""
+            },
+            {
+                "en": "91",
+                "vi": ""
+            },
+            {
+                "en": "The lack of face-to-face interaction",
+                "vi": ""
+            },
+            {
+                "en": "To be the key to something",
+                "vi": ""
+            },
+            {
+                "en": "To be distracted by something",
+                "vi": ""
+            },
+            {
+                "en": "To facilitate something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P5",
+        "category": "WORK – LIFE",
+        "title_en": "SCIENTIFIC RESEARCH",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đóng một vai trò dẫn đầu trong việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Là nguyên nhân chính cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển vác xin cho các bệnh dịch",
+                "vi": ""
+            },
+            {
+                "en": "Giải quyết vấn đề gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Giảm thiểu rủi ro cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bắt đầu kỉ nguyên của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Làm phát triển những loại hình tương tác hiện đại",
+                "vi": ""
+            },
+            {
+                "en": "Tiến hành sự điều tra về khoa học",
+                "vi": ""
+            },
+            {
+                "en": "Play the leading role in something (phr)",
+                "vi": ""
+            },
+            {
+                "en": "To be the key to something (phr)",
+                "vi": ""
+            },
+            {
+                "en": "To develop vaccines against potential epidemics (phr)",
+                "vi": ""
+            },
+            {
+                "en": "To deal with something (phr)",
+                "vi": ""
+            },
+            {
+                "en": "To minimize the risk of something (phr)",
+                "vi": ""
+            },
+            {
+                "en": "To begin the era of something (phr)",
+                "vi": ""
+            },
+            {
+                "en": "To facilitate modern forms of interaction",
+                "vi": ""
+            },
+            {
+                "en": "To conduct/carry out scientific investigations",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P6",
+        "category": "WORK – LIFE",
+        "title_en": "TRAFFIC",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Hình phạt nghiêm khắc",
+                "vi": ""
+            },
+            {
+                "en": "Ngăn chặn ai đó làm việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Vi phạm luật giao thông",
+                "vi": ""
+            },
+            {
+                "en": "Như một sự răn đe cho những người có ý định phạm luật",
+                "vi": ""
+            },
+            {
+                "en": "Bị phạt 1 khoản tiền nào đó",
+                "vi": ""
+            },
+            {
+                "en": "Tai nạn giao thông chết người",
+                "vi": ""
+            },
+            {
+                "en": "Các điều luật được ban hành lỏng lẻo",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao nhận thức của con người về vấn đề gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Những ý kiến được nhắc đến trước",
+                "vi": ""
+            },
+            {
+                "en": "92",
+                "vi": ""
+            },
+            {
+                "en": "Harsh = stringent = strict punishments",
+                "vi": ""
+            },
+            {
+                "en": "To deter somebody from doing something",
+                "vi": ""
+            },
+            {
+                "en": "Road offenses = traffic-related crimes",
+                "vi": ""
+            },
+            {
+                "en": "To act as a deterrent to would-be lawbreakers",
+                "vi": ""
+            },
+            {
+                "en": "To be fined with a certain amount of money",
+                "vi": ""
+            },
+            {
+                "en": "Road casualties",
+                "vi": ""
+            },
+            {
+                "en": "Loosely enforced regulations",
+                "vi": ""
+            },
+            {
+                "en": "To heighten people’s awareness of something",
+                "vi": ""
+            },
+            {
+                "en": "Aforementioned ideas",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P7",
+        "category": "WORK – LIFE",
+        "title_en": "FAMILY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có khối lượng công việc và lịch làm việc bận rộn hơn",
+                "vi": ""
+            },
+            {
+                "en": "Văn hoá đồ ăn nhanh trong xã hội hiện đại",
+                "vi": ""
+            },
+            {
+                "en": "Thay đổi thói quen ăn uống",
+                "vi": ""
+            },
+            {
+                "en": "Làm yếu đi sự tương tác giữa các thành viên trong gia đình",
+                "vi": ""
+            },
+            {
+                "en": "To have heavier workloads and more hectic schedules",
+                "vi": ""
+            },
+            {
+                "en": "The fast food culture of modern life",
+                "vi": ""
+            },
+            {
+                "en": "Change people’s eating habits",
+                "vi": ""
+            },
+            {
+                "en": "To lead to a weaker family bond",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P8",
+        "category": "WORK – LIFE",
+        "title_en": "WORK",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Quy trình tuyển dụng",
+                "vi": ""
+            },
+            {
+                "en": "Công cụ để đánh giá trình độ kiến thức",
+                "vi": ""
+            },
+            {
+                "en": "Có năng lực làm điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Đạt được kiến thức chuyên sâu về cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Tạo động lực cho ai làm điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Học đại học",
+                "vi": ""
+            },
+            {
+                "en": "Cho mục đích đạt được điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cơ hội việc làm",
+                "vi": ""
+            },
+            {
+                "en": "The recruitment process",
+                "vi": ""
+            },
+            {
+                "en": "A tool to measure the level of knowledge",
+                "vi": ""
+            },
+            {
+                "en": "To be capable of doing something",
+                "vi": ""
+            },
+            {
+                "en": "To gain sufficient in-depth knowledge in something",
+                "vi": ""
+            },
+            {
+                "en": "93",
+                "vi": ""
+            },
+            {
+                "en": "To motivate somebody to do something",
+                "vi": ""
+            },
+            {
+                "en": "To pursue tertiary education",
+                "vi": ""
+            },
+            {
+                "en": "For the sake of something",
+                "vi": ""
+            },
+            {
+                "en": "Career prospects",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P9",
+        "category": "WORK – LIFE",
+        "title_en": "BUILDING",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Những yêu cầu về an toàn",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện tính cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "Thể hiện sự giàu có và địa vị xã hội của người sở hữu",
+                "vi": ""
+            },
+            {
+                "en": "Mục tiêu của sự đàm tiếu và trộm cắp",
+                "vi": ""
+            },
+            {
+                "en": "Chia sẻ những thiết kế chung",
+                "vi": ""
+            },
+            {
+                "en": "Kiểm soát quy trình xây dựng",
+                "vi": ""
+            },
+            {
+                "en": "Thiết kế có tính thẩm mỹ",
+                "vi": ""
+            },
+            {
+                "en": "Hình dáng bên ngoài",
+                "vi": ""
+            },
+            {
+                "en": "Công trình cuốn hút",
+                "vi": ""
+            },
+            {
+                "en": "Địa vị cao",
+                "vi": ""
+            },
+            {
+                "en": "Thiết kế có tính thẩm mỹ cao",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện hiệu quả của nhân viên và toàn bộ công ty",
+                "vi": ""
+            },
+            {
+                "en": "Safety requirements",
+                "vi": ""
+            },
+            {
+                "en": "Enhance a sense of community",
+                "vi": ""
+            },
+            {
+                "en": "Reflects the wealth and social status of its owner",
+                "vi": ""
+            },
+            {
+                "en": "The target of gossip or burglary",
+                "vi": ""
+            },
+            {
+                "en": "Share a common design",
+                "vi": ""
+            },
+            {
+                "en": "To supervise the process of construction",
+                "vi": ""
+            },
+            {
+                "en": "Aesthetic design",
+                "vi": ""
+            },
+            {
+                "en": "Exterior Appearance",
+                "vi": ""
+            },
+            {
+                "en": "a magnificent looking structure",
+                "vi": ""
+            },
+            {
+                "en": "High-class",
+                "vi": ""
+            },
+            {
+                "en": "an aesthetic design",
+                "vi": ""
+            },
+            {
+                "en": "enhance the operation of the staff and the enterprise",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P10",
+        "category": "WORK – LIFE",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tác phẩm văn học trong nước",
+                "vi": ""
+            },
+            {
+                "en": "Tiếng mẹ đẻ",
+                "vi": ""
+            },
+            {
+                "en": "Kiến thức về ngôn ngữ",
+                "vi": ""
+            },
+            {
+                "en": "94",
+                "vi": ""
+            },
+            {
+                "en": "Duy trì từ thế hệ này qua thế hệ khác",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển tinh thần và niềm tự hào dân tộc",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận với cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Được trang bị với cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Locally written works = national literary works",
+                "vi": ""
+            },
+            {
+                "en": "Mother tongue",
+                "vi": ""
+            },
+            {
+                "en": "Linguistic knowledge",
+                "vi": ""
+            },
+            {
+                "en": "To pass down from generation to generation",
+                "vi": ""
+            },
+            {
+                "en": "To develop a sense of national identity and patriotism",
+                "vi": ""
+            },
+            {
+                "en": "To have access to something",
+                "vi": ""
+            },
+            {
+                "en": "To be equipped with something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P11",
+        "category": "WORK – LIFE",
+        "title_en": "HISTORY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Truyền tải giá trị lịch sử",
+                "vi": ""
+            },
+            {
+                "en": "Có giá trị lớn",
+                "vi": ""
+            },
+            {
+                "en": "Lịch sử và văn hoá bản xứ",
+                "vi": ""
+            },
+            {
+                "en": "Phục vụ mục đích giáo dục",
+                "vi": ""
+            },
+            {
+                "en": "Truyền tải, thấm nhuần tình yêu nước",
+                "vi": ""
+            },
+            {
+                "en": "Củng cố lòng tự hào dân tộc",
+                "vi": ""
+            },
+            {
+                "en": "Gặp nguy hiểm",
+                "vi": ""
+            },
+            {
+                "en": "Conveying historical values",
+                "vi": ""
+            },
+            {
+                "en": "To be of great worth",
+                "vi": ""
+            },
+            {
+                "en": "Indigenous history and culture",
+                "vi": ""
+            },
+            {
+                "en": "Serve educational purposes",
+                "vi": ""
+            },
+            {
+                "en": "Instill patriotism",
+                "vi": ""
+            },
+            {
+                "en": "Promote a sense of national pride",
+                "vi": ""
+            },
+            {
+                "en": "In grave danger",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P12",
+        "category": "WORK – LIFE",
+        "title_en": "ART & CULTURE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đầu tư vào cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Sự giảm chất lượng của cơ sở hạ tầng giao thông",
+                "vi": ""
+            },
+            {
+                "en": "Đối mặt với nhiều vấn đề về môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Đóng một vai trò quan trọng cho việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "95",
+                "vi": ""
+            },
+            {
+                "en": "Làm mạnh tinh thần gia đình và cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "Bảo tồn sự đa dạng văn hoá",
+                "vi": ""
+            },
+            {
+                "en": "Sự phát triển liên tục về khoa học và công nghệ",
+                "vi": ""
+            },
+            {
+                "en": "Đạt được nhiều sự tôn trọng từ ai đó",
+                "vi": ""
+            },
+            {
+                "en": "Truyền tải thông điệp về sự trân trọng cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Yêu vẻ đẹp của văn hoá",
+                "vi": ""
+            },
+            {
+                "en": "Nguồn năng lượng cho cuộc sống tâm hồn",
+                "vi": ""
+            },
+            {
+                "en": "Sự cuốn hút của văn hoá trong đời sống hàng ngày",
+                "vi": ""
+            },
+            {
+                "en": "To invest in something",
+                "vi": ""
+            },
+            {
+                "en": "The deterioration of transport infrastructure",
+                "vi": ""
+            },
+            {
+                "en": "To face many environmental problems",
+                "vi": ""
+            },
+            {
+                "en": "To play an important role in something",
+                "vi": ""
+            },
+            {
+                "en": "To strengthen the sense of family and community",
+                "vi": ""
+            },
+            {
+                "en": "To preserve cultural diversity",
+                "vi": ""
+            },
+            {
+                "en": "Continual scientific and technological advancement",
+                "vi": ""
+            },
+            {
+                "en": "To gain a lot of respect from somebody",
+                "vi": ""
+            },
+            {
+                "en": "To deliver messages about the appreciation of something",
+                "vi": ""
+            },
+            {
+                "en": "To cherish the beauty of culture",
+                "vi": ""
+            },
+            {
+                "en": "The fuel for our spiritual lives",
+                "vi": ""
+            },
+            {
+                "en": "The gravity of culture in daily life",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P13",
+        "category": "WORK – LIFE",
+        "title_en": "TOURISM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có nhu cầu cao cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện đời sống vật chất của người dân địa phương",
+                "vi": ""
+            },
+            {
+                "en": "Người dân tộc thiểu số",
+                "vi": ""
+            },
+            {
+                "en": "Bị cách ly với thế giới bên ngoài",
+                "vi": ""
+            },
+            {
+                "en": "Mở mang kiến thức về xã hội văn minh",
+                "vi": ""
+            },
+            {
+                "en": "Thuộc về bản xứ",
+                "vi": ""
+            },
+            {
+                "en": "Hy sinh cái này để làm cái kia",
+                "vi": ""
+            },
+            {
+                "en": "Sự ô nhiễm môi trường",
+                "vi": ""
+            },
+            {
+                "en": "To have a high demand for something",
+                "vi": ""
+            },
+            {
+                "en": "To enhance living standards of the local people",
+                "vi": ""
+            },
+            {
+                "en": "Ethnic people",
+                "vi": ""
+            },
+            {
+                "en": "To be isolated from the outside world",
+                "vi": ""
+            },
+            {
+                "en": "96",
+                "vi": ""
+            },
+            {
+                "en": "To broaden knowledge about a more civilized society",
+                "vi": ""
+            },
+            {
+                "en": "Indigenous (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To sacrifice something to do something",
+                "vi": ""
+            },
+            {
+                "en": "The environmental deterioration",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P14",
+        "category": "WORK – LIFE",
+        "title_en": "HEALTH",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giải quyết vấn đề gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Khuyến khích lỗi sống tốt cho sức khoẻ",
+                "vi": ""
+            },
+            {
+                "en": "Đặt gánh nặng lớn vào gia đình bệnh nhân",
+                "vi": ""
+            },
+            {
+                "en": "Đủ về số lượng hoặc chất lượng",
+                "vi": ""
+            },
+            {
+                "en": "Dễ dàng bị tổn thương bởi cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bệnh lây lan qua đường nước",
+                "vi": ""
+            },
+            {
+                "en": "Di truyền",
+                "vi": ""
+            },
+            {
+                "en": "Bị nhiễm một căn bệnh",
+                "vi": ""
+            },
+            {
+                "en": "To fight something (problems or issues)",
+                "vi": ""
+            },
+            {
+                "en": "To encourage/promote a healthy lifestyle",
+                "vi": ""
+            },
+            {
+                "en": "To place a heavy burden on patients’ families",
+                "vi": ""
+            },
+            {
+                "en": "Adequate (adj)",
+                "vi": "(sysnonym của enough)"
+            },
+            {
+                "en": "To be vulnerable to something",
+                "vi": ""
+            },
+            {
+                "en": "Waterborne diseases (n)",
+                "vi": ""
+            },
+            {
+                "en": "Inherited (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To contract a disease",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P15",
+        "category": "WORK – LIFE",
+        "title_en": "GOVERNMENT AND SOCIETY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Hậu quả nghiêm trọng",
+                "vi": ""
+            },
+            {
+                "en": "Chủ nghĩa tiêu dùng",
+                "vi": ""
+            },
+            {
+                "en": "Sự sản xuất hàng loạt của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Không thể dùng lại được",
+                "vi": ""
+            },
+            {
+                "en": "Mua",
+                "vi": ""
+            },
+            {
+                "en": "Làm giảm cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Không tái chế được",
+                "vi": ""
+            },
+            {
+                "en": "Nhu cầu không ngừng cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Dire consequences (n)",
+                "vi": ""
+            },
+            {
+                "en": "97",
+                "vi": ""
+            },
+            {
+                "en": "Consumerism",
+                "vi": ""
+            },
+            {
+                "en": "The mass production of something",
+                "vi": ""
+            },
+            {
+                "en": "Unsuable (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Make new purchases (phr)",
+                "vi": ""
+            },
+            {
+                "en": "Dispose of something",
+                "vi": ""
+            },
+            {
+                "en": "Non-recyclable (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Nonstop demand for something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P16",
+        "category": "WORK – LIFE",
+        "title_en": "GLOBAL ISSUES",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Bảo vệ, bảo tồn",
+                "vi": ""
+            },
+            {
+                "en": "Đam mê về cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Tổ chức từ thiện",
+                "vi": ""
+            },
+            {
+                "en": "Là nguyên nhân chính cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Môi trường sống tự nhiên của động vật",
+                "vi": ""
+            },
+            {
+                "en": "Có trách nhiệm cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Sự lan rộng tàn phá",
+                "vi": ""
+            },
+            {
+                "en": "Preserve = maintain = protect something (v)",
+                "vi": ""
+            },
+            {
+                "en": "Be passionate about something",
+                "vi": ""
+            },
+            {
+                "en": "Charity organizations (n)",
+                "vi": ""
+            },
+            {
+                "en": "To be the main cause of something",
+                "vi": ""
+            },
+            {
+                "en": "The natural habitats of wild animals",
+                "vi": ""
+            },
+            {
+                "en": "To be responsible for something",
+                "vi": ""
+            },
+            {
+                "en": "The widespread devastation",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P17",
+        "category": "WORK – LIFE",
+        "title_en": "TECHNOLOGY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Sự có sẵn của công nghệ",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận với cái gì đó (thường là tích cực)",
+                "vi": ""
+            },
+            {
+                "en": "Công nghệ tân tiến và hiện đại nhất",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao hiệu quả của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện, phát triển cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Có thể mua được",
+                "vi": ""
+            },
+            {
+                "en": "Sự tích luỹ học hỏi và áp dụng của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "The availability of technology",
+                "vi": ""
+            },
+            {
+                "en": "98",
+                "vi": ""
+            },
+            {
+                "en": "To have access to something",
+                "vi": ""
+            },
+            {
+                "en": "The latest and most advanced technology",
+                "vi": ""
+            },
+            {
+                "en": "Enhance the productivity of something",
+                "vi": ""
+            },
+            {
+                "en": "To boost something",
+                "vi": ""
+            },
+            {
+                "en": "Affordable (adj)",
+                "vi": ""
+            },
+            {
+                "en": "The acquisition and application of something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P18",
+        "category": "WORK – LIFE",
+        "title_en": "MEDIA",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tin tức xấu tràn ngập trên những trang đầu",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra nỗi sợ hãi trong suy nghĩ",
+                "vi": ""
+            },
+            {
+                "en": "Thường xuyên tiếp túc với những tin xấu",
+                "vi": ""
+            },
+            {
+                "en": "Bóp méo quan điểm của người đọc về sự thật",
+                "vi": ""
+            },
+            {
+                "en": "Định hình quan điểm của người đọc trong xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Khôi phục niềm tin",
+                "vi": ""
+            },
+            {
+                "en": "Truyền cảm hứng cho những hành động tốt",
+                "vi": ""
+            },
+            {
+                "en": "Phát huy các giá trị đạo đức xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Bad news dominating the headlines",
+                "vi": ""
+            },
+            {
+                "en": "Instilled fear into their minds",
+                "vi": ""
+            },
+            {
+                "en": "Frequent exposure to negative news",
+                "vi": ""
+            },
+            {
+                "en": "Distort readers’ perception of reality",
+                "vi": ""
+            },
+            {
+                "en": "Shapes readers’ outlook on society",
+                "vi": ""
+            },
+            {
+                "en": "Restore our faith in humanity",
+                "vi": ""
+            },
+            {
+                "en": "Inspires moral courses of action",
+                "vi": ""
+            },
+            {
+                "en": "Uphold ethical social values",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P19",
+        "category": "WORK – LIFE",
+        "title_en": "TOURISM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tạo ra sự giàu có về mặt tài chính",
+                "vi": ""
+            },
+            {
+                "en": "Nguồn thu nhập chính",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao sự hiểu biết",
+                "vi": ""
+            },
+            {
+                "en": "Con người đến từ những nền văn hoá khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra sự phẫn nộ và định kiến từ cộng động trước điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Tăng sự căng thẳng giữa những quốc gia liên quan",
+                "vi": ""
+            },
+            {
+                "en": "Mang lại một vài trải nghiệm văn hoá nước ngoài",
+                "vi": ""
+            },
+            {
+                "en": "Khách du lịch quốc tế",
+                "vi": ""
+            },
+            {
+                "en": "99",
+                "vi": ""
+            },
+            {
+                "en": "Đón nhận sự khác biệt về văn hoá",
+                "vi": ""
+            },
+            {
+                "en": "Sinh ra mâu thuẫn",
+                "vi": ""
+            },
+            {
+                "en": "Generating enormous financial wealth",
+                "vi": ""
+            },
+            {
+                "en": "The primary source of income",
+                "vi": ""
+            },
+            {
+                "en": "Facilitates understanding",
+                "vi": ""
+            },
+            {
+                "en": "People of different cultural background",
+                "vi": ""
+            },
+            {
+                "en": "Cause tremendous public outrage and prejudice against something",
+                "vi": ""
+            },
+            {
+                "en": "To increase tension between the countries involved",
+                "vi": ""
+            },
+            {
+                "en": "Give people some foreign culture exposure",
+                "vi": ""
+            },
+            {
+                "en": "Overseas tourists",
+                "vi": ""
+            },
+            {
+                "en": "To embrace cultural differences",
+                "vi": ""
+            },
+            {
+                "en": "Conflicts arise",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P20",
+        "category": "WORK – LIFE",
+        "title_en": "GOVERNMENT AND SOCIETY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Làm giảm dân số đô thị",
+                "vi": ""
+            },
+            {
+                "en": "Giảm áp lực cho hệ thống cung cấp nhà cửa đô thị",
+                "vi": ""
+            },
+            {
+                "en": "Giảm tắc đường",
+                "vi": ""
+            },
+            {
+                "en": "Đường quá đông trong giờ cao điểm",
+                "vi": ""
+            },
+            {
+                "en": "Sự phát triển của hệ thống đường",
+                "vi": ""
+            },
+            {
+                "en": "Tắc đường",
+                "vi": ""
+            },
+            {
+                "en": "Khu vực dân cư",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp chỗ ở cho sự tăng trưởng dân số",
+                "vi": ""
+            },
+            {
+                "en": "Cause urban population to shrink",
+                "vi": ""
+            },
+            {
+                "en": "Relieve pressure on urban housing supply systems",
+                "vi": ""
+            },
+            {
+                "en": "Reduce traffic congestion",
+                "vi": ""
+            },
+            {
+                "en": "Overcrowded roads during the rush hour",
+                "vi": ""
+            },
+            {
+                "en": "The development of road systems",
+                "vi": ""
+            },
+            {
+                "en": "Traffic jams",
+                "vi": ""
+            },
+            {
+                "en": "Residential areas",
+                "vi": ""
+            },
+            {
+                "en": "Accommodate a growing population",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P21",
+        "category": "WORK – LIFE",
+        "title_en": "FAMILY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Dành sự chú ý hơn cho sức khoẻ",
+                "vi": ""
+            },
+            {
+                "en": "100",
+                "vi": ""
+            },
+            {
+                "en": "Dẫn đến lối sống có lợi hơn cho sức khoẻ",
+                "vi": ""
+            },
+            {
+                "en": "Làm cầu nối cho sự khác biệt thế hệ",
+                "vi": ""
+            },
+            {
+                "en": "Thúc đẩy sự giao tiếp tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Bị đắm mình vào cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Thuộc về giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Định hướng nghề nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Paying more attention to their well-being",
+                "vi": ""
+            },
+            {
+                "en": "To lead healthier lifestyles",
+                "vi": ""
+            },
+            {
+                "en": "To bridge the generation gap",
+                "vi": ""
+            },
+            {
+                "en": "To promote better communication",
+                "vi": ""
+            },
+            {
+                "en": "To be immersed in something",
+                "vi": ""
+            },
+            {
+                "en": "Recreational (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Career-oriented (adj)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P22",
+        "category": "WORK – LIFE",
+        "title_en": "TRADITION AND MODERN LIFESTYLE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Sự biến mất của những cửa hàng nhỏ",
+                "vi": ""
+            },
+            {
+                "en": "Sự bùng nổ của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp cho ai đó cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Sự sẵn có của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cơ sở vật chất giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Giảm giá và khuyến mại",
+                "vi": ""
+            },
+            {
+                "en": "Doanh nghiệp cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "The disappearance of small stores",
+                "vi": ""
+            },
+            {
+                "en": "The boom in = the proliferation of something",
+                "vi": ""
+            },
+            {
+                "en": "To offer somebody something = to provide something to somebody",
+                "vi": ""
+            },
+            {
+                "en": "The availability of something",
+                "vi": ""
+            },
+            {
+                "en": "Entertainment facilities",
+                "vi": ""
+            },
+            {
+                "en": "Discounts and promotions",
+                "vi": ""
+            },
+            {
+                "en": "Family-run businesses",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P23",
+        "category": "WORK – LIFE",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Sự tích luỹ kiến thức",
+                "vi": ""
+            },
+            {
+                "en": "101",
+                "vi": ""
+            },
+            {
+                "en": "Thay đổi cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "Học đại học",
+                "vi": ""
+            },
+            {
+                "en": "Kĩ năng học tập xuât sắc",
+                "vi": ""
+            },
+            {
+                "en": "Giải quyết công việc và áp lực cao",
+                "vi": ""
+            },
+            {
+                "en": "Sinh viên tốt nghiệp chất lượng cao",
+                "vi": ""
+            },
+            {
+                "en": "Nổi tiếng",
+                "vi": ""
+            },
+            {
+                "en": "Học sinh có năng khiếu học tập",
+                "vi": ""
+            },
+            {
+                "en": "Phản ánh tiềm năng thành công tại đại học",
+                "vi": ""
+            },
+            {
+                "en": "Bằng cấp đại học",
+                "vi": ""
+            },
+            {
+                "en": "Duy trì sự đa dạng cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "The acquisition of knowledge",
+                "vi": ""
+            },
+            {
+                "en": "Life-changing (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To have access to tertiary education = To attend university",
+                "vi": ""
+            },
+            {
+                "en": "Superior academic skills",
+                "vi": ""
+            },
+            {
+                "en": "To handle the immense workload and pressure",
+                "vi": ""
+            },
+            {
+                "en": "High-quality undergraduates (n)",
+                "vi": ""
+            },
+            {
+                "en": "Prestigious = well-known (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Academically-gifted individuals",
+                "vi": ""
+            },
+            {
+                "en": "To reflect their potential to succeed at university",
+                "vi": ""
+            },
+            {
+                "en": "Formal qualifications (n)",
+                "vi": ""
+            },
+            {
+                "en": "To maintain a diverse community",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P24",
+        "category": "WORK – LIFE",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Phân bố tiền bạc cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện tỉ lệ biết chữ người lớn tuổi",
+                "vi": ""
+            },
+            {
+                "en": "Trẻ tuổi vị thành niên",
+                "vi": ""
+            },
+            {
+                "en": "Công việc tay chân, công nhân",
+                "vi": ""
+            },
+            {
+                "en": "Quy trình tự động",
+                "vi": ""
+            },
+            {
+                "en": "Thừa về số lượng, chất lượng",
+                "vi": ""
+            },
+            {
+                "en": "Đủ về số lượng, chất lượng",
+                "vi": ""
+            },
+            {
+                "en": "To allocate money for something",
+                "vi": ""
+            },
+            {
+                "en": "To improve adult literacy rates",
+                "vi": ""
+            },
+            {
+                "en": "Adolescents (n)",
+                "vi": ""
+            },
+            {
+                "en": "Blue-collar jobs (n)",
+                "vi": ""
+            },
+            {
+                "en": "102",
+                "vi": ""
+            },
+            {
+                "en": "Automatic processes (n)",
+                "vi": ""
+            },
+            {
+                "en": "Redundant (n)",
+                "vi": ""
+            },
+            {
+                "en": "Adequate (n)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P25",
+        "category": "WORK – LIFE",
+        "title_en": "LIFESTYLE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tối giản chi tiêu",
+                "vi": ""
+            },
+            {
+                "en": "Sống với nhiều luật lệ",
+                "vi": ""
+            },
+            {
+                "en": "Trải nghiệm khó quên",
+                "vi": ""
+            },
+            {
+                "en": "Mài giũa kĩ năng",
+                "vi": ""
+            },
+            {
+                "en": "Gánh vác nhiều trách nhiệm",
+                "vi": ""
+            },
+            {
+                "en": "Cân bằng chi tiêu",
+                "vi": ""
+            },
+            {
+                "en": "To minimize their expenditure",
+                "vi": ""
+            },
+            {
+                "en": "To live by the norms and rules",
+                "vi": ""
+            },
+            {
+                "en": "a life time experience",
+                "vi": ""
+            },
+            {
+                "en": "To harness their many skills",
+                "vi": ""
+            },
+            {
+                "en": "To shoulder a lot more duties and responsibilities",
+                "vi": ""
+            },
+            {
+                "en": "To balance their budgets",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P26",
+        "category": "WORK – LIFE",
+        "title_en": "ECONOMICS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giải pháp (duy nhất) cho vấn đề gì",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra tổn thất lớn cho cái gì",
+                "vi": ""
+            },
+            {
+                "en": "Nhu cầu tăng cao hơn bao giờ hết",
+                "vi": ""
+            },
+            {
+                "en": "Thủ phạm chính đằng sau vấn đề gì",
+                "vi": ""
+            },
+            {
+                "en": "Sự mất đi môi trường sống",
+                "vi": ""
+            },
+            {
+                "en": "Đẩy cái gì đó tới bờ vực tuyệt chủng",
+                "vi": ""
+            },
+            {
+                "en": "Sự khai thác không bền vững",
+                "vi": ""
+            },
+            {
+                "en": "Tạo ra mối nguy hại nghiêm trọng đối với",
+                "vi": ""
+            },
+            {
+                "en": "Cách tiếp cận sáng suốt",
+                "vi": ""
+            },
+            {
+                "en": "Những hoàn cảnh khó khăn",
+                "vi": ""
+            },
+            {
+                "en": "Trang trải cho những chi phí thiết yếu",
+                "vi": ""
+            },
+            {
+                "en": "Đóng vai trò quan trọng",
+                "vi": ""
+            },
+            {
+                "en": "Cuộc chiến chông lại nạn đói",
+                "vi": ""
+            },
+            {
+                "en": "Quá trình đòi hỏi nhiều nhân lực",
+                "vi": ""
+            },
+            {
+                "en": "Chấm dứt vấn đề gì",
+                "vi": ""
+            },
+            {
+                "en": "103",
+                "vi": ""
+            },
+            {
+                "en": "The (only) solution to",
+                "vi": ""
+            },
+            {
+                "en": "Take a heavy toll on",
+                "vi": ""
+            },
+            {
+                "en": "The ever increasing demand",
+                "vi": ""
+            },
+            {
+                "en": "The major culprit behind sth",
+                "vi": ""
+            },
+            {
+                "en": "The loss of natural habitat",
+                "vi": ""
+            },
+            {
+                "en": "Pushing sth to the verge of extinction",
+                "vi": ""
+            },
+            {
+                "en": "Unsustainable exploitation",
+                "vi": ""
+            },
+            {
+                "en": "Poses serious threat to",
+                "vi": ""
+            },
+            {
+                "en": "A rational approach",
+                "vi": ""
+            },
+            {
+                "en": "Underprivileged backgrounds",
+                "vi": ""
+            },
+            {
+                "en": "Cover basic living expenses",
+                "vi": ""
+            },
+            {
+                "en": "Has a crucial role to play",
+                "vi": ""
+            },
+            {
+                "en": "The fight against hunger",
+                "vi": ""
+            },
+            {
+                "en": "The labour-intensive process",
+                "vi": ""
+            },
+            {
+                "en": "Put an end to",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P27",
+        "category": "WORK – LIFE",
+        "title_en": "LIFE STYLE/HOUSING",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có sự tự do làm cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Điều luật chính phủ",
+                "vi": ""
+            },
+            {
+                "en": "Cơ hội cho sự sáng tạo",
+                "vi": ""
+            },
+            {
+                "en": "Sự xuất hiện của nhiều toà nhà sáng tạo và độc nhất",
+                "vi": ""
+            },
+            {
+                "en": "Làm thoả mãn sở thích cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Đam mê về điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Một cảm giác hài lòng và mãn nguyện",
+                "vi": ""
+            },
+            {
+                "en": "Dễ dàng bị tổn thương, ảnh hưởng bởi cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Mất đi sự sống và tài sản",
+                "vi": ""
+            },
+            {
+                "en": "Sự đồng nhất của thành phố",
+                "vi": ""
+            },
+            {
+                "en": "To have the freedom to do something",
+                "vi": ""
+            },
+            {
+                "en": "Government regulations (n)",
+                "vi": ""
+            },
+            {
+                "en": "Scope for creativity",
+                "vi": ""
+            },
+            {
+                "en": "The arrival of more innovative and unique buildings",
+                "vi": ""
+            },
+            {
+                "en": "To fulfil their personal preferences",
+                "vi": ""
+            },
+            {
+                "en": "To be passionate about something",
+                "vi": ""
+            },
+            {
+                "en": "A sense of satisfaction and contentment",
+                "vi": ""
+            },
+            {
+                "en": "104",
+                "vi": ""
+            },
+            {
+                "en": "To be vulnerable to something",
+                "vi": ""
+            },
+            {
+                "en": "Losses of lives and property",
+                "vi": ""
+            },
+            {
+                "en": "The uniformity of a city",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P28",
+        "category": "WORK – LIFE",
+        "title_en": "ANIMAL",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Bị xoá sổ",
+                "vi": ""
+            },
+            {
+                "en": "Nhân tố về môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Làm nguy hại đến môi trường sống tự nhiên của động vật hoang dã",
+                "vi": ""
+            },
+            {
+                "en": "làm ảnh hưởng đến chuỗi thức ăn.",
+                "vi": ""
+            },
+            {
+                "en": "Sự tuyệt chủng hàng loạt",
+                "vi": ""
+            },
+            {
+                "en": "Sản phẩm từ động vật",
+                "vi": ""
+            },
+            {
+                "en": "Nạn săn trộm tràn lan của động vật hoang dã có nguy cơ tuyệt chủng.",
+                "vi": ""
+            },
+            {
+                "en": "Giải quyết vấn đề",
+                "vi": ""
+            },
+            {
+                "en": "Sự cân bằng của hệ sinh thái",
+                "vi": ""
+            },
+            {
+                "en": "Những giá trị thẩm mỹ và văn hoá xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Sự giàu có về đa dạng sinh học",
+                "vi": ""
+            },
+            {
+                "en": "Tôn kính và tôn thờ",
+                "vi": ""
+            },
+            {
+                "en": "To be wiped out",
+                "vi": ""
+            },
+            {
+                "en": "Environmental factors",
+                "vi": ""
+            },
+            {
+                "en": "Devastating the natural habitats of wildlife",
+                "vi": ""
+            },
+            {
+                "en": "Disturbing the food chain",
+                "vi": ""
+            },
+            {
+                "en": "The mass extinction",
+                "vi": ""
+            },
+            {
+                "en": "Animals’ products",
+                "vi": ""
+            },
+            {
+                "en": "The rampant poaching of wild, endangered animals",
+                "vi": ""
+            },
+            {
+                "en": "Rectify the situation",
+                "vi": ""
+            },
+            {
+                "en": "The balance of the ecosystem",
+                "vi": ""
+            },
+            {
+                "en": "Aesthetic and socio-cultural values",
+                "vi": ""
+            },
+            {
+                "en": "Rich bio-diversity",
+                "vi": ""
+            },
+            {
+                "en": "Revered and worshiped",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P29",
+        "category": "WORK – LIFE",
+        "title_en": "INTERNET",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tương tác thực tế",
+                "vi": ""
+            },
+            {
+                "en": "Hầu hết tất cả mọi thứ đều được vận chuyển về nhà",
+                "vi": ""
+            },
+            {
+                "en": "Có sẵn trên mạng",
+                "vi": ""
+            },
+            {
+                "en": "105",
+                "vi": ""
+            },
+            {
+                "en": "Duy trì sự giao tiếp hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "Bảo đảm công ty vận hành mượt mà hơn",
+                "vi": ""
+            },
+            {
+                "en": "Giữ liên lạc với ai đó",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao trải nghiệm mua sắm, làm cho nơi làm việc có tổ chức và hiệu quả hơn",
+                "vi": ""
+            },
+            {
+                "en": "Giúp việc giao tiếp dễ dàng hơn",
+                "vi": ""
+            },
+            {
+                "en": "Quá mải mê với những lời quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "Dính mắt vào điện thoại",
+                "vi": ""
+            },
+            {
+                "en": "Đánh giá thấp các mối quan hệ ngoài đời",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra ảnh hưởng xấu tới các mối quan hệ",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển dựa trên việc giao tiếp thực tế",
+                "vi": ""
+            },
+            {
+                "en": "Face-to-face interaction",
+                "vi": ""
+            },
+            {
+                "en": "Almost anything delivered to our homes",
+                "vi": ""
+            },
+            {
+                "en": "Widely available for online purchase",
+                "vi": ""
+            },
+            {
+                "en": "Maintain effective communication",
+                "vi": ""
+            },
+            {
+                "en": "Ensure their businesses operate smoothly",
+                "vi": ""
+            },
+            {
+                "en": "Stay in touch with somebody",
+                "vi": ""
+            },
+            {
+                "en": "Enhances our shopping experiences, makes our workplaces more streamlined and efficient",
+                "vi": ""
+            },
+            {
+                "en": "Facilitates our communication",
+                "vi": ""
+            },
+            {
+                "en": "Too engrossed in media hype",
+                "vi": ""
+            },
+            {
+                "en": "With their eyes glued to their phones",
+                "vi": ""
+            },
+            {
+                "en": "Undervaluing real life relationships",
+                "vi": ""
+            },
+            {
+                "en": "Inflicting severe damage on our relationships",
+                "vi": ""
+            },
+            {
+                "en": "Flourish on the basis of true communication",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P30",
+        "category": "WORK – LIFE",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đóng vai trò quan trọng trong sự nuôi nấng trẻ nhỏ",
+                "vi": ""
+            },
+            {
+                "en": "Cùng với ai đó",
+                "vi": ""
+            },
+            {
+                "en": "Nỗ lực cố gắng làm gì",
+                "vi": ""
+            },
+            {
+                "en": "Sự ảnh hưởng của phụ huynh",
+                "vi": ""
+            },
+            {
+                "en": "Hoàn cảnh kinh tế xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Trang bị cho đứa trẻ với sự thông minh và kĩ năng xã hội tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Play a significant role in a child’s upbringing",
+                "vi": ""
+            },
+            {
+                "en": "In the company of somebody",
+                "vi": ""
+            },
+            {
+                "en": "Attempt to do something",
+                "vi": ""
+            },
+            {
+                "en": "106",
+                "vi": ""
+            },
+            {
+                "en": "Parental influence",
+                "vi": ""
+            },
+            {
+                "en": "The socioeconomic circumstances",
+                "vi": ""
+            },
+            {
+                "en": "Endow a child with greater intelligence and social skills",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P31",
+        "category": "WORK – LIFE",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đặt nền móng cho sự nhân thức của học sinh",
+                "vi": ""
+            },
+            {
+                "en": "Có lỗi.",
+                "vi": ""
+            },
+            {
+                "en": "Trang bị cho ai đó cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Gia nhập thị trường lao động",
+                "vi": ""
+            },
+            {
+                "en": "Tìm kiếm công việc tay chân",
+                "vi": ""
+            },
+            {
+                "en": "Những sự nghiệp không yêu cầu bằng cấp",
+                "vi": ""
+            },
+            {
+                "en": "Được coi là đủ điều kiện",
+                "vi": ""
+            },
+            {
+                "en": "Là một nhân tố chính cho",
+                "vi": ""
+            },
+            {
+                "en": "Lay a basis for a student’s cognitive development",
+                "vi": ""
+            },
+            {
+                "en": "Flawed (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Equip somebody with something",
+                "vi": ""
+            },
+            {
+                "en": "Enter the workforce",
+                "vi": ""
+            },
+            {
+                "en": "Find blue-collar employment",
+                "vi": ""
+            },
+            {
+                "en": "Non-academic careers",
+                "vi": ""
+            },
+            {
+                "en": "Deemed eligible",
+                "vi": ""
+            },
+            {
+                "en": "To be a major contributor to",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P32",
+        "category": "WORK – LIFE",
+        "title_en": "RESPONSIBILITES OF THE RICH",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giàu có",
+                "vi": ""
+            },
+            {
+                "en": "Cho phép ai đó làm gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Giúp đỡ những người kém may mắn hơn",
+                "vi": ""
+            },
+            {
+                "en": "Người cần sự giúp đỡ",
+                "vi": ""
+            },
+            {
+                "en": "Giảm gánh nặng cho ai đó",
+                "vi": ""
+            },
+            {
+                "en": "Tổ chức từ thiện",
+                "vi": ""
+            },
+            {
+                "en": "Tầng lớp thuợng lưu",
+                "vi": ""
+            },
+            {
+                "en": "Vượt qua nhiều khó khăn và nỗ lực rất nhiều để đạt được sự giàu có",
+                "vi": ""
+            },
+            {
+                "en": "Hài lòng với cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Chăm chỉ sẽ nhận được thành quả xứng đáng",
+                "vi": ""
+            },
+            {
+                "en": "107",
+                "vi": ""
+            },
+            {
+                "en": "Wealthy (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To allow somebody to do something",
+                "vi": ""
+            },
+            {
+                "en": "Lend a helping hand to the less fortunate",
+                "vi": ""
+            },
+            {
+                "en": "People in need",
+                "vi": ""
+            },
+            {
+                "en": "Ease the burdens of somebody",
+                "vi": ""
+            },
+            {
+                "en": "Charitable organizations",
+                "vi": ""
+            },
+            {
+                "en": "Upper-class (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Overcome countless difficulties and try very hard to gain their wealth",
+                "vi": ""
+            },
+            {
+                "en": "To be satisfied with something",
+                "vi": ""
+            },
+            {
+                "en": "Hard work does pay off",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P33",
+        "category": "WORK – LIFE",
+        "title_en": "OVERPOPULATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Sự bùng nổ dân số thế giới",
+                "vi": ""
+            },
+            {
+                "en": "Gây căng thẳng cho tài nguyên thiên nhiên",
+                "vi": ""
+            },
+            {
+                "en": "Nhiên liệu hoá thạch",
+                "vi": ""
+            },
+            {
+                "en": "Không thể tái tạo lại",
+                "vi": ""
+            },
+            {
+                "en": "Sự cạn kiệt của cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Sự khủng hoảng năng lượng",
+                "vi": ""
+            },
+            {
+                "en": "Dày Đặc",
+                "vi": ""
+            },
+            {
+                "en": "Dẫn đến sự xung đột và phá huỷ xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra khó khăn, lo lắng cho ai đó",
+                "vi": ""
+            },
+            {
+                "en": "The world’s population explosion",
+                "vi": ""
+            },
+            {
+                "en": "Puts a strain on the planet’s natural resources",
+                "vi": ""
+            },
+            {
+                "en": "Fossil fuels (n)",
+                "vi": ""
+            },
+            {
+                "en": "Unrenewable (adj)",
+                "vi": ""
+            },
+            {
+                "en": "The depletion of something",
+                "vi": ""
+            },
+            {
+                "en": "An energy crisis",
+                "vi": ""
+            },
+            {
+                "en": "Dense = cramped (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Brings strife and destruction to societies",
+                "vi": ""
+            },
+            {
+                "en": "Plague somebody (v)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P34",
+        "category": "WORK – LIFE",
+        "title_en": "COMPETITIVENESS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tự phụ và độc lập",
+                "vi": ""
+            },
+            {
+                "en": "Thoả hiệp",
+                "vi": ""
+            },
+            {
+                "en": "108",
+                "vi": ""
+            },
+            {
+                "en": "Nhân viên có suy nghĩ cạnh tranh cao",
+                "vi": ""
+            },
+            {
+                "en": "Tạo ra môi trường làm việc không tốt",
+                "vi": ""
+            },
+            {
+                "en": "Thúc đẩy năng suất lao động",
+                "vi": ""
+            },
+            {
+                "en": "Một nhân tố tích cực",
+                "vi": ""
+            },
+            {
+                "en": "Cố gắng để tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Kiên trì",
+                "vi": ""
+            },
+            {
+                "en": "Đạt được mục tiêu",
+                "vi": ""
+            },
+            {
+                "en": "Cảm giác của sự ganh đua",
+                "vi": ""
+            },
+            {
+                "en": "Tăng hiệu quả học tập của học sinh",
+                "vi": ""
+            },
+            {
+                "en": "Tính cách cạnh tranh",
+                "vi": ""
+            },
+            {
+                "en": "Tinh thần không ngừng học hỏi",
+                "vi": ""
+            },
+            {
+                "en": "Đạt được kết quả tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Làm rạn nứt mối quán hệ cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Tìm kiếm sự cân bằng",
+                "vi": ""
+            },
+            {
+                "en": "Conceited and self-absorbed",
+                "vi": ""
+            },
+            {
+                "en": "Compromise (v)",
+                "vi": ""
+            },
+            {
+                "en": "Highly competitive employees",
+                "vi": ""
+            },
+            {
+                "en": "Create an unhealthy work environment",
+                "vi": ""
+            },
+            {
+                "en": "Promote productivity",
+                "vi": ""
+            },
+            {
+                "en": "A positive attribute",
+                "vi": ""
+            },
+            {
+                "en": "Strive to be better",
+                "vi": ""
+            },
+            {
+                "en": "Persevere (v)",
+                "vi": ""
+            },
+            {
+                "en": "Achieve their goals = reach their desired goals",
+                "vi": ""
+            },
+            {
+                "en": "A sense of rivalry",
+                "vi": ""
+            },
+            {
+                "en": "Boost a student’s study performance",
+                "vi": ""
+            },
+            {
+                "en": "A competitive personality",
+                "vi": ""
+            },
+            {
+                "en": "A state of constant learning",
+                "vi": ""
+            },
+            {
+                "en": "Achieve better results",
+                "vi": ""
+            },
+            {
+                "en": "Sabotage a person’s relationships",
+                "vi": ""
+            },
+            {
+                "en": "Find a balance",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P35",
+        "category": "WORK – LIFE",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Gánh nặng tài chính cho gia đình",
+                "vi": ""
+            },
+            {
+                "en": "Khó khăn trong việc làm gì đó",
+                "vi": ""
+            },
+            {
+                "en": "109",
+                "vi": ""
+            },
+            {
+                "en": "Nhận được sự điều trị y tế như giống như người bản địa",
+                "vi": ""
+            },
+            {
+                "en": "Gặp phải những vấn đề vế sức khoẻ nghiêm trọng",
+                "vi": ""
+            },
+            {
+                "en": "Tham gia vào việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận tới những trang thiết bị và phương pháp học tập hiện đại và hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "Trợ giúp về tài chính",
+                "vi": ""
+            },
+            {
+                "en": "The financial burden on their families",
+                "vi": ""
+            },
+            {
+                "en": "To struggle to do something (v)",
+                "vi": ""
+            },
+            {
+                "en": "Receive the medical coverage like the local people",
+                "vi": ""
+            },
+            {
+                "en": "Encounter a serious health problem",
+                "vi": ""
+            },
+            {
+                "en": "To engage in = to participate in something (v)",
+                "vi": ""
+            },
+            {
+                "en": "Access to more modern and effective facilities and methods of learning",
+                "vi": ""
+            },
+            {
+                "en": "Financial aid (n)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P36",
+        "category": "WORK – LIFE",
+        "title_en": "ENVIRONMENT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có trách nhiệm cho việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Ban hành luật pháp",
+                "vi": ""
+            },
+            {
+                "en": "Có năng lực, khả năng làm cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Mục tiêu phát triển bền vững",
+                "vi": ""
+            },
+            {
+                "en": "Sự hợp tác tích cực của người dân.",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao nhận thức của ai đó về cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Phạt nặng vào cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Giảm khí thải nhà kính",
+                "vi": ""
+            },
+            {
+                "en": "Quy trình quản lý rác thải",
+                "vi": ""
+            },
+            {
+                "en": "Có khả năng phân huỷ",
+                "vi": ""
+            },
+            {
+                "en": "Đóng một vai trò quan trọng vào việc gì đó.",
+                "vi": ""
+            },
+            {
+                "en": "To take responsibility for something",
+                "vi": ""
+            },
+            {
+                "en": "To enact laws",
+                "vi": ""
+            },
+            {
+                "en": "To be capable of doing something",
+                "vi": ""
+            },
+            {
+                "en": "Sustainable development goals",
+                "vi": ""
+            },
+            {
+                "en": "The active cooperation of residents",
+                "vi": ""
+            },
+            {
+                "en": "To raise somebody’s awareness of something",
+                "vi": ""
+            },
+            {
+                "en": "To impose heavy fines on something",
+                "vi": ""
+            },
+            {
+                "en": "To reduce greenhouse gas emissions",
+                "vi": ""
+            },
+            {
+                "en": "Waste management processes",
+                "vi": ""
+            },
+            {
+                "en": "110",
+                "vi": ""
+            },
+            {
+                "en": "biodegradable (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To make a significant contribution to something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P37",
+        "category": "WORK – LIFE",
+        "title_en": "MUSEUM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Khả thi, có thể thực hiện được",
+                "vi": ""
+            },
+            {
+                "en": "Được gâu ra bởi cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bảo tồn và tân trang kém",
+                "vi": ""
+            },
+            {
+                "en": "Ngân sách duy trì",
+                "vi": ""
+            },
+            {
+                "en": "Quen thuộc với cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Kỉ vật chiến tranh",
+                "vi": ""
+            },
+            {
+                "en": "Người dân địa phương",
+                "vi": ""
+            },
+            {
+                "en": "Khó khăn để kiếm sống qua ngày",
+                "vi": ""
+            },
+            {
+                "en": "Phân bổ nguồn lực tài chính cho việc duy trì và tân trang những hiện vật",
+                "vi": ""
+            },
+            {
+                "en": "Đến thăm ai đó",
+                "vi": ""
+            },
+            {
+                "en": "Feasible = plausible (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To be attributable to something",
+                "vi": ""
+            },
+            {
+                "en": "Are usually poorly conserved or refurbished",
+                "vi": ""
+            },
+            {
+                "en": "A budget for operation",
+                "vi": ""
+            },
+            {
+                "en": "To be familiar with something",
+                "vi": ""
+            },
+            {
+                "en": "war relics (n)",
+                "vi": ""
+            },
+            {
+                "en": "Local inhabitants (n)",
+                "vi": ""
+            },
+            {
+                "en": "To struggle to make ends meet",
+                "vi": ""
+            },
+            {
+                "en": "Allocate financial reso.urces for maintaining and refreshing the exhibits",
+                "vi": ""
+            },
+            {
+                "en": "Pay something/somebody a visit",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P38",
+        "category": "WORK – LIFE",
+        "title_en": "FAMILY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Cấu trúc gia đình hạt nhân (2 thế hệ bố và mẹ)",
+                "vi": ""
+            },
+            {
+                "en": "Gia đình nhiều thế hệ",
+                "vi": ""
+            },
+            {
+                "en": "Sống trong cùng một mái nhà",
+                "vi": ""
+            },
+            {
+                "en": "Hỗ trợ cho ai đó/ cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Trách nhiệm gia đình và nội trợ",
+                "vi": ""
+            },
+            {
+                "en": "Theo đuổi sự nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Người trụ cột gia đình",
+                "vi": ""
+            },
+            {
+                "en": "Người nội trợ",
+                "vi": ""
+            },
+            {
+                "en": "111",
+                "vi": ""
+            },
+            {
+                "en": "A nuclear family structure",
+                "vi": ""
+            },
+            {
+                "en": "Generations of a family",
+                "vi": ""
+            },
+            {
+                "en": "Live under the one roof",
+                "vi": ""
+            },
+            {
+                "en": "To provide for somebody/something",
+                "vi": ""
+            },
+            {
+                "en": "Family and household duties = domestic duties",
+                "vi": ""
+            },
+            {
+                "en": "To pursue their career",
+                "vi": ""
+            },
+            {
+                "en": "The breadwinner",
+                "vi": ""
+            },
+            {
+                "en": "A housewife",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P39",
+        "category": "WORK – LIFE",
+        "title_en": "SPORTS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giàu có",
+                "vi": ""
+            },
+            {
+                "en": "Tài trợ",
+                "vi": ""
+            },
+            {
+                "en": "Có động lực cao hơn làm gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện kết quả ở các cuộc thi",
+                "vi": ""
+            },
+            {
+                "en": "Rót tiền vào việc gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp cho ai đó cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Người đi trước, tiền nhiệm",
+                "vi": ""
+            },
+            {
+                "en": "Có niềm đam mê lớn hơn cho việc gì",
+                "vi": ""
+            },
+            {
+                "en": "Lối sống tốt cho sức khoẻ",
+                "vi": ""
+            },
+            {
+                "en": "Phần thưởng tài chính",
+                "vi": ""
+            },
+            {
+                "en": "Lucrative (adj)",
+                "vi": ""
+            },
+            {
+                "en": "Sponsorships (n)",
+                "vi": ""
+            },
+            {
+                "en": "To have greater motivation to do something",
+                "vi": ""
+            },
+            {
+                "en": "To enhance their performance in competition",
+                "vi": ""
+            },
+            {
+                "en": "To pour money into something",
+                "vi": ""
+            },
+            {
+                "en": "To provide somebody with something",
+                "vi": ""
+            },
+            {
+                "en": "Predecessors (n)",
+                "vi": ""
+            },
+            {
+                "en": "To have a greater passion for something",
+                "vi": ""
+            },
+            {
+                "en": "a healthy lifestyle (n",
+                "vi": ""
+            },
+            {
+                "en": "Financial incentives (n)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P40",
+        "category": "WORK – LIFE",
+        "title_en": "TRANSPORT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Khuyến khích mọi người đạp xe",
+                "vi": ""
+            },
+            {
+                "en": "Ý thức môi trường",
+                "vi": ""
+            },
+            {
+                "en": "112",
+                "vi": ""
+            },
+            {
+                "en": "Thúc đẩy việc sử dụng xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "Làn đường rảnh riêng cho xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "Đánh thuế cao vào cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao nhận thức cộng đồng về sự bảo vệ môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Tăng khả năng mọi người đạp xe trở lại",
+                "vi": ""
+            },
+            {
+                "en": "To encourage people to cycle",
+                "vi": ""
+            },
+            {
+                "en": "Environmentally conscious (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To promote the use of bicycles",
+                "vi": ""
+            },
+            {
+                "en": "Cycling lanes (n)",
+                "vi": ""
+            },
+            {
+                "en": "To levy higher taxes on something",
+                "vi": ""
+            },
+            {
+                "en": "To raise social awareness of environmental protection",
+                "vi": ""
+            },
+            {
+                "en": "To increase the likelihood of people turning to cycling",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P41",
+        "category": "WORK – LIFE",
+        "title_en": "TECHNOLOGY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Dễ dàng tiếp cận",
+                "vi": ""
+            },
+            {
+                "en": "Làm giảm rủi ro và chi phí sử dụng phương tiện di chuyển",
+                "vi": ""
+            },
+            {
+                "en": "Tính toán",
+                "vi": ""
+            },
+            {
+                "en": "Tinh thần làm việc tốt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Sự xây dựng và duy trì những toà nhà và cơ sở vật chất",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao hình ảnh/danh tiếng của",
+                "vi": ""
+            },
+            {
+                "en": "Accessible (adj)",
+                "vi": ""
+            },
+            {
+                "en": "To minimize the risks and costs of using transport on a daily basis to commute",
+                "vi": ""
+            },
+            {
+                "en": "To crunch numbers (v)",
+                "vi": ""
+            },
+            {
+                "en": "A better state of mind",
+                "vi": ""
+            },
+            {
+                "en": "The construction and maintenance of buildings and facilities",
+                "vi": ""
+            },
+            {
+                "en": "To build up the reputation of something",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P42",
+        "category": "WORK – LIFE",
+        "title_en": "TRANSPORT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đầu tư vào những sự ưu tiên khác",
+                "vi": ""
+            },
+            {
+                "en": "Tăng hiệu quả lao động",
+                "vi": ""
+            },
+            {
+                "en": "Bị chật cứng trong những chiếc xe bus nóng và chật chội",
+                "vi": ""
+            },
+            {
+                "en": "Vội vàng, vội vã làm gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Khí thải",
+                "vi": ""
+            },
+            {
+                "en": "113",
+                "vi": ""
+            },
+            {
+                "en": "Mang lại ảnh hướng xấu cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Dễ bị ảnh hưởng, tổn thương bởi cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bệnh liên quan đến hô hấp",
+                "vi": ""
+            },
+            {
+                "en": "Further investment in other priorities",
+                "vi": ""
+            },
+            {
+                "en": "Lead to an increase in their work productivity",
+                "vi": ""
+            },
+            {
+                "en": "To be packed in cramped and hot buses",
+                "vi": ""
+            },
+            {
+                "en": "To rush to do something",
+                "vi": ""
+            },
+            {
+                "en": "Exhaust fumes (n)",
+                "vi": ""
+            },
+            {
+                "en": "To exert a detrimental effect on something",
+                "vi": ""
+            },
+            {
+                "en": "To be susceptible to something",
+                "vi": ""
+            },
+            {
+                "en": "respiratory diseases (n)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P43",
+        "category": "WORK – LIFE",
+        "title_en": "MEDIA",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Các kênh truyền thông chính thống",
+                "vi": ""
+            },
+            {
+                "en": "Tần suất phát sóng tin tức cao hơn",
+                "vi": ""
+            },
+            {
+                "en": "Ngại ngùng, lưỡng lự làm cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Sợ phải chịu từ những cuộc tấn công khủng bố",
+                "vi": ""
+            },
+            {
+                "en": "Báo lá cải",
+                "vi": ""
+            },
+            {
+                "en": "Scandals của người nổi tiếng",
+                "vi": ""
+            },
+            {
+                "en": "Đóng góp nhiều cho xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Mang mọi người đến gần nhau",
+                "vi": ""
+            },
+            {
+                "en": "Mainstream media channels (n)",
+                "vi": ""
+            },
+            {
+                "en": "A higher frequency of news stories",
+                "vi": ""
+            },
+            {
+                "en": "To hesitate to do something",
+                "vi": ""
+            },
+            {
+                "en": "In fear of suffering from a terrorist attack",
+                "vi": ""
+            },
+            {
+                "en": "Tabloids (n)",
+                "vi": ""
+            },
+            {
+                "en": "The scandals of celebrities (n)",
+                "vi": ""
+            },
+            {
+                "en": "Made many great contributions to society",
+                "vi": ""
+            },
+            {
+                "en": "Bring people together",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P44",
+        "category": "WORK – LIFE",
+        "title_en": "STUDY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có Tính Hợp Tác",
+                "vi": ""
+            },
+            {
+                "en": "Dễ dàng quá trình học tập",
+                "vi": ""
+            },
+            {
+                "en": "114",
+                "vi": ""
+            },
+            {
+                "en": "Có sự hiểu biết sâu hơn về vấn đề",
+                "vi": ""
+            },
+            {
+                "en": "Tập trung vào cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Làm phiền ai đó",
+                "vi": ""
+            },
+            {
+                "en": "Phụ thuộc vào lịch học nhóm",
+                "vi": ""
+            },
+            {
+                "en": "Collaborative (Adj)",
+                "vi": ""
+            },
+            {
+                "en": "To facilitate their learning process",
+                "vi": ""
+            },
+            {
+                "en": "To have a more thorough insight into the issue",
+                "vi": ""
+            },
+            {
+                "en": "To concentrate on something",
+                "vi": ""
+            },
+            {
+                "en": "To disturb somebody",
+                "vi": ""
+            },
+            {
+                "en": "To stick to the group’s studying schedule",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P45",
+        "category": "WORK – LIFE",
+        "title_en": "WORK – LIFE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đạt được cân bằng công việc cuộc sống lý tưởng",
+                "vi": ""
+            },
+            {
+                "en": "Mất cân bằng công việc, cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "Có ảnh hưởng tiêu cực tới",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra điều gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Xã hội vật chất hoá",
+                "vi": ""
+            },
+            {
+                "en": "Lịch làm việc linh hoạt",
+                "vi": ""
+            },
+            {
+                "en": "Hy sinh cái gì cho cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "To achieve the Ideal work life balance",
+                "vi": ""
+            },
+            {
+                "en": "Unhealthy work life balance = work-life imbalance",
+                "vi": ""
+            },
+            {
+                "en": "Have a negative effect on something",
+                "vi": ""
+            },
+            {
+                "en": "Give rise to something",
+                "vi": ""
+            },
+            {
+                "en": "The materialistic society",
+                "vi": ""
+            },
+            {
+                "en": "A flexible schedule (n)",
+                "vi": ""
+            },
+            {
+                "en": "Sacrifice their daily physical activities and recreational activities to work (n)",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P46",
+        "category": "WORK – LIFE",
+        "title_en": "SPORTS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tinh thần vui vẻ và thư giãn",
+                "vi": ""
+            },
+            {
+                "en": "Giữ gìn sức khoẻ, vóc dáng",
+                "vi": ""
+            },
+            {
+                "en": "Một hình thức giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Giải toả áp lực trong cuộc sống hàng ngày",
+                "vi": ""
+            },
+            {
+                "en": "Đóng góp một vài vai trò trong xã hội",
+                "vi": ""
+            },
+            {
+                "en": "115",
+                "vi": ""
+            },
+            {
+                "en": "Ít khả năng chịu đựng cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bệnh về thể chất và tinh thần",
+                "vi": ""
+            },
+            {
+                "en": "Giảm những gánh nặng cho hệ thống chăm sóc sức khoẻ",
+                "vi": ""
+            },
+            {
+                "en": "Mang lại tinh thần đoàn kết",
+                "vi": ""
+            },
+            {
+                "en": "The sense of well-being and relaxation",
+                "vi": ""
+            },
+            {
+                "en": "To get fit = stay in shape",
+                "vi": ""
+            },
+            {
+                "en": "A way to relax = a form of leisure",
+                "vi": ""
+            },
+            {
+                "en": "Take their mind off the stresses of daily life",
+                "vi": ""
+            },
+            {
+                "en": "Serve a number of usual functions within society",
+                "vi": ""
+            },
+            {
+                "en": "Be less prone to something",
+                "vi": ""
+            },
+            {
+                "en": "Mental and physical sicknesses",
+                "vi": ""
+            },
+            {
+                "en": "Reduces the burdens on healthcare systems",
+                "vi": ""
+            },
+            {
+                "en": "Creates a sense of unity",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P47",
+        "category": "WORK – LIFE",
+        "title_en": "STUDY AND WORK",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Một năm nghỉ để đi du lịch hoặc đi học trước khi bước vào đại học",
+                "vi": ""
+            },
+            {
+                "en": "Học đại học",
+                "vi": ""
+            },
+            {
+                "en": "Con đường sự nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Có động lực cao",
+                "vi": ""
+            },
+            {
+                "en": "Mất đi định hướng về cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Tốn thời gian và tiền bạc",
+                "vi": ""
+            },
+            {
+                "en": "Sống một cuộc sống được bao bọc",
+                "vi": ""
+            },
+            {
+                "en": "Kinh nghiệm thực tế",
+                "vi": ""
+            },
+            {
+                "en": "Mở mang tầm nhìn",
+                "vi": ""
+            },
+            {
+                "en": "A gap year",
+                "vi": ""
+            },
+            {
+                "en": "To pursue tertiary education/ further education",
+                "vi": ""
+            },
+            {
+                "en": "Career path",
+                "vi": ""
+            },
+            {
+                "en": "To be highly motivated",
+                "vi": ""
+            },
+            {
+                "en": "To lose sight of something",
+                "vi": ""
+            },
+            {
+                "en": "Serve as a waste of time and money",
+                "vi": ""
+            },
+            {
+                "en": "Live very sheltered lives",
+                "vi": ""
+            },
+            {
+                "en": "Real-life experience",
+                "vi": ""
+            },
+            {
+                "en": "Broaden their horizons",
+                "vi": ""
+            },
+            {
+                "en": "116",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P48",
+        "category": "WORK – LIFE",
+        "title_en": "STUDY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tương tác trực tiếp với giáo viên trên lớp",
+                "vi": ""
+            },
+            {
+                "en": "Ý nghĩa quan trọng của sự tương tác và cạnh tranh với bạn cùng lớp trong môi trường giáo",
+                "vi": ""
+            },
+            {
+                "en": "dục",
+                "vi": ""
+            },
+            {
+                "en": "Tính kỷ luật cao cùng với kĩ năng kiểm soát thời gian và sắp xếp công việc hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "Có thể truy cập tất cả các nguồn kiến thức trong một khóa học truyền thống",
+                "vi": ""
+            },
+            {
+                "en": "Giá rẻ và sự xuất hiện khắp nơi của Internet",
+                "vi": ""
+            },
+            {
+                "en": "Regular face-to-face contact with teachers in a classroom",
+                "vi": ""
+            },
+            {
+                "en": "The significance of interaction and rivalry with classmates in an educational environment",
+                "vi": ""
+            },
+            {
+                "en": "Tremendous self-discipline as well as excellent organization and time management skills",
+                "vi": ""
+            },
+            {
+                "en": "Access to all resources within a traditional course",
+                "vi": ""
+            },
+            {
+                "en": "Lower costs and the widespread presence of the Internet",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P49",
+        "category": "WORK – LIFE",
+        "title_en": "STUDY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Phân phát dịch vụ giáo dục ở quy mô lớn như vậy",
+                "vi": ""
+            },
+            {
+                "en": "Gia tăng cơ hội việc làm cũng như bảo hiểm nghề nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Những bất cân bằng trong lực lượng lao động",
+                "vi": ""
+            },
+            {
+                "en": "Chi phí giáo dục quả đắt đỏ",
+                "vi": ""
+            },
+            {
+                "en": "Đại học độc lập tài chính",
+                "vi": ""
+            },
+            {
+                "en": "Dispensing university educational services on such a large scale",
+                "vi": ""
+            },
+            {
+                "en": "Enhance employment opportunities as well as job security",
+                "vi": ""
+            },
+            {
+                "en": "Imbalances in the workforce",
+                "vi": ""
+            },
+            {
+                "en": "Exorbitant education costs",
+                "vi": ""
+            },
+            {
+                "en": "Financially independent university",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P50",
+        "category": "WORK – LIFE",
+        "title_en": "ART & TECHNOLOGY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Năng lực và tính cách đặc trưng theo giới tính",
+                "vi": ""
+            },
+            {
+                "en": "Khả năng phân tích cao",
+                "vi": ""
+            },
+            {
+                "en": "Có những năng lực và sự xuất sắc khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao kỹ năng và khả năng",
+                "vi": ""
+            },
+            {
+                "en": "Sự hằn học và thái độ tiêu cực với việc học ở trường",
+                "vi": ""
+            },
+            {
+                "en": "Có quyền tham gia bất kì môn học nào mà họ muốn",
+                "vi": ""
+            },
+            {
+                "en": "117",
+                "vi": ""
+            },
+            {
+                "en": "Gender-specific personalities and competence",
+                "vi": ""
+            },
+            {
+                "en": "Considerable analytical abilities",
+                "vi": ""
+            },
+            {
+                "en": "Show distinct competence and excellence",
+                "vi": ""
+            },
+            {
+                "en": "Cultivate their skills and abilities",
+                "vi": ""
+            },
+            {
+                "en": "Resentment or negative attitude toward study at school",
+                "vi": ""
+            },
+            {
+                "en": "To be entitled to participate in any class they desire",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P51",
+        "category": "WORK – LIFE",
+        "title_en": "MONEY & SHOPPING",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Bị dụ dỗ làm gì",
+                "vi": ""
+            },
+            {
+                "en": "Vung phí tiền bạc và thời gian",
+                "vi": ""
+            },
+            {
+                "en": "Làm cho chính họ",
+                "vi": ""
+            },
+            {
+                "en": "Làm cho họ muốn mua và tiêu dùng nhiều hơn",
+                "vi": ""
+            },
+            {
+                "en": "Thái độ tiêu dùng quá đà",
+                "vi": ""
+            },
+            {
+                "en": "Chịu những tác hại của chủ nghĩa tiêu dùng",
+                "vi": ""
+            },
+            {
+                "en": "Ảnh hưởng tiêu cực vào tâm lý giới trẻ ngày nay",
+                "vi": ""
+            },
+            {
+                "en": "Lối sống ít vận động",
+                "vi": ""
+            },
+            {
+                "en": "To be lured into",
+                "vi": ""
+            },
+            {
+                "en": "Aimlessly wasting their time and money",
+                "vi": ""
+            },
+            {
+                "en": "Exposing themselves to",
+                "vi": ""
+            },
+            {
+                "en": "Drive their desire to purchase and consume more",
+                "vi": ""
+            },
+            {
+                "en": "A consumeristic attitude",
+                "vi": ""
+            },
+            {
+                "en": "Suffer from the many drawbacks of consumerism",
+                "vi": ""
+            },
+            {
+                "en": "A negative impact on the minds of today’s youth",
+                "vi": ""
+            },
+            {
+                "en": "A sendentary lifestyle",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P52",
+        "category": "WORK – LIFE",
+        "title_en": "LIFESTYLE & STUDENTS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tự mình kiếm sống",
+                "vi": ""
+            },
+            {
+                "en": "Kiếm tiền hoặc kiếm kinh nghiệm làm việc quý báu",
+                "vi": ""
+            },
+            {
+                "en": "Theo học đại học",
+                "vi": ""
+            },
+            {
+                "en": "Sự biến mất đáng tiếc của văn hóa lâu đời của một quốc gia",
+                "vi": ""
+            },
+            {
+                "en": "Lý lịch văn hóa",
+                "vi": ""
+            },
+            {
+                "en": "Earn a living on their own",
+                "vi": ""
+            },
+            {
+                "en": "Earn money or gain valuable work experience",
+                "vi": ""
+            },
+            {
+                "en": "118",
+                "vi": ""
+            },
+            {
+                "en": "Pursue tertiary education",
+                "vi": ""
+            },
+            {
+                "en": "The unfortunate disappearance of the country’s long-standing culture",
+                "vi": ""
+            },
+            {
+                "en": "Cultural background",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P53",
+        "category": "WORK – LIFE",
+        "title_en": "SCIENCE EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đẩy mạnh sự phát triển trong tương lại của một quốc gia",
+                "vi": ""
+            },
+            {
+                "en": "Sự xuất hiện của khoa học hiện đại",
+                "vi": ""
+            },
+            {
+                "en": "Công nghệ điện tử máy tính",
+                "vi": ""
+            },
+            {
+                "en": "Nơi làm việc hiệu quả và tiết kiệm hơn",
+                "vi": ""
+            },
+            {
+                "en": "Hiệu suất công việc tốt hơn và năng suất đầu ra cao hơn",
+                "vi": ""
+            },
+            {
+                "en": "Giảm dần sự phụ thuộc vào năng lượng hóa thạch",
+                "vi": ""
+            },
+            {
+                "en": "Thước đo chính cho sự phát triển của một quốc gia",
+                "vi": ""
+            },
+            {
+                "en": "Hiểu hơn về điều gì",
+                "vi": ""
+            },
+            {
+                "en": "Một nền giáo dụng toàn diện",
+                "vi": ""
+            },
+            {
+                "en": "Boost a country’s future development and progress",
+                "vi": ""
+            },
+            {
+                "en": "The advent of modern science",
+                "vi": ""
+            },
+            {
+                "en": "Electrical and computer-based technology",
+                "vi": ""
+            },
+            {
+                "en": "More streamlined and efficient workplaces",
+                "vi": ""
+            },
+            {
+                "en": "Greater efficiency and higher productivity output",
+                "vi": ""
+            },
+            {
+                "en": "Ease the planet’s reliance on fossil fuels",
+                "vi": ""
+            },
+            {
+                "en": "The main measure of a country’s progress",
+                "vi": ""
+            },
+            {
+                "en": "Gain more insight into",
+                "vi": ""
+            },
+            {
+                "en": "Well-rounded education",
+                "vi": ""
+            },
+            {
+                "en": "Khí thải",
+                "vi": ""
+            },
+            {
+                "en": "Hàm lượng chất gây ô nhiễm cao",
+                "vi": ""
+            },
+            {
+                "en": "Khuyến khích sử dụng phương tiện giao thông công cộng",
+                "vi": ""
+            },
+            {
+                "en": "Chất thải plastic",
+                "vi": ""
+            },
+            {
+                "en": "Thải ra khí độc",
+                "vi": ""
+            },
+            {
+                "en": "Sử dụng những nguồn năng lượng bền vững và thân thiện với môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Exhaust fumes",
+                "vi": ""
+            },
+            {
+                "en": "Relatively high proportion of pollutants",
+                "vi": ""
+            },
+            {
+                "en": "119",
+                "vi": ""
+            },
+            {
+                "en": "Encourage the use of public transport",
+                "vi": ""
+            },
+            {
+                "en": "Plastic waste",
+                "vi": ""
+            },
+            {
+                "en": "Emit toxic fumes",
+                "vi": ""
+            },
+            {
+                "en": "Use sustainable and environmentally friendly energy sources",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P55",
+        "category": "54. AIR POLLUTION",
+        "title_en": "FINANCIAL INTERNATIONAL ORGANIZATIONS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Những nước đang hoặc chưa phát triển",
+                "vi": ""
+            },
+            {
+                "en": "Sự tư vấn",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp hỗ trợ tài chính",
+                "vi": ""
+            },
+            {
+                "en": "Hỗ trợ tài chính",
+                "vi": ""
+            },
+            {
+                "en": "Sự phát triển cơ sở hạ tầng",
+                "vi": ""
+            },
+            {
+                "en": "Tránh trì trệ",
+                "vi": ""
+            },
+            {
+                "en": "Gia tăng phát triển kinh tế",
+                "vi": ""
+            },
+            {
+                "en": "Nguồn tiền nước ngoài",
+                "vi": ""
+            },
+            {
+                "en": "Duy trì hệ thống quản lý hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển bền vững",
+                "vi": ""
+            },
+            {
+                "en": "Ngoại giao và việc giải quyết những vấn đề nghiên trọng",
+                "vi": ""
+            },
+            {
+                "en": "Chương trình giáo dục và đào tạo chuyên nghiệp và có hệ thống",
+                "vi": ""
+            },
+            {
+                "en": "Third world countries",
+                "vi": ""
+            },
+            {
+                "en": "Consultancy",
+                "vi": ""
+            },
+            {
+                "en": "Provide financial assistance",
+                "vi": ""
+            },
+            {
+                "en": "Financial aid",
+                "vi": ""
+            },
+            {
+                "en": "Infrastructure development",
+                "vi": ""
+            },
+            {
+                "en": "Avoid stagnation of development",
+                "vi": ""
+            },
+            {
+                "en": "Foster economic growth",
+                "vi": ""
+            },
+            {
+                "en": "Foreign cash injections",
+                "vi": ""
+            },
+            {
+                "en": "Maintain effective administration systems",
+                "vi": ""
+            },
+            {
+                "en": "Sustainable growth",
+                "vi": ""
+            },
+            {
+                "en": "Diplomacy and the resolution of serious issues",
+                "vi": ""
+            },
+            {
+                "en": "Professional and systematic education and training programs",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P56",
+        "category": "54. AIR POLLUTION",
+        "title_en": "DANGEROUS SPORTS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Khả năng bị chấn thương hoặc tử vong cao",
+                "vi": ""
+            },
+            {
+                "en": "120",
+                "vi": ""
+            },
+            {
+                "en": "Sự bảo vệ của các thiết bị leo núi",
+                "vi": ""
+            },
+            {
+                "en": "Những người yêu thích leo núi",
+                "vi": ""
+            },
+            {
+                "en": "Những trải nghiệm tràn đầy năng lượng",
+                "vi": ""
+            },
+            {
+                "en": "Những thành tựu lớn",
+                "vi": ""
+            },
+            {
+                "en": "Trải qua đào tạo kỹ càng",
+                "vi": ""
+            },
+            {
+                "en": "A high chance of serious injury or death",
+                "vi": ""
+            },
+            {
+                "en": "The protection of climbing equipment",
+                "vi": ""
+            },
+            {
+                "en": "Climbing enthusiasts",
+                "vi": ""
+            },
+            {
+                "en": "Invigorating experience",
+                "vi": ""
+            },
+            {
+                "en": "The amazing feat",
+                "vi": ""
+            },
+            {
+                "en": "Undertake rigorous training",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P57",
+        "category": "54. AIR POLLUTION",
+        "title_en": "WORLD'S ENVIRONMENTAL PROBLEM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Những vấn đề đáng quan ngại về giao thông và ô nhiễm",
+                "vi": ""
+            },
+            {
+                "en": "Tiết kiệm thời gian và di chuyển an toàn",
+                "vi": ""
+            },
+            {
+                "en": "Đi lại bằng loại hình phương tiện họ muốn",
+                "vi": ""
+            },
+            {
+                "en": "Rấy lên sự bất đồng từ xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Quy chế giảm thiểu sự sử dụng phương tiện cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Giảm tải đường phố khỏi ách tắc giao thông",
+                "vi": ""
+            },
+            {
+                "en": "Khu vực riêng cho lái xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "Vượt quá trọng tải của đường",
+                "vi": ""
+            },
+            {
+                "en": "Pressing problems of traffic and pollution",
+                "vi": ""
+            },
+            {
+                "en": "Time efficience and safe commuting",
+                "vi": ""
+            },
+            {
+                "en": "Travel by their preferred form of transport",
+                "vi": ""
+            },
+            {
+                "en": "Trigger social disagreement and resentment",
+                "vi": ""
+            },
+            {
+                "en": "Regulations restricting the use of private vehicles",
+                "vi": ""
+            },
+            {
+                "en": "Relieve many roads from heavy traffic congestion",
+                "vi": ""
+            },
+            {
+                "en": "Separate zones for cyclists",
+                "vi": ""
+            },
+            {
+                "en": "Exceed the road’s capacity",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P58",
+        "category": "54. AIR POLLUTION",
+        "title_en": "ADVERTISING",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Cấm tất cả các hình thức quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "Thiếu sự hữu dụng và đôi khi sự gây hại",
+                "vi": ""
+            },
+            {
+                "en": "Những đặc điểm khác biệt và mang tính cách mạng",
+                "vi": ""
+            },
+            {
+                "en": "121",
+                "vi": ""
+            },
+            {
+                "en": "Doanh nghiệp sẽ phát triển nhanh",
+                "vi": ""
+            },
+            {
+                "en": "Cống hiến vào nhiều hệ thống chính phủ",
+                "vi": ""
+            },
+            {
+                "en": "Trải qua lệnh cấm",
+                "vi": ""
+            },
+            {
+                "en": "Đem đến hàng ngàn cơ hội việc làm",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp sự hỗ trợ tài chính tạm thời",
+                "vi": ""
+            },
+            {
+                "en": "A complete restriction on all forms of advertising",
+                "vi": ""
+            },
+            {
+                "en": "Its apparent lack of usefulness and sometimes harmfulness",
+                "vi": ""
+            },
+            {
+                "en": "Distinct and revolutionary features",
+                "vi": ""
+            },
+            {
+                "en": "Businesses will thrive",
+                "vi": ""
+            },
+            {
+                "en": "Contribute towards a variety of governmental systems",
+                "vi": ""
+            },
+            {
+                "en": "Undergo a prohibitive order",
+                "vi": ""
+            },
+            {
+                "en": "Dispense thousands of employment opportunities",
+                "vi": ""
+            },
+            {
+                "en": "Provide temporary financial support",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P59",
+        "category": "54. AIR POLLUTION",
+        "title_en": "ADVERTISEMENTS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Thị trường thương mại rất cạnh tranh",
+                "vi": ""
+            },
+            {
+                "en": "Ngành công nghiệp tỉ đô",
+                "vi": ""
+            },
+            {
+                "en": "Có ảnh hưởng tiêu cực đến các cá nhân và xã hội nói chung",
+                "vi": ""
+            },
+            {
+                "en": "Kỹ thuật quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "Mua hàng mà chưa suy xét kỹ càng",
+                "vi": ""
+            },
+            {
+                "en": "Tạo ra những niềm tin tiêu cực nhất định",
+                "vi": ""
+            },
+            {
+                "en": "Sự kiểm soát nội dung quản cáo và sự kiểm soát những nơi mà có quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "A highly competitive commercial market",
+                "vi": ""
+            },
+            {
+                "en": "A multibillion dolar industry",
+                "vi": ""
+            },
+            {
+                "en": "Have a negative impact on individuals and society as a whole",
+                "vi": ""
+            },
+            {
+                "en": "Advertising techniques",
+                "vi": ""
+            },
+            {
+                "en": "Make impulsive purchases",
+                "vi": ""
+            },
+            {
+                "en": "Form certain negative beliefs and ideas",
+                "vi": ""
+            },
+            {
+                "en": "Regulation of the content of advertisements and the regulation of the space where",
+                "vi": ""
+            },
+            {
+                "en": "advertisements occur",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P60",
+        "category": "54. AIR POLLUTION",
+        "title_en": "LANGUAGE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Phương tiện giao tiếp",
+                "vi": ""
+            },
+            {
+                "en": "122",
+                "vi": ""
+            },
+            {
+                "en": "Giao tiếp toàn cầu",
+                "vi": ""
+            },
+            {
+                "en": "Cầu nối đến sự hài hòa thấu hiểu giữa những nền văn hóa và quốc gia khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "Rào cản ngôn ngữ",
+                "vi": ""
+            },
+            {
+                "en": "Bản sắc của một quốc gia",
+                "vi": ""
+            },
+            {
+                "en": "Tượng trưng cho nguồn gốc và đức tính",
+                "vi": ""
+            },
+            {
+                "en": "Chủ nghĩa anh hùng và lòng yêu nước",
+                "vi": ""
+            },
+            {
+                "en": "Đa dạng văn hóa và giá trị lịch sử",
+                "vi": ""
+            },
+            {
+                "en": "Tín ngưỡng, niềm tin và lối sống",
+                "vi": ""
+            },
+            {
+                "en": "A means of communication",
+                "vi": ""
+            },
+            {
+                "en": "International communications",
+                "vi": ""
+            },
+            {
+                "en": "The bridge to harmony and understanding between different cultures and countries",
+                "vi": ""
+            },
+            {
+                "en": "A linguistic barrier",
+                "vi": ""
+            },
+            {
+                "en": "A country’s core identity",
+                "vi": ""
+            },
+            {
+                "en": "Symbolize their origin and defining characteristics",
+                "vi": ""
+            },
+            {
+                "en": "Heroism and patriotism",
+                "vi": ""
+            },
+            {
+                "en": "Cultural diversity and historical values",
+                "vi": ""
+            },
+            {
+                "en": "Regions, beliefs, and lifestyles",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P61",
+        "category": "54. AIR POLLUTION",
+        "title_en": "JOBS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Làm một công việc trong một thời gian dài",
+                "vi": ""
+            },
+            {
+                "en": "Cảm giác trọn vẹn với công việc lớn hơn",
+                "vi": ""
+            },
+            {
+                "en": "Một quyết định nặng nề",
+                "vi": ""
+            },
+            {
+                "en": "Khám phá nhiều ngành nghề khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "Đảm bảo sự thỏa mãn trong công việc",
+                "vi": ""
+            },
+            {
+                "en": "Remain on a particular career path for a long period of time",
+                "vi": ""
+            },
+            {
+                "en": "Greater career fulfilment",
+                "vi": ""
+            },
+            {
+                "en": "An overwhelming decision",
+                "vi": ""
+            },
+            {
+                "en": "Explore a range of different career paths",
+                "vi": ""
+            },
+            {
+                "en": "Guarantee job satisfaction",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P62",
+        "category": "54. AIR POLLUTION",
+        "title_en": "TELIVISION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Nội dung không phù hợp",
+                "vi": ""
+            },
+            {
+                "en": "Phát trên TV",
+                "vi": ""
+            },
+            {
+                "en": "Hình ảnh bạo lực và tình dục",
+                "vi": ""
+            },
+            {
+                "en": "123",
+                "vi": ""
+            },
+            {
+                "en": "Không phù hợp cho trẻ em",
+                "vi": ""
+            },
+            {
+                "en": "Định hình cái nhìn một cách tiêu cực",
+                "vi": ""
+            },
+            {
+                "en": "Dính mắt vào màn hình TV",
+                "vi": ""
+            },
+            {
+                "en": "Ảnh hưởng xấu",
+                "vi": ""
+            },
+            {
+                "en": "Lý do hàng đầu",
+                "vi": ""
+            },
+            {
+                "en": "Thiếu hoạt động ngoài trời",
+                "vi": ""
+            },
+            {
+                "en": "Cần thiết cho sự phát triển của trẻ",
+                "vi": ""
+            },
+            {
+                "en": "Quy định nghiêm ngặt hơn",
+                "vi": ""
+            },
+            {
+                "en": "Tránh những hệ quả xấu",
+                "vi": ""
+            },
+            {
+                "en": "Inappropriate content",
+                "vi": ""
+            },
+            {
+                "en": "Televised",
+                "vi": ""
+            },
+            {
+                "en": "Graphic violence, sex scenes and sexual connotations",
+                "vi": ""
+            },
+            {
+                "en": "Unsuitable for children’s viewing",
+                "vi": ""
+            },
+            {
+                "en": "Negatively shape their views",
+                "vi": ""
+            },
+            {
+                "en": "Their eyes glued to the television screen",
+                "vi": ""
+            },
+            {
+                "en": "Detrimental effects",
+                "vi": ""
+            },
+            {
+                "en": "The primary reason",
+                "vi": ""
+            },
+            {
+                "en": "A severe lack of outdoor activitiy and exercise",
+                "vi": ""
+            },
+            {
+                "en": "Vital for a child’s well-being and development",
+                "vi": ""
+            },
+            {
+                "en": "More stringent regulations",
+                "vi": ""
+            },
+            {
+                "en": "Avoid the negative implications",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P63",
+        "category": "54. AIR POLLUTION",
+        "title_en": "MEDICAL SERVICE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Quá đông và không được đầu tư đầy đủ",
+                "vi": ""
+            },
+            {
+                "en": "Dịch vụ chăm sóc sức khỏe tư nhân",
+                "vi": ""
+            },
+            {
+                "en": "Giảm thiểu gánh nặng vào hệ thống công",
+                "vi": ""
+            },
+            {
+                "en": "Bảo hiểm sức khỏe tư nhân",
+                "vi": ""
+            },
+            {
+                "en": "Phí tiền",
+                "vi": ""
+            },
+            {
+                "en": "Chi trả việc chữa bệnh tốt và nhanh nhất",
+                "vi": ""
+            },
+            {
+                "en": "Overcrowded and underfunded",
+                "vi": ""
+            },
+            {
+                "en": "Private healthcare services",
+                "vi": ""
+            },
+            {
+                "en": "Reduce the burden on the public system",
+                "vi": ""
+            },
+            {
+                "en": "Private healthcare insurance",
+                "vi": ""
+            },
+            {
+                "en": "A waste of money",
+                "vi": ""
+            },
+            {
+                "en": "124",
+                "vi": ""
+            },
+            {
+                "en": "Afford the best and quickest treatment available",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P64",
+        "category": "54. AIR POLLUTION",
+        "title_en": "HEALTH",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có được những lợi ích liên quan",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao chất lượng cuộc sống của người dân",
+                "vi": ""
+            },
+            {
+                "en": "Đạt được và duy trì sức khỏe tốt",
+                "vi": ""
+            },
+            {
+                "en": "Có sức khỏe thể chất và tinh thần tốt",
+                "vi": ""
+            },
+            {
+                "en": "Tạo ra gánh nặng lên ngành y tế của",
+                "vi": ""
+            },
+            {
+                "en": "Có lợi cho chất lượng cuộc sống của xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Reap the associated benefits",
+                "vi": ""
+            },
+            {
+                "en": "Uplift the lives of the citizens within their own cities and countries",
+                "vi": ""
+            },
+            {
+                "en": "Achieve and maintain good health",
+                "vi": ""
+            },
+            {
+                "en": "Experience good physical and mental health",
+                "vi": ""
+            },
+            {
+                "en": "Cause a heavy load on a country’s healthcare industry",
+                "vi": ""
+            },
+            {
+                "en": "Benefit the quality of life for the society as a whole",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P65",
+        "category": "54. AIR POLLUTION",
+        "title_en": "JOB VS SOCIAL LIFE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Gây dựng tình bạn",
+                "vi": ""
+            },
+            {
+                "en": "Môi trường lý tưởng cho những mối quan hệ xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Gắn kết với nhau qua một mối quan tâm chung",
+                "vi": ""
+            },
+            {
+                "en": "Sự thấu hiểu lẫn nhau",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện không chỉ tâm trạng và cái nhìn mà còn sự thể hiện trong công việc",
+                "vi": ""
+            },
+            {
+                "en": "Có được quan điểm lớn hơn và vì vậy trở thành người hoàn thiện hơn",
+                "vi": ""
+            },
+            {
+                "en": "Establish friendship",
+                "vi": ""
+            },
+            {
+                "en": "An ideal breeding ground for social relationships",
+                "vi": ""
+            },
+            {
+                "en": "Bond together over a shared interest",
+                "vi": ""
+            },
+            {
+                "en": "A mutual understanding",
+                "vi": ""
+            },
+            {
+                "en": "Improve not only their mood and outlook at work but also their performance",
+                "vi": ""
+            },
+            {
+                "en": "Gain a greater perspective and thus become a more well-rounded person",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P66",
+        "category": "54. AIR POLLUTION",
+        "title_en": "PARENTS vs CHILDREN",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đóng vai trò thiết yếu cho sự phát triển của trẻ",
+                "vi": ""
+            },
+            {
+                "en": "Quá nuông chiều là một cách nuôi nấng tồi tệ",
+                "vi": ""
+            },
+            {
+                "en": "125",
+                "vi": ""
+            },
+            {
+                "en": "Rút lại quyền lợi",
+                "vi": ""
+            },
+            {
+                "en": "Nài nỉ bố mẹ mua một món đồ chơi mới",
+                "vi": ""
+            },
+            {
+                "en": "Nền tảng của tính cách",
+                "vi": ""
+            },
+            {
+                "en": "Không có giới hạn cho sự nuông chiều bố mẹ hành cho con cái",
+                "vi": ""
+            },
+            {
+                "en": "Play a key role in a child’s development",
+                "vi": ""
+            },
+            {
+                "en": "Over-indulgence is a poor choice of rearing",
+                "vi": ""
+            },
+            {
+                "en": "Withdrawal of privileges",
+                "vi": ""
+            },
+            {
+                "en": "Pester their parents to buy them a new toy",
+                "vi": ""
+            },
+            {
+                "en": "The basis of their character",
+                "vi": ""
+            },
+            {
+                "en": "There is no limit to the indulgence parents show towards their kids",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P67",
+        "category": "54. AIR POLLUTION",
+        "title_en": "CARS vs ROAD SYSTEM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Chi phí bảo trì đường",
+                "vi": ""
+            },
+            {
+                "en": "Gánh trách nhiệm cải thiện hệ thống đường xá",
+                "vi": ""
+            },
+            {
+                "en": "Tạo điều kiện cho người sử dụng xe có những chuyến đi thoải mái",
+                "vi": ""
+            },
+            {
+                "en": "Sự bảo trì và cải tiến của cơ sở hạ tầng này",
+                "vi": ""
+            },
+            {
+                "en": "Hệ thống giao thông hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "Ưu tiên điều này hơn",
+                "vi": ""
+            },
+            {
+                "en": "Đặt trách nhiệm cải thiện đường xá lên người sử dụng xe hơi",
+                "vi": ""
+            },
+            {
+                "en": "Đầu tư vào cơ sở đường xá",
+                "vi": ""
+            },
+            {
+                "en": "Road maintenance costs",
+                "vi": ""
+            },
+            {
+                "en": "Shoulder the responsibility for the improvement of road systems",
+                "vi": ""
+            },
+            {
+                "en": "Facilitate a more comfortable journey for car users",
+                "vi": ""
+            },
+            {
+                "en": "The maintenance and enhancement of the infrastructure",
+                "vi": ""
+            },
+            {
+                "en": "An efficient transport system",
+                "vi": ""
+            },
+            {
+                "en": "Give this priority",
+                "vi": ""
+            },
+            {
+                "en": "Lay the responsibility for road upgrade works on them",
+                "vi": ""
+            },
+            {
+                "en": "Road infrastructure investment",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P68",
+        "category": "54. AIR POLLUTION",
+        "title_en": "ECONOMY vs ENVIRONMENT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Một nền kinh tế hùng mạnh và một môi trường sạch có thể cùng tồn tại",
+                "vi": ""
+            },
+            {
+                "en": "Các nguồn khai thác truyền thống",
+                "vi": ""
+            },
+            {
+                "en": "126",
+                "vi": ""
+            },
+            {
+                "en": "Sự sử dụng năng lượng bền vững thay thế",
+                "vi": ""
+            },
+            {
+                "en": "Giảm thiểu tổn hại gây nên bởi hoạt động công nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Giảm nhẹ sự phụ thuộc của con người vào tài nguyên thiên nhiên",
+                "vi": ""
+            },
+            {
+                "en": "Gây nên những tổn thất nặng nề lên môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Khí thải Carbon và chất thải hóa học",
+                "vi": ""
+            },
+            {
+                "en": "A strong economy and a clean environment can co-exist",
+                "vi": ""
+            },
+            {
+                "en": "Traditional sources of exploitation",
+                "vi": ""
+            },
+            {
+                "en": "The use of alternative renewable energy",
+                "vi": ""
+            },
+            {
+                "en": "Minimize the damage caused by industrial activities",
+                "vi": ""
+            },
+            {
+                "en": "Relieve our dependency on natural resources",
+                "vi": ""
+            },
+            {
+                "en": "Take a heavy toll on the environment",
+                "vi": ""
+            },
+            {
+                "en": "Carbon emissions and chemical waste",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P69",
+        "category": "54. AIR POLLUTION",
+        "title_en": "SPACE TOURISM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tạo điều kiện cho giao tiếp toàn cầu",
+                "vi": ""
+            },
+            {
+                "en": "Dự báo thời tiết",
+                "vi": ""
+            },
+            {
+                "en": "Đem đến sự giàu có và cảm hứng cho các thế hệ tương lai",
+                "vi": ""
+            },
+            {
+                "en": "Có hậu quả lớn đến khí hậu trái đất",
+                "vi": ""
+            },
+            {
+                "en": "Những nhân vật giàu có trong giới kinh doanh",
+                "vi": ""
+            },
+            {
+                "en": "Những đổi mới công nghệ",
+                "vi": ""
+            },
+            {
+                "en": "Những đột phá công nghệ",
+                "vi": ""
+            },
+            {
+                "en": "Facilitate global communication",
+                "vi": ""
+            },
+            {
+                "en": "Predict weather conditions",
+                "vi": ""
+            },
+            {
+                "en": "Bring wealth and inspiration for future generations",
+                "vi": ""
+            },
+            {
+                "en": "Have major consequences for the earth’s climate",
+                "vi": ""
+            },
+            {
+                "en": "Wealthy business figures",
+                "vi": ""
+            },
+            {
+                "en": "Technological innovations",
+                "vi": ""
+            },
+            {
+                "en": "Technological breakthroughs",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P70",
+        "category": "54. AIR POLLUTION",
+        "title_en": "FUTURE CARS vs COMPUTER",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Xe tự lái",
+                "vi": ""
+            },
+            {
+                "en": "Có ảnh hưởng không mong muốn lên tỷ lệ việc làm của lái xe thương mại",
+                "vi": ""
+            },
+            {
+                "en": "Gánh nặng xã càng càng ngày càng tăng đặt lên chính phủ",
+                "vi": ""
+            },
+            {
+                "en": "127",
+                "vi": ""
+            },
+            {
+                "en": "Điều hướng đường đi với ít lỗi trong việc phán đoán đường đi",
+                "vi": ""
+            },
+            {
+                "en": "Autonomous cars",
+                "vi": ""
+            },
+            {
+                "en": "Have an undesirable influence on employment rates of commercial drivers",
+                "vi": ""
+            },
+            {
+                "en": "The increasing social burden placed upon the government",
+                "vi": ""
+            },
+            {
+                "en": "Navigate their way with less chance of making errors in judgment",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P71",
+        "category": "54. AIR POLLUTION",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có rất ít kinh nghiệm thực tế",
+                "vi": ""
+            },
+            {
+                "en": "Tạo một thế hệ được giáo dục tốt hơn trong tương lai",
+                "vi": ""
+            },
+            {
+                "en": "Hoà nhập",
+                "vi": ""
+            },
+            {
+                "en": "Hay gây rắc rối",
+                "vi": ""
+            },
+            {
+                "en": "1 nghề nghiệp đòi nhiều hơn về việc học từ thực tế",
+                "vi": ""
+            },
+            {
+                "en": "Have very little real-world experience",
+                "vi": ""
+            },
+            {
+                "en": "Create a more educated future generation of people",
+                "vi": ""
+            },
+            {
+                "en": "Fit-in",
+                "vi": ""
+            },
+            {
+                "en": "Disruptive",
+                "vi": ""
+            },
+            {
+                "en": "A career that requires more practical based learning",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P72",
+        "category": "54. AIR POLLUTION",
+        "title_en": "ANIMAL SPECIES VS HUMAN ACTIVITIES",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Nguyên nhân tác động đằng sau thảm kịch này",
+                "vi": ""
+            },
+            {
+                "en": "Gây thiệt hại to lớn lên môi trường tự nhiên của động vật",
+                "vi": ""
+            },
+            {
+                "en": "Sự biến mất không may của rất nhiều loài sinh vật biển",
+                "vi": ""
+            },
+            {
+                "en": "Săn trộm",
+                "vi": ""
+            },
+            {
+                "en": "Giữ gìn môi trường cho các loài động vật",
+                "vi": ""
+            },
+            {
+                "en": "Kiềm lại",
+                "vi": ""
+            },
+            {
+                "en": "Driving forces behind such a tragedy",
+                "vi": ""
+            },
+            {
+                "en": "Inflicting tremendous damage on animal’s natural habitats",
+                "vi": ""
+            },
+            {
+                "en": "Unfortunate disappearance of many aquatic creatures",
+                "vi": ""
+            },
+            {
+                "en": "Poach",
+                "vi": ""
+            },
+            {
+                "en": "Keep the natural environment for these animals untouched",
+                "vi": ""
+            },
+            {
+                "en": "Refrain from",
+                "vi": ""
+            },
+            {
+                "en": "128",
+                "vi": ""
+            },
+            {
+                "en": "Di truyền",
+                "vi": ""
+            },
+            {
+                "en": "Có một sức hút nhất định mà cho phép họ truyền cảm hứng và năng lượng cho mọi người",
+                "vi": ""
+            },
+            {
+                "en": "Bẩm sinh",
+                "vi": ""
+            },
+            {
+                "en": "Sự đáng tin cậy của một nhà lãnh đạo thực sự được xây dựng từ",
+                "vi": ""
+            },
+            {
+                "en": "Sự tự tin và sự tinh thông về lĩnh vực chuyên môn đi theo đường lối của người lãnh đạo",
+                "vi": ""
+            },
+            {
+                "en": "Genetic",
+                "vi": ""
+            },
+            {
+                "en": "Have a certain charisma that allows them to inspire passion and energy into others",
+                "vi": ""
+            },
+            {
+                "en": "Innate",
+                "vi": ""
+            },
+            {
+                "en": "The credibility of a true leader is built on his self-confidence and mastery of his areas of",
+                "vi": ""
+            },
+            {
+                "en": "expertise",
+                "vi": ""
+            },
+            {
+                "en": "Heed the leader’s diredtion",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P74",
+        "category": "73. LEADERSHIP",
+        "title_en": "HISTORY OF ONE'S OWN FAMILY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Hiểu sâu hơn về nguồn gốc và truyền thống gia đình",
+                "vi": ""
+            },
+            {
+                "en": "Tra cứu cây gia phả",
+                "vi": ""
+            },
+            {
+                "en": "Bảng phả hệ",
+                "vi": ""
+            },
+            {
+                "en": "Bỏ quên di sản tâm linh mà tổ tiên để lại",
+                "vi": ""
+            },
+            {
+                "en": "Have a deeper understanding about their family roots and heritage",
+                "vi": ""
+            },
+            {
+                "en": "Tracing my family tree",
+                "vi": ""
+            },
+            {
+                "en": "Geneolagy",
+                "vi": ""
+            },
+            {
+                "en": "Ignore the spiritual legacy that their ancestors left",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P75",
+        "category": "73. LEADERSHIP",
+        "title_en": "ROADS AND MOTORWAYS VS PUBLIC TRANSPORT SYSTEMS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Áp lực lên các cung đường chính của thành phố",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp cho người dân quyền tiếp cận phương tiện công cộng",
+                "vi": ""
+            },
+            {
+                "en": "Di chuyển đi làm hàng ngày",
+                "vi": ""
+            },
+            {
+                "en": "Được chi tiêu hợp lí",
+                "vi": ""
+            },
+            {
+                "en": "Pressure on the city’s main roads",
+                "vi": ""
+            },
+            {
+                "en": "Providing people with access to public transport",
+                "vi": ""
+            },
+            {
+                "en": "Commute daily",
+                "vi": ""
+            },
+            {
+                "en": "129",
+                "vi": ""
+            },
+            {
+                "en": "Well-spent",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P76",
+        "category": "73. LEADERSHIP",
+        "title_en": "ENVIRONMENT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tổ chức đa quốc gia/ quốc tế",
+                "vi": ""
+            },
+            {
+                "en": "Ô nhiễm bầu không khí và đường dẫn nước với chất thải độc hại",
+                "vi": ""
+            },
+            {
+                "en": "Đắm chìm trong ô nhiễm",
+                "vi": ""
+            },
+            {
+                "en": "Ảnh hưởng ngắn và dài hạn",
+                "vi": ""
+            },
+            {
+                "en": "Multinational/ international governing body/ transnational organisation",
+                "vi": ""
+            },
+            {
+                "en": "Pollutes its atmosphere and water ways with toxic emissions",
+                "vi": ""
+            },
+            {
+                "en": "Riddle with corruption",
+                "vi": ""
+            },
+            {
+                "en": "Short and long-term impacts",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P77",
+        "category": "73. LEADERSHIP",
+        "title_en": "TRADITIONAL SUBJECTS VS COMPUTER SKILLS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Bộ ba thần thánh",
+                "vi": ""
+            },
+            {
+                "en": "Thông thạo máy tính là một điều kiện không thể thiếu mà mỗi nhà tuyển dụng tìm trong hồ",
+                "vi": ""
+            },
+            {
+                "en": "sơ xin việc.",
+                "vi": ""
+            },
+            {
+                "en": "Sự thành thạo về kĩ năng máy tính",
+                "vi": ""
+            },
+            {
+                "en": "Một nguồn kiến thức và thông tin gần như vô hạn",
+                "vi": ""
+            },
+            {
+                "en": "Mở rộng các mối quan hệ bạn bè trên mạng",
+                "vi": ""
+            },
+            {
+                "en": "Holy trinity",
+                "vi": ""
+            },
+            {
+                "en": "Computer literacy is an indispensable requirement that almost every recruiter seeks in a",
+                "vi": ""
+            },
+            {
+                "en": "resume",
+                "vi": ""
+            },
+            {
+                "en": "Have a good grasp of computer skills",
+                "vi": ""
+            },
+            {
+                "en": "Have an access to an almost unlimited source of knowledge and information",
+                "vi": ""
+            },
+            {
+                "en": "Widen their circle of online friends",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P78",
+        "category": "73. LEADERSHIP",
+        "title_en": "OVERWEIGHT AND UNHEALTHY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Đảm bảo sức khoẻ của người dân",
+                "vi": ""
+            },
+            {
+                "en": "Một nguồn ảnh hưởng lớn đến cuộc sống của trẻ",
+                "vi": ""
+            },
+            {
+                "en": "Chế độ ăn uống khoẻ mạnh chứa ít đường và chất béo",
+                "vi": ""
+            },
+            {
+                "en": "Lối sống thụ động không thể dục thể thao",
+                "vi": ""
+            },
+            {
+                "en": "Kiềm chế vấn nạn béo phí",
+                "vi": ""
+            },
+            {
+                "en": "130",
+                "vi": ""
+            },
+            {
+                "en": "Ensure the well-being of people",
+                "vi": ""
+            },
+            {
+                "en": "A great source of influence on their children’s life",
+                "vi": ""
+            },
+            {
+                "en": "Healthy eating patterns that contain less fat and sugar",
+                "vi": ""
+            },
+            {
+                "en": "Sedentary lifestyle",
+                "vi": ""
+            },
+            {
+                "en": "Curb the obesity epidemic",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P79",
+        "category": "73. LEADERSHIP",
+        "title_en": "MOBILE PHONE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Gia tăng năng suất lao động",
+                "vi": ""
+            },
+            {
+                "en": "Thời đại hội nhập hoá",
+                "vi": ""
+            },
+            {
+                "en": "Trường hợp khẩn cấp",
+                "vi": ""
+            },
+            {
+                "en": "Sự cân bằng giữa công việc – cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "Enhance work efficiency",
+                "vi": ""
+            },
+            {
+                "en": "Era of globalization",
+                "vi": ""
+            },
+            {
+                "en": "Case of emergency",
+                "vi": ""
+            },
+            {
+                "en": "Work-life balance",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P80",
+        "category": "73. LEADERSHIP",
+        "title_en": "MONEY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Kĩ năng quản lí tiền bạc cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Phụ thuộc tài chính vào bố mẹ",
+                "vi": ""
+            },
+            {
+                "en": "Tiền tiêu vặt",
+                "vi": ""
+            },
+            {
+                "en": "Trang bị cho họ kiến thức và kĩ năng để quản lí tài chính cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Bắt đầu xin việc",
+                "vi": ""
+            },
+            {
+                "en": "Personal money management skills",
+                "vi": ""
+            },
+            {
+                "en": "Financially dependent upon parents",
+                "vi": ""
+            },
+            {
+                "en": "Pocket-money",
+                "vi": ""
+            },
+            {
+                "en": "Equip them with the knowledge and skills to manage their own personal finances",
+                "vi": ""
+            },
+            {
+                "en": "Enter employment",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P81",
+        "category": "73. LEADERSHIP",
+        "title_en": "LIFE EXPECTANCY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Cống hiến phần lớn cuộc đời để làm việc",
+                "vi": ""
+            },
+            {
+                "en": "Tận hưởng việc nghỉ hưu thật thoải mái",
+                "vi": ""
+            },
+            {
+                "en": "Phản tác dụng",
+                "vi": ""
+            },
+            {
+                "en": "131",
+                "vi": ""
+            },
+            {
+                "en": "Khoẻ mạnh cả về tinh thần và thể chất",
+                "vi": ""
+            },
+            {
+                "en": "Devote a large proportion of their life to working",
+                "vi": ""
+            },
+            {
+                "en": "Enjoy a comfortable retirement",
+                "vi": ""
+            },
+            {
+                "en": "Counter-productive",
+                "vi": ""
+            },
+            {
+                "en": "Mentally but also physically healthy",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P82",
+        "category": "73. LEADERSHIP",
+        "title_en": "CRIMES",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Kết quả của việc làm cha mẹ không đúng cách và thiếu sự chăm sóc cũng như giáo dục về tội",
+                "vi": ""
+            },
+            {
+                "en": "phạm",
+                "vi": ""
+            },
+            {
+                "en": "Phạm tội ở tuổi thành niên",
+                "vi": ""
+            },
+            {
+                "en": "Dễ bị ảnh hưởng bởi áp lực tiêu cực từ bạn bè",
+                "vi": ""
+            },
+            {
+                "en": "Kiềm hãm sự phạm tội ở tuổi vị thành niên",
+                "vi": ""
+            },
+            {
+                "en": "Result of inappropriate parenting and a lack of childcare and crime education",
+                "vi": ""
+            },
+            {
+                "en": "Juvenile offences",
+                "vi": ""
+            },
+            {
+                "en": "Susceptible to negative peer pressure",
+                "vi": ""
+            },
+            {
+                "en": "Curb juvenile delinquencies",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P83",
+        "category": "73. LEADERSHIP",
+        "title_en": "CITY LIFE - SMALL SPACES OR NO OUTDOOR AREAS",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Dễ có những cảm xúc tiêu cực",
+                "vi": ""
+            },
+            {
+                "en": "Hoạt động giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Sự gắn bố gia đình",
+                "vi": ""
+            },
+            {
+                "en": "Tạo ra không gian sinh hoạt chung cho cả gia đình",
+                "vi": ""
+            },
+            {
+                "en": "Be prone to negative feelings",
+                "vi": ""
+            },
+            {
+                "en": "Recreational activities",
+                "vi": ""
+            },
+            {
+                "en": "Family bonding",
+                "vi": ""
+            },
+            {
+                "en": "Offer a common living space for the whole family",
+                "vi": ""
+            },
+            {
+                "en": "Sự xuất hiện của các phương tiện giao tiếp online",
+                "vi": ""
+            },
+            {
+                "en": "Loại bỏ sự cần thiết của những công cụ lỗ thời và tốn thời gian như là thư",
+                "vi": ""
+            },
+            {
+                "en": "Đặt nền móng cho…",
+                "vi": ""
+            },
+            {
+                "en": "132",
+                "vi": ""
+            },
+            {
+                "en": "The emergence of online-based communication tools",
+                "vi": ""
+            },
+            {
+                "en": "Eliminating the need for old-fashioned and time-consuming tools, such as letters",
+                "vi": ""
+            },
+            {
+                "en": "Set the platform for many other electrical-based inventions/lay the foundation for the",
+                "vi": ""
+            },
+            {
+                "en": "appearance of the Internet",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P85",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "BUSINESS AND CULTURAL CONTACT VS NATIONAL IDENTITIES",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Dòng tiền ngoại tệ chỉ cho mục đích xuất khẩu",
+                "vi": ""
+            },
+            {
+                "en": "Sự bỏ bê sản xuất trong nước",
+                "vi": ""
+            },
+            {
+                "en": "Sự háo hức thích nghi với nền văn hoá",
+                "vi": ""
+            },
+            {
+                "en": "Các hoạt động đa văn hoá",
+                "vi": ""
+            },
+            {
+                "en": "Sở hữu trí tuệ",
+                "vi": ""
+            },
+            {
+                "en": "Inflow of foreign capital only for export purposes",
+                "vi": ""
+            },
+            {
+                "en": "Neglect of production in the domestic sector",
+                "vi": ""
+            },
+            {
+                "en": "Eagerness of adapting to the culture",
+                "vi": ""
+            },
+            {
+                "en": "Cross-culture activities",
+                "vi": ""
+            },
+            {
+                "en": "Intellectual property",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P86",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "STUDENTS LEARNINg FROM THEIR TEACHERS THAN OTHER SOURCES (THE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "INTERNET OR TELEVISION)",
+                "vi": ""
+            },
+            {
+                "en": "Tự giáo dục bản thân trong mọi lĩnh vực",
+                "vi": ""
+            },
+            {
+                "en": "Một biển trời kiến thức trong tầm tay loài người",
+                "vi": ""
+            },
+            {
+                "en": "Chắc chắn rằng học sinh học những kiến thức chính xác và đáng tin cậy",
+                "vi": ""
+            },
+            {
+                "en": "Tăng cường hiệu suất",
+                "vi": ""
+            },
+            {
+                "en": "Quá trình học tập của học sinh",
+                "vi": ""
+            },
+            {
+                "en": "Educate themselves in almost any area of learning",
+                "vi": ""
+            },
+            {
+                "en": "Wealth of information at people’s fingertips",
+                "vi": ""
+            },
+            {
+                "en": "Ensure that students learn from accurate and reliable knowledge",
+                "vi": ""
+            },
+            {
+                "en": "Enhance the productivity",
+                "vi": ""
+            },
+            {
+                "en": "Learning process of students",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P87",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "AGING POPULATION VS ECONOMY AND SOCIETY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tạo áp lực lớn hơn lên hệ thống lương hưu",
+                "vi": ""
+            },
+            {
+                "en": "133",
+                "vi": ""
+            },
+            {
+                "en": "Tìm kiếm việc làm",
+                "vi": ""
+            },
+            {
+                "en": "Đóng góp lực lượng lao động miễn phí cho cộng đồng và các dự án của chính phủ",
+                "vi": ""
+            },
+            {
+                "en": "Gìn giữ các giá trị và đạo đức trong cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "Gặt hái những lợi ích lớn hơn",
+                "vi": ""
+            },
+            {
+                "en": "Put greater pressure on the pension system",
+                "vi": ""
+            },
+            {
+                "en": "Seek employment",
+                "vi": ""
+            },
+            {
+                "en": "Contribute free labor to community and government projects",
+                "vi": ""
+            },
+            {
+                "en": "Uphold morals and values in a community",
+                "vi": ""
+            },
+            {
+                "en": "Reap greater benefits",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P88",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "PHYSICAL EXERCISE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giữ sức khỏe thể chất",
+                "vi": ""
+            },
+            {
+                "en": "Người sống ở thành phố",
+                "vi": ""
+            },
+            {
+                "en": "Lối sống ít vấn động",
+                "vi": ""
+            },
+            {
+                "en": "Những hoạt động tốn thể lực",
+                "vi": ""
+            },
+            {
+                "en": "Theo đuổi những hoạt động và thói quen tốt cho sức khỏe",
+                "vi": ""
+            },
+            {
+                "en": "Chiến dịch truyền thông online",
+                "vi": ""
+            },
+            {
+                "en": "Những rủi ro sức khỏe của những hành vi lười biếng",
+                "vi": ""
+            },
+            {
+                "en": "Maintain physical fitness",
+                "vi": ""
+            },
+            {
+                "en": "City dwellers",
+                "vi": ""
+            },
+            {
+                "en": "The sedentary lifestyle",
+                "vi": ""
+            },
+            {
+                "en": "Physically exhausting activities",
+                "vi": ""
+            },
+            {
+                "en": "Pursuing healthy activities and habits",
+                "vi": ""
+            },
+            {
+                "en": "An online propagation campaign",
+                "vi": ""
+            },
+            {
+                "en": "The potential health risks of sedentary behaviors",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P89",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "SPENDING LESS TIME WITH THEIR FAMILY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Chịu nhiều áp lực từ việc học hành",
+                "vi": ""
+            },
+            {
+                "en": "Dễ bị tổn thương trước áp lực xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Lớn lên với sự tự ti và thing thoảng là trầm cảm",
+                "vi": ""
+            },
+            {
+                "en": "Nối liền khoảng cách giữa các thế hệ",
+                "vi": ""
+            },
+            {
+                "en": "Be under great pressure from studying",
+                "vi": ""
+            },
+            {
+                "en": "134",
+                "vi": ""
+            },
+            {
+                "en": "Are often vulnerable to social pressure",
+                "vi": ""
+            },
+            {
+                "en": "Grow up with low self-esteem and somtimes depression",
+                "vi": ""
+            },
+            {
+                "en": "Bridge the generation gap",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P90",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "NEWS MEDIA",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Mà không có sự trợ giúp của phương tiện truyền thông",
+                "vi": ""
+            },
+            {
+                "en": "Nhấn chìm xã hội chúng ta trong một vòng xoáy khủng khiếp và không bao giờ thay đổi của",
+                "vi": ""
+            },
+            {
+                "en": "sự lo lắng và nỗi sở hãi",
+                "vi": ""
+            },
+            {
+                "en": "Gây ra nỗi đau buồn và khuyến khích bạo lực",
+                "vi": ""
+            },
+            {
+                "en": "Mức độ tin cậy",
+                "vi": ""
+            },
+            {
+                "en": "Bắt nguồn từ tin tức không đáng tin cậy",
+                "vi": ""
+            },
+            {
+                "en": "Without the assistance of the news media",
+                "vi": ""
+            },
+            {
+                "en": "Submerge our society in a horrendous, ever-changing whirlwind of terror and anxiety",
+                "vi": ""
+            },
+            {
+                "en": "Causes greate distress to citizens and incite violence",
+                "vi": ""
+            },
+            {
+                "en": "Degree of authenticity",
+                "vi": ""
+            },
+            {
+                "en": "Take their roots from distorded news",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P91",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "STUDY INTERNET VS AT HOME",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Rất nhiều thông tin",
+                "vi": ""
+            },
+            {
+                "en": "Báo mạng và các trang web video",
+                "vi": ""
+            },
+            {
+                "en": "Lượng lớn kiến thức",
+                "vi": ""
+            },
+            {
+                "en": "Linh động chọn học bất cứ môn gì họ thích",
+                "vi": ""
+            },
+            {
+                "en": "Lấy kiến thức",
+                "vi": ""
+            },
+            {
+                "en": "Thiếu sự hướng dẫn và hỗ trợ của giáo viên và bạn bè",
+                "vi": ""
+            },
+            {
+                "en": "Sự phát triển trí tuệ của một đứa trẻ",
+                "vi": ""
+            },
+            {
+                "en": "Giáo dục trường học",
+                "vi": ""
+            },
+            {
+                "en": "Các mối quan hệ xã hội và sự phát triển tinh thần",
+                "vi": ""
+            },
+            {
+                "en": "Thêm bạn mới",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện kết quả học tập",
+                "vi": ""
+            },
+            {
+                "en": "Không liên quan đến việc học của trẻ em",
+                "vi": ""
+            },
+            {
+                "en": "A wealth of information",
+                "vi": ""
+            },
+            {
+                "en": "Online newspapers and video websites",
+                "vi": ""
+            },
+            {
+                "en": "A great deal of knowledge",
+                "vi": ""
+            },
+            {
+                "en": "135",
+                "vi": ""
+            },
+            {
+                "en": "Flexibly choose to study whatever subjects they are interested in",
+                "vi": ""
+            },
+            {
+                "en": "Acquire knowledge",
+                "vi": ""
+            },
+            {
+                "en": "Lack of teachers’ guidance and peer support",
+                "vi": ""
+            },
+            {
+                "en": "A child’s intellectual development",
+                "vi": ""
+            },
+            {
+                "en": "Formal education",
+                "vi": ""
+            },
+            {
+                "en": "Social relationships and mental development",
+                "vi": ""
+            },
+            {
+                "en": "Establish friendships",
+                "vi": ""
+            },
+            {
+                "en": "Improve their learning outcomes",
+                "vi": ""
+            },
+            {
+                "en": "Irrelevant to children’s learning",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P92",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "FREEDOM – CHILDREN",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Bị giới hạn theo một phương thức khác",
+                "vi": ""
+            },
+            {
+                "en": "Nương nhẹ luật ăn mặc",
+                "vi": ""
+            },
+            {
+                "en": "Sự giam hãm",
+                "vi": ""
+            },
+            {
+                "en": "Xoay xung quanh",
+                "vi": ""
+            },
+            {
+                "en": "Bị phụ thuộc vào …",
+                "vi": ""
+            },
+            {
+                "en": "Put in a different cage",
+                "vi": ""
+            },
+            {
+                "en": "Have relaxed their rules regarding student’s appearance",
+                "vi": ""
+            },
+            {
+                "en": "Confinements",
+                "vi": ""
+            },
+            {
+                "en": "Center around",
+                "vi": ""
+            },
+            {
+                "en": "Become enslaved to such platforms",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P93",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "STUDY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Việc học sớm",
+                "vi": ""
+            },
+            {
+                "en": "Khởi đầu trước",
+                "vi": ""
+            },
+            {
+                "en": "Việc học chính thức",
+                "vi": ""
+            },
+            {
+                "en": "Kĩ năng mềm quan trọng bao gồm kĩ năng làm việc nhóm và giao tiếp",
+                "vi": ""
+            },
+            {
+                "en": "Khôn ngoan",
+                "vi": ""
+            },
+            {
+                "en": "An early commencement of study",
+                "vi": ""
+            },
+            {
+                "en": "Head start",
+                "vi": ""
+            },
+            {
+                "en": "Formal schooling",
+                "vi": ""
+            },
+            {
+                "en": "Vital soft skills including teamwork and communication skills",
+                "vi": ""
+            },
+            {
+                "en": "Well-advised",
+                "vi": ""
+            },
+            {
+                "en": "136",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P94",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "SOCIAL MEDIA",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Liên lạc trực tiếp",
+                "vi": ""
+            },
+            {
+                "en": "Trao đổi thông tin qua mạng",
+                "vi": ""
+            },
+            {
+                "en": "Thay thế mối liên hệ ngoài đời bằng giao tiếp trên mạng",
+                "vi": ""
+            },
+            {
+                "en": "Xa lánh con người khỏi xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Direct contact = face to face contact",
+                "vi": ""
+            },
+            {
+                "en": "Virtual communication exchange",
+                "vi": ""
+            },
+            {
+                "en": "Substituting their real-life relations with digital communication",
+                "vi": ""
+            },
+            {
+                "en": "Alienate people from communities",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P95",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "HISTORY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Hiểu biết cặn kẽ về cái gì",
+                "vi": ""
+            },
+            {
+                "en": "Lòng yêu nước",
+                "vi": ""
+            },
+            {
+                "en": "Chủ quyền",
+                "vi": ""
+            },
+            {
+                "en": "Tự hào về lòng yêu nước",
+                "vi": ""
+            },
+            {
+                "en": "Những giá trị truyền thống và con người",
+                "vi": ""
+            },
+            {
+                "en": "Một cái nhìn quan điểm toàn diện hơn về cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "Bối cảnh lịch sử",
+                "vi": ""
+            },
+            {
+                "en": "Văn hóa doanh nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Thorough insights into",
+                "vi": ""
+            },
+            {
+                "en": "Patriotism",
+                "vi": ""
+            },
+            {
+                "en": "Sovereignty",
+                "vi": ""
+            },
+            {
+                "en": "Take pride in their origin",
+                "vi": ""
+            },
+            {
+                "en": "Traditional values and identity",
+                "vi": ""
+            },
+            {
+                "en": "Well-rounded perspective of life",
+                "vi": ""
+            },
+            {
+                "en": "Historical backgrounds",
+                "vi": ""
+            },
+            {
+                "en": "Company culture",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P96",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "TOURISM",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có xu hướng đi thăm bảo tàng",
+                "vi": ""
+            },
+            {
+                "en": "Không thu hút được dân cư địa phương vì bề ngoài",
+                "vi": ""
+            },
+            {
+                "en": "137",
+                "vi": ""
+            },
+            {
+                "en": "Lấy được sự tò mò từ du khách",
+                "vi": ""
+            },
+            {
+                "en": "Mục đích giáo dục và giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Những cuộc thi vừa giải trí vừa mang tính giáo dục",
+                "vi": ""
+            },
+            {
+                "en": "Tend to pay a visit to museums",
+                "vi": ""
+            },
+            {
+                "en": "Visually unattractive to local residents",
+                "vi": ""
+            },
+            {
+                "en": "Pick tourists’ curiosity",
+                "vi": ""
+            },
+            {
+                "en": "Education and entertainment purposes",
+                "vi": ""
+            },
+            {
+                "en": "Didactic as well as recreational competitions",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P97",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "INTERNET",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giữ vai trò thiết yếu",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận trữ lượng thông tin lớn",
+                "vi": ""
+            },
+            {
+                "en": "Chiếm lấy vị trí của báo in",
+                "vi": ""
+            },
+            {
+                "en": "Mở ra khả năng đăng tải video và băng ghi âm",
+                "vi": ""
+            },
+            {
+                "en": "Nguồn thông tin quan trọng nhất",
+                "vi": ""
+            },
+            {
+                "en": "To hold the most vital position",
+                "vi": ""
+            },
+            {
+                "en": "To access huge storage of news",
+                "vi": ""
+            },
+            {
+                "en": "To take over the position of printed newspaper",
+                "vi": ""
+            },
+            {
+                "en": "To unfold the possibility to upload videos and voice records",
+                "vi": ""
+            },
+            {
+                "en": "The most crucial source of information",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P98",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "CRIME",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Hành động bất hợp pháp",
+                "vi": ""
+            },
+            {
+                "en": "Sự ủng hộ từ xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Loại bỏ nguồn góc của vấn đề",
+                "vi": ""
+            },
+            {
+                "en": "Là một sự cần thiết không thể thiếu (nhấn mạnh)",
+                "vi": ""
+            },
+            {
+                "en": "An ninh xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Bị bỏ tù",
+                "vi": ""
+            },
+            {
+                "en": "Hành động tội ác",
+                "vi": ""
+            },
+            {
+                "en": "Là một rào cản chống lại cái gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Bị tống vào tù",
+                "vi": ""
+            },
+            {
+                "en": "Như là một liều thuốc cho nguồn gốc của tội phạm",
+                "vi": ""
+            },
+            {
+                "en": "138",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao dân trí",
+                "vi": ""
+            },
+            {
+                "en": "Học nghề",
+                "vi": ""
+            },
+            {
+                "en": "Loại bỏ bất kì ý định muốn phạm tội",
+                "vi": ""
+            },
+            {
+                "en": "Một xã hội văn minh",
+                "vi": ""
+            },
+            {
+                "en": "Illegality",
+                "vi": ""
+            },
+            {
+                "en": "Social endorsement",
+                "vi": ""
+            },
+            {
+                "en": "Eliminate the problem from its root",
+                "vi": ""
+            },
+            {
+                "en": "To be of necessity",
+                "vi": ""
+            },
+            {
+                "en": "Social security",
+                "vi": ""
+            },
+            {
+                "en": "To be imprisoned",
+                "vi": ""
+            },
+            {
+                "en": "Heinous actions",
+                "vi": ""
+            },
+            {
+                "en": "To be a deterrent against sth",
+                "vi": ""
+            },
+            {
+                "en": "To be condemned to jail",
+                "vi": ""
+            },
+            {
+                "en": "To serve as a remedy for the origin of crimes",
+                "vi": ""
+            },
+            {
+                "en": "To heighten people’s intellect",
+                "vi": ""
+            },
+            {
+                "en": "Vocational training",
+                "vi": ""
+            },
+            {
+                "en": "To dispel any ideas of committing crimes",
+                "vi": ""
+            },
+            {
+                "en": "A civilized society",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P99",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "TECHNOLOGY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Thỏa mãn trẻ em với những sở thích giải trí khác nhau",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển lối sống thụ động",
+                "vi": ""
+            },
+            {
+                "en": "Nếu tiếp xúc thường xuyên",
+                "vi": ""
+            },
+            {
+                "en": "sự tiếp xúc với công nghệ có thể dẫn đến tình trạng sức khỏe bị giảm sút",
+                "vi": ""
+            },
+            {
+                "en": "Satisfy children of different preferences for entertainment",
+                "vi": ""
+            },
+            {
+                "en": "Develop a passive lifestyle",
+                "vi": ""
+            },
+            {
+                "en": "If exposed frequently",
+                "vi": ""
+            },
+            {
+                "en": "Exposure to technology could lead to deterioration in health",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P100",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "GOVERNMENT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Giải quyết tắc đường",
+                "vi": ""
+            },
+            {
+                "en": "Giảm nhẹ tình trạng quá tải",
+                "vi": ""
+            },
+            {
+                "en": "Giảm thiểu sự đông đúc cúa hành khác trên những phương tiện công cộng",
+                "vi": ""
+            },
+            {
+                "en": "Vươt quá khả năng của hệ thống hiện tại",
+                "vi": ""
+            },
+            {
+                "en": "139",
+                "vi": ""
+            },
+            {
+                "en": "Sự tăng lên về mức sống",
+                "vi": ""
+            },
+            {
+                "en": "Tackle congested roads",
+                "vi": ""
+            },
+            {
+                "en": "Alleviate the current travelling overload",
+                "vi": ""
+            },
+            {
+                "en": "3.Relieves the density of passengers on public vehicles",
+                "vi": ""
+            },
+            {
+                "en": "Exceeds the capacity of the current system",
+                "vi": ""
+            },
+            {
+                "en": "The enhancement of living standards",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P101",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "SOCIAL",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Có nhiều kinh nghiệm quý báu",
+                "vi": ""
+            },
+            {
+                "en": "Có hiểu biết sâu về cái gì",
+                "vi": ""
+            },
+            {
+                "en": "Gia tăng tính cộng đồng và long vị tha",
+                "vi": ""
+            },
+            {
+                "en": "Nâng cao mức sống xã hội",
+                "vi": ""
+            },
+            {
+                "en": "A great deal of rewarding experience",
+                "vi": ""
+            },
+            {
+                "en": "Have profound understanding of",
+                "vi": ""
+            },
+            {
+                "en": "Fosters a great sense of humanity and altruism",
+                "vi": ""
+            },
+            {
+                "en": "Heighten social living standards",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P102",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "FAMILY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Gia đình cơ bản gồm có bố mẹ và con cái",
+                "vi": ""
+            },
+            {
+                "en": "Trụ cột gia đình",
+                "vi": ""
+            },
+            {
+                "en": "Gia đình chỉ có một trụ cột",
+                "vi": ""
+            },
+            {
+                "en": "Người chồng hoặc vợ",
+                "vi": ""
+            },
+            {
+                "en": "Bố hoặc mẹ ở nhà để chăm sóc con cái và làm việc nhà",
+                "vi": ""
+            },
+            {
+                "en": "Có thể tự do làm gì đó",
+                "vi": ""
+            },
+            {
+                "en": "Nuclear family",
+                "vi": ""
+            },
+            {
+                "en": "Breadwinner",
+                "vi": ""
+            },
+            {
+                "en": "Single-earner family",
+                "vi": ""
+            },
+            {
+                "en": "Spouse",
+                "vi": ""
+            },
+            {
+                "en": "A stay-at-home parent",
+                "vi": ""
+            },
+            {
+                "en": "At liberty to do sth",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P103",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "ENTERTAINMENT",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Chương trình tv",
+                "vi": ""
+            },
+            {
+                "en": "140",
+                "vi": ""
+            },
+            {
+                "en": "Sự đa dạng văn hóa",
+                "vi": ""
+            },
+            {
+                "en": "Tục lệ xa lạ",
+                "vi": ""
+            },
+            {
+                "en": "Chuẩn mực đạo đức lâu đời",
+                "vi": ""
+            },
+            {
+                "en": "Hủ tục",
+                "vi": ""
+            },
+            {
+                "en": "Sự hòa tan văn hóa",
+                "vi": ""
+            },
+            {
+                "en": "Telecasts",
+                "vi": ""
+            },
+            {
+                "en": "Cultural diversity",
+                "vi": ""
+            },
+            {
+                "en": "Exotic practices",
+                "vi": ""
+            },
+            {
+                "en": "Long-standing ethics",
+                "vi": ""
+            },
+            {
+                "en": "Depraved customs",
+                "vi": ""
+            },
+            {
+                "en": "Cultural assimilation",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P104",
+        "category": "84. INVENTIONS IN THE HUMAN HISTORY",
+        "title_en": "ECONOMY",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Mặt hàng giá rẻ",
+                "vi": ""
+            },
+            {
+                "en": "Sức mua",
+                "vi": ""
+            },
+            {
+                "en": "Nhu cầu của thị trường",
+                "vi": ""
+            },
+            {
+                "en": "Giá cả đắt đỏ của hàng hóa",
+                "vi": ""
+            },
+            {
+                "en": "Hàng chất lượng",
+                "vi": ""
+            },
+            {
+                "en": "Chất khí thải độc hại",
+                "vi": ""
+            },
+            {
+                "en": "Affordable commodities",
+                "vi": ""
+            },
+            {
+                "en": "Purchasing power",
+                "vi": ""
+            },
+            {
+                "en": "The market’s demand",
+                "vi": ""
+            },
+            {
+                "en": "Commodities’ exorbitant price",
+                "vi": ""
+            },
+            {
+                "en": "Quality products",
+                "vi": ""
+            },
+            {
+                "en": "Toxic waste and exhaust",
+                "vi": ""
+            },
+            {
+                "en": "Hỗ trợ quốc tế đến những vùng nghèo khó",
+                "vi": ""
+            },
+            {
+                "en": "Người nghèo, người bất hạnh",
+                "vi": ""
+            },
+            {
+                "en": "Sự sung túc của công dân",
+                "vi": ""
+            },
+            {
+                "en": "Bất kì hành động trợ giúp quốc tế nào",
+                "vi": ""
+            },
+            {
+                "en": "Những nước kém phát triển",
+                "vi": ""
+            },
+            {
+                "en": "141",
+                "vi": ""
+            },
+            {
+                "en": "Đói nghèo trong nước",
+                "vi": ""
+            },
+            {
+                "en": "Những nước giàu có",
+                "vi": ""
+            },
+            {
+                "en": "International aids to deprived regions",
+                "vi": ""
+            },
+            {
+                "en": "The underprivileged",
+                "vi": ""
+            },
+            {
+                "en": "The well-being of their citizens",
+                "vi": ""
+            },
+            {
+                "en": "Any acts of global assistance",
+                "vi": ""
+            },
+            {
+                "en": "Underdeveloped countries",
+                "vi": ""
+            },
+            {
+                "en": "Domestic poverty",
+                "vi": ""
+            },
+            {
+                "en": "Affluent nations",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P106",
+        "category": "105. GOVERNMENT",
+        "title_en": "SCIENCE",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Nghiên cứu vũ trụ",
+                "vi": ""
+            },
+            {
+                "en": "Môi trường có thể sinh sống",
+                "vi": ""
+            },
+            {
+                "en": "Điều kiện sống ngày càng khắc nghiệt",
+                "vi": ""
+            },
+            {
+                "en": "Bùng nổ dân số",
+                "vi": ""
+            },
+            {
+                "en": "Nghiên cứu không gian",
+                "vi": ""
+            },
+            {
+                "en": "Thiếu hụt đất đai và chỗ ở",
+                "vi": ""
+            },
+            {
+                "en": "Tỉ lệ sinh",
+                "vi": ""
+            },
+            {
+                "en": "Thành phố mật độ dân số cao",
+                "vi": ""
+            },
+            {
+                "en": "Cạn kiệt tài nguyên thiên nhiên",
+                "vi": ""
+            },
+            {
+                "en": "Bể chứa nước và nguyên liệu hóa thạch",
+                "vi": ""
+            },
+            {
+                "en": "Khai thác quá đà",
+                "vi": ""
+            },
+            {
+                "en": "Duy trì sự sống",
+                "vi": ""
+            },
+            {
+                "en": "Sự sống còn của loài người",
+                "vi": ""
+            },
+            {
+                "en": "Universe study",
+                "vi": ""
+            },
+            {
+                "en": "A new habitable environment",
+                "vi": ""
+            },
+            {
+                "en": "The increasingly harsh living conditions",
+                "vi": ""
+            },
+            {
+                "en": "The population explosion",
+                "vi": ""
+            },
+            {
+                "en": "Space studies",
+                "vi": ""
+            },
+            {
+                "en": "The lack of land and accommodation",
+                "vi": ""
+            },
+            {
+                "en": "Rate of birth",
+                "vi": ""
+            },
+            {
+                "en": "Densely populated cities",
+                "vi": ""
+            },
+            {
+                "en": "Depletion of natural resources",
+                "vi": ""
+            },
+            {
+                "en": "142",
+                "vi": ""
+            },
+            {
+                "en": "Fossil fuel and water reservoir",
+                "vi": ""
+            },
+            {
+                "en": "Over-exploited",
+                "vi": ""
+            },
+            {
+                "en": "Sustaining life",
+                "vi": ""
+            },
+            {
+                "en": "The survival of the human race",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P107",
+        "category": "105. GOVERNMENT",
+        "title_en": "SOCIAL",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Tích lũy nhiều kinh nghiệm hơn",
+                "vi": ""
+            },
+            {
+                "en": "Bất ổn xã hội và leo thang tội phạm",
+                "vi": ""
+            },
+            {
+                "en": "Sự linh hoạt lớn và tính sáng tạo",
+                "vi": ""
+            },
+            {
+                "en": "Lương hưu và chăm sóc y tế",
+                "vi": ""
+            },
+            {
+                "en": "Tuổi nghỉ hưu",
+                "vi": ""
+            },
+            {
+                "en": "Trì hoãn sinh con",
+                "vi": ""
+            },
+            {
+                "en": "Xu hướng coi trọng nghề nghiệp trước khi có con",
+                "vi": ""
+            },
+            {
+                "en": "Có nỗi sợ phải nuôi con không mong muốn sau khi li hôn",
+                "vi": ""
+            },
+            {
+                "en": "Sự hòa thuận trong hôn nhân",
+                "vi": ""
+            },
+            {
+                "en": "Khả năng vô sinh",
+                "vi": ""
+            },
+            {
+                "en": "Sự coi trọng nghề nghiệp và sự đắn đo trước khả năng phải nhận trách nhiệm của bố/mẹ độc",
+                "vi": ""
+            },
+            {
+                "en": "thân",
+                "vi": ""
+            },
+            {
+                "en": "Accumulated more experience",
+                "vi": ""
+            },
+            {
+                "en": "Social unrest and crime escalation",
+                "vi": ""
+            },
+            {
+                "en": "Great versatility and creativity",
+                "vi": ""
+            },
+            {
+                "en": "Old-age pensions and medical care",
+                "vi": ""
+            },
+            {
+                "en": "Retirement age",
+                "vi": ""
+            },
+            {
+                "en": "To delay childbirth",
+                "vi": ""
+            },
+            {
+                "en": "The propensity for prioritizing their careers over taking parental roles",
+                "vi": ""
+            },
+            {
+                "en": "Adopted a fear of taking unwanted custody",
+                "vi": ""
+            },
+            {
+                "en": "Marital harmony",
+                "vi": ""
+            },
+            {
+                "en": "The possibility of infertility",
+                "vi": ""
+            },
+            {
+                "en": "The occupational prioritization and the hesitation over the likelihood of single- parent",
+                "vi": ""
+            },
+            {
+                "en": "responsibility",
+                "vi": ""
+            }
+        ]
+    },
+    {
+        "id": "P108",
+        "category": "105. GOVERNMENT",
+        "title_en": "EDUCATION",
+        "title_vi": "",
+        "points": [],
+        "phrases": [
+            {
+                "en": "Không hứng thú với những môn khoa học",
+                "vi": ""
+            },
+            {
+                "en": "Sự chăm chỉ cũng như là rất nhiều kiên nhẫn và sự thông minh",
+                "vi": ""
+            },
+            {
+                "en": "143",
+                "vi": ""
+            },
+            {
+                "en": "Độ khó và độ cam kết cao",
+                "vi": ""
+            },
+            {
+                "en": "Thiếu hụt nguồn nhân lực",
+                "vi": ""
+            },
+            {
+                "en": "Sự mất cân bằng lực lượng lao động tương lai",
+                "vi": ""
+            },
+            {
+                "en": "Khủng hoảng nguồn nhân lực",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận giáo dục",
+                "vi": ""
+            },
+            {
+                "en": "Có được lượng lón kiến thức từ Internet",
+                "vi": ""
+            },
+            {
+                "en": "Môi trường học tập hiệu quả",
+                "vi": ""
+            },
+            {
+                "en": "Khả năng học tập và tính cách",
+                "vi": ""
+            },
+            {
+                "en": "Disinterest in science subjects",
+                "vi": ""
+            },
+            {
+                "en": "Diligence as well as a great deal of patience and intelligence",
+                "vi": ""
+            },
+            {
+                "en": "Higher level of both difficulty and commitment",
+                "vi": ""
+            },
+            {
+                "en": "The scarcity of human resources",
+                "vi": ""
+            },
+            {
+                "en": "The imbalance in future workforce",
+                "vi": ""
+            },
+            {
+                "en": "A major human resource crisis",
+                "vi": ""
+            },
+            {
+                "en": "Approach education",
+                "vi": ""
+            },
+            {
+                "en": "Acquire a great deal of knowledge from the online platform",
+                "vi": ""
+            },
+            {
+                "en": "An effective studying environment",
+                "vi": ""
+            },
+            {
+                "en": "Their scholastic competence and characteristics",
+                "vi": ""
+            },
+            {
+                "en": "Người nổi tiếng trên truyền hình hoặc thể thao",
+                "vi": ""
+            },
+            {
+                "en": "Hình tượng (tạm dịch)",
+                "vi": ""
+            },
+            {
+                "en": "Những ngôi sao nổi tiếng trong ngành giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Thay đổi cách ăn mặc và cư xử",
+                "vi": ""
+            },
+            {
+                "en": "Có xu hướng cho cái gì",
+                "vi": ""
+            },
+            {
+                "en": "Trân trọng vẻ đẹp và sự lịch lãm của trang phục",
+                "vi": ""
+            },
+            {
+                "en": "Sự hâm hộ những người nổi tiếng trong ngành giải trí",
+                "vi": ""
+            },
+            {
+                "en": "Gây nên sự khó chịu cho người địa phương",
+                "vi": ""
+            },
+            {
+                "en": "Nói giảm",
+                "vi": ""
+            },
+            {
+                "en": "Hâm mộ những cá nhân nổi tiếng trên truyền hình và thể thao",
+                "vi": ""
+            },
+            {
+                "en": "Media and sport celebrities",
+                "vi": ""
+            },
+            {
+                "en": "144",
+                "vi": ""
+            },
+            {
+                "en": "Role models",
+                "vi": ""
+            },
+            {
+                "en": "Famous entertainment stars",
+                "vi": ""
+            },
+            {
+                "en": "Changing patterns of fashion and behavior",
+                "vi": ""
+            },
+            {
+                "en": "Show a propensity for",
+                "vi": ""
+            },
+            {
+                "en": "Value the beauty and elegance of clothes",
+                "vi": ""
+            },
+            {
+                "en": "Reverence for celebrities in the field of entertainment",
+                "vi": ""
+            },
+            {
+                "en": "Cause irritation for the locals",
+                "vi": ""
+            },
+            {
+                "en": "Sugar-coat",
+                "vi": ""
+            },
+            {
+                "en": "Idolize media and sport celebrated individuals",
+                "vi": ""
+            },
+            {
+                "en": "Vật dụng đáp ứng nhu cầu cơ bản",
+                "vi": ""
+            },
+            {
+                "en": "Sự sẵn có của phương tiện cá nhân",
+                "vi": ""
+            },
+            {
+                "en": "Lựa chọn giải trí hoàn hảo",
+                "vi": ""
+            },
+            {
+                "en": "Sở hữu một tủ lạnh",
+                "vi": ""
+            },
+            {
+                "en": "Loại hình di chuyển cả nhân",
+                "vi": ""
+            },
+            {
+                "en": "Sự gia tăng của nhu cầu khách hàng",
+                "vi": ""
+            },
+            {
+                "en": "giảm thất nghiệp và cải thiện mức sóng",
+                "vi": ""
+            },
+            {
+                "en": "Phân phát phúc lợi xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Có trách nhiệm bắt buộc giúp đỡ cộng đồng",
+                "vi": ""
+            },
+            {
+                "en": "Sống sót trong thế giới cạnh tranh",
+                "vi": ""
+            },
+            {
+                "en": "Cải thiện mức sống của vùng xung quanh",
+                "vi": ""
+            },
+            {
+                "en": "An item of some fundamental needs",
+                "vi": ""
+            },
+            {
+                "en": "The availability of their personal vehicle",
+                "vi": ""
+            },
+            {
+                "en": "A perfect choice of recreation",
+                "vi": ""
+            },
+            {
+                "en": "In possession of a fridge",
+                "vi": ""
+            },
+            {
+                "en": "Private form of transport",
+                "vi": ""
+            },
+            {
+                "en": "The growth in customers’ demand",
+                "vi": ""
+            },
+            {
+                "en": "Reducing unemployment and improving standards of living",
+                "vi": ""
+            },
+            {
+                "en": "The distribution of social benefits",
+                "vi": ""
+            },
+            {
+                "en": "Take any further obligation for providing support for local communities",
+                "vi": ""
+            },
+            {
+                "en": "Survive in this competitive world",
+                "vi": ""
+            },
+            {
+                "en": "Ameliorate local living standards",
+                "vi": ""
+            },
+            {
+                "en": "145",
+                "vi": ""
+            },
+            {
+                "en": "Sự sử dụng không phổ biến của xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "Không có lợi ích với những người sống ở thành phố lớn",
+                "vi": ""
+            },
+            {
+                "en": "Che lấp những giá trị của việc sử dụng xe đạp đối với môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Khá là phi thực tế để hi vọng mọi người sẽ dùng xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "Việc sử dụng phương tiện thân thiện với môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Những ngày vì môi trường hàng tháng",
+                "vi": ""
+            },
+            {
+                "en": "Tạo thói quen dùng xe đạp",
+                "vi": ""
+            },
+            {
+                "en": "The uncommon use of bicycles",
+                "vi": ""
+            },
+            {
+                "en": "To fail to benefit major city dwellers in particular",
+                "vi": ""
+            },
+            {
+                "en": "To eclipse the values of using bicycles to the environment",
+                "vi": ""
+            },
+            {
+                "en": "To be rather impractical to expect cycling",
+                "vi": ""
+            },
+            {
+                "en": "The use of this environmentally friendly vehicle",
+                "vi": ""
+            },
+            {
+                "en": "Monthly green days",
+                "vi": ""
+            },
+            {
+                "en": "Form a habit of cycling",
+                "vi": ""
+            },
+            {
+                "en": "Sức chống lại rất nhiều bệnh tật",
+                "vi": ""
+            },
+            {
+                "en": "Có lối sống ít vận động",
+                "vi": ""
+            },
+            {
+                "en": "Thực hiện những chiến dịch tuyên truyền nâng cao nhận thức xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Sự cần thiết của sự điều trị và sự phát triển của dịch vụ chăm sóc sức khỏe",
+                "vi": ""
+            },
+            {
+                "en": "Không kém phần quan trọng và cấp bách",
+                "vi": ""
+            },
+            {
+                "en": "Human resistance against a vast number of illnesses",
+                "vi": ""
+            },
+            {
+                "en": "Leading a sedentary lifestyle",
+                "vi": ""
+            },
+            {
+                "en": "Launch propagation campaigns to heighten social awareness",
+                "vi": ""
+            },
+            {
+                "en": "The necessity of treatment and the development of healthcare services",
+                "vi": ""
+            },
+            {
+                "en": "No less important and imperative",
+                "vi": ""
+            },
+            {
+                "en": "Hình ảnh phân giải cao",
+                "vi": ""
+            },
+            {
+                "en": "Sự thiếu quan tâm cũng như khuyến khích từ phụ huynh",
+                "vi": ""
+            },
+            {
+                "en": "146",
+                "vi": ""
+            },
+            {
+                "en": "Giới hạn thời gian được phép xem phim",
+                "vi": ""
+            },
+            {
+                "en": "Dụng đến những biện pháp quyết liệt",
+                "vi": ""
+            },
+            {
+                "en": "Có kế hoạch cẩn thận về những gì họ định mua",
+                "vi": ""
+            },
+            {
+                "en": "Ý tưởng mờ nhạt về bữa ăn hay thức ăn mà họ định tiêu thụ",
+                "vi": ""
+            },
+            {
+                "en": "Những lựa chọn tệ cho chế độ ăn của họ",
+                "vi": ""
+            },
+            {
+                "en": "Tiết kiệm rất nhiều thực phẩm không cần thiết",
+                "vi": ""
+            },
+            {
+                "en": "High-resolution graphics",
+                "vi": ""
+            },
+            {
+                "en": "The lack of care as well as encouragement from parents",
+                "vi": ""
+            },
+            {
+                "en": "Restrict the amount of time allowed for watching TV",
+                "vi": ""
+            },
+            {
+                "en": "Resort to drastic measures",
+                "vi": ""
+            },
+            {
+                "en": "Have a thorough plan of what they are going to buy",
+                "vi": ""
+            },
+            {
+                "en": "Vague ideas of what meals or foodstuffs they might consume",
+                "vi": ""
+            },
+            {
+                "en": "Poor choices for their diet",
+                "vi": ""
+            },
+            {
+                "en": "Saves a lot of unnecessary food",
+                "vi": ""
+            },
+            {
+                "en": "Một phần lớn ngân sách nhà nước",
+                "vi": ""
+            },
+            {
+                "en": "Đem đến những dịch vụ giáo dục và kiến thức chung về tất cả các khía cạnh của cuộc sống",
+                "vi": ""
+            },
+            {
+                "en": "Đổ tiền vào nâng cấp internet",
+                "vi": ""
+            },
+            {
+                "en": "Cân xứng với khối lượng kinh phí khổng lồ từ chính phủ",
+                "vi": ""
+            },
+            {
+                "en": "Quen với việc không có internet",
+                "vi": ""
+            },
+            {
+                "en": "A huge proportion of national budget",
+                "vi": ""
+            },
+            {
+                "en": "To dispense educational services and general knowledge about all aspects of life",
+                "vi": ""
+            },
+            {
+                "en": "To pour their money into improving the Internet",
+                "vi": ""
+            },
+            {
+                "en": "To be equivalent to the enormous amount of governmental funding",
+                "vi": ""
+            },
+            {
+                "en": "To be used to the absence of the Internet",
+                "vi": ""
+            },
+            {
+                "en": "2 tầng lớp xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Sống nghèo đói",
+                "vi": ""
+            },
+            {
+                "en": "Bất bình đẳng thu nhập",
+                "vi": ""
+            },
+            {
+                "en": "Là nơi sản sinh ra rối loạn xã hội và bất ổn chính trị",
+                "vi": ""
+            },
+            {
+                "en": "147",
+                "vi": ""
+            },
+            {
+                "en": "Sự bắt đầu của sự hỗn độn trong xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Tìm đến bạo lực và lựa chọn con đường tội phạm",
+                "vi": ""
+            },
+            {
+                "en": "Giảm lượng bất bình đẳng thu nhập trong xã hội",
+                "vi": ""
+            },
+            {
+                "en": "Nhấn mạnh vào khả năng cá nhân để quyết định số tiền mà một người sẽ nhận",
+                "vi": ""
+            },
+            {
+                "en": "Những nền văn hóa có ảnh hưởng lớn",
+                "vi": ""
+            },
+            {
+                "en": "Ý niệm về cách ăn mặc hiện đại",
+                "vi": ""
+            },
+            {
+                "en": "Định hình lại cách ăn mặc của người bản xứ",
+                "vi": ""
+            },
+            {
+                "en": "Thời đại toàn cầu hóa",
+                "vi": ""
+            },
+            {
+                "en": "Coi thường giá trị và ý nghĩa của quần áo truyền thống",
+                "vi": ""
+            },
+            {
+                "en": "The two classes of society",
+                "vi": ""
+            },
+            {
+                "en": "To live on the breadline",
+                "vi": ""
+            },
+            {
+                "en": "Income inequality",
+                "vi": ""
+            },
+            {
+                "en": "The breeding ground for social unrest and political instability",
+                "vi": ""
+            },
+            {
+                "en": "The onset of social anarchy",
+                "vi": ""
+            },
+            {
+                "en": "To resort to violence and opt for the life of criminals",
+                "vi": ""
+            },
+            {
+                "en": "To reduce the amount of income inequality in society",
+                "vi": ""
+            },
+            {
+                "en": "To place much importance on individual competence to determine the amount of money one",
+                "vi": ""
+            },
+            {
+                "en": "might earn",
+                "vi": ""
+            },
+            {
+                "en": "Influential cultures",
+                "vi": ""
+            },
+            {
+                "en": "The notion of modernism in terms of dressing",
+                "vi": ""
+            },
+            {
+                "en": "Reshapes fashion patterns of the indigenous",
+                "vi": ""
+            },
+            {
+                "en": "The age of globalization",
+                "vi": ""
+            },
+            {
+                "en": "Underestimate the value and meaning of their traditional clothes",
+                "vi": ""
+            },
+            {
+                "en": "Giúp con người có thể giữ liên lạc với bạn bè và người thân một cách tiện lợi",
+                "vi": ""
+            },
+            {
+                "en": "Khả năng tương tác hiệu quả với nhau",
+                "vi": ""
+            },
+            {
+                "en": "Kiềm chế sử dụng những ứng dụng và trò chơi thú vị",
+                "vi": ""
+            },
+            {
+                "en": "Quá đắm chìm vào việc chơi game",
+                "vi": ""
+            },
+            {
+                "en": "Empowered people to conveniently keep in touch with friends and relatives",
+                "vi": ""
+            },
+            {
+                "en": "The ability to effectively interact with each other",
+                "vi": ""
+            },
+            {
+                "en": "Refrain from using new appealing applications and games",
+                "vi": ""
+            },
+            {
+                "en": "Too engrossed in their games",
+                "vi": ""
+            },
+            {
+                "en": "148",
+                "vi": ""
+            },
+            {
+                "en": "Không đem lại giá trị thực tiến cho hiện tại và tương lai",
+                "vi": ""
+            },
+            {
+                "en": "Không có gì đảm bảo về sự chính xác của thông tin",
+                "vi": ""
+            },
+            {
+                "en": "Kiến thức cụ thể về văn hóa và nước nhà đã tiến hóa như thế nào",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển lòng yêu nước và sự tự hào",
+                "vi": ""
+            },
+            {
+                "en": "Brings no relevant values to the present or future",
+                "vi": ""
+            },
+            {
+                "en": "No guarantee of the accuracy of information obtained",
+                "vi": ""
+            },
+            {
+                "en": "Thorough insights into their own culture and how their country has evolved",
+                "vi": ""
+            },
+            {
+                "en": "Develop their patriotism and pride",
+                "vi": ""
+            },
+            {
+                "en": "Điều gây hại cho sức khỏe con người",
+                "vi": ""
+            },
+            {
+                "en": "Lượng thức ăn vào quá nhiều",
+                "vi": ""
+            },
+            {
+                "en": "Nhiều vấn đề liên quan đến sức khỏe",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận khách hàng tiềm năng",
+                "vi": ""
+            },
+            {
+                "en": "Lợi nhuận giảm vì cấm sách này",
+                "vi": ""
+            },
+            {
+                "en": "A detriment to people’s health conditions",
+                "vi": ""
+            },
+            {
+                "en": "Excessive food intake",
+                "vi": ""
+            },
+            {
+                "en": "Numerous health-related problems",
+                "vi": ""
+            },
+            {
+                "en": "Approach prospective customers",
+                "vi": ""
+            },
+            {
+                "en": "Their profit declines as a result of this prohibition policy",
+                "vi": ""
+            },
+            {
+                "en": "Tốc độ khai thác hiện nay",
+                "vi": ""
+            },
+            {
+                "en": "Khan hiếm năng lượng",
+                "vi": ""
+            },
+            {
+                "en": "Sự phát triển trong tương lai của loài người",
+                "vi": ""
+            },
+            {
+                "en": "Sự thoái hóa của môi trường",
+                "vi": ""
+            },
+            {
+                "en": "Sự đốt cháy năng lượng hóa thạch",
+                "vi": ""
+            },
+            {
+                "en": "Một lượng bất tận năng lượng rẻ",
+                "vi": ""
+            },
+            {
+                "en": "149",
+                "vi": ""
+            },
+            {
+                "en": "The current rate of exploitation",
+                "vi": ""
+            },
+            {
+                "en": "Energy scarcity",
+                "vi": ""
+            },
+            {
+                "en": "The future development of the human race",
+                "vi": ""
+            },
+            {
+                "en": "Environmental degradation",
+                "vi": ""
+            },
+            {
+                "en": "The combustion of fossil fuels",
+                "vi": ""
+            },
+            {
+                "en": "An unlimited amount of inexpensive energy",
+                "vi": ""
+            },
+            {
+                "en": "Sự phân biệt trong loại công việc tương thích với đàn ông và phụ nữ",
+                "vi": ""
+            },
+            {
+                "en": "Những điểm mạnh khác biệt về thể chất và tinh thần",
+                "vi": ""
+            },
+            {
+                "en": "Sự phân bố các loại công việc giữa những người khác giới",
+                "vi": ""
+            },
+            {
+                "en": "Sự tương thích nghề nghiệp dựa trên giới tính",
+                "vi": ""
+            },
+            {
+                "en": "Khả năng có thể đảm nhiệm tốt nhiều loại công việc",
+                "vi": ""
+            },
+            {
+                "en": "Cả trí não lẫn thể chất",
+                "vi": ""
+            },
+            {
+                "en": "Sự theo đuổi nghề nghiệp tùy theo giới tính (tạm dịch…)",
+                "vi": ""
+            },
+            {
+                "en": "Sự phân biệt trong việc chọn lựa ngành nghề vừa đề cập đến ở trên",
+                "vi": ""
+            },
+            {
+                "en": "Disparities in the types of job compatible for males or females",
+                "vi": ""
+            },
+            {
+                "en": "Distinct physical and mental strengths",
+                "vi": ""
+            },
+            {
+                "en": "The distribution of the types of jobs among the two sexes",
+                "vi": ""
+            },
+            {
+                "en": "Occupational compatibility regarding gender",
+                "vi": ""
+            },
+            {
+                "en": "Great versatility in various jobs",
+                "vi": ""
+            },
+            {
+                "en": "Both brains and brawn",
+                "vi": ""
+            },
+            {
+                "en": "Gender-specific career pursuit",
+                "vi": ""
+            },
+            {
+                "en": "The aforementioned disparity in job selection",
+                "vi": ""
+            },
+            {
+                "en": "Lấy bằng đại học",
+                "vi": ""
+            },
+            {
+                "en": "Giống nhau về trí tuệ cũng như khả năng học vấn",
+                "vi": ""
+            },
+            {
+                "en": "Cung cấp giáo dục đại học miễn phí",
+                "vi": ""
+            },
+            {
+                "en": "Có ảnh hưởng khá đáng kể đến việc từng học sinh tương tác với nhau cũng như với thầy cô",
+                "vi": ""
+            },
+            {
+                "en": "như thế nào",
+                "vi": ""
+            },
+            {
+                "en": "Acquire tertiary degrees",
+                "vi": ""
+            },
+            {
+                "en": "150",
+                "vi": ""
+            },
+            {
+                "en": "Equal in intelligence and scholastic capability",
+                "vi": ""
+            },
+            {
+                "en": "Providing free tertiary education",
+                "vi": ""
+            },
+            {
+                "en": "Exerts a fairly significant impact on how each student interacts with teachers and their peers",
+                "vi": ""
+            },
+            {
+                "en": "Không chỉ bùng nổ dân số mà còn di cư từ nông thôn",
+                "vi": ""
+            },
+            {
+                "en": "Hiện trạng quả tải phương tiện giao thông công cộng",
+                "vi": ""
+            },
+            {
+                "en": "Đầy đủ cơ hội nghề nghiệp",
+                "vi": ""
+            },
+            {
+                "en": "Tìm được một ngành tốt xứng với bằng cấp và khả năng",
+                "vi": ""
+            },
+            {
+                "en": "Not only population explosion but also migration from the countryside",
+                "vi": ""
+            },
+            {
+                "en": "Public transportation overload",
+                "vi": ""
+            },
+            {
+                "en": "Adequate employment opportunities",
+                "vi": ""
+            },
+            {
+                "en": "Find a decent profession equivalent to their qualifications and competence",
+                "vi": ""
+            },
+            {
+                "en": "Thông tin chi tiết về những sản phẩm mới được công bố",
+                "vi": ""
+            },
+            {
+                "en": "Thương mại hóa sản phẩm",
+                "vi": ""
+            },
+            {
+                "en": "Nghĩa là những thứ giúp cho một sản phẩm mới đươc người khác biết đến (tạm dịch)",
+                "vi": ""
+            },
+            {
+                "en": "Tiếp cận với khách hàng tiềm năng",
+                "vi": ""
+            },
+            {
+                "en": "Bị “bỏ bom” bởi đủ các thể loại quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "Quá tải thông tin",
+                "vi": ""
+            },
+            {
+                "en": "Kích thích mọi người mua hàng hóa đang được quảng cáo",
+                "vi": ""
+            },
+            {
+                "en": "Details about newly launched products",
+                "vi": ""
+            },
+            {
+                "en": "Commercialize their commodities",
+                "vi": ""
+            },
+            {
+                "en": "Publicity materials",
+                "vi": ""
+            },
+            {
+                "en": "Approach prospective customers",
+                "vi": ""
+            },
+            {
+                "en": "To be bombarded with all kinds of advertisements",
+                "vi": ""
+            },
+            {
+                "en": "Information overload",
+                "vi": ""
+            },
+            {
+                "en": "Stimulate people to purchase products that are being advertised",
+                "vi": ""
+            },
+            {
+                "en": "151",
+                "vi": ""
+            },
+            {
+                "en": "Chi phí du lịch",
+                "vi": ""
+            },
+            {
+                "en": "Điểm đến du lịch nổi tiếng",
+                "vi": ""
+            },
+            {
+                "en": "Công đoạn bắt buộc nhàm chán và phức tạp",
+                "vi": ""
+            },
+            {
+                "en": "Đặt nhiều áp lực lên người dân trong vùng",
+                "vi": ""
+            },
+            {
+                "en": "Ngăn cản du lịch trong nước",
+                "vi": ""
+            },
+            {
+                "en": "Giá cả của phòng khách sạn và những loại dịch vụ khác",
+                "vi": ""
+            },
+            {
+                "en": "Nhiều trải nghiệm thú vị về thực phẩm và văn hóa xa lạ",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển ngành du lịch",
+                "vi": ""
+            },
+            {
+                "en": "Travel expenses",
+                "vi": ""
+            },
+            {
+                "en": "Famous tourist destinations",
+                "vi": ""
+            },
+            {
+                "en": "Complicated and tedious prerequisite procedures",
+                "vi": ""
+            },
+            {
+                "en": "Lay much pressure on local people",
+                "vi": ""
+            },
+            {
+                "en": "A detriment to domestic travel",
+                "vi": ""
+            },
+            {
+                "en": "Costs of hotel rooms and other services",
+                "vi": ""
+            },
+            {
+                "en": "Numbers of fascinating experiences of exotic cuisine and culture",
+                "vi": ""
+            },
+            {
+                "en": "Enhance tourism industries",
+                "vi": ""
+            },
+            {
+                "en": "Mài giũa một số kĩ năng quan trọng",
+                "vi": ""
+            },
+            {
+                "en": "Phát triển sự sáng tạo và khả năng giải quyết vấn đề",
+                "vi": ""
+            },
+            {
+                "en": "Sự tập trung cao độ và phản xạ cực nhanh",
+                "vi": ""
+            },
+            {
+                "en": "Loại hình giải trí này là sự gây hại",
+                "vi": ""
+            },
+            {
+                "en": "Người chơi tiếp xúc với game thường xuyên",
+                "vi": ""
+            },
+            {
+                "en": "Những sự lựa chọn lành mạnh, mang tính giáo dục và ít tốn thời gian hơn",
+                "vi": ""
+            },
+            {
+                "en": "Sharpen some important skills",
+                "vi": ""
+            },
+            {
+                "en": "Cultivate their creativity and problem solving skills",
+                "vi": ""
+            },
+            {
+                "en": "Tremendous focus and extremely fast reflexes",
+                "vi": ""
+            },
+            {
+                "en": "This form of entertainment is a grave detriment",
+                "vi": ""
+            },
+            {
+                "en": "Players are exposed to them on a frequent basis",
+                "vi": ""
+            },
+            {
+                "en": "Healthy, educational and less time - consuming options",
+                "vi": ""
+            },
+            {
+                "en": "152",
+                "vi": ""
+            }
+        ]
+    }
+];
+        const ESSAYS_DATA = [
+    {
+        "id": "1",
+        "topic": "Some people believe that hobbies need to be difficult to be enjoyable. To what extent do you agree or disagree?",
+        "paragraphs": [
+            {
+                "vi": "Một số sở thích là tương đối dễ dàng, trong khi những người khác có nhiều thách thức hơn. Cá nhân tôi tin rằng cả hai loại sở thích đều có thể vui vẻ, và do đó tôi không đồng ý với tuyên bố rằng sở thích cần phải khó khăn để trở nên thú vị.",
+                "en": "Some hobbies are relatively easy, while others present more of a challenge. Personally, I believe that both types of hobby can be fun, and I therefore disagree with the statement that hobbies need to be difficult in order to be enjoyable."
+            },
+            {
+                "vi": "Một mặt, nhiều người thích những sở thích dễ dàng. Một ví dụ về một hoạt động dễ dàng đối với hầu hết mọi người là bơi lội. Sở thích này đòi hỏi rất ít trang thiết bị, nó rất đơn giản để học, và nó không tốn kém. Tôi nhớ học bơi ở hồ bơi địa phương của tôi khi tôi còn là một đứa trẻ, và nó không bao giờ cảm thấy như một trải nghiệm khó khăn hoặc đầy thử thách. Một sở thích khác mà tôi thấy dễ dàng và thú vị là chụp ảnh. Theo tôi, bất cứ ai cũng có thể chụp những bức ảnh thú vị mà không cần biết quá nhiều về kỹ thuật vận hành máy ảnh. Mặc dù đơn giản, chụp ảnh là một hoạt động thỏa mãn.",
+                "en": "On the one hand, many people enjoy easy hobbies. One example of an activity that is easy for most people is swimming. This hobby requires very little equipment, it is simple to learn, and it is inexpensive. I remember learning to swim at my local swimming pool when I was a child, and it never felt like a demanding or challenging experience. Another hobby that I find easy and fun is photography. In my opinion, anyone can take interesting pictures without knowing too much about the technicalities of operating a camera. Despite being straightforward, taking photos is a satisfying activity."
+            },
+            {
+                "vi": "Mặt khác, sở thích khó khăn đôi khi có thể thú vị hơn. Nếu một hoạt động khó khăn hơn, chúng ta có thể cảm thấy hài lòng hơn khi chúng ta cố gắng để làm nó thành công. Ví dụ, chỉnh sửa phim là một sở thích đòi hỏi kiến thức và chuyên môn cao. Trong trường hợp của tôi, tôi mất khoảng hai năm trước khi tôi trở thành người có năng lực trong hoạt động này, nhưng bây giờ tôi đã tận hưởng nó nhiều hơn tôi đã làm khi tôi bắt đầu. Tôi tin rằng nhiều sở thích mang đến cho chúng ta nhiều niềm vui hơn khi chúng ta đạt được mức độ hiệu suất cao hơn vì kết quả tốt hơn và cảm giác thành tích lớn hơn.",
+                "en": "On the other hand, difficult hobbies can sometimes be more exciting. If an activity is more challenging, we might feel a greater sense of satisfaction when we manage to do it successfully. For example, film editing is a hobby that requires a high level of knowledge and expertise. In my case, it took me around two years before I became competent at this activity, but now I enjoy it much more than I did when I started. I believe that many hobbies give us more pleasure when we reach a higher level of performance because the results are better and the feeling of achievement is greater."
+            },
+            {
+                "vi": "Tóm lại, những sở thích đơn giản có thể là niềm vui và thư giãn, nhưng sở thích khó khăn có thể là thú vị như vậy vì nhiều lý do khác nhau.",
+                "en": "In conclusion, simple hobbies can be fun and relaxing, but difficult hobbies can be equally pleasurable for different reasons."
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "topic": "Universities should accept equal numbers of male and female students in every subject. To what extent do you agree or disagree?",
+        "paragraphs": [
+            {
+                "vi": "Theo tôi, đàn ông và phụ nữ nên có cơ hội giáo dục như nhau. Tuy nhiên, tôi không đồng ý với ý tưởng chấp nhận tỷ lệ bình đẳng của mỗi giới trong mỗi môn học đại học.",
+                "en": "In my opinion, men and women should have the same educational opportunities. However, I do not agree with the idea of accepting equal proportions of each gender in every university subject."
+            },
+            {
+                "vi": "Có cùng số lượng nam và nữ trên tất cả các khóa học đại học chỉ đơn giản là không thực tế. Số lượng sinh viên trên bất kỳ khóa học nào phụ thuộc vào số đơn đăng ký mà tổ chức nhận được. Nếu một trường đại học quyết định nhận các khóa học với số lượng nam và nữ tương đương nhau, thì sẽ cần đủ người nộp đơn cho mỗi giới. Trong thực tế, nhiều khóa học phổ biến hơn với giới tính này so với giới khác, và sẽ không thực tế để nhắm đến tỷ lệ ngang nhau. Ví dụ, các khóa học điều dưỡng có xu hướng thu hút nhiều ứng viên nữ hơn, và sẽ rất khó để nhận đủ người vào các khóa học nếu năm mươi phần trăm của những nơi cần thiết đến với nam giới.",
+                "en": "Having the same number of men and women on all degree courses is simply unrealistic. Student numbers on any course depend on the applications that the institution receives. If a university decided to fill courses with equal numbers of males and females, it would need enough applicants of each gender. In reality, many courses are more popular with one gender than the other, and it would not be practical to aim for equal proportions. For example, nursing courses tend to attract more female applicants, and it would be difficult to fill these courses if fifty per cent of the places needed to go to males."
+            },
+            {
+                "vi": "Ngoài các mối quan tâm thực tế được trình bày ở trên, tôi cũng tin rằng sẽ không công bằng khi cung cấp những khóa học đại học dựa vào giới tính. Các trường đại học nên tiếp tục lựa chọn các ứng cử viên tốt nhất cho mỗi khóa học theo trình độ của họ. Bằng cách này, cả nam và nữ đều có cơ hội như nhau, và ứng viên biết rằng họ sẽ thành công nếu họ làm việc chăm chỉ để đạt điểm cao ở trường. Nếu một nữ sinh viên là ứng cử viên tốt nhất cho một vị trí trong một khóa học, chắc chắn là sai lầm khi từ chối cô ấy vì lợi ích của một học sinh nam có điểm số thấp hơn hoặc ít trình độ hơn.",
+                "en": "Apart from the practical concerns expressed above, I also believe that it would be unfair to base admission to university courses on gender. Universities should continue to select the best candidates for each course according to their qualifications. In this way, both men and women have the same opportunities, and applicants know that they will be successful if they work hard to achieve good grades at school. If a female student is the best candidate for a place on a course, it would be wrong to reject her in favour of a male student with lower grades or fewer qualifications."
+            },
+            {
+                "vi": "Tóm lại, việc lựa chọn sinh viên đại học phải dựa trên giá trị, và sẽ không thực tế và không công bằng khi thay đổi thủ tục lựa chọn dựa trên giới tính.",
+                "en": "In conclusion, the selection of university students should be based on merit, and it would be both impractical and unfair to change to a selection procedure based on gender."
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "topic": "Foreign visitors should pay more than local visitors for cultural and historical attractions. To what extent do you agree or disagree with this opinion?",
+        "paragraphs": [
+            {
+                "vi": "Đôi khi người ta cho rằng khách du lịch từ nước ngoài nên được tính phí nhiều hơn người dân địa phương đến thăm các di tích và tượng đài quan trọng. Tôi hoàn toàn không đồng ý với ý tưởng này.",
+                "en": "It is sometimes argued that tourists from overseas should be charged more than local residents to visit important sites and monuments. I completely disagree with this idea."
+            },
+            {
+                "vi": "Tranh luận ủng hộ giá cao hơn cho khách du lịch nước ngoài sẽ là các điểm du lịch văn hóa hoặc lịch sử thường phụ thuộc vào trợ cấp của nhà nước để giữ cho chúng hoạt động, có nghĩa là dân cư đã trả tiền cho các địa điểm này thông qua hệ thống thuế. Tuy nhiên, tôi tin rằng đây là một cái nhìn rất thiển cận. Khách du lịch nước ngoài đóng góp vào nền kinh tế của nước chủ nhà với số tiền họ chi tiêu cho một loạt các hàng hóa và dịch vụ, bao gồm thực phẩm, quà lưu niệm, chỗ ở và du lịch. Các chính phủ và cư dân của mỗi quốc gia nên vui lòng trợ cấp các địa điểm du lịch quan trọng và khuyến khích mọi người từ khắp nơi trên thế giới đến thăm chúng.",
+                "en": "The argument in favour of higher prices for foreign tourists would be that cultural or historical attractions often depend on state subsidies to keep them going, which means that the resident population already pays money to these sites through the tax system. However, I believe this to be a very shortsighted view. Foreign tourists contribute to the economy of the host country with the money they spend on a wide range of goods and services, including food, souvenirs, accommodation and travel. The governments and inhabitants of every country should be happy to subsidise important tourist sites and encourage people from the rest of the world to visit them."
+            },
+            {
+                "vi": "Nếu du khách nhận ra rằng họ sẽ phải trả thêm tiền để ghé thăm các điểm tham quan lịch sử và văn hóa ở một quốc gia cụ thể, họ có lẽ sẽ quyết định không đi đến quốc gia đó vào kỳ nghỉ. Hãy lấy nước Anh làm ví dụ, ngành du lịch và nhiều công việc liên quan phụ thuộc vào du khách đến đất nước để xem những nơi như Lâu đài Windsor hoặc Nhà thờ Saint Paul. Hai địa điểm này tính cùng một mức giá bất kể quốc tịch và điều này giúp quảng bá di sản văn hóa của quốc gia. Nếu khách du lịch nước ngoài không đến nữa do giá cao hơn, sẽ có nguy cơ không đủ kinh phí để duy trì các tòa nhà quan trọng này.",
+                "en": "If travellers realised that they would have to pay more to visit historical and cultural attractions in a particular nation, they would perhaps decide not to go to that country on holiday. To take the UK as an example, the tourism industry and many related jobs rely on visitors coming to the country to see places like Windsor Castle or Saint Paul’s Cathedral. These two sites charge the same price regardless of nationality, and this helps to promote the nation’s cultural heritage. If overseas tourists stopped coming due to higher prices, there would be a risk of insufficient funding for the maintenance of these important buildings."
+            },
+            {
+                "vi": "Tóm lại, tôi tin rằng mọi nỗ lực nên được thực hiện để thu hút khách du lịch từ nước ngoài, và nó sẽ phản tác dụng khi bắt họ trả tiền nhiều hơn người dân địa phương.",
+                "en": "In conclusion, I believe that every effort should be made to attract tourists from overseas, and it would be counterproductive to make them pay more than local residents."
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "topic": "We cannot help everyone in the world that needs help, so we should only be concerned with our own communities and countries. To what extent do you agree or disagree with this statement?",
+        "paragraphs": [
+            {
+                "vi": "Một số người tin rằng chúng ta không nên giúp đỡ mọi người ở các nước khác khi mà còn có những vấn đề trong xã hội của chúng ta. Tôi không đồng ý với quan điểm này bởi vì tôi tin rằng chúng ta nên cố gắng giúp đỡ càng nhiều người càng tốt.",
+                "en": "Some people believe that we should not help people in other countries as long as there are problems in our own society. I disagree with this view because I believe that we should try to help as many people as possible."
+            },
+            {
+                "vi": "Một mặt, tôi chấp nhận rằng điều quan trọng là giúp đỡ hàng xóm và công dân của chúng ta. Trong hầu hết các cộng đồng có những người bị nghèo khó hoặc thiệt thòi theo một cách nào đó. Có thể tìm thấy những người vô gia cư, ví dụ, ở ngay cả những thành phố giàu có nhất, và đối với những người lo ngại về vấn đề này, thường có cơ hội để tình nguyện dành thời gian hoặc quyên tiền để hỗ trợ những người này. Ở Anh, mọi người có thể giúp đỡ bằng nhiều cách khác nhau, từ quyên góp quần áo đến phục vụ thức ăn miễn phí trong khu phát đồ ăn. Khi các vấn đề đang ở trước cửa nhà chúng ta, và có những cách rõ ràng để giúp đỡ, tôi có thể hiểu tại sao một số người cảm thấy rằng chúng ta nên ưu tiên cho tổ chức từ thiện địa phương.",
+                "en": "On the one hand, I accept that it is important to help our neighbours and fellow citizens . In most communities there are people who are impoverished or disadvantaged in some way. It is possible to find homeless people, for example, in even the wealthiest of cities, and for those who are concerned about this problem, there are usually opportunities to volunteer time or give money to support these people. In the UK, people can help in a variety of ways, from donating clothing to serving free food in a soup kitchen. As the problems are on our doorstep, and there are obvious ways to help, I can understand why some people feel that we should prioritise local charity."
+            },
+            {
+                "vi": "Đồng thời, tôi tin rằng chúng ta có nghĩa vụ giúp đỡ những người sống ngoài biên giới quốc gia của chúng ta. Ở một số quốc gia, những vấn đề mà mọi người đối mặt nghiêm trọng hơn nhiều so với những người trong cộng đồng của chúng ta, và nó thậm chí còn dễ dàng hơn để giúp đỡ. Ví dụ, khi trẻ em chết vì các bệnh có thể chữa được ở các nước châu Phi, các chính phủ và các cá nhân ở các nước giàu hơn có thể cứu mạng sống đơn giản bằng cách trả tiền cho vắc xin đã có sẵn. Một khoản quyên góp nhỏ cho một tổ chức từ thiện quốc tế có thể có tác động lớn hơn nhiều so với việc giúp đỡ trong khu vực địa phương của chúng ta.",
+                "en": "At the same time, I believe that we have an obligation to help those who live beyond our national borders. In some countries the problems that people face are much more serious than those in our own communities, and it is often even easier to help. For example, when children are dying from curable diseases in African countries, governments and individuals in richer countries can save lives simply by paying for vaccines that already exist. A small donation to an international charity might have a much greater impact than helping in our local area."
+            },
+            {
+                "vi": "Tóm lại, đúng là chúng ta không thể giúp đỡ tất cả mọi người, nhưng theo ý kiến của tôi, ranh giới quốc gia không nên ngăn cản chúng ta giúp đỡ những người có nhu cầu.",
+                "en": "In conclusion, it is true that we cannot help everyone, but in my opinion national boundaries should not stop us from helping those who are in need."
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "topic": "Many people decide on a career path early in their lives and keep to it. This, they argue, leads to a more satisfying working life. To what extent do you agree with this view?  What other things can people do in order to have a satisfying working life?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là một số người biết từ khi còn nhỏ, họ muốn theo đuổi nghề nghiệp nào và họ hạnh phúc khi dành phần còn lại của cuộc đời mình trong cùng một nghề. Trong khi tôi chấp nhận rằng điều này có thể phù hợp với nhiều người, tôi tin rằng những người khác thích thay đổi nghề nghiệp hoặc tìm kiếm sự hài lòng trong công việc theo những cách khác nhau.",
+                "en": "It is true that some people know from an early age what career they want to pursue, and they are happy to spend the rest of their lives in the same profession. While I accept that this may suit many people, I believe that others enjoy changing careers or seeking job satisfaction in different ways."
+            },
+            {
+                "vi": "Một mặt, việc có một con đường sự nghiệp xác định chắc chắn có thể dẫn đến một cuộc sống làm việc thỏa mãn. Nhiều người quyết định khi còn nhỏ, những gì họ muốn làm khi trưởng thành, và điều đó mang lại cho họ cảm giác hài lòng tuyệt vời để làm việc hướng tới mục tiêu của họ và dần dần đạt được chúng. Ví dụ, nhiều trẻ em mơ ước trở thành bác sĩ, nhưng để thực hiện tham vọng này, chúng cần phải có được bằng cấp liên quan và thực hiện nhiều năm đào tạo. Theo kinh nghiệm của tôi, rất ít người có trình độ là bác sĩ chọn thay đổi nghề nghiệp vì họ thấy công việc của họ rất bổ ích và vì họ đã đầu tư rất nhiều thời gian và công sức để đạt được mục tiêu.",
+                "en": "On the one hand, having a defined career path can certainly lead to a satisfying working life. Many people decide as young children what they want to do as adults, and it gives them a great sense of satisfaction to work towards their goals and gradually achieve them. For example, many children dream of becoming doctors, but to realise this ambition they need to gain the relevant qualifications and undertake years of training. In my experience, very few people who have qualified as doctors choose to change career because they find their work so rewarding, and because they have invested so much time and effort to reach their goal."
+            },
+            {
+                "vi": "Mặt khác, mọi người tìm thấy hạnh phúc trong cuộc sống làm việc của họ theo những cách khác nhau. Thứ nhất, không phải ai cũng mơ ước được làm một công việc cụ thể, và có thể được khen thưởng như nhau khi thử nhiều ngành nghề khác nhau; việc bắt đầu trên một con đường sự nghiệp hoàn toàn mới có thể là một kinh nghiệm đầy sức sống. Thứ hai, một số người coi công việc của họ chỉ đơn giản là một phương tiện kiếm tiền và họ rất vui nếu mức lương của họ đủ cao để cho phép họ tận hưởng cuộc sống bên ngoài công việc. Cuối cùng, sự hài lòng trong công việc thường là kết quả của điều kiện làm việc, hơn là chính sự nghiệp. Ví dụ, một bầu không khí làm việc tích cực, đồng nghiệp nhiệt tình và một ông chủ truyền cảm hứng có thể làm cho cuộc sống làm việc thỏa mãn hơn nhiều, bất kể nghề nghiệp nào.",
+                "en": "On the other hand, people find happiness in their working lives in different ways. Firstly, not everyone dreams of doing a particular job, and it can be equally rewarding to try a variety of professions; starting out on a completely new career path can be a reinvigorating experience. Secondly, some people see their jobs as simply a means of earning money, and they are happy if their salary is high enough to allow them to enjoy life outside work. Finally, job satisfaction is often the result of working conditions, rather than the career itself. For example, a positive working atmosphere, enthusiastic colleagues, and an inspirational boss can make working life much more satisfying, regardless of the profession."
+            },
+            {
+                "vi": "Tóm lại, nó chắc chắn có thể thỏa mãn để theo đuổi một nghề nghiệp cụ thể cho toàn bộ cuộc đời một người, nhưng đây không phải là con đường duy nhất để thực hiện.",
+                "en": "In conclusion, it can certainly be satisfying to pursue a particular career for the whole of  one’s life, but this is by no means the only route to fulfilment."
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "topic": "Some people think that all teenagers should be required to do unpaid work in their free time to help the local community. They believe this would benefit both the individual teenager and society as a whole. Do you agree or disagree?",
+        "paragraphs": [
+            {
+                "vi": "Nhiều thanh niên làm việc trên cơ sở tình nguyện, và điều này chỉ có thể mang lại lợi ích cho cả cá nhân và xã hội nói chung. Tuy nhiên, tôi không đồng ý rằng chúng ta nên buộc tất cả thanh thiếu niên làm công việc không được trả lương.",
+                "en": "Many young people work on a volunteer basis, and this can only be beneficial for both the individual and society as a whole. However, I do not agree that we should therefore force all teenagers to do unpaid work."
+            },
+            {
+                "vi": "Hầu hết những người trẻ tuổi đã chịu đủ áp lực với việc học tập của họ, mà chưa tính tới việc giao họ thêm trách nhiệm làm việc trong thời gian rảnh rỗi.Trường học cũng đòi hỏi như một công việc toàn thời gian, và giáo viên mong đợi học sinh của họ làm bài tập về nhà và bài kiểm tra xếp hạng đầu trong bài học mỗi ngày. Khi những người trẻ tuổi có thời gian rảnh, chúng ta nên khuyến khích họ thưởng thức nó với bạn bè của họ hoặc để dành nó cho thể thao và các hoạt động giải trí khác. Họ có nhiều năm làm việc phía trước khi họ kết thúc học tập.",
+                "en": "Most young people are already under enough pressure with their studies, without being given the added responsibility of working in their spare time. School is just as demanding as a full-time job, and teachers expect their students to do homework and exam revision on top of attending lessons every day. When young people do have some free time, we should encourage them to enjoy it with their friends or to spend it doing sports and other leisure activities. They have many years of work ahead of them when they finish their studies."
+            },
+            {
+                "vi": "Đồng thời, tôi không tin rằng xã hội có thể đạt được bất cứ điều gì từ việc ép buộc những người trẻ tuổi làm công việc không được trả lương. Thực tế, tôi cho rằng nó chống lại các giá trị của một xã hội tự do và công bằng khi buộc một nhóm người làm điều gì đó chống lại ý muốn của họ. Làm điều này chỉ có thể dẫn đến oán giận giữa những người trẻ tuổi, những người sẽ cảm thấy rằng họ đang được sử dụng, và cha mẹ, những người sẽ không muốn được nói làm thế nào để nuôi dạy con cái của họ. Hiện tại, không ai bị buộc phải tình nguyện, và đây chắc chắn là hệ thống tốt nhất.",
+                "en": "At the same time, I do not believe that society has anything to gain from obliging young people to do unpaid work. In fact, I would argue that it goes against the values of a free and fair society to force a group of people to do something against their will. Doing this can only lead to resentment amongst young people, who would feel that they were being used, and parents, who would not want to be told how to raise their children. Currently, nobody is forced to volunteer, and this is surely the best system."
+            },
+            {
+                "vi": "Tóm lại, thanh thiếu niên có thể chọn làm việc miễn phí và giúp đỡ người khác, nhưng theo ý kiến của tôi, chúng ta không nên thực hiện điều này bắt buộc.",
+                "en": "In conclusion, teenagers may choose to work for free and help others, but in my opinion we should not make this compulsory."
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "topic": "Nowadays animal experiments are widely used to develop new medicines and to test the safety of other products. Some people argue that these experiments should be banned because it is morally wrong to cause animals to suffer, while others are in favour of them because of their benefits to humanity. Discuss both views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Đúng là thuốc và các sản phẩm khác được kiểm tra thường xuyên trên động vật trước khi chúng được sử dụng cho con người. Trong khi tôi hướng tới quan điểm rằng thử nghiệm động vật là sai về mặt đạo đức, tôi sẽ phải ủng hộ cho sự giới hạn số lượng thử nghiệm trên động vật cho sự phát triển của y tế.",
+                "en": "It is true that medicines and other products are routinely tested on animals before they are cleared for human use. While I tend towards the viewpoint that animal testing is morally wrong, I would have to support a limited amount of animal experimentation for the development of medicines."
+            },
+            {
+                "vi": "Một mặt, có những lập luận đạo đức rõ ràng chống lại thử nghiệm động vật. Để lấy một ví dụ phổ biến của thực hành này, chuột thí nghiệm có thể được đưa vào người một loại bệnh để có thể đo lường hiệu quả của một loại thuốc mới. Những người phản đối nghiên cứu như vậy cho rằng con người không có quyền bắt động vật đối mặt với loại chấn thương này, và rằng cuộc sống của tất cả các sinh vật nên được tôn trọng. Họ tin rằng những lợi ích cho con người không biện minh cho sự đau khổ gây ra, và các nhà khoa học nên sử dụng các phương pháp nghiên cứu thay thế khác.",
+                "en": "On the one hand, there are clear ethical arguments against animal experimentation. To use a common example of this practice, laboratory mice may be given an illness so that the effectiveness of a new drug can be measured. Opponents of such research argue that humans have no right to subject animals to this kind of trauma, and that the lives of all creatures should be respected. They believe that the benefits to humans do not justify the suffering caused, and that scientists should use alternative methods of research."
+            },
+            {
+                "vi": "Mặt khác, các phương án thay thế đáng tin cậy để thử nghiệm động vật có thể không phải lúc nào cũng có sẵn. Những người ủng hộ việc sử dụng động vật trong nghiên cứu y học tin rằng một lượng đau khổ nhất định trên một phần của chuột có thể được biện minh nếu cuộc sống của con người được cứu. Họ lập luận rằng những người phản đối nghiên cứu này có thể sẽ cảm thấy khác nếu một thành viên trong gia đình của họ cần một sự điều trị y tế đã được phát triển thông qua việc sử dụng thử nghiệm động vật. Cá nhân tôi đồng ý với việc cấm thử nghiệm động vật cho các sản phẩm phi y tế, nhưng tôi cảm thấy rằng có thể là một điều ác cần thiết, nơi các loại thuốc mới và thủ tục y tế được xem xét.",
+                "en": "On the other hand, reliable alternatives to animal experimentation may not always be available. Supporters of the use of animals in medical research believe that a certain amount of suffering on the part of mice or rats can be justified if human lives are saved. They argue that opponents of such research might feel differently if a member of their own families needed a medical treatment that had been developed through the use of animal experimentation. Personally, I agree with the banning of animal testing for non-medical products, but I feel that it may be a necessary evil where new drugs and medical procedures are concerned"
+            },
+            {
+                "vi": "Tóm lại, có vẻ như với tôi rằng việc cấm thử nghiệm trên động vật để nghiên cứu y tế quan trọng là sai lầm cho đến khi các giải pháp thay thế có hiệu quả như vậy được phát triển.",
+                "en": "In conclusion, it seems to me that it would be wrong to ban testing on animals for vital medical research until equally effective alternatives have been developed."
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "topic": "Some people think that governments should give financial support to creative artists such as painters and musicians. Others believe that creative artists should be funded by alternative sources. Discuss both views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau về việc tài trợ của các nghệ sĩ sáng tạo. Trong khi một số người không đồng ý với ý tưởng hỗ trợ của chính phủ cho các nghệ sĩ, tôi tin rằng tiền cho các dự án nghệ thuật nên đến từ cả chính phủ và các nguồn khác.",
+                "en": "People have different views about the funding of creative artists. While some people disagree with the idea of government support for artists, I believe that money for art projects should come from both governments and other sources."
+            },
+            {
+                "vi": "Một số dự án nghệ thuật chắc chắn yêu cầu sự giúp đỡ từ nhà nước. Ở Anh, có nhiều tác phẩm nghệ thuật ở khu vực công cộng, chẳng hạn như đường phố hoặc quảng trường ở trung tâm thành phố. Ví dụ, ở Liverpool, có một số bức tượng và tác phẩm điêu khắc mới trong khu vực bến cảng của thành phố, đã được tái phát triển gần đây. Những tác phẩm nghệ thuật này đại diện cho văn hóa, di sản và lịch sử. Họ phục vụ để giáo dục mọi người về thành phố, và hoạt động như các địa danh hoặc điểm nói chuyện cho người đến tham quan và khách du lịch. Chính phủ và hội đồng địa phương nên trả tiền cho các nghệ sĩ sáng tạo để sản xuất loại nghệ thuật này, bởi vì không có kinh phí của họ, các thành phố của chúng ta sẽ kém hấp dẫn và thu hút.",
+                "en": "Some art projects definitely require help from the state. In the UK, there are many works of art in public spaces, such as streets or squares in city centres. In Liverpool, for example, there are several new statues and sculptures in the docks area of the city, which has been redeveloped recently. These artworks represent culture, heritage and history. They serve to educate people about the city, and act as landmarks or talking points for visitors and tourists. Governments and local councils should pay creative artists to produce this kind of art, because without their funding our cities would be much less interesting and attractive."
+            },
+            {
+                "vi": "Mặt khác, tôi có thể hiểu được lập luận chống lại việc tài trợ của chính phủ cho nghệ thuật. Lý do chính cho quan điểm này là các chính phủ có mối quan tâm quan trọng hơn. Ví dụ, ngân sách nhà nước cần phải được chi cho giáo dục, y tế, cơ sở hạ tầng và an ninh, và các lĩnh vực khác. Những dịch vụ công cộng này rất quan trọng đối với một quốc gia để hoạt động đúng, trong khi công việc của các nghệ sĩ sáng tạo, ngay cả ở những nơi công cộng, là một sự xa hoa. Một lý do khác cho ý kiến này là các nghệ sĩ làm một công việc như bất kỳ những người trong lĩnh vực khác, và do đó họ nên kiếm tiền bằng cách bán tác phẩm của họ.",
+                "en": "On the other hand, I can understand the arguments against government funding for art. The main reason for this view is that governments have more important concerns. For example, state budgets need to be spent on education, healthcare, infrastructure and security, among other areas. These public services are vital for a country to function properly, whereas the work of creative artists, even in public places, is a luxury. Another reason for this opinion is that artists do a job like any other professional, and they should therefore earn their own money by selling their work."
+            },
+            {
+                "vi": "Tóm lại, có nhiều lý do tại sao các nghệ sĩ nên dựa vào các nguồn hỗ trợ tài chính thay thế, nhưng theo ý kiến của tôi, đôi khi sự giúp đỡ của chính phủ là cần thiết.",
+                "en": "In conclusion, there are good reasons why artists should rely on alternative sources of financial support, but in my opinion government help is sometimes necessary."
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "topic": "Several languages are in danger of extinction because they are spoken by very small numbers of people. Some people say that governments should spend public money on saving these languages, while others believe that would be a waste of money. Discuss both these views and give your opinion. 12",
+        "paragraphs": [
+            {
+                "vi": "Đúng là một số ngôn ngữ thiểu số có thể biến mất trong tương lai gần. Mặc dù có thể lập luận rằng chính phủ có thể tiết kiệm tiền bằng cách cho phép điều này xảy ra, tôi tin rằng những ngôn ngữ này nên được bảo vệ và bảo tồn.",
+                "en": "It is true that some minority languages may disappear in the near future. Although it can be argued that governments could save money by allowing this to happen, I believe that these languages should be protected and preserved."
+            },
+            {
+                "vi": "Có một số lý do tại sao bảo vệ các ngôn ngữ thiểu số có thể được coi là một sự lãng phí tiền bạc. Thứ nhất, nếu một ngôn ngữ chỉ được nói bởi một số ít người, các chương trình giáo dục tốn kém sẽ cần thiết để đảm bảo rằng nhiều người học hơn, và nhà nước sẽ phải trả tiền cho các cơ sở vật chất, giáo viên và tiếp thị. Số tiền này có thể được chi tiêu tốt hơn cho các dịch vụ công cộng khác. Thứ hai, sẽ rẻ hơn và hiệu quả hơn cho các quốc gia chỉ có một ngôn ngữ. Chính phủ có thể cắt giảm tất cả các loại chi phí liên quan đến giao tiếp với từng nhóm thiểu số.",
+                "en": "There are several reasons why saving minority languages could be seen as a waste of money. Firstly, if a language is only spoken by a small number of people, expensive education programmes will be needed to make sure that more people learn it, and the state will have to pay for facilities, teachers and marketing. This money might be better spent on other public services. Secondly, it would be much cheaper and more efficient for countries to have just one language. Governments could cut all kinds of costs related to communicating with each minority group."
+            },
+            {
+                "vi": "Mặc dù những tranh luận trên, tôi tin rằng chính phủ nên cố gắng bảo tồn các ngôn ngữ ít được nói rộng rãi. Một ngôn ngữ không chỉ là một phương tiện giao tiếp; nó có một kết nối quan trọng với bản sắc văn hóa của những người nói nó. Nếu một ngôn ngữ biến mất, toàn bộ cách sống sẽ biến mất cùng với nó, và chúng ta sẽ mất đi sự đa dạng bản sắc văn hóa thứ mà làm cho xã hội thú vị hơn. Bằng cách chi tiền để bảo vệ ngôn ngữ thiểu số, chính phủ cũng có thể bảo tồn truyền thống, phong tục và hành vi là một phần của lịch sử đất nước.",
+                "en": "Despite the above arguments, believe that governments should try to preserve languages that are less widely spoken. A language is much more than simply a means of communication; it has a vital connection with the cultural identity of the people who speak it. If a language disappears, a whole way of life will disappear with it, and we will lose the rich cultural diversity that makes societies more interesting. By spending money to protect minority languages, governments can also preserve traditions, customs and behaviours that are part of a country’s history."
+            },
+            {
+                "vi": "Tóm lại, nó có thể tiết kiệm tiền trong ngắn hạn nếu chúng ta cho phép các ngôn ngữ thiểu số biến mất, nhưng về lâu dài điều này sẽ có tác động cực kỳ tiêu cực đến di sản văn hóa của chúng ta.",
+                "en": "In conclusion, it may save money in the short term if we allow minority languages to disappear, but in the long term this would have an extremely negative impact on our cultural heritage."
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "topic": "Some people think that museums should be enjoyable places to entertain people, while others believe that the purpose of museums is to educate. Discuss both views and give you own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau về vai trò và chức năng của bảo tàng. Theo tôi, các viện bảo tàng có thể và nên vừa giải trí vừa mang tính giáo dục.",
+                "en": "People have different views about the role and function of museums. In my opinion, museums can and should be both entertaining and educational."
+            },
+            {
+                "vi": "Một mặt, có thể lập luận rằng vai trò chính của một bảo tàng là để giải trí. Bảo tàng là những điểm thu hút khách du lịch và mục tiêu của chúng là trưng bày một bộ sưu tập các đồ vật thú vị mà nhiều người sẽ muốn xem. Lượng khách tham quan trung bình có thể trở nên chán nếu họ phải đọc hoặc nghe quá nhiều nội dung giáo dục, vì vậy các bảo tàng thường chú trọng hơn vào việc thưởng thức hơn là học tập. Loại bảo tàng này được thiết kế mang tính trực quan ngoạn mục và có thể có các hoạt động tương tác hoặc thậm chí là trò chơi như là một phần của triển lãm.",
+                "en": "On the one hand, it can be argued that the main role of a museum is to entertain. Museums are tourist attractions, and their aim is to exhibit a collection of interesting objects that many people will want to see. The average visitor may become bored if he or she has to read or listen to too much educational content, so museums often put more of an emphasis on enjoyment rather than learning. This type of museum is designed to be visually spectacular, and may have interactive activities or even games as part of its exhibitions."
+            },
+            {
+                "vi": "Mặt khác, một số người cho rằng các viện bảo tàng nên tập trung vào giáo dục. Mục đích của bất kỳ triển lãm nào là để dạy cho du khách một điều gì đó mà trước đây họ chưa biết. Thông thường điều này có nghĩa là lịch sử đằng sau các cuộc triển lãm của bảo tàng cần được giải thích và điều này có thể được thực hiện theo nhiều cách khác nhau. Một số bảo tàng sử dụng hướng dẫn viên chuyên nghiệp để nói chuyện với du khách của họ, trong khi các viện bảo tàng khác cung cấp tai nghe để du khách có thể nghe bình luận chi tiết về triển lãm. Bằng cách này, các bảo tàng có thể đóng một vai trò quan trọng trong việc giảng dạy con người về lịch sử, văn hóa, khoa học và nhiều khía cạnh khác của cuộc sống.",
+                "en": "On the other hand, some people argue that museums should focus on education. The aim of any exhibition should be to teach visitors something that they did not previously know. Usually this means that the history behind the museum’s exhibits needs to be explained, and this can be done in various ways. Some museums employ professional guides to talk to their visitors, while other museums offer headsets so that visitors can listen to detailed commentary about the exhibition. In this way, museums can play an important role in teaching people about history, culture, science and many other aspects of life."
+            },
+            {
+                "vi": "Tóm lại, có vẻ như với tôi rằng một bảo tàng tốt sẽ có thể mang đến một trải nghiệm thú vị, thoải mái và giáo dục để mọi người có thể vui chơi và học hỏi điều gì đó cùng một lúc.",
+                "en": "In conclusion, it seems to me that a good museum should be able to offer an interesting, enjoyable and educational experience so that people can have fun and learn something at the same time."
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "topic": "There are many different types of music in the world today. Why do we need music? Is the traditional music of a country more important than the international music that is heard everywhere nowadays?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là một loạt các phong cách âm nhạc phong phú có thể được tìm thấy trên khắp thế giới. Âm nhạc là một phần quan trọng trong tất cả các nền văn hóa của con người vì nhiều lý do, và tôi cho rằng âm nhạc truyền thống quan trọng hơn âm nhạc hiện đại, quốc tế.",
+                "en": "It is true that a rich variety of musical styles can be found around the world. Music is a vital part of all human cultures for a range of reasons, and I would argue that traditional music is more important than modern, international music."
+            },
+            {
+                "vi": "Âm nhạc là cái gì đó đồng hành với tất cả chúng ta trong suốt cuộc đời. Là trẻ em, chúng ta được dạy các bài hát của cha mẹ và giáo viên như là một phương tiện học ngôn ngữ, hoặc đơn giản là một hình thức thụ hưởng. Trẻ em thích hát với những người khác, và dường như rằng hành động ca hát trong một nhóm tạo nên sự kết nối giữa những người tham gia, bất kể tuổi tác của họ. Sau này trong cuộc sống, sở thích âm nhạc của con người phát triển, và chúng ta đến để xem những bài hát yêu thích như là một phần của câu chuyện cuộc sống của chúng ta. Âm nhạc vừa thể hiện vừa gợi lên cảm xúc theo cách mà từ ngữ không thể diễn tả. Tóm lại, thật khó để tưởng tượng cuộc sống mà thiếu nó.",
+                "en": "Music is something that accompanies all of us throughout our lives. As children, we are taught songs by our parents and teachers as a means of learning language, or simply as a form of enjoyment. Children delight in singing with others, and it would appear that the act of singing in a group creates a connection between participants, regardless of  their age. Later in life, people’s musical preferences develop, and we come to see our favourite songs as part of our life stories. Music both expresses and arouses emotions in a way that words alone cannot. In short, it is difficult to imagine life without it."
+            },
+            {
+                "vi": "Theo tôi, âm nhạc truyền thống nên được đánh giá cao hơn âm nhạc quốc tế cái mà đã trở nên phổ biến. Nhạc pop quốc tế thường hấp dẫn và thú vị, nhưng về bản chất nó là một sản phẩm thương mại được tiếp thị và bán bởi những người kinh doanh. Ngược lại, âm nhạc truyền thống thể hiện văn hóa, phong tục và lịch sử của một quốc gia. Các phong cách truyền thống, chẳng hạn như ... (ví dụ) ..., kết nối chúng ta với quá khứ và tạo thành một phần bản sắc văn hóa của chúng ta. Nó sẽ là một điều đáng tiếc nếu nhạc pop trở nên quá nổi bật đến nỗi các phong cách nhạc quốc gia này biến mất.",
+                "en": "In my opinion, traditional music should be valued over the international music that has become so popular. International pop music is often catchy and fun, but it is essentially a commercial product that is marketed and sold by business people. Traditional music, by contrast, expresses the culture, customs and history of a country. Traditional styles, such as ...(example)..., connect us to the past and form part of our cultural identity. It would be a real pity if pop music became so predominant that these national styles disappeared."
+            },
+            {
+                "vi": "Tóm lại, âm nhạc là một phần cần thiết của sự tồn tại của con người, và tôi tin rằng âm nhạc truyền thống nên được đưa ra tầm quan trọng hơn âm nhạc quốc tế.",
+                "en": "In conclusion, music is a necessary part of human existence, and I believe that traditional music should be given more importance than international music."
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "topic": "Some people believe that studying at university or college is the best route to a successful career, while others believe that it is better to get a job straight after school. Discuss both views and give your opinion.",
+        "paragraphs": [
+            {
+                "vi": "Khi họ học xong, thanh thiếu niên phải đối mặt với tình huống khó xử về việc có nên đi làm hay tiếp tục học. Trong khi có 1 số lợi ích khi kiếm 1 công việc ngay sau khi kết thúc học ở trường, tôi cho rằng tốt hơn là nên đi học cao đẳng hoặc đại học.",
+                "en": "When they finish school, teenagers face the dilemma of whether to get a job or continue their education. While there are some benefits to getting a job straight after school, I would argue that it is better to go to college or university."
+            },
+            {
+                "vi": "Việc chọn bắt đầu làm việc ngay sau khi kết thúc việc học ở trường hấp dẫn vì nhiều lý do. Nhiều bạn trẻ muốn bắt đầu kiếm tiền càng sớm càng tốt. Bằng cách này, họ có thể trở nên độc lập, và họ sẽ có khả năng mua nhà hoặc bắt đầu một gia đình. Về sự nghiệp của họ, những người trẻ quyết định tìm việc làm, thay vì tiếp tục học tập, có thể tiến bộ nhanh hơn. Họ sẽ có cơ hội có được kinh nghiệm thực tế và học các kỹ năng thực hành liên quan đến nghề nghiệp mà họ đã chọn. Điều này có thể dẫn đến sự thăng chức và sự nghiệp thành công.",
+                "en": "The option to start work straight after school is attractive for several reasons. Many young people want to start earning money as soon as possible. In this way, they can become independent, and they will be able to afford their own house or start a family. In terms of their career, young people who decide to find work, rather than continue their studies, may progress more quickly. They will have the chance to gain real experience and learn practical skills related to their chosen profession. This may lead to promotions and a successful career."
+            },
+            {
+                "vi": "Mặt khác, tôi tin rằng có lợi hơn cho sinh viên để tiếp tục việc học của họ. Thứ nhất, bằng cấp được yêu cầu trong rất nhiều ngành nghề. Ví dụ, không thể trở thành bác sĩ, giáo viên hoặc luật sư mà không có bằng cấp liên quan. Kết quả là, sinh viên tốt nghiệp đại học có cơ hội việc làm nhiều hơn và tốt hơn, và họ có xu hướng kiếm được mức lương cao hơn so với những người có ít bằng cấp hơn. Thứ hai, thị trường việc làm ngày càng trở nên cạnh tranh, và đôi khi có hàng trăm ứng viên cho một vị trí trong một công ty. Những người trẻ tuổi không có bằng cấp từ một trường đại học hoặc cao đẳng sẽ không thể cạnh tranh được.",
+                "en": "On the other hand, I believe that it is more beneficial for students to continue their studies. Firstly, academic qualifications are required in many professions. For example, it is impossible to become a doctor, teacher or lawyer without having the relevant degree. As a result, university graduates have access to more and better job opportunities, and they tend to earn higher salaries than those with fewer qualifications. Secondly, the job market is becoming increasingly competitive, and sometimes there are hundreds of applicants for one position in a company. Young people who do not have qualifications from a university or college will not be able to compete."
+            },
+            {
+                "vi": "Vì những lý do nêu trên, có vẻ như với tôi rằng sinh viên có nhiều khả năng thành công trong sự nghiệp của họ hơn nếu họ tiếp tục học nhiều hơn trình độ trung cấp tại trường.",
+                "en": "For the reasons mentioned above, it seems to me that students are more likely to be successful in their careers if they continue their studies beyond school level."
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "topic": "Nowadays the way many people interact with each other has changed because of technology. In what ways has technology affected the types of relationships that people make? Has this been a positive or negative development?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là các công nghệ mới đã có ảnh hưởng đến giao tiếp giữa con người. Công nghệ đã ảnh hưởng đến các mối quan hệ theo nhiều cách khác nhau, và theo ý kiến của tôi, có cả những tác động tích cực và tiêu cực.",
+                "en": "It is true that new technologies have had an influence on communication between people. Technology has affected relationships in various ways, and in my opinion there are both positive and negative effects."
+            },
+            {
+                "vi": "Công nghệ đã có tác động đến các mối quan hệ trong kinh doanh, giáo dục và đời sống xã hội. Thứ nhất, điện thoại và Internet cho phép người kinh doanh ở các quốc gia khác nhau tương tác mà không bao giờ cần gặp nhau. Thứ hai, các dịch vụ như Skype tạo ra các khả năng mới cho các mối quan hệ giữa sinh viên và giáo viên. Ví dụ: một sinh viên giờ đây có thể học các bài học video với giáo viên ở một thành phố hoặc quốc gia khác. Cuối cùng, nhiều người sử dụng mạng xã hội, như Facebook, kết bạn mới và tìm những người có chung sở thích, và họ tương tác thông qua máy tính của họ thay vì trực tiếp.",
+                "en": "Technology has had an impact on relationships in business, education and social life. Firstly, telephones and the Internet allow business people in different countries to interact without ever meeting each other. Secondly, services like Skype create new possibilities for relationships between students and teachers. For example, a student can now take video lessons with a teacher in a different city or country. Finally, many people use social networks, like Facebook, to make new friends and find people who share common interests, and they interact through their computers rather than face to face."
+            },
+            {
+                "vi": "Một mặt, những phát triển này có thể cực kỳ tích cực. Sự hợp tác giữa con người ở các quốc gia khác nhau còn khó khăn hơn nhiều khi giao tiếp bị hạn trong việc thư viết hoặc điện tín. Ngày nay, các tương tác qua email, điện thoại hoặc video gần cũng đã tốt như các cuộc họp mặt đối mặt và nhiều người trong chúng ta được hưởng lợi từ những tương tác này, trong bối cảnh công việc hoặc xã hội. Mặt khác, sự sẵn có của các công nghệ truyền thông mới cũng có thể là kết quả của việc cô lập con người và ngăn cản sự tương tác thực sự. Ví dụ, nhiều người trẻ chọn kết bạn trực tuyến thay vì hòa trộn với bạn bè của họ trong thế giới thực, và những mối quan hệ (cid:0)ảo(cid:0) này là một sự thay thế không tốt cho tình bạn thực sự.",
+                "en": "On the one hand, these developments can be extremely positive. Cooperation between people in different countries was much more difficult when communication was limited to written letters or telegrams. Nowadays, interactions by email, phone or video are almost as good as face-to- face meetings, and many of us benefit from these interactions, either in work or social contexts. On the other hand, the availability of new communication technologies can also have the result of isolating people and discouraging real interaction. For example, many young people choose to make friends online rather than mixing with their peers in the real world, and these ‘virtual’ relationships are a poor substitute for real friendships."
+            },
+            {
+                "vi": "Tóm lại, công nghệ đã chắc chắn cách mạng hóa giao tiếp giữa con người, nhưng không phải tất cả các kết quả của cuộc cách mạng này đều là tích cực.",
+                "en": "In conclusion, technology has certainly revolutionised communication between people, but not all of the outcomes of this revolution have been positive."
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "topic": "Some people regard video games as harmless fun, or even as a useful educational tool. Others, however, believe that videos games are having an adverse effect on the people who play them. In your opinion, do the drawbacks of video games outweigh the benefits?",
+        "paragraphs": [
+            {
+                "vi": "Nhiều người, và cụ thể là trẻ em, thích chơi trò chơi trên máy tính. Trong khi tôi chấp nhận rằng những trò chơi này đôi khi có thể có tác động tích cực đến người dùng, tôi tin rằng chúng có nhiều khả năng có tác động có hại hơn.",
+                "en": "Many people, and children in particular, enjoy playing computer games. While I accept that these games can sometimes have a positive effect on the user, I believe that they are more likely to have a harmful impact."
+            },
+            {
+                "vi": "Một mặt, trò chơi điện tử có thể vừa giải trí vừa mang tính giáo dục. Người dùng, hoặc game thủ, được chuyển vào thế giới ảo thường thú vị và hấp dẫn hơn so với những trò tiêu khiển trong cuộc sống thực. Từ góc độ giáo dục, các trò chơi này khuyến khích trí tưởng tượng và sáng tạo, cũng như tập trung, tư duy logic và giải quyết vấn đề, tất cả đều là những kỹ năng hữu ích bên ngoài ngữ cảnh chơi game. Hơn nữa, nó đã được chứng minh rằng trò chơi mô phỏng máy tính có thể cải thiện kỹ năng vận động của người dùng và giúp chuẩn bị chúng cho các nhiệm vụ thực tế, chẳng hạn như lái máy bay.",
+                "en": "On the one hand, video games can be both entertaining and educational. Users, or gamers, are transported into virtual worlds which are often more exciting and engaging than real-life pastimes. From an educational perspective, these games encourage imagination and creativity, as well as concentration, logical thinking and problem solving, all of which are useful skills outside the gaming context. Furthermore, it has been shown that computer simulation games can improve users’ motor skills and help to prepare them for real-world tasks, such as flying a plane."
+            },
+            {
+                "vi": "Tuy nhiên, tôi cho rằng những lợi ích này sẽ bị làm mờ đi bởi những hạn chế. Trò chơi có thể gây nghiện cao bởi vì người dùng thường xuyên nhận điểm, mục tiêu mới và phần thưởng thường xuyên để họ tiếp tục chơi. Nhiều trẻ em bây giờ dành hàng giờ để cố gắng tiến bộ thông qua các cấp độ của trò chơi hoặc để có điểm cao hơn bạn bè của họ. Loại nghiện này có thể có các ảnh hưởng khác nhau, từ thiếu ngủ đến các vấn đề ở trường, khi bài tập về nhà được hy sinh trong vài giờ nữa trên máy tính hoặc bàn điều khiển. Sự gia tăng béo phì trong những năm gần đây cũng đã được liên kết một phần đến lối sống ít vận động và thiếu tập thể dục thường đi kèm với nghiện game.",
+                "en": "However, I would argue that these benefits are outweighed by the drawbacks. Gaming can be highly addictive because users are constantly given scores, new targets and frequent rewards to keep them playing. Many children now spend hours each day trying to progress through the levels of a game or to get a higher score than their friends. This type of addiction can have effects ranging from lack of sleep to problems at school, when homework is sacrificed for a few more hours on the computer or console. The rise in obesity in recent years has also been linked in part to the sedentary lifestyle and lack of exercise that often accompany gaming addiction."
+            },
+            {
+                "vi": "Tóm lại, có vẻ như với tôi rằng những mối nguy hiểm tiềm ẩn của trò chơi điện tử lớn hơn hơn so với những lợi ích có thể có.",
+                "en": "In conclusion, it seems to me that the potential dangers of video games are more significant than the possible benefits."
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "topic": "In the developed world, average life expectancy is increasing. What problems will this cause for individuals and society? Suggest some measures that could be taken to reduce the impact of ageing populations.",
+        "paragraphs": [
+            {
+                "vi": "Đúng là những người ở các quốc gia công nghiệp có thể mong đợi sống lâu hơn bao giờ hết. Mặc dù chắc chắn sẽ có một số hậu quả tiêu cực của xu hướng này, xã hội có thể thực hiện các bước để giảm thiểu những vấn đề tiềm ẩn này.",
+                "en": "It is true that people in industrialised nations can expect to live longer than ever before. Although there will undoubtedly be some negative consequences of this trend, societies can take steps to mitigate these potential problems."
+            },
+            {
+                "vi": "Khi mọi người sống lâu hơn và dân số của các nước phát triển già đi, một số vấn đề liên quan có thể được dự đoán. Vấn đề chính là rõ ràng sẽ có nhiều người ở tuổi nghỉ hưu, những người sẽ đủ điều kiện nhận trợ cấp. Tỷ lệ phần trăm người trẻ, người lớn làm việc sẽ nhỏ hơn, và do đó chính phủ sẽ nhận được ít tiền thuế hơn so với quy mô dân số. Nói cách khác, dân số già hóa sẽ có nghĩa là gánh nặng thuế lớn hơn đối với người lớn làm việc. Áp lực tiếp theo sẽ bao gồm sự gia tăng nhu cầu chăm sóc sức khỏe, và thực tế người lớn sẽ ngày càng phải chăm sóc người thân cao tuổi của họ.",
+                "en": "As people live longer and the populations of developed countries grow older, several related problems can be anticipated .The main issue is that there will obviously be more people of retirement age who will be eligible to receive a pension .The proportion of younger, working adults will be smaller, and governments will therefore receive less money in taxes in relation to the size of the population. In other words, an ageing population will mean a greater tax burden for working adults. Further pressures will include a rise in the demand for healthcare, and the fact young adults will increasingly have to look after their elderly relatives."
+            },
+            {
+                "vi": "Có một số hành động mà chính phủ có thể thực hiện để giải quyết các vấn đề được mô tả ở trên. Thứ nhất, một giải pháp đơn giản là tăng tuổi nghỉ hưu cho người lớn làm việc, có lẽ từ 65 đến 70. Ngày nay, những người ở độ tuổi này có xu hướng đủ khỏe mạnh để tiếp tục một cuộc sống làm việc hiệu quả. Một biện pháp thứ hai cho chính phủ sẽ là khuyến khích nhập cư để tăng số lượng người lớn làm việc nộp thuế. Cuối cùng, tiền từ ngân sách quốc gia sẽ cần phải được lấy từ các lĩnh vực khác và chi cho các cơ sở y tế, chỗ ở và phương tiện giao thông cho số lượng ngày càng tăng của công dân lớn tuổi.",
+                "en": "There are several actions that governments could take to solve the problems described above. Firstly, a simple solution would be to increase the retirement age for working adults, perhaps from 65 to 70. Nowadays, people of this age tend to be healthy enough to continue a productive working life. A second measure would be for governments to encourage immigration in order to increase the number of working adults who pay taxes. Finally, money from national budgets will need to be taken from other areas and spent on vital healthcare, accommodation and transport facilities for the rising numbers of older citizens."
+            },
+            {
+                "vi": "Tóm lại, các biện pháp khác nhau có thể được thực hiện để giải quyết các vấn đề mà chắc chắn phát sinh khi dân số các nước già đi.",
+                "en": "In conclusion, various measures can be taken to tackle the problems that are certain to arise as the populations of countries grow older."
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "topic": "Explain some of the ways in which humans are damaging the environment. What can governments do to address these problems? What can individual people do?",
+        "paragraphs": [
+            {
+                "vi": "Con người chịu trách nhiệm cho hàng loạt các vấn đề môi trường, nhưng chúng ta cũng có thể thực hiện các bước để giảm thiệt hại mà chúng ta đang gây ra cho trái đất. Bài văn này sẽ thảo luận các vấn đề môi trường và các biện pháp mà các chính phủ và cá nhân có thể thực hiện để giải quyết những vấn đề này.",
+                "en": "Humans are responsible for a variety of environmental problems, but we can also take steps to reduce the damage that we are causing to the planet. This essay will discuss environmental problems and the measures that governments and individuals can take to address these problems."
+            },
+            {
+                "vi": "Hai trong số các mối đe dọa lớn nhất đối với môi trường là ô nhiễm không khí và chất thải. Khí thải từ các nhà máy và khí thải từ xe dẫn đến sự nóng lên toàn cầu, có thể có tác động tàn phá trên trái đất trong tương lai. Khi dân số tăng lên, chúng ta cũng đang sản xuất lượng chất thải lớn hơn, làm ô nhiễm trái đất và gây ô nhiễm cho các con sông và đại dương.",
+                "en": "Two of the biggest threats to the environment are air pollution and waste. Gas emissions from factories and exhaust fumes from vehicles lead to global warming, which may have a devastating effect on the planet in the future. As the human population increases, we are also producing ever greater quantities of waste, which contaminates the earth and pollutes rivers and oceans."
+            },
+            {
+                "vi": "Chính phủ chắc chắn có thể nỗ lực hơn nữa để giảm ô nhiễm không khí. Họ có thể ban hành luật để hạn chế lượng khí thải từ các nhà máy hoặc buộc các công ty sử dụng năng lượng tái tạo từ năng lượng mặt trời, gió hoặc nước. Họ cũng có thể áp đặt 'thuế xanh' trên các lái xe và các công ty hàng không. Bằng cách này, mọi người sẽ được khuyến khích sử dụng phương tiện giao thông công cộng và để có ít chuyến bay ra nước ngoài hơn, do đó giảm lượng khí thải.",
+                "en": "Governments could certainly make more effort to reduce air pollution. They could introduce laws to limit emissions from factories or to force companies to use renewable energy from solar, wind"
+            },
+            {
+                "vi": "or water power. They could also impose (áp đặt) ‘green taxes’ on drivers and airline companies. In",
+                "en": "this way, people would be encouraged to use public transport and to take fewer flights abroad, therefore reducing emissions."
+            },
+            {
+                "vi": "Các cá nhân cũng phải chịu trách nhiệm về tác động của họ đối với môi trường. Họ có thể chọn phương tiện công cộng thay vì lái xe, chọn sản phẩm có ít bao bì hơn và tái chế càng nhiều càng tốt. Hầu hết các siêu thị hiện nay cung cấp túi tái sử dụng cho người mua sắm cũng như 'ngân hàng' cho việc tái chế thủy tinh, nhựa và giấy trong bãi đậu xe của họ. Bằng cách tái sử dụng và tái chế, chúng ta có thể giúp giảm lãng phí.",
+                "en": "Individuals should also take responsibility for the impact they have on the environment. They can take public transport rather than driving, choose products with less packaging, and recycle as much as possible. Most supermarkets now provide reusable bags for shoppers as well as ‘banks’ for recycling glass, plastic and paper in their car parks. By reusing and recycling, we can help to reduce waste."
+            },
+            {
+                "vi": "Tóm lại, cả chính phủ và cá nhân đều phải đóng vai trò quan tâm bảo vệ đến môi trường.",
+                "en": "In conclusion, both national governments and individuals must play their part in looking after the environment."
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "topic": "Some people believe that school children should not be given homework by their teachers, whereas others argue that homework plays an important role in the education of children. Discuss both of these views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Ý kiến của mọi người khác nhau về việc học sinh nên hay không nên được giao bài tập về nhà. Trong khi có một số lập luận mạnh mẽ chống lại sự thiết lập của bài tập về nhà, tôi vẫn tin rằng nó là một khía cạnh cần thiết của giáo dục.",
+                "en": "People’s opinions differ as to whether or not school children should be given homework. While there are some strong arguments against the setting of homework, I still believe that it is a necessary aspect of education."
+            },
+            {
+                "vi": "Có nhiều lý do tại sao mọi người có thể tranh luận rằng bài tập về nhà là một gánh nặng không cần thiết đối với trẻ em. Thứ nhất, có bằng chứng để hỗ trợ ý tưởng rằng bài tập về nhà không làm cải thiện kết quả giáo dục. Các quốc gia như Phần Lan, nơi trẻ em đi học không được giao bài tập về nhà, thường xuyên xếp hạng các bảng giáo dục quốc tế hàng đầu và thể hiện tốt hơn các quốc gia nơi mà bài tập về nhà là điều tất yếu. Thứ hai, nhiều bậc cha mẹ cũng đồng ý rằng ngày học đã đủ dài, và làm con cái họ quá mệt mỏi không thể học thêm khi chúng trở về nhà. Cuối cùng, người ta công nhận rằng thời gian chơi cũng có lợi như là thời gian học từ quan điểm của sự phát triển não bộ.",
+                "en": "There are several reasons why people might argue that homework is an unnecessary burden on children. Firstly, there is evidence to support the idea that homework does nothing to improve educational outcomes. Countries such as Finland, where school children are not given homework, regularly top international educational league tables and outperform nations where setting homework is the norm. Secondly, many parents would agree that the school day is already long enough, and leaves their children too tired to do further study when they return home. Finally, it is recognised that play time is just as beneficial as study time from the perspective of brain development."
+            },
+            {
+                "vi": "Mặc dù các bình luận trên, tôi ủng hộ quan điểm rằng bài tập về nhà có vai trò quan trọng trong việc học của trẻ em. Lợi ích chính của bài tập ở nhà là nó khuyến khích việc việc tự học và giải quyết vấn đề, vì trẻ em được thử thách để làm việc thông qua các bài tập một mình và ở không gian của riêng chúng. Khi làm như vậy, học viên phải áp dụng kiến thức mà chúng đã học được trong lớp học. Ví dụ, bằng cách thực hiện các bài tập toán ở nhà, học sinh củng cố sự hiểu biết của chúng về các khái niệm được giảng dạy bởi giáo viên ở trường. Theo quan điểm của tôi, điều quan trọng là trẻ em phải phát triển một thói quen học tập độc lập bởi vì điều này chuẩn bị cho chúng làm việc một mình như người lớn.",
+                "en": "In spite of the above arguments, I support the view that homework has an important role to play in the schooling of children. The main benefit of homework is that it encourages independent learning and problem solving, as children are challenged to work through tasks alone and at their own pace. In doing so, students must apply the knowledge that they have learnt in the classroom. For example, by doing mathematics exercises at home, students consolidate their understanding of the concepts taught by their teacher at school. In my view, it is important for children to develop an independent study habit because this prepares them to work alone as adults."
+            },
+            {
+                "vi": "Tóm lại, bài tập về nhà chắc chắn có những hạn chế của nó, nhưng tôi tin rằng những lợi ích lớn hơn những hạn chế này trong dài hạn.",
+                "en": "In conclusion, homework certainly has its drawbacks, but I believe that the benefits outweigh them in the long term."
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "topic": "Economic progress is often used to measure a country's success. However, some people believe that other factors are more important. What other factors should also be considered when measuring a country's success? Do you think one factor is more important than others?",
+        "paragraphs": [
+            {
+                "vi": "Sự thành công tương đối của các quốc gia khác nhau thường được xác định theo thuật ngữ kinh tế. Có một số yếu tố khác, ngoài nền kinh tế, có thể được sử dụng để đánh giá một quốc gia, và theo tôi, giáo dục là quan trọng nhất trong tất cả.",
+                "en": "The relative success of different countries is usually defined in economic terms. There are several other factors, apart from the economy, that could be used to assess a country, and in my opinion education is the most important of all."
+            },
+            {
+                "vi": "Các tiêu chuẩn về giáo dục, sức khỏe và quyền con người cá nhân chắc chắn nên được xem xét khi đo lường tình trạng của một quốc gia. Một hệ thống giáo dục tốt là yếu tố sống còn cho sự phát triển của bất kỳ quốc gia nào, với các trường học, cao đẳng và đại học chịu trách nhiệm về chất lượng của các thế hệ công nhân/người làm việc tương lai. Sự cung cấp chăm sóc sức khỏe cũng là một chỉ số về mức sống trong một quốc gia, và điều này có thể được đo lường bằng cách xem xét tỷ lệ tuổi thọ trung bình hoặc tính sẵn có của các dịch vụ y tế. Cuối cùng, quyền con người và mức độ bình đẳng có thể được tính đến. Ví dụ, một quốc gia mà phụ nữ không có cơ hội giống như nam giới có thể được coi là kém thành công hơn một quốc gia có bình đẳng giới tốt hơn.",
+                "en": "Standards of education, health and individual human rights should certainly be considered when measuring a country’s status. A good education system is vital for the development of any nation, with schools, colleges and universities bearing the responsibility for the quality of future generations of workers. Healthcare provision is also an indicator of the standard of living within a country, and this can be measured by looking at average life expectancy rates or availability of medical services. Finally, human rights and levels of equality could be taken into account. For example, a country in which women do not have the same opportunities as men might be considered less successful than a country with better gender equality."
+            },
+            {
+                "vi": "Theo quan điểm của tôi, một hệ thống giáo dục quốc gia nên được coi là chỉ số quan trọng nhất cho sự thành công và mức độ phát triển của nó. Điều này là do giáo dục có ảnh hưởng đáng kể đến hai yếu tố khác được đề cập ở trên. Nó ảnh hưởng đến sức khỏe của con người theo nghĩa là các bác sĩ và y tá cần được đào tạo, và các nhà khoa học cần được giáo dục đến mức cao nhất trước khi họ có thể thực hiện nghiên cứu y học. Nó cũng ảnh hưởng đến nền kinh tế theo nghĩa là một lực lượng lao động được giáo dục tốt sẽ cho phép nhiều công ty và ngành công nghiệp phát triển, dẫn đến giao dịch với các quốc gia khác và gia tăng sự giàu có.",
+                "en": "In my view, a country’s education system should be seen as the most important indicator of its success and level of development. This is because education has a considerable effect on the other two factors mentioned above. It affects people’s health in the sense that doctors and nurses need to be trained, and scientists need to be educated to the highest levels before they can carry out medical research. It also affects the economy in the sense that a well-educated workforce will allow a variety of companies and industries to flourish, leading to trade with other countries, and increased wealth."
+            },
+            {
+                "vi": "Tóm lại, các quốc gia có thể được đánh giá và so sánh theo nhiều cách khác nhau, nhưng tôi cho rằng tiêu chuẩn của hệ thống giáo dục của một quốc gia là thước đo tốt nhất cho sự thành công của nó.",
+                "en": "In conclusion, nations can be assessed and compared in a variety of ways, but I would argue that the standard of a country's education system is the best measure of its success."
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "topic": "Some people think that strict punishments for driving offences are the key to reducing traffic accidents. Others, however, believe that other measures would be more effective in improving road safety. Discuss both these views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau liên quan đến câu hỏi về cách làm cho con đường của chúng ta an toàn hơn. Theo quan điểm của tôi, cả hình phạt và một loạt các biện pháp khác có thể được sử dụng cùng nhau để thúc đẩy thói quen lái xe tốt hơn.",
+                "en": "People have differing views with regard to the question of how to make our roads safer. In my view, both punishments and a range of other measures can be used together to promote better driving habits."
+            },
+            {
+                "vi": "Một mặt, những hình phạt nghiêm khắc chắc chắn có thể giúp khuyến khích mọi người lái xe an toàn hơn. Hình phạt cho những người lái xe nguy hiểm có thể hành động như một sự ngăn cản, có nghĩa là mọi người tránh lặp lại cùng một hành vi phạm tội. Có nhiều loại hình phạt lái xe khác nhau, chẳng hạn như tiền phạt nhỏ, đình chỉ giấy phép, khóa học nâng cao nhận thức và thậm chí là án tù. Mục đích của những hình phạt này là để cho những người lái xe nguy hiểm thấy rằng hành động của họ có những hậu quả tiêu cực. Kết quả là, chúng tôi hy vọng rằng những người lái xe trở nên có kỷ luật và cảnh giác hơn, và rằng họ tuân thủ các quy tắc cẩn thận hơn.",
+                "en": "On the one hand, strict punishments can certainly help to encourage people to drive more safely. Penalties for dangerous drivers can act as a deterrent, meaning that people avoid repeating the same offence. There are various types of driving penalty, such as small fines, licence suspension, driver awareness courses, and even prison sentences. The aim of these punishments is to show dangerous drivers that their actions have negative consequences. As a result, we would hope that drivers become more disciplined and alert, and that they follow the rules more carefully."
+            },
+            {
+                "vi": "Mặt khác, tôi tin rằng lái xe an toàn có thể được khuyến khích theo nhiều cách khác nhau mà không trừng phạt người lái xe. Thứ nhất, điều quan trọng là phải giáo dục con người đúng cách trước khi họ bắt đầu lái xe, và điều này có thể được thực hiện trong các trường học hoặc thậm chí là một phần của bài kiểm tra lái xe mở rộng hoặc khó khăn hơn. Thứ hai, có thể chú ý nhiều hơn đến thiết kế đường an toàn. Ví dụ, các biển báo có thể được sử dụng để cảnh báo mọi người, các gờ giảm tốc độ và các đoạn đường cong có thể được thêm vào để giữ bình ổn giao thông và camera tốc độ có thể giúp ngăn chặn mọi người lái xe quá nhanh. Cuối cùng, các chính phủ hoặc hội đồng địa phương có thể giảm tai nạn giao thông bằng cách đầu tư vào phương tiện giao thông công cộng tốt hơn, điều đó có nghĩa là ít người sẽ phải đi bằng xe hơi hơn.",
+                "en": "On the other hand, I believe that safe driving can be promoted in several different ways that do not punish drivers. Firstly, it is vitally important to educate people properly before they start to drive, and this could be done in schools or even as part of an extended or more difficult driving test. Secondly, more attention could be paid to safe road design. For example, signs can be used to warn people, speed bumps and road bends can be added to calm traffic, and speed cameras can help to deter people from driving too quickly. Finally, governments or local councils could reduce road accidents by investing in better public transport, which would mean that fewer people would need to travel by car."
+            },
+            {
+                "vi": "Tóm lại, trong khi các hình phạt có thể giúp ngăn chặn lái xe ẩu thả, tôi tin rằng các biện pháp an toàn đường bộ khác cũng nên được ban hành.",
+                "en": "In conclusion, while punishments can help to prevent bad driving, I believe that other road safety measures should also be introduced."
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "topic": "These days more fathers stay at home and take care of their children while mothers go out to work. What could be the reasons for this? Do you think it is a positive or a negative development?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là đàn ông ngày càng có nhiều khả năng đảm nhận vai trò nội trợ, trong khi phụ nữ hơn bao giờ hết là những người trụ cột trong gia đình họ. Có thể có một vài lý do cho việc này, và tôi coi đó là một xu hướng rất tích cực.",
+                "en": "It is true that men are increasingly likely to take on the role of househusband, while more women than ever are the breadwinners in their families. There could be several reasons for this, and I consider it to be a very positive trend."
+            },
+            {
+                "vi": "Trong những năm gần đây, cha mẹ đã phải thích nghi với những thay đổi khác nhau trong xã hội của chúng ta. Các phong trào quyền bình đẳng đã đạt được tiến bộ lớn, và nó đã trở nên bình thường đối với phụ nữ để có được bằng cấp và theo đuổi sự nghiệp. Đàn ông ở nhà và chăm sóc con cái cũng được xã hội chấp nhận. Đồng thời, chi phí sinh hoạt tăng lên có nghĩa là cả hai đối tác kết hôn thường cần phải làm việc và tiết kiệm tiền trước khi bắt đầu một gia đình. Do đó, khi các cặp vợ chồng có con, họ có thể quyết định ai làm việc và ai ở nhà tùy theo sở thích cá nhân của từng người bạn đời, hoặc dựa trên người bạn đời nào kiếm được nhiều tiền nhất.",
+                "en": "In recent years, parents have had to adapt to various changes in our societies. Equal rights movements have made great progress, and it has become normal for women to gain qualifications and pursue a career. It has also become socially acceptable for men to stay at home and look after their children. At the same time, the rising cost of living has meant that both marriage partners usually need to work and save money before starting a family. Therefore, when couples have children, they may decide who works and who stays at home depending on the personal preference of each partner, or based on which partner earns the most money."
+            },
+            {
+                "vi": "Theo quan điểm của tôi, những thay đổi được mô tả ở trên nên được coi là tiến bộ. Chúng ta nên hạnh phúc khi sống trong một xã hội mà đàn ông và phụ nữ có cơ hội như nhau, và trong đó phụ nữ không bị áp lực phải hy sinh sự nghiệp. Một cách công bằng, dường như chỉ có công bằng rằng đàn ông nên được tự do rời bỏ công việc của mình để nhận trách nhiệm chăm sóc trẻ em nếu đây là điều họ muốn làm. Các cặp vợ chồng nên để lại quyết định của riêng họ về vai trò của cha mẹ mà mỗi đối tác đảm nhận, tùy theo hoàn cảnh và nhu cầu cụ thể của họ.",
+                "en": "In my view, the changes described above should be seen as progress. We should be happy to live in a society in which men and women have equal opportunities, and in which women are not put under pressure to sacrifice their careers. Equally, it seems only fair that men should be free to leave their jobs in order to assume childcare responsibilities if this is what they wish to do. Couples should be left to make their own decisions about which parental role each partner takes, according to their particular circumstances and needs."
+            },
+            {
+                "vi": "Tóm lại, vai trò thay đổi của đàn ông và phụ nữ trong gia đình là kết quả của những thay đổi rộng lớn hơn trong xã hội, và tôi tin rằng những sự phát triển này là đáng mong đợi.",
+                "en": "In conclusion, the changing roles of men and women in the family are a result of wider changes in society, and I believe that these developments are desirable."
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "topic": "Wild animals have no place in the 21st century, so protecting them is a waste of",
+        "paragraphs": [
+            {
+                "vi": "resources. To what extent do you agree or disagree? Động vật hoang dã không có chỗ ở trong thế kỷ 21, vì vậy bảo vệ chúng là một sự lãng phí tài nguyên. Bạn đồng ý hay không đồng ý? Một số người cho rằng việc bỏ tiền vào bảo vệ động vật hoang dã là vô nghĩa bởi vì con người chúng ta không cần chúng. Tôi hoàn toàn không đồng ý với quan điểm này.",
+                "en": "Some people argue that it is pointless to spend money on the protection of wild animals because we humans have no need for them. I completely disagree with this point of view."
+            },
+            {
+                "vi": "Theo tôi, thật vô lý khi cho rằng động vật hoang dã không có chỗ ở trong thế kỷ 21. Tôi không tin rằng hành tinh Trái đất tồn tại chỉ vì lợi ích của con người, và không có gì đặc biệt về thế kỷ này có nghĩa là chúng ta đột nhiên có quyền cho phép hoặc khuyến khích sự tuyệt chủng của bất kỳ loài nào. Hơn nữa, không có lý do thuyết phục nào tại sao chúng ta nên để động vật chết. Chúng ta không cần phải khai thác hoặc phá hủy mọi mét vuông đất cuối cùng để nuôi sống hoặc phục vụ dân số thế giới. Có rất nhiều chỗ để chúng ta tồn tại bên cạnh những con vật hoang dã, và đây nên là mục tiêu của chúng ta.",
+                "en": "In my opinion, it is absurd to argue that wild animals have no place in the 21st century. I do not believe that planet Earth exists only for the benefit of humans, and there is nothing special about this particular century that means that we suddenly have the right to allow or encourage the extinction of any species. Furthermore, there is no compelling reason why we should let animals die out. We do not need to exploit or destroy every last square metre of land in order to feed or accommodate the world’s population. There is plenty of room for us to exist side by side with wild animals, and this should be our aim."
+            },
+            {
+                "vi": "Tôi cũng không đồng ý với ý tưởng bảo vệ động vật là một sự lãng phí tài nguyên. Thường thì chính sự bảo vệ môi trường sống tự nhiên đã đảm bảo sự sống còn của động vật hoang dã, và hầu hết các nhà khoa học đồng ý rằng những sinh vật này cũng rất quan trọng cho sự sống còn của con người. Ví dụ, rừng mưa nhiệt đới tạo ra oxy, hấp thụ carbon dioxide và ổn định khí hậu của Trái đất. Nếu chúng ta phá hủy những khu vực này, chi phí quản lý những thay đổi cho hành tinh của chúng ta sẽ vượt xa chi phí bảo tồn. Bằng cách bảo vệ động vật hoang dã và môi trường sống của chúng, chúng ta duy trì sự cân bằng tự nhiên của tất cả sự sống trên Trái Đất.",
+                "en": "I also disagree with the idea that protecting animals is a waste of resources. It is usually the protection of natural habitats that ensures the survival of wild animals, and most scientists agree that these habitats are also crucial for human survival. For example, rainforests produce oxygen, absorb carbon dioxide and stabilise the Earth’s climate. If we destroyed these areas, the costs of managing the resulting changes to our planet would far outweigh the costs of conservation. By protecting wild animals and their habitats, we maintain the natural balance of all life on Earth."
+            },
+            {
+                "vi": "Tóm lại, chúng ta không có quyền quyết định động vật hoang dã nên tồn tại hay không, và tôi tin rằng chúng ta nên làm mọi thứ có thể để bảo vệ chúng.",
+                "en": "In conclusion, we have no right to decide whether or not wild animals should exist, and I believe that we should do everything we can to protect them."
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "topic": "Happiness is considered very important in life. Why is it difficult to define? What factors are important in achieving happiness?",
+        "paragraphs": [
+            {
+                "vi": "Không nghi ngờ gì là đa số mọi người muốn được hạnh phúc trong cuộc sống của họ. Trong khi bản chất cá nhân của hạnh phúc gây khó khăn cho việc mô tả, dường như có một số nhu cầu chung mà tất cả chúng ta đều chia sẻ về trải nghiệm hoặc đạt được hạnh phúc.",
+                "en": "It is no doubt true that the majority of people would like to be happy in their lives. While the personal nature of happiness makes it difficult to describe, there do seem to be some common needs that we all share with regard to experiencing or achieving happiness."
+            },
+            {
+                "vi": "Hạnh phúc là khó khăn để định nghĩa bởi vì nó có nghĩa khác nhau đối với mỗi cá nhân. Không ai hoàn toàn có thể hiểu hoặc trải nghiệm cảm xúc của người khác, và tất cả chúng ta đều có niềm đam mê đặc biệt của riêng mình mà từ đó chúng ta thỏa mãn. Một số người, ví dụ, lấy cảm giác hài lòng từ việc kiếm tiền hoặc đạt được thành công, trong khi đối với những người khác, sức khỏe và gia đình thì quan trọng hơn nhiều. Đồng thời, một loạt các cảm xúc khác, từ hứng khởi đến hòa bình, có thể liên quan đến ý tưởng hạnh phúc, và cùng một người có thể cảm thấy hạnh phúc theo nhiều cách khác",
+                "en": "nhau. Happiness is difficult to define because it means something different to each individual person. Nobody can fully understand or experience another person’s feelings, and we all have our own particular passions from which we take pleasure. Some people, for example, derive a sense of satisfaction from earning money or achieving success, whereas for others, health and family are much more important. At the same time, a range of other feelings, from excitement to peacefulness, may be associated with the idea of happiness, and the same person may therefore feel happy in a variety of different ways."
+            },
+            {
+                "vi": "Mặc dù dường như không thể đưa ra định nghĩa chính xác về hạnh phúc, hầu hết mọi người đều đồng ý rằng có 1 số điều kiện tiên quyết cơ bản để đạt được nó. Thứ nhất, rất khó cho 1 người hạnh phúc nếu họ không có 1 nơi an toàn để sống và đủ thức ăn để ăn. Nhu cầu sống cơ bản chắc chắn phải được đáp ứng trước khi chúng ta có thể sống 1 cuộc sống dễ chịu. Thứ hai, niềm vui lớn nhất trong cuộc sống thường được tìm thấy trong những trải nghiệm được chia sẻ với gia đình và bạn bè, và hiếm khi tìm được 1 người hài lòng khi có cuộc sống hoàn toàn cô lập. Các yếu tố quan trọng khác có thể là tự do cá nhân và ý thức về mục đích trong cuộc sống.",
+                "en": "Although it seems almost impossible to give a precise definition of happiness, most people would agree that there are some basic preconditions to achieve it. Firstly, it is hard for a person to be happy if he or she does not have a safe place to live and enough food to eat. Our basic survival needs must surely be met before we can lead a pleasant life. Secondly, the greatest joy in life is usually found in shared experiences with family and friends, and it is rare to find a person who is content to live in complete isolation. Other key factors could be individual freedom and a sense of purpose in life."
+            },
+            {
+                "vi": "Tóm lại, hạnh phúc khó xác định bởi vì nó đặc biệt cho mỗi cá nhân, nhưng tôi tin rằng nhu cầu cơ bản của chúng ta là nơi ở, thực phẩm và sự đồng hành cần được đáp ứng trước khi chúng ta có thể trải nghiệm nó.",
+                "en": "In conclusion, happiness is difficult to define because it is particular to each individual, but I believe that our basic needs for shelter, food and company need to be fulfilled before we can experience it."
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "topic": "Nowadays celebrities are more famous for their glamour and wealth than for their achievements, and this sets a bad example to young people. To what extent do you agree or disagree with this statement?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là một số người nổi tiếng được biết đến với lối sống quyến rũ của họ hơn là cho công việc họ làm. Trong khi tôi đồng ý rằng những người nổi tiếng này đã tạo ra một ví dụ không tốt cho trẻ em, tôi tin rằng những người nổi tiếng khác đóng vai trò là những hình mẫu tích cực.",
+                "en": "It is true that some celebrities are known for their glamorous lifestyles rather than for the work they do. While I agree that these celebrities set a bad example for children, I believe that other famous people act as positive role models."
+            },
+            {
+                "vi": "Một mặt, nhiều người đã đạt được danh tiếng mà không thực sự làm việc cho nó. Họ có thể đã thừa kế tiền từ cha mẹ, kết hôn với một người nổi tiếng hoặc giàu có, hoặc họ có thể đã xuất hiện trên các tạp chí tin đồn hoặc trên một chương trình truyền hình thực tế. Một ví dụ điển hình là Paris Hilton, người giàu có và nổi tiếng vì những lý do sai lầm. Cô dành thời gian của mình tham dự các bữa tiệc và câu lạc bộ đêm, và hành vi của cô thúc đẩy ý tưởng rằng sự xuất hiện, quyến rũ và hình ảnh truyền thông quan trọng hơn công việc khó khăn và tính cách tốt. Thông điệp cho những người trẻ tuổi là thành công có thể đạt được một cách dễ dàng, và việc học ở nhà trường là không cần thiết.",
+                "en": "On the one hand, many people do achieve fame without really working for it. They may have inherited money from parents, married a famous or wealthy person, or they may have appeared in gossip magazines or on a reality TV programme. A good example would be Paris Hilton, who is rich and famous for the wrong reasons. She spends her time attending parties and nightclubs, and her behaviour promotes the idea that appearance, glamour and media profile are more important than hard work and good character. The message to young people is that success can be achieved easily, and that school work is not necessary."
+            },
+            {
+                "vi": "Mặt khác, có ít nhất là nhiều người nổi tiếng có thành tích cái mà làm cho trở thành hình mẫu tuyệt vời cho những người trẻ tuổi. Diễn viên, nhạc sĩ và các ngôi sao thể thao trở thành thần tượng nổi tiếng bởi vì họ đã làm việc chăm chỉ và áp dụng bản thân để phát triển kỹ năng và khả năng thực sự. Họ thể hiện nỗ lực, quyết tâm và tham vọng to lớn, điều này là cần thiết cho một người muốn thực sự thành công trong lĩnh vực mà họ đã chọn. Một ví dụ là diễn viên và võ sĩ Jackie Chan, người đã trở nên nổi tiếng thế giới qua nhiều năm luyện tập và làm việc vất vả. Nhóm người nổi tiếng bằng chính mình này có thể truyền cảm hứng cho trẻ em phát triển tài năng của mình thông qua sự chuyên tâm và sự kiên trì.",
+                "en": "On the other hand, there are at least as many celebrities whose accomplishments make them excellent role models for young people. Actors, musicians and sports stars become famous idols because they have worked hard and applied themselves to develop real skills and abilities. They demonstrate great effort, determination and ambition, which is required for someone who wants to be truly successful in their chosen field. An example is the actor and martial artist Jackie Chan, who has become world famous through years of practice and hard work. This kind of self-made celebrity can inspire children to develop their talents through application and perseverance."
+            },
+            {
+                "vi": "Tóm lại, có vẻ như với tôi rằng ảnh hưởng của những người nổi tiếng trên những người trẻ tuổi có thể là tích cực cũng như tiêu cực.",
+                "en": "In conclusion, it seems to me that the influence of celebrities on young people can be positive as well as negative."
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "topic": "When choosing a job, the salary is the most important consideration. To what extent do you agree or disagree?",
+        "paragraphs": [
+            {
+                "vi": "Nhiều người chọn công việc của họ dựa trên số tiền lương được đề ra. Cá nhân tôi không đồng ý với ý tưởng rằng tiền là yếu tố quan trọng khi quyết định sự nghiệp, bởi vì tôi tin rằng các yếu tố khác cũng quan trọng không kém.",
+                "en": "Many people choose their jobs based on the size of the salary offered. Personally, I disagree with the idea that money is the key consideration when deciding on a career, because I believe that other factors are equally important."
+            },
+            {
+                "vi": "Một mặt, tôi đồng ý rằng tiền là cần thiết để mọi người đáp ứng nhu cầu cơ bản của họ. Ví dụ, tất cả chúng ta đều cần tiền để trả tiền nhà cửa, thực phẩm, hóa đơn, chăm sóc sức khỏe và giáo dục. Hầu hết mọi người coi nó là một ưu tiên để ít nhất kiếm được một mức lương cho phép để họ trang trải những nhu cầu này và có một chất lượng cuộc sống hợp lý. Nếu mọi người chọn công việc của họ dựa trên hưởng thụ hoặc các yếu tố phi tài chính khác, họ có thể cảm thấy khó khăn để hỗ trợ bản thân. Ví dụ, các nghệ sĩ và nhạc sĩ được biết đến vì đã chọn con đường sự nghiệp mà họ yêu thích, nhưng điều đó không phải lúc nào cũng cung cấp cho họ đủ tiền để sống thoải mái và nuôi dưỡng một gia đình.",
+                "en": "On the one hand, I agree that money is necessary in order for people to meet their basic needs. For example, we all need money to pay for housing, food, bills, health care, and education. Most people consider it a priority to at least earn a salary that allows them to cover these needs and have a reasonable quality of life. If people chose their jobs based on enjoyment or other non-financial factors, they might find it difficult to support themselves. Artists and musicians, for instance, are known for choosing a career path that they love, but that does not always provide them with enough money to live comfortably and raise a family."
+            },
+            {
+                "vi": "Tuy nhiên, tôi tin rằng những cân nhắc khác cũng quan trọng như những gì chúng ta nhận được trong công việc của mình. Thứ nhất, mối quan hệ cá nhân và môi trường ở nơi làm việc là cực kỳ quan trọng khi chọn một công việc. Ví dụ, có một người quản lý tốt hoặc các đồng nghiệp thân thiện có thể tạo sự khác biệt rất lớn đối với mức độ hạnh phúc và chất lượng cuộc sống chung của người lao động. Thứ hai, cảm giác hài lòng về công việc của nhiều người đến từ thành tích chuyên môn của họ, kỹ năng họ học và vị trí họ đạt được, thay vì số tiền họ kiếm được. Cuối cùng, một số người chọn nghề nghiệp vì họ muốn giúp đỡ người khác và đóng góp một cái gì đó tích cực cho xã hội.",
+                "en": "Nevertheless, I believe that other considerations are just as important as what we earn in our jobs. Firstly, personal relationships and the atmosphere in a workplace are extremely important when choosing a job. Having a good manager or friendly colleagues, for example, can make a huge difference to workers’ levels of happiness and general quality of life. Secondly, many people’s feelings of job satisfaction come from their professional achievements, the skills they learn, and the position they reach, rather than the money they earn. Finally, some people choose a career because they want to help others and contribute something positive to society."
+            },
+            {
+                "vi": "Tóm lại, trong khi tiền lương chắc chắn ảnh hưởng đến sự lựa chọn nghề nghiệp của mọi người, tôi không tin rằng tiền vượt quá tất cả các động lực khác.",
+                "en": "In conclusion, while salaries certainly affect people’s choice of profession, I do not believe that money outweighs all other motivators."
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "topic": "Some people think that in the modern world we are more dependent on each other, while others think that people have become more independent.  Discuss both views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau về việc liệu chúng ta ngày nay phụ thuộc nhiều hơn hay ít hơn vào người khác. Theo quan điểm của tôi, cuộc sống hiện đại buộc chúng ta phải độc lập hơn những người trong quá khứ.",
+                "en": "People have different views about whether we are more or less dependent on others nowadays. In my view, modern life forces us to be more independent than people were in the past."
+            },
+            {
+                "vi": "Có hai lý do chính tại sao có thể lập luận rằng chúng ta ngày càng lệ thuộc vào nhau hơn. Thứ nhất, cuộc sống phức tạp và khó khăn hơn, đặc biệt là vì chi phí sinh hoạt tăng lên đáng kể. Ví dụ, thanh niên có xu hướng dựa vào bố mẹ để được giúp đỡ khi mua nhà. Giá bất động sản cao hơn bao giờ hết, và nếu không có sự giúp đỡ, sẽ là điều không thể cho nhiều người khi chi trả tiền đặt cọc và thế chấp. Thứ hai, người ta có vẻ ngày càng tham vọng hơn, và họ muốn có một cuộc sống tốt hơn cho gia đình của họ. Điều này có nghĩa là cả cha mẹ thường xuyên phải làm việc toàn thời gian, và họ phụ thuộc vào sự hỗ trợ từ ông bà và người giữ trẻ để chăm sóc con cái.",
+                "en": "There are two main reasons why it could be argued that we are more dependent on each other now. Firstly, life is more complex and difficult, especially because the cost of living has increased so dramatically. For example, young adults tend to rely on their parents for help when buying a house. Property prices are higher than ever, and without help it would be impossible for many people to pay a deposit and a mortgage. Secondly, people seem to be more ambitious nowadays, and they want a better quality of life for their families. This means that both parents usually need to work full-time, and they depend on support from grandparents and babysitters for child care."
+            },
+            {
+                "vi": "Tuy nhiên, tôi sẽ đồng ý với những người tin rằng ngày nay mọi người độc lập hơn. Ở hầu hết các quốc gia, các gia đình đang trở nên nhỏ hơn và phân tán hơn, có nghĩa là mọi người không thể trông cậy vào người thân nhiều như họ đã từng. Chúng ta cũng có nhiều tự do hơn để đi du lịch và sống xa quê hương của chúng ta. Ví dụ, nhiều sinh viên chọn du học thay vì đi đến trường đại học địa phương của họ, và kinh nghiệm này làm cho họ độc lập hơn khi họ học cách sống một mình. Một yếu tố khác trong sự độc lập ngày càng tăng này là công nghệ, cái mà cho phép chúng ta làm việc một mình và từ bất kỳ nơi nào trên thế giới.",
+                "en": "However, I would agree with those who believe that people are more independent these days. In most countries, families are becoming smaller and more dispersed, which means that people cannot count on relatives as much as they used to. We also have more freedom to travel and live far away from our home towns. For example, many students choose to study abroad instead of going to their local university, and this experience makes them more independent as they learn to live alone. Another factor in this growing independence is technology, which allows us to work alone and from any part of the world."
+            },
+            {
+                "vi": "Tóm lại, trong khi có một số lý do để tin rằng bây giờ mọi người phụ thuộc vào nhau nhiều hơn, quan điểm của riêng tôi là chúng ta độc lập hơn bao giờ hết.",
+                "en": "In conclusion, while there are some reasons to believe that people now depend on each other more, my own view is that we are more independent than ever."
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "topic": "In recent years, there has been growing interest in the relationship between equality and personal achievement. Some people believe that individuals can achieve more in egalitarian societies. Others believe that high levels of personal achievement are possible only if individuals are free to succeed or fail according to their individual merits. What is your view of the relationship between equality and personal success?",
+        "paragraphs": [
+            {
+                "vi": "Trong những năm gần đây, đã có sự quan tâm ngày càng tăng trong mối quan hệ giữa bình đẳng và thành tích cá nhân. Một số người tin rằng cá nhân có thể đạt được nhiều hơn trong xã hội bình đẳng. Những người khác tin rằng mức độ cao của thành tích cá nhân là có thể chỉ khi cá nhân được tự do để thành công hay thất bại theo giá trị cá nhân của họ. Quan điểm của bạn về mối quan hệ giữa bình đẳng và thành công cá nhân là gì? Theo tôi, một xã hội bình đẳng là một xã hội mà mọi người đều có cùng quyền và cùng cơ hội. Tôi hoàn toàn đồng ý rằng mọi người có thể đạt được nhiều hơn trong loại xã hội này.",
+                "en": "In my opinion, an egalitarian society is one in which everyone has the same rights and the same opportunities. I completely agree that people can achieve more in this kind of society."
+            },
+            {
+                "vi": "Giáo dục là một yếu tố quan trọng đối với sự thành công cá nhân trong cuộc sống. Tôi tin rằng tất cả trẻ em nên được tiếp cận với trường học miễn phí, và giáo dục đại học nên là miễn phí hoặc giá cả phải chăng cho tất cả những người đã chọn theo đuổi bằng đại học. Trong một xã hội không có giáo dục miễn phí hoặc giáo dục đại học giá cả phải chăng, chỉ có trẻ em và thanh thiếu niên từ các gia đình giàu có mới có cơ hội học tập tốt nhất, và do đó họ sẽ chuẩn bị tốt hơn cho thị trường việc làm. Loại bất bình đẳng này sẽ đảm bảo sự thành công cho một số người nhưng gây hại cho tương lai những người còn lại.",
+                "en": "Education is an important factor with regard to personal success in life. I believe that all children should have access to free schooling, and higher education should be either free or affordable for all those who chose to pursue a university degree. In a society without free schooling or affordable higher education, only children and young adults from wealthier families would have access to the best learning opportunities, and they would therefore be better prepared for the job market. This kind of inequality would ensure the success of some but harm the prospects of others."
+            },
+            {
+                "vi": "Tôi cho rằng quyền bình đẳng và cơ hội không xung đột với sự tự do của mọi người trong việc thành công hay thất bại. Nói cách khác, bình đẳng không có nghĩa là mọi người mất động lực để thành công, hoặc họ không được phép thất bại. Ngược lại, tôi tin rằng hầu hết mọi người sẽ cảm thấy có động lực hơn để làm việc chăm chỉ và đạt được tiềm năng của họ nếu họ nghĩ rằng họ sống trong một xã hội công bằng. Những người không thực hiện cùng một nỗ lực sẽ biết rằng họ đã lãng phí cơ hội của họ. Bất bình đẳng, mặt khác, sẽ có nhiều khả năng làm cho con người bị mất động lực bởi vì họ biết rằng khả năng thành công được sắp sẵn cho những người đến từ nền tảng giàu có.",
+                "en": "I would argue that equal rights and opportunities are not in conflict with people’s freedom to succeed or fail. In other words, equality does not mean that people lose their motivation to succeed, or that they are not allowed to fail. On the contrary, I believe that most people would feel more motivated to work hard and reach their potential if they thought that they lived in a fair society. Those who did not make the same effort would know that they had wasted their opportunity. Inequality, on the other hand, would be more likely to demotivate people because they would know that the odds of success were stacked in favour of those from privileged backgrounds."
+            },
+            {
+                "vi": "Tóm lại, có vẻ như với tôi rằng có một mối quan hệ tích cực giữa bình đẳng và thành công cá nhân.",
+                "en": "In conclusion, it seems to me that there is a positive relationship between equality and personal success."
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "topic": "Many governments think that economic progress is their most important goal. Some people, however, think that other types of progress are equally important for a country. Discuss both these views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau về cách các chính phủ nên đo lường sự tiến bộ của các nước họ. Mặc dù tiến bộ kinh tế là hiển nhiên quan trọng, tôi đồng ý với những người tin rằng các cách đo lường tiến bộ khác cũng quan trọng.",
+                "en": "People have different views about how governments should measure their countries’ progress. While economic progress is of course essential, I agree with those who believe that other measures of progress are just as important."
+            },
+            {
+                "vi": "Có ba lý do chính khiến tăng trưởng kinh tế được xem là mục tiêu cơ bản cho các quốc gia. Thứ nhất, một nền kinh tế lành mạnh dẫn đến việc tạo việc làm, mức độ làm việc cao và lương cao hơn cho tất cả mọi người dân. Thứ hai, tiến bộ kinh tế đảm bảo rằng có nhiều tiền hơn cho các chính phủ chi cho cơ sở hạ tầng và các dịch vụ công cộng. Ví dụ, một chính phủ có doanh thu cao hơn có thể đầu tư vào mạng lưới giao thông của đất nước, hệ thống giáo dục và các bệnh viện của đất nước. Cuối cùng, một nền kinh tế mạnh có thể giúp một quốc gia đứng trên sân khấu toàn cầu, về ảnh hưởng chính trị và sức mạnh kinh doanh.",
+                "en": "There are three key reasons why economic growth is seen as a fundamental goal for countries. Firstly, a healthy economy results in job creation, a high level of employment, and better salaries for all citizens. Secondly, economic progress ensures that more money is available for governments to spend on infrastructure and public services. For example, a government with higher revenues can invest in the country's transport network, its education system and its hospitals. Finally, a strong economy can help a country’s standing on the global stage, in terms of its political influence and trading power."
+            },
+            {
+                "vi": "Tuy nhiên, tôi cho rằng các hình thức tiến bộ khác nhau cũng quan trọng như các yếu tố kinh tế được đề cập ở trên. Đặc biệt, chúng ta nên xem xét lĩnh vực công bằng xã hội, nhân quyền, bình đẳng và dân chủ. Ví dụ, việc ứng xử với các nhóm thiểu số thường được xem như là một sự phản ánh các tiêu chuẩn đạo đức và mức độ phát triển của một xã hội. Có lẽ một yếu tố quan trọng khác khi đánh giá sự tiến bộ của một quốc gia hiện đại phải là quốc gia đó bảo vệ môi trường tự nhiên tốt như thế nào và liệu nó có đang hướng tới sự bền vững về môi trường hay không. Ngoài ra, sự thành công của một quốc gia có thể được đo lường bằng cách nhìn vào sức khỏe, sự thịnh vượng và hạnh phúc của cư dân của họ.",
+                "en": "However, I would argue that various other forms of progress are just as significant as the economic factors mentioned above. In particular, we should consider the area of social justice, human rights, equality and democracy itself. For example, the treatment of minority groups is often seen as a reflection of the moral standards and level of development of a society. Perhaps another key consideration when judging the progress of a modern country should be how well that country protects the natural environment, and whether it is moving towards environmental sustainability. Alternatively, the success of a nation could be measured by looking at the health, well-being and happiness of its residents."
+            },
+            {
+                "vi": "Tóm lại, nền kinh tế rõ ràng là một dấu mốc quan trọng cho sự thành công của một quốc gia, nhưng các tiêu chí về xã hội, môi trường và sức khỏe cũng có ý nghĩa quan trọng như nhau.",
+                "en": "In conclusion, the economy is obviously a key marker of a country’s success, but social, environmental and health criteria are equally significant."
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "topic": "More and more people are migrating to cities in search of a better life, but city life can be extremely difficult. Explain some of the difficulties of living in a city. How can governments make urban life better for everyone?",
+        "paragraphs": [
+            {
+                "vi": "Các thành phố thường được xem là nơi có cơ hội, nhưng cũng có một số hạn chế lớn của việc sống trong một đô thị lớn. Theo tôi, các chính phủ có thể làm nhiều hơn nữa để cải thiện đời sống thành phố cho người dân.",
+                "en": "Cities are often seen as places of opportunity, but there are also some major drawbacks of living in a large metropolis. In my opinion, governments could do much more to improve city life for the average inhabitant."
+            },
+            {
+                "vi": "Vấn đề chính đối với bất cứ ai hy vọng di cư đến một thành phố lớn là chi phí sinh hoạt có thể cao hơn nhiều so với ở một thị trấn nhỏ hoặc một ngôi làng nhỏ. Cư dân ở các thành phố phải trả giá cao hơn cho nhà ở, giao thông, và thậm chí cả thực phẩm. Một vấn đề nữa là khu vực đô thị có xu hướng bị các vấn đề xã hội như tỷ lệ tội phạm và đói nghèo cao so với khu vực nông thôn. Hơn nữa, chất lượng không khí ở các thành phố thường kém, do ô nhiễm từ giao thông, và các đường phố và hệ thống giao thông công cộng thường quá đông đúc. Kết quả là, cuộc sống thành phố có thể không lành mạnh và căng thẳng.",
+                "en": "The main problem for anyone who hopes to migrate to a large city is that the cost of living is likely to be much higher than it is in a small town or village. Inhabitants of cities have to pay higher prices for housing, transport, and even food. Another issue is that urban areas tend to suffer from social problems such as high crime and poverty rates in comparison with rural areas. Furthermore, the air quality in cities is often poor, due to pollution from traffic, and the streets and public transport systems are usually overcrowded. As a result, city life can be unhealthy and stressful."
+            },
+            {
+                "vi": "Tuy nhiên, có nhiều cách khác nhau mà chính phủ có thể thực hiện để giải quyết những vấn đề này. Thứ nhất, họ có thể đầu tư tiền vào việc xây dựng nhà ở giá cả hợp lý hoặc nhà ở xã hội để giảm chi phí sinh hoạt. Thứ hai, các chính trị gia có quyền cấm xe từ các trung tâm thành phố và thúc đẩy việc sử dụng phương tiện giao thông công cộng sạch hơn, giúp giảm thiểu ô nhiễm không khí và tắc nghẽn giao thông. Ví dụ, ở London, việc áp dụng phí tắc nghẽn cho người lái xe đã giúp hạn chế vấn đề giao thông. Một lựa chọn thứ ba sẽ là phát triển các thị trấn và khu vực nông thôn, bằng cách di chuyển công nghiệp và việc làm đến những vùng đó, để giảm áp lực lên các thành phố lớn.",
+                "en": "However, there are various steps that governments could take to tackle these problems. Firstly, they could invest money in the building of affordable or social housing to reduce the cost of living. Secondly, politicians have the power to ban vehicles from city centres and promote the use of cleaner public transport, which would help to reduce both air pollution and traffic congestion. In London, for example, the introduction of a congestion charge for drivers has helped to curb the traffic problem. A third option would be to develop provincial towns and rural areas, by moving industry and jobs to those regions, in order to reduce the pressure on major cities."
+            },
+            {
+                "vi": "Tóm lại, các chính phủ chắc chắn có thể thực hiện một loạt các biện pháp để nâng cao chất lượng cuộc sống cho tất cả cư dân thành phố.",
+                "en": "In conclusion, governments could certainly implement a range of measures to enhance the quality of life for all city residents."
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "topic": "In some countries, many more people are choosing to live alone nowadays than in the past. Do you think this is a positive or negative development?",
+        "paragraphs": [
+            {
+                "vi": "Trong những năm gần đây nó đã trở nên quá bình thường khi nhiều người hơn sống 1 mình, đặc biệt là ở các thành phố lớn trong thế giới phát triển. Theo ý kiến của tôi, xu hướng này có thể có cả những hậu quả tích cực và tiêu cực trên cùng 1 sự đo lường.",
+                "en": "In recent years it has become far more normal for people to live alone, particularly in large cities in the developed world. In my opinion, this trend could have both positive and negative consequences in equal measure."
+            },
+            {
+                "vi": "Sự gia tăng trong các hộ gia đình một người có thể được coi là tích cực cho cả lý do cá nhân và lý do về kinh tế. Ở cấp độ cá nhân, những người chọn sống một mình có thể trở nên độc lập và tự chủ hơn những người sống chung với các thành viên trong gia đình. Ví dụ, một thanh niên sống một mình, sẽ cần phải học nấu ăn, dọn dẹp, thanh toán hóa đơn và quản lý ngân sách của mình, tất cả đều là kỹ năng sống có giá trị; sự gia tăng số lượng cá nhân như vậy chắc chắn có thể được xem là một sự phát triển tích cực. Từ quan điểm kinh tế, xu hướng sống một mình sẽ dẫn đến nhu cầu nhà ở lớn hơn. Điều này có thể mang lại lợi ích cho ngành xây dựng, các đại lý bất động sản và một loạt các công ty khác dựa vào các chủ nhà để mua sản phẩm hoặc dịch vụ của họ.",
+                "en": "The rise in one-person households can be seen as positive for both personal and broader economic reasons. On an individual level, people who choose to live alone may become more independent and self-reliant than those who live with family members. A young adult who lives alone, for example, will need to learn to cook, clean, pay bills and manage his or her budget, all of which are valuable life skills; an increase in the number of such individuals can certainly be seen as a positive development. From an economic perspective, the trend towards living alone will result in greater demand for housing. This is likely to benefit the construction industry, estate agents and a whole host of other companies that rely on homeowners to buy their products or services."
+            },
+            {
+                "vi": "Tuy nhiên, các lập luận cá nhân và kinh tế được đưa ra ở trên có thể được xem xét từ góc đối diện. Thứ nhất, thay vì cảm giác tích cực của sự độc lập gia tăng, những người sống một mình có thể trải nghiệm cảm giác cô đơn, cô lập và lo lắng. Họ bỏ lỡ sự hỗ trợ tình cảm và cuộc trò chuyện hàng ngày mà gia đình hoặc bạn bè có thể cung cấp, và họ phải chịu đựng tất cả các hóa đơn và trách nhiệm của hộ gia đình; theo nghĩa này, có lẽ xu hướng sống một mình là một xu hướng tiêu cực. Thứ hai, từ quan điểm tài chính, sự gia tăng nhu cầu về nhà ở có khả năng đẩy giá bất động sản và tiền thuê lên. Trong khi điều này có thể có lợi cho một số doanh nghiệp, dân số nói chung, bao gồm cả những người sống một mình, sẽ phải đối mặt với chi phí sinh hoạt tăng cao.",
+                "en": "However, the personal and economic arguments given above can be considered from the opposite angle. Firstly, rather than the positive feeling of increased independence, people who live alone may experience feelings of loneliness, isolation and worry. They miss out on the emotional support and daily conversation that family or flatmates can provide, and they must bear the weight of all household bills and responsibilities; in this sense, perhaps the trend towards living alone is a negative one. Secondly, from the financial point of view, a rise in demand for housing is likely to push up property prices and rents. While this may benefit some businesses, the general population, including those who live alone, will be faced with rising living costs."
+            },
+            {
+                "vi": "Tóm lại, sự gia tăng trong các hộ gia đình một người sẽ có tác động có lợi và bất lợi đối với cá nhân và nền kinh tế.",
+                "en": "In conclusion, the increase in one-person households will have both beneficial and detrimental effects on individuals and on the economy."
+            }
+        ]
+    },
+    {
+        "id": "32",
+        "topic": "Some people think that all university students should study whatever they like. Others believe that they should only be allowed to study subjects that will be useful in the future, such as those related to science and technology. Discuss both these views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau về mức độ lựa chọn của sinh viên đối với những gì họ có thể học tại trường đại học. Trong khi một số người cho rằng sẽ tốt hơn nếu sinh viên bị bắt buộc vào một số môn học chính yếu nhất định, tôi tin rằng mọi người có thể học khóa học mà họ tự chọn lựa.",
+                "en": "People have different views about how much choice students should have with regard to what they can study at university. While some argue that it would be better for students to be forced into certain key subject areas, I believe that everyone should be able to study the course of their choice."
+            },
+            {
+                "vi": "Có nhiều lý do tại sao mọi người tin rằng các trường đại học chỉ nên cung cấp các môn học sẽ hữu ích trong tương lai. Họ có thể khẳng định rằng các khóa học đại học như y học, kỹ thuật và công nghệ thông tin có nhiều khả năng mang lại lợi ích hơn một số bằng nghệ thuật nhất định. Từ quan điểm cá nhân, có thể lập luận rằng các khóa học này cung cấp nhiều cơ hội việc làm, tiến bộ nghề nghiệp, lương cao hơn, và do đó cải thiện chất lượng cuộc sống cho những sinh viên người mà lựa chọn những môn đó.Về mặt xã hội, bằng cách buộc mọi người chọn các môn học đại học cụ thể, chính phủ có thể đảm bảo rằng bất kỳ khoảng cách về kiến thức và kỹ năng nào trong nền kinh tế đều được bao quát. Cuối cùng, tập trung vào công nghệ trong giáo dục đại học có thể dẫn đến những phát minh mới, tăng trưởng kinh tế và sự thịnh vượng trong tương lai.",
+                "en": "There are various reasons why people believe that universities should only offer subjects that will be useful in the future. They may assert that university courses like medicine, engineering and information technology are more likely to be beneficial than certain art degrees. From a personal perspective, it can be argued that these courses provide more job opportunities, career progression, better salaries, and therefore an improved quality of life for students who take them. On the societal level, by forcing people to choose particular university subjects, governments can ensure that any knowledge and skill gaps in the economy are covered. Finally, a focus on technology in higher education could lead to new inventions, economic growth, and greater future prosperity."
+            },
+            {
+                "vi": "Bất chấp những lập luận này, tôi tin rằng sinh viên đại học nên tự do lựa chọn các lĩnh vực học tập ưa thích của họ. Theo tôi, xã hội sẽ có lợi nhiều hơn nếu sinh viên của chúng ta có đam mê về những gì họ đang học. Bên cạnh đó, không ai có thể dự đoán những lĩnh vực tri thức nào sẽ hữu ích nhất cho xã hội trong tương lai, và có thể là nhà tuyển dụng bắt đầu đánh giá cao các kỹ năng tư duy sáng tạo hơn là các kỹ năng thực hành hoặc kỹ thuật. Nếu đúng như vậy, có lẽ chúng ta sẽ cần nhiều sinh viên nghệ thuật, lịch sử và triết học hơn là khoa học hay công nghệ.",
+                "en": "In spite of these arguments, I believe that university students should be free to choose their preferred areas of study. In my opinion, society will benefit more if our students are passionate about what they are learning. Besides, nobody can really predict which areas of knowledge will be most useful to society in the future, and it may be that employers begin to value creative thinking skills above practical or technical skills. If this were the case, perhaps we would need more students of art, history and philosophy than of science or technology."
+            },
+            {
+                "vi": "Tóm lại, mặc dù nó có vẻ hợp lý để các trường đại học chỉ tập trung vào các môn học hữu ích nhất, cá nhân tôi thích hệ thống hiện tại cái mà mọi người có quyền học bất cứ điều gì họ thích.",
+                "en": "In conclusion, although it might seem sensible for universities to focus only on the most useful subjects, I personally prefer the current system in which people have the right to study whatever they like."
+            }
+        ]
+    },
+    {
+        "id": "33",
+        "topic": "Some people who have been in prison become good citizens later, and it is often argued that these are the best people to talk to teenagers about the dangers of committing a crime. To what extent do you agree or disagree?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là các cựu tù nhân có thể trở thành những thành viên bình thường, có ích cho xã hội. Tôi hoàn toàn đồng ý với ý tưởng cho phép những người như vậy nói chuyện với thanh thiếu niên về kinh nghiệm của họ là cách tốt nhất để ngăn cản họ vi phạm pháp luật.",
+                "en": "It is true that ex-prisoners can become normal, productive members of society. I completely agree with the idea that allowing such people to speak to teenagers about their experiences is the best way to discourage them from breaking the law."
+            },
+            {
+                "vi": "Theo ý kiến của tôi, thanh thiếu niên có nhiều khả năng chấp nhận lời khuyên từ một người có thể nói từ kinh nghiệm. Những người phạm tội đã cải tạo có thể nói với những người trẻ về cách họ tham gia vào tội phạm, những nguy hiểm của lối sống tội phạm, và cuộc sống trong tù thực sự là như thế nào. Họ cũng có thể xua tan bất kỳ ý tưởng nào mà thanh thiếu niên có thể nghĩ về việc tội phạm dẫn tới cuộc sống hấp dẫn. Trong khi thanh thiếu niên thường thờ ơ với sự hướng dẫn của những người lớn tuổi, tôi tưởng tượng rằng hầu hết trong số họ rất muốn nghe những câu chuyện của một người phạm tội cũ. Bản chất sinh động và có lẽ gây sốc của những câu chuyện này có thể có tác động mạnh mẽ.",
+                "en": "In my opinion, teenagers are more likely to accept advice from someone who can speak from experience. Reformed offenders can tell young people about how they became involved in crime, the dangers of a criminal lifestyle, and what life in prison is really like. They can also dispel any ideas that teenagers may have about criminals leading glamorous lives. While adolescents are often indifferent to the guidance given by older people, I imagine that most of them would be extremely keen to hear the stories of an ex-offender. The vivid and perhaps shocking nature of these stories is likely to have a powerful impact."
+            },
+            {
+                "vi": "Các lựa chọn thay thế cho việc sử dụng những người tội phạm đã cải tạo để giáo dục thanh thiếu niên về tội phạm sẽ kém hiệu quả hơn nhiều. Một lựa chọn là cho nhân viên cảnh sát đến thăm trường học và nói chuyện với những người trẻ tuổi. Điều này có thể hữu ích trong việc thông báo cho thanh thiếu niên về những gì sẽ xảy ra với những kẻ phá luật khi họ bị bắt, nhưng những người trẻ tuổi thường miễn cưỡng nhận lời khuyên từ các nhân vật có thẩm quyền. Một lựa chọn thứ hai là để giáo viên nhà trường nói chuyện với học sinh của họ về tội phạm, nhưng tôi nghi ngờ rằng học sinh sẽ thấy giáo viên là nguồn thông tin đáng tin cậy về chủ đề này. Cuối cùng, các bộ phim giáo dục có thể mang tính thông tin, nhưng sẽ không có cơ hội cho những người trẻ tuổi tương tác và đặt câu hỏi.",
+                "en": "The alternatives to using reformed criminals to educate teenagers about crime would be much less effective. One option would be for police officers to visit schools and talk to young people. This could be useful in terms of informing teens about what happens to lawbreakers when they are caught, but young people are often reluctant to take advice from figures of authority. A second option would be for school teachers to speak to their students about crime, but I doubt that students would see teachers as credible sources of information about this topic. Finally, educational films might be informative, but there would be no opportunity for young people to interact and ask questions."
+            },
+            {
+                "vi": "Tóm lại, tôi ủng hộ hoàn toàn quan điểm rằng những người đã quay đầu làm lại sau khi thụ án tù có thể giúp ngăn chặn thanh thiếu niên phạm tội.",
+                "en": "In conclusion, I fully support the view that people who have turned their lives around after serving a prison sentence could help to deter teenagers from committing crimes."
+            }
+        ]
+    },
+    {
+        "id": "34",
+        "topic": "The older generations tend to have very traditional ideas about how people should live, think and behave. However, some people believe that these ideas are not helpful in preparing younger generations for modern life. To what extent do you agree or disagree with this view? 47",
+        "paragraphs": [
+            {
+                "vi": "Đúng là nhiều người lớn tuổi tin vào các giá trị truyền thống cái mà thường có vẻ không tương thích với nhu cầu của những người trẻ tuổi hơn. Trong khi tôi đồng ý rằng một số ý tưởng truyền thống đã lỗi thời, tôi tin rằng những ý tưởng khác vẫn hữu ích và không nên bị lãng quên.",
+                "en": "It is true that many older people believe in traditional values that often seem incompatible with the needs of younger people. While I agree that some traditional ideas are outdated, I believe that others are still useful and should not be forgotten."
+            },
+            {
+                "vi": "Một mặt, nhiều ý tưởng mà người cao tuổi có về cuộc sống đang trở nên ít liên quan hơn đối với những người trẻ. Trong quá khứ, ví dụ, mọi người được khuyên nên học nghề và tìm một công việc an toàn cho cuộc sống, nhưng ngày nay nhân viên mong đợi sự đa dạng và phong phú hơn nhiều từ sự nghiệp của họ. Đồng thời, \"quy tắc\" xung quanh các mối quan hệ đang bị xói mòn khi các vị thành niên tự lựa chọn về người nào và khi nào kết hôn. Nhưng có lẽ sự khác biệt lớn nhất giữa các thế hệ có thể được nhìn thấy trong thái độ của họ đối với vai trò giới tính. Vai trò truyền thống của đàn ông và phụ nữ, như người làm vai trò trụ cột và nội trợ, không còn được chấp nhận là cần thiết hoặc thích hợp bởi hầu hết những người trẻ tuổi.",
+                "en": "On the one hand, many of the ideas that elderly people have about life are becoming less relevant for younger people. In the past, for example, people were advised to learn a profession and find a secure job for life, but today’s workers expect much more variety and diversity from their careers. At the same time, the ‘rules’ around relationships are being eroded as young adults make their own choices about who and when to marry. But perhaps the greatest disparity between the generations can be seen in their attitudes towards gender roles. The traditional roles of men and women, as breadwinners and housewives, are no longer accepted as necessary or appropriate by most younger people."
+            },
+            {
+                "vi": "Mặt khác, một số quan điểm và giá trị truyền thống chắc chắn áp dụng cho thế giới hiện đại. Ví dụ, các thế hệ lớn coi trọng làm việc chăm chỉ, làm tốt nhất, và tự hào về công việc của một người, và những hành vi này chắc chắn có thể mang lại lợi ích cho giới trẻ khi họ bước vào thị trường việc làm cạnh tranh ngày nay. Các đặc điểm khác có lẽ được xem là truyền thống như sự lịch sự và cách cư xử tốt. Trong thế giới toàn cầu hoá của chúng ta, thanh niên có thể mong đợi tiếp xúc với mọi người từ nhiều nguồn gốc khác nhau, và điều quan trọng hơn bao giờ hết để đối xử với người khác một cách tôn trọng. Cuối cùng, tôi tin rằng những người trẻ tuổi sẽ sống cuộc sống hạnh phúc hơn nếu họ có ý thức cộng đồng và láng giềng hơn.",
+                "en": "On the other hand, some traditional views and values are certainly applicable to the modern world. For example, older generations attach great importance to working hard, doing one’s best, and taking pride in one’s work, and these behaviours can surely benefit young people as they enter today’s competitive job market. Other characteristics that are perhaps seen as traditional are politeness and good manners. In our globalised world, young adults can expect to come into contact with people from a huge variety of backgrounds, and it is more important than ever to treat others with respect. Finally, I believe that young people would lead happier lives if they had a more ‘old- fashioned’ sense of community and neighbourliness."
+            },
+            {
+                "vi": "Tóm lại, mặc dù quan điểm của người lớn tuổi đôi khi có vẻ không hữu ích trong thế giới ngày nay, chúng ta không nên gạt bỏ tất cả các ý tưởng truyền thống như là không liên quan.",
+                "en": "In conclusion, although the views of older people may sometimes seem unhelpful in today’s world, we should not dismiss all traditional ideas as irrelevant."
+            }
+        ]
+    },
+    {
+        "id": "35",
+        "topic": "Many people prefer to watch foreign films rather than locally produced films. Why could this be? Should governments give more financial support to local film industries?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là phim nước ngoài phổ biến ở nhiều quốc gia hơn là những phim sản xuất trong nước. Có thể có một số lý do cho trường hợp này, và tôi tin rằng các chính phủ nên thúc đẩy làm phim địa phương bằng cách trợ cấp cho ngành công nghiệp này.",
+                "en": "It is true that foreign films are more popular in many countries than domestically produced films. There could be several reasons why this is the case, and I believe that governments should promote local film-making by subsidising the industry."
+            },
+            {
+                "vi": "Có nhiều lý do khiến nhiều người thấy phim nước ngoài thú vị hơn những bộ phim được sản xuất tại chính đất nước họ. Thứ nhất, các ngành công nghiệp điện ảnh được thành lập ở một số quốc gia có ngân sách khổng lồ cho cảnh hành động, hiệu ứng đặc biệt và quay cảnh ở những địa điểm ngoạn mục. Các phim bom tấn của Hollywood như phim 'Avatar' hay các phim của James Bond là những ví dụ về những sản phẩm như vậy, và sự hấp dẫn toàn cầu của chúng là không thể phủ nhận. Một lý do khác khiến những bộ phim lớn này rất thành công là họ thường mời những diễn viên nam và nữ nổi tiếng nhất, và chúng được làm bởi những nhà sản xuất và đạo diễn xuất sắc nhất. Việc sản xuất phim chất lượng kém và kinh phí eo hẹp ở nhiều nước bị ảnh hưởng nếu so sánh với phim nước ngoài.",
+                "en": "There are various reasons why many people find foreign films more enjoyable than the films produced in their own countries. Firstly, the established film industries in certain countries have huge budgets for action, special effects and to shoot scenes in spectacular locations. Hollywood blockbusters like ‘Avatar’ or the James Bond films are examples of such productions, and their global appeal is undeniable. Another reason why these big-budget films are so successful is that they often star the most famous actors and actresses, and they are made by the most accomplished producers and directors. The poor quality, low-budget filmmaking in many countries suffers in comparison."
+            },
+            {
+                "vi": "Theo quan điểm của tôi, các chính phủ nên hỗ trợ ngành công nghiệp điện ảnh địa phương về tài chính. Ở mỗi quốc gia, có thể có những nhà làm phim tài năng nghiệp dư người mà chỉ cần có cơ hội để chứng minh bản thân. Để cạnh tranh với các ngành phim ngân sách lớn từ nước ngoài, những người này cần tiền để trả cho các đoàn làm phim, diễn viên và một loạt các chi phí khác liên quan đến sản xuất phim chất lượng cao. Nếu các chính phủ giúp đỡ với những chi phí này, họ sẽ thấy sự gia tăng việc làm trong ngành công nghiệp điện ảnh, thu nhập từ việc bán phim và thậm chí có thể tăng số lượng khách du lịch. Ví dụ, New Zealand đã chứng kiến sự gia tăng về du lịch liên quan đến các bộ phim 'Chúa tể của những chiếc nhẫn', một phần được tài trợ bởi trợ cấp chính phủ.",
+                "en": "In my view, governments should support local film industries financially. In every country, there may be talented amateur film-makers who just need to be given the opportunity to prove themselves. To compete with big-budget productions from overseas, these people need money to pay for film crews, actors and a host of other costs related to producing high-quality films. If governments did help with these costs, they would see an increase in employment in the film industry, income from film sales, and perhaps even a rise in tourist numbers. New Zealand, for example, has seen an increase in tourism related to the 'Lord of the Rings' films, which were partly funded by government subsidies."
+            },
+            {
+                "vi": "Tóm lại, tôi tin rằng sự hỗ trợ tài chính tăng lên có thể giúp nâng cao chất lượng của các bộ phim được sản xuất tại địa phương và cho phép chúng cạnh tranh với các sản phẩm nước ngoài hiện đang chiếm lĩnh thị trường.",
+                "en": "In conclusion, I believe that increased financial support could help to raise the quality of locally made films and allow them to compete with the foreign productions that currently dominate the market."
+            }
+        ]
+    },
+    {
+        "id": "36",
+        "topic": "Families who send their children to private schools should not be required to pay taxes that support the state education system. To what extent do you agree or disagree with this statement?",
+        "paragraphs": [
+            {
+                "vi": "Một số người tin rằng cha mẹ của trẻ em theo học trường tư không nên đóng góp cho các trường công lập thông qua các loại thuế. Cá nhân tôi hoàn toàn không đồng ý với quan điểm này.",
+                "en": "Some people believe that parents of children who attend private schools should not need to contribute to state schools through taxes. Personally, I completely disagree with this view."
+            },
+            {
+                "vi": "Vì nhiều lý do, việc giảm thuế cho các gia đình trả tiền cho giáo dục tư nhân là sai lầm. Thứ nhất, sẽ rất khó để tính số tiền giảm thuế chính xác cho các gia đình này, và nhân viên sẽ được yêu cầu quản lý quá trình phức tạp này. Thứ hai, tất cả chúng ta đều phải trả một khoản thuế nhất định cho các dịch vụ công cộng mà chúng ta có thể không sử dụng. Ví dụ, hầu hết mọi người may mắn không phải gọi cảnh sát hoặc đội cứu hỏa bất cứ lúc nào trong cuộc sống của họ, nhưng họ sẽ không mong đợi giảm thuế cho việc này. Cuối cùng, nếu các gia đình giàu được giảm thuế cho việc đưa con em họ đến trường tư, chúng ta có thể có một tình huống mà người nghèo phải trả thuế cao hơn người giàu.",
+                "en": "For a variety of reasons, it would be wrong to reduce taxes for families who pay for private education. Firstly, it would be difficult to calculate the correct amount of tax reduction for these families, and staff would be required to manage this complex process. Secondly, we all pay a certain amount of tax for public services that we may not use. For example, most people are fortunate enough not to have to call the police or fire brigade at any time in their lives, but they would not expect a tax reduction for this. Finally, if wealthy families were given a tax discount for sending their children to private schools, we might have a situation where poorer people pay higher taxes than the rich."
+            },
+            {
+                "vi": "Theo ý kiến của tôi, tất cả chúng ta đều vui lòng trả phần tiền của chúng ta hỗ trợ các trường công lập. Nó có lợi cho tất cả các thành viên của xã hội để có một hệ thống giáo dục chất lượng cao với cơ hội bình đẳng cho tất cả những người trẻ tuổi. Điều này sẽ dẫn đến một lực lượng lao động có trình độ học vấn cao, và lần lượt trở thành một quốc gia có năng suất và thịnh vượng hơn. Phụ huynh của trẻ em trong các trường tư cũng có thể thấy những ưu điểm của điều này trong cuộc sống của chính họ. Ví dụ, một chủ sở hữu công ty sẽ cần nhân viên có trình độ và có thẩm quyền tốt, và một hệ thống giáo dục được tài trợ tốt có thể cung cấp cho nhân viên đó.",
+                "en": "In my opinion, we should all be happy to pay our share of the money that supports public schools. It is beneficial for all members of society to have a high quality education system with equal opportunities for all young people. This will result in a well-educated workforce, and in turn a more productive and prosperous nation. Parents of children in private schools may also see the advantages of this in their own lives. For example, a company owner will need well qualified and competent staff, and a well-funded education system can provide such employees."
+            },
+            {
+                "vi": "Tóm lại, tôi không tin rằng bất kỳ nhượng bộ tài chính nào nên được thực hiện cho những người chọn giáo dục tư nhân.",
+                "en": "In conclusion, I do not believe that any financial concessions should be made for people who choose private education."
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "topic": "Some universities now offer their courses on the Internet so that people can study online. Is this a positive or negative development?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là các khóa học trực tuyến đang trở thành một đặc điểm chung của giáo dục đại học. Mặc dù có một số nhược điểm của việc học dựa trên Internet, tôi cho rằng có nhiều thứ lợi ích hơn nhiều.",
+                "en": "It is true that online courses are becoming a common feature of university education. Although there are some drawbacks of Internet-based learning, I would argue that there are far more benefits."
+            },
+            {
+                "vi": "Hạn chế chính của xu hướng đối với các khóa học đại học trực tuyến là có ít tương tác trực tiếp hơn. Học sinh có thể không có cơ hội tham gia trực tiếp với giáo viên của họ, và thay vào đó sẽ phải dựa vào các hình thức giao tiếp bằng văn bản. Tương tự, sinh viên học trực tuyến không tiếp xúc trực tiếp với nhau, và điều này có thể có tác động tiêu cực đến hỗ trợ trang lứa, thảo luận và trao đổi ý tưởng. Ví dụ, trong khi sinh viên trên các khóa học truyền thống có thể tham dự hội thảo và thậm chí thảo luận về chủ đề của họ qua cà phê sau giờ học, người học trực tuyến bị hạn chế trò chuyện qua các khu vực diễn đàn trên trang web. Những người học này cũng có thể thiếu động lực và yếu tố cạnh tranh mà công việc nhóm mặt đối mặt mang lại.",
+                "en": "The main drawback of the trend towards online university courses is that there is less direct interaction. Students may not have the opportunity to engage face-to-face with their teachers, and will instead have to rely on written forms of communication. Similarly, students who study online do not come into direct contact with each other, and this could have a negative impact on peer support, discussion and exchange of ideas. For example, whereas students on traditional courses can attend seminars and even discuss their subjects over coffee after lessons, online learners are restricted to chatting through website forum areas. These learners may also lack the motivation and element of competition that face-to-face group work brings."
+            },
+            {
+                "vi": "Mặc dù những điều tiêu cực nêu trên, tôi tin rằng các khóa học đại học trực tuyến là một sự phát triển tích cực vì nhiều lý do khác nhau. Thứ nhất, chúng cho phép người học học một cách linh hoạt, có nghĩa là họ có thể học mọi lúc mọi nơi thuận tiện, và họ có thể học các tài liệu theo nhịp độ riêng của họ. Thứ hai, chi phí của giáo dục đại học có thể được giảm đáng kể, trong khi doanh thu cho các tổ chức có thể tăng lên khi nhiều học sinh hơn có thể được dạy. Cuối cùng, học tập trực tuyến mở ra cánh cữa cho bất kỳ ai sẵn sàng học tập, bất kể tuổi tác, vị trí, khả năng và nền tảng. Ví dụ, chú của tôi, 65 tuổi, gần đây đã ghi danh vào một khóa học MBA trực tuyến ở một quốc gia khác, điều này sẽ không thể xảy ra trong những ngày trước khi có giáo dục dựa trên Internet.",
+                "en": "Despite the negatives mentioned above, I believe that online university courses are a positive development for various reasons. Firstly, they allow learners to study in a flexible way, meaning that they can work whenever and wherever is convenient, and they can cover the material at their own pace. Secondly, the cost of a university education can be greatly reduced, while revenues for institutions may increase as more students can be taught. Finally, online learning offers open access to anybody who is willing to study, regardless of age, location, ability and background. For example, my uncle, who is 65 years old, has recently enrolled on an online MBA course in a different country, which would have been impossible in the days before Internet-based education."
+            },
+            {
+                "vi": "Tóm lại, trong khi tôi nhận ra những bất lợi có thể có của việc học tập trực tuyến, tôi coi nó là một sự phát triển tích cực tổng thể.",
+                "en": "In conclusion, while I recognise the possible disadvantages of online learning, I consider it to be a positive development overall."
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "topic": "It is inevitable that traditional cultures will be lost as technology develops. Technology and traditional cultures are incompatible. To what extent do you agree or disagree with this view?",
+        "paragraphs": [
+            {
+                "vi": "Một số người tin rằng sự phát triển công nghệ dẫn đến sự mất mát của nền văn hóa truyền thống. Tôi đồng ý một phần với sự khẳng định này; trong khi nó có thể đúng trong trường hợp của một số xã hội,một số khác dường như không bị ảnh hưởng bởi công nghệ và thế giới hiện đại.",
+                "en": "Some people believe that technological developments lead to the loss of traditional cultures. I partly agree with this assertion; while it may be true in the case of some societies, others seem to be unaffected by technology and the modern world."
+            },
+            {
+                "vi": "Một mặt, những tiến bộ trong công nghệ đã thúc đẩy công nghiệp hóa ở các nước phát triển chắc chắn đã góp phần vào sự biến mất của các lối sống truyền thống. Ví dụ, ở Anh quốc thời tiền công nghiệp, các thế hệ gia đình lớn lên trong cùng một cộng đồng làng nhỏ. Những cộng đồng này có nhận thức rất mạnh mẽ, do họ chia sẻ phong tục và tập quán. Tuy nhiên, sự phát triển trong giao thông, truyền thông và sản xuất dẫn đến sự phân tán của các gia đình và cộng đồng làng khi mọi người chuyển đến các thành phố để tìm việc làm. Ngày nay hầu hết các ngôi làng của Anh đều có người đi làm, nhiều người trong số họ không biết những người hàng xóm gần nhất của họ.",
+                "en": "On the one hand, the advances in technology that have driven industrialization in developed countries have certainly contributed to the disappearance of traditional ways of life. For example, in pre-industrial Britain, generations of families grew up in the same small village communities. These communities had a strong sense of identity, due to their shared customs and beliefs. However, developments in transport, communications and manufacturing led to the dispersal of families and village communities as people moved to the cities in search of work. Nowadays most British villages are inhabited by commuters, many of whom do not know their closest neighbours."
+            },
+            {
+                "vi": "Mặt khác, ở một số nơi trên thế giới văn hóa truyền thống vẫn phát triển mạnh. Chẳng hạn, có những bộ tộc trong Rừng nhiệt đới Amazon, đã hoàn toàn không được chạm đến bởi sự phát triển công nghệ của thế giới phát triển. Các cộng đồng bộ tộc này tiếp tục săn bắn và thu thập thức ăn từ rừng, và các kỹ năng truyền thống được truyền cho trẻ em bởi cha mẹ và người lớn tuổi. Các nền văn hóa truyền thống khác, chẳng hạn như các cộng đồng nông nghiệp ở các vùng của châu Phi, đang sử dụng các công nghệ truyền thông. Điện thoại di động cung cấp cho nông dân quyền truy cập thông tin, từ dự báo thời tiết đến giá thị trường, giúp họ phát triển thịnh vượng và do đó hỗ trợ văn hóa của họ.",
+                "en": "On the other hand, in some parts of the world traditional cultures still thrive. There are tribes in the Amazon Rainforest, for example, that have been completely untouched by the technological developments of the developed world. These tribal communities continue to hunt and gather food from the forest, and traditional skills are passed on to children by parents and elders. Other traditional cultures, such as farming communities in parts of Africa, are embracing communications technologies. Mobile phones give farmers access to information, from weather predictions to market prices, which helps them to prosper and therefore supports their culture."
+            },
+            {
+                "vi": "Tóm lại, nhiều cách sống truyền thống đã bị mất do những tiến bộ trong công nghệ, nhưng các cộng đồng truyền thống khác đã sống sót và thậm chí phát triển mạnh mẽ.",
+                "en": "In conclusion, many traditional ways of life have been lost as a result of advances in technology, but other traditional communities have survived and even flourished."
+            }
+        ]
+    },
+    {
+        "id": "39",
+        "topic": "Most people have forgotten the meaning behind traditional or religious festivals; during festival periods, people nowadays only want to enjoy themselves. To what extent do you agree or disagree with this opinion?",
+        "paragraphs": [
+            {
+                "vi": "Một số người cho rằng chúng ta không còn nhớ ý nghĩa ban đầu của lễ hội, và rằng hầu hết chúng ta xem chúng như những cơ hội để vui chơi. Trong khi tôi đồng ý rằng hưởng thụ có vẻ là ưu tiên trong thời gian lễ hội, tôi không đồng ý rằng mọi người đã quên những ý nghĩa của các lễ hội đó.",
+                "en": "Some people argue that we no longer remember the original meaning of festivals, and that most of us treat them as opportunities to have fun. While I agree that enjoyment seems to be the priority during festival times, I do not agree that people have forgotten what these festivals mean."
+            },
+            {
+                "vi": "Một mặt, các lễ hội tôn giáo và truyền thống chắc chắn đã trở thành thời gian cho sự ăn mừng. Ở Anh, Giáng sinh là một ví dụ điển hình về thời kỳ lễ hội khi mọi người quan tâm nhất đến việc mua sắm, tặng và nhận quà, trang trí nhà cửa và thưởng thức các bữa ăn truyền thống cùng gia đình. Hầu hết mọi người mong đợi Giáng sinh như một kỳ nghỉ, chứ không phải là thời gian để thực hành tôn giáo. Hành vi tương tự có thể được nhìn thấy trong các lễ hội phi tôn giáo, chẳng hạn như Đêm Lửa. Mọi người liên kết dịp này với việc đốt lửa, xem màn bắn pháo hoa, và có lẽ sẽ tham gia các sự kiện lớn trong các công viên địa phương; nói cách khác, hưởng thụ là mục tiêu chính của mọi người.",
+                "en": "On the one hand, religious and traditional festivals have certainly become times for celebration. In the UK, Christmas is a good example of a festival period when people are most concerned with shopping, giving and receiving presents, decorating their homes and enjoying traditional meals with their families. Most people look forward to Christmas as a holiday period, rather than a time to practise religion. Similar behaviour can be seen during non-religious festivals, such as Bonfire Night. People associate this occasion with making fires, watching firework displays, and perhaps going to large events in local parks; in other words, enjoyment is people’s primary goal."
+            },
+            {
+                "vi": "Tuy nhiên, tôi không đồng ý với ý tưởng rằng ý nghĩa cơ bản của các lễ hội như vậy đã bị lãng quên. Tại các trường tiểu học ở Vương quốc Anh, trẻ em tìm hiểu chi tiết về các lý do tôn giáo để kỷ niệm Giáng sinh, Phục sinh và một loạt các lễ hội ở các tôn giáo khác. Ví dụ, vào cuối tháng 12, trẻ em hát những bài hát Giáng sinh có nội dung tôn giáo, và chúng thậm chí có thể biểu diễn những vở kịch Chúa giáng sinh kể về câu chuyện về sự ra đời của Chúa Giêsu. Các gia đình cũng đóng một vai trò trong việc truyền đạt kiến thức về ý nghĩa sâu sắc của lễ hội tôn giáo cho thế hệ tiếp theo. Điều này cũng đúng cho các lễ hội có nền lịch sử, chẳng hạn như Đêm Lửa hoặc Halloween, theo nghĩa là mọi người thường học những câu chuyện đằng sau những dịp này khi còn nhỏ.",
+                "en": "However, I disagree with the idea that the underlying meaning of such festivals has been forgotten. In UK primary schools, children learn in detail about the religious reasons for celebrating Christmas, Easter and a variety of festivals in other religions. For example, in late December, children sing Christmas songs which have a religious content, and they may even perform nativity plays telling the story of Jesus’ birth. Families also play a role in passing knowledge of religious festivals’ deeper significance on to the next generation. The same is true for festivals that have a historical background, such as Bonfire Night or Halloween, in the sense that people generally learn the stories behind these occasions at an early age."
+            },
+            {
+                "vi": "Tóm lại, mặc dù mọi người chủ yếu muốn tận hưởng trong các lễ hội, tôi tin rằng họ vẫn còn nhận thức được lý do cho những lễ kỷ niệm này.",
+                "en": "In conclusion, although people mainly want to enjoy themselves during festivals, I believe that they are still aware of the reasons for these celebrations."
+            }
+        ]
+    },
+    {
+        "id": "40",
+        "topic": "Extreme sports such as sky diving and skiing are very dangerous and should be banned. To what extent do you agree or disagree with this view?",
+        "paragraphs": [
+            {
+                "vi": "Trong những năm gần đây, các môn thể thao mạo hiểm ngày càng trở nên phổ biến, và một số người cho rằng chính phủ nên cấm chúng. Tôi hoàn toàn không đồng ý với ý tưởng rằng những môn thể thao này quá nguy hiểm, và do đó tôi tin rằng chúng không nên bị cấm.",
+                "en": "In recent years, extreme sports have become increasingly popular, and some people argue that governments should prohibit them. I completely disagree with the idea that these sports are too dangerous, and I therefore believe that they should not be banned."
+            },
+            {
+                "vi": "Theo tôi, cái gọi là môn thể thao mạo hiểm không nguy hiểm như nhiều người nghĩ. Tất cả các môn thể thao liên quan đến một số yếu tố rủi ro, và luôn luôn phải có quy định rõ ràng và các thủ tục an toàn để giảm khả năng xảy ra tai nạn. Những người tham gia các môn thể thao mạo hiểm thường được yêu cầu phải trải qua quá trình huấn luyện phù hợp để các mối nguy hiểm được giảm thiểu. Ví dụ, bất cứ ai muốn thử nhảy dù sẽ cần phải đăng ký các bài học với một câu lạc bộ và người mới bắt đầu không được phép nhảy một mình; họ phải được đi kèm bởi một chuyên gia có kinh nghiệm. Cuối cùng, các thiết bị và công nghệ bảo vệ được sử dụng trong thể thao từ đua mô tô đến leo núi liên tục cải thiện sự an toàn.",
+                "en": "In my opinion, so-called extreme sports are not as dangerous as many people think. All sports involve some element of risk, and there should always be clear regulations and safety procedures to reduce the possibility of accidents. People who take part in extreme sports are usually required to undergo appropriate training so that the dangers are minimised. For example, anyone who wants to try skydiving will need to sign up for lessons with a registered club, and beginners are not allowed to dive solo; they must be accompanied by an experienced professional. Finally, the protective equipment and technology used in sports from motor racing to mountain climbing is constantly improving safety."
+            },
+            {
+                "vi": "Trong khi tôi ủng hộ các quy định và các biện pháp an toàn, tôi tin rằng nó có thể là sai, và gần như không thể, để cấm các môn thể thao mạo hiểm. Ngay từ đầu, tất cả chúng ta nên tự do quyết định cách chúng ta dành thời gian giải trí của mình; miễn là chúng ta hiểu những rủi ro, tôi không tin rằng các chính trị gia nên ngăn chúng ta khỏi tận hưởng chính mình. Tuy nhiên, một lập luận thậm chí còn mạnh mẽ hơn chống lại lệnh cấm như vậy sẽ là sự khó khăn trong việc thực thi nó. Nhiều môn thể thao mạo hiểm nhất, như nhảy jumping hoặc lướt sóng lớn, được thực hành cách xa bất kì nhà dân nào.Tôi không thể tưởng tượng cảnh sát được kêu gọi để ngăn chặn mọi người nhảy dù trên mặt núi hoặc lướt trên bãi biển cô lập.",
+                "en": "While I support regulations and safety measures, I believe that it would be wrong, and almost impossible, to ban extreme sports. In the first place, we should all be free to decide how we spend our leisure time; as long as we understand the risks, I do not believe that politicians should stop us from enjoying ourselves. However, an even stronger argument against such a ban would be the difficulty of enforcing it. Many of the most risky sports, like base jumping or big wave surfing, are practised far away from the reach of any authorities. I cannot imagine the police being called to stop people from parachuting off a mountain face or surfing on an isolated beach."
+            },
+            {
+                "vi": "Tóm lại, tôi cho rằng mọi người nên được tự do thưởng thức các môn thể thao mạo hiểm miễn là họ hiểu những rủi ro và thực hiện các biện pháp phòng ngừa thích hợp.",
+                "en": "In conclusion, I would argue that people should be free to enjoy extreme sports as long as they understand the risks and take the appropriate precautions."
+            }
+        ]
+    },
+    {
+        "id": "41",
+        "topic": "Some people think that instead of preventing climate change, we need to find a way to live with it. To what extent do you agree or disagree?",
+        "paragraphs": [
+            {
+                "vi": "Biến đổi khí hậu thể hiện một mối đe dọa lớn đối với sự sống trên Trái đất, nhưng một số người cho rằng chúng ta cần chấp nhận nó hơn là cố gắng ngăn chặn nó. Tôi hoàn toàn không đồng ý với ý kiến này, vì tôi tin rằng chúng ta vẫn còn thời gian để giải quyết vấn đề này và giảm tác động của con người lên khí hậu Trái đất.",
+                "en": "Climate change represents a major threat to life on Earth, but some people argue that we need to accept it rather than try to stop it. I completely disagree with this opinion, because I believe that we still have time to tackle this issue and reduce the human impact on the Earth's climate."
+            },
+            {
+                "vi": "Có nhiều biện pháp khác nhau mà chính phủ và cá nhân có thể thực hiện để ngăn chặn, hoặc ít nhất là giảm thiểu biến đổi khí hậu. Chính phủ có thể đưa ra luật để hạn chế lượng khí thải carbon dioxide dẫn đến sự nóng lên toàn cầu. Họ có thể áp thuế thuế xanh đối với các tài xế, công ty hàng không và những người gây ô nhiễm khác, và họ có thể đầu tư vào sản xuất năng lượng tái tạo từ năng lượng mặt trời, gió hoặc nước. Với tư cách cá nhân, chúng ta cũng nên cố gắng hạn chế sự đóng góp của mình vào biến đổi khí hậu, bằng cách trở nên tiết kiệm năng lượng hơn, bằng cách bay ít hơn và sử dụng xe đạp và phương tiện giao thông công cộng. Hơn nữa, công chúng có thể ảnh hưởng đến hành động của các chính phủ bằng cách bỏ phiếu cho các chính trị gia đề nghị giải quyết biến đổi khí hậu, thay vì cho những người muốn bỏ qua nó.",
+                "en": "There are various measures that governments and individuals could take to prevent, or at least mitigate, climate change. Governments could introduce laws to limit the carbon dioxide emissions that lead to global warming. They could impose “green taxes” on drivers, airline companies and other polluters, and they could invest in renewable energy production from solar, wind or water power. As individuals, we should also try to limit our contribution to climate change, by becoming more energy efficient, by flying less, and by using bicycles and public transport. Furthermore, the public can affect the actions of governments by voting for politicians who propose to tackle climate change, rather than for those who would prefer to ignore it."
+            },
+            {
+                "vi": "Nếu thay vì thực hiện các biện pháp trên mà chúng ta chỉ đơn giản là cố gắng sống với biến đổi khí hậu, tôi tin rằng hậu quả sẽ là thảm họa. Chỉ đưa ra một ví dụ, tôi không lạc quan rằng chúng ta sẽ có thể đối phó với sự gia tăng nhỏ của mực nước biển. Hàng triệu người sẽ phải di dời do lũ lụt, đặc biệt là ở các quốc gia không có phương tiện để bảo vệ các khu vực trũng thấp. Những người này sẽ mất nhà cửa và công việc của họ, và họ sẽ bị buộc phải di cư đến các thành phố lân cận hoặc có lẽ đến các quốc gia khác. Tiềm năng cho sự đau khổ của con người sẽ rất lớn, và có khả năng chúng ta sẽ chứng kiến sự bùng phát của bệnh tật và nạn đói, cũng như tình trạng vô gia cư và nghèo đói gia tăng.",
+                "en": "If instead of taking the above measures we simply try to live with climate change, I believe that the consequences will be disastrous. To give just one example, I am not optimistic that we would be able to cope with even a small rise in sea levels. Millions of people would be displaced by flooding, particularly in countries that do not have the means to safeguard low-lying areas. These people would lose their homes and their jobs, and they would be forced to migrate to nearby cities or perhaps to other countries. The potential for human suffering would be huge, and it is likely that we would see outbreaks of disease and famine, as well as increased homelessness and poverty."
+            },
+            {
+                "vi": "Tóm lại, rõ ràng với tôi rằng chúng ta phải giải quyết vấn đề biến đổi khí hậu và tôi không đồng ý với những người cho rằng chúng ta có thể tìm cách sống với nó.",
+                "en": "In conclusion, it is clear to me that we must address the problem of climate change, and I disagree with those who argue that we can find ways to live with it."
+            }
+        ]
+    },
+    {
+        "id": "42",
+        "topic": "In many countries, a small number of people earn extremely high salaries. Some people believe that this is good for the country, but others think that governments should not allow salaries above a certain level. Discuss both these views and give your own opinion.",
+        "paragraphs": [
+            {
+                "vi": "Mọi người có quan điểm khác nhau về việc liệu chính phủ có nên ban hành mức lương tối đa hay không. Mặc dù ở một số khía cạnh có vẻ hợp lý để cho phép mọi người kiếm được càng nhiều tiền như các công ty sẵn sàng trả, cá nhân tôi tin rằng tiền công của nhân viên nên bị giới hạn ở một mức nhất định.",
+                "en": "People have different views about whether governments should introduce a maximum wage. While in some ways it may seem reasonable to allow people to earn as much as companies are willing to pay, I personally believe that employee remuneration should be capped at a certain level."
+            },
+            {
+                "vi": "Có nhiều lý do tại sao có thể được coi là có lợi khi cho phép mọi người được trả lương rất cao. Nếu các công ty cung cấp các gói trả tiền cao, họ có thể thu hút những người tài năng nhất trong lĩnh vực của họ để làm việc cho họ. Ví dụ, các công ty công nghệ như Google có thể thuê những lập trình viên giỏi nhất vì số tiền khổng lồ mà họ sẵn sàng chi trả. Hơn nữa, những nhân viên được trả lương cao này có thể có động lực cao để làm việc chăm chỉ và do đó thúc đẩy doanh nghiệp của họ thành công. Về lý thuyết, điều này sẽ dẫn đến một nền kinh tế phát triển mạnh và tăng thu thuế, có nghĩa là trả lương cao sẽ mang lại lợi ích cho tất cả mọi người.",
+                "en": "There are various reasons why it might be considered beneficial to allow people to be paid extremely high salaries. If companies offer excellent pay packages, they can attract the most talented people in their fields to work for them. For example, technology companies like Google are able to employ the best programmers because of the huge sums that they are willing to pay. Furthermore, these well-paid employees are likely to be highly motivated to work hard and therefore drive their businesses successfully. In theory, this should result in a thriving economy and increased tax revenues, which means that paying high salaries benefits everyone."
+            },
+            {
+                "vi": "Tuy nhiên, tôi đồng ý với những người cho rằng cần phải có mức lương tối đa. Bằng cách ban hành một giới hạn về thu nhập, khoảng cách tiền lương giữa các ông chủ và nhân viên có thể giảm xuống. Hiện nay, sự khác biệt giữa lương bình thường và tiền lương hàng đầu là rất lớn, và điều này có thể làm mất tinh thần những người lao động cảm thấy rằng tình cảnh này là không công bằng. Với mức lương điều hành thấp hơn, có thể khả thi để ban hành mức lương tối thiểu cao hơn, và mọi người sẽ được hưởng lợi hơn. Một kết quả có thể có của sự bình đẳng lớn hơn là tỷ lệ nghèo đói và tội phạm giảm vì dân số nói chung sẽ trải nghiệm một mức sống được cải thiện.",
+                "en": "However, I agree with those who argue that there should be a maximum wage. By introducing a limit on earnings, the pay-gap between bosses and employees can be reduced. Currently, the difference between normal and top salaries is huge, and this can demotivate workers who feel that the situation is unfair. With lower executive salaries, it might become feasible to introduce higher minimum wages, and everybody would be better off. One possible consequence of greater equality could be that poverty and crime rates fall because the general population will experience an improved standard of living."
+            },
+            {
+                "vi": "Tóm lại, có vẻ như với tôi rằng sẽ tốt hơn, trên sự cân bằng, cho các chính phủ để thiết lập một giới hạn về tiền lương của những người có thu nhập cao nhất trong xã hội.",
+                "en": "In conclusion, it seems to me that it would be better, on balance, for governments to set a limit on the wages of the highest earners in society."
+            }
+        ]
+    },
+    {
+        "id": "43",
+        "topic": "Some people claim that not enough of the waste from homes is recycled. They say that the only way to increase recycling is for governments to make it a legal requirement. To what extent do you think laws are needed to make people recycle more of their waste?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là chúng ta không tái chế đủ chất thải gia đình. Mặc dù tôi chấp nhận rằng luật mới để buộc mọi người tái chế có thể giúp ích cho tình huống này, nhưng tôi không đồng ý rằng luật tái chế là biện pháp duy nhất mà chính phủ nên áp dụng.",
+                "en": "It is true that we do not recycle enough of our household waste. Although I accept that new legislation to force people to recycle could help this situation, I do not agree that a recycling law is the only measure that governments should take."
+            },
+            {
+                "vi": "Theo quan điểm của tôi, một luật tái chế mới sẽ chỉ là một cách khả thi để giải quyết vấn đề chất thải. Chính phủ có thể biến nó/làm nó thành một nghĩa vụ pháp lý cho các hộ gia đình để tách tất cả chất thải vào các thùng khác nhau. Có thể có những hình phạt đối với những người không tuân thủ luật này, từ một khoản tiền phạt nhỏ đến dịch vụ cộng đồng/công ích, hoặc thậm chí có thể là án tù cho những người phạm tội lặp lại. Những biện pháp này sẽ đóng vai trò ngăn chặn và khuyến khích mọi người tuân thủ luật tái chế. Do đó, hành vi cải thiện của chủ nhà có thể dẫn đến một môi trường sạch sẽ, không rác thải cho mọi người.",
+                "en": "In my view, a new recycling law would be just one possible way to tackle the waste problem. Governments could make it a legal obligation for householders to separate all waste into different bins. There could be punishments for people who fail to adhere to this law, ranging from a small fine to community service, or even perhaps prison sentences for repeat offenders. These measures would act as a deterrent and encourage people to obey the recycling law. As a result, the improved behaviour of homeowners could lead to a clean, waste-free environment for everyone."
+            },
+            {
+                "vi": "Tuy nhiên, tôi tin rằng các chính phủ nên làm nhiều hơn là chỉ đưa ra luật tái chế. Nó có thể hiệu quả hơn nếu các chính trị giáo dục, thay vì trừng phạt, tại trung tâm của một chiến dịch tái chế. Ví dụ, trẻ em có thể được dạy về tái chế trong trường học, và chủ nhà có thể được thông báo về tác động môi trường của chất thải gia đình. Một chiến thuật khác mà các chính phủ có thể sử dụng là tạo ra các quy định chặt chẽ hơn cho các công ty sản xuất bao bì cho các sản phẩm gia dụng. Cuối cùng, tiền cũng có thể được sử dụng để cải thiện các cơ sở và hệ thống tái chế, để chất thải được xử lý hiệu quả hơn, bất kể mọi người có phân tách chính xác trong nhà hay không.",
+                "en": "However, I believe that governments should do more than simply introduce a recycling law. It might be more effective if politicians put education, rather than punishment, at the centre of a recycling campaign. For example, children could be taught about recycling in schools, and homeowners could be informed about the environmental impact of household waste. Another tactic that governments could use would be to create stricter regulations for the companies that produce the packaging for household products. Finally, money could also be spent to improve recycling facilities and systems, so that waste is processed more effectively, regardless of whether or not people separate it correctly in the home."
+            },
+            {
+                "vi": "Tóm lại, có lẽ chúng ta cần phải làm việc tái chế như một yêu cầu pháp lý, nhưng đây chắc chắn sẽ không phải là cách duy nhất để khuyến khích mọi người xử lý chất thải của họ một cách có trách nhiệm hơn.",
+                "en": "In conclusion, perhaps we do need to make recycling a legal requirement, but this would certainly not be the only way to encourage people to dispose of their waste more responsibly."
+            }
+        ]
+    },
+    {
+        "id": "44",
+        "topic": "In many cities the use of video cameras in public places is being increased in order to reduce crime, but some people believe that these measures restrict our individual freedom. Do the benefits of increased security outweigh the drawbacks?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là việc giám sát video đã trở nên phổ biến ở nhiều thành phố trong những năm gần đây. Mặc dù tôi hiểu rằng các nhà phê bình có thể coi đây là một cuộc xâm phạm quyền riêng tư, tôi tin rằng những lợi ích vượt xa những nhược điểm.",
+                "en": "It is true that video surveillance has become commonplace in many cities in recent years. While I understand that critics may see this as an invasion of privacy, I believe that the benefits do outweigh the drawbacks."
+            },
+            {
+                "vi": "Có hai lý do chính khiến mọi người có thể không chấp nhận việc sử dụng máy quay video ở những nơi công cộng. Sự phản đối đầu tiên là những camera này xâm chiếm quyền riêng tư của chúng ta, theo nghĩa đó là chúng ta liên tục bị chính quyền hoặc các công ty an ninh tư nhân theo dõi. Nhiều người tìm thấy điều này xâm phạm và cảm thấy rằng việc ghi lại các chuyển động của họ là một hình thức kiểm soát nhà nước nhằm kiềm chế sự tự do cá nhân của họ. Lập luận thứ hai chống lại sự phổ biến của các camera quan sát là chúng đang được sử dụng như một phương án thay thế cho các sĩ quan cảnh sát tuần tra trên đường phố. Nếu điều này thực sự xảy ra, thì chắc chắn các thành viên của công chúng sẽ cảm thấy an toàn hơn.",
+                "en": "There are two main reasons why people might disapprove of the use of video cameras in public places. The first objection is that these cameras invade our privacy, in the sense that we are constantly being watched by the authorities or by private security firms. Many people find this intrusive and feel that the recording of their movements is a form of state control that curtails their individual freedom. The second argument against the proliferation of CCTV cameras is that they are being used as an alternative to police officers patrolling the streets. If this is indeed happening, then it is unlikely that members of the public will feel safer."
+            },
+            {
+                "vi": "Mặc dù có những hạn chế được đề cập ở trên, tôi tin rằng việc sử dụng máy quay video để giám sát các khu vực công cộng là một biện pháp tích cực. Mục tiêu chính của giám sát video là để ngăn chặn tội phạm. Ví dụ, những tên tội phạm nhỏ như kẻ trộm cắp và móc túi ít có khả năng hoạt động ở các thành phố nơi chúng biết rằng chúng đang bị theo dõi. Đồng thời, khi tội phạm đã phạm tội, cảnh sát có thể sử dụng bằng chứng video để bắt và truy tố những kẻ phạm tội. Do đó, theo quan điểm của tôi, máy quay video cung cấp sự hỗ trợ có giá trị cho các nhân viên cảnh sát và chúng làm cho các thành phố an toàn hơn cho người dân, công nhân và du khách.",
+                "en": "In spite of the drawbacks mentioned above, I believe that the use of video cameras to monitor public areas is a positive measure. The key objective of video surveillance is to deter criminals and to prevent crime. For example, petty criminals like shoplifters and pickpockets are less likely to operate in parts of cities where they know that they are being watched. At the same time, when crimes are committed, the police can use video evidence to catch and prosecute offenders. Therefore, in my view, video cameras offer valuable support to police officers, and they make cities safer for inhabitants, workers and visitors alike."
+            },
+            {
+                "vi": "Tóm lại, đối với tôi, dường như chúng ta thu được nhiều hơn số tiền chúng ta mất từ an ninh được tăng cường mà các camera quan sát mang lại cho các thành phố của chúng ta.",
+                "en": "In conclusion, it seems to me that we gain more than we lose from the enhanced security that CCTV cameras bring to our cities."
+            }
+        ]
+    },
+    {
+        "id": "45",
+        "topic": "Some parents buy their children whatever they ask for, and allow their children to do whatever they want. Is this a good way to raise children? What consequences could this style of parenting have for children as they get older?",
+        "paragraphs": [
+            {
+                "vi": "Đúng là một số cha mẹ cho phép quá mức và có xu hướng làm hỏng con cái của họ. Theo tôi, đây không phải là một cách nuôi dạy con tốt và nó có thể gây ra một loạt các hậu quả lâu dài tiêu cực.",
+                "en": "It is true that some parents are overly permissive and tend to spoil their children. In my opinion, this is not a good parenting style, and it can have a range of negative long-term consequences."
+            },
+            {
+                "vi": "Nếu cha mẹ muốn nuôi dạy những đứa trẻ tôn trọng và cư xử tốt, tôi tin rằng một số kỷ luật nhất định là cần thiết. Khi làm việc với trẻ em, tôi đã học được rằng những kỳ vọng và ranh giới rõ ràng là cần thiết, và điều quan trọng là có thể nói ‘không đối với trẻ em khi chúng làm sai hoặc cố gắng chống lại những ranh giới này. Đây là cách duy nhất để giúp những người trẻ tuổi điều chỉnh ham muốn và phát triển sự tự chủ. Theo quan điểm của tôi, những bậc cha mẹ làm điều ngược lại và liên tục nhượng bộ con cái họ đòi hỏi, thực sự gây hại nhiều hơn là tốt. Họ đang thất bại với con cái của họ hơn là tử tế với họ.",
+                "en": "If parents want to raise respectful and well-behaved children, I believe that a certain amount of discipline is necessary. Having worked with children myself, I have learnt that clear expectations and boundaries are necessary, and it is important to be able to say ‘no’ to children when they misbehave or try to push against these boundaries. This is the only way to help young people to regulate their desires and develop self-control. In my view, parents who do the opposite and constantly give in to their children’s demands, are actually doing more harm than good. They are failing their children rather than being kind to them."
+            },
+            {
+                "vi": "Con cái của cha mẹ nuông chiều hoặc khoan dung có khả năng lớn lên với một số đặc điểm tính cách tiêu cực. Mối nguy hiểm đầu tiên và rõ ràng nhất là những đứa trẻ này sẽ trở thành những người trưởng thành tự cho mình là những người ít quan tâm đến cảm xúc hoặc nhu cầu của người khác. Một hậu quả của thái độ như vậy có thể là những người trưởng thành này không thể làm việc thành công trong các nhóm với các đồng nghiệp khác. Một đặc điểm tiêu cực thứ hai ở những người như vậy có thể là sự bốc đồng. Một người chưa bao giờ sống với bất kỳ ranh giới nào có khả năng thiếu kiên nhẫn để cân nhắc cẩn thận các lựa chọn trước khi đưa ra quyết định. Điều này có thể dẫn đến, ví dụ, để mua sắm bắt buộc, các quyết định tài chính không khôn ngoan hoặc thậm chí hoạt động tội phạm.",
+                "en": "The children of indulgent or lenient parents are likely to grow up with several negative personality traits. The first and most obvious danger is that these children will become self-centred adults who show little consideration for the feelings or needs of others. One consequence of such an attitude could be that these adults are unable to work successfully in teams with other colleagues. A second negative trait in such people could be impulsiveness. A person who has never lived with any boundaries is likely to lack the patience to carefully consider options before making decisions. This may lead, for example, to compulsive shopping, unwise financial decisions, or even criminal activity."
+            },
+            {
+                "vi": "Tóm lại, cha mẹ nên giúp con cái phát triển sự tự chủ và tôn trọng người khác, và tôi không tin rằng phong cách nuôi dạy con cho phép hỗ trợ mục tiêu này.",
+                "en": "In conclusion, parents should help their children to develop self-control and respect for others, and I do not believe that the permissive parenting style supports this objective."
+            }
+        ]
+    },
+    {
+        "id": "46",
+        "topic": "In order to solve traffic problems, governments should tax private car owners heavily and use the money to improve public transportation. What are the advantages and disadvantages of such a solution?",
+        "paragraphs": [
+            {
+                "vi": "Vấn đề giao thông ở nhiều thành phố trên thế giới ngày càng trở nên nghiêm trọng. Một giải pháp khả thi cho vấn đề này là đánh thuế nặng đối với người lái xe ô tô và sử dụng số tiền này để làm cho giao thông công cộng tốt hơn. Biện pháp như vậy có ưu điểm và nhược điểm riêng của nó.",
+                "en": "Traffic problems in many cities around the world are becoming more and more serious. One possible solution to this problem is to impose heavy taxes on car drivers and use this money to make public transport better. Such a measure has its own advantages and disadvantages."
+            },
+            {
+                "vi": "Rõ ràng là việc áp thuế nặng đối với người lái xe ô tô có một số tác động tích cực đáng chú ý. Một trong những lợi ích đầu tiên của một biện pháp như vậy là thuế nặng sẽ không khuyến khích chủ xe sử dụng xe của họ vì nó sẽ trở nên rất đắt khi lái xe. Điều này có nghĩa là họ sẽ bắt đầu sử dụng giao thông công cộng thay vào đó, do đó cũng giảm các vấn đề giao thông và ô nhiễm. Một lợi ích khác là việc sử dụng nhiều phương tiện giao thông công cộng sẽ được sử dụng nhiều hơn nếu nó được cải thiện. Nó thường là trường hợp giao thông công cộng trong thành phố là rất nghèo. Ví dụ, chúng ta thường thấy những chiếc xe buýt và xe lửa cũ mà mọi người không muốn sử dụng. Thuế cao có thể tạo ra đủ tiền để thực hiện các thay đổi cần thiết.",
+                "en": "It is clear that imposing heavy taxes on car drivers has some noteworthy positive effects. One of the first benefits of such a measure is that the heavy taxes would discourage car owners from using their cars because it would become very expensive to drive. This would mean that they would begin to make use of public transport instead, thus reducing traffic problems and pollution as well. Another benefit would be that much more use would be made of public transport if it were improved. It is often the case that public transport in cities is very poor. For example, we often see old buses and trains that people would rather not use. High taxes could generate enough money to make the necessary changes."
+            },
+            {
+                "vi": "Tuy nhiên, có những hạn chế đối với một giải pháp như vậy. Đầu tiên và quan trọng nhất, đây có thể là một gánh nặng lớn đối với người lái xe ô tô. Hiện tại, thuế đã cao đối với nhiều người, và vì vậy, thuế hơn nữa chỉ có nghĩa là ít tiền hơn vào cuối tháng đối với hầu hết những người không có lựa chọn nào khác ngoài lái xe mỗi ngày. Ngoài ra, loại thuế này có thể sẽ được đặt ở một mức cố định. Điều này có nghĩa là nó sẽ đánh vào những người có ít tiền hơn, trong khi người giàu có thể mua được. Do đó, nó không phải là một loại thuế công bằng.",
+                "en": "Nevertheless, there are drawbacks to such a solution. First and foremost, this might be a heavy burden on the car drivers. At present, taxes are already high for a lot of people, and so further taxes would only mean less money at the end of the month for most people who may have no choice but to drive every day. In addition, this type of tax would likely to be set at a fixed amount. This would mean that it would hit those with less money harder, whilst the rich could likely afford it. It is therefore not a fair tax."
+            },
+            {
+                "vi": "Để kết luận, giải pháp này đáng để xem xét để cải thiện tình hình hiện tại, nhưng có những lợi thế và bất lợi của việc đưa ra một chính sách như vậy.",
+                "en": "To conclude, this solution is worth considering to improve the current situation, but there are advantages and disadvantages of introducing such a policy."
+            }
+        ]
+    },
+    {
+        "id": "47",
+        "topic": "As well as making money, businesses also have social responsibilities. To what",
+        "paragraphs": [
+            {
+                "vi": "extent do you agree or disagree? Cũng như kiếm tiền, các doanh nghiệp cũng có trách nhiệm xã hội. Bạn đồng ý hay không đồng ý? Các doanh nghiệp luôn tìm cách kiếm lợi nhuận, nhưng ngày càng trở nên phổ biến khi nghe mọi người nói về nghĩa vụ xã hội mà công ty có. Tôi hoàn toàn đồng ý với ý tưởng rằng các doanh nghiệp nên làm nhiều hơn cho xã hội hơn là chỉ kiếm tiền.",
+                "en": "Businesses have always sought to make a profit, but it is becoming increasingly common to hear people talk about the social obligations that companies have. I completely agree with the idea that businesses should do more for society than simply make money."
+            },
+            {
+                "vi": "Một mặt, tôi chấp nhận rằng các doanh nghiệp phải kiếm tiền để tồn tại trong một thế giới cạnh tranh. Có vẻ hợp lý rằng ưu tiên của bất kỳ công ty nào là phải trang trải chi phí hoạt động của nó, chẳng hạn như tiền lương của nhân viên và các khoản thanh toán cho các tòa nhà và các tiện ích. Ngoài những chi phí này, các công ty cũng cần đầu tư vào những cải tiến và đổi mới nếu họ muốn tiếp tục thành công. Nếu một công ty không thể thanh toán hóa đơn của mình hoặc đáp ứng nhu cầu thay đổi của khách hàng, bất kỳ mối lo ngại nào về trách nhiệm xã hội đều trở nên không liên quan. Nói cách khác, một công ty chỉ có thể đóng góp tích cực cho xã hội nếu nó có tài chính tốt.",
+                "en": "On the one hand, I accept that businesses must make money in order to survive in a competitive world. It seems logical that the priority of any company should be to cover its running costs, such as employees(cid:0) wages and payments for buildings and utilities. On top of these costs, companies also need to invest in improvements and innovations if they wish to remain successful. If a company is unable to pay its bills or meet the changing needs of customers, any concerns about social responsibilities become irrelevant. In other words, a company can only make a positive contribution to society if it is in good financial health."
+            },
+            {
+                "vi": "Mặt khác, các công ty không nên chạy với mục đích duy nhất là tối đa hóa lợi nhuận; họ có vai trò rộng hơn trong xã hội. Một nghĩa vụ xã hội mà chủ sở hữu và người quản lý có là đối xử tốt với nhân viên của họ, thay vì khai thác họ. Ví dụ, họ có thể trả (cid:0)mức lương sống(cid:0) để đảm bảo rằng công nhân có chất lượng cuộc sống tốt. Tôi cũng thích ý tưởng rằng các doanh nghiệp có thể sử dụng một phần lợi nhuận của họ để hỗ trợ các tổ chức từ thiện địa phương, các dự án môi trường hoặc các sáng kiến giáo dục. Cuối cùng, thay vì cố gắng giảm thiểu các khoản thanh toán thuế của họ bằng cách sử dụng sơ hở kế toán, tôi tin rằng các ông chủ công ty nên vui vẻ đóng góp cho xã hội thông qua hệ thống thuế.",
+                "en": "On the other hand, companies should not be run with the sole aim of maximising profit; they have a wider role to play in society. One social obligation that owners and managers have is to treat their employees well, rather than exploiting them. For example, they could pay a (cid:0)living wage(cid:0) to ensure that workers have a good quality of life. I also like the idea that businesses could use a proportion of their profits to support local charities, environmental projects or education initiatives. Finally, instead of trying to minimise their tax payments by using accounting loopholes, I believe that company bosses should be happy to contribute to society through the tax system. In conclusion, I believe that companies should place as much importance on their social"
+            },
+            {
+                "vi": "responsibilities as they do on their financial objectives.Tóm lại, tôi tin rằng các công ty nên đặt tầm quan trọng nhiều vào trách nhiệm xã hội như là khi họ thực hiện các mục tiêu tài chính.",
+                "en": "Translation missing."
+            }
+        ]
+    }
+];

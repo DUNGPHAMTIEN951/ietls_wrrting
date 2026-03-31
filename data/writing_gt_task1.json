@@ -1,0 +1,1537 @@
+{
+  "samples": [
+    {
+      "id": "GT219",
+      "topic": "You would like to spend six months working in head office",
+      "type": "General Training",
+      "q": "You work for an international company, and would like to spend six months working in its head office in another country.\n\nWrite a letter to your manager. In your letter:\n- explain why you want to work in the company’s head office for six months\n- say how your work could be done while you are away\n- ask for his/her help in arranging it",
+      "sample": "Dear Mr George,\n\nI am writing to express my interest in working at our company headquarters in the United Kingdom for a few months to further enhance my skills and get exposure to the global market trends of our products so that I can better contribute to my company and carry out my responsibilities more efficiently.\n\nAs you know, I have been recently promoted to the assistant product manager post and I am working hard to collaborate with my team to enhance the sales and increase our brand reputation. However, I have been feeling the need to meet and work with our global team members and attend some training sessions that our head office in London arranges frequently. I am quite positive that the opportunity to work in our company’s head office for six months will further enhance my knowledge and give me an exposure to the global market trend.\n\nI have talked to Julian and he has agreed to take up my responsibilities during my absence. Furthermore, I will check my emails daily, and be available for emergency phone calls. Once I get back to the office, I would endeavour to work extra hours in order to catch up on anything I had missed.\n\nFinally, I would need your support to get the approvals so that I can work in our company’s head office for six months and fulfil the objectives.\n\nI look forward to your positive reply.\n\nYours sincerely,\n\nCharles Hugo"
+    },
+    {
+      "id": "GT218",
+      "topic": "Write to the singer about his/her performance",
+      "type": "General Training",
+      "q": "Write to the singer about his/her performance",
+      "sample": ""
+    },
+    {
+      "id": "GT217",
+      "topic": "You are not happy about a service you received",
+      "type": "General Training",
+      "q": "You are not happy about a service you received",
+      "sample": ""
+    },
+    {
+      "id": "GT216",
+      "topic": "Complaints about the reception area where visitors to your company arrive",
+      "type": "General Training",
+      "q": "You work for a company and you are not happy about the reception area where visitors to your company arrive.\n\nWrite a letter to your manager. In your letter:\n- explain why you are not happy with the current reception area\n- say how the arrival of visitors could be improved\n- suggest what the manager should do to make these changes",
+      "sample": "Dear Mr. Henderson,\n\nI am writing to bring to your attention some concerns regarding our company’s reception area. As you know, the reception is the first point of contact for our visitors, and I believe its current state does not reflect the professional image of our organization.\n\nCurrently, the reception area is quite cramped and poorly lit. The seating is outdated and uncomfortable, and there is often a lack of clear signage for visitors. Furthermore, the wait times for visitors to be attended to can be quite long, which I believe creates a negative first impression.\n\nTo improve the visitor experience, I suggest we renovate the reception area to make it more spacious and welcoming. This could include upgrading the furniture, improving the lighting, and installing clear digital signage. Additionally, implementing a more efficient visitor management system could help reduce wait times.\n\nI suggest you allocate a budget for these renovations and perhaps form a small committee to oversee the design and implementation of these changes. I would be more than happy to be a part of this committee and contribute my ideas.\n\nI look forward to discussing this further with you.\n\nYours sincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "GT215",
+      "topic": "A large company in your area has decided to spend a certain amount of money",
+      "type": "General Training",
+      "q": "A large company in your area has decided to spend a certain amount of money on a local facility. You have some ideas on how this money should be spent.\n\nWrite a letter to the company manager. In your letter:\n- say which local facility you think should be improved\n- explain why it needs improvement\n- suggest how the money should be spent on this facility",
+      "sample": "Dear Manager,\n\nI am writing to express my appreciation for your company's generous decision to invest in our local community. I have some suggestions on how this funding could be most effectively used to benefit the residents of our area.\n\nI believe the local public library would be a prime candidate for improvement. Our library is a vital resource for people of all ages, providing access to books, educational programs, and technology. However, it is currently in need of significant upgrades.\n\nThe library’s computer facilities are outdated and often non-functional, which limits the ability of students and job-seekers to access essential online resources. Furthermore, the building itself requires some structural maintenance, particularly the roof and the heating system, which are currently inefficient.\n\nI suggest the funds be used to purchase new, high-specification computers and to upgrade the library’s internet infrastructure. Additionally, a portion of the money could be allocated to repairing the building’s structural issues to ensure a comfortable environment for all users. These improvements would significantly enhance the library's role as a cornerstone of our community.\n\nThank you for considering my suggestions.\n\nYours sincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "GT214",
+      "topic": "During a recent plane journey, you sat next to a businessman",
+      "type": "General Training",
+      "q": "During a recent plane journey, you sat next to a businessman who told you about his company. You are now interested in working for this company.\n\nWrite a letter to the businessman. In your letter:\n- remind him who you are and where you met\n- say why you are interested in working for his company\n- tell him about your skills and experience",
+      "sample": "Dear Mr. Sterling,\n\nI hope this letter finds you well. I am writing to follow up on our conversation during our flight from Singapore to London last week. I was the person sitting next to you in seat 14B, and I truly enjoyed our discussion about the current trends in the tech industry.\n\nAfter hearing about your company, 'InnoTech Solutions,' and its innovative approach to sustainable energy, I have become very interested in the possibility of joining your team. Your description of the company’s mission and the collaborative culture you've built resonated with my own professional values.\n\nAs I mentioned briefly during our flight, I have over five years of experience in project management within the renewable energy sector. My skills include strategic planning, team leadership, and a proven track record of delivering complex projects on time and within budget. I believe my background and passion for sustainability would make me a valuable asset to InnoTech Solutions.\n\nI would appreciate the opportunity to talk further about any potential openings in your company. I have attached my CV for your review.\n\nThank you for your time and for the inspiring conversation.\n\nYours sincerely,\n\n[Your Name]"
+    },
+    {
+      "id": "GT213",
+      "topic": "You work at home and have a problem with a piece of equipment",
+      "type": "General Training",
+      "q": "You work at home and have a problem with a piece of equipment",
+      "sample": ""
+    },
+    {
+      "id": "GT212",
+      "topic": "You work for an international company and want to do a training course",
+      "type": "General Training",
+      "q": "You work for an international company and want to do a training course",
+      "sample": ""
+    },
+    {
+      "id": "GT211",
+      "topic": "You recently attended a meeting at a hotel and left some important papers",
+      "type": "General Training",
+      "q": "You recently attended a meeting at a hotel and left some important papers",
+      "sample": ""
+    },
+    {
+      "id": "GT210",
+      "topic": "Letter from a friend for advice about whether to go to college",
+      "type": "General Training",
+      "q": "Letter from a friend for advice about whether to go to college",
+      "sample": ""
+    },
+    {
+      "id": "GT209",
+      "topic": "You recently enjoyed a meal at a restaurant to celebrate a special occasion",
+      "type": "General Training",
+      "q": "You recently enjoyed a meal at a restaurant to celebrate a special occasion",
+      "sample": ""
+    },
+    {
+      "id": "GT208",
+      "topic": "You have recently gone to live in a new city",
+      "type": "General Training",
+      "q": "You have recently gone to live in a new city",
+      "sample": ""
+    },
+    {
+      "id": "GT207",
+      "topic": "People are having problems with their internet connection",
+      "type": "General Training",
+      "q": "People are having problems with their internet connection",
+      "sample": ""
+    },
+    {
+      "id": "GT206",
+      "topic": "You have recently moved to a different house",
+      "type": "General Training",
+      "q": "You have recently moved to a different house",
+      "sample": ""
+    },
+    {
+      "id": "GT205",
+      "topic": "You had a holiday overseas where you stayed with some friends",
+      "type": "General Training",
+      "q": "You had a holiday overseas where you stayed with some friends",
+      "sample": ""
+    },
+    {
+      "id": "GT204",
+      "topic": "You have recently started work in a new company",
+      "type": "General Training",
+      "q": "You have recently started work in a new company",
+      "sample": ""
+    },
+    {
+      "id": "GT203",
+      "topic": "You cannot join the course due to some reasons",
+      "type": "General Training",
+      "q": "You cannot join the course due to some reasons",
+      "sample": ""
+    },
+    {
+      "id": "GT202",
+      "topic": "Problems with the public transport you use",
+      "type": "General Training",
+      "q": "Problems with the public transport you use",
+      "sample": ""
+    },
+    {
+      "id": "GT201",
+      "topic": "You have recently moved into a different house",
+      "type": "General Training",
+      "q": "You have recently moved into a different house",
+      "sample": ""
+    },
+    {
+      "id": "GT200",
+      "topic": "You would like to suggest a place you have visited lately",
+      "type": "General Training",
+      "q": "You would like to suggest a place you have visited lately",
+      "sample": ""
+    },
+    {
+      "id": "GT199",
+      "topic": "A friend has invited you to his/her daughter's birthday",
+      "type": "General Training",
+      "q": "A friend has invited you to his/her daughter's birthday",
+      "sample": ""
+    },
+    {
+      "id": "GT198",
+      "topic": "You would like to move into another room",
+      "type": "General Training",
+      "q": "You would like to move into another room",
+      "sample": ""
+    },
+    {
+      "id": "GT197",
+      "topic": "You borrowed an important textbook from a classmate",
+      "type": "General Training",
+      "q": "You borrowed an important textbook from a classmate",
+      "sample": ""
+    },
+    {
+      "id": "GT196",
+      "topic": "Letter to your friend about the museum you have visited",
+      "type": "General Training",
+      "q": "Letter to your friend about the museum you have visited",
+      "sample": ""
+    },
+    {
+      "id": "GT195",
+      "topic": "Letter to the friend who has a plan to visit your city",
+      "type": "General Training",
+      "q": "Letter to the friend who has a plan to visit your city",
+      "sample": ""
+    },
+    {
+      "id": "GT194",
+      "topic": "You are going to have a family party in a hotel",
+      "type": "General Training",
+      "q": "You are going to have a family party in a hotel",
+      "sample": ""
+    },
+    {
+      "id": "GT193",
+      "topic": "Letter to manager asking permission to attend the conference",
+      "type": "General Training",
+      "q": "Letter to manager asking permission to attend the conference",
+      "sample": ""
+    },
+    {
+      "id": "GT192",
+      "topic": "Letter to the municipal authority complaining about damaged road",
+      "type": "General Training",
+      "q": "Letter to the municipal authority complaining about damaged road",
+      "sample": ""
+    },
+    {
+      "id": "GT191",
+      "topic": "Write a letter to an employment agency for a part-time job",
+      "type": "General Training",
+      "q": "Write a letter to an employment agency for a part-time job",
+      "sample": ""
+    },
+    {
+      "id": "GT190",
+      "topic": "You would like a friend to accompany you on a holiday",
+      "type": "General Training",
+      "q": "You would like a friend to accompany you on a holiday",
+      "sample": ""
+    },
+    {
+      "id": "GT189",
+      "topic": "You would like to rent out an extra room to a student",
+      "type": "General Training",
+      "q": "You would like to rent out an extra room to a student",
+      "sample": ""
+    },
+    {
+      "id": "GT188",
+      "topic": "Your rented accommodation was recently damaged",
+      "type": "General Training",
+      "q": "Your rented accommodation was recently damaged",
+      "sample": ""
+    },
+    {
+      "id": "GT187",
+      "topic": "You have purchased some goods from a company",
+      "type": "General Training",
+      "q": "You have purchased some goods from a company",
+      "sample": ""
+    },
+    {
+      "id": "GT186",
+      "topic": "Write a letter to the friend asking for a recipe",
+      "type": "General Training",
+      "q": "Write a letter to the friend asking for a recipe",
+      "sample": ""
+    },
+    {
+      "id": "GT185",
+      "topic": "Your new neighbours have recently invited you to a party",
+      "type": "General Training",
+      "q": "Your new neighbours have recently invited you to a party",
+      "sample": ""
+    },
+    {
+      "id": "GT184",
+      "topic": "You bought a mobile phone and it was faulty",
+      "type": "General Training",
+      "q": "You bought a mobile phone and it was faulty",
+      "sample": ""
+    },
+    {
+      "id": "GT183",
+      "topic": "Write a letter to the course instructor",
+      "type": "General Training",
+      "q": "Write a letter to the course instructor",
+      "sample": ""
+    },
+    {
+      "id": "GT182",
+      "topic": "Suggest a colleague you think should be the best employee",
+      "type": "General Training",
+      "q": "Suggest a colleague you think should be the best employee",
+      "sample": ""
+    },
+    {
+      "id": "GT181",
+      "topic": "You would like to get enrolled in a qualification course",
+      "type": "General Training",
+      "q": "You would like to get enrolled in a qualification course",
+      "sample": ""
+    },
+    {
+      "id": "GT180",
+      "topic": "Advise friend on which subject to specialize in",
+      "type": "General Training",
+      "q": "Advise friend on which subject to specialize in",
+      "sample": ""
+    },
+    {
+      "id": "GT179",
+      "topic": "You went to the local hospital’s Emergency Department",
+      "type": "General Training",
+      "q": "You went to the local hospital’s Emergency Department",
+      "sample": ""
+    },
+    {
+      "id": "GT178",
+      "topic": "You want to delay the joining for two weeks",
+      "type": "General Training",
+      "q": "You want to delay the joining for two weeks",
+      "sample": ""
+    },
+    {
+      "id": "GT177",
+      "topic": "Write to a friend in the hospital telling him about the match",
+      "type": "General Training",
+      "q": "Write to a friend in the hospital telling him about the match",
+      "sample": ""
+    },
+    {
+      "id": "GT176",
+      "topic": "Write a letter to a friend to visit you",
+      "type": "General Training",
+      "q": "Write a letter to a friend to visit you",
+      "sample": ""
+    },
+    {
+      "id": "GT175",
+      "topic": "You borrowed something from your friend and it got damaged",
+      "type": "General Training",
+      "q": "You borrowed something from your friend and it got damaged",
+      "sample": ""
+    },
+    {
+      "id": "GT174",
+      "topic": "Suggest how your friend could help you find a job",
+      "type": "General Training",
+      "q": "Suggest how your friend could help you find a job",
+      "sample": ""
+    },
+    {
+      "id": "GT173",
+      "topic": "You would like some time off from your work to complete a qualification",
+      "type": "General Training",
+      "q": "You would like some time off from your work to complete a qualification",
+      "sample": ""
+    },
+    {
+      "id": "GT172",
+      "topic": "You are organising an executive event for the company you work for",
+      "type": "General Training",
+      "q": "You are organising an executive event for the company you work for",
+      "sample": ""
+    },
+    {
+      "id": "GT171",
+      "topic": "You have taken a cruise on a holiday and have been disappointed",
+      "type": "General Training",
+      "q": "You have taken a cruise on a holiday and have been disappointed",
+      "sample": ""
+    },
+    {
+      "id": "GT170",
+      "topic": "You have just returned home after living with a family",
+      "type": "General Training",
+      "q": "You have just returned home after living with a family",
+      "sample": ""
+    },
+    {
+      "id": "GT169",
+      "topic": "Write a letter to friend and say you left your wallet",
+      "type": "General Training",
+      "q": "Write a letter to friend and say you left your wallet",
+      "sample": ""
+    },
+    {
+      "id": "GT168",
+      "topic": "A friend has had some problems due to unusual weather",
+      "type": "General Training",
+      "q": "A friend has had some problems due to unusual weather",
+      "sample": ""
+    },
+    {
+      "id": "GT167",
+      "topic": "You are going away to travel for the summer",
+      "type": "General Training",
+      "q": "You are going away to travel for the summer",
+      "sample": ""
+    },
+    {
+      "id": "GT166",
+      "topic": "Write to an employment agency for a part-time job",
+      "type": "General Training",
+      "q": "Write to an employment agency for a part-time job",
+      "sample": ""
+    },
+    {
+      "id": "GT165",
+      "topic": "You won a competition and received a vacation for two as a prize",
+      "type": "General Training",
+      "q": "You won a competition and received a vacation for two as a prize",
+      "sample": ""
+    },
+    {
+      "id": "GT164",
+      "topic": "A friend asked you to recommend a destination",
+      "type": "General Training",
+      "q": "A friend asked you to recommend a destination",
+      "sample": ""
+    },
+    {
+      "id": "GT163",
+      "topic": "Letter to your teacher asking for a reference",
+      "type": "General Training",
+      "q": "Letter to your teacher asking for a reference",
+      "sample": ""
+    },
+    {
+      "id": "GT162",
+      "topic": "Write a letter to your bank and ask for a loan",
+      "type": "General Training",
+      "q": "Write a letter to your bank and ask for a loan",
+      "sample": ""
+    },
+    {
+      "id": "GT161",
+      "topic": "You spent a weekend at a Hotel in London and left a bag",
+      "type": "General Training",
+      "q": "You spent a weekend at a Hotel in London and left a bag",
+      "sample": ""
+    },
+    {
+      "id": "GT160",
+      "topic": "You have recently ordered an item through the Internet",
+      "type": "General Training",
+      "q": "You have recently ordered an item through the Internet",
+      "sample": ""
+    },
+    {
+      "id": "GT159",
+      "topic": "You want to move to the college accommodation",
+      "type": "General Training",
+      "q": "You want to move to the college accommodation",
+      "sample": ""
+    },
+    {
+      "id": "GT158",
+      "topic": "Apply for the sales manager position in a company",
+      "type": "General Training",
+      "q": "Apply for the sales manager position in a company",
+      "sample": ""
+    },
+    {
+      "id": "GT157",
+      "topic": "You have invited a friend to visit London",
+      "type": "General Training",
+      "q": "You have invited a friend to visit London",
+      "sample": ""
+    },
+    {
+      "id": "GT156",
+      "topic": "You had been charged for items you did not purchase",
+      "type": "General Training",
+      "q": "You had been charged for items you did not purchase",
+      "sample": ""
+    },
+    {
+      "id": "GT155",
+      "topic": "You are organising a trip for a group of students",
+      "type": "General Training",
+      "q": "You are organising a trip for a group of students",
+      "sample": ""
+    },
+    {
+      "id": "GT154",
+      "topic": "Letter to a friend to thank for the invitation",
+      "type": "General Training",
+      "q": "Letter to a friend to thank for the invitation",
+      "sample": ""
+    },
+    {
+      "id": "GT153",
+      "topic": "Letter to the training organiser to express interest",
+      "type": "General Training",
+      "q": "Letter to the training organiser to express interest",
+      "sample": ""
+    },
+    {
+      "id": "GT152",
+      "topic": "Your friend has a travel company and would like you to work with him",
+      "type": "General Training",
+      "q": "Your friend has a travel company and would like you to work with him",
+      "sample": ""
+    },
+    {
+      "id": "GT151",
+      "topic": "You have read an article in the newspaper about someone you know personally",
+      "type": "General Training",
+      "q": "You have read an article in the newspaper about someone you know personally",
+      "sample": ""
+    },
+    {
+      "id": "GT150",
+      "topic": "You are going to spend your vacation in a city in a foreign country",
+      "type": "General Training",
+      "q": "You are going to spend your vacation in a city in a foreign country",
+      "sample": ""
+    },
+    {
+      "id": "GT149",
+      "topic": "Write a letter to your friend who has forgotten to return a book",
+      "type": "General Training",
+      "q": "Write a letter to your friend who has forgotten to return a book",
+      "sample": ""
+    },
+    {
+      "id": "GT148",
+      "topic": "Write to the local police station for the lost ID card",
+      "type": "General Training",
+      "q": "Write to the local police station for the lost ID card",
+      "sample": ""
+    },
+    {
+      "id": "GT147",
+      "topic": "Write a letter to friend inviting ts aem to stay with you",
+      "type": "General Training",
+      "q": "Write a letter to friend inviting ts aem to stay with you",
+      "sample": ""
+    },
+    {
+      "id": "GT146",
+      "topic": "You went on a trip with a friend and took photographs",
+      "type": "General Training",
+      "q": "You went on a trip with a friend and took photographs",
+      "sample": ""
+    },
+    {
+      "id": "GT145",
+      "topic": "You are having a graduation party next Saturday",
+      "type": "General Training",
+      "q": "You are having a graduation party next Saturday",
+      "sample": ""
+    },
+    {
+      "id": "GT144",
+      "topic": "Facilities for shoppers could be improved",
+      "type": "General Training",
+      "q": "Facilities for shoppers could be improved",
+      "sample": ""
+    },
+    {
+      "id": "GT143",
+      "topic": "Write a letter to the Principal of a local school",
+      "type": "General Training",
+      "q": "Write a letter to the Principal of a local school",
+      "sample": ""
+    },
+    {
+      "id": "GT142",
+      "topic": "You would like to give a presentation",
+      "type": "General Training",
+      "q": "You would like to give a presentation",
+      "sample": ""
+    },
+    {
+      "id": "GT141",
+      "topic": "A friend you met last year has invited you to visit",
+      "type": "General Training",
+      "q": "A friend you met last year has invited you to visit",
+      "sample": ""
+    },
+    {
+      "id": "GT140",
+      "topic": "Write a special thank you letter",
+      "type": "General Training",
+      "q": "Write a special thank you letter",
+      "sample": ""
+    },
+    {
+      "id": "GT139",
+      "topic": "Write a letter to your friend to describe your present life",
+      "type": "General Training",
+      "q": "Write a letter to your friend to describe your present life",
+      "sample": ""
+    },
+    {
+      "id": "GT138",
+      "topic": "You have an extra room and you would rent it out to a student",
+      "type": "General Training",
+      "q": "You have an extra room and you would rent it out to a student",
+      "sample": ""
+    },
+    {
+      "id": "GT137",
+      "topic": "You are interested in applying for a scholarship program",
+      "type": "General Training",
+      "q": "You are interested in applying for a scholarship program",
+      "sample": ""
+    },
+    {
+      "id": "GT136",
+      "topic": "Write to a friend who is a professional event planner",
+      "type": "General Training",
+      "q": "Write to a friend who is a professional event planner",
+      "sample": ""
+    },
+    {
+      "id": "GT135",
+      "topic": "Your friend recently had a birthday celebration",
+      "type": "General Training",
+      "q": "Your friend recently had a birthday celebration",
+      "sample": ""
+    },
+    {
+      "id": "GT134",
+      "topic": "Your friend has asked you to be a partner in his new business",
+      "type": "General Training",
+      "q": "Your friend has asked you to be a partner in his new business",
+      "sample": ""
+    },
+    {
+      "id": "GT133",
+      "topic": "Letter to a bank requesting information about obtaining a business loan",
+      "type": "General Training",
+      "q": "Letter to a bank requesting information about obtaining a business loan",
+      "sample": ""
+    },
+    {
+      "id": "GT132",
+      "topic": "You have been to a business meeting at another company",
+      "type": "General Training",
+      "q": "You have been to a business meeting at another company",
+      "sample": ""
+    },
+    {
+      "id": "GT131",
+      "topic": "Write a letter to your higher authority and suggest the possible reasons",
+      "type": "General Training",
+      "q": "Write a letter to your higher authority and suggest the possible reasons",
+      "sample": ""
+    },
+    {
+      "id": "GT130",
+      "topic": "You saw an advertisement for a tennis course in England",
+      "type": "General Training",
+      "q": "You saw an advertisement for a tennis course in England",
+      "sample": ""
+    },
+    {
+      "id": "GT129",
+      "topic": "Evening programs on a local television station are uninteresting",
+      "type": "General Training",
+      "q": "Evening programs on a local television station are uninteresting",
+      "sample": ""
+    },
+    {
+      "id": "GT128",
+      "topic": "You and some friends ate a meal at a restaurant to celebrate",
+      "type": "General Training",
+      "q": "You and some friends ate a meal at a restaurant to celebrate",
+      "sample": ""
+    },
+    {
+      "id": "GT127",
+      "topic": "You play sport for a local team",
+      "type": "General Training",
+      "q": "You play sport for a local team",
+      "sample": ""
+    },
+    {
+      "id": "GT126",
+      "topic": "You rented a car but the air conditioner has stopped working",
+      "type": "General Training",
+      "q": "You rented a car but the air conditioner has stopped working",
+      "sample": ""
+    },
+    {
+      "id": "GT125",
+      "topic": "You have left a bag at the hotel",
+      "type": "General Training",
+      "q": "You have left a bag at the hotel",
+      "sample": ""
+    },
+    {
+      "id": "GT124",
+      "topic": "You are due to move into a rented apartment next month",
+      "type": "General Training",
+      "q": "You are due to move into a rented apartment next month",
+      "sample": ""
+    },
+    {
+      "id": "GT123",
+      "topic": "You have decided to leave your current employment",
+      "type": "General Training",
+      "q": "You have decided to leave your current employment",
+      "sample": ""
+    },
+    {
+      "id": "GT122",
+      "topic": "You recently met a manager of a new company that started in your city",
+      "type": "General Training",
+      "q": "You recently met a manager of a new company that started in your city",
+      "sample": ""
+    },
+    {
+      "id": "GT121",
+      "topic": "Your former homestay family is coming to see you",
+      "type": "General Training",
+      "q": "Your former homestay family is coming to see you",
+      "sample": ""
+    },
+    {
+      "id": "GT120",
+      "topic": "Write a letter to invite your friend to a music concert",
+      "type": "General Training",
+      "q": "Write a letter to invite your friend to a music concert",
+      "sample": ""
+    },
+    {
+      "id": "GT119",
+      "topic": "Write a letter to the insurance company",
+      "type": "General Training",
+      "q": "Write a letter to the insurance company",
+      "sample": ""
+    },
+    {
+      "id": "GT118",
+      "topic": "You are part of a group of musicians who meet to practise",
+      "type": "General Training",
+      "q": "You are part of a group of musicians who meet to practise",
+      "sample": ""
+    },
+    {
+      "id": "GT117",
+      "topic": "You borrowed a book from the library and it is now damaged",
+      "type": "General Training",
+      "q": "You borrowed a book from the library and it is now damaged",
+      "sample": ""
+    },
+    {
+      "id": "GT116",
+      "topic": "A letter to a friend expressing your interest to seek employment in a different country",
+      "type": "General Training",
+      "q": "A letter to a friend expressing your interest to seek employment in a different country",
+      "sample": ""
+    },
+    {
+      "id": "GT115",
+      "topic": "A family member is coming to stay with you",
+      "type": "General Training",
+      "q": "A family member is coming to stay with you",
+      "sample": ""
+    },
+    {
+      "id": "GT114",
+      "topic": "Your mentor recommended you to learn a new language",
+      "type": "General Training",
+      "q": "Your mentor recommended you to learn a new language",
+      "sample": ""
+    },
+    {
+      "id": "GT113",
+      "topic": "Complaining about the college facility",
+      "type": "General Training",
+      "q": "Complaining about the college facility",
+      "sample": ""
+    },
+    {
+      "id": "GT112",
+      "topic": "You need to return to your country before the end of the semester",
+      "type": "General Training",
+      "q": "You need to return to your country before the end of the semester",
+      "sample": ""
+    },
+    {
+      "id": "GT111",
+      "topic": "Letter to a financial organization that gives money to students",
+      "type": "General Training",
+      "q": "Letter to a financial organization that gives money to students",
+      "sample": ""
+    },
+    {
+      "id": "GT110",
+      "topic": "You booked a two-week holiday to Sydney",
+      "type": "General Training",
+      "q": "You booked a two-week holiday to Sydney",
+      "sample": ""
+    },
+    {
+      "id": "GT109",
+      "topic": "You forget your bag in the gym and the gym will be closed for a week",
+      "type": "General Training",
+      "q": "You forget your bag in the gym and the gym will be closed for a week",
+      "sample": ""
+    },
+    {
+      "id": "GT108",
+      "topic": "Write a letter to a bus company saying you have left some valuable items",
+      "type": "General Training",
+      "q": "Write a letter to a bus company saying you have left some valuable items",
+      "sample": ""
+    },
+    {
+      "id": "GT107",
+      "topic": "Write a letter to your friend and invite him to a party",
+      "type": "General Training",
+      "q": "Write a letter to your friend and invite him to a party",
+      "sample": ""
+    },
+    {
+      "id": "GT106",
+      "topic": "Your university lecturer gave you an assignment",
+      "type": "General Training",
+      "q": "Your university lecturer gave you an assignment",
+      "sample": ""
+    },
+    {
+      "id": "GT105",
+      "topic": "You missed a flight due to a problem at the airport",
+      "type": "General Training",
+      "q": "You missed a flight due to a problem at the airport",
+      "sample": ""
+    },
+    {
+      "id": "GT104",
+      "topic": "You are going on holiday and you would like to hire a car",
+      "type": "General Training",
+      "q": "You are going on holiday and you would like to hire a car",
+      "sample": ""
+    },
+    {
+      "id": "GT103",
+      "topic": "You recently visited a tourist attraction and you were very pleased",
+      "type": "General Training",
+      "q": "You recently visited a tourist attraction and you were very pleased",
+      "sample": ""
+    },
+    {
+      "id": "GT102",
+      "topic": "You have been doing some voluntary work to help your local community",
+      "type": "General Training",
+      "q": "You have been doing some voluntary work to help your local community",
+      "sample": ""
+    },
+    {
+      "id": "GT101",
+      "topic": "You are organising a graduation party for your class",
+      "type": "General Training",
+      "q": "You are organising a graduation party for your class",
+      "sample": ""
+    },
+    {
+      "id": "GT100",
+      "topic": "Your best friend just had her first baby",
+      "type": "General Training",
+      "q": "Your best friend just had her first baby",
+      "sample": ""
+    },
+    {
+      "id": "GT99",
+      "topic": "The local government is planning to change the bus timetable",
+      "type": "General Training",
+      "q": "The local government is planning to change the bus timetable",
+      "sample": ""
+    },
+    {
+      "id": "GT98",
+      "topic": "Your local hospital has advertised people to do unpaid work",
+      "type": "General Training",
+      "q": "Your local hospital has advertised people to do unpaid work",
+      "sample": ""
+    },
+    {
+      "id": "GT97",
+      "topic": "Find another student to share the spare bedroom",
+      "type": "General Training",
+      "q": "Find another student to share the spare bedroom",
+      "sample": ""
+    },
+    {
+      "id": "GT96",
+      "topic": "Your neighbours have a dog that is noisy at night",
+      "type": "General Training",
+      "q": "Your neighbours have a dog that is noisy at night",
+      "sample": ""
+    },
+    {
+      "id": "GT95",
+      "topic": "You went to a local restaurant with your family and you were very satisfied",
+      "type": "General Training",
+      "q": "You went to a local restaurant with your family and you were very satisfied",
+      "sample": ""
+    },
+    {
+      "id": "GT94",
+      "topic": "You want to sell some of your furniture",
+      "type": "General Training",
+      "q": "You want to sell some of your furniture",
+      "sample": ""
+    },
+    {
+      "id": "GT93",
+      "topic": "Room in office that can be used as a relaxation room",
+      "type": "General Training",
+      "q": "Room in office that can be used as a relaxation room",
+      "sample": ""
+    },
+    {
+      "id": "GT92",
+      "topic": "You were offered to join a company but for some reasons, you can not",
+      "type": "General Training",
+      "q": "You were offered to join a company but for some reasons, you can not",
+      "sample": ""
+    },
+    {
+      "id": "GT91",
+      "topic": "You need to take some time off work",
+      "type": "General Training",
+      "q": "You need to take some time off work",
+      "sample": ""
+    },
+    {
+      "id": "GT90",
+      "topic": "You are unhappy about a plan to make your local airport bigger",
+      "type": "General Training",
+      "q": "You are unhappy about a plan to make your local airport bigger",
+      "sample": ""
+    },
+    {
+      "id": "GT89",
+      "topic": "You were hurt in a minor accident inside a supermarket",
+      "type": "General Training",
+      "q": "You were hurt in a minor accident inside a supermarket",
+      "sample": ""
+    },
+    {
+      "id": "GT88",
+      "topic": "Your local newspaper wants to reward people who have contributed",
+      "type": "General Training",
+      "q": "Your local newspaper wants to reward people who have contributed",
+      "sample": ""
+    },
+    {
+      "id": "GT87",
+      "topic": "You want to sell your television",
+      "type": "General Training",
+      "q": "You want to sell your television",
+      "sample": ""
+    },
+    {
+      "id": "GT86",
+      "topic": "You and your family are living in rented accommodation",
+      "type": "General Training",
+      "q": "You and your family are living in rented accommodation",
+      "sample": ""
+    },
+    {
+      "id": "GT85",
+      "topic": "You have stayed at a friend’s house and forgot your watch",
+      "type": "General Training",
+      "q": "You have stayed at a friend’s house and forgot your watch",
+      "sample": ""
+    },
+    {
+      "id": "GT84",
+      "topic": "Write to the organizers of the event congratulating them",
+      "type": "General Training",
+      "q": "Write to the organizers of the event congratulating them",
+      "sample": ""
+    },
+    {
+      "id": "GT83",
+      "topic": "You bought a new HD television last week",
+      "type": "General Training",
+      "q": "You bought a new HD television last week",
+      "sample": ""
+    },
+    {
+      "id": "GT82",
+      "topic": "Your local council is considering closing a sports and leisure centre",
+      "type": "General Training",
+      "q": "Your local council is considering closing a sports and leisure centre",
+      "sample": ""
+    },
+    {
+      "id": "GT81",
+      "topic": "Last year you attended a presentation skill course",
+      "type": "General Training",
+      "q": "Last year you attended a presentation skill course",
+      "sample": ""
+    },
+    {
+      "id": "GT80",
+      "topic": "You have recently started working for a new company",
+      "type": "General Training",
+      "q": "You have recently started working for a new company",
+      "sample": ""
+    },
+    {
+      "id": "GT79",
+      "topic": "You have just moved into a new home and are planning to hold a party",
+      "type": "General Training",
+      "q": "You have just moved into a new home and are planning to hold a party",
+      "sample": ""
+    },
+    {
+      "id": "GT78",
+      "topic": "Recently a new neighbour moved in and has been making a lot of noise",
+      "type": "General Training",
+      "q": "Recently a new neighbour moved in and has been making a lot of noise",
+      "sample": ""
+    },
+    {
+      "id": "GT77",
+      "topic": "Write a letter to railway authorities for the revised timetable",
+      "type": "General Training",
+      "q": "Write a letter to railway authorities for the revised timetable",
+      "sample": ""
+    },
+    {
+      "id": "GT76",
+      "topic": "A friend wants to spend a holiday in your region",
+      "type": "General Training",
+      "q": "A friend wants to spend a holiday in your region",
+      "sample": ""
+    },
+    {
+      "id": "GT75",
+      "topic": "You would like to change to a different course",
+      "type": "General Training",
+      "q": "You would like to change to a different course",
+      "sample": ""
+    },
+    {
+      "id": "GT74",
+      "topic": "You have invited a friend to come on holiday",
+      "type": "General Training",
+      "q": "You have invited a friend to come on holiday",
+      "sample": ""
+    },
+    {
+      "id": "GT73",
+      "topic": "Advertisement for a job in the City Museum shop",
+      "type": "General Training",
+      "q": "Advertisement for a job in the City Museum shop",
+      "sample": ""
+    },
+    {
+      "id": "GT72",
+      "topic": "You have received an important document that needs to be translated",
+      "type": "General Training",
+      "q": "You have received an important document that needs to be translated",
+      "sample": ""
+    },
+    {
+      "id": "GT71",
+      "topic": "You eat in your college cafeteria everyday lunchtime",
+      "type": "General Training",
+      "q": "You eat in your college cafeteria everyday lunchtime",
+      "sample": ""
+    },
+    {
+      "id": "GT70",
+      "topic": "You arranged to visit a friend in England but now you must change the date",
+      "type": "General Training",
+      "q": "You arranged to visit a friend in England but now you must change the date",
+      "sample": ""
+    },
+    {
+      "id": "GT69",
+      "topic": "You have been invited to an interview for a place at a college",
+      "type": "General Training",
+      "q": "You have been invited to an interview for a place at a college",
+      "sample": ""
+    },
+    {
+      "id": "GT68",
+      "topic": "You have a full-time job and doing a part-time evening course",
+      "type": "General Training",
+      "q": "You have a full-time job and doing a part-time evening course",
+      "sample": ""
+    },
+    {
+      "id": "GT67",
+      "topic": "Write a letter to the hotel manager expressing your interest for the job",
+      "type": "General Training",
+      "q": "Write a letter to the hotel manager expressing your interest for the job",
+      "sample": ""
+    },
+    {
+      "id": "GT66",
+      "topic": "You are organising a local committee meeting",
+      "type": "General Training",
+      "q": "You are organising a local committee meeting",
+      "sample": ""
+    },
+    {
+      "id": "GT65",
+      "topic": "Write a letter to the shop complaining",
+      "type": "General Training",
+      "q": "Write a letter to the shop complaining",
+      "sample": ""
+    },
+    {
+      "id": "GT64",
+      "topic": "You and your family are planning to spend a weekend at a seaside hotel",
+      "type": "General Training",
+      "q": "You and your family are planning to spend a weekend at a seaside hotel",
+      "sample": ""
+    },
+    {
+      "id": "GT63",
+      "topic": "You recently ordered a small item online but it was damaged",
+      "type": "General Training",
+      "q": "You recently ordered a small item online but it was damaged",
+      "sample": ""
+    },
+    {
+      "id": "GT62",
+      "topic": "Letter to offer concert ticket to a friend",
+      "type": "General Training",
+      "q": "Letter to offer concert ticket to a friend",
+      "sample": ""
+    },
+    {
+      "id": "GT61",
+      "topic": "You are looking for a full-time job",
+      "type": "General Training",
+      "q": "You are looking for a full-time job",
+      "sample": ""
+    },
+    {
+      "id": "GT60",
+      "topic": "You live in an area where the local council has made changes",
+      "type": "General Training",
+      "q": "You live in an area where the local council has made changes",
+      "sample": ""
+    },
+    {
+      "id": "GT59",
+      "topic": "You live in a room in college which you share with another student",
+      "type": "General Training",
+      "q": "You live in a room in college which you share with another student",
+      "sample": ""
+    },
+    {
+      "id": "GT58",
+      "topic": "Write a letter to the accommodation officer at the college",
+      "type": "General Training",
+      "q": "Write a letter to the accommodation officer at the college",
+      "sample": ""
+    },
+    {
+      "id": "GT57",
+      "topic": "Write your first letter to the homestay host family",
+      "type": "General Training",
+      "q": "Write your first letter to the homestay host family",
+      "sample": ""
+    },
+    {
+      "id": "GT56",
+      "topic": "A friend has agreed to look after your house and pet while you are on holiday",
+      "type": "General Training",
+      "q": "A friend has agreed to look after your house and pet while you are on holiday",
+      "sample": ""
+    },
+    {
+      "id": "GT55",
+      "topic": "You have bought a new camera but found some problems",
+      "type": "General Training",
+      "q": "You have bought a new camera but found some problems",
+      "sample": ""
+    },
+    {
+      "id": "GT54",
+      "topic": "The landlord's workmen have tried to fix the problem but without success",
+      "type": "General Training",
+      "q": "The landlord's workmen have tried to fix the problem but without success",
+      "sample": ""
+    },
+    {
+      "id": "GT53",
+      "topic": "You recently bought a piece of equipment for your kitchen but it did not work",
+      "type": "General Training",
+      "q": "You recently bought a piece of equipment for your kitchen but it did not work",
+      "sample": ""
+    },
+    {
+      "id": "GT52",
+      "topic": "You were supposed to go on an interview",
+      "type": "General Training",
+      "q": "You were supposed to go on an interview",
+      "sample": ""
+    },
+    {
+      "id": "GT51",
+      "topic": "Write a letter to your company manager saying that you want to leave",
+      "type": "General Training",
+      "q": "Write a letter to your company manager saying that you want to leave",
+      "sample": ""
+    },
+    {
+      "id": "GT50",
+      "topic": "On a recent holiday you lost a valuable item",
+      "type": "General Training",
+      "q": "On a recent holiday you lost a valuable item",
+      "sample": ""
+    },
+    {
+      "id": "GT49",
+      "topic": "You are applying for a job and need a letter of reference",
+      "type": "General Training",
+      "q": "You are applying for a job and need a letter of reference",
+      "sample": ""
+    },
+    {
+      "id": "GT48",
+      "topic": "You live in a flat and you have a tenancy agreement",
+      "type": "General Training",
+      "q": "You live in a flat and you have a tenancy agreement",
+      "sample": ""
+    },
+    {
+      "id": "GT47",
+      "topic": "Letter from your bank to acknowledge receipt of a new bank card",
+      "type": "General Training",
+      "q": "Letter from your bank to acknowledge receipt of a new bank card",
+      "sample": ""
+    },
+    {
+      "id": "GT46",
+      "topic": "A friend has asked you to babysit on Saturday",
+      "type": "General Training",
+      "q": "A friend has asked you to babysit on Saturday",
+      "sample": ""
+    },
+    {
+      "id": "GT45",
+      "topic": "Write a letter of recommendation for your friend",
+      "type": "General Training",
+      "q": "Write a letter of recommendation for your friend",
+      "sample": ""
+    },
+    {
+      "id": "GT44",
+      "topic": "You are looking for a part-time job at a football club",
+      "type": "General Training",
+      "q": "You are looking for a part-time job at a football club",
+      "sample": ""
+    },
+    {
+      "id": "GT43",
+      "topic": "When you left the plane, you left a bag",
+      "type": "General Training",
+      "q": "When you left the plane, you left a bag",
+      "sample": ""
+    },
+    {
+      "id": "GT42",
+      "topic": "You are an international student and have borrowed a book from the library",
+      "type": "General Training",
+      "q": "You are an international student and have borrowed a book from the library",
+      "sample": ""
+    },
+    {
+      "id": "GT41",
+      "topic": "You find that your study load is too heavy",
+      "type": "General Training",
+      "q": "You find that your study load is too heavy",
+      "sample": ""
+    },
+    {
+      "id": "GT40",
+      "topic": "You live in a room in a college where you share with another student",
+      "type": "General Training",
+      "q": "You live in a room in a college where you share with another student",
+      "sample": ""
+    },
+    {
+      "id": "GT39",
+      "topic": "You are writing your first letter to a pen pal",
+      "type": "General Training",
+      "q": "You are writing your first letter to a pen pal",
+      "sample": ""
+    },
+    {
+      "id": "GT38",
+      "topic": "You ordered a new chequebook from your bank",
+      "type": "General Training",
+      "q": "You ordered a new chequebook from your bank",
+      "sample": ""
+    },
+    {
+      "id": "GT37",
+      "topic": "Last month you had an overseas holiday with some friends",
+      "type": "General Training",
+      "q": "Last month you had an overseas holiday with some friends",
+      "sample": ""
+    },
+    {
+      "id": "GT36",
+      "topic": "Letter to your friend telling him that you left the coat",
+      "type": "General Training",
+      "q": "Letter to your friend telling him that you left the coat",
+      "sample": ""
+    },
+    {
+      "id": "GT35",
+      "topic": "You recently bought an item of clothing from a shop",
+      "type": "General Training",
+      "q": "You recently bought an item of clothing from a shop",
+      "sample": ""
+    },
+    {
+      "id": "GT34",
+      "topic": "Write a letter to your friend describing the file you left",
+      "type": "General Training",
+      "q": "Write a letter to your friend describing the file you left",
+      "sample": ""
+    },
+    {
+      "id": "GT33",
+      "topic": "You would like to buy some electrical goods",
+      "type": "General Training",
+      "q": "You would like to buy some electrical goods",
+      "sample": ""
+    },
+    {
+      "id": "GT32",
+      "topic": "Shopping centre has cheap second-hand furniture",
+      "type": "General Training",
+      "q": "Shopping centre has cheap second-hand furniture",
+      "sample": ""
+    },
+    {
+      "id": "GT31",
+      "topic": "Waiter/ waitress required for evening work",
+      "type": "General Training",
+      "q": "Waiter/ waitress required for evening work",
+      "sample": ""
+    },
+    {
+      "id": "GT30",
+      "topic": "You recently stayed in a hotel in a large city",
+      "type": "General Training",
+      "q": "You recently stayed in a hotel in a large city",
+      "sample": ""
+    },
+    {
+      "id": "GT29",
+      "topic": "Letter to the college giving your accommodation requirements",
+      "type": "General Training",
+      "q": "Letter to the college giving your accommodation requirements",
+      "sample": ""
+    },
+    {
+      "id": "GT28",
+      "topic": "Your pen pal will shortly be visiting your city",
+      "type": "General Training",
+      "q": "Your pen pal will shortly be visiting your city",
+      "sample": ""
+    },
+    {
+      "id": "GT27",
+      "topic": "You have recently been to stay with an old friend for a few days",
+      "type": "General Training",
+      "q": "You have recently been to stay with an old friend for a few days",
+      "sample": ""
+    },
+    {
+      "id": "GT26",
+      "topic": "You are due to start a new job next week",
+      "type": "General Training",
+      "q": "You are due to start a new job next week",
+      "sample": ""
+    },
+    {
+      "id": "GT25",
+      "topic": "You recently visited a place that had a strong impact on you",
+      "type": "General Training",
+      "q": "You recently visited a place that had a strong impact on you",
+      "sample": ""
+    },
+    {
+      "id": "GT24",
+      "topic": "You are organizing a trip to the Snowy Mountains",
+      "type": "General Training",
+      "q": "You are organizing a trip to the Snowy Mountains",
+      "sample": ""
+    },
+    {
+      "id": "GT23",
+      "topic": "You have a friend who lives in a city abroad",
+      "type": "General Training",
+      "q": "You have a friend who lives in a city abroad",
+      "sample": ""
+    },
+    {
+      "id": "GT22",
+      "topic": "Asking for information regarding the contents of the exhibition",
+      "type": "General Training",
+      "q": "Asking for information regarding the contents of the exhibition",
+      "sample": ""
+    },
+    {
+      "id": "GT21",
+      "topic": "Write a letter to the restaurant to thank them",
+      "type": "General Training",
+      "q": "Write a letter to the restaurant to thank them",
+      "sample": ""
+    },
+    {
+      "id": "GT20",
+      "topic": "Write a letter to the Information Officer at the TAPE Information Office",
+      "type": "General Training",
+      "q": "Write a letter to the Information Officer at the TAPE Information Office",
+      "sample": ""
+    },
+    {
+      "id": "GT19",
+      "topic": "You cannot go to a company where you got an offer",
+      "type": "General Training",
+      "q": "You cannot go to a company where you got an offer",
+      "sample": ""
+    },
+    {
+      "id": "GT18",
+      "topic": "While you were driving on holiday, you had a small accident",
+      "type": "General Training",
+      "q": "While you were driving on holiday, you had a small accident",
+      "sample": ""
+    },
+    {
+      "id": "GT17",
+      "topic": "Why you think the restaurant is worth visiting",
+      "type": "General Training",
+      "q": "Why you think the restaurant is worth visiting",
+      "sample": ""
+    },
+    {
+      "id": "GT16",
+      "topic": "You will move to a new city for work",
+      "type": "General Training",
+      "q": "You will move to a new city for work",
+      "sample": ""
+    },
+    {
+      "id": "GT15",
+      "topic": "Complaining about some adolescents let their dogs run wildly",
+      "type": "General Training",
+      "q": "Complaining about some adolescents let their dogs run wildly",
+      "sample": ""
+    },
+    {
+      "id": "GT14",
+      "topic": "Recently you received a letter from the bank",
+      "type": "General Training",
+      "q": "Recently you received a letter from the bank",
+      "sample": ""
+    },
+    {
+      "id": "GT13",
+      "topic": "You travelled by plane last week and your suitcase was lost",
+      "type": "General Training",
+      "q": "You travelled by plane last week and your suitcase was lost",
+      "sample": ""
+    },
+    {
+      "id": "GT12",
+      "topic": "You have bought a new mobile phone and it has stopped working",
+      "type": "General Training",
+      "q": "You have bought a new mobile phone and it has stopped working",
+      "sample": ""
+    },
+    {
+      "id": "GT11",
+      "topic": "You borrowed some books from your school or college library",
+      "type": "General Training",
+      "q": "You borrowed some books from your school or college library",
+      "sample": ""
+    },
+    {
+      "id": "GT10",
+      "topic": "Write a letter to the person in charge of a venue",
+      "type": "General Training",
+      "q": "Write a letter to the person in charge of a venue",
+      "sample": ""
+    },
+    {
+      "id": "GT9",
+      "topic": "You traveled by a bus and your suitcase was damaged",
+      "type": "General Training",
+      "q": "You traveled by a bus and your suitcase was damaged",
+      "sample": ""
+    },
+    {
+      "id": "GT8",
+      "topic": "You are going to visit New Zealand for an 'English and Homestay' program",
+      "type": "General Training",
+      "q": "You are going to visit New Zealand for an 'English and Homestay' program",
+      "sample": ""
+    },
+    {
+      "id": "GT7",
+      "topic": "You recently had your computer fixed at a local computer store",
+      "type": "General Training",
+      "q": "You recently had your computer fixed at a local computer store",
+      "sample": ""
+    },
+    {
+      "id": "GT6",
+      "topic": "You are employed full-time and also doing a part-time evening course",
+      "type": "General Training",
+      "q": "You are employed full-time and also doing a part-time evening course",
+      "sample": ""
+    },
+    {
+      "id": "GT5",
+      "topic": "For the past year you have been a member of a local club",
+      "type": "General Training",
+      "q": "For the past year you have been a member of a local club",
+      "sample": ""
+    },
+    {
+      "id": "GT4",
+      "topic": "You recently took a part-time job working for a local company",
+      "type": "General Training",
+      "q": "You recently took a part-time job working for a local company",
+      "sample": ""
+    },
+    {
+      "id": "GT3",
+      "topic": "Your neighbors have written to complain about noise",
+      "type": "General Training",
+      "q": "Your neighbors have written to complain about noise",
+      "sample": ""
+    },
+    {
+      "id": "GT2",
+      "topic": "You were disappointed with the meal and wish to complain",
+      "type": "General Training",
+      "q": "You were disappointed with the meal and wish to complain",
+      "sample": ""
+    },
+    {
+      "id": "GT1",
+      "topic": "You would like to participate in a work-related seminar",
+      "type": "General Training",
+      "q": "You would like to participate in a work-related seminar",
+      "sample": ""
+    }
+  ]
+}

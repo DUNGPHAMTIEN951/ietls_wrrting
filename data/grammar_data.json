@@ -1,0 +1,602 @@
+[
+  {
+    "id": "9",
+    "raw": "Người Việt Nam thường uống trà.   The Vietnamese often drink tea. Chúng tôi thích các loại trà của Thái Nguyên. We like the teas of Thai Nguyen Chúng tôi thường ăn tối sớm. I often have dinner early. Bữa ăn tối chúng tôi đã ăn ở nhà hàng đó thật tồi tệ.  The dinner we had at that retaurant was awful. Bơ được làm từ kem. Butter is made from cream. Anh ta thích bơ của Pháp.  He likes the butter of France Làm ơn chuyển cho tôi 1 cây bút chì. Pass me a pencil, please. Tôi ghét chiếc tivi. I hate the television Cá voi là động vật có vú.   The whale is a mammal."
+  },
+  {
+    "id": "10",
+    "raw": "Chúng tôi đi xem lễ vào chủ nhật.   We go to church on Sundays"
+  },
+  {
+    "id": "11",
+    "raw": "Chúng tôi đến nhà thờ để gặp cô ta. We go to the church to see her"
+  },
+  {
+    "id": "16",
+    "raw": "Nhà thờ lớn The cathedral"
+  },
+  {
+    "id": "15",
+    "raw": "Jack đi đến giường lấy cuốn sách.   Jack went to the bed to get the book."
+  },
+  {
+    "id": "14",
+    "raw": "Jack đã đi ngủ sớm. Jack went to bed early"
+  },
+  {
+    "id": "12",
+    "raw": "Chúng tôi thường đi học sớm. We often go to school early."
+  },
+  {
+    "id": "13",
+    "raw": "Bố tôi thường đến trường để nói chuyện với các thầy cô giáo của chúng tôi. My father often goes to the school to speak to our teachers."
+  },
+  {
+    "id": "17",
+    "raw": "Văn phòng The office"
+  },
+  {
+    "id": "18",
+    "raw": "Rạp hát  The theatre"
+  },
+  {
+    "id": "19",
+    "raw": "Một con chó và một con mèo đang đi cùng nhau, con mèo màu đen trong khi con chó màu trắng  A dog and a cat were traveling together, the cat looked black while the dog looked white."
+  },
+  {
+    "id": "20",
+    "raw": "Trái đất quay xung quanh mặt trời  The earth goes around the sun."
+  },
+  {
+    "id": "21",
+    "raw": "Mặt trời mọc ở hướng đông The sun rises in the East."
+  },
+  {
+    "id": "22",
+    "raw": "Ngựa là một loại động vật quý giá  The horse is a noble animal"
+  },
+  {
+    "id": "23",
+    "raw": "Chó là một loài động vật trung thành The dog is a faithful animal"
+  },
+  {
+    "id": "24",
+    "raw": "Cô ấy là cô gái đẹp nhất trong lớp này She is the most beautiful girl in this class"
+  },
+  {
+    "id": "25",
+    "raw": "Paris là thành phố lớn nhất ở Pháp  Paris is the biggest city in France"
+  },
+  {
+    "id": "26",
+    "raw": "Người đàn ông một mắt là vua của những người mù  The one-eyed man is the King of the blind."
+  },
+  {
+    "id": "27",
+    "raw": "Người nghèo phụ thuộc vào người giàu The poor depend upon the rich."
+  },
+  {
+    "id": "28",
+    "raw": "Bia được bán theo chai Beer is sold by the bottle."
+  },
+  {
+    "id": "29",
+    "raw": "Trứng được bán theo tá  Eggs are sold by the dozen."
+  },
+  {
+    "id": "30",
+    "raw": "Gia đình Smiths luôn luôn đi câu cá ở miền quê vào những ngày chủ nhật. The Smiths always go fishing in the country on Sundays."
+  },
+  {
+    "id": "31",
+    "raw": "Bạn có biết gia đình Browns không? Do you know the Browns?"
+  },
+  {
+    "id": "32",
+    "raw": "Sông Thái Bình  The Thai Binh river;"
+  },
+  {
+    "id": "33",
+    "raw": "Nước Philippin the Philippines ,"
+  },
+  {
+    "id": "34",
+    "raw": "Tờ thời báo the Times ..."
+  },
+  {
+    "id": "35",
+    "raw": "Người Trung Quốc, Người Mỹ và Người Pháp đã từng chiến tranh với Người Đức. The Chinese, the Americans and the French were at war with the Germans"
+  },
+  {
+    "id": "36",
+    "raw": "Người Công giáo và người biểu tình tin vào Chúa Kitô. The Catholics and the protestants believe in Christ"
+  },
+  {
+    "id": "37",
+    "raw": "Tất cả đàn ông phải chết.  All men must die."
+  },
+  {
+    "id": "38",
+    "raw": "Tất cả những người đàn ông trong thị trấn này rất lười. All the men in this town are very lazy"
+  },
+  {
+    "id": "39",
+    "raw": "Tôi có thể chơi đàn ghi ta khi tôi 6 tuổi. I could play the guitar when I was 6."
+  },
+  {
+    "id": "40",
+    "raw": "Lịch sử của nước Anh thật thú vị.   The history of England is interesting."
+  },
+  {
+    "id": "41",
+    "raw": "Tôi học tiếng Anh, Anh ấy học lịch sử tại trường. I learn English; He learns history at school."
+  },
+  {
+    "id": "42",
+    "raw": "Một cậu học sinh giỏi A good pupil"
+  },
+  {
+    "id": "43",
+    "raw": "Một người đàn ông mạnh mẽ A strong man"
+  },
+  {
+    "id": "44",
+    "raw": "Cậu bé đó sợ hãi. The boy is afraid."
+  },
+  {
+    "id": "45",
+    "raw": "Người phụ nữ đó đang ngủ say. The woman is asleep."
+  },
+  {
+    "id": "46",
+    "raw": "Cô gái đó khoẻ.  The girl is well."
+  },
+  {
+    "id": "47",
+    "raw": "Người lính đó trông ốm yếu. The soldier looks ill."
+  },
+  {
+    "id": "48",
+    "raw": "Một người phụ nữ sợ hãi.  A frightened woman"
+  },
+  {
+    "id": "49",
+    "raw": "Một cậu bé đang ngủ. A sleeping boy"
+  },
+  {
+    "id": "50",
+    "raw": "Một người phụ nữ khoả mạnh. A healthy woman"
+  },
+  {
+    "id": "51",
+    "raw": "Một người lính bị ốm. A sick soldier"
+  },
+  {
+    "id": "52",
+    "raw": "Con chó săn đó có vẻ sợ hãi. The hound seems afraid."
+  },
+  {
+    "id": "53",
+    "raw": "Cô gái đó thức hay ngủ ?   Is the girl awake or asleep?"
+  },
+  {
+    "id": "54",
+    "raw": "Một căn phòng lớn. A large room"
+  },
+  {
+    "id": "55",
+    "raw": "Một người phụ nữ quyến rũ: A charming woman"
+  },
+  {
+    "id": "56",
+    "raw": "Một cái máy bay mới. A new plane"
+  },
+  {
+    "id": "57",
+    "raw": "Một cây bút màu trắng. A white pen"
+  },
+  {
+    "id": "59",
+    "raw": "Nhỏ hơn Smaller"
+  },
+  {
+    "id": "60",
+    "raw": "Nhỏ nhất Smallest"
+  },
+  {
+    "id": "61",
+    "raw": "Xinh đẹp Beautiful"
+  },
+  {
+    "id": "62",
+    "raw": "Xinh đẹp hơn More beautiful"
+  },
+  {
+    "id": "63",
+    "raw": "Xinh đẹp nhất. The most beautiful"
+  },
+  {
+    "id": "64",
+    "raw": "Rất già.  Very old"
+  },
+  {
+    "id": "65",
+    "raw": "Quá nóng. So hot"
+  },
+  {
+    "id": "66",
+    "raw": "Cực giỏi. Extremely good"
+  },
+  {
+    "id": "67",
+    "raw": "Một căn nhà nhỏ. A small house"
+  },
+  {
+    "id": "68",
+    "raw": "Một người phụ nữ lớn tuổi. An old woman"
+  },
+  {
+    "id": "69",
+    "raw": "Cô ấy mệt: She is tired."
+  },
+  {
+    "id": "70",
+    "raw": "Jack đói bụng. Jack is hungry."
+  },
+  {
+    "id": "71",
+    "raw": "John rất cao. John is very tall."
+  },
+  {
+    "id": "72",
+    "raw": "Không có thứ gì thú vị. There is nothing interesting."
+  },
+  {
+    "id": "73",
+    "raw": "Tôi sẽ kể cho bạn một điều mới. I'll tell you something new."
+  },
+  {
+    "id": "74",
+    "raw": "Nhà văn đó thông minh và khéo léo. The writer is both clever and wise."
+  },
+  {
+    "id": "75",
+    "raw": "Ông già, nghèo nhưng tự hào, đã từ chối lời đề nghị của tôi.   The old man, poor but proud, refused my offer."
+  },
+  {
+    "id": "76",
+    "raw": "Con đường đó daì 5km.   The road is 5 kms long"
+  },
+  {
+    "id": "77",
+    "raw": "Một toà nhà cao 10 tầng.  A building is ten storeys high"
+  },
+  {
+    "id": "78",
+    "raw": "Họ có 1 căn nhà lớn hơn của bạn.   They have a house bigger than yours"
+  },
+  {
+    "id": "79",
+    "raw": "Những cậu bé dễ dạy nhất là trong lớp học.  The boys easiest to teach were in the classroom"
+  },
+  {
+    "id": "80",
+    "raw": "Kính vỡ ngày hôm qua rất đắt. The glass broken yesterday was very expensive"
+  },
+  {
+    "id": "81",
+    "raw": "Tòa án hỏi những người liên quan.  The court asked the people involved"
+  },
+  {
+    "id": "82",
+    "raw": "Nhìn vào các ghi chú được đề cập/chỉ ra sau đây. Look at the notes mentioned/indicated hereafter"
+  },
+  {
+    "id": "83",
+    "raw": "Người nghèo, người mù, người giàu, người điếc, người bệnh, người tàn tật, người tốt, người già; .. The poor, the blind, the rich, the deaf, the sick, the handicapped, the good, the old; ..."
+  },
+  {
+    "id": "84",
+    "raw": "Người giàu không biết người nghèo sống thế nào. The rich do not know how the poor live."
+  },
+  {
+    "id": "85",
+    "raw": "Suốt đời. Life + long = lifelong"
+  },
+  {
+    "id": "86",
+    "raw": "Cô là một thành viên trọn đời của đảng Lao động. She was a lifelong member of the Labour party."
+  },
+  {
+    "id": "87",
+    "raw": "Ông có một mối quan tâm trọn đời trong khoa học.   He’s had a lifelong interest in science."
+  },
+  {
+    "id": "88",
+    "raw": "Say xe.  Car + sick = carsick"
+  },
+  {
+    "id": "89",
+    "raw": "Hoặc có lẽ anh ta đơn giản trở nên say xe  Or perhaps he simply becomes carsick."
+  },
+  {
+    "id": "90",
+    "raw": "Cô giả vờ say xe để bắt anh ta kéo xe và dùng cơ hội đó để trốn thoát.  She fakes being carsick to get him to pull the car over and uses that opportunity to escape."
+  },
+  {
+    "id": "91",
+    "raw": "Nổi tiếng thế giới  World + famous = world-famous"
+  },
+  {
+    "id": "92",
+    "raw": "Sách của ông nổi tiếng thế giới His books are world-famous."
+  },
+  {
+    "id": "93",
+    "raw": "Một nhà khoa học nổi tiếng thế giới. a world-famous scientist"
+  },
+  {
+    "id": "94",
+    "raw": "Đỏ như máu: Snow-white"
+  },
+  {
+    "id": "95",
+    "raw": "Cô ấy có mái tóc trắng như tuyết.  She has snow - white hair."
+  },
+  {
+    "id": "96",
+    "raw": "Khắp thế giới:  World-wide"
+  },
+  {
+    "id": "97",
+    "raw": "Tôi đã đi du lịch khắp thế giới. I travelled worldwide."
+  },
+  {
+    "id": "98",
+    "raw": "Đánh chú ý: Noteworthy"
+  },
+  {
+    "id": "99",
+    "raw": "Số điểm này đáng ghi nhận. This grade is noteworthy."
+  },
+  {
+    "id": "100",
+    "raw": "Làm bằng tay:  Handmade"
+  },
+  {
+    "id": "101",
+    "raw": "Chúng được làm bằng tay. They 're handmade."
+  },
+  {
+    "id": "102",
+    "raw": "Đau lòng: Heartbroken Heartbroken"
+  },
+  {
+    "id": "103",
+    "raw": "Dường như cô ta rất đau buồn. She seems heart - broken."
+  },
+  {
+    "id": "104",
+    "raw": "Ấm lòng Heart-warming"
+  },
+  {
+    "id": "105",
+    "raw": "Hôm qua tôi đã nhận được lá thư chân thành của bạn I received your heart - warming letter yesterday."
+  },
+  {
+    "id": "106",
+    "raw": "Không bị đánh bại: Never-defeated"
+  },
+  {
+    "id": "107",
+    "raw": "Cô ấy là một thủy thủ vĩ đại không bao giờ bị đánh bại! She is a great sailor that was never defeated!"
+  },
+  {
+    "id": "108",
+    "raw": "Thẳng thắn: Outspoken"
+  },
+  {
+    "id": "109",
+    "raw": "Bà ấy rộng lượng, vui vẻ, và luôn thẳng tính. She's gracious, fun, and always outspoken."
+  },
+  {
+    "id": "110",
+    "raw": "Tráng kiện Well-built"
+  },
+  {
+    "id": "111",
+    "raw": "Anh ấy cao và mạnh khỏe  He's tall and well - built."
+  },
+  {
+    "id": "112",
+    "raw": "Vĩnh cửu Everlasting"
+  },
+  {
+    "id": "113",
+    "raw": "Không có tình yêu vĩnh cửu There is no everlasting love."
+  },
+  {
+    "id": "114",
+    "raw": "Xanh đen Blue-black"
+  },
+  {
+    "id": "115",
+    "raw": "Một mái tóc đen xanh xoã kín cả một bờ vai  Down past the shoulders flooded a mass of blue-black hair."
+  },
+  {
+    "id": "116",
+    "raw": "Mái tóc của cô ấy bồng bềnh, trắng sáng lấp lánh màu xanh đen như dòng sông trong tuyết Her hair under her peaked, white hood glistened blue-black like a river in the snow."
+  },
+  {
+    "id": "117",
+    "raw": "Con phố có màu xanh đen của đường phố New York vào ban đêm The street had the blue-black look of a New York street at night."
+  },
+  {
+    "id": "118",
+    "raw": "Có một đám mây màu xanh đen cuộn lên từ phía tây nam There was a blue-black bank of cloud rolling up from the southwest."
+  },
+  {
+    "id": "119",
+    "raw": "Cực nóng White-hot"
+  },
+  {
+    "id": "120",
+    "raw": "Kim loại nóng trắng nóng đến mức phát ra ánh sáng trắng White-hot metal is so hot it is giving out a white light."
+  },
+  {
+    "id": "121",
+    "raw": "Nâu đậm Dark-brown"
+  },
+  {
+    "id": "122",
+    "raw": "Từng trải Worldly-wise"
+  },
+  {
+    "id": "123",
+    "raw": "Ông ta là một nhà kinh doanh từng trải trên đường đời He is a worldly - wise businessman."
+  },
+  {
+    "id": "124",
+    "raw": "Một bé gái bốn tuổi = bé gái bốn tuổi A four-year-old girl = the girl is four years old."
+  },
+  {
+    "id": "125",
+    "raw": "Một ký ức không bao giờ bị lãng quên = ký ức sẽ không bao giờ bị lãng quên A never-to-be-forgetten memory = the memory will be never forgotten."
+  },
+  {
+    "id": "126",
+    "raw": "John cao bằng cha mình John is as tall as his father."
+  },
+  {
+    "id": "127",
+    "raw": "Cái hộp này nặng như cái kia This box is as heavy as that one."
+  },
+  {
+    "id": "128",
+    "raw": "Bạn cao hơn tôi  You are taller than I am."
+  },
+  {
+    "id": "129",
+    "raw": "John mạnh hơn anh trai John is stronger than his brother."
+  },
+  {
+    "id": "130",
+    "raw": "Vấn đề thứ nhất khó hơn vấn đề thứ hai The first problem is more difficult than the second."
+  },
+  {
+    "id": "131",
+    "raw": "John là người cao nhất trong lớp John is the tallest in the class."
+  },
+  {
+    "id": "132",
+    "raw": "Đó là ngày hạnh phúc nhất trong cuộc đời tôi That was the happiest day of my life."
+  },
+  {
+    "id": "133",
+    "raw": "Maria là người đẹp nhất trong lớp tôi Maria is the most beautiful in my class."
+  },
+  {
+    "id": "134",
+    "raw": "Bộ phim đó là ít thú vị nhất trong tất cả That film is the least interesting of all."
+  },
+  {
+    "id": "135",
+    "raw": "Bạn có thể làm cho một món cà ri nóng hơn chỉ bằng cách thêm ớt You can make a curry hotter simply by adding chillies."
+  },
+  {
+    "id": "136",
+    "raw": "Hôm nay chúng ta bước vào giai đoạn nóng nhất của chiến dịch bầu cử Today we enter the hottest phase of the election campaign."
+  },
+  {
+    "id": "137",
+    "raw": "Môi trường đã trở thành một vấn đề rất nóng The environment has become a very hot issue."
+  },
+  {
+    "id": "138",
+    "raw": "Cạnh tranh đang ngày càng nóng hơn Competition is getting hotter day by day."
+  },
+  {
+    "id": "139",
+    "raw": "Một số lượng nhỏ nhiều sinh viên đã thi đậu hơn tôi dự kiến  A much smaller number of students passed than I had expected."
+  },
+  {
+    "id": "140",
+    "raw": "Họ đang có một đám cưới tương đối nhỏ They're having a relatively small wedding."
+  },
+  {
+    "id": "141",
+    "raw": "Chiếc váy đó quá nhỏ đối với bạn  That dress is too small for you."
+  },
+  {
+    "id": "142",
+    "raw": "Họ có ba đứa con nhỏ They have three small children."
+  },
+  {
+    "id": "143",
+    "raw": "Chúng tôi đi du lịch khắp nơi khi tôi còn nhỏ  We travelled around a lot when I was small."
+  },
+  {
+    "id": "144",
+    "raw": "Khi còn nhỏ, ông đã dành phần lớn thời gian của mình với ông bà As a small boy he had spent most of his time with his grandparents."
+  },
+  {
+    "id": "145",
+    "raw": "Tôi chỉ thực hiện một vài thay đổi nhỏ cho báo cáo I made only a few small changes to the report."
+  },
+  {
+    "id": "146",
+    "raw": "Cô nhận thấy một vài lỗi nhỏ trong công việc của anh She noticed several small errors in his work."
+  },
+  {
+    "id": "147",
+    "raw": "Mọi thứ đã được lên kế hoạch đến từng chi tiết nhỏ nhất Everything had been planned down to the smallest detail."
+  },
+  {
+    "id": "148",
+    "raw": "Đó là thành tích không nhỏ để cô ấy đồng ý với thỏa thuận này It was no small achievement getting her to agree to the deal."
+  },
+  {
+    "id": "149",
+    "raw": "Đừng lo lắng. Nó chỉ là một vấn đề nhỏ Don’t worry. It’s only a small problem."
+  },
+  {
+    "id": "150",
+    "raw": "Bạn đã có khoảng thời gian tuyệt chứ? Did you have a nice time?"
+  },
+  {
+    "id": "151",
+    "raw": "Trông bạn tuyệt quá You look very nice."
+  },
+  {
+    "id": "152",
+    "raw": "Bạn cũng có muốn đến không? ‘Do you want to come, too?’ ‘Yes, that would be nice.’"
+  },
+  {
+    "id": "153",
+    "raw": "Điều tốt đẹp nhất về cô ấy là cô ấy không bao giờ chỉ trích chúng tôi The nicest thing about her is that she never criticizes us."
+  },
+  {
+    "id": "154",
+    "raw": "Rất vui được gặp bạn! nice Nice to meet you!"
+  },
+  {
+    "id": "155",
+    "raw": "Thật tuyệt khi bạn có thể đến với chúng tôi  It's nice that you can come with us."
+  },
+  {
+    "id": "156",
+    "raw": "Sẽ thật tuyệt nếu anh ấy chuyển đến London It would be nice if he moved to London."
+  },
+  {
+    "id": "157",
+    "raw": "Tất cả chúng ta đều bị cúm tuần trước, nó không đẹp lắm We all had the flu last week—it wasn't very nice."
+  },
+  {
+    "id": "158",
+    "raw": "Thật tuyệt khi biết rằng ai đó đánh giá cao những gì tôi làm It's nice to know that somebody appreciates what I do."
+  },
+  {
+    "id": "159",
+    "raw": "một số lượng lớn người a large number of people"
+  }
+]

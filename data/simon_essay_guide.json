@@ -1,0 +1,32 @@
+{
+  "method": {
+    "structure": [
+      {
+        "part": "Introduction",
+        "description": "Two sentences: Paraphrase the question and give your answer."
+      },
+      {
+        "part": "Main Body Paragraph 1",
+        "description": "Detailed point or side A of the argument."
+      },
+      {
+        "part": "Main Body Paragraph 2",
+        "description": "Another point or side B of the argument."
+      },
+      {
+        "part": "Conclusion",
+        "description": "One sentence summarizing the main point."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can I use 'I' in the essay?",
+        "answer": "Yes, if the question asks for your opinion."
+      },
+      {
+        "question": "How many words should I write?",
+        "answer": "Aim for 260-280 words to ensure quality without running out of time."
+      }
+    ]
+  }
+}

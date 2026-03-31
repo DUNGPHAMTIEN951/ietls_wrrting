@@ -1,0 +1,37 @@
+[
+  {
+    "id": "S1",
+    "title": "Difficult vs Enjoyable Hobbies",
+    "question": "Some people believe that hobbies need to be difficult to be enjoyable. To what extent do you agree or disagree?",
+    "en": "Some hobbies are relatively easy, while others present more of a challenge...",
+    "vi": "Một số sở thích là tương đối dễ dàng..."
+  },
+  {
+    "id": "S2",
+    "title": "Gender Equality in University Subjects",
+    "question": "Universities should accept equal numbers of male and female students in every subject. To what extent do you agree or disagree?",
+    "en": "In my opinion, men and women should have the same educational opportunities...",
+    "vi": "Theo tôi, đàn ông và phụ nữ nên có cơ hội giáo dục như nhau..."
+  },
+  {
+    "id": "S3",
+    "title": "Pricing for Foreign Visitors",
+    "question": "Foreign visitors should pay more than local visitors for cultural and historical attractions. To what extent do you agree or disagree with this opinion?",
+    "en": "It is sometimes argued that tourists from overseas should be charged more than local residents...",
+    "vi": "Đôi khi người ta cho rằng khách du lịch từ nước ngoài nên được tính phí nhiều hơn..."
+  },
+  {
+    "id": "R2019-01",
+    "title": "Genetic Engineering in Agriculture (Jan 2019)",
+    "question": "Some people think that genetic engineering is a positive development that will help to feed the world's population. Others believe that it is dangerous and should be banned. Discuss both views and give your own opinion.",
+    "en": "Genetic engineering has sparked significant debate in recent years regarding its potential to solve global food shortages versus the ethical and environmental risks it poses. In my opinion, while there are valid concerns, the benefits of GMOs in terms of food security outweigh the risks if properly regulated.\nThose who support genetic engineering argue that it is a crucial tool for increasing crop yields and making plants more resistant to diseases and extreme weather. For example, 'Golden Rice' was developed to combat Vitamin A deficiency in developing nations. By enhancing nutritional value and ensuring stable harvests, genetic engineering can objectively help in feeding a growing global population.\nOn the other hand, critics are concerned about the long-term ecological impacts. There is a fear that genetically modified organisms could outcompete natural species, leading to a loss of biodiversity. Furthermore, some worry about the unknown health effects of consuming such products over many years. They argue that we should focus on sustainable, organic farming methods instead of relying on laboratory-altered crops.\nIn conclusion, although the potential for environmental disruption must be taken seriously, I believe that the potential of genetic engineering to alleviate world hunger is too great to ignore. Therefore, research should continue under strict international safety standards.",
+    "vi": "Kỹ thuật di truyền đã gây ra tranh luận đáng kể trong những năm gần đây về tiềm năng của nó trong việc giải quyết tình trạng thiếu lương thực toàn cầu so với những rủi ro về đạo đức và môi trường mà nó gây ra..."
+  },
+  {
+    "id": "R2019-02",
+    "title": "Public Transport vs Private Cars (Jan 2019)",
+    "question": "Some people say that the best way to solve the environmental problems caused by cars is to encourage people to use public transport. To what extent do you agree or disagree?",
+    "en": "It is often suggested that promoting public transport is the most effective solution to the environmental issues associated with private vehicle use. I largely agree with this view, although I believe improved urban planning and vehicle technology are also essential.\nPublic transport, such as buses and trains, can carry a much larger number of passengers compared to individual cars, significantly reducing the carbon footprint per person. This reduction in the number of vehicles on the road leads to lower greenhouse gas emissions and less traffic congestion. For instance, cities with highly efficient subway systems, like Tokyo or Paris, have noticeably better air quality and less reliance on fossil fuels than car-dependent cities.\nHowever, simply encouraging public transport may not be enough if the infrastructure is inconvenient. Many people still prefer cars because of the flexibility and door-to-door service they provide. Therefore, for this strategy to work, governments must invest in making public transport more reliable, affordable, and accessible. Additionally, transitioning to electric vehicles and designing 'walkable' cities are necessary complementary measures.\nIn conclusion, while promoting public transport is a vital strategy for environmental protection, it must be part of a broader, multi-faceted approach to urban development.",
+    "vi": "Thường có ý kiến cho rằng việc thúc đẩy phương tiện công cộng là giải pháp hiệu quả nhất cho các vấn đề môi trường liên quan đến việc sử dụng xe cá nhân..."
+  }
+]

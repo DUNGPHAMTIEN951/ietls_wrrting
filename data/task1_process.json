@@ -1,0 +1,175 @@
+{
+  "theory": {
+    "definition": "Dạng bài Process thường được chia làm 2 mảng chính: Natural Cycle (Quá trình Tự nhiên) hoặc Man-made Process (Quá trình Nhân tạo).",
+    "types": [
+      {
+        "name": "Natural Process",
+        "description": "Miêu tả vòng đời (life cycle) hoặc hiện tượng thời tiết. Thường dùng ngôn ngữ chủ động.",
+        "examples": ["Vòng đời của ếch", "Vòng tuần hoàn nước", "Sự hình thành bão"]
+      },
+      {
+        "name": "Man-made Process",
+        "description": "Miêu tả quá trình sản xuất nguyên liệu hoặc sản phẩm. Thường dùng ngôn ngữ bị động.",
+        "examples": ["Sản xuất dầu oliu", "Tái chế nhựa", "Sản xuất giấy"]
+      }
+    ],
+    "steps": [
+      "Bước 1: Quá trình có bao nhiêu bước? Trình tự ra sao?",
+      "Bước 2: Điểm bắt đầu và kết thúc ở đâu?",
+      "Bước 3: Có hoạt động nào diễn ra cùng lúc không?"
+    ],
+    "sequencing_language": {
+      "sequential": ["First(ly)", "Then", "Next", "After", "Before", "Once", "Subsequently", "Having + V3"],
+      "simultaneous": ["During", "While", "At the same time", "Thereby"],
+      "final": ["Finally", "In the last stage"]
+    }
+  },
+  "samples": [
+    {
+      "id": "salmon-lifecycle",
+      "title": "Life Cycle of Salmon",
+      "type": "Natural",
+      "introduction": "The diagram describes how salmon grow from eggs to mature individuals.",
+      "overview": "Overall, there are three main stages in the life cycle of salmon starting with salmon eggs in the upper river and the complete cycle lasts for about 10 years.",
+      "details": [
+        "Firstly, salmon begins life as eggs in the slow-moving upper reaches of a river, surrounded by reeds and pebbles. This shelter usually keeps the eggs safe for about five to six months before they hatch. The newborn fish normally called 'fry' are very small, which are only three to eight centimeters long.",
+        "The fry then follows the fast flow to the lower river and stay there for 4 years until they reach the length of twelve to fifteen centimeters. These grown fish are known as 'smolt'.",
+        "At the next stage of the life cycle, the 'smolt' migrate to the open sea. After approximately 5 years living in the ocean, these 'smolt' will have grown to adult size, which is about 70-76 centimeters. Their reproductive stage then begins as the mature salmon swims back to their birthplace and lays eggs. The salmon's life cycle starts again at the same place where it begins."
+      ]
+    },
+    {
+      "id": "paper-recycling",
+      "title": "Waste Paper Recycling",
+      "type": "Man-made",
+      "introduction": "The diagram illustrates the process by which waste paper is recycled.",
+      "overview": "In general, it can be seen that the process involves six main stages, starting from the collection of waste paper from various sources and ending with the reproduction of usable paper.",
+      "details": [
+        "The process of recycling used paper starts by collecting waste paper either from public paper banks or from companies. This collected paper is then categorized by hand according to its grade and during this process, unsuitable paper is removed. At the following stage, sorted paper is delivered to a paper mill.",
+        "After being transported to the mill, the paper is then cleaned and turned into a pulp mixture. Foreign matters such as staples are taken out during this cleaning process. This is followed by another cleaning stage where ink and glue are removed from the mixture. Finally, the pulp is treated in a machine and the final product – usable paper is made."
+      ]
+    },
+    {
+      "id": "horse-evolution",
+      "title": "Evolution of the Horse",
+      "type": "Natural",
+      "introduction": "The pictures illustrate the evolution of the horse over a 40-million-year period.",
+      "overview": "Overall, four stages are shown, beginning with Eohippus and ending with the development of the modern horse. The modern horse evolved to be bigger than its predecessors, with a large mane and its foot structure is a single, very large digit.",
+      "details": [
+        "40 million years ago, the first horse, Eohippus, was comparatively small with a short tail. Its defining characteristic was the structure of its foot, which had 4 digits. Each of the digits was relatively small.",
+        "10 million years later, it had evolved into the larger Mesohippus, with a longer tail and a foot structure of 3 digits.",
+        "Then, in the next stage of development, Merychippus evolved 15 million years ago. It was a similar size to Mesohippus, and also had 3 digits on its feet, but now the digits on the feet were larger, divided into segments, and the middle digit was very prominent."
+      ]
+    },
+    {
+      "id": "igloo-construction",
+      "title": "Constructing an Igloo",
+      "type": "Man-made",
+      "introduction": "The pictures show the different steps involved in constructing an igloo.",
+      "overview": "Overall, there are 13 stages, from finding hard-packed snow to cutting ventilation holes in the wall and roof of the finished igloo.",
+      "details": [
+        "Using a snow saw, blocks are cut in hard-packed snow. Large blocks are used for the base. Next, the edges of the blocks are smoothed and placed to form a circle. Then, an entrance is made by digging a hole under the circular wall.",
+        "The last opening on the top is filled by a large block, carefully cut to the exact size. After that, snow is thrown on the igloo and packed into all the crevices or gaps. Inside the igloo, the walls are smoothed by hand. Finally, the entrance is built and ventilation holes are cut in the walls and roof."
+      ]
+    },
+    {
+      "id": "stone-age-tools",
+      "title": "Development of Cutting Tools",
+      "type": "Man-made",
+      "introduction": "The diagram illustrates how the cutting instruments used during the Stone Age evolved between 1.4 million and 0.8 million years ago.",
+      "overview": "Overall, it is clear that Tool B is sharper and more regularly shaped than the earlier Tool A. Over a period of 0.6 million years, the cutting tool also increased in size and effectiveness.",
+      "details": [
+        "The front view shows that the edges of Tool A are rough, revealing its earlier stage of development. In contrast, the smooth edges of Tool B are clearly more effective as a cutting instrument.",
+        "One of the main differences is shown in the side view. While Tool A is irregular, Tool B has a regular, flattened shape. Finally, the back view shows that Tool A is smaller than Tool B."
+      ]
+    },
+    {
+      "id": "hot-air-balloon",
+      "title": "Working of a Hot Air Balloon",
+      "type": "Man-made",
+      "introduction": "The diagram illustrates the working of a hot air balloon.",
+      "overview": "Overall, the construction consists of several parts, including the envelope, the skirt, the burner and the basket. The mechanism involves the thermal regulation of air.",
+      "details": [
+        "A propane cylinder is located in the basket. The propane mixes with air in the burner, producing a flame to heat the air. Next, the hot air rises inside the envelope, causing the balloon to rise from the ground because hot air is lighter than cool air.",
+        "A parachute valve at the top of the envelope is a self-sealing flap that allows the pilot to control the rate at which hot air escapes. The envelope consists of gores and panels, and is attached to the basket by ropes."
+      ]
+    },
+    {
+      "id": "bridge-designs",
+      "title": "Types of Bridge Designs",
+      "type": "Man-made",
+      "introduction": "The diagrams illustrate the design of three types of bridge: arch bridge, concrete girder bridge, and suspension bridge.",
+      "overview": "Overall, the arch bridge is the shortest, while the suspension bridge is suitable for the longest spans over the ocean.",
+      "details": [
+        "The arch bridge has a maximum length of 200m and a height of up to 100m, allowing only small ships to pass. It features two piers forming a semi-circular shape.",
+        "The concrete girder bridge uses multiple piers, whose distance must be under 200m. This design has no overall length limit and caters for medium-sized ships.",
+        "The suspension bridge can span 400m to 2000m between towers. It uses main cables and suspender cables to carry the weight and allows large vessels to pass underneath."
+      ]
+    },
+    {
+      "id": "wool-production",
+      "title": "Making Woolen Products",
+      "type": "Man-made",
+      "introduction": "The diagram illustrates the various steps in the process of making woolen products.",
+      "overview": "Overall, there are 10 principal stages in this process, beginning with the rearing of sheep and ending with the finished goods.",
+      "details": [
+        "Sheep are reared until they have enough wool, which is then removed by shearing. The wool is cleaned and dried, then spun by machine. Some products are used for string or recycled.",
+        "Remaining wool is manufactured into tufts and stored. Next, the tufted wool is spun into balls of yarn, which are used for knitting or making goods like jackets and carpets."
+      ]
+    },
+    {
+      "id": "chocolate-production",
+      "title": "Chocolate Production Process",
+      "type": "Man-made",
+      "introduction": "The flowchart illustrates the steps in the process of chocolate production.",
+      "overview": "Overall, there are ten stages in how chocolate is produced, beginning with the collection of pods from cacao trees and ending with the production of liquid chocolate.",
+      "details": [
+        "Ripe pods are harvested from cacao trees, and the white cocoa beans inside are collected. The beans are fermented and spread to dry in the sun.",
+        "Dried beans are put in sacks and transported to the factory. They are roasted at 350 degrees, crushed to remove shells, and finally pressed to produce liquid chocolate."
+      ]
+    },
+    {
+      "id": "monarch-butterfly",
+      "title": "Life Cycle of Monarch Butterfly",
+      "type": "Natural",
+      "introduction": "The picture illustrates the various stages in the life of a Monarch Butterfly.",
+      "overview": "Overall, there are 6 stages in the life cycle, beginning when eggs are laid and ending with the adult butterfly.",
+      "details": [
+        "Eggs are laid on the leaves of a plant. A larva or caterpillar emerges and feeds on the leaves. It then attaches itself to the plant and transforms into a chrysalis.",
+        "Inside the chrysalis, further changes take place. Finally, a fully-formed butterfly emerges, feeds on nectar, and prepares to lay new eggs, starting the cycle anew."
+      ]
+    },
+    {
+      "id": "wave-power-station",
+      "title": "Wave Power Station Mechanism",
+      "type": "Man-made",
+      "introduction": "The illustrations give information about the elements and mechanism of a wave power station.",
+      "overview": "Overall, the structure includes four main components and functions on the oscillating water column principle.",
+      "details": [
+        "The station consists of an enclosed, L-shaped chamber beneath sea level. As waves crash into the coast, water enters the chamber, compressing air towards a turbine.",
+        "This air drives the turbine in an anti-clockwise direction. When waves recede, the air decompresses and continues to spin the rotor in the same direction. This energy is converted into electricity by a generator."
+      ]
+    },
+    {
+      "id": "instant-noodles",
+      "title": "Instant Noodles Manufacturing",
+      "type": "Man-made",
+      "introduction": "The picture details the manufacturing process for instant noodles.",
+      "overview": "Overall, this entirely man-made operation can be divided into 4 main stages: storage, assembly, cooking, and packaging.",
+      "details": [
+        "Flour is kept in silos and transported to mixers where it's combined with water and oil. It is rolled into sheets, cut into strips, and formed into noodle discs.",
+        "These discs are fried in oil, dried, and placed in cups with vegetables and spices. Finally, the cups are labeled and sealed for retail."
+      ]
+    },
+    {
+      "id": "ceramic-pots",
+      "title": "Manufacturing Ceramic Pots",
+      "type": "Man-made",
+      "introduction": "The diagram below shows one way of manufacturing ceramic pots.",
+      "overview": "Overall, the process involves collecting raw materials, shaping the pots, and finishing them through firing and coloring.",
+      "details": [
+        "Clay is collected and crushed into powder. It is mixed with water to prepare the material. Then, it is shaped on a potter's wheel or in molds.",
+        "The shaped pots are dried and then fired in a kiln. After firing, they may be glazed and fired again to achieve the final finish."
+      ]
+    }
+  ]
+}

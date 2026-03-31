@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Library | IELTS Writing Platform</title>
+    <meta name="description" content="Thư viện giải đề thi IELTS Writing thực tế từ 2020-2023. Phân tích chi tiết Task 1 & Task 2 với bài mẫu và từ vựng chuyên sâu.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .exam-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .exam-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .filter-btn.active {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+        .dark .filter-btn.active {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen antialiased font-['Inter']">
+
+    <!-- Navbar -->
+    <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+            <!-- Breadcrumb -->
+            <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-emerald-500 transition-colors text-sm font-medium">
+                <i data-lucide="home" class="w-4 h-4"></i>
+                <span class="hidden sm:inline">Hub</span>
+            </a>
+            <span class="text-slate-300 text-sm">/</span>
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
+                    <i data-lucide="library" class="text-white w-4 h-4"></i>
+                </div>
+                <div>
+                    <h1 class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Exam Library</h1>
+                    <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">ZIM Archive 2020-2023</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="hidden lg:flex gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+                <button onclick="changeYear(2023)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all active" data-year="2023">2023</button>
+                <button onclick="changeYear(2022)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-year="2022">2022</button>
+                <button onclick="changeYear(2021)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-year="2021">2021</button>
+                <button onclick="changeYear(2020)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-year="2020">2020</button>
+            </div>
+            <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <i data-lucide="moon" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-10">
+        <!-- Hero Search -->
+        <div class="mb-12 text-center max-w-2xl mx-auto">
+            <h2 class="text-4xl font-black text-slate-800 dark:text-white mb-4 tracking-tight">Giải đề thi thực tế <span id="year-title" class="text-emerald-600">2023</span></h2>
+            <p class="text-slate-500 dark:text-slate-400 mb-8 italic">"Phân tích chuyên sâu Task 1 & Task 2 từ đội ngũ chuyên gia ZIM."</p>
+            <div class="relative group">
+                <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5 group-focus-within:text-emerald-500 transition-colors"></i>
+                <input type="text" id="exam-search" placeholder="Tìm theo dạng bài hoặc từ khóa (ví dụ: Bar Chart, Opinion...)" class="w-full pl-12 pr-4 py-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 outline-none transition-all text-lg">
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div id="exam-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Shimmer -->
+            <div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl"></div>
+            <div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl"></div>
+            <div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl"></div>
+        </div>
+    </main>
+
+    <!-- Modal Backdrop -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[60] hidden flex items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <div id="exam-modal" class="bg-white dark:bg-slate-900 w-full max-w-6xl max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col scale-95 transition-transform duration-300">
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50 dark:bg-slate-800/50">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center text-emerald-600">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 id="modal-date" class="text-2xl font-black text-slate-800 dark:text-white leading-none">05/01/2023</h3>
+                        <p class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mt-1">Phân tích chi tiết</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="p-2 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors">
+                    <i data-lucide="x" class="w-6 h-6 text-slate-400"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content (Scrollable) -->
+            <div class="flex-1 overflow-y-auto p-6 md:p-10 custom-scrollbar space-y-12">
+                
+                <!-- Task 1 -->
+                <section class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <span class="px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs font-black uppercase rounded-full">Writing Task 1</span>
+                        <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 id="t1-type" class="text-emerald-500 font-bold text-sm uppercase tracking-widest mb-1 italic">Bar Chart</h4>
+                                <h5 id="t1-title" class="text-2xl font-bold text-slate-800 dark:text-white leading-snug"></h5>
+                            </div>
+                            <div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
+                                <p id="t1-q" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+                            </div>
+                            <div class="space-y-4">
+                                <h6 class="font-bold text-slate-800 dark:text-white flex items-center gap-2">
+                                    <i data-lucide="eye" class="w-4 h-4 text-emerald-500"></i> Key Overview
+                                </h6>
+                                <ul id="t1-overview" class="space-y-2 list-disc list-inside text-slate-600 dark:text-slate-400 text-sm"></ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="p-6 glass dark:glass-dark rounded-2xl">
+                                <h6 class="font-bold text-slate-800 dark:text-white mb-4">Sample Analysis (Body)</h6>
+                                <div id="t1-body" class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed whitespace-pre-line"></div>
+                            </div>
+                            <div class="p-6 bg-emerald-50 dark:bg-emerald-900/10 rounded-2xl border border-emerald-100 dark:border-emerald-800">
+                                <h6 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3 text-xs uppercase tracking-widest">Key Vocabulary</h6>
+                                <div id="t1-vocab" class="flex flex-wrap gap-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="h-px w-full bg-slate-100 dark:bg-slate-800"></div>
+
+                <!-- Task 2 -->
+                <section class="space-y-6 pb-10">
+                    <div class="flex items-center gap-4">
+                        <span class="px-4 py-1.5 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 text-xs font-black uppercase rounded-full">Writing Task 2</span>
+                        <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 id="t2-type" class="text-rose-500 font-bold text-sm uppercase tracking-widest mb-1 italic">Opinion Essay</h4>
+                                <h5 id="t2-title" class="text-2xl font-bold text-slate-800 dark:text-white leading-snug"></h5>
+                            </div>
+                            <div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
+                                <p id="t2-q" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+                            </div>
+                            <div class="p-6 bg-amber-50 dark:bg-amber-900/10 rounded-2xl border border-amber-100 dark:border-amber-800/50">
+                                <h6 class="font-bold text-amber-700 dark:text-amber-400 mb-2 flex items-center gap-2">
+                                     <i data-lucide="help-circle" class="w-4 h-4"></i> Topic Intro (VN)
+                                </h6>
+                                <p id="t2-vi" class="text-sm text-slate-700 dark:text-slate-300 italic"></p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-2xl border border-emerald-100 dark:border-emerald-800">
+                                    <h6 class="font-bold text-emerald-700 mb-2 text-xs uppercase tracking-widest">View 1 / Advantage</h6>
+                                    <p id="t2-v1" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                                </div>
+                                <div class="p-4 rounded-2xl border border-rose-100 dark:border-rose-800">
+                                    <h6 class="font-bold text-rose-700 mb-2 text-xs uppercase tracking-widest">View 2 / Disadvantage</h6>
+                                    <p id="t2-v2" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                                </div>
+                            </div>
+                            <div class="p-6 glass dark:glass-dark rounded-2xl">
+                                <h6 class="font-bold text-slate-800 dark:text-white mb-2">Final Opinion</h6>
+                                <p id="t2-op" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                            </div>
+                            <div class="p-6 bg-amber-50 dark:bg-amber-900/10 rounded-2xl border border-amber-100 dark:border-amber-800">
+                                <h6 class="font-bold text-amber-700 dark:text-amber-400 mb-3 text-xs uppercase tracking-widest">Key Vocabulary</h6>
+                                <div id="t2-vocab" class="flex flex-wrap gap-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/utils.js"></script>
+    <script>
+        let currentYear = 2023;
+        let examsData = [];
+
+        async function init() {
+            lucide.createIcons();
+            await loadYear(currentYear);
+            
+            // Search listener
+            document.getElementById('exam-search').addEventListener('input', (e) => {
+                filterExams(e.target.value);
+            });
+        }
+
+        async function loadYear(year) {
+            currentYear = year;
+            document.getElementById('year-title').innerText = year;
+            
+            // Update UI buttons
+            document.querySelectorAll('.year-btn').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.year) === year);
+            });
+
+            // Show shimmer
+            const grid = document.getElementById('exam-grid');
+            grid.innerHTML = `<div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl col-span-full"></div>`;
+
+            try {
+                // Fetch data using mock path for now, but in reality it's in /data/
+                const response = await fetch(`../data/writing_${year}_review.json`);
+                const data = await response.json();
+                examsData = data.exams;
+                renderExams(examsData);
+            } catch (err) {
+                grid.innerHTML = `<div class="col-span-full text-center py-20 text-slate-400">Không tìm thấy dữ liệu năm ${year}.</div>`;
+            }
+        }
+
+        function renderExams(exams) {
+            const grid = document.getElementById('exam-grid');
+            if (exams.length === 0) {
+                grid.innerHTML = `<div class="col-span-full text-center py-20 text-slate-400 font-medium">Không tìm thấy đề thi phù hợp.</div>`;
+                return;
+            }
+
+            grid.innerHTML = exams.map((ex, idx) => `
+                <div class="exam-card glass dark:glass-dark rounded-3xl p-6 border border-slate-200 dark:border-slate-800 group cursor-pointer" onclick="openModal(${idx})">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-black rounded-lg uppercase tracking-widest">
+                            ${ex.date}
+                        </div>
+                        <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-emerald-500 transition-colors"></i>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 w-2 h-2 rounded-full bg-blue-500 shrink-0"></span>
+                            <p class="text-sm font-bold text-slate-800 dark:text-white line-clamp-1">${ex.task_1.title}</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 w-2 h-2 rounded-full bg-rose-500 shrink-0"></span>
+                            <p class="text-sm font-bold text-slate-800 dark:text-white line-clamp-1">${ex.task_2.title}</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/50 flex gap-2">
+                         <span class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${ex.task_1.type}</span>
+                         <span class="text-slate-300">•</span>
+                         <span class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${ex.task_2.type}</span>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function filterExams(query) {
+            const q = query.toLowerCase();
+            const filtered = examsData.filter(ex => 
+                ex.date.includes(q) || 
+                ex.task_1.title.toLowerCase().includes(q) || 
+                ex.task_2.title.toLowerCase().includes(q) ||
+                ex.task_1.type.toLowerCase().includes(q) ||
+                ex.task_2.type.toLowerCase().includes(q)
+            );
+            renderExams(filtered);
+        }
+
+        function openModal(idx) {
+            const ex = examsData[idx];
+            const modal = document.getElementById('exam-modal');
+            const backdrop = document.getElementById('modal-backdrop');
+
+            // Populate Task 1
+            document.getElementById('modal-date').innerText = ex.date;
+            document.getElementById('t1-type').innerText = ex.task_1.type;
+            document.getElementById('t1-title').innerText = ex.task_1.title;
+            document.getElementById('t1-q').innerText = ex.task_1.question;
+            document.getElementById('t1-overview').innerHTML = ex.task_1.overview.map(o => `<li>${o}</li>`).join('');
+            document.getElementById('t1-body').innerText = ex.task_1.body_1 + "\n\n" + ex.task_1.body_2;
+            document.getElementById('t1-vocab').innerHTML = ex.task_1.key_vocab.map(v => `
+                <div class="px-2 py-1 bg-white dark:bg-slate-800 border border-emerald-200 dark:border-emerald-800 rounded text-[10px] text-emerald-700 dark:text-emerald-400 lowercase">
+                    <span class="font-bold">${v.word}:</span> ${v.meaning}
+                </div>
+            `).join('');
+
+            // Populate Task 2
+            document.getElementById('t2-type').innerText = ex.task_2.type;
+            document.getElementById('t2-title').innerText = ex.task_2.title;
+            document.getElementById('t2-q').innerText = ex.task_2.question;
+            document.getElementById('t2-vi').innerText = ex.task_2.topic_vi;
+            document.getElementById('t2-v1').innerText = ex.task_2.view_1;
+            document.getElementById('t2-v2').innerText = ex.task_2.view_2;
+            document.getElementById('t2-op').innerText = ex.task_2.opinion;
+            document.getElementById('t2-vocab').innerHTML = ex.task_2.key_vocab.map(v => `
+                <div class="px-2 py-1 bg-white dark:bg-slate-800 border border-amber-200 dark:border-amber-800 rounded text-[10px] text-amber-700 dark:text-amber-400 lowercase">
+                    <span class="font-bold">${v.word}:</span> ${v.meaning}
+                </div>
+            `).join('');
+
+            backdrop.classList.remove('hidden');
+            setTimeout(() => {
+                backdrop.classList.add('opacity-100');
+                modal.classList.remove('scale-95');
+                modal.classList.add('scale-100');
+            }, 10);
+            
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('exam-modal');
+            const backdrop = document.getElementById('modal-backdrop');
+            
+            backdrop.classList.remove('opacity-100');
+            modal.classList.add('scale-95');
+            
+            setTimeout(() => {
+                backdrop.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        function changeYear(year) {
+            loadYear(year);
+        }
+
+        // Theme Toggle logic handled by utils.js
+
+        // Close modal on backdrop click
+        document.getElementById('modal-backdrop').addEventListener('click', (e) => {
+            if (e.target.id === 'modal-backdrop') closeModal();
+        });
+
+        init();
+    </script>
+</body>
+</html>

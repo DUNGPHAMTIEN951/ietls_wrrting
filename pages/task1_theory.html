@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:;">
+    <title>Task 1 Mastery | IELTS Writing Platform</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); }
+        
+        .sidebar-item.active {
+            background: rgba(59, 130, 246, 0.1);
+            border-right: 3px solid #3b82f6;
+            color: #2563eb;
+            font-weight: 600;
+        }
+        
+        .tab-btn.active {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            background: white;
+            color: #2563eb;
+        }
+        .dark .tab-btn.active {
+            background: #1e293b;
+            color: #60a5fa;
+        }
+
+        /* Flashcard 3D */
+        .flashcard-inner {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+        .flashcard-face {
+            backface-visibility: hidden;
+        }
+        .flashcard-back {
+            transform: rotateY(180deg);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased font-['Inter']">
+
+    <!-- Navbar -->
+    <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+            <!-- Breadcrumb -->
+            <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-blue-500 transition-colors text-sm font-medium">
+                <i data-lucide="home" class="w-4 h-4"></i>
+                <span class="hidden sm:inline">Hub</span>
+            </a>
+            <span class="text-slate-300 text-sm">/</span>
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                    <i data-lucide="bar-chart-2" class="text-white w-4 h-4"></i>
+                </div>
+                <div>
+                    <h1 class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Task 1 Mastery</h1>
+                    <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Theory & Practice Hub</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
+            <button onclick="switchTab('theory')" data-tab="theory" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg transition-all active">Lý thuyết</button>
+            <button onclick="switchTab('flashcards')" data-tab="flashcards" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg transition-all">Flashcards</button>
+            <button onclick="switchTab('practice')" data-tab="practice" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg transition-all">Luyện tập</button>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <div id="stats-badge" class="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold border border-amber-200 dark:border-amber-800">
+                <i data-lucide="zap" class="w-3.5 h-3.5 fill-current"></i>
+                <span id="streak-val">5 Days</span>
+            </div>
+            <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                <i data-lucide="moon" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="flex flex-1 overflow-hidden">
+        
+        <!-- SIDEBAR: THEORY NAVIGATION -->
+        <aside id="sidebar" class="w-72 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hidden md:flex flex-col shrink-0 overflow-y-auto custom-scrollbar">
+            <div class="p-4 sticky top-0 bg-white dark:bg-slate-900 z-10 border-b border-slate-100 dark:border-slate-800">
+                <div class="relative">
+                    <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4"></i>
+                    <input type="text" id="sidebar-search" placeholder="Tìm kiến thức..." class="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+            </div>
+            <nav id="theory-menu" class="p-2 space-y-1">
+                <!-- Populated by JS -->
+                <div class="flex justify-center p-8">
+                    <i data-lucide="loader-2" class="w-6 h-6 animate-spin text-blue-500"></i>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- MAIN VIEWPORT -->
+        <main class="flex-1 overflow-y-auto custom-scrollbar relative px-4 py-8 sm:px-6 lg:px-10 bg-slate-50 dark:bg-slate-950">
+            
+            <!-- VIEW: THEORY -->
+            <div id="view-theory" class="max-w-4xl mx-auto space-y-8 animate-fade-in">
+                <div id="theory-container">
+                    <div class="glass dark:glass-dark rounded-2xl p-12 text-center">
+                        <div class="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-3xl flex items-center justify-center mx-auto mb-6 text-blue-600 dark:text-blue-400">
+                            <i data-lucide="book-open" class="w-10 h-10"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white mb-2">Chọn một bài học từ Sidebar</h2>
+                        <p class="text-slate-500 dark:text-slate-400 max-w-sm mx-auto">Tất cả từ vựng, cụm từ và cấu trúc câu Task 1 được hệ thống hóa tại đây để bạn dễ dàng tra cứu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW: FLASHCARDS -->
+            <div id="view-flashcards" class="hidden max-w-6xl mx-auto animate-fade-in">
+                <div class="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                    <div>
+                        <h2 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Từ vựng (3D)</h2>
+                        <p class="text-slate-500 dark:text-slate-400 mt-1">Ghi nhớ nhanh các cụm từ đắt giá qua thẻ 3D.</p>
+                    </div>
+                    <div class="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-x-auto" id="fc-tabs">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                <div id="flashcard-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- VIEW: PRACTICE -->
+            <div id="view-practice" class="hidden max-w-4xl mx-auto animate-fade-in">
+                 <div class="mb-8">
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Luyện dịch câu</h2>
+                    <p class="text-slate-500 dark:text-slate-400 mt-1">Áp dụng ngay các cấu trúc vừa học vào việc dịch câu thực tế.</p>
+                </div>
+                <div id="translation-grid" class="space-y-6">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../data/task1_theory_menu.js"></script>
+    <script src="../data/task1_theory_content.js"></script>
+    <script src="../data/task1_flashcards.js"></script>
+    <script src="../data/task1_translations.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    
+    <script>
+        // DOM Elements
+        const views = {
+            theory: document.getElementById('view-theory'),
+            flashcards: document.getElementById('view-flashcards'),
+            practice: document.getElementById('view-practice')
+        };
+        const tabs = document.querySelectorAll('.tab-btn');
+        const theoryMenu = document.getElementById('theory-menu');
+        const theoryContainer = document.getElementById('theory-container');
+        const flashcardGrid = document.getElementById('flashcard-grid');
+        const translationGrid = document.getElementById('translation-grid');
+
+        // State
+        let currentTab = 'theory';
+
+        // Initialization
+        function init() {
+            lucide.createIcons();
+            renderMenu();
+            renderTranslations();
+            
+            // Check URL hash for direct navigation
+            const hash = window.location.hash.slice(1);
+            if (['theory', 'flashcards', 'practice'].includes(hash)) {
+                switchTab(hash);
+            }
+        }
+
+        // Tab Switching
+        function switchTab(tabId) {
+            Object.keys(views).forEach(k => {
+                views[k].classList.toggle('hidden', k !== tabId);
+            });
+            tabs.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tabId);
+            });
+            currentTab = tabId;
+            window.location.hash = tabId;
+            
+            if (tabId === 'flashcards') renderFlashcards();
+            lucide.createIcons();
+        }
+
+        // Sidebar Menu Rendering
+        function renderMenu() {
+            if (!window.TASK1_THEORY_MENU) return;
+            
+            let html = '';
+            TASK1_THEORY_MENU.forEach(section => {
+                html += `
+                    <div class="mb-4">
+                        <button onclick="loadTheory('${section.id}')" class="w-full text-left px-3 py-2 text-xs font-bold text-slate-400 uppercase tracking-widest hover:text-blue-500 transition-colors">
+                            ${section.title}
+                        </button>
+                        <div class="mt-1 space-y-0.5">
+                            ${section.sub.map(s => `
+                                <button onclick="loadTheory('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-all truncate group flex items-center justify-between">
+                                    <span>${s.title}</span>
+                                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            theoryMenu.innerHTML = html;
+            lucide.createIcons();
+        }
+
+        // Theory Content Loading
+        function loadTheory(id) {
+            // Update UI Sidebar
+            document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+            const btn = document.getElementById(`btn-${id}`);
+            if (btn) btn.classList.add('active');
+
+            const section = TASK1_THEORY_CONTENT.find(d => d.id === id);
+            if (!section) return;
+
+            const menuInfo = TASK1_THEORY_MENU.flatMap(m => [m, ...m.sub]).find(i => i.id === id);
+            
+            theoryContainer.innerHTML = `
+                <div class="animate-fade-in space-y-6">
+                    <div class="flex items-center gap-3 text-blue-600 dark:text-blue-400 font-bold text-sm uppercase tracking-wide">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                        <span>Task 1 Theory</span>
+                    </div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white leading-tight">${menuInfo ? menuInfo.title : ''}</h2>
+                    <div class="glass dark:glass-dark rounded-2xl p-6 md:p-8 theory-content-rich leading-relaxed space-y-4">
+                        ${section.content}
+                    </div>
+                </div>
+            `;
+            
+            // Re-render icons if any in content
+            lucide.createIcons();
+            
+            // Smooth scroll to top of content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Flashcard Rendering
+        function renderFlashcards(category = 'all') {
+            if (!window.TASK1_FLASHCARDS) return;
+            
+            const cats = Object.keys(TASK1_FLASHCARDS);
+            const fcTabs = document.getElementById('fc-tabs');
+            fcTabs.innerHTML = `<button onclick="renderFlashcards('all')" class="px-4 py-1.5 rounded-lg text-sm font-bold transition-all ${category === 'all' ? 'bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400' : 'text-slate-500 hover:text-slate-800'}">Tất cả</button>` + 
+                cats.map(c => `<button onclick="renderFlashcards('${c}')" class="px-4 py-1.5 rounded-lg text-sm font-bold transition-all ${category === c ? 'bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400' : 'text-slate-500 hover:text-slate-800'}">${c}</button>`).join('');
+
+            let allCards = [];
+            if (category === 'all') {
+                cats.forEach(c => allCards = [...allCards, ...TASK1_FLASHCARDS[c]]);
+            } else {
+                allCards = TASK1_FLASHCARDS[category];
+            }
+
+            flashcardGrid.innerHTML = allCards.map((card, i) => `
+                <div class="flashcard group perspective-1000 h-48 cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center transition-transform duration-500 transform-style-3d">
+                        <!-- Front -->
+                        <div class="flashcard-face absolute w-full h-full backface-hidden glass dark:glass-dark rounded-2xl p-6 flex flex-col items-center justify-center border-t-4 ${card.trans ? 'border-t-blue-500' : 'border-t-amber-500'}">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">${category === 'all' ? '' : category}</span>
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white leading-tight">${card.front}</h3>
+                            <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i data-lucide="rotate-cw" class="w-4 h-4 text-slate-300"></i>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="flashcard-face flashcard-back absolute w-full h-full backface-hidden bg-blue-600 rounded-2xl p-6 flex flex-col items-center justify-center text-white text-center">
+                            <p class="text-lg font-medium">${card.back}</p>
+                            ${card.hint ? `<span class="mt-3 text-[10px] bg-blue-500/50 px-2 py-0.5 rounded-full uppercase font-bold tracking-wider">${card.hint}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            lucide.createIcons();
+        }
+
+        // Translation Practice Rendering
+        function renderTranslations() {
+            if (!window.TASK1_TRANSLATIONS) return;
+            
+            translationGrid.innerHTML = TASK1_TRANSLATIONS.slice(0, 20).map((item, i) => `
+                <div class="glass dark:glass-dark rounded-2xl p-6 border border-slate-200 dark:border-slate-800 transition-all hover:shadow-xl hover:shadow-blue-500/5">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-[10px] font-bold rounded uppercase">Câu ${i+1}</span>
+                        <div class="flex gap-2">
+                             <button onclick="toggleHint(${i})" class="p-1.5 hover:bg-amber-50 dark:hover:bg-amber-900/20 text-amber-600 rounded-lg transition-colors" title="Gợi ý">
+                                <i data-lucide="help-circle" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-lg font-semibold text-slate-800 dark:text-white mb-4 italic">"${item.vietnamese}"</p>
+                    
+                    <div id="hint-${i}" class="hidden mb-4 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800 text-amber-700 dark:text-amber-400 text-sm rounded-xl font-medium">
+                         <span class="font-bold uppercase text-[10px] block mb-1 tracking-widest">Gợi ý từ vựng</span>
+                         ${item.hint || 'Sử dụng các cấu trúc đã học trong phần Theory.'}
+                    </div>
+
+                    <div class="relative group">
+                        <textarea id="ans-${i}" class="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-slate-700 dark:text-slate-100 focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder:text-slate-400" rows="2" placeholder="Dịch câu sang tiếng Anh..."></textarea>
+                        <button onclick="checkAnswer(${i})" class="absolute right-3 bottom-3 p-2 bg-blue-600 text-white rounded-lg shadow-lg shadow-blue-500/20 hover:bg-blue-700 active:scale-95 transition-all">
+                            <i data-lucide="check" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+
+                    <div id="result-${i}" class="hidden mt-4 animate-fade-in">
+                        <div class="p-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 rounded-xl">
+                            <span class="font-bold text-emerald-700 dark:text-emerald-400 text-[10px] uppercase tracking-widest block mb-2">Đáp án mẫu</span>
+                            <p class="text-slate-700 dark:text-slate-300 font-medium">${item.english}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            lucide.createIcons();
+        }
+
+        function toggleHint(i) {
+            const h = document.getElementById(`hint-${i}`);
+            h.classList.toggle('hidden');
+        }
+
+        function checkAnswer(i) {
+            const res = document.getElementById(`result-${i}`);
+            const area = document.getElementById(`ans-${i}`);
+            
+            res.classList.remove('hidden');
+            area.classList.add('border-emerald-500', 'bg-emerald-50/50', 'dark:bg-emerald-900/10');
+            
+            confetti({
+                particleCount: 40,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#3b82f6', '#10b981', '#60a5fa']
+            });
+        }
+
+        // Theme Toggle logic removed as it's now in utils.js
+
+        // Search in Sidebar
+        document.getElementById('sidebar-search').addEventListener('input', (e) => {
+            const val = e.target.value.toLowerCase();
+            document.querySelectorAll('.sidebar-item').forEach(item => {
+                const text = item.innerText.toLowerCase();
+                item.style.display = text.includes(val) ? 'flex' : 'none';
+            });
+        });
+
+        // Run
+        init();
+    </script>
+</body>
+</html>

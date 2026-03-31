@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 - EdTech Master</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7', // Primary EdTech Blue
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* CSS Reset & Body */
+        body { background-color: #f8fafc; color: #0f172a; overflow-x: hidden; }
+        
+        /* Custom Scrollbar */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        /* Sidebar Styling */
+        .sidebar-item { transition: all 0.2s ease; border-left: 3px solid transparent; }
+        .sidebar-item:hover { background-color: #f0f9ff; border-left-color: #93c5fd; }
+        .sidebar-item.active { background-color: #eff6ff; border-left-color: #2563eb; font-weight: 600; color: #1e40af; }
+        
+        /* 3D Flashcard Flip Effect */
+        .perspective-1000 { perspective: 1000px; }
+        .transform-style-3d { transform-style: preserve-3d; }
+        .backface-hidden { backface-visibility: hidden; }
+        .rotate-y-180 { transform: rotateY(180deg); }
+        .flashcard-inner { transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d; }
+        .flashcard:focus .flashcard-inner, .flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+        
+        /* Flashcard Types */
+        .fc-increase .fc-front { border-top: 4px solid #10b981; }
+        .fc-decrease .fc-front { border-top: 4px solid #ef4444; }
+        .fc-neutral .fc-front { border-top: 4px solid #3b82f6; }
+        
+        /* Badge Colors */
+        .badge-noun { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+        .badge-verb { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .badge-adj { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .badge-adv { background: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+        .badge-phrase { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+
+        /* Practice Textarea Auto-resize */
+        .auto-resize { min-height: 150px; overflow-y: hidden; resize: none; }
+        
+        /* Toast Animation */
+        @keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .toast-enter { animation: slideUp 0.3s ease forwards; }
+
+        /* Loader */
+        .spinner { animation: spin 1s linear infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="h-screen flex flex-col antialiased">
+
+    <!-- Top Navigation / Dashboard Bar -->
+    <header class="bg-white border-b border-slate-200 h-16 flex items-center justify-between px-6 shrink-0 z-20 shadow-sm relative">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white shadow-md">
+                <i data-lucide="line-chart" class="w-6 h-6"></i>
+            </div>
+            <div>
+                <h1 class="font-bold text-slate-800 tracking-tight leading-tight">Mastering Task 1</h1>
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">EdTech Interactive Platform</p>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-6">
+            <nav class="hidden md:flex space-x-1">
+                <button onclick="app.switchTab('theory')" class="tab-btn active px-4 py-2 text-sm font-semibold rounded-md transition text-brand-600 bg-brand-50" data-target="theory">Lý thuyết</button>
+                <button onclick="app.switchTab('flashcards')" class="tab-btn px-4 py-2 text-sm font-semibold rounded-md transition text-slate-600 hover:bg-slate-50" data-target="flashcards">Flashcards</button>
+                <button onclick="app.switchTab('practice')" class="tab-btn px-4 py-2 text-sm font-semibold rounded-md transition text-slate-600 hover:bg-slate-50" data-target="practice">Luyện tập</button>
+            </nav>
+            <div class="h-8 w-px bg-slate-200"></div>
+            <!-- Progress Bar -->
+            <div class="hidden md:flex items-center gap-3 w-48">
+                <div class="flex flex-col flex-1 gap-1">
+                    <div class="flex justify-between items-center text-[10px] font-bold text-slate-500 uppercase">
+                        <span>Course Progress</span>
+                        <span id="progress-text" class="text-brand-600">30%</span>
+                    </div>
+                    <div class="h-1.5 w-full bg-slate-100 rounded-full overflow-hidden">
+                        <div id="progress-bar" class="h-full bg-brand-500 rounded-full transition-all duration-1000 ease-out" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 rounded-md text-xs font-bold hover:bg-slate-50 transition shadow-sm">
+                <i data-lucide="download" class="w-4 h-4"></i> Report
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Application Flexbox -->
+    <div class="flex-1 flex overflow-hidden">
+        
+        <!-- ======================= -->
+        <!-- VIEW 1: THEORY LEARNING -->
+        <!-- ======================= -->
+        <main id="view-theory" class="flex flex-1 w-full h-full overflow-hidden absolute inset-y-16 inset-x-0 transition-opacity duration-300">
+            <!-- Sidebar Navigation -->
+            <aside class="w-72 bg-white border-r border-slate-200 flex flex-col shrink-0 relative z-10 hidden md:flex">
+                <div class="p-4 border-b border-slate-100">
+                    <div class="relative">
+                        <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4"></i>
+                        <input type="text" id="sidebar-search" placeholder="Tìm kiếm mục..." class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 transition">
+                    </div>
+                </div>
+                <div class="overflow-y-auto custom-scrollbar flex-1 pb-10" id="sidebar-menu">
+                    <div class="flex flex-col items-center justify-center h-40 text-slate-400">
+                        <i data-lucide="loader" class="w-6 h-6 spinner mb-2"></i>
+                        <span class="text-xs">Đang tải cấu trúc...</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <section class="flex-1 overflow-y-auto custom-scrollbar bg-slate-50 relative" id="theory-content">
+                <div class="max-w-4xl mx-auto p-6 md:p-10" id="theory-card-container">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 text-center text-slate-500 mt-10">
+                        <i data-lucide="book-open" class="w-12 h-12 mx-auto text-slate-300 mb-4"></i>
+                        <h2 class="text-lg font-bold text-slate-800">Chọn một bài học từ Sidebar bên trái</h2>
+                        <p class="text-sm mt-2">Hệ thống phân cấp từ vựng và cấu trúc sẽ hiển thị rành mạch tại đây.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ======================= -->
+        <!-- VIEW 2: FLASHCARDS      -->
+        <!-- ======================= -->
+        <main id="view-flashcards" class="flex flex-col flex-1 w-full h-full overflow-hidden absolute inset-y-16 inset-x-0 bg-slate-50 opacity-0 pointer-events-none transition-opacity duration-300">
+            <div class="max-w-7xl mx-auto w-full p-6 md:p-10 flex flex-col h-full">
+                <!-- Header & Tabs -->
+                <div class="mb-6 shrink-0">
+                    <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-2 flex items-center gap-3">
+                        <i data-lucide="layers" class="text-brand-500 w-8 h-8"></i> Từ vựng trực quan (3D)
+                    </h2>
+                    <p class="text-slate-600 mb-6">Click vào tấm thẻ để lật xem nghĩa. Cố gắng ghi nhớ trước khi xem đáp án.</p>
+                    
+                    <div class="flex flex-wrap gap-2" id="flashcard-tabs">
+                        <!-- Rendered by JS -->
+                        <button class="px-4 py-2 bg-white border border-slate-200 rounded-full text-sm font-bold text-brand-600 shadow-sm">Tất cả</button>
+                    </div>
+                </div>
+
+                <!-- Flashcard Grid -->
+                <div class="flex-1 overflow-y-auto custom-scrollbar pb-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="flashcard-grid">
+                        <div class="flex flex-col items-center justify-center h-40 col-span-full text-slate-400">
+                             <i data-lucide="loader" class="w-8 h-8 spinner mb-2"></i>
+                             <span>Đang tải bộ thẻ...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ======================= -->
+        <!-- VIEW 3: CHART PRACTICE  -->
+        <!-- ======================= -->
+        <main id="view-practice" class="flex flex-col md:flex-row flex-1 w-full h-full overflow-hidden absolute inset-y-16 inset-x-0 bg-white opacity-0 pointer-events-none transition-opacity duration-300">
+            <!-- Left: Chart & Prompt -->
+            <div class="w-full md:w-1/2 h-full flex flex-col border-r border-slate-200 bg-slate-50">
+                <div class="p-6 shrink-0 bg-white border-b border-slate-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="px-2 py-1 bg-brand-100 text-brand-700 text-[10px] font-bold rounded uppercase">Dynamic Line Chart</span>
+                        <span class="text-xs font-semibold text-slate-400">Time: <span id="practice-timer">20:00</span></span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 leading-tight">Biểu đồ dưới đây thể hiện sự thay đổi về nhiệt độ trung bình (độ C) ở 3 thành phố từ tháng 1 đến tháng 6.</h3>
+                    <p class="text-sm text-slate-500 mt-2">Summarize the information by selecting and reporting the main features.</p>
+                </div>
+                <!-- Chart Area -->
+                <div class="flex-1 p-6 relative overflow-hidden flex items-center justify-center">
+                    <canvas id="practiceChart" class="w-full h-full max-h-[300px]"></canvas>
+                </div>
+                <!-- Quick Tips -->
+                <div class="p-4 bg-indigo-50 border-t border-indigo-100 shrink-0">
+                    <h4 class="text-xs font-bold text-indigo-800 uppercase mb-2 flex items-center gap-1">
+                        <i data-lucide="lightbulb" class="w-4 h-4"></i> Quick Vocabulary Tips
+                    </h4>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-white border border-indigo-200 text-indigo-700 rounded shadow-sm">hit a peak of</span>
+                        <span class="px-2 py-1 bg-white border border-indigo-200 text-indigo-700 rounded shadow-sm">soar dramatically</span>
+                        <span class="px-2 py-1 bg-white border border-indigo-200 text-indigo-700 rounded shadow-sm">plunge to</span>
+                        <span class="px-2 py-1 bg-white border border-indigo-200 text-indigo-700 rounded shadow-sm">remain stable at</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Textarea Editor -->
+            <div class="w-full md:w-1/2 h-full flex flex-col bg-white relative">
+                <div class="p-4 border-b border-slate-100 bg-white flex justify-between items-center shrink-0">
+                    <div class="flex items-center gap-2 text-sm text-slate-600 font-medium">
+                        <i data-lucide="edit-3" class="w-4 h-4"></i> Bài làm của bạn
+                    </div>
+                    <div class="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded">
+                        <span id="word-count" class="text-rose-500">0</span> words
+                    </div>
+                </div>
+                <div class="flex-1 overflow-y-auto custom-scrollbar p-6 bg-slate-50/50">
+                    <textarea 
+                        id="user-essay"
+                        class="w-full min-h-[300px] bg-transparent border-0 focus:ring-0 resize-none text-[15px] leading-8 text-slate-800 font-serif placeholder-slate-400"
+                        placeholder="Bắt đầu viết Report của bạn tại đây... Mẹo: Ấn Enter để tự động mở rộng vùng viết."
+                        oninput="app.handleTextareaInput(this)"
+                    ></textarea>
+                </div>
+                <div class="p-4 bg-white border-t border-slate-200 flex justify-end shrink-0 bottom-0 z-10 relative">
+                    <button id="submit-btn" onclick="app.submitEssay()" class="px-6 py-2.5 bg-brand-600 text-white font-bold rounded-lg shadow-md shadow-brand-500/30 hover:bg-brand-700 transition flex items-center justify-center relative overflow-hidden min-w-[120px]">
+                        <span id="submit-text">Nộp bài (Submit)</span>
+                        <i data-lucide="loader-2" id="submit-spinner" class="w-5 h-5 spinner absolute hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notification (Fixed bottom right) -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 border-l-4 border-emerald-500 text-white px-4 py-3 rounded shadow-2xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 z-50 pointer-events-none">
+        <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shrink-0">
+            <i data-lucide="check" class="w-4 h-4 text-white"></i>
+        </div>
+        <div>
+            <h4 class="font-bold text-sm">Thành công!</h4>
+            <p class="text-xs text-slate-300">Bài làm đã được AI chấm điểm và lưu trữ.</p>
+        </div>
+    </div>
+
+    <!-- Application Logic -->
+    <script>
+        const app = {
+            data: {
+                theory: null,
+                words: null,
+            },
+            state: {
+                currentTab: 'theory',
+                activeSidebarId: null
+            },
+            
+            init() {
+                // Initialize Lucide icons
+                lucide.createIcons();
+                // Load data
+                this.loadData();
+                // Render Chart dummy
+                this.renderChart();
+            },
+
+            switchTab(tabName) {
+                // Update buttons UI
+                document.querySelectorAll('.tab-btn').forEach(btn => {
+                    if (btn.dataset.target === tabName) {
+                        btn.classList.add('text-brand-600', 'bg-brand-50', 'active');
+                        btn.classList.remove('text-slate-600', 'hover:bg-slate-50');
+                    } else {
+                        btn.classList.remove('text-brand-600', 'bg-brand-50', 'active');
+                        btn.classList.add('text-slate-600', 'hover:bg-slate-50');
+                    }
+                });
+
+                // Update standard views
+                const views = ['theory', 'flashcards', 'practice'];
+                views.forEach(v => {
+                    const el = document.getElementById(`view-${v}`);
+                    if (v === tabName) {
+                        el.classList.remove('opacity-0', 'pointer-events-none');
+                        el.classList.add('opacity-100');
+                    } else {
+                        el.classList.add('opacity-0', 'pointer-events-none');
+                        el.classList.remove('opacity-100');
+                    }
+                });
+                
+                this.state.currentTab = tabName;
+            },
+
+            async loadData() {
+                try {
+                    // Try to fetch existing data files
+                    const [theoryRes, wordsRes] = await Promise.all([
+                        fetch('data/writing_theory_task1.json').catch(() => null),
+                        fetch('data/writing_task1_academic_words.json').catch(() => null)
+                    ]);
+                    
+                    if (theoryRes && theoryRes.ok) {
+                        const t_data = await theoryRes.json();
+                        // Assume structure is { sections: [...] } or an Array. We'll normalize to array
+                        this.data.theory = Array.isArray(t_data) ? t_data : (t_data.sections || t_data.units || []);
+                        this.renderSidebar();
+                    }
+                    
+                    if (wordsRes && wordsRes.ok) {
+                        const w_data = await wordsRes.json();
+                        this.data.words = Array.isArray(w_data) ? w_data : (w_data.units || []);
+                        this.renderFlashcards();
+                    }
+                } catch (e) {
+                    console.error("Data load error:", e);
+                }
+            },
+
+            renderSidebar() {
+                const container = document.getElementById('sidebar-menu');
+                if (!this.data.theory || !this.data.theory.length) {
+                    container.innerHTML = '<div class="p-4 text-sm text-slate-500 text-center">Không tìm thấy dữ liệu.</div>';
+                    return;
+                }
+                
+                let html = '<ul class="flex flex-col py-2">';
+                this.data.theory.forEach((section, index) => {
+                    const id = section.id || `S${index}`;
+                    const label = section.title || section.topic || 'Chủ đề lý thuyết';
+                    // Parse "A1. ĐỘNG TỪ..." -> split logic for nice badge
+                    let match = label.match(/^([A-Z]\d+)(.*)/);
+                    let badge = '';
+                    let cleanTitle = label;
+                    if(match) {
+                        badge = match[1];
+                        cleanTitle = match[2].replace(/^[\.\-\s]+/, ''); // remove dots
+                    }
+
+                    html += `
+                        <li>
+                            <button onclick="app.selectTheory('${id}')" id="sidebar-btn-${id}" class="w-full text-left px-5 py-3 sidebar-item group flex items-start gap-3 border-b border-slate-50 last:border-0">
+                                ${badge ? `<div class="shrink-0 mt-0.5 w-6 h-6 rounded bg-slate-100 text-slate-600 border border-slate-200 flex items-center justify-center text-[10px] font-black group-hover:bg-brand-100 group-hover:text-brand-700 transition">${badge}</div>` 
+                                        : `<div class="shrink-0 mt-0.5"><i data-lucide="file-text" class="w-4 h-4 text-slate-400 group-hover:text-brand-500 transition"></i></div>`}
+                                <span class="text-sm font-medium text-slate-600 group-hover:text-slate-900 transition line-clamp-2">${cleanTitle}</span>
+                            </button>
+                        </li>
+                    `;
+                });
+                html += '</ul>';
+                container.innerHTML = html;
+                lucide.createIcons();
+                
+                // Select first by default
+                if (this.data.theory.length > 0) {
+                    const firstId = this.data.theory[0].id || `S0`;
+                    this.selectTheory(firstId);
+                }
+            },
+
+            selectTheory(id) {
+                // Update Active State
+                document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+                const btn = document.getElementById(`sidebar-btn-${id}`);
+                if (btn) btn.classList.add('active');
+                
+                this.state.activeSidebarId = id;
+                
+                // Find data
+                const section = this.data.theory.find((s, idx) => (s.id || `S${idx}`) === id);
+                if (!section) return;
+                
+                const container = document.getElementById('theory-card-container');
+                
+                // Render content specific to theory. Support diverse architectures.
+                let contentHTML = '';
+                if (section.items && Array.isArray(section.items)) {
+                    // Structure: { items: [ {en: '', vi: ''} ] }
+                    contentHTML = section.items.map(item => this.renderTheoryItem(item)).join('');
+                } else if (section.content) {
+                    contentHTML = `<div class="text-slate-700 leading-relaxed">${section.content}</div>`;
+                } else if (section.words) {
+                     contentHTML = section.words.map(item => this.renderTheoryItem(item)).join('');
+                } else {
+                    contentHTML = '<p class="text-slate-500 italic">Nội dung đang được cập nhật...</p>';
+                }
+                
+                container.innerHTML = `
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden animate-toast-enter">
+                        <div class="bg-brand-50 px-6 py-4 border-b border-slate-200">
+                            <h2 class="text-xl font-bold text-slate-800">${section.title || 'Lý thuyết'}</h2>
+                            ${section.description ? `<p class="text-sm text-slate-600 mt-1">${section.description}</p>` : ''}
+                        </div>
+                        <div class="p-6 md:p-8 space-y-4">
+                            ${contentHTML}
+                        </div>
+                    </div>
+                `;
+            },
+            
+            // Helper to render dual-language items with word type badges
+            renderTheoryItem(item) {
+                let textEn = item.en || item.word || item.phrase || '';
+                let textVi = item.vi || item.meaning || item.definition || '';
+                let type = (item.type || '').toLowerCase();
+                
+                // Detect simple type from prefix if array isn't structured well
+                if (!type && textVi.startsWith('(')) {
+                    let match = textVi.match(/^\(([^)]+)\)/);
+                    if (match) { type = match[1]; textVi = textVi.replace(/^\([^)]+\)\s*/, ''); }
+                }
+
+                let badgeHTML = '';
+                if (type.includes('v') || type.includes('động') || type === 'verb') badgeHTML = `<span class="badge-verb px-2 py-0.5 rounded text-[10px] font-bold uppercase shrink-0">Verb</span>`;
+                else if (type.includes('n') || type.includes('danh') || type === 'noun') badgeHTML = `<span class="badge-noun px-2 py-0.5 rounded text-[10px] font-bold uppercase shrink-0">Noun</span>`;
+                else if (type.includes('adj') || type.includes('tính')) badgeHTML = `<span class="badge-adj px-2 py-0.5 rounded text-[10px] font-bold uppercase shrink-0">Adj</span>`;
+                else if (type.includes('adv') || type.includes('trạng')) badgeHTML = `<span class="badge-adv px-2 py-0.5 rounded text-[10px] font-bold uppercase shrink-0">Adv</span>`;
+                else badgeHTML = `<span class="badge-phrase px-2 py-0.5 rounded text-[10px] font-bold uppercase shrink-0">Phrase</span>`;
+
+                return `
+                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition border border-slate-100">
+                        <div class="w-full sm:w-1/2 flex items-start gap-2">
+                           ${badgeHTML}
+                           <span class="font-bold text-slate-800 text-[15px] pt-px">${textEn}</span>
+                        </div>
+                        <div class="w-full sm:w-1/2 flex items-start">
+                            <span class="text-slate-600 text-sm leading-relaxed">${textVi}</span>
+                        </div>
+                    </div>
+                `;
+            },
+
+            // =========================
+            // FLASHCARDS ENGINE
+            // =========================
+            renderFlashcards() {
+                const container = document.getElementById('flashcard-grid');
+                if (!this.data.words || !this.data.words.length) {
+                    container.innerHTML = '<div class="col-span-full py-10 text-center text-slate-500">Giữ thư mục data trống không thể render flashcards.</div>';
+                    return;
+                }
+
+                // Flatten all flashcard items
+                let allCards = [];
+                this.data.words.forEach(unit => {
+                    if (unit.items) {
+                        unit.items.forEach(item => {
+                            // Assign metadata to item for styling later
+                            allCards.push({...item, unitTitle: unit.title});
+                        });
+                    }
+                });
+
+                if (allCards.length === 0) return;
+
+                // Render grid
+                let html = '';
+                allCards.slice(0, 48).forEach((card, i) => { // Render up to 48 for demo
+                    // Assign color based on text
+                    let theme = 'fc-neutral';
+                    let mean = (card.meaning || '').toLowerCase();
+                    if (mean.includes('tăng') || mean.includes('nhảy') || card.word.includes('increase')) theme = 'fc-increase';
+                    else if (mean.includes('giảm') || mean.includes('rơi') || card.word.includes('decrease')) theme = 'fc-decrease';
+
+                    let typeLabel = card.type ? `<span class="text-[10px] px-2 py-1 bg-slate-100 text-slate-500 rounded font-bold uppercase tracking-wider">${card.type}</span>` : '';
+
+                    html += `
+                    <div class="perspective-1000 h-56 cursor-pointer group flashcard ${theme}" tabindex="0" onclick="this.classList.toggle('flipped')">
+                        <div class="flashcard-inner relative w-full h-full shadow-sm group-hover:shadow-xl group-hover:-translate-y-2 rounded-2xl">
+                            <!-- Front -->
+                            <div class="fc-front absolute inset-0 w-full h-full bg-white rounded-2xl border border-slate-200 flex flex-col items-center justify-center p-6 backface-hidden z-10">
+                                ${typeLabel}
+                                <h3 class="text-2xl font-black text-slate-800 mt-4 text-center break-words">${card.word}</h3>
+                                <p class="text-xs text-slate-400 mt-auto opacity-0 group-hover:opacity-100 flex items-center gap-1 transition-opacity">
+                                    <i data-lucide="rotate-cw" class="w-3 h-3"></i> Click để lật
+                                </p>
+                            </div>
+                            <!-- Back -->
+                            <div class="absolute inset-0 w-full h-full bg-slate-800 rounded-2xl border border-slate-800 flex flex-col items-center justify-center p-6 backface-hidden rotate-y-180 text-white">
+                                <i data-lucide="check-circle-2" class="w-8 h-8 text-emerald-400 mb-3 absolute top-6 right-6 opacity-30"></i>
+                                <h3 class="text-lg font-bold text-center text-white break-words">${card.meaning}</h3>
+                                ${card.example_en ? `
+                                    <div class="mt-4 pt-4 border-t border-slate-700 w-full text-center">
+                                        <p class="text-xs italic text-slate-300 line-clamp-3">"${card.example_en}"</p>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                });
+                
+                container.innerHTML = html;
+                lucide.createIcons();
+            },
+
+            // =========================
+            // PRACTICE ARENA
+            // =========================
+            renderChart() {
+                const ctx = document.getElementById('practiceChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                        datasets: [
+                            {
+                                label: 'City A',
+                                data: [12, 19, 15, 25, 30, 32],
+                                borderColor: '#0ea5e9', // brand-500
+                                backgroundColor: 'rgba(14, 165, 233, 0.1)',
+                                tension: 0.4, fill: true
+                            },
+                            {
+                                label: 'City B',
+                                data: [22, 21, 20, 18, 15, 12],
+                                borderColor: '#ef4444', // red-500
+                                backgroundColor: 'transparent',
+                                tension: 0.4
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'top', labels: { font: { family: 'Inter', size: 12 } } }
+                        },
+                        scales: {
+                            y: { beginAtZero: true, grid: { borderDash: [5, 5] } },
+                            x: { grid: { display: false } }
+                        }
+                    }
+                });
+            },
+
+            handleTextareaInput(el) {
+                // Auto resize
+                el.style.height = 'auto';
+                el.style.height = (el.scrollHeight) + 'px';
+                
+                // Word count
+                const words = el.value.trim().split(/\s+/).filter(w => w.length > 0).length;
+                const counter = document.getElementById('word-count');
+                counter.innerText = words;
+                if (words >= 150) {
+                    counter.classList.replace('text-rose-500', 'text-emerald-500');
+                } else {
+                    counter.classList.replace('text-emerald-500', 'text-rose-500');
+                }
+            },
+
+            submitEssay() {
+                const textarea = document.getElementById('user-essay');
+                if (!textarea.value.trim()) {
+                    alert("Vui lòng viết ít nhất vài chữ trước khi nộp bài!");
+                    return;
+                }
+
+                const textSpan = document.getElementById('submit-text');
+                const spinner = document.getElementById('submit-spinner');
+                
+                // Start loading
+                textSpan.classList.add('opacity-0');
+                spinner.classList.remove('hidden');
+
+                setTimeout(() => {
+                    // End loading
+                    textSpan.classList.remove('opacity-0');
+                    spinner.classList.add('hidden');
+                    textSpan.innerText = 'Đã lưu ✔';
+                    
+                    setTimeout(() => textSpan.innerText = 'Nộp bài (Submit)', 3000);
+                    
+                    // Show Toast
+                    const toast = document.getElementById('toast');
+                    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-20');
+                    toast.classList.add('opacity-100', 'translate-y-0');
+                    
+                    // Hide after 4 seconds
+                    setTimeout(() => {
+                        toast.classList.remove('opacity-100', 'translate-y-0');
+                        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-20');
+                    }, 4000);
+
+                    // Update local progress arbitrarily
+                    document.getElementById('progress-bar').style.width = '60%';
+                    document.getElementById('progress-text').innerText = '60%';
+                }, 1500); // simulate network request 1.5s
+            }
+        };
+
+        // Boot
+        document.addEventListener('DOMContentLoaded', () => {
+            app.init();
+        });
+    </script>
+</body>
+</html>

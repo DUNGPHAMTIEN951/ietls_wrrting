@@ -1,0 +1,296 @@
+[
+    {
+        "filename": "unit1_basic_needs_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Basic Needs' (part of Unit 1: Government Roles study guide). Include these key ideas: Physiological: Food, Housing, Water.; Safety: Media violence, Healthcare.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit1",
+        "section": "Basic Needs"
+    },
+    {
+        "filename": "unit1_higher_needs_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Higher Needs' (part of Unit 1: Government Roles study guide). Include these key ideas: Knowledge: Free tuition (Benefits vs Drawbacks).; Aesthetics: National image, Social cohesion.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit1",
+        "section": "Higher Needs"
+    },
+    {
+        "filename": "unit1_global_role_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Global Role' (part of Unit 1: Government Roles study guide). Include these key ideas: Peace/Stability, Human Rights, Global challenges, Trade.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit1",
+        "section": "Global Role"
+    },
+    {
+        "filename": "unit2_biodiversity_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Biodiversity' (part of Unit 2: Environment study guide). Include these key ideas: Causes: Habitat destruction (overpopulation), Fossil fuels (climate change), Overfishing/Poaching.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit2",
+        "section": "Biodiversity"
+    },
+    {
+        "filename": "unit2_energy_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Energy' (part of Unit 2: Environment study guide). Include these key ideas: Non-renewable: Reliable/Affordable vs Pollution/Finite.; Renewable: Green/Secure vs Weather-dependent/Expensive.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit2",
+        "section": "Energy"
+    },
+    {
+        "filename": "unit2_throw_away_society_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Throw-away Society' (part of Unit 2: Environment study guide). Include these key ideas: Causes: Food waste, Fast fashion, Disposable materials, Consumerism.; Effects: Landfills, Social inequality, Financial insecurity.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit2",
+        "section": "Throw-away Society"
+    },
+    {
+        "filename": "unit2_solutions_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Solutions' (part of Unit 2: Environment study guide). Include these key ideas: Government: Laws, Conservation, Incentives.; Individuals: 3R principle, Green lifestyle.; Organizations: Sustainable practices.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit2",
+        "section": "Solutions"
+    },
+    {
+        "filename": "unit3_structure_causes_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Structure Causes' (part of Unit 3: Changes in Family study guide). Include these key ideas: Economic: Income levels, Job opportunities, Cost of living.; Technology: Reduced interaction, Reproductive tech.; Social: Accepted diversity (single parents, same-sex).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit3",
+        "section": "Structure Causes"
+    },
+    {
+        "filename": "unit3_legal_aspects_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Legal Aspects' (part of Unit 3: Changes in Family study guide). Include these key ideas: Same-sex marriage legalization.; Immigration: Multicultural and transnational families.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit3",
+        "section": "Legal Aspects"
+    },
+    {
+        "filename": "unit3_effects_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Effects' (part of Unit 3: Changes in Family study guide). Include these key ideas: Smaller families: Financial stability vs Loneliness.; Delayed parenthood: Career focus vs Health risk/Workforce shortage.; Independent living: Freedom vs Expense.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit3",
+        "section": "Effects"
+    },
+    {
+        "filename": "unit4_security_vs_satisfaction_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Security vs Satisfaction' (part of Unit 4: Work study guide). Include these key ideas: Security: Financial peace, stability vs Complacency, lack of innovation.; Satisfaction: Productivity, engagement, loyalty vs Reluctance to change.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit4",
+        "section": "Security vs Satisfaction"
+    },
+    {
+        "filename": "unit4_work_life_balance_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Work-Life Balance' (part of Unit 4: Work study guide). Include these key ideas: Difficulties: Technology (always connected), Culture (long hours), High expectations, Financial pressure.; Solutions: Set boundaries, Self-care, Time management, Outsourcing.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit4",
+        "section": "Work-Life Balance"
+    },
+    {
+        "filename": "unit4_old_vs_young_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Old vs Young' (part of Unit 4: Work study guide). Include these key ideas: Old: Experience, Stability, Reliability, Mentoring.; Young: Adaptability, Energy, Creativity, Tech-savviness.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit4",
+        "section": "Old vs Young"
+    },
+    {
+        "filename": "unit4_gender___leadership_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Gender & Leadership' (part of Unit 4: Work study guide). Include these key ideas: Men: Risk-taking, Technical expertise, Physical strength.; Women: Empathetic, Detail-oriented, Team-oriented.; Leadership: Skills, Experience, Personality (Resilience), Communication.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit4",
+        "section": "Gender & Leadership"
+    },
+    {
+        "filename": "unit5_scholarships_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Scholarships' (part of Unit 5: Education study guide). Include these key ideas: Progress: Encouragement, Promote equity (low income/geographical strains), Diversity.; Best-performing: Recognition of excellence, Reputation, Innovation breakthroughs.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit5",
+        "section": "Scholarships"
+    },
+    {
+        "filename": "unit5_universal_access_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Universal Access' (part of Unit 5: Education study guide). Include these key ideas: Benefits: Break cycle of poverty, Reduce social disparities (gender/race), Health outcomes, Democracy.; Adult Challenges: Cognitive decline (memory), Time (work/family), Lack of motivation (past failure).; Invest in Young: Flexible mindset, Tech-receptive, Competitive workforce.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit5",
+        "section": "Universal Access"
+    },
+    {
+        "filename": "unit5_curriculum_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Curriculum' (part of Unit 5: Education study guide). Include these key ideas: Core Subjects: Foundation of knowledge, Critical thinking, Career/Academic opportunities, Exam success.; Soft Skills: Teamwork, Leadership, Personal development, Competitive edge in job market.; Honing: Discussions/Projects at school, Role models/Chores at home.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit5",
+        "section": "Curriculum"
+    },
+    {
+        "filename": "unit5_breadth_vs_depth_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Breadth vs Depth' (part of Unit 5: Education study guide). Include these key ideas: Well-rounded: Interconnectedness, Adaptability, Versatility vs Time constraints, Lack of expertise.; Narrow range: Expertise, Efficiency, Career preparation vs Narrow perspective, Obsolete skills.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit5",
+        "section": "Breadth vs Depth"
+    },
+    {
+        "filename": "unit5_national_vs_global_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'National vs Global' (part of Unit 5: Education study guide). Include these key ideas: National: Cultural identity/heritage, Contextual understanding, Language subtleties.; International: Global issues (environment), Social responsibilities, Job opportunities in multinationals.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit5",
+        "section": "National vs Global"
+    },
+    {
+        "filename": "unit5_learning_effectiveness_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Learning Effectiveness' (part of Unit 5: Education study guide). Include these key ideas: Internal: Motivation, Health (ADHD), Technology distractions.; External: Teaching methods (student-centered vs rote), Curriculum relevance, Environment (noise/lighting).; Online vs Traditional: Flexibility/Access vs Socialization/Hands-on/Labs.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit5",
+        "section": "Learning Effectiveness"
+    },
+    {
+        "filename": "unit7_ai___robots_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'AI & Robots' (part of Unit 7: Technology study guide). Include these key ideas: Benefits: Efficiency/Productivity, High accuracy (no fatigue), Customer experience (social cues), Safety in harsh environments.; Drawbacks: Job displacement (redundancy), Dependence on tech, Privacy concerns (information leaks), Lack of human emotion.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit7",
+        "section": "AI & Robots"
+    },
+    {
+        "filename": "unit7_space_tech_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Space Tech' (part of Unit 7: Technology study guide). Include these key ideas: Necessity: Scientific exploration (Hubble), National security (satellites), Environment (monitoring), Communication (GPS/broadcasting), Economy.; Difficulties: High cost/Infrastructure, Needs international collaboration, Prioritizing other sectors (education/healthcare).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit7",
+        "section": "Space Tech"
+    },
+    {
+        "filename": "unit7_driverless_cars_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Driverless Cars' (part of Unit 7: Technology study guide). Include these key ideas: Benefits: Safety (eliminate human error), Mobility for disabled, Reduced congestion/emissions.; Drawbacks: Increased unemployment (drivers), Hacker risks, Technical glitches/Dependability.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit7",
+        "section": "Driverless Cars"
+    },
+    {
+        "filename": "unit7_research_control_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Research Control' (part of Unit 7: Technology study guide). Include these key ideas: Government: Stability, Ethical methods, Security vs Political bias, Suppression of research.; Private Companies: Abundant funds, Quick development vs Profit-driven (skip basic research), Conflicts of interest.; Individuals: Citizen science projects, Personal interest funding.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit7",
+        "section": "Research Control"
+    },
+    {
+        "filename": "unit8_causes_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Causes' (part of Unit 8: Crime study guide). Include these key ideas: Biological/Psychological: Genetic disorders, personality disorders (lack of empathy), pressure (anxiety/depression).; Socio-economic: Nurturing environment (poor parenting, abuse, bullying), Financial burdens (survival theft), Inequality (resentment/anger).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit8",
+        "section": "Causes"
+    },
+    {
+        "filename": "unit8_common_practices_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Common Practices' (part of Unit 8: Crime study guide). Include these key ideas: Imprisonment: Isolate dangerous criminals, deterrent, justice for victims vs Violent alliances, social isolation/stigma upon release.; Rehabilitation: Counseling/Therapy, vocational training (carpentry, coding) vs Cost, ineffectiveness for ingrained behavior, understaffing.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit8",
+        "section": "Common Practices"
+    },
+    {
+        "filename": "unit8_other_measures_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Other Measures' (part of Unit 8: Crime study guide). Include these key ideas: Education: Family (parenting courses, values), School (laws, non-violence culture), Government (outreach).; Technology: Surveillance (CCTV), DNA technology (fingerprinting), Mobile apps (anonymous reporting).; Collaboration: Professional help, law enforcement partnerships, international cooperation.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit8",
+        "section": "Other Measures"
+    },
+    {
+        "filename": "unit8_cybercrime_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Cybercrime' (part of Unit 8: Crime study guide). Include these key ideas: Causes: Lack of awareness, interconnectivity, online anonymity, financial gain, political motivation.; Effects: Financial losses, identity theft, reputation damage, disruption of essential services (power/hospitals), psychological trauma.; Solutions: Stricter regulations, encryption/firewalls, transparency, international cooperation.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit8",
+        "section": "Cybercrime"
+    },
+    {
+        "filename": "unit9_benefits_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Benefits' (part of Unit 9: Travel & Tourism study guide). Include these key ideas: Broaden horizons: Exposure to new cultures/perspectives/backgrounds, first-hand knowledge.; Acquiring skills: Language immersion (local accents), soft skills (time/budget management).; Discoveries: Contribution to biotechnology/medicine (Amazon traditional remedies).; Economy: Job opportunities (30% in Bali), ripple effect on retailing (Japan souvenirs).; Well-being: Expand social circles, boost confidence (stepping out of comfort zone).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit9",
+        "section": "Benefits"
+    },
+    {
+        "filename": "unit9_gap_year_drawbacks_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Gap Year Drawbacks' (part of Unit 9: Travel & Tourism study guide). Include these key ideas: Delayed progress: Postponed graduation, setback in career momentum.; Financial constraints: Stress from lack of regular income, careful budgeting required.; Danger: Exposure to accidents, health issues, or hazardous/unsafe job environments.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit9",
+        "section": "Gap Year Drawbacks"
+    },
+    {
+        "filename": "unit9_tourism_drawbacks_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Tourism Drawbacks' (part of Unit 9: Travel & Tourism study guide). Include these key ideas: Environment: Pollution (transportation greenhouse gases, cruise water contamination), resource depletion (excessive water use), habitat loss (infrastructure construction).; Economy: Vulnerability to uncontrollable factors (COVID-19, natural disasters), inflation (driving up costs for locals).; Culture: Erosion of traditions (commercial exploitation), loss of authenticity, cultural clashes (disrespect for sacred places).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit9",
+        "section": "Tourism Drawbacks"
+    },
+    {
+        "filename": "unit10_sedentary_lifestyle_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Sedentary Lifestyle' (part of Unit 10: Health study guide). Include these key ideas: Causes: Widespread technology (smartphones/streaming), lack of time (busy schedules), urbanization (lack of green spaces/bike lanes), mental health (depression/anxiety).; Effects: Physical (weaker metabolism, obesity, diabetes), Mental (brain stress, sleep deprivation), Social (isolation, low confidence).; Solutions: Reduce screen time, regular walking, join fitness clubs, stand-and-sit workstations.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit10",
+        "section": "Sedentary Lifestyle"
+    },
+    {
+        "filename": "unit10_sugary_fast_food_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Sugary/Fast Food' (part of Unit 10: Health study guide). Include these key ideas: Causes: Availability/Convenience (vending machines/fast-food rest.), Addiction (dopamine/reward center), Lack of awareness (nutrition).; Effects: Mental (mood swings, irritability, cognitive impairment), Physical (weight gain, chronic diseases, digestive issues).; Solutions: Govt (Sugar taxes, education campaigns, marketing regulation), Individuals (Read labels, cut back gradually, balanced diet).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit10",
+        "section": "Sugary/Fast Food"
+    },
+    {
+        "filename": "unit10_cosmetic_surgery_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Cosmetic Surgery' (part of Unit 10: Health study guide). Include these key ideas: Reasons: Medical (birth defects like cleft lip, injuries), Social pressure (media standards), Idolization (emulating celebrities), Career (modeling/acting).; Pros: Enhance appearance, boost self-esteem, improve employability.; Cons: Health risks (postoperative complications, scarring), Addiction/Financial strain, Perpetuating unrealistic stereotypes.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit10",
+        "section": "Cosmetic Surgery"
+    },
+    {
+        "filename": "unit10_sports_exercise_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Sports/Exercise' (part of Unit 10: Health study guide). Include these key ideas: Physical: Weight management (burn calories), strengthen bones/muscles (bone density), reduce chronic risks (insulin sensitivity).; Mental: Release endorphins (reduce pain, induce happiness), sense of belonging, alleviate loneliness.; Soft Skills: Communication (listening/responding), Collaboration (coordinating efforts), Leadership (motivating others, decision-making).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit10",
+        "section": "Sports/Exercise"
+    },
+    {
+        "filename": "unit11_advertising_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Advertising' (part of Unit 11: Business study guide). Include these key ideas: Benefits: Raise awareness (first-time buyers), build trust (testimonials/social proof), reach new audiences (different platforms), differentiate brand (competitive edge).; Drawbacks: Intrusive/annoying (pop-up ads), misleading (unsupported claims), promote unnecessary spending (sense of urgency), perpetuate stereotypes (beauty standards).; Corporate Drawbacks: High cost (strain on budget), ineffectiveness (wrong audience), potential backlash.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit11",
+        "section": "Advertising"
+    },
+    {
+        "filename": "unit11_shopping_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Shopping' (part of Unit 11: Business study guide). Include these key ideas: Online Benefits: Convenience (shop anytime), better deals (lower overhead), easy access to info (reviews), wider selection.; Online Drawbacks: Shipping costs, impulse buying, fraud/scammers, longer wait times.; Traditional Benefits: Personal experience (touch/try on), social interaction (employees/shoppers), immediate gratification, bargaining.; Traditional Drawbacks: Time-consuming (waiting in line), limited accessibility (remote areas), limited variety/hours.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit11",
+        "section": "Shopping"
+    },
+    {
+        "filename": "unit11_imports_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Imports' (part of Unit 11: Business study guide). Include these key ideas: Benefits: Cut manufacturing costs (cheaper raw materials), improve efficiency (specialized components), reduce risks (diversified supply chain), increase variety for consumers, job creation (logistics/retail).; Drawbacks: Outflow of foreign exchange (currency devaluation), dependency on foreign supplies (vulnerability), impact on domestic culture (eroding local industries/traditions).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit11",
+        "section": "Imports"
+    },
+    {
+        "filename": "unit12_traditions_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Traditions' (part of Unit 12: Historic - Cultural Values study guide). Include these key ideas: Causes: Migration/Urbanization (loss of roots), Globalization (cultural assimilation), Changing values (individualism), Technology (fast-paced life).; Effects: Loss of cultural identity, social disintegration (Tet example), loss of historical knowledge (calligraphy example), economic impact (craft decline).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit12",
+        "section": "Traditions"
+    },
+    {
+        "filename": "unit12_language_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Language' (part of Unit 12: Historic - Cultural Values study guide). Include these key ideas: Decline Causes: Dominance of majority language (prestige), Demographic factors (population decline), Govt policies (limited education).; English Advantages: Dissemination of scientific/academic knowledge, language of top universities (Harvard/Oxford), international business clarity.; Effects of Common Language: Loss of cultural heritage (uniqueness), social exclusion (isolation), economic disadvantages (barrier to employment).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit12",
+        "section": "Language"
+    },
+    {
+        "filename": "unit12_museums_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Museums' (part of Unit 12: Historic - Cultural Values study guide). Include these key ideas: Traditional: Engagement (immersive/scale), social experience (friends/family), guided tours (context). Drawbacks: Expensive/time-consuming, crowded, fragile access.; Digital: Accessibility/Affordability (explore from anywhere), high-resolution images, interactive features (quizzes). Drawbacks: No physical sense of scale/texture, copyright limits.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit12",
+        "section": "Museums"
+    },
+    {
+        "filename": "unit12_globalization_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Globalization' (part of Unit 12: Historic - Cultural Values study guide). Include these key ideas: Advantages: Fostering economic growth (larger markets), access to new knowledge (medicine/engineering), promoting diversity (understanding), addressing global issues (UN/WHO).; Disadvantages: Threaten local traditions (Westernization), harsher competition for jobs (outsourcing), environmental harm (travel/overpopulation).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit12",
+        "section": "Globalization"
+    },
+    {
+        "filename": "unit13_animal_testing_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Animal Testing' (part of Unit 13: Animals study guide). Include these key ideas: Benefits: Historically discovered life-saving drugs (smallpox vaccine from cows, insulin from dogs), no alternatives for complex immune/genetic studies, biological similarity to humans.; Drawbacks: Morally wrong (animals have rights), risk of physical pain (radiation/genetic modification), biological differences (human-specific viruses like HIV), potential for side effects in humans despite animal success.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit13",
+        "section": "Animal Testing"
+    },
+    {
+        "filename": "unit13_zoos_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Zoos' (part of Unit 13: Animals study guide). Include these key ideas: Benefits: Preserve endangered species (protection from poachers/habitat loss), breeding and reintroduction programs, medical care (specialized veterinary staff), educational value (guided tours/public awareness), scientific research (behavior/genetics).; Drawbacks: Abuse and exploitation for entertainment (forcing tricks), unsuitable for all species (stress/aggression in small enclosures for large animals), limited conservation capacity (can only hold small numbers), deceptive educational value (focus on common species).. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit13",
+        "section": "Zoos"
+    },
+    {
+        "filename": "unit14_function_vs_appearance_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Function vs Appearance' (part of Unit 14: Housing - Building study guide). Include these key ideas: Function: Determines layout/materials/safety, improves quality of life (lighting/air), enhances work performance.; Appearance: Breaks monotony, creates iconic landmarks (Landmark 81), increases property value and local revenue.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit14",
+        "section": "Function vs Appearance"
+    },
+    {
+        "filename": "unit14_horizontal_vs_vertical_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Horizontal vs Vertical' (part of Unit 14: Housing - Building study guide). Include these key ideas: Horizontal: Prioritizes public spaces/social interaction, easier emergency response, but higher land/energy demand.; Vertical: Highly efficient land use, optimizes space, strict fire measures, but lacks community-oriented public space.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit14",
+        "section": "Horizontal vs Vertical"
+    },
+    {
+        "filename": "unit14_uniformity_vs_uniqueness_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Uniformity vs Uniqueness' (part of Unit 14: Housing - Building study guide). Include these key ideas: Uniformity: Well-organized/efficient planning, sense of unity/common identity, but can be dull and lack character.; Uniqueness: Visually attractive/appealing (Amsterdam/Hoi An), caters to diverse lifestyles, but costly to maintain and can cause discord.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit14",
+        "section": "Uniformity vs Uniqueness"
+    },
+    {
+        "filename": "unit15_urban_vs_rural_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Urban vs Rural' (part of Unit 15: Urbanization study guide). Include these key ideas: Urban: Job opportunities (concentration of companies), better facilities (healthcare/education), convenient transport, cultural diversity. Drawbacks: High cost, congestion, pollution, crime.; Rural: Lower living costs, exposure to nature, less noise/pollution, tight-knit community. Drawbacks: Limited career options, less access to modern facilities, car dependence.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit15",
+        "section": "Urban vs Rural"
+    },
+    {
+        "filename": "unit15_transport_diagram",
+        "prompt": "Create a professional, clean, and modern mind map / infographic diagram for the IELTS Writing Task 2 topic: 'Transport' (part of Unit 15: Urbanization study guide). Include these key ideas: Bikes: Cost-effective (no fuel/insurance), eco-friendly (no emissions), health benefits (exercise), easy to park. Cons: Weather exposure, limited range/speed.; Cars: Convenience for long distances, privacy/security, versatile (more storage). Cons: High operating cost, environmental impact (greenhouse gases), depreciation.. Style: Clean white background, minimalist aesthetic, professional fonts, logical connections, high quality 4K.",
+        "unit": "unit15",
+        "section": "Transport"
+    }
+]

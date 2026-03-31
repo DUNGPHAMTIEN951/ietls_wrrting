@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 2 Practice</title>
+
+    <!-- Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/sentence_engine.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/flashcards.css" />
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                        editor: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: '#0ea5e9', /* Sky 500 */
+                        accent: '#0284c7', /* Sky 600 */
+                        highlight: '#38bdf8', /* Sky 400 */
+                        paper: '#f0f9ff', /* Sky 50 */
+                    },
+                    animation: {
+                        'slide-up': 'slideUp 0.4s ease-out forwards',
+                        'fade-in': 'fadeIn 0.3s ease-out forwards',
+                    },
+                    keyframes: {
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 32px rgba(14, 165, 233, 0.08);
+        }
+
+        .dark body {
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        }
+
+        .dark .glass-panel {
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #bae6fd;
+            border-radius: 4px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: #7dd3fc;
+        }
+
+        .sample-answer {
+            background: #f8fafc;
+            border-left: 4px solid #0ea5e9;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            color: #334155;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Column Resize Handle */
+        #colResizeHandle {
+            width: 8px;
+            min-width: 8px;
+            cursor: col-resize;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+            flex-shrink: 0;
+            border-radius: 4px;
+            transition: background 0.15s;
+        }
+
+        #colResizeHandle:hover,
+        #colResizeHandle.dragging {
+            background: rgba(14, 165, 233, 0.2);
+        }
+
+        #colResizeHandle::after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 40px;
+            background: repeating-linear-gradient(to bottom, #7dd3fc 0px, #7dd3fc 4px, transparent 4px, transparent 8px);
+            border-radius: 2px;
+        }
+
+        .accordion-content {
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.expanded {
+            max-height: 2000px;
+            /* Arbitrary large number */
+            padding-bottom: 1rem;
+        }
+
+        .diagram-zoom:hover {
+            transform: scale(1.02);
+        }
+
+        #galleryImage.zoomed {
+            transform: scale(1.5);
+            cursor: zoom-out;
+        }
+
+        /* Toast animation */
+        .toast-enter {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        .toast-active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .toast-exit {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        .filter-chip {
+            transition: all 0.2s;
+        }
+
+        .filter-chip.active {
+            background-color: #0ea5e9;
+            color: white;
+            border-color: #0ea5e9;
+        }
+
+        #bookmarkBtn.active i {
+            color: #f59e0b;
+            /* Amber 500 */
+        }
+
+        .stats-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col h-screen text-slate-800 dark:text-slate-200 relative transition-colors duration-300">
+
+    <!-- Navbar -->
+    <nav
+        class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
+        <div class="flex items-center gap-3">
+            <div
+                class="w-10 h-10 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-sky-500/30">
+                <i class="fas fa-pen-nib"></i>
+            </div>
+            <div>
+                <h1 id="navTitle" class="font-heading font-bold text-lg leading-tight text-slate-800 dark:text-white">
+                    IELTS Writing Library</h1>
+                <p id="navSubTitle" class="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wider">
+                    Thư viện đề và bài mẫu</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-2 md:gap-4">
+            <!-- Stats Toggle -->
+            <button onclick="showStats()"
+                class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center transition-all hover:bg-indigo-100 dark:hover:bg-indigo-900/50"
+                title="Thống kê học tập">
+                <i class="fas fa-chart-pie text-lg"></i>
+            </button>
+
+            <!-- Dark Mode Toggle -->
+            <button onclick="toggleDarkMode()"
+                class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:block"></i>
+            </button>
+
+            <div class="text-right hidden md:block">
+                <p class="text-xs text-slate-500 font-bold uppercase dark:text-slate-400">Target Word Count</p>
+                <p id="targetWordCount" class="text-sm font-bold text-slate-800 dark:text-slate-200"><i
+                        class="fas fa-check-circle text-emerald-500"></i> 250+ words</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col p-2 md:p-4 overflow-hidden relative">
+        <!-- DECORATION -->
+        <div
+            class="absolute top-20 left-10 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse pointer-events-none">
+        </div>
+        <div class="absolute bottom-20 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse pointer-events-none"
+            style="animation-delay: 2s"></div>
+
+        <!-- Filter & Progress Bar -->
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4 z-10 px-2 gap-4">
+            <div class="flex flex-wrap items-center gap-2">
+                <select id="topicSelector" onchange="jumpToQuestion(this.value)"
+                    class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm font-bold rounded-xl focus:ring-brand focus:border-brand block p-2.5 shadow-sm cursor-pointer outline-none">
+                </select>
+                <div id="typeFilters" class="flex gap-2 ml-2 overflow-x-auto pb-1 md:pb-0">
+                    <button onclick="filterByType('all')"
+                        class="filter-chip active px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Tất
+                        cả</button>
+                    <button onclick="filterByType('Opinion')"
+                        class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Opinion</button>
+                    <button onclick="filterByType('Discussion')"
+                        class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Discussion</button>
+                    <button onclick="filterByType('bookmarked')"
+                        class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand"><i
+                            class="fas fa-star text-amber-500 mr-1"></i> Đã lưu</button>
+                </div>
+            </div>
+
+            <div class="flex items-center flex-grow max-w-md hidden md:flex">
+                <span class="text-xs font-bold text-slate-500 uppercase whitespace-nowrap">Tiến độ</span>
+                <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full mx-3 overflow-hidden">
+                    <div id="progressBar" class="h-full bg-brand transition-all duration-500" style="width: 14%"></div>
+                </div>
+                <span id="progressText" class="text-xs font-bold text-brand whitespace-nowrap">1/13</span>
+            </div>
+        </div>
+
+        <!-- Split Screen Container -->
+        <div class="flex flex-col md:flex-row gap-4 flex-grow overflow-hidden h-full z-10">
+
+            <!-- ================= LEFT COLUMN: QUESTION & GUIDE ================= -->
+            <div id="leftCol" style="width: 450px; min-width: 300px; max-width: 800px;"
+                class="shrink-0 glass-panel rounded-2xl flex flex-col overflow-hidden border-t-4 border-t-accent shadow-sm dark:bg-slate-900/40">
+
+                <!-- Topic Header -->
+                <div class="p-4 bg-white/60 dark:bg-slate-900/60 border-b border-slate-100 dark:border-slate-800">
+                    <div class="flex justify-between items-center mb-2">
+                        <span id="qTypeBadge"
+                            class="px-2 py-1 bg-sky-100 text-brand text-[10px] font-bold rounded uppercase tracking-wider">Opinion
+                            Essay</span>
+                        <button onclick="toggleBookmark()" id="bookmarkBtn"
+                            class="text-slate-400 hover:text-amber-500 transition-all p-1" title="Lưu đề bài này">
+                            <i class="far fa-star text-xl"></i>
+                        </button>
+                    </div>
+                    <h2 id="qTopicTitle" class="text-lg font-heading font-bold text-slate-800 dark:text-slate-100 mb-3">
+                        Chủ đề: Education
+                    </h2>
+                    <!-- Infographic Display -->
+                    <div id="diagramContainer"
+                        class="hidden mb-4 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all">
+                        <img id="topicDiagram" src="" alt="Topic Diagram"
+                            class="w-full h-auto diagram-zoom transition-transform duration-500 cursor-zoom-in"
+                            onclick="showImageGallery(this.src)">
+                        <div
+                            class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click để phóng to</div>
+                    </div>
+                    <!-- Chart Container (Task 1) -->
+                    <div id="chartContainer"
+                        class="hidden mb-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm aspect-video">
+                        <canvas id="task1Chart"></canvas>
+                    </div>
+                    <div
+                        class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700 relative">
+                        <i class="fas fa-quote-left absolute top-2 text-slate-200 text-2xl"></i>
+                        <p id="qText"
+                            class="text-slate-700 dark:text-slate-300 font-medium leading-relaxed relative z-10 pl-6 text-[15px]">
+                            Loading question...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Scrollable Resources -->
+                <div class="p-4 overflow-y-auto custom-scroll flex-grow space-y-3 bg-slate-50/50 dark:bg-slate-950/20">
+
+                    <!-- Accordion 0: Kho ý tưởng (Infographics) -->
+                    <div id="ideaAcc"
+                        class="hidden bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('ideaAcc')"
+                            class="w-full px-4 py-3 text-left bg-indigo-50/50 dark:bg-indigo-900/20 hover:bg-indigo-100/50 flex justify-between items-center transition-colors font-bold text-indigo-700 dark:text-indigo-400">
+                            <span class="flex items-center gap-2"><i class="fas fa-lightbulb"></i> Kho Ý tưởng
+                                ZIM</span>
+                            <i id="ideaAcc-icon"
+                                class="fas fa-chevron-down text-indigo-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="ideaAcc-content"
+                            class="accordion-content px-4 bg-white dark:bg-slate-900 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <div class="py-4">
+                                <p class="mb-3 font-medium text-slate-500 italic">Sơ đồ phân tích các khía cạnh của chủ
+                                    đề:</p>
+                                <img id="topicDiagramInAccordion" src=""
+                                    class="w-full rounded-lg border dark:border-slate-800 shadow-sm cursor-zoom-in"
+                                    alt="Infographic" onclick="showImageGallery(this.src)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 1: Hướng dẫn & Phân tích -->
+                    <div
+                        class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('guideAcc')"
+                            class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
+                            <span class="flex items-center gap-2"><i class="fas fa-lightbulb text-amber-500"></i> Hướng
+                                dẫn làm bài</span>
+                            <i id="guideAcc-icon"
+                                class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="guideAcc-content"
+                            class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800">
+                            <div id="qGuide" class="py-3">Loading guide...</div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 2: Từ vựng tham khảo -->
+                    <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('vocabAcc')"
+                            class="w-full px-4 py-3 text-left bg-white hover:bg-slate-50 flex justify-between items-center transition-colors font-bold text-slate-700">
+                            <span class="flex items-center gap-2"><i class="fas fa-spell-check text-emerald-500"></i> Từ
+                                vựng tham khảo</span>
+                            <i id="vocabAcc-icon"
+                                class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="vocabAcc-content" class="accordion-content px-4 bg-slate-50 border-t border-slate-100">
+                            <div id="qVocab" class="py-4 grid grid-cols-1 gap-4">
+                                <!-- Vocab tags injected here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 3: Bài mẫu (Sample) -->
+                    <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button onclick="toggleAccordion('sampleAcc')"
+                            class="w-full px-4 py-3 text-left bg-white hover:bg-slate-50 flex justify-between items-center transition-colors font-bold text-slate-700">
+                            <span class="flex items-center gap-2"><i class="fas fa-file-alt text-brand"></i> Bài mẫu
+                                (Sample Answer)</span>
+                            <i id="sampleAcc-icon"
+                                class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="sampleAcc-content"
+                            class="accordion-content px-4 bg-slate-50 border-t border-slate-100">
+                            <div class="py-3">
+                                <div
+                                    class="bg-blue-50 text-blue-800 text-xs p-2 rounded mb-3 flex items-start gap-2 border border-blue-100">
+                                    <i class="fas fa-info-circle mt-0.5"></i> Bạn nên tự lập dàn ý và viết nháp trước
+                                    khi xem bài mẫu để đạt hiệu quả học tốt nhất.
+                                </div>
+                                <div id="qSample"
+                                    class="text-[14px] text-slate-700 leading-loose whitespace-pre-line pb-2">
+                                    Loading sample...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Resize Handle (Desktop only) -->
+            <div id="colResizeHandle" class="hidden md:flex" title="Kéo để thay đổi kích thước cột"></div>
+
+            <!-- ================= RIGHT COLUMN: WRITING AREA ================= -->
+            <div
+                class="flex-1 h-full glass-panel rounded-2xl flex flex-col border-t-4 border-t-slate-900 shadow-md relative overflow-hidden bg-white dark:bg-slate-900">
+
+                <!-- Toolbar -->
+                <div
+                    class="flex flex-wrap items-center justify-between px-4 py-3 border-b border-slate-100 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md gap-2">
+                    <div class="flex items-center gap-2">
+                        <button onclick="applyBarem()"
+                            class="px-3 py-1.5 bg-brand text-white text-xs font-bold rounded flex items-center gap-1.5 hover:bg-sky-600 transition-colors shadow-sm"
+                            title="Chèn cấu trúc dàn ý vào bài làm">
+                            <i class="fas fa-layer-group"></i> Dàn ý (Barem)
+                        </button>
+                        <button onclick="clearText()"
+                            class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 text-xs font-bold rounded flex items-center gap-1.5 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                            title="Xóa toàn bộ bài viết">
+                            <i class="fas fa-eraser"></i> Xóa
+                        </button>
+                        <button onclick="saveManual()"
+                            class="px-3 py-1.5 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 text-emerald-600 text-xs font-bold rounded flex items-center gap-1.5 hover:bg-emerald-100 transition-colors"
+                            title="Lưu bản nháp hiện tại">
+                            <i class="fas fa-save"></i> Lưu nháp
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <!-- Word Counter -->
+                        <div
+                            class="flex items-center gap-2 text-sm font-medium px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm">
+                            <i class="fas fa-file-word text-slate-400"></i>
+                            <span id="wordCountDisplay" class="text-rose-500 font-bold">0</span>
+                            <span class="text-slate-400 text-xs">words</span>
+                        </div>
+
+                        <!-- Timer -->
+                        <div
+                            class="flex items-center gap-2 text-lg font-mono font-bold px-3 py-1 bg-slate-800 dark:bg-slate-950 text-white rounded-lg shadow-inner w-28 justify-center">
+                            <i class="fas fa-stopwatch text-sky-400 text-sm"></i>
+                            <span id="timerDisplay">40:00</span>
+                        </div>
+                        <button id="timerToggleBtn" onclick="toggleTimer()"
+                            class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 flex items-center justify-center transition-colors">
+                            <i class="fas fa-play" id="timerIcon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Text Area -->
+                <div class="flex-1 relative min-h-0">
+                    <textarea id="essayInput"
+                        class="absolute inset-0 w-full h-full p-6 lg:p-10 bg-transparent border-none focus:ring-0 resize-none text-[16px] md:text-lg leading-loose text-slate-900 dark:text-slate-100 placeholder-slate-300 dark:placeholder-slate-700 custom-scroll font-editor"
+                        placeholder="Bắt đầu viết bài luận của bạn tại đây...&#10;&#10;Mẹo: Nhấn nút 'Dàn ý' ở trên để chèn cấu trúc chuẩn của dạng bài này."
+                        oninput="handleInput()"></textarea>
+                </div>
+
+                <!-- Bottom Status Bar -->
+                <div
+                    class="flex-none border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 px-4 py-3 flex items-center justify-between">
+                    <span id="saveStatus" class="text-xs text-slate-400 font-medium flex items-center gap-1">
+                        <i class="fas fa-cloud-check"></i> Đã lưu nháp tự động
+                    </span>
+
+                    <div class="flex gap-2">
+                        <button onclick="changeTopic(-1)"
+                            class="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-sm shadow-sm flex items-center gap-2">
+                            <i class="fas fa-arrow-left"></i> Câu trước
+                        </button>
+                        <button onclick="changeTopic(1)"
+                            class="px-6 py-2 bg-slate-800 dark:bg-slate-950 text-white font-bold rounded-lg hover:bg-slate-900 dark:hover:bg-black transition-colors text-sm shadow-sm flex items-center gap-2">
+                            Tiếp theo <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button onclick="submitEssay()"
+                            class="px-6 py-2 bg-brand text-white font-bold rounded-lg hover:bg-sky-600 transition-all text-sm shadow-md flex items-center gap-2">
+                            Nộp bài <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END Right Column -->
+
+        </div>
+    </main>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Result Modal -->
+    <div id="resultModal"
+        class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-slide-up">
+            <div class="bg-gradient-to-br from-brand to-blue-700 p-8 text-white text-center">
+                <div
+                    class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
+                    <i class="fas fa-trophy text-3xl text-yellow-300"></i>
+                </div>
+                <h3 class="text-2xl font-bold font-heading">Hoàn thành bài viết!</h3>
+                <p class="text-sky-100 text-sm mt-1">Hệ thống đã ghi nhận bài làm của bạn</p>
+            </div>
+            <div class="p-8 space-y-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-1">Số từ viết được
+                        </p>
+                        <p id="modalWordCount" class="text-2xl font-black text-slate-800">0</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-1">Thời gian làm bài
+                        </p>
+                        <p id="modalTimeSpent" class="text-2xl font-black text-slate-800">00:00</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <button onclick="exportToPDF()"
+                        class="w-full py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
+                        <i class="fas fa-file-pdf"></i> Xuất PDF bài viết
+                    </button>
+                    <button onclick="document.getElementById('resultModal').classList.replace('flex', 'hidden')"
+                        class="w-full py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-sky-500/30 hover:bg-sky-600 transition-all">Xem
+                        lại bài làm</button>
+                    <button onclick="location.reload()"
+                        class="w-full py-4 bg-slate-100 text-slate-600 font-bold rounded-2xl hover:bg-slate-200 transition-all text-sm">Luyện
+                        tập đề khác</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Daily Challenge Modal -->
+    <div id="dailyChallengeModal"
+        class="fixed inset-0 z-[200] hidden items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden animate-slide-up border dark:border-slate-800">
+            <div class="bg-gradient-to-br from-rose-500 to-orange-600 p-8 text-white text-center relative">
+                <div class="absolute top-4 right-4">
+                    <button onclick="closeDailyChallenge()" class="text-white/50 hover:text-white transition-colors">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div
+                    class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
+                    <i class="fas fa-fire text-3xl text-yellow-300"></i>
+                </div>
+                <h3 class="text-2xl font-bold font-heading">Thử thách hàng ngày!</h3>
+                <p class="text-rose-100 text-sm mt-1">Hoàn thành bài viết này để duy trì chuỗi luyện tập (Streak)</p>
+            </div>
+            <div class="p-8 space-y-6">
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+                    <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                        Đề bài ngẫu nhiên</p>
+                    <p id="dailyChallengeTopic"
+                        class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-tight">Đang chọn đề bài...
+                    </p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span id="dailyChallengeType"
+                            class="px-2 py-1 bg-rose-100 text-rose-600 text-[10px] font-bold rounded uppercase tracking-wider">Task
+                            2</span>
+                        <span class="text-xs text-slate-500"><i class="fas fa-clock mr-1"></i> 40 Phút</span>
+                    </div>
+                </div>
+                <div
+                    class="mt-4 p-4 bg-rose-50 dark:bg-rose-900/20 rounded-xl border border-rose-100 dark:border-rose-900/50">
+                    <p class="text-[10px] text-rose-500 dark:text-rose-400 uppercase font-black tracking-widest mb-1"><i
+                            class="fas fa-lightbulb"></i> Mẹo làm bài nhanh</p>
+                    <p id="dailyChallengeTip" class="text-xs text-rose-700 dark:text-rose-300 italic">Đang tải mẹo hữu
+                        ích...</p>
+                </div>
+                <div class="space-y-3">
+                    <button onclick="startDailyChallenge()"
+                        class="w-full py-4 bg-rose-500 text-white font-bold rounded-2xl shadow-lg shadow-rose-500/30 hover:bg-rose-600 transition-all flex items-center justify-center gap-2">
+                        Bắt đầu ngay <i class="fas fa-play"></i>
+                    </button>
+                    <button onclick="closeDailyChallenge()"
+                        class="w-full py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-sm">Để
+                        sau</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Modal -->
+    <div id="statsModal"
+        class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden animate-slide-up border dark:border-slate-800">
+            <div class="bg-gradient-to-br from-indigo-600 to-blue-700 p-6 text-white flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-chart-bar text-2xl"></i>
+                    <h3 class="text-xl font-bold font-heading uppercase tracking-wider">Thống kê học tập</h3>
+                </div>
+                <button onclick="document.getElementById('statsModal').classList.replace('flex', 'hidden')"
+                    class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-8 space-y-8 max-h-[80vh] overflow-y-auto custom-scroll">
+                <!-- Time Filter -->
+                <div class="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl w-fit">
+                    <button onclick="showStats('all')" id="statFilter-all"
+                        class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all bg-white dark:bg-slate-700 shadow-sm text-brand">Tất
+                        cả</button>
+                    <button onclick="showStats('week')" id="statFilter-week"
+                        class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500">Tuần này</button>
+                    <button onclick="showStats('month')" id="statFilter-month"
+                        class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500">Tháng
+                        này</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div
+                        class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p
+                            class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                            Độ dài câu TB</p>
+                        <p id="statsAvgSentLength" class="text-3xl font-black text-slate-800 dark:text-white">0</p>
+                    </div>
+                    <div
+                        class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p
+                            class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                            Số câu TB / Bài</p>
+                        <p id="statsAvgSentCount" class="text-3xl font-black text-slate-800 dark:text-white">0</p>
+                    </div>
+                    <div
+                        class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p
+                            class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                            Tổng số bài làm</p>
+                        <p id="statsTotalTasks" class="text-3xl font-black text-slate-800 dark:text-white">0</p>
+                    </div>
+                    <div
+                        class="stats-card bg-orange-50/50 dark:bg-orange-900/20 p-5 rounded-2xl border border-orange-100/50 dark:border-orange-900/50">
+                        <p
+                            class="text-[10px] text-orange-400 dark:text-orange-500 uppercase font-black tracking-widest mb-2">
+                            Streak hiện tại</p>
+                        <p id="statsCurrentStreak" class="text-3xl font-black text-orange-600 dark:text-orange-400">0
+                        </p>
+                    </div>
+                    <div
+                        class="stats-card bg-indigo-50/50 dark:bg-indigo-900/20 p-5 rounded-2xl border border-indigo-100/50 dark:border-indigo-900/50">
+                        <p
+                            class="text-[10px] text-indigo-400 dark:text-indigo-500 uppercase font-black tracking-widest mb-2">
+                            Tổng từ đã viết</p>
+                        <p id="statsTotalWords" class="text-3xl font-black text-indigo-600 dark:text-indigo-400">0</p>
+                    </div>
+                    <div
+                        class="stats-card bg-emerald-50/50 dark:bg-emerald-900/20 p-5 rounded-2xl border border-emerald-100/50 dark:border-emerald-900/50">
+                        <p
+                            class="text-[10px] text-emerald-400 dark:text-emerald-500 uppercase font-black tracking-widest mb-2">
+                            Đã hoàn thành</p>
+                        <p id="statsCompletedTasks" class="text-3xl font-black text-emerald-600 dark:text-emerald-400">0
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4
+                        class="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                        <i class="fas fa-tasks text-indigo-500"></i> Tiến độ theo dạng bài
+                    </h4>
+                    <div id="statsByType" class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                        <!-- Bars injected here -->
+                    </div>
+                </div>
+
+                <div>
+                    <h4
+                        class="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                        <i class="fas fa-history text-emerald-500"></i> Lịch sử làm bài
+                    </h4>
+                    <div id="statsHistory" class="space-y-3">
+                        <!-- History items injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Modal -->
+    <div id="compareModal"
+        class="fixed inset-0 z-[160] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-6xl w-full h-[90vh] flex flex-col overflow-hidden border dark:border-slate-800">
+            <div
+                class="p-6 border-b dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
+                <h3 id="compareTitle" class="text-lg font-bold text-slate-800 dark:text-white truncate pr-4">So sánh bài
+                    viết</h3>
+                <button onclick="document.getElementById('compareModal').classList.replace('flex', 'hidden')"
+                    class="w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div
+                class="flex-1 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x dark:divide-slate-800 overflow-hidden">
+                <!-- User's Essay -->
+                <div class="flex-1 flex flex-col p-6 overflow-hidden">
+                    <h4
+                        class="text-xs font-black text-brand uppercase tracking-widest mb-4 flex items-center justify-between">
+                        <span class="flex items-center gap-2"><i class="fas fa-user-edit"></i> Bài viết của bạn</span>
+                        <div class="flex gap-2">
+                            <span
+                                class="text-[9px] font-normal lowercase tracking-normal bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 px-2 py-0.5 rounded-full">Liên
+                                từ</span>
+                            <span
+                                class="text-[9px] font-normal lowercase tracking-normal bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 px-2 py-0.5 rounded-full">Từ
+                                lặp/Yếu</span>
+                        </div>
+                    </h4>
+                    <div id="compareUserEssay"
+                        class="flex-1 overflow-y-auto custom-scroll text-slate-700 dark:text-slate-300 leading-loose font-editor text-lg pr-4">
+                    </div>
+                </div>
+                <!-- Sample Answer -->
+                <div class="flex-1 flex flex-col p-6 bg-slate-50/30 dark:bg-slate-950/20 overflow-hidden">
+                    <h4
+                        class="text-xs font-black text-emerald-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <i class="fas fa-award"></i> Bài mẫu tham khảo <span
+                            class="text-[9px] font-normal lowercase tracking-normal bg-emerald-100 dark:bg-emerald-900/40 px-2 py-0.5 rounded-full">(Đã
+                            highlight từ vựng)</span>
+                    </h4>
+                    <div id="compareSample"
+                        class="flex-1 overflow-y-auto custom-scroll text-slate-700 dark:text-slate-300 leading-loose font-editor text-lg whitespace-pre-line pr-4">
+                    </div>
+                </div>
+            </div>
+            <!-- Teacher Notes Section -->
+            <div class="p-6 border-t dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
+                <div class="flex justify-between items-center mb-2">
+                    <h4 class="text-xs font-black text-indigo-500 uppercase tracking-widest flex items-center gap-2">
+                        <i class="fas fa-comment-medical"></i> Ghi chú của giáo viên / Tự nhận xét
+                    </h4>
+                    <div class="flex gap-2">
+                        <button onclick="rewriteEssay()"
+                            class="px-4 py-1.5 bg-rose-500 text-white text-[10px] font-bold rounded-lg hover:bg-rose-600 transition-colors shadow-sm flex items-center gap-1">
+                            <i class="fas fa-redo"></i> Luyện tập lại
+                        </button>
+                        <button onclick="saveNote()"
+                            class="px-4 py-1.5 bg-brand text-white text-[10px] font-bold rounded-lg hover:bg-sky-600 transition-colors shadow-sm flex items-center gap-1">
+                            <i class="fas fa-save"></i> Lưu ghi chú
+                        </button>
+                    </div>
+                </div>
+                <textarea id="compareNote"
+                    class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-300 focus:ring-brand focus:border-brand custom-scroll transition-colors"
+                    rows="3"
+                    placeholder="Nhập những điểm cần cải thiện, lỗi ngữ pháp hoặc từ vựng hay học được từ bài mẫu..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Modal -->
+    <div id="imageGalleryModal"
+        class="fixed inset-0 z-[200] hidden bg-black/95 items-center justify-center p-4 transition-all duration-300">
+        <button onclick="closeImageGallery()"
+            class="absolute top-6 right-6 text-white text-3xl hover:text-brand transition-colors z-[210]">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="w-full h-full flex items-center justify-center overflow-auto custom-scroll">
+            <img id="galleryImage" src=""
+                class="max-w-full max-h-full object-contain transition-transform duration-300 cursor-zoom-in"
+                onclick="toggleGalleryZoom(event)">
+        </div>
+    </div>
+
+    <script>
+        // ==========================================
+        // 1. DATA DEFINITION 
+        // ==========================================
+        // Thêm các mẫu Task 1 vào task2Data để demo biểu đồ
+        const task1Samples = [
+            {
+                id: "demo-line",
+                topic: "Task 1: Line Chart Sample",
+                type: "Line Chart",
+                q: "The graph below shows the number of people visiting a particular museum in London between 2015 and 2020.",
+                chartData: {
+                    type: 'line',
+                    data: {
+                        labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
+                        datasets: [{
+                            label: 'Visitors (Thousands)',
+                            data: [45, 52, 38, 65, 82, 70],
+                            borderColor: '#0ea5e9',
+                            backgroundColor: 'rgba(14, 165, 233, 0.1)',
+                            fill: true,
+                            tension: 0.3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { labels: { color: '#94a3b8' } } },
+                        scales: {
+                            y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(148, 163, 184, 0.1)' } },
+                            x: { ticks: { color: '#94a3b8' }, grid: { display: false } }
+                        }
+                    }
+                },
+                guide: "Phân tích xu hướng chung: Số lượng khách tăng dần từ 2015 đến 2019 trước khi giảm vào 2020.",
+                barem: "Intro: Paraphrase... \nOverview: Overall increase... \nBody 1: 2015-2017... \nBody 2: 2018-2020...",
+                sample: "The line graph illustrates the changes in museum attendance in London over a six-year period...",
+                vocab: [{ word: "fluctuate", meaning: "biến động" }, { word: "peak", meaning: "đạt đỉnh" }]
+            },
+            {
+                id: "demo-bar",
+                topic: "Task 1: Bar Chart Sample",
+                type: "Bar Chart",
+                q: "The chart shows the percentage of households with internet access in three different countries.",
+                chartData: {
+                    type: 'bar',
+                    data: {
+                        labels: ['Vietnam', 'Thailand', 'Malaysia'],
+                        datasets: [{
+                            label: 'Internet Access (%)',
+                            data: [70, 85, 78],
+                            backgroundColor: ['#0ea5e9', '#38bdf8', '#7dd3fc']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { beginAtZero: true, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(148, 163, 184, 0.1)' } },
+                            x: { ticks: { color: '#94a3b8' }, grid: { display: false } }
+                        }
+                    }
+                },
+                guide: "So sánh các quốc gia: Thailand dẫn đầu về tỉ lệ truy cập internet.",
+                barem: "Intro... Overview... Comparison...",
+                sample: "The bar chart compares the proportion of households having access to the internet...",
+                vocab: [{ word: "predominate", meaning: "chiếm ưu thế" }]
+            }
+        ];
+
+        const task2Data = [
+            ...task1Samples,
+            {
+                id: 0,
+                topic: "2.1. Chủ đề: Education",
+                type: "Opinion (Agree/Disagree)",
+                q: "Once students go to school, teachers have a greater influence on their intellectual and social development than parents. Do you agree or disagree with this belief?",
+                diagram: "assets/task2_diagrams/unit1_higher_needs_diagram.jpg",
+                guide: `
+                    <strong>Dạng bài:</strong> Agree/Disagree.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    Bạn có thể chọn hướng "Đồng ý một phần" (Partial agreement) - Cả giáo viên và phụ huynh đều có vai trò quan trọng không thể thay thế, nhưng ở các khía cạnh khác nhau.<br><br>
+                    <strong>Cấu trúc gợi ý:</strong><br>
+                    - Body 1: Bàn về tầm ảnh hưởng của giáo viên (Môi trường học thuật, kỷ luật trường lớp, tương tác xã hội với bạn bè).<br>
+                    - Body 2: Bàn về tầm ảnh hưởng của phụ huynh (Giá trị cốt lõi, đạo đức, hỗ trợ tâm lý, làm gương).
+                `,
+                barem: "Introduction:\n- Hook (Introduce the debate about who influences children more).\n- Paraphrase prompt: It is argued by some that educators impact children's cognitive and social growth more significantly than parents once schooling begins.\n- Thesis: In my opinion, I completely disagree with this view, as parents remain the primary figures in shaping a child's core character, while teachers primarily facilitate academic learning.\n\nBody Paragraph 1: The role of teachers (Academic & Social skills in school)\n- Topic sentence: Admittedly, teachers hold substantial authority in a school setting.\n- Idea 1: Intellectual development (imparting knowledge, critical thinking).\n- Idea 2: Social skills (teamwork, interacting with peers in a structured environment).\n\nBody Paragraph 2: The irreplaceable role of parents (Moral & Long-term development)\n- Topic sentence: Nevertheless, the foundational influence of parents is far more profound and lasting.\n- Idea 1: Moral compass and behavior (children mimic parents' attitudes from birth).\n- Idea 2: Emotional support and individualized attention (parents spend more overall time and have a deeper emotional bond).\n\nConclusion:\n- Restate thesis: While teachers are crucial for formal education, parents undeniably exert a greater overall influence on a child's holistic development.\n- Final thought.",
+                sample: "It is widely debated whether educators or parents play a more pivotal role in shaping a child’s intellectual and social capabilities once they start formal schooling. While some argue that teachers become the primary influence, I largely disagree with this notion, as parents remain the fundamental architects of a child’s character and lifelong development.\n\nOn the one hand, it is undeniable that teachers profoundly impact students during their formative years. Intellectually, educators are trained professionals who introduce children to a wide array of academic subjects, fostering critical thinking and problem-solving skills. Socially, the classroom environment structured by teachers requires students to navigate peer relationships, practice teamwork, and adhere to societal rules outside the home. For instance, a student learns how to resolve conflicts with classmates and respect authority figures under a teacher's guidance, which are crucial social milestones.\n\nHowever, despite the significant time children spend at school, parents exert a far deeper and more enduring influence. Firstly, parents are a child’s first role models, instilling core moral values, ethics, and behavioral norms long before schooling begins. Children naturally mimic their parents' attitudes towards life, work, and relationships. Secondly, while a teacher divides their attention among dozens of students for a limited period each day, parents provide consistent, individualized emotional support. This unconditional backing is essential for building a child’s self-esteem and emotional intelligence, which directly impacts their social confidence and academic motivation.\n\nIn conclusion, although teachers are indispensable for imparting academic knowledge and facilitating initial social integration within a group, they do not surpass the influence of parents. The familial environment ultimately lays the groundwork for a child's intellectual curiosity and social behavior, making parents the most significant figures in their overall development.",
+                vocab: [
+                    { word: "pivotal role", meaning: "vai trò then chốt" },
+                    { word: "formative years", meaning: "những năm tháng hình thành tính cách" },
+                    { word: "foster", meaning: "nuôi dưỡng, thúc đẩy" },
+                    { word: "enduring influence", meaning: "ảnh hưởng lâu dài" },
+                    { word: "instil core moral values", meaning: "thấm nhuần các giá trị đạo đức cốt lõi" },
+                    { word: "holistic development", meaning: "sự phát triển toàn diện" }
+                ]
+            },
+            {
+                id: 1,
+                topic: "2.2. Chủ đề: Environment",
+                type: "Opinion (Agree/Disagree)",
+                q: "Solving environmental problems should be the responsibility of an international organization rather than each national government. Do you agree or disagree?",
+                diagram: "assets/task2_diagrams/unit1_global_role_diagram.jpg",
+                guide: `
+                    <strong>Dạng bài:</strong> Agree/Disagree.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    Nên chọn "Đồng ý một phần" (Balanced approach). Một tổ chức quốc tế là cần thiết để điều phối, nhưng chính phủ mỗi quốc gia mới là người thực thi hiệu quả nhất tại địa phương.<br><br>
+                    <strong>Cấu trúc gợi ý:</strong><br>
+                    - Body 1: Tại sao cần tổ chức quốc tế? (Vấn đề môi trường mang tính toàn cầu như biến đổi khí hậu không phân biệt biên giới, cần quỹ chung, cần tiêu chuẩn chung).<br>
+                    - Body 2: Tại sao chính phủ quốc gia lại quan trọng? (Họ có quyền lập pháp tại nước họ, hiểu rõ đặc thù địa lý/kinh tế để áp dụng chính sách phù hợp).
+                `,
+                barem: "Introduction:\n- Hook (Environmental degradation is a pressing global issue).\n- Paraphrase prompt.\n- Thesis: I partially agree; while a global body is essential for setting universal standards and coordinating efforts, individual national governments must take the primary responsibility for implementing policies within their borders.\n\nBody Paragraph 1: The necessity of an international organization\n- Topic sentence: Global environmental issues require global cooperation.\n- Idea 1: Transboundary nature of problems (e.g., global warming, ocean pollution affect everyone, regardless of origin).\n- Idea 2: Setting unified goals and providing financial/technological aid to poorer nations.\n\nBody Paragraph 2: The vital role of national governments\n- Topic sentence: However, relying solely on international bodies is impractical without national enforcement.\n- Idea 1: Legislative power (only local governments can pass and enforce strict laws against local polluting industries).\n- Idea 2: Tailored approaches (each country has unique geographical and economic contexts requiring specific strategies).\n\nConclusion:\n- Restate thesis.\n- Summary (It must be a collaborative effort between global guidelines and local enforcement).",
+                sample: "The escalation of environmental degradation has sparked a debate over who should take charge of mitigating these crises. While some assert that an international organization should bear the sole responsibility rather than individual national governments, I partially disagree with this view. In my opinion, solving environmental problems requires a symbiotic relationship where international bodies provide global frameworks, but national governments actively enforce local measures.\n\nOn the one hand, a centralized international organization is indispensable for tackling transnational environmental threats. Issues such as climate change, ozone layer depletion, and ocean plastic pollution do not respect geographical borders. Therefore, they necessitate coordinated global action. An international entity, like the United Nations, can establish universal environmental standards, set emission reduction targets, and facilitate the transfer of green technologies from developed to developing nations. Without such a governing body, individual countries might prioritize short-term economic gains over long-term ecological sustainability, leading to a fragmented and ineffective response.\n\nOn the other hand, national governments are the crucial agents of execution and enforcement. International organizations lack the direct legislative and executive power to regulate industries or citizens within a sovereign state. Only national governments have the authority to enact strict environmental laws, impose carbon taxes, or subsidize renewable energy projects within their jurisdictions. Furthermore, environmental challenges vary drastically from one region to another; a coastal nation faces different threats compared to a landlocked desert country. Consequently, local governments are best positioned to design and implement tailored strategies that suit their specific geographical, economic, and social contexts.\n\nIn conclusion, while an international organization is essential for orchestrating a unified global strategy and providing support, it cannot replace the executive power of national governments. A sustainable future depends on global cooperation coupled with decisive local action.",
+                vocab: [
+                    { word: "escalation of environmental degradation", meaning: "sự leo thang của suy thoái môi trường" },
+                    { word: "mitigate", meaning: "giảm nhẹ" },
+                    { word: "symbiotic relationship", meaning: "mối quan hệ cộng sinh/tương hỗ" },
+                    { word: "transnational", meaning: "xuyên quốc gia" },
+                    { word: "jurisdiction", meaning: "thẩm quyền tài phán/lãnh thổ" },
+                    { word: "tailored strategies", meaning: "chiến lược được điều chỉnh cho phù hợp" }
+                ]
+            },
+            {
+                id: 2,
+                topic: "2.3. Chủ đề: Science & Health",
+                type: "Discuss both views & give opinion",
+                q: "Scientific research should focus on world health issues or more important problems. Discuss and state your opinion.",
+                guide: `
+                    <strong>Dạng bài:</strong> Discuss both views & state your opinion.<br><br>
+                    <em>Lưu ý đề bài:</em> Đề bài có vẻ so sánh "world health issues" và "other important problems" (như thám hiểm vũ trụ, AI, biến đổi khí hậu...).<br><br>
+                    <strong>Cấu trúc:</strong><br>
+                    - Body 1: Bàn luận tại sao nghiên cứu Y tế lại quan trọng (Cứu sống mạng người, đại dịch toàn cầu).<br>
+                    - Body 2: Bàn luận tại sao các lĩnh vực nghiên cứu khác cũng quan trọng không kém (Môi trường, Năng lượng, Vũ trụ để sinh tồn dài hạn).<br>
+                    - Opinion: Cả hai đều cần thiết và nên được đầu tư song song.
+                `,
+                barem: "Introduction:\n- Hook.\n- Paraphrase: Debate over funding allocation in science (Health vs. Other global issues like environment/technology).\n- Thesis: Discuss both sides and state that a balanced approach is necessary.\n\nBody Paragraph 1: Focus on world health issues\n- Topic sentence: Prioritizing medical research is vital for human survival.\n- Idea 1: Combating deadly diseases (cancer, emerging pandemics like COVID-19).\n- Idea 2: Improving life expectancy and quality of life globally.\n\nBody Paragraph 2: Focus on other important problems\n- Topic sentence: Conversely, neglecting other scientific fields could lead to different existential crises.\n- Idea 1: Environmental science/Renewable energy (combatting climate change is arguably the biggest threat to humanity's future).\n- Idea 2: Space exploration / Technology (finding alternative resources or habitable planets for long-term survival).\n\nConclusion:\n- Restate thesis.\n- Summary: Health ensures current survival, while other sciences ensure future existence.",
+                sample: "The allocation of scientific funding is a subject of ongoing debate. While a significant portion of society argues that scientific research should predominantly focus on solving global health issues, others believe that there are equally, if not more, pressing problems that demand scientific attention. In my opinion, while health is a fundamental priority, investing in other critical areas such as environmental sustainability is equally imperative for the long-term survival of humanity.\n\nProponents of prioritizing medical research emphasize that human health is the bedrock of a functioning society. The primary goal of science should arguably be the preservation of life and the alleviation of suffering. By directing resources towards world health issues, scientists can develop cures for terminal illnesses like cancer or create vaccines for novel viruses, as vividly demonstrated during the recent global pandemic. Furthermore, improving healthcare technology and discovering treatments for prevalent diseases directly enhances global life expectancy and economic productivity, as a healthy population is essential for a thriving economy.\n\nHowever, focusing exclusively on healthcare would be shortsighted, as other scientific fields address existential threats that could render medical advancements futile. Chief among these is environmental science. Climate change, resource depletion, and pollution pose immediate and catastrophic risks to the entire planet. If scientific research does not innovate in renewable energy, sustainable agriculture, and carbon capture technologies, the Earth may become uninhabitable, making human health a moot point. Additionally, research into fields like space exploration and artificial intelligence holds the key to solving future resource crises and expanding human capabilities beyond our current limitations.\n\nIn conclusion, both perspectives hold merit. While resolving world health issues is crucial for our immediate well-being and survival, addressing other monumental challenges like climate change through science is vital for securing a future for the next generations. Therefore, a balanced distribution of scientific research efforts across multiple disciplines is the most prudent approach.",
+                vocab: [
+                    { word: "allocation of funding", meaning: "phân bổ ngân sách" },
+                    { word: "bedrock", meaning: "nền tảng" },
+                    { word: "alleviation of suffering", meaning: "giảm bớt đau khổ" },
+                    { word: "existential threats", meaning: "mối đe dọa sinh tồn" },
+                    { word: "render sth futile", meaning: "khiến cái gì trở nên vô ích" },
+                    { word: "prudent approach", meaning: "cách tiếp cận khôn ngoan" }
+                ]
+            },
+            {
+                id: 3,
+                topic: "2.4. Chủ đề: Crime",
+                type: "Discuss both views & give opinion",
+                q: "Some people think that the best way to reduce crime is to give longer prison sentences. Others, however, believe there are better alternative ways of reducing crime. Discuss both views and give your own opinion.",
+                guide: "Placeholder guide for Crime topic.",
+                barem: "Intro: Paraphrase + Thesis\nBody 1: Why some support longer sentences (Deterrence, Public safety)\nBody 2: Alternative ways (Education, Rehabilitation, Job creation)\nConclusion: Give opinion (Alternatives are better for long-term reduction)",
+                sample: "Crime prevention is a complex issue. While some advocate for extended incarcerations as the ultimate deterrent, others argue for alternative approaches. I believe that while prison is necessary for dangerous offenders, tackling the root causes through education and rehabilitation is far more effective in reducing crime rates overall...",
+                vocab: [
+                    { word: "deterrent", meaning: "sự răn đe" },
+                    { word: "rehabilitation", meaning: "sự phục hồi nhân phẩm/tái hòa nhập" },
+                    { word: "extended incarceration", meaning: "bỏ tù kéo dài" }
+                ]
+            },
+            {
+                id: 4,
+                topic: "2.5. Chủ đề: Advertising & Sports",
+                type: "Discuss both views & give opinion",
+                q: "Many companies today sponsor sports as a way of advertising themselves. Some people think that this is a good thing for the world of sports. Others think this has disadvantages. Discuss both these views and give your own opinion.",
+                guide: "Placeholder guide for Advertising & Sports.",
+                barem: "Intro: Paraphrase + Thesis\nBody 1: Advantages of sponsorship (Financial support for athletes, better facilities, promotion of sports)\nBody 2: Disadvantages (Promotion of unhealthy products like fast food/alcohol, loss of sports integrity)\nConclusion: Opinion",
+                sample: "Corporate sponsorship in sports is ubiquitous. Supporters argue it injects vital funding into athletic programs, whereas critics highlight the potential ethical compromises. In my view, the benefits of financial support outweigh the drawbacks, provided there are strict regulations on the types of products advertised...",
+                vocab: [
+                    { word: "corporate sponsorship", meaning: "tài trợ từ doanh nghiệp" },
+                    { word: "ubiquitous", meaning: "có mặt ở khắp nơi" },
+                    { word: "ethical compromise", meaning: "sự thỏa hiệp về đạo đức" }
+                ]
+            },
+            {
+                id: 5,
+                topic: "2.6. Chủ đề: Children & Games",
+                type: "Agree/Disagree",
+                q: "Some people think traditional games are better than modern games in helping children develop their abilities. To what extent do you agree or disagree?",
+                guide: "Placeholder guide for Children & Games.",
+                barem: "Intro: Paraphrase + Thesis (Balanced view or lean one way)\nBody 1: Benefits of traditional games (Physical health, face-to-face social skills)\nBody 2: Benefits of modern video games (Cognitive skills, hand-eye coordination, tech literacy)\nConclusion: Summary & Opinion",
+                sample: "The debate over the developmental benefits of traditional physical games versus modern video games is prevalent. While I agree that traditional games offer unique physical and social benefits, I believe modern games are equally crucial in equipping children with cognitive and technological skills needed in the 21st century...",
+                vocab: [
+                    { word: "tech literacy", meaning: "sự am hiểu công nghệ" },
+                    { word: "cognitive skills", meaning: "kỹ năng nhận thức" },
+                    { word: "face-to-face social skills", meaning: "kỹ năng giao tiếp trực tiếp" }
+                ]
+            },
+            {
+                id: 6,
+                topic: "2.7. Chủ đề: Transport",
+                type: "Two-part Question",
+                q: "In some cities, people are choosing cars instead of bicycles, while in other cities riding bikes is replacing cars. Why is this the case? Which development do you think is better?",
+                guide: "Placeholder guide for Transport.",
+                barem: "Intro: Paraphrase + Outline the two questions\nBody 1: Reasons for the trend (Cars for convenience/status in some places; Bikes for environment/traffic in others)\nBody 2: Which is better? (Argue that replacing cars with bikes is superior for sustainability and health)\nConclusion: Summary",
+                sample: "Urban transportation trends vary globally, with cars dominating some regions and bicycles resurging in others. This divergence is driven by differing priorities regarding convenience, infrastructure, and environmental awareness. In my opinion, the shift towards cycling is undoubtedly the superior development for the future of urban living...",
+                vocab: [
+                    { word: "divergence", meaning: "sự khác biệt/phân kỳ" },
+                    { word: "infrastructure", meaning: "cơ sở hạ tầng" },
+                    { word: "urban living", meaning: "cuộc sống đô thị" }
+                ]
+            },
+            {
+                id: 7,
+                topic: "Ngày 04.01.2026: Food & Globalisation",
+                type: "Causes & Solutions",
+                q: "In many countries, more and more people choose to buy imported food rather than food produced locally. Why do people buy imported food? What could be done to encourage people to buy local food?",
+                guide: `
+                    <strong>Dạng bài:</strong> Causes & Solutions.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    - Nguyên nhân (Causes): Sự đa dạng lựa chọn, niềm tin vào chất lượng/vệ sinh an toàn thực phẩm nước ngoài, tâm lý sính ngoại.<br>
+                    - Giải pháp (Solutions): Chính phủ hỗ trợ trợ giá nông sản địa phương, tăng cường quy định kiểm định chất lượng, triển khai chiến dịch truyền thông nhằm nâng cao nhận thức ủng hộ hàng nội địa.
+                `,
+                barem: "Introduction:\n- Paraphrase the prompt & outline the essay's structure (discussing causes first, then solutions).\n\nBody Paragraph 1: Causes of buying imported food\n- Idea 1: Variety of choices (imported foods offer exotic fruits/vegetables not naturally grown in the region).\n- Idea 2: Perceived higher quality and stringent safety standards of foreign agricultural products.\n\nBody Paragraph 2: Solutions to encourage local food consumption\n- Idea 1: Financial subsidies to local farmers to make domestic products more price-competitive.\n- Idea 2: Marketing campaigns (e.g., 'Buy Local') to highlight the environmental and economic benefits of supporting local agriculture.\n\nConclusion:\n- Summarize main points and reiterate that a combined effort of quality improvement and financial support can reverse this trend.",
+                sample: "The increasing preference for imported food over locally produced alternatives is a noticeable trend in many nations. This shift is primarily driven by the desire for a wider variety of products and perceived superior quality. However, governments and local authorities can implement several measures, such as financial subsidies and awareness campaigns, to reverse this trend and support local agriculture.\n\nFirstly, consumers gravitate towards imported foods largely due to the diverse options they provide. Due to geographical and climate restrictions, certain exotic fruits, vegetables, or premium meats cannot be cultivated domestically, prompting people to seek foreign goods to satisfy their culinary preferences. Additionally, in some regions, imported products are often perceived to adhere to stricter hygiene and safety standards. This leads consumers to willingly pay a premium for foreign food, trusting it to be safer and healthier for their families compared to local counterparts.\n\nTo tackle this over-reliance on imported food, several steps can be taken to boost local consumption. On an economic level, governments should provide financial subsidies and technological support to local farmers. This would not only reduce the production costs, making local food more price-competitive but also improve crop yields and quality. Furthermore, nationwide marketing campaigns, such as 'Buy Local' initiatives, should be launched. These campaigns can educate the public on the environmental benefits of reducing food miles and the economic importance of supporting the domestic agricultural sector.\n\nIn conclusion, while the demand for imported food is understandable given the desire for variety and assured quality, it is vital to promote self-sufficiency. By financially empowering local farmers and educating consumers, countries can successfully encourage a shift back towards locally produced food.",
+                vocab: [
+                    { word: "perceived superior quality", meaning: "chất lượng được cho là cao hơn" },
+                    { word: "gravitate towards", meaning: "thiên về/hướng về" },
+                    { word: "adhere to stricter hygiene standards", meaning: "tuân thủ các tiêu chuẩn vệ sinh nghiêm ngặt hơn" },
+                    { word: "financial subsidies", meaning: "trợ cấp tài chính" },
+                    { word: "food miles", meaning: "khoảng cách vận chuyển thực phẩm (liên quan đến khí thải)" },
+                    { word: "self-sufficiency", meaning: "sự tự cung tự cấp" }
+                ]
+            },
+            {
+                id: 8,
+                topic: "Ngày 13.01.2026: Robots & Future",
+                type: "Discuss both views & give opinion",
+                q: "Some people think that robots are very important to human’s future development, while others think that they are dangerous and have negative effects on society. Discuss both views and give your opinion.",
+                guide: `
+                    <strong>Dạng bài:</strong> Discuss both views & give opinion.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    - Quan điểm 1 (Quan trọng): Tăng năng suất công nghiệp, làm việc nguy hiểm thay con người, độ chính xác cao trong y tế.<br>
+                    - Quan điểm 2 (Nguy hiểm): Gây thất nghiệp hàng loạt, rủi ro mất kiểm soát (trí tuệ nhân tạo), con người lười biếng và phụ thuộc.<br>
+                    - Ý kiến cá nhân: Robot mang lại lợi ích khổng lồ và là bước tiến tất yếu, nhưng cần có hệ thống pháp lý chặt chẽ để quản lý rủi ro.
+                `,
+                barem: "Introduction:\n- Paraphrase prompt & state thesis (Robots offer immense benefits but pose valid risks; strict regulation is the key).\n\nBody Paragraph 1: Why robots are important\n- Idea 1: Automation in industries leads to unprecedented efficiency and economic growth.\n- Idea 2: Capability to handle hazardous tasks (bomb disposal, deep-sea exploration) and medical precision (robotic surgeries).\n\nBody Paragraph 2: Why robots are seen as dangerous\n- Idea 1: Mass unemployment due to automation replacing manual and administrative jobs.\n- Idea 2: Ethical and safety risks regarding artificial intelligence operating without human empathy.\n\nConclusion:\n- Restate opinion: The integration of robotics is inevitable and highly beneficial, provided that governments establish retraining programs and strict regulatory frameworks.",
+                sample: "The role of robotics in our future is a highly polarizing topic. While certain groups highlight the indispensable benefits of robots in advancing human civilization, critics warn of their potential societal hazards. In my view, although the risks associated with automation are entirely valid, the advantages they bring to economic and scientific development are overwhelmingly positive, provided they are properly regulated.\n\nOn the one hand, robots are crucial for driving future prosperity and safety. In industrial sectors, automation maximizes efficiency and precision, leading to unprecedented economic growth and the mass production of affordable goods. Furthermore, robots are highly capable of undertaking hazardous tasks that threaten human lives, such as bomb disposal, deep-sea exploration, or working in highly radioactive environments. In the medical field, robotic assistance during complex surgeries has drastically reduced human error, proving that robotics can directly enhance our quality of life and survival rates.\n\nOn the other hand, the widespread integration of robots poses undeniable threats to society, primarily concerning employment. As machines become more sophisticated, they threaten traditional jobs, potentially causing mass redundancies in both manufacturing and service sectors. This economic displacement could widen the wealth gap if not properly addressed. There are also valid ethical and safety concerns regarding highly advanced artificial intelligence. Operating without human empathy or moral judgment, autonomous robots could pose catastrophic risks if a malfunction occurs or if they are utilized in warfare.\n\nUltimately, the solution lies not in halting technological progress, but in adapting to it. While the dangers of unemployment and AI risks are significant, the contributions of robots to science, safety, and the economy are too valuable to dismiss. Therefore, I believe robots are vital for our future, but governments must implement re-education programs for displaced workers and strict regulatory frameworks to govern AI development.",
+                vocab: [
+                    { word: "polarizing topic", meaning: "chủ đề gây tranh cãi/phân hóa" },
+                    { word: "indispensable benefits", meaning: "những lợi ích không thể thiếu" },
+                    { word: "unprecedented efficiency", meaning: "hiệu suất chưa từng có" },
+                    { word: "mass redundancies", meaning: "sự sa thải/thất nghiệp hàng loạt" },
+                    { word: "economic displacement", meaning: "sự dịch chuyển kinh tế (mất việc làm)" },
+                    { word: "regulatory frameworks", meaning: "khung pháp lý/quy định" }
+                ]
+            },
+            {
+                id: 9,
+                topic: "Ngày 23.01.2026: Urbanization",
+                type: "Effects & Solutions",
+                q: "The population of many cities is growing rapidly. What are the effects on people living in these cities? What can be done to maintain the quality of life of people?",
+                guide: `
+                    <strong>Dạng bài:</strong> Effects & Solutions.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    - Hậu quả (Effects): Quá tải cơ sở hạ tầng (tắc nghẽn giao thông, thiếu bệnh viện/trường học), suy thoái môi trường, chi phí sinh hoạt đắt đỏ.<br>
+                    - Giải pháp (Solutions): Nâng cấp giao thông công cộng, xây dựng các thành phố vệ tinh để giãn dân, đầu tư không gian xanh.
+                `,
+                barem: "Introduction:\n- Paraphrase prompt (Rapid urbanization is a prominent issue).\n- Outline thesis: This essay will examine the negative impacts on urban dwellers and propose measures to preserve their living standards.\n\nBody Paragraph 1: Effects of rapid population growth\n- Idea 1: Overburdened infrastructure resulting in severe traffic congestion and housing shortages.\n- Idea 2: Environmental degradation (air and noise pollution) leading to health issues.\n\nBody Paragraph 2: Solutions to maintain quality of life\n- Idea 1: Government investment in efficient, eco-friendly public transportation systems.\n- Idea 2: Decentralization by developing satellite cities or suburban areas to alleviate the pressure on city centers.\n\nConclusion:\n- Summarize the main points (Urbanization causes strain, but strategic planning and infrastructure investment can resolve it).",
+                sample: "Rapid urbanization has become a defining characteristic of the modern era, bringing profound changes to city dwellers worldwide. This demographic shift primarily results in severe overcrowding and environmental degradation. To preserve the urban quality of life, it is imperative that governments invest heavily in infrastructure and promote the development of satellite cities.\n\nThe most immediate effect of a surging urban population is the immense strain placed on a city's infrastructure. As millions migrate to metropolitan areas in search of better opportunities, housing shortages become acute, leading to exorbitant living costs and the rise of slums. Furthermore, public services such as healthcare and education become overburdened, failing to meet the needs of all citizens. Traffic congestion also worsens, which not only causes daily frustration for commuters but directly contributes to severe air and noise pollution. Consequently, the physical and mental well-being of city residents often deteriorates in such high-stress environments.\n\nDespite these challenges, effective urban planning can mitigate the negative impacts of overpopulation. Firstly, authorities must prioritize the expansion and modernization of public transportation networks. Constructing extensive subway systems and dedicated bus lanes can significantly reduce the reliance on private vehicles, thereby alleviating both traffic jams and emissions. Secondly, governments should adopt a decentralization strategy by building satellite cities. By offering tax incentives for businesses to relocate to the outskirts and developing adequate local amenities, policymakers can encourage people to move away from the densely packed city centers, thus balancing the population distribution.\n\nIn conclusion, while the exponential growth of city populations poses severe threats to infrastructure and environmental health, these issues are not insurmountable. Through strategic investments in public transit and the promotion of suburban development, authorities can successfully maintain and even enhance the standard of living for all urban residents.",
+                vocab: [
+                    { word: "demographic shift", meaning: "sự thay đổi nhân khẩu học" },
+                    { word: "overburdened infrastructure", meaning: "cơ sở hạ tầng quá tải" },
+                    { word: "exorbitant living costs", meaning: "chi phí sinh hoạt cắt cổ" },
+                    { word: "deteriorate", meaning: "xuống cấp, tồi tệ đi" },
+                    { word: "decentralization strategy", meaning: "chiến lược phân quyền/giãn dân" },
+                    { word: "tax incentives", meaning: "ưu đãi thuế" }
+                ]
+            },
+            {
+                id: 10,
+                topic: "Ngày 01.02.2026: Health & Government",
+                type: "Agree/Disagree",
+                q: "It is more important to spend public money promoting a healthy lifestyle in order to prevent illness than to spend it on the treatment of people who are already ill. To what extent do you agree or disagree?",
+                diagram: "assets/task2_diagrams/unit1_basic_needs_diagram.jpg",
+                guide: `
+                    <strong>Dạng bài:</strong> Agree/Disagree.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    Đề xuất tiếp cận "Đồng ý một phần" (Partial agreement). Ngăn ngừa bệnh tật thông qua lối sống lành mạnh là chiến lược tiết kiệm và mang tính dài hạn. Tuy nhiên, việc cắt giảm ngân sách chữa trị cho người đang mắc bệnh là vi phạm đạo đức và quyền con người cơ bản. Cả hai đều phải được duy trì.
+                `,
+                barem: "Introduction:\n- Hook (Allocation of public health funds).\n- Thesis: I partially agree. While preventative measures are crucial for long-term societal well-being and economic efficiency, treating existing illnesses remains an indispensable moral obligation.\n\nBody Paragraph 1: The importance of promoting healthy lifestyles\n- Idea 1: Prevention is better and cheaper than cure (reduces the long-term burden on healthcare systems).\n- Idea 2: Public campaigns (diet, exercise) improve overall life expectancy and workforce productivity.\n\nBody Paragraph 2: The necessity of funding medical treatments\n- Idea 1: Moral and ethical duty of the state to care for its sick and vulnerable citizens.\n- Idea 2: Many diseases are unavoidable, genetic, or accidental, meaning prevention is not a universal solution.\n\nConclusion:\n- Restate thesis: Funding should be balanced. Prevention secures the future, but treatment is non-negotiable for the present.",
+                sample: "The allocation of public healthcare funds is a contentious issue, with some advocating for a primary focus on preventative measures over treatments for the sick. While I agree that promoting healthy lifestyles is a highly effective long-term strategy, I fundamentally believe that treating those who are already ill remains an equally indispensable moral obligation for any government.\n\nAdvocates for redirecting funds towards illness prevention present a strong economic and social argument. It is a well-established fact that prevention is vastly more cost-effective than cure. By investing public money in educational campaigns about nutritious diets, the dangers of smoking, and the importance of regular exercise, governments can drastically reduce the future incidence of chronic conditions like obesity, diabetes, and heart disease. Consequently, this proactive approach alleviates the long-term financial burden on hospitals and cultivates a healthier, more productive workforce, ultimately benefiting the nation's economy.\n\nHowever, prioritizing prevention to the detriment of current medical treatments is an ethically flawed stance. A government's primary duty is to safeguard the welfare of its citizens, which absolutely includes providing care for those currently suffering. Denying or reducing funds for medical treatments, surgeries, or life-saving medications would lead to immense human suffering and a violation of basic human rights. Furthermore, it is crucial to acknowledge that not all illnesses are lifestyle-related. Many individuals suffer from genetic disorders, autoimmune diseases, or accidental injuries, against which no amount of healthy living can protect. These people rely entirely on a well-funded healthcare system for their survival.\n\nIn conclusion, while spending public money to promote healthy lifestyles is a wise and necessary investment for future generations, it must not supersede the funding required for immediate medical care. A robust healthcare system must strike a balance, offering both proactive prevention and reactive treatment to serve the entire population effectively.",
+                vocab: [
+                    { word: "contentious issue", "meaning": "vấn đề gây tranh cãi" },
+                    { word: "preventative measures", "meaning": "các biện pháp phòng ngừa" },
+                    { word: "cost-effective", "meaning": "tiết kiệm chi phí/mang lại hiệu quả kinh tế" },
+                    { word: "ethically flawed stance", "meaning": "lập trường sai lầm về mặt đạo đức" },
+                    { word: "genetic disorders", "meaning": "rối loạn di truyền" },
+                    { word: "supersede", "meaning": "thay thế/chiếm chỗ" }
+                ]
+            },
+            {
+                id: 11,
+                topic: "Ngày 25.02.2026: Arts vs Science",
+                type: "Direct Questions",
+                q: "In today’s world of advanced science and technology, we still greatly value our artists such as musicians, painters, and writers. What can the arts tell us about life that science and technology cannot?",
+                guide: `
+                    <strong>Dạng bài:</strong> Direct Question.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    Tập trung phân tích sự khác biệt và giá trị độc bản của nghệ thuật so với khoa học công nghệ.<br>
+                    - Nghệ thuật giúp chúng ta hiểu về những cảm xúc trừu tượng (tình yêu, nỗi đau, hy vọng).<br>
+                    - Nghệ thuật lưu giữ và truyền tải bản sắc văn hóa, lịch sử và các giá trị đạo đức mà số liệu khoa học không thể biểu đạt.
+                `,
+                barem: "Introduction:\n- Hook (Science dominates the modern world, yet art remains highly revered).\n- Thesis: While science explains the physical universe objectively, the arts provide profound insights into human emotions, cultural identity, and morality.\n\nBody Paragraph 1: Exploration of human emotions and subjective experiences\n- Idea 1: Science relies on empirical data; art captures intangible feelings (love, grief, existential dread).\n- Idea 2: Literature and music offer a medium for empathy, allowing people to connect on a spiritual level.\n\nBody Paragraph 2: Reflection of culture, history, and morality\n- Idea 1: Art acts as a historical mirror, preserving the ethos and struggles of past generations.\n- Idea 2: Art questions morality and the human condition (e.g., paintings or dystopian novels cautioning against unchecked technological progress).\n\nConclusion:\n- Summarize main points: Science tells us 'how' we live, but art tells us 'why' we live.",
+                sample: "Despite the unprecedented leaps in science and technology characterizing the modern era, the enduring appreciation for artists underscores a fundamental human need. While technological advancements excel at explaining the mechanics of the universe, they often fall short in capturing the human essence. The arts, encompassing literature, music, and painting, provide us with invaluable insights into subjective emotions, cultural heritage, and morality that science simply cannot.\n\nFirst and foremost, the arts allow us to explore and understand the intangible realm of human emotions. Science approaches the world through empirical data, logic, and objective facts. It can explain the neurological processes behind a feeling, but it cannot convey the actual experience of love, grief, or existential longing. A poignant piece of music or a well-crafted novel can evoke deep empathy, resonating with the listener or reader on a profound spiritual level. By articulating these complex inner states, artists help individuals feel understood and connected in a way that scientific formulas never could.\n\nFurthermore, the arts act as a vital mirror reflecting our cultural identity and moral compass. Throughout history, painters and writers have documented the ethos, struggles, and triumphs of their respective eras. While a history textbook might provide the dates of a war, a painting like Picasso's 'Guernica' captures the visceral horror and human tragedy of the event, ensuring that the emotional truth is never forgotten. Additionally, the arts frequently challenge our moral boundaries and prompt us to question the very trajectory of human progress. For instance, science fiction literature often explores the dystopian consequences of unchecked technological advancements, serving as a philosophical warning rather than a mere factual prediction.\n\nIn conclusion, while science and technology provide the crucial tools for human survival and physical comfort, they do not give life meaning. The arts remain irreplaceable because they narrate the story of the human soul, preserving our emotions, history, and moral inquiries.",
+                vocab: [
+                    { word: "unprecedented leaps", "meaning": "những bước tiến chưa từng có" },
+                    { word: "intangible realm", "meaning": "lĩnh vực phi vật thể/vô hình" },
+                    { word: "empirical data", "meaning": "dữ liệu thực nghiệm" },
+                    { word: "poignant", "meaning": "chua xót, cảm động sâu sắc" },
+                    { word: "visceral horror", "meaning": "sự kinh hoàng tận tâm can" },
+                    { word: "moral boundaries", "meaning": "ranh giới đạo đức" }
+                ]
+            },
+            {
+                id: 12,
+                topic: "Ngày 04.03.2026: Transport & Pollution",
+                type: "Discuss both views & give opinion",
+                q: "Research show that transportation of products and people is now one of the biggest sources of pollution worldwide. Some people think it is the responsibility of governments to solve this problem, while others think it is the responsibility of individuals. Discuss both views and give your opinion.",
+                guide: `
+                    <strong>Dạng bài:</strong> Discuss both views & give opinion.<br><br>
+                    <strong>Gợi ý hướng làm bài:</strong><br>
+                    - Trách nhiệm của Chính phủ: Có quyền ban hành luật pháp (đánh thuế carbon), có ngân sách đầu tư cơ sở hạ tầng giao thông công cộng.<br>
+                    - Trách nhiệm của Cá nhân: Thay đổi thói quen sinh hoạt (chọn phương tiện công cộng thay vì xe riêng, giảm tiêu dùng xa xỉ phẩm phải vận chuyển xa).<br>
+                    - Ý kiến: Việc này đòi hỏi sự phối hợp. Chính phủ phải cung cấp hạ tầng và luật, trong khi người dân phải tự giác tuân thủ và thay đổi thói quen.
+                `,
+                barem: "Introduction:\n- Hook (Transport emissions driving global pollution).\n- Paraphrase prompt (Debate over whether authorities or citizens are liable).\n- Thesis: Both parties must collaborate; governments must provide the framework and infrastructure, while individuals must adopt greener habits.\n\nBody Paragraph 1: The role of governments\n- Idea 1: Financial power to invest in green infrastructure (electric bus networks, bullet trains).\n- Idea 2: Legislative power to impose carbon taxes on logistics companies and enforce emission standards.\n\nBody Paragraph 2: The role of individuals\n- Idea 1: Daily choices matter (opting for carpooling, cycling, or public transit over single-occupancy vehicles).\n- Idea 2: Consumer behavior (buying local goods to reduce the demand for long-distance freight transport).\n\nConclusion:\n- Restate opinion: Neither can succeed alone. Top-down policies must be met with bottom-up behavioral changes.",
+                sample: "As the transportation of goods and passengers emerges as a leading contributor to global environmental degradation, a debate has arisen regarding who should bear the responsibility for mitigating this crisis. While some assert that it is strictly the duty of national governments, others place the onus on individual citizens. In my view, effectively addressing transportation-related pollution requires a concerted, collaborative effort from both governing bodies and the general public.\n\nThose who argue that governments should spearhead the fight against pollution point to their unparalleled legislative and financial power. Firstly, only state authorities possess the capital required to overhaul national infrastructure. By investing heavily in affordable, eco-friendly public transit systems—such as electric bus networks and high-speed railways—governments can provide citizens with viable alternatives to driving. Secondly, authorities can enforce strict environmental regulations. Imposing heavy carbon taxes on logistics corporations and mandating rigid emission standards for car manufacturers are macro-level interventions that can force entire industries to adopt greener technologies rapidly.\n\nConversely, other people contend that individual accountability is the true catalyst for change. The aggregate impact of millions of personal daily choices is monumental. If individuals actively choose to carpool, cycle, or use public transport rather than driving single-occupancy vehicles, urban carbon footprints would plummet. Furthermore, consumer behavior directly dictates the logistics sector. By consciously opting for locally sourced products instead of imported goods, individuals significantly reduce the demand for long-haul shipping and aviation, thereby slashing international freight emissions.\n\nIn conclusion, delegating the responsibility of solving transportation pollution solely to one party is impractical. Governments must act as the architects of a sustainable future by providing green infrastructure and enforcing strict laws, but these top-down measures are futile unless individuals make conscious, eco-friendly choices in their daily commutes and consumption habits. A symbiotic approach is the only path forward.",
+                vocab: [
+                    { word: "leading contributor", "meaning": "tác nhân hàng đầu" },
+                    { word: "bear the responsibility / place the onus on", "meaning": "chịu trách nhiệm / đùn đẩy trách nhiệm cho" },
+                    { word: "concerted effort", "meaning": "nỗ lực phối hợp" },
+                    { word: "macro-level interventions", "meaning": "sự can thiệp ở tầm vĩ mô" },
+                    { word: "single-occupancy vehicles", "meaning": "xe cá nhân chỉ có một người ngồi" },
+                    { word: "symbiotic approach", "meaning": "cách tiếp cận cộng sinh/tương hỗ" }
+                ]
+            }
+        ];
+
+
+
+
+        let task1DataAcademic = [];
+        let task1DataGT = [];
+        let task1Data = [];
+        let review2020Data = [];
+        let writingData = task2Data;
+        let currentTask = 2;
+        let currentSType = 'academic';
+
+
+        // ==========================================
+        // 2. STATE & INITIALIZATION
+        // ==========================================
+        let currentIndex = 0;
+        let timerInterval = null;
+        let timeLeftTask1 = 20 * 60;
+        let timeLeftTask2 = 40 * 60;
+        let timeLeft = timeLeftTask2;
+        let isTimerRunning = false;
+        let chartInstance = null;
+
+        let userDrafts = JSON.parse(localStorage.getItem('ieltsWritingDrafts')) || {};
+        let bookmarkedIds = JSON.parse(localStorage.getItem('ieltsBookmarks')) || [];
+        let userHistory = JSON.parse(localStorage.getItem('ieltsHistory')) || [];
+        let currentComparisonId = null;
+        let dailyChallengeIndex = -1;
+        let activeChallengeId = null;
+        let streakData = JSON.parse(localStorage.getItem('ieltsStreakData')) || { current: 0, longest: 0, lastCompleted: "" };
+
+        const quickTipsData = {
+            "Opinion": [
+                "Nêu rõ quan điểm (Agree/Disagree) ngay tại Mở bài.",
+                "Sử dụng cấu trúc 'While I acknowledge..., I believe...' để cân bằng luận điểm.",
+                "Mỗi thân bài nên có một Topic Sentence rõ ràng."
+            ],
+            "Discuss": [
+                "Phải thảo luận cả 2 mặt đề bài yêu cầu trước khi chốt quan điểm.",
+                "Sử dụng các cụm từ chuyển ý như 'On the other hand' hoặc 'In contrast'.",
+                "Đảm bảo dung lượng hai đoạn thân bài tương đương nhau."
+            ],
+            "Solution": [
+                "Cần có sự kết nối trực tiếp giữa Nguyên nhân và Giải pháp.",
+                "Giải pháp nên mang tính thực tế và có thể thực thi bởi chính phủ.",
+                "Sử dụng các modal verbs như 'should', 'could' một cách linh hoạt."
+            ],
+            "Line": [
+                "Tập trung vào các xu hướng (trends) thay vì liệt kê từng số liệu.",
+                "Sử dụng đa dạng động từ chỉ sự tăng/giảm (rocket, plummet, fluctuate).",
+                "Đừng quên phần Overview nêu bật xu hướng chung nhất."
+            ],
+            "default": [
+                "Dành 5 phút lập dàn ý để tránh bị lạc đề.",
+                "Luôn kiểm tra lại bài viết để soát lỗi mạo từ (a, an, the).",
+                "Sử dụng đa dạng các cấu trúc câu (đơn, ghép, phức)."
+            ]
+        };
+
+        async function init() {
+            // Check dark mode preference
+            if (localStorage.getItem('darkMode') === 'enabled' ||
+                (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+
+            try {
+                // Fetch Task 1 Academic Data
+                const resAc = await fetch('data/writing3ab_data.json');
+                if (resAc.ok) {
+                    const data = await resAc.json();
+                    task1DataAcademic = data.samples.map(s => ({
+                        id: 't1ac-' + s.id,
+                        topic: s.type + " - " + s.id,
+                        type: s.type,
+                        q: s.en.split('\n\n')[0],
+                        guide: "Bản dịch tham khảo: <br>" + (s.vi || ""),
+                        barem: "Dàn ý gợi ý sẽ được cập nhật sớm.",
+                        sample: s.en,
+                        vocab: []
+                    }));
+                }
+
+                // Fetch Task 1 GT Data
+                const resGt = await fetch('data/writing_gt_task1.json');
+                if (resGt.ok) {
+                    const data = await resGt.json();
+                    task1DataGT = data.samples.map(s => ({
+                        id: 't1gt-' + s.id,
+                        topic: s.topic,
+                        type: s.type,
+                        q: s.q,
+                        guide: "Gợi ý: Phân tích kỹ yêu cầu của thư (Formal/Informal) để sử dụng văn phong phù hợp.",
+                        barem: "Nội dung thư cần đảm bảo đủ 3 ý main points trong yêu cầu đề bài.",
+                        sample: s.sample,
+                        vocab: []
+                    }));
+                }
+
+                // Load 2020 Review Data via Hub Engine
+                const reviewRes = await IELTSPracticeHub.loadData('review2020');
+                if (reviewRes) {
+                    review2020Data = [];
+                    reviewRes.forEach(day => {
+                        day.tasks.forEach((task, idx) => {
+                            const taskType = task.header.toLowerCase().includes("task 1") ? "Task 1" : "Task 2";
+                            const taskTitle = task.header.split('\n')[0].replace(':', ' -');
+                            review2020Data.push({
+                                id: `r2020-${day.date}-${idx}`,
+                                topic: `[${day.date}] ${taskTitle}`,
+                                type: taskType,
+                                q: task.header,
+                                guide: task.analysis || "Gợi ý phân tích cho đề bài này đang được cập nhật.",
+                                barem: task.skeleton || "Dàn ý chi tiết cho đề bài này đang được cập nhật.",
+                                sample: task.sample,
+                                vocab: []
+                            });
+                        });
+                    });
+                }
+
+                // Initialize default Task 1 mode
+                task1Data = task1DataAcademic;
+            } catch (error) {
+                console.error("Failed to load data:", error);
+            }
+
+            // Default to Task 2 on first load
+            switchTask(2);
+            initResizer();
+
+            // Check for Daily Challenge
+            checkDailyChallenge();
+        }
+
+        function switchType(type) {
+            currentSType = type;
+            task1Data = (type === 'academic') ? task1DataAcademic : task1DataGT;
+
+            const btnAc = document.getElementById('btnAcademic');
+            const btnGt = document.getElementById('btnGT');
+            const toggleContainer = document.getElementById('typeToggleContainer');
+
+            if (type === 'academic') {
+                btnAc.classList.add('bg-white', 'text-emerald-600', 'shadow-sm');
+                btnAc.classList.remove('text-slate-500');
+                btnGt.classList.remove('bg-white', 'text-emerald-600', 'shadow-sm');
+                btnGt.classList.add('text-slate-500');
+                toggleContainer.classList.add('bg-emerald-50', 'border-emerald-100');
+                toggleContainer.classList.remove('bg-sky-50', 'border-sky-100');
+            } else {
+                btnGt.classList.add('bg-white', 'text-emerald-600', 'shadow-sm');
+                btnGt.classList.remove('text-slate-500');
+                btnAc.classList.remove('bg-white', 'text-emerald-600', 'shadow-sm');
+                btnAc.classList.add('text-slate-500');
+                toggleContainer.classList.add('bg-sky-50', 'border-sky-100');
+                toggleContainer.classList.remove('bg-emerald-50', 'border-emerald-100');
+            }
+
+            if (currentTask === 1) {
+                writingData = task1Data;
+                populateTopicSelector();
+                renderSlide(0);
+            }
+        }
+
+        function switchTask(taskNum) {
+            currentTask = taskNum;
+            const btn1 = document.getElementById('btnTask1');
+            const btn2 = document.getElementById('btnTask2');
+            const btn3 = document.getElementById('btnReview2020');
+            const title = document.getElementById('navTitle');
+            const target = document.getElementById('targetWordCount');
+            const typeToggle = document.getElementById('typeToggleContainer');
+
+            // Remove active classes
+            [btn1, btn2, btn3].forEach(btn => {
+                if (btn) btn.classList.remove('bg-white', 'text-brand', 'shadow-sm');
+                if (btn) btn.classList.add('text-slate-500');
+            });
+
+            if (taskNum === 1) {
+                writingData = task1Data;
+                btn1.classList.add('bg-white', 'text-brand', 'shadow-sm');
+                btn1.classList.remove('text-slate-500');
+                title.innerText = "IELTS Writing Task 1 Library";
+                target.innerHTML = '<i class="fas fa-check-circle text-emerald-500"></i> 150+ words';
+                timeLeft = 20 * 60;
+                typeToggle.classList.remove('hidden');
+            } else if (taskNum === 2) {
+                writingData = task2Data;
+                btn2.classList.add('bg-white', 'text-brand', 'shadow-sm');
+                btn2.classList.remove('text-slate-500');
+                title.innerText = "IELTS Writing Task 2 Library";
+                target.innerHTML = '<i class="fas fa-check-circle text-emerald-500"></i> 250+ words';
+                timeLeft = 40 * 60;
+                typeToggle.classList.add('hidden');
+            } else {
+                writingData = review2020Data;
+                btn3.classList.add('bg-white', 'text-brand', 'shadow-sm');
+                btn3.classList.remove('text-slate-500');
+                title.innerText = "IELTS Writing 2020 Review";
+                target.innerHTML = '<i class="fas fa-history text-amber-500"></i> Exam Repository';
+                timeLeft = 40 * 60;
+                typeToggle.classList.add('hidden');
+            }
+
+            populateTopicSelector();
+            renderSlide(0);
+            updateTimerDisplay();
+        }
+
+        function populateTopicSelector() {
+            const selector = document.getElementById('topicSelector');
+            selector.innerHTML = '';
+
+            // Tiện ích học tập
+            const utilitiesHTML = `
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-slate-800">Tiện ích học tập</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="Task_2.html" class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition border border-indigo-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-indigo-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="layout" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-indigo-900 mb-1">Dàn ý & Templates</h4>
+                                <p class="text-sm text-indigo-700/70">Bộ khung câu mẫu cho Writing Task 2.</p>
+                            </div>
+                        </a>
+                        <a href="part_1.html" class="flex items-start p-4 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition border border-emerald-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-emerald-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-900 mb-1">100 Lỗi sai Writing</h4>
+                                <p class="text-sm text-emerald-700/70">Các lỗi phổ biến cần tránh khi viết bài.</p>
+                            </div>
+                        </a>
+                        <a href="part_1.html#process-library" class="flex items-start p-4 bg-orange-50 rounded-xl hover:bg-orange-100 transition border border-orange-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-orange-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="git-merge" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-orange-900 mb-1">Quy trình &amp; Sơ đồ (Task 1)</h4>
+                                <p class="text-sm text-orange-700/70">Bài mẫu và cấu trúc mô tả Process/Map.</p>
+                            </div>
+                        </a>
+                        <a href="part_1.html#academic-words-library" class="flex items-start p-4 bg-violet-50 rounded-xl hover:bg-violet-100 transition border border-violet-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-violet-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="book-open" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-violet-900 mb-1">Từ vựng Học thuật ZIM (Task 1)</h4>
+                                <p class="text-sm text-violet-700/70">6 Units: Maps, Process, Table, Line, Pie, Bar.</p>
+                            </div>
+                        </a>
+                        <a href="Task_2.html" class="flex items-start p-4 bg-sky-50 rounded-xl hover:bg-sky-100 transition border border-sky-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-sky-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="lightbulb" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sky-900 mb-1">Kho Ý tưởng ZIM (Task 2)</h4>
+                                <p class="text-sm text-sky-700/70">15 Units chủ đề thiết yếu với brainstorming chi tiết.</p>
+                            </div>
+                        </a>
+                        <a href="Task_2.html" class="flex items-start p-4 bg-rose-50 rounded-xl hover:bg-rose-100 transition border border-rose-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-rose-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="crown" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-rose-900 mb-1">Phương pháp Simon (Task 2)</h4>
+                                <p class="text-sm text-rose-700/70">Cấu trúc 4 đoạn &amp; Hỏi đáp cùng cựu giám khảo.</p>
+                            </div>
+                        </a>
+                        <a href="part_1.html#zim-reviews" class="flex items-start p-4 bg-amber-50 rounded-xl hover:bg-amber-100 transition border border-amber-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-amber-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="award" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-amber-900 mb-1">Giải đề ZIM 2022-2023 (Task 1)</h4>
+                                <p class="text-sm text-amber-700/70">Phân tích chuyên sâu & vocabulary.</p>
+                            </div>
+                        </a>
+                        <!-- Since Task_2.html is an SPA style with JS view switching, we can't easily deep-link to '#zim-reviews' through href directly on first load without a router script, but we can set href to Task_2.html and let user click 'Giải đề ZIM' inside it. -->
+                        <a href="Task_2.html" class="flex items-start p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition border border-pink-100 group">
+                            <div class="p-3 bg-white rounded-lg shadow-sm text-pink-600 mr-4 group-hover:scale-110 transition">
+                                <i data-lucide="award" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-pink-900 mb-1">Giải đề ZIM 2022-2023 (Task 2)</h4>
+                                <p class="text-sm text-pink-700/70">Dàn bài và bài mẫu Band 7.0+.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            writingData.forEach((q, idx) => {
+                const opt = document.createElement('option');
+                opt.value = idx;
+                opt.text = q.topic;
+                selector.appendChild(opt);
+            });
+        }
+
+        // ==========================================
+        // 3. CORE LOGIC
+        // ==========================================
+        function renderSlide(index) {
+            if (writingData.length === 0) return;
+
+            saveCurrentDraft();
+            currentIndex = index;
+            const q = writingData[index];
+
+            document.getElementById('topicSelector').value = index;
+            document.getElementById('qTopicTitle').innerText = q.topic;
+            document.getElementById('qTypeBadge').innerText = q.type;
+            document.getElementById('qText').innerText = q.q;
+
+            // Handle Diagram
+            const diagramAcc = document.getElementById('ideaAcc');
+            if (q.diagram) {
+                diagramAcc.classList.remove('hidden');
+                document.getElementById('topicDiagramInAccordion').src = q.diagram;
+            } else {
+                diagramAcc.classList.add('hidden');
+            }
+
+            updateBookmarkUI();
+
+            // Handle Chart for Task 1
+            const chartBox = document.getElementById('chartContainer');
+            if (q.chartData || currentTask === 1) {
+                chartBox.classList.remove('hidden');
+                updateChart(q);
+            } else {
+                chartBox.classList.add('hidden');
+            }
+
+            document.getElementById('qGuide').innerHTML = q.guide;
+            document.getElementById('qSample').innerText = q.sample;
+
+            // Render Vocab
+            const vocabContainer = document.getElementById('qVocab');
+            vocabContainer.innerHTML = '';
+            if (q.vocab && q.vocab.length > 0) {
+                q.vocab.forEach(v => {
+                    const card = document.createElement('div');
+                    card.className = "flashcard-container";
+                    card.onclick = (e) => { e.currentTarget.classList.toggle('flipped'); };
+                    card.innerHTML = `
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <p class="text-brand font-bold text-lg">${v.word}</p>
+                                <p class="text-[10px] text-slate-400 mt-2 uppercase tracking-widest">Click to flip</p>
+                            </div>
+                            <div class="flashcard-back">
+                                <p class="text-slate-800 font-bold">${v.meaning}</p>
+                                <p class="text-xs text-slate-500 mt-3 italic leading-relaxed">Sử dụng trong bối cảnh học thuật Band 7.0+</p>
+                            </div>
+                        </div>`;
+                    vocabContainer.appendChild(card);
+                });
+            } else if (currentTask === 1) {
+                vocabContainer.innerHTML = '<p class="text-xs text-slate-400 italic">Sử dụng tài liệu Section A để tìm từ vựng phù hợp cho biểu đồ.</p>';
+            }
+
+            // Restore Draft
+            const textarea = document.getElementById('essayInput');
+            textarea.value = userDrafts[q.id] || "";
+            updateWordCount();
+
+            // Update Progress
+            const pct = ((index + 1) / writingData.length) * 100;
+            document.getElementById('progressBar').style.width = `${pct}%`;
+            document.getElementById('progressText').innerText = `${index + 1}/${writingData.length}`;
+
+            // Reset Accordions & Auto-expand Guide
+            document.querySelectorAll('.accordion-content').forEach(el => el.classList.remove('expanded'));
+            document.querySelectorAll('.fa-chevron-down').forEach(el => el.classList.remove('rotate-180'));
+            toggleAccordion('guideAcc');
+        }
+
+        function updateChart(q) {
+            const ctx = document.getElementById('task1Chart').getContext('2d');
+            if (chartInstance) chartInstance.destroy();
+
+            const isDarkMode = document.documentElement.classList.contains('dark');
+            const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.05)' : '#f1f5f9';
+            const textColor = isDarkMode ? '#94a3b8' : '#64748b';
+
+            let config;
+            if (q.chartData) {
+                config = q.chartData;
+            } else {
+                const isBar = q.type.toLowerCase().includes('bar');
+                const isPie = q.type.toLowerCase().includes('pie');
+
+                config = {
+                    type: isPie ? 'pie' : (isBar ? 'bar' : 'line'),
+                    data: {
+                        labels: ['2018', '2019', '2020', '2021'],
+                        datasets: [{
+                            label: 'Sample Data (%)',
+                            data: [25, 45, 15, 15],
+                            borderColor: '#0ea5e9',
+                            backgroundColor: isPie ? ['#0ea5e9', '#38bdf8', '#7dd3fc', '#bae6fd'] : 'rgba(14, 165, 233, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.4,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: isPie, labels: { color: textColor } }
+                        },
+                        scales: isPie ? {} : {
+                            y: { beginAtZero: true, grid: { color: gridColor }, ticks: { color: textColor } },
+                            x: { grid: { display: false }, ticks: { color: textColor } }
+                        }
+                    }
+                };
+            }
+
+            chartInstance = new Chart(ctx, config);
+        }
+
+        function exportToPDF() {
+            const q = writingData[currentIndex];
+            const essay = document.getElementById('essayInput').value;
+            const wordCount = document.getElementById('wordCountDisplay').innerText;
+            const timeSpent = document.getElementById('modalTimeSpent').innerText;
+
+            // Tạo container tạm thời để dàn trang PDF
+            const element = document.createElement('div');
+            element.className = "p-10 font-serif text-slate-900";
+            element.innerHTML = `
+                <div style="border-bottom: 3px solid #0ea5e9; padding-bottom: 20px; margin-bottom: 30px;">
+                    <h1 style="font-size: 28px; font-weight: bold; color: #0ea5e9; margin: 0;">IELTS WRITING REPORT</h1>
+                    <p style="font-size: 14px; color: #64748b; margin-top: 5px;">Hệ thống Luyện tập Writing Chuyên nghiệp</p>
+                </div>
+                <div style="margin-bottom: 25px;">
+                    <h2 style="font-size: 18px; font-weight: bold; color: #1e293b;">ĐỀ BÀI:</h2>
+                    <p style="font-size: 15px; background: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; font-style: italic;">"${q.q}"</p>
+                </div>
+                <div style="display: flex; gap: 40px; margin-bottom: 25px; font-size: 14px; font-weight: bold; color: #0369a1;">
+                    <span>SỐ TỪ: ${wordCount} WORDS</span>
+                    <span>THỜI GIAN: ${timeSpent}</span>
+                    <span>DẠNG BÀI: ${q.type}</span>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-size: 18px; font-weight: bold; color: #1e293b; margin-bottom: 10px;">BÀI LÀM CỦA BẠN:</h2>
+                    <div style="font-size: 16px; line-height: 1.8; color: #334155; white-space: pre-wrap; padding: 20px; border-left: 4px solid #cbd5e1;">${essay}</div>
+                </div>
+                <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 20px; font-size: 12px; color: #94a3b8;">
+                    Tài liệu được xuất bản từ IELTS Writing Library - Professional EdTech Platform
+                </div>
+            `;
+
+            const opt = {
+                margin: 10,
+                filename: `IELTS_Writing_${q.id || 'Practice'}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save();
+            showToast("Đang khởi tạo tệp PDF...");
+        }
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+            // Redraw chart to update colors
+            if (writingData[currentIndex]) updateChart(writingData[currentIndex]);
+        }
+
+        function toggleAccordion(id) {
+            const content = document.getElementById(`${id}-content`);
+            const icon = document.getElementById(`${id}-icon`);
+
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                icon.classList.remove('rotate-180');
+            } else {
+                // Close others (optional, but good for cleanliness)
+                document.querySelectorAll('.accordion-content').forEach(el => el.classList.remove('expanded'));
+                document.querySelectorAll('.fa-chevron-down').forEach(el => el.classList.remove('rotate-180'));
+
+                content.classList.add('expanded');
+                icon.classList.add('rotate-180');
+            }
+        }
+
+        function changeTopic(dir) {
+            let newIndex = currentIndex + dir;
+            if (newIndex >= 0 && newIndex < writingData.length) {
+                renderSlide(newIndex);
+            }
+        }
+
+        function jumpToQuestion(idx) {
+            renderSlide(parseInt(idx));
+        }
+
+        // ==========================================
+        // 4. TEXTAREA & WORD COUNT LOGIC
+        // ==========================================
+        let saveTimeout;
+        function handleInput() {
+            updateWordCount();
+
+            // Auto-save logic (debounce)
+            const status = document.getElementById('saveStatus');
+            status.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang lưu...';
+
+            clearTimeout(saveTimeout);
+            saveTimeout = setTimeout(() => {
+                saveCurrentDraft();
+                status.innerHTML = '<i class="fas fa-cloud-check text-emerald-500"></i> Đã lưu nháp tự động';
+            }, 1000);
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+
+            const bgColor = type === 'success' ? 'bg-slate-900' : 'bg-rose-600';
+            const icon = type === 'success' ? 'fa-check-circle text-emerald-400' : 'fa-exclamation-triangle';
+
+            toast.className = `pointer-events-auto flex items-center gap-3 px-5 py-4 rounded-2xl shadow-2xl text-white font-medium min-w-[280px] transition-all duration-500 toast-enter`;
+            toast.classList.add(bgColor);
+
+            toast.innerHTML = `
+                <i class="fas ${icon} text-lg"></i>
+                <span class="flex-grow">${message}</span>
+            `;
+
+            container.appendChild(toast);
+
+            // Trigger animation
+            setTimeout(() => toast.classList.replace('toast-enter', 'toast-active'), 10);
+
+            // Remove after 3s
+            setTimeout(() => {
+                toast.classList.replace('toast-active', 'toast-exit');
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
+
+        function saveManual() {
+            saveCurrentDraft();
+            showToast("Đã lưu bản nháp thành công!");
+        }
+
+        function submitEssay() {
+            const wordCount = document.getElementById('wordCountDisplay').innerText;
+            const essayText = document.getElementById('essayInput').value;
+            const initialTime = currentTask === 1 ? 20 * 60 : 40 * 60;
+            const timeSpentSec = initialTime - timeLeft;
+
+            const mins = Math.floor(timeSpentSec / 60).toString().padStart(2, '0');
+            const secs = (timeSpentSec % 60).toString().padStart(2, '0');
+
+            if (wordCount < 100) {
+                showToast("Bài viết quá ngắn để nộp. Hãy viết thêm nhé!", "error");
+            } else {
+                // Streak Update Logic
+                if (activeChallengeId && writingData[currentIndex].id === activeChallengeId) {
+                    const today = new Date().toDateString();
+                    if (streakData.lastCompleted !== today) {
+                        const yesterday = new Date();
+                        yesterday.setDate(yesterday.getDate() - 1);
+                        const yesterdayStr = yesterday.toDateString();
+
+                        if (streakData.lastCompleted === yesterdayStr) {
+                            streakData.current++;
+                        } else {
+                            streakData.current = 1;
+                        }
+
+                        if (streakData.current > streakData.longest) {
+                            streakData.longest = streakData.current;
+                        }
+
+                        streakData.lastCompleted = today;
+                        localStorage.setItem('ieltsStreakData', JSON.stringify(streakData));
+                        showToast(`Tuyệt vời! Bạn đã đạt chuỗi ${streakData.current} ngày luyện tập!`, 'success');
+                    }
+                    activeChallengeId = null;
+                }
+
+                // Stop timer
+                if (isTimerRunning) toggleTimer();
+
+                // Ask for self-score
+                const score = prompt("Bạn tự đánh giá bài viết này bao nhiêu điểm? (ví dụ: 6.5)", "6.0");
+
+                // Save to history
+                const historyEntry = {
+                    id: Date.now(),
+                    topicId: writingData[currentIndex].id,
+                    topicTitle: writingData[currentIndex].topic,
+                    wordCount: wordCount,
+                    timeSpent: `${mins}:${secs}`,
+                    score: score || "N/A",
+                    date: new Date().toLocaleDateString('vi-VN'),
+                    essay: essayText
+                };
+                userHistory.unshift(historyEntry);
+                localStorage.setItem('ieltsHistory', JSON.stringify(userHistory));
+
+                // Populate and show Modal
+                document.getElementById('modalWordCount').innerText = wordCount;
+                document.getElementById('modalTimeSpent').innerText = `${mins}:${secs}`;
+
+                const modal = document.getElementById('resultModal');
+                modal.classList.replace('hidden', 'flex');
+
+                // Trigger Confetti effect
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#0ea5e9', '#38bdf8', '#0284c7', '#ffffff'],
+                    zIndex: 200
+                });
+            }
+        }
+
+        function updateWordCount() {
+            const text = document.getElementById('essayInput').value.trim();
+            const words = text ? text.split(/\s+/).length : 0;
+            const display = document.getElementById('wordCountDisplay');
+
+            display.innerText = words;
+
+            // Highlight based on IELTS requirement (250 words)
+            if (words >= 250) {
+                display.className = "text-emerald-600 font-bold";
+            } else if (words > 0) {
+                display.className = "text-amber-500 font-bold";
+            } else {
+                display.className = "text-rose-500 font-bold";
+            }
+        }
+
+        function toggleBookmark() {
+            const currentId = writingData[currentIndex].id;
+            const index = bookmarkedIds.indexOf(currentId);
+
+            if (index === -1) {
+                bookmarkedIds.push(currentId);
+                showToast("Đã lưu đề bài vào mục yêu thích");
+            } else {
+                bookmarkedIds.splice(index, 1);
+                showToast("Đã xóa khỏi mục yêu thích", "info");
+            }
+
+            localStorage.setItem('ieltsBookmarks', JSON.stringify(bookmarkedIds));
+            updateBookmarkUI();
+        }
+
+        function showStats(timeFilter = 'all') {
+            // Update filter UI
+            const filterButtons = ['all', 'week', 'month'];
+            filterButtons.forEach(f => {
+                const btn = document.getElementById(`statFilter-${f}`);
+                if (f === timeFilter) {
+                    btn.className = "px-4 py-1.5 text-xs font-bold rounded-lg transition-all bg-white dark:bg-slate-700 shadow-sm text-brand";
+                } else {
+                    btn.className = "px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500";
+                }
+            });
+
+            const now = Date.now();
+            const msPerDay = 24 * 60 * 60 * 1000;
+
+            const filteredHistory = userHistory.filter(item => {
+                if (timeFilter === 'week') return item.id > now - (7 * msPerDay);
+                if (timeFilter === 'month') return item.id > now - (30 * msPerDay);
+                return true;
+            });
+
+            let totalWords = 0;
+            let totalSentences = 0;
+            let completedCount = 0;
+            const typeStats = {};
+
+            // Calculate from filtered history
+            filteredHistory.forEach(item => {
+                const words = parseInt(item.wordCount) || 0;
+                const sentences = (item.essay || "").split(/[.!?]+/).filter(s => s.trim().length > 0).length;
+                totalWords += words;
+                totalSentences += sentences;
+                if (words >= 150) completedCount++;
+            });
+
+            // Process type stats from ALL available questions
+            const allQuestions = [...task2Data, ...task1DataAcademic, ...task1DataGT, ...review2020Data];
+            allQuestions.forEach(q => {
+                if (!typeStats[q.type]) typeStats[q.type] = { total: 0, done: 0 };
+                typeStats[q.type].total++;
+                // Check if this question exists in filtered history
+                if (filteredHistory.some(h => h.topicId === q.id && parseInt(h.wordCount) >= 150)) {
+                    typeStats[q.type].done++;
+                }
+            });
+
+            document.getElementById('statsTotalTasks').innerText = filteredHistory.length;
+            document.getElementById('statsTotalWords').innerText = totalWords.toLocaleString();
+            document.getElementById('statsCompletedTasks').innerText = completedCount;
+            document.getElementById('statsAvgSentLength').innerText = filteredHistory.length ? (totalWords / Math.max(1, totalSentences)).toFixed(1) : 0;
+            document.getElementById('statsAvgSentCount').innerText = filteredHistory.length ? (totalSentences / filteredHistory.length).toFixed(1) : 0;
+            document.getElementById('statsCurrentStreak').innerText = streakData.current;
+
+            // Render History
+            const historyContainer = document.getElementById('statsHistory');
+            historyContainer.innerHTML = filteredHistory.length ? '' : '<p class="text-slate-400 italic text-sm">Không có dữ liệu trong khoảng thời gian này.</p>';
+            filteredHistory.slice(0, 10).forEach(item => {
+                const hasNote = item.notes && item.notes.trim().length > 0;
+                historyContainer.innerHTML += `
+                    <div class="bg-slate-50 dark:bg-slate-800/30 p-4 rounded-xl flex justify-between items-center border border-slate-100 dark:border-slate-800">
+                        <div class="min-w-0 flex-1 pr-4">
+                            <p class="text-[10px] text-slate-400 font-bold uppercase">${item.date}</p>
+                            <p class="text-sm font-bold text-slate-700 dark:text-slate-200 truncate">${item.topicTitle}</p>
+                        </div>
+                        <div class="flex items-center gap-2 shrink-0">
+                            ${hasNote ? '<i class="fas fa-sticky-note text-indigo-400 text-xs" title="Đã có ghi chú"></i>' : ''}
+                            <span class="px-2 py-1 bg-brand/10 text-brand text-xs font-black rounded-lg">Band ${item.score}</span>
+                            <button onclick="showComparison(${item.id})" class="w-8 h-8 rounded-lg bg-white dark:bg-slate-700 border dark:border-slate-600 text-slate-400 hover:text-brand transition-colors flex items-center justify-center shadow-sm" title="So sánh với bài mẫu">
+                                <i class="fas fa-columns"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            const container = document.getElementById('statsByType');
+            container.innerHTML = '';
+            Object.keys(typeStats).forEach(type => {
+                const s = typeStats[type];
+                if (s.total > 0) {
+                    const pct = Math.round((s.done / s.total) * 100);
+                    container.innerHTML += `
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-[11px] font-bold uppercase tracking-tight">
+                                <span class="text-slate-500 dark:text-slate-400 truncate pr-2">${type}</span>
+                                <span class="text-brand">${s.done}/${s.total}</span>
+                            </div>
+                            <div class="w-full h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-brand transition-all duration-1000" style="width: ${pct}%"></div>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+
+            const modal = document.getElementById('statsModal');
+            modal.classList.replace('hidden', 'flex');
+        }
+
+        function showComparison(historyId) {
+            currentComparisonId = historyId;
+            const entry = userHistory.find(h => h.id === historyId);
+            if (!entry) return;
+
+            const allData = [...task2Data, ...task1DataAcademic, ...task1DataGT, ...review2020Data];
+            const question = allData.find(q => q.id === entry.topicId);
+
+            document.getElementById('compareTitle').innerText = entry.topicTitle;
+
+            // Highlight linking words in user essay
+            let essayHtml = highlightLinkingWords(entry.essay || "");
+            document.getElementById('compareUserEssay').innerHTML = detectOverusedWords(essayHtml);
+
+            // Highlight vocabulary in sample
+            if (question && question.sample) {
+                document.getElementById('compareSample').innerHTML = highlightVocab(question.sample, question.vocab);
+            } else {
+                document.getElementById('compareSample').innerText = "Không tìm thấy bài mẫu cho đề bài này.";
+            }
+
+            // Load notes
+            document.getElementById('compareNote').value = entry.notes || "";
+
+            const modal = document.getElementById('compareModal');
+            modal.classList.replace('hidden', 'flex');
+        }
+
+        function highlightLinkingWords(text) {
+            if (!text) return "Nội dung bài viết không khả dụng.";
+            const connectors = [
+                "However", "Therefore", "Furthermore", "Moreover", "In addition", "Additionally",
+                "On the other hand", "In contrast", "Conversely", "Firstly", "Secondly", "Thirdly",
+                "Finally", "In conclusion", "To sum up", "Consequently", "As a result", "Nevertheless",
+                "Nonetheless", "Admittedly", "On the contrary", "For example", "For instance",
+                "Specifically", "In other words", "Notably", "Significantly"
+            ];
+
+            let highlightedText = text.replace(/\n/g, '<br>'); // Preserve line breaks
+
+            // Sort by length to avoid partial matches
+            const sortedConnectors = [...connectors].sort((a, b) => b.length - a.length);
+
+            sortedConnectors.forEach(word => {
+                const regex = new RegExp(`\\b${word}\\b`, 'gi');
+                highlightedText = highlightedText.replace(regex, (match) => {
+                    return `<span class="bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 font-bold px-1 rounded border-b-2 border-indigo-400" title="Linking Word">${match}</span>`;
+                });
+            });
+            return highlightedText;
+        }
+
+        function detectOverusedWords(text) {
+            if (!text) return "";
+            // Danh sách các từ thường bị lạm dụng hoặc quá đơn giản trong IELTS
+            const overused = [
+                "very", "good", "bad", "thing", "really", "get", "got", "so", "lot", "nice",
+                "basically", "actually", "big", "small", "happy", "sad", "important"
+            ];
+
+            let highlightedText = text;
+            overused.forEach(word => {
+                // Chỉ highlight nếu là từ đứng độc lập và không nằm trong tag HTML đã có
+                const regex = new RegExp(`\\b(${word})\\b(?![^<]*>)`, 'gi');
+                highlightedText = highlightedText.replace(regex, (match) => {
+                    return `<span class="bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 font-bold px-1 rounded border-b-2 border-rose-400 cursor-help" title="Từ này quá phổ thông, hãy thử dùng từ chuyên sâu hơn (VD: crucial thay vì important)">${match}</span>`;
+                });
+            });
+            return highlightedText;
+        }
+
+        function rewriteEssay() {
+            if (!currentComparisonId) return;
+            const entry = userHistory.find(h => h.id === currentComparisonId);
+            if (!entry) return;
+
+            if (confirm("Bạn có muốn xóa nội dung hiện tại để viết lại bài luận này từ đầu không?")) {
+                // Find the question in writingData
+                const qIndex = writingData.findIndex(q => q.id === entry.topicId);
+                if (qIndex !== -1) {
+                    renderSlide(qIndex);
+                    document.getElementById('essayInput').value = "";
+                    handleInput();
+                    document.getElementById('compareModal').classList.replace('flex', 'hidden');
+                    document.getElementById('essayInput').focus();
+                    showToast("Sẵn sàng luyện tập lại!");
+                } else {
+                    showToast("Không tìm thấy đề bài trong danh sách hiện tại.", "error");
+                }
+            }
+        }
+
+        function checkDailyChallenge() {
+            const lastDate = localStorage.getItem('lastDailyChallengeDate');
+            const today = new Date().toDateString();
+
+            if (lastDate !== today) {
+                // Pick random from Task 2 data
+                dailyChallengeIndex = Math.floor(Math.random() * task2Data.length);
+                const q = task2Data[dailyChallengeIndex];
+
+                document.getElementById('dailyChallengeTopic').innerText = q.topic;
+                document.getElementById('dailyChallengeType').innerText = q.type;
+
+                // Pick random tip based on type
+                let tipType = "default";
+                const t = q.type.toLowerCase();
+                if (t.includes("opinion") || t.includes("agree")) tipType = "Opinion";
+                else if (t.includes("discuss")) tipType = "Discuss";
+                else if (t.includes("solution") || t.includes("effects")) tipType = "Solution";
+                else if (t.includes("line")) tipType = "Line";
+
+                const tips = quickTipsData[tipType] || quickTipsData["default"];
+                const randomTip = tips[Math.floor(Math.random() * tips.length)];
+                document.getElementById('dailyChallengeTip').innerText = randomTip;
+
+                setTimeout(() => {
+                    document.getElementById('dailyChallengeModal').classList.replace('hidden', 'flex');
+                }, 1000);
+            }
+        }
+
+        function startDailyChallenge() {
+            if (dailyChallengeIndex !== -1) {
+                activeChallengeId = task2Data[dailyChallengeIndex].id;
+                switchTask(2);
+                renderSlide(dailyChallengeIndex);
+                closeDailyChallenge();
+                // Start timer immediately
+                if (!isTimerRunning) toggleTimer();
+                showToast("Thử thách bắt đầu! Chúc bạn làm bài tốt.");
+                // Mark as shown today
+                localStorage.setItem('lastDailyChallengeDate', new Date().toDateString());
+            }
+        }
+
+        function closeDailyChallenge() {
+            document.getElementById('dailyChallengeModal').classList.replace('flex', 'hidden');
+        }
+
+        function highlightVocab(text, vocabList) {
+            if (!vocabList || vocabList.length === 0) return text;
+            let highlightedText = text;
+            // Sắp xếp từ dài trước để tránh việc highlight đè lên nhau (ví dụ: 'pivotal role' trước 'role')
+            const sortedVocab = [...vocabList].sort((a, b) => b.word.length - a.word.length);
+
+            sortedVocab.forEach(v => {
+                const regex = new RegExp(`\\b${v.word}\\b`, 'gi');
+                highlightedText = highlightedText.replace(regex, (match) => {
+                    return `<span class="bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 font-bold px-1 rounded border-b-2 border-amber-400 cursor-help" title="${v.meaning}">${match}</span>`;
+                });
+            });
+            return highlightedText;
+        }
+
+        function saveNote() {
+            if (!currentComparisonId) return;
+            const noteText = document.getElementById('compareNote').value;
+            const entryIndex = userHistory.findIndex(h => h.id === currentComparisonId);
+            if (entryIndex !== -1) {
+                userHistory[entryIndex].notes = noteText;
+                localStorage.setItem('ieltsHistory', JSON.stringify(userHistory));
+                showToast("Đã lưu ghi chú thành công!");
+                showStats(document.querySelector('[id^="statFilter-"].text-brand').id.split('-')[1]); // Refresh stats to show icon
+            }
+        }
+
+        function showImageGallery(src) {
+            const modal = document.getElementById('imageGalleryModal');
+            const img = document.getElementById('galleryImage');
+            img.src = src;
+            img.classList.remove('zoomed');
+            modal.classList.replace('hidden', 'flex');
+        }
+
+        function closeImageGallery() {
+            document.getElementById('imageGalleryModal').classList.replace('flex', 'hidden');
+        }
+
+        function toggleGalleryZoom(e) {
+            e.stopPropagation();
+            e.target.classList.toggle('zoomed');
+        }
+
+        function updateBookmarkUI() {
+            const currentId = writingData[currentIndex].id;
+            const isBookmarked = bookmarkedIds.includes(currentId);
+            const btn = document.getElementById('bookmarkBtn');
+            btn.innerHTML = isBookmarked ? '<i class="fas fa-star text-xl"></i>' : '<i class="far fa-star text-xl"></i>';
+            btn.className = isBookmarked ? 'text-amber-500 transition-all p-1' : 'text-slate-400 hover:text-amber-500 transition-all p-1';
+        }
+
+        function saveCurrentDraft() {
+            const text = document.getElementById('essayInput').value;
+            const qId = writingData[currentIndex].id;
+            userDrafts[qId] = text;
+            localStorage.setItem('ieltsWritingDrafts', JSON.stringify(userDrafts));
+        }
+
+        function clearText() {
+            if (confirm("Bạn có chắc chắn muốn xóa toàn bộ bài viết hiện tại? Hành động này không thể hoàn tác.")) {
+                document.getElementById('essayInput').value = "";
+                handleInput();
+            }
+        }
+
+        function applyBarem() {
+            const textarea = document.getElementById('essayInput');
+            const barem = writingData[currentIndex].barem;
+
+            if (textarea.value.trim() !== "") {
+                if (!confirm("Khung viết hiện đang có nội dung. Chèn dàn ý sẽ nối thêm vào cuối bài. Tiếp tục?")) return;
+                textarea.value += "\n\n" + barem;
+            } else {
+                textarea.value = barem;
+            }
+            handleInput();
+            textarea.focus();
+        }
+
+        // ==========================================
+        // 5. TIMER LOGIC
+        // ==========================================
+        function updateTimerDisplay() {
+            const m = Math.floor(timeLeft / 60).toString().padStart(2, '0');
+            const s = (timeLeft % 60).toString().padStart(2, '0');
+            document.getElementById('timerDisplay').innerText = `${m}:${s}`;
+        }
+
+        function toggleTimer() {
+            const icon = document.getElementById('timerIcon');
+            if (isTimerRunning) {
+                clearInterval(timerInterval);
+                icon.classList.replace('fa-pause', 'fa-play');
+                isTimerRunning = false;
+            } else {
+                timerInterval = setInterval(() => {
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                        updateTimerDisplay();
+                    } else {
+                        clearInterval(timerInterval);
+                        alert("Hết giờ làm bài (40 phút)!");
+                        icon.classList.replace('fa-pause', 'fa-play');
+                        isTimerRunning = false;
+                    }
+                }, 1000);
+                icon.classList.replace('fa-play', 'fa-pause');
+                isTimerRunning = true;
+            }
+        }
+
+        // ==========================================
+        // 6. RESIZER LOGIC
+        // ==========================================
+        function initResizer() {
+            const handle = document.getElementById('colResizeHandle');
+            const leftCol = document.getElementById('leftCol');
+            if (!handle || !leftCol) return;
+
+            let startX = 0;
+            let startWidth = 0;
+            let isDragging = false;
+
+            handle.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                startX = e.clientX;
+                startWidth = leftCol.offsetWidth;
+                handle.classList.add('dragging');
+                document.body.style.cursor = 'col-resize';
+                document.body.style.userSelect = 'none';
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const delta = e.clientX - startX;
+                // Min width 300px, Max width 800px
+                const newWidth = Math.min(800, Math.max(300, startWidth + delta));
+                leftCol.style.width = newWidth + 'px';
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (!isDragging) return;
+                isDragging = false;
+                handle.classList.remove('dragging');
+                document.body.style.cursor = '';
+                document.body.style.userSelect = '';
+            });
+        }
+
+        // Run on load
+        window.onload = init;
+
+    </script>
+</body>
+
+</html>

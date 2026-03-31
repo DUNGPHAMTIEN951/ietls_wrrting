@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="vi" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 Practice — IELTS Writing Mastery</title>
+  <meta name="description" content="Phòng thi ảo IELTS Writing Task 2 — editor với timer, word count, dàn ý tự động và so sánh bài mẫu.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/sentence_engine.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans:    ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+            editor:  ['Merriweather', 'serif'],
+          },
+          colors: {
+            brand:     '#0ea5e9',
+            accent:    '#0284c7',
+            highlight: '#38bdf8',
+            paper:     '#f0f9ff',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    /* Reuse glass-panel from main.css */
+    #colResizeHandle {
+      width:8px; min-width:8px; cursor:col-resize;
+      display:flex; align-items:center; justify-content:center;
+      position:relative; z-index:10; flex-shrink:0;
+      border-radius:4px; transition:background .15s;
+    }
+    #colResizeHandle:hover, #colResizeHandle.dragging { background:rgba(14,165,233,.2); }
+    #colResizeHandle::after {
+      content:''; display:block; width:2px; height:40px;
+      background:repeating-linear-gradient(to bottom,#7dd3fc 0,#7dd3fc 4px,transparent 4px,transparent 8px);
+      border-radius:2px;
+    }
+    .sample-answer { background:#f8fafc; border-left:4px solid #0ea5e9; padding:1.2rem; margin:1rem 0; border-radius:0 .5rem .5rem 0; color:#334155; font-size:.95rem; line-height:1.7; }
+    .filter-chip { transition:all .2s; }
+    .filter-chip.active { background-color:#0ea5e9; color:#fff; border-color:#0ea5e9; }
+    #bookmarkBtn.active i { color:#f59e0b; }
+    .stats-card { transition:all .3s cubic-bezier(.4,0,.2,1); }
+    .dark body { background:linear-gradient(135deg,#0f172a 0%,#020617 100%); }
+    .dark .glass-panel { background:rgba(15,23,42,.9); border:1px solid rgba(255,255,255,.1); box-shadow:0 8px 32px rgba(0,0,0,.3); }
+  </style>
+</head>
+
+<body class="flex flex-col h-screen text-slate-800 dark:text-slate-200 relative transition-colors duration-300">
+
+  <!-- Navbar -->
+  <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
+    <div class="flex items-center gap-3">
+      <!-- Breadcrumb -->
+      <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-brand transition-colors text-sm font-medium">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">Hub</span>
+      </a>
+      <span class="text-slate-300 text-sm">/</span>
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center">
+          <i data-lucide="pen-tool" class="text-white w-4 h-4"></i>
+        </div>
+        <div>
+          <h1 id="navTitle" class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Task 2 Practice</h1>
+          <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Virtual Exam Room</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-2 md:gap-4">
+      <button onclick="showStats()"
+        class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center transition-all hover:bg-indigo-100"
+        title="Thống kê học tập">
+        <i data-lucide="pie-chart" class="w-5 h-5"></i>
+      </button>
+      <button onclick="toggleDarkMode()"
+        class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+        <i data-lucide="moon" class="w-5 h-5"></i>
+      </button>
+      <div class="text-right hidden md:block">
+        <p class="text-xs text-slate-500 font-bold uppercase dark:text-slate-400">Target</p>
+        <p id="targetWordCount" class="text-sm font-bold text-slate-800 dark:text-slate-200">
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 inline mr-1"></i> 250+ words
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex flex-col p-2 md:p-4 overflow-hidden relative">
+    <!-- Decorative blobs -->
+    <div class="absolute top-20 left-10 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse pointer-events-none"></div>
+    <div class="absolute bottom-20 right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse pointer-events-none" style="animation-delay:2s"></div>
+
+    <!-- Filter & Progress Bar -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4 z-10 px-2 gap-4">
+      <div class="flex flex-wrap items-center gap-2">
+        <select id="topicSelector" onchange="jumpToQuestion(this.value)"
+          class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm font-bold rounded-xl p-2.5 shadow-sm cursor-pointer outline-none focus:ring-2 focus:ring-brand">
+        </select>
+        <div id="typeFilters" class="flex gap-2 ml-2 overflow-x-auto pb-1 md:pb-0">
+          <button onclick="filterByType('all')"        class="filter-chip active px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Tất cả</button>
+          <button onclick="filterByType('Opinion')"    class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Opinion</button>
+          <button onclick="filterByType('Discussion')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Discussion</button>
+          <button onclick="filterByType('bookmarked')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">
+            <i class="fas fa-star text-amber-500 mr-1"></i> Đã lưu
+          </button>
+        </div>
+      </div>
+
+      <div class="flex items-center flex-grow max-w-md hidden md:flex">
+        <span class="text-xs font-bold text-slate-500 uppercase whitespace-nowrap">Tiến độ</span>
+        <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full mx-3 overflow-hidden">
+          <div id="progressBar" class="h-full bg-brand transition-all duration-500" style="width:0%"></div>
+        </div>
+        <span id="progressText" class="text-xs font-bold text-brand whitespace-nowrap">0/0</span>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         SPLIT SCREEN
+    ================================================================ -->
+    <div class="flex flex-col md:flex-row gap-4 flex-grow overflow-hidden h-full z-10">
+
+      <!-- LEFT COLUMN: Question & Guide -->
+      <div id="leftCol" style="width:450px;min-width:300px;max-width:800px;"
+        class="shrink-0 glass-panel rounded-2xl flex flex-col overflow-hidden border-t-4 border-t-accent shadow-sm dark:bg-slate-900/40">
+
+        <!-- Topic Header -->
+        <div class="p-4 bg-white/60 dark:bg-slate-900/60 border-b border-slate-100 dark:border-slate-800">
+          <div class="flex justify-between items-center mb-2">
+            <span id="qTypeBadge" class="px-2 py-1 bg-sky-100 text-brand text-[10px] font-bold rounded uppercase tracking-wider">Task 2</span>
+            <button onclick="toggleBookmark()" id="bookmarkBtn" class="text-slate-400 hover:text-amber-500 transition-all p-1" title="Lưu đề bài">
+              <i class="far fa-star text-xl"></i>
+            </button>
+          </div>
+          <h2 id="qTopicTitle" class="text-lg font-heading font-bold text-slate-800 dark:text-slate-100 mb-3">Đang tải đề bài...</h2>
+
+          <!-- Diagram / Chart -->
+          <div id="diagramContainer" class="hidden mb-4 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all">
+            <img id="topicDiagram" src="" alt="Topic Diagram" class="w-full h-auto transition-transform duration-500 cursor-zoom-in" onclick="showImageGallery(this.src)">
+            <div class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">Click để phóng to</div>
+          </div>
+          <div id="chartContainer" class="hidden mb-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm aspect-video">
+            <canvas id="task1Chart"></canvas>
+          </div>
+
+          <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700 relative">
+            <i class="fas fa-quote-left absolute top-2 text-slate-200 text-2xl"></i>
+            <p id="qText" class="text-slate-700 dark:text-slate-300 font-medium leading-relaxed relative z-10 pl-6 text-[15px]">Đang tải...</p>
+          </div>
+        </div>
+
+        <!-- Scrollable Resources -->
+        <div class="p-4 overflow-y-auto custom-scroll flex-grow space-y-3 bg-slate-50/50 dark:bg-slate-950/20">
+
+          <!-- Accordion 0: Infographics -->
+          <div id="ideaAcc" class="hidden bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-xl overflow-hidden shadow-sm">
+            <button onclick="toggleAccordion('ideaAcc')"
+              class="w-full px-4 py-3 text-left bg-indigo-50/50 dark:bg-indigo-900/20 hover:bg-indigo-100/50 flex justify-between items-center transition-colors font-bold text-indigo-700 dark:text-indigo-400">
+              <span class="flex items-center gap-2"><i class="fas fa-lightbulb"></i> Kho Ý tưởng ZIM</span>
+              <i id="ideaAcc-icon" class="fas fa-chevron-down text-indigo-400 transition-transform duration-300"></i>
+            </button>
+            <div id="ideaAcc-content" class="accordion-content px-4 bg-white dark:bg-slate-900 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              <div class="py-4">
+                <p class="mb-3 font-medium text-slate-500 italic">Sơ đồ phân tích các khía cạnh của chủ đề:</p>
+                <img id="topicDiagramInAccordion" src="" class="w-full rounded-lg border dark:border-slate-800 shadow-sm cursor-zoom-in" alt="Infographic" onclick="showImageGallery(this.src)">
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 1: Hướng dẫn -->
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+            <button onclick="toggleAccordion('guideAcc')"
+              class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
+              <span class="flex items-center gap-2"><i class="fas fa-lightbulb text-amber-500"></i> Hướng dẫn làm bài</span>
+              <i id="guideAcc-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div id="guideAcc-content" class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800">
+              <div id="qGuide" class="py-3">Đang tải...</div>
+            </div>
+          </div>
+
+          <!-- Accordion 2: Từ vựng -->
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+            <button onclick="toggleAccordion('vocabAcc')"
+              class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
+              <span class="flex items-center gap-2"><i class="fas fa-spell-check text-emerald-500"></i> Từ vựng tham khảo</span>
+              <i id="vocabAcc-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div id="vocabAcc-content" class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
+              <div id="qVocab" class="py-4 grid grid-cols-1 gap-4"></div>
+            </div>
+          </div>
+
+          <!-- Accordion 3: Bài mẫu -->
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+            <button onclick="toggleAccordion('sampleAcc')"
+              class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
+              <span class="flex items-center gap-2"><i class="fas fa-file-alt text-brand"></i> Bài mẫu (Sample Answer)</span>
+              <i id="sampleAcc-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+            </button>
+            <div id="sampleAcc-content" class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
+              <div class="py-3">
+                <div class="bg-blue-50 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 text-xs p-2 rounded mb-3 flex items-start gap-2 border border-blue-100 dark:border-blue-800">
+                  <i class="fas fa-info-circle mt-0.5"></i> Hãy tự viết trước khi xem bài mẫu.
+                </div>
+                <div id="qSample" class="text-[14px] text-slate-700 dark:text-slate-300 leading-loose whitespace-pre-line pb-2">Đang tải...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resize Handle -->
+      <div id="colResizeHandle" class="hidden md:flex" title="Kéo để thay đổi kích thước"></div>
+
+      <!-- RIGHT COLUMN: Writing Area -->
+      <div class="flex-1 h-full glass-panel rounded-2xl flex flex-col border-t-4 border-t-slate-900 shadow-md relative overflow-hidden bg-white dark:bg-slate-900">
+
+        <!-- Toolbar -->
+        <div class="flex flex-wrap items-center justify-between px-4 py-3 border-b border-slate-100 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md gap-2">
+          <div class="flex items-center gap-2">
+            <button onclick="applyBarem()"
+              class="px-3 py-1.5 bg-brand text-white text-xs font-bold rounded flex items-center gap-1.5 hover:bg-sky-600 transition-colors shadow-sm"
+              title="Chèn cấu trúc dàn ý">
+              <i class="fas fa-layer-group"></i> Dàn ý (Barem)
+            </button>
+            <button onclick="clearText()"
+              class="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 text-xs font-bold rounded flex items-center gap-1.5 hover:bg-slate-100 transition-colors">
+              <i class="fas fa-eraser"></i> Xóa
+            </button>
+            <button onclick="saveManual()"
+              class="px-3 py-1.5 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 text-emerald-600 text-xs font-bold rounded flex items-center gap-1.5 hover:bg-emerald-100 transition-colors">
+              <i class="fas fa-save"></i> Lưu nháp
+            </button>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <!-- Word Counter -->
+            <div class="flex items-center gap-2 text-sm font-medium px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm">
+              <i class="fas fa-file-word text-slate-400"></i>
+              <span id="wordCountDisplay" class="font-bold wc-low">0</span>
+              <span class="text-slate-400 text-xs">words</span>
+            </div>
+            <!-- Timer -->
+            <div class="flex items-center gap-2 text-lg font-mono font-bold px-3 py-1 bg-slate-800 dark:bg-slate-950 text-white rounded-lg shadow-inner w-28 justify-center">
+              <i class="fas fa-stopwatch text-sky-400 text-sm"></i>
+              <span id="timerDisplay">40:00</span>
+            </div>
+            <button id="timerToggleBtn" onclick="toggleTimer()"
+              class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 flex items-center justify-center transition-colors">
+              <i class="fas fa-play" id="timerIcon"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Text Area -->
+        <div class="flex-1 relative min-h-0">
+          <textarea id="essayInput"
+            class="absolute inset-0 w-full h-full p-6 lg:p-10 bg-transparent border-none focus:ring-0 resize-none text-[16px] md:text-lg leading-loose text-slate-900 dark:text-slate-100 placeholder-slate-300 dark:placeholder-slate-700 custom-scroll font-editor"
+            placeholder="Bắt đầu viết bài luận của bạn tại đây...&#10;&#10;Mẹo: Nhấn nút 'Dàn ý' ở trên để chèn cấu trúc chuẩn."
+            oninput="handleInput()"></textarea>
+        </div>
+
+        <!-- Bottom Status Bar -->
+        <div class="flex-none border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 px-4 py-3 flex items-center justify-between">
+          <span id="saveStatus" class="text-xs text-slate-400 font-medium flex items-center gap-1">
+            <i class="fas fa-cloud-check"></i> Đã lưu nháp tự động
+          </span>
+          <div class="flex gap-2">
+            <button onclick="changeTopic(-1)"
+              class="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-sm shadow-sm flex items-center gap-2">
+              <i class="fas fa-arrow-left"></i> Câu trước
+            </button>
+            <button onclick="changeTopic(1)"
+              class="px-6 py-2 bg-slate-800 dark:bg-slate-950 text-white font-bold rounded-lg hover:bg-slate-900 transition-colors text-sm shadow-sm flex items-center gap-2">
+              Tiếp theo <i class="fas fa-arrow-right"></i>
+            </button>
+            <button onclick="submitEssay()"
+              class="px-6 py-2 bg-brand text-white font-bold rounded-lg hover:bg-sky-600 transition-all text-sm shadow-md flex items-center gap-2">
+              Nộp bài <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
+
+  <!-- Result Modal -->
+  <div id="resultModal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-scale-in">
+      <div class="bg-gradient-to-br from-brand to-blue-700 p-8 text-white text-center">
+        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
+          <i class="fas fa-trophy text-3xl text-yellow-300"></i>
+        </div>
+        <h3 class="text-2xl font-bold font-heading">Hoàn thành bài viết!</h3>
+        <p class="text-sky-100 text-sm mt-1">Hệ thống đã ghi nhận bài làm của bạn</p>
+      </div>
+      <div class="p-8 space-y-6">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 text-center">
+            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider mb-1">Số từ viết được</p>
+            <p id="modalWordCount" class="text-2xl font-black text-slate-800 dark:text-white">0</p>
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 text-center">
+            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider mb-1">Thời gian làm bài</p>
+            <p id="modalTimeSpent" class="text-2xl font-black text-slate-800 dark:text-white">00:00</p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <button onclick="exportToPDF()" class="w-full py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
+            <i class="fas fa-file-pdf"></i> Xuất PDF bài viết
+          </button>
+          <button onclick="document.getElementById('resultModal').classList.replace('flex','hidden')" class="w-full py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-sky-500/30 hover:bg-sky-600 transition-all">Xem lại bài làm</button>
+          <a href="../index.html" class="block w-full py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold rounded-2xl hover:bg-slate-200 transition-all text-sm text-center">← Về Hub chính</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Gallery Modal -->
+  <div id="imageGalleryModal" class="fixed inset-0 z-[200] hidden bg-black/95 items-center justify-center p-4">
+    <button onclick="document.getElementById('imageGalleryModal').classList.replace('flex','hidden')"
+      class="absolute top-6 right-6 text-white text-3xl hover:text-brand transition-colors z-[210]">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="w-full h-full flex items-center justify-center overflow-auto custom-scroll">
+      <img id="galleryImage" src="" class="max-w-full max-h-full object-contain transition-transform duration-300 cursor-zoom-in">
+    </div>
+  </div>
+
+  <!-- Shared Utils -->
+  <script src="../assets/js/utils.js"></script>
+
+  <script>
+    // =====================================================================
+    // DATA LOADING — fetch from data/ directory
+    // =====================================================================
+    let writingData   = [];
+    let currentIndex  = 0;
+    let currentTask   = 2;
+    let bookmarkedIds = [];
+    let userHistory   = [];
+    let activeFilter  = 'all';
+    let currentChartInstance = null;
+    let timerController   = null;
+    let autoSaveInterval  = null;
+
+    // Embedded demo data (Task samples) — full data loads from JSON
+    const task1Samples = [
+      {
+        id: "demo-line", topic: "Task 1: Line Chart Sample", type: "Line Chart",
+        q: "The graph below shows the number of people visiting a particular museum in London between 2015 and 2020.",
+        chartData: { type:'line', data:{ labels:['2015','2016','2017','2018','2019','2020'], datasets:[{ label:'Visitors (Thousands)', data:[45,52,38,65,82,70], borderColor:'#0ea5e9', backgroundColor:'rgba(14,165,233,.1)', fill:true, tension:.3 }] }, options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ labels:{color:'#94a3b8'} } }, scales:{ y:{ ticks:{color:'#94a3b8'}, grid:{color:'rgba(148,163,184,.1)'} }, x:{ ticks:{color:'#94a3b8'}, grid:{display:false} } } } },
+        guide:"Phân tích xu hướng chung: Số lượng khách tăng dần từ 2015 đến 2019 trước khi giảm vào 2020.",
+        barem:"Intro: Paraphrase...\nOverview: Overall increase...\nBody 1: 2015–2017...\nBody 2: 2018–2020...",
+        sample:"The line graph illustrates the changes in museum attendance in London over a six-year period...",
+        vocab:[{word:"fluctuate",meaning:"biến động"},{word:"peak",meaning:"đạt đỉnh"}]
+      }
+    ];
+
+    async function loadAllData() {
+      // Load task2 library
+      const t2 = await loadJSON('../data/writing_task2_library.json');
+      const t2prompts = await loadJSON('../data/task2_prompts.json');
+      const review2020 = await loadJSON('../data/writing_2020_review.json');
+
+      let task2Items = [];
+      if (t2 && Array.isArray(t2)) task2Items = t2;
+      if (t2prompts && Array.isArray(t2prompts)) task2Items = [...task2Items, ...t2prompts];
+
+      writingData = [...task1Samples, ...task2Items, ...(review2020 || [])];
+      
+      // Load bookmarks and history
+      bookmarkedIds = storage.get('ieltsBookmarks', []);
+      userHistory   = storage.get('ieltsHistory', []);
+
+      populateSelector();
+      updateProgressBar();
+      loadQuestion(currentIndex);
+    }
+
+    // =====================================================================
+    // CORE UI FUNCTIONS
+    // =====================================================================
+
+    function populateSelector() {
+      const sel = document.getElementById('topicSelector');
+      sel.innerHTML = '';
+      getFilteredData().forEach((q, i) => {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = (q.topic || q.title || `Đề #${i+1}`).substring(0, 60);
+        sel.appendChild(opt);
+      });
+    }
+
+    function getFilteredData() {
+      if (activeFilter === 'all') return writingData;
+      if (activeFilter === 'bookmarked') return writingData.filter(q => bookmarkedIds.includes(q.id));
+      return writingData.filter(q => (q.type || '').toLowerCase().includes(activeFilter.toLowerCase()));
+    }
+
+    function filterByType(type) {
+      activeFilter = type;
+      document.querySelectorAll('.filter-chip').forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      populateSelector();
+      currentIndex = 0;
+      loadQuestion(0);
+      updateProgressBar();
+    }
+
+    function jumpToQuestion(idx) {
+      currentIndex = parseInt(idx);
+      loadQuestion(currentIndex);
+    }
+
+    function changeTopic(dir) {
+      const filtered = getFilteredData();
+      currentIndex = (currentIndex + dir + filtered.length) % filtered.length;
+      document.getElementById('topicSelector').value = currentIndex;
+      loadQuestion(currentIndex);
+    }
+
+    function updateProgressBar() {
+      const filtered = getFilteredData();
+      const total = filtered.length;
+      const done  = filtered.filter(q => userHistory.find(h => h.topicId === q.id)).length;
+      const pct   = total > 0 ? Math.round((done / total) * 100) : 0;
+      document.getElementById('progressBar').style.width = pct + '%';
+      document.getElementById('progressText').textContent = `${done}/${total}`;
+    }
+
+    function loadQuestion(idx) {
+      const filtered = getFilteredData();
+      if (!filtered.length) return;
+      const q = filtered[idx];
+      if (!q) return;
+
+      document.getElementById('qTopicTitle').textContent = q.topic || q.title || 'Đề bài';
+      document.getElementById('qTypeBadge').textContent  = q.type || 'Task 2';
+      document.getElementById('qText').textContent       = q.q || q.question || '';
+
+      // Diagram
+      const ideaAcc = document.getElementById('ideaAcc');
+      if (q.diagram) {
+        ideaAcc.classList.remove('hidden');
+        document.getElementById('topicDiagram').src = (q.diagram.startsWith('http') ? '' : '../') + q.diagram;
+        document.getElementById('topicDiagramInAccordion').src = document.getElementById('topicDiagram').src;
+        document.getElementById('diagramContainer').classList.remove('hidden');
+      } else {
+        ideaAcc.classList.add('hidden');
+        document.getElementById('diagramContainer').classList.add('hidden');
+      }
+
+      // Chart (Task 1)
+      const chartCont = document.getElementById('chartContainer');
+      if (q.chartData) {
+        chartCont.classList.remove('hidden');
+        const isDark = document.documentElement.classList.contains('dark');
+        const textColor = isDark ? '#94a3b8' : '#475569';
+        const gridColor = isDark ? 'rgba(148,163,184,.1)' : 'rgba(0,0,0,.06)';
+        const cfg = JSON.parse(JSON.stringify(q.chartData));
+        if (cfg.options?.scales) {
+          Object.values(cfg.options.scales).forEach(ax => {
+            ax.ticks = { ...ax.ticks, color: textColor };
+            ax.grid  = { ...ax.grid,  color: gridColor };
+          });
+        }
+        if (currentChartInstance) currentChartInstance.destroy();
+        currentChartInstance = new Chart(document.getElementById('task1Chart'), cfg);
+        currentTask = 1;
+        document.getElementById('targetWordCount').innerHTML = '<i class="fas fa-check-circle text-emerald-500"></i> 150+ words';
+        if (timerController) timerController.reset(20);
+      } else {
+        chartCont.classList.add('hidden');
+        currentTask = 2;
+        document.getElementById('targetWordCount').innerHTML = '<i class="fas fa-check-circle text-emerald-500"></i> 250+ words';
+        if (timerController) timerController.reset(40);
+      }
+
+      // Guide
+      document.getElementById('qGuide').innerHTML = q.guide || '<em class="text-slate-400">Chưa có hướng dẫn.</em>';
+
+      // Vocab
+      const vocabEl = document.getElementById('qVocab');
+      if (q.vocab && q.vocab.length) {
+        vocabEl.innerHTML = q.vocab.map(v => `
+          <div class="flex items-start justify-between gap-2 p-2 bg-white rounded-lg border border-slate-100">
+            <span class="font-bold text-slate-800 text-sm">${v.word}</span>
+            <span class="text-slate-500 text-xs text-right">${v.meaning}</span>
+          </div>
+        `).join('');
+      } else {
+        vocabEl.innerHTML = '<p class="text-slate-400 text-sm py-2">Chưa có từ vựng.</p>';
+      }
+
+      // Sample
+      document.getElementById('qSample').textContent = q.sample || 'Chưa có bài mẫu.';
+
+      // Load saved draft
+      const draft = storage.get(`draft_${q.id}`, '');
+      document.getElementById('essayInput').value = draft;
+      handleInput();
+
+      // Update bookmark UI
+      updateBookmarkUI();
+    }
+
+    // =====================================================================
+    // WRITING TOOLS
+    // =====================================================================
+
+    function handleInput() {
+      const ta    = document.getElementById('essayInput');
+      const words = ta.value.trim().split(/\s+/).filter(w => w.length > 0).length;
+      const display = document.getElementById('wordCountDisplay');
+      display.textContent = words;
+      const target = currentTask === 1 ? 150 : 250;
+      display.className = 'font-bold ' + (words < target * .6 ? 'wc-low' : words < target ? 'wc-medium' : 'wc-adequate');
+    }
+
+    function applyBarem() {
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      if (!q?.barem) { showToast('Chưa có dàn ý cho đề này.', 'info'); return; }
+      const ta = document.getElementById('essayInput');
+      if (ta.value.trim()) {
+        if (!confirm('Bài hiện tại sẽ bị xóa. Tiếp tục?')) return;
+      }
+      ta.value = q.barem;
+      handleInput();
+      showToast('Đã chèn dàn ý (Barem)!', 'success');
+    }
+
+    function clearText() {
+      if (!document.getElementById('essayInput').value.trim()) return;
+      if (confirm('Xóa toàn bộ bài viết?')) {
+        document.getElementById('essayInput').value = '';
+        handleInput();
+      }
+    }
+
+    function saveManual() {
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      if (!q) return;
+      storage.set(`draft_${q.id}`, document.getElementById('essayInput').value);
+      document.getElementById('saveStatus').innerHTML = '<i class="fas fa-check text-emerald-500"></i> Đã lưu ' + new Date().toLocaleTimeString('vi-VN');
+      showToast('Đã lưu bản nháp!', 'success');
+    }
+
+    // =====================================================================
+    // TIMER
+    // =====================================================================
+
+    function initTimer() {
+      timerController = createTimer({
+        displayId: 'timerDisplay',
+        minutes: 40,
+        onComplete: () => {
+          showToast('⏰ Hết giờ! Hãy nộp bài.', 'warning', 5000);
+          document.getElementById('timerIcon').className = 'fas fa-play';
+        }
+      });
+    }
+
+    function toggleTimer() {
+      if (!timerController) return;
+      const isNowRunning = timerController.toggle();
+      document.getElementById('timerIcon').className = isNowRunning ? 'fas fa-pause' : 'fas fa-play';
+    }
+
+    // =====================================================================
+    // SUBMIT
+    // =====================================================================
+
+    function submitEssay() {
+      const ta = document.getElementById('essayInput');
+      const wordCount = ta.value.trim().split(/\s+/).filter(w => w.length > 0).length;
+      if (wordCount < 10) { showToast('Vui lòng viết ít nhất 10 từ!', 'error'); return; }
+
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+
+      const timeSpent = timerController ? timerController.getTimeSpent() : 0;
+      const mins = Math.floor(timeSpent / 60).toString().padStart(2, '0');
+      const secs = (timeSpent % 60).toString().padStart(2, '0');
+
+      // Streak
+      const today = new Date().toDateString();
+      const streak = storage.get('ieltsStreakData', { current:0, longest:0, lastCompleted:'' });
+      const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1);
+      if (streak.lastCompleted === yesterday.toDateString()) { streak.current++; }
+      else if (streak.lastCompleted !== today) { streak.current = 1; }
+      if (streak.current > streak.longest) streak.longest = streak.current;
+      streak.lastCompleted = today;
+      storage.set('ieltsStreakData', streak);
+
+      // Save history entry
+      const entry = {
+        id: Date.now(),
+        topicId: q?.id,
+        topicTitle: q?.topic || q?.title || 'Đề bài',
+        essay: ta.value,
+        wordCount,
+        timeSpent,
+        score: null,
+        date: today,
+        notes: ''
+      };
+      userHistory.unshift(entry);
+      storage.set('ieltsHistory', userHistory);
+      updateProgressBar();
+
+      // Show modal
+      document.getElementById('modalWordCount').textContent = wordCount;
+      document.getElementById('modalTimeSpent').textContent = `${mins}:${secs}`;
+      document.getElementById('resultModal').classList.replace('hidden', 'flex');
+
+      confetti({ particleCount:120, spread:70, origin:{ y:.6 }, colors:['#0ea5e9','#6366f1','#10b981'] });
+    }
+
+    function exportToPDF() {
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      const content = `
+        <div style="font-family:Georgia,serif;max-width:800px;margin:0 auto;padding:40px;">
+          <h1 style="font-size:24px;color:#0f172a;">${q?.topic || 'Bài viết IELTS'}</h1>
+          <p style="color:#64748b;margin:8px 0 24px;">${q?.q || ''}</p>
+          <hr style="border:none;border-top:1px solid #e2e8f0;margin-bottom:24px;">
+          <div style="font-size:16px;line-height:1.8;color:#1e293b;white-space:pre-wrap;">${document.getElementById('essayInput').value}</div>
+        </div>`;
+      html2pdf().set({ margin:10, filename:`IELTS_Task${currentTask}_${Date.now()}.pdf`, html2canvas:{ scale:2 }, jsPDF:{ format:'a4' } }).from(content).save();
+    }
+
+    // =====================================================================
+    // BOOKMARK
+    // =====================================================================
+
+    function toggleBookmark() {
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      if (!q) return;
+      const idx = bookmarkedIds.indexOf(q.id);
+      if (idx === -1) { bookmarkedIds.push(q.id); showToast('Đã lưu đề bài yêu thích', 'success'); }
+      else { bookmarkedIds.splice(idx, 1); showToast('Đã xóa khỏi yêu thích', 'info'); }
+      storage.set('ieltsBookmarks', bookmarkedIds);
+      updateBookmarkUI();
+    }
+
+    function updateBookmarkUI() {
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      const btn = document.getElementById('bookmarkBtn');
+      if (!btn || !q) return;
+      const isBookmarked = bookmarkedIds.includes(q.id);
+      btn.className = isBookmarked
+        ? 'text-amber-500 transition-all p-1'
+        : 'text-slate-400 hover:text-amber-500 transition-all p-1';
+      btn.querySelector('i').className = isBookmarked ? 'fas fa-star text-xl' : 'far fa-star text-xl';
+    }
+
+    // =====================================================================
+    // STATS MODAL (placeholder)
+    // =====================================================================
+
+    function showStats() {
+      showToast('Tính năng thống kê đầy đủ sẽ có ở Phase 2.', 'info');
+    }
+
+    // =====================================================================
+    // IMAGE GALLERY
+    // =====================================================================
+
+    function showImageGallery(src) {
+      document.getElementById('galleryImage').src = src;
+      document.getElementById('imageGalleryModal').classList.replace('hidden', 'flex');
+    }
+
+    // =====================================================================
+    // AUTO-SAVE
+    // =====================================================================
+
+    function startAutoSave() {
+      autoSaveInterval = setInterval(() => {
+        const filtered = getFilteredData();
+        const q = filtered[currentIndex];
+        if (q && document.getElementById('essayInput').value.trim()) {
+          storage.set(`draft_${q.id}`, document.getElementById('essayInput').value);
+          document.getElementById('saveStatus').innerHTML = '<i class="fas fa-cloud-check"></i> Tự động lưu ' + new Date().toLocaleTimeString('vi-VN');
+        }
+      }, 30000); // every 30s
+    }
+
+    // =====================================================================
+    // BOOT
+    // =====================================================================
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      lucide.createIcons();
+      await loadAllData();
+      initTimer();
+      startAutoSave();
+      initResizer('colResizeHandle', 'leftCol');
+    });
+  </script>
+</body>
+</html>
