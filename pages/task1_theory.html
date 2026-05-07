@@ -565,7 +565,6 @@
 
     <!-- Scripts -->
     <script src="../data/task1_theory_menu.js"></script>
-    <script src="../data/task1_theory_content.js"></script>
     <script src="../data/theory_mapping.js"></script>
     <script src="../data/task1_flashcards.js"></script>
     <script src="../data/task1_translations.js"></script>
@@ -841,18 +840,10 @@
                 return;
             }
 
-            // Fallback for old content
-            const section = TASK1_THEORY_CONTENT.find(d => d.id === id);
-            if (!section) return;
-            const menuInfo = TASK1_THEORY_MENU.flatMap(m => [m, ...m.sub]).find(i => i.id === id);
-            const enhancedContent = TheoryEnhancer.enhance(section.content);
-
             container.innerHTML = `
-                <div class="animate-slide-up space-y-8 pb-20">
-                    <div class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-slate-100 dark:border-slate-800 prose prose-slate dark:prose-invert max-w-none leading-relaxed">
-                        <h2 class="text-4xl font-black text-slate-900 dark:text-white leading-tight tracking-tight">${menuInfo ? menuInfo.title : 'Theory Content'}</h2>
-                        ${enhancedContent}
-                    </div>
+                <div class="p-20 text-center text-slate-400">
+                    <i data-lucide="help-circle" class="w-16 h-16 mx-auto mb-4 opacity-20"></i>
+                    <p>Nội dung bài học đang được AI xử lý hoặc không tìm thấy mapping.</p>
                 </div>
             `;
             lucide.createIcons();

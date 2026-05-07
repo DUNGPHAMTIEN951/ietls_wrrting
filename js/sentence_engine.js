@@ -538,7 +538,7 @@ const IELTSPracticeHub = {
             <div class="mb-10 bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden animate-fadeIn">
                 <div class="bg-slate-900 text-white p-5 flex items-center justify-between">
                     <div>
-                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1 italic">ZIM · IELTS Writing Review (${reviewKey.replace('review', '')})</div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1 italic">Phạm Tiến Dũng · IELTS Writing Review (${reviewKey.replace('review', '')})</div>
                         <h3 class="text-2xl font-black font-inter">📅 ${exam.date}</h3>
                     </div>
                     <div class="px-4 py-2 bg-indigo-600 rounded-full text-xs font-bold shadow-lg">Exam Record</div>

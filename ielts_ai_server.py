@@ -13,6 +13,7 @@ import datetime
 import threading
 import time
 import hashlib
+import re
 import mysql.connector
 from mysql.connector import Error
 from http.server import HTTPServer, BaseHTTPRequestHandler
@@ -342,6 +343,9 @@ async def process_queue_worker():
                     if task_type == "theory_perfection":
                         result = await generate_theory_perfection(data["filename"])
                         save_theory_to_file(data["filename"], result)
+                    elif task_type == "txt_to_html_lesson":
+                        result = await generate_txt_to_html_lesson(data["filename"])
+                        save_lesson_to_file(data["filename"], result)
                     
                     # Mark as success
                     for t in queue:
@@ -451,6 +455,9 @@ async def process_queue_worker():
                     elif task['task_type'] == "theory_perfection":
                         result = await generate_theory_perfection(data["filename"])
                         save_theory_to_file(data["filename"], result)
+                    elif task['task_type'] == "txt_to_html_lesson":
+                        result = await generate_txt_to_html_lesson(data["filename"])
+                        save_lesson_to_file(data["filename"], result)
                     
                     cursor.execute(
                         "UPDATE ai_tasks SET status = 'success', chat_name = %s, completed_at = %s WHERE id = %s",
@@ -1004,6 +1011,86 @@ QUY TẮC TRẢ VỀ:
 
 
 
+async def generate_txt_to_html_lesson(filename: str) -> str:
+    """Chuyển đổi file TXT đã chia nhỏ thành bài học IELTS HTML chuyên nghiệp."""
+    global gemini_chat
+    if gemini_chat is None: raise RuntimeError("Gemini chưa được khởi tạo!")
+
+    txt_path = os.path.join(SCRIPT_DIR, "data", "txt_split", filename)
+    if not os.path.exists(txt_path):
+        raise FileNotFoundError(f"File not found: {filename}")
+
+    with open(txt_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    prompt = f"""Bạn là một chuyên gia IELTS Senior Tutor (Giảng viên cao cấp) với phong cách giảng dạy hiện đại, chuyên sâu và dễ hiểu.
+Tác giả của nội dung này là: Phạm Tiến Dũng Gia Sư.
+
+NHIỆM VỤ:
+Hãy chuyển đổi nội dung văn bản thô sau đây thành một bài học IELTS HTML "bản đẹp" đẳng cấp chuyên gia.
+
+YÊU CẦU NỘI DUNG:
+1. Trình bày dưới dạng bài giảng (Lesson) có cấu trúc logic.
+2. Càng có nhiều biểu đồ, sơ đồ (sử dụng Mermaid.js hoặc Table), mô tả, ví dụ (Band 8-9), bài tập thực hành, giải thích chi tiết, so sánh các điểm ngữ pháp/từ vựng càng tốt.
+3. TUYỆT ĐỐI XÓA hoàn toàn các từ 'Phạm Tiến Dũng' hoặc 'Phạm Tiến Dũng' nếu thấy trong văn bản. Thay vào đó, ghi rõ tác giả là: 'Phạm Tiến Dũng Gia Sư'.
+4. Thêm các phần "Teacher's Note" hoặc "Pro Tip" để tăng tính sư phạm.
+5. Ngôn ngữ: Tiếng Việt (có thuật ngữ Tiếng Anh chuyên sâu).
+
+YÊU CẦU KỸ THUẬT:
+- Sử dụng Tailwind CSS (CDN) để thiết kế giao diện premium, sáng sủa, hiện đại.
+- Sử dụng các font chữ đẹp (Inter/Roboto).
+- Bài học phải có tính tương tác cao (ví dụ: các phần Accordion hoặc Tab nếu cần, bài tập có đáp án ẩn/hiện).
+- Chỉ trả về phần nội dung bên trong <body> (không cần <html> hay <head> nếu trả về body, nhưng nếu trả về full HTML thì càng tốt).
+
+VĂN BẢN THÔ CẦN CHUYỂN ĐỔI:
+---
+{content}
+---
+
+CHỈ TRẢ VỀ MÃ HTML HOÀN CHỈNH (CÓ ĐỦ THẺ DOCTYPE, HTML, HEAD, BODY), KHÔNG GIẢI THÍCH GÌ THÊM.
+"""
+    response = await gemini_chat.send_message(prompt)
+    new_html = response.text.strip()
+    
+    # 1. Clean code blocks
+    if "```html" in new_html:
+        new_html = new_html.split("```html")[1].split("```")[0].strip()
+    elif "```" in new_html:
+        new_html = new_html.split("```")[1].split("```")[0].strip()
+
+    # 2. Fix Markdown links accidentally injected into attributes (e.g. href="[url](url)")
+    new_html = re.sub(r'\[(https?://.*?)\]\(https?://.*?\)', r'\1', new_html)
+
+    # 3. Inject Tailwind Silencer
+    silencer = """
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    """
+    if "</head>" in new_html:
+        new_html = new_html.replace("</head>", f"{silencer}\n</head>")
+    else:
+        new_html = silencer + new_html
+
+    return new_html
+
+def save_lesson_to_file(filename, html):
+    lessons_dir = os.path.join(SCRIPT_DIR, "pages", "lessons")
+    os.makedirs(lessons_dir, exist_ok=True)
+    
+    output_filename = filename.replace(".txt", ".html")
+    output_path = os.path.join(lessons_dir, output_filename)
+    
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"[LESSON] Saved perfected lesson: {output_filename}")
+
 async def generate_task1_chart_data(question: str, sample: str, guide: str = "") -> dict:
     """Trích xuất dữ liệu từ câu hỏi, bài mẫu và hướng dẫn Task 1 để tạo JSON cho Chart.js."""
     global gemini_chat
@@ -1340,6 +1427,17 @@ class IELTSHandler(BaseHTTPRequestHandler):
                 for fname in filenames:
                     add_to_queue("theory_perfection", {"filename": fname})
                 self._json_response(200, {"status": "enqueued", "count": len(filenames)})
+            except Exception as e:
+                self._json_response(500, {"error": str(e)})
+        elif path == "/enqueue_lessons":
+            content_len = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_len)
+            try:
+                data = json.loads(body)
+                filenames = data.get("filenames", [])
+                for fname in filenames:
+                    add_to_queue("txt_to_html_lesson", {"filename": fname})
+                self._json_response(200, {"status": "enqueued_lessons", "count": len(filenames)})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
         elif path == "/check_draft":
