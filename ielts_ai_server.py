@@ -1032,7 +1032,7 @@ Hãy chuyển đổi nội dung văn bản thô sau đây thành một bài họ
 YÊU CẦU NỘI DUNG:
 1. Trình bày dưới dạng bài giảng (Lesson) có cấu trúc logic.
 2. Càng có nhiều biểu đồ, sơ đồ (sử dụng Mermaid.js hoặc Table), mô tả, ví dụ (Band 8-9), bài tập thực hành, giải thích chi tiết, so sánh các điểm ngữ pháp/từ vựng càng tốt.
-3. TUYỆT ĐỐI XÓA hoàn toàn các từ 'Phạm Tiến Dũng' hoặc 'Phạm Tiến Dũng' nếu thấy trong văn bản. Thay vào đó, ghi rõ tác giả là: 'Phạm Tiến Dũng Gia Sư'.
+3. TUYỆT ĐỐI XÓA hoàn toàn các từ 'ZIM' hoặc 'Zim Academy' nếu thấy trong văn bản. Thay vào đó, ghi rõ tác giả là: 'Phạm Tiến Dũng Gia Sư'.
 4. Thêm các phần "Teacher's Note" hoặc "Pro Tip" để tăng tính sư phạm.
 5. Ngôn ngữ: Tiếng Việt (có thuật ngữ Tiếng Anh chuyên sâu).
 
@@ -1061,8 +1061,10 @@ CHỈ TRẢ VỀ MÃ HTML HOÀN CHỈNH (CÓ ĐỦ THẺ DOCTYPE, HTML, HEAD, BO
     # 2. Fix Markdown links accidentally injected into attributes (e.g. href="[url](url)")
     new_html = re.sub(r'\[(https?://.*?)\]\(https?://.*?\)', r'\1', new_html)
 
-    # 3. Inject Tailwind Silencer
-    silencer = """
+    # 3. Inject Tailwind Silencer & Security Script
+    security_tag = f"<script src='../../assets/js/security.js?v={int(time.time())}'></script>"
+    silencer = f"""
+    {security_tag}
     <script>
         (function() {
             const originalWarn = console.warn;
