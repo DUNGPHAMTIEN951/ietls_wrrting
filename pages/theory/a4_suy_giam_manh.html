@@ -3,52 +3,365 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>A4. SUY GIẢM MẠNH | IELTS Writing Task 1 Theory</title>
-    <script src='https://cdn.tailwindcss.com'></script>
-    <script src='https://unpkg.com/lucide@latest'></script>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+    <title>A4. VERTICAL DECLINE (PLUMMET & CRASH) | IELTS Mastery AI Edition</title>
+    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
+    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
+    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .lesson-content p { margin-bottom: 1rem; line-height: 1.6; color: #334155; }
-        .lesson-content strong { color: #1e293b; font-weight: 700; }
-        .lesson-content .bg-blue-50 { border-radius: 0.75rem; }
-        .lesson-content div { margin-bottom: 1rem; }
-        .lesson-content .font-semibold { color: #1e293b; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; background: #fdfdfd; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .text-gradient-red { background: linear-gradient(135deg, #be123c 0%, #fb7185 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-gradient-dark { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .hover-lift { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .hover-lift:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(190, 18, 60, 0.15); }
+        .answer-reveal { display: none; animation: revealEffect 0.5s ease-out forwards; }
+        @keyframes revealEffect { from { opacity: 0; filter: blur(10px); transform: translateY(10px); } to { opacity: 1; filter: blur(0); transform: translateY(0); } }
+        .vertical-slope { width: 4px; background: linear-gradient(to bottom, #f43f5e, #881337); border-radius: 2px; }
     </style>
 </head>
-<body class='bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen pb-20'>
-    <div class='max-w-4xl mx-auto px-4 pt-12'>
-        <a href='../task1_theory.html' class='inline-flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all'>
-            <i data-lucide='arrow-left' class='w-5 h-5'></i>
-            Quay lại danh sách
-        </a>
+<body class='text-slate-900'>
 
-        <div class='bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 overflow-hidden'>
-            <div class='bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-white'>
-                <div class='flex items-center gap-4 mb-4'>
-                    <span class='px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-black uppercase tracking-widest'>Lesson Module</span>
+    <!-- Global Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1.5 bg-slate-100 z-[100]">
+        <div class="bg-rose-600 h-full w-[85%] shadow-[0_0_15px_rgba(225,29,72,0.5)]"></div>
+    </div>
+
+    <div class='max-w-6xl mx-auto px-6 py-12'>
+        <!-- Header Navigation -->
+        <nav class="flex justify-between items-center mb-16">
+            <a href='../task1_theory.html' class='group flex items-center gap-3 bg-white px-5 py-2.5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all'>
+                <div class="p-2 rounded-xl bg-rose-50 text-rose-600 group-hover:bg-rose-600 group-hover:text-white transition-all">
+                    <i data-lucide='arrow-left' class='w-5 h-5'></i>
                 </div>
-                <h1 class='text-4xl font-black tracking-tight leading-tight'>A4. SUY GIẢM MẠNH</h1>
+                <span class="text-sm font-extrabold text-slate-600">Learning Path: A4</span>
+            </a>
+            <div class="flex gap-4">
+                <div class="hidden md:flex px-4 py-2 bg-slate-900 rounded-xl text-white text-[10px] font-black tracking-widest items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                    AI-POWERED MODULE
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero: Vertical Decline -->
+        <header class='relative bg-slate-950 rounded-[4rem] p-12 md:p-20 mb-20 overflow-hidden shadow-2xl'>
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-rose-600/20 rounded-full blur-[120px]"></div>
+            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-blue-600/10 rounded-full blur-[100px]"></div>
+            
+            <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-400 text-[10px] font-black uppercase tracking-[0.2em] mb-8'>
+                        <i data-lucide="trending-down" class="w-4 h-4"></i> High Intensity Movement
+                    </div>
+                    <h1 class='text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]'>
+                        Vertical <br/><span class="text-gradient-red italic">Decline.</span>
+                    </h1>
+                    <p class='text-slate-400 text-xl leading-relaxed font-medium mb-0'>
+                        Vượt xa giới hạn của "decrease significantly". Làm chủ nhóm từ <strong>"Free Fall"</strong> để mô tả chính xác sự sụp đổ của dữ liệu với độ dốc từ 70-90°.
+                    </p>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="glass-card p-10 rounded-[3rem] border-white/5 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-8">
+                            <i data-lucide="zap" class="w-12 h-12 text-rose-500 opacity-20 group-hover:opacity-100 transition-all duration-700"></i>
+                        </div>
+                        <h4 class="text-slate-800 font-black text-xs uppercase tracking-widest mb-6">Intensity Level: Critical</h4>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="vertical-slope h-16"></div>
+                                <div class="text-slate-400 text-sm font-bold uppercase">Slope: 85°</div>
+                            </div>
+                            <div class="h-1 bg-slate-100 rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-rose-600 shadow-[0_0_10px_#f43f5e]"></div>
+                            </div>
+                            <p class="text-[11px] text-slate-500 leading-relaxed italic">"In Writing Task 1, choosing a powerful verb is more efficient than using an adverb-adjective pair."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section 1: Lexical Architecture -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-black text-slate-800 tracking-tighter">Lexical Database: Vertical Trends</h2>
+                <div class="h-px flex-grow bg-slate-200"></div>
+                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Classification</span>
             </div>
 
-            <div class='p-10 lesson-content text-lg'>
-                <strong class='inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded mt-2 text-sm uppercase'>VERB</strong><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>plummet (plummeted)</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>plunge (plunged)</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>collapse (collapsed)</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>sink (sank)</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>crash (crashed)</p><strong class='inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded mt-2 text-sm uppercase'>NOUN</strong><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>x</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>a plunge</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>a slump</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>x</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>a crash</p>
+            <div class='overflow-hidden rounded-[3rem] border border-slate-200 bg-white shadow-sm'>
+                <table class='w-full text-left'>
+                    <thead>
+                        <tr class='bg-slate-50/80'>
+                            <th class='px-8 py-6 text-[10px] font-black text-slate-400 uppercase tracking-widest'>Core Verb</th>
+                            <th class='px-8 py-6 text-[10px] font-black text-slate-400 uppercase tracking-widest'>Noun Form</th>
+                            <th class='px-8 py-6 text-[10px] font-black text-slate-400 uppercase tracking-widest'>Visual Slope</th>
+                            <th class='px-8 py-6 text-[10px] font-black text-slate-400 uppercase tracking-widest'>AI Semantic Check</th>
+                        </tr>
+                    </thead>
+                    <tbody class='divide-y divide-slate-100'>
+                        <tr class='group hover:bg-rose-50 transition-all'>
+                            <td class='px-8 py-8'>
+                                <p class='font-black text-rose-600 text-xl'>Plummet</p>
+                                <span class='text-[10px] text-slate-400 font-bold uppercase'>Irregular potential</span>
+                            </td>
+                            <td class='px-8 py-8 font-medium text-slate-400 italic'>N/A (Rare)</td>
+                            <td class='px-8 py-8'>
+                                <div class="w-12 h-12 rounded-full border-2 border-rose-100 flex items-center justify-center">
+                                    <i data-lucide="trending-down" class="text-rose-600 w-6 h-6"></i>
+                                </div>
+                            </td>
+                            <td class='px-8 py-8'>
+                                <p class='text-xs text-slate-500 font-medium leading-relaxed'>
+                                    Mạnh nhất, chỉ dùng khi giảm cực nhanh và sâu. <strong>Cấm dùng trạng từ đi kèm.</strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class='group hover:bg-slate-50 transition-all'>
+                            <td class='px-8 py-8'>
+                                <p class='font-black text-slate-800 text-xl'>Plunge</p>
+                            </td>
+                            <td class='px-8 py-8 font-black text-rose-600 italic'>A plunge</td>
+                            <td class='px-8 py-8'>
+                                <div class="w-12 h-12 rounded-full border-2 border-slate-100 flex items-center justify-center">
+                                    <i data-lucide="chevrons-down" class="text-slate-400 w-6 h-6"></i>
+                                </div>
+                            </td>
+                            <td class='px-8 py-8'>
+                                <p class='text-xs text-slate-500 font-medium leading-relaxed'>
+                                    Gợi hình ảnh "nhảy xuống nước". Thường đi với giới từ <strong>'to'</strong> hoặc <strong>'by'</strong>.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class='group hover:bg-slate-50 transition-all'>
+                            <td class='px-8 py-8'>
+                                <p class='font-black text-slate-800 text-xl'>Collapse</p>
+                            </td>
+                            <td class='px-8 py-8 font-black text-rose-600 italic'>A collapse</td>
+                            <td class='px-8 py-8'>
+                                <div class="w-12 h-12 rounded-full border-2 border-slate-100 flex items-center justify-center">
+                                    <i data-lucide="zap" class="text-orange-500 w-6 h-6"></i>
+                                </div>
+                            </td>
+                            <td class='px-8 py-8'>
+                                <p class='text-xs text-slate-500 font-medium leading-relaxed'>
+                                    Dùng cho sự sụp đổ của hệ thống, giá cả (Prices/Market) hoặc cấu trúc.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 2: Distinction & Visual Logic -->
+        <div class="grid lg:grid-cols-2 gap-12 mb-24">
+            <!-- Mindmap / Diagram Concept -->
+            <div class="space-y-8">
+                <h3 class="text-2xl font-black flex items-center gap-3 tracking-tighter">
+                    <i data-lucide="brain-circuit" class="text-rose-600"></i> The Selection Logic
+                </h3>
+                
+                
+                
+                <div class="relative bg-white rounded-[3rem] p-10 border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-6 p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center font-black">0°</div>
+                            <p class="text-sm font-bold text-slate-600">Steady / No Change (Leveling off)</p>
+                        </div>
+                        <div class="flex items-center gap-6 p-6 bg-rose-50 rounded-2xl border border-rose-100">
+                            <div class="w-12 h-12 rounded-xl bg-rose-600 text-white flex items-center justify-center font-black">90°</div>
+                            <p class="text-sm font-bold text-rose-700">Vertical Decline (Plummet / Crash / Free Fall)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Differentiation -->
+            <div class="space-y-8">
+                <h3 class="text-2xl font-black flex items-center gap-3 tracking-tighter">
+                    <i data-lucide="split" class="text-blue-600"></i> Lexical Distinction
+                </h3>
+                <div class="bg-slate-900 rounded-[3rem] p-10 text-white shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-10">
+                        <i data-lucide="search" class="w-20 h-20"></i>
+                    </div>
+                    <div class="space-y-8 relative z-10">
+                        <div class="group">
+                            <h4 class="text-blue-400 font-black text-xs uppercase tracking-widest mb-2">Plummet vs. Slump</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                <strong>Plummet</strong> nhấn mạnh vào <span class="text-white font-bold italic">Tốc độ</span> (Speed). <br/>
+                                <strong>Slump</strong> nhấn mạnh vào <span class="text-white font-bold italic">Sự đình trệ</span> (Long-term negative state).
+                            </p>
+                        </div>
+                        <div class="h-px bg-slate-800"></div>
+                        <div class="group">
+                            <h4 class="text-rose-400 font-black text-xs uppercase tracking-widest mb-2">Plunge vs. Drop</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                <strong>Drop</strong> là từ trung tính, cần thêm trạng từ (sharply). <br/>
+                                <strong>Plunge</strong> là từ "High-Impact", mang sắc thái drama và mạnh mẽ hơn nhiều lần.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class='mt-12 p-8 bg-blue-50 dark:bg-blue-900/10 rounded-[2rem] border border-blue-100 dark:border-blue-900/30 flex items-center gap-6'>
-            <div class='w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20'>
-                <i data-lucide='lightbulb' class='w-8 h-8'></i>
+        <!-- Section 3: Band 9 Showcase -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-black text-slate-800 tracking-tighter">High-Impact Sentence Library (Band 8.5+)</h2>
+                <div class="h-px flex-grow bg-slate-200"></div>
             </div>
-            <div>
-                <h4 class='font-black text-blue-900 dark:text-blue-300'>Mẹo học tập</h4>
-                <p class='text-blue-700 dark:text-blue-400 font-medium mb-0'>Hãy ghi chép lại các cấu trúc này và áp dụng vào phần Luyện tập dịch câu để ghi nhớ lâu hơn.</p>
+
+            <div class="grid gap-6">
+                <!-- Case 1 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover-lift relative overflow-hidden group">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-rose-600"></div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-8">
+                        <div class="shrink-0 flex items-center justify-center w-16 h-16 bg-rose-50 rounded-3xl text-rose-600 font-black text-xl">1</div>
+                        <div class="flex-grow">
+                            <p class="text-2xl font-black text-slate-800 mb-3 tracking-tight italic">
+                                "Public interest in traditional media <span class="text-rose-600 underline underline-offset-8 decoration-2">plummeted to an all-time low</span> within five years."
+                            </p>
+                            <p class="text-slate-500 text-sm font-medium mb-4 italic italic leading-relaxed">Dịch: Sự quan tâm của công chúng đối với truyền thông truyền thống đã giảm thẳng đứng xuống mức thấp nhất mọi thời đại chỉ trong vòng 5 năm.</p>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 bg-slate-950 rounded-lg">
+                                <span class="text-[10px] font-black text-rose-400 uppercase">Analysis:</span>
+                                <span class="text-[10px] font-bold text-slate-300 uppercase tracking-tighter italic">"to an all-time low" - Perfect Collocation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover-lift relative overflow-hidden group">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-blue-600"></div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-8">
+                        <div class="shrink-0 flex items-center justify-center w-16 h-16 bg-blue-50 rounded-3xl text-blue-600 font-black text-xl">2</div>
+                        <div class="flex-grow">
+                            <p class="text-2xl font-black text-slate-800 mb-3 tracking-tight italic">
+                                "The second half of the year <span class="text-blue-600 underline underline-offset-8 decoration-2">witnessed a dramatic plunge in</span> export values."
+                            </p>
+                            <p class="text-slate-500 text-sm font-medium mb-4 italic italic leading-relaxed">Dịch: Nửa cuối năm chứng kiến sự sụt giảm nghiêm trọng trong giá trị xuất khẩu.</p>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 bg-slate-950 rounded-lg">
+                                <span class="text-[10px] font-black text-blue-400 uppercase">Analysis:</span>
+                                <span class="text-[10px] font-bold text-slate-300 uppercase tracking-tighter italic">Nominalization (There was a plunge)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover-lift relative overflow-hidden group">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-orange-600"></div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-8">
+                        <div class="shrink-0 flex items-center justify-center w-16 h-16 bg-orange-50 rounded-3xl text-orange-600 font-black text-xl">3</div>
+                        <div class="flex-grow">
+                            <p class="text-2xl font-black text-slate-800 mb-3 tracking-tight italic">
+                                "Fossil fuel consumption <span class="text-orange-600 underline underline-offset-8 decoration-2">experienced a sudden collapse</span> following the green policy."
+                            </p>
+                            <p class="text-slate-500 text-sm font-medium mb-4 italic italic leading-relaxed">Dịch: Việc tiêu thụ nhiên liệu hóa thạch đã trải qua một sự sụp đổ đột ngột sau chính sách xanh.</p>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 bg-slate-950 rounded-lg">
+                                <span class="text-[10px] font-black text-orange-400 uppercase">Analysis:</span>
+                                <span class="text-[10px] font-bold text-slate-300 uppercase tracking-tighter italic">Effective use of 'Experienced' verb</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Section 4: Interactive AI Practice -->
+        <section class="bg-slate-50 rounded-[4rem] p-12 md:p-20 border border-slate-200 mb-20 relative overflow-hidden shadow-inner">
+            <div class="absolute top-0 right-0 p-12 opacity-[0.03]">
+                <i data-lucide="terminal" class="w-64 h-64"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="mb-16 text-center max-w-2xl mx-auto">
+                    <h3 class="text-4xl font-black mb-4 text-slate-900 tracking-tighter">AI Practice Lab</h3>
+                    <p class="text-slate-500 font-medium italic">Thử thách khả năng sử dụng từ vựng sụt giảm mạnh. Hãy chọn sắc thái đúng nhất.</p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Q1 -->
+                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100">
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-12 h-12 rounded-2xl bg-rose-600 text-white flex items-center justify-center font-black shrink-0">1</div>
+                            <p class="font-black text-slate-800 text-xl leading-snug">Câu nào sau đây là TỐT NHẤT cho tiêu chuẩn Band 8+? <br/><span class="text-slate-400 font-medium italic text-base">"The market fell very quickly."</span></p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            <button onclick="checkCorrect(this, false)" class="px-8 py-5 rounded-2xl bg-slate-50 font-black text-sm hover:bg-slate-100 transition-all text-slate-500 text-left border border-slate-100">A. The market fell down sharply.</button>
+                            <button onclick="checkCorrect(this, true)" class="px-8 py-5 rounded-2xl bg-slate-50 font-black text-sm hover:bg-slate-100 transition-all text-slate-500 text-left border border-slate-100">B. The market plummeted.</button>
+                        </div>
+                        <div class="answer-reveal p-6 bg-rose-50 border border-rose-100 rounded-3xl">
+                            <p class="text-rose-800 font-extrabold italic">Chính xác! "Plummeted" đã bao hàm nghĩa "rất nhanh và mạnh", ngắn gọn và học thuật hơn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100">
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-black shrink-0">2</div>
+                            <p class="font-black text-slate-800 text-xl leading-snug">Hoàn thành câu dùng cấu trúc danh từ (Nominalization): <br/><span class="text-slate-400 font-medium italic text-base">"The unemployment rate experienced a dramatic __________ in 2020."</span></p>
+                        </div>
+                        <div class="flex gap-4 mb-8">
+                            <input type="text" placeholder="Nhập từ của bạn..." class="flex-grow px-8 py-4 rounded-2xl border border-slate-200 font-bold focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <button onclick="reveal(this)" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest">Check</button>
+                        </div>
+                        <div class="answer-reveal p-6 bg-blue-50 border border-blue-100 rounded-3xl">
+                            <p class="text-blue-800 font-extrabold italic">Đáp án: "plunge" / "slump" / "collapse".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Mastery CTA -->
+        <footer class='mt-12 p-12 bg-slate-950 rounded-[4rem] flex flex-col md:flex-row items-center gap-12 text-white border border-slate-800 shadow-2xl relative overflow-hidden'>
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-rose-600/10 rounded-full blur-3xl"></div>
+            <div class='shrink-0 w-24 h-24 bg-gradient-to-tr from-rose-600 to-pink-600 rounded-[2.5rem] flex items-center justify-center shadow-2xl shadow-rose-500/20'>
+                <i data-lucide='award' class='w-12 h-12 text-white'></i>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h4 class='text-3xl font-black mb-2 tracking-tighter uppercase italic'>Module A4 Complete!</h4>
+                <p class='text-slate-400 font-medium leading-relaxed max-w-xl'>
+                    Bạn đã làm chủ được sắc thái "Free Fall" trong Writing Task 1. Hãy nhớ: Độ dốc lớn = Động từ mạnh. Tuyệt đối không dùng trạng từ thừa thãi với Plummet.
+                </p>
+            </div>
+            <div class="flex gap-4">
+                <button class="bg-white text-slate-950 px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-rose-50 transition-all shadow-xl shadow-white/5">Go to A5</button>
+            </div>
+        </footer>
+
+        <p class="mt-16 text-center text-slate-400 text-[10px] font-black uppercase tracking-[0.4em]">
+            IELTS Mastery AI Architecture © 2026 Curriculum
+        </p>
     </div>
 
     <script>
         lucide.createIcons();
+
+        function checkCorrect(btn, isCorrect) {
+            const container = btn.closest('.bg-white');
+            const feedback = container.querySelector('.answer-reveal');
+            
+            if (isCorrect) {
+                btn.classList.remove('bg-slate-50', 'text-slate-500');
+                btn.classList.add('bg-rose-600', 'text-white', 'border-rose-600');
+                feedback.style.display = "block";
+            } else {
+                btn.classList.add('animate-shake', 'border-rose-200', 'text-rose-300');
+                setTimeout(() => btn.classList.remove('animate-shake'), 500);
+            }
+        }
+
+        function reveal(btn) {
+            const container = btn.closest('.bg-white');
+            const feedback = container.querySelector('.answer-reveal');
+            feedback.style.display = "block";
+        }
     </script>
 </body>
 </html>

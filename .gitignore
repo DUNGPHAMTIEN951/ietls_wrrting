@@ -34,3 +34,8 @@ data/txt_split/
 data/json_chunks/
 data/*_tmp.txt
 data/*_raw.txt
+cookie.js
+scratch/
+*.json
+!data/*.json
+!**/ai_data_list.json

@@ -3,52 +3,341 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>A10. THAY CỰC LỚN | IELTS Writing Task 1 Theory</title>
-    <script src='https://cdn.tailwindcss.com'></script>
-    <script src='https://unpkg.com/lucide@latest'></script>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+    <title>A10. EXTREME FLUCTUATIONS | IELTS Writing Mastery</title>
+    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
+    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
+    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .lesson-content p { margin-bottom: 1rem; line-height: 1.6; color: #334155; }
-        .lesson-content strong { color: #1e293b; font-weight: 700; }
-        .lesson-content .bg-blue-50 { border-radius: 0.75rem; }
-        .lesson-content div { margin-bottom: 1rem; }
-        .lesson-content .font-semibold { color: #1e293b; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .premium-bg { background: radial-gradient(circle at top right, #f8fafc, #eff6ff); }
+        .mastery-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.4); }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        .ans-panel { max-height: 0; opacity: 0; overflow: hidden; transition: all 0.5s ease-in-out; }
+        .ans-panel.active { max-height: 200px; opacity: 1; margin-top: 1rem; }
+        .node-line { position: relative; }
+        .node-line::before { content: ''; position: absolute; left: -20px; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+        .animate-float { animation: float 4s ease-in-out infinite; }
     </style>
 </head>
-<body class='bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen pb-20'>
-    <div class='max-w-4xl mx-auto px-4 pt-12'>
-        <a href='../task1_theory.html' class='inline-flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all'>
-            <i data-lucide='arrow-left' class='w-5 h-5'></i>
-            Quay lại danh sách
-        </a>
-
-        <div class='bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 overflow-hidden'>
-            <div class='bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-white'>
-                <div class='flex items-center gap-4 mb-4'>
-                    <span class='px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-black uppercase tracking-widest'>Lesson Module</span>
+<body class='premium-bg text-slate-900 min-h-screen pb-20'>
+    <div class='max-w-6xl mx-auto px-6 pt-12'>
+        
+        <!-- Navigation Header -->
+        <nav class="flex justify-between items-center mb-16">
+            <a href='../task1_theory.html' class='group flex items-center gap-3 text-slate-500 font-bold hover:text-indigo-600 transition-all'>
+                <div class="p-3 bg-white rounded-2xl shadow-sm group-hover:shadow-md group-hover:-translate-x-1 transition-all">
+                    <i data-lucide='chevron-left' class='w-5 h-5'></i>
                 </div>
-                <h1 class='text-4xl font-black tracking-tight leading-tight'>A10. THAY CỰC LỚN</h1>
+                <span class="tracking-tight">Writing Curriculum</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex -space-x-2">
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-indigo-500 flex items-center justify-center text-[10px] text-white font-bold">AI</div>
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-emerald-500 flex items-center justify-center text-[10px] text-white font-bold">UX</div>
+                </div>
+                <span class="h-8 w-px bg-slate-200 mx-2"></span>
+                <span class="px-5 py-2 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] shadow-lg shadow-slate-200">Expert Module A10</span>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class='relative overflow-hidden mastery-gradient rounded-[4rem] p-16 text-white mb-20 shadow-3xl shadow-indigo-900/30'>
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-400/10 rounded-full blur-[120px] -mr-40 -mt-40 animate-pulse"></div>
+            <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class='text-6xl lg:text-7xl font-black tracking-tighter leading-none mb-8'>
+                        MAXIMUM <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-amber-400 italic">SHIFTS</span>
+                    </h1>
+                    <p class='text-indigo-100/80 text-xl leading-relaxed font-medium mb-10'>
+                        Nâng tầm bài viết từ "miêu tả dữ liệu" sang "kể chuyện dữ liệu" bằng các tính từ cực đại. Khi biểu đồ bùng nổ, ngôn từ của bạn cũng phải bùng nổ.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full border border-white/20 text-xs font-bold uppercase tracking-widest">
+                            <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i> Band 8.5+ Focus
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <!-- Sơ đồ quy trình học tập trực quan -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 glass-card rounded-[2.5rem] border-white/10 animate-float" style="animation-delay: 0s;">
+                            <div class="text-3xl font-black text-rose-400 mb-2">30%+</div>
+                            <div class="text-[10px] uppercase font-black tracking-widest text-indigo-200 opacity-60">Magnitude Threshold</div>
+                        </div>
+                        <div class="p-6 glass-card rounded-[2.5rem] border-white/10 animate-float" style="animation-delay: 1s;">
+                            <i data-lucide="zap" class="w-8 h-8 text-amber-400 mb-2"></i>
+                            <div class="text-[10px] uppercase font-black tracking-widest text-indigo-200 opacity-60">Visual Shock</div>
+                        </div>
+                        <div class="p-6 glass-card rounded-[2.5rem] border-white/10 col-span-2 flex items-center justify-between">
+                            <span class="text-xs font-bold">Lexical Precision:</span>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
+                                <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
+                                <div class="w-2 h-2 rounded-full bg-indigo-400"></div>
+                                <div class="w-2 h-2 rounded-full bg-rose-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- AI Deep Dive Section -->
+        <section class="grid lg:grid-cols-3 gap-10 mb-24">
+            <div class="lg:col-span-2 space-y-12">
+                <div class="bg-white rounded-[3.5rem] p-12 shadow-sm border border-slate-100 relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 w-32 h-32 bg-indigo-50 rounded-full opacity-50"></div>
+                    <h3 class="text-3xl font-black text-slate-800 mb-8 flex items-center gap-4">
+                        <span class="p-3 bg-indigo-600 rounded-2xl text-white shadow-lg shadow-indigo-200">
+                            <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                        </span>
+                        AI Pedagogical Analysis
+                    </h3>
+                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg font-medium">
+                        <p>Trong kỹ thuật <span class="text-indigo-600 font-bold">Educational UX</span>, chúng tôi không dạy từ vựng theo danh sách, mà theo <span class="italic underline decoration-rose-300 underline-offset-4">mật độ dữ liệu</span>.</p>
+                        <ul class="space-y-4">
+                            <li class="flex gap-4 items-start node-line">
+                                <span class="shrink-0 w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center text-[10px] font-black">1</span>
+                                <p><strong>Sắc thái (Connotation):</strong> "Dramatic" không chỉ là to lớn, nó mang hàm ý về "tính kịch nghệ" - tức là người xem phải chú ý ngay lập tức.</p>
+                            </li>
+                            <li class="flex gap-4 items-start node-line">
+                                <span class="shrink-0 w-6 h-6 bg-slate-100 rounded-full flex items-center justify-center text-[10px] font-black">2</span>
+                                <p><strong>Collocation Logic:</strong> AI của giám khảo quét tìm cặp đôi: <span class="text-rose-500">Adverb + Verb</span> hoặc <span class="text-indigo-500">Adjective + Noun</span>. Sai lệch cặp này sẽ làm giảm tính "academic fluency".</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Word Matrix -->
+                <div class="bg-white rounded-[3.5rem] p-12 shadow-sm border border-slate-100">
+                    <div class="flex justify-between items-end mb-10">
+                        <h3 class="text-2xl font-black text-slate-800 uppercase tracking-tighter">The Magnitude Matrix</h3>
+                        <span class="text-[10px] font-black text-slate-400 tracking-widest italic">Lexical Density: HIGH</span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="text-left border-b-2 border-slate-50">
+                                    <th class="pb-6 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Grammar Type</th>
+                                    <th class="pb-6 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Top-Tier Lexis</th>
+                                    <th class="pb-6 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Impact Level</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-50">
+                                <tr class="group hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-8">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                                            <span class="font-bold text-slate-500 uppercase text-xs tracking-widest">Adjectives</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-8">
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="text-xl font-black text-slate-800 italic">Tremendous,</span>
+                                            <span class="text-xl font-black text-rose-600 italic">Exponential,</span>
+                                            <span class="text-xl font-black text-slate-800 italic">Vast</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-8"><div class="h-2 w-24 bg-slate-100 rounded-full overflow-hidden"><div class="h-full w-full bg-rose-500"></div></div></td>
+                                </tr>
+                                <tr class="group hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-8">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+                                            <span class="font-bold text-slate-500 uppercase text-xs tracking-widest">Adverbs</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-8">
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="text-xl font-black text-slate-800 italic">Substantially,</span>
+                                            <span class="text-xl font-black text-indigo-600 italic">Dramatically,</span>
+                                            <span class="text-xl font-black text-slate-800 italic">Sharply</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-8"><div class="h-2 w-24 bg-slate-100 rounded-full overflow-hidden"><div class="h-full w-[85%] bg-indigo-500"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
-            <div class='p-10 lesson-content text-lg'>
-                <p class='mb-1 font-semibold text-gray-800 leading-relaxed'>ADJ</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>dramatic</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>Huge</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>Enormous</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>tremendous</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>ADV</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>Dramatically</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>Enormously</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>Tremendously</p>
+            <!-- Distinction Panel: The "Nuance" Vault -->
+            <div class="bg-slate-900 rounded-[3.5rem] p-10 text-white shadow-2xl flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-rose-500 via-indigo-500 to-amber-500"></div>
+                <div>
+                    <div class="flex items-center gap-3 mb-10">
+                        <div class="p-3 bg-white/10 rounded-2xl border border-white/10"><i data-lucide="layers" class="w-6 h-6 text-indigo-400"></i></div>
+                        <span class="font-black text-sm uppercase tracking-[0.2em]">Nuance Comparison</span>
+                    </div>
+                    <div class="space-y-10">
+                        <div class="group">
+                            <h4 class="text-amber-400 font-black text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <span class="w-1 h-4 bg-amber-400 rounded-full"></span> Surge vs Rocket
+                            </h4>
+                            <p class="text-slate-400 leading-relaxed text-sm">
+                                <strong>Rocket</strong> mang sắc thái tốc độ cực cao (tên lửa). <strong>Surge</strong> (dâng trào) mang sắc thái khối lượng (volume) tăng mạnh đột ngột như sóng biển.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h4 class="text-indigo-400 font-black text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <span class="w-1 h-4 bg-indigo-400 rounded-full"></span> Tremendous vs Big
+                            </h4>
+                            <p class="text-slate-400 leading-relaxed text-sm">
+                                AI sẽ trừ điểm nếu bạn dùng "Big" quá 2 lần. <strong>Tremendous</strong> không chỉ là to, nó là "to đến mức gây choáng ngợp".
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h4 class="text-rose-400 font-black text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <span class="w-1 h-4 bg-rose-400 rounded-full"></span> Exponential
+                            </h4>
+                            <p class="text-slate-400 leading-relaxed text-sm italic">
+                                Chỉ dùng khi con số nhân đôi hoặc nhân ba liên tục (tăng trưởng theo hàm mũ). Đừng lạm dụng nếu biểu đồ chỉ tăng theo đường thẳng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 p-6 bg-white/5 rounded-3xl border border-white/10">
+                    <p class="text-[10px] font-bold text-indigo-300 uppercase tracking-widest mb-2">Pro Tip</p>
+                    <p class="text-xs italic opacity-70">Sử dụng động từ 'witness' hoặc 'experience' để làm đa dạng hóa cấu trúc câu.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class='mt-12 p-8 bg-blue-50 dark:bg-blue-900/10 rounded-[2rem] border border-blue-100 dark:border-blue-900/30 flex items-center gap-6'>
-            <div class='w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20'>
-                <i data-lucide='lightbulb' class='w-8 h-8'></i>
+        <!-- Band 8-9 Exemplars (The Gold Standard) -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-12">
+                <h3 class="text-3xl font-black text-slate-800 uppercase tracking-tighter">Gold Standard Exemplars</h3>
+                <div class="h-px flex-1 bg-slate-200"></div>
+                <i data-lucide="award" class="text-amber-500 w-8 h-8"></i>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Example Card 1 -->
+                <div class="group bg-white p-10 rounded-[3rem] border border-slate-100 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 text-slate-50 font-black text-6xl group-hover:text-indigo-50 transition-colors">01</div>
+                    <div class="relative z-10">
+                        <p class="text-xl font-bold text-slate-800 mb-6 italic leading-relaxed">
+                            "The consumption of fossil fuels <span class="text-indigo-600 underline decoration-indigo-200 decoration-4 underline-offset-8">rocketed exponentially</span> during the industrial boom."
+                        </p>
+                        <div class="space-y-4 pt-6 border-t border-slate-50">
+                            <p class="text-sm text-slate-500 font-medium"><strong>Dịch:</strong> Việc tiêu thụ nhiên liệu hóa thạch đã tăng vọt theo hàm mũ trong thời kỳ bùng nổ công nghiệp.</p>
+                            <div class="p-4 bg-indigo-50 rounded-2xl text-[11px] font-black text-indigo-600 uppercase tracking-tighter italic">
+                                Logic: Sự kết hợp giữa "Rocketed" và "Exponentially" tạo ra cường độ miêu tả mạnh nhất trong IELTS Task 1.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example Card 2 -->
+                <div class="group bg-white p-10 rounded-[3rem] border border-slate-100 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 text-slate-50 font-black text-6xl group-hover:text-rose-50 transition-colors">02</div>
+                    <div class="relative z-10">
+                        <p class="text-xl font-bold text-slate-800 mb-6 italic leading-relaxed">
+                            "The period witnessed a <span class="text-rose-600 underline decoration-rose-200 decoration-4 underline-offset-8">tremendous surge</span> in online retail sales, peaking at $50 billion."
+                        </p>
+                        <div class="space-y-4 pt-6 border-t border-slate-50">
+                            <p class="text-sm text-slate-500 font-medium"><strong>Dịch:</strong> Giai đoạn này đã chứng kiến một sự trỗi dậy to lớn trong doanh số bán lẻ trực tuyến, đạt đỉnh 50 tỷ USD.</p>
+                            <div class="p-4 bg-rose-50 rounded-2xl text-[11px] font-black text-rose-600 uppercase tracking-tighter italic">
+                                Logic: Dùng danh từ "surge" đi cùng tính từ "tremendous" để làm chủ ngữ cho phân từ hiện tại "peaking at".
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example Card 3 (Expert Structure) -->
+                <div class="md:col-span-2 bg-slate-900 p-12 rounded-[4rem] text-white flex flex-col md:flex-row gap-10 items-center overflow-hidden relative">
+                    <div class="absolute -left-20 top-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl"></div>
+                    <div class="flex-1 relative z-10">
+                        <div class="mb-4 flex gap-2">
+                            <span class="px-3 py-1 bg-white/10 rounded-lg text-[9px] font-black uppercase tracking-widest">Complex Synthesis</span>
+                        </div>
+                        <p class="text-2xl font-black italic mb-6 leading-tight">
+                            "Following a decade of stagnation, the figures <span class="text-amber-400">soared dramatically</span>, representing a <span class="text-indigo-400">vast expansion</span> of the market share."
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed max-w-2xl">
+                            <strong>Phân tích Master:</strong> Câu này kết hợp sự tương phản (stagnation vs soared) và hai nhóm từ cực đại (dramatically, vast) giúp thể hiện sự linh hoạt tuyệt đối trong từ vựng.
+                        </p>
+                    </div>
+                    <div class="hidden md:block shrink-0 p-8 bg-white/5 rounded-[3rem] border border-white/10 italic text-amber-400 font-black text-4xl">
+                        Band 9.0
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice Lab -->
+        <section class="bg-indigo-950 rounded-[4rem] p-16 text-white shadow-3xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-16 opacity-5 rotate-12">
+                <i data-lucide="terminal" class="w-64 h-64"></i>
+            </div>
+            
+            <h3 class="text-3xl font-black mb-12 flex items-center gap-6 italic uppercase tracking-tighter">
+                <span class="w-16 h-16 rounded-[2rem] bg-indigo-500 flex items-center justify-center shadow-lg shadow-indigo-400/20">
+                    <i data-lucide="code-2" class="w-8 h-8"></i>
+                </span>
+                Interactive Precision Lab
+            </h3>
+            
+            <div class="grid lg:grid-cols-2 gap-16 relative z-10">
+                <!-- Q1 -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center font-black text-xs">01</span>
+                        <p class="font-bold text-indigo-300 uppercase text-xs tracking-widest">Translation Challenge</p>
+                    </div>
+                    <p class="text-xl font-medium leading-relaxed italic">"Tỉ lệ thất nghiệp đã giảm một cách đáng kể (dùng 'tremendously') vào năm 2010."</p>
+                    <div class="flex flex-col gap-4">
+                        <input type="text" placeholder="Type your sentence here..." class="w-full bg-white/5 border border-white/10 rounded-2xl p-5 text-white focus:ring-2 focus:ring-indigo-500 outline-none transition-all placeholder:opacity-30">
+                        <button onclick="toggleLab('lab1')" class="w-fit px-8 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-black text-xs uppercase tracking-[0.2em] transition-all shadow-xl shadow-indigo-600/30">Check Sample</button>
+                        <div id="lab1" class="ans-panel">
+                            <div class="p-6 bg-white/5 rounded-2xl border border-white/10 italic text-indigo-200 text-sm leading-relaxed">
+                                "The unemployment rate dropped tremendously in 2010." <br/>
+                                <span class="text-[10px] opacity-60 not-italic block mt-2">(Note: Tremendously có thể thay cho Dramatically để tăng Lexical Resource)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center font-black text-xs">02</span>
+                        <p class="font-bold text-indigo-300 uppercase text-xs tracking-widest">Word Selection Precision</p>
+                    </div>
+                    <p class="text-xl font-medium leading-relaxed italic">"The chart shows a/an ________ growth of 400% in one month."</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="alert('Lưu ý: Dramatically là trạng từ, không thể đứng trước danh từ Growth!')" class="p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-all font-bold text-sm border border-white/5">Dramatically</button>
+                        <button onclick="alert('Chính xác! Exponential là tính từ mô tả sự tăng trưởng nhân đôi/nhân ba.')" class="p-5 bg-white/10 border-2 border-indigo-500 rounded-2xl font-black text-sm text-indigo-400">Exponential</button>
+                    </div>
+                    <p class="text-xs text-slate-500 italic">*Chọn từ đúng về mặt ngữ pháp và ngữ nghĩa học thuật.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Mentor Rule -->
+        <div class="mt-16 p-12 bg-white rounded-[4rem] border border-slate-100 flex flex-col md:flex-row items-center gap-10 group card-hover">
+            <div class="w-24 h-24 bg-rose-600 rounded-[2.5rem] flex items-center justify-center text-white shadow-2xl shadow-rose-200 group-hover:rotate-[15deg] transition-all duration-500 shrink-0">
+                <i data-lucide="zap" class="w-12 h-12"></i>
             </div>
             <div>
-                <h4 class='font-black text-blue-900 dark:text-blue-300'>Mẹo học tập</h4>
-                <p class='text-blue-700 dark:text-blue-400 font-medium mb-0'>Hãy ghi chép lại các cấu trúc này và áp dụng vào phần Luyện tập dịch câu để ghi nhớ lâu hơn.</p>
+                <h4 class="text-2xl font-black text-slate-900 mb-3 italic">The Rule of Contrast</h4>
+                <p class="text-slate-500 font-medium leading-relaxed text-lg italic">
+                    "Trong UI/UX, chúng tôi dùng màu sắc để tạo điểm nhấn. Trong Writing, hãy dùng các từ 'Extreme' như màu Đỏ. Nếu bạn tô đỏ toàn bộ bài viết (lạm dụng từ cực đại cho các thay đổi nhỏ), giám khảo sẽ không thấy được đâu là trọng tâm dữ liệu. Hãy biết kiềm chế để bùng nổ đúng lúc."
+                </p>
             </div>
         </div>
     </div>
 
     <script>
         lucide.createIcons();
+        function toggleLab(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('active');
+        }
     </script>
 </body>
 </html>

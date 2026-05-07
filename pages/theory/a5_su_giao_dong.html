@@ -3,52 +3,371 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>A5. SỰ GIAO ĐỘNG | IELTS Writing Task 1 Theory</title>
+    <title>A5. BIẾN ĐỘNG & DAO ĐỘNG | IELTS Writing Mastery High-End</title>
     <script src='https://cdn.tailwindcss.com'></script>
     <script src='https://unpkg.com/lucide@latest'></script>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .lesson-content p { margin-bottom: 1rem; line-height: 1.6; color: #334155; }
-        .lesson-content strong { color: #1e293b; font-weight: 700; }
-        .lesson-content .bg-blue-50 { border-radius: 0.75rem; }
-        .lesson-content div { margin-bottom: 1rem; }
-        .lesson-content .font-semibold { color: #1e293b; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass-morphism { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .answer-panel { max-height: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); opacity: 0; }
+        .answer-panel.show { max-height: 500px; opacity: 1; margin-top: 1rem; }
+        .custom-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .accent-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); }
+        .step-number { text-shadow: 0 10px 20px rgba(99, 102, 241, 0.4); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        .animate-pulse-soft { animation: pulse-soft 3s infinite; }
     </style>
 </head>
-<body class='bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen pb-20'>
-    <div class='max-w-4xl mx-auto px-4 pt-12'>
-        <a href='../task1_theory.html' class='inline-flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all'>
-            <i data-lucide='arrow-left' class='w-5 h-5'></i>
-            Quay lại danh sách
-        </a>
-
-        <div class='bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 overflow-hidden'>
-            <div class='bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-white'>
-                <div class='flex items-center gap-4 mb-4'>
-                    <span class='px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-black uppercase tracking-widest'>Lesson Module</span>
+<body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24'>
+    <div class='max-w-6xl mx-auto px-6 pt-8'>
+        
+        <nav class="flex justify-between items-center mb-12">
+            <a href='../task1_theory.html' class='group flex items-center gap-3 text-slate-500 font-bold hover:text-indigo-600 transition-all bg-white px-5 py-2.5 rounded-2xl shadow-sm border border-slate-100'>
+                <i data-lucide='chevron-left' class='w-5 h-5 group-hover:-translate-x-1 transition-transform'></i>
+                <span>Curriculum Hub</span>
+            </a>
+            <div class="flex items-center gap-3">
+                <div class="flex -space-x-2">
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-indigo-500 flex items-center justify-center text-[10px] text-white font-bold">AI</div>
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-emerald-500 flex items-center justify-center text-[10px] text-white font-bold">W1</div>
                 </div>
-                <h1 class='text-4xl font-black tracking-tight leading-tight'>A5. SỰ GIAO ĐỘNG</h1>
+                <span class="text-xs font-black text-slate-400 uppercase tracking-tighter italic">Precision Series v2.0</span>
+            </div>
+        </nav>
+
+        <header class='relative overflow-hidden custom-gradient rounded-[3.5rem] p-10 md:p-16 mb-16 shadow-3xl text-white'>
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-500/20 rounded-full blur-[100px]"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px]"></div>
+            
+            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class='inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 mb-8 animate-pulse-soft'>
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                        </span>
+                        <span class='text-indigo-100 font-bold tracking-widest text-[10px] uppercase'>Advanced Data Description</span>
+                    </div>
+                    <h1 class='text-5xl md:text-7xl font-black tracking-tight leading-[1.1] mb-8'>
+                        Biến Động <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Dao Động</span>
+                    </h1>
+                    <p class='text-slate-400 text-lg leading-relaxed max-w-md'>
+                        Nâng tầm bài viết từ mô tả "tăng/giảm" cơ bản sang phân tích <span class="text-white font-semibold underline decoration-indigo-500 underline-offset-4">tính bất ổn (instability)</span> của dữ liệu.
+                    </p>
+                </div>
+                <div class="hidden md:block relative">
+                    <div class="bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div class="flex items-end gap-2 h-40">
+                            <div class="w-full bg-indigo-500/40 rounded-t-lg h-[40%] animate-bounce" style="animation-delay: 0.1s"></div>
+                            <div class="w-full bg-indigo-500/60 rounded-t-lg h-[80%] animate-bounce" style="animation-delay: 0.3s"></div>
+                            <div class="w-full bg-indigo-500/30 rounded-t-lg h-[50%] animate-bounce" style="animation-delay: 0.2s"></div>
+                            <div class="w-full bg-indigo-500/80 rounded-t-lg h-[95%] animate-bounce" style="animation-delay: 0.4s"></div>
+                            <div class="w-full bg-indigo-500/50 rounded-t-lg h-[60%] animate-bounce" style="animation-delay: 0.5s"></div>
+                        </div>
+                        <div class="mt-6 flex justify-between text-[10px] font-black text-indigo-300 uppercase tracking-widest">
+                            <span>Volatility Index</span>
+                            <span>High Range</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="mb-20">
+            <div class="flex flex-col items-center mb-12">
+                <h2 class="text-3xl font-black text-slate-800 mb-4">Mô hình diễn đạt 3 trụ cột</h2>
+                <div class="h-1.5 w-20 bg-indigo-600 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm card-hover">
+                    <div class="absolute -top-5 -right-5 w-12 h-12 accent-gradient rounded-2xl flex items-center justify-center text-white font-black shadow-lg shadow-indigo-200">1</div>
+                    <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="activity" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-extrabold text-slate-800 mb-4 text-xl tracking-tight">The Dynamic Verb</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Tập trung vào hành động của chủ thể.</p>
+                    <div class="p-4 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
+                        <code class="text-xs font-bold text-indigo-600">S + fluctuate + around/between</code>
+                    </div>
+                </div>
+
+                <div class="group relative p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm card-hover">
+                    <div class="absolute -top-5 -right-5 w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center text-white font-black shadow-lg">2</div>
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="bar-chart-3" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-extrabold text-slate-800 mb-4 text-xl tracking-tight">The Descriptive Noun</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Nhấn mạnh vào sự tồn tại của sự biến động.</p>
+                    <div class="p-4 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
+                        <code class="text-xs font-bold text-purple-600">There be + adj + fluctuation(s) in...</code>
+                    </div>
+                </div>
+
+                <div class="group relative p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm card-hover">
+                    <div class="absolute -top-5 -right-5 w-12 h-12 bg-pink-500 rounded-2xl flex items-center justify-center text-white font-black shadow-lg shadow-pink-200">3</div>
+                    <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i data-lucide="trending-up" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-extrabold text-slate-800 mb-4 text-xl tracking-tight">The Narrative Witness</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Cách viết "nhân hóa" giúp bài viết học thuật hơn.</p>
+                    <div class="p-4 bg-slate-50 rounded-2xl border border-dashed border-slate-200">
+                        <code class="text-xs font-bold text-pink-600">Subject + witness + ups and downs</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="bg-white rounded-[3rem] shadow-sm border border-slate-100 overflow-hidden">
+                <div class="p-10 border-b border-slate-50 flex justify-between items-end">
+                    <div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-2">Lexical Precision Matrix</h3>
+                        <p class="text-slate-400 font-medium">Phân loại từ vựng theo mức độ và từ loại</p>
+                    </div>
+                    <span class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl text-xs font-black">BAND 7.5+ RESOURCE</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-slate-50/50">
+                                <th class="px-10 py-6 text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Intensity</th>
+                                <th class="px-10 py-6 text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Verbs</th>
+                                <th class="px-10 py-6 text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Nouns</th>
+                                <th class="px-10 py-6 text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Collocations</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-50">
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="px-10 py-8">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-red-500"></div>
+                                        <span class="font-bold text-slate-700">Strong (Mạnh)</span>
+                                    </div>
+                                </td>
+                                <td class="px-10 py-8 font-bold text-indigo-600">Fluctuate wildly</td>
+                                <td class="px-10 py-8 text-slate-600 italic">Wild fluctuations</td>
+                                <td class="px-10 py-8"><span class="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-[10px] font-bold">Erratic pattern</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="px-10 py-8">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-amber-500"></div>
+                                        <span class="font-bold text-slate-700">Moderate (Vừa)</span>
+                                    </div>
+                                </td>
+                                <td class="px-10 py-8 font-bold text-indigo-600">Fluctuate significantly</td>
+                                <td class="px-10 py-8 text-slate-600 italic">Marked fluctuations</td>
+                                <td class="px-10 py-8"><span class="px-3 py-1 bg-amber-50 text-amber-600 rounded-lg text-[10px] font-bold">Notable variation</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="px-10 py-8">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                                        <span class="font-bold text-slate-700">Slight (Nhẹ)</span>
+                                    </div>
+                                </td>
+                                <td class="px-10 py-8 font-bold text-indigo-600">Oscillate slightly</td>
+                                <td class="px-10 py-8 text-slate-600 italic">Mild fluctuations</td>
+                                <td class="px-10 py-8"><span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-lg text-[10px] font-bold">Stable range</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+            <div class="bg-indigo-900 rounded-[3rem] p-10 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <i data-lucide="help-circle" class="w-32 h-32"></i>
+                </div>
+                <h3 class="text-2xl font-black mb-8 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center text-sm">vs</span>
+                    Confusion Fixer
+                </h3>
+                <div class="space-y-8 relative z-10">
+                    <div class="pb-6 border-b border-white/10">
+                        <h4 class="text-indigo-300 font-black text-xs uppercase mb-3 tracking-widest italic">Fluctuate vs. Vary</h4>
+                        <p class="text-sm leading-relaxed text-indigo-50/80">
+                            <strong>Fluctuate</strong>: Diễn tả 1 đối tượng duy nhất thay đổi liên tục qua thời gian. <br>
+                            <em>(e.g., Oil prices fluctuate)</em><br><br>
+                            <strong>Vary</strong>: Diễn tả sự khác biệt giữa các nhóm hoặc sự thay đổi tùy điều kiện.<br>
+                            <em>(e.g., Salary scales vary between departments)</em>
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-rose-300 font-black text-xs uppercase mb-3 tracking-widest italic">Increase vs. Rocket</h4>
+                        <p class="text-sm leading-relaxed text-rose-50/80">
+                            Dùng <strong>Rocket/Soar</strong> cho những cú bật nhảy cực mạnh (từ 5% lên 50%). Đừng lạm dụng cho các mức tăng trung bình, điều này làm mất tính khách quan (objectivity) của bài Writing.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class='p-10 lesson-content text-lg'>
-                <strong class='inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded mt-2 text-sm uppercase'>VERB</strong><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>Fluctuate</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>witness ups and downs</p><strong class='inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded mt-2 text-sm uppercase'>NOUN</strong><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>fluctuation</p>
+            <div class="bg-white rounded-[3rem] p-10 border border-slate-100 shadow-sm">
+                <h3 class="text-2xl font-black text-slate-800 mb-8 flex items-center gap-3">
+                    <i data-lucide="brain-circuit" class="text-indigo-600"></i> AI Mentor Deep-Dive
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-slate-800 text-sm mb-1">Sắc thái của "Erratic"</h5>
+                            <p class="text-xs text-slate-500 leading-relaxed italic">Dùng "erratic pattern" khi sự biến động không tuân theo bất cứ quy luật nào, tạo cảm giác thiếu ổn định (unpredictable).</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="shrink-0 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-slate-800 text-sm mb-1">Cấu trúc Giới từ</h5>
+                            <p class="text-xs text-slate-500 leading-relaxed italic">Luôn nhớ: Fluctuate <strong>between</strong> [A] and [B] hoặc <strong>around</strong> [X]. Thiếu giới từ là lỗi trừ điểm Grammatical Range & Accuracy nặng.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class='mt-12 p-8 bg-blue-50 dark:bg-blue-900/10 rounded-[2rem] border border-blue-100 dark:border-blue-900/30 flex items-center gap-6'>
-            <div class='w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20'>
-                <i data-lucide='lightbulb' class='w-8 h-8'></i>
+        <section class="mb-20">
+            <h3 class="text-3xl font-black text-slate-800 mb-10 text-center">Band 8.0-9.0 Master Examples</h3>
+            <div class="grid gap-6">
+                <div class="group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:border-indigo-400 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-[10px] font-black uppercase rounded-lg">Example 01</span>
+                        <div class="flex gap-1">
+                            <i data-lucide="star" class="w-3 h-3 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-3 h-3 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-3 h-3 fill-amber-400 text-amber-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-xl font-bold text-slate-800 mb-4 leading-snug">
+                        "The volume of international trade <span class="text-indigo-600">exhibited wild fluctuations</span> between 20% and 50% throughout the decade."
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 pt-6 border-t border-slate-50">
+                        <p class="text-sm text-slate-500 italic"><span class="font-bold text-slate-700">Dịch:</span> Khối lượng thương mại quốc tế đã cho thấy những sự biến động dữ dội trong khoảng từ 20% đến 50% suốt thập kỷ.</p>
+                        <p class="text-sm text-indigo-600/80 bg-indigo-50/50 p-3 rounded-xl font-medium">
+                            <span class="font-bold uppercase text-[9px] block mb-1 tracking-widest">AI Analysis:</span>
+                            Sử dụng động từ 'exhibit' thay cho 'show' giúp tăng điểm Lexical Resource. 'Wild fluctuations' mô tả biên độ cực lớn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:border-purple-400 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 text-[10px] font-black uppercase rounded-lg">Example 02</span>
+                        <div class="flex gap-1">
+                            <i data-lucide="star" class="w-3 h-3 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-3 h-3 fill-amber-400 text-amber-400"></i>
+                        </div>
+                    </div>
+                    <p class="text-xl font-bold text-slate-800 mb-4 leading-snug">
+                        "The price of gold <span class="text-purple-600">oscillated marginally around</span> the $2,000 mark during the final quarter."
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 pt-6 border-t border-slate-50">
+                        <p class="text-sm text-slate-500 italic"><span class="font-bold text-slate-700">Dịch:</span> Giá vàng dao động nhẹ quanh mốc 2,000 đô la trong suốt quý cuối cùng.</p>
+                        <p class="text-sm text-purple-600/80 bg-purple-50/50 p-3 rounded-xl font-medium">
+                            <span class="font-bold uppercase text-[9px] block mb-1 tracking-widest">AI Analysis:</span>
+                            'Oscillate' là từ chuyên sâu mô tả sự dao động tuần hoàn. Cụm 'around the [number] mark' cực kỳ học thuật.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm italic text-sm text-slate-600">
+                        "Unemployment <span class="font-bold text-slate-800 underline decoration-indigo-200">witnessed several ups and downs</span>..." <br>→ <span class="text-[10px] uppercase font-bold mt-2 block">Dùng Witness để tăng tính linh hoạt.</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm italic text-sm text-slate-600">
+                        "An <span class="font-bold text-slate-800 underline decoration-indigo-200">erratic pattern was seen</span> in the data..." <br>→ <span class="text-[10px] uppercase font-bold mt-2 block">Phù hợp cho biểu đồ không có xu hướng rõ rệt.</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm italic text-sm text-slate-600">
+                        "Sales <span class="font-bold text-slate-800 underline decoration-indigo-200">remained unstable</span>, fluctuating between..." <br>→ <span class="text-[10px] uppercase font-bold mt-2 block">Kết hợp Adj + V-ing để viết câu phức.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-[4rem] p-12 text-white shadow-3xl">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-black mb-4">Interactive Lab</h3>
+                    <p class="text-slate-400 font-medium">Áp dụng tư duy Band 8+ vào bài tập thực tế</p>
+                </div>
+                
+                <div class="space-y-10">
+                    <div class="relative group">
+                        <div class="absolute -left-4 top-0 w-1 h-full bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-all"></div>
+                        <p class="text-lg font-bold mb-6 italic">1. "Số lượng khách du lịch biến động dữ dội trong khoảng 5000 đến 8000." (Sử dụng 'witness' và 'fluctuation')</p>
+                        <button onclick="toggleAnswer('ans1')" class="px-6 py-2 rounded-full border border-white/20 text-xs font-black uppercase hover:bg-white hover:text-slate-900 transition-all tracking-widest">Reveal Solution</button>
+                        <div id="ans1" class="answer-panel">
+                            <div class="p-6 bg-white/5 border border-white/10 rounded-[2rem]">
+                                <p class="text-indigo-400 font-bold mb-2">Đáp án đề xuất:</p>
+                                <p class="text-xl font-medium leading-relaxed">"The number of tourists <span class="text-indigo-400 font-black">witnessed wild fluctuations</span> between 5,000 and 8,000."</p>
+                                <p class="mt-4 text-xs text-slate-500 leading-relaxed">💡 AI Tip: Dùng cấu trúc này giúp bạn biến đổi linh hoạt từ vựng, tránh lặp lại cấu trúc "There were...".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="absolute -left-4 top-0 w-1 h-full bg-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-all"></div>
+                        <p class="text-lg font-bold mb-6 italic">2. Hoàn thành câu: "The stock market ____ (biến động nhẹ) ____ (quanh mốc) 150 points."</p>
+                        <button onclick="toggleAnswer('ans2')" class="px-6 py-2 rounded-full border border-white/20 text-xs font-black uppercase hover:bg-white hover:text-slate-900 transition-all tracking-widest">Reveal Solution</button>
+                        <div id="ans2" class="answer-panel">
+                            <div class="p-6 bg-white/5 border border-white/10 rounded-[2rem]">
+                                <p class="text-purple-400 font-bold mb-2">Đáp án đề xuất:</p>
+                                <p class="text-xl font-medium leading-relaxed">"...<span class="text-purple-400 font-black">fluctuated mildly around</span> the 150-point mark."</p>
+                                <p class="mt-4 text-xs text-slate-500 leading-relaxed">💡 AI Tip: "Point mark" hoặc "percentage mark" là cách gọi mốc số liệu rất chuyên nghiệp.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="absolute -left-4 top-0 w-1 h-full bg-emerald-500 rounded-full opacity-0 group-hover:opacity-100 transition-all"></div>
+                        <p class="text-lg font-bold mb-6 italic">3. Phân tích lỗi sai: "The value fluctuated from 20% to 10% in 2010."</p>
+                        <button onclick="toggleAnswer('ans3')" class="px-6 py-2 rounded-full border border-white/20 text-xs font-black uppercase hover:bg-white hover:text-slate-900 transition-all tracking-widest">Reveal Solution</button>
+                        <div id="ans3" class="answer-panel">
+                            <div class="p-6 bg-white/5 border border-white/10 rounded-[2rem]">
+                                <p class="text-emerald-400 font-bold mb-2">Phân tích lỗi:</p>
+                                <p class="text-xl font-medium leading-relaxed">Sai ở việc dùng "fluctuated" cho một sự thay đổi đơn lẻ.</p>
+                                <p class="mt-4 text-xs text-slate-500 leading-relaxed italic">Sửa lại: "The value <span class="text-emerald-400 font-bold">halved</span> to 10%." <br>Fluctuate chỉ dùng khi có sự đi lên - đi xuống ít nhất 2 lần liên tục.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-20 p-12 bg-white rounded-[3.5rem] border border-slate-100 flex flex-col md:flex-row items-center gap-12 shadow-sm card-hover">
+            <div class="w-24 h-24 accent-gradient rounded-[2.5rem] flex items-center justify-center text-white shrink-0 shadow-2xl shadow-indigo-200">
+                <i data-lucide="zap" class="w-12 h-12"></i>
             </div>
             <div>
-                <h4 class='font-black text-blue-900 dark:text-blue-300'>Mẹo học tập</h4>
-                <p class='text-blue-700 dark:text-blue-400 font-medium mb-0'>Hãy ghi chép lại các cấu trúc này và áp dụng vào phần Luyện tập dịch câu để ghi nhớ lâu hơn.</p>
+                <h4 class="text-2xl font-black text-slate-800 mb-3 uppercase tracking-tighter italic">Pro AI Summary</h4>
+                <p class="text-slate-500 font-medium leading-relaxed">
+                    Sự biến động (Fluctuation) là vũ khí hạng nặng để thể hiện sự chính xác. Đừng viết <span class="text-slate-800 font-bold">"it went up and down"</span>. Hãy viết <span class="text-indigo-600 font-bold">"it experienced a period of volatility"</span>. Sự khác biệt nằm ở cách bạn nhìn nhận số liệu: là các con số đơn lẻ hay là một <span class="underline decoration-indigo-400 underline-offset-4">xu hướng phức tạp</span>.
+                </p>
             </div>
-        </div>
+        </footer>
+
     </div>
 
     <script>
         lucide.createIcons();
+        function toggleAnswer(id) {
+            const panel = document.getElementById(id);
+            panel.classList.toggle('show');
+            const btn = panel.previousElementSibling;
+            const isShow = panel.classList.contains('show');
+            btn.innerHTML = isShow ? 'Hide Insights' : 'Reveal Solution';
+            btn.classList.toggle('bg-white', isShow);
+            btn.classList.toggle('text-slate-900', isShow);
+        }
     </script>
 </body>
 </html>

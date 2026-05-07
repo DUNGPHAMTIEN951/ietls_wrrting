@@ -13672,5 +13672,10007 @@ const TASK1_TRANSLATIONS = [
         "english": "Governments need to provide vocational courses and retraining",
         "category": "Work",
         "id": "e2278"
+    },
+    {
+        "vietnamese": "Văn phòng",
+        "english": "The office",
+        "category": "ARTICLE",
+        "id": "g_17"
+    },
+    {
+        "vietnamese": "Rạp hát",
+        "english": "The theatre",
+        "category": "ARTICLE",
+        "id": "g_18"
+    },
+    {
+        "vietnamese": "Một cậu học sinh giỏi",
+        "english": "Một cậu học sinh giỏi A good pupil",
+        "category": "UNCATEGORIZED",
+        "id": "g_42"
+    },
+    {
+        "vietnamese": "Một người đàn ông mạnh mẽ",
+        "english": "Một người đàn ông mạnh mẽ A strong man",
+        "category": "UNCATEGORIZED",
+        "id": "g_43"
+    },
+    {
+        "vietnamese": "Cậu bé đó sợ hãi.",
+        "english": "Cậu bé đó sợ hãi. The boy is afraid.",
+        "category": "UNCATEGORIZED",
+        "id": "g_44"
+    },
+    {
+        "vietnamese": "Người phụ nữ đó đang ngủ say.",
+        "english": "Người phụ nữ đó đang ngủ say. The woman is asleep.",
+        "category": "UNCATEGORIZED",
+        "id": "g_45"
+    },
+    {
+        "vietnamese": "Cô gái đó khoẻ.",
+        "english": "Cô gái đó khoẻ. The girl is well.",
+        "category": "UNCATEGORIZED",
+        "id": "g_46"
+    },
+    {
+        "vietnamese": "Người lính đó trông ốm yếu.",
+        "english": "Người lính đó trông ốm yếu. The soldier looks ill.",
+        "category": "UNCATEGORIZED",
+        "id": "g_47"
+    },
+    {
+        "vietnamese": "Một người phụ nữ sợ hãi.",
+        "english": "Một người phụ nữ sợ hãi. A frightened woman",
+        "category": "UNCATEGORIZED",
+        "id": "g_48"
+    },
+    {
+        "vietnamese": "Một cậu bé đang ngủ.",
+        "english": "Một cậu bé đang ngủ. A sleeping boy",
+        "category": "UNCATEGORIZED",
+        "id": "g_49"
+    },
+    {
+        "vietnamese": "Một người phụ nữ khoả mạnh.",
+        "english": "Một người phụ nữ khoả mạnh. A healthy woman",
+        "category": "UNCATEGORIZED",
+        "id": "g_50"
+    },
+    {
+        "vietnamese": "Một người lính bị ốm.",
+        "english": "Một người lính bị ốm. A sick soldier",
+        "category": "UNCATEGORIZED",
+        "id": "g_51"
+    },
+    {
+        "vietnamese": "Con chó săn đó có vẻ sợ hãi.",
+        "english": "Con chó săn đó có vẻ sợ hãi. The hound seems afraid.",
+        "category": "UNCATEGORIZED",
+        "id": "g_52"
+    },
+    {
+        "vietnamese": "Cô gái đó thức hay ngủ ?",
+        "english": "Is the girl awake or asleep?",
+        "category": "UNCATEGORIZED",
+        "id": "g_53"
+    },
+    {
+        "vietnamese": "Một căn phòng lớn.",
+        "english": "Một căn phòng lớn. A large room",
+        "category": "UNCATEGORIZED",
+        "id": "g_54"
+    },
+    {
+        "vietnamese": "Một người phụ nữ quyến rũ:",
+        "english": "Một người phụ nữ quyến rũ: A charming woman",
+        "category": "UNCATEGORIZED",
+        "id": "g_55"
+    },
+    {
+        "vietnamese": "Một cái máy bay mới.",
+        "english": "Một cái máy bay mới. A new plane",
+        "category": "UNCATEGORIZED",
+        "id": "g_56"
+    },
+    {
+        "vietnamese": "Một cây bút màu trắng.",
+        "english": "Một cây bút màu trắng. A white pen",
+        "category": "UNCATEGORIZED",
+        "id": "g_57"
+    },
+    {
+        "vietnamese": "Nhỏ",
+        "english": "Nhỏ Small",
+        "category": "UNCATEGORIZED",
+        "id": "g_58"
+    },
+    {
+        "vietnamese": "Nhỏ hơn",
+        "english": "Nhỏ hơn Smaller",
+        "category": "UNCATEGORIZED",
+        "id": "g_59"
+    },
+    {
+        "vietnamese": "Nhỏ nhất",
+        "english": "Nhỏ nhất Smallest",
+        "category": "UNCATEGORIZED",
+        "id": "g_60"
+    },
+    {
+        "vietnamese": "Xinh đẹp",
+        "english": "Xinh đẹp Beautiful",
+        "category": "UNCATEGORIZED",
+        "id": "g_61"
+    },
+    {
+        "vietnamese": "Xinh đẹp hơn",
+        "english": "Xinh đẹp hơn More beautiful",
+        "category": "UNCATEGORIZED",
+        "id": "g_62"
+    },
+    {
+        "vietnamese": "Xinh đẹp nhất.",
+        "english": "Xinh đẹp nhất. The most beautiful",
+        "category": "UNCATEGORIZED",
+        "id": "g_63"
+    },
+    {
+        "vietnamese": "Rất già.",
+        "english": "Rất già. Very old",
+        "category": "UNCATEGORIZED",
+        "id": "g_64"
+    },
+    {
+        "vietnamese": "Quá nóng.",
+        "english": "Quá nóng. So hot",
+        "category": "UNCATEGORIZED",
+        "id": "g_65"
+    },
+    {
+        "vietnamese": "Cực giỏi.",
+        "english": "Cực giỏi. Extremely good",
+        "category": "UNCATEGORIZED",
+        "id": "g_66"
+    },
+    {
+        "vietnamese": "Một căn nhà nhỏ.",
+        "english": "Một căn nhà nhỏ. A small house",
+        "category": "UNCATEGORIZED",
+        "id": "g_67"
+    },
+    {
+        "vietnamese": "Một người phụ nữ lớn tuổi.",
+        "english": "Một người phụ nữ lớn tuổi. An old woman",
+        "category": "UNCATEGORIZED",
+        "id": "g_68"
+    },
+    {
+        "vietnamese": "Cô ấy mệt:",
+        "english": "Cô ấy mệt: She is tired.",
+        "category": "UNCATEGORIZED",
+        "id": "g_69"
+    },
+    {
+        "vietnamese": "Jack đói bụng.",
+        "english": "Jack đói bụng. Jack is hungry.",
+        "category": "UNCATEGORIZED",
+        "id": "g_70"
+    },
+    {
+        "vietnamese": "John rất cao.",
+        "english": "John rất cao. John is very tall.",
+        "category": "UNCATEGORIZED",
+        "id": "g_71"
+    },
+    {
+        "vietnamese": "Không có thứ gì thú vị.",
+        "english": "Không có thứ gì thú vị. There is nothing interesting.",
+        "category": "UNCATEGORIZED",
+        "id": "g_72"
+    },
+    {
+        "vietnamese": "Tôi sẽ kể cho bạn một điều mới.",
+        "english": "1058 Mẹ tôi thường dành 2 giờ cho việc nhà mỗi ngày My mother often spends 2 hours on housework every day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_73"
+    },
+    {
+        "vietnamese": "Nhà văn đó thông minh và khéo léo.",
+        "english": "1069 Mãi cho đến khi tôi làm mẹ tôi mới biết mẹ yêu tôi đến nhường nào It was not until I became a mother that I knew how my mother loved me. Not until did I become a mother that I knew how my mother loved me.",
+        "category": "UNCATEGORIZED",
+        "id": "g_74"
+    },
+    {
+        "vietnamese": "Ông già, nghèo nhưng tự hào, đã từ chối lời đề nghị của tôi.",
+        "english": "The old man, poor but proud, refused my offer.",
+        "category": "UNCATEGORIZED",
+        "id": "g_75"
+    },
+    {
+        "vietnamese": "Con đường đó daì 5km.",
+        "english": "The road is 5 kms long",
+        "category": "UNCATEGORIZED",
+        "id": "g_76"
+    },
+    {
+        "vietnamese": "Một toà nhà cao 10 tầng.",
+        "english": "Một toà nhà cao 10 tầng. A building is ten storeys high",
+        "category": "UNCATEGORIZED",
+        "id": "g_77"
+    },
+    {
+        "vietnamese": "Họ có 1 căn nhà lớn hơn của bạn.",
+        "english": "They have a house bigger than yours",
+        "category": "UNCATEGORIZED",
+        "id": "g_78"
+    },
+    {
+        "vietnamese": "Những cậu bé dễ dạy nhất là trong lớp học.",
+        "english": "Những cậu bé dễ dạy nhất là trong lớp học. The boys easiest to teach were in the classroom",
+        "category": "UNCATEGORIZED",
+        "id": "g_79"
+    },
+    {
+        "vietnamese": "Kính vỡ ngày hôm qua rất đắt.",
+        "english": "Kính vỡ ngày hôm qua rất đắt. The glass broken yesterday was very expensive",
+        "category": "UNCATEGORIZED",
+        "id": "g_80"
+    },
+    {
+        "vietnamese": "Tòa án hỏi những người liên quan.",
+        "english": "Tòa án hỏi những người liên quan. The court asked the people involved",
+        "category": "UNCATEGORIZED",
+        "id": "g_81"
+    },
+    {
+        "vietnamese": "Nhìn vào các ghi chú được đề cập/chỉ ra sau đây.",
+        "english": "Nhìn vào các ghi chú được đề cập/chỉ ra sau đây. Look at the notes mentioned/indicated hereafter",
+        "category": "UNCATEGORIZED",
+        "id": "g_82"
+    },
+    {
+        "vietnamese": "Người nghèo, người mù, người giàu, người điếc, người bệnh, người tàn tật, người tốt, người già; ..",
+        "english": "Người nghèo, người mù, người giàu, người điếc, người bệnh, người tàn tật, người tốt, người già; .. The poor, the blind, the rich, the deaf, the sick, the handicapped, the good, the old; ...",
+        "category": "UNCATEGORIZED",
+        "id": "g_83"
+    },
+    {
+        "vietnamese": "Người giàu không biết người nghèo sống thế nào.",
+        "english": "Người giàu không biết người nghèo sống thế nào. The rich do not know how the poor live.",
+        "category": "UNCATEGORIZED",
+        "id": "g_84"
+    },
+    {
+        "vietnamese": "Suốt đời.",
+        "english": "Suốt đời. Life + long = lifelong",
+        "category": "UNCATEGORIZED",
+        "id": "g_85"
+    },
+    {
+        "vietnamese": "Cô là một thành viên trọn đời của đảng Lao động.",
+        "english": "Cô là một thành viên trọn đời của đảng Lao động. She was a lifelong member of the Labour party.",
+        "category": "UNCATEGORIZED",
+        "id": "g_86"
+    },
+    {
+        "vietnamese": "Ông có một mối quan tâm trọn đời trong khoa học.",
+        "english": "He’s had a lifelong interest in science.",
+        "category": "UNCATEGORIZED",
+        "id": "g_87"
+    },
+    {
+        "vietnamese": "Say xe.",
+        "english": "Say xe. Car + sick = carsick",
+        "category": "UNCATEGORIZED",
+        "id": "g_88"
+    },
+    {
+        "vietnamese": "Hoặc có lẽ anh ta đơn giản trở nên say xe",
+        "english": "Hoặc có lẽ anh ta đơn giản trở nên say xe Or perhaps he simply becomes carsick.",
+        "category": "UNCATEGORIZED",
+        "id": "g_89"
+    },
+    {
+        "vietnamese": "Cô giả vờ say xe để bắt anh ta kéo xe và dùng cơ hội đó để trốn thoát.",
+        "english": "Cô giả vờ say xe để bắt anh ta kéo xe và dùng cơ hội đó để trốn thoát. She fakes being carsick to get him to pull the car over and uses that opportunity to escape.",
+        "category": "UNCATEGORIZED",
+        "id": "g_90"
+    },
+    {
+        "vietnamese": "Nổi tiếng thế giới",
+        "english": "Nổi tiếng thế giới World + famous = world-famous",
+        "category": "UNCATEGORIZED",
+        "id": "g_91"
+    },
+    {
+        "vietnamese": "Sách của ông nổi tiếng thế giới",
+        "english": "Sách của ông nổi tiếng thế giới His books are world-famous.",
+        "category": "UNCATEGORIZED",
+        "id": "g_92"
+    },
+    {
+        "vietnamese": "Một nhà khoa học nổi tiếng thế giới.",
+        "english": "Một nhà khoa học nổi tiếng thế giới. a world-famous scientist",
+        "category": "UNCATEGORIZED",
+        "id": "g_93"
+    },
+    {
+        "vietnamese": "Đỏ như máu:",
+        "english": "Đỏ như máu: Snow-white",
+        "category": "UNCATEGORIZED",
+        "id": "g_94"
+    },
+    {
+        "vietnamese": "Cô ấy có mái tóc trắng như tuyết.",
+        "english": "Cô ấy có mái tóc trắng như tuyết. She has snow - white hair.",
+        "category": "UNCATEGORIZED",
+        "id": "g_95"
+    },
+    {
+        "vietnamese": "Khắp thế giới:",
+        "english": "Khắp thế giới: World-wide",
+        "category": "UNCATEGORIZED",
+        "id": "g_96"
+    },
+    {
+        "vietnamese": "Tôi đã đi du lịch khắp thế giới.",
+        "english": "Tôi đã đi du lịch khắp thế giới. I travelled worldwide.",
+        "category": "UNCATEGORIZED",
+        "id": "g_97"
+    },
+    {
+        "vietnamese": "Đánh chú ý:",
+        "english": "Đánh chú ý: Noteworthy",
+        "category": "UNCATEGORIZED",
+        "id": "g_98"
+    },
+    {
+        "vietnamese": "Số điểm này đáng ghi nhận.",
+        "english": "Số điểm này đáng ghi nhận. This grade is noteworthy.",
+        "category": "UNCATEGORIZED",
+        "id": "g_99"
+    },
+    {
+        "vietnamese": "Làm bằng tay:",
+        "english": "Làm bằng tay: Handmade",
+        "category": "UNCATEGORIZED",
+        "id": "g_100"
+    },
+    {
+        "vietnamese": "Chúng được làm bằng tay.",
+        "english": "Chúng được làm bằng tay. They 're handmade.",
+        "category": "UNCATEGORIZED",
+        "id": "g_101"
+    },
+    {
+        "vietnamese": "Đau lòng: Heartbroken",
+        "english": "Đau lòng: Heartbroken Heartbroken",
+        "category": "UNCATEGORIZED",
+        "id": "g_102"
+    },
+    {
+        "vietnamese": "Dường như cô ta rất đau buồn.",
+        "english": "Dường như cô ta rất đau buồn. She seems heart - broken.",
+        "category": "UNCATEGORIZED",
+        "id": "g_103"
+    },
+    {
+        "vietnamese": "Ấm lòng",
+        "english": "Ấm lòng Heart-warming",
+        "category": "UNCATEGORIZED",
+        "id": "g_104"
+    },
+    {
+        "vietnamese": "Hôm qua tôi đã nhận được lá thư chân thành của bạn",
+        "english": "Hôm qua tôi đã nhận được lá thư chân thành của bạn I received your heart - warming letter yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_105"
+    },
+    {
+        "vietnamese": "Không bị đánh bại:",
+        "english": "Không bị đánh bại: Never-defeated",
+        "category": "UNCATEGORIZED",
+        "id": "g_106"
+    },
+    {
+        "vietnamese": "Cô ấy là một thủy thủ vĩ đại không bao giờ bị đánh bại!",
+        "english": "Cô ấy là một thủy thủ vĩ đại không bao giờ bị đánh bại! She is a great sailor that was never defeated!",
+        "category": "UNCATEGORIZED",
+        "id": "g_107"
+    },
+    {
+        "vietnamese": "Thẳng thắn:",
+        "english": "Thẳng thắn: Outspoken",
+        "category": "UNCATEGORIZED",
+        "id": "g_108"
+    },
+    {
+        "vietnamese": "Bà ấy rộng lượng, vui vẻ, và luôn thẳng tính.",
+        "english": "Bà ấy rộng lượng, vui vẻ, và luôn thẳng tính. She's gracious, fun, and always outspoken.",
+        "category": "UNCATEGORIZED",
+        "id": "g_109"
+    },
+    {
+        "vietnamese": "Tráng kiện",
+        "english": "Tráng kiện Well-built",
+        "category": "UNCATEGORIZED",
+        "id": "g_110"
+    },
+    {
+        "vietnamese": "Anh ấy cao và mạnh khỏe",
+        "english": "Anh ấy cao và mạnh khỏe He's tall and well - built.",
+        "category": "UNCATEGORIZED",
+        "id": "g_111"
+    },
+    {
+        "vietnamese": "Vĩnh cửu",
+        "english": "Vĩnh cửu Everlasting",
+        "category": "UNCATEGORIZED",
+        "id": "g_112"
+    },
+    {
+        "vietnamese": "Không có tình yêu vĩnh cửu",
+        "english": "Không có tình yêu vĩnh cửu There is no everlasting love.",
+        "category": "UNCATEGORIZED",
+        "id": "g_113"
+    },
+    {
+        "vietnamese": "Xanh đen",
+        "english": "Xanh đen Blue-black",
+        "category": "UNCATEGORIZED",
+        "id": "g_114"
+    },
+    {
+        "vietnamese": "Một mái tóc đen xanh xoã kín cả một bờ vai",
+        "english": "Một mái tóc đen xanh xoã kín cả một bờ vai Down past the shoulders flooded a mass of blue-black hair.",
+        "category": "UNCATEGORIZED",
+        "id": "g_115"
+    },
+    {
+        "vietnamese": "Mái tóc của cô ấy bồng bềnh, trắng sáng lấp lánh màu xanh đen như dòng sông trong tuyết",
+        "english": "Mái tóc của cô ấy bồng bềnh, trắng sáng lấp lánh màu xanh đen như dòng sông trong tuyết Her hair under her peaked, white hood glistened blue-black like a river in the snow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_116"
+    },
+    {
+        "vietnamese": "Con phố có màu xanh đen của đường phố New York vào ban đêm",
+        "english": "Con phố có màu xanh đen của đường phố New York vào ban đêm The street had the blue-black look of a New York street at night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_117"
+    },
+    {
+        "vietnamese": "Có một đám mây màu xanh đen cuộn lên từ phía tây nam",
+        "english": "Có một đám mây màu xanh đen cuộn lên từ phía tây nam There was a blue-black bank of cloud rolling up from the southwest.",
+        "category": "UNCATEGORIZED",
+        "id": "g_118"
+    },
+    {
+        "vietnamese": "Cực nóng",
+        "english": "Cực nóng White-hot",
+        "category": "UNCATEGORIZED",
+        "id": "g_119"
+    },
+    {
+        "vietnamese": "Kim loại nóng trắng nóng đến mức phát ra ánh sáng trắng",
+        "english": "Kim loại nóng trắng nóng đến mức phát ra ánh sáng trắng White-hot metal is so hot it is giving out a white light.",
+        "category": "UNCATEGORIZED",
+        "id": "g_120"
+    },
+    {
+        "vietnamese": "Nâu đậm",
+        "english": "Nâu đậm Dark-brown",
+        "category": "UNCATEGORIZED",
+        "id": "g_121"
+    },
+    {
+        "vietnamese": "Từng trải",
+        "english": "Từng trải Worldly-wise",
+        "category": "UNCATEGORIZED",
+        "id": "g_122"
+    },
+    {
+        "vietnamese": "Ông ta là một nhà kinh doanh từng trải trên đường đời",
+        "english": "Ông ta là một nhà kinh doanh từng trải trên đường đời He is a worldly - wise businessman.",
+        "category": "UNCATEGORIZED",
+        "id": "g_123"
+    },
+    {
+        "vietnamese": "Một bé gái bốn tuổi = bé gái bốn tuổi",
+        "english": "Một bé gái bốn tuổi = bé gái bốn tuổi A four-year-old girl = the girl is four years old.",
+        "category": "UNCATEGORIZED",
+        "id": "g_124"
+    },
+    {
+        "vietnamese": "Một ký ức không bao giờ bị lãng quên = ký ức sẽ không bao giờ bị lãng quên",
+        "english": "Một ký ức không bao giờ bị lãng quên = ký ức sẽ không bao giờ bị lãng quên A never-to-be-forgetten memory = the memory will be never forgotten.",
+        "category": "UNCATEGORIZED",
+        "id": "g_125"
+    },
+    {
+        "vietnamese": "John cao bằng cha mình",
+        "english": "John cao bằng cha mình John is as tall as his father.",
+        "category": "COMPARISON",
+        "id": "g_126"
+    },
+    {
+        "vietnamese": "Cái hộp này nặng như cái kia",
+        "english": "Cái hộp này nặng như cái kia This box is as heavy as that one.",
+        "category": "COMPARISON",
+        "id": "g_127"
+    },
+    {
+        "vietnamese": "Bạn cao hơn tôi",
+        "english": "Bạn cao hơn tôi You are taller than I am.",
+        "category": "COMPARISON",
+        "id": "g_128"
+    },
+    {
+        "vietnamese": "John mạnh hơn anh trai",
+        "english": "John mạnh hơn anh trai John is stronger than his brother.",
+        "category": "COMPARISON",
+        "id": "g_129"
+    },
+    {
+        "vietnamese": "Vấn đề thứ nhất khó hơn vấn đề thứ hai",
+        "english": "Vấn đề thứ nhất khó hơn vấn đề thứ hai The first problem is more difficult than the second.",
+        "category": "COMPARISON",
+        "id": "g_130"
+    },
+    {
+        "vietnamese": "John là người cao nhất trong lớp",
+        "english": "John là người cao nhất trong lớp John is the tallest in the class.",
+        "category": "COMPARISON",
+        "id": "g_131"
+    },
+    {
+        "vietnamese": "Đó là ngày hạnh phúc nhất trong cuộc đời tôi",
+        "english": "Đó là ngày hạnh phúc nhất trong cuộc đời tôi That was the happiest day of my life.",
+        "category": "COMPARISON",
+        "id": "g_132"
+    },
+    {
+        "vietnamese": "Maria là người đẹp nhất trong lớp tôi",
+        "english": "Maria là người đẹp nhất trong lớp tôi Maria is the most beautiful in my class.",
+        "category": "COMPARISON",
+        "id": "g_133"
+    },
+    {
+        "vietnamese": "Bộ phim đó là ít thú vị nhất trong tất cả",
+        "english": "Bộ phim đó là ít thú vị nhất trong tất cả That film is the least interesting of all.",
+        "category": "COMPARISON",
+        "id": "g_134"
+    },
+    {
+        "vietnamese": "Bạn có thể làm cho một món cà ri nóng hơn chỉ bằng cách thêm ớt",
+        "english": "Bạn có thể làm cho một món cà ri nóng hơn chỉ bằng cách thêm ớt You can make a curry hotter simply by adding chillies.",
+        "category": "COMPARISON",
+        "id": "g_135"
+    },
+    {
+        "vietnamese": "Hôm nay chúng ta bước vào giai đoạn nóng nhất của chiến dịch bầu cử",
+        "english": "Hôm nay chúng ta bước vào giai đoạn nóng nhất của chiến dịch bầu cử Today we enter the hottest phase of the election campaign.",
+        "category": "COMPARISON",
+        "id": "g_136"
+    },
+    {
+        "vietnamese": "Môi trường đã trở thành một vấn đề rất nóng",
+        "english": "Môi trường đã trở thành một vấn đề rất nóng The environment has become a very hot issue.",
+        "category": "COMPARISON",
+        "id": "g_137"
+    },
+    {
+        "vietnamese": "Cạnh tranh đang ngày càng nóng hơn",
+        "english": "Cạnh tranh đang ngày càng nóng hơn Competition is getting hotter day by day.",
+        "category": "COMPARISON",
+        "id": "g_138"
+    },
+    {
+        "vietnamese": "Một số lượng nhỏ nhiều sinh viên đã thi đậu hơn tôi dự kiến",
+        "english": "Một số lượng nhỏ nhiều sinh viên đã thi đậu hơn tôi dự kiến A much smaller number of students passed than I had expected.",
+        "category": "COMPARISON",
+        "id": "g_139"
+    },
+    {
+        "vietnamese": "Họ đang có một đám cưới tương đối nhỏ",
+        "english": "Họ đang có một đám cưới tương đối nhỏ They're having a relatively small wedding.",
+        "category": "COMPARISON",
+        "id": "g_140"
+    },
+    {
+        "vietnamese": "Chiếc váy đó quá nhỏ đối với bạn",
+        "english": "Chiếc váy đó quá nhỏ đối với bạn That dress is too small for you.",
+        "category": "COMPARISON",
+        "id": "g_141"
+    },
+    {
+        "vietnamese": "Họ có ba đứa con nhỏ",
+        "english": "Họ có ba đứa con nhỏ They have three small children.",
+        "category": "COMPARISON",
+        "id": "g_142"
+    },
+    {
+        "vietnamese": "Chúng tôi đi du lịch khắp nơi khi tôi còn nhỏ",
+        "english": "Chúng tôi đi du lịch khắp nơi khi tôi còn nhỏ We travelled around a lot when I was small.",
+        "category": "COMPARISON",
+        "id": "g_143"
+    },
+    {
+        "vietnamese": "Khi còn nhỏ, ông đã dành phần lớn thời gian của mình với ông bà",
+        "english": "Khi còn nhỏ, ông đã dành phần lớn thời gian của mình với ông bà As a small boy he had spent most of his time with his grandparents.",
+        "category": "COMPARISON",
+        "id": "g_144"
+    },
+    {
+        "vietnamese": "Tôi chỉ thực hiện một vài thay đổi nhỏ cho báo cáo",
+        "english": "Tôi chỉ thực hiện một vài thay đổi nhỏ cho báo cáo I made only a few small changes to the report.",
+        "category": "COMPARISON",
+        "id": "g_145"
+    },
+    {
+        "vietnamese": "Cô nhận thấy một vài lỗi nhỏ trong công việc của anh",
+        "english": "Cô nhận thấy một vài lỗi nhỏ trong công việc của anh She noticed several small errors in his work.",
+        "category": "COMPARISON",
+        "id": "g_146"
+    },
+    {
+        "vietnamese": "Mọi thứ đã được lên kế hoạch đến từng chi tiết nhỏ nhất",
+        "english": "Mọi thứ đã được lên kế hoạch đến từng chi tiết nhỏ nhất Everything had been planned down to the smallest detail.",
+        "category": "COMPARISON",
+        "id": "g_147"
+    },
+    {
+        "vietnamese": "Đó là thành tích không nhỏ để cô ấy đồng ý với thỏa thuận này",
+        "english": "Đó là thành tích không nhỏ để cô ấy đồng ý với thỏa thuận này It was no small achievement getting her to agree to the deal.",
+        "category": "COMPARISON",
+        "id": "g_148"
+    },
+    {
+        "vietnamese": "Đừng lo lắng. Nó chỉ là một vấn đề nhỏ",
+        "english": "Đừng lo lắng. Nó chỉ là một vấn đề nhỏ Don’t worry. It’s only a small problem.",
+        "category": "COMPARISON",
+        "id": "g_149"
+    },
+    {
+        "vietnamese": "Bạn đã có khoảng thời gian tuyệt chứ?",
+        "english": "Bạn đã có khoảng thời gian tuyệt chứ? Did you have a nice time?",
+        "category": "COMPARISON",
+        "id": "g_150"
+    },
+    {
+        "vietnamese": "Trông bạn tuyệt quá",
+        "english": "Trông bạn tuyệt quá You look very nice.",
+        "category": "COMPARISON",
+        "id": "g_151"
+    },
+    {
+        "vietnamese": "Bạn cũng có muốn đến không?",
+        "english": "Bạn cũng có muốn đến không? ‘Do you want to come, too?’ ‘Yes, that would be nice.’",
+        "category": "COMPARISON",
+        "id": "g_152"
+    },
+    {
+        "vietnamese": "Điều tốt đẹp nhất về cô ấy là cô ấy không bao giờ chỉ trích chúng tôi",
+        "english": "Điều tốt đẹp nhất về cô ấy là cô ấy không bao giờ chỉ trích chúng tôi The nicest thing about her is that she never criticizes us.",
+        "category": "COMPARISON",
+        "id": "g_153"
+    },
+    {
+        "vietnamese": "Rất vui được gặp bạn! nice",
+        "english": "Rất vui được gặp bạn! nice Nice to meet you!",
+        "category": "COMPARISON",
+        "id": "g_154"
+    },
+    {
+        "vietnamese": "Thật tuyệt khi bạn có thể đến với chúng tôi",
+        "english": "Thật tuyệt khi bạn có thể đến với chúng tôi It's nice that you can come with us.",
+        "category": "COMPARISON",
+        "id": "g_155"
+    },
+    {
+        "vietnamese": "Sẽ thật tuyệt nếu anh ấy chuyển đến London",
+        "english": "Sẽ thật tuyệt nếu anh ấy chuyển đến London It would be nice if he moved to London.",
+        "category": "COMPARISON",
+        "id": "g_156"
+    },
+    {
+        "vietnamese": "Tất cả chúng ta đều bị cúm tuần trước, nó không đẹp lắm",
+        "english": "Tất cả chúng ta đều bị cúm tuần trước, nó không đẹp lắm We all had the flu last week—it wasn't very nice.",
+        "category": "COMPARISON",
+        "id": "g_157"
+    },
+    {
+        "vietnamese": "Thật tuyệt khi biết rằng ai đó đánh giá cao những gì tôi làm",
+        "english": "Thật tuyệt khi biết rằng ai đó đánh giá cao những gì tôi làm It's nice to know that somebody appreciates what I do.",
+        "category": "COMPARISON",
+        "id": "g_158"
+    },
+    {
+        "vietnamese": "một số lượng lớn người",
+        "english": "một số lượng lớn người a large number of people",
+        "category": "COMPARISON",
+        "id": "g_159"
+    },
+    {
+        "vietnamese": "số tiền rất lớn",
+        "english": "số tiền rất lớn very large sums of money",
+        "category": "COMPARISON",
+        "id": "g_160"
+    },
+    {
+        "vietnamese": "Anh ấy là một đứa trẻ rất lớn so với tuổi của mình",
+        "english": "Anh ấy là một đứa trẻ rất lớn so với tuổi của mình He's a very large child for his age.",
+        "category": "COMPARISON",
+        "id": "g_161"
+    },
+    {
+        "vietnamese": "Một tỷ lệ lớn người già sống một mình",
+        "english": "Một tỷ lệ lớn người già sống một mình A large proportion of old people live alone.",
+        "category": "COMPARISON",
+        "id": "g_162"
+    },
+    {
+        "vietnamese": "Phụ nữ thường làm phần lớn làm việc nhà",
+        "english": "Phụ nữ thường làm phần lớn làm việc nhà Women usually do the larger share of the housework.",
+        "category": "COMPARISON",
+        "id": "g_163"
+    },
+    {
+        "vietnamese": "Brazil là nhà sản xuất cà phê lớn nhất thế giới",
+        "english": "Brazil là nhà sản xuất cà phê lớn nhất thế giới Brazil is the world's largest producer of coffee.",
+        "category": "COMPARISON",
+        "id": "g_164"
+    },
+    {
+        "vietnamese": "Ai là người phụ nữ khá lớn (= béo) trong chiếc mũ đó?",
+        "english": "Ai là người phụ nữ khá lớn (= béo) trong chiếc mũ đó? Who's the rather large (= fat) lady in the hat?",
+        "category": "COMPARISON",
+        "id": "g_165"
+    },
+    {
+        "vietnamese": "một vấn đề lớn và phức tạp",
+        "english": "một vấn đề lớn và phức tạp a large and complex issue",
+        "category": "COMPARISON",
+        "id": "g_166"
+    },
+    {
+        "vietnamese": "Một số loại thuốc đang được sử dụng ở quy mô lớn hơn nhiều so với trước đây",
+        "english": "Một số loại thuốc đang được sử dụng ở quy mô lớn hơn nhiều so với trước đây Some drugs are being used on a much larger scale than previously.",
+        "category": "COMPARISON",
+        "id": "g_167"
+    },
+    {
+        "vietnamese": "một nụ cười/khuôn mặt hạnh phúc",
+        "english": "một nụ cười/khuôn mặt hạnh phúc a happy smile/face",
+        "category": "COMPARISON",
+        "id": "g_168"
+    },
+    {
+        "vietnamese": "Hôm nay bạn trông không được vui lắm.",
+        "english": "Hôm nay bạn trông không được vui lắm. You don't look very happy today.",
+        "category": "COMPARISON",
+        "id": "g_169"
+    },
+    {
+        "vietnamese": "Chúng tôi vui mừng thông báo về lễ đính hôn của con gái chúng tôi",
+        "english": "Chúng tôi vui mừng thông báo về lễ đính hôn của con gái chúng tôi We are happy to announce the engagement of our daughter.",
+        "category": "COMPARISON",
+        "id": "g_170"
+    },
+    {
+        "vietnamese": "Tôi rất mừng cho bạn.",
+        "english": "Tôi rất mừng cho bạn. I'm very happy for you.",
+        "category": "COMPARISON",
+        "id": "g_171"
+    },
+    {
+        "vietnamese": "Tôi đã hạnh phúc bạn có thể đến.",
+        "english": "Tôi đã hạnh phúc bạn có thể đến. I’m happy (that) you could come.",
+        "category": "COMPARISON",
+        "id": "g_172"
+    },
+    {
+        "vietnamese": "một cuộc hôn nhân/ kỷ niệm / tuổi thơ hạnh phúc.",
+        "english": "một cuộc hôn nhân/ kỷ niệm / tuổi thơ hạnh phúc. a happy marriage/memory/childhood",
+        "category": "COMPARISON",
+        "id": "g_173"
+    },
+    {
+        "vietnamese": "Câu chuyện có một kết thúc có hậu.",
+        "english": "Câu chuyện có một kết thúc có hậu. The story has a happy ending.",
+        "category": "COMPARISON",
+        "id": "g_174"
+    },
+    {
+        "vietnamese": "Đó là những ngày hạnh phúc nhất trong cuộc đời tôi.",
+        "english": "Đó là những ngày hạnh phúc nhất trong cuộc đời tôi. Those were the happiest days of my life.",
+        "category": "COMPARISON",
+        "id": "g_175"
+    },
+    {
+        "vietnamese": "Bạn có hài lòng với sự sắp xếp đó không",
+        "english": "Bạn có hài lòng với sự sắp xếp đó không Are you happy with that arrangement?",
+        "category": "COMPARISON",
+        "id": "g_176"
+    },
+    {
+        "vietnamese": "Tôi không hài lòng với công việc của anh ấy trong nhiệm kỳ này",
+        "english": "Tôi không hài lòng với công việc của anh ấy trong nhiệm kỳ này I'm not happy with his work this term.",
+        "category": "COMPARISON",
+        "id": "g_177"
+    },
+    {
+        "vietnamese": "Cô ấy đã đủ hạnh phúc với màn trình diễn của mình.",
+        "english": "Cô ấy đã đủ hạnh phúc với màn trình diễn của mình. She was happy enough with her performance.",
+        "category": "COMPARISON",
+        "id": "g_178"
+    },
+    {
+        "vietnamese": "Nếu có bất cứ điều gì bạn không hài lòng, hãy đến và hỏi",
+        "english": "Nếu có bất cứ điều gì bạn không hài lòng, hãy đến và hỏi If there's anything you're not happy about, come and ask.",
+        "category": "COMPARISON",
+        "id": "g_179"
+    },
+    {
+        "vietnamese": "Tôi không quá hạnh phúc về việc cô ấy sống một mình.",
+        "english": "Tôi không quá hạnh phúc về việc cô ấy sống một mình. I'm not too happy about her living alone.",
+        "category": "COMPARISON",
+        "id": "g_180"
+    },
+    {
+        "vietnamese": "Tôi nói tôi sẽ đi chỉ để giữ cho anh ấy hạnh phúc.",
+        "english": "Tôi nói tôi sẽ đi chỉ để giữ cho anh ấy hạnh phúc. I said I'd go just to keep him happy.",
+        "category": "COMPARISON",
+        "id": "g_181"
+    },
+    {
+        "vietnamese": "một kỳ thi / công việc dễ dàng",
+        "english": "một kỳ thi / công việc dễ dàng an easy exam/job",
+        "category": "COMPARISON",
+        "id": "g_182"
+    },
+    {
+        "vietnamese": "Anh ấy không làm cho tôi dễ dàng rời đi",
+        "english": "Anh ấy không làm cho tôi dễ dàng rời đi He didn't make it easy for me to leave.",
+        "category": "COMPARISON",
+        "id": "g_183"
+    },
+    {
+        "vietnamese": "Ngôi nhà của họ không phải là nơi dễ đến nhất.",
+        "english": "Ngôi nhà của họ không phải là nơi dễ đến nhất. Their house isn't the easiest place to get to.",
+        "category": "COMPARISON",
+        "id": "g_184"
+    },
+    {
+        "vietnamese": "rau dễ trồng",
+        "english": "rau dễ trồng vegetables that are easy to grow.",
+        "category": "COMPARISON",
+        "id": "g_185"
+    },
+    {
+        "vietnamese": "Một số trường nằm trong tầm tay dễ dàng (= không xa)",
+        "english": "Một số trường nằm trong tầm tay dễ dàng (= không xa) Several schools are within easy reach (= not far away).",
+        "category": "COMPARISON",
+        "id": "g_186"
+    },
+    {
+        "vietnamese": "Không thể dễ dàng cho cô ấy, một mình với trẻ em",
+        "english": "Không thể dễ dàng cho cô ấy, một mình với trẻ em It can't be easy for her, on her own with the children.",
+        "category": "COMPARISON",
+        "id": "g_187"
+    },
+    {
+        "vietnamese": "Thật dễ dàng để bạn bảo tôi giữ bình tĩnh, nhưng bạn không ở vị trí của tôi",
+        "english": "Thật dễ dàng để bạn bảo tôi giữ bình tĩnh, nhưng bạn không ở vị trí của tôi It's easy for you to tell me to keep calm, but you're not in my position.",
+        "category": "COMPARISON",
+        "id": "g_188"
+    },
+    {
+        "vietnamese": "Đó sẽ là điều dễ dàng nhất trên thế giới để yêu anh ấy",
+        "english": "Đó sẽ là điều dễ dàng nhất trên thế giới để yêu anh ấy It would be the easiest thing in the world to fall in love with him.",
+        "category": "COMPARISON",
+        "id": "g_189"
+    },
+    {
+        "vietnamese": "Bạn có thích thời tiết nóng này không?",
+        "english": "Bạn có thích thời tiết nóng này không? Do you like this hot weather?",
+        "category": "COMPARISON",
+        "id": "g_190"
+    },
+    {
+        "vietnamese": "Hôm nay trời nóng phải không?",
+        "english": "Hôm nay trời nóng phải không? It's hot today, isn't it?",
+        "category": "COMPARISON",
+        "id": "g_191"
+    },
+    {
+        "vietnamese": "Trời nóng và ngày càng nóng",
+        "english": "Trời nóng và ngày càng nóng It was hot and getting hotter.",
+        "category": "COMPARISON",
+        "id": "g_192"
+    },
+    {
+        "vietnamese": "Đó là tháng 7 nóng nhất trong lịch sử",
+        "english": "Đó là tháng 7 nóng nhất trong lịch sử It was the hottest July on record.",
+        "category": "COMPARISON",
+        "id": "g_193"
+    },
+    {
+        "vietnamese": "Một mùa hè khô nóng",
+        "english": "Một mùa hè khô nóng a hot dry summer",
+        "category": "COMPARISON",
+        "id": "g_194"
+    },
+    {
+        "vietnamese": "Hãy cẩn thận với các tấm nóng",
+        "english": "Hãy cẩn thận với các tấm nóng Be careful—the plates are hot.",
+        "category": "COMPARISON",
+        "id": "g_195"
+    },
+    {
+        "vietnamese": "Tất cả các phòng đều có nước nóng và lạnh. All rooms have hot and cold water.",
+        "english": "Tất cả các phòng đều có nước nóng và lạnh. All rooms have hot and cold water. All rooms have hot and cold water.",
+        "category": "COMPARISON",
+        "id": "g_196"
+    },
+    {
+        "vietnamese": "Tắm nước nóng",
+        "english": "Tắm nước nóng a hot bath",
+        "category": "COMPARISON",
+        "id": "g_197"
+    },
+    {
+        "vietnamese": "Tôi không thể sống ở một đất nước nóng (= một nước có nhiệt độ trung bình cao)",
+        "english": "Tôi không thể sống ở một đất nước nóng (= một nước có nhiệt độ trung bình cao) I couldn't live in a hot country (= one which has high average temperatures).",
+        "category": "COMPARISON",
+        "id": "g_198"
+    },
+    {
+        "vietnamese": "Nấu trong lò rất nóng.",
+        "english": "Nấu trong lò rất nóng. Cook in a very hot oven.",
+        "category": "COMPARISON",
+        "id": "g_199"
+    },
+    {
+        "vietnamese": "Ăn nó khi còn nóng",
+        "english": "Ăn nó khi còn nóng Eat it while it's hot.",
+        "category": "COMPARISON",
+        "id": "g_200"
+    },
+    {
+        "vietnamese": "Tôi sờ trán anh. Anh cảm thấy nóng và sốt",
+        "english": "Tôi sờ trán anh. Anh cảm thấy nóng và sốt I touched his forehead. He felt hot and feverish.",
+        "category": "COMPARISON",
+        "id": "g_201"
+    },
+    {
+        "vietnamese": "Một người đàn ông lớn / nhà",
+        "english": "Một người đàn ông lớn / nhà a big man/house",
+        "category": "COMPARISON",
+        "id": "g_202"
+    },
+    {
+        "vietnamese": "Chiếc áo này không đủ lớn.",
+        "english": "Chiếc áo này không đủ lớn. This shirt isn't big enough.",
+        "category": "COMPARISON",
+        "id": "g_203"
+    },
+    {
+        "vietnamese": "Đây là công ty máy tính lớn nhất thế giới.",
+        "english": "Đây là công ty máy tính lớn nhất thế giới. It's the world's biggest computer company.",
+        "category": "COMPARISON",
+        "id": "g_204"
+    },
+    {
+        "vietnamese": "Anh ta có một nụ cười lớn trên khuôn mặt.",
+        "english": "Anh ta có một nụ cười lớn trên khuôn mặt. (informal) He had this great big grin on his face.",
+        "category": "COMPARISON",
+        "id": "g_205"
+    },
+    {
+        "vietnamese": "Họ đã kiếm được số tiền lớn.",
+        "english": "Họ đã kiếm được số tiền lớn. They were earning big money.",
+        "category": "COMPARISON",
+        "id": "g_206"
+    },
+    {
+        "vietnamese": "Tin tức đến như một cú đánh lớn.",
+        "english": "Tin tức đến như một cú đánh lớn. The news came as a big blow.",
+        "category": "COMPARISON",
+        "id": "g_207"
+    },
+    {
+        "vietnamese": "một quyết định lớn",
+        "english": "một quyết định lớn a big decision",
+        "category": "COMPARISON",
+        "id": "g_208"
+    },
+    {
+        "vietnamese": "Đêm nay là trận đấu lớn nhất trong sự nghiệp của anh ấy.",
+        "english": "Đêm nay là trận đấu lớn nhất trong sự nghiệp của anh ấy. Tonight is the biggest match of his career.",
+        "category": "COMPARISON",
+        "id": "g_209"
+    },
+    {
+        "vietnamese": "Bạn đang phạm một sai lầm lớn.",
+        "english": "Bạn đang phạm một sai lầm lớn. You are making a big mistake.",
+        "category": "COMPARISON",
+        "id": "g_210"
+    },
+    {
+        "vietnamese": "Cô ấy đã lên sân khấu cho khoảnh khắc lớn của mình.",
+        "english": "Cô ấy đã lên sân khấu cho khoảnh khắc lớn của mình. She took the stage for her big moment.",
+        "category": "COMPARISON",
+        "id": "g_211"
+    },
+    {
+        "vietnamese": "Một người phụ nữ hấp dẫn.",
+        "english": "Một người phụ nữ hấp dẫn. an attractive woman",
+        "category": "COMPARISON",
+        "id": "g_212"
+    },
+    {
+        "vietnamese": "Tôi thích John nhưng tôi không thấy anh ta hấp dẫn về mặt thể chất.",
+        "english": "Tôi thích John nhưng tôi không thấy anh ta hấp dẫn về mặt thể chất. I like John but I don't find him attractive physically.",
+        "category": "COMPARISON",
+        "id": "g_213"
+    },
+    {
+        "vietnamese": "Một ngôi nhà lớn với một khu vườn hấp dẫn.",
+        "english": "Một ngôi nhà lớn với một khu vườn hấp dẫn. a big house with an attractive garden",
+        "category": "COMPARISON",
+        "id": "g_214"
+    },
+    {
+        "vietnamese": "Kính mới của bạn rất hấp dẫn",
+        "english": "Kính mới của bạn rất hấp dẫn Your new glasses are very attractive.",
+        "category": "COMPARISON",
+        "id": "g_215"
+    },
+    {
+        "vietnamese": "Đồ nội thất cổ được sử dụng để tạo sự tương phản hấp dẫn với khung cảnh hiện đại.",
+        "english": "Đồ nội thất cổ được sử dụng để tạo sự tương phản hấp dẫn với khung cảnh hiện đại. Antique furniture is used to make an attractive contrast with a modern setting.",
+        "category": "COMPARISON",
+        "id": "g_216"
+    },
+    {
+        "vietnamese": "Đó là một trong những khía cạnh kém hấp dẫn trong tính cách của cô ấy",
+        "english": "Đó là một trong những khía cạnh kém hấp dẫn trong tính cách của cô ấy That's one of the less attractive aspects of her personality.",
+        "category": "COMPARISON",
+        "id": "g_217"
+    },
+    {
+        "vietnamese": "Cô ấy trông tuyệt đẹp đêm đó",
+        "english": "Cô ấy trông tuyệt đẹp đêm đó She looked stunningly beautiful that night.",
+        "category": "COMPARISON",
+        "id": "g_218"
+    },
+    {
+        "vietnamese": "Thật là một điều đẹp để nói",
+        "english": "Thật là một điều đẹp để nói What a beautiful thing to say!",
+        "category": "COMPARISON",
+        "id": "g_219"
+    },
+    {
+        "vietnamese": "Did you sleep well last night?",
+        "english": "Did you sleep well last night? Did you sleep well last night?",
+        "category": "COMPARISON",
+        "id": "g_220"
+    },
+    {
+        "vietnamese": "Đại hội được tổ chức rất kỹ (hoàn hảo).",
+        "english": "Đại hội được tổ chức rất kỹ (hoàn hảo). The festival is very well-organized",
+        "category": "COMPARISON",
+        "id": "g_221"
+    },
+    {
+        "vietnamese": "Ông nội tôi nghe không rõ.",
+        "english": "Ông nội tôi nghe không rõ. My grandfather does not hear too well",
+        "category": "COMPARISON",
+        "id": "g_222"
+    },
+    {
+        "vietnamese": "Sức khỏe bịnh nhân rất khả quan.",
+        "english": "Sức khỏe bịnh nhân rất khả quan. The patient is doing very well",
+        "category": "COMPARISON",
+        "id": "g_223"
+    },
+    {
+        "vietnamese": "Bạn mạnh giỏi? Dạ, mạnh.",
+        "english": "Bạn mạnh giỏi? Dạ, mạnh. How are you? Quite well. Thanks",
+        "category": "COMPARISON",
+        "id": "g_224"
+    },
+    {
+        "vietnamese": "Mới đây Ellen không được mạnh.",
+        "english": "Mới đây Ellen không được mạnh. Ellen hasn’t been very well lately",
+        "category": "COMPARISON",
+        "id": "g_225"
+    },
+    {
+        "vietnamese": "Hy vọng bạn chóng khỏi.",
+        "english": "Hy vọng bạn chóng khỏi. I hope you get well soon",
+        "category": "COMPARISON",
+        "id": "g_226"
+    },
+    {
+        "vietnamese": "Tôi cảm thấy trong người khó chịu",
+        "english": "Tôi cảm thấy trong người khó chịu I don’t feel very well",
+        "category": "COMPARISON",
+        "id": "g_227"
+    },
+    {
+        "vietnamese": "Peter đã hoàn thành tốt cuộc thi chính tả.",
+        "english": "Peter đã hoàn thành tốt cuộc thi chính tả. Peter did well in the spelling bee",
+        "category": "COMPARISON",
+        "id": "g_228"
+    },
+    {
+        "vietnamese": "Hôm nay cô trông được lắm.",
+        "english": "Hôm nay cô trông được lắm. You're looking good today.",
+        "category": "COMPARISON",
+        "id": "g_229"
+    },
+    {
+        "vietnamese": "Giờ tôi cảm thấy khỏe rồi.",
+        "english": "Giờ tôi cảm thấy khỏe rồi. I feel well now.",
+        "category": "COMPARISON",
+        "id": "g_230"
+    },
+    {
+        "vietnamese": "Ở đó chúng tôi đã gặp gỡ với nhiều nhân vật trong truyện cổ tích nổi tiếng.",
+        "english": "Ở đó chúng tôi đã gặp gỡ với nhiều nhân vật trong truyện cổ tích nổi tiếng. There we met up with many well-known fairy tale characters",
+        "category": "COMPARISON",
+        "id": "g_231"
+    },
+    {
+        "vietnamese": "Tôi biết rõ tình trạng.",
+        "english": "Tôi biết rõ tình trạng. I’m well aware of the situation",
+        "category": "COMPARISON",
+        "id": "g_232"
+    },
+    {
+        "vietnamese": "Đứa bé chỉ mới vài giờ.",
+        "english": "Đứa bé chỉ mới vài giờ. The baby was only a few hours old.",
+        "category": "COMPARISON",
+        "id": "g_233"
+    },
+    {
+        "vietnamese": "Trong những ngày đó, hầu hết mọi người rời trường khi họ chỉ mới mười lăm tuổi",
+        "english": "Trong những ngày đó, hầu hết mọi người rời trường khi họ chỉ mới mười lăm tuổi In those days most people left school when they were only fifteen years old.",
+        "category": "COMPARISON",
+        "id": "g_234"
+    },
+    {
+        "vietnamese": "Ở tuổi ba mươi, anh đã kiếm được 40.000 bảng mỗi năm.",
+        "english": "Ở tuổi ba mươi, anh đã kiếm được 40.000 bảng mỗi năm. At thirty years old, he was already earning £40 000 a year.",
+        "category": "COMPARISON",
+        "id": "g_235"
+    },
+    {
+        "vietnamese": "Hai cậu bé mười bốn tuổi.",
+        "english": "Hai cậu bé mười bốn tuổi. two fourteen-year-old boys",
+        "category": "COMPARISON",
+        "id": "g_236"
+    },
+    {
+        "vietnamese": "Một lớp học dành cho trẻ năm tuổi (= trẻ em năm tuổi).",
+        "english": "Một lớp học dành cho trẻ năm tuổi (= trẻ em năm tuổi). a class for five-year-olds (= children who are five)",
+        "category": "COMPARISON",
+        "id": "g_237"
+    },
+    {
+        "vietnamese": "Tôi không nghĩ cô ấy đủ tuổi để chịu trách nhiệm.",
+        "english": "Tôi không nghĩ cô ấy đủ tuổi để chịu trách nhiệm. I didn't think she was old enough for the responsibility.",
+        "category": "COMPARISON",
+        "id": "g_238"
+    },
+    {
+        "vietnamese": "Tòa nhà này bao nhiêu tuổi?",
+        "english": "Tòa nhà này bao nhiêu tuổi? How old is this building?",
+        "category": "COMPARISON",
+        "id": "g_239"
+    },
+    {
+        "vietnamese": "Anh ấy là cầu thủ lớn tuổi nhất trong đội.",
+        "english": "Anh ấy là cầu thủ lớn tuổi nhất trong đội. He's the oldest player in the team.",
+        "category": "COMPARISON",
+        "id": "g_240"
+    },
+    {
+        "vietnamese": "Cô ấy lớn hơn tôi nhiều tuổi",
+        "english": "Cô ấy lớn hơn tôi nhiều tuổi She's much older than me.",
+        "category": "COMPARISON",
+        "id": "g_241"
+    },
+    {
+        "vietnamese": "Bạn nghĩ ai sẽ nhận được (nhiều) phiếu bầu nhất?",
+        "english": "Bạn nghĩ ai sẽ nhận được (nhiều) phiếu bầu nhất? Who do you think will get (the) most votes?",
+        "category": "COMPARISON",
+        "id": "g_242"
+    },
+    {
+        "vietnamese": "Cô ấy có nhiều tiền nhất trong số họ.",
+        "english": "Cô ấy có nhiều tiền nhất trong số họ. She had the most money of all of them.",
+        "category": "COMPARISON",
+        "id": "g_243"
+    },
+    {
+        "vietnamese": "Tôi đã dành hầu hết thời gian cho câu hỏi đầu tiên",
+        "english": "Tôi đã dành hầu hết thời gian cho câu hỏi đầu tiên I spent most time on the first question.",
+        "category": "COMPARISON",
+        "id": "g_244"
+    },
+    {
+        "vietnamese": "Ai ăn nhiều nhất?",
+        "english": "Ai ăn nhiều nhất? Who ate the most?",
+        "category": "COMPARISON",
+        "id": "g_245"
+    },
+    {
+        "vietnamese": "Giám đốc có nhiều nhất để mất",
+        "english": "Giám đốc có nhiều nhất để mất The director has the most to lose.",
+        "category": "COMPARISON",
+        "id": "g_246"
+    },
+    {
+        "vietnamese": "Tôi thích hầu hết các loại rau.",
+        "english": "Tôi thích hầu hết các loại rau. I like most vegetables.",
+        "category": "COMPARISON",
+        "id": "g_247"
+    },
+    {
+        "vietnamese": "Hầu hết nhạc cổ điển đều đưa tôi vào giấc ngủ.",
+        "english": "Hầu hết nhạc cổ điển đều đưa tôi vào giấc ngủ. Most classical music sends me to sleep.",
+        "category": "COMPARISON",
+        "id": "g_248"
+    },
+    {
+        "vietnamese": "Như hầu hết các bạn đều biết, tôi đã quyết định từ chức.",
+        "english": "Như hầu hết các bạn đều biết, tôi đã quyết định từ chức. As most of you know, I've decided to resign.",
+        "category": "COMPARISON",
+        "id": "g_249"
+    },
+    {
+        "vietnamese": "Có hàng ngàn động từ trong tiếng Anh và hầu hết (trong số đó) là thường xuyên",
+        "english": "Có hàng ngàn động từ trong tiếng Anh và hầu hết (trong số đó) là thường xuyên There are thousands of verbs in English and most (of them) are regular.",
+        "category": "COMPARISON",
+        "id": "g_250"
+    },
+    {
+        "vietnamese": "Một ngôi nhà nhỏ",
+        "english": "Một ngôi nhà nhỏ a little house",
+        "category": "COMPARISON",
+        "id": "g_251"
+    },
+    {
+        "vietnamese": "Một nhóm nhỏ khách du lịch",
+        "english": "Một nhóm nhỏ khách du lịch a little group of tourists",
+        "category": "COMPARISON",
+        "id": "g_252"
+    },
+    {
+        "vietnamese": "Một bà già",
+        "english": "Một bà già a little old lady",
+        "category": "COMPARISON",
+        "id": "g_253"
+    },
+    {
+        "vietnamese": "Chiếc váy đen nhỏ cổ điển",
+        "english": "Chiếc váy đen nhỏ cổ điển the classic little black dress",
+        "category": "COMPARISON",
+        "id": "g_254"
+    },
+    {
+        "vietnamese": "Bạn muốn gì? Von ‘Tôi sẽ lấy một ít",
+        "english": "Bạn muốn gì? Von ‘Tôi sẽ lấy một ít ‘Which do you want?’ ‘I'll take the little one.’",
+        "category": "COMPARISON",
+        "id": "g_255"
+    },
+    {
+        "vietnamese": "Cô khẽ cười.",
+        "english": "Cô khẽ cười. She gave a little laugh.",
+        "category": "COMPARISON",
+        "id": "g_256"
+    },
+    {
+        "vietnamese": "Chúng ta nên quản lý, với một chút may mắn.",
+        "english": "Chúng ta nên quản lý, với một chút may mắn. (British English) We should manage, with a little bit of luck.",
+        "category": "COMPARISON",
+        "id": "g_257"
+    },
+    {
+        "vietnamese": "Đây là một chút gì đó (= một món quà nhỏ) cho ngày sinh nhật của bạn.",
+        "english": "Đây là một chút gì đó (= một món quà nhỏ) cho ngày sinh nhật của bạn. Here's a little something (= a small present) for your birthday.",
+        "category": "COMPARISON",
+        "id": "g_258"
+    },
+    {
+        "vietnamese": "ít bơ / thời gian / tầm quan trọng",
+        "english": "ít bơ / thời gian / tầm quan trọng less butter/time/importance",
+        "category": "COMPARISON",
+        "id": "g_259"
+    },
+    {
+        "vietnamese": "Ông được khuyên nên hút ít thuốc lá và uống ít bia hơn",
+        "english": "Ông được khuyên nên hút ít thuốc lá và uống ít bia hơn Ông được khuyên nên hút ít thuốc lá và uống ít bia hơn. He was advised to smoke fewer cigarettes and drink less beer.",
+        "category": "COMPARISON",
+        "id": "g_260"
+    },
+    {
+        "vietnamese": "Chúng tôi có ít phải lo lắng về bây giờ",
+        "english": "Chúng tôi có ít phải lo lắng về bây giờ Chúng tôi có ít phải lo lắng về bây giờ. We have less to worry about now.",
+        "category": "COMPARISON",
+        "id": "g_261"
+    },
+    {
+        "vietnamese": "Đó là một vấn đề ít hơn tôi mong đợi",
+        "english": "Đó là một vấn đề ít hơn tôi mong đợi Đó là một vấn đề ít hơn tôi mong đợi. It is less of a problem than I'd expected.",
+        "category": "COMPARISON",
+        "id": "g_262"
+    },
+    {
+        "vietnamese": "Chúng tôi sẽ đến đó trong ít hơn không có thời gian (= rất sớm)",
+        "english": "Chúng tôi sẽ đến đó trong ít hơn không có thời gian (= rất sớm) Chúng tôi sẽ đến đó trong ít hơn không có thời gian (= rất sớm). We'll be there in less than no time (= very soon).",
+        "category": "COMPARISON",
+        "id": "g_263"
+    },
+    {
+        "vietnamese": "Chiến thắng không gì khác hơn là một phép màu",
+        "english": "Chiến thắng không gì khác hơn là một phép màu Chiến thắng không gì khác hơn là một phép màu. The victory was nothing less than a miracle.",
+        "category": "COMPARISON",
+        "id": "g_264"
+    },
+    {
+        "vietnamese": "Anh ấy là giáo viên giỏi nhất, mặc dù anh ấy có ít kinh nghiệm nhất",
+        "english": "Anh ấy là giáo viên giỏi nhất, mặc dù anh ấy có ít kinh nghiệm nhất Anh ấy là giáo viên giỏi nhất, mặc dù anh ấy có ít kinh nghiệm nhất. He's the best teacher, even though he has the least experience.",
+        "category": "COMPARISON",
+        "id": "g_265"
+    },
+    {
+        "vietnamese": "Cô không bao giờ có ý tưởng ít nhất phải làm gì về nó",
+        "english": "Cô không bao giờ có ý tưởng ít nhất phải làm gì về nó Cô không bao giờ có ý tưởng ít nhất phải làm gì về nó. She never had the least idea what to do about it.",
+        "category": "COMPARISON",
+        "id": "g_266"
+    },
+    {
+        "vietnamese": "Đó là điều tối thiểu tôi có thể làm để giúp đỡ (= Tôi cảm thấy mình nên làm nhiều hơn)",
+        "english": "Đó là điều tối thiểu tôi có thể làm để giúp đỡ (= Tôi cảm thấy mình nên làm nhiều hơn) Đó là điều tối thiểu tôi có thể làm để giúp đỡ (= Tôi cảm thấy mình nên làm nhiều hơn) It's the least I can do to help (= I feel I should do more).",
+        "category": "COMPARISON",
+        "id": "g_267"
+    },
+    {
+        "vietnamese": "Chúng tôi đã không đi xa.",
+        "english": "Chúng tôi đã không đi xa. We didn't go far.",
+        "category": "COMPARISON",
+        "id": "g_268"
+    },
+    {
+        "vietnamese": "Bạn đã đi xa chưa",
+        "english": "Bạn đã đi xa chưa Have you come far?",
+        "category": "COMPARISON",
+        "id": "g_269"
+    },
+    {
+        "vietnamese": "Nó không xa đến bãi biển.",
+        "english": "Nó không xa đến bãi biển. It's not far to the beach.",
+        "category": "COMPARISON",
+        "id": "g_270"
+    },
+    {
+        "vietnamese": "Bây giờ không còn xa nữa.",
+        "english": "Bây giờ không còn xa nữa. There's not far to go now.",
+        "category": "COMPARISON",
+        "id": "g_271"
+    },
+    {
+        "vietnamese": "Nhà hàng không xa đây.",
+        "english": "Nhà hàng không xa đây. The restaurant is not far from here.",
+        "category": "COMPARISON",
+        "id": "g_272"
+    },
+    {
+        "vietnamese": "Anh nhìn xuống giao thông phía dưới.",
+        "english": "Anh nhìn xuống giao thông phía dưới. He looked down at the traffic far below.",
+        "category": "COMPARISON",
+        "id": "g_273"
+    },
+    {
+        "vietnamese": "Xa xa, một tiếng tàu rít lên",
+        "english": "Xa xa, một tiếng tàu rít lên Far away in the distance, a train whistled.",
+        "category": "COMPARISON",
+        "id": "g_274"
+    },
+    {
+        "vietnamese": "Càng đi xa về phía bắc, trời càng lạnh.",
+        "english": "Càng đi xa về phía bắc, trời càng lạnh. The farther north they went, the colder it became.",
+        "category": "COMPARISON",
+        "id": "g_275"
+    },
+    {
+        "vietnamese": "một buổi hòa nhạc gần xa",
+        "english": "một buổi hòa nhạc gần xa a concert of music from near and far",
+        "category": "COMPARISON",
+        "id": "g_276"
+    },
+    {
+        "vietnamese": "Nhà bạn cách đây bao xa?",
+        "english": "Nhà bạn cách đây bao xa? How far is it to your house from here?",
+        "category": "COMPARISON",
+        "id": "g_277"
+    },
+    {
+        "vietnamese": "Boston cách New York bao xa?",
+        "english": "Boston cách New York bao xa? How far is Boston from New York?",
+        "category": "COMPARISON",
+        "id": "g_278"
+    },
+    {
+        "vietnamese": "Nó còn bao xa nữa?",
+        "english": "Nó còn bao xa nữa? How much further is it?",
+        "category": "COMPARISON",
+        "id": "g_279"
+    },
+    {
+        "vietnamese": "Chúng tôi sẽ đi bằng tàu hỏa đến tận Luân Đôn và sau đó đi xe buýt.",
+        "english": "Chúng tôi sẽ đi bằng tàu hỏa đến tận Luân Đôn và sau đó đi xe buýt. We'll go by train as far as London, and then take a bus.",
+        "category": "COMPARISON",
+        "id": "g_280"
+    },
+    {
+        "vietnamese": "Chúng tôi đã không đi xa như những người khác.",
+        "english": "Chúng tôi đã không đi xa như những người khác. We didn't go as far as the others.",
+        "category": "COMPARISON",
+        "id": "g_281"
+    },
+    {
+        "vietnamese": "Tôi không chắc mình có thể đi bộ xa như vậy.",
+        "english": "Tôi không chắc mình có thể đi bộ xa như vậy. I'm not sure I can walk so far.",
+        "category": "COMPARISON",
+        "id": "g_282"
+    },
+    {
+        "vietnamese": "Chúng tôi đã đi xa hơn tôi đã nhận ra.",
+        "english": "Chúng tôi đã đi xa hơn tôi đã nhận ra. We had walked further than I had realized.",
+        "category": "COMPARISON",
+        "id": "g_283"
+    },
+    {
+        "vietnamese": "Hai dặm thêm về chúng tôi đến một thị trấn nhỏ",
+        "english": "Hai dặm thêm về chúng tôi đến một thị trấn nhỏ Two miles further on we came to a small town.",
+        "category": "COMPARISON",
+        "id": "g_284"
+    },
+    {
+        "vietnamese": "Bệnh viện nằm xa hơn.",
+        "english": "Bệnh viện nằm xa hơn. The hospital is further down the road.",
+        "category": "COMPARISON",
+        "id": "g_285"
+    },
+    {
+        "vietnamese": "Bạn có thể đứng xa hơn một chút?",
+        "english": "Bạn có thể đứng xa hơn một chút? Can you stand a bit further away?",
+        "category": "COMPARISON",
+        "id": "g_286"
+    },
+    {
+        "vietnamese": "Thành phố Huế là cha từ Hà Nội hơn thành phố Vinh",
+        "english": "Thành phố Huế là cha từ Hà Nội hơn thành phố Vinh Hue city is father from Hanoi than Vinh city is.",
+        "category": "COMPARISON",
+        "id": "g_287"
+    },
+    {
+        "vietnamese": "Tôi sẽ cung cấp cho bạn thêm chi tiết.",
+        "english": "Tôi sẽ cung cấp cho bạn thêm chi tiết. I'll give you further details.",
+        "category": "COMPARISON",
+        "id": "g_288"
+    },
+    {
+        "vietnamese": "Tôi muốn nghiên cứu thêm.",
+        "english": "Tôi muốn nghiên cứu thêm. I would like to further study.",
+        "category": "COMPARISON",
+        "id": "g_289"
+    },
+    {
+        "vietnamese": "Hãy nghiên cứu thêm",
+        "english": "Hãy nghiên cứu thêm Please research it further.",
+        "category": "COMPARISON",
+        "id": "g_290"
+    },
+    {
+        "vietnamese": "Điểm xa nhất của hành trình",
+        "english": "Điểm xa nhất của hành trình the farthest point of the journey",
+        "category": "COMPARISON",
+        "id": "g_291"
+    },
+    {
+        "vietnamese": "Một phần của khu vườn xa nhà",
+        "english": "Một phần của khu vườn xa nhà the part of the garden farthest from the house",
+        "category": "COMPARISON",
+        "id": "g_292"
+    },
+    {
+        "vietnamese": "ADVERBS Anh ấy chạy thật nhanh.",
+        "english": "Anh ấy chạy thật nhanh. He runs fast",
+        "category": "UNCATEGORIZED",
+        "id": "g_293"
+    },
+    {
+        "vietnamese": "ADVERBS Cô ấy nhảy rất tệ.",
+        "english": "Cô ấy nhảy rất tệ. She dances badly",
+        "category": "UNCATEGORIZED",
+        "id": "g_294"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi có thể hát rất hay.",
+        "english": "Tôi có thể hát rất hay. I can sing very well",
+        "category": "UNCATEGORIZED",
+        "id": "g_295"
+    },
+    {
+        "vietnamese": "ADVERBS Cô ấy nói tiếng Anh tốt.",
+        "english": "Cô ấy nói tiếng Anh tốt. She speaks English well.",
+        "category": "UNCATEGORIZED",
+        "id": "g_296"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi có thể chơi guitar tốt.",
+        "english": "Tôi có thể chơi guitar tốt. I can play the guitar well.",
+        "category": "UNCATEGORIZED",
+        "id": "g_297"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi muốn làm bài tập ngay bây giờ!",
+        "english": "Tôi muốn làm bài tập ngay bây giờ! I want to do the exercise now!",
+        "category": "UNCATEGORIZED",
+        "id": "g_298"
+    },
+    {
+        "vietnamese": "ADVERBS Cô ấy đến hôm qua.",
+        "english": "Cô ấy đến hôm qua. She came yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_299"
+    },
+    {
+        "vietnamese": "ADVERBS Thứ hai tuần trước, chúng tôi đã làm bài kiểm tra cuối cùng",
+        "english": "Thứ hai tuần trước, chúng tôi đã làm bài kiểm tra cuối cùng Last Monday, we took the final exams.",
+        "category": "UNCATEGORIZED",
+        "id": "g_300"
+    },
+    {
+        "vietnamese": "ADVERBS John luôn đúng giờ.",
+        "english": "John luôn đúng giờ. John is always on time",
+        "category": "UNCATEGORIZED",
+        "id": "g_301"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi đang đứng đây",
+        "english": "Tôi đang đứng đây I am standing here.",
+        "category": "UNCATEGORIZED",
+        "id": "g_302"
+    },
+    {
+        "vietnamese": "ADVERBS Cô đi ra ngoài.",
+        "english": "Cô đi ra ngoài. She went out.",
+        "category": "UNCATEGORIZED",
+        "id": "g_303"
+    },
+    {
+        "vietnamese": "ADVERBS Thực phẩm/Thức ăn này rất tệ",
+        "english": "Thực phẩm/Thức ăn này rất tệ This food is very bad.",
+        "category": "UNCATEGORIZED",
+        "id": "g_304"
+    },
+    {
+        "vietnamese": "ADVERBS Cô ấy nói tiếng Anh quá nhanh để tôi theo kịp.",
+        "english": "Cô ấy nói tiếng Anh quá nhanh để tôi theo kịp. She speaks English too quickly for me to follow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_305"
+    },
+    {
+        "vietnamese": "ADVERBS Cô ấy có thể nhảy rất đẹp",
+        "english": "Cô ấy có thể nhảy rất đẹp She can dance very beautifully.",
+        "category": "UNCATEGORIZED",
+        "id": "g_306"
+    },
+    {
+        "vietnamese": "ADVERBS Con tôi học ít",
+        "english": "Con tôi học ít My children study rather little",
+        "category": "UNCATEGORIZED",
+        "id": "g_307"
+    },
+    {
+        "vietnamese": "ADVERBS Nhà vô địch đã giành được giải thưởng hai lần",
+        "english": "Nhà vô địch đã giành được giải thưởng hai lần The champion has won the prize twice.",
+        "category": "UNCATEGORIZED",
+        "id": "g_308"
+    },
+    {
+        "vietnamese": "ADVERBS Khi nào bạn sẽ lấy nó?",
+        "english": "Khi nào bạn sẽ lấy nó? When are you going to take it?",
+        "category": "UNCATEGORIZED",
+        "id": "g_309"
+    },
+    {
+        "vietnamese": "ADVERBS Tại sao hôm qua bạn không đến trường?",
+        "english": "Tại sao hôm qua bạn không đến trường? Why didn't you go to school yesterday?",
+        "category": "UNCATEGORIZED",
+        "id": "g_310"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi nhớ ngày tôi gặp cô ấy trên bãi biển.",
+        "english": "Tôi nhớ ngày tôi gặp cô ấy trên bãi biển. I remember the day when I met her on the beach.",
+        "category": "UNCATEGORIZED",
+        "id": "g_311"
+    },
+    {
+        "vietnamese": "ADVERBS Đây là căn phòng nơi tôi sinh ra.",
+        "english": "Đây là căn phòng nơi tôi sinh ra. This is the room where I was born.",
+        "category": "UNCATEGORIZED",
+        "id": "g_312"
+    },
+    {
+        "vietnamese": "ADVERBS Một công nhân chăm chỉ làm việc rất siêng năng",
+        "english": "Một công nhân chăm chỉ làm việc rất siêng năng A hard worker works very hard.",
+        "category": "UNCATEGORIZED",
+        "id": "g_313"
+    },
+    {
+        "vietnamese": "ADVERBS Một học sinh đến muộn.",
+        "english": "Một học sinh đến muộn. A late student arrived late.",
+        "category": "UNCATEGORIZED",
+        "id": "g_314"
+    },
+    {
+        "vietnamese": "ADVERBS Cô thường nói rằng cô đến thăm bà của mình.",
+        "english": "Cô thường nói rằng cô đến thăm bà của mình. She often says she visits her grandmother.",
+        "category": "UNCATEGORIZED",
+        "id": "g_315"
+    },
+    {
+        "vietnamese": "ADVERBS Cô nói rằng anh ấy thường đến thăm bà của cô ta",
+        "english": "Cô nói rằng anh ấy thường đến thăm bà của cô ta She says he often visits her grandmother.",
+        "category": "UNCATEGORIZED",
+        "id": "g_316"
+    },
+    {
+        "vietnamese": "ADVERBS Chúng tôi đã đến thăm bà của chúng tôi ngày hôm qua",
+        "english": "Chúng tôi đã đến thăm bà của chúng tôi ngày hôm qua We visited our grandmother yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_317"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi đã làm bài kiểm tra tuần trước",
+        "english": "Tôi đã làm bài kiểm tra tuần trước I took the exams last week.",
+        "category": "UNCATEGORIZED",
+        "id": "g_318"
+    },
+    {
+        "vietnamese": "ADVERBS Anh nói tiếng Anh chậm",
+        "english": "Anh nói tiếng Anh chậm He speaks English slowly.",
+        "category": "UNCATEGORIZED",
+        "id": "g_319"
+    },
+    {
+        "vietnamese": "ADVERBS Anh ấy nói tiếng Anh rất trôi chảy",
+        "english": "Anh ấy nói tiếng Anh rất trôi chảy He speaks English very fluently.",
+        "category": "UNCATEGORIZED",
+        "id": "g_320"
+    },
+    {
+        "vietnamese": "ADVERBS Chắc chắn, họ sẽ ở đây chiều nay",
+        "english": "Chắc chắn, họ sẽ ở đây chiều nay Certainly, they will be here this afternoon.",
+        "category": "UNCATEGORIZED",
+        "id": "g_321"
+    },
+    {
+        "vietnamese": "ADVERBS May mắn thay, cô đã không sống ở nơi chiến tranh nổ ra vào năm 1914-1918",
+        "english": "May mắn thay, cô đã không sống ở nơi chiến tranh nổ ra vào năm 1914-1918 Luckily, she didn't live where the war broke out in 1914-1918.",
+        "category": "UNCATEGORIZED",
+        "id": "g_322"
+    },
+    {
+        "vietnamese": "ADVERBS Anh chạy nhanh như người bạn thân của mình.",
+        "english": "Anh chạy nhanh như người bạn thân của mình. He ran as fast as his close friend.",
+        "category": "UNCATEGORIZED",
+        "id": "g_323"
+    },
+    {
+        "vietnamese": "ADVERBS Tôi đã chờ đợi cô ấy lâu hơn bạn",
+        "english": "Tôi đã chờ đợi cô ấy lâu hơn bạn I've been waiting for her longer than you",
+        "category": "UNCATEGORIZED",
+        "id": "g_324"
+    },
+    {
+        "vietnamese": "ADVERBS Chúng tôi đang đi ngày càng chậm",
+        "english": "Chúng tôi đang đi ngày càng chậm We are going more and more slowly.",
+        "category": "UNCATEGORIZED",
+        "id": "g_325"
+    },
+    {
+        "vietnamese": "ADVERBS Anh ấy đang làm việc chăm chỉ hơn và chăm chỉ hơn",
+        "english": "Anh ấy đang làm việc chăm chỉ hơn và chăm chỉ hơn He is working harder and harder.",
+        "category": "UNCATEGORIZED",
+        "id": "g_326"
+    },
+    {
+        "vietnamese": "Tôi đã đi vào phòng",
+        "english": "Tôi đã đi vào phòng I went into the room.",
+        "category": "PREPOSITION",
+        "id": "g_327"
+    },
+    {
+        "vietnamese": "Lúc đó tôi đang ngồi trong phòng",
+        "english": "Lúc đó tôi đang ngồi trong phòng I was sitting in the room at that time.",
+        "category": "PREPOSITION",
+        "id": "g_328"
+    },
+    {
+        "vietnamese": "Xin mời vào. Trời đang mưa",
+        "english": "Xin mời vào. Trời đang mưa Please, come in. It's raining.",
+        "category": "PREPOSITION",
+        "id": "g_329"
+    },
+    {
+        "vietnamese": "Chúng tôi đang ở trong căn phòng nh",
+        "english": "Chúng tôi đang ở trong căn phòng nh We are in the small room.",
+        "category": "PREPOSITION",
+        "id": "g_330"
+    },
+    {
+        "vietnamese": "Anh chạy xuống thật nhanh",
+        "english": "Anh chạy xuống thật nhanh He ran down quickly.",
+        "category": "PREPOSITION",
+        "id": "g_331"
+    },
+    {
+        "vietnamese": "Từ điển của tôi ở trên bàn",
+        "english": "Từ điển của tôi ở trên bàn My dictionary is on the desk.",
+        "category": "PREPOSITION",
+        "id": "g_332"
+    },
+    {
+        "vietnamese": "Huy chương này được làm bằng gì?",
+        "english": "Huy chương này được làm bằng gì? What is this medal made of?",
+        "category": "PREPOSITION",
+        "id": "g_333"
+    },
+    {
+        "vietnamese": "Huy chương này được làm là gì?",
+        "english": "Huy chương này được làm là gì? Of what is this medal made?",
+        "category": "PREPOSITION",
+        "id": "g_334"
+    },
+    {
+        "vietnamese": "Người đàn ông mà chúng tôi lắng nghe là giáo viên mới của chúng tôi",
+        "english": "Người đàn ông mà chúng tôi lắng nghe là giáo viên mới của chúng tôi The man whom we listened to is our new teacher.",
+        "category": "PREPOSITION",
+        "id": "g_335"
+    },
+    {
+        "vietnamese": "Một lá thư được đọc từ bạn của anh ấy trong phòng học.",
+        "english": "Một lá thư được đọc từ bạn của anh ấy trong phòng học. A letter was read from his friend in the class room.",
+        "category": "PREPOSITION",
+        "id": "g_337"
+    },
+    {
+        "vietnamese": "Một lá thư của bạn anh ta đã được đọc trong phòng học",
+        "english": "Một lá thư của bạn anh ta đã được đọc trong phòng học A letter from his friend was read in the class room.",
+        "category": "PREPOSITION",
+        "id": "g_338"
+    },
+    {
+        "vietnamese": "Với khẩu súng hướng về rừng, anh bắt đầu vào buổi sáng",
+        "english": "Với khẩu súng hướng về rừng, anh bắt đầu vào buổi sáng With his gun towards the forest he started in the morning.",
+        "category": "PREPOSITION",
+        "id": "g_339"
+    },
+    {
+        "vietnamese": "Với khẩu súng của mình, anh ta bắt đầu tiến vào rừng vào buổi sáng",
+        "english": "Với khẩu súng của mình, anh ta bắt đầu tiến vào rừng vào buổi sáng With his gun, he started towards the forest in the morning.",
+        "category": "PREPOSITION",
+        "id": "g_340"
+    },
+    {
+        "vietnamese": "Anh và tôi là sinh viên.",
+        "english": "Anh và tôi là sinh viên. He and I are students.",
+        "category": "CONJUNCTION",
+        "id": "g_341"
+    },
+    {
+        "vietnamese": "Cô ấy xinh đẹp và tốt bụng.",
+        "english": "Cô ấy xinh đẹp và tốt bụng. She is beautiful and kind.",
+        "category": "CONJUNCTION",
+        "id": "g_342"
+    },
+    {
+        "vietnamese": "Họ đang học đọc và viết.",
+        "english": "Họ đang học đọc và viết. They are learning to read and write.",
+        "category": "CONJUNCTION",
+        "id": "g_343"
+    },
+    {
+        "vietnamese": "Cô ấy là một người vợ tốt và chung thủy",
+        "english": "Cô ấy là một người vợ tốt và chung thủy She is a good and loyal wife.",
+        "category": "CONJUNCTION",
+        "id": "g_344"
+    },
+    {
+        "vietnamese": "Tôi có nhiều sách và vở",
+        "english": "Tôi có nhiều sách và vở I have many books and notebooks.",
+        "category": "CONJUNCTION",
+        "id": "g_345"
+    },
+    {
+        "vietnamese": "Cô ấy vừa tốt vừa trung thành",
+        "english": "Cô ấy vừa tốt vừa trung thành She is both good and loyal.",
+        "category": "CONJUNCTION",
+        "id": "g_346"
+    },
+    {
+        "vietnamese": "Họ học cả tiếng Anh và tiếng Pháp",
+        "english": "Họ học cả tiếng Anh và tiếng Pháp They learn both English and French.",
+        "category": "CONJUNCTION",
+        "id": "g_347"
+    },
+    {
+        "vietnamese": "Ông có kinh nghiệm cũng như hiểu biết.",
+        "english": "Ông có kinh nghiệm cũng như hiểu biết. He has experience as well as knownledge.",
+        "category": "CONJUNCTION",
+        "id": "g_348"
+    },
+    {
+        "vietnamese": "Có không ít hơn 1 ngàn người ở đó mua vé",
+        "english": "Có không ít hơn 1 ngàn người ở đó mua vé There were no less than a thousand people there buying tickets.",
+        "category": "CONJUNCTION",
+        "id": "g_349"
+    },
+    {
+        "vietnamese": "Anh ấy không chỉ học tiếng Anh mà còn cả tiếng Trung",
+        "english": "Anh ấy không chỉ học tiếng Anh mà còn cả tiếng Trung He learns not only English but (also) Chinese.",
+        "category": "CONJUNCTION",
+        "id": "g_350"
+    },
+    {
+        "vietnamese": "Tôi thích chơi không chỉ quần vợt mà còn (bóng đá)",
+        "english": "Tôi thích chơi không chỉ quần vợt mà còn (bóng đá) I like playing not only tennis but (also) football.",
+        "category": "CONJUNCTION",
+        "id": "g_351"
+    },
+    {
+        "vietnamese": "Nhanh lên, nếu không bạn sẽ bị trễ.",
+        "english": "Nhanh lên, nếu không bạn sẽ bị trễ. Hurry up, or you will be late.",
+        "category": "CONJUNCTION",
+        "id": "g_352"
+    },
+    {
+        "vietnamese": "Anh ta không tốt hoặc tử tế",
+        "english": "Anh ta không tốt hoặc tử tế He isn't either good or kind.",
+        "category": "CONJUNCTION",
+        "id": "g_353"
+    },
+    {
+        "vietnamese": "Tôi không có sách hoặc sổ ghi chép.",
+        "english": "Tôi không có sách hoặc sổ ghi chép. I don't have either books or notebooks.",
+        "category": "CONJUNCTION",
+        "id": "g_354"
+    },
+    {
+        "vietnamese": "Anh không uống rượu cũng không uống bia.",
+        "english": "Anh không uống rượu cũng không uống bia. He drinks neither wine nor beer.",
+        "category": "CONJUNCTION",
+        "id": "g_355"
+    },
+    {
+        "vietnamese": "Cô không có chồng cũng không có con",
+        "english": "Cô không có chồng cũng không có con She has neither husband nor children.",
+        "category": "CONJUNCTION",
+        "id": "g_356"
+    },
+    {
+        "vietnamese": "Anh thông minh nhưng rất lười biếng",
+        "english": "Anh thông minh nhưng rất lười biếng He is intelligent but very lazy.",
+        "category": "CONJUNCTION",
+        "id": "g_357"
+    },
+    {
+        "vietnamese": "Cô ấy xấu xí nhưng chăm chỉ",
+        "english": "Cô ấy xấu xí nhưng chăm chỉ She is ugly but hard-working.",
+        "category": "CONJUNCTION",
+        "id": "g_358"
+    },
+    {
+        "vietnamese": "Bạn đã không ăn gì; vì thế chắc hẳn bạn rất đói",
+        "english": "Bạn đã không ăn gì; vì thế chắc hẳn bạn rất đói You have eaten nothing; then you must be very hungry.",
+        "category": "CONJUNCTION",
+        "id": "g_359"
+    },
+    {
+        "vietnamese": "Cây đó trông rất khô cằn; nó không được tưới nước lâu",
+        "english": "Cây đó trông rất khô cằn; nó không được tưới nước lâu The plant looks very faded; then it hasn't been watered for long",
+        "category": "CONJUNCTION",
+        "id": "g_360"
+    },
+    {
+        "vietnamese": "Lúc đó em đang ăn trưa.",
+        "english": "Lúc đó em đang ăn trưa. I was at lunch then.",
+        "category": "CONJUNCTION",
+        "id": "g_361"
+    },
+    {
+        "vietnamese": "Chiều mai quay lại nhé. Lúc đó tôi sẽ làm xong mọi việc",
+        "english": "Chiều mai quay lại nhé. Lúc đó tôi sẽ làm xong mọi việc Come back tomorrow afternoon. I will have everything ready by then.",
+        "category": "CONJUNCTION",
+        "id": "g_362"
+    },
+    {
+        "vietnamese": "Chúng ta sẽ khởi hành lúc 9 giờ, rồi dừng ăn trưa vào khoảng 11 giờ",
+        "english": "Chúng ta sẽ khởi hành lúc 9 giờ, rồi dừng ăn trưa vào khoảng 11 giờ We are going to leave at 9, and then we stop for lunch around 11.",
+        "category": "CONJUNCTION",
+        "id": "g_363"
+    },
+    {
+        "vietnamese": "Trước tiên, bạn hãy xếp phần A và B cho thẳng hàng, sau đó vặn chặt hai phần với nhau",
+        "english": "Trước tiên, bạn hãy xếp phần A và B cho thẳng hàng, sau đó vặn chặt hai phần với nhau First, you line up part A and part B. Then, you screw them together.",
+        "category": "CONJUNCTION",
+        "id": "g_364"
+    },
+    {
+        "vietnamese": "Các hành tinh trong lần lượt là Thủy Tinh, KimTinh, Trái Đất, và tiếp đó là Hỏa Tinh",
+        "english": "Các hành tinh trong lần lượt là Thủy Tinh, KimTinh, Trái Đất, và tiếp đó là Hỏa Tinh The inner planets go Mercury, Venus, Earth, and then Mars.",
+        "category": "CONJUNCTION",
+        "id": "g_365"
+    },
+    {
+        "vietnamese": "Chi phí của bữa tối là 400 ngàn, với lại anh phải thêm tiền boa nữa",
+        "english": "Chi phí của bữa tối là 400 ngàn, với lại anh phải thêm tiền boa nữa The dinner costs $20, and then you have to add the tip.",
+        "category": "CONJUNCTION",
+        "id": "g_366"
+    },
+    {
+        "vietnamese": "Nếu thời tiết đẹp thì ngày mai chúng ta sẽ ra biển",
+        "english": "Nếu thời tiết đẹp thì ngày mai chúng ta sẽ ra biển If the weather is good, then we will go to the beach tomorrow.",
+        "category": "CONJUNCTION",
+        "id": "g_367"
+    },
+    {
+        "vietnamese": "Anh ấy đã không làm việc chăm chỉ cho học kỳ này; Hậu quả là anh ấy thi trượt.",
+        "english": "Anh ấy đã không làm việc chăm chỉ cho học kỳ này; Hậu quả là anh ấy thi trượt. Anh ấy didn't work hard for this term; consequently, he failed the exam.",
+        "category": "CONJUNCTION",
+        "id": "g_368"
+    },
+    {
+        "vietnamese": "Anh ấy là một sinh viên rất lười biếng; tuy nhiên, anh ta có thể vượt qua tất cả các kỳ thi một cách dễ dàng",
+        "english": "Anh ấy là một sinh viên rất lười biếng; tuy nhiên, anh ta có thể vượt qua tất cả các kỳ thi một cách dễ dàng He is a very lazy student; however, he can pass all the exams easily.",
+        "category": "CONJUNCTION",
+        "id": "g_369"
+    },
+    {
+        "vietnamese": "Trời mưa rất to; Tuy nhiên, chúng tôi đã đi ra ngoài mà không có ô",
+        "english": "Trời mưa rất to; Tuy nhiên, chúng tôi đã đi ra ngoài mà không có ô It was raining very hard; however, we went out without umbrella",
+        "category": "CONJUNCTION",
+        "id": "g_370"
+    },
+    {
+        "vietnamese": "Cô học rất chăm chỉ; tuy nhiên, cô luôn bị điểm kém",
+        "english": "Cô học rất chăm chỉ; tuy nhiên, cô luôn bị điểm kém She studies very hard; nevertheless, she always gets bad marks.",
+        "category": "CONJUNCTION",
+        "id": "g_371"
+    },
+    {
+        "vietnamese": "Tôi nói chuyện với bạn một cách nhẹ nhàng; nhưng bạn vẫn không nghe",
+        "english": "Tôi nói chuyện với bạn một cách nhẹ nhàng; nhưng bạn vẫn không nghe I speak to you peaceably; still/yet you will not listen.",
+        "category": "CONJUNCTION",
+        "id": "g_372"
+    },
+    {
+        "vietnamese": "Cô ấy nói cô ấy không yêu tôi, tuy nhiên, tôi vẫn yêu cô ấy.",
+        "english": "Cô ấy nói cô ấy không yêu tôi, tuy nhiên, tôi vẫn yêu cô ấy. She says she does not love me, yet, I still love her.",
+        "category": "CONJUNCTION",
+        "id": "g_373"
+    },
+    {
+        "vietnamese": "Chúng tôi phải làm việc chăm chỉ, nếu không chúng tôi sẽ trượt kỳ thi.",
+        "english": "Chúng tôi phải làm việc chăm chỉ, nếu không chúng tôi sẽ trượt kỳ thi. We have to work hard, or/else/otherwise we will fail the exam.",
+        "category": "CONJUNCTION",
+        "id": "g_374"
+    },
+    {
+        "vietnamese": "Đi đến nơi bạn thích; đừng chỉ ở đây",
+        "english": "Đi đến nơi bạn thích; đừng chỉ ở đây Go where you like; only do not stay here.",
+        "category": "CONJUNCTION",
+        "id": "g_375"
+    },
+    {
+        "vietnamese": "Anh ta đã vi phạm các biển báo giao thông, do đó anh ta đã bị phạt",
+        "english": "Anh ta đã vi phạm các biển báo giao thông, do đó anh ta đã bị phạt He violated the traffic signs, therefore he was punished.",
+        "category": "CONJUNCTION",
+        "id": "g_376"
+    },
+    {
+        "vietnamese": "Anh ấy chắc chắn sẽ thành công, vì (vì) anh ấy làm việc chăm chỉ",
+        "english": "Anh ấy chắc chắn sẽ thành công, vì (vì) anh ấy làm việc chăm chỉ He will surely succeed, for (because) he works hard.",
+        "category": "CONJUNCTION",
+        "id": "g_377"
+    },
+    {
+        "vietnamese": "Anh ấy học tập chăm chỉ trong khi/trái lại bạn bè thì không",
+        "english": "Anh ấy học tập chăm chỉ trong khi/trái lại bạn bè thì không He learns hard whereas his friends don't.",
+        "category": "CONJUNCTION",
+        "id": "g_378"
+    },
+    {
+        "vietnamese": "Đàn ông khôn ngoan yêu sự thật trong khi/trái lại những kẻ ngốc tránh nó",
+        "english": "Đàn ông khôn ngoan yêu sự thật trong khi/trái lại những kẻ ngốc tránh nó Wise men love truth whereas fools avoid it.",
+        "category": "CONJUNCTION",
+        "id": "g_379"
+    },
+    {
+        "vietnamese": "Đừng hát khi bạn làm việc.",
+        "english": "Đừng hát khi bạn làm việc. Don't sing while you work.",
+        "category": "CONJUNCTION",
+        "id": "g_380"
+    },
+    {
+        "vietnamese": "Đừng nói chuyện trong khi bạn ăn.",
+        "english": "Đừng nói chuyện trong khi bạn ăn. Don't talk while you eat.",
+        "category": "CONJUNCTION",
+        "id": "g_381"
+    },
+    {
+        "vietnamese": "Chúng tôi phải học tập chăm chỉ ở trường; Bên cạnh đó, chúng ta phải chú ý đến việc tập thể dục.",
+        "english": "Chúng tôi phải học tập chăm chỉ ở trường; Bên cạnh đó, chúng ta phải chú ý đến việc tập thể dục. We have to study hard at school; besides, we must pay attention to physical exercise.",
+        "category": "CONJUNCTION",
+        "id": "g_382"
+    },
+    {
+        "vietnamese": "Anh ta lấy trộm hai chiếc đồng hồ; hơn nữa, anh ta phá cửa sổ.",
+        "english": "Anh ta lấy trộm hai chiếc đồng hồ; hơn nữa, anh ta phá cửa sổ. He stole two watches; moreover, he broke the window.",
+        "category": "CONJUNCTION",
+        "id": "g_383"
+    },
+    {
+        "vietnamese": "Anh ấy là một giáo viên tốt; vì vậy, anh ấy rất nổi tiếng với sinh viên.",
+        "english": "Anh ấy là một giáo viên tốt; vì vậy, anh ấy rất nổi tiếng với sinh viên. He is a good teacher; so, he is very popular with students.",
+        "category": "CONJUNCTION",
+        "id": "g_384"
+    },
+    {
+        "vietnamese": "Trời mưa rất to; Vì vậy, chúng tôi đã không đi ra ngoài đêm đó.",
+        "english": "Trời mưa rất to; Vì vậy, chúng tôi đã không đi ra ngoài đêm đó. It rained very hard; so, we didn't go out that night.",
+        "category": "CONJUNCTION",
+        "id": "g_385"
+    },
+    {
+        "vietnamese": "Tôi đã không mang tiền theo, do đó tôi đã không mua cuốn sách.",
+        "english": "Tôi đã không mang tiền theo, do đó tôi đã không mua cuốn sách. I had not money about me; hence I did not buy the book.",
+        "category": "CONJUNCTION",
+        "id": "g_386"
+    },
+    {
+        "vietnamese": "Anh đến muộn; do đó, anh đã bỏ lỡ phần đầu tiên của bài học.",
+        "english": "Anh đến muộn; do đó, anh đã bỏ lỡ phần đầu tiên của bài học. He came late; hence, he missed the first part of the lesson.",
+        "category": "CONJUNCTION",
+        "id": "g_387"
+    },
+    {
+        "vietnamese": "Một người đàn ông nên nghỉ ngơi một chút, sau khi anh ta đã làm việc chăm chỉ.",
+        "english": "Một người đàn ông nên nghỉ ngơi một chút, sau khi anh ta đã làm việc chăm chỉ. A man shoud take a little rest, after he has worked hard.",
+        "category": "CONJUNCTION",
+        "id": "g_388"
+    },
+    {
+        "vietnamese": "Con tàu đã được kiểm tra cẩn thận sau khi nó được chế tạo",
+        "english": "Con tàu đã được kiểm tra cẩn thận sau khi nó được chế tạo The ship was checked carefully after she had been built.",
+        "category": "CONJUNCTION",
+        "id": "g_389"
+    },
+    {
+        "vietnamese": "Anh đến bên cô, khi đồng hồ điểm sáu giờ.",
+        "english": "Anh đến bên cô, khi đồng hồ điểm sáu giờ. He came her, as the clock struck six.",
+        "category": "CONJUNCTION",
+        "id": "g_390"
+    },
+    {
+        "vietnamese": "Họ rời đi khi chuông reo ..",
+        "english": "Họ rời đi khi chuông reo .. They left as the bell rang..",
+        "category": "CONJUNCTION",
+        "id": "g_391"
+    },
+    {
+        "vietnamese": "Tôi sẽ gọi cho bạn ngay khi tôi về nhà.",
+        "english": "Tôi sẽ gọi cho bạn ngay khi tôi về nhà. I will phone you as soon as I come home.",
+        "category": "CONJUNCTION",
+        "id": "g_392"
+    },
+    {
+        "vietnamese": "Họ sẽ kết hôn ngay khi học xong đại học.",
+        "english": "Họ sẽ kết hôn ngay khi học xong đại học. They will get married as soon as they finish university.",
+        "category": "CONJUNCTION",
+        "id": "g_393"
+    },
+    {
+        "vietnamese": "Đừng đếm gà của bạn trước khi chúng nở.",
+        "english": "Đừng đếm gà của bạn trước khi chúng nở. Don't count your chickens before they are hatch.",
+        "category": "CONJUNCTION",
+        "id": "g_394"
+    },
+    {
+        "vietnamese": "Anh ấy nói chuyện như thể anh ấy rất khôn ngoan",
+        "english": "Anh ấy nói chuyện như thể anh ấy rất khôn ngoan He talks as if he were very wise.",
+        "category": "CONJUNCTION",
+        "id": "g_395"
+    },
+    {
+        "vietnamese": "Anh ấy đã rất yếu, kể từ khi anh ấy bị ốm",
+        "english": "Anh ấy đã rất yếu, kể từ khi anh ấy bị ốm He has been very weak, since he was taken sick.",
+        "category": "CONJUNCTION",
+        "id": "g_396"
+    },
+    {
+        "vietnamese": "Không ai có thể làm hại chúng ta, miễn là chúng ta vẫn là bạn bè.",
+        "english": "Không ai có thể làm hại chúng ta, miễn là chúng ta vẫn là bạn bè. No one can harm us, as long as we remain friends.",
+        "category": "CONJUNCTION",
+        "id": "g_397"
+    },
+    {
+        "vietnamese": "Tôi sẽ cho bạn mượn một số tiền miễn là bạn hứa sẽ trả lại cho tôi",
+        "english": "Tôi sẽ cho bạn mượn một số tiền miễn là bạn hứa sẽ trả lại cho tôi I will lend you some money as long as you promise to pay me back.",
+        "category": "CONJUNCTION",
+        "id": "g_398"
+    },
+    {
+        "vietnamese": "Mọi người không biết giá trị của sức khỏe cho đến khi họ mất nó",
+        "english": "Mọi người không biết giá trị của sức khỏe cho đến khi họ mất nó People do not know the value of health until they lose it.",
+        "category": "CONJUNCTION",
+        "id": "g_399"
+    },
+    {
+        "vietnamese": "Khi bạn đến thăm đất nước này, bạn nên mang theo quần áo mùa đông dày",
+        "english": "Khi bạn đến thăm đất nước này, bạn nên mang theo quần áo mùa đông dày When you visit this country, you should bring thick winter clothes.",
+        "category": "CONJUNCTION",
+        "id": "g_400"
+    },
+    {
+        "vietnamese": "Hãy nắm bắt cơ hội khi nó đến.",
+        "english": "Hãy nắm bắt cơ hội khi nó đến. Make hay (cỏ khô) while the sun shines.",
+        "category": "CONJUNCTION",
+        "id": "g_401"
+    },
+    {
+        "vietnamese": "Hãy bước trong khi bạn nhảy",
+        "english": "Hãy bước trong khi bạn nhảy Step while you dance.",
+        "category": "CONJUNCTION",
+        "id": "g_402"
+    },
+    {
+        "vietnamese": "Phòng ngủ là nơi tốt nhất để tôi làm bài tập về nhà.",
+        "english": "Phòng ngủ là nơi tốt nhất để tôi làm bài tập về nhà. The bed room is the best place where I do my homework.",
+        "category": "CONJUNCTION",
+        "id": "g_403"
+    },
+    {
+        "vietnamese": "Mẹ anh ấy đi theo anh ấy mọi lúc mọi nơi.",
+        "english": "Mẹ anh ấy đi theo anh ấy mọi lúc mọi nơi. His mother follows him wherever he goes.",
+        "category": "CONJUNCTION",
+        "id": "g_404"
+    },
+    {
+        "vietnamese": "Tôi sẽ đi bất cứ nơi nào để tìm một công việc phù hợp với tôi.",
+        "english": "Tôi sẽ đi bất cứ nơi nào để tìm một công việc phù hợp với tôi. I will go wherever to find a suitable job for me.",
+        "category": "CONJUNCTION",
+        "id": "g_405"
+    },
+    {
+        "vietnamese": "Làm như tôi đã nói với bạn làm",
+        "english": "Làm như tôi đã nói với bạn làm Do as I told you to do.",
+        "category": "CONJUNCTION",
+        "id": "g_406"
+    },
+    {
+        "vietnamese": "Anh nói như thể anh biết mọi thứ về cô.",
+        "english": "Anh nói như thể anh biết mọi thứ về cô. He talks as if he knew everything about her.",
+        "category": "CONJUNCTION",
+        "id": "g_407"
+    },
+    {
+        "vietnamese": "Anh ấy nhảy như thể là một vũ công chuyên nghiệp.",
+        "english": "Anh ấy nhảy như thể là một vũ công chuyên nghiệp. He dances as if he were a professional dancer.",
+        "category": "CONJUNCTION",
+        "id": "g_408"
+    },
+    {
+        "vietnamese": "Anh ấy cao bằng anh trai anh ấy.",
+        "english": "Anh ấy cao bằng anh trai anh ấy. He is as tall as his brother.",
+        "category": "CONJUNCTION",
+        "id": "g_409"
+    },
+    {
+        "vietnamese": "Cái túi này đắt như cái kia.",
+        "english": "Cái túi này đắt như cái kia. This bag is as expensive as that one.",
+        "category": "CONJUNCTION",
+        "id": "g_410"
+    },
+    {
+        "vietnamese": "Cô ấy đẹp hơn chị gái mình.",
+        "english": "Cô ấy đẹp hơn chị gái mình. She is more beautiful than her sister.",
+        "category": "CONJUNCTION",
+        "id": "g_411"
+    },
+    {
+        "vietnamese": "Cô ấy trông béo hơn bạn anh.",
+        "english": "Cô ấy trông béo hơn bạn anh. She looks fatter than his friend.",
+        "category": "CONJUNCTION",
+        "id": "g_412"
+    },
+    {
+        "vietnamese": "Khi trời mưa rất to, chúng tôi dừng trò chơi của họ",
+        "english": "Khi trời mưa rất to, chúng tôi dừng trò chơi của họ As it rained very hard, we stopped their games.",
+        "category": "CONJUNCTION",
+        "id": "g_413"
+    },
+    {
+        "vietnamese": "Chúng tôi không thể vượt qua bài kiểm tra vì chúng tôi không học chăm chỉ",
+        "english": "Chúng tôi không thể vượt qua bài kiểm tra vì chúng tôi không học chăm chỉ We could not pass the test because we didn't learn hard.",
+        "category": "CONJUNCTION",
+        "id": "g_414"
+    },
+    {
+        "vietnamese": "Tôi đã không gặp cô ấy vì cô ấy đã rời đi trước đó",
+        "english": "Tôi đã không gặp cô ấy vì cô ấy đã rời đi trước đó I didn't meet her because she had left earlier.",
+        "category": "CONJUNCTION",
+        "id": "g_415"
+    },
+    {
+        "vietnamese": "Tôi phải đi vì cô ấy đã gọi điện thoại ba lần.",
+        "english": "Tôi phải đi vì cô ấy đã gọi điện thoại ba lần. I must go since she has telephoned three times.",
+        "category": "CONJUNCTION",
+        "id": "g_416"
+    },
+    {
+        "vietnamese": "Tôi làm việc chăm chỉ rằng tôi có thể thành công trong cuộc sống.",
+        "english": "Tôi làm việc chăm chỉ rằng tôi có thể thành công trong cuộc sống. I work hard that I may succeed in life.",
+        "category": "CONJUNCTION",
+        "id": "g_417"
+    },
+    {
+        "vietnamese": "Chúng tôi đã đi rất sớm để có thể bắt chuyến xe buýt cuối cùng",
+        "english": "Chúng tôi đã đi rất sớm để có thể bắt chuyến xe buýt cuối cùng We went very early so that we could catch the last bus.",
+        "category": "CONJUNCTION",
+        "id": "g_418"
+    },
+    {
+        "vietnamese": "Chúng tôi học tiếng Pháp để học ở Pháp",
+        "english": "Chúng tôi học tiếng Pháp để học ở Pháp We learn French in order to study in France .",
+        "category": "CONJUNCTION",
+        "id": "g_419"
+    },
+    {
+        "vietnamese": "Tôi sẽ gọi cho anh ấy nếu tôi có số điện thoại của anh ấy.",
+        "english": "Tôi sẽ gọi cho anh ấy nếu tôi có số điện thoại của anh ấy. I will phone him if I have his phone number.",
+        "category": "CONJUNCTION",
+        "id": "g_420"
+    },
+    {
+        "vietnamese": "Bạn sẽ bị trễ trừ khi bạn khởi hành ngay bây giờ",
+        "english": "Bạn sẽ bị trễ trừ khi bạn khởi hành ngay bây giờ You will be late unless you set off now.",
+        "category": "CONJUNCTION",
+        "id": "g_421"
+    },
+    {
+        "vietnamese": "Trừ khi bạn làm việc chăm chỉ, bạn sẽ không vượt qua được các kỳ thi.",
+        "english": "Trừ khi bạn làm việc chăm chỉ, bạn sẽ không vượt qua được các kỳ thi. Unless you work hard, you will not pass the exams.",
+        "category": "CONJUNCTION",
+        "id": "g_422"
+    },
+    {
+        "vietnamese": "Tôi sẽ tha thứ cho anh ta với điều kiện/miễn là anh ta thừa nhận lỗi của mình",
+        "english": "Tôi sẽ tha thứ cho anh ta với điều kiện/miễn là anh ta thừa nhận lỗi của mình I will pardon him provided that he acknowledge his fault.",
+        "category": "CONJUNCTION",
+        "id": "g_423"
+    },
+    {
+        "vietnamese": "Bạn có thể vào phòng với điều kiện bạn có vé ..",
+        "english": "Bạn có thể vào phòng với điều kiện bạn có vé .. You can enter the room provided that/miễn là you have the ticket..",
+        "category": "CONJUNCTION",
+        "id": "g_424"
+    },
+    {
+        "vietnamese": "Bạn nên mang theo/cầm lấy một chiếc ô trong trường hợp trời mưa",
+        "english": "Bạn nên mang theo/cầm lấy một chiếc ô trong trường hợp trời mưa You should take an umbrella in case it rains.",
+        "category": "CONJUNCTION",
+        "id": "g_425"
+    },
+    {
+        "vietnamese": "Vui lòng mang theo bản đồ trong trường hợp/phòng khi (bạn) có thể bị lạc.",
+        "english": "Vui lòng mang theo bản đồ trong trường hợp/phòng khi (bạn) có thể bị lạc. Please take a map with you in case (that) you may get lost.",
+        "category": "CONJUNCTION",
+        "id": "g_426"
+    },
+    {
+        "vietnamese": "Mặc dù dù trời mưa rất to, tôi đã đi ra ngoài với cô ấy.",
+        "english": "Mặc dù dù trời mưa rất to, tôi đã đi ra ngoài với cô ấy. Though/even though /although it rained hard, I went out with her.",
+        "category": "CONJUNCTION",
+        "id": "g_427"
+    },
+    {
+        "vietnamese": "Tôi sẽ đến trường vào ngày mai, vì môn học đó rất quan trọng",
+        "english": "Tôi sẽ đến trường vào ngày mai, vì môn học đó rất quan trọng I’m going to school tomorrow, for the subject is very important.",
+        "category": "CONJUNCTION",
+        "id": "g_428"
+    },
+    {
+        "vietnamese": "Cô ấy có thể chơi ghi-ta và hát hay.",
+        "english": "Cô ấy có thể chơi ghi-ta và hát hay. She can play guitar and sing well.",
+        "category": "CONJUNCTION",
+        "id": "g_429"
+    },
+    {
+        "vietnamese": "Tôi sẽ không ăn thịt và cá nữa.",
+        "english": "Tôi sẽ không ăn thịt và cá nữa. I won’t eat meat nor fish.",
+        "category": "CONJUNCTION",
+        "id": "g_430"
+    },
+    {
+        "vietnamese": "Tôi yêu anh ấy nhưng tôi không muốn anh ấy biết.",
+        "english": "Tôi yêu anh ấy nhưng tôi không muốn anh ấy biết. I love him but I don’t want him to know.",
+        "category": "CONJUNCTION",
+        "id": "g_431"
+    },
+    {
+        "vietnamese": "Bạn muốn ăn pizza hay mì?",
+        "english": "Bạn muốn ăn pizza hay mì? Do you want to eat pizza or noodle?",
+        "category": "CONJUNCTION",
+        "id": "g_432"
+    },
+    {
+        "vietnamese": "Jane ít nói nhưng cô ấy là rất tốt.",
+        "english": "Jane ít nói nhưng cô ấy là rất tốt. Jane is less talkative yet she is very kind.",
+        "category": "CONJUNCTION",
+        "id": "g_433"
+    },
+    {
+        "vietnamese": "Tôi đã làm hết tất cả bài tập về nhà cho nên tôi rất tự tin",
+        "english": "Tôi đã làm hết tất cả bài tập về nhà cho nên tôi rất tự tin I did all homework so I am confident.",
+        "category": "CONJUNCTION",
+        "id": "g_434"
+    },
+    {
+        "vietnamese": "Jim ra ngoài sau khi đã hoàn thành bài tập về nhà.",
+        "english": "Jim ra ngoài sau khi đã hoàn thành bài tập về nhà. Jim went out after he had finished his homework.",
+        "category": "CONJUNCTION",
+        "id": "g_435"
+    },
+    {
+        "vietnamese": "Sam đã uống sữa trước khi ăn sáng.",
+        "english": "Sam đã uống sữa trước khi ăn sáng. Sam drank milk before she ate breakfast.",
+        "category": "CONJUNCTION",
+        "id": "g_436"
+    },
+    {
+        "vietnamese": "Mặc dù mệt, cô ấy vẫn đến trường.",
+        "english": "Mặc dù mệt, cô ấy vẫn đến trường. Although she is tired, she goes to school.",
+        "category": "CONJUNCTION",
+        "id": "g_437"
+    },
+    {
+        "vietnamese": "Tôi đã không làm bài tập vì tôi đã chơi game tối qua",
+        "english": "Tôi đã không làm bài tập vì tôi đã chơi game tối qua I didn’t do homework as I played game last night.",
+        "category": "CONJUNCTION",
+        "id": "g_438"
+    },
+    {
+        "vietnamese": "Mẹ đang nấu ăn khi tôi đang đá bóng.",
+        "english": "Mẹ đang nấu ăn khi tôi đang đá bóng. My mother is cooking as I am playing soccer.",
+        "category": "CONJUNCTION",
+        "id": "g_439"
+    },
+    {
+        "vietnamese": "Tôi không quan tâm bạn là ai, miễn là bạn yêu tôi.",
+        "english": "Tôi không quan tâm bạn là ai, miễn là bạn yêu tôi. I don’t care who you are as long as you love me.",
+        "category": "CONJUNCTION",
+        "id": "g_440"
+    },
+    {
+        "vietnamese": "Ngay khi cô ấy rời đi, chúng tôi mới bắt đầu nấu bữa tối",
+        "english": "Ngay khi cô ấy rời đi, chúng tôi mới bắt đầu nấu bữa tối As soon as she left, we started to cook dinner.",
+        "category": "CONJUNCTION",
+        "id": "g_441"
+    },
+    {
+        "vietnamese": "Kể cả khi bầu trời sập xuống, tôi vẫn sẽ mãi yêu bạn.",
+        "english": "Kể cả khi bầu trời sập xuống, tôi vẫn sẽ mãi yêu bạn. Even if the sky is falling down, I will love you.",
+        "category": "CONJUNCTION",
+        "id": "g_442"
+    },
+    {
+        "vietnamese": "Tôi không đi học hôm nay bởi vì trời mưa lớn.",
+        "english": "Tôi không đi học hôm nay bởi vì trời mưa lớn. I didn’t go to school today because it rained so heavily.",
+        "category": "CONJUNCTION",
+        "id": "g_443"
+    },
+    {
+        "vietnamese": "Tôi sẽ không tin vào bạn nữa một khi bạn lừa dối tôi",
+        "english": "Tôi sẽ không tin vào bạn nữa một khi bạn lừa dối tôi I will not believe in you once you lie to me.",
+        "category": "CONJUNCTION",
+        "id": "g_444"
+    },
+    {
+        "vietnamese": "Tôi sẽ không tìm bạn nữa vì giờ đây bạn không còn là của tôi",
+        "english": "Tôi sẽ không tìm bạn nữa vì giờ đây bạn không còn là của tôi I won’t find you, now that you aren’t mine.",
+        "category": "CONJUNCTION",
+        "id": "g_445"
+    },
+    {
+        "vietnamese": "Chúng tôi ra sớm để không bị kẹt xe",
+        "english": "Chúng tôi ra sớm để không bị kẹt xe We left early in order that we wouldn’t be caught in the traffic jam.",
+        "category": "CONJUNCTION",
+        "id": "g_446"
+    },
+    {
+        "vietnamese": "Tôi đã không về nhà cho đến 1 giờ sáng.",
+        "english": "Tôi đã không về nhà cho đến 1 giờ sáng. I didn’t come back home until 1 p.m.",
+        "category": "CONJUNCTION",
+        "id": "g_447"
+    },
+    {
+        "vietnamese": "Khi tôi còn trẻ, tôi thường nghe đài",
+        "english": "Khi tôi còn trẻ, tôi thường nghe đài When I was young, I listened to the radio.",
+        "category": "CONJUNCTION",
+        "id": "g_448"
+    },
+    {
+        "vietnamese": "Trong khi tôi đang làm việc nhà thì bạn cùng phòng của tôi chơi ghi-ta.",
+        "english": "Trong khi tôi đang làm việc nhà thì bạn cùng phòng của tôi chơi ghi-ta. While I am doing housework, my roommate is playing guitar.",
+        "category": "CONJUNCTION",
+        "id": "g_449"
+    },
+    {
+        "vietnamese": "Phòng khi trời mưa, vui long mang ô khi đi ra ngoài.",
+        "english": "Phòng khi trời mưa, vui long mang ô khi đi ra ngoài. In case it will rain, please take an umbrella when you go out.",
+        "category": "CONJUNCTION",
+        "id": "g_450"
+    },
+    {
+        "vietnamese": "CLAUSES Đây là người đàn ông Mary nhìn thấy ngày hôm qua.",
+        "english": "Đây là người đàn ông Mary nhìn thấy ngày hôm qua. This is the man Mary saw yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_451"
+    },
+    {
+        "vietnamese": "CLAUSES Cô gái làm việc tại quán cà phê là chị của John",
+        "english": "Cô gái làm việc tại quán cà phê là chị của John The girl who works at the café is John’s sister.",
+        "category": "UNCATEGORIZED",
+        "id": "g_452"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi nhớ ngôi nhà nơi tôi sinh ra.",
+        "english": "Tôi nhớ ngôi nhà nơi tôi sinh ra. I remember the house where I was born.",
+        "category": "UNCATEGORIZED",
+        "id": "g_453"
+    },
+    {
+        "vietnamese": "CLAUSES Khi chúng tôi sống ở thị trấn, chúng tôi thường đến nhà hát",
+        "english": "Khi chúng tôi sống ở thị trấn, chúng tôi thường đến nhà hát When we lived in town we often went to the theatre.",
+        "category": "UNCATEGORIZED",
+        "id": "g_454"
+    },
+    {
+        "vietnamese": "CLAUSES Anh mỉm cười khi thấy vợ.",
+        "english": "Anh mỉm cười khi thấy vợ. He smiled when he saw his wife.",
+        "category": "UNCATEGORIZED",
+        "id": "g_455"
+    },
+    {
+        "vietnamese": "CLAUSES Đây là chiếc xe đạp mà tôi muốn mua..",
+        "english": "Đây là chiếc xe đạp mà tôi muốn mua.. This is the bicycle that I would like to buy.",
+        "category": "UNCATEGORIZED",
+        "id": "g_456"
+    },
+    {
+        "vietnamese": "CLAUSES Người đàn ông nhìn thấy vụ tai nạn ngày hôm qua là hàng xóm của tôi.",
+        "english": "Người đàn ông nhìn thấy vụ tai nạn ngày hôm qua là hàng xóm của tôi. The man who saw the accident yesterday is my neighbour.",
+        "category": "UNCATEGORIZED",
+        "id": "g_457"
+    },
+    {
+        "vietnamese": "CLAUSES Người đàn ông mà tôi thấy hôm qua là John.",
+        "english": "Người đàn ông mà tôi thấy hôm qua là John. The man whom I saw yesterday is John.",
+        "category": "UNCATEGORIZED",
+        "id": "g_458"
+    },
+    {
+        "vietnamese": "CLAUSES Con ngựa mà tôi mới mua là một con ngựa Ả Rập.",
+        "english": "Con ngựa mà tôi mới mua là một con ngựa Ả Rập. The horse which I recently bought is an Arab.",
+        "category": "UNCATEGORIZED",
+        "id": "g_459"
+    },
+    {
+        "vietnamese": "CLAUSES Một đứa trẻ có cha mẹ đã chết được gọi là trẻ mồ côi",
+        "english": "Một đứa trẻ có cha mẹ đã chết được gọi là trẻ mồ côi A child whose parents are dead is called an orphan.",
+        "category": "UNCATEGORIZED",
+        "id": "g_460"
+    },
+    {
+        "vietnamese": "CLAUSES Đây là cậu bé mà tôi đã nói với bạn.",
+        "english": "Đây là cậu bé mà tôi đã nói với bạn. Đây là cậu bé mà tôi đã nói với bạn. This is the boy that I told you of.",
+        "category": "UNCATEGORIZED",
+        "id": "g_461"
+    },
+    {
+        "vietnamese": "CLAUSES Sông Thames, chảy qua London, là một dòng sông đẹp",
+        "english": "Sông Thames, chảy qua London, là một dòng sông đẹp Sông Thames, chảy qua London, là một dòng sông đẹp. The Thames, which flows through London, is a beautiful river.",
+        "category": "UNCATEGORIZED",
+        "id": "g_462"
+    },
+    {
+        "vietnamese": "CLAUSES Mặt trời, vào giữa trưa nắng nóng, khiến/làm du khách khát nước.",
+        "english": "Mặt trời, vào giữa trưa nắng nóng, khiến/làm du khách khát nước. The sun, which at midday was hot, made the traveler thirsty",
+        "category": "UNCATEGORIZED",
+        "id": "g_463"
+    },
+    {
+        "vietnamese": "CLAUSES Đó là ngôi nhà mà tôi muốn mua",
+        "english": "Đó là ngôi nhà mà tôi muốn mua That is the house that I would like to buy.",
+        "category": "UNCATEGORIZED",
+        "id": "g_464"
+    },
+    {
+        "vietnamese": "CLAUSES Cô ấy ăn mặc như vậy để mọi người chú ý đến cô ấy.",
+        "english": "Cô ấy ăn mặc như vậy để mọi người chú ý đến cô ấy. She dresses like that so that everyone will notice her",
+        "category": "UNCATEGORIZED",
+        "id": "g_465"
+    },
+    {
+        "vietnamese": "CLAUSES Một số người ăn để họ có thể sống. Những người khác dường như sống để họ có thể ăn.",
+        "english": "Một số người ăn để họ có thể sống. Những người khác dường như sống để họ có thể ăn. Some people eat so that they may live. Others seem to live in order that they may eat.",
+        "category": "UNCATEGORIZED",
+        "id": "g_466"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi đang nói với bạn điều này vì sợ rằng bạn nên phạm sai lầm",
+        "english": "Tôi đang nói với bạn điều này vì sợ rằng bạn nên phạm sai lầm I am telling you this for fear that you should make a mistake.",
+        "category": "UNCATEGORIZED",
+        "id": "g_467"
+    },
+    {
+        "vietnamese": "CLAUSES Chúng ta nên mang theo một chiếc ô trong trường hợp trời mưa.",
+        "english": "Chúng ta nên mang theo một chiếc ô trong trường hợp trời mưa. We had better take an umbrella in case it should rain.",
+        "category": "UNCATEGORIZED",
+        "id": "g_468"
+    },
+    {
+        "vietnamese": "CLAUSES Anh bán xe hơi đó vì quá nhỏ.",
+        "english": "Anh bán xe hơi đó vì quá nhỏ. He sold the car because it was too small.",
+        "category": "UNCATEGORIZED",
+        "id": "g_469"
+    },
+    {
+        "vietnamese": "CLAUSES Khi anh mệt mỏi, anh ngồi xuống.",
+        "english": "Khi anh mệt mỏi, anh ngồi xuống. As he was tired he sat down.",
+        "category": "UNCATEGORIZED",
+        "id": "g_470"
+    },
+    {
+        "vietnamese": "CLAUSES Vì chúng tôi không có tiền nên chúng tôi không có thể mua nó",
+        "english": "Vì chúng tôi không có tiền nên chúng tôi không có thể mua nó Since we have no money we can’t buy it.",
+        "category": "UNCATEGORIZED",
+        "id": "g_471"
+    },
+    {
+        "vietnamese": "CLAUSES Thấy rằng bạn không thể giúp được tôi, tự tôi phair làm công việc đó",
+        "english": "Thấy rằng bạn không thể giúp được tôi, tự tôi phair làm công việc đó Seeing that you won’t help me, I must do the job myself.",
+        "category": "UNCATEGORIZED",
+        "id": "g_472"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi sẽ đi nơi bạn nói với tôi",
+        "english": "Tôi sẽ đi nơi bạn nói với tôi I will go where you tell me.",
+        "category": "UNCATEGORIZED",
+        "id": "g_473"
+    },
+    {
+        "vietnamese": "CLAUSES Hãy ngồi bất cứ nơi nào bạn thích",
+        "english": "Hãy ngồi bất cứ nơi nào bạn thích Sit wherever you like.",
+        "category": "UNCATEGORIZED",
+        "id": "g_474"
+    },
+    {
+        "vietnamese": "CLAUSES Khi trời mưa, tôi thường đến trường bằng xe buýt.",
+        "english": "Khi trời mưa, tôi thường đến trường bằng xe buýt. When it rains, I usually go to school by bus.",
+        "category": "UNCATEGORIZED",
+        "id": "g_475"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi đã học được rất nhiều tiếng Nhật khi tôi ở Tokyo",
+        "english": "Tôi đã học được rất nhiều tiếng Nhật khi tôi ở Tokyo I learned a lot of Japanese while I was in Tokyo.",
+        "category": "UNCATEGORIZED",
+        "id": "g_476"
+    },
+    {
+        "vietnamese": "CLAUSES Cô đã học tiếng Anh trước khi đến Anh",
+        "english": "Cô đã học tiếng Anh trước khi đến Anh She learned English before she came to England .",
+        "category": "UNCATEGORIZED",
+        "id": "g_477"
+    },
+    {
+        "vietnamese": "CLAUSES Anh đến sau khi màn đêm buông xuống",
+        "english": "Anh đến sau khi màn đêm buông xuống He came after night had fallen.",
+        "category": "UNCATEGORIZED",
+        "id": "g_478"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi đã không được khỏe kể từ khi tôi trở về nhà",
+        "english": "Tôi đã không được khỏe kể từ khi tôi trở về nhà I have not been well since I returned home.",
+        "category": "UNCATEGORIZED",
+        "id": "g_479"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi thấy cô ấy khi cô ấy rời khỏi nhà.",
+        "english": "Tôi thấy cô ấy khi cô ấy rời khỏi nhà. I saw her as she was leaving home.",
+        "category": "UNCATEGORIZED",
+        "id": "g_480"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi sẽ ở lại đây cho đến khi bạn quay trở lại",
+        "english": "Tôi sẽ ở lại đây cho đến khi bạn quay trở lại I’ll stay here till/until you get back.",
+        "category": "UNCATEGORIZED",
+        "id": "g_481"
+    },
+    {
+        "vietnamese": "CLAUSES Ngay khi John nghe tin anh ấy đã viết cho tôi",
+        "english": "Ngay khi John nghe tin anh ấy đã viết cho tôi As soon as John heard the news he wrote to me.",
+        "category": "UNCATEGORIZED",
+        "id": "g_482"
+    },
+    {
+        "vietnamese": "CLAUSES Ngay khi anh bước vào phòng, tôi nghe thấy một vụ nổ khủng khiếp",
+        "english": "Ngay khi anh bước vào phòng, tôi nghe thấy một vụ nổ khủng khiếp Just as he entered the room I heard a terrible explosion",
+        "category": "UNCATEGORIZED",
+        "id": "g_483"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi sẽ thảo luận với bạn bất cứ khi nào bạn muốn",
+        "english": "Tôi sẽ thảo luận với bạn bất cứ khi nào bạn muốn I’ll discuss it with you whenever you like.",
+        "category": "UNCATEGORIZED",
+        "id": "g_484"
+    },
+    {
+        "vietnamese": "CLAUSES Hãy chiến đấu như những anh hùng",
+        "english": "Hãy chiến đấu như những anh hùng The fought as heroes do.",
+        "category": "UNCATEGORIZED",
+        "id": "g_485"
+    },
+    {
+        "vietnamese": "CLAUSES Có vẻ như trời sắp mưa",
+        "english": "Có vẻ như trời sắp mưa It looks as if it’s going to rain.",
+        "category": "UNCATEGORIZED",
+        "id": "g_486"
+    },
+    {
+        "vietnamese": "CLAUSES Anh nhìn tôi như thể tôi đang điên.",
+        "english": "Anh nhìn tôi như thể tôi đang điên. He looked at me as if I were mad",
+        "category": "UNCATEGORIZED",
+        "id": "g_487"
+    },
+    {
+        "vietnamese": "CLAUSES Bạn trông như thể bạn đã nhìn thấy một con ma",
+        "english": "Bạn trông như thể bạn đã nhìn thấy một con ma You look as if you had seen a ghost.",
+        "category": "UNCATEGORIZED",
+        "id": "g_488"
+    },
+    {
+        "vietnamese": "CLAUSES Cà phê nóng đến mức tôi không thể uống nó",
+        "english": "Cà phê nóng đến mức tôi không thể uống nó The coffee is so hot that I can not drink it",
+        "category": "UNCATEGORIZED",
+        "id": "g_489"
+    },
+    {
+        "vietnamese": "CLAUSES Đó là một ngày thật nóng đến nỗi mà tôi đã cởi áo khoác của tôi",
+        "english": "Đó là một ngày thật nóng đến nỗi mà tôi đã cởi áo khoác của tôi It was such a hot day that I took off my Jacket.",
+        "category": "UNCATEGORIZED",
+        "id": "g_490"
+    },
+    {
+        "vietnamese": "CLAUSES Mặc dù anh ấy trông ốm yếu, anh ấy thực sự rất mạnh mẽ.",
+        "english": "Mặc dù anh ấy trông ốm yếu, anh ấy thực sự rất mạnh mẽ. Though he looks ill, he is really very strong.",
+        "category": "UNCATEGORIZED",
+        "id": "g_491"
+    },
+    {
+        "vietnamese": "CLAUSES Giàu có như anh, anh không bao giờ cho ai bất cứ thứ gì",
+        "english": "Giàu có như anh, anh không bao giờ cho ai bất cứ thứ gì Rich as he is, he never gives anybody anything.",
+        "category": "UNCATEGORIZED",
+        "id": "g_492"
+    },
+    {
+        "vietnamese": "CLAUSES Bài tập này không dễ như bạn nghĩ",
+        "english": "Bài tập này không dễ như bạn nghĩ This exercise is not so easy as you think.",
+        "category": "UNCATEGORIZED",
+        "id": "g_493"
+    },
+    {
+        "vietnamese": "CLAUSES Nếu trời mưa chúng ta sẽ ở nhà",
+        "english": "Nếu trời mưa chúng ta sẽ ở nhà If it rains we shall stay at home.",
+        "category": "UNCATEGORIZED",
+        "id": "g_494"
+    },
+    {
+        "vietnamese": "CLAUSES Xin vui lòng cho tôi biết nơi bạn đã đi",
+        "english": "Xin vui lòng cho tôi biết nơi bạn đã đi Please tell me where you went.",
+        "category": "UNCATEGORIZED",
+        "id": "g_495"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi đang đi đến ngôi nhà nơi bạn đã đi",
+        "english": "Tôi đang đi đến ngôi nhà nơi bạn đã đi I am going to the house where you went.",
+        "category": "UNCATEGORIZED",
+        "id": "g_496"
+    },
+    {
+        "vietnamese": "CLAUSES Đây là người đàn ông Mary nhìn thấy ngày hôm qua",
+        "english": "Đây là người đàn ông Mary nhìn thấy ngày hôm qua This is the man Mary saw yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_497"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi nhớ ngôi nhà nơi tôi sinh ra",
+        "english": "Tôi nhớ ngôi nhà nơi tôi sinh ra I remember the house where I was born.",
+        "category": "UNCATEGORIZED",
+        "id": "g_499"
+    },
+    {
+        "vietnamese": "CLAUSES Đây là chiếc xe đạp mà tôi muốn mua",
+        "english": "Đây là chiếc xe đạp mà tôi muốn mua This is the bicycle that I would like to buy.",
+        "category": "UNCATEGORIZED",
+        "id": "g_502"
+    },
+    {
+        "vietnamese": "CLAUSES Người đàn ông mà tôi thấy hôm qua là John",
+        "english": "Người đàn ông mà tôi thấy hôm qua là John The man whom I saw yesterday is John.",
+        "category": "UNCATEGORIZED",
+        "id": "g_504"
+    },
+    {
+        "vietnamese": "CLAUSES Con ngựa mà tôi mới mua là một con ngựa Ả Rập",
+        "english": "Con ngựa mà tôi mới mua là một con ngựa Ả Rập The horse which I recently bought is an Arab.",
+        "category": "UNCATEGORIZED",
+        "id": "g_505"
+    },
+    {
+        "vietnamese": "CLAUSES Đây là cậu bé mà tôi đã nói với bạn",
+        "english": "Đây là cậu bé mà tôi đã nói với bạn This is the boy that I told you of.",
+        "category": "UNCATEGORIZED",
+        "id": "g_507"
+    },
+    {
+        "vietnamese": "CLAUSES Mặt trời, vào giữa trưa nắng nóng, khiến/làm du khách khát nước",
+        "english": "Mặt trời, vào giữa trưa nắng nóng, khiến/làm du khách khát nước The sun, which at midday was hot, made the traveler thirsty",
+        "category": "UNCATEGORIZED",
+        "id": "g_509"
+    },
+    {
+        "vietnamese": "CLAUSES Đó là ngôi nhà mà tôi muốn mua.",
+        "english": "Đó là ngôi nhà mà tôi muốn mua. That is the house that I would like to buy.",
+        "category": "UNCATEGORIZED",
+        "id": "g_510"
+    },
+    {
+        "vietnamese": "CLAUSES Khi trời mưa, tôi thường đến trường bằng xe buýt",
+        "english": "Khi trời mưa, tôi thường đến trường bằng xe buýt When it rains, I usually go to school by bus.",
+        "category": "UNCATEGORIZED",
+        "id": "g_521"
+    },
+    {
+        "vietnamese": "CLAUSES Tôi thấy cô ấy khi cô ấy rời khỏi nhà",
+        "english": "Tôi thấy cô ấy khi cô ấy rời khỏi nhà I saw her as she was leaving home.",
+        "category": "UNCATEGORIZED",
+        "id": "g_526"
+    },
+    {
+        "vietnamese": "CLAUSES Hãy chiến đấu như những anh hùng.",
+        "english": "Hãy chiến đấu như những anh hùng. The fought as heroes do.",
+        "category": "UNCATEGORIZED",
+        "id": "g_531"
+    },
+    {
+        "vietnamese": "CLAUSES Anh nhìn tôi như thể tôi đang điên",
+        "english": "Anh nhìn tôi như thể tôi đang điên He looked at me as if I were mad",
+        "category": "UNCATEGORIZED",
+        "id": "g_533"
+    },
+    {
+        "vietnamese": "CLAUSES Mặc dù anh ấy trông ốm yếu, anh ấy thực sự rất mạnh mẽ",
+        "english": "Mặc dù anh ấy trông ốm yếu, anh ấy thực sự rất mạnh mẽ Though he looks ill, he is really very strong.",
+        "category": "UNCATEGORIZED",
+        "id": "g_537"
+    },
+    {
+        "vietnamese": "CLAUSES Người đàn ông mà bạn gặp tuần trước là bố cô ấy",
+        "english": "Người đàn ông mà bạn gặp tuần trước là bố cô ấy The man whom you met last week is her father.",
+        "category": "UNCATEGORIZED",
+        "id": "g_543"
+    },
+    {
+        "vietnamese": "CLAUSES Carta có một chị gái có tên là Juma",
+        "english": "Carta có một chị gái có tên là Juma Carta has a sister whose name is Juma.",
+        "category": "UNCATEGORIZED",
+        "id": "g_544"
+    },
+    {
+        "vietnamese": "CLAUSES Cho tôi xem những chiếc mũ mới mà bạn đã mua tối qua",
+        "english": "Cho tôi xem những chiếc mũ mới mà bạn đã mua tối qua Show me the new hats which you bought last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_545"
+    },
+    {
+        "vietnamese": "CLAUSES Huyền thích chiếc áo phông màu xanh mà chị tôi đang mặc",
+        "english": "Huyền thích chiếc áo phông màu xanh mà chị tôi đang mặc Huyen likes the blue T-shirt which my sister is wearing.",
+        "category": "UNCATEGORIZED",
+        "id": "g_546"
+    },
+    {
+        "vietnamese": "CLAUSES Đó là một công ty sản xuất nhẫn.",
+        "english": "Đó là một công ty sản xuất nhẫn. That is a company which produces ring.",
+        "category": "UNCATEGORIZED",
+        "id": "g_547"
+    },
+    {
+        "vietnamese": "CLAUSES Trẻ em bị thu hút bởi chương trình được biểu diễn rất nhiều",
+        "english": "Trẻ em bị thu hút bởi chương trình được biểu diễn rất nhiều The children were attracted by the show which was performed so many.",
+        "category": "UNCATEGORIZED",
+        "id": "g_548"
+    },
+    {
+        "vietnamese": "CLAUSES Linda đã mua một chiếc điện thoại mới ngày hôm qua mà tôi có thể sử dụng để gửi và nhận tin nhắn",
+        "english": "Linda đã mua một chiếc điện thoại mới ngày hôm qua mà tôi có thể sử dụng để gửi và nhận tin nhắn Linda bought a new phone yesterday which I can use to send and receive message.",
+        "category": "UNCATEGORIZED",
+        "id": "g_549"
+    },
+    {
+        "vietnamese": "CLAUSES Tết là một lễ hội thường diễn ra vào cuối tháng một hoặc đầu tháng hai",
+        "english": "Tết là một lễ hội thường diễn ra vào cuối tháng một hoặc đầu tháng hai Tet is a festival which often happens in late January or early February.",
+        "category": "UNCATEGORIZED",
+        "id": "g_550"
+    },
+    {
+        "vietnamese": "CLAUSES Người bạn thân nhất của tôi có thể sáng tác những bài hát mà Ly hát rất hay",
+        "english": "Người bạn thân nhất của tôi có thể sáng tác những bài hát mà Ly hát rất hay My best friend can compose songs which Ly sings very well.",
+        "category": "UNCATEGORIZED",
+        "id": "g_551"
+    },
+    {
+        "vietnamese": "CLAUSES Cường là cậu bé đang tặng mẹ tôi một món quà",
+        "english": "Cường là cậu bé đang tặng mẹ tôi một món quà Cuong is the boy who is giving my mom a gift.",
+        "category": "UNCATEGORIZED",
+        "id": "g_552"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô ấy không ngủ muộn vào cuối tuần",
+        "english": "Cô ấy không ngủ muộn vào cuối tuần She does not sleep late at the weekends",
+        "category": "UNCATEGORIZED",
+        "id": "g_553"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Chúng tôi không tin Thủ tướng",
+        "english": "Chúng tôi không tin Thủ tướng We do not believe the Prime Minister",
+        "category": "UNCATEGORIZED",
+        "id": "g_554"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn có hiểu câu hỏi không?",
+        "english": "Bạn có hiểu câu hỏi không? Do you understand the question?",
+        "category": "UNCATEGORIZED",
+        "id": "g_555"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Họ không làm việc muộn vào thứ Sáu",
+        "english": "Họ không làm việc muộn vào thứ Sáu They do not work late on Fridays",
+        "category": "UNCATEGORIZED",
+        "id": "g_556"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT David có muốn uống cà phê không?",
+        "english": "David có muốn uống cà phê không? Does David want some coffee?",
+        "category": "UNCATEGORIZED",
+        "id": "g_557"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô có ba cô con gái.",
+        "english": "Cô có ba cô con gái. She has three daughters.",
+        "category": "UNCATEGORIZED",
+        "id": "g_558"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Khi nào cô ấy đi đến lớp học tiếng Trung của cô ta ?",
+        "english": "Khi nào cô ấy đi đến lớp học tiếng Trung của cô ta ? When does she go to her Chinese class?",
+        "category": "UNCATEGORIZED",
+        "id": "g_559"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tại sao tôi phải dọn dẹp?",
+        "english": "Tại sao tôi phải dọn dẹp? Why do I have to clean up?",
+        "category": "UNCATEGORIZED",
+        "id": "g_560"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô ấy có thường xuyên đi xem phim không?",
+        "english": "Cô ấy có thường xuyên đi xem phim không? How often does she go to the cinema?",
+        "category": "UNCATEGORIZED",
+        "id": "g_561"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô ấy không thường xuyên đi đến nhà thờ.",
+        "english": "Cô ấy không thường xuyên đi đến nhà thờ. She does not usually go to the church.",
+        "category": "UNCATEGORIZED",
+        "id": "g_562"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bây giờ tôi hiểu vấn đề này.",
+        "english": "Bây giờ tôi hiểu vấn đề này. I understand this matter now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_563"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cuốn sách này thuộc về cô ấy",
+        "english": "Cuốn sách này thuộc về cô ấy This book belongs to her.",
+        "category": "UNCATEGORIZED",
+        "id": "g_564"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Mặt trời mọc ở hướng đông và lặn ở hướng tây.",
+        "english": "Mặt trời mọc ở hướng đông và lặn ở hướng tây. The sun rises in the east and sets in the west.",
+        "category": "UNCATEGORIZED",
+        "id": "g_565"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Trái đất đi xung quanh mặt trời.",
+        "english": "Trái đất đi xung quanh mặt trời. The earth goes around the sun.",
+        "category": "UNCATEGORIZED",
+        "id": "g_566"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tôi đi ngủ sớm và dậy sớm hàng ngày.",
+        "english": "Tôi đi ngủ sớm và dậy sớm hàng ngày. I go to bed early and get up early every day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_567"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Ông Smith uống trà đậm sau bữa ăn.",
+        "english": "Ông Smith uống trà đậm sau bữa ăn. Mr. Smith drinks strong tea after meals.",
+        "category": "UNCATEGORIZED",
+        "id": "g_568"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Họ đến London vào tháng tới",
+        "english": "Họ đến London vào tháng tới They go to London next month.",
+        "category": "UNCATEGORIZED",
+        "id": "g_569"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tôi đến gặp cô ấy vào tuần tới.",
+        "english": "Tôi đến gặp cô ấy vào tuần tới. I come to see her next week.",
+        "category": "UNCATEGORIZED",
+        "id": "g_570"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Anh ấy thích đọc sách.",
+        "english": "Anh ấy thích đọc sách. He likes reading books.",
+        "category": "UNCATEGORIZED",
+        "id": "g_571"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô ấy thích nhạc pop.",
+        "english": "Cô ấy thích nhạc pop. She likes pop music.",
+        "category": "UNCATEGORIZED",
+        "id": "g_572"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Anh thường hôn vợ trước khi đi làm",
+        "english": "Anh thường hôn vợ trước khi đi làm He often kisses his wife before going to work.",
+        "category": "UNCATEGORIZED",
+        "id": "g_573"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tom đánh răng mỗi ngày",
+        "english": "Tom đánh răng mỗi ngày Tom brushes his teeth every day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_574"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô ấy chơi piano rất giỏi",
+        "english": "Cô ấy chơi piano rất giỏi She plays the piano very well.",
+        "category": "UNCATEGORIZED",
+        "id": "g_575"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Anh ấy thường mang theo tiền mỗi khi ra ngoài",
+        "english": "Anh ấy thường mang theo tiền mỗi khi ra ngoài He often carries money with him whenever he goes out.",
+        "category": "UNCATEGORIZED",
+        "id": "g_576"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Căn phòng này luôn luôn lạnh lẽo",
+        "english": "Căn phòng này luôn luôn lạnh lẽo It’s always cold in this room",
+        "category": "UNCATEGORIZED",
+        "id": "g_577"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Đôi khi không nói gì là tốt nhất",
+        "english": "Đôi khi không nói gì là tốt nhất Sometimes it’s best not to say anything.",
+        "category": "UNCATEGORIZED",
+        "id": "g_578"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tôi hiếm khi dành thời gian đọc báo",
+        "english": "Tôi hiếm khi dành thời gian đọc báo I rarely have time to read a newspaper.",
+        "category": "UNCATEGORIZED",
+        "id": "g_579"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn đến trường bằng phương tiện/bằng cách nào?",
+        "english": "Bạn đến trường bằng phương tiện/bằng cách nào? How do you go to school?",
+        "category": "UNCATEGORIZED",
+        "id": "g_580"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn làm nghề gì?",
+        "english": "Bạn làm nghề gì? What do you do?",
+        "category": "UNCATEGORIZED",
+        "id": "g_581"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT John đến từ đâu?",
+        "english": "John đến từ đâu? Where does John come from?",
+        "category": "UNCATEGORIZED",
+        "id": "g_582"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Mất bao lâu từ London đến Paris?",
+        "english": "Mất bao lâu từ London đến Paris? How long does it take from London to Paris?",
+        "category": "UNCATEGORIZED",
+        "id": "g_583"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Khi nào bạn thức dậy ?",
+        "english": "Khi nào bạn thức dậy ? When do you get up?",
+        "category": "UNCATEGORIZED",
+        "id": "g_584"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn có thường xuyên học tiếng Anh không?",
+        "english": "Bạn có thường xuyên học tiếng Anh không? How often do you study English?",
+        "category": "UNCATEGORIZED",
+        "id": "g_585"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bộ phim bắt đầu lúc mấy giờ?",
+        "english": "Bộ phim bắt đầu lúc mấy giờ? What time does the film start?",
+        "category": "UNCATEGORIZED",
+        "id": "g_586"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn chơi tennis ở đâu?",
+        "english": "Bạn chơi tennis ở đâu? Where do you play tennis?",
+        "category": "UNCATEGORIZED",
+        "id": "g_587"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Lucy thích môn thể thao nào?",
+        "english": "Lucy thích môn thể thao nào? What sports does Lucy like?",
+        "category": "UNCATEGORIZED",
+        "id": "g_588"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tôi không thích cà phê.",
+        "english": "Tôi không thích cà phê. I don't prefer coffee.",
+        "category": "UNCATEGORIZED",
+        "id": "g_589"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Cô ấy không đi xe đạp đến văn phòng của mình",
+        "english": "Cô ấy không đi xe đạp đến văn phòng của mình She doesn't ride a bike to her office.",
+        "category": "UNCATEGORIZED",
+        "id": "g_590"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn bè của họ không sống trong một ngôi nhà nhỏ",
+        "english": "Bạn bè của họ không sống trong một ngôi nhà nhỏ Their friends don't live in a small house.",
+        "category": "UNCATEGORIZED",
+        "id": "g_591"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Họ không làm bài tập về nhà vào cuối tuần",
+        "english": "Họ không làm bài tập về nhà vào cuối tuần They don't do the homework on weekends.",
+        "category": "UNCATEGORIZED",
+        "id": "g_592"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Mike không chơi bóng đá vào buổi chiều",
+        "english": "Mike không chơi bóng đá vào buổi chiều Mike doesn't play soccer in the afternoons.",
+        "category": "UNCATEGORIZED",
+        "id": "g_593"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Xe buýt không đến lúc 8:30 sáng",
+        "english": "Xe buýt không đến lúc 8:30 sáng The bus doesn't arrive at 8.30 a.m.",
+        "category": "UNCATEGORIZED",
+        "id": "g_594"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Chúng tôi không đi ngủ lúc nửa đêm",
+        "english": "Chúng tôi không đi ngủ lúc nửa đêm We don't go to bed at midnight.",
+        "category": "UNCATEGORIZED",
+        "id": "g_595"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Anh tôi không hoàn thành công việc lúc 8 giờ",
+        "english": "Anh tôi không hoàn thành công việc lúc 8 giờ My brother doesn't finish work at 8 p.m.",
+        "category": "UNCATEGORIZED",
+        "id": "g_596"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Jack có thích ăn hamburger không?",
+        "english": "Jack có thích ăn hamburger không? Does Jack like eating hamburgers?",
+        "category": "UNCATEGORIZED",
+        "id": "g_597"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Bạn có dậy sớm vào chủ nhật không?",
+        "english": "Bạn có dậy sớm vào chủ nhật không? Do you get up early on Sundays?",
+        "category": "UNCATEGORIZED",
+        "id": "g_598"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Các sinh viên luôn làm việc chăm chỉ cho kỳ thi phải không ?",
+        "english": "Các sinh viên luôn làm việc chăm chỉ cho kỳ thi phải không ? Do the students always work hard for the exam?",
+        "category": "UNCATEGORIZED",
+        "id": "g_599"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Tàu khởi hành vào buổi trưa mỗi ngày phải không?",
+        "english": "Tàu khởi hành vào buổi trưa mỗi ngày phải không? Does the train leave at noon every day?",
+        "category": "UNCATEGORIZED",
+        "id": "g_600"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Anh ấy có thường chơi guitar không?",
+        "english": "Anh ấy có thường chơi guitar không? Does he often play the guitar?",
+        "category": "UNCATEGORIZED",
+        "id": "g_601"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Họ có đi taxi đến trường mỗi sáng không?",
+        "english": "Họ có đi taxi đến trường mỗi sáng không? Do they take a taxi to school every morning?",
+        "category": "UNCATEGORIZED",
+        "id": "g_602"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Anna và Daisy có đến thăm giáo viên cũ của họ vào những ngày lễ mùa đông không?",
+        "english": "Anna và Daisy có đến thăm giáo viên cũ của họ vào những ngày lễ mùa đông không? Do Anna and Daisy visit their old teachers on winter holidays?",
+        "category": "UNCATEGORIZED",
+        "id": "g_603"
+    },
+    {
+        "vietnamese": "SIMPLE PRESENT Nước sôi ở 100 độ C phải không?",
+        "english": "Nước sôi ở 100 độ C phải không? Does water boil at 100 degrees Celsius?",
+        "category": "UNCATEGORIZED",
+        "id": "g_604"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Các sinh viên đã đến gặp tôi ngày hôm qua",
+        "english": "Các sinh viên đã đến gặp tôi ngày hôm qua The students came to see me yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_605"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi về nhà lúc 9 giờ tối qua.",
+        "english": "Tôi về nhà lúc 9 giờ tối qua. I came home at 9 o’clock last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_606"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy hát rất hay, khi cô ấy còn trẻ",
+        "english": "Cô ấy hát rất hay, khi cô ấy còn trẻ She sang very well, when she was young.",
+        "category": "UNCATEGORIZED",
+        "id": "g_607"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã làm bài tập toán của tôi ngày hôm qua",
+        "english": "Tôi đã làm bài tập toán của tôi ngày hôm qua I did my maths homework yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_608"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Susan đã đến Anh bằng máy bay?",
+        "english": "Susan đã đến Anh bằng máy bay? Did Susan go to England by plane?",
+        "category": "UNCATEGORIZED",
+        "id": "g_609"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ đã đến thăm một trang trại hai tuần trước",
+        "english": "Họ đã đến thăm một trang trại hai tuần trước They visited a farm two weeks ago.",
+        "category": "UNCATEGORIZED",
+        "id": "g_610"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Jenny và Peggy đã không giúp anh trai của họ",
+        "english": "Jenny và Peggy đã không giúp anh trai của họ Jenny and Peggy did not help their brother.",
+        "category": "UNCATEGORIZED",
+        "id": "g_611"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Những đứa trẻ không ở nhà cuối tuần trước",
+        "english": "Những đứa trẻ không ở nhà cuối tuần trước The children were not at home last weekend.",
+        "category": "UNCATEGORIZED",
+        "id": "g_612"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Khi nào bạn thiết kế chiếc váy tuyệt vời này?",
+        "english": "Khi nào bạn thiết kế chiếc váy tuyệt vời này? When did you design this wonderful skirt?",
+        "category": "UNCATEGORIZED",
+        "id": "g_613"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Mẹ tôi không đâm vào xe tải.",
+        "english": "Mẹ tôi không đâm vào xe tải. My mother did not crash into the van.",
+        "category": "UNCATEGORIZED",
+        "id": "g_614"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Các chàng trai cởi bỏ tấm chắn bùn của xe đạp",
+        "english": "Các chàng trai cởi bỏ tấm chắn bùn của xe đạp The boys took off the mudguards of their bicycles.",
+        "category": "UNCATEGORIZED",
+        "id": "g_615"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã gọi điện cho dì của bạn tuần trước?",
+        "english": "Bạn đã gọi điện cho dì của bạn tuần trước? Did you phone your aunt last week?",
+        "category": "UNCATEGORIZED",
+        "id": "g_616"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh không uống sữa ở trường",
+        "english": "Anh không uống sữa ở trường He did not drink milk at school.",
+        "category": "UNCATEGORIZED",
+        "id": "g_617"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Hôm qua, tôi đã đến nhà hàng với một khách hàng",
+        "english": "Hôm qua, tôi đã đến nhà hàng với một khách hàng Yesterday, I went to the restaurant with a client.",
+        "category": "UNCATEGORIZED",
+        "id": "g_618"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi lái xe quanh bãi đậu xe trong 20 phút để tìm chỗ đỗ xe",
+        "english": "Chúng tôi lái xe quanh bãi đậu xe trong 20 phút để tìm chỗ đỗ xe We drove around the parking lot for 20 mins to find a parking space.",
+        "category": "UNCATEGORIZED",
+        "id": "g_619"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Khi chúng tôi đến nhà hàng, nơi này đã đầy",
+        "english": "Khi chúng tôi đến nhà hàng, nơi này đã đầy When we arrived at the restaurant, the place was full.",
+        "category": "UNCATEGORIZED",
+        "id": "g_620"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Người phục vụ hỏi chúng tôi nếu chúng tôi có đặt phòng",
+        "english": "Người phục vụ hỏi chúng tôi nếu chúng tôi có đặt phòng The waitress asked us if we had reservations.",
+        "category": "UNCATEGORIZED",
+        "id": "g_621"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi nói: \"Không, thư ký của tôi quên làm cho họ.",
+        "english": "Tôi nói: \"Không, thư ký của tôi quên làm cho họ. \" I said, \"No, my secretary forgets to make them.\"",
+        "category": "UNCATEGORIZED",
+        "id": "g_622"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Người phục vụ bảo chúng tôi quay lại sau hai tiếng nữa",
+        "english": "Người phục vụ bảo chúng tôi quay lại sau hai tiếng nữa The waitress told us to come back in two hours.",
+        "category": "UNCATEGORIZED",
+        "id": "g_623"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Khách hàng của tôi và tôi từ từ đi bộ trở lại xe",
+        "english": "Khách hàng của tôi và tôi từ từ đi bộ trở lại xe My client and I slowly walked back to the car.",
+        "category": "UNCATEGORIZED",
+        "id": "g_624"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Sau đó, chúng tôi thấy một cửa hàng tạp hóa nhỏ",
+        "english": "Sau đó, chúng tôi thấy một cửa hàng tạp hóa nhỏ Then we saw a small grocery store.",
+        "category": "UNCATEGORIZED",
+        "id": "g_625"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi dừng lại ở cửa hàng tạp hóa và mua một ít bánh sandwich",
+        "english": "Chúng tôi dừng lại ở cửa hàng tạp hóa và mua một ít bánh sandwich We stopped in the grocery store and bought some sandwiches.",
+        "category": "UNCATEGORIZED",
+        "id": "g_626"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Điều đó tốt hơn là chờ đợi trong hai giờ",
+        "english": "Điều đó tốt hơn là chờ đợi trong hai giờ That was better than waiting for two hours.",
+        "category": "UNCATEGORIZED",
+        "id": "g_627"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Đêm qua tôi đã chơi guitar rất to và hàng xóm phàn nàn",
+        "english": "Đêm qua tôi đã chơi guitar rất to và hàng xóm phàn nàn Last night I played my guitar loudly and the neighbors complained.",
+        "category": "UNCATEGORIZED",
+        "id": "g_628"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy hôn vào má tôi",
+        "english": "Cô ấy hôn vào má tôi She kissed me on the cheek.",
+        "category": "UNCATEGORIZED",
+        "id": "g_629"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Hôm qua trời mưa",
+        "english": "Hôm qua trời mưa It rained yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_630"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Angela xem tivi cả đêm",
+        "english": "Angela xem tivi cả đêm Angela watched TV all night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_631"
+    },
+    {
+        "vietnamese": "SIMPLE PAST John muốn đến bảo tàng",
+        "english": "John muốn đến bảo tàng John wanted to go to the museum.",
+        "category": "UNCATEGORIZED",
+        "id": "g_632"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ đã không sống ở Canada",
+        "english": "Họ đã không sống ở Canada They didn't live in Canada.",
+        "category": "UNCATEGORIZED",
+        "id": "g_633"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi không muốn đi đến nha sĩ",
+        "english": "Tôi không muốn đi đến nha sĩ I didn't want to go to the dentist.",
+        "category": "UNCATEGORIZED",
+        "id": "g_634"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô không có thời gian",
+        "english": "Cô không có thời gian She didn't have time.",
+        "category": "UNCATEGORIZED",
+        "id": "g_635"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh không đóng cửa",
+        "english": "Anh không đóng cửa He didn't close the door.",
+        "category": "UNCATEGORIZED",
+        "id": "g_636"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ đã không học nên họ đã không vượt qua bài kiểm tra",
+        "english": "Họ đã không học nên họ đã không vượt qua bài kiểm tra They didn't study so they didn't pass the test.",
+        "category": "UNCATEGORIZED",
+        "id": "g_637"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tối qua chúng tôi không ngủ ngon",
+        "english": "Tối qua chúng tôi không ngủ ngon We didn't sleep well last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_638"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã đi xe đạp của bạn để đi làm?",
+        "english": "Bạn đã đi xe đạp của bạn để đi làm? Did you ride your bike to work?",
+        "category": "UNCATEGORIZED",
+        "id": "g_639"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã học ở đâu - Tôi học ở thư viện",
+        "english": "Bạn đã học ở đâu - Tôi học ở thư viện Where did you study? – I studied at the library.",
+        "category": "UNCATEGORIZED",
+        "id": "g_640"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã đi đến bãi biển.",
+        "english": "Tôi đã đi đến bãi biển. I went to the beach.",
+        "category": "UNCATEGORIZED",
+        "id": "g_641"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã ăn bánh của tôi.",
+        "english": "Bạn đã ăn bánh của tôi. You ate my cake.",
+        "category": "UNCATEGORIZED",
+        "id": "g_642"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã gọi cho Debbie?",
+        "english": "Bạn đã gọi cho Debbie? Did you call Debbie?",
+        "category": "UNCATEGORIZED",
+        "id": "g_643"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã không xem một vở kịch ngày hôm qua",
+        "english": "Tôi đã không xem một vở kịch ngày hôm qua I didn't see a play yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_644"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Năm ngoái, tôi đi du lịch Nhật Bản",
+        "english": "Năm ngoái, tôi đi du lịch Nhật Bản Last year, I traveled to Japan.",
+        "category": "UNCATEGORIZED",
+        "id": "g_645"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh không rửa xe",
+        "english": "Anh không rửa xe He didn't wash his car.",
+        "category": "UNCATEGORIZED",
+        "id": "g_646"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã hoàn thành công việc, đi bộ đến bãi biển, và tìm thấy một nơi tốt đẹp để bơi",
+        "english": "Tôi đã hoàn thành công việc, đi bộ đến bãi biển, và tìm thấy một nơi tốt đẹp để bơi I finished work, walked to the beach, and found a nice place to swim.",
+        "category": "UNCATEGORIZED",
+        "id": "g_647"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh đến sân bay lúc 8:00, vào khách sạn lúc 9:00 và gặp những người khác lúc 10:00",
+        "english": "Anh đến sân bay lúc 8:00, vào khách sạn lúc 9:00 và gặp những người khác lúc 10:00 He arrived from the airport at 8:00, checked into the hotel at 9:00, and met the others at 10:00.",
+        "category": "UNCATEGORIZED",
+        "id": "g_648"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã thêm bột, đổ sữa, và sau đó thêm trứng chưa ?",
+        "english": "Bạn đã thêm bột, đổ sữa, và sau đó thêm trứng chưa ? Did you add flour, pour in the milk, and then add the eggs?",
+        "category": "UNCATEGORIZED",
+        "id": "g_649"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi sống ở Brazil được hai năm",
+        "english": "Tôi sống ở Brazil được hai năm I lived in Brazil for two years.",
+        "category": "UNCATEGORIZED",
+        "id": "g_650"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Shauna học tiếng Nhật trong năm năm",
+        "english": "Shauna học tiếng Nhật trong năm năm Shauna studied Japanese for five years.",
+        "category": "UNCATEGORIZED",
+        "id": "g_651"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ ngồi ở bãi biển cả ngày",
+        "english": "Họ ngồi ở bãi biển cả ngày They sat at the beach all day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_652"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ đã không ở lại toàn bộ bữa tiệc",
+        "english": "Họ đã không ở lại toàn bộ bữa tiệc They did not stay at the party the entire time.",
+        "category": "UNCATEGORIZED",
+        "id": "g_653"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi nói chuyện điện thoại trong ba mươi phút",
+        "english": "Chúng tôi nói chuyện điện thoại trong ba mươi phút We talked on the phone for thirty minutes.",
+        "category": "UNCATEGORIZED",
+        "id": "g_654"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã đợi họ bao lâu rồi?",
+        "english": "Bạn đã đợi họ bao lâu rồi? How long did you wait for them?",
+        "category": "UNCATEGORIZED",
+        "id": "g_655"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi đợi trong một giờ",
+        "english": "Chúng tôi đợi trong một giờ We waited for one hour.",
+        "category": "UNCATEGORIZED",
+        "id": "g_656"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi học tiếng Pháp khi tôi còn nhỏ",
+        "english": "Tôi học tiếng Pháp khi tôi còn nhỏ I studied French when I was a child.",
+        "category": "UNCATEGORIZED",
+        "id": "g_657"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy đã chơi violin",
+        "english": "Anh ấy đã chơi violin Anh ấy đã chơi violin. He played the violin.",
+        "category": "UNCATEGORIZED",
+        "id": "g_658"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy đã không chơi piano",
+        "english": "Anh ấy đã không chơi piano He didn't play the piano.",
+        "category": "UNCATEGORIZED",
+        "id": "g_659"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã chơi một nhạc cụ khi bạn là một đứa trẻ?",
+        "english": "Bạn đã chơi một nhạc cụ khi bạn là một đứa trẻ? Did you play a musical instrument when you were a kid?",
+        "category": "UNCATEGORIZED",
+        "id": "g_660"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô làm việc tại rạp chiếu phim sau giờ học",
+        "english": "Cô làm việc tại rạp chiếu phim sau giờ học She worked at the movie theater after school.",
+        "category": "UNCATEGORIZED",
+        "id": "g_661"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ không bao giờ đến trường, họ luôn bỏ lớp học",
+        "english": "Họ không bao giờ đến trường, họ luôn bỏ lớp học They never went to school, they always skipped class.",
+        "category": "UNCATEGORIZED",
+        "id": "g_662"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy nhút nhát như một đứa trẻ, nhưng bây giờ cô ấy rất hướng ngoại",
+        "english": "Cô ấy nhút nhát như một đứa trẻ, nhưng bây giờ cô ấy rất hướng ngoại She was shy as a child, but now she is very outgoing.",
+        "category": "UNCATEGORIZED",
+        "id": "g_663"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy không thích cà chua trước đây",
+        "english": "Anh ấy không thích cà chua trước đây He didn't like tomatoes before.",
+        "category": "UNCATEGORIZED",
+        "id": "g_664"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã sống ở Texas khi bạn còn là một đứa trẻ?",
+        "english": "Bạn đã sống ở Texas khi bạn còn là một đứa trẻ? Did you live in Texas when you were a kid?",
+        "category": "UNCATEGORIZED",
+        "id": "g_665"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Mọi người đã trả nhiều tiền hơn để thực hiện các cuộc gọi điện thoại di động trong quá khứ",
+        "english": "Mọi người đã trả nhiều tiền hơn để thực hiện các cuộc gọi điện thoại di động trong quá khứ People paid much more to make cell phone calls in the past.",
+        "category": "UNCATEGORIZED",
+        "id": "g_666"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Khi tôi trả cho cô ấy một đô la, cô ấy đã trả lời câu hỏi của tôi",
+        "english": "Khi tôi trả cho cô ấy một đô la, cô ấy đã trả lời câu hỏi của tôi When I paid her one dollar, she answered my question.",
+        "category": "UNCATEGORIZED",
+        "id": "g_667"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy trả lời câu hỏi của tôi khi tôi trả cho cô ấy một đô la",
+        "english": "Cô ấy trả lời câu hỏi của tôi khi tôi trả cho cô ấy một đô la She answered my question when I paid her one dollar.",
+        "category": "UNCATEGORIZED",
+        "id": "g_668"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn vừa gọi Debbie.",
+        "english": "Bạn vừa gọi Debbie. You just called Debbie.",
+        "category": "UNCATEGORIZED",
+        "id": "g_669"
+    },
+    {
+        "vietnamese": "SIMPLE PAST John Cabot đi thuyền đến Mỹ năm 1498.",
+        "english": "John Cabot đi thuyền đến Mỹ năm 1498. John Cabot sailed to America in 1498.",
+        "category": "UNCATEGORIZED",
+        "id": "g_670"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bố tôi mất năm ngoái",
+        "english": "Bố tôi mất năm ngoái My father died last year.",
+        "category": "UNCATEGORIZED",
+        "id": "g_671"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Ông sống ở Fiji năm 1976.",
+        "english": "Ông sống ở Fiji năm 1976. He lived in Fiji in 1976.",
+        "category": "UNCATEGORIZED",
+        "id": "g_672"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi đã vượt qua Kênh ngày hôm qua",
+        "english": "Chúng tôi đã vượt qua Kênh ngày hôm qua We crossed the Channel yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_673"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Thỉnh thoảng tôi về nhà vào giờ ăn trưa",
+        "english": "Thỉnh thoảng tôi về nhà vào giờ ăn trưa I sometimes walked home at lunchtime.",
+        "category": "UNCATEGORIZED",
+        "id": "g_674"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi thường xuyên mang bữa trưa đến trường",
+        "english": "Tôi thường xuyên mang bữa trưa đến trường I often brought my lunch to school.",
+        "category": "UNCATEGORIZED",
+        "id": "g_675"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi đã xem một bộ phim hay vào tuần trước",
+        "english": "Chúng tôi đã xem một bộ phim hay vào tuần trước We saw a good film last week.",
+        "category": "UNCATEGORIZED",
+        "id": "g_676"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Hôm qua, tôi đã đến Geneva",
+        "english": "Hôm qua, tôi đã đến Geneva Yesterday, I arrived in Geneva.",
+        "category": "UNCATEGORIZED",
+        "id": "g_677"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy đã hoàn thành công việc của mình vào lúc 7 giờ",
+        "english": "Cô ấy đã hoàn thành công việc của mình vào lúc 7 giờ She finished her work at seven o'clock",
+        "category": "UNCATEGORIZED",
+        "id": "g_678"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã đi đến nhà hát tối qua.",
+        "english": "Tôi đã đi đến nhà hát tối qua. I went to the theatre last night",
+        "category": "UNCATEGORIZED",
+        "id": "g_679"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Người ta sống trong hang từ lâu",
+        "english": "Người ta sống trong hang từ lâu People lived in caves a long time ago.",
+        "category": "UNCATEGORIZED",
+        "id": "g_680"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy bị đau đầu ngày hôm qua.",
+        "english": "Cô ấy bị đau đầu ngày hôm qua. She had a headache yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_681"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi đã làm bài tập về nhà tối qua",
+        "english": "Chúng tôi đã làm bài tập về nhà tối qua We did our homework last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_682"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi không có tiền",
+        "english": "Chúng tôi không có tiền We didn't have any money.",
+        "category": "UNCATEGORIZED",
+        "id": "g_683"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi không có thời gian đến thăm tháp Eiffel",
+        "english": "Chúng tôi không có thời gian đến thăm tháp Eiffel We didn't have time to visit the Eiffel Tower.",
+        "category": "UNCATEGORIZED",
+        "id": "g_684"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi đã không tập thể dục sáng nay",
+        "english": "Chúng tôi đã không tập thể dục sáng nay We didn't do our exercises this morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_685"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Có phải họ đã ở Iceland vào tháng 1 năm ngoái?",
+        "english": "Có phải họ đã ở Iceland vào tháng 1 năm ngoái? Were they in Iceland last January?",
+        "category": "UNCATEGORIZED",
+        "id": "g_686"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã có một chiếc xe đạp khi bạn còn trẻ?",
+        "english": "Bạn đã có một chiếc xe đạp khi bạn còn trẻ? Did you have a bicycle when you were young?",
+        "category": "UNCATEGORIZED",
+        "id": "g_687"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã làm nhiều leo núi ở Thụy Sĩ?",
+        "english": "Bạn đã làm nhiều leo núi ở Thụy Sĩ? Did you do much climbing in Switzerland?",
+        "category": "UNCATEGORIZED",
+        "id": "g_688"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy đã đi đến một câu lạc bộ đêm qua",
+        "english": "Anh ấy đã đi đến một câu lạc bộ đêm qua He went to a club last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_689"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tối qua anh ấy có đi xem phim không?",
+        "english": "Tối qua anh ấy có đi xem phim không? Did he go to the cinema last night?",
+        "category": "UNCATEGORIZED",
+        "id": "g_690"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh không đi ngủ sớm tối qua",
+        "english": "Anh không đi ngủ sớm tối qua He didn't go to bed early last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_691"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi tặng cô ấy một con búp bê cho ngày sinh nhật của cô ấy",
+        "english": "Chúng tôi tặng cô ấy một con búp bê cho ngày sinh nhật của cô ấy We gave her a doll for her birthday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_692"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ đã không cho John địa chỉ mới của họ",
+        "english": "Họ đã không cho John địa chỉ mới của họ They didn't give John their new address.",
+        "category": "UNCATEGORIZED",
+        "id": "g_693"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Barry có đưa cho bạn hộ chiếu của tôi không?",
+        "english": "Barry có đưa cho bạn hộ chiếu của tôi không? Did Barry give you my passport?",
+        "category": "UNCATEGORIZED",
+        "id": "g_694"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bố mẹ tôi đến thăm tôi vào tháng 7 năm ngoái",
+        "english": "Bố mẹ tôi đến thăm tôi vào tháng 7 năm ngoái My parents came to visit me last July.",
+        "category": "UNCATEGORIZED",
+        "id": "g_695"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Chúng tôi đã không đến vì trời mưa",
+        "english": "Chúng tôi đã không đến vì trời mưa We didn't come because it was raining.",
+        "category": "UNCATEGORIZED",
+        "id": "g_696"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy đã đến bữa tiệc của bạn tuần trước?",
+        "english": "Anh ấy đã đến bữa tiệc của bạn tuần trước? Did he come to your party last week?",
+        "category": "UNCATEGORIZED",
+        "id": "g_697"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã đến thăm một khách hàng ở London ngày hôm qua",
+        "english": "Tôi đã đến thăm một khách hàng ở London ngày hôm qua I visited a client in London yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_698"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô ấy tự mình lên kế hoạch cho sự kiện.",
+        "english": "Cô ấy tự mình lên kế hoạch cho sự kiện. She planned the event all by herself.",
+        "category": "UNCATEGORIZED",
+        "id": "g_699"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã không nói chuyện với John ngày hôm qua.",
+        "english": "Tôi đã không nói chuyện với John ngày hôm qua. I didn’t talk to John yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_700"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy đã ăn cắp những ý tưởng từ công ty.",
+        "english": "Anh ấy đã ăn cắp những ý tưởng từ công ty. He didn’t steal those ideas from the company.",
+        "category": "UNCATEGORIZED",
+        "id": "g_701"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã không cho tôi xem những bức ảnh từ đám cưới.",
+        "english": "Bạn đã không cho tôi xem những bức ảnh từ đám cưới. You didn’t show me the photos from the wedding.",
+        "category": "UNCATEGORIZED",
+        "id": "g_702"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Ron không ký vào tài liệu đó.",
+        "english": "Ron không ký vào tài liệu đó. Ron did not sign the document.",
+        "category": "UNCATEGORIZED",
+        "id": "g_703"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đã hỏi Tina đi chơi với bạn?",
+        "english": "Bạn đã hỏi Tina đi chơi với bạn? Did you ask Tina to go out with you?",
+        "category": "UNCATEGORIZED",
+        "id": "g_704"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Khi nào bạn mua chiếc áo len đó?",
+        "english": "Khi nào bạn mua chiếc áo len đó? When did you buy that sweater?",
+        "category": "UNCATEGORIZED",
+        "id": "g_705"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tại sao máy tính bị hỏng?",
+        "english": "Tại sao máy tính bị hỏng? Why did the computer break down?",
+        "category": "UNCATEGORIZED",
+        "id": "g_706"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Hành trình xe lửa mất bao lâu?",
+        "english": "Hành trình xe lửa mất bao lâu? How long did the train journey take?",
+        "category": "UNCATEGORIZED",
+        "id": "g_707"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tại sao bạn không nói với tôi về tai nạn?",
+        "english": "Tại sao bạn không nói với tôi về tai nạn? Why didn’t you tell me about the accident?",
+        "category": "UNCATEGORIZED",
+        "id": "g_708"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh bắt một con chim trong bụi rậm",
+        "english": "Anh bắt một con chim trong bụi rậm He caught a bird in the bushes.",
+        "category": "UNCATEGORIZED",
+        "id": "g_709"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Tôi đã gặp một người bạn ở chợ",
+        "english": "Tôi đã gặp một người bạn ở chợ I met a friend in the market.",
+        "category": "UNCATEGORIZED",
+        "id": "g_710"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô làm việc trong một nhà máy.",
+        "english": "Cô làm việc trong một nhà máy. She worked in a factory.",
+        "category": "UNCATEGORIZED",
+        "id": "g_711"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Những người trả thuế ít hơn trong quá khứ.",
+        "english": "Những người trả thuế ít hơn trong quá khứ. The people paid less taxes in the past.",
+        "category": "UNCATEGORIZED",
+        "id": "g_712"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy nộp đơn xin việc.",
+        "english": "Anh ấy nộp đơn xin việc. He applied for a job.",
+        "category": "UNCATEGORIZED",
+        "id": "g_713"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô chuẩn bị một ít trà cho khách",
+        "english": "Cô chuẩn bị một ít trà cho khách She prepared some tea for the guests.",
+        "category": "UNCATEGORIZED",
+        "id": "g_714"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh hỏi tôi một câu",
+        "english": "Anh hỏi tôi một câu He asked me a question.",
+        "category": "UNCATEGORIZED",
+        "id": "g_715"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Bạn đủ điều kiện thi",
+        "english": "Bạn đủ điều kiện thi You qualified the exam.",
+        "category": "UNCATEGORIZED",
+        "id": "g_716"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Cô cười khi thấy gã hề",
+        "english": "Cô cười khi thấy gã hề She laughed to see the joker.",
+        "category": "UNCATEGORIZED",
+        "id": "g_717"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Họ đã chuyển đến nhà mới của họ?",
+        "english": "Họ đã chuyển đến nhà mới của họ? Did they shift to their new home?",
+        "category": "UNCATEGORIZED",
+        "id": "g_718"
+    },
+    {
+        "vietnamese": "SIMPLE PAST Anh ấy có mang theo tài liệu của mình không?",
+        "english": "Anh ấy có mang theo tài liệu của mình không? Did he bring his document?",
+        "category": "UNCATEGORIZED",
+        "id": "g_719"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Họ sẽ đến thành phố Hồ Chí Kinh vào thứ hai tới.",
+        "english": "Họ sẽ đến thành phố Hồ Chí Kinh vào thứ hai tới. They will go to Ho Chi Kinh city next Monday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_720"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Chúng tôi sẽ tổ chức một cuộc họp vào sáng thứ Sáu.",
+        "english": "Chúng tôi sẽ tổ chức một cuộc họp vào sáng thứ Sáu. We will organize a meeting on Friday morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_721"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Chúng tôi sẽ gặp nhau ba lần một tháng",
+        "english": "Chúng tôi sẽ gặp nhau ba lần một tháng We will meet three times a month.",
+        "category": "UNCATEGORIZED",
+        "id": "g_722"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Tôi sẽ đến thăm thành phố Hồ Chí Minh vào thứ hai tới.",
+        "english": "Tôi sẽ đến thăm thành phố Hồ Chí Minh vào thứ hai tới. I am going to visit Ho Chi Minh city next Monday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_723"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Lan sẽ làm bài kiểm tra cuối mùa hè này.",
+        "english": "Lan sẽ làm bài kiểm tra cuối mùa hè này. Lan is going to take the final exams this summer.",
+        "category": "UNCATEGORIZED",
+        "id": "g_724"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Tôi đang làm bài tập về nhà tối nay.",
+        "english": "Tôi đang làm bài tập về nhà tối nay. I am doing my homework tonight.",
+        "category": "UNCATEGORIZED",
+        "id": "g_725"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Lan đang đi chơi với bạn trai tối nay đến rạp chiếu phim.",
+        "english": "Lan đang đi chơi với bạn trai tối nay đến rạp chiếu phim. Lan is going out with her boyfriend to the cinema tonight.",
+        "category": "UNCATEGORIZED",
+        "id": "g_726"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Tôi sẽ hoàn thành bản báo cáo của mình trong 2 ngày nữa.",
+        "english": "Tôi sẽ hoàn thành bản báo cáo của mình trong 2 ngày nữa. I will/ I'll finish my report in 2 days.",
+        "category": "UNCATEGORIZED",
+        "id": "g_727"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Nếu bạn không học chăm chỉ thì bạn sẽ không qua được kì thi cuối kỳ",
+        "english": "Nếu bạn không học chăm chỉ thì bạn sẽ không qua được kì thi cuối kỳ If you don't study hard, you will not/won't pass the final exam.",
+        "category": "UNCATEGORIZED",
+        "id": "g_728"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Trông bạn đói quá, tôi sẽ mang cho bạn thứ gì đó để ăn",
+        "english": "Trông bạn đói quá, tôi sẽ mang cho bạn thứ gì đó để ăn You look tired, so I will/I'll bring you something to eat.",
+        "category": "UNCATEGORIZED",
+        "id": "g_729"
+    },
+    {
+        "vietnamese": "SIMPLE FUTURE Anh có thể cho tôi đi nhờ đến nhà ga được không?",
+        "english": "Anh có thể cho tôi đi nhờ đến nhà ga được không? Will you please give me a lift to the station?",
+        "category": "UNCATEGORIZED",
+        "id": "g_730"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Đã 2 tháng rồi kể từ lần đầu tiên tôi gặp anh ấy.",
+        "english": "Đã 2 tháng rồi kể từ lần đầu tiên tôi gặp anh ấy. It has been 2 months since I first met him",
+        "category": "UNCATEGORIZED",
+        "id": "g_731"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Tôi xem TV được 2 tiếng rồi.",
+        "english": "Tôi xem TV được 2 tiếng rồi. I have watched TV for two hours.",
+        "category": "UNCATEGORIZED",
+        "id": "g_732"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Cô ấy chuẩn bị bữa tối từ 6 rưỡi.",
+        "english": "Cô ấy chuẩn bị bữa tối từ 6 rưỡi. She has prepared for dinner since 6.30 p.m.",
+        "category": "UNCATEGORIZED",
+        "id": "g_733"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Anh ấy đã ăn loại thức ăn này một vài lần trước rồi.",
+        "english": "Anh ấy đã ăn loại thức ăn này một vài lần trước rồi. He has eaten this kind of food several times before.",
+        "category": "UNCATEGORIZED",
+        "id": "g_734"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Bạn đến nơi này bao giờ chưa?",
+        "english": "Bạn đến nơi này bao giờ chưa? Have you been to that place before?",
+        "category": "UNCATEGORIZED",
+        "id": "g_735"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Họ làm việc cho công ty này 5 năm rồi.",
+        "english": "Họ làm việc cho công ty này 5 năm rồi. They have worked for this company for 5 years.",
+        "category": "UNCATEGORIZED",
+        "id": "g_736"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Cô ấy vẫn chưa chuẩn bị cho bữa tối.",
+        "english": "Cô ấy vẫn chưa chuẩn bị cho bữa tối. She has not prepared for dinner since 6.30 p.m.",
+        "category": "UNCATEGORIZED",
+        "id": "g_737"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Anh ấy chưa bao giờ ăn loại thức ăn này cả.",
+        "english": "Anh ấy chưa bao giờ ăn loại thức ăn này cả. He has not eaten this kind of food before.",
+        "category": "UNCATEGORIZED",
+        "id": "g_738"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Chúng tôi không gặp nhau trong một thời gian dài rồi",
+        "english": "Chúng tôi không gặp nhau trong một thời gian dài rồi We haven’t met each other for a long time.",
+        "category": "UNCATEGORIZED",
+        "id": "g_739"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Anh ấy không quay trở lại quê hương của mình từ năm 2000",
+        "english": "Anh ấy không quay trở lại quê hương của mình từ năm 2000 He hasn’t come back to his hometown since 2000.",
+        "category": "UNCATEGORIZED",
+        "id": "g_740"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Bạn đã từng du lịch tới Mỹ bao giờ chưa?",
+        "english": "Bạn đã từng du lịch tới Mỹ bao giờ chưa? Have you ever travelled to America?",
+        "category": "UNCATEGORIZED",
+        "id": "g_741"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Cô ấy đã tới London chưa?",
+        "english": "Cô ấy đã tới London chưa? Has she arrived in London yet?",
+        "category": "UNCATEGORIZED",
+        "id": "g_742"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Bố tôi đã xem trận bóng đá này hơn 1 tiếng đồng hồ nay rồi.",
+        "english": "Bố tôi đã xem trận bóng đá này hơn 1 tiếng đồng hồ nay rồi. My father has watched the football match for over one hour.",
+        "category": "UNCATEGORIZED",
+        "id": "g_743"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Cô ấy đã viết 3 cuốn sách và hiện tại đang viết cuốn thứ 4.",
+        "english": "Cô ấy đã viết 3 cuốn sách và hiện tại đang viết cuốn thứ 4. She has written three books and now she is working on the fourth one",
+        "category": "UNCATEGORIZED",
+        "id": "g_744"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Đó là món tồi tệ nhất mà tôi đã từng ăn",
+        "english": "Đó là món tồi tệ nhất mà tôi đã từng ăn That is the worst dish that I have ever tried in my life.",
+        "category": "UNCATEGORIZED",
+        "id": "g_745"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Bạn đã đến Hàn Quốc bao giờ chưa?",
+        "english": "Bạn đã đến Hàn Quốc bao giờ chưa? Have you ever been to Korea?",
+        "category": "UNCATEGORIZED",
+        "id": "g_746"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Tôi vừa mới về nhà.",
+        "english": "Tôi vừa mới về nhà. I have just come back home.",
+        "category": "UNCATEGORIZED",
+        "id": "g_747"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Cô ấy vẫn chưa kể với tôi về bạn.",
+        "english": "Cô ấy vẫn chưa kể với tôi về bạn. She hasn’t told me about you yet.",
+        "category": "UNCATEGORIZED",
+        "id": "g_748"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT Tôi xem bộ phim này gần đây.",
+        "english": "Tôi xem bộ phim này gần đây. I have seen this film recently.",
+        "category": "UNCATEGORIZED",
+        "id": "g_749"
+    },
+    {
+        "vietnamese": "PAST PERFECT Tôi đã làm vỡ đồng hồ nên tôi không biết bây giờ là mấy giờ.",
+        "english": "Tôi đã làm vỡ đồng hồ nên tôi không biết bây giờ là mấy giờ. I've broken my watch so I don't know what time it is.",
+        "category": "UNCATEGORIZED",
+        "id": "g_750"
+    },
+    {
+        "vietnamese": "PAST PERFECT Họ đã hủy buổi họp",
+        "english": "Họ đã hủy buổi họp They have cancelled the meeting.",
+        "category": "UNCATEGORIZED",
+        "id": "g_751"
+    },
+    {
+        "vietnamese": "PAST PERFECT Cô ấy đã lấy bản của tôi. Tôi không có cái nào",
+        "english": "Cô ấy đã lấy bản của tôi. Tôi không có cái nào She's taken my copy. I don't have one.",
+        "category": "UNCATEGORIZED",
+        "id": "g_752"
+    },
+    {
+        "vietnamese": "PAST PERFECT Phòng kinh doanh đã tăng doanh số bán hàng lên gấp đôi.",
+        "english": "Phòng kinh doanh đã tăng doanh số bán hàng lên gấp đôi. The sales team has doubled its turnover.",
+        "category": "UNCATEGORIZED",
+        "id": "g_753"
+    },
+    {
+        "vietnamese": "PAST PERFECT Chúng ta đã nói về việc đó.",
+        "english": "Chúng ta đã nói về việc đó. We've already talked about that.",
+        "category": "UNCATEGORIZED",
+        "id": "g_754"
+    },
+    {
+        "vietnamese": "PAST PERFECT Cô ấy vẫn chưa đến.",
+        "english": "Cô ấy vẫn chưa đến. She hasn't arrived yet.",
+        "category": "UNCATEGORIZED",
+        "id": "g_755"
+    },
+    {
+        "vietnamese": "PAST PERFECT Tôi vừa làm việc đó.",
+        "english": "Tôi vừa làm việc đó. I've just done it.",
+        "category": "UNCATEGORIZED",
+        "id": "g_756"
+    },
+    {
+        "vietnamese": "PAST PERFECT Họ đã gặp nhau.",
+        "english": "Họ đã gặp nhau. They've already met.",
+        "category": "UNCATEGORIZED",
+        "id": "g_757"
+    },
+    {
+        "vietnamese": "PAST PERFECT Họ vẫn chưa biết.",
+        "english": "Họ vẫn chưa biết. They haven't known yet.",
+        "category": "UNCATEGORIZED",
+        "id": "g_758"
+    },
+    {
+        "vietnamese": "PAST PERFECT Anh đã nói chuyện với anh ta chưa?",
+        "english": "Anh đã nói chuyện với anh ta chưa? Have you spoken to him yet?",
+        "category": "UNCATEGORIZED",
+        "id": "g_759"
+    },
+    {
+        "vietnamese": "PAST PERFECT Họ đã trả lời cho anh chưa?",
+        "english": "Họ đã trả lời cho anh chưa? Have they got back to you yet?",
+        "category": "UNCATEGORIZED",
+        "id": "g_760"
+    },
+    {
+        "vietnamese": "PAST PERFECT Tôi dạy học đã hơn 10 năm.",
+        "english": "Tôi dạy học đã hơn 10 năm. I have been a teacher for more than ten years.",
+        "category": "UNCATEGORIZED",
+        "id": "g_761"
+    },
+    {
+        "vietnamese": "PAST PERFECT Chúng tôi đã không gặp Janine từ thứ Sáu",
+        "english": "Chúng tôi đã không gặp Janine từ thứ Sáu We haven't seen Janine since Friday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_762"
+    },
+    {
+        "vietnamese": "PAST PERFECT Anh công tác ở trường này bao lâu rồi?",
+        "english": "Anh công tác ở trường này bao lâu rồi? How long have you been at this school?",
+        "category": "UNCATEGORIZED",
+        "id": "g_763"
+    },
+    {
+        "vietnamese": "PAST PERFECT Anh đã từng đến Argentina chưa?",
+        "english": "Anh đã từng đến Argentina chưa? Have you ever been to Argentina?",
+        "category": "UNCATEGORIZED",
+        "id": "g_764"
+    },
+    {
+        "vietnamese": "PAST PERFECT Tôi nghĩ trước đây tôi đã xem bộ phim đó",
+        "english": "Tôi nghĩ trước đây tôi đã xem bộ phim đó I think I have seen that movie before.",
+        "category": "UNCATEGORIZED",
+        "id": "g_765"
+    },
+    {
+        "vietnamese": "PAST PERFECT Anh ấy có nói với anh về vấn đề này chưa?",
+        "english": "Anh ấy có nói với anh về vấn đề này chưa? Has he ever talked to you about the problem?",
+        "category": "UNCATEGORIZED",
+        "id": "g_766"
+    },
+    {
+        "vietnamese": "PAST PERFECT Chúng tôi chưa bao giờ xem xét việc đầu tư ở Mexico.",
+        "english": "Chúng tôi chưa bao giờ xem xét việc đầu tư ở Mexico. We've never considered investing in Mexico.",
+        "category": "UNCATEGORIZED",
+        "id": "g_768"
+    },
+    {
+        "vietnamese": "PAST PERFECT Những năm vừa qua, chúng tôi đi Singapre rất nhiều lần.",
+        "english": "Những năm vừa qua, chúng tôi đi Singapre rất nhiều lần. We've been to Singapore a lot over the last few years.",
+        "category": "UNCATEGORIZED",
+        "id": "g_769"
+    },
+    {
+        "vietnamese": "PAST PERFECT Cô ấy đã làm loại dự án này rất nhiều lần",
+        "english": "Cô ấy đã làm loại dự án này rất nhiều lần She's done this type of project many times before.",
+        "category": "UNCATEGORIZED",
+        "id": "g_770"
+    },
+    {
+        "vietnamese": "PAST PERFECT Trong 6 tháng vừa rồi, chúng tôi đã nhắc việc này với họ rất nhiều lần rồi",
+        "english": "Trong 6 tháng vừa rồi, chúng tôi đã nhắc việc này với họ rất nhiều lần rồi We've mentioned it to them on several occasions over the last six months.",
+        "category": "UNCATEGORIZED",
+        "id": "g_771"
+    },
+    {
+        "vietnamese": "PAST PERFECT Quân đội đã tấn công thành phố đó 5 lần. Tôi đã làm 4 bài kiểm tra và 5 bài thi trong học kỳ này.",
+        "english": "Quân đội đã tấn công thành phố đó 5 lần. Tôi đã làm 4 bài kiểm tra và 5 bài thi trong học kỳ này. The army has attacked that city five times. I have had four quizzes and five tests so far this semester.",
+        "category": "UNCATEGORIZED",
+        "id": "g_772"
+    },
+    {
+        "vietnamese": "PAST PERFECT Bà ấy đã nói với nhiều chuyên gia về vấn đề của bà, nhưng chưa ai tìm ra được nguyên nhân bà bị bệnh",
+        "english": "Bà ấy đã nói với nhiều chuyên gia về vấn đề của bà, nhưng chưa ai tìm ra được nguyên nhân bà bị bệnh She has talked to several specialists about her problem, but nobody knows why she is sick.",
+        "category": "UNCATEGORIZED",
+        "id": "g_773"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Tôi sẽ hoàn thành bài tập của mình vào trước 11 giờ tối nay",
+        "english": "Tôi sẽ hoàn thành bài tập của mình vào trước 11 giờ tối nay I will have finished my homework before 11 o’clock this evening",
+        "category": "UNCATEGORIZED",
+        "id": "g_774"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Tôi sẽ có mặt ở văn phòng lúc 8 giờ sáng.",
+        "english": "Tôi sẽ có mặt ở văn phòng lúc 8 giờ sáng. I will have arrived at the office by 8AM.",
+        "category": "UNCATEGORIZED",
+        "id": "g_775"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Khi bạn quay lại, tôi sẽ đánh máy xong bức thư điện tử này",
+        "english": "Khi bạn quay lại, tôi sẽ đánh máy xong bức thư điện tử này When you come back, I will have typed this email.",
+        "category": "UNCATEGORIZED",
+        "id": "g_776"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Bữa ăn sẽ sẵn sàng trước khi bạn đến vào ngày mai",
+        "english": "Bữa ăn sẽ sẵn sàng trước khi bạn đến vào ngày mai I will have made the meal ready before the time you come tomorrow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_777"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Tôi sẽ hoàn hành bài báo cáo của tôi vào cuối tháng này.",
+        "english": "Tôi sẽ hoàn hành bài báo cáo của tôi vào cuối tháng này. I will have finished my report by the end of this month.",
+        "category": "UNCATEGORIZED",
+        "id": "g_778"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Cho tới 3h chiều nay thì cô ấy sẽ đánh máy được 20 trang",
+        "english": "Cho tới 3h chiều nay thì cô ấy sẽ đánh máy được 20 trang She will have typed 20 pages by 3 o’clock this afternoon.",
+        "category": "UNCATEGORIZED",
+        "id": "g_779"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Mình sẽ vẫn chưa xong việc khi bạn đến ngày mai.",
+        "english": "Mình sẽ vẫn chưa xong việc khi bạn đến ngày mai. I will not have stopped my work before you come tomorrow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_780"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Bố tôi sẽ vẫn chưa về nhà vào lúc 9h tối nay.",
+        "english": "Bố tôi sẽ vẫn chưa về nhà vào lúc 9h tối nay. My father will not have come home by 9 pm this evening.",
+        "category": "UNCATEGORIZED",
+        "id": "g_781"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Trước kỳ nghỉ hè thì bố mẹ bạn quay trở về Việt Nam rồi đúng không?",
+        "english": "Trước kỳ nghỉ hè thì bố mẹ bạn quay trở về Việt Nam rồi đúng không? Will your parents have come back Vietnam before the summer vacation?",
+        "category": "UNCATEGORIZED",
+        "id": "g_783"
+    },
+    {
+        "vietnamese": "FUTURE PERFECT Cho tới cuối tháng này thì tôi đã tham gia một khóa học Tiếng Anh rồi.",
+        "english": "Cho tới cuối tháng này thì tôi đã tham gia một khóa học Tiếng Anh rồi. By the end of this month I will have taken an English course.",
+        "category": "UNCATEGORIZED",
+        "id": "g_784"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Bây giờ chúng đang xem TV",
+        "english": "Bây giờ chúng đang xem TV They are watching TV now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_785"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Cô ấy đang nấu ăn với mẹ của cô ấy.",
+        "english": "Cô ấy đang nấu ăn với mẹ của cô ấy. She is cooking with her mother",
+        "category": "UNCATEGORIZED",
+        "id": "g_786"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Chúng tôi đang học Tiếng Anh..",
+        "english": "Chúng tôi đang học Tiếng Anh.. We are studying English.",
+        "category": "UNCATEGORIZED",
+        "id": "g_787"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Lúc này tôi đang không nghe nhạc.",
+        "english": "Lúc này tôi đang không nghe nhạc. I am not listening to music at the moment",
+        "category": "UNCATEGORIZED",
+        "id": "g_788"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Chị gái tôi đang không làm việc.",
+        "english": "Chị gái tôi đang không làm việc. My sister isn’t working now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_789"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Hiện tại họ đang không xem TV.",
+        "english": "Hiện tại họ đang không xem TV. They aren’t watching the TV at present.",
+        "category": "UNCATEGORIZED",
+        "id": "g_790"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Con đang làm bài tập về nhà phải không?",
+        "english": "Con đang làm bài tập về nhà phải không? Are you doing your homework?",
+        "category": "UNCATEGORIZED",
+        "id": "g_791"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Anh ấy đang đi chơi cùng cậu có phải không?",
+        "english": "Anh ấy đang đi chơi cùng cậu có phải không? Is he going out with you?",
+        "category": "UNCATEGORIZED",
+        "id": "g_792"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Họ đang học tiếng Anh à?",
+        "english": "Họ đang học tiếng Anh à? Are they studying English?",
+        "category": "UNCATEGORIZED",
+        "id": "g_793"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Bây giờ họ đang xem TV.",
+        "english": "Bây giờ họ đang xem TV. They are watching TV now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_794"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Lúc này Tim đang đạp xe đến trường.",
+        "english": "Lúc này Tim đang đạp xe đến trường. Tim is riding his bike to school at the moment.",
+        "category": "UNCATEGORIZED",
+        "id": "g_795"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Tôi đang tìm kiếm một công việc.",
+        "english": "Tôi đang tìm kiếm một công việc. I am finding a job.",
+        "category": "UNCATEGORIZED",
+        "id": "g_796"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Anh ấy đang đọc \"Cuốn theo chiều gió\"",
+        "english": "Anh ấy đang đọc \"Cuốn theo chiều gió\" He is reading \"Gone with the wind\".",
+        "category": "UNCATEGORIZED",
+        "id": "g_797"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Tôi đã mua vé hôm qua. Ngày mai tôi sẽ bay tới New York.",
+        "english": "Tôi đã mua vé hôm qua. Ngày mai tôi sẽ bay tới New York. I bought the ticket yesterday. I am flying to New York tomorrow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_798"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Bạn sẽ làm gì vào tuần tới?",
+        "english": "Bạn sẽ làm gì vào tuần tới? What are you doing next week?",
+        "category": "UNCATEGORIZED",
+        "id": "g_799"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Anh ta luôn tới trễ.",
+        "english": "Anh ta luôn tới trễ. He is always coming late.",
+        "category": "UNCATEGORIZED",
+        "id": "g_800"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Sao lúc nào con cũng để quần áo bẩn trên giường thế hả?",
+        "english": "Sao lúc nào con cũng để quần áo bẩn trên giường thế hả? Why are you always putting your dirty clothes on your bed?",
+        "category": "UNCATEGORIZED",
+        "id": "g_801"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Họ luôn luôn tranh luận với nhau.",
+        "english": "Họ luôn luôn tranh luận với nhau. They are always arguing.",
+        "category": "UNCATEGORIZED",
+        "id": "g_802"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Đứa trẻ cao thật nhanh",
+        "english": "Đứa trẻ cao thật nhanh The children are growing quickly.",
+        "category": "UNCATEGORIZED",
+        "id": "g_803"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Khí hậu thay đổi nhanh chóng.",
+        "english": "Khí hậu thay đổi nhanh chóng. The climate is changing rapidly.",
+        "category": "UNCATEGORIZED",
+        "id": "g_804"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Tiếng Anh của bạn đang cải thiện",
+        "english": "Tiếng Anh của bạn đang cải thiện Your English is improving.",
+        "category": "UNCATEGORIZED",
+        "id": "g_805"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Ngày nay hầu hết mọi người sử dụng email thay vì viết thư tay",
+        "english": "Ngày nay hầu hết mọi người sử dụng email thay vì viết thư tay These days most people are using email instead of writing letters.",
+        "category": "UNCATEGORIZED",
+        "id": "g_806"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Quần áo thời trang mà thanh thiếu niên đang mặc là loại nào? Họ đang nghe thể loại nhạc gì?",
+        "english": "Quần áo thời trang mà thanh thiếu niên đang mặc là loại nào? Họ đang nghe thể loại nhạc gì? What sort of clothes are teenagers wearing nowadays? What sort of music are they listening to?",
+        "category": "UNCATEGORIZED",
+        "id": "g_807"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Lúc này tôi đang không nghe nhạc",
+        "english": "Lúc này tôi đang không nghe nhạc I am not listening to music at the moment.",
+        "category": "UNCATEGORIZED",
+        "id": "g_808"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Trời đang mưa.",
+        "english": "Trời đang mưa. It is raining now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_809"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Nhìn kia! Tàu đang đến.",
+        "english": "Nhìn kia! Tàu đang đến. Look! The train is coming.",
+        "category": "UNCATEGORIZED",
+        "id": "g_810"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Hãy nhìn xem! Người kia đang cố ăn cắp ví tiền của người đàn ông đó.",
+        "english": "Hãy nhìn xem! Người kia đang cố ăn cắp ví tiền của người đàn ông đó. Look! Somebody is trying to steal that man's wallet.",
+        "category": "UNCATEGORIZED",
+        "id": "g_811"
+    },
+    {
+        "vietnamese": "PRESENT CONTINUOUS Nghe này! Ai đó đang khóc.",
+        "english": "Nghe này! Ai đó đang khóc. Listen! Someone is crying.",
+        "category": "UNCATEGORIZED",
+        "id": "g_812"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Chúng tớ đang nói về chuyện đó ngay trước khi cậu đến.",
+        "english": "Chúng tớ đang nói về chuyện đó ngay trước khi cậu đến. We were just talking about it before you arrived.",
+        "category": "UNCATEGORIZED",
+        "id": "g_814"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Hôm qua anh ta đang không làm việc khi sếp của anh ta đến.",
+        "english": "Hôm qua anh ta đang không làm việc khi sếp của anh ta đến. He wasn’t working when his boss came yesterday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_815"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Lúc 7 giờ sáng hôm qua mẹ em đang đi chợ có phải không?",
+        "english": "Lúc 7 giờ sáng hôm qua mẹ em đang đi chợ có phải không? Was your mother going to the market at 7 A.M yesterday?",
+        "category": "UNCATEGORIZED",
+        "id": "g_816"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Cô ấy đang múa trong khi tôi đang hát.",
+        "english": "Cô ấy đang múa trong khi tôi đang hát. She was dancing while I was singing",
+        "category": "UNCATEGORIZED",
+        "id": "g_817"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Lúc đó người đàn ông đang gửi thư ở bưu điện.",
+        "english": "Lúc đó người đàn ông đang gửi thư ở bưu điện. The man was sending his letter in the post office at that time.",
+        "category": "UNCATEGORIZED",
+        "id": "g_818"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Tôi đang hát trong nhà tắm thì mẹ tôi đi vào",
+        "english": "Tôi đang hát trong nhà tắm thì mẹ tôi đi vào When I was singing in the bathroom, my mother came in.",
+        "category": "UNCATEGORIZED",
+        "id": "g_819"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Điện mất khi chúng tôi đang xem ti vi.",
+        "english": "Điện mất khi chúng tôi đang xem ti vi. The light went out when we were watching TV.",
+        "category": "UNCATEGORIZED",
+        "id": "g_820"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Trong khi tôi đang tắm thì cô ấy dùng máy tính.",
+        "english": "Trong khi tôi đang tắm thì cô ấy dùng máy tính. While I was taking a bath, she was using the computer.",
+        "category": "UNCATEGORIZED",
+        "id": "g_821"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Peter đã cố gắng liên lạc với tôi trong lúc tôi đang lái xe về nhà.",
+        "english": "Peter đã cố gắng liên lạc với tôi trong lúc tôi đang lái xe về nhà. While I was driving home, Peter was trying desperately to contact me.",
+        "category": "UNCATEGORIZED",
+        "id": "g_822"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Tôi đang nghe tin tức thì cô ấy gọi tới",
+        "english": "Tôi đang nghe tin tức thì cô ấy gọi tới I was listening to the news when she phoned.",
+        "category": "UNCATEGORIZED",
+        "id": "g_823"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Khi tôi đang đi trên đường thì bỗng nhiên tôi bị vấp ngã",
+        "english": "Khi tôi đang đi trên đường thì bỗng nhiên tôi bị vấp ngã I was walking in the street when I suddenly fell over.",
+        "category": "UNCATEGORIZED",
+        "id": "g_824"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Khi tôi nói chuyện với họ thì họ vẫn đang chờ máy bay",
+        "english": "Khi tôi nói chuyện với họ thì họ vẫn đang chờ máy bay They were still waiting for the plane when I spoke to them.",
+        "category": "UNCATEGORIZED",
+        "id": "g_825"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Khi anh ta còn làm việc ở đây, anh ta thường xuyên làm ồn",
+        "english": "Khi anh ta còn làm việc ở đây, anh ta thường xuyên làm ồn When he worked here, he was always making noise.",
+        "category": "UNCATEGORIZED",
+        "id": "g_826"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Mẹ tôi luôn than phiền về phòng tôi khi bà ấy ở đó",
+        "english": "Mẹ tôi luôn than phiền về phòng tôi khi bà ấy ở đó My mom was always complaining about my room when she got there",
+        "category": "UNCATEGORIZED",
+        "id": "g_827"
+    },
+    {
+        "vietnamese": "PAST CONTINUOUS Cô ta hát suốt ngày",
+        "english": "Cô ta hát suốt ngày She was always singing all day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_828"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Tôi sẽ đang ở khách sạn ở Đa Lat lúc 1h ngày mai",
+        "english": "Tôi sẽ đang ở khách sạn ở Đa Lat lúc 1h ngày mai I will be staying at the hotel in Đa Lat at 1 p.m tomorrow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_829"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Bọn trẻ sẽ đang không chơi với bạn của chúng khi bạn đến vào cuối tuần này",
+        "english": "Bọn trẻ sẽ đang không chơi với bạn của chúng khi bạn đến vào cuối tuần này The children won’t be playing with their friends when you come this weekend.",
+        "category": "UNCATEGORIZED",
+        "id": "g_830"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Anh ấy sẽ đang làm công việc nhà lúc 10h tối ngày mai phải không",
+        "english": "Anh ấy sẽ đang làm công việc nhà lúc 10h tối ngày mai phải không Will He be doing the housework at 10 p.m tomorrow?",
+        "category": "UNCATEGORIZED",
+        "id": "g_831"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Vào lúc 7 giờ tối nay, tôi sẽ đang dùng bữa tối",
+        "english": "Vào lúc 7 giờ tối nay, tôi sẽ đang dùng bữa tối Tonight at 7 PM, I am going to be eating dinner.",
+        "category": "UNCATEGORIZED",
+        "id": "g_832"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Anh ấy sẽ chờ cô ấy khi máy bay cô ấy đáp xuống.",
+        "english": "Anh ấy sẽ chờ cô ấy khi máy bay cô ấy đáp xuống. He will be waiting for her when her plane arrives tonight.",
+        "category": "UNCATEGORIZED",
+        "id": "g_833"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Bố mẹ tớ sẽ đi London, thế nên tớ sẽ ở với bà trong 2 tuần tới.",
+        "english": "Bố mẹ tớ sẽ đi London, thế nên tớ sẽ ở với bà trong 2 tuần tới. My parents are going to London, so I will be staying with my grandma for the next 2 weeks.",
+        "category": "UNCATEGORIZED",
+        "id": "g_834"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Thứ hai tới bạn sẽ đang ở chỗ làm mới của mình.",
+        "english": "Thứ hai tới bạn sẽ đang ở chỗ làm mới của mình. Next Monday, you will be working in your new job.",
+        "category": "UNCATEGORIZED",
+        "id": "g_835"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Bạn sẽ rủ bạn của mình đến pub tối nay chứ?",
+        "english": "Bạn sẽ rủ bạn của mình đến pub tối nay chứ? Will you be bringing your friend to the pub tonight?",
+        "category": "UNCATEGORIZED",
+        "id": "g_836"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Ngày mai anh ấy vẫn sẽ bị cơn cảm lạnh hành hạ",
+        "english": "Ngày mai anh ấy vẫn sẽ bị cơn cảm lạnh hành hạ Tomorrow he will still be suffering from his cold.",
+        "category": "UNCATEGORIZED",
+        "id": "g_837"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Khi tôi đến bữa tiệc, mọi người sẽ đang ăn mừng. Một số người sẽ đang nhảy múa. Một số khác sẽ đang trò chuyện với nhau",
+        "english": "Khi tôi đến bữa tiệc, mọi người sẽ đang ăn mừng. Một số người sẽ đang nhảy múa. Một số khác sẽ đang trò chuyện với nhau When I arrive at the party, everybody is going to be celebrating*. Some will be dancing. Others are going to be talking.",
+        "category": "UNCATEGORIZED",
+        "id": "g_838"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Chúng tôi sẽ đi ra ngoài vào thời điểm này",
+        "english": "Chúng tôi sẽ đi ra ngoài vào thời điểm này We will be going out at this time.",
+        "category": "UNCATEGORIZED",
+        "id": "g_839"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Vào thời điểm này ngày mai, tôi sẽ đang đi mua sắm ở Singapore",
+        "english": "Vào thời điểm này ngày mai, tôi sẽ đang đi mua sắm ở Singapore At this time tomorrow I will be going shopping in Singapore",
+        "category": "UNCATEGORIZED",
+        "id": "g_840"
+    },
+    {
+        "vietnamese": "FUTURE CONTINUOUS Vào 10h sáng ngày mai mẹ tôi sẽ đang nấu bữa trưa",
+        "english": "Vào 10h sáng ngày mai mẹ tôi sẽ đang nấu bữa trưa At 10 a.m tomorrow my mother will be cooking lunch.",
+        "category": "UNCATEGORIZED",
+        "id": "g_841"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô nàng đã đợi cậu cả ngày rồi",
+        "english": "Cô nàng đã đợi cậu cả ngày rồi She has been waiting for you all day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_842"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô ấy làm việc ở đây từ năm 2010",
+        "english": "Cô ấy làm việc ở đây từ năm 2010 She has been working here since 2010.",
+        "category": "UNCATEGORIZED",
+        "id": "g_843"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Trời vừa mưa xong",
+        "english": "Trời vừa mưa xong It has been raining",
+        "category": "UNCATEGORIZED",
+        "id": "g_844"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Bây giờ tôi rất mệt vì tôi đã làm việc vất vả trong 12 tiếng đồng hồ",
+        "english": "Bây giờ tôi rất mệt vì tôi đã làm việc vất vả trong 12 tiếng đồng hồ I am very tired now because I have been working hard for 12 hours.",
+        "category": "UNCATEGORIZED",
+        "id": "g_845"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Tôi tốt nghiệp đại học từ năm 2012",
+        "english": "Tôi tốt nghiệp đại học từ năm 2012 I have graduated from my university since 2012.",
+        "category": "UNCATEGORIZED",
+        "id": "g_846"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô ấy sống ở đây được một năm rồi",
+        "english": "Cô ấy sống ở đây được một năm rồi She has lived here for one year.",
+        "category": "UNCATEGORIZED",
+        "id": "g_847"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Tôi không học tiếng Anh được 5 năm rồi",
+        "english": "Tôi không học tiếng Anh được 5 năm rồi I haven’t been studying English for 5 years.",
+        "category": "UNCATEGORIZED",
+        "id": "g_848"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô ấy không xem phim từ năm ngoái",
+        "english": "Cô ấy không xem phim từ năm ngoái She hasn’t been watching films since last year.",
+        "category": "UNCATEGORIZED",
+        "id": "g_849"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Bạn đứng dưới mưa hơn 2 tiếng đồng hồ rồi phải không?",
+        "english": "Bạn đứng dưới mưa hơn 2 tiếng đồng hồ rồi phải không? Have you been standing in the rain for more than 2 hours?",
+        "category": "UNCATEGORIZED",
+        "id": "g_850"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Anh ấy đánh máy bài báo cáo từ sáng rồi rồi phải không?",
+        "english": "Anh ấy đánh máy bài báo cáo từ sáng rồi rồi phải không? Has he been typing the report since this morning?",
+        "category": "UNCATEGORIZED",
+        "id": "g_851"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô ấy làm việc từ sáng sớm.",
+        "english": "Cô ấy làm việc từ sáng sớm. She has been working since early morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_852"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Họ nghe đài được 3 tiếng đồng hồ rồi",
+        "english": "Họ nghe đài được 3 tiếng đồng hồ rồi They have been listening to the radio for 3 hours.",
+        "category": "UNCATEGORIZED",
+        "id": "g_853"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Họ làm việc ngoài đồng cả buổi sáng",
+        "english": "Họ làm việc ngoài đồng cả buổi sáng They have been working in the field all the morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_854"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Ông bà cô ấy cả sáng rồi mà vẫn chưa ăn gì",
+        "english": "Ông bà cô ấy cả sáng rồi mà vẫn chưa ăn gì Her grandparents haven’t been eating for the whole morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_855"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Con chó cả ngày vẫn chưa ra ngoài.",
+        "english": "Con chó cả ngày vẫn chưa ra ngoài. The dog hasn’t been going out for the whole day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_856"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Lũ trẻ ngủ được 4 tiếng rồi.",
+        "english": "Lũ trẻ ngủ được 4 tiếng rồi. They have been sleeping for 4 hours.",
+        "category": "UNCATEGORIZED",
+        "id": "g_857"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô ấy đã làm bài tập được 4 tiếng rồi",
+        "english": "Cô ấy đã làm bài tập được 4 tiếng rồi She has been doing her homework for the whole morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_858"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Các bạn con vẫn đang chơi bóng đá kể từ lúc con đến à?",
+        "english": "Các bạn con vẫn đang chơi bóng đá kể từ lúc con đến à? Have your friends been playing soccer since you came?",
+        "category": "UNCATEGORIZED",
+        "id": "g_859"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Trời vẫn đang mưa từ lúc 2 giờ à?",
+        "english": "Trời vẫn đang mưa từ lúc 2 giờ à? Has it been still raining since 2 p.m?",
+        "category": "UNCATEGORIZED",
+        "id": "g_860"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Con vẫn đang làm gì đấy?",
+        "english": "Con vẫn đang làm gì đấy? What have you been doing?",
+        "category": "UNCATEGORIZED",
+        "id": "g_861"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Tại sao họ vẫn chưa ngồi xuống đi nhỉ?",
+        "english": "Tại sao họ vẫn chưa ngồi xuống đi nhỉ? Why have they not been sitting?",
+        "category": "UNCATEGORIZED",
+        "id": "g_862"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Tôi đã sống ở Hà Nội được 4 năm rồi.",
+        "english": "Tôi đã sống ở Hà Nội được 4 năm rồi. I have been living in Hanoi for 4 years now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_863"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Cô ấy dạy Toán ở trường trung học này được vài năm rồi",
+        "english": "Cô ấy dạy Toán ở trường trung học này được vài năm rồi has been teaching Math at this high school for several years now.",
+        "category": "UNCATEGORIZED",
+        "id": "g_864"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Tôi vẫn đang làm bài tập.",
+        "english": "Tôi vẫn đang làm bài tập. I have been doing my homework.",
+        "category": "UNCATEGORIZED",
+        "id": "g_865"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Anh ấy đã lái xe cả buổi sáng rồi.",
+        "english": "Anh ấy đã lái xe cả buổi sáng rồi. He has been driving his car for the whole morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_866"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Họ đã hát cả buổi tối rồi",
+        "english": "Họ đã hát cả buổi tối rồi They have been singing for the whole night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_867"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Kể từ lúc tôi đến, anh ấy vẫn đang chơi điện tử",
+        "english": "Kể từ lúc tôi đến, anh ấy vẫn đang chơi điện tử Since I came, he has been playing video games.",
+        "category": "UNCATEGORIZED",
+        "id": "g_868"
+    },
+    {
+        "vietnamese": "PRESENT PERFECT CONTINUOUS Mẹ tôi đã và đang làm việc nhà được 1 tiếng rồi",
+        "english": "Mẹ tôi đã và đang làm việc nhà được 1 tiếng rồi My mother has been doing housework for 1 hour.",
+        "category": "UNCATEGORIZED",
+        "id": "g_869"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Tôi vẫn đang nghĩ về điều đó trước khi bạn đề cập tới",
+        "english": "Tôi vẫn đang nghĩ về điều đó trước khi bạn đề cập tới I had been thinking about that before you mentioned it.",
+        "category": "UNCATEGORIZED",
+        "id": "g_870"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Sam tăng cân vì cô ấy đã ăn quá nhiều",
+        "english": "Sam tăng cân vì cô ấy đã ăn quá nhiều Sam gained weight because she had been overeating.",
+        "category": "UNCATEGORIZED",
+        "id": "g_871"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Betty đã trượt bài kiểm tra cuối kì vì cô ấy không tham gia lớp học",
+        "english": "Betty đã trượt bài kiểm tra cuối kì vì cô ấy không tham gia lớp học Betty fail the final test because she hadn’t been attending class.",
+        "category": "UNCATEGORIZED",
+        "id": "g_872"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Đôi vợ chồng đã cãi nhau suốt một giờ trước khi đứa con gái về nhà.",
+        "english": "Đôi vợ chồng đã cãi nhau suốt một giờ trước khi đứa con gái về nhà. The couple had been quarreling for 1 hour before their daughter came back home.",
+        "category": "UNCATEGORIZED",
+        "id": "g_873"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Cậu học sinh đã chờ gần một tiếng trong phòng họp trước khi chịu phạt",
+        "english": "Cậu học sinh đã chờ gần một tiếng trong phòng họp trước khi chịu phạt The student had been waiting in the meeting room for almost an hour before he was punished.",
+        "category": "UNCATEGORIZED",
+        "id": "g_874"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Tôi đã luyện tập suốt 5 tháng và sẵn sàng cho giải vô địch",
+        "english": "Tôi đã luyện tập suốt 5 tháng và sẵn sàng cho giải vô địch I had been practicing for five months and was ready for the championship.",
+        "category": "UNCATEGORIZED",
+        "id": "g_875"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Willis đã học hành rất chăm chỉ và cảm thấy rất tốt về bài thi tiếng Tây Ban Nha mà anh ấy đã làm.",
+        "english": "Willis đã học hành rất chăm chỉ và cảm thấy rất tốt về bài thi tiếng Tây Ban Nha mà anh ấy đã làm. Willis had been studying hard and felt good about the Spanish test he was about to take.",
+        "category": "UNCATEGORIZED",
+        "id": "g_876"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Anna và Mark đã yêu nhau được 5 năm và đã chuẩn bị cho một đám cưới",
+        "english": "Anna và Mark đã yêu nhau được 5 năm và đã chuẩn bị cho một đám cưới Anna and Mark had been falling in love for 5 years and prepared for a wedding.",
+        "category": "UNCATEGORIZED",
+        "id": "g_877"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Cô ấy đã đi bộ 2 tiếng đồng hồ tính đến 9 giờ tối qua",
+        "english": "Cô ấy đã đi bộ 2 tiếng đồng hồ tính đến 9 giờ tối qua She had been walking for 2 hours before 11 p.m. last night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_878"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Em trai tôi đã khóc suốt một giờ trước bữa trưa",
+        "english": "Em trai tôi đã khóc suốt một giờ trước bữa trưa My younger brother had been crying for almost 1 hour before lunchtime.",
+        "category": "UNCATEGORIZED",
+        "id": "g_879"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Sáng hôm qua, anh ấy đã kiệt sức vì trước đó đã làm báo cáo cả đêm",
+        "english": "Sáng hôm qua, anh ấy đã kiệt sức vì trước đó đã làm báo cáo cả đêm Yesterday morning, he was exhausted because he had been working on his report all night.",
+        "category": "UNCATEGORIZED",
+        "id": "g_880"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Nếu chúng tôi còn làm việc cùng nhau một cách hiệu quả, chúng tôi đã thành công rồi",
+        "english": "Nếu chúng tôi còn làm việc cùng nhau một cách hiệu quả, chúng tôi đã thành công rồi If we had been working effectively together, we would have been successful.",
+        "category": "UNCATEGORIZED",
+        "id": "g_881"
+    },
+    {
+        "vietnamese": "PAST PERFECT CONTINUOUS Cô ấy đã có thể sẽ tự tin hơn nếu cô ấy chuẩn bị tốt hơn",
+        "english": "Cô ấy đã có thể sẽ tự tin hơn nếu cô ấy chuẩn bị tốt hơn She would have been more confident if she had been preparing better.",
+        "category": "UNCATEGORIZED",
+        "id": "g_882"
+    },
+    {
+        "vietnamese": "VOICE Họ đã trồng một cái cây ở trong vườn",
+        "english": "Họ đã trồng một cái cây ở trong vườn They planted a tree in the garden.",
+        "category": "PASSIVE",
+        "id": "g_883"
+    },
+    {
+        "vietnamese": "VOICE Một cái cây được trồng ở trong vườn (bởi họ)",
+        "english": "Một cái cây được trồng ở trong vườn (bởi họ) A tree was planted in the garden (by them).",
+        "category": "PASSIVE",
+        "id": "g_884"
+    },
+    {
+        "vietnamese": "VOICE Tôi đã đưa cho anh ấy một cuốn sách",
+        "english": "Tôi đã đưa cho anh ấy một cuốn sách I gave him a book",
+        "category": "PASSIVE",
+        "id": "g_885"
+    },
+    {
+        "vietnamese": "VOICE Tôi đã đưa một cuốn sách cho anh ta",
+        "english": "Tôi đã đưa một cuốn sách cho anh ta I gave a book to him",
+        "category": "PASSIVE",
+        "id": "g_886"
+    },
+    {
+        "vietnamese": "VOICE Ông được tặng một cuốn sách (bởi tôi)",
+        "english": "Ông được tặng một cuốn sách (bởi tôi) He was given a book (by me).",
+        "category": "PASSIVE",
+        "id": "g_887"
+    },
+    {
+        "vietnamese": "VOICE Ai đó lấy trộm xe máy của tôi đêm qua",
+        "english": "Ai đó lấy trộm xe máy của tôi đêm qua Someone stole my motorbike last night.",
+        "category": "PASSIVE",
+        "id": "g_888"
+    },
+    {
+        "vietnamese": "VOICE Xe máy của tôi đã bị lấy trộm đêm qua",
+        "english": "Xe máy của tôi đã bị lấy trộm đêm qua My motorbike was stolen last night.",
+        "category": "PASSIVE",
+        "id": "g_889"
+    },
+    {
+        "vietnamese": "VOICE Cha tôi tưới hoa này mỗi sáng",
+        "english": "Cha tôi tưới hoa này mỗi sáng My father waters this flower every morning.",
+        "category": "PASSIVE",
+        "id": "g_890"
+    },
+    {
+        "vietnamese": "VOICE Hoa này được tưới nước (bởi cha tôi) mỗi sáng",
+        "english": "Hoa này được tưới nước (bởi cha tôi) mỗi sáng This flower is watered (by my father) every morning",
+        "category": "PASSIVE",
+        "id": "g_891"
+    },
+    {
+        "vietnamese": "VOICE John đã mời Fiona đến bữa tiệc sinh nhật của anh đêm qua",
+        "english": "John đã mời Fiona đến bữa tiệc sinh nhật của anh đêm qua John invited Fiona to his birthday party last night.",
+        "category": "PASSIVE",
+        "id": "g_892"
+    },
+    {
+        "vietnamese": "VOICE Fiona đã được mời đến bữa tiệc sinh nhật của John vào tháng trước",
+        "english": "Fiona đã được mời đến bữa tiệc sinh nhật của John vào tháng trước Fiona was invented to John's birthday party last month",
+        "category": "PASSIVE",
+        "id": "g_893"
+    },
+    {
+        "vietnamese": "VOICE Mẹ cô đang chuẩn bị bữa tối trong bếp.",
+        "english": "Mẹ cô đang chuẩn bị bữa tối trong bếp. Her mother is preparing the dinner in the kitchen.",
+        "category": "PASSIVE",
+        "id": "g_894"
+    },
+    {
+        "vietnamese": "VOICE Bữa tối đang được chuẩn bị (bởi mẹ cô) trong bếp",
+        "english": "Bữa tối đang được chuẩn bị (bởi mẹ cô) trong bếp The dinner is being prepared (by her mother) in the kitchen.",
+        "category": "PASSIVE",
+        "id": "g_895"
+    },
+    {
+        "vietnamese": "VOICE Nước Mỹ nhận lãnh trách nhiệm.",
+        "english": "Nước Mỹ nhận lãnh trách nhiệm. The US takes charge",
+        "category": "PASSIVE",
+        "id": "g_896"
+    },
+    {
+        "vietnamese": "VOICE Con chim bị bắn bằng súng",
+        "english": "Con chim bị bắn bằng súng The bird was shot with the gun.",
+        "category": "PASSIVE",
+        "id": "g_897"
+    },
+    {
+        "vietnamese": "VOICE Con chim bị bắn bởi thợ săn.",
+        "english": "Con chim bị bắn bởi thợ săn. The bird was shot by the hunter.",
+        "category": "PASSIVE",
+        "id": "g_898"
+    },
+    {
+        "vietnamese": "VOICE Bạn có thể vui lòng kiểm tra hộp thư của tôi trong khi tôi đi.",
+        "english": "Bạn có thể vui lòng kiểm tra hộp thư của tôi trong khi tôi đi. Could you please check my mailbox while I am gone.",
+        "category": "PASSIVE",
+        "id": "g_899"
+    },
+    {
+        "vietnamese": "VOICE Anh bị lạc trong mê cung của thị trấn ngày hôm qua.",
+        "english": "Anh bị lạc trong mê cung của thị trấn ngày hôm qua. He got lost in the maze of the town yesterday.",
+        "category": "PASSIVE",
+        "id": "g_900"
+    },
+    {
+        "vietnamese": "VOICE Cậu bé mặc quần áo rất nhanh.",
+        "english": "Cậu bé mặc quần áo rất nhanh. The little boy gets dressed very quickly.",
+        "category": "PASSIVE",
+        "id": "g_901"
+    },
+    {
+        "vietnamese": "VOICE Tôi có thể giúp bạn một tay với những chiếc lốp này.",
+        "english": "Tôi có thể giúp bạn một tay với những chiếc lốp này. Could I give you a hand with these tires.",
+        "category": "PASSIVE",
+        "id": "g_902"
+    },
+    {
+        "vietnamese": "VOICE Không, cảm ơn, tôi sẽ được thực hiện khi tôi hoàn thành việc thắt chặt các bu lông này",
+        "english": "Không, cảm ơn, tôi sẽ được thực hiện khi tôi hoàn thành việc thắt chặt các bu lông này No thanks, I will be done when I finish tightening these bolts.",
+        "category": "PASSIVE",
+        "id": "g_903"
+    },
+    {
+        "vietnamese": "VOICE Chiếc bàn này được làm từ gỗ",
+        "english": "Chiếc bàn này được làm từ gỗ This table is made of wood",
+        "category": "PASSIVE",
+        "id": "g_904"
+    },
+    {
+        "vietnamese": "VOICE Giấy được làm từ gỗ",
+        "english": "Giấy được làm từ gỗ Paper is made from wood",
+        "category": "PASSIVE",
+        "id": "g_905"
+    },
+    {
+        "vietnamese": "VOICE Bánh này được làm từ bột mì, bơ, đường, trứng và sữa",
+        "english": "Bánh này được làm từ bột mì, bơ, đường, trứng và sữa This cake was made out of flour, butter, sugar, eggs and milk.",
+        "category": "PASSIVE",
+        "id": "g_906"
+    },
+    {
+        "vietnamese": "VOICE Món súp này ngon bởi vì nó được làm với rất nhiều gia vị",
+        "english": "Món súp này ngon bởi vì nó được làm với rất nhiều gia vị This soup tastes good because it was made with a lot of spices.",
+        "category": "PASSIVE",
+        "id": "g_907"
+    },
+    {
+        "vietnamese": "VOICE Lulu và Joe đã kết hôn vào tuần trước. (không trang trọng)",
+        "english": "Lulu và Joe đã kết hôn vào tuần trước. (không trang trọng) Lulu and Joe got maried last week. (informal)",
+        "category": "PASSIVE",
+        "id": "g_908"
+    },
+    {
+        "vietnamese": "VOICE Lulu và Joe kết hôn vào tuần trước. (trang trọng)",
+        "english": "Lulu và Joe kết hôn vào tuần trước. (trang trọng) Lulu and Joe married last week. (formal)",
+        "category": "PASSIVE",
+        "id": "g_909"
+    },
+    {
+        "vietnamese": "VOICE Sau 3 năm không hạnh phúc họ đã ly hôn. (không trang trọng)",
+        "english": "Sau 3 năm không hạnh phúc họ đã ly hôn. (không trang trọng) After 3 very unhappy years they got divorced. (informal)",
+        "category": "PASSIVE",
+        "id": "g_910"
+    },
+    {
+        "vietnamese": "VOICE Sau 3 năm không hạnh phúc họ đã ly hôn. (trang trọng)",
+        "english": "Sau 3 năm không hạnh phúc họ đã ly hôn. (trang trọng) After 3 very unhappy years they dovorced. (formal)",
+        "category": "PASSIVE",
+        "id": "g_911"
+    },
+    {
+        "vietnamese": "VOICE Andrew sẽ ly dị Carola.",
+        "english": "Andrew sẽ ly dị Carola. Andrew is going to divorce Carola",
+        "category": "PASSIVE",
+        "id": "g_912"
+    },
+    {
+        "vietnamese": "VOICE Cô kết hôn với người yêu thời thơ ấu.",
+        "english": "Cô kết hôn với người yêu thời thơ ấu. She got married to her childhood sweetheart.",
+        "category": "PASSIVE",
+        "id": "g_913"
+    },
+    {
+        "vietnamese": "VOICE Anh ấy đã kết hôn với Louisa được 16 năm và anh ấy vẫn không hiểu cô ấy",
+        "english": "Anh ấy đã kết hôn với Louisa được 16 năm và anh ấy vẫn không hiểu cô ấy He has been married to Louisa for 16 years and he still doesn’t understand her.",
+        "category": "PASSIVE",
+        "id": "g_914"
+    },
+    {
+        "vietnamese": "VOICE Tôi đã cho anh ấy một quả táo",
+        "english": "Tôi đã cho anh ấy một quả táo I gave him an apple.",
+        "category": "PASSIVE",
+        "id": "g_915"
+    },
+    {
+        "vietnamese": "VOICE Một quả táo đã được trao cho anh ta",
+        "english": "Một quả táo đã được trao cho anh ta An apple was given to him.",
+        "category": "PASSIVE",
+        "id": "g_916"
+    },
+    {
+        "vietnamese": "VOICE Anh ta đã được tôi trao cho một quả táo",
+        "english": "Anh ta đã được tôi trao cho một quả táo He was given an apple by me.",
+        "category": "PASSIVE",
+        "id": "g_917"
+    },
+    {
+        "vietnamese": "VOICE Anh ấy gửi cho người thân của mình một lá thư",
+        "english": "Anh ấy gửi cho người thân của mình một lá thư He sends his relative a letter.",
+        "category": "PASSIVE",
+        "id": "g_918"
+    },
+    {
+        "vietnamese": "VOICE Người thân của anh đã được gửi một lá thư.",
+        "english": "Người thân của anh đã được gửi một lá thư. His relative was sent a letter.",
+        "category": "PASSIVE",
+        "id": "g_919"
+    },
+    {
+        "vietnamese": "VOICE Một lá thư đã được gửi cho người thân của anh ấy (bởi anh ấy)",
+        "english": "Một lá thư đã được gửi cho người thân của anh ấy (bởi anh ấy) A letter was sent to his relative (by him)",
+        "category": "PASSIVE",
+        "id": "g_920"
+    },
+    {
+        "vietnamese": "VOICE Mọi người nói rằng anh ấy rất giàu",
+        "english": "Mọi người nói rằng anh ấy rất giàu People say that he is very rich.",
+        "category": "PASSIVE",
+        "id": "g_921"
+    },
+    {
+        "vietnamese": "VOICE Ông được cho là rất giàu có",
+        "english": "Ông được cho là rất giàu có He is said to be very rich.",
+        "category": "PASSIVE",
+        "id": "g_922"
+    },
+    {
+        "vietnamese": "VOICE Thomas nhờ con trai mua một tách cà phê",
+        "english": "Thomas nhờ con trai mua một tách cà phê Thomas has his son buy a cup of coffee.",
+        "category": "PASSIVE",
+        "id": "g_923"
+    },
+    {
+        "vietnamese": "VOICE Thomas nhờ con trai mua 1 cốc cà phê",
+        "english": "Thomas nhờ con trai mua 1 cốc cà phê Thomas has a cup of coffee boughtt by his son.",
+        "category": "PASSIVE",
+        "id": "g_924"
+    },
+    {
+        "vietnamese": "VOICE Suzy nhờ thợ làm tóc cắt tóc",
+        "english": "Suzy nhờ thợ làm tóc cắt tóc Suzy makes the hairdresser cut her hair.",
+        "category": "PASSIVE",
+        "id": "g_925"
+    },
+    {
+        "vietnamese": "VOICE Suzy nhờ thờ làm tóc chỉnh lại mái tóc",
+        "english": "Suzy nhờ thờ làm tóc chỉnh lại mái tóc Her hair is made to cut by the hairdresser.",
+        "category": "PASSIVE",
+        "id": "g_926"
+    },
+    {
+        "vietnamese": "VOICE Shally nhờ chồng dọn dẹp bếp cho cô",
+        "english": "Shally nhờ chồng dọn dẹp bếp cho cô Shally gets her husband to clean the kitchen for her.",
+        "category": "PASSIVE",
+        "id": "g_927"
+    },
+    {
+        "vietnamese": "VOICE Shally nhờ chồng dọn giúp nhà bếp",
+        "english": "Shally nhờ chồng dọn giúp nhà bếp Shally gets the kitchen cleaned by her husband.",
+        "category": "PASSIVE",
+        "id": "g_928"
+    },
+    {
+        "vietnamese": "VOICE Bạn có dọn phòng của bạn không?",
+        "english": "Bạn có dọn phòng của bạn không? Do you clean your room?",
+        "category": "PASSIVE",
+        "id": "g_929"
+    },
+    {
+        "vietnamese": "VOICE Con đã dọn phòng chưa đấy?",
+        "english": "Con đã dọn phòng chưa đấy? Is your room cleaned (by you)?",
+        "category": "PASSIVE",
+        "id": "g_930"
+    },
+    {
+        "vietnamese": "VOICE Bạn có thể mang máy tính xách tay của bạn đến bàn của tôi?",
+        "english": "Bạn có thể mang máy tính xách tay của bạn đến bàn của tôi? Can you bring your notebook to my desk?",
+        "category": "PASSIVE",
+        "id": "g_931"
+    },
+    {
+        "vietnamese": "VOICE Em có thể mang vở lên nộp cho tôi không?",
+        "english": "Em có thể mang vở lên nộp cho tôi không? Can you notebook be brought to my desk?",
+        "category": "PASSIVE",
+        "id": "g_932"
+    },
+    {
+        "vietnamese": "VOICE Bạn có thể di chuyển ghế?",
+        "english": "Bạn có thể di chuyển ghế? Can you move the chair?",
+        "category": "PASSIVE",
+        "id": "g_933"
+    },
+    {
+        "vietnamese": "VOICE Chuyển cái ghế đi được không?",
+        "english": "Chuyển cái ghế đi được không? Can the chair be moved?",
+        "category": "PASSIVE",
+        "id": "g_934"
+    },
+    {
+        "vietnamese": "VOICE Cô ấy đã làm xong bài tập chưa?",
+        "english": "Cô ấy đã làm xong bài tập chưa? Has she done her homework?",
+        "category": "PASSIVE",
+        "id": "g_935"
+    },
+    {
+        "vietnamese": "VOICE Con bé đã làm bài tập xong chưa?",
+        "english": "Con bé đã làm bài tập xong chưa? Has her homework been done (by her)?",
+        "category": "PASSIVE",
+        "id": "g_936"
+    },
+    {
+        "vietnamese": "VOICE Mọi người nghĩ anh ta lấy cắp tiền của mẹ anh ta",
+        "english": "Mọi người nghĩ anh ta lấy cắp tiền của mẹ anh ta People think he stole his mother’s money",
+        "category": "PASSIVE",
+        "id": "g_937"
+    },
+    {
+        "vietnamese": "VOICE Người ta cho rằng anh ta đã lấy trộm tiền của mẹ mình",
+        "english": "Người ta cho rằng anh ta đã lấy trộm tiền của mẹ mình It is thought that he stole his mother’s money.",
+        "category": "PASSIVE",
+        "id": "g_938"
+    },
+    {
+        "vietnamese": "VOICE Anh ta được cho là đã ăn cắp tiền của mẹ mìnhy.",
+        "english": "Anh ta được cho là đã ăn cắp tiền của mẹ mìnhy. He is thought to have stolen his mother’s money.",
+        "category": "PASSIVE",
+        "id": "g_939"
+    },
+    {
+        "vietnamese": "VOICE Anh ta nhìn thấy họ đang đá bóng",
+        "english": "Anh ta nhìn thấy họ đang đá bóng He watched them playing football.",
+        "category": "PASSIVE",
+        "id": "g_940"
+    },
+    {
+        "vietnamese": "VOICE Họ được nhìn thấy đang đá bóng.",
+        "english": "Họ được nhìn thấy đang đá bóng. They were watched playing football.",
+        "category": "PASSIVE",
+        "id": "g_941"
+    },
+    {
+        "vietnamese": "VOICE Tôi nghe thấy cô ấy khóc.",
+        "english": "Tôi nghe thấy cô ấy khóc. I heard her cry.",
+        "category": "PASSIVE",
+        "id": "g_942"
+    },
+    {
+        "vietnamese": "VOICE Cô ấy được nghe thấy là đã khóc",
+        "english": "Cô ấy được nghe thấy là đã khóc She was heard to cry.",
+        "category": "PASSIVE",
+        "id": "g_943"
+    },
+    {
+        "vietnamese": "VOICE Đặt bút của bạn xuống.",
+        "english": "Đặt bút của bạn xuống. Put your pen down",
+        "category": "PASSIVE",
+        "id": "g_944"
+    },
+    {
+        "vietnamese": "VOICE Bỏ cây bút xuống.",
+        "english": "Bỏ cây bút xuống. Let your pen be put down.",
+        "category": "PASSIVE",
+        "id": "g_945"
+    },
+    {
+        "vietnamese": "VOICE Đừng lấy món đồ này.",
+        "english": "Đừng lấy món đồ này. Do not take this item.",
+        "category": "PASSIVE",
+        "id": "g_946"
+    },
+    {
+        "vietnamese": "VOICE Không lấy sản phẩm này",
+        "english": "Không lấy sản phẩm này Let this item not be taken.",
+        "category": "PASSIVE",
+        "id": "g_947"
+    },
+    {
+        "vietnamese": "ALS Nếu trời mưa, tôi sẽ nghỉ học.",
+        "english": "Nếu trời mưa, tôi sẽ nghỉ học. If it rains, I will not go to school.",
+        "category": "CONDITION",
+        "id": "g_948"
+    },
+    {
+        "vietnamese": "ALS Nếu có nhiều tiền, tôi sẽ mua chiếc ô tô đó.",
+        "english": "Nếu có nhiều tiền, tôi sẽ mua chiếc ô tô đó. If I have a lot of money, I will buy this car.",
+        "category": "CONDITION",
+        "id": "g_949"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn tới đây, tôi sẽ thiết đãi bạn một bữa ăn",
+        "english": "Nếu bạn tới đây, tôi sẽ thiết đãi bạn một bữa ăn If you come here, I will treat you a meal.",
+        "category": "CONDITION",
+        "id": "g_950"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi là bạn, tôi sẽ mua chiếc ô tô đó.",
+        "english": "Nếu tôi là bạn, tôi sẽ mua chiếc ô tô đó. If I were you, I would buy this car.",
+        "category": "CONDITION",
+        "id": "g_951"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi không vắng mặt ngày hôm qua, tôi đã có điểm bài kiểm tra rồi",
+        "english": "Nếu tôi không vắng mặt ngày hôm qua, tôi đã có điểm bài kiểm tra rồi If I hadn’t been absent yesterday, I would have had the exam score.",
+        "category": "CONDITION",
+        "id": "g_952"
+    },
+    {
+        "vietnamese": "ALS Nếu mùa đông đến, trời sẽ rất lạnh ở Seoul",
+        "english": "Nếu mùa đông đến, trời sẽ rất lạnh ở Seoul If winter comes, it’s biterly cold in Seoul",
+        "category": "CONDITION",
+        "id": "g_953"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi đã học hành chăm chỉ, tôi sẽ tự làm được bài kiểm tra đó",
+        "english": "Nếu tôi đã học hành chăm chỉ, tôi sẽ tự làm được bài kiểm tra đó If I had studied hard, I would do the exam by myself.",
+        "category": "CONDITION",
+        "id": "g_954"
+    },
+    {
+        "vietnamese": "ALS Nếu khả năng tiếng Anh của tôi tốt, tôi đã đi du học rồi",
+        "english": "Nếu khả năng tiếng Anh của tôi tốt, tôi đã đi du học rồi If my English was good, I’d have studied abroad.",
+        "category": "CONDITION",
+        "id": "g_955"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi tìm được địa chỉ của cô ấy, tôi sẽ gửi lời mời tới cô ấy",
+        "english": "Nếu tôi tìm được địa chỉ của cô ấy, tôi sẽ gửi lời mời tới cô ấy If I find her address, I’ll send her an invitation.",
+        "category": "CONDITION",
+        "id": "g_956"
+    },
+    {
+        "vietnamese": "ALS Nếu John có nhiều tiền, anh ấy sẽ mua chiếc Ferrari",
+        "english": "Nếu John có nhiều tiền, anh ấy sẽ mua chiếc Ferrari If John has the money, he will buy a Ferrari.",
+        "category": "CONDITION",
+        "id": "g_957"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi có một triệu đô la, tôi sẽ mua chiếc xe đó",
+        "english": "Nếu tôi có một triệu đô la, tôi sẽ mua chiếc xe đó If I had a million USD, I would buy a Ferrari.",
+        "category": "CONDITION",
+        "id": "g_958"
+    },
+    {
+        "vietnamese": "ALS Nếu anh có nhiều thời gian, anh sẽ học karate",
+        "english": "Nếu anh có nhiều thời gian, anh sẽ học karate If he had more time, he would learn karate.",
+        "category": "CONDITION",
+        "id": "g_959"
+    },
+    {
+        "vietnamese": "ALS Cô ấy sẽ dành một năm ở Mỹ nếu dễ dàng có được thẻ xanh",
+        "english": "Cô ấy sẽ dành một năm ở Mỹ nếu dễ dàng có được thẻ xanh. She would spend a year in the USA if it were easier to get a green card.",
+        "category": "CONDITION",
+        "id": "g_960"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi sống trên một hòn đảo cô đơn, tôi sẽ khỏa thân chạy quanh cả ngày",
+        "english": "Nếu tôi sống trên một hòn đảo cô đơn, tôi sẽ khỏa thân chạy quanh cả ngày. If I lived on a lonely island, I would run around naked all day.",
+        "category": "CONDITION",
+        "id": "g_961"
+    },
+    {
+        "vietnamese": "ALS Nếu tiền đạo chạy nhanh hơn, họ sẽ ghi được nhiều bàn thắng hơn",
+        "english": "Nếu tiền đạo chạy nhanh hơn, họ sẽ ghi được nhiều bàn thắng hơn. If the forwards had run faster, they would have scored more goals.",
+        "category": "CONDITION",
+        "id": "g_962"
+    },
+    {
+        "vietnamese": "ALS Nếu đó là trận đấu sân nhà, đội của chúng tôi sẽ thắng",
+        "english": "Nếu đó là trận đấu sân nhà, đội của chúng tôi sẽ thắng. If it had been a home game, our team would have won the match.",
+        "category": "CONDITION",
+        "id": "g_963"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn nói tiếng Anh thì cô ấy đã hiểu.",
+        "english": "Nếu bạn nói tiếng Anh thì cô ấy đã hiểu. If you had spoken English, she would have understood.",
+        "category": "CONDITION",
+        "id": "g_964"
+    },
+    {
+        "vietnamese": "ALS Nếu họ đã nghe lời tôi, chúng ta đã về nhà sớm hơn",
+        "english": "Nếu họ đã nghe lời tôi, chúng ta đã về nhà sớm hơn. If they had listened to me, we would have been home earlier.",
+        "category": "CONDITION",
+        "id": "g_965"
+    },
+    {
+        "vietnamese": "ALS Tôi đã viết cho bạn một tấm bưu thiếp nếu tôi có địa chỉ của bạn",
+        "english": "Tôi đã viết cho bạn một tấm bưu thiếp nếu tôi có địa chỉ của bạn. I would have written you a postcard if I had had your address.",
+        "category": "CONDITION",
+        "id": "g_966"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi không bị gãy chân, tôi sẽ tham gia cuộc thi",
+        "english": "Nếu tôi không bị gãy chân, tôi sẽ tham gia cuộc thi. If I had not broken my leg, I would have taken part in the contest.",
+        "category": "CONDITION",
+        "id": "g_967"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn gặp Nam, you hãy nhắn anh ấy rằng tôi đang ở Việt Nam nhé",
+        "english": "Nếu bạn gặp Nam, you hãy nhắn anh ấy rằng tôi đang ở Việt Nam nhé. If you see Nam, you tell him I’m in Vietnam",
+        "category": "CONDITION",
+        "id": "g_968"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn có bất kỳ rắc rối nào, xin hãy gọi cho tôi qua số điện thoại 115.",
+        "english": "Nếu bạn có bất kỳ rắc rối nào, xin hãy gọi cho tôi qua số điện thoại 115. If you have any trouble, please telephone me though 115.",
+        "category": "CONDITION",
+        "id": "g_969"
+    },
+    {
+        "vietnamese": "ALS Tôi thường đi bộ đến trường nếu tôi có thời gian.",
+        "english": "Tôi thường đi bộ đến trường nếu tôi có thời gian. I usually walk to school if I have enough time.",
+        "category": "CONDITION",
+        "id": "g_970"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn làm nóng nước đá, nó sẽ chảy ra.",
+        "english": "Nếu bạn làm nóng nước đá, nó sẽ chảy ra. If you heat ice, it turns to water.",
+        "category": "CONDITION",
+        "id": "g_971"
+    },
+    {
+        "vietnamese": "ALS Nếu bị lạnh, chúng ta sẽ run lên",
+        "english": "Nếu bị lạnh, chúng ta sẽ run lên. If we are cold, we shiver.",
+        "category": "CONDITION",
+        "id": "g_972"
+    },
+    {
+        "vietnamese": "ALS Nếu cô ấy không ở lại muộn vào đêm qua, bây giờ cô ấy sẽ không quá mệt mỏi.",
+        "english": "Nếu cô ấy không ở lại muộn vào đêm qua, bây giờ cô ấy sẽ không quá mệt mỏi. If she hadn't stayed up late last night, she wouldn't be so tired now.",
+        "category": "CONDITION",
+        "id": "g_973"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi là bạn, tôi đã học tiếng Anh sớm hơn",
+        "english": "Nếu tôi là bạn, tôi đã học tiếng Anh sớm hơn. If I were you, I would have learned English earlier.",
+        "category": "CONDITION",
+        "id": "g_974"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi là tổng thống, tôi sẽ xây thêm nhiều bệnh viện hơn. Nếu tôi lấy lời khuyên của anh ấy, bây giờ tôi đã giàu có",
+        "english": "Nếu tôi là tổng thống, tôi sẽ xây thêm nhiều bệnh viện hơn. Nếu tôi lấy lời khuyên của anh ấy, bây giờ tôi đã giàu có Were I the president, I would build more hospitals. Had I taken his advice, I would be rich now.",
+        "category": "CONDITION",
+        "id": "g_975"
+    },
+    {
+        "vietnamese": "ALS Nếu chúng ta rời Hà Nội tới Huế hôm nay, chúng ta sẽ ở Huế vào ngày maI",
+        "english": "Nếu chúng ta rời Hà Nội tới Huế hôm nay, chúng ta sẽ ở Huế vào ngày mai. If we leave Hanoi for Hue today, we shall be staying in Hue tomorrow.",
+        "category": "CONDITION",
+        "id": "g_976"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn làm việc nhà ngay bây giờ, bạn sẽ hoàn thành nó trong 2 giờ",
+        "english": "Nếu bạn làm việc nhà ngay bây giờ, bạn sẽ hoàn thành nó trong 2 giờ. If you do your home work right now, you will have finished it in 2 hours' time.",
+        "category": "CONDITION",
+        "id": "g_977"
+    },
+    {
+        "vietnamese": "ALS Nếu trời ngừng mưa, chúng tôi sẽ đi ra ngoài",
+        "english": "Nếu trời ngừng mưa, chúng tôi sẽ đi ra ngoài. If it stops raining, we can go out",
+        "category": "CONDITION",
+        "id": "g_978"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn đi đến thư viện ngày hôm nay, tôi muốn đi với bạn",
+        "english": "Nếu bạn đi đến thư viện ngày hôm nay, tôi muốn đi với bạn. If you go to the library today, I would like to go with you.",
+        "category": "CONDITION",
+        "id": "g_979"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn đói, hãy đi đến nhà hàng",
+        "english": "Nếu bạn đói, hãy đi đến nhà hàng. If you are hungry, go to a restaurant.",
+        "category": "CONDITION",
+        "id": "g_980"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn cảm thấy lạnh, đừng mở cửa",
+        "english": "Nếu bạn cảm thấy lạnh, đừng mở cửa. If you feel cold, don't open the door.",
+        "category": "CONDITION",
+        "id": "g_981"
+    },
+    {
+        "vietnamese": "ALS Nếu chúng tôi rời Hà Nội vào Huế sáng nay, chúng tôi sẽ ở Huế vào ngày mai",
+        "english": "Nếu chúng tôi rời Hà Nội vào Huế sáng nay, chúng tôi sẽ ở Huế vào ngày mai. If we left Hanoi for Hue this morning, we would be staying in Hue tomorrow.",
+        "category": "CONDITION",
+        "id": "g_982"
+    },
+    {
+        "vietnamese": "ALS Nếu thủ môn không bắt bóng, họ đã thua",
+        "english": "Nếu thủ môn không bắt bóng, họ đã thua. If the goalkeeper didn't catch the ball, they lost.",
+        "category": "CONDITION",
+        "id": "g_983"
+    },
+    {
+        "vietnamese": "ALS Nếu tôi đi nghỉ cùng anh ấy, tôi sẽ có thể đi lưu diễn tại Ý bây giờ",
+        "english": "Nếu tôi đi nghỉ cùng anh ấy, tôi sẽ có thể đi lưu diễn tại Ý bây giờ. If I were on holiday with him, I would/might be touring Italy now.",
+        "category": "CONDITION",
+        "id": "g_984"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn biết rắc rối của cô ấy, tại sao bạn không nói cho tôi",
+        "english": "Nếu bạn biết rắc rối của cô ấy, tại sao bạn không nói cho tôi. If you knew her troubles, why didn't you tell me?",
+        "category": "CONDITION",
+        "id": "g_985"
+    },
+    {
+        "vietnamese": "ALS Nếu bây giờ chúng ta học tiếng Anh ở London, chúng ta có thể nói tiếng Anh tốt hơn",
+        "english": "Nếu bây giờ chúng ta học tiếng Anh ở London, chúng ta có thể nói tiếng Anh tốt hơn. If we were studying English in London now, we could speak English much better.",
+        "category": "CONDITION",
+        "id": "g_986"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn đã lấy lời khuyên của tôi, bây giờ bạn sẽ là một triệu phú",
+        "english": "Nếu bạn đã lấy lời khuyên của tôi, bây giờ bạn sẽ là một triệu phú If you had taken my advice, you would be a millionaire now.",
+        "category": "CONDITION",
+        "id": "g_987"
+    },
+    {
+        "vietnamese": "ALS Nếu chúng tôi đã tìm thấy anh ta trước đó, chúng tôi có thể đã cứu sống anh ta",
+        "english": "Nếu chúng tôi đã tìm thấy anh ta trước đó, chúng tôi có thể đã cứu sống anh ta If we had found him earlier, we could have saved his life.",
+        "category": "CONDITION",
+        "id": "g_988"
+    },
+    {
+        "vietnamese": "ALS Nếu bạn rời Hưng tới Thanh Hoá và chủ nhật tuần trước, có thể bạn sẽ bơi ở biển Sầm Sownv à chủ nhật tuần trước",
+        "english": "Nếu bạn rời Hưng tới Thanh Hoá và chủ nhật tuần trước, có thể bạn sẽ bơi ở biển Sầm Sownv à chủ nhật tuần trước If you had left HungYen for ThanhHoa last Saturday, you would have been swimming in SamSon last Sunday.",
+        "category": "CONDITION",
+        "id": "g_989"
+    },
+    {
+        "vietnamese": "ALS Nếu cô ấy đã làm theo lời khuyên của tôi, bây giờ cô ấy sẽ giàu hơn.",
+        "english": "Nếu cô ấy đã làm theo lời khuyên của tôi, bây giờ cô ấy sẽ giàu hơn. If she had followedmy advice, she would be richer now.",
+        "category": "CONDITION",
+        "id": "g_990"
+    },
+    {
+        "vietnamese": "ALS Nếu trời không mưa suốt cả tuần, tôi đã hoàn thành xong việc giặt quần áo Cấu trúc này là quá dễ dàng để bạn nhớ. Anh chạy quá nhanh để tôi theo kịp Cái hộp này quá nặng đến nỗi tôi không thể lấy nó Anh ấy nói nhỏ đến nỗi chúng tôi không thể nghe thấy bất cứ điều gÌ Đó là một cái hộp quá nặng đến nỗi tôi không thể lấy nó. Đó là những cuốn sách thú vị mà tôi không thể bỏ qua chúng Cô ấy đủ tuổi để kết hôn",
+        "english": "Nếu trời không mưa suốt cả tuần, tôi đã hoàn thành xong việc giặt quần áo If it hadn't been raining the whole week, I would have finished the laundry",
+        "category": "CONDITION",
+        "id": "g_991"
+    },
+    {
+        "vietnamese": "Họ không cho phép chụp ảnh trong siêu thị này.",
+        "english": "They don't allow taking photographs in this supermarket. 1011 Mọi người nên tránh ăn sau 8 giờ tối People should avoid eating after 8 p.m",
+        "category": "UNCATEGORIZED",
+        "id": "g_1010"
+    },
+    {
+        "vietnamese": "Nếu bạn muốn biết người nghèo cảm giác thế nào, thử sống bằng 1 đô mỗi ngày đi",
+        "english": "If you want to know how the poor feel, try living on one dollar a day. 1040 Mỗi ngày, nó bỏ ra 4 tiếng đồng hồ để chơi game vi tính He spends 4 hours playing computer games every day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1039"
+    },
+    {
+        "vietnamese": "Tôi ngạc nhiên về biệt thự lớn đẹp của mình",
+        "english": "I was amazed at his big beautiful villa. 1047 Mẹ cô đã rất tức giận vì những điểm xấu của mình Her mother was very angry at her bad marks.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1046"
+    },
+    {
+        "vietnamese": "Tôi đã tình cờ gặp cô ấy ở Paris tuần trước.",
+        "english": "I met her in Paris by chance last week. 1051 Mẹ tôi đã mệt mỏi vì làm quá nhiều việc nhà hàng ngày. My mother was tired of doing too much housework every day.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1050"
+    },
+    {
+        "vietnamese": "Cô ấy không bao giờ ra ngoài vào Chủ nhật.",
+        "english": "Cô ấy không bao giờ ra ngoài vào Chủ nhật. She never goes out on Sunday. Never does she go out on Sunday.",
+        "category": "INVERSION",
+        "id": "g_1062"
+    },
+    {
+        "vietnamese": "Hiếm khi Peter học hành chăm chỉ",
+        "english": "Hiếm khi Peter học hành chăm chỉ Peter rarely studies hard. Rarely does Peter study hard.",
+        "category": "INVERSION",
+        "id": "g_1063"
+    },
+    {
+        "vietnamese": "Nếu ngày mai thời tiết đẹp thì chúng ta sẽ đi cắm trại",
+        "english": "Nếu ngày mai thời tiết đẹp thì chúng ta sẽ đi cắm trại If the weather is nice tomorrow, we will go camping. Should the weather be nice tomorrow, we will go camping.",
+        "category": "INVERSION",
+        "id": "g_1064"
+    },
+    {
+        "vietnamese": "Nếu tôi có tiền thì tôi đã mua chiếc ô tô đó.",
+        "english": "Nếu tôi có tiền thì tôi đã mua chiếc ô tô đó. If I had money, I would buy that car. Were I to have money, I would buy that car.",
+        "category": "INVERSION",
+        "id": "g_1065"
+    },
+    {
+        "vietnamese": "Nếu tôi là bạn, tôi sẽ làm việc chăm chỉ hơn.",
+        "english": "Nếu tôi là bạn, tôi sẽ làm việc chăm chỉ hơn. If I were you, I would work harder. Were I you, I would work harder.",
+        "category": "INVERSION",
+        "id": "g_1066"
+    },
+    {
+        "vietnamese": "Nếu cô ấy không ăn chiếc bánh ấy thì cô ấy sẽ không bị đau bụng",
+        "english": "Nếu cô ấy không ăn chiếc bánh ấy thì cô ấy sẽ không bị đau bụng If she hadn’t eaten this cake, she wouldn’t have had stomachache. Had she not eaten this cake, she wouldn’t have had stomachache.",
+        "category": "INVERSION",
+        "id": "g_1067"
+    },
+    {
+        "vietnamese": "Ngay sau khi anh ấy đến thì cô ấy rời đi",
+        "english": "Ngay sau khi anh ấy đến thì cô ấy rời đi No sooner had he come than she left. Hardly had he come when she left.",
+        "category": "INVERSION",
+        "id": "g_1068"
+    },
+    {
+        "vietnamese": "Cô ấy đã hát rất hay",
+        "english": "Cô ấy đã hát rất hay Beautifully did she sing",
+        "category": "INVERSION",
+        "id": "g_1070"
+    },
+    {
+        "vietnamese": "Chúng tôi đã cố gắng làm rất nhiều lần nhưng đều thất bại",
+        "english": "Chúng tôi đã cố gắng làm rất nhiều lần nhưng đều thất bại Very often have we tried to do it but we fail. 1072 Mùa thu đã tới đây Here comes the fall.",
+        "category": "INVERSION",
+        "id": "g_1071"
+    },
+    {
+        "vietnamese": "Xe buýt đã tới rồi",
+        "english": "Xe buýt đã tới rồi There comes the bus. There it comes.",
+        "category": "INVERSION",
+        "id": "g_1073"
+    },
+    {
+        "vietnamese": "Cuốn sách này thú vị đến nỗi mà tôi đọc nó rất nhiều lần",
+        "english": "Cuốn sách này thú vị đến nỗi mà tôi đọc nó rất nhiều lần This book is so interesting that I’ve read it many times. So interesting is this book that I’ve read it many times.",
+        "category": "INVERSION",
+        "id": "g_1074"
+    },
+    {
+        "vietnamese": "Từ bây giờ tôi sẽ không cho bạn mượn bất cứ quyển sách nào nữa",
+        "english": "Từ bây giờ tôi sẽ không cho bạn mượn bất cứ quyển sách nào nữa No books shall I lend you from now on. Not any money shall I lend you from now on.",
+        "category": "INVERSION",
+        "id": "g_1075"
+    },
+    {
+        "vietnamese": "Tôi chỉ được gặp Obama mỗi một lần",
+        "english": "Tôi chỉ được gặp Obama mỗi một lần Only one time did I meet Obama.",
+        "category": "INVERSION",
+        "id": "g_1076"
+    },
+    {
+        "vietnamese": "Chỉ khi tôi nói chuyện với cô ấy thì tôi mới quý cô ấy",
+        "english": "Chỉ khi tôi nói chuyện với cô ấy thì tôi mới quý cô ấy Only when I talked to her did I like her.",
+        "category": "INVERSION",
+        "id": "g_1077"
+    },
+    {
+        "vietnamese": "Trong bất cứ trường hợp nào bạn cũng không nên rời khỏi đây",
+        "english": "Trong bất cứ trường hợp nào bạn cũng không nên rời khỏi đây Under no case should you leave here.",
+        "category": "INVERSION",
+        "id": "g_1078"
+    },
+    {
+        "vietnamese": "Bây giờ anh ấy không còn là hàng xóm của tôi nữa",
+        "english": "Bây giờ anh ấy không còn là hàng xóm của tôi nữa No longer does he live next to me.",
+        "category": "INVERSION",
+        "id": "g_1079"
+    },
+    {
+        "vietnamese": "Không những anh ấy giỏi lịch sử mà còn hát rất hay",
+        "english": "Không những anh ấy giỏi lịch sử mà còn hát rất hay Not only is he good at History but he also sings very beautifully.",
+        "category": "INVERSION",
+        "id": "g_1080"
+    },
+    {
+        "vietnamese": "Vấn đề này rất đơn giản.",
+        "english": "Vấn đề này rất đơn giản. The probem is easy. Easy is the problem.",
+        "category": "INVERSION",
+        "id": "g_1081"
+    },
+    {
+        "vietnamese": "Tôi đã ở nhà cả ngày hôm qua.",
+        "english": "Tôi đã ở nhà cả ngày hôm qua. I stayed at home yesterday. I did stay at home yesterday.",
+        "category": "INVERSION",
+        "id": "g_1082"
+    },
+    {
+        "vietnamese": "Kết quả của trận đấu là không bao giờ nghi ngờ.",
+        "english": "Kết quả của trận đấu là không bao giờ nghi ngờ. The result of the match was never in doubt.",
+        "category": "INVERSION",
+        "id": "g_1083"
+    },
+    {
+        "vietnamese": "Bạn không bao giờ nên trễ kỳ thi.",
+        "english": "Bạn không bao giờ nên trễ kỳ thi. You should never be late for the exam.",
+        "category": "INVERSION",
+        "id": "g_1085"
+    },
+    {
+        "vietnamese": "Không vì bất cứ lý do nào bạn trễ kỳ thi.",
+        "english": "Không vì bất cứ lý do nào bạn trễ kỳ thi. On no account should you be late for the exam.",
+        "category": "INVERSION",
+        "id": "g_1086"
+    },
+    {
+        "vietnamese": "Tôi sẽ không bao giờ phản bội đất nước của tôi",
+        "english": "Tôi sẽ không bao giờ phản bội đất nước của tôi I'll never betray my own country.",
+        "category": "INVERSION",
+        "id": "g_1087"
+    },
+    {
+        "vietnamese": "Dù trong bất kì tình huống/hoàn cảnh nào, tôi sẽ không phản bội đất nước của mình.",
+        "english": "Dù trong bất kì tình huống/hoàn cảnh nào, tôi sẽ không phản bội đất nước của mình. In/Under no circumstances will I betray my own country.",
+        "category": "INVERSION",
+        "id": "g_1088"
+    },
+    {
+        "vietnamese": "Chúng tôi phải đi taxi hoặc sẽ bị trễ.",
+        "english": "Chúng tôi phải đi taxi hoặc sẽ bị trễ. We must take a taxi or will be late.",
+        "category": "INVERSION",
+        "id": "g_1089"
+    },
+    {
+        "vietnamese": "Chỉ bằng cách đi taxi, chúng tôi sẽ đến đó đúng giờ.",
+        "english": "Chỉ bằng cách đi taxi, chúng tôi sẽ đến đó đúng giờ. Only by taking a taxi will we get there on time.",
+        "category": "INVERSION",
+        "id": "g_1090"
+    },
+    {
+        "vietnamese": "Bạn sẽ có thể có được một công việc chỉ sau khi bạn tốt nghiệp.",
+        "english": "Bạn sẽ có thể có được một công việc chỉ sau khi bạn tốt nghiệp. You will be able to get a job only after you have graduated.",
+        "category": "INVERSION",
+        "id": "g_1091"
+    },
+    {
+        "vietnamese": "Chỉ sau khi tốt nghiệp của bạn, bạn mới có thể có được một công việc.",
+        "english": "Chỉ sau khi tốt nghiệp của bạn, bạn mới có thể có được một công việc. Only after your graduation will you be able to get a Job.",
+        "category": "INVERSION",
+        "id": "g_1092"
+    },
+    {
+        "vietnamese": "Tôi không biết cô ấy đã nổi tiếng cho đến khi bạn bè của cô ấy nói với tôi",
+        "english": "Tôi không biết cô ấy đã nổi tiếng cho đến khi bạn bè của cô ấy nói với tôi I didn't know she had been well-known until her friends told me.",
+        "category": "INVERSION",
+        "id": "g_1093"
+    },
+    {
+        "vietnamese": "Chỉ khi bạn bè của cô ấy nói với tôi, tôi mới biết cô ấy đã nổi tiếng",
+        "english": "Chỉ khi bạn bè của cô ấy nói với tôi, tôi mới biết cô ấy đã nổi tiếng Only when her friends told me did I know she had been well-known.",
+        "category": "INVERSION",
+        "id": "g_1094"
+    },
+    {
+        "vietnamese": "Anh ta không thể mua xe nếu ngân hàng không cho anh ta mượn tiền",
+        "english": "Anh ta không thể mua xe nếu ngân hàng không cho anh ta mượn tiền He couldn't have bought the car if the bank hadn't lent him the money.",
+        "category": "INVERSION",
+        "id": "g_1095"
+    },
+    {
+        "vietnamese": "Chỉ với khoản vay của ngân hàng, anh ta mới có thể mua xe",
+        "english": "Chỉ với khoản vay của ngân hàng, anh ta mới có thể mua xe Only with the bank's loan could he buy the car.",
+        "category": "INVERSION",
+        "id": "g_1096"
+    },
+    {
+        "vietnamese": "Họ không thể tiếp tục làm việc cho đến khi mưa tạnh",
+        "english": "Họ không thể tiếp tục làm việc cho đến khi mưa tạnh They couldn't go on working until the rain stopped.",
+        "category": "INVERSION",
+        "id": "g_1097"
+    },
+    {
+        "vietnamese": "Không cho đến khi mưa tạnh, họ có thể tiếp tục làm việc",
+        "english": "Không cho đến khi mưa tạnh, họ có thể tiếp tục làm việc Not until the rain stopped could they go on working.",
+        "category": "INVERSION",
+        "id": "g_1098"
+    },
+    {
+        "vietnamese": "Con người đã không bay vào vũ trụ cho đến đầu những năm 1960",
+        "english": "Con người đã không bay vào vũ trụ cho đến đầu những năm 1960 Man didn't fly into space until the early 1960s. 1100 Mãi đến đầu những năm 1960, người đàn ông mới bay vào vũ trụ Not until the early 1960s đi man fly into space.",
+        "category": "INVERSION",
+        "id": "g_1099"
+    },
+    {
+        "vietnamese": "Cô hiếm khi bỏ lỡ một bài giảng",
+        "english": "Cô hiếm khi bỏ lỡ một bài giảng She seldom misses a lecture.",
+        "category": "INVERSION",
+        "id": "g_1101"
+    },
+    {
+        "vietnamese": "Hiếm khi cô ấy bỏ lỡ một bài giảng",
+        "english": "Hiếm khi cô ấy bỏ lỡ một bài giảng Seldom does she miss a lecture.",
+        "category": "INVERSION",
+        "id": "g_1102"
+    },
+    {
+        "vietnamese": "Những cuốn sách nằm trên bàn",
+        "english": "Những cuốn sách nằm trên bàn The books lay on the table.",
+        "category": "INVERSION",
+        "id": "g_1103"
+    },
+    {
+        "vietnamese": "Trên bàn đặt sách",
+        "english": "Trên bàn đặt sách On the table lay the books.",
+        "category": "INVERSION",
+        "id": "g_1104"
+    },
+    {
+        "vietnamese": "Chúng tôi vừa mới về nhà thì trời đã mưa",
+        "english": "Chúng tôi vừa mới về nhà thì trời đã mưa No sooner had we come home than it rained.",
+        "category": "INVERSION",
+        "id": "g_1105"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Lan và Tâm là bạn học trong năm học này",
+        "english": "Lan và Tâm là bạn học trong năm học này Lan and Tam are classmates in this school year. 1107 Một số học sinh vắng mặt Several of the students are absent.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1106"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Người nghèo sống ở đây cần sự giúp đỡ",
+        "english": "Người nghèo sống ở đây cần sự giúp đỡ The poor living here need help. 1109 Một số học sinh đang đi dã ngoại A number of students are going to the class picnic.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1108"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Người Việt Nam chăm chỉ",
+        "english": "Người Việt Nam chăm chỉ The Vietnamese are hard-working.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1110"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Đồ nội thất đắt hơn chúng tôi nghĩ",
+        "english": "Đồ nội thất đắt hơn chúng tôi nghĩ The furniture was more expensive than we thought.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1111"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Tiếng Việt là ngôn ngữ của Việt Nam",
+        "english": "Tiếng Việt là ngôn ngữ của Việt Nam Vietnamese is the language of Vietnam. 1113 Mỗi cậu bé có một chiếc xe đạp Each of the boys has a bicycle.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1112"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Ai đó đã lấy bút chì của tôi",
+        "english": "Ai đó đã lấy bút chì của tôi Someone has taken my pencil. 1115 Mỗi người được phép mang 20kg hành lý Each person is allowed 20kg luggage. 1116 Mọi người đều biết Tom Everybody knows Tom.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1114"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Số ngày trong một tuần là bảy",
+        "english": "Số ngày trong một tuần là bảy The number of days in a week is seven.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1117"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Chạy bộ /Chạy bộ hàng ngày là tốt cho sức khỏe của bạn",
+        "english": "Chạy bộ /Chạy bộ hàng ngày là tốt cho sức khỏe của bạn To jog/Jogging everyday is good for your health.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1118"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Những gì anh ấy nói là không đúng",
+        "english": "Những gì anh ấy nói là không đúng What he said wasn’t true.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1119"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Việc bạn đạt điểm cao ở trường là rất tốt",
+        "english": "Việc bạn đạt điểm cao ở trường là rất tốt That you get high mark in school is very good.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1120"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Phim Tom và Jerry là phim hoạt hình yêu thích của con trai tôi",
+        "english": "Phim Tom và Jerry là phim hoạt hình yêu thích của con trai tôi “Tom and Jerry” is my son’s favourite cartoon.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1121"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Ông già với chú chó của mình đi qua nhà tôi mỗi sáng",
+        "english": "Ông già với chú chó của mình đi qua nhà tôi mỗi sáng The old man with his dog passes my house every morning.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1122"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Ông Johnson cũng như các trợ lý của ông đã đến",
+        "english": "Ông Johnson cũng như các trợ lý của ông đã đến Mr. Johnson as well as his assistants has arrived.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1123"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Cô ấy cũng như tôi sẽ đi học đại học năm nay",
+        "english": "Cô ấy cũng như tôi sẽ đi học đại học năm nay She as well as I is going to university this year.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1124"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Bà Smith cùng với các con trai đi nghỉ",
+        "english": "Bà Smith cùng với các con trai đi nghỉ Mrs. Smith together with her sons is away for holiday.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1125"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Bạn hoặc tôi…….",
+        "english": "Bạn hoặc tôi……. You or I am",
+        "category": "UNCATEGORIZED",
+        "id": "g_1126"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Không chỉ cô mà cả họ ……",
+        "english": "Không chỉ cô mà cả họ …… Not only she but also they are…..",
+        "category": "UNCATEGORIZED",
+        "id": "g_1127"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Nghiên cứu về cách thức hoạt động của các sinh vật được gọi là triết học",
+        "english": "Nghiên cứu về cách thức hoạt động của các sinh vật được gọi là triết học The study of how living things work is called philosophy. 1129 Một số học sinh đến lớp muộn Some of the students are late for class.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1128"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Hầu hết nước bị ô nhiễm",
+        "english": "Hầu hết nước bị ô nhiễm Most of the water is polluted.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1130"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Đa số nghĩ rằng",
+        "english": "Đa số nghĩ rằng The majority think that…(đa số nghĩ rằng…)",
+        "category": "UNCATEGORIZED",
+        "id": "g_1131"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Cả nhà đang ăn sáng",
+        "english": "Cả nhà đang ăn sáng The family are having breakfast.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1132"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Gia đình rất bảo thủ",
+        "english": "Gia đình rất bảo thủ The family is very conservative.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1133"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Có một quyển sách",
+        "english": "Có một quyển sách There is a book.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1134"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Có hai quyển sách",
+        "english": "Có hai quyển sách There are two books",
+        "category": "UNCATEGORIZED",
+        "id": "g_1135"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Có một quyển sách và hai cây bút",
+        "english": "Có một quyển sách và hai cây bút There is a book and two pens. 1137 Một trong những cô gái đó đi chơi là rất giỏi. One of the girls who go out is very good.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1136"
+    },
+    {
+        "vietnamese": "SUBJECT-VERB AGREEMENT Give me your scissors",
+        "english": "Give me your scissors Give me your scissors. Mine are very old.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1138"
+    },
+    {
+        "vietnamese": "Relatives Chúng tôi đã mua dàn âm thanh nổi đã được quảng cáo giá giảm",
+        "english": "Chúng tôi đã mua dàn âm thanh nổi đã được quảng cáo giá giảm We bought the stereo that had been advertised at a reduced price.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1139"
+    },
+    {
+        "vietnamese": "Relatives Chúng tôi đã mua dàn âm thanh nổi. Nó đã được quảng cáo với giá giảm",
+        "english": "Chúng tôi đã mua dàn âm thanh nổi. Nó đã được quảng cáo với giá giảm We bought the stereo. It had been advertised at a reduced price.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1140"
+    },
+    {
+        "vietnamese": "Relatives George sẽ mua căn nhà (mà) chúng tôi đã nghĩ đến việc mua",
+        "english": "George sẽ mua căn nhà (mà) chúng tôi đã nghĩ đến việc mua George is going to buy the house (that) we have been thinking of buying.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1141"
+    },
+    {
+        "vietnamese": "Relatives George sẽ mua một ngôi nhà. Chúng tôi đã nghĩ đến việc mua nó",
+        "english": "George sẽ mua một ngôi nhà. Chúng tôi đã nghĩ đến việc mua nó George is going to buy a house. We have been thinking of buying it.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1142"
+    },
+    {
+        "vietnamese": "Relatives Đó là cuốn tiểu thuyết hay nhất đã được viết bởi tác giả này",
+        "english": "Đó là cuốn tiểu thuyết hay nhất đã được viết bởi tác giả này That is the best novel that has been written by this author.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1143"
+    },
+    {
+        "vietnamese": "Relatives Tôi muốn thấy tất cả những gì anh ấy sở hữu",
+        "english": "Tôi muốn thấy tất cả những gì anh ấy sở hữu I want to see all that he possesses.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1144"
+    },
+    {
+        "vietnamese": "Relatives Tất cả những quả táo rơi đều bị lợn ăn",
+        "english": "Tất cả những quả táo rơi đều bị lợn ăn All the apples that fall are eaten by pig.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1145"
+    },
+    {
+        "vietnamese": "Relatives Người đàn ông đang ở trong căn phòng này đang tức giận",
+        "english": "Người đàn ông đang ở trong căn phòng này đang tức giận The man who is in this room is angry.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1146"
+    },
+    {
+        "vietnamese": "Relatives Những người đàn ông mà tôi không thích tức giận",
+        "english": "Những người đàn ông mà tôi không thích tức giận The men (whom) I don't like are angry.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1147"
+    },
+    {
+        "vietnamese": "Relatives Người đàn ông mà bạn vừa nói chuyện là chủ tịch của công ty",
+        "english": "Người đàn ông mà bạn vừa nói chuyện là chủ tịch của công ty The man to whom you have just talked is the chairman of the company.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1148"
+    },
+    {
+        "vietnamese": "Relatives Người đàn ông mà bạn đang mong đợi là chủ tịch của công ty",
+        "english": "Người đàn ông mà bạn đang mong đợi là chủ tịch của công ty The man whom you are looking forward to is the chairman of the company.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1149"
+    },
+    {
+        "vietnamese": "Relatives Cỏ dại nổi lên bề mặt nên được loại bỏ trước khi chúng phân rã",
+        "english": "Cỏ dại nổi lên bề mặt nên được loại bỏ trước khi chúng phân rã Weeds that float to the surface should be removed before they decay.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1150"
+    },
+    {
+        "vietnamese": "Relatives Xe của tôi, rất lớn, sử dụng quá nhiều xăng..",
+        "english": "Xe của tôi, rất lớn, sử dụng quá nhiều xăng.. My car, which is very large, uses too much gasoline.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1151"
+    },
+    {
+        "vietnamese": "Relatives Rượu rum này, mà tôi đã mua ở Quần đảo Virgin, rất ngon",
+        "english": "Rượu rum này, mà tôi đã mua ở Quần đảo Virgin, rất ngon This rum, which I bought in the Virgin Islands, is very smooth.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1152"
+    },
+    {
+        "vietnamese": "Relatives Những khách du lịch biết về trận lũ đều chọn đường khác.",
+        "english": "Những khách du lịch biết về trận lũ đều chọn đường khác. The travelers who knew about the flood took another road.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1153"
+    },
+    {
+        "vietnamese": "Relatives Rượu được cất trong hầm đã bị hủy hoại.",
+        "english": "Rượu được cất trong hầm đã bị hủy hoại. The wine that was stored in the cellar was ruined.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1154"
+    },
+    {
+        "vietnamese": "Relatives Những người du lịch, những người biết về trận lụt, đã đi một con đường khác.",
+        "english": "Những người du lịch, những người biết về trận lụt, đã đi một con đường khác. The travelers, who knew about the flood, took another road.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1155"
+    },
+    {
+        "vietnamese": "Relatives Rượu, được lưu trữ trong hầm, đã bị hủy hoại",
+        "english": "Rượu, được lưu trữ trong hầm, đã bị hủy hoại The wine, which was stored in the cellar, was ruined.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1156"
+    },
+    {
+        "vietnamese": "Relatives Các con trai của bà, cả hai đều đang làm việc ở nước ngoài, gọi cho bà mỗi tuần",
+        "english": "Các con trai của bà, cả hai đều đang làm việc ở nước ngoài, gọi cho bà mỗi tuần Her sons, both of whom are working abroad, call her every week.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1157"
+    },
+    {
+        "vietnamese": "Relatives Những chiếc xe buýt, hầu hết đều chở đầy hành khách, bắt đầu kéo ra",
+        "english": "Những chiếc xe buýt, hầu hết đều chở đầy hành khách, bắt đầu kéo ra Những chiếc xe buýt, hầu hết đều chở đầy hành khách, bắt đầu kéo ra.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1158"
+    },
+    {
+        "vietnamese": "Relatives The buses, most of which were full of passengers, began to pull out.",
+        "english": "The buses, most of which were full of passengers, began to pull out. The buses, most of which were full of passengers, began to pull out.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1159"
+    },
+    {
+        "vietnamese": "Relatives Những gì chúng tôi đã mong đợi là kết quả của bài kiểm tra.",
+        "english": "Những gì chúng tôi đã mong đợi là kết quả của bài kiểm tra. What we have expected is the result of the test.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1160"
+    },
+    {
+        "vietnamese": "Relatives Điều gì đã xảy ra với anh ấy ngày hôm qua có thể xảy ra với chúng tôi vào ngày mai.",
+        "english": "Điều gì đã xảy ra với anh ấy ngày hôm qua có thể xảy ra với chúng tôi vào ngày mai. Điều gì đã xảy ra với anh ấy ngày hôm qua có thể xảy ra với chúng tôi vào ngày mai. 1162 What happened to him yesterday might happen to us tomorrow. What happened to him yesterday might happen to us tomorrow.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1161"
+    },
+    {
+        "vietnamese": "Relatives James, có cha là chủ tịch của công ty, đã nhận được một chương trình khuyến mãi",
+        "english": "James, có cha là chủ tịch của công ty, đã nhận được một chương trình khuyến mãi James, whose father is the president of the company, has received a promotion.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1163"
+    },
+    {
+        "vietnamese": "Relatives Tài khoản tiết kiệm, trong đó lãi suất khá cao, hiện đang rất phổ biến",
+        "english": "Tài khoản tiết kiệm, trong đó lãi suất khá cao, hiện đang rất phổ biến Savings account, of which interest rate is quite high, is very common now. (of which = whose) 1165 Một ngôi nhà có tường được làm bằng kính rất dễ bị phá vỡ = Một ngôi nhà có tường bằng kính rất dễ bị phá vỡ A house whose walls were made of glass is easy to break = A house with glass walls is easy to break.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1164"
+    },
+    {
+        "vietnamese": "Relatives Đây là giá trị của X (được) thu được/đạt được từ các khu vực dưới đường cong thông thường",
+        "english": "Đây là giá trị của X (được) thu được/đạt được từ các khu vực dưới đường cong thông thường This is the value of X (which was) obtained from the areas under the normal curve.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1166"
+    },
+    {
+        "vietnamese": "Relatives Cốc có mỏ (nghĩa là) trên quầy chứa dung dịch",
+        "english": "Cốc có mỏ (nghĩa là) trên quầy chứa dung dịch The beaker (that is) on the counter contains a solution.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1167"
+    },
+    {
+        "vietnamese": "Relatives Cô gái (đang) chạy xuống đường có thể gặp rắc rối",
+        "english": "Cô gái (đang) chạy xuống đường có thể gặp rắc rối The girl (who is) running down the street might be in trouble.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1168"
+    },
+    {
+        "vietnamese": "Relatives Ông Jackson, (là) một giáo sư, đang đi du lịch ở Mideast năm nay",
+        "english": "Ông Jackson, (là) một giáo sư, đang đi du lịch ở Mideast năm nay Mr Jackson, (who is) a professor, is traveling in the Mideast this year.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1169"
+    },
+    {
+        "vietnamese": "Relatives Tổng thống đã có một bài phát biểu cho người đàn ông nổi tiếng đến thăm (người đã đến thăm) ông",
+        "english": "Tổng thống đã có một bài phát biểu cho người đàn ông nổi tiếng đến thăm (người đã đến thăm) ông The president made a speech for the famous man visiting (who visited) him.",
+        "category": "UNCATEGORIZED",
+        "id": "g_1170"
+    },
+    {
+        "vietnamese": "Phrases Tôi nghĩ rằng tôi cần phải đưa xe của tôi đến thợ máy vì nó bị trục trặc",
+        "english": "Tôi nghĩ rằng tôi cần phải đưa xe của tôi đến thợ máy vì nó bị trục trặc I think I need to take my car to the mechanic because it's acting up again. act up = behave or function improperly",
+        "category": "UNCATEGORIZED",
+        "id": "g_1171"
+    },
+    {
+        "vietnamese": "Phrases Tôi đã thêm các biên lai và tổng cộng là $ 135,46",
+        "english": "Tôi đã thêm các biên lai và tổng cộng là $ 135,46 I added up the receipts and it totaled $135.46. add * up + = calculate a sum",
+        "category": "UNCATEGORIZED",
+        "id": "g_1172"
+    },
+    {
+        "vietnamese": "Phrases Tổng chi phí cộng thêm lên tới $ 325,00",
+        "english": "Tổng chi phí cộng thêm lên tới $ 325,00 The total expenses added up to $325.00. add up to = equal an amount",
+        "category": "UNCATEGORIZED",
+        "id": "g_1173"
+    },
+    {
+        "vietnamese": "Phrases Câu chuyện của cô ấy không có ý nghĩa. Tôi nghĩ rằng cô ấy đang nói dối",
+        "english": "Câu chuyện của cô ấy không có ý nghĩa. Tôi nghĩ rằng cô ấy đang nói dối Her story doesn't add up. I think she is lying. add up = make sense",
+        "category": "UNCATEGORIZED",
+        "id": "g_1174"
+    },
+    {
+        "vietnamese": "Phrases Tôi không thể tin rằng Joe cuối cùng đã rủ tôi đi hẹn hò!",
+        "english": "Tôi không thể tin rằng Joe cuối cùng đã rủ tôi đi hẹn hò! I can't believe that Joe finally asked me out on a date! ask * out + = invite on a date",
+        "category": "UNCATEGORIZED",
+        "id": "g_1175"
+    },
+    {
+        "vietnamese": "Phrases Tại sao chúng ta không mời Johnsons dung bữa tối?",
+        "english": "Tại sao chúng ta không mời Johnsons dung bữa tối? Why don't we ask the Johnsons over for dinner? ask *over = invite to one's home",
+        "category": "UNCATEGORIZED",
+        "id": "g_1176"
+    },
+    {
+        "vietnamese": "Phrases Cuối cùng Sam không giữ lời hứa.",
+        "english": "Cuối cùng Sam không giữ lời hứa. Sam backed out at the last second. back out = not keep (a promise, agreement,deal)",
+        "category": "UNCATEGORIZED",
+        "id": "g_1177"
+    },
+    {
+        "vietnamese": "Phrases Bạn cần các ví dụ để hỗ trợ ý kiến của bạn.",
+        "english": "Bạn cần các ví dụ để hỗ trợ ý kiến của bạn. You need examples to back up your opinion. = back * up = give support",
+        "category": "UNCATEGORIZED",
+        "id": "g_1178"
+    },
+    {
+        "vietnamese": "Phrases Bạn có thể di chuyển về phía sau một chút để tôi có thể mở ngăn kéo này.",
+        "english": "Bạn có thể di chuyển về phía sau một chút để tôi có thể mở ngăn kéo này. Could you back up a little so I can open this drawer. = back up = move backwards, reverse",
+        "category": "UNCATEGORIZED",
+        "id": "g_1179"
+    },
+    {
+        "vietnamese": "Phrases Cô ấy đã nói xấu/chỉ trích anh vì đến muộn",
+        "english": "Cô ấy đã nói xấu/chỉ trích anh vì đến muộn She bawled him out for arriving late. = bawl * out = criticize, reprimand (inf.)",
+        "category": "UNCATEGORIZED",
+        "id": "g_1180"
+    },
+    {
+        "vietnamese": "Phrases Người lính phải cắn/chịu đựng dây đeo bằng da trong khi bác sĩ gỡ một viên đạn ra khỏi cánh tay của người lính",
+        "english": "Người lính phải cắn/chịu đựng dây đeo bằng da trong khi bác sĩ gỡ một viên đạn ra khỏi cánh tay của người lính The soldier had to bear down on the leather strap while the doctor removed a bullet from the soldier's arm. = bear down on = bite",
+        "category": "UNCATEGORIZED",
+        "id": "g_1181"
+    },
+    {
+        "vietnamese": "Phrases Hoa Kỳ đang hạ bệ những kẻ buôn bán ma túy.",
+        "english": "Hoa Kỳ đang hạ bệ những kẻ buôn bán ma túy. The U.S.A. is bearing down on drug traffickers. = bear down on = take strong measures against",
+        "category": "UNCATEGORIZED",
+        "id": "g_1182"
+    },
+    {
+        "vietnamese": "Phrases Tôi không nghĩ anh ấy sẽ chịu đựng tốt trong tình huống đó",
+        "english": "Tôi không nghĩ anh ấy sẽ chịu đựng tốt trong tình huống đó I didn't think he would bear up so well in that situation. = bear up = withstand",
+        "category": "UNCATEGORIZED",
+        "id": "g_1183"
+    },
+    {
+        "vietnamese": "Phrases Làm thế nào mà anh chịu đựng được dưới áp lực cực độ như vậy?",
+        "english": "Làm thế nào mà anh chịu đựng được dưới áp lực cực độ như vậy? How did he bear up under such extreme pressure? = bear up under + = withstand",
+        "category": "UNCATEGORIZED",
+        "id": "g_1184"
+    },
+    {
+        "vietnamese": "Phrases Hãy chịu đựng tôi trong khi tôi điền vào giấy tờ.",
+        "english": "Hãy chịu đựng tôi trong khi tôi điền vào giấy tờ. Please bear with me while I fill out the paperwork. = bear with + = be patient",
+        "category": "UNCATEGORIZED",
+        "id": "g_1185"
+    },
+    {
+        "vietnamese": "Phrases Anh em họ của tôi bất ngờ ghé thăm với cả gia đình anh ấy.",
+        "english": "Anh em họ của tôi bất ngờ ghé thăm với cả gia đình anh ấy. My cousin blew in unexpectedly with his entire family. = blow in = visit unexpectedly (inf.)",
+        "category": "UNCATEGORIZED",
+        "id": "g_1186"
+    },
+    {
+        "vietnamese": "Phrases Tất cả công khai tiêu cực này sẽ thông qua trong một vài tuần.",
+        "english": "Tất cả công khai tiêu cực này sẽ thông qua trong một vài tuần. All this negative publicity will blow over in a couple of weeks. = blow over = pass without creating a problem",
+        "category": "UNCATEGORIZED",
+        "id": "g_1187"
+    },
+    {
+        "vietnamese": "Tự hào về lòng yêu nước",
+        "english": "Take pride in their origin",
+        "category": "ADVERTISING",
+        "id": "w5f_3311"
+    },
+    {
+        "vietnamese": "Những giá trị truyền thống và con người",
+        "english": "Traditional values and identity",
+        "category": "ADVERTISING",
+        "id": "w5f_3312"
+    },
+    {
+        "vietnamese": "Một cái nhìn quan điểm toàn diện hơn về cuộc sống",
+        "english": "Well-rounded perspective of life",
+        "category": "ADVERTISING",
+        "id": "w5f_3313"
+    },
+    {
+        "vietnamese": "Bối cảnh lịch sử",
+        "english": "Historical backgrounds",
+        "category": "ADVERTISING",
+        "id": "w5f_3314"
+    },
+    {
+        "vietnamese": "những thách thức về sức khỏe cộng đồng",
+        "english": "Public health challenges",
+        "category": "ADVERTISING",
+        "id": "w5f_3315"
+    },
+    {
+        "vietnamese": "sự tiêu thụ thịt quá đà",
+        "english": "Excessive consumption of meat",
+        "category": "ADVERTISING",
+        "id": "w5f_3316"
+    },
+    {
+        "vietnamese": "tận hưởng sức khỏe tốt hơn",
+        "english": "Enjoy better health",
+        "category": "ADVERTISING",
+        "id": "w5f_3317"
+    },
+    {
+        "vietnamese": "các sản phẩm thay thế thịt",
+        "english": "Alternative meat products",
+        "category": "ADVERTISING",
+        "id": "w5f_3318"
+    },
+    {
+        "vietnamese": "Sự chiếm ưu thế của chương trình thể",
+        "english": "The dominance of men sports programs on television",
+        "category": "ADVERTISING",
+        "id": "w5f_3319"
+    },
+    {
+        "vietnamese": "Thể hiện sự ưa chuộng thể thao hơn",
+        "english": "Show a greater preference for",
+        "category": "ADVERTISING",
+        "id": "w5f_3320"
+    },
+    {
+        "vietnamese": "Thi đấu thể thao ở một cấp độ cao hơn",
+        "english": "Play at a much higher level",
+        "category": "ADVERTISING",
+        "id": "w5f_3321"
+    },
+    {
+        "vietnamese": "Cân bằng thời lượng phát sóng cho nam và",
+        "english": "Provide equal sports coverage of both genders",
+        "category": "ADVERTISING",
+        "id": "w5f_3322"
+    },
+    {
+        "vietnamese": "Tạo sự cân bằng giới tính giữa nam và nữ trong xã hội",
+        "english": "Create gender equality in society",
+        "category": "ADVERTISING",
+        "id": "w5f_3323"
+    },
+    {
+        "vietnamese": "sự hướng dẫn đúng đắn",
+        "english": "Proper instruction",
+        "category": "ADVERTISING",
+        "id": "w5f_3324"
+    },
+    {
+        "vietnamese": "giai đoạn thanh thiếu niên",
+        "english": "Adolescence",
+        "category": "ADVERTISING",
+        "id": "w5f_3325"
+    },
+    {
+        "vietnamese": "một kĩ năng bẩm sinh",
+        "english": "An innate skill",
+        "category": "ADVERTISING",
+        "id": "w5f_3326"
+    },
+    {
+        "vietnamese": "quá trình nuôi dưỡng",
+        "english": "Their own upbringing",
+        "category": "ADVERTISING",
+        "id": "w5f_3327"
+    },
+    {
+        "vietnamese": "những ảnh hưởng về văn hoá",
+        "english": "Cultural influences",
+        "category": "ADVERTISING",
+        "id": "w5f_3328"
+    },
+    {
+        "vietnamese": "truyền đạt hoặc trao đổi thông tin",
+        "english": "Form of communication",
+        "category": "ADVERTISING",
+        "id": "w5f_3329"
+    },
+    {
+        "vietnamese": "cách thức giao tiếp",
+        "english": "Mode of communication",
+        "category": "ADVERTISING",
+        "id": "w5f_3330"
+    },
+    {
+        "vietnamese": "kết nối về cảm xúc với người nghe",
+        "english": "Connect with their listeners on an emotional level",
+        "category": "ADVERTISING",
+        "id": "w5f_3331"
+    },
+    {
+        "vietnamese": "truyền cảm hứng và ảnh hưởng đến người khác",
+        "english": "To inspire and influence others",
+        "category": "ADVERTISING",
+        "id": "w5f_3332"
+    },
+    {
+        "vietnamese": "Sự hiểu lầm, hiểu sai",
+        "english": "Misunderstandings",
+        "category": "ADVERTISING",
+        "id": "w5f_3333"
+    },
+    {
+        "vietnamese": "tránh hiểu sai",
+        "english": "Miscommunication",
+        "category": "ADVERTISING",
+        "id": "w5f_3334"
+    },
+    {
+        "vietnamese": "Thủ tục pháp lý",
+        "english": "Legal matters",
+        "category": "ADVERTISING",
+        "id": "w5f_3335"
+    },
+    {
+        "vietnamese": "Tiếp cận trữ lượng thông tin lớn",
+        "english": "To access huge storage of news",
+        "category": "ADVERTISING",
+        "id": "w5f_3336"
+    },
+    {
+        "vietnamese": "Chiếm lấy vị trí của báo in",
+        "english": "To take over the position of printed newspaper",
+        "category": "ADVERTISING",
+        "id": "w5f_3337"
+    },
+    {
+        "vietnamese": "trưởng thành hơn và có nhiều kinh",
+        "english": "More mature and have more life experience",
+        "category": "ADVERTISING",
+        "id": "w5f_3338"
+    },
+    {
+        "vietnamese": "tham gia khoá học lái xe an toàn",
+        "english": "To attend defensive driving courses",
+        "category": "ADVERTISING",
+        "id": "w5f_3339"
+    },
+    {
+        "vietnamese": "luật giao thông nghiêm khắc hơn",
+        "english": "Stringent traffic regulations",
+        "category": "ADVERTISING",
+        "id": "w5f_3340"
+    },
+    {
+        "vietnamese": "đóng vai trò như một sự răn",
+        "english": "To act as a deterrent to would-be traffic law breakers",
+        "category": "ADVERTISING",
+        "id": "w5f_3341"
+    },
+    {
+        "vietnamese": "phân bố nguồn lực tài",
+        "english": "To allocate financial resources to improving public transport",
+        "category": "ADVERTISING",
+        "id": "w5f_3342"
+    },
+    {
+        "vietnamese": "Sự phát triển của công nghệ tiên tiến",
+        "english": "Advancement of digital technology",
+        "category": "ADVERTISING",
+        "id": "w5f_3343"
+    },
+    {
+        "vietnamese": "Phương thức sáng tạo",
+        "english": "Creative outlet",
+        "category": "ADVERTISING",
+        "id": "w5f_3344"
+    },
+    {
+        "vietnamese": "Theo học chính thống",
+        "english": "To formally study",
+        "category": "ADVERTISING",
+        "id": "w5f_3345"
+    },
+    {
+        "vietnamese": "Tài năng bẩn sinh cho việc gì đó",
+        "english": "A natural talent for",
+        "category": "ADVERTISING",
+        "id": "w5f_3346"
+    },
+    {
+        "vietnamese": "Phát hành phim cho công chúng",
+        "english": "Release them to the mainstream public",
+        "category": "ADVERTISING",
+        "id": "w5f_3347"
+    },
+    {
+        "vietnamese": "Sự đa dạng hơn cho các bộ phim",
+        "english": "A greater diversity of films",
+        "category": "ADVERTISING",
+        "id": "w5f_3348"
+    },
+    {
+        "vietnamese": "Thông báo cho mọi người về vấn đề cấp",
+        "english": "To inform people about pressing issues",
+        "category": "ADVERTISING",
+        "id": "w5f_3349"
+    },
+    {
+        "vietnamese": "Hành động bất hợp pháp",
+        "english": "Illegality",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3350"
+    },
+    {
+        "vietnamese": "Sự ủng hộ từ xã hội",
+        "english": "Social endorsement",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3351"
+    },
+    {
+        "vietnamese": "Là một rào cản chống lại cái gì đó",
+        "english": "To be a deterrent against sth",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3352"
+    },
+    {
+        "vietnamese": "Bị tống vào tù",
+        "english": "To be condemned to jail",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3353"
+    },
+    {
+        "vietnamese": "sự bùng nổ của nguồn thông tin mạng",
+        "english": "The proliferation of online news sources",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3354"
+    },
+    {
+        "vietnamese": "thế giới điện tử",
+        "english": "A digital world",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3355"
+    },
+    {
+        "vietnamese": "nguồn đọc tin tức càng ngày càng phát triển",
+        "english": "An increasingly dominant news source",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3356"
+    },
+    {
+        "vietnamese": "sự phát triển liên tục của công nghệ",
+        "english": "The constant advancement in technology",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3357"
+    },
+    {
+        "vietnamese": "Một thể trạng mạnh khỏe, cường tráng",
+        "english": "A strong physical body",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3358"
+    },
+    {
+        "vietnamese": "Khả năng phối hợp cao",
+        "english": "High level of coordination",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3359"
+    },
+    {
+        "vietnamese": "Thể hiện tốt trong thi đấu",
+        "english": "To perform to a high level",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3360"
+    },
+    {
+        "vietnamese": "Sự tôi luyện về mặt tinh thần",
+        "english": "Mental conditioning",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3361"
+    },
+    {
+        "vietnamese": "Tình trạng sức khỏe tốt",
+        "english": "High levels of strength and fitness",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3362"
+    },
+    {
+        "vietnamese": "Thể hiện tốt trong thời gian dài",
+        "english": "Consistently perform at a very high level",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3363"
+    },
+    {
+        "vietnamese": "Thỏa mãn trẻ em với",
+        "english": "Satisfy children of different preferences for entertainment",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3364"
+    },
+    {
+        "vietnamese": "cường quốc kinh tế mạnh nhất",
+        "english": "The strongest economic superpower",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3365"
+    },
+    {
+        "vietnamese": "Sự thiếu nhận thức và kiến thức về một chế độ ăn uống",
+        "english": "Lack of awareness and knowledge",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3366"
+    },
+    {
+        "vietnamese": "Sự thống trị của đồ ăn nhanh",
+        "english": "Dominance of fast food",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3367"
+    },
+    {
+        "vietnamese": "Những lối sống ít vận động",
+        "english": "Sedentary lifestyles",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3368"
+    },
+    {
+        "vietnamese": "Những bữa ăn tiện lợi nhưng ít dinh dưỡng",
+        "english": "Convenient but nutrient-poor meals",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3369"
+    },
+    {
+        "vietnamese": "Giảm thiểu sự đông đúc cúa",
+        "english": "Relieves the density of passengers on public vehicles",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3370"
+    },
+    {
+        "vietnamese": "thực thi những quyết định đó",
+        "english": "To implement those decisions",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3371"
+    },
+    {
+        "vietnamese": "sự đáng tin cậy và có sẵn của người",
+        "english": "The reliability and availability of good workers",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3372"
+    },
+    {
+        "vietnamese": "nguồn lao động đáng tin cậy và lành nghề",
+        "english": "A skilled and reliable work force",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3373"
+    },
+    {
+        "vietnamese": "Thâm nhập vào đâu đó/cái gì đó",
+        "english": "Infiltrated",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3374"
+    },
+    {
+        "vietnamese": "Thúc đẩy sự giao tiếp",
+        "english": "Facilitate communication",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3375"
+    },
+    {
+        "vietnamese": "Kết nối toàn cầu với ai",
+        "english": "Globally connect with",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3376"
+    },
+    {
+        "vietnamese": "Có những mối quan tâm giống nhau",
+        "english": "Share common interests",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3377"
+    },
+    {
+        "vietnamese": "Có thể tiếp cận tới cái gì",
+        "english": "Have free access to",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3378"
+    },
+    {
+        "vietnamese": "Trở thành nạn nhân của sự lạm dụng giao",
+        "english": "Fall prey to online communication abuse",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3379"
+    },
+    {
+        "vietnamese": "Sự quấy rối và bắt nạt trên mạng",
+        "english": "Online bullying and harassment",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3380"
+    },
+    {
+        "vietnamese": "Một môi trường độc hại",
+        "english": "A toxic environment",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3381"
+    },
+    {
+        "vietnamese": "Bị tấn công bằng lời nói",
+        "english": "Be verbally abused",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3382"
+    },
+    {
+        "vietnamese": "Những nội dung cây động",
+        "english": "Hateful or abusive contents",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3383"
+    },
+    {
+        "vietnamese": "Những người dùng không thích sự giao thiệp thực tế (tạm dịch)",
+        "english": "Reclusive users",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3384"
+    },
+    {
+        "vietnamese": "có nhiều kinh nghiệm quý báu",
+        "english": "A great deal of rewarding experience",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3385"
+    },
+    {
+        "vietnamese": "Có hiểu biết sâu về cái gì",
+        "english": "Have profound understanding of",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3386"
+    },
+    {
+        "vietnamese": "cung cấp cho chúng ta đủ",
+        "english": "To provide us with sufficient understanding of something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3387"
+    },
+    {
+        "vietnamese": "tận mắt chiêm ngưỡng",
+        "english": "To be in the presence of something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3388"
+    },
+    {
+        "vietnamese": "ngắm nhìn sự trang nghiêm oai vệ của những địa",
+        "english": "To admire the grandeur of these places",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3389"
+    },
+    {
+        "vietnamese": "trưng bày một bộ sưu",
+        "english": "To exhibit a huge collection of priceless national masterpieces",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3390"
+    },
+    {
+        "vietnamese": "sức hấp dẫn về mặt thẩm mỹ của kiến",
+        "english": "The aesthetic appeal of French architecture",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3391"
+    },
+    {
+        "vietnamese": "Dùng trí tưởng tượng để hình dung cái gì đó",
+        "english": "To use imagination to visualize something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3392"
+    },
+    {
+        "vietnamese": "Tăng trí tưởng tượng và khả năng sáng tạo",
+        "english": "To enhance one’s imagination and creativity",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3393"
+    },
+    {
+        "vietnamese": "Điều tương tự thì khó có thể đúng với cái",
+        "english": "It/this/that can hardly be the case for something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3394"
+    },
+    {
+        "vietnamese": "khả năng ngôn ngữ.",
+        "english": "Verbal ability",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3395"
+    },
+    {
+        "vietnamese": "yếu tố quan trọng",
+        "english": "Key element",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3396"
+    },
+    {
+        "vietnamese": "gia đình cơ bản gồm có bố mẹ và con cái",
+        "english": "Nuclear family",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3397"
+    },
+    {
+        "vietnamese": "người chồng hoặc vợ",
+        "english": "Spouse",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3398"
+    },
+    {
+        "vietnamese": "bố hoặc mẹ ở nhà để chăm sóc con cái và làm việc nhà",
+        "english": "A stay-at-home parent",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3399"
+    },
+    {
+        "vietnamese": "nhóm lại, tập hợp lại",
+        "english": "Group together",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3400"
+    },
+    {
+        "vietnamese": "khí thải",
+        "english": "Exhaust fumes (luôn ở dạng số nhiều)",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3401"
+    },
+    {
+        "vietnamese": "sinh vật biển",
+        "english": "Marine species",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3402"
+    },
+    {
+        "vietnamese": "làm vấn đề tồi tệ hơn",
+        "english": "To worsen the problem",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3403"
+    },
+    {
+        "vietnamese": "quản trị viên dữ liệu",
+        "english": "Database administrator",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3404"
+    },
+    {
+        "vietnamese": "thương mại điện tử",
+        "english": "E-commerce (electronic commerce)",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3405"
+    },
+    {
+        "vietnamese": "đối mặt với điều gì đó, thường là không dễ chịu",
+        "english": "Face something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3406"
+    },
+    {
+        "vietnamese": "tạo sức ép cho ai đó để làm cái gì đó",
+        "english": "Place a burden on somebody to do something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3407"
+    },
+    {
+        "vietnamese": "người nộp thuế",
+        "english": "Tax-payer",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3408"
+    },
+    {
+        "vietnamese": "Chương trình TV",
+        "english": "Telecasts",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3409"
+    },
+    {
+        "vietnamese": "tục lệ xa lạ",
+        "english": "Exotic practices",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3410"
+    },
+    {
+        "vietnamese": "thay đổi và phát triển",
+        "english": "To change and evolve to meet the demands of modern society",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3411"
+    },
+    {
+        "vietnamese": "thích nghi với cái gì đó",
+        "english": "To adapt to something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3412"
+    },
+    {
+        "vietnamese": "những sự phát triển",
+        "english": "The developments in hi-tech machines and artificial intelligence",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3413"
+    },
+    {
+        "vietnamese": "bị thay thế bởi những quy trình tự động",
+        "english": "Be replaced by automated processes",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3414"
+    },
+    {
+        "vietnamese": "nhu cầu tăng lên về",
+        "english": "The ever-increasing desire to cut expenses and increase profits",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3415"
+    },
+    {
+        "vietnamese": "phương tiện tự động",
+        "english": "Autonomous vehicles",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3416"
+    },
+    {
+        "vietnamese": "kết hợp công nghệ vào trong quy trình",
+        "english": "To incorporate technology into their process",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3417"
+    },
+    {
+        "vietnamese": "cập nhật với cái gì đó (xu hướng, công nghệ…)",
+        "english": "To keep up to date with something",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3418"
+    },
+    {
+        "vietnamese": "độ tín nhiệm",
+        "english": "Credibility",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3419"
+    },
+    {
+        "vietnamese": "sự gắn bó với tổ chức",
+        "english": "Organizational commitment",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3420"
+    },
+    {
+        "vietnamese": "áp lực công việc và sự quá tải, kiệt sức",
+        "english": "Work stress or burnout",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3421"
+    },
+    {
+        "vietnamese": "tỷ lệ nghỉ việc",
+        "english": "Turnover rate",
+        "category": "ANIMAL RIGHTS",
+        "id": "w5f_3422"
+    },
+    {
+        "vietnamese": "chất khí thải độc hại",
+        "english": "Toxic waste and exhaust",
+        "category": "CITIES",
+        "id": "w5f_3423"
+    },
+    {
+        "vietnamese": "một loại hình giải trí, thư giãn",
+        "english": "A source of entertainment = a form of entertainment",
+        "category": "CITIES",
+        "id": "w5f_3424"
+    },
+    {
+        "vietnamese": "một phần của nền công nghiệp giải trí",
+        "english": "A part of the entertainment industry",
+        "category": "CITIES",
+        "id": "w5f_3425"
+    },
+    {
+        "vietnamese": "giá trị đạo đức được hình thành",
+        "english": "Morals and values are shaped by what they watch",
+        "category": "CITIES",
+        "id": "w5f_3426"
+    },
+    {
+        "vietnamese": "phân loại",
+        "english": "Categorized",
+        "category": "CITIES",
+        "id": "w5f_3427"
+    },
+    {
+        "vietnamese": "quan tâm thể thao",
+        "english": "Sport-minded",
+        "category": "CITIES",
+        "id": "w5f_3428"
+    },
+    {
+        "vietnamese": "thu hút sự chú ý",
+        "english": "Capture attention",
+        "category": "CITIES",
+        "id": "w5f_3429"
+    },
+    {
+        "vietnamese": "không đều",
+        "english": "Disproportionately",
+        "category": "CITIES",
+        "id": "w5f_3430"
+    },
+    {
+        "vietnamese": "Hỗ trợ quốc tế đến những vùng nghèo khó",
+        "english": "International aids to deprived regions",
+        "category": "CITIES",
+        "id": "w5f_3431"
+    },
+    {
+        "vietnamese": "Người nghèo, người bất hạnh",
+        "english": "The underprivileged",
+        "category": "CITIES",
+        "id": "w5f_3432"
+    },
+    {
+        "vietnamese": "Sự sung túc của công dân",
+        "english": "The well-being of their citizens",
+        "category": "CITIES",
+        "id": "w5f_3433"
+    },
+    {
+        "vietnamese": "Những nước giàu có",
+        "english": "Affluent nations",
+        "category": "CITIES",
+        "id": "w5f_3434"
+    },
+    {
+        "vietnamese": "sự tăng lên ở cái gì đó",
+        "english": "A rise in something",
+        "category": "CITIES",
+        "id": "w5f_3435"
+    },
+    {
+        "vietnamese": "sự phá sản nhiều của",
+        "english": "Increasing bankruptcies among small town-center shops",
+        "category": "CITIES",
+        "id": "w5f_3436"
+    },
+    {
+        "vietnamese": "gây ra tổn thất lớn cho nền",
+        "english": "To cause a significant loss for the economy of any city",
+        "category": "CITIES",
+        "id": "w5f_3437"
+    },
+    {
+        "vietnamese": "tắc đường",
+        "english": "Traffic congestion",
+        "category": "CITIES",
+        "id": "w5f_3438"
+    },
+    {
+        "vietnamese": "ảnh hưởng tiêu cực tới sức khoẻ con người",
+        "english": "To adversely affect human health",
+        "category": "CITIES",
+        "id": "w5f_3439"
+    },
+    {
+        "vietnamese": "đối mặt với quá tải dân số và hậu quả là áp lực đè nặng về",
+        "english": "housing supply systems",
+        "category": "CITIES",
+        "id": "w5f_3440"
+    },
+    {
+        "vietnamese": "mức độ sản xuất",
+        "english": "Scale of production",
+        "category": "CITIES",
+        "id": "w5f_3441"
+    },
+    {
+        "vietnamese": "hình ảnh thương hiệu",
+        "english": "Brand image",
+        "category": "CITIES",
+        "id": "w5f_3442"
+    },
+    {
+        "vietnamese": "tấn công dồn dập",
+        "english": "Bombarded",
+        "category": "CITIES",
+        "id": "w5f_3443"
+    },
+    {
+        "vietnamese": "trở nên ghét",
+        "english": "Develop an aversion",
+        "category": "CITIES",
+        "id": "w5f_3444"
+    },
+    {
+        "vietnamese": "tỉ lệ sinh",
+        "english": "Rate of birth",
+        "category": "CITIES",
+        "id": "w5f_3445"
+    },
+    {
+        "vietnamese": "duy trì sự sống",
+        "english": "Sustaining life",
+        "category": "CITIES",
+        "id": "w5f_3446"
+    },
+    {
+        "vietnamese": "sự sống còn của loài người",
+        "english": "The survival of the human race",
+        "category": "CITIES",
+        "id": "w5f_3447"
+    },
+    {
+        "vietnamese": "có tuổi thọ dài hơn trước đó",
+        "english": "To have longer life expectancy than before",
+        "category": "CITIES",
+        "id": "w5f_3448"
+    },
+    {
+        "vietnamese": "người dân lớn tuổi",
+        "english": "Senior citizens",
+        "category": "CITIES",
+        "id": "w5f_3449"
+    },
+    {
+        "vietnamese": "đóng góp nhân lực miễn",
+        "english": "To contribute free labor to ameliorating their communities",
+        "category": "CITIES",
+        "id": "w5f_3450"
+    },
+    {
+        "vietnamese": "trả khoản lương hưu",
+        "english": "To pay for increased retirement pensions and health care costs",
+        "category": "CITIES",
+        "id": "w5f_3451"
+    },
+    {
+        "vietnamese": "chịu gánh nặng tài chính cao hơn",
+        "english": "To bear a greater financial burden",
+        "category": "CITIES",
+        "id": "w5f_3452"
+    },
+    {
+        "vietnamese": "sự hoà mình với đám đông",
+        "english": "Feeling of togetherness",
+        "category": "CITIES",
+        "id": "w5f_3453"
+    },
+    {
+        "vietnamese": "có tương tác cá nhân",
+        "english": "Have personal interaction",
+        "category": "CITIES",
+        "id": "w5f_3454"
+    },
+    {
+        "vietnamese": "thứ gây mất tập trung",
+        "english": "Distractors",
+        "category": "CITIES",
+        "id": "w5f_3455"
+    },
+    {
+        "vietnamese": "Disturb their experience: ảnh hưởng trải nghiệm",
+        "english": "Make a difference",
+        "category": "CITIES",
+        "id": "w5f_3456"
+    },
+    {
+        "vietnamese": "Bất ổn xã hội và leo thang tội phạm",
+        "english": "Social unrest and crime escalation",
+        "category": "CRIME",
+        "id": "w5f_3457"
+    },
+    {
+        "vietnamese": "sự linh hoạt lớn và tính sáng tạo",
+        "english": "Great versatility and creativity",
+        "category": "CRIME",
+        "id": "w5f_3458"
+    },
+    {
+        "vietnamese": "Lương hưu và chăm sóc y tế",
+        "english": "Old-age pensions and medical care",
+        "category": "CRIME",
+        "id": "w5f_3459"
+    },
+    {
+        "vietnamese": "Tuổi nghỉ hưu",
+        "english": "Retirement age",
+        "category": "CRIME",
+        "id": "w5f_3460"
+    },
+    {
+        "vietnamese": "không có bất kì",
+        "english": "Devoid of any",
+        "category": "CRIME",
+        "id": "w5f_3461"
+    },
+    {
+        "vietnamese": "sống hài hòa với nó",
+        "english": "Live in harmony with it",
+        "category": "CRIME",
+        "id": "w5f_3462"
+    },
+    {
+        "vietnamese": "tẩy chay cái gì đó",
+        "english": "Boycott something",
+        "category": "CRIME",
+        "id": "w5f_3463"
+    },
+    {
+        "vietnamese": "dựa trên tổn thất, sự hy sinh của ai đó/cái gì đó",
+        "english": "At the expense of somebody/ something",
+        "category": "CRIME",
+        "id": "w5f_3464"
+    },
+    {
+        "vietnamese": "đủ để làm điều gì đó",
+        "english": "Suffice to do something",
+        "category": "CRIME",
+        "id": "w5f_3465"
+    },
+    {
+        "vietnamese": "gánh vác trách nhiệm.",
+        "english": "To assume responsibility",
+        "category": "CRIME",
+        "id": "w5f_3466"
+    },
+    {
+        "vietnamese": "sự suy thoái môi trường.",
+        "english": "Environmental degradation",
+        "category": "CRIME",
+        "id": "w5f_3467"
+    },
+    {
+        "vietnamese": "bệnh về đường hô hấp",
+        "english": "Respiratory disease",
+        "category": "CRIME",
+        "id": "w5f_3468"
+    },
+    {
+        "vietnamese": "đồng nghĩa với cái gì/điều gì đó",
+        "english": "To be synonymous with something",
+        "category": "CRIME",
+        "id": "w5f_3469"
+    },
+    {
+        "vietnamese": "Sự coi trọng nghề nghiệp và sự đắn đo trước khả năng phải nhận trách nhiệm",
+        "english": "responsibility",
+        "category": "CRIME",
+        "id": "w5f_3470"
+    },
+    {
+        "vietnamese": "nâng cao sức khỏe & ngăn chặn bệnh tật",
+        "english": "To promote health and prevent disease",
+        "category": "CRIME",
+        "id": "w5f_3471"
+    },
+    {
+        "vietnamese": "không thể tiếp cận được với những",
+        "english": "Losing their own access to their food sources",
+        "category": "CRIME",
+        "id": "w5f_3472"
+    },
+    {
+        "vietnamese": "khí thải carbon từ vận chuyển hàng hóa",
+        "english": "Carbon emissions produced by transportation",
+        "category": "CRIME",
+        "id": "w5f_3473"
+    },
+    {
+        "vietnamese": "được xử lý bằng hóa chất và chất bảo quản",
+        "english": "Treated with chemicals and preservatives",
+        "category": "CRIME",
+        "id": "w5f_3474"
+    },
+    {
+        "vietnamese": "được tiếp xúc với cái gì đó",
+        "english": "Be exposed to something",
+        "category": "CRIME",
+        "id": "w5f_3475"
+    },
+    {
+        "vietnamese": "bằng xương bằng thịt",
+        "english": "In the flesh",
+        "category": "CRIME",
+        "id": "w5f_3476"
+    },
+    {
+        "vietnamese": "sự thịnh hành của cái gì đó",
+        "english": "Prevalence of something",
+        "category": "CRIME",
+        "id": "w5f_3477"
+    },
+    {
+        "vietnamese": "phát triển hưng thịnh",
+        "english": "To flourish",
+        "category": "CRIME",
+        "id": "w5f_3478"
+    },
+    {
+        "vietnamese": "thoát nghèo",
+        "english": "To escape poverty",
+        "category": "CRIME",
+        "id": "w5f_3479"
+    },
+    {
+        "vietnamese": "Sự chăm chỉ cũng như",
+        "english": "Diligence as well as a great deal of patience and intelligence",
+        "category": "CRIME",
+        "id": "w5f_3480"
+    },
+    {
+        "vietnamese": "Độ khó và độ cam kết cao",
+        "english": "Higher level of both difficulty and commitment",
+        "category": "CRIME",
+        "id": "w5f_3481"
+    },
+    {
+        "vietnamese": "hiệu quả về chi phí",
+        "english": "Cost effectively",
+        "category": "CRIME",
+        "id": "w5f_3482"
+    },
+    {
+        "vietnamese": "để cái gì đó cho ai đó tiếp quản, xử lý",
+        "english": "Leave something for somebody",
+        "category": "CRIME",
+        "id": "w5f_3483"
+    },
+    {
+        "vietnamese": "gánh vác việc gì đó/cái gì đó",
+        "english": "To shoulder something",
+        "category": "CRIME",
+        "id": "w5f_3484"
+    },
+    {
+        "vietnamese": "Tiếp cận giáo dục",
+        "english": "Approach education",
+        "category": "CRIME",
+        "id": "w5f_3485"
+    },
+    {
+        "vietnamese": "Có được lượng lón kiến",
+        "english": "Acquire a great deal of knowledge from the online platform",
+        "category": "CRIME",
+        "id": "w5f_3486"
+    },
+    {
+        "vietnamese": "cả hai quan điểm đều có tầm quan trọng",
+        "english": "Both perspectives are of equal importance",
+        "category": "CRIME",
+        "id": "w5f_3487"
+    },
+    {
+        "vietnamese": "kế hoạch dự phòng",
+        "english": "A backup plan",
+        "category": "CRIME",
+        "id": "w5f_3488"
+    },
+    {
+        "vietnamese": "ngoài tầm kiểm soát",
+        "english": "Out of our control",
+        "category": "CRIME",
+        "id": "w5f_3489"
+    },
+    {
+        "vietnamese": "mỗi giây phút trôi qua",
+        "english": "Each passing moment",
+        "category": "CRIME",
+        "id": "w5f_3490"
+    },
+    {
+        "vietnamese": "để duy trì cân bằng",
+        "english": "To maintain a balance",
+        "category": "CRIME",
+        "id": "w5f_3491"
+    },
+    {
+        "vietnamese": "để thích nghi với",
+        "english": "To adapt to the current changing situations and circumstances",
+        "category": "CRIME",
+        "id": "w5f_3492"
+    },
+    {
+        "vietnamese": "lao động ngoài giờ",
+        "english": "Extra labour",
+        "category": "CRIME",
+        "id": "w5f_3493"
+    },
+    {
+        "vietnamese": "đòi hỏi khối lượng công việc nặng",
+        "english": "Entail heavy workload",
+        "category": "CRIME",
+        "id": "w5f_3494"
+    },
+    {
+        "vietnamese": "lo âu về mặt tinh thần",
+        "english": "Emotional distress",
+        "category": "CRIME",
+        "id": "w5f_3495"
+    },
+    {
+        "vietnamese": "hành vi chống đối xã hội",
+        "english": "Antisocial behaviors",
+        "category": "CRIME",
+        "id": "w5f_3496"
+    },
+    {
+        "vietnamese": "định hướng tính cách và nhận thức",
+        "english": "Shape personality and perception",
+        "category": "CRIME",
+        "id": "w5f_3497"
+    },
+    {
+        "vietnamese": "Hình tượng (tạm dịch)",
+        "english": "Role models",
+        "category": "CRIME",
+        "id": "w5f_3498"
+    },
+    {
+        "vietnamese": "Gây nên sự khó chịu cho người địa phương",
+        "english": "Cause irritation for the locals",
+        "category": "CRIME",
+        "id": "w5f_3499"
+    },
+    {
+        "vietnamese": "Hâm mộ những cá nhân nổi tiếng trên",
+        "english": "Idolize media and sport celebrated individuals",
+        "category": "CRIME",
+        "id": "w5f_3500"
+    },
+    {
+        "vietnamese": "hòa mình vào một cốt truyện phức tạp",
+        "english": "Immerse in a complex storyline",
+        "category": "CRIME",
+        "id": "w5f_3501"
+    },
+    {
+        "vietnamese": "khơi dậy trí tưởng tượng và sự tò mò",
+        "english": "Trigger the imagination and curiosity",
+        "category": "CRIME",
+        "id": "w5f_3502"
+    },
+    {
+        "vietnamese": "đòi hỏi nhiều về sức khỏe thể chất",
+        "english": "Physically demanding",
+        "category": "CRIME",
+        "id": "w5f_3503"
+    },
+    {
+        "vietnamese": "việc tiêu thụ ca-lo",
+        "english": "Calorie expenditure",
+        "category": "CRIME",
+        "id": "w5f_3504"
+    },
+    {
+        "vietnamese": "thiết lập quan hệ với người khác",
+        "english": "Establish connections with others",
+        "category": "CRIME",
+        "id": "w5f_3505"
+    },
+    {
+        "vietnamese": "giảm nhân sách",
+        "english": "Budget cut",
+        "category": "CRIME",
+        "id": "w5f_3506"
+    },
+    {
+        "vietnamese": "quỹ tư nhân",
+        "english": "Private funder",
+        "category": "CRIME",
+        "id": "w5f_3507"
+    },
+    {
+        "vietnamese": "thực hiện nghiên cứu",
+        "english": "Undertake research",
+        "category": "CRIME",
+        "id": "w5f_3508"
+    },
+    {
+        "vietnamese": "điều khiển",
+        "english": "Dictate",
+        "category": "CRIME",
+        "id": "w5f_3509"
+    },
+    {
+        "vietnamese": "dự án vì lợi nhuận",
+        "english": "Profit-driven program",
+        "category": "CRIME",
+        "id": "w5f_3510"
+    },
+    {
+        "vietnamese": "Lựa chọn giải trí hoàn hảo",
+        "english": "A perfect choice of recreation",
+        "category": "CRIME",
+        "id": "w5f_3511"
+    },
+    {
+        "vietnamese": "Sự gia tăng của nhu cầu khách hàng",
+        "english": "The growth in customers’ demand",
+        "category": "CRIME",
+        "id": "w5f_3512"
+    },
+    {
+        "vietnamese": "được quy cho (nguyên nhân)",
+        "english": "Be attributable to",
+        "category": "CRIME",
+        "id": "w5f_3513"
+    },
+    {
+        "vietnamese": "làm việc trong những không gian nhỏ hoặc những",
+        "english": "Work in small separate spaces or cubicles",
+        "category": "CRIME",
+        "id": "w5f_3514"
+    },
+    {
+        "vietnamese": "chuyên môn sâu rộng",
+        "english": "Extensive expertise",
+        "category": "CRIME",
+        "id": "w5f_3515"
+    },
+    {
+        "vietnamese": "những dự án có thể được định hướng",
+        "english": "Projects could be more teamwork-orientated",
+        "category": "CRIME",
+        "id": "w5f_3516"
+    },
+    {
+        "vietnamese": "được tính vào",
+        "english": "Count towards",
+        "category": "CRIME",
+        "id": "w5f_3517"
+    },
+    {
+        "vietnamese": "tạo ra cho ai đó một gánh nặng to lớn",
+        "english": "To place a huge burden on somebody",
+        "category": "CRIME",
+        "id": "w5f_3518"
+    },
+    {
+        "vietnamese": "Phân phát phúc lợi xã hội",
+        "english": "The distribution of social benefits",
+        "category": "CRIME",
+        "id": "w5f_3519"
+    },
+    {
+        "vietnamese": "Có trách",
+        "english": "Take any further obligation for providing support for local communities",
+        "category": "CRIME",
+        "id": "w5f_3520"
+    },
+    {
+        "vietnamese": "Sống sót trong thế giới cạnh tranh",
+        "english": "Survive in this competitive world",
+        "category": "CRIME",
+        "id": "w5f_3521"
+    },
+    {
+        "vietnamese": "Cải thiện mức sống của vùng xung quanh",
+        "english": "Ameliorate local living standards",
+        "category": "CRIME",
+        "id": "w5f_3522"
+    },
+    {
+        "vietnamese": "tiếp cận với một thứ gì đó",
+        "english": "To come into contact with",
+        "category": "CRIME",
+        "id": "w5f_3523"
+    },
+    {
+        "vietnamese": "chủ quan, phụ thuộc vào từng cá nhân",
+        "english": "Subjective",
+        "category": "CRIME",
+        "id": "w5f_3524"
+    },
+    {
+        "vietnamese": "tác phẩm nghệ thuật",
+        "english": "Work of art",
+        "category": "CRIME",
+        "id": "w5f_3525"
+    },
+    {
+        "vietnamese": "sự thể hiện độc đáo",
+        "english": "Unique expression",
+        "category": "CRIME",
+        "id": "w5f_3526"
+    },
+    {
+        "vietnamese": "thể hiện ý tưởng, tâm trạng hoặc cảm xúc",
+        "english": "Express an idea, emotion, or feeling",
+        "category": "CRIME",
+        "id": "w5f_3527"
+    },
+    {
+        "vietnamese": "hình thức thể hiện nghệ thuật (tranh vẽ, âm nhạc, thơ ca,…)",
+        "english": "Medium",
+        "category": "CRIME",
+        "id": "w5f_3528"
+    },
+    {
+        "vietnamese": "bỏ cuộc",
+        "english": "Give up",
+        "category": "CRIME",
+        "id": "w5f_3529"
+    },
+    {
+        "vietnamese": "tài năng bẩm sinh",
+        "english": "Natural talent",
+        "category": "CRIME",
+        "id": "w5f_3530"
+    },
+    {
+        "vietnamese": "Sự sử dụng không phổ biến của xe đạp",
+        "english": "The uncommon use of bicycles",
+        "category": "CRIME",
+        "id": "w5f_3531"
+    },
+    {
+        "vietnamese": "Khá là phi thực tế để hi vọng mọi người sẽ",
+        "english": "To be rather impractical to expect cycling",
+        "category": "CRIME",
+        "id": "w5f_3532"
+    },
+    {
+        "vietnamese": "Những ngày vì môi trường hàng tháng",
+        "english": "Monthly green days",
+        "category": "CRIME",
+        "id": "w5f_3533"
+    },
+    {
+        "vietnamese": "Tạo thói quen dùng xe đạp",
+        "english": "Form a habit of cycling",
+        "category": "CRIME",
+        "id": "w5f_3534"
+    },
+    {
+        "vietnamese": "sự đồng điệu, sự giống nhau",
+        "english": "The lack of uniformity",
+        "category": "CRIME",
+        "id": "w5f_3535"
+    },
+    {
+        "vietnamese": "đáng để cân nhắc hơn",
+        "english": "To be more worthy of consideration",
+        "category": "CRIME",
+        "id": "w5f_3536"
+    },
+    {
+        "vietnamese": "phản ánh sự đa dạng trong thiết kế kiến trúc",
+        "english": "To reflect a variety of architectural designs",
+        "category": "CRIME",
+        "id": "w5f_3537"
+    },
+    {
+        "vietnamese": "bản chất vận động",
+        "english": "Physical nature",
+        "category": "CRIME",
+        "id": "w5f_3538"
+    },
+    {
+        "vietnamese": "coi thường thể thao",
+        "english": "Disparaging sport",
+        "category": "CRIME",
+        "id": "w5f_3539"
+    },
+    {
+        "vietnamese": "tuổi thọ",
+        "english": "Life expectancy",
+        "category": "CRIME",
+        "id": "w5f_3540"
+    },
+    {
+        "vietnamese": "hiệu quả công việc",
+        "english": "Work producitivity",
+        "category": "CRIME",
+        "id": "w5f_3541"
+    },
+    {
+        "vietnamese": "cực kỳ bận rộn",
+        "english": "Hectic",
+        "category": "CRIME",
+        "id": "w5f_3542"
+    },
+    {
+        "vietnamese": "Sự cần thiết",
+        "english": "The necessity of treatment and the development of healthcare services",
+        "category": "CRIME",
+        "id": "w5f_3543"
+    },
+    {
+        "vietnamese": "dòng tiền",
+        "english": "An influx of money",
+        "category": "CRIME",
+        "id": "w5f_3544"
+    },
+    {
+        "vietnamese": "những núi rác thải nhựa",
+        "english": "Mountains of plastic waste",
+        "category": "CRIME",
+        "id": "w5f_3545"
+    },
+    {
+        "vietnamese": "những cơ sở tái chế rác chuyên nghiệp, đúng cách",
+        "english": "Appropriate recycling facilities",
+        "category": "CRIME",
+        "id": "w5f_3546"
+    },
+    {
+        "vietnamese": "những ảnh hưởng liên quan đến môi",
+        "english": "The environmental and cultural impacts",
+        "category": "CRIME",
+        "id": "w5f_3547"
+    },
+    {
+        "vietnamese": "được điều chỉnh và giảm thiểu một cách",
+        "english": "To be closely monitored and minimised",
+        "category": "CRIME",
+        "id": "w5f_3548"
+    },
+    {
+        "vietnamese": "có ích rất nhiều",
+        "english": "Be of great help",
+        "category": "CRIME",
+        "id": "w5f_3549"
+    },
+    {
+        "vietnamese": "cho ai đó một lợi thế cạnh tranh",
+        "english": "To offer somebody a competitive edge",
+        "category": "CRIME",
+        "id": "w5f_3550"
+    },
+    {
+        "vietnamese": "mối quan tâm, sở thích",
+        "english": "Pursuit",
+        "category": "CRIME",
+        "id": "w5f_3551"
+    },
+    {
+        "vietnamese": "hoạt động giải trí",
+        "english": "Stress relieving activity",
+        "category": "CRIME",
+        "id": "w5f_3552"
+    },
+    {
+        "vietnamese": "Cái được nhắc đến đầu tiên (trong bài này, “the former” được dùng để chỉ",
+        "english": "The former",
+        "category": "CRIME",
+        "id": "w5f_3553"
+    },
+    {
+        "vietnamese": "Cái được nhắc đến sau (trong bài này, “the latter” được dùng để chỉ “further",
+        "english": "The latter",
+        "category": "CRIME",
+        "id": "w5f_3554"
+    },
+    {
+        "vietnamese": "Hình ảnh phân giải cao",
+        "english": "High-resolution graphics",
+        "category": "EDUCATION",
+        "id": "w5f_3555"
+    },
+    {
+        "vietnamese": "Sự thiếu quan tâm cũng",
+        "english": "The lack of care as well as encouragement from parents",
+        "category": "EDUCATION",
+        "id": "w5f_3556"
+    },
+    {
+        "vietnamese": "Giới hạn thời gian được phép",
+        "english": "Restrict the amount of time allowed for watching TV",
+        "category": "EDUCATION",
+        "id": "w5f_3557"
+    },
+    {
+        "vietnamese": "được tài trợ bởi",
+        "english": "is sponsored by",
+        "category": "EDUCATION",
+        "id": "w5f_3558"
+    },
+    {
+        "vietnamese": "trang trải các chi phí khác nhau",
+        "english": "cover various expenses",
+        "category": "EDUCATION",
+        "id": "w5f_3559"
+    },
+    {
+        "vietnamese": "mục tiêu chủ yếu 5. to prevent losses and stay profitable: để ngăn ngừa",
+        "english": "primary objectives",
+        "category": "EDUCATION",
+        "id": "w5f_3560"
+    },
+    {
+        "vietnamese": "công ty định hướng lợi nhuận",
+        "english": "profit-oriented companies",
+        "category": "EDUCATION",
+        "id": "w5f_3561"
+    },
+    {
+        "vietnamese": "tối đa hóa thu nhập",
+        "english": "to maximize earnings",
+        "category": "EDUCATION",
+        "id": "w5f_3562"
+    },
+    {
+        "vietnamese": "không qua khỏi bệnh tật",
+        "english": "To succumb to disease",
+        "category": "EDUCATION",
+        "id": "w5f_3563"
+    },
+    {
+        "vietnamese": "làm tròn một nghĩa vụ",
+        "english": "To fulfill a duty",
+        "category": "EDUCATION",
+        "id": "w5f_3564"
+    },
+    {
+        "vietnamese": "phân bố ngân sách quốc gia cho việc gì",
+        "english": "To allocate the national budget to something",
+        "category": "EDUCATION",
+        "id": "w5f_3565"
+    },
+    {
+        "vietnamese": "vì sức khỏe của con người",
+        "english": "for the sake of people’s health",
+        "category": "EDUCATION",
+        "id": "w5f_3566"
+    },
+    {
+        "vietnamese": "Ý tưởng mờ nhạt về",
+        "english": "Vague ideas of what meals or foodstuffs they might consume",
+        "category": "EDUCATION",
+        "id": "w5f_3567"
+    },
+    {
+        "vietnamese": "có hiểu biết sâu rộng",
+        "english": "To have significant knowledge of their own culture and history",
+        "category": "EDUCATION",
+        "id": "w5f_3568"
+    },
+    {
+        "vietnamese": "nâng cấp",
+        "english": "To upgrade",
+        "category": "EDUCATION",
+        "id": "w5f_3569"
+    },
+    {
+        "vietnamese": "xoay vòng những đồ tạo tác và vật phẩm trưng bày",
+        "english": "Rotating artefacts and displays",
+        "category": "EDUCATION",
+        "id": "w5f_3570"
+    },
+    {
+        "vietnamese": "các đặc trưng văn hóa",
+        "english": "cultural traits",
+        "category": "EDUCATION",
+        "id": "w5f_3571"
+    },
+    {
+        "vietnamese": "từ các quan điểm khác nhau",
+        "english": "from different perspectives",
+        "category": "EDUCATION",
+        "id": "w5f_3572"
+    },
+    {
+        "vietnamese": "phong phú, dồi dào",
+        "english": "Abundant",
+        "category": "EDUCATION",
+        "id": "w5f_3573"
+    },
+    {
+        "vietnamese": "trong xã hội đương đại",
+        "english": "in contemporary society",
+        "category": "EDUCATION",
+        "id": "w5f_3574"
+    },
+    {
+        "vietnamese": "trải nghiệm trực tiếp",
+        "english": "first-hand experience",
+        "category": "EDUCATION",
+        "id": "w5f_3575"
+    },
+    {
+        "vietnamese": "được tiếp xúc trực tiếp với điều gì",
+        "english": "To get direct exposure to something",
+        "category": "EDUCATION",
+        "id": "w5f_3576"
+    },
+    {
+        "vietnamese": "ý kiến chủ quan của người khác",
+        "english": "others’ subjective viewpoints",
+        "category": "EDUCATION",
+        "id": "w5f_3577"
+    },
+    {
+        "vietnamese": "rơi vào hỗn loạn",
+        "english": "To fall into chaos",
+        "category": "EDUCATION",
+        "id": "w5f_3578"
+    },
+    {
+        "vietnamese": "người vô tội",
+        "english": "Innocent people",
+        "category": "EDUCATION",
+        "id": "w5f_3579"
+    },
+    {
+        "vietnamese": "tội ác kinh hoàng",
+        "english": "Heinous crimes",
+        "category": "EDUCATION",
+        "id": "w5f_3580"
+    },
+    {
+        "vietnamese": "những người được giáo dục tốt",
+        "english": "Well-educated people",
+        "category": "EDUCATION",
+        "id": "w5f_3581"
+    },
+    {
+        "vietnamese": "vụ xâm hại tình dục khét tiếng",
+        "english": "Infamous sexual assault",
+        "category": "EDUCATION",
+        "id": "w5f_3582"
+    },
+    {
+        "vietnamese": "bản chất đạo đức không tốt",
+        "english": "Morally bad by nature",
+        "category": "EDUCATION",
+        "id": "w5f_3583"
+    },
+    {
+        "vietnamese": "tâm lý không ổn định",
+        "english": "Psychologically unstable",
+        "category": "EDUCATION",
+        "id": "w5f_3584"
+    },
+    {
+        "vietnamese": "có khuynh hướng phạm tội",
+        "english": "To show a propensity for crime",
+        "category": "EDUCATION",
+        "id": "w5f_3585"
+    },
+    {
+        "vietnamese": "phương án tối ưu cho điều gì",
+        "english": "The ultimate answer to",
+        "category": "EDUCATION",
+        "id": "w5f_3586"
+    },
+    {
+        "vietnamese": "hậu quả không mong muốn",
+        "english": "Undesirable consequences",
+        "category": "EDUCATION",
+        "id": "w5f_3587"
+    },
+    {
+        "vietnamese": "tỷ lệ tử vong",
+        "english": "The mortality rate",
+        "category": "EDUCATION",
+        "id": "w5f_3588"
+    },
+    {
+        "vietnamese": "điều khiển xe ở tốc độ cao",
+        "english": "To operate (vehicle) at high speeds",
+        "category": "EDUCATION",
+        "id": "w5f_3589"
+    },
+    {
+        "vietnamese": "va chạm với cái gì → collision: sự va chạm",
+        "english": "To collide with something",
+        "category": "EDUCATION",
+        "id": "w5f_3590"
+    },
+    {
+        "vietnamese": "xem xét điều gì",
+        "english": "To take something into consideration",
+        "category": "EDUCATION",
+        "id": "w5f_3591"
+    },
+    {
+        "vietnamese": "giới hạn tốc độ nghiêm ngặt",
+        "english": "Strict speed limits",
+        "category": "EDUCATION",
+        "id": "w5f_3592"
+    },
+    {
+        "vietnamese": "đồng thời",
+        "english": "Simultaneously",
+        "category": "EDUCATION",
+        "id": "w5f_3593"
+    },
+    {
+        "vietnamese": "được chỉ định cho cái gì",
+        "english": "Be designated for something",
+        "category": "EDUCATION",
+        "id": "w5f_3594"
+    },
+    {
+        "vietnamese": "Sống nghèo đói",
+        "english": "To live on the breadline",
+        "category": "EDUCATION",
+        "id": "w5f_3595"
+    },
+    {
+        "vietnamese": "Bất bình đẳng thu nhập",
+        "english": "Income inequality",
+        "category": "EDUCATION",
+        "id": "w5f_3596"
+    },
+    {
+        "vietnamese": "Tìm đến bạo lực và lựa chọn",
+        "english": "To resort to violence and opt for the life of criminals",
+        "category": "EDUCATION",
+        "id": "w5f_3597"
+    },
+    {
+        "vietnamese": "Giảm lượng bất bình đẳng thu",
+        "english": "To reduce the amount of income inequality in society",
+        "category": "EDUCATION",
+        "id": "w5f_3598"
+    },
+    {
+        "vietnamese": "thức ăn được trồng ở địa phương",
+        "english": "Locally grown food",
+        "category": "EDUCATION",
+        "id": "w5f_3599"
+    },
+    {
+        "vietnamese": "trải nghiệm đặc sản và thức ăn tốt",
+        "english": "To experience specialties and healthy products",
+        "category": "EDUCATION",
+        "id": "w5f_3600"
+    },
+    {
+        "vietnamese": "thao túng giá cả",
+        "english": "Price manipulation",
+        "category": "EDUCATION",
+        "id": "w5f_3601"
+    },
+    {
+        "vietnamese": "thương nhân địa phương",
+        "english": "Local merchants",
+        "category": "EDUCATION",
+        "id": "w5f_3602"
+    },
+    {
+        "vietnamese": "khả năng nhận thức",
+        "english": "Cognitive abilities",
+        "category": "EDUCATION",
+        "id": "w5f_3603"
+    },
+    {
+        "vietnamese": "quá trình lão hóa",
+        "english": "The aging process",
+        "category": "EDUCATION",
+        "id": "w5f_3604"
+    },
+    {
+        "vietnamese": "các khóa học sau đại học",
+        "english": "Postgraduate study courses",
+        "category": "EDUCATION",
+        "id": "w5f_3605"
+    },
+    {
+        "vietnamese": "(từ nối) huống chi là, chưa kể đến",
+        "english": "Not to mention",
+        "category": "EDUCATION",
+        "id": "w5f_3606"
+    },
+    {
+        "vietnamese": "sinh con cái",
+        "english": "To produce offspring",
+        "category": "EDUCATION",
+        "id": "w5f_3607"
+    },
+    {
+        "vietnamese": "đối diện với dân số già",
+        "english": "To face an aging population",
+        "category": "EDUCATION",
+        "id": "w5f_3608"
+    },
+    {
+        "vietnamese": "sự thiếu hụt trong lực lượng lao động",
+        "english": "A shortage in the workforce",
+        "category": "EDUCATION",
+        "id": "w5f_3609"
+    },
+    {
+        "vietnamese": "thực hiện các công việc đòi hỏi nhiều thể lực",
+        "english": "To perform physically-demanding jobs",
+        "category": "EDUCATION",
+        "id": "w5f_3610"
+    },
+    {
+        "vietnamese": "được nuôi dưỡng trong một gia đình đổ vỡ",
+        "english": "To be reared in a dysfunctional family",
+        "category": "EDUCATION",
+        "id": "w5f_3611"
+    },
+    {
+        "vietnamese": "đọc sách vì niềm vui",
+        "english": "Reading for enjoyment",
+        "category": "EDUCATION",
+        "id": "w5f_3612"
+    },
+    {
+        "vietnamese": "sử dụng trí",
+        "english": "To use their imagination to visualise the characters and plot of the story",
+        "category": "EDUCATION",
+        "id": "w5f_3613"
+    },
+    {
+        "vietnamese": "kỹ năng sử dụng trí tưởng tượng / sáng tạo",
+        "english": "Imaginative thinking skills",
+        "category": "EDUCATION",
+        "id": "w5f_3614"
+    },
+    {
+        "vietnamese": "mở rộng vốn",
+        "english": "To expand their vocabulary and learn different grammatical structures",
+        "category": "EDUCATION",
+        "id": "w5f_3615"
+    },
+    {
+        "vietnamese": "ở một nhịp độ nhanh",
+        "english": "At a fast pace",
+        "category": "EDUCATION",
+        "id": "w5f_3616"
+    },
+    {
+        "vietnamese": "một nguồn giải trí",
+        "english": "A source of entertainment",
+        "category": "EDUCATION",
+        "id": "w5f_3617"
+    },
+    {
+        "vietnamese": "phát triển khả năng ngôn ngữ của ai đó",
+        "english": "To enhance a person's language skills",
+        "category": "EDUCATION",
+        "id": "w5f_3618"
+    },
+    {
+        "vietnamese": "mở rộng diện tích nhà ở theo chiều ngang",
+        "english": "expand their housing areas horizontally",
+        "category": "EDUCATION",
+        "id": "w5f_3619"
+    },
+    {
+        "vietnamese": "giảm ùn tắc giao thông",
+        "english": "alleviate traffic congestion",
+        "category": "EDUCATION",
+        "id": "w5f_3620"
+    },
+    {
+        "vietnamese": "mật độ dân số",
+        "english": "population density",
+        "category": "EDUCATION",
+        "id": "w5f_3621"
+    },
+    {
+        "vietnamese": "bị lấn chiếm",
+        "english": "To be encroached",
+        "category": "EDUCATION",
+        "id": "w5f_3622"
+    },
+    {
+        "vietnamese": "các kênh truyền thông chính thống",
+        "english": "Mainstream media channels",
+        "category": "EDUCATION",
+        "id": "w5f_3623"
+    },
+    {
+        "vietnamese": "ngại ngùng, lưỡng lự làm cái gì đó",
+        "english": "To hesitate to do something",
+        "category": "EDUCATION",
+        "id": "w5f_3624"
+    },
+    {
+        "vietnamese": "sợ phải chịu từ những cuộc tấn công",
+        "english": "In fear of suffering from a terrorist attack",
+        "category": "EDUCATION",
+        "id": "w5f_3625"
+    },
+    {
+        "vietnamese": "báo lá cải",
+        "english": "Tabloids",
+        "category": "EDUCATION",
+        "id": "w5f_3626"
+    },
+    {
+        "vietnamese": "scandals của người nổi tiếng",
+        "english": "The scandals of celebrities",
+        "category": "EDUCATION",
+        "id": "w5f_3627"
+    },
+    {
+        "vietnamese": "khám sức khỏe định kỳ",
+        "english": "regular free-of-charge health checkups and discounted medicines",
+        "category": "EDUCATION",
+        "id": "w5f_3628"
+    },
+    {
+        "vietnamese": "các chi tiêu không cấp thiết",
+        "english": "non-essential expenses",
+        "category": "EDUCATION",
+        "id": "w5f_3629"
+    },
+    {
+        "vietnamese": "phúc lợi xã hội",
+        "english": "public welfare",
+        "category": "EDUCATION",
+        "id": "w5f_3630"
+    },
+    {
+        "vietnamese": "khủng hoảng nhà ở",
+        "english": "housing crisis",
+        "category": "EDUCATION",
+        "id": "w5f_3631"
+    },
+    {
+        "vietnamese": "kết quả từ các kỳ thi",
+        "english": "Examination results",
+        "category": "EDUCATION",
+        "id": "w5f_3632"
+    },
+    {
+        "vietnamese": "có lợi thế trong việc nào đó",
+        "english": "To have an advantage in",
+        "category": "EDUCATION",
+        "id": "w5f_3633"
+    },
+    {
+        "vietnamese": "năng lực học thuật (lực học)",
+        "english": "Academic performance",
+        "category": "EDUCATION",
+        "id": "w5f_3634"
+    },
+    {
+        "vietnamese": "các môn học thuật",
+        "english": "Academic subjects equip students with fundamental knowledge",
+        "category": "EDUCATION",
+        "id": "w5f_3635"
+    },
+    {
+        "vietnamese": "có ý thức hoàn thiện bản thân",
+        "english": "To be conscious of self-improvement",
+        "category": "EDUCATION",
+        "id": "w5f_3636"
+    },
+    {
+        "vietnamese": "những sinh viên chủ động",
+        "english": "Proactive students",
+        "category": "EDUCATION",
+        "id": "w5f_3637"
+    },
+    {
+        "vietnamese": "có khao khát hoàn thiện bản thân",
+        "english": "To have a thirst for self-improvement",
+        "category": "EDUCATION",
+        "id": "w5f_3638"
+    },
+    {
+        "vietnamese": "thành thạo trong việc tổ chức thời gian",
+        "english": "To be adept at organizing their time",
+        "category": "EDUCATION",
+        "id": "w5f_3639"
+    },
+    {
+        "vietnamese": "trì hoãn 6. To hone their leadership skills: mài giữ kỹ năng lãnh đạo",
+        "english": "To procrastinate",
+        "category": "EDUCATION",
+        "id": "w5f_3640"
+    },
+    {
+        "vietnamese": "nắm bắt những cơ hội như vậy",
+        "english": "To seize such opportunities",
+        "category": "EDUCATION",
+        "id": "w5f_3641"
+    },
+    {
+        "vietnamese": "duy trì nhu cầu cơ bản nhất trong cuộc sống.",
+        "english": "To make ends meet",
+        "category": "EDUCATION",
+        "id": "w5f_3642"
+    },
+    {
+        "vietnamese": "tuân thủ chi tiêu nghiêm khắc.",
+        "english": "To adhere to a strict budget",
+        "category": "EDUCATION",
+        "id": "w5f_3643"
+    },
+    {
+        "vietnamese": "ban hành luật.",
+        "english": "To enact laws",
+        "category": "EDUCATION",
+        "id": "w5f_3644"
+    },
+    {
+        "vietnamese": "phung phí tiền bạc và thời gian",
+        "english": "Squander their time and money on",
+        "category": "EDUCATION",
+        "id": "w5f_3645"
+    },
+    {
+        "vietnamese": "các thiết bị công nghệ và quần áo hào nhoáng",
+        "english": "Flashy clothing and tech gadgets",
+        "category": "EDUCATION",
+        "id": "w5f_3646"
+    },
+    {
+        "vietnamese": "một lối sống xa hoa đáng mơ ước",
+        "english": "A desirable lavish lifestyle",
+        "category": "EDUCATION",
+        "id": "w5f_3647"
+    },
+    {
+        "vietnamese": "với mục tiêu",
+        "english": "With an aim of",
+        "category": "EDUCATION",
+        "id": "w5f_3648"
+    },
+    {
+        "vietnamese": "đẩy người trẻ đến bờ vực phá sản",
+        "english": "Drives young people to the edge of bankruptcy",
+        "category": "EDUCATION",
+        "id": "w5f_3649"
+    },
+    {
+        "vietnamese": "(nội động từ) bị suy yếu",
+        "english": "To dwindle",
+        "category": "EDUCATION",
+        "id": "w5f_3650"
+    },
+    {
+        "vietnamese": "đóng một vài trò quan trọng vào cái gì đó",
+        "english": "To play an important role in something",
+        "category": "EDUCATION",
+        "id": "w5f_3651"
+    },
+    {
+        "vietnamese": "bảo vệ các",
+        "english": "To preserve endangered animals by keeping them safe from poachers",
+        "category": "EDUCATION",
+        "id": "w5f_3652"
+    },
+    {
+        "vietnamese": "tạo ra và trợ cấp cho các chương trình",
+        "english": "To create and fund conservation programs",
+        "category": "EDUCATION",
+        "id": "w5f_3653"
+    },
+    {
+        "vietnamese": "mở rộng kiến thức",
+        "english": "Expand their horizons",
+        "category": "EDUCATION",
+        "id": "w5f_3654"
+    },
+    {
+        "vietnamese": "mở rộng kiến thức về",
+        "english": "Widen their knowledge of",
+        "category": "EDUCATION",
+        "id": "w5f_3655"
+    },
+    {
+        "vietnamese": "một cơ hội quý báu",
+        "english": "A golden opportunity",
+        "category": "EDUCATION",
+        "id": "w5f_3656"
+    },
+    {
+        "vietnamese": "hòa nhập vào cộng đồng địa phương",
+        "english": "To integrate into the local community",
+        "category": "EDUCATION",
+        "id": "w5f_3657"
+    },
+    {
+        "vietnamese": "quá trình học hỏi từ sai lầm và thử thách",
+        "english": "Trial and error",
+        "category": "EDUCATION",
+        "id": "w5f_3658"
+    },
+    {
+        "vietnamese": "vượt qua khó khăn về ngôn ngữ",
+        "english": "To overcome language difficulties",
+        "category": "EDUCATION",
+        "id": "w5f_3659"
+    },
+    {
+        "vietnamese": "theo đuổi kiến thức về truyền thống và văn",
+        "english": "To pursue knowledge of cultures and tradition",
+        "category": "EDUCATION",
+        "id": "w5f_3660"
+    },
+    {
+        "vietnamese": "các nguyên liệu tự",
+        "english": "Biodegradable, recyclable, or environmentally friendly materials",
+        "category": "EDUCATION",
+        "id": "w5f_3661"
+    },
+    {
+        "vietnamese": "bằng cấp tốt",
+        "english": "Stellar credentials",
+        "category": "EDUCATION",
+        "id": "w5f_3662"
+    },
+    {
+        "vietnamese": "kĩ năng làm việc với người khác",
+        "english": "Interpersonal skills",
+        "category": "EDUCATION",
+        "id": "w5f_3663"
+    },
+    {
+        "vietnamese": "kĩ năng làm việc nhóm",
+        "english": "Collaboration skills",
+        "category": "EDUCATION",
+        "id": "w5f_3664"
+    },
+    {
+        "vietnamese": "chi phí sống tăng cao",
+        "english": "Escalating living cost",
+        "category": "EDUCATION",
+        "id": "w5f_3665"
+    },
+    {
+        "vietnamese": "đảm nhận thêm trách nhiệm",
+        "english": "Take on more responsibilities",
+        "category": "EDUCATION",
+        "id": "w5f_3666"
+    },
+    {
+        "vietnamese": "làm cuộc sống ai dễ dàng hơn",
+        "english": "Facilitate one’s life",
+        "category": "EDUCATION",
+        "id": "w5f_3667"
+    },
+    {
+        "vietnamese": "làm hại sức khoẻ ai",
+        "english": "Make one’s health deteriorate",
+        "category": "EDUCATION",
+        "id": "w5f_3668"
+    },
+    {
+        "vietnamese": "tăng tốc sự phát triển trong công việc",
+        "english": "Accelerate one’s professional growth",
+        "category": "EDUCATION",
+        "id": "w5f_3669"
+    },
+    {
+        "vietnamese": "tiền được dành cho",
+        "english": "Money that is allocated to",
+        "category": "EDUCATION",
+        "id": "w5f_3670"
+    },
+    {
+        "vietnamese": "có mức sống ổn định",
+        "english": "Has a decent standard of living",
+        "category": "EDUCATION",
+        "id": "w5f_3671"
+    },
+    {
+        "vietnamese": "các thế hệ tương lai",
+        "english": "Future generations",
+        "category": "EDUCATION",
+        "id": "w5f_3672"
+    },
+    {
+        "vietnamese": "lố bịch",
+        "english": "To be ludicrous",
+        "category": "EDUCATION",
+        "id": "w5f_3673"
+    },
+    {
+        "vietnamese": "tạo ra sự khác biệt to lớn",
+        "english": "Make a huge difference",
+        "category": "EDUCATION",
+        "id": "w5f_3674"
+    },
+    {
+        "vietnamese": "bằng việc gây quỹ các chương trình",
+        "english": "By funding programs",
+        "category": "EDUCATION",
+        "id": "w5f_3675"
+    },
+    {
+        "vietnamese": "giáo dục, cung cấp thức ăn và chỗ ở",
+        "english": "To educate, feed, and house",
+        "category": "EDUCATION",
+        "id": "w5f_3676"
+    },
+    {
+        "vietnamese": "những người khuyết tật,",
+        "english": "The disadvantaged, impoverished, and sick people of the world",
+        "category": "EDUCATION",
+        "id": "w5f_3677"
+    },
+    {
+        "vietnamese": "hoàn toàn được giải quyết",
+        "english": "To be completely addressed",
+        "category": "EDUCATION",
+        "id": "w5f_3678"
+    },
+    {
+        "vietnamese": "sản phẩm hóa học phụ (trong quá trình sản xuất)",
+        "english": "Chemical by-products",
+        "category": "EDUCATION",
+        "id": "w5f_3679"
+    },
+    {
+        "vietnamese": "quy trình sản suất",
+        "english": "Manufacturing process / production lines",
+        "category": "EDUCATION",
+        "id": "w5f_3680"
+    },
+    {
+        "vietnamese": "động vật trên cạn và dưới nước",
+        "english": "Marine and terrestrial animals",
+        "category": "EDUCATION",
+        "id": "w5f_3681"
+    },
+    {
+        "vietnamese": "vòng đời ngắn",
+        "english": "Short lifespan",
+        "category": "EDUCATION",
+        "id": "w5f_3682"
+    },
+    {
+        "vietnamese": "bãi rác",
+        "english": "Landfill",
+        "category": "EDUCATION",
+        "id": "w5f_3683"
+    },
+    {
+        "vietnamese": "vật liệu thân thiện với môi trường",
+        "english": "Eco-friendlier materials",
+        "category": "EDUCATION",
+        "id": "w5f_3684"
+    },
+    {
+        "vietnamese": "khoản miễn thuế",
+        "english": "Tax breaks",
+        "category": "EDUCATION",
+        "id": "w5f_3685"
+    },
+    {
+        "vietnamese": "tin tức trong nước",
+        "english": "national news = domestic news",
+        "category": "EDUCATION",
+        "id": "w5f_3686"
+    },
+    {
+        "vietnamese": "tin tức quốc tế",
+        "english": "world news = international news",
+        "category": "EDUCATION",
+        "id": "w5f_3687"
+    },
+    {
+        "vietnamese": "chính trị quốc gia",
+        "english": "national politics",
+        "category": "EDUCATION",
+        "id": "w5f_3688"
+    },
+    {
+        "vietnamese": "cuộc bầu cử. cast vote for: bỏ phiếu cho ai đó",
+        "english": "election",
+        "category": "EDUCATION",
+        "id": "w5f_3689"
+    },
+    {
+        "vietnamese": "công cụ giải trí/ xả stress",
+        "english": "Relaxation tools /stress relievers",
+        "category": "EDUCATION",
+        "id": "w5f_3690"
+    },
+    {
+        "vietnamese": "làm ai đó trở nên dễ bị ảnh hưởng bởi điều gì đó",
+        "english": "To make people vulnerable to",
+        "category": "EDUCATION",
+        "id": "w5f_3691"
+    },
+    {
+        "vietnamese": "sự xuống cấp tình hình sức khoẻ",
+        "english": "Deterioration of health",
+        "category": "EDUCATION",
+        "id": "w5f_3692"
+    },
+    {
+        "vietnamese": "lớp học hỗn hợp các học sinh với năng lực khác nhau",
+        "english": "Mixed-ability class",
+        "category": "EDUCATION",
+        "id": "w5f_3693"
+    },
+    {
+        "vietnamese": "những cá nhân toàn diện",
+        "english": "Well-rounded individuals",
+        "category": "EDUCATION",
+        "id": "w5f_3694"
+    },
+    {
+        "vietnamese": "kỹ năng làm việc nhóm",
+        "english": "Teamwork skills",
+        "category": "EDUCATION",
+        "id": "w5f_3695"
+    },
+    {
+        "vietnamese": "tách ra, chia ra",
+        "english": "Separate",
+        "category": "EDUCATION",
+        "id": "w5f_3696"
+    },
+    {
+        "vietnamese": "tiếp thu kiến thức",
+        "english": "Acquire knowledge",
+        "category": "EDUCATION",
+        "id": "w5f_3697"
+    },
+    {
+        "vietnamese": "vì lợi ích của",
+        "english": "For the sake of",
+        "category": "EDUCATION",
+        "id": "w5f_3698"
+    },
+    {
+        "vietnamese": "nâng cao nhận thức",
+        "english": "Heighten awareness",
+        "category": "EDUCATION",
+        "id": "w5f_3699"
+    },
+    {
+        "vietnamese": "rất nhiều",
+        "english": "2,4. Far + tính từ (far too busy; far more convenient)",
+        "category": "EDUCATION",
+        "id": "w5f_3700"
+    },
+    {
+        "vietnamese": "nấu một bữa ăn",
+        "english": "To cook a meal",
+        "category": "EDUCATION",
+        "id": "w5f_3701"
+    },
+    {
+        "vietnamese": "mua vội một số thức ăn nhanh",
+        "english": "To pick up some fast food",
+        "category": "EDUCATION",
+        "id": "w5f_3702"
+    },
+    {
+        "vietnamese": "béo phì, đái tháo đường và bệnh tim",
+        "english": "obesity, diabetes, and heart disease",
+        "category": "EDUCATION",
+        "id": "w5f_3703"
+    },
+    {
+        "vietnamese": "trong ngắn hạn >< về lâu dài",
+        "english": "In the short term >< in the long term",
+        "category": "EDUCATION",
+        "id": "w5f_3704"
+    },
+    {
+        "vietnamese": "phát triển bệnh mạn tính",
+        "english": "develop a chronic illness",
+        "category": "EDUCATION",
+        "id": "w5f_3705"
+    },
+    {
+        "vietnamese": "có ngân sách thấp",
+        "english": "on a low budget",
+        "category": "EDUCATION",
+        "id": "w5f_3706"
+    },
+    {
+        "vietnamese": "chịu các hậu quả",
+        "english": "suffer the consequences",
+        "category": "EDUCATION",
+        "id": "w5f_3707"
+    },
+    {
+        "vietnamese": "các chi phí ý tế cao",
+        "english": "large medical bills",
+        "category": "EDUCATION",
+        "id": "w5f_3708"
+    },
+    {
+        "vietnamese": "đặt một gánh nặng to lớn lên",
+        "english": "To put a massive burden on",
+        "category": "EDUCATION",
+        "id": "w5f_3709"
+    },
+    {
+        "vietnamese": "khai thác",
+        "english": "Harness",
+        "category": "EDUCATION",
+        "id": "w5f_3710"
+    },
+    {
+        "vietnamese": "chuyển qua việc làm gì đó",
+        "english": "Shift towards doing something",
+        "category": "EDUCATION",
+        "id": "w5f_3711"
+    },
+    {
+        "vietnamese": "nguồn tài nguyên hữu hạn",
+        "english": "Finite resources",
+        "category": "EDUCATION",
+        "id": "w5f_3712"
+    },
+    {
+        "vietnamese": "vứt đi",
+        "english": "Throw away",
+        "category": "EDUCATION",
+        "id": "w5f_3713"
+    },
+    {
+        "vietnamese": "những biện pháp khả thi",
+        "english": "Feasible solutions",
+        "category": "EDUCATION",
+        "id": "w5f_3714"
+    },
+    {
+        "vietnamese": "công nghệ nông nghiệp tiên tiến",
+        "english": "Advanced agricultural technologies",
+        "category": "EDUCATION",
+        "id": "w5f_3715"
+    },
+    {
+        "vietnamese": "được cải tiến hoặc làm cho đơn giản hơn",
+        "english": "Streamlined",
+        "category": "EDUCATION",
+        "id": "w5f_3716"
+    },
+    {
+        "vietnamese": "một kế hoạch chi tiết",
+        "english": "A detailed plan",
+        "category": "EDUCATION",
+        "id": "w5f_3717"
+    },
+    {
+        "vietnamese": "thực phẩm",
+        "english": "Food products = food items = foodstuffs",
+        "category": "EDUCATION",
+        "id": "w5f_3718"
+    },
+    {
+        "vietnamese": "đưa ra một hình phạt nặng (tiền phạt)",
+        "english": "Imposing a heavy fine",
+        "category": "EDUCATION",
+        "id": "w5f_3719"
+    },
+    {
+        "vietnamese": "nguyên liệu",
+        "english": "Ingredients",
+        "category": "EDUCATION",
+        "id": "w5f_3720"
+    },
+    {
+        "vietnamese": "Ý niệm về cách ăn mặc hiện đại",
+        "english": "The notion of modernism in terms of dressing",
+        "category": "EDUCATION",
+        "id": "w5f_3721"
+    },
+    {
+        "vietnamese": "Định hình lại cách ăn mặc của người",
+        "english": "Reshapes fashion patterns of the indigenous",
+        "category": "EDUCATION",
+        "id": "w5f_3722"
+    },
+    {
+        "vietnamese": "Sự tăng lên ở cái gì đó.",
+        "english": "A rise in something",
+        "category": "EDUCATION",
+        "id": "w5f_3723"
+    },
+    {
+        "vietnamese": "Sự phá sản nhiều của",
+        "english": "Increasing bankruptcies among small town-center shops",
+        "category": "EDUCATION",
+        "id": "w5f_3724"
+    },
+    {
+        "vietnamese": "Ảnh hưởng tiêu cực tới sức khoẻ con người.",
+        "english": "To adversely affect human health",
+        "category": "EDUCATION",
+        "id": "w5f_3725"
+    },
+    {
+        "vietnamese": "Bùng nổ",
+        "english": "To boom",
+        "category": "EDUCATION",
+        "id": "w5f_3726"
+    },
+    {
+        "vietnamese": "Phương tiện đi lai",
+        "english": "A form of transportation",
+        "category": "EDUCATION",
+        "id": "w5f_3727"
+    },
+    {
+        "vietnamese": "Những phương tiện sử dụng động cơ chạy bằng năng lượng",
+        "english": "Combustion engine vehicles",
+        "category": "EDUCATION",
+        "id": "w5f_3728"
+    },
+    {
+        "vietnamese": "Đốt cháy năng lượng hóa thạch",
+        "english": "To burn fossil fuels",
+        "category": "EDUCATION",
+        "id": "w5f_3729"
+    },
+    {
+        "vietnamese": "Những dạng năng lượng thay thế",
+        "english": "Alternative forms of energy",
+        "category": "EDUCATION",
+        "id": "w5f_3730"
+    },
+    {
+        "vietnamese": "Khu vực đạp xe an toàn",
+        "english": "Safe cycling zones",
+        "category": "EDUCATION",
+        "id": "w5f_3731"
+    },
+    {
+        "vietnamese": "Giảm thiểu rủi ro",
+        "english": "To minimise the risk",
+        "category": "EDUCATION",
+        "id": "w5f_3732"
+    },
+    {
+        "vietnamese": "Cơ sở hạ tầng dành cho phương tiện giao thông công",
+        "english": "Public transportation infrastructure",
+        "category": "EDUCATION",
+        "id": "w5f_3733"
+    },
+    {
+        "vietnamese": "quá đắm chìm vào việc chơi game",
+        "english": "Too engrossed in their games",
+        "category": "EDUCATION",
+        "id": "w5f_3734"
+    },
+    {
+        "vietnamese": "Phản đối ý tưởng sử dụng",
+        "english": "Oppose the idea of using animals in medical investigation",
+        "category": "EDUCATION",
+        "id": "w5f_3735"
+    },
+    {
+        "vietnamese": "Những động vật mà được sử",
+        "english": "Animals which are subjected to medical investigation",
+        "category": "EDUCATION",
+        "id": "w5f_3736"
+    },
+    {
+        "vietnamese": "Thế hệ người già",
+        "english": "The elderly generation",
+        "category": "EDUCATION",
+        "id": "w5f_3737"
+    },
+    {
+        "vietnamese": "Cung cấp một mức độ quan tâm nhất định",
+        "english": "To provide a certain level of care",
+        "category": "EDUCATION",
+        "id": "w5f_3738"
+    },
+    {
+        "vietnamese": "Chăm sóc sức khỏe miễn phí và giảm giá thuốc",
+        "english": "Free healthcare and discounted medicine",
+        "category": "EDUCATION",
+        "id": "w5f_3739"
+    },
+    {
+        "vietnamese": "Những nhu cầu của thế hệ trẻ",
+        "english": "The needs of the younger generation",
+        "category": "EDUCATION",
+        "id": "w5f_3740"
+    },
+    {
+        "vietnamese": "Xương sống của kinh tế quốc gia",
+        "english": "The backbone of a country’s economy",
+        "category": "EDUCATION",
+        "id": "w5f_3741"
+    },
+    {
+        "vietnamese": "Đầu tư vào sức khỏe và giáo dục của họ (thế hệ trẻ)",
+        "english": "To invest in their health and education",
+        "category": "EDUCATION",
+        "id": "w5f_3742"
+    },
+    {
+        "vietnamese": "Tiếp tục phát triển và thịnh vượng",
+        "english": "To continue to develop and prosper",
+        "category": "EDUCATION",
+        "id": "w5f_3743"
+    },
+    {
+        "vietnamese": "Dân số khỏe mạnh và thông minh",
+        "english": "An intelligent and healthy population",
+        "category": "EDUCATION",
+        "id": "w5f_3744"
+    },
+    {
+        "vietnamese": "Một cách tích cực và có đạo đức",
+        "english": "An ethical and positive manner",
+        "category": "EDUCATION",
+        "id": "w5f_3745"
+    },
+    {
+        "vietnamese": "Không có gì đảm bảo về sự",
+        "english": "No guarantee of the accuracy of information obtained",
+        "category": "EDUCATION",
+        "id": "w5f_3746"
+    },
+    {
+        "vietnamese": "Hít phải những khí thải độc hại.",
+        "english": "Breathing in toxic fumes",
+        "category": "EDUCATION",
+        "id": "w5f_3747"
+    },
+    {
+        "vietnamese": "Dẫn đến nhiều vấn đề nghiêm trọng về",
+        "english": "To lead to a number of serious health issues",
+        "category": "EDUCATION",
+        "id": "w5f_3748"
+    },
+    {
+        "vietnamese": "Chưa có hành động gì diễn ra",
+        "english": "No action in place",
+        "category": "EDUCATION",
+        "id": "w5f_3749"
+    },
+    {
+        "vietnamese": "Thảm họa môi trường toàn cầu",
+        "english": "A global environmental catastrophe",
+        "category": "EDUCATION",
+        "id": "w5f_3750"
+    },
+    {
+        "vietnamese": "Khôi phục môi trường",
+        "english": "To restore the environment",
+        "category": "EDUCATION",
+        "id": "w5f_3751"
+    },
+    {
+        "vietnamese": "Vô lý",
+        "english": "To be ludicrous",
+        "category": "EDUCATION",
+        "id": "w5f_3752"
+    },
+    {
+        "vietnamese": "Tạo ra sự khác biệt lớn",
+        "english": "To make a huge difference",
+        "category": "EDUCATION",
+        "id": "w5f_3753"
+    },
+    {
+        "vietnamese": "Giáo dục, nuôi dưỡng, và cho ở",
+        "english": "To educate, feed, and house",
+        "category": "EDUCATION",
+        "id": "w5f_3754"
+    },
+    {
+        "vietnamese": "Những người nghèo đói và thiếu thốn",
+        "english": "The disadvantaged, impoverished",
+        "category": "EDUCATION",
+        "id": "w5f_3755"
+    },
+    {
+        "vietnamese": "Lượng thức ăn vào quá nhiều",
+        "english": "Excessive food intake",
+        "category": "EDUCATION",
+        "id": "w5f_3756"
+    },
+    {
+        "vietnamese": "Nhiều vấn đề liên quan đến sức khỏe",
+        "english": "Numerous health-related problems",
+        "category": "EDUCATION",
+        "id": "w5f_3757"
+    },
+    {
+        "vietnamese": "Tiếp cận trữ lượng thông tin lớn.",
+        "english": "To access huge storage of news",
+        "category": "EDUCATION",
+        "id": "w5f_3758"
+    },
+    {
+        "vietnamese": "Chiếm lấy vị trí của báo in.",
+        "english": "To take over the position of printed newspaper",
+        "category": "EDUCATION",
+        "id": "w5f_3759"
+    },
+    {
+        "vietnamese": "Đòi hỏi hàng triệu đô-la để tổ chức",
+        "english": "To require millions of dollars to organise and coordinate",
+        "category": "EDUCATION",
+        "id": "w5f_3760"
+    },
+    {
+        "vietnamese": "Các công ty rượu bia và thuốc lá",
+        "english": "Alcohol and tobacco companies",
+        "category": "EDUCATION",
+        "id": "w5f_3761"
+    },
+    {
+        "vietnamese": "Tiếp xúc với cái gì",
+        "english": "To be exposed to something",
+        "category": "EDUCATION",
+        "id": "w5f_3762"
+    },
+    {
+        "vietnamese": "Phát triển một mối liên quan với cái gì",
+        "english": "To develop a positive association with something",
+        "category": "EDUCATION",
+        "id": "w5f_3763"
+    },
+    {
+        "vietnamese": "Những kết quả tích cực và tiêu cực",
+        "english": "Positive and negative outcomes",
+        "category": "EDUCATION",
+        "id": "w5f_3764"
+    },
+    {
+        "vietnamese": "Tốc độ khai thác hiện nay",
+        "english": "The current rate of exploitation",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3765"
+    },
+    {
+        "vietnamese": "Khan hiếm năng lượng",
+        "english": "Energy scarcity",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3766"
+    },
+    {
+        "vietnamese": "Sự phát triển trong tương lai của loài",
+        "english": "The future development of the human race",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3767"
+    },
+    {
+        "vietnamese": "Sự đốt cháy năng lượng hóa thạch",
+        "english": "The combustion of fossil fuels",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3768"
+    },
+    {
+        "vietnamese": "Một lượng bất tận năng lượng rẻ",
+        "english": "An unlimited amount of inexpensive energy",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3769"
+    },
+    {
+        "vietnamese": "kế sinh nhai của thế hệ tương lai",
+        "english": "The livelihood of our future generation",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3770"
+    },
+    {
+        "vietnamese": "biện minh cho sự phát triển về kinh tế",
+        "english": "Justify economic progress",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3771"
+    },
+    {
+        "vietnamese": "điều kiện nghèo khổ và không đảm bảo vệ sinh",
+        "english": "Poor, unsanitary conditions",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3772"
+    },
+    {
+        "vietnamese": "rất gần với nơi chúng ta sống",
+        "english": "On our doorstep",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3773"
+    },
+    {
+        "vietnamese": "thay đổi cơ bản xã hội ngày nay",
+        "english": "Make a paradigm change to our today’s society",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3774"
+    },
+    {
+        "vietnamese": "Làm giàu cho cuộc sống của chúng ta",
+        "english": "To enrich our lives",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3775"
+    },
+    {
+        "vietnamese": "Cảm giác về mục đích và sự hài lòng",
+        "english": "A sense of purpose and fulfilment",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3776"
+    },
+    {
+        "vietnamese": "Cảm giác đánh giá thấp bản thân",
+        "english": "A low sense of self-worth",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3777"
+    },
+    {
+        "vietnamese": "Chịu đựng bệnh tâm lý",
+        "english": "To suffer from some form of mental illness",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3778"
+    },
+    {
+        "vietnamese": "Có may mắn được làm gì",
+        "english": "To have the luxury of doing something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3779"
+    },
+    {
+        "vietnamese": "Tìm thấy mục đích trong việc gì đó",
+        "english": "To find meaning in",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3780"
+    },
+    {
+        "vietnamese": "Nuôi dạy con cái",
+        "english": "To raise their children",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3781"
+    },
+    {
+        "vietnamese": "Chăm sóc gia đình",
+        "english": "To take care of their family",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3782"
+    },
+    {
+        "vietnamese": "Theo đuổi đam mê",
+        "english": "To pursue their passions",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3783"
+    },
+    {
+        "vietnamese": "Kiếm sống",
+        "english": "To make a living",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3784"
+    },
+    {
+        "vietnamese": "Sự phân bố các loại",
+        "english": "The distribution of the types of jobs among the two sexes",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3785"
+    },
+    {
+        "vietnamese": "Sự tương thích nghề nghiệp dựa trên",
+        "english": "Occupational compatibility regarding gender",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3786"
+    },
+    {
+        "vietnamese": "Khả năng có thể đảm nhiệm tốt nhiều loại công",
+        "english": "Great versatility in various jobs",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3787"
+    },
+    {
+        "vietnamese": "Sự theo đuổi nghề nghiệp tùy theo giới tính (tạm",
+        "english": "Gender-specific career pursuit",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3788"
+    },
+    {
+        "vietnamese": "nhận được sự ủng hộ của xã hội",
+        "english": "To gain social endorsement",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3789"
+    },
+    {
+        "vietnamese": "người phạm luật, tội phạm",
+        "english": "Law breaker (n)",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3790"
+    },
+    {
+        "vietnamese": "một cách thể hiện bản thân độc đáo và lành",
+        "english": "A unique and healthy form of self-expression",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3791"
+    },
+    {
+        "vietnamese": "các chương trình TV không hấp dẫn",
+        "english": "Mind-numbing television programs",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3792"
+    },
+    {
+        "vietnamese": "các trò chơi máy tính bạo lực",
+        "english": "Violent computer games",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3793"
+    },
+    {
+        "vietnamese": "bày tỏ cảm xúc bản thân",
+        "english": "To express themselves emotionally",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3794"
+    },
+    {
+        "vietnamese": "khả năng kết nối và bày tỏ",
+        "english": "A much better ability to connect with and express their emotions",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3795"
+    },
+    {
+        "vietnamese": "một cách lành mạnh",
+        "english": "A healthy manner",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3796"
+    },
+    {
+        "vietnamese": "Lấy bằng đại học",
+        "english": "Acquire tertiary degrees",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3797"
+    },
+    {
+        "vietnamese": "phát triển về mặt cơ sở vật chất và hạ tầng",
+        "english": "Facility and infrastructural development",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3798"
+    },
+    {
+        "vietnamese": "tạo ra ảnh hưởng xấu lên môi trường",
+        "english": "Exerting dire consequences on natural habitats",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3799"
+    },
+    {
+        "vietnamese": "Phát triển ngành du lịch",
+        "english": "Enhance tourism industries",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3800"
+    },
+    {
+        "vietnamese": "đồng nghiệp",
+        "english": "Fellow employees",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3801"
+    },
+    {
+        "vietnamese": "thiếu cảm xúc",
+        "english": "To lack emotions",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3802"
+    },
+    {
+        "vietnamese": "bị hiểu sai",
+        "english": "Misinterpreted",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3803"
+    },
+    {
+        "vietnamese": "căng thẳng giữa các nhân viên",
+        "english": "Tensions between employees",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3804"
+    },
+    {
+        "vietnamese": "cảm thấy kém cỏi",
+        "english": "To feel inferior",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3805"
+    },
+    {
+        "vietnamese": "một giọng điệu hoặc nụ cười thân thiện",
+        "english": "A friendly tone or smile",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3806"
+    },
+    {
+        "vietnamese": "năng suất thấp",
+        "english": "Low productivity",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3807"
+    },
+    {
+        "vietnamese": "tổ chức một cuộc họp",
+        "english": "To hold a meeting",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3808"
+    },
+    {
+        "vietnamese": "đối chiếu",
+        "english": "To double check",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3809"
+    },
+    {
+        "vietnamese": "hiểu lầm",
+        "english": "Misunderstanding",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3810"
+    },
+    {
+        "vietnamese": "lượng thời gian và tiền bạc khổng lồ",
+        "english": "Enormous amounts of time and money",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3811"
+    },
+    {
+        "vietnamese": "Tìm được",
+        "english": "Find a decent profession equivalent to their qualifications and competence",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3812"
+    },
+    {
+        "vietnamese": "phương pháp giảng dạy nhàm chán",
+        "english": "Tedious teaching method (noun phrase)",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3813"
+    },
+    {
+        "vietnamese": "hào hứng, thích thú làm gì",
+        "english": "To be eager to do something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3814"
+    },
+    {
+        "vietnamese": "vai chính",
+        "english": "Starring role",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3815"
+    },
+    {
+        "vietnamese": "thay đổi, chỉnh sửa để phù hợp",
+        "english": "Tailor (v)",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3816"
+    },
+    {
+        "vietnamese": "khơi gợi sự hứng thú",
+        "english": "Arouse someone’s interest",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3817"
+    },
+    {
+        "vietnamese": "bao bì nhựa dùng một lần",
+        "english": "Single-use plastic packaging",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3818"
+    },
+    {
+        "vietnamese": "các sản phẩm mang đi",
+        "english": "Take-away products",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3819"
+    },
+    {
+        "vietnamese": "luôn di chuyển",
+        "english": "Always on the go",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3820"
+    },
+    {
+        "vietnamese": "lịch trình bận rộn",
+        "english": "Demanding schedules",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3821"
+    },
+    {
+        "vietnamese": "sự tàn phá lâu dài",
+        "english": "The long-term destruction",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3822"
+    },
+    {
+        "vietnamese": "cuộc khủng hoảng ô nhiễm nhựa",
+        "english": "A plastic pollution crisis",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3823"
+    },
+    {
+        "vietnamese": "rác thải nhựa không tái chế được",
+        "english": "Unrecyclable plastic waste",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3824"
+    },
+    {
+        "vietnamese": "các khí độc hại",
+        "english": "Toxic fumes",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3825"
+    },
+    {
+        "vietnamese": "chịu đựng các tác động lên sức khoẻ từ việc gì đó",
+        "english": "To suffer the health effects of something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3826"
+    },
+    {
+        "vietnamese": "vật liệu có thể tái chế hoặc phân huỷ sinh học",
+        "english": "Recyclable or biodegradable materials",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3827"
+    },
+    {
+        "vietnamese": "tạo thói quen làm việc gì đó",
+        "english": "To make a habit of something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3828"
+    },
+    {
+        "vietnamese": "đồ chứa có thể tái sử dụng",
+        "english": "Reusable containers",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3829"
+    },
+    {
+        "vietnamese": "Nghĩa là những thứ giúp cho một sản phẩm mới đươc người khác",
+        "english": "Publicity materials",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3830"
+    },
+    {
+        "vietnamese": "Tiếp cận với khách hàng tiềm năng",
+        "english": "Approach prospective customers",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3831"
+    },
+    {
+        "vietnamese": "Bị “bỏ bom” bởi đủ các thể loại",
+        "english": "To be bombarded with all kinds of advertisements",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3832"
+    },
+    {
+        "vietnamese": "Quá tải thông tin",
+        "english": "Information overload",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3833"
+    },
+    {
+        "vietnamese": "sự giảm của tỷ lệ thất nghiệp",
+        "english": "A reduction in unemployment rates",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3834"
+    },
+    {
+        "vietnamese": "đặt rào cản cho việc nhập khẩu thức ăn",
+        "english": "Putting barriers on importing food",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3835"
+    },
+    {
+        "vietnamese": "các nước đóng vai trò quan trọng trong việc",
+        "english": "Countries can play their part in",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3836"
+    },
+    {
+        "vietnamese": "phong tục và văn hoá",
+        "english": "Cultures and customs",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3837"
+    },
+    {
+        "vietnamese": "trải nghiệm điều gì đó trực tiếp",
+        "english": "To experience something firsthand",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3838"
+    },
+    {
+        "vietnamese": "cập nhật",
+        "english": "Up-to-date",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3839"
+    },
+    {
+        "vietnamese": "toàn diện",
+        "english": "Comprehensive",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3840"
+    },
+    {
+        "vietnamese": "một hiểu biết sâu sắc hơn",
+        "english": "A deeper insight",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3841"
+    },
+    {
+        "vietnamese": "tạo ra những kỷ niệm kéo dài suốt đời",
+        "english": "Create memories that will last a lifetime",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3842"
+    },
+    {
+        "vietnamese": "Điểm đến du lịch nổi tiếng",
+        "english": "Famous tourist destinations",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3843"
+    },
+    {
+        "vietnamese": "lôi kéo",
+        "english": "Manipulate (v)",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3844"
+    },
+    {
+        "vietnamese": "khái niệm quảng cáo",
+        "english": "The concept of advertising",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3845"
+    },
+    {
+        "vietnamese": "một nền kinh tế thịnh vượng",
+        "english": "A prosperous economy",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3846"
+    },
+    {
+        "vietnamese": "cung cấp hỗ trợ tài chính tạm thời",
+        "english": "Provide temporary financial support",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3847"
+    },
+    {
+        "vietnamese": "nuôi nấng và chăm sóc",
+        "english": "The nurture and nourishment",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3848"
+    },
+    {
+        "vietnamese": "phát triển về mặt tình cảm và xã hội",
+        "english": "To develop emotionally and socially",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3849"
+    },
+    {
+        "vietnamese": "gia đình trực hệ",
+        "english": "Immediate family",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3850"
+    },
+    {
+        "vietnamese": "chịu hậu quả của các quyết định",
+        "english": "To bear the consequences of decisions",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3851"
+    },
+    {
+        "vietnamese": "tham gia nhầm nhóm người",
+        "english": "To fall in with the wrong crowd",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3852"
+    },
+    {
+        "vietnamese": "các dây thần kinh",
+        "english": "Neural pathways",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3853"
+    },
+    {
+        "vietnamese": "Phát triển sự sáng tạo và khả",
+        "english": "Cultivate their creativity and problem solving skills",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3854"
+    },
+    {
+        "vietnamese": "Sự tập trung cao độ và phản xạ cực",
+        "english": "Tremendous focus and extremely fast reflexes",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3855"
+    },
+    {
+        "vietnamese": "sự phổ biến rộng rãi",
+        "english": "Widespread popularity",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3856"
+    },
+    {
+        "vietnamese": "thúc đẩy thương mại đa phương và",
+        "english": "Boost multilateral trade and cultural exchange",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3857"
+    },
+    {
+        "vietnamese": "những nhu cầu cơ bản của cuộc sống",
+        "english": "The basic necessities of life",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3858"
+    },
+    {
+        "vietnamese": "nó chỉ phục vụ cho lý do đó",
+        "english": "It only serves to reason that",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3859"
+    },
+    {
+        "vietnamese": "tình trạng hiện tại của thế giới",
+        "english": "The current state of the world",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3860"
+    },
+    {
+        "vietnamese": "gây ra nhiều vấn đề hơn là giải quyết vấn đề",
+        "english": "Causes more problems than it solves",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3861"
+    },
+    {
+        "vietnamese": "các xã hội nhỏ hơn, dựa trên nền tảng cộng đồng",
+        "english": "Smaller, community-based societies",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3862"
+    },
+    {
+        "vietnamese": "đây vẫn là trường hợp cần lưu tâm",
+        "english": "This is still the case",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3863"
+    },
+    {
+        "vietnamese": "ý thức độc lập và tự do",
+        "english": "Sense of independence and freedom",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3864"
+    },
+    {
+        "vietnamese": "kết nối với thiên nhiên",
+        "english": "To connect with nature",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3865"
+    },
+    {
+        "vietnamese": "các hoạt động giảm căng thẳng hiệu quả nhất",
+        "english": "The most effective stress relieving activities",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3866"
+    },
+    {
+        "vietnamese": "kết nối chặt chẽ hơn và nhận thức",
+        "english": "A closer connection and better awareness of something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3867"
+    },
+    {
+        "vietnamese": "thực hiện các lựa chọn chế độ ăn uống thông minh hơn",
+        "english": "Make smarter dietary choices",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3868"
+    },
+    {
+        "vietnamese": "thực phẩm biến đổi gen và được trồng",
+        "english": "Genetically modified and chemically grown foods",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3869"
+    },
+    {
+        "vietnamese": "tác động tiêu cực đến sức khỏe của một người",
+        "english": "Negatively impact one’s health",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3870"
+    },
+    {
+        "vietnamese": "xã hội của những người khỏe mạnh hơn",
+        "english": "To create societies of healthier people",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3871"
+    },
+    {
+        "vietnamese": "vô số kết quả tích cực",
+        "english": "Countless positive outcomes",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3872"
+    },
+    {
+        "vietnamese": "khởi đầu trước",
+        "english": "Head start",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3873"
+    },
+    {
+        "vietnamese": "việc học chính thức",
+        "english": "Formal schooling",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3874"
+    },
+    {
+        "vietnamese": "kĩ năng mềm quan",
+        "english": "Vital soft skills including teamwork and communication skills",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3875"
+    },
+    {
+        "vietnamese": "tiền của người đóng thuế",
+        "english": "Tax-payer’s money",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3876"
+    },
+    {
+        "vietnamese": "cung cấp lương hưu cho người về hưu",
+        "english": "Provide pensions for retired people",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3877"
+    },
+    {
+        "vietnamese": "sự đóng góp về mặt tài chính",
+        "english": "Financial contributions",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3878"
+    },
+    {
+        "vietnamese": "không đặt gánh nặng lên ngân sách nhà",
+        "english": "Without placing a burden on government budgets",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3879"
+    },
+    {
+        "vietnamese": "có được cảm nhận tốt về điều gì đó",
+        "english": "To gain a good sense of something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3880"
+    },
+    {
+        "vietnamese": "tăng khả năng thể hiện bản thân",
+        "english": "To increase an ability to express oneself",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3881"
+    },
+    {
+        "vietnamese": "cái gì đó không phải ngoại lệ",
+        "english": "Something is no exception",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3882"
+    },
+    {
+        "vietnamese": "quá nhiều sự chú ý dành cho cái gì đó",
+        "english": "Too much attention given to something",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3883"
+    },
+    {
+        "vietnamese": "thúc đẩy nền kinh tế của một quốc gia",
+        "english": "To drive a country’s economy",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3884"
+    },
+    {
+        "vietnamese": "giữ một vị trí quan trọng",
+        "english": "To hold an important place",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3885"
+    },
+    {
+        "vietnamese": "xem trọng",
+        "english": "To hold in high regard",
+        "category": "ENVIRONMENT",
+        "id": "w5f_3886"
+    },
+    {
+        "vietnamese": "tác động bất lợi",
+        "english": "Detrimental effects",
+        "category": "FAMILY",
+        "id": "w5f_3887"
+    },
+    {
+        "vietnamese": "cải thiện tư thế và sức khỏe",
+        "english": "Improve posture and wellbeing",
+        "category": "FAMILY",
+        "id": "w5f_3888"
+    },
+    {
+        "vietnamese": "ổn định về tinh thần và cảm xúc",
+        "english": "Mentally and emotionally stable",
+        "category": "FAMILY",
+        "id": "w5f_3889"
+    },
+    {
+        "vietnamese": "gây ra một số rủi ro",
+        "english": "Poses several risks",
+        "category": "FAMILY",
+        "id": "w5f_3890"
+    },
+    {
+        "vietnamese": "các vấn đề về xương khớp",
+        "english": "Musculoskeletal problems",
+        "category": "FAMILY",
+        "id": "w5f_3891"
+    },
+    {
+        "vietnamese": "các tác động tiêu cực vượt xa mọi lợi ích",
+        "english": "The negative impacts far outweigh any benefit",
+        "category": "FAMILY",
+        "id": "w5f_3892"
+    },
+    {
+        "vietnamese": "được tự do làm theo ý một người",
+        "english": "To be free to do as one pleases",
+        "category": "FAMILY",
+        "id": "w5f_3893"
+    },
+    {
+        "vietnamese": "trở nên tệ thành hỗn loạn",
+        "english": "To deteriorate into chaos",
+        "category": "FAMILY",
+        "id": "w5f_3894"
+    },
+    {
+        "vietnamese": "thiết lập ranh giới",
+        "english": "To set boundaries",
+        "category": "FAMILY",
+        "id": "w5f_3895"
+    },
+    {
+        "vietnamese": "có lợi cho",
+        "english": "To be conducive to",
+        "category": "FAMILY",
+        "id": "w5f_3896"
+    },
+    {
+        "vietnamese": "thực thi các quy định",
+        "english": "To enforce those rules",
+        "category": "FAMILY",
+        "id": "w5f_3897"
+    },
+    {
+        "vietnamese": "sự biến động",
+        "english": "An upheaval",
+        "category": "FAMILY",
+        "id": "w5f_3898"
+    },
+    {
+        "vietnamese": "gây hại nhiều hơn lợi",
+        "english": "To cause more harm than good",
+        "category": "FAMILY",
+        "id": "w5f_3899"
+    },
+    {
+        "vietnamese": "ủng hộ người giàu và chống lại người nghèo",
+        "english": "To favour the rich and oppose the poor",
+        "category": "FAMILY",
+        "id": "w5f_3900"
+    },
+    {
+        "vietnamese": "thiện chí và trí thông minh bẩm sinh",
+        "english": "Innate goodwill and intelligence",
+        "category": "FAMILY",
+        "id": "w5f_3901"
+    },
+    {
+        "vietnamese": "vô số thứ gì đó",
+        "english": "The endless amounts of something",
+        "category": "FAMILY",
+        "id": "w5f_3902"
+    },
+    {
+        "vietnamese": "tiếp xúc với cái gì",
+        "english": "To be subject to",
+        "category": "FAMILY",
+        "id": "w5f_3903"
+    },
+    {
+        "vietnamese": "một công cụ để thư giãn",
+        "english": "A tool for relaxation",
+        "category": "FAMILY",
+        "id": "w5f_3904"
+    },
+    {
+        "vietnamese": "kết hợp hệ tư tưởng",
+        "english": "To incorporate ideology",
+        "category": "FAMILY",
+        "id": "w5f_3905"
+    },
+    {
+        "vietnamese": "vi phạm sự tự do",
+        "english": "A violation of freedom",
+        "category": "FAMILY",
+        "id": "w5f_3906"
+    },
+    {
+        "vietnamese": "biểu cảm nghệ thuật",
+        "english": "Artistic expression",
+        "category": "FAMILY",
+        "id": "w5f_3907"
+    },
+    {
+        "vietnamese": "tuyên truyền",
+        "english": "To spread propaganda",
+        "category": "FAMILY",
+        "id": "w5f_3908"
+    },
+    {
+        "vietnamese": "ý kiến không thiên vị",
+        "english": "An unbiased opinion",
+        "category": "FAMILY",
+        "id": "w5f_3909"
+    },
+    {
+        "vietnamese": "phân nhánh rộng lớn",
+        "english": "Vast ramifications",
+        "category": "FAMILY",
+        "id": "w5f_3910"
+    },
+    {
+        "vietnamese": "béo phì",
+        "english": "Obesity",
+        "category": "FAMILY",
+        "id": "w5f_3911"
+    },
+    {
+        "vietnamese": "tiểu đường",
+        "english": "Diabetes",
+        "category": "FAMILY",
+        "id": "w5f_3912"
+    },
+    {
+        "vietnamese": "bệnh tim",
+        "english": "Heart disease",
+        "category": "FAMILY",
+        "id": "w5f_3913"
+    },
+    {
+        "vietnamese": "chế độ ăn nghèo nàn và lối sống thụ động",
+        "english": "Poor diets and sedentary lifestyles",
+        "category": "FAMILY",
+        "id": "w5f_3914"
+    },
+    {
+        "vietnamese": "thịnh vượng",
+        "english": "Prosperous",
+        "category": "FAMILY",
+        "id": "w5f_3915"
+    },
+    {
+        "vietnamese": "có xu hướng tăng cân",
+        "english": "A tendency to put on weight",
+        "category": "FAMILY",
+        "id": "w5f_3916"
+    },
+    {
+        "vietnamese": "khuynh hướng di truyền",
+        "english": "A genetic predisposition",
+        "category": "FAMILY",
+        "id": "w5f_3917"
+    },
+    {
+        "vietnamese": "duy trì cơ thể khoẻ mạnh",
+        "english": "To maintain a healthy body",
+        "category": "FAMILY",
+        "id": "w5f_3918"
+    },
+    {
+        "vietnamese": "ngớ ngẩn",
+        "english": "Absurd",
+        "category": "FAMILY",
+        "id": "w5f_3919"
+    },
+    {
+        "vietnamese": "tập trung các nỗ lực",
+        "english": "Focus their efforts",
+        "category": "FAMILY",
+        "id": "w5f_3920"
+    },
+    {
+        "vietnamese": "quảng cáo và thúc đẩy cái gì đó",
+        "english": "The advertisement and promotion of something",
+        "category": "FAMILY",
+        "id": "w5f_3921"
+    },
+    {
+        "vietnamese": "kết quả tầm thường",
+        "english": "Mediocre outcomes",
+        "category": "FAMILY",
+        "id": "w5f_3922"
+    },
+    {
+        "vietnamese": "không liên quan",
+        "english": "Irrelevant",
+        "category": "FAMILY",
+        "id": "w5f_3923"
+    },
+    {
+        "vietnamese": "phá hủy các mối quan hệ xã hội",
+        "english": "Erode social relationships",
+        "category": "FAMILY",
+        "id": "w5f_3924"
+    },
+    {
+        "vietnamese": "ngăn cản những hành vi hợp tác",
+        "english": "Dissuade collaborative behaviors",
+        "category": "FAMILY",
+        "id": "w5f_3925"
+    },
+    {
+        "vietnamese": "chịu đựng lòng tự trọng thấp",
+        "english": "Suffer from low-self esteem",
+        "category": "FAMILY",
+        "id": "w5f_3926"
+    },
+    {
+        "vietnamese": "thiếu sự quyết đoán",
+        "english": "Indecision",
+        "category": "FAMILY",
+        "id": "w5f_3927"
+    },
+    {
+        "vietnamese": "ước chừng kích cỡ của sản phẩm",
+        "english": "Gauge the correct size of items",
+        "category": "FAMILY",
+        "id": "w5f_3928"
+    },
+    {
+        "vietnamese": "hạn chế trong việc di chuyển",
+        "english": "Limited in mobility",
+        "category": "FAMILY",
+        "id": "w5f_3929"
+    },
+    {
+        "vietnamese": "vận chuyển",
+        "english": "Delivery",
+        "category": "FAMILY",
+        "id": "w5f_3930"
+    },
+    {
+        "vietnamese": "một phần quan trọng",
+        "english": "An integral part",
+        "category": "GENDER",
+        "id": "w5f_3931"
+    },
+    {
+        "vietnamese": "có một kiến thức nền vững",
+        "english": "Have a solid understanding",
+        "category": "GENDER",
+        "id": "w5f_3932"
+    },
+    {
+        "vietnamese": "số học",
+        "english": "Arithmetic",
+        "category": "GENDER",
+        "id": "w5f_3933"
+    },
+    {
+        "vietnamese": "đại số",
+        "english": "Algebra",
+        "category": "GENDER",
+        "id": "w5f_3934"
+    },
+    {
+        "vietnamese": "tìm nguồn khác cho kỹ năng này",
+        "english": "Outsource this skill",
+        "category": "GENDER",
+        "id": "w5f_3935"
+    },
+    {
+        "vietnamese": "bao gồm",
+        "english": "Encompass",
+        "category": "GENDER",
+        "id": "w5f_3936"
+    },
+    {
+        "vietnamese": "vai trò lớn",
+        "english": "Dominant role",
+        "category": "GENDER",
+        "id": "w5f_3937"
+    },
+    {
+        "vietnamese": "không có sự hứng thú",
+        "english": "Find no interest in",
+        "category": "GENDER",
+        "id": "w5f_3938"
+    },
+    {
+        "vietnamese": "thể loại",
+        "english": "Genre",
+        "category": "GENDER",
+        "id": "w5f_3939"
+    },
+    {
+        "vietnamese": "giá trị thực tế",
+        "english": "Practical value",
+        "category": "GENDER",
+        "id": "w5f_3940"
+    },
+    {
+        "vietnamese": "miễn cưỡng",
+        "english": "Reluctance",
+        "category": "GENDER",
+        "id": "w5f_3941"
+    },
+    {
+        "vietnamese": "Thực sự vô đạo đức để kiếm tiền bằng cách bán nước đóng gói",
+        "english": "Thực sự vô đạo đức để kiếm tiền bằng cách bán nước đóng gói",
+        "category": "WATER",
+        "id": "w5p_3942"
+    },
+    {
+        "vietnamese": "Không có sự khác biệt về chất lượng giữa nước đóng chai và nước máy WORK",
+        "english": "Không có sự khác biệt về chất lượng giữa nước đóng chai và nước máy",
+        "category": "WATER",
+        "id": "w5p_3943"
+    },
+    {
+        "vietnamese": "Những người thất nghiệp có thể tham gia vào tội phạm như là một phương tiện để kiếm tiền",
+        "english": "Những người thất nghiệp có thể tham gia vào tội phạm như là một phương tiện để kiếm tiền",
+        "category": "WORK",
+        "id": "w5p_3944"
+    },
+    {
+        "vietnamese": "(sysnonym của enough)",
+        "english": "Adequate (adj)",
+        "category": "WORK – LIFE",
+        "id": "w5f_3945"
     }
 ];

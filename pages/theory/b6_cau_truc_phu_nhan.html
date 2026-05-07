@@ -3,52 +3,290 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>B6. CẤU TRÚC PHỦ NHẬN | IELTS Writing Task 1 Theory</title>
-    <script src='https://cdn.tailwindcss.com'></script>
-    <script src='https://unpkg.com/lucide@latest'></script>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+    <title>B6. NEGATION & STABILITY ARCHITECTURE | IELTS Writing Mastery</title>
+    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
+    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
+    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .lesson-content p { margin-bottom: 1rem; line-height: 1.6; color: #334155; }
-        .lesson-content strong { color: #1e293b; font-weight: 700; }
-        .lesson-content .bg-blue-50 { border-radius: 0.75rem; }
-        .lesson-content div { margin-bottom: 1rem; }
-        .lesson-content .font-semibold { color: #1e293b; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .mastery-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hover-lift { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.2); }
+        .ans-hidden { max-height: 0; overflow: hidden; transition: all 0.5s ease-in-out; opacity: 0; }
+        .ans-visible { max-height: 1000px; opacity: 1; margin-top: 1.5rem; }
+        .step-line::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: #e2e8f0; z-index: 0; }
     </style>
 </head>
-<body class='bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen pb-20'>
-    <div class='max-w-4xl mx-auto px-4 pt-12'>
-        <a href='../task1_theory.html' class='inline-flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all'>
-            <i data-lucide='arrow-left' class='w-5 h-5'></i>
-            Quay lại danh sách
-        </a>
-
-        <div class='bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 overflow-hidden'>
-            <div class='bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-white'>
-                <div class='flex items-center gap-4 mb-4'>
-                    <span class='px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-black uppercase tracking-widest'>Lesson Module</span>
+<body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24'>
+    <div class='max-w-6xl mx-auto px-6 pt-12'>
+        <!-- Navigation -->
+        <nav class='flex justify-between items-center mb-12'>
+            <a href='../task1_theory.html' class='group flex items-center gap-3 text-slate-600 font-bold hover:text-blue-600 transition-all'>
+                <div class='p-3 bg-white rounded-2xl shadow-sm group-hover:shadow-blue-100 group-hover:scale-110 transition-all'>
+                    <i data-lucide='arrow-left' class='w-5 h-5'></i>
                 </div>
-                <h1 class='text-4xl font-black tracking-tight leading-tight'>B6. CẤU TRÚC PHỦ NHẬN</h1>
+                <span>Curriculum Roadmap</span>
+            </a>
+            <div class='flex gap-2'>
+                <span class='px-4 py-2 bg-blue-50 text-blue-600 rounded-xl text-xs font-black uppercase tracking-widest'>Module B6</span>
+                <span class='px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-black uppercase tracking-widest'>Advanced Logic</span>
             </div>
+        </nav>
 
-            <div class='p-10 lesson-content text-lg'>
-                <p class='mb-2 text-gray-800 leading-relaxed'>1. Số liệu đã không thay đổi nhiều vào giai đoạn tháng 7 đến tháng 12. The figure DID NOT CHANGE</p><p class='mb-2 text-gray-800 leading-relaxed'>MUCH in the July – December period.</p><p class='mb-2 text-gray-800 leading-relaxed'>2. Số lượng các trường hợp không phát triển nhiều. The number of cases DID NOT GROW A GREAT</p><p class='mb-2 text-gray-800 leading-relaxed'>DEAL.</p><p class='mb-2 text-gray-800 leading-relaxed'>3. Thậm chí giá tăng nhiều, nhưng số lượng người hút thuốc đã không giảm đáng kể. Even though the</p><p class='mb-2 text-gray-800 leading-relaxed'>price went up a lot, the number of smokers DID NOT DROP SHARPLY.</p>
+        <!-- Hero: The Logic of Absence -->
+        <header class='relative overflow-hidden mastery-gradient rounded-[4rem] p-16 text-white mb-20 shadow-3xl'>
+            <div class='absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] -mr-48 -mt-48'></div>
+            <div class='relative z-10 grid lg:grid-cols-2 gap-12 items-center'>
+                <div>
+                    <h1 class='text-6xl font-black tracking-tighter leading-none mb-8 uppercase'>
+                        Tư duy <br/><span class='text-blue-400 font-black italic'>PHỦ ĐỊNH</span> <br/>& ỔN ĐỊNH
+                    </h1>
+                    <p class='text-slate-400 text-xl leading-relaxed font-medium max-w-lg italic border-l-4 border-blue-500 pl-6'>
+                        "Trong phân tích dữ liệu, việc mô tả những gì 'không xảy ra' chứng minh khả năng quan sát bao quát và tư duy phản biện của một chuyên gia."
+                    </p>
+                </div>
+                <div class='glass-card p-10 rounded-[3rem] border-white/20'>
+                    <div class='space-y-6'>
+                        <div class='flex items-center gap-4'>
+                            <div class='w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center'><i data-lucide='binary' class='text-blue-400'></i></div>
+                            <div>
+                                <h4 class='font-bold text-sm'>Data Filtering</h4>
+                                <p class='text-xs text-slate-400'>Loại bỏ nhiễu để tập trung vào sự ổn định.</p>
+                            </div>
+                        </div>
+                        <div class='h-px bg-white/10'></div>
+                        <div class='flex items-center gap-4'>
+                            <div class='w-12 h-12 bg-emerald-500/20 rounded-2xl flex items-center justify-center'><i data-lucide='git-branch' class='text-emerald-400'></i></div>
+                            <div>
+                                <h4 class='font-bold text-sm'>Inverse Correlation</h4>
+                                <p class='text-xs text-slate-400'>Phủ định sự tăng trưởng để khẳng định vị thế.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <div class='mt-12 p-8 bg-blue-50 dark:bg-blue-900/10 rounded-[2rem] border border-blue-100 dark:border-blue-900/30 flex items-center gap-6'>
-            <div class='w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20'>
-                <i data-lucide='lightbulb' class='w-8 h-8'></i>
+        <!-- AI Engineering: Why Negation Matters -->
+        <section class='grid lg:grid-cols-3 gap-8 mb-24'>
+            <div class='lg:col-span-2 bg-white rounded-[3.5rem] p-12 shadow-sm border border-slate-100'>
+                <h3 class='text-3xl font-black mb-8 flex items-center gap-3 uppercase tracking-tighter'>
+                    <i data-lucide='microscope' class='text-blue-600'></i> AI Semantic Analysis
+                </h3>
+                <div class='space-y-6 text-slate-600 font-medium leading-relaxed'>
+                    <p>Trong xử lý ngôn ngữ tự nhiên (NLP), cấu trúc phủ định giúp thu hẹp phạm vi của các tập dữ liệu biến thiên. Đối với IELTS Writing, đây là công cụ tối ưu để:</p>
+                    <ul class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <li class='flex items-start gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100'>
+                            <i data-lucide='check-circle-2' class='w-5 h-5 text-blue-600 shrink-0 mt-1'></i>
+                            <span><strong>Tránh lặp từ:</strong> Thay thế "stayed the same" bằng "did not exhibit much change".</span>
+                        </li>
+                        <li class='flex items-start gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100'>
+                            <i data-lucide='check-circle-2' class='w-5 h-5 text-blue-600 shrink-0 mt-1'></i>
+                            <span><strong>Nhấn mạnh tương phản:</strong> "Dù có tác động mạnh, số liệu vẫn không giảm".</span>
+                        </li>
+                    </ul>
+                    <blockquote class='p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-2xl italic text-blue-900'>
+                        "Việc dùng phủ định không phải để làm câu dài hơn, mà để tạo ra sự <strong>Precision (Độ chính xác)</strong> trong việc phân định ranh giới dữ liệu."
+                    </blockquote>
+                </div>
+            </div>
+            <div class='bg-slate-900 rounded-[3.5rem] p-10 text-white relative overflow-hidden group hover-lift'>
+                <div class='absolute -right-8 -bottom-8 opacity-10 group-hover:scale-125 transition-transform duration-700'><i data-lucide='alert-circle' class='w-48 h-48'></i></div>
+                <h4 class='text-blue-400 font-black text-xs uppercase tracking-widest mb-6'>Distinction: Stable vs. Constant</h4>
+                <div class='space-y-6'>
+                    <div class='p-5 bg-white/5 rounded-2xl border border-white/10'>
+                        <p class='text-sm font-bold text-blue-300 uppercase mb-2'>Stable</p>
+                        <p class='text-xs opacity-80 leading-relaxed'>Có biến động cực nhỏ nhưng xu hướng tổng thể là ngang. Thường dùng "Did not change significantly".</p>
+                    </div>
+                    <div class='p-5 bg-white/5 rounded-2xl border border-white/10'>
+                        <p class='text-sm font-bold text-emerald-300 uppercase mb-2'>Constant</p>
+                        <p class='text-xs opacity-80 leading-relaxed'>Tuyệt đối không thay đổi (thường thấy ở biểu đồ cột hoặc bảng). Thường dùng "Remained virtually unchanged".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization: Data Negation Map -->
+        
+        <section class='mb-24 relative overflow-hidden bg-white rounded-[4rem] p-16 shadow-sm border border-slate-100 text-center'>
+            <h3 class='text-3xl font-black mb-16 uppercase tracking-tighter'>Quy trình Phủ định Dữ liệu (Negation Pipeline)</h3>
+            <div class='flex flex-col md:flex-row justify-between items-center gap-12'>
+                <div class='w-full p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative'>
+                    <div class='absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 accent-gradient rounded-full flex items-center justify-center text-white font-black shadow-lg shadow-blue-500/40'>1</div>
+                    <h5 class='font-black text-sm uppercase mb-3 mt-4 text-blue-600'>Magnitude Phủ Định</h5>
+                    <p class='text-xs text-slate-500 italic'>"Did not grow a great deal"</p>
+                </div>
+                <i data-lucide='chevrons-right' class='hidden md:block w-8 h-8 text-slate-300'></i>
+                <div class='w-full p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative'>
+                    <div class='absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 accent-gradient rounded-full flex items-center justify-center text-white font-black shadow-lg shadow-blue-500/40'>2</div>
+                    <h5 class='font-black text-sm uppercase mb-3 mt-4 text-indigo-600'>Fluctuation Phủ Định</h5>
+                    <p class='text-xs text-slate-500 italic'>"Saw no major movement"</p>
+                </div>
+                <i data-lucide='chevrons-right' class='hidden md:block w-8 h-8 text-slate-300'></i>
+                <div class='w-full p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative'>
+                    <div class='absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 accent-gradient rounded-full flex items-center justify-center text-white font-black shadow-lg shadow-blue-500/40'>3</div>
+                    <h5 class='font-black text-sm uppercase mb-3 mt-4 text-emerald-600'>Expectation Phủ Định</h5>
+                    <p class='text-xs text-slate-500 italic'>"Did not drop as expected"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Band 8.5+ Showcase -->
+        <section class='mb-24'>
+            <h3 class='text-3xl font-black mb-12 flex items-center gap-4 uppercase tracking-tighter'>
+                <i data-lucide='award' class='text-blue-600'></i> 5 Đẳng Cấp Phủ Định Band 8.5+
+            </h3>
+            <div class='grid grid-cols-1 gap-6'>
+                <!-- Example 1 -->
+                <div class='p-10 bg-white rounded-[3rem] border border-slate-100 shadow-sm hover-lift border-l-[12px] border-l-blue-600'>
+                    <div class='flex flex-col md:flex-row gap-8'>
+                        <div class='flex-1'>
+                            <span class='px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase mb-4 inline-block tracking-widest'>The "Not Significant" Guard</span>
+                            <p class='text-xl font-bold text-slate-800 italic leading-relaxed mb-4'>"Oil consumption <span class='text-blue-600 underline underline-offset-4 decoration-2'>did not experience any significant growth</span> over the 10-year period, hovering around 20 million barrels."</p>
+                            <p class='text-sm text-slate-500'><strong>Dịch:</strong> Tiêu thụ dầu không trải qua bất kỳ sự tăng trưởng đáng kể nào trong suốt 10 năm, giữ quanh mức 20 triệu thùng.</p>
+                        </div>
+                        <div class='md:w-64 p-6 bg-slate-50 rounded-3xl text-xs text-slate-600 font-medium italic'>
+                            "Việc dùng 'significant' làm định ngữ cho 'growth' trong câu phủ định giúp giới hạn biên độ biến động cực kỳ chuyên nghiệp."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div class='p-10 bg-white rounded-[3rem] border border-slate-100 shadow-sm hover-lift border-l-[12px] border-l-indigo-600'>
+                    <div class='flex flex-col md:flex-row gap-8'>
+                        <div class='flex-1'>
+                            <span class='px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-black uppercase mb-4 inline-block tracking-widest'>Comparative Negation</span>
+                            <p class='text-xl font-bold text-slate-800 italic leading-relaxed mb-4'>"The number of visitors to the park <span class='text-indigo-600 underline underline-offset-4 decoration-2'>did not drop as sharply as</span> it did in the previous decade."</p>
+                            <p class='text-sm text-slate-500'><strong>Dịch:</strong> Số lượng khách đến công viên không giảm mạnh như thập kỷ trước.</p>
+                        </div>
+                        <div class='md:w-64 p-6 bg-slate-50 rounded-3xl text-xs text-slate-600 font-medium italic'>
+                            "Cấu trúc so sánh 'as... as' trong phủ định tạo ra chiều sâu thời gian (Temporal depth) cho bài phân tích."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 3 -->
+                <div class='p-10 bg-white rounded-[3rem] border border-slate-100 shadow-sm hover-lift border-l-[12px] border-l-emerald-600'>
+                    <div class='flex flex-col md:flex-row gap-8'>
+                        <div class='flex-1'>
+                            <span class='px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-black uppercase mb-4 inline-block tracking-widest'>The "Fluctuation-Free" Zone</span>
+                            <p class='text-xl font-bold text-slate-800 italic leading-relaxed mb-4'>"Unlike the volatile gold market, silver prices <span class='text-emerald-600 underline underline-offset-4 decoration-2'>saw no major fluctuations</span> throughout the fiscal year."</p>
+                            <p class='text-sm text-slate-500'><strong>Dịch:</strong> Không giống như thị trường vàng đầy biến động, giá bạc không ghi nhận sự biến động lớn nào suốt năm tài chính.</p>
+                        </div>
+                        <div class='md:w-64 p-6 bg-slate-50 rounded-3xl text-xs text-slate-600 font-medium italic'>
+                            "Dùng 'no major fluctuations' thay vì 'was stable' giúp câu văn có hình ảnh hơn, nhấn mạnh vào sự yên tĩnh của dữ liệu."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocabulary Matrix -->
+        <section class='mb-24'>
+            <h3 class='text-3xl font-black mb-12 flex items-center gap-4 uppercase tracking-tighter'>
+                <i data-lucide='table' class='text-blue-600'></i> LEXICAL CATEGORY MAP
+            </h3>
+            <div class='bg-white rounded-[3rem] shadow-sm border border-slate-100 overflow-hidden'>
+                <table class='w-full text-left'>
+                    <thead class='bg-slate-900 text-white'>
+                        <tr>
+                            <th class='p-8 font-black uppercase text-xs tracking-widest'>Context</th>
+                            <th class='p-8 font-black uppercase text-xs tracking-widest'>Negative Structure</th>
+                            <th class='p-8 font-black uppercase text-xs tracking-widest'>Stable Equivalent</th>
+                        </tr>
+                    </thead>
+                    <tbody class='divide-y divide-slate-100 text-slate-600 font-medium'>
+                        <tr class='hover:bg-blue-50/50 transition-colors'>
+                            <td class='p-8 font-bold text-slate-900'>Little change</td>
+                            <td class='p-8 italic'>Did not change much</td>
+                            <td class='p-8'>Remained relatively stable</td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/50 transition-colors'>
+                            <td class='p-8 font-bold text-slate-900'>No growth</td>
+                            <td class='p-8 italic'>Did not grow a great deal</td>
+                            <td class='p-8'>Showed minimal growth</td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/50 transition-colors'>
+                            <td class='p-8 font-bold text-slate-900'>Resistance to fall</td>
+                            <td class='p-8 italic'>Did not drop significantly</td>
+                            <td class='p-8'>Experienced a marginal decline</td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/50 transition-colors'>
+                            <td class='p-8 font-bold text-slate-900'>Zero Volatility</td>
+                            <td class='p-8 italic'>Saw no fluctuations</td>
+                            <td class='p-8'>Stayed constant</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Interactive Syntax Lab -->
+        <section class='bg-slate-900 rounded-[4rem] p-16 shadow-2xl relative overflow-hidden'>
+            <div class='absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]'></div>
+            <h3 class='text-4xl font-black mb-12 flex items-center gap-6 text-white uppercase tracking-tighter'>
+                <i data-lucide='flask-conical' class='text-blue-400 w-10 h-10'></i> Syntax Lab: Logic Forge
+            </h3>
+            
+            <div class='space-y-10 relative z-10'>
+                <!-- Lab 1 -->
+                <div class='bg-white/5 backdrop-blur-xl p-10 rounded-[3rem] border border-white/10 hover:border-blue-500/50 transition-all'>
+                    <div class='flex justify-between items-start mb-6'>
+                        <h5 class='text-blue-400 font-black text-xs uppercase tracking-widest'>Mission 01: The Subtle Denial</h5>
+                        <span class='px-3 py-1 bg-blue-500 text-[10px] font-black rounded-full text-white'>LEVEL 1</span>
+                    </div>
+                    <p class='text-slate-300 mb-8 text-lg leading-relaxed italic'>
+                        "Tỉ lệ tội phạm không thay đổi nhiều trong 5 năm." <br>
+                        <span class='text-slate-500 text-sm'>➔ Use "did not change much"</span>
+                    </p>
+                    <input type='text' placeholder='Input your academic code...' class='w-full bg-slate-800 border border-slate-700 rounded-2xl p-6 text-white outline-none focus:ring-2 focus:ring-blue-500 mb-6'>
+                    <button onclick='toggleAns("ans1")' class='px-10 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl font-black text-xs uppercase tracking-widest transition-all'>Execute Logic</button>
+                    <div id='ans1' class='ans-hidden bg-blue-950/50 p-8 rounded-3xl border border-blue-500/30 text-blue-200'>
+                        "The crime rate did not change much over the five-year period."
+                    </div>
+                </div>
+
+                <!-- Lab 2 -->
+                <div class='bg-white/5 backdrop-blur-xl p-10 rounded-[3rem] border border-white/10 hover:border-indigo-500/50 transition-all'>
+                    <div class='flex justify-between items-start mb-6'>
+                        <h5 class='text-indigo-400 font-black text-xs uppercase tracking-widest'>Mission 02: Advanced Expectation</h5>
+                        <span class='px-3 py-1 bg-indigo-500 text-[10px] font-black rounded-full text-white'>LEVEL 2</span>
+                    </div>
+                    <p class='text-slate-300 mb-8 text-lg leading-relaxed italic'>
+                        "Doanh thu không tăng mạnh như dự kiến." <br>
+                        <span class='text-slate-500 text-sm'>➔ Use "did not grow as substantially as..."</span>
+                    </p>
+                    <input type='text' placeholder='Input your academic code...' class='w-full bg-slate-800 border border-slate-700 rounded-2xl p-6 text-white outline-none focus:ring-2 focus:ring-indigo-500 mb-6'>
+                    <button onclick='toggleAns("ans2")' class='px-10 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-black text-xs uppercase tracking-widest transition-all'>Execute Logic</button>
+                    <div id='ans2' class='ans-hidden bg-indigo-950/50 p-8 rounded-3xl border border-indigo-500/30 text-indigo-200'>
+                        "Total revenue did not grow as substantially as had been expected."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Master Insight -->
+        <footer class='mt-24 p-12 bg-white rounded-[4rem] border-2 border-dashed border-blue-200 flex flex-col md:flex-row items-center gap-10 group hover:bg-blue-50 transition-all'>
+            <div class='w-24 h-24 bg-slate-900 rounded-[2rem] flex items-center justify-center text-white shadow-2xl shrink-0 group-hover:rotate-12 transition-transform'>
+                <i data-lucide='lightbulb' class='w-12 h-12'></i>
             </div>
             <div>
-                <h4 class='font-black text-blue-900 dark:text-blue-300'>Mẹo học tập</h4>
-                <p class='text-blue-700 dark:text-blue-400 font-medium mb-0'>Hãy ghi chép lại các cấu trúc này và áp dụng vào phần Luyện tập dịch câu để ghi nhớ lâu hơn.</p>
+                <h4 class='text-xl font-black text-slate-800 mb-2 uppercase tracking-tighter'>The Balance of Nullity</h4>
+                <p class='text-slate-600 font-medium leading-relaxed italic'>
+                    "Trong IELTS, <strong>Zero is data</strong>. Việc một đường đồ thị không di chuyển chính là một điểm tin cần báo cáo. Đừng bỏ qua những giai đoạn ổn định; hãy dùng cấu trúc phủ định để mô tả chúng một cách tinh tế nhất."
+                </p>
             </div>
-        </div>
+        </footer>
     </div>
 
     <script>
         lucide.createIcons();
+        function toggleAns(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('ans-visible');
+        }
     </script>
 </body>
 </html>

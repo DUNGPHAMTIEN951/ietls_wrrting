@@ -3,52 +3,273 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>B2. MÔ TẢ SỐ LIỆU | IELTS Writing Task 1 Theory</title>
-    <script src='https://cdn.tailwindcss.com'></script>
-    <script src='https://unpkg.com/lucide@latest'></script>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+    <title>B2. DATA DESCRIPTION ARCHITECTURE | IELTS Writing Mastery</title>
+    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
+    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
+    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .lesson-content p { margin-bottom: 1rem; line-height: 1.6; color: #334155; }
-        .lesson-content strong { color: #1e293b; font-weight: 700; }
-        .lesson-content .bg-blue-50 { border-radius: 0.75rem; }
-        .lesson-content div { margin-bottom: 1rem; }
-        .lesson-content .font-semibold { color: #1e293b; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .mastery-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.4); }
+        .hover-lift { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .ans-hidden { max-height: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); opacity: 0; }
+        .ans-visible { max-height: 1000px; opacity: 1; margin-top: 1.5rem; }
+        .gradient-border { position: relative; border-radius: 2rem; background: white; padding: 2rem; }
+        .gradient-border::before { content: ""; position: absolute; inset: -2px; border-radius: 2.1rem; background: linear-gradient(45deg, #3b82f6, #6366f1, #a855f7); z-index: -1; opacity: 0.3; }
     </style>
 </head>
-<body class='bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen pb-20'>
-    <div class='max-w-4xl mx-auto px-4 pt-12'>
-        <a href='../task1_theory.html' class='inline-flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all'>
-            <i data-lucide='arrow-left' class='w-5 h-5'></i>
-            Quay lại danh sách
-        </a>
-
-        <div class='bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 overflow-hidden'>
-            <div class='bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-white'>
-                <div class='flex items-center gap-4 mb-4'>
-                    <span class='px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-black uppercase tracking-widest'>Lesson Module</span>
+<body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24'>
+    <div class='max-w-6xl mx-auto px-6 pt-12'>
+        <!-- Navigation -->
+        <nav class='flex justify-between items-center mb-16'>
+            <a href='../task1_theory.html' class='group flex items-center gap-3 text-slate-600 font-bold hover:text-blue-600 transition-all'>
+                <div class='p-3 bg-white rounded-2xl shadow-sm group-hover:shadow-blue-100 group-hover:scale-110 transition-all'>
+                    <i data-lucide='arrow-left' class='w-5 h-5'></i>
                 </div>
-                <h1 class='text-4xl font-black tracking-tight leading-tight'>B2. MÔ TẢ SỐ LIỆU</h1>
+                <span>Hệ thống Mastery B2</span>
+            </a>
+            <div class='flex gap-4'>
+                <div class='px-4 py-2 bg-blue-50 text-blue-600 rounded-xl text-[10px] font-black uppercase tracking-widest border border-blue-100'>Data Engineering</div>
+                <div class='px-4 py-2 bg-emerald-50 text-emerald-600 rounded-xl text-[10px] font-black uppercase tracking-widest border border-emerald-100'>Band 8.5+ Architecture</div>
+            </div>
+        </nav>
+
+        <!-- Hero Header -->
+        <header class='relative overflow-hidden mastery-gradient rounded-[4rem] p-16 text-white mb-20 shadow-3xl'>
+            <div class='absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] -mr-48 -mt-48'></div>
+            <div class='relative z-10 grid lg:grid-cols-2 gap-12 items-center'>
+                <div>
+                    <h1 class='text-6xl font-black tracking-tighter leading-[1.05] mb-8'>
+                        KIẾN TRÚC <br/><span class='text-blue-400 italic font-medium'>MÔ TẢ SỐ LIỆU</span> <br/>LEVEL EXPERT
+                    </h1>
+                    <p class='text-slate-400 text-xl leading-relaxed font-medium max-w-lg mb-8'>
+                        "Trong IELTS, số liệu là nguyên liệu, nhưng cấu trúc là bản thiết kế. Đừng chỉ liệt kê; hãy kiến tạo dòng chảy logic."
+                    </p>
+                    <div class='flex gap-4'>
+                        <div class='px-6 py-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 flex items-center gap-3'>
+                            <i data-lucide='layers' class='w-6 h-6 text-blue-400'></i>
+                            <span class='text-sm font-bold tracking-tight uppercase'>Structural Entropy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class='hidden lg:block'>
+                    <div class='glass-card p-10 rounded-[3rem] border-white/20 shadow-2xl relative rotate-3'>
+                        <div class='flex gap-2 mb-6'>
+                            <div class='w-3 h-3 rounded-full bg-red-400'></div>
+                            <div class='w-3 h-3 rounded-full bg-amber-400'></div>
+                            <div class='w-3 h-3 rounded-full bg-emerald-400'></div>
+                        </div>
+                        <pre class='text-slate-800 font-mono text-sm leading-relaxed'>
+<span class='text-blue-600'>function</span> describeData(value, year) {
+  <span class='text-slate-400'>// Logic: Accuracy & Variety</span>
+  <span class='text-emerald-600'>return</span> `Stood at ${value} in ${year}`;
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Deep Insights & AI Analysis -->
+        <section class='grid lg:grid-cols-3 gap-10 mb-24'>
+            <div class='lg:col-span-2 space-y-10'>
+                <div class='bg-white p-12 rounded-[3.5rem] shadow-xl shadow-slate-200/50 relative overflow-hidden'>
+                    <div class='flex items-center gap-4 mb-8'>
+                        <div class='p-4 bg-blue-600 rounded-2xl text-white shadow-lg shadow-blue-200'>
+                            <i data-lucide='cpu' class='w-6 h-6'></i>
+                        </div>
+                        <h3 class='text-3xl font-black text-slate-800 tracking-tighter uppercase'>AI Engineer's Logic</h3>
+                    </div>
+                    <div class='space-y-6 text-slate-600 text-lg leading-relaxed font-medium'>
+                        <p>Dưới góc độ <strong>Natural Language Processing (NLP)</strong>, giám khảo tìm kiếm sự biến thiên trong cấu trúc câu để tránh 'Pattern Repetition'. Một bài viết Band 8.5+ cần có độ <em>Structural Flexibility</em> cao.</p>
+                        <div class='p-8 bg-slate-50 rounded-[2.5rem] border-l-8 border-blue-600 italic'>
+                            "Việc chuyển đổi linh hoạt giữa 3 trục: <strong>Chủ ngữ chỉ Người, Chủ ngữ chỉ Số lượng, và Chủ ngữ giả 'There'</strong> tạo ra một hệ sinh thái văn bản sống động."
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class='p-10 lesson-content text-lg'>
-                <p class='mb-2 text-gray-800 leading-relaxed'>Trong Writing Task 1, muốn được điểm cao, chúng ta cần sử dụng các cấu trúc và từ vựng mô tả số</p><p class='mb-2 text-gray-800 leading-relaxed'>liệu đa dạng và xen kẽ trong bài. Đừng chỉ sử dụng duy nhất một cấu trúc cho toàn bộ bài viết.</p><p class='mb-2 text-gray-800 leading-relaxed'>Số khách du lịch đến thăm nước Anh trong năm 1990 là 25 triệu người.</p><p class='mb-2 text-gray-800 leading-relaxed'>1. Năm 1990, số lượng du khách đến Vương quốc Anh là 25 triệu người. In 1990, the number of</p><p class='mb-2 text-gray-800 leading-relaxed'>visitors coming to the UK was 25 million.</p><p class='mb-2 text-gray-800 leading-relaxed'>2. Năm 1990, số người đi du lịch đến Vương quốc Anh đứng ở mức là 25 triệu người. In 1990, the</p><p class='mb-2 text-gray-800 leading-relaxed'>quantity of people travelling to the UK stood at 25 million.</p><p class='mb-2 text-gray-800 leading-relaxed'>3. Năm 1990, có 25 triệu người đến Vương quốc Anh. In 1990, there were 25 million individuals</p><p class='mb-2 text-gray-800 leading-relaxed'>visiting the UK.</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>10</p><p class='mb-2 text-gray-800 leading-relaxed'>4. Năm 1990, 25 triệu người đến Vương quốc Anh để đi du lịch. In 1990, 25 million people came to</p><p class='mb-2 text-gray-800 leading-relaxed'>the UK to travel.</p><p class='mb-2 text-gray-800 leading-relaxed'>5. Vào năm 1990, 25 triệu du khách du lịch tới Vương quốc Anh. In 1990, 25 million visitors travelled</p><p class='mb-2 text-gray-800 leading-relaxed'>to the UK.</p>
+            <!-- Side Distinction Panel -->
+            <div class='bg-slate-900 rounded-[3.5rem] p-10 text-white shadow-2xl flex flex-col justify-between group overflow-hidden relative'>
+                <div class='absolute -right-10 -bottom-10 opacity-10 group-hover:scale-125 transition-all duration-700'>
+                    <i data-lucide='alert-octagon' class='w-64 h-64'></i>
+                </div>
+                <div class='relative z-10'>
+                    <h4 class='text-blue-400 font-black text-xs uppercase tracking-[0.3em] mb-10 italic'>Distinction Lab</h4>
+                    <div class='space-y-8'>
+                        <div>
+                            <span class='text-rose-400 font-black text-lg block mb-2'>Increase vs. Rocket</span>
+                            <p class='text-sm text-slate-400 leading-relaxed italic'><strong>Increase:</strong> Trung tính, dùng cho mọi mức độ.<br><strong>Rocket:</strong> Nhấn mạnh tốc độ và biên độ cực lớn.</p>
+                        </div>
+                        <div class='pt-8 border-t border-slate-800'>
+                            <span class='text-emerald-400 font-black text-lg block mb-2'>Number vs. Amount</span>
+                            <p class='text-sm text-slate-400 leading-relaxed italic'><strong>Number of:</strong> Countable nouns (People, cars).<br><strong>Amount of:</strong> Uncountable nouns (Water, money).</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class='mt-12 p-8 bg-blue-50 dark:bg-blue-900/10 rounded-[2rem] border border-blue-100 dark:border-blue-900/30 flex items-center gap-6'>
-            <div class='w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20'>
-                <i data-lucide='lightbulb' class='w-8 h-8'></i>
+        <!-- Visual Mindmap / Process Flow -->
+        <section class='mb-24'>
+            <h3 class='text-3xl font-black text-center mb-16 uppercase tracking-tighter'>The 4-Pillar Data Architecture</h3>
+            
+            <div class='grid grid-cols-1 md:grid-cols-4 gap-6 relative mt-8'>
+                <div class='p-8 bg-white rounded-[2.5rem] shadow-sm border border-slate-100 text-center hover-lift group'>
+                    <div class='w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-md'>
+                        <i data-lucide='users' class='w-8 h-8'></i>
+                    </div>
+                    <h5 class='font-black text-slate-800 mb-2'>Active Subject</h5>
+                    <p class='text-xs text-slate-500 font-bold'>The UK spent...</p>
+                </div>
+                <div class='p-8 bg-white rounded-[2.5rem] shadow-sm border border-slate-100 text-center hover-lift group'>
+                    <div class='w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-md'>
+                        <i data-lucide='hash' class='w-8 h-8'></i>
+                    </div>
+                    <h5 class='font-black text-slate-800 mb-2'>Numerical Sub</h5>
+                    <p class='text-xs text-slate-500 font-bold'>The amount of money...</p>
+                </div>
+                <div class='p-8 bg-white rounded-[2.5rem] shadow-sm border border-slate-100 text-center hover-lift group'>
+                    <div class='w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-600 group-hover:text-white transition-all shadow-md'>
+                        <i data-lucide='layout' class='w-8 h-8'></i>
+                    </div>
+                    <h5 class='font-black text-slate-800 mb-2'>Placeholder Sub</h5>
+                    <p class='text-xs text-slate-500 font-bold'>There was a spending of...</p>
+                </div>
+                <div class='p-8 bg-slate-900 rounded-[2.5rem] shadow-xl text-center hover-lift group text-white'>
+                    <div class='w-16 h-16 bg-white/10 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-white group-hover:text-slate-900 transition-all shadow-md'>
+                        <i data-lucide='calendar' class='w-8 h-8'></i>
+                    </div>
+                    <h5 class='font-black mb-2'>Temporal Sub</h5>
+                    <p class='text-xs text-slate-400 font-bold'>The year 2000 saw...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Band 8.5+ Mastery Examples -->
+        <section class='mb-24 space-y-12'>
+            <h3 class='text-3xl font-black mb-12 flex items-center gap-6'>
+                <span class='h-px flex-grow bg-slate-200'></span>
+                <span class='shrink-0 italic'>Band 8.5+ Real-World Architecture</span>
+                <span class='h-px flex-grow bg-slate-200'></span>
+            </h3>
+            
+            <div class='grid grid-cols-1 lg:grid-cols-2 gap-10'>
+                <div class='gradient-border hover-lift'>
+                    <span class='px-4 py-1 bg-blue-600 text-white text-[10px] font-black uppercase rounded-lg mb-6 inline-block'>Dynamic Flow</span>
+                    <p class='text-xl font-bold text-slate-800 leading-relaxed mb-6 italic'>
+                        "While electricity production from coal <span class='text-blue-600 underline underline-offset-8'>stood at a staggering</span> 40%, the subsequent decade <span class='text-indigo-600 italic'>witnessed a dramatic plummet</span> to a mere 10%."
+                    </p>
+                    <div class='text-sm text-slate-500 font-medium space-y-3 pt-6 border-t border-slate-100'>
+                        <p><strong>Dịch:</strong> Trong khi sản lượng điện từ than đứng ở mức kinh ngạc 40%, thập kỷ sau đó chứng kiến sự sụt giảm mạnh mẽ chỉ còn 10%.</p>
+                        <p class='text-blue-600 font-black uppercase text-[10px] tracking-widest'>⚡ NLP Analysis: Sử dụng "Stood at" cho trạng thái và "Witnessed" cho sự thay đổi tạo sự cân bằng tuyệt đối.</p>
+                    </div>
+                </div>
+
+                <div class='gradient-border hover-lift'>
+                    <span class='px-4 py-1 bg-emerald-600 text-white text-[10px] font-black uppercase rounded-lg mb-6 inline-block'>Comparative Logic</span>
+                    <p class='text-xl font-bold text-slate-800 leading-relaxed mb-6 italic'>
+                        "The year 2010 <span class='text-emerald-600 font-black'>registered a tenfold increase</span> in smartphone ownership, <span class='text-emerald-600 underline underline-offset-8'>surpassing</span> the combined figures of the previous five years."
+                    </p>
+                    <div class='text-sm text-slate-500 font-medium space-y-3 pt-6 border-t border-slate-100'>
+                        <p><strong>Dịch:</strong> Năm 2010 ghi nhận mức tăng gấp mười lần về tỉ lệ sở hữu điện thoại, vượt qua con số tổng của năm năm trước đó.</p>
+                        <p class='text-emerald-600 font-black uppercase text-[10px] tracking-widest'>⚡ NLP Analysis: "Tenfold" và "Surpassing" là những từ vựng nâng cao điểm Lexical Resource cực mạnh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocabulary Matrix 2.0 -->
+        <section class='mb-24'>
+            <div class='flex justify-between items-end mb-10'>
+                <h3 class='text-3xl font-black uppercase tracking-tighter'>Lexical Precision Table</h3>
+                <span class='text-xs font-black text-slate-400 tracking-[0.2em]'>DATA-DRIVEN CLASSIFICATION</span>
+            </div>
+            <div class='bg-white rounded-[3.5rem] shadow-2xl shadow-slate-200/50 border border-slate-100 overflow-hidden'>
+                <table class='w-full text-left'>
+                    <thead class='bg-slate-50 border-b border-slate-100'>
+                        <tr>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-slate-400'>Context</th>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-blue-600'>Verb Focus (Band 8+)</th>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-indigo-600'>Noun Focus (Band 8+)</th>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-slate-400'>Intensity</th>
+                        </tr>
+                    </thead>
+                    <tbody class='divide-y divide-slate-50'>
+                        <tr class='hover:bg-blue-50/30 transition-all'>
+                            <td class='p-10 font-black text-slate-900'>Static point</td>
+                            <td class='p-10 font-bold text-blue-600 text-lg italic'>stood at / was registered at</td>
+                            <td class='p-10 font-bold text-indigo-600 text-lg italic'>a figure of / a plateau at</td>
+                            <td class='p-10'><span class='px-4 py-1 bg-slate-100 text-slate-600 rounded-full text-[10px] font-black'>CONSTANT</span></td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/30 transition-all'>
+                            <td class='p-10 font-black text-slate-900'>Sudden Rise</td>
+                            <td class='p-10 font-bold text-blue-600 text-lg italic'>rocketed / surged / soared</td>
+                            <td class='p-10 font-bold text-indigo-600 text-lg italic'>a sharp spike / an upswing</td>
+                            <td class='p-10'><span class='px-4 py-1 bg-rose-100 text-rose-600 rounded-full text-[10px] font-black'>VOLATILE</span></td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/30 transition-all'>
+                            <td class='p-10 font-black text-slate-900'>Small Fall</td>
+                            <td class='p-10 font-bold text-blue-600 text-lg italic'>dipped / edged down / slipped</td>
+                            <td class='p-10 font-bold text-indigo-600 text-lg italic'>a marginal decline / a slight dip</td>
+                            <td class='p-10'><span class='px-4 py-1 bg-emerald-100 text-emerald-600 rounded-full text-[10px] font-black'>STABLE</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Interactive Sandbox Lab -->
+        <section class='bg-slate-900 rounded-[4rem] p-16 text-white shadow-3xl relative overflow-hidden'>
+            <div class='absolute -top-24 -left-24 w-80 h-80 bg-blue-600/20 rounded-full blur-[100px]'></div>
+            <h3 class='text-4xl font-black mb-12 flex items-center gap-6'>
+                <i data-lucide='terminal' class='text-blue-400 w-10 h-10'></i>
+                Expert Sandbox Lab
+            </h3>
+            
+            <div class='space-y-12 relative z-10'>
+                <div class='bg-white/5 p-10 rounded-[3rem] border border-white/10'>
+                    <p class='text-xl font-bold text-blue-300 mb-6 uppercase tracking-widest'>Task 1: Dịch cấu trúc "Witnessed"</p>
+                    <p class='italic text-slate-400 mb-6'>"Năm 1995 chứng kiến mức chi tiêu khổng lồ 100 tỷ đô cho quốc phòng."</p>
+                    <input type='text' id='input1' placeholder='Type your architectural code...' class='w-full bg-slate-800 border-none rounded-2xl p-6 text-white focus:ring-2 focus:ring-blue-500 transition-all outline-none mb-6'>
+                    <button onclick='toggleAns("ans1")' class='px-10 py-4 bg-blue-600 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-all'>Compile Answer</button>
+                    <div id='ans1' class='ans-hidden bg-blue-500/20 p-8 rounded-2xl border border-blue-500/30 mt-6'>
+                        <p class='font-mono text-blue-200'>"The year 1995 witnessed a massive expenditure of 100 billion dollars on national defense."</p>
+                    </div>
+                </div>
+
+                <div class='bg-white/5 p-10 rounded-[3rem] border border-white/10'>
+                    <p class='text-xl font-bold text-blue-300 mb-6 uppercase tracking-widest'>Task 2: Chọn từ chính xác (Lexical Choice)</p>
+                    <p class='text-slate-400 mb-6 italic'>"The ______ of fresh water consumed was 200 liters."</p>
+                    <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <button onclick='alert("Correct! Water is uncountable.")' class='p-6 bg-slate-800 rounded-2xl hover:bg-emerald-600 transition-all font-bold'>A. Amount</button>
+                        <button onclick='alert("Wrong. Number is for countable nouns.")' class='p-6 bg-slate-800 rounded-2xl hover:bg-rose-600 transition-all font-bold'>B. Number</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Mentor Tip -->
+        <footer class='mt-24 p-12 bg-white rounded-[4rem] border border-slate-100 flex flex-col md:flex-row items-center gap-12 hover-lift'>
+            <div class='w-32 h-32 bg-blue-600 rounded-[2.5rem] flex items-center justify-center text-white shadow-2xl shadow-blue-200 shrink-0 transform rotate-6'>
+                <i data-lucide='sparkles' class='w-16 h-16'></i>
             </div>
             <div>
-                <h4 class='font-black text-blue-900 dark:text-blue-300'>Mẹo học tập</h4>
-                <p class='text-blue-700 dark:text-blue-400 font-medium mb-0'>Hãy ghi chép lại các cấu trúc này và áp dụng vào phần Luyện tập dịch câu để ghi nhớ lâu hơn.</p>
+                <h4 class='text-2xl font-black text-slate-800 mb-4 italic'>Master Coach's Byte</h4>
+                <p class='text-slate-500 font-bold leading-relaxed text-lg italic'>
+                    "Đừng sợ những cấu trúc đơn giản, nhưng hãy sợ sự lặp lại. Một bài viết điểm cao là một bản giao hưởng giữa những câu ngắn trực diện và những câu phức mang tính phân tích cao."
+                </p>
             </div>
-        </div>
+        </footer>
     </div>
 
     <script>
         lucide.createIcons();
+        function toggleAns(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('ans-visible');
+        }
     </script>
 </body>
 </html>

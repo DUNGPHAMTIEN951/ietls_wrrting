@@ -3,52 +3,245 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>B3. MÔ TẢ XU HƯỚNG | IELTS Writing Task 1 Theory</title>
-    <script src='https://cdn.tailwindcss.com'></script>
-    <script src='https://unpkg.com/lucide@latest'></script>
-    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
+    <title>B3. ADVANCED TREND ANALYSIS | IELTS Writing Mastery</title>
+    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
+    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
+    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .lesson-content p { margin-bottom: 1rem; line-height: 1.6; color: #334155; }
-        .lesson-content strong { color: #1e293b; font-weight: 700; }
-        .lesson-content .bg-blue-50 { border-radius: 0.75rem; }
-        .lesson-content div { margin-bottom: 1rem; }
-        .lesson-content .font-semibold { color: #1e293b; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .mastery-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.4); }
+        .hover-lift { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .ans-hidden { max-height: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); opacity: 0; }
+        .ans-visible { max-height: 1000px; opacity: 1; margin-top: 1.5rem; }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .step-node::after { content: ''; position: absolute; top: 50%; right: -2rem; width: 2rem; height: 2px; background: #e2e8f0; z-index: 0; }
+        @media (max-width: 768px) { .step-node::after { display: none; } }
     </style>
 </head>
-<body class='bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen pb-20'>
-    <div class='max-w-4xl mx-auto px-4 pt-12'>
-        <a href='../task1_theory.html' class='inline-flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all'>
-            <i data-lucide='arrow-left' class='w-5 h-5'></i>
-            Quay lại danh sách
-        </a>
-
-        <div class='bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 overflow-hidden'>
-            <div class='bg-gradient-to-r from-blue-600 to-indigo-700 p-10 text-white'>
-                <div class='flex items-center gap-4 mb-4'>
-                    <span class='px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-black uppercase tracking-widest'>Lesson Module</span>
+<body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24'>
+    <div class='max-w-6xl mx-auto px-6 pt-12'>
+        <!-- Header & Nav -->
+        <nav class='flex justify-between items-center mb-12'>
+            <a href='../task1_theory.html' class='group flex items-center gap-3 text-slate-600 font-bold hover:text-blue-600 transition-all'>
+                <div class='p-3 bg-white rounded-2xl shadow-sm group-hover:shadow-blue-100 group-hover:scale-110 transition-all'>
+                    <i data-lucide='arrow-left' class='w-5 h-5'></i>
                 </div>
-                <h1 class='text-4xl font-black tracking-tight leading-tight'>B3. MÔ TẢ XU HƯỚNG</h1>
+                <span>Hệ thống Mastery B3</span>
+            </a>
+            <div class='px-6 py-2 bg-blue-600 text-white rounded-full text-xs font-black uppercase tracking-widest shadow-lg shadow-blue-200'>
+                Trend Engine 2.0
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class='relative overflow-hidden mastery-gradient rounded-[4rem] p-16 text-white mb-20 shadow-3xl'>
+            <div class='absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] -mr-48 -mt-48'></div>
+            <div class='relative z-10 grid lg:grid-cols-2 gap-12 items-center'>
+                <div>
+                    <span class='px-4 py-1.5 bg-blue-500/20 backdrop-blur-md rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block'>Expert System</span>
+                    <h1 class='text-6xl font-black tracking-tighter leading-none mb-8'>
+                        XỬ LÝ <br/><span class='text-blue-400'>XU HƯỚNG</span> <br/>NHƯ AI ENGINEER
+                    </h1>
+                    <p class='text-slate-400 text-xl leading-relaxed font-medium max-w-lg'>
+                        "Mô tả xu hướng không phải là đọc số. Đó là việc mô hình hóa (modeling) sự biến động của dữ liệu thông qua ngôn từ tinh vi."
+                    </p>
+                </div>
+                <div class='glass-card p-8 rounded-[3rem] border-white/20 relative'>
+                    <div class='flex gap-4 mb-6'>
+                        <div class='w-3 h-3 rounded-full bg-red-400'></div>
+                        <div class='w-3 h-3 rounded-full bg-amber-400'></div>
+                        <div class='w-3 h-3 rounded-full bg-emerald-400'></div>
+                    </div>
+                    <div class='space-y-4'>
+                        <div class='h-2 w-full bg-white/10 rounded-full overflow-hidden'><div class='h-full w-[85%] bg-blue-400'></div></div>
+                        <div class='h-2 w-2/3 bg-white/10 rounded-full overflow-hidden'><div class='h-full w-[60%] bg-indigo-400'></div></div>
+                        <div class='text-[10px] font-mono text-slate-300 mt-4 uppercase tracking-widest'>Data Processing: Trend Analysis Activated</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- AI Logic: Flowchart of Description -->
+        <section class='mb-24'>
+            <h3 class='text-3xl font-black text-center mb-16 uppercase tracking-tighter'>Quy trình Tư duy Phân tích (Analytical Workflow)</h3>
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-8 relative'>
+                <div class='relative z-10 p-10 bg-white rounded-[3rem] shadow-sm border border-slate-100 text-center step-node overflow-hidden group hover:border-blue-200 transition-all'>
+                    <div class='w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-md'><i data-lucide='search' class='w-8 h-8'></i></div>
+                    <h4 class='font-black text-slate-800 mb-2 uppercase tracking-tighter'>1. Scan Dữ Liệu</h4>
+                    <p class='text-xs text-slate-500 font-medium'>Xác định Điểm đầu, Điểm cuối và các điểm đột biến (Peak/Trough).</p>
+                </div>
+                <div class='relative z-10 p-10 bg-white rounded-[3rem] shadow-sm border border-slate-100 text-center step-node group hover:border-indigo-200 transition-all'>
+                    <div class='w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-md'><i data-lucide='activity' class='w-8 h-8'></i></div>
+                    <h4 class='font-black text-slate-800 mb-2 uppercase tracking-tighter'>2. Model Intensity</h4>
+                    <p class='text-xs text-slate-500 font-medium'>Lựa chọn cặp Verb-Adverb hoặc Adj-Noun tương xứng với độ dốc của biểu đồ.</p>
+                </div>
+                <div class='relative z-10 p-10 bg-slate-900 rounded-[3rem] shadow-2xl text-center text-white group hover:scale-105 transition-all'>
+                    <div class='w-16 h-16 bg-blue-500 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50'><i data-lucide='code-2' class='w-8 h-8'></i></div>
+                    <h4 class='font-black mb-2 uppercase tracking-tighter'>3. Deploy Sentence</h4>
+                    <p class='text-xs text-slate-400 font-medium italic'>Ghép dữ liệu vào 1 trong 5 cấu trúc "Vàng" để tối ưu hóa tính học thuật.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Comparison Matrix -->
+        <section class='mb-24'>
+            <h3 class='text-3xl font-black mb-12 flex items-center gap-4'>
+                <i data-lucide='layers' class='text-blue-600'></i> 
+                Ma Trận Phân Loại Từ Vựng (Intensity Matrix)
+            </h3>
+            <div class='bg-white rounded-[3.5rem] shadow-2xl shadow-slate-200/50 border border-slate-100 overflow-hidden'>
+                <table class='w-full text-left border-collapse'>
+                    <thead>
+                        <tr class='bg-slate-50 border-b border-slate-100'>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-slate-400'>Cường độ (Intensity)</th>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-blue-600 underline'>Động từ (Verb)</th>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-indigo-600 underline'>Danh từ (Noun)</th>
+                            <th class='p-10 text-[10px] font-black uppercase tracking-widest text-slate-400'>Trạng từ/Tính từ</th>
+                        </tr>
+                    </thead>
+                    <tbody class='divide-y divide-slate-50'>
+                        <tr class='hover:bg-blue-50/30 transition-all'>
+                            <td class='p-10'><span class='px-4 py-2 bg-rose-50 text-rose-600 rounded-xl text-[10px] font-black uppercase'>Cực mạnh</span></td>
+                            <td class='p-10 font-bold text-slate-800'>Rocket, Surge, Soar</td>
+                            <td class='p-10 font-bold text-slate-800'>Spike, Upsurge</td>
+                            <td class='p-10 italic text-slate-500'>Dramatic(ally), Sharp(ly)</td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/30 transition-all'>
+                            <td class='p-10'><span class='px-4 py-2 bg-blue-50 text-blue-600 rounded-xl text-[10px] font-black uppercase'>Đáng kể</span></td>
+                            <td class='p-10 font-bold text-slate-800'>Increase, Rise, Climb</td>
+                            <td class='p-10 font-bold text-slate-800'>Growth, Ascent</td>
+                            <td class='p-10 italic text-slate-500'>Significant(ly), Steady</td>
+                        </tr>
+                        <tr class='hover:bg-blue-50/30 transition-all'>
+                            <td class='p-10'><span class='px-4 py-2 bg-emerald-50 text-emerald-600 rounded-xl text-[10px] font-black uppercase'>Nhẹ / Chậm</span></td>
+                            <td class='p-10 font-bold text-slate-800'>Creep up, Edge up</td>
+                            <td class='p-10 font-bold text-slate-800'>A slight rise</td>
+                            <td class='p-10 italic text-slate-500'>Marginal(ly), Minimal(ly)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Nuance & Connotation Analysis -->
+        <section class='grid lg:grid-cols-2 gap-10 mb-24'>
+            <div class='bg-slate-900 rounded-[3.5rem] p-12 text-white shadow-2xl relative overflow-hidden group'>
+                <div class='absolute -right-10 -bottom-10 opacity-10 group-hover:scale-125 transition-transform duration-700'><i data-lucide='brain-circuit' class='w-64 h-64'></i></div>
+                <h4 class='text-blue-400 font-black text-xs uppercase tracking-[0.4em] mb-10 italic'>AI Engineering Analysis: Connotation</h4>
+                <div class='space-y-8 relative z-10'>
+                    <div class='p-6 bg-white/5 rounded-[2rem] border border-white/10'>
+                        <span class='text-emerald-400 font-black block mb-2'>Rocket vs. Climb</span>
+                        <p class='text-sm text-slate-400 leading-relaxed font-medium'><strong>Rocket</strong> mang sắc thái bất ngờ, không kiểm soát. <strong>Climb</strong> mang sắc thái nỗ lực, có lộ trình (thường dùng cho doanh thu/giá cổ phiếu).</p>
+                    </div>
+                    <div class='p-6 bg-white/5 rounded-[2rem] border border-white/10'>
+                        <span class='text-amber-400 font-black block mb-2'>Experience vs. See</span>
+                        <p class='text-sm text-slate-400 leading-relaxed font-medium'><strong>Experience</strong> đặt đối tượng vào vị trí trung tâm của sự thay đổi (nhấn mạnh Task Response). <strong>See</strong> mang tính khách quan của người quan sát dữ liệu.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class='p-10 lesson-content text-lg'>
-                <p class='mb-1 font-semibold text-gray-800 leading-relaxed'>1. [what] increase by …% or from … to …</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Tiêu thụ lương thực tăng đáng kể từ 10 đến 25 tấn / năm vào những năm 90. Food consumption</p><p class='mb-2 text-gray-800 leading-relaxed'>increased significantly from 10 to 25 tons/year in the 1990s.</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>2. [what] be on a/an [adj] increase</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Lượng tiêu thụ thực phẩm là trên một sự gia tăng đáng kể. The amount of food consumption was</p><p class='mb-2 text-gray-800 leading-relaxed'>on a significant increase.</p><p class='mb-2 text-gray-800 leading-relaxed'>3. [what] undergo / experience a/an [adj] increase</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Lượng tiêu thụ thực phẩm đã trải qua một sự gia tăng đáng kể. The amount of food consumption</p><p class='mb-2 text-gray-800 leading-relaxed'>underwent a significant increase.</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>4. There be a/an [adj] increase in …</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Có một sự gia tăng đáng kể về sự tiêu thụ thực phẩm trong suốt những năm 1990. There was a</p><p class='mb-2 text-gray-800 leading-relaxed'>significant increase in food consumption during the 1990s.</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>5. [year] enjoy / see a/an [adj] increase in …</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Những năm 1990 đã chứng kiến sự gia tăng đáng kể trong tiêu thụ thực phẩm. The 1990s saw a</p><p class='mb-2 text-gray-800 leading-relaxed'>significant increase in food consumption.</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>6. The increase be within the range of … and …</p><p class='mb-1 font-semibold text-gray-800 leading-relaxed'>11</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Vào những năm 1990, sự gia tăng về mức tiêu thụ thực phẩm trong phạm vi khoảng 10 và 25</p><p class='mb-2 text-gray-800 leading-relaxed'>tấn/năm. In 1990s, the increase in food consumption was within the range of 10 and 25 tons/year.</p><p class='mb-2 text-gray-800 leading-relaxed'>7. The increase be [adj], reaching [number].</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Sự gia tăng về việc tiêu thụ thực phẩm là đáng kể, đạt 25 tấn / năm vào cuối những năm 1990.</p><p class='mb-2 text-gray-800 leading-relaxed'>The increase in food consumption was significant, reaching 25 tons/year by the end of 1990s.</p><p class='mb-2 text-gray-800 leading-relaxed'>8.The most [significant] increase be seen for [what].</p><p class='mb-2 text-gray-800 leading-relaxed'>Ex: Sự gia tăng đáng kể về tiêu dùng thực phẩm đã được nhìn thấy (chứng kiến) trong những năm</p><p class='mb-2 text-gray-800 leading-relaxed'>1990. The most significant increase in food consumption was seen for the 1990s.</p>
+            <div class='space-y-6'>
+                <h4 class='text-2xl font-black text-slate-800 uppercase tracking-tighter mb-4'>Deep Lexical Insights</h4>
+                <div class='bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 italic text-slate-600 leading-relaxed font-medium border-l-4 border-blue-500'>
+                    "Trong tiêu chuẩn Band 8.0, việc lặp lại 'increased significantly' quá 2 lần sẽ bị AI chấm điểm <strong>Low-Entropy</strong>. Hãy sử dụng cụm danh từ 'witnessed a significant growth' để phá vỡ cấu trúc lặp."
+                </div>
+                <div class='bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 italic text-slate-600 leading-relaxed font-medium border-l-4 border-indigo-500'>
+                    "Tránh dùng 'Rocket' cho các đối tượng như 'Tỉ lệ thất nghiệp' trừ khi nó thực sự tăng cực sốc, vì sắc thái từ này thường mang tính tích cực hoặc quá bộc phát."
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class='mt-12 p-8 bg-blue-50 dark:bg-blue-900/10 rounded-[2rem] border border-blue-100 dark:border-blue-900/30 flex items-center gap-6'>
-            <div class='w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20'>
-                <i data-lucide='lightbulb' class='w-8 h-8'></i>
+        <!-- Band 8.5+ Architecture Examples -->
+        <section class='mb-24'>
+            <h3 class='text-3xl font-black mb-12 flex items-center gap-6'>
+                <span class='h-px flex-grow bg-slate-200'></span>
+                <span class='shrink-0 italic'>Band 8.5+ Architecture Examples</span>
+                <span class='h-px flex-grow bg-slate-200'></span>
+            </h3>
+            
+            <div class='space-y-8'>
+                <div class='p-10 bg-white rounded-[3.5rem] border border-slate-100 hover-lift relative group'>
+                    <div class='absolute top-10 right-10 text-slate-100 group-hover:text-blue-50 transition-colors'><i data-lucide='quote' class='w-20 h-20'></i></div>
+                    <p class='text-2xl font-bold text-slate-800 leading-[1.6] mb-6 relative z-10 italic'>
+                        "Following a decade of relative stability, the industrial sector <span class='text-blue-600 underline underline-offset-8'>underwent a monumental shift</span>, with carbon emissions <span class='text-blue-600'>soaring exponentially</span> to a peak of 500m tons."
+                    </p>
+                    <div class='flex flex-wrap gap-3 mb-6'>
+                        <span class='px-4 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase'>Complex Structure</span>
+                        <span class='px-4 py-1 bg-slate-100 text-slate-500 rounded-full text-[10px] font-black uppercase'>High Intensity</span>
+                    </div>
+                    <div class='p-6 bg-slate-50 rounded-3xl text-sm text-slate-600 leading-relaxed font-medium'>
+                        <strong>Phân tích:</strong> Sử dụng "monumental shift" thay vì "big change". Cấu trúc phân từ "with carbon emissions soaring" giúp nén thông tin cực tốt, ghi điểm Grammatical Range.
+                    </div>
+                </div>
+
+                <div class='p-10 bg-white rounded-[3.5rem] border border-slate-100 hover-lift relative group'>
+                    <p class='text-2xl font-bold text-slate-800 leading-[1.6] mb-6 relative z-10 italic'>
+                        "The early 2000s <span class='text-indigo-600'>witnessed a marginal oscillation</span> in fuel prices before a <span class='text-indigo-600 font-black'>precipitous decline</span> was recorded in the subsequent year."
+                    </p>
+                    <div class='flex flex-wrap gap-3 mb-6'>
+                        <span class='px-4 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-black uppercase'>Temporal Subject</span>
+                        <span class='px-4 py-1 bg-slate-100 text-slate-500 rounded-full text-[10px] font-black uppercase'>Precision Vocabulary</span>
+                    </div>
+                    <div class='p-6 bg-slate-50 rounded-3xl text-sm text-slate-600 leading-relaxed font-medium'>
+                        <strong>Phân tích:</strong> "Marginal oscillation" mô tả sự biến động nhẹ cực kỳ chuyên nghiệp. "Precipitous decline" thay thế cho "sharp fall" để tối ưu Lexical Resource.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Sandbox Lab -->
+        <section class='bg-white rounded-[4rem] p-16 shadow-2xl shadow-slate-200/50 border border-slate-100 relative overflow-hidden'>
+            <div class='absolute -top-24 -right-24 w-96 h-96 bg-blue-50 rounded-full opacity-50'></div>
+            <h3 class='text-4xl font-black mb-12 flex items-center gap-6 text-slate-800 uppercase tracking-tighter'>
+                <i data-lucide='terminal' class='text-blue-600 w-10 h-10'></i> Sandbox Practice Lab
+            </h3>
+            
+            <div class='space-y-10 relative z-10'>
+                <div class='p-10 bg-slate-50 rounded-[3rem] border border-slate-200/50'>
+                    <h5 class='text-lg font-black text-slate-800 mb-6 uppercase'>Challenge 1: Structural Transformation</h5>
+                    <p class='italic text-slate-500 mb-6'>"The number of students increased sharply in 2010." <br>➔ Viết lại dùng cấu trúc <strong>"Witnessed"</strong></p>
+                    <input type='text' id='input1' placeholder='Type your solution here...' class='w-full bg-white border border-slate-200 rounded-[1.5rem] p-6 text-slate-900 focus:ring-2 focus:ring-blue-500 transition-all outline-none mb-6 font-medium shadow-sm'>
+                    <button onclick='toggleAns("ans1")' class='px-10 py-4 bg-slate-900 text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl shadow-blue-100'>Compile Code</button>
+                    <div id='ans1' class='ans-hidden bg-blue-600 text-white p-8 rounded-[2rem] shadow-lg'>
+                        <p class='font-bold'>"The year 2010 witnessed a sharp increase in the number of students."</p>
+                        <p class='text-xs mt-4 text-blue-100'>Tip: Khi dùng 'Witnessed', thời gian đóng vai trò chủ ngữ nhân hóa.</p>
+                    </div>
+                </div>
+
+                <div class='p-10 bg-slate-50 rounded-[3rem] border border-slate-200/50'>
+                    <h5 class='text-lg font-black text-slate-800 mb-6 uppercase'>Challenge 2: Lexical Upgrade</h5>
+                    <p class='italic text-slate-500 mb-6'>"Oil prices fell a lot after the crisis." <br>➔ Thay 'fell a lot' bằng cụm <strong>Band 8.0+</strong></p>
+                    <input type='text' id='input2' placeholder='Type your solution here...' class='w-full bg-white border border-slate-200 rounded-[1.5rem] p-6 text-slate-900 focus:ring-2 focus:ring-blue-500 transition-all outline-none mb-6 font-medium shadow-sm'>
+                    <button onclick='toggleAns("ans2")' class='px-10 py-4 bg-slate-900 text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl shadow-blue-100'>Compile Code</button>
+                    <div id='ans2' class='ans-hidden bg-emerald-600 text-white p-8 rounded-[2rem] shadow-lg'>
+                        <p class='font-bold'>"Oil prices plummeted / experienced a precipitous decline / sank dramatically."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Mentor Advice -->
+        <footer class='mt-24 p-12 bg-slate-900 rounded-[4rem] text-white flex flex-col md:flex-row items-center gap-12 hover-lift transition-all'>
+            <div class='w-32 h-32 bg-blue-600 rounded-[2.5rem] flex items-center justify-center text-white shadow-2xl shadow-blue-500/50 shrink-0 transform rotate-6'>
+                <i data-lucide='sparkles' class='w-16 h-16'></i>
             </div>
             <div>
-                <h4 class='font-black text-blue-900 dark:text-blue-300'>Mẹo học tập</h4>
-                <p class='text-blue-700 dark:text-blue-400 font-medium mb-0'>Hãy ghi chép lại các cấu trúc này và áp dụng vào phần Luyện tập dịch câu để ghi nhớ lâu hơn.</p>
+                <h4 class='text-2xl font-black mb-4 italic text-blue-400 underline decoration-2 underline-offset-8'>Master's Byte: Final Execution</h4>
+                <p class='text-slate-400 font-medium leading-relaxed text-lg italic'>
+                    "Trong Writing Task 1, ngôn từ là các vector. Đừng chỉ mô tả độ dài của chúng, hãy mô tả cả <strong>Gia tốc</strong> (tăng nhanh/chậm) và <strong>Mật độ</strong> (biến động nhiều/ít). Sự tinh tế này chính là ranh giới giữa Band 7.0 và 8.5."
+                </p>
             </div>
-        </div>
+        </footer>
     </div>
 
     <script>
         lucide.createIcons();
+        function toggleAns(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('ans-visible');
+        }
     </script>
 </body>
 </html>
