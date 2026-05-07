@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi" class="">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task 2 Practice — IELTS Writing Mastery</title>
-  <meta name="description" content="Phòng thi ảo IELTS Writing Task 2 — editor với timer, word count, dàn ý tự động và so sánh bài mẫu.">
+  <meta name="description"
+    content="Phòng thi ảo IELTS Writing Task 2 — editor với timer, word count, dàn ý tự động và so sánh bài mẫu.">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../data/task1_practice_data.js"></script>
+  <script src="../data/units_data.js"></script>
   <script src="../js/sentence_engine.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
 
@@ -23,15 +30,15 @@
       theme: {
         extend: {
           fontFamily: {
-            sans:    ['Inter', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
             heading: ['Poppins', 'sans-serif'],
-            editor:  ['Merriweather', 'serif'],
+            editor: ['Merriweather', 'serif'],
           },
           colors: {
-            brand:     '#0ea5e9',
-            accent:    '#0284c7',
+            brand: '#0ea5e9',
+            accent: '#0284c7',
             highlight: '#38bdf8',
-            paper:     '#f0f9ff',
+            paper: '#f0f9ff',
           },
         }
       }
@@ -44,46 +51,129 @@
       min-height: 100vh;
       overflow-x: hidden;
     }
+
     /* Reuse glass-panel from main.css */
     #colResizeHandle {
-      width:8px; min-width:8px; cursor:col-resize;
-      display:flex; align-items:center; justify-content:center;
-      position:relative; z-index:10; flex-shrink:0;
-      border-radius:4px; transition:background .15s;
+      width: 8px;
+      min-width: 8px;
+      cursor: col-resize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+      flex-shrink: 0;
+      border-radius: 4px;
+      transition: background .15s;
     }
-    #colResizeHandle:hover, #colResizeHandle.dragging { background:rgba(14,165,233,.2); }
+
+    #colResizeHandle:hover,
+    #colResizeHandle.dragging {
+      background: rgba(14, 165, 233, .2);
+    }
+
     #colResizeHandle::after {
-      content:''; display:block; width:2px; height:40px;
-      background:repeating-linear-gradient(to bottom,#7dd3fc 0,#7dd3fc 4px,transparent 4px,transparent 8px);
-      border-radius:2px;
+      content: '';
+      display: block;
+      width: 2px;
+      height: 40px;
+      background: repeating-linear-gradient(to bottom, #7dd3fc 0, #7dd3fc 4px, transparent 4px, transparent 8px);
+      border-radius: 2px;
     }
-    .sample-answer { background:#f8fafc; border-left:4px solid #0ea5e9; padding:1.2rem; margin:1rem 0; border-radius:0 .5rem .5rem 0; color:#334155; font-size:.95rem; line-height:1.7; }
-    .filter-chip { transition:all .2s; }
-    .filter-chip.active { background-color:#0ea5e9; color:#fff; border-color:#0ea5e9; }
-    #bookmarkBtn.active i { color:#f59e0b; }
-    .stats-card { transition:all .3s cubic-bezier(.4,0,.2,1); }
-    .dark body { background:linear-gradient(135deg,#0f172a 0%,#020617 100%); }
-    .dark .glass-panel { background:rgba(15,23,42,.9); border:1px solid rgba(255,255,255,.1); box-shadow:0 8px 32px rgba(0,0,0,.3); }
+
+    .sample-answer {
+      background: #f8fafc;
+      border-left: 4px solid #0ea5e9;
+      padding: 1.2rem;
+      margin: 1rem 0;
+      border-radius: 0 .5rem .5rem 0;
+      color: #334155;
+      font-size: .95rem;
+      line-height: 1.7;
+    }
+
+    .filter-chip {
+      transition: all .2s;
+    }
+
+    .filter-chip.active {
+      background-color: #0ea5e9;
+      color: #fff;
+      border-color: #0ea5e9;
+    }
+
+    #bookmarkBtn.active i {
+      color: #f59e0b;
+    }
+
+    .stats-card {
+      transition: all .3s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .dark body {
+      background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+    }
+
+    .dark .glass-panel {
+      background: rgba(15, 23, 42, .9);
+      border: 1px solid rgba(255, 255, 255, .1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .3);
+    }
+
+    /* Task Hub Question Styling */
+    .question-box {
+      border-left: 4px solid #0ea5e9;
+      background: linear-gradient(to right, rgba(14, 165, 233, 0.05), transparent);
+      padding: 1.5rem;
+      border-radius: 0 1rem 1rem 0;
+      margin-top: 0.5rem;
+    }
+
+    .dark .question-box {
+      background: linear-gradient(to right, rgba(14, 165, 233, 0.1), transparent);
+    }
+
+    .target-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      background: #f1f5f9;
+      color: #475569;
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .dark .target-badge {
+      background: #1e293b;
+      color: #94a3b8;
+    }
   </style>
 </head>
 
 <body class="flex flex-col h-screen text-slate-800 dark:text-slate-200 relative transition-colors duration-300">
 
   <!-- Navbar -->
-  <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
+  <nav
+    class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
     <div class="flex items-center gap-3">
       <!-- Breadcrumb -->
-      <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-brand transition-colors text-sm font-medium">
+      <a href="../index.html"
+        class="flex items-center gap-2 text-slate-400 hover:text-brand transition-colors text-sm font-medium">
         <i data-lucide="home" class="w-4 h-4"></i>
         <span class="hidden sm:inline">Hub</span>
       </a>
       <span class="text-slate-300 text-sm">/</span>
       <div class="flex items-center gap-2">
-        <div class="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center">
+        <div
+          class="w-8 h-8 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-lg flex items-center justify-center">
           <i data-lucide="pen-tool" class="text-white w-4 h-4"></i>
         </div>
         <div>
-          <h1 id="navTitle" class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Task 2 Practice</h1>
+          <h1 id="navTitle" class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Task 2
+            Practice</h1>
           <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Virtual Exam Room</p>
         </div>
       </div>
@@ -111,22 +201,47 @@
   <!-- Main Content -->
   <main class="flex-grow flex flex-col p-2 md:p-4 overflow-hidden relative">
     <!-- Decorative blobs -->
-    <div class="absolute top-20 left-10 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse pointer-events-none"></div>
-    <div class="absolute bottom-20 right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse pointer-events-none" style="animation-delay:2s"></div>
+    <div
+      class="absolute top-20 left-10 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse pointer-events-none">
+    </div>
+    <div
+      class="absolute bottom-20 right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse pointer-events-none"
+      style="animation-delay:2s"></div>
 
     <!-- Filter & Progress Bar -->
     <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4 z-10 px-2 gap-4">
-      <div class="flex flex-wrap items-center gap-2">
-        <select id="topicSelector" onchange="jumpToQuestion(this.value)"
-          class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm font-bold rounded-xl p-2.5 shadow-sm cursor-pointer outline-none focus:ring-2 focus:ring-brand">
-        </select>
-        <div id="typeFilters" class="flex gap-2 ml-2 overflow-x-auto pb-1 md:pb-0">
-          <button onclick="filterByType('all')"        class="filter-chip active px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Tất cả</button>
-          <button onclick="filterByType('Opinion')"    class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Opinion</button>
-          <button onclick="filterByType('Discussion')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Discussion</button>
-          <button onclick="filterByType('bookmarked')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">
-            <i class="fas fa-star text-amber-500 mr-1"></i> Đã lưu
+      <div class="flex flex-wrap items-center gap-4">
+        <!-- Task Toggle -->
+        <div
+          class="flex bg-slate-200/50 dark:bg-slate-800/50 p-1 rounded-xl backdrop-blur-sm border border-slate-200 dark:border-slate-700">
+          <button onclick="setTaskMode(1)" id="mode1Btn"
+            class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all flex items-center gap-2">
+            <i data-lucide="bar-chart-2" class="w-3.5 h-3.5"></i> Task 1
           </button>
+          <button onclick="setTaskMode(2)" id="mode2Btn"
+            class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all flex items-center gap-2 active bg-white dark:bg-slate-700 shadow-sm text-brand">
+            <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Task 2
+          </button>
+        </div>
+
+        <div class="h-8 w-px bg-slate-200 dark:bg-slate-700 hidden md:block"></div>
+
+        <select id="topicSelector" onchange="jumpToQuestion(this.value)"
+          class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm font-bold rounded-xl p-2.5 shadow-sm cursor-pointer outline-none focus:ring-2 focus:ring-brand max-w-[200px] md:max-w-xs">
+        </select>
+
+        <div id="typeFilters" class="flex gap-2 overflow-x-auto pb-1 md:pb-0">
+          <!-- Dynamic Filters based on Task Mode -->
+        </div>
+
+        <div class="h-8 w-px bg-slate-200 dark:bg-slate-700 hidden md:block"></div>
+
+        <div class="relative group">
+          <i data-lucide="search"
+            class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-brand transition-colors"></i>
+          <input type="text" id="librarySearch" oninput="searchLibrary(this.value)"
+            placeholder="Tìm ý tưởng & từ vựng (146 chủ đề)..."
+            class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm font-bold rounded-xl pl-10 pr-4 py-2.5 shadow-sm outline-none focus:ring-2 focus:ring-brand w-64 md:w-80">
         </div>
       </div>
 
@@ -146,88 +261,165 @@
 
       <!-- LEFT COLUMN: Question & Guide -->
       <div id="leftCol" style="width:450px;min-width:300px;max-width:800px;"
-        class="shrink-0 glass-panel rounded-2xl flex flex-col overflow-hidden border-t-4 border-t-accent shadow-sm dark:bg-slate-900/40">
+        class="shrink-0 glass-panel rounded-2xl overflow-y-auto custom-scroll border-t-4 border-t-accent shadow-sm dark:bg-slate-900/40 bg-slate-50/30 dark:bg-slate-950/20">
 
         <!-- Topic Header -->
         <div class="p-4 bg-white/60 dark:bg-slate-900/60 border-b border-slate-100 dark:border-slate-800">
           <div class="flex justify-between items-center mb-2">
-            <span id="qTypeBadge" class="px-2 py-1 bg-sky-100 text-brand text-[10px] font-bold rounded uppercase tracking-wider">Task 2</span>
-            <button onclick="toggleBookmark()" id="bookmarkBtn" class="text-slate-400 hover:text-amber-500 transition-all p-1" title="Lưu đề bài">
+            <span id="qTypeBadge"
+              class="px-2 py-1 bg-sky-100 text-brand text-[10px] font-bold rounded uppercase tracking-wider">Task
+              2</span>
+            <button onclick="toggleBookmark()" id="bookmarkBtn"
+              class="text-slate-400 hover:text-amber-500 transition-all p-1" title="Lưu đề bài">
               <i class="far fa-star text-xl"></i>
             </button>
           </div>
-          <h2 id="qTopicTitle" class="text-lg font-heading font-bold text-slate-800 dark:text-slate-100 mb-3">Đang tải đề bài...</h2>
+          <h2 id="qTopicTitle" class="text-lg font-heading font-bold text-slate-800 dark:text-slate-100 mb-3">Đang tải
+            đề bài...</h2>
 
           <!-- Diagram / Chart -->
-          <div id="diagramContainer" class="hidden mb-4 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all">
-            <img id="topicDiagram" src="" alt="Topic Diagram" class="w-full h-auto transition-transform duration-500 cursor-zoom-in" onclick="showImageGallery(this.src)">
-            <div class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">Click để phóng to</div>
+          <div id="diagramContainer"
+            class="hidden mb-4 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all">
+            <img id="topicDiagram" src="" alt="Topic Diagram"
+              class="w-full h-auto transition-transform duration-500 cursor-zoom-in"
+              onclick="showImageGallery(this.src)">
+            <div
+              class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+              Click để phóng to</div>
           </div>
-          <div id="chartContainer" class="hidden mb-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm aspect-video">
+          <div id="chartContainer"
+            class="hidden mb-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm aspect-video">
             <canvas id="task1Chart"></canvas>
           </div>
 
-          <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700 relative">
-            <i class="fas fa-quote-left absolute top-2 text-slate-200 text-2xl"></i>
-            <p id="qText" class="text-slate-700 dark:text-slate-300 font-medium leading-relaxed relative z-10 pl-6 text-[15px]">Đang tải...</p>
+          <div class="mb-4">
+            <div class="target-badge">
+              <i data-lucide="target" class="w-3.5 h-3.5 text-brand"></i>
+              <span id="targetLabel">250+ Words Required</span>
+            </div>
+            <div id="qText"
+              class="question-box text-sm md:text-base leading-relaxed text-slate-700 dark:text-slate-300 font-medium">
+              Vui lòng chọn một đề bài để bắt đầu luyện tập...
+            </div>
           </div>
         </div>
 
         <!-- Scrollable Resources -->
-        <div class="p-4 overflow-y-auto custom-scroll flex-grow space-y-3 bg-slate-50/50 dark:bg-slate-950/20">
+        <div class="p-4 space-y-3">
 
-          <!-- Accordion 0: Infographics -->
-          <div id="ideaAcc" class="hidden bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-xl overflow-hidden shadow-sm">
+          <!-- Accordion 0: Library Search Results -->
+          <div id="libraryResults"
+            class="hidden bg-white dark:bg-slate-900 border border-brand/30 dark:border-brand/20 rounded-xl overflow-hidden shadow-sm">
+            <div
+              class="px-4 py-3 bg-brand/5 dark:bg-brand/10 border-b border-brand/10 flex justify-between items-center">
+              <span class="text-xs font-black text-brand uppercase tracking-widest flex items-center gap-2">
+                <i data-lucide="library" class="w-3.5 h-3.5"></i> Kết quả tìm kiếm
+              </span>
+              <button onclick="closeLibraryResults()" class="text-slate-400 hover:text-rose-500 transition-colors">
+                <i data-lucide="x" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div id="libraryItemsCont" class="max-h-[400px] overflow-y-auto p-4 space-y-4 custom-scroll">
+              <!-- Search results injected here -->
+            </div>
+          </div>
+
+          <!-- Accordion 1: Topic Specific Ideas (ZIM) -->
+          <div id="ideaAcc"
+            class="hidden bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-xl overflow-hidden shadow-sm">
             <button onclick="toggleAccordion('ideaAcc')"
               class="w-full px-4 py-3 text-left bg-indigo-50/50 dark:bg-indigo-900/20 hover:bg-indigo-100/50 flex justify-between items-center transition-colors font-bold text-indigo-700 dark:text-indigo-400">
-              <span class="flex items-center gap-2"><i class="fas fa-lightbulb"></i> Kho Ý tưởng ZIM</span>
+              <span class="flex items-center gap-2"><i class="fas fa-lightbulb"></i> Gợi ý theo đề bài</span>
               <i id="ideaAcc-icon" class="fas fa-chevron-down text-indigo-400 transition-transform duration-300"></i>
             </button>
-            <div id="ideaAcc-content" class="accordion-content px-4 bg-white dark:bg-slate-900 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            <div id="ideaAcc-content"
+              class="accordion-content px-4 bg-white dark:bg-slate-900 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
               <div class="py-4">
-                <p class="mb-3 font-medium text-slate-500 italic">Sơ đồ phân tích các khía cạnh của chủ đề:</p>
-                <img id="topicDiagramInAccordion" src="" class="w-full rounded-lg border dark:border-slate-800 shadow-sm cursor-zoom-in" alt="Infographic" onclick="showImageGallery(this.src)">
+                <p class="mb-3 font-medium text-slate-500 italic text-xs">Sơ đồ phân tích các khía cạnh của chủ đề:</p>
+                <img id="topicDiagramInAccordion" src=""
+                  class="w-full rounded-lg border dark:border-slate-800 shadow-sm cursor-zoom-in" alt="Infographic"
+                  onclick="showImageGallery(this.src)">
               </div>
             </div>
           </div>
 
           <!-- Accordion 1: Hướng dẫn -->
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+          <div
+            class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
             <button onclick="toggleAccordion('guideAcc')"
               class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
-              <span class="flex items-center gap-2"><i class="fas fa-lightbulb text-amber-500"></i> Hướng dẫn làm bài</span>
+              <span class="flex items-center gap-2"><i class="fas fa-lightbulb text-amber-500"></i> Hướng dẫn làm
+                bài</span>
               <i id="guideAcc-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
             </button>
-            <div id="guideAcc-content" class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800">
-              <div id="qGuide" class="py-3">Đang tải...</div>
+            <div id="guideAcc-content"
+              class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
+              <div id="qGuide" class="py-4 prose prose-sm dark:prose-invert max-w-none text-slate-600 dark:text-slate-400">Đang tải...</div>
             </div>
           </div>
 
           <!-- Accordion 2: Từ vựng -->
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+          <div
+            class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
             <button onclick="toggleAccordion('vocabAcc')"
               class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
-              <span class="flex items-center gap-2"><i class="fas fa-spell-check text-emerald-500"></i> Từ vựng tham khảo</span>
+              <span class="flex items-center gap-2"><i class="fas fa-spell-check text-emerald-500"></i> Từ vựng tham
+                khảo</span>
               <i id="vocabAcc-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
             </button>
-            <div id="vocabAcc-content" class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
+            <div id="vocabAcc-content"
+              class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
               <div id="qVocab" class="py-4 grid grid-cols-1 gap-4"></div>
             </div>
           </div>
 
+          <!-- Accordion 3: Model Answer -->
+          <div id="ansAcc"
+            class="hidden bg-white dark:bg-slate-900 border border-emerald-200 dark:border-emerald-900/50 rounded-xl overflow-hidden shadow-sm">
+            <button onclick="toggleAccordion('ansAcc')"
+              class="w-full px-4 py-3 text-left bg-emerald-50/50 dark:bg-emerald-900/20 hover:bg-emerald-100/50 flex justify-between items-center transition-colors font-bold text-emerald-700 dark:text-emerald-400">
+              <span class="flex items-center gap-2"><i class="fas fa-check-circle"></i> Bài mẫu tham khảo</span>
+              <i id="ansAcc-icon" class="fas fa-chevron-down text-emerald-400 transition-transform duration-300"></i>
+            </button>
+            <div id="ansAcc-content" class="accordion-content px-4 bg-white dark:bg-slate-900 text-sm leading-relaxed">
+              <div class="py-4 space-y-6">
+                <div id="modelAnsEn"
+                  class="prose prose-sm dark:prose-invert max-w-none text-slate-700 dark:text-slate-300">
+                  <!-- English Answer -->
+                </div>
+                <div class="h-px bg-slate-100 dark:bg-slate-800"></div>
+                <div id="modelAnsVi"
+                  class="prose prose-sm dark:prose-invert max-w-none text-slate-500 dark:text-slate-400 italic">
+                  <!-- Vietnamese Answer -->
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Accordion 3: Bài mẫu -->
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+          <div
+            class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
             <button onclick="toggleAccordion('sampleAcc')"
               class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
-              <span class="flex items-center gap-2"><i class="fas fa-file-alt text-brand"></i> Bài mẫu (Sample Answer)</span>
+              <span class="flex items-center gap-2"><i class="fas fa-file-alt text-brand"></i> Bài mẫu (Sample
+                Answer)</span>
               <i id="sampleAcc-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
             </button>
-            <div id="sampleAcc-content" class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
+            <div id="sampleAcc-content"
+              class="accordion-content px-4 bg-slate-50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800">
               <div class="py-3">
-                <div class="bg-blue-50 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 text-xs p-2 rounded mb-3 flex items-start gap-2 border border-blue-100 dark:border-blue-800">
-                  <i class="fas fa-info-circle mt-0.5"></i> Hãy tự viết trước khi xem bài mẫu.
+                <div class="flex justify-between items-center mb-3">
+                  <div
+                    class="bg-blue-50 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 text-[10px] px-2 py-1 rounded flex items-start gap-2 border border-blue-100 dark:border-blue-800">
+                    <i class="fas fa-info-circle mt-0.5"></i> Tự viết trước khi xem sample.
+                  </div>
+                  <button id="toggleSampleLangBtn" onclick="toggleSampleLang()"
+                    class="px-2 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 text-[10px] font-bold rounded hover:bg-slate-50 flex items-center gap-1.5 transition-all">
+                    <i data-lucide="languages" class="w-3 h-3"></i> <span id="sampleLangText">Xem tiếng Việt</span>
+                  </button>
                 </div>
-                <div id="qSample" class="text-[14px] text-slate-700 dark:text-slate-300 leading-loose whitespace-pre-line pb-2">Đang tải...</div>
+                <div id="qSample"
+                  class="prose prose-sm dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 leading-loose pb-2">Đang tải...</div>
               </div>
             </div>
           </div>
@@ -238,10 +430,12 @@
       <div id="colResizeHandle" class="hidden md:flex" title="Kéo để thay đổi kích thước"></div>
 
       <!-- RIGHT COLUMN: Writing Area -->
-      <div class="flex-1 h-full glass-panel rounded-2xl flex flex-col border-t-4 border-t-slate-900 shadow-md relative overflow-hidden bg-white dark:bg-slate-900">
+      <div
+        class="flex-1 h-full glass-panel rounded-2xl flex flex-col border-t-4 border-t-slate-900 shadow-md relative overflow-hidden bg-white dark:bg-slate-900">
 
         <!-- Toolbar -->
-        <div class="flex flex-wrap items-center justify-between px-4 py-3 border-b border-slate-100 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md gap-2">
+        <div
+          class="flex flex-wrap items-center justify-between px-4 py-3 border-b border-slate-100 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md gap-2">
           <div class="flex items-center gap-2">
             <button onclick="applyBarem()"
               class="px-3 py-1.5 bg-brand text-white text-xs font-bold rounded flex items-center gap-1.5 hover:bg-sky-600 transition-colors shadow-sm"
@@ -260,13 +454,15 @@
 
           <div class="flex items-center gap-4">
             <!-- Word Counter -->
-            <div class="flex items-center gap-2 text-sm font-medium px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm">
+            <div
+              class="flex items-center gap-2 text-sm font-medium px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm">
               <i class="fas fa-file-word text-slate-400"></i>
               <span id="wordCountDisplay" class="font-bold wc-low">0</span>
               <span class="text-slate-400 text-xs">words</span>
             </div>
             <!-- Timer -->
-            <div class="flex items-center gap-2 text-lg font-mono font-bold px-3 py-1 bg-slate-800 dark:bg-slate-950 text-white rounded-lg shadow-inner w-28 justify-center">
+            <div
+              class="flex items-center gap-2 text-lg font-mono font-bold px-3 py-1 bg-slate-800 dark:bg-slate-950 text-white rounded-lg shadow-inner w-28 justify-center">
               <i class="fas fa-stopwatch text-sky-400 text-sm"></i>
               <span id="timerDisplay">40:00</span>
             </div>
@@ -286,7 +482,8 @@
         </div>
 
         <!-- Bottom Status Bar -->
-        <div class="flex-none border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 px-4 py-3 flex items-center justify-between">
+        <div
+          class="flex-none border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 px-4 py-3 flex items-center justify-between">
           <span id="saveStatus" class="text-xs text-slate-400 font-medium flex items-center gap-1">
             <i class="fas fa-cloud-check"></i> Đã lưu nháp tự động
           </span>
@@ -313,10 +510,12 @@
   <div id="toastContainer" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
 
   <!-- Result Modal -->
-  <div id="resultModal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+  <div id="resultModal"
+    class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
     <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-scale-in">
       <div class="bg-gradient-to-br from-brand to-blue-700 p-8 text-white text-center">
-        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
+        <div
+          class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
           <i class="fas fa-trophy text-3xl text-yellow-300"></i>
         </div>
         <h3 class="text-2xl font-bold font-heading">Hoàn thành bài viết!</h3>
@@ -324,21 +523,30 @@
       </div>
       <div class="p-8 space-y-6">
         <div class="grid grid-cols-2 gap-4">
-          <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 text-center">
-            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider mb-1">Số từ viết được</p>
+          <div
+            class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 text-center">
+            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider mb-1">Số từ viết
+              được</p>
             <p id="modalWordCount" class="text-2xl font-black text-slate-800 dark:text-white">0</p>
           </div>
-          <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 text-center">
-            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider mb-1">Thời gian làm bài</p>
+          <div
+            class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 text-center">
+            <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider mb-1">Thời gian
+              làm bài</p>
             <p id="modalTimeSpent" class="text-2xl font-black text-slate-800 dark:text-white">00:00</p>
           </div>
         </div>
         <div class="space-y-3">
-          <button onclick="exportToPDF()" class="w-full py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
+          <button onclick="exportToPDF()"
+            class="w-full py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
             <i class="fas fa-file-pdf"></i> Xuất PDF bài viết
           </button>
-          <button onclick="document.getElementById('resultModal').classList.replace('flex','hidden')" class="w-full py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-sky-500/30 hover:bg-sky-600 transition-all">Xem lại bài làm</button>
-          <a href="../index.html" class="block w-full py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold rounded-2xl hover:bg-slate-200 transition-all text-sm text-center">← Về Hub chính</a>
+          <button onclick="document.getElementById('resultModal').classList.replace('flex','hidden')"
+            class="w-full py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-sky-500/30 hover:bg-sky-600 transition-all">Xem
+            lại bài làm</button>
+          <a href="../index.html"
+            class="block w-full py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold rounded-2xl hover:bg-slate-200 transition-all text-sm text-center">←
+            Về Hub chính</a>
         </div>
       </div>
     </div>
@@ -351,7 +559,8 @@
       <i class="fas fa-times"></i>
     </button>
     <div class="w-full h-full flex items-center justify-center overflow-auto custom-scroll">
-      <img id="galleryImage" src="" class="max-w-full max-h-full object-contain transition-transform duration-300 cursor-zoom-in">
+      <img id="galleryImage" src=""
+        class="max-w-full max-h-full object-contain transition-transform duration-300 cursor-zoom-in">
     </div>
   </div>
 
@@ -362,77 +571,281 @@
     // =====================================================================
     // DATA LOADING — fetch from data/ directory
     // =====================================================================
-    let writingData   = [];
-    let currentIndex  = 0;
-    let currentTask   = 2;
+    let currentIndex = 0;
+    let currentTask = 2; // 1 for Task 1, 2 for Task 2
     let bookmarkedIds = [];
-    let userHistory   = [];
-    let activeFilter  = 'all';
+    let userHistory = [];
+    let activeFilter = 'all';
     let currentChartInstance = null;
-    let timerController   = null;
-    let autoSaveInterval  = null;
+    let timerController = null;
+    let autoSaveInterval = null;
 
-    // Embedded demo data (Task samples) — full data loads from JSON
-    const task1Samples = [
-      {
-        id: "demo-line", topic: "Task 1: Line Chart Sample", type: "Line Chart",
-        q: "The graph below shows the number of people visiting a particular museum in London between 2015 and 2020.",
-        chartData: { type:'line', data:{ labels:['2015','2016','2017','2018','2019','2020'], datasets:[{ label:'Visitors (Thousands)', data:[45,52,38,65,82,70], borderColor:'#0ea5e9', backgroundColor:'rgba(14,165,233,.1)', fill:true, tension:.3 }] }, options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ labels:{color:'#94a3b8'} } }, scales:{ y:{ ticks:{color:'#94a3b8'}, grid:{color:'rgba(148,163,184,.1)'} }, x:{ ticks:{color:'#94a3b8'}, grid:{display:false} } } } },
-        guide:"Phân tích xu hướng chung: Số lượng khách tăng dần từ 2015 đến 2019 trước khi giảm vào 2020.",
-        barem:"Intro: Paraphrase...\nOverview: Overall increase...\nBody 1: 2015–2017...\nBody 2: 2018–2020...",
-        sample:"The line graph illustrates the changes in museum attendance in London over a six-year period...",
-        vocab:[{word:"fluctuate",meaning:"biến động"},{word:"peak",meaning:"đạt đỉnh"}]
+    let isSampleVi = false;
+    window.allWritingData = { task1: [], task2: [], library: [] };
+
+    function flattenReviewData(reviewData, yearLabel) {
+      let task1Items = [];
+      let task2Items = [];
+
+      // Structure 1: Array (2020)
+      if (Array.isArray(reviewData)) {
+        reviewData.forEach(entry => {
+          if (entry.tasks && Array.isArray(entry.tasks)) {
+            entry.tasks.forEach(task => {
+              const header = task.header || "";
+              const isTask1 = header.toLowerCase().includes("task 01") || header.toLowerCase().includes("task 1");
+              const isTask2 = header.toLowerCase().includes("task 02") || header.toLowerCase().includes("task 2");
+              
+              const lines = header.split('\n');
+              const title = lines[0] || "Review Item";
+              const question = lines.slice(1).join('\n') || "No question text";
+
+              const mappedItem = {
+                id: task.id || `R${isTask1 ? '1' : '2'}-${yearLabel}-${title.substring(0,20).replace(/\s+/g, '_')}`,
+                title: title,
+                question: question,
+                guide: task.analysis || "",
+                barem: task.skeleton || "",
+                sample: task.sample || "",
+                category: 'Review',
+                year: yearLabel,
+                date: entry.date
+              };
+
+              if (isTask1) task1Items.push(mappedItem);
+              else if (isTask2) task2Items.push(mappedItem);
+            });
+          }
+        });
+      } 
+      // Structure 2: Object with 'exams' array (2022/2023)
+      else if (reviewData && reviewData.exams && Array.isArray(reviewData.exams)) {
+        reviewData.exams.forEach(exam => {
+          ['task_1', 'task_2'].forEach(key => {
+            const task = exam[key];
+            if (task) {
+              const isTask1 = key === 'task_1';
+              const mappedItem = {
+                id: task.id || `R${isTask1 ? '1' : '2'}-${yearLabel}-${(task.title || "").substring(0,20).replace(/\s+/g, '_')}`,
+                title: task.title || (isTask1 ? "Task 1 Review" : "Task 2 Review"),
+                question: task.question || "",
+                type: task.type || "",
+                guide: `<strong>Overview:</strong><br>${Array.isArray(task.overview) ? task.overview.join('<br>') : task.overview || ""}<br><br><strong>Body 1:</strong><br>${task.body_1 || ""}<br><br><strong>Body 2:</strong><br>${task.body_2 || ""}`,
+                vocab: (task.vocabulary || task.vocab || []).map(v => {
+                  if (typeof v === 'object' && v !== null) return v;
+                  return { en: v, vi: "" };
+                }),
+                sample: task.sample_answer || task.sample || "",
+                category: 'Review',
+                year: yearLabel,
+                date: exam.date
+              };
+              if (isTask1) task1Items.push(mappedItem);
+              else task2Items.push(mappedItem);
+            }
+          });
+        });
       }
-    ];
+      return { task1: task1Items, task2: task2Items };
+    }
 
     async function loadAllData() {
-      // Load task2 library
-      const t2 = await loadJSON('../data/writing_task2_library.json');
-      const t2prompts = await loadJSON('../data/task2_prompts.json');
-      const review2020 = await loadJSON('../data/writing_2020_review.json');
+      // Load task2 library (outlines and phrases)
+      const library = await loadJSON('../data/writing5a_data_cleaned.json') || [];
+      window.allWritingData.library = library;
 
-      let task2Items = [];
-      if (t2 && Array.isArray(t2)) task2Items = t2;
-      if (t2prompts && Array.isArray(t2prompts)) task2Items = [...task2Items, ...t2prompts];
-
-      writingData = [...task1Samples, ...task2Items, ...(review2020 || [])];
+      // Load task2 samples and questions
+      const t2 = await loadJSON('../data/writing_task2_library.json') || [];
+      const t2prompts = await loadJSON('../data/task2_prompts.json') || [];
       
+      // Load and flatten Review Data
+      const [review2020Data, review2022Data, review2023Data] = await Promise.all([
+        loadJSON('../data/writing_2020_review.json'),
+        loadJSON('../data/writing_2022_review.json'),
+        loadJSON('../data/writing_2023_review.json')
+      ]);
+
+      const r2020 = flattenReviewData(review2020Data || [], '2020');
+      const r2022 = flattenReviewData(review2022Data || [], '2022');
+      const r2023 = flattenReviewData(review2023Data || [], '2023');
+
+      // Merge Task 1
+      const t1Base = [
+        ...(typeof TASK1_NEW_SAMPLES !== 'undefined' ? TASK1_NEW_SAMPLES : []),
+        ...(typeof TASK1_PRACTICE_DATA !== 'undefined' ? TASK1_PRACTICE_DATA : [])
+      ];
+      const t1Review = [...r2020.task1, ...r2022.task1, ...r2023.task1];
+
+      // Deduplicate Task 1
+      const t1Raw = [...t1Base, ...t1Review];
+      const t1Unique = [];
+      const t1Set = new Set();
+      t1Raw.forEach(item => {
+        const qText = (item.question || "").trim().toLowerCase();
+        if (qText && !t1Set.has(qText)) {
+          t1Unique.push(item);
+          t1Set.add(qText);
+        }
+      });
+      window.allWritingData.task1 = t1Unique;
+
+      // Load 15 Core Units from units_data.js
+      let t2Core = [];
+      if (typeof UNITS_DATA !== 'undefined') {
+        UNITS_DATA.forEach(unit => {
+          unit.questions.forEach((q, idx) => {
+            const isObj = typeof q === 'object' && q !== null;
+            const qid = (isObj && q.id) ? q.id : `${unit.id}_q${idx}`;
+            
+            const mapped = !isObj ? {
+              id: qid,
+              topic: unit.title,
+              question: q,
+              category: unit.category,
+              guide: `<strong>Topic Focus:</strong> ${unit.description}`,
+              vocab: (unit.vocab || []).map(v => {
+                if (typeof v === 'object' && v !== null) return v;
+                return { en: v, vi: "" };
+              }),
+              sample: "",
+              unitId: unit.id
+            } : {
+              ...q,
+              id: qid,
+              category: unit.category,
+              unitId: unit.id,
+              vocab: (q.vocab || []).map(v => {
+                if (typeof v === 'object' && v !== null) return v;
+                return { en: v, vi: "" };
+              })
+            };
+            t2Core.push(mapped);
+          });
+        });
+      }
+
+      // Merge Task 2
+      const t2Base = [...t2Core, ...t2, ...t2prompts];
+      const t2Review = [...r2020.task2, ...r2022.task2, ...r2023.task2];
+      
+      // Deduplicate Task 2
+      const t2Raw = [...t2Base, ...t2Review];
+      const t2Unique = [];
+      const t2Set = new Set();
+      t2Raw.forEach(item => {
+        const qText = (item.question || "").trim().toLowerCase();
+        if (qText && !t2Set.has(qText)) {
+          t2Unique.push(item);
+          t2Set.add(qText);
+        }
+      });
+      window.allWritingData.task2 = t2Unique;
+
+      // Handle URL param ?unit=unit1&q=0
+      const urlParams = new URLSearchParams(window.location.search);
+      const unitId = urlParams.get('unit');
+      const qIdx = urlParams.get('q');
+      if (unitId) {
+        let baseIdx = window.allWritingData.task2.findIndex(q => q.unitId === unitId);
+        if (baseIdx !== -1) {
+          currentIndex = baseIdx + (qIdx ? parseInt(qIdx) : 0);
+        }
+      }
+
       // Load bookmarks and history
       bookmarkedIds = storage.get('ieltsBookmarks', []);
-      userHistory   = storage.get('ieltsHistory', []);
+      userHistory = storage.get('ieltsHistory', []);
 
+      // Initialize with Task 2
+      setTaskMode(2, false);
+    }
+
+    function setTaskMode(mode, resetIndex = true) {
+      currentTask = mode;
+      if (resetIndex) currentIndex = 0;
+      activeFilter = 'all';
+
+      // UI Toggles
+      const m1Btn = document.getElementById('mode1Btn');
+      const m2Btn = document.getElementById('mode2Btn');
+
+      const activeClass = ['active', 'bg-white', 'dark:bg-slate-700', 'shadow-sm', 'text-brand'];
+
+      if (mode === 1) {
+        m1Btn.classList.add(...activeClass);
+        m2Btn.classList.remove(...activeClass);
+      } else {
+        m2Btn.classList.add(...activeClass);
+        m1Btn.classList.remove(...activeClass);
+      }
+
+      renderTypeFilters();
       populateSelector();
       updateProgressBar();
       loadQuestion(currentIndex);
+
+      // Update Navbar Title
+      document.getElementById('navTitle').textContent = `Task ${mode} Practice`;
     }
 
-    // =====================================================================
-    // CORE UI FUNCTIONS
-    // =====================================================================
+    function renderTypeFilters() {
+      const cont = document.getElementById('typeFilters');
+      cont.innerHTML = '';
+
+      const filters = currentTask === 1
+        ? [
+          { id: 'all', label: 'Tất cả' },
+          { id: 'Line', label: 'Line' },
+          { id: 'Bar', label: 'Bar' },
+          { id: 'Pie', label: 'Pie' },
+          { id: 'Table', label: 'Table' },
+          { id: 'Process', label: 'Process' },
+          { id: 'Map', label: 'Map' },
+          { id: 'Review', label: 'Review' },
+          { id: 'bookmarked', label: 'Đã lưu', icon: 'fas fa-star text-amber-500' }
+        ]
+        : [
+          { id: 'all', label: 'Tất cả' },
+          { id: 'Opinion', label: 'Opinion' },
+          { id: 'Discussion', label: 'Discussion' },
+          { id: 'Review', label: 'Review' },
+          { id: 'bookmarked', label: 'Đã lưu', icon: 'fas fa-star text-amber-500' }
+        ];
+
+      filters.forEach(f => {
+        const btn = document.createElement('button');
+        btn.onclick = () => filterByType(f.id);
+        btn.className = `filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand ${activeFilter === f.id ? 'active' : ''}`;
+        btn.innerHTML = (f.icon ? `<i class="${f.icon} mr-1"></i> ` : '') + f.label;
+        cont.appendChild(btn);
+      });
+    }
 
     function populateSelector() {
       const sel = document.getElementById('topicSelector');
       sel.innerHTML = '';
-      getFilteredData().forEach((q, i) => {
+      const data = getFilteredData();
+      data.forEach((q, i) => {
         const opt = document.createElement('option');
         opt.value = i;
-        opt.textContent = (q.topic || q.title || `Đề #${i+1}`).substring(0, 60);
+        opt.textContent = (q.topic || q.title || `Đề #${i + 1}`).substring(0, 60);
         sel.appendChild(opt);
       });
+      sel.value = currentIndex;
     }
 
     function getFilteredData() {
-      if (activeFilter === 'all') return writingData;
-      if (activeFilter === 'bookmarked') return writingData.filter(q => bookmarkedIds.includes(q.id));
-      return writingData.filter(q => (q.type || '').toLowerCase().includes(activeFilter.toLowerCase()));
+      const baseData = currentTask === 1 ? window.allWritingData.task1 : window.allWritingData.task2;
+      if (activeFilter === 'all') return baseData;
+      if (activeFilter === 'bookmarked') return baseData.filter(q => bookmarkedIds.includes(q.id));
+      return baseData.filter(q => (q.type || q.category || '').toLowerCase().includes(activeFilter.toLowerCase()));
     }
 
     function filterByType(type) {
       activeFilter = type;
-      document.querySelectorAll('.filter-chip').forEach(btn => btn.classList.remove('active'));
-      event.currentTarget.classList.add('active');
-      populateSelector();
       currentIndex = 0;
+      renderTypeFilters();
+      populateSelector();
       loadQuestion(0);
       updateProgressBar();
     }
@@ -452,86 +865,419 @@
     function updateProgressBar() {
       const filtered = getFilteredData();
       const total = filtered.length;
-      const done  = filtered.filter(q => userHistory.find(h => h.topicId === q.id)).length;
-      const pct   = total > 0 ? Math.round((done / total) * 100) : 0;
+      const done = filtered.filter(q => userHistory.find(h => h.topicId === q.id)).length;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
       document.getElementById('progressBar').style.width = pct + '%';
       document.getElementById('progressText').textContent = `${done}/${total}`;
     }
 
     function loadQuestion(idx) {
+      const targetEl = document.getElementById('targetWordCount');
       const filtered = getFilteredData();
-      if (!filtered.length) return;
+      if (!filtered.length) {
+        document.getElementById('qTopicTitle').textContent = 'Không có dữ liệu';
+        document.getElementById('qText').textContent = 'Vui lòng chọn bộ lọc khác.';
+        document.getElementById('chartContainer').classList.add('hidden');
+        document.getElementById('diagramContainer').classList.add('hidden');
+        if (targetEl) targetEl.textContent = '---';
+        return;
+      }
+
       const q = filtered[idx];
       if (!q) return;
 
-      document.getElementById('qTopicTitle').textContent = q.topic || q.title || 'Đề bài';
-      document.getElementById('qTypeBadge').textContent  = q.type || 'Task 2';
-      document.getElementById('qText').textContent       = q.q || q.question || '';
-
-      // Diagram
-      const ideaAcc = document.getElementById('ideaAcc');
-      if (q.diagram) {
-        ideaAcc.classList.remove('hidden');
-        document.getElementById('topicDiagram').src = (q.diagram.startsWith('http') ? '' : '../') + q.diagram;
-        document.getElementById('topicDiagramInAccordion').src = document.getElementById('topicDiagram').src;
-        document.getElementById('diagramContainer').classList.remove('hidden');
-      } else {
-        ideaAcc.classList.add('hidden');
-        document.getElementById('diagramContainer').classList.add('hidden');
+      // Try to load AI data if missing
+      if (!q._aiLoaded) {
+        loadAIData(q).then(() => {
+          if (currentIndex === idx) {
+            // Re-render certain parts without full reload to avoid flicker
+            renderAIDependentParts(q);
+          }
+        });
       }
 
-      // Chart (Task 1)
+      // Basic Info
+      document.getElementById('qTopicTitle').textContent = (currentTask === 1 ? 'Task 1: ' : 'Task 2: ') + (q.id || `Đề #${idx + 1}`);
+      document.getElementById('qTypeBadge').textContent = q.type || (currentTask === 1 ? 'Report' : 'Essay');
+
+      // Topic Text with IELTS Template
+      const rawText = q.question || q.topic || q.q || q.title || q.introduction || '';
+      const ieltsTemplate = `
+        <div class="space-y-4">
+          <div class="text-[11px] font-black uppercase tracking-widest text-slate-400 mb-1">WRITING TASK ${currentTask}</div>
+          <div class="text-xs text-slate-500 mb-3 italic">You should spend about ${currentTask === 1 ? '20' : '40'} minutes on this task. Write about the following topic:</div>
+          <div class="bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border-l-4 border-brand shadow-sm">
+            <div class="text-slate-800 dark:text-slate-200 font-bold text-sm md:text-base leading-relaxed">
+              ${rawText.replace(/\n/g, '<br>')}
+            </div>
+          </div>
+          <div class="text-[11px] text-slate-500 mt-4 leading-relaxed bg-white/50 dark:bg-slate-900/50 p-3 rounded-lg border border-slate-100 dark:border-slate-800">
+            Give reasons for your answer and include any relevant examples from your own knowledge or experience. 
+            <br><span class="font-bold text-slate-700 dark:text-slate-300 text-xs">Write at least ${currentTask === 1 ? '150' : '250'} words.</span>
+          </div>
+        </div>
+      `;
+      document.getElementById('qText').innerHTML = ieltsTemplate;
+
+      // Diagram / Infographic
+      const ideaAcc = document.getElementById('ideaAcc');
+      const diagCont = document.getElementById('diagramContainer');
+      if (q.diagram) {
+        ideaAcc.classList.remove('hidden');
+        const imgPath = (q.diagram.startsWith('http') || q.diagram.startsWith('data:')) ? q.diagram : '../' + q.diagram;
+        document.getElementById('topicDiagram').src = imgPath;
+        document.getElementById('topicDiagramInAccordion').src = imgPath;
+        diagCont.classList.remove('hidden');
+      } else {
+        ideaAcc.classList.add('hidden');
+        diagCont.classList.add('hidden');
+      }
+
+      // Word count targets
+      if (targetEl) {
+        targetEl.textContent = (currentTask === 1 ? '150' : '250');
+      }
+      const targetLabel = document.getElementById('targetLabel');
+      if (targetLabel) {
+        targetLabel.textContent = (currentTask === 1 ? '150+ Words Required' : '250+ Words Required');
+      }
+
+      // Model Answer Logic
+      const ansAcc = document.getElementById('ansAcc');
+      const ansEn = document.getElementById('modelAnsEn');
+      const ansVi = document.getElementById('modelAnsVi');
+
+      let hasAns = false;
+      ansEn.innerHTML = '';
+      ansVi.innerHTML = '';
+
+      if (currentTask === 1) {
+        if (q.modelAnswerEn || q.modelAnswer) {
+          ansEn.innerHTML = `<h4 class="text-xs font-bold uppercase text-slate-400 mb-2">English Answer</h4>` + marked.parse(q.modelAnswerEn || q.modelAnswer);
+          hasAns = true;
+        }
+        if (q.modelAnswerVi) {
+          ansVi.innerHTML = `<h4 class="text-xs font-bold uppercase text-slate-400 mb-2">Bản dịch tiếng Việt</h4>` + marked.parse(q.modelAnswerVi);
+          hasAns = true;
+        }
+      } else {
+        // Task 2
+        if (q.en) {
+          ansEn.innerHTML = `<h4 class="text-xs font-bold uppercase text-slate-400 mb-2">English Answer</h4>` + marked.parse(q.en);
+          hasAns = true;
+        }
+        if (q.vi) {
+          ansVi.innerHTML = `<h4 class="text-xs font-bold uppercase text-slate-400 mb-2">Bản dịch tiếng Việt</h4>` + marked.parse(q.vi);
+          hasAns = true;
+        }
+      }
+
+      if (hasAns) {
+        ansAcc.classList.remove('hidden');
+      } else {
+        ansAcc.classList.add('hidden');
+      }
+      
+      renderChart(q);
+
+      // Update words required badge text
+      if (targetEl) {
+        targetEl.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 inline mr-1"></i> ${currentTask === 1 ? '150+' : '250+'} words`;
+      }
+
+      // Auto-suggest from library if matches category/topic
+      autoSuggestFromLibrary(q);
+
+      // Refresh Lucide icons in dynamically added HTML
+      if (window.lucide) lucide.createIcons();
+
+      // Render AI-dependent parts immediately
+      renderAIDependentParts(q);
+    }
+
+    function renderChart(q) {
       const chartCont = document.getElementById('chartContainer');
+      const diagCont = document.getElementById('diagramContainer');
+
       if (q.chartData) {
         chartCont.classList.remove('hidden');
+        if (diagCont) diagCont.classList.add('hidden');
+        
         const isDark = document.documentElement.classList.contains('dark');
         const textColor = isDark ? '#94a3b8' : '#475569';
         const gridColor = isDark ? 'rgba(148,163,184,.1)' : 'rgba(0,0,0,.06)';
-        const cfg = JSON.parse(JSON.stringify(q.chartData));
-        if (cfg.options?.scales) {
-          Object.values(cfg.options.scales).forEach(ax => {
-            ax.ticks = { ...ax.ticks, color: textColor };
-            ax.grid  = { ...ax.grid,  color: gridColor };
+
+        let cfg;
+        const chartType = (q.chartData.type || q.type || 'line').toLowerCase();
+        
+        if (q.chartData.type && (q.chartData.data || q.chartData.datasets)) {
+          cfg = JSON.parse(JSON.stringify(q.chartData));
+          cfg.type = chartType === 'table' ? 'bar' : chartType;
+          if (!cfg.data && cfg.datasets) {
+             cfg.data = { labels: cfg.labels, datasets: cfg.datasets };
+          }
+        } else {
+          cfg = {
+            type: chartType === 'table' ? 'bar' : chartType,
+            data: JSON.parse(JSON.stringify(q.chartData)),
+            options: JSON.parse(JSON.stringify(q.options || { responsive: true, maintainAspectRatio: false }))
+          };
+        }
+ 
+        if (!cfg.options) cfg.options = { responsive: true, maintainAspectRatio: false };
+        if (!cfg.options.scales) cfg.options.scales = { y: { beginAtZero: true }, x: {} };
+
+        const palette = [
+          { border: '#38bdf8', bg: 'rgba(56, 189, 248, 0.2)' },
+          { border: '#818cf8', bg: 'rgba(129, 140, 248, 0.2)' },
+          { border: '#34d399', bg: 'rgba(52, 211, 153, 0.2)' },
+          { border: '#fbbf24', bg: 'rgba(251, 191, 36, 0.2)' },
+          { border: '#f87171', bg: 'rgba(248, 113, 113, 0.2)' },
+          { border: '#a78bfa', bg: 'rgba(167, 139, 250, 0.2)' },
+          { border: '#fb7185', bg: 'rgba(251, 113, 133, 0.2)' }
+        ];
+
+        if (cfg.data && cfg.data.datasets) {
+          cfg.data.datasets.forEach((ds, i) => {
+            const color = palette[i % palette.length];
+            if (!ds.borderColor) ds.borderColor = color.border;
+            if (!ds.backgroundColor) ds.backgroundColor = color.bg;
+            if (!ds.borderWidth) ds.borderWidth = 2;
+            if (chartType === 'line') ds.tension = 0.4;
           });
         }
+
+        if (cfg.options.scales) {
+          Object.values(cfg.options.scales).forEach(ax => {
+            if (ax && typeof ax === 'object') {
+              if (!ax.ticks) ax.ticks = {};
+              if (!ax.grid) ax.grid = {};
+              ax.ticks.color = textColor;
+              ax.grid.color = gridColor;
+            }
+          });
+        }
+
+        if (currentChartInstance) {
+          currentChartInstance.destroy();
+          currentChartInstance = null;
+        }
+        
+        // Clear placeholder and inject canvas
+        chartCont.innerHTML = '<canvas id="task1Chart" style="width:100%; height:100%;"></canvas>';
+        const ctx = document.getElementById('task1Chart');
+        try {
+          currentChartInstance = new Chart(ctx, cfg);
+        } catch (chartErr) {
+          console.error("Chart.js rendering failed:", chartErr);
+          chartCont.innerHTML = '<p class="text-red-500 text-xs p-4">Lỗi hiển thị biểu đồ. Vui lòng thử lại.</p>';
+        }
+      } else if (q.diagram) {
+        chartCont.classList.add('hidden');
+        if (diagCont) {
+          diagCont.classList.remove('hidden');
+          const imgPath = (q.diagram.startsWith('http') || q.diagram.startsWith('data:')) ? q.diagram : '../' + q.diagram;
+          const diagImg = document.getElementById('topicDiagram');
+          if (diagImg) diagImg.src = imgPath;
+        }
+      } else if (currentTask === 1) {
+        // Task 1 fallback
+        chartCont.classList.remove('hidden');
+        if (diagCont) diagCont.classList.add('hidden');
+        
         if (currentChartInstance) currentChartInstance.destroy();
-        currentChartInstance = new Chart(document.getElementById('task1Chart'), cfg);
-        currentTask = 1;
-        document.getElementById('targetWordCount').innerHTML = '<i class="fas fa-check-circle text-emerald-500"></i> 150+ words';
-        if (timerController) timerController.reset(20);
+        
+        chartCont.innerHTML = `
+          <div class="flex flex-col items-center justify-center h-full p-8 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border-2 border-dashed border-slate-200 dark:border-slate-700">
+            <div class="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mb-3">
+              <i data-lucide="image-off" class="text-slate-400 w-6 h-6"></i>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Biểu đồ trực quan đang được cập nhật</p>
+            <p class="text-slate-400 text-xs mt-1">Vui lòng xem số liệu trong nội dung câu hỏi.</p>
+          </div>
+          <canvas id="task1Chart" class="hidden"></canvas>
+        `;
+        if (window.lucide) lucide.createIcons();
       } else {
         chartCont.classList.add('hidden');
-        currentTask = 2;
-        document.getElementById('targetWordCount').innerHTML = '<i class="fas fa-check-circle text-emerald-500"></i> 250+ words';
-        if (timerController) timerController.reset(40);
       }
+    }
 
-      // Guide
-      document.getElementById('qGuide').innerHTML = q.guide || '<em class="text-slate-400">Chưa có hướng dẫn.</em>';
+    async function loadAIData(q) {
+      if (q._aiLoaded) return;
+      const qid = (q.id || "").replace(/\s+/g, '_').replace(/\//g, '-');
+      if (!qid) return;
+
+      try {
+        // Fetch Guide
+        const guideRes = await fetch(`../data/ai_output/guides/${qid}_guide.json`).catch(() => null);
+        if (guideRes && guideRes.ok) {
+          const guideData = await guideRes.json();
+          q.guide = guideData.guide;
+        }
+
+        // Fetch Vocab
+        const vocabRes = await fetch(`../data/ai_output/vocab/${qid}_vocab_vocabulary.json`).catch(() => null);
+        if (vocabRes && vocabRes.ok) {
+          const vocabData = await vocabRes.json();
+          q.vocab = vocabData.vocab;
+        }
+
+        // Fetch Sample
+        const sampleRes = await fetch(`../data/ai_output/samples/sample_${qid}_band8.json`).catch(() => null);
+        if (sampleRes && sampleRes.ok) {
+          const sampleData = await sampleRes.json();
+          q.sample = sampleData.sample;
+        }
+
+        // Fetch Chart Data (Task 1 only)
+        if (currentTask === 1 && !q.chartData && !q.diagram) {
+          const chartRes = await fetch(`../data/ai_output/charts/${qid}_chart.json`).catch(() => null);
+          if (chartRes && chartRes.ok) {
+            const chartData = await chartRes.json();
+            q.chartData = chartData.chartData;
+            // Re-render chart if it's the current question
+            const filtered = getFilteredData();
+            if (filtered[currentIndex] === q) {
+              renderChart(q);
+            }
+          }
+        }
+        
+        q._aiLoaded = true;
+      } catch (err) {
+        console.warn("Could not load AI data for", qid, err);
+      }
+    }
+
+    function renderAIDependentParts(q) {
+      // Guide - Render with marked
+      const guideEl = document.getElementById('qGuide');
+      if (q.guide) {
+        guideEl.innerHTML = marked.parse(q.guide);
+      } else {
+        guideEl.innerHTML = '<em class="text-slate-400">Chưa có hướng dẫn cho đề này.</em>';
+      }
 
       // Vocab
+      renderVocab(q);
+
+      // Sample Answer
+      updateSampleDisplay(q);
+    }
+
+    function renderVocab(q) {
       const vocabEl = document.getElementById('qVocab');
-      if (q.vocab && q.vocab.length) {
-        vocabEl.innerHTML = q.vocab.map(v => `
-          <div class="flex items-start justify-between gap-2 p-2 bg-white rounded-lg border border-slate-100">
-            <span class="font-bold text-slate-800 text-sm">${v.word}</span>
-            <span class="text-slate-500 text-xs text-right">${v.meaning}</span>
-          </div>
-        `).join('');
+      if (q.vocab && Array.isArray(q.vocab)) {
+        vocabEl.innerHTML = q.vocab.map(v => {
+          if (!v) return '';
+          const isObj = typeof v === 'object' && v !== null;
+          
+          let word = "";
+          let meaning = "";
+          let ipa = "";
+          
+          if (isObj) {
+            // Check for nested structure first (common error case)
+            if (v.en && typeof v.en === 'object') {
+              word = v.en.word || v.en.en || "";
+              meaning = v.en.meaning || v.en.vi || v.vi || "";
+              ipa = v.en.ipa || v.ipa || "";
+            } else {
+              word = v.word || v.en || "";
+              meaning = v.meaning || v.vi || "";
+              ipa = v.ipa || "";
+            }
+          } else {
+            word = v;
+          }
+
+          if (!word) return ''; // Skip empty entries
+
+          return `
+            <div class="flex items-start justify-between gap-2 p-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm hover:border-brand/30 transition-colors">
+              <div class="flex flex-col">
+                <span class="font-bold text-slate-800 dark:text-slate-200 text-sm">${word}</span>
+                ${ipa ? `<span class="text-[10px] text-slate-400 font-mono">${ipa}</span>` : ''}
+              </div>
+              <span class="text-brand dark:text-sky-400 text-xs text-right font-medium">${meaning}</span>
+            </div>
+          `;
+        }).join('');
       } else {
-        vocabEl.innerHTML = '<p class="text-slate-400 text-sm py-2">Chưa có từ vựng.</p>';
+        vocabEl.innerHTML = '<p class="text-slate-400 text-xs py-2 italic font-medium">Dữ hiệu từ vựng gợi ý đang được cập nhật...</p>';
+      }
+    }
+
+    function updateBookmarkUI() {
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      const btn = document.getElementById('bookmarkBtn');
+      if (!btn || !q) return;
+      const isBookmarked = bookmarkedIds.includes(q.id);
+      btn.className = isBookmarked
+        ? 'text-amber-500 transition-all p-1'
+        : 'text-slate-400 hover:text-amber-500 transition-all p-1';
+      btn.querySelector('i').className = isBookmarked ? 'fas fa-star text-xl' : 'far fa-star text-xl';
+    }
+
+    function toggleSampleLang() {
+      isSampleVi = !isSampleVi;
+      const filtered = getFilteredData();
+      const q = filtered[currentIndex];
+      if (q) updateSampleDisplay(q);
+
+      const btnText = document.getElementById('sampleLangText');
+      btnText.textContent = isSampleVi ? 'Xem tiếng Anh' : 'Xem tiếng Việt';
+      showToast(isSampleVi ? 'Đã chuyển sang tiếng Việt' : 'Đã chuyển sang tiếng Anh', 'info');
+    }
+
+    function highlightVocab(text, vocabList) {
+      if (!text || !vocabList || !vocabList.length) return text;
+      let highlighted = text;
+      // Sort vocab by length descending to avoid partial matches on longer phrases
+      const sortedVocab = [...vocabList].sort((a, b) => {
+        const wordA = typeof a === 'string' ? a : (a.word || a.en || "");
+        const wordB = typeof b === 'string' ? b : (a.word || a.en || "");
+        return wordB.length - wordA.length;
+      });
+
+      sortedVocab.forEach(v => {
+        const word = typeof v === 'string' ? v : (v.word || v.en);
+        if (!word || word.length < 3) return;
+        
+        // Escape special chars for regex
+        const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`\\b(${escaped}e?s?|${escaped}ing|${escaped}ed)\\b`, 'gi');
+        
+        highlighted = highlighted.replace(regex, (match) => {
+          return `<span class="underline decoration-brand/40 decoration-2 underline-offset-4 font-bold text-slate-800 dark:text-white">${match}</span>`;
+        });
+      });
+      return highlighted;
+    }
+
+    function updateSampleDisplay(q) {
+      const el = document.getElementById('qSample');
+      const isVi = isSampleVi;
+      
+      let sampleText = '';
+      if (isVi) {
+        sampleText = q.sample_vi || q.modelAnswerVi || q.vi || q.sample || '';
+      } else {
+        sampleText = q.sample || q.modelAnswerEn || q.modelAnswer || q.en || '';
       }
 
-      // Sample
-      document.getElementById('qSample').textContent = q.sample || 'Chưa có bài mẫu.';
-
-      // Load saved draft
-      const draft = storage.get(`draft_${q.id}`, '');
-      document.getElementById('essayInput').value = draft;
-      handleInput();
-
-      // Update bookmark UI
-      updateBookmarkUI();
+      if (sampleText) {
+        // Use marked for rendering if it's markdown
+        let content = marked.parse(sampleText);
+        if (!isVi) {
+          content = highlightVocab(content, q.vocab);
+        }
+        el.innerHTML = content;
+      } else {
+        el.innerHTML = '<em class="text-slate-400 italic">Bài mẫu đang được cập nhật...</em>';
+      }
     }
 
     // =====================================================================
@@ -539,7 +1285,7 @@
     // =====================================================================
 
     function handleInput() {
-      const ta    = document.getElementById('essayInput');
+      const ta = document.getElementById('essayInput');
       const words = ta.value.trim().split(/\s+/).filter(w => w.length > 0).length;
       const display = document.getElementById('wordCountDisplay');
       display.textContent = words;
@@ -616,7 +1362,7 @@
 
       // Streak
       const today = new Date().toDateString();
-      const streak = storage.get('ieltsStreakData', { current:0, longest:0, lastCompleted:'' });
+      const streak = storage.get('ieltsStreakData', { current: 0, longest: 0, lastCompleted: '' });
       const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1);
       if (streak.lastCompleted === yesterday.toDateString()) { streak.current++; }
       else if (streak.lastCompleted !== today) { streak.current = 1; }
@@ -645,7 +1391,7 @@
       document.getElementById('modalTimeSpent').textContent = `${mins}:${secs}`;
       document.getElementById('resultModal').classList.replace('hidden', 'flex');
 
-      confetti({ particleCount:120, spread:70, origin:{ y:.6 }, colors:['#0ea5e9','#6366f1','#10b981'] });
+      confetti({ particleCount: 120, spread: 70, origin: { y: .6 }, colors: ['#0ea5e9', '#6366f1', '#10b981'] });
     }
 
     function exportToPDF() {
@@ -658,7 +1404,7 @@
           <hr style="border:none;border-top:1px solid #e2e8f0;margin-bottom:24px;">
           <div style="font-size:16px;line-height:1.8;color:#1e293b;white-space:pre-wrap;">${document.getElementById('essayInput').value}</div>
         </div>`;
-      html2pdf().set({ margin:10, filename:`IELTS_Task${currentTask}_${Date.now()}.pdf`, html2canvas:{ scale:2 }, jsPDF:{ format:'a4' } }).from(content).save();
+      html2pdf().set({ margin: 10, filename: `IELTS_Task${currentTask}_${Date.now()}.pdf`, html2canvas: { scale: 2 }, jsPDF: { format: 'a4' } }).from(content).save();
     }
 
     // =====================================================================
@@ -721,6 +1467,110 @@
     }
 
     // =====================================================================
+    // LIBRARY & SUGGESTIONS
+    // =====================================================================
+
+    function autoSuggestFromLibrary(q) {
+      if (currentTask !== 2) return;
+      const category = q.category || q.type || '';
+      const library = window.allWritingData.library;
+
+      // Try to find matching library topics
+      const matches = library.filter(item =>
+        item.category.toLowerCase().includes(category.toLowerCase()) ||
+        q.topic.toLowerCase().includes(item.category.toLowerCase())
+      ).slice(0, 3); // Top 3 matches
+
+      if (matches.length > 0) {
+        showLibraryResults(matches, `Gợi ý Ý tưởng cho chủ đề "${category || 'Này'}"`);
+      } else {
+        closeLibraryResults();
+      }
+    }
+
+    function searchLibrary(query) {
+      if (!query || query.length < 2) {
+        closeLibraryResults();
+        return;
+      }
+      const lib = window.allWritingData.library;
+      const q = query.toLowerCase();
+      const results = lib.filter(item =>
+        item.title_en.toLowerCase().includes(q) ||
+        item.title_vi.toLowerCase().includes(q) ||
+        item.category.toLowerCase().includes(q) ||
+        (item.points && item.points.some(p => p.en.toLowerCase().includes(q) || p.vi.toLowerCase().includes(q)))
+      ).slice(0, 10);
+
+      if (results.length > 0) {
+        showLibraryResults(results, `Kết quả cho "${query}"`);
+      } else {
+        document.getElementById('libraryItemsCont').innerHTML = '<p class="text-slate-400 text-xs italic">Không tìm thấy ý tưởng phù hợp.</p>';
+        document.getElementById('libraryResults').classList.remove('hidden');
+      }
+    }
+
+    function showLibraryResults(items, title) {
+      const cont = document.getElementById('libraryItemsCont');
+      const resultsEl = document.getElementById('libraryResults');
+
+      resultsEl.querySelector('span').innerHTML = `<i data-lucide="library" class="w-3.5 h-3.5"></i> ${title}`;
+
+      cont.innerHTML = items.map(item => `
+        <div class="p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700">
+           <div class="flex justify-between items-start mb-2">
+              <span class="text-[10px] font-black text-brand uppercase tracking-tighter">${item.category}</span>
+              <span class="text-[9px] font-bold text-slate-400">#${item.id}</span>
+           </div>
+           <h4 class="text-sm font-bold text-slate-800 dark:text-slate-100 mb-2">${item.title_en}</h4>
+           <p class="text-[11px] text-slate-500 mb-3 italic">${item.title_vi}</p>
+           
+           <div class="space-y-2">
+             <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-[10px] font-bold text-indigo-600 hover:text-indigo-700 flex items-center gap-1">
+                <i data-lucide="chevron-right" class="w-3 h-3"></i> Xem dàn ý & cụm từ
+             </button>
+             <div class="hidden space-y-3 mt-2 pl-2 border-l-2 border-indigo-100 dark:border-indigo-900/50">
+                <div class="space-y-1">
+                   <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Dàn ý (Points):</p>
+                   ${item.points.map(p => `
+                      <div class="text-[11px] leading-relaxed mb-1">
+                         ${p.en ? `<p class="text-slate-700 dark:text-slate-300">• ${p.en}</p>` : ""}
+                          <p class="${p.en ? "text-slate-400 italic" : "text-slate-700 dark:text-slate-300"}">${p.vi}</p>
+                      </div>
+                   `).join('')}
+                </div>
+                <div class="space-y-1">
+                   <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Cụm từ (Phrases):</p>
+                   <div class="flex flex-wrap gap-1">
+                      ${item.phrases.map(ph => {
+                        const en = ph.en || "";
+                        const vi = ph.vi || "";
+                        const isEnVietnamese = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹ]/i.test(en);
+                        let display = en || vi;
+                        let tooltip = (en && vi && en !== vi) ? vi : "";
+                        return `
+                          <span class="px-2 py-0.5 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded text-[10px] text-slate-600 dark:text-slate-300 shadow-sm" ${tooltip ? `title="${tooltip}"` : ''}>
+                             ${display}
+                          </span>
+                        `;
+                      }).join('')}
+                   </div>
+                </div>
+             </div>
+           </div>
+        </div>
+      `).join('');
+
+      resultsEl.classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeLibraryResults() {
+      document.getElementById('libraryResults').classList.add('hidden');
+      document.getElementById('librarySearch').value = '';
+    }
+
+    // =====================================================================
     // BOOT
     // =====================================================================
 
@@ -733,4 +1583,5 @@
     });
   </script>
 </body>
+
 </html>

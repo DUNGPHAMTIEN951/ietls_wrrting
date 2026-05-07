@@ -59,7 +59,7 @@
   </style>
 </head>
 
-<body class="text-slate-800 dark:text-slate-2  <!-- Navbar -->
+<body class="text-slate-800 dark:text-slate-200">
   <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
     <div class="flex items-center gap-3">
       <!-- Breadcrumb -->
@@ -87,10 +87,6 @@
       <div class="hidden sm:flex flex-col items-end">
         <span class="text-[10px] font-bold text-slate-400 uppercase">Core Topics</span>
         <span class="text-sm font-bold text-brand" id="unitCount">15 Units</span>
-      </div>
-    </div>
-  </nav>
-an>
       </div>
     </div>
   </nav>
@@ -269,7 +265,7 @@ an>
           <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-6 leading-relaxed">${u.description}</p>
           
           <div class="mt-auto pt-6 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
-            <span class="text-xs font-bold text-slate-400 uppercase">${u.reading?.length || 0} Lessons</span>
+            <span class="text-xs font-bold text-slate-400 uppercase">${u.questions?.length || 0} Lessons</span>
             <div class="flex -space-x-2">
               <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/30 border-2 border-white dark:border-slate-900 flex items-center justify-center" title="Vocabulary">
                 <i class="fas fa-spell-check text-emerald-600 text-[10px]"></i>
@@ -334,12 +330,23 @@ an>
       document.getElementById('modalDesc').textContent = unit.description;
 
       // Questions
-      document.getElementById('modalQuestions').innerHTML = unit.questions.map(q => `
-        <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm text-sm font-medium flex gap-3 dark:text-slate-300">
-          <i class="fas fa-quote-left text-slate-200 dark:text-slate-700"></i>
-          <span>${typeof q === 'string' ? q : q.title}</span>
+      document.getElementById('modalQuestions').innerHTML = unit.questions.map((q, qIdx) => {
+        const qText = typeof q === 'string' ? q : q.question;
+        const qTitle = typeof q === 'string' ? `Question ${qIdx + 1}` : (q.topic || `Question ${qIdx + 1}`);
+        return `
+        <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col gap-3 group transition-all hover:border-brand/40">
+          <div class="flex justify-between items-start">
+            <span class="text-[10px] font-black text-brand uppercase tracking-widest">${qTitle}</span>
+            <a href="./task2_practice.html?unit=${unit.id}&q=${qIdx}" class="text-slate-400 hover:text-brand transition-colors" title="Luyện tập câu này">
+              <i class="fas fa-external-link-alt text-xs"></i>
+            </a>
+          </div>
+          <div class="flex gap-3 text-sm font-medium dark:text-slate-300">
+            <i class="fas fa-quote-left text-slate-200 dark:text-slate-700 mt-1"></i>
+            <span>${qText}</span>
+          </div>
         </div>
-      `).join('');
+      `;}).join('');
 
       // Ideas
       document.getElementById('modalIdeas').innerHTML = unit.ideas.map(idea => `

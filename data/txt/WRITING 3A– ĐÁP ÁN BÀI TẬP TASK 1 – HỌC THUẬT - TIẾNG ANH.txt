@@ -1,0 +1,5832 @@
+WRITING 3A – ĐÁP ÁN BÀI TẬP TASK 1 – HỌC THUẬT – TIẾNG ANH 
+
+MỤC LỤC: 
+
+DẠNG 1: LINE GRAPH - BIỂU ĐỒ ĐƯỜNG 
+
+DẠNG 2: BAR CHART - BIỂU ĐỒ CỘT 
+
+DẠNG 3: PIE CHART- BIỂU ĐỒ TRÒN 
+
+DẠNG 4: TABLE - BẢNG BIỂU 
+
+DẠNG 5: MULTIPLE GRAPH - BIỂU ĐỒ KẾT HỢP 
+
+DẠNG 6: PROCESS - QUY TRÌNH 
+
+DẠNG 7: MAP - BẢN ĐỒ 
+
+1 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DẠNG 1: LINE GRAPH – BIỂU ĐỒ ĐƯỜNG 
+
+L1S. The line graph compares the percentage of people in three countries who used the 
+
+Internet between 1999 and 2009. 
+
+The line graph compares the percentage of people in three countries who used the Internet between 
+
+1999 and 2009. 
+
+It is clear that the proportion of the population who used the Internet increased in each country over 
+
+the period shown. Overall, a much larger percentage of Canadians and Americans had access to the 
+
+Internet in comparison with Mexicans, and Canada experienced the fastest growth in Internet usage. 
+
+In 1999, the proportion of people using the Internet in the USA was about 20%. The figures for 
+
+Canada and Mexico were lower, at about 10% and 5% respectively. In 2005, Internet usage in both 
+
+the USA and Canada rose to around 70% of the population, while the figure for Mexico reached just 
+
+over 25%. 
+
+By 2009, the percentage of Internet users was highest in Canada. Almost 100% of Canadians used 
+
+the Internet, compared to about 80% of Americans and only 40% of Mexicans. 
+
+L2S. The chart gives information about UK immigration, emigration and net migration 
+
+between 1999 and 2008. 
+
+The chart gives information about UK immigration, emigration and net migration between 1999 and 
+
+2008. 
+
+Both immigration and emigration rates rose over the period shown, but the figures for immigration 
+
+were significantly higher. Net migration peaked in 2004 and 2007. 
+
+2 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In 1999, over 450,000 people came to live in the UK, while the number of people who emigrated 
+
+stood at just under 300,000. The figure for net migration was around 160,000, and it remained at a 
+
+similar level until 2003. From 1999 to 2004, the immigration rate rose by nearly 150,000 people, but 
+
+there was a much smaller rise in emigration. Net migration peaked at almost 250,000 people in 2004. 
+
+After 2004, the rate of immigration remained high, but the number of people emigrating fluctuated. 
+
+Emigration fell suddenly in 2007, before peaking at about 420,000 people in 2008. As a result, the net 
+
+migration figure rose to around 240,000 in 2007, but fell back to around 160,000 in 2008. 
+
+L3S. The graph below shows UK acid rain emissions, measured in millions of tones, from 
+
+four different sectors between 1990 and 2007. 
+
+The line graph compares four sectors in ______ of the amount of acid rain emissions that they 
+
+produced over a period of 17 years in the UK. 
+
+It is clear that the total amount of acid rain emissions in the UK ______ ______ between 1990 and 
+
+2007. The most ______ decrease was seen in the electricity, gas and water supply sector. 
+
+In 1990, around 3.3 million tones of acid rain emissions came from the electricity, gas and water 
+
+sector. The transport and communication sector was ______ for about 0.7 million tones of emissions, 
+
+while the domestic sector ______ around 0.6 million tones. Just over 2 million tones of acid rain gases 
+
+came from other industries. 
+
+Emissions from electricity, gas and water supply fell dramatically to only 0.5 million tones in 2007, a 
+
+______ of almost 3 million tones. While acid rain gases from the domestic sector and other industries 
+
+fell gradually, the transport sector ______ a small increase in emissions, ______ a peak of 1 million 
+
+tones in 2005. 
+
+Fill the gaps using these words: 
+
+produced, reaching, fell, responsible, saw, considerably, terms, drop, dramatic 
+
+L4S. The graph below gives information about car ownership in Britain from 1971 to 
+
+2007. 
+
+3 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The graph shows changes in the number of cars ______ household in Great Britain ______ a period of 
+
+36 years. 
+
+Overall, car ownership in Britain increased ______ 1971 and 2007. In particular, the number of 
+
+households with two cars rose, while the number of households ______ a car fell. 
+
+In 1971, ______ half of all British households did not have regular use of a car. Around 44% of 
+
+households had one car, but only about 7% had two cars. It was uncommon for families to own three 
+
+or more cars, ______ around 2% of households falling into this category. 
+
+The one-car household was the most common type from the late 1970’s ______, although there was 
+
+little change in the ______ for this category. The biggest change was seen in the proportion of 
+
+households without a car, which fell steadily over the 36-year period ______ around 25% in 2007. In 
+
+contrast, the proportion of two-car families rose steadily, reaching about 26% in 2007, and the 
+
+proportion of households with more than two cars rose ______ around 5%. 
+
+Fill the gaps in the essay with the following words: 
+
+almost, to, figures, per, between, by, over, with, without, onwards 
+
+L5S. The graph below shows the amounts of waste produced by three companies over a 
+
+period of 15 years. 
+
+The line graph compares three companies in terms of their waste output between the years 2000 and 
+
+2015. 
+
+It is clear that there were significant changes in the amounts of waste produced by all three 
+
+companies shown on the graph. While companies A and B saw waste output fall over the 15-year 
+
+period, the amount of waste produced by company C increased considerably. 
+
+In 2000, company A produced 12 tonnes of waste, while companies B and C produced around 8 
+
+tonnes and 4 tonnes of waste material respectively. Over the following 5 years, the waste output of 
+
+companies B and C rose by around 2 tonnes, but the figure for company A fell by approximately 1 
+
+tonne. 
+
+4 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+From 2005 to 2015, company A cut waste production by roughly 3 tonnes, and company B reduced its 
+
+waste by around 7 tonnes. By contrast, company C saw an increase in waste production of 
+
+approximately 4 tonnes over the same 10-year period. By 2015, company C’s waste output had risen 
+
+to 10 tonnes, while the respective amounts of waste from companies A and B had dropped to 8 
+
+tonnes and only 3 tonnes. 
+
+L6S. The graph below shows changes in young adult unemployment rates in England 
+
+between 1993 and 2012. 
+
+The line graph compares levels of unemployment among 16 to 24-year-olds with overall 
+
+unemployment figures over a period of 20 years in England. 
+
+It is clear that the proportion of young adults who were unemployed at any time between 1993 and 
+
+2012 was significantly higher than the overall proportion of adults without work. Unemployment rates 
+
+for both groups of adults were consistently higher in London than in the rest of England. 
+
+In 1993, around 18% of English 16 to 24-year-olds living _____ London were unemployed, but the 
+
+figure for those living in the capital was 5% higher, at 22%. Similarly, the overall adult unemployment 
+
+rate in London, at 14%, was 4% higher than the rate in the rest of England. While levels of 
+
+joblessness fell significantly over the _____ 10 years, the trend for higher levels in London and among 
+
+young adults _____. 
+
+Young adult unemployment in England rose _____ between 2002 and 2012, from 12% to 21% 
+
+outside London, and from around 15% to a _____ of 25% in the capital. By contrast, the proportions 
+
+of all adults without work _____ below 10%, both in London and in the rest of the country. 
+
+L7S. The graph below shows changes in global food and oil prices between 2000 and 
+
+2011. 
+
+The line graph compares the average price of a barrel of oil with the food price index over a period of 
+
+11 years. 
+
+5 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+It is clear that average global prices of both oil and food rose considerably between 2000 and 2011. 
+
+Furthermore, the trends for both commodities were very similar, and so a strong correlation (93.6%) 
+
+is suggested. 
+
+In the year 2000, the average global oil price was close to $25 per barrel, and the food price index 
+
+stood at just under 90 points. Over the following four years both prices remained relatively stable, 
+
+before rising steadily between 2004 and 2007. By 2007, the average oil price had more than doubled, 
+
+to nearly $60 per barrel, and food prices had risen by around 50 points. 
+
+A dramatic increase in both commodity prices was seen from 2007 to 2008, with oil prices reaching a 
+
+peak of approximately $130 per barrel and the food price index rising to 220 points. However, by the 
+
+beginning of 2009 the price of oil had dropped by roughly $90, and the food price index was down by 
+
+about 80 points. Finally, in 2011, the average oil price rose once again, to nearly $100 per barrel, 
+
+while the food price index reached its peak, at almost 240 points. 
+
+L8S. The graph below shows the average daily spend of three categories of international 
+
+visitor to New Zealand from 1997 to 2017. 
+
+The line graph compares three types of traveller to New Zealand between 1997 and 2017 in terms of 
+
+their average daily expenditure. 
+
+It is noticeable that spending by these international visitors was at its highest between the years 2000 
+
+and 2003. Overall, business travellers spent the most per day, while people visiting friends or relatives 
+
+spent the least. 
+
+In 1997, business visitors to New Zealand spent an average of almost $260 per day, while 
+
+holidaymakers spent around $190 and people visiting friends or relatives spent less than $120. Over 
+
+the following five years, spending by all three types of traveller increased dramatically, to peaks of 
+
+around $330, $270 and $220. However, visitor spending suddenly fell again between 2003 and 2005. 
+
+From 2005 to 2015, the daily expenditure of business travellers and tourists fluctuated around the 
+
+$200 mark, whereas people visiting relations or friends spent roughly 60 to 80 dollars less per day. By 
+
+2017, daily spending had risen to approximately $250, $210 and $140 respectively for vacationers, 
+
+business people and those visiting loved ones. 
+
+6 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+L9E. The line graph shows thefts per thousand vehicles in four European countries 
+
+between 1990 and 1999.  
+
+The line graph compares the number of car thefts per thousand of the population in four countries 
+
+from 1990 to 1999.  
+
+Overall, it can be seen that car thefts were far higher in Great Britain than in the other three counties 
+
+throughout the whole time frame.  
+
+To begin, car thefts in Sweden, France and Canada followed a fairly similar pattern over the first five 
+
+years, all remaining at between 5 and 10 per thousand. The general trend though for France and 
+
+Canada was a decline in the number of vehicles stolen over the period, with both at around 6 in 1999. 
+
+In contrast, Sweden experienced an upward trend, starting the period at just over 5, and finishing at 
+
+just under 15.  
+
+Interestingly, car thefts in Great Britain started at 18 per thousand, which far exceeded that of the 
+
+other countries. It then fluctuated over the next nine years, reaching a peak of 20 thefts per 1000 in 
+
+1996, and ending the period slightly lower than where it began, at approximately 17 per thousand. 
+
+L10E. The graph below compares the number of visits to two new music sites on the web. 
+
+The graph shows people using new music places on the Internet in fifteen days period of time namely 
+
+personal choice and trendy pop music. 
+
+The overall trend shows fluctuation with slight Increased towards the end of the period. 
+
+Starting with Music Choice websites; 40,000 poeple went on this new site on first-day. Half of them 
+
+backed out the next day. In Contrast to this Pop Parade net sites were visited by 120,000 music lovers 
+
+on day one which decreased slightly on the next day thereafter regaining the same fame on 3rd day. 
+
+After 3rd day the enthusiasm for both music lines on Internet dropped slowly- reaching maximum fall 
+
+of 40,000 on 7th day. Whereas Music choice gained popularity, slightly Improoving to get the original 
+
+strength of 30,000 viewers on screen, but was getting still less visiters than their opponent Pop group 
+
+i.e. 40,000 on day 7. 
+
+7 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In the biegining of the next week both gained remarkable recovery after a few fluctuations for 8th and 
+
+9th day having 40,000 and 50,000 visiters respectively, reaching to their peaks of one and a half 
+
+thousand new viewers for Pop Parade on 11th day showing a contrast of very few people visiting 
+
+Music choice for the same day. Thereafter Music choice gained popularity on 12th day for having more 
+
+than 120,000 new visiters on web. 
+
+In the end of the period Pop sites were visited by maximum viewers of 180,000 whereas sites located 
+
+to Music choice were not explored by more than 80,000 explorers on the last day of the report. 
+
+L11E. The two decades between 1975 and 1995 brought significant changes in the 
+
+representation of women in Freedonia's work force, according to the graphs. 
+
+The two decades between 1975 and 1995 brought significant changes in the representation of women 
+
+in Freedonia's work force, according to the graphs. 
+
+In 1975, for example, some 300 000 men and 250 000 women worked in the communications sector. 
+
+Twenty years later, though the number of men remained unchanged, the number of women rose to 
+
+550 000. 
+
+A similar situation was seen in the wholesale and retail trade sector, where the number of women rose 
+
+from about 550 000 in 1975 to almost 800 000 two decades later. The number of men in this sector 
+
+remained stable over the period, at around 700 000. 
+
+Women also made gains in both the finance/banking industries and in the defence-related public 
+
+sector. Whereas some 125 000 women worked in finance and banking institutions in 1975, the 
+
+number increased to 450 000 by 1995. The number of men grew only marginally from 425 000 to 480 
+
+000 over the same period. In defence, the number of men declined from 225 000 to 200 000, while 
+
+the number of women rose from 25 000 to over 100 000. 
+
+Two sectors that retained stable employment numbers for both men and women were manufacturing, 
+
+which had about 300 000 women and 650 000 men in both surveyed years, and the public sector 
+
+(non-defence), which employed 650 000 women and 850 000 men. 
+
+8 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+Thus, women appear to have made gains in the Freedonian work force but not at the expense of men. 
+
+9 
+
+ 
+ 
+ 
+ 
+ 
+L12E. The line graph illustrates the amount of spreads consumed from 1981 to 2007, in 
+
+grams. 
+
+The graph shows the quantity of margarine, low fat spreads and butter consumed between 1981 and  
+
+2007. The quantities are measured in grams.  
+
+Over the period 1981 to 2007 as a whole, there was 1. a significant decrease in the consumption of 
+
+butter and margarine and a 2. a marked increase in the consumption of low fat-fat spreads. 
+
+Butter was the most popular fat at the beginning of the period, and consumption 3.reached a peak of 
+
+about 160 grams per person per week in about 1986. After this, there was 4.  a sharp decline. 
+
+The consumption of margarine began lower than that for butter at 90 grams. Following this, in 1991, 
+
+it  5.  exceeded that of butter for the first time, but after 1996 there was6. a steady downward trend 
+
+in the amount consumed, which seemed set to continue. 
+
+Low–fat spreads were introduced in 1996, and they saw 7. a significant rise in their consumption from 
+
+that time, so that by about  2001 they were 8. more popular than either butter or margarine. 
+
+10 
+
+ 
+ 
+ 
+ 
+ 
+L13E. The graph below shows the amount of money spent on books in Germany, France, 
+
+Italy and Austria between 1995 and 2005. 
+
+The line graph compares the amount of money spent on buying books in Germany, France, Italy and 
+
+Austria over a period of ten years between 1995 and 2005. 
+
+11 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In 1995 Austria spent the least amount of money on books, while Italy and France spent about 
+
+asmuch as each other. However, by 2001, the gap in spending between these two countries had 
+
+widened and considerably more money was spent in France than In Italy. 
+
+As can be seen from the graph, the amount of money spent increased in all four countries but rose 
+
+the most dramatically in Austria. The period between 2000 and 2005 saw a sharp growth and in 2005 
+
+the Austrians spent three times as much money as they did in 1995. 
+
+However, during this ten-year period, Germany remained the biggest spenders on book, with all three 
+
+other countries spending much less on them. 
+
+L14E. The graph below shows the population change between 1940 and 2000 in three different counties 
+
+in the U.S. state of Oregon. 
+
+The graph shows the increase in population of three counties, Columbia, Yamhill and Washington in 
+
+the U.S. state of Oregon, between 1940 and 2000. In 1940, Columbia had the lowest population of 
+
+the three counties, at around 25,000. This compared with about 30,000 in Yamhill and approximately 
+
+75,000 in Washington. 
+
+By 1970, Columbia’s population had risen to just under 36,000. Although this appears on the graph to 
+
+be a gentle increase, it is in fact an increase of approximately 50%. Yamhill’s population also rose by 
+
+nearly 50% between 1940 and 1970: from 30,000 to just under 45,000. However, the greatest real 
+
+increase was in Washington, where the population in 1970 had increased by approximately 75,000, to 
+
+125,000. 
+
+The years 1970 to 2000 saw the populations of Columbia and Yamhill increase by approximately the 
+
+same amounts that they had increased by the thirty years before. In 2000, Columbia’s population – at 
+
+approximately 76,000 – was triple what it had been in 1940. Likewise, Yamhill’s population, at around 
+
+90,000, was almost triple what it was in 1940. 
+
+12 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Although Washington’s increase in population between 1940 and 1970 was large, its increase in the 
+
+following thirty years was even sharper, rising from about 125,000 in 1970 to more than 240,000 in 
+
+2000. 
+
+L15E. The graph below shows the changes in food consumption by Chinese people between 1985 and 
+
+2010. 
+
+Put the sentences in the correct order to describe the graph. 
+
+1) The graph shows changes in the amount of fish, salt and meat eaten per person per week in China 
+
+between 1985 and 2010. 
+
+3) In 1985, the consumption of fish stood at 610 grams, then increased to 700 grams in 1990.  
+
+6) The amount consumed decreased steadily from almost 500 grams per person to only 200 grams by 
+
+2010. 
+
+8) However, this gradually increased throughout the period. 
+
+10) Overall, the consumption of fish rose, while the consumption of salt fell. 
+
+7) The amount of meat consumed weekly started at about 100 grams. 
+
+2) From the graph we can see that people in China consumed more fish than either meat or salt 
+
+throughout the period. 
+
+9) By 2010 it was at the same level as the consumption of salt. 
+
+5) In contrast, there was a consistent drop in salt consumption. 
+
+4) Although it dipped in 1995, it then rose steadily and reached 850 grams in 2010. 
+
+13 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11) In addition, the consumption of meat, while at a relatively low level, rose significantly during this 
+
+period. 
+
+L16E. The line graph below gives information about the number of visitors to three London museums 
+
+between June and September 2013. 
+
+The graph shows (show) how many people visited (visit) three London museums in the summer of 
+
+2013. Most visitors went (go) to the British museum between June and September. The 
+
+numberfluctuated (fluctuate) between 500 and 750. By contrast, the Science Museum and the Natural 
+
+History Museum received (receive) fewer visitors. The number of people who visited the Science 
+
+Museum dropped (drop) gradually from 400 thousand to 300 from June to August then rose (rise) to 
+
+450 thousand in September. We can see (see) that the trend for the Natural History Museum was(be) 
+
+similar. There was a sharp drop in visitors from June to July. The number remained stable(remain 
+
+stable) in August and then increased (increase) steadily in September. 
+
+DẠNG 2: BAR CHART – BIỂU ĐỒ CỘT 
+
+B1S. The ﬁrst bar chart shows changes in the number of marriages and divorces in the 
+
+USA, and the second chart shows ﬁgures for the marital status of American adults in 1970 
+
+and 2000. 
+
+The ﬁrst bar chart shows changes in the number of marriages and divorces in the USA, and the 
+
+second chart shows ﬁgures for the marital status of American adults in 1970 and 2000. 
+
+It is clear that there was a fall in the number of marriages in the USA between 1970 and 2000. The 
+
+majority of adult Americans were married in both years, but the proportion of single adults was higher 
+
+in 2000. 
+
+In 1970, there were 2.5 million marriages in the USA and 1 million divorces. The marriage rate 
+
+remained stable in 1980, but fell to 2 million by the year 2000. In contrast, the divorce rate peaked in 
+
+1980, at nearly 1.5 million divorces, before falling back to 1 million at the end of the period. 
+
+14 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Around 70% of American adults were married in 1970, but this ﬁgure dropped to just under 60% by 
+
+2000. At the same time, the proportion of unmarried people and divorcees rose by about 10% in total. 
+
+The proportion of widowed Americans was slightly lower in 2000. 
+
+B2S. The charts below show the levels of participation in education and science in developing and 
+
+industrialised countries in 1980 and 1990. 
+
+The three bar charts show average years of schooling, numbers of scientists and technicians, and 
+
+research and development spending in developing and developed countries. Figures are given for 
+
+1980 and 1990. 
+
+It is clear from the charts that the figures for developed countries are much higher than those for 
+
+developing nations. Also, the charts show an overall increase in participation in education and science 
+
+from 1980 to 1990. 
+
+People in developing nations attended school for an average of around 3 years, with only a slight 
+
+increase in years of schooling from 1980 to 1990. On the other hand, the figures for industrialised 
+
+countries rose from nearly 9 years of schooling in 1980 to nearly 11 years in 1990. 
+
+From 1980 to 1990, the number of scientists and technicians in industrialised countries almost doubled 
+
+to about 70 per 1000 people. Spending on research and development also saw rapid growth in these 
+
+countries, reaching $350 billion in 1990. By contrast, the number of science workers in developing 
+
+countries remained below 20 per 1000 people, and research spending fell from about $50 billion to 
+
+only $25 billion. 
+
+B3S. The bar chart compares consumer spending on six different items in Germany, Italy, 
+
+France and Britain. 
+
+The bar chart compares consumer spending on six different items in Germany, Italy, France and 
+
+Britain. 
+
+It is clear that British people spent significantly more money than people in the other three countries 
+
+on all six goods. Of the six items, consumers spent the most money on photographic film. 
+
+15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+People in Britain spent just over £170,000 on photographic film, which is the highest figure shown on 
+
+the chart. By contrast, Germans were the lowest overall spenders, with roughly the same figures (just 
+
+under £150,000) for each of the six products. 
+
+The figures for spending on toys were the same in both France and Italy, at nearly £160,000. 
+
+However, while French people spent more than Italians on photographic film and CDs, Italians paid 
+
+out more for personal stereos, tennis racquets and perfumes. The amount spent by French people on 
+
+tennis racquets, around £145,000, is the lowest figure shown on the chart.  
+
+B4S. The bar chart compares the cost of an average house in five major cities over a 
+
+period of 13 years from 1989. 
+
+The bar chart compares the cost of an average house in five major cities over a period of 13 years 
+
+from 1989. 
+
+We can see that house prices fell overall between 1990 and 1995, but most of the cities saw rising 
+
+prices between 1996 and 2002. London experienced by far the greatest changes in house prices over 
+
+the 13-year period. 
+
+Over the 5 years after 1989, the cost of average homes in Tokyo and London dropped by around 7%, 
+
+while New York house prices went down by 5%. By contrast, prices rose by approximately 2% in both 
+
+Madrid and Frankfurt. 
+
+Between 1996 and 2002, London house prices jumped to around 12% above the 1989 average. 
+
+Homebuyers in New York also had to pay significantly more, with prices rising to 5% above the 1989 
+
+average, but homes in Tokyo remained cheaper than they were in 1989. The cost of an average home 
+
+in Madrid rose by a further 2%, while prices in Frankfurt remained stable.  
+
+B5S. The chart below shows the amount of time that 10 to 15-year-olds spend chatting on 
+
+the Internet and playing on games consoles on an average school day in the UK. 
+
+The bar chart compares the time spent by 10 to 15-year-olds in the UK on two activities, namely 
+
+chatting online and playing computer games. 
+
+16 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Overall, we can see that playing computer games is marginally more popular than chatting on the 
+
+Internet. However, completely different trends can be seen if we look at the specific figures for boys 
+
+and girls. 
+
+Boys aged between 10 and 15 clearly favour playing on games consoles over chatting online. 
+
+According to the chart, while 85% of boys play computer games every day, only 55% chat online 
+
+daily. Furthermore, the majority of boys play on their consoles for more than one hour each day, and 
+
+10% do this activity for four hours or more. 
+
+By contrast, girls prefer chatting online. Close to 70% of 10 to 15-year-old girls engage in online 
+
+conversation each day, compared to about 50% of this cohort who play computer games. Of the girls 
+
+who do play on consoles, most of them play for less than an hour, whereas most girls who chat online 
+
+do so for more than one hour, and nearly 10% chat for four hours or more. 
+
+B6S. The chart below shows the total number of minutes (in billions) of telephone calls in 
+
+the UK, divided into three categories, from 1995-2002. 
+
+The bar chart compares the amount of time spent by people in the UK on three different types of 
+
+phone call between 1995 and 2002. 
+
+It is clear that calls made via local, fixed lines were the most popular type, in terms of overall usage, 
+
+throughout the period shown. The lowest figures on the chart are for mobile calls, but this category 
+
+also saw the most dramatic increase in user minutes. 
+
+In 1995, people in the UK used fixed lines for a total of just over 70 billion minutes for local calls, and 
+
+about half of that amount of time for national or international calls. By contrast, mobile phones were 
+
+only used for around 4 billion minutes. Over the following four years, the figures for all three types of 
+
+phone call increased steadily. 
+
+By 1999, the amount of time spent on local calls using landlines had reached a peak at 90 billion 
+
+minutes. Subsequently, the figure for this category fell, but the rise in the other two types of phone 
+
+call continued. In 2002, the number of minutes of national / international landline calls passed 60 
+
+billion, while the figure for mobiles rose to around 45 billion minutes. 
+
+17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B7S. The bar graph shows the global sales (in billions of dollars) of different types of 
+
+digital games between 2000 and 2006. 
+
+The bar chart compares the turnover in dollars from sales of video games for four different platforms, 
+
+namely mobile phones, online, consoles and handheld devices, from 2000 to 2006. 
+
+It is clear that sales of games for three out of the four platforms rose each year, leading to a 
+
+significant rise in total global turnover over the 7-year period. Sales figures for handheld games were 
+
+at least twice as high as those for any other platform in almost every year. 
+
+In 2000, worldwide sales of handheld games stood at around $11 billion, while console games earned 
+
+just under $6 billion. No figures are given for mobile or online games in that year. Over the next 3 
+
+years, sales of handheld video games rose by about $4 billion, but the figure for consoles decreased 
+
+by $2 billion. Mobile phone and online games started to become popular, with sales reaching around 
+
+$3 billion in 2003. 
+
+In 2006, sales of handheld, online and mobile games reached peaks of 17, 9 and 7 billion dollars 
+
+respectively. By contrast, turnover from console games dropped to its lowest point, at around $2.5 
+
+billion. 
+
+B8S. The chart below compares levels of recycling, as well as some less environmentally 
+
+friendly forms of waste management, in fifteen European countries. 
+
+The bar chart shows the percentage of waste that is recycled, put into landfill or incinerated in various 
+
+EU countries. 
+
+If we look at the fifteen EU countries as a whole, it is clear that more waste goes to landfill sites than 
+
+to any other refuse management facility. In fact, while around half of the countries put the majority of 
+
+their waste into landfill sites, only two countries recycle at least 50% of the waste that they produce. 
+
+Austria and Belgium are the most environmentally friendly of the fifteen countries, recycling around 
+
+60% and 50% of their waste respectively. Germany, Sweden and Belgium also appear to have 
+
+effective recycling programmes, resulting in roughly 40% of waste being processed in this way in each 
+
+country. 
+
+Other EU countries recycle far less. Greece, Ireland and the UK, for example, only recycle around 10% 
+
+of refuse, and put between 80 and 90 per cent of their waste into landfill. Finally, while most non-
+
+18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+recycled waste in the EU area goes to landfill, four countries, namely Luxembourg, Sweden, the 
+
+Netherlands and Denmark, incinerate more waste than they bury. 
+
+B9S. The chart below shows figures for attendances at hospital emergency care 
+
+departments in Northern Ireland by age group in December 2016 and December 2017. 
+
+The bar chart compares the number of visits made by people in six age categories to hospital 
+
+emergency wards in Northern Ireland in the December of 2016 and 2017. 
+
+It is clear that elderly people and the youngest children were the most frequent visitors to A&E 
+
+(accident and emergency) departments. Also, there was a slight increase in the rate of emergency 
+
+care attendances among all six age groups from December 2016 to December 2017. 
+
+Looking first at the older age groups, roughly 65 out of every 1000 people aged 75 and over attended 
+
+A&E wards in December 2016, and this rose to almost 70 attendances per 1000-population one year 
+
+later. Interestingly, those aged 65 to 74 were less than half as likely to require emergency treatment, 
+
+with around 30 attendances per 1000-population in both months. 
+
+At the other end of the age scale, the figures for A&E visits by under-5s rose marginally from around 
+
+50 to approximately 52 per 1000-population over the one-year period. Children aged 5 to 15 made the 
+
+fewest visits, at just over 20 per 1000-population in both months. Finally, there was almost no 
+
+difference in the figures for emergency care attendances among people aged 16 to 44, 45 to 64 and 
+
+65 to 74. 
+
+B10E. The chart shows components of GDP in the UK from 1992 to 2000.  
+
+The bar chart illustrates the gross domestic product generated from the IT and Service Industry in the 
+
+UK from 1992 to 2000. It is measured in percentages.  
+
+Overall, it can be seen that both increased as a percentage of GDP, but IT remained at a higher rate 
+
+throughout this time. 
+
+19 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+At the beginning of the period, in 1992, the Service Industry accounted for 4 per cent of GDP, 
+
+whereas IT exceeded this, at just over 6 per cent. Over the next four years, the levels became more 
+
+similar, with both components standing between 6 and just over 8 per cent. IT was still higher overall. 
+
+However, over the following four years, the patterns of the two components were noticeably different. 
+
+The percentage of GDP from IT increased quite sharply to 12 in 1996 and then nearly 15 in 2000 , 
+
+while the Service Industry stayed nearly the same, increasing to only 8 per cent. At the end of the 
+
+period, the percentage of GDP from IT was almost twice that of the Service Industry. 
+
+B11E. The bar chart shows the scores of teams A, B and C over four different seasons.  
+
+The bar chart shows the scores of three teams, A, B and C, in four consecutive seasons.  
+
+It is evident from the chart that team B scored far higher than the other two teams over the seasons, 
+
+though their score decreased as a whole over the period. 
+
+In 2002, the score of team B far exceeded that of the other two teams, standing at a massive 82 
+
+points compared to only 10 for team C and a very low 5 for team A. Over the next two years, the 
+
+points for team B decreased quite considerably, dropping by around half to 43 by 2004. In contrast, 
+
+team A’s points had increased by a massive 600% to reach 35 points, nearly equal with team B. Team 
+
+C, meanwhile, had managed only a small increase over this time.  
+
+In the final year, team B remained ahead of the others as their points increased again to 55, while 
+
+team A and C saw their points drop to 8 and 5 respectively. 
+
+B12E. The bar chart shows the number of British people who emigrated to five 
+
+destinations over the period 2004 to 2007.  
+
+20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The bar chart shows the number of British people who emigrated to five destinations over the period 
+
+2004 to 2007.  
+
+It is evident from the chart that throughout the period, the most popular place to move to was 
+
+Australia.  
+
+Emigration to Australia stood at just over 40,000 people in 2004, which was approximately 6,000 
+
+higher than for Spain, and twice as high as the other three countries. Apart from a jump to around 
+
+52,000 in 2006, it remained around this level throughout the period.  
+
+The next most popular country for Britons to move to was Spain, though its popularity declined over 
+
+the time frame to finish at below 30,000 in 2007. Despite this, the figure was still higher than for the 
+
+remaining three countries. Approximately 20,000 people emigrated to New Zealand each year, while 
+
+the USA fluctuated between 20-25,000 people over the period.  Although the number of visitors to 
+
+France spiked to nearly 35,000 in 2005, it was the country that was the least popular to emigrate to at 
+
+the end of the period, at just under 20,000 people.  
+
+B13E.  The chart below shows the number of men and women in further education in 
+
+Britain in three periods and whether they were studying fulltime or part-time. 
+
+The bar chart illustrates how many males and females have studied in full-time and part-time 
+
+education in the following years: 1970 to 1971, 1980 to 1981 and 1990 to 1991. 
+
+It is clear that in all three time periods more people of both sexes were involved in part-time 
+
+education than fulltime. Overall the number of men in fulltime education rose from approximately 100 
+
+thousand to 200 thousand, whereas the number of men in part-time education was lower in the early 
+
+nineties than twenty years earlier. 
+
+As far as women are concerned, the numbers increased in both sectors of education. The number of 
+
+part-time female students increased dramatically from 700 thousand to 1.2 million in the twenty year 
+
+period. The amount of women in fulltime education went up more gradually from 100 thousand in 
+
+1971 to just over 200 thousand in 1991. This was similar the increase for fulltime male students. 
+
+21 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+To sum up, the number of women in both sectors increased significantly while it seems that the rate 
+
+of men entering part-time education decreased a little and was fluctuating. 
+
+B14E. The chart below shows the number of travellers using three major airports in New 
+
+York City between 1995 and 2000 
+
+The bar chart gives information about how many people visited New York City through three major 
+
+airports, over a six-year period between 1995 and 2000. 
+
+Overall, it can be seen that over the period, there was a fluctuant trend in the number of passengers 
+
+who travelled via John F. Kennedy airport, while the other two airports saw an upward trend. Another 
+
+interesting point is that LaGuardia airport was the most popular at the end. 
+
+Looking at the detail, the number of travellers at John F. Kennedy airport started at 26m in 1995, and 
+
+then increased remarkably to reach the highest point of 47m in 1997. In 1999, the figure dipped to 
+
+32m. At the last year, there was a slight growth to 44m. On the other hand, LaGuardia began at 35m 
+
+in 1995, after that it rose remarkably for the next three years, at 46m. In 2000, LaGuardia hit the 
+
+peak point at 68m travellers. 
+
+However, if we look at Newark airport, it started at the lowest point of 16m passengers in the first 
+
+year. After this point, the trend increased significantly to 42m in 1998. In the last two years it 
+
+remained stable at 42m travellers. 
+
+B15E. The graph below shows female unemployment rates in each country of the United 
+
+Kingdom in 2013 and 2014. 
+
+The bar chart shows the unemployment rates among women in the countries that make up the United 
+
+Kingdom, both in 2013 and in 2014.  
+
+There has generally been a small decrease in female unemployment rates from 2013 to 2014, except 
+
+in Scotland. 
+
+22 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In 2013, 5.6% of women in Northern Ireland were unemployed. The only country with a smaller 
+
+percentage of women unemployed was Wales, with a rate of 5.4%. Both countries saw a decrease in 
+
+the percentage of unemployed women in 2014. In Northern Ireland, the percentage fell to 4.6% and 
+
+in Wales it fell to 5%. 
+
+England had the greatest percentage of unemployed women in 2013, with 6.8%. However, this 
+
+decreased by 0.3% in 2014. Lastly, Scotland was the only country which had an increasing percentage 
+
+of unemployed women. In 2013, it had 6.1% of women out of work. This increased to 6.7% in 2014, 
+
+making it the country with the highest female unemployment rate of the four countries 
+
+B16E. The chart below shows the percentage of male and female teachers in six different 
+
+types of educational setting in the UK in 2010. 
+
+The bar chart gives information about the gender of teachers in six types of educational institutions in 
+
+the UK in 2010. It shows what percentage of teachers was male and what percentage was female. 
+
+Women dominated the teaching profession in primary education, but less so at lower and upper 
+
+secondary education. It was particularly true of nursery school, where the share of female teachers 
+
+was above 95%. Similarly one-sided was the situation in primary school, where over 90% of teachers 
+
+were also female. 
+
+At secondary and upper secondary level this pattern was less pronounced, where there were nearly 
+
+equal proportions of male and female teachers. On the other hand, male teachers outnumbered 
+
+female teachers in high-level education, where the proportion of men was twice that for women. 
+
+Overall, the higher the level of education, the more male teachers dominated, and the reverse 
+
+occurred with respect to female teachers. 
+
+B17E. The chart below shows the total number of minutes (in millions) of telephone calls in Finland, 
+
+divided into three categories, from 1995 – 2004. 
+
+23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The chart shows the time spent by Finland’s residents on different types of telephone calls between 
+
+1995 and 2004. 
+
+Local landline calls were the highest throughout the period, rising from 12000 million minutes in 1995 
+
+to just under 17000 million in 2000. After peaking at 17000 million the following year, these calls had 
+
+fallen back to the 1995 figure by 2004. 
+
+National and international landline calls grew steadily from 6000 million to 10500 million at the end of 
+
+the period in question, though the growth slowed over the last two years. 
+
+There was a dramatic increase in mobile calls from 250 to 9800 million minutes. This rise was 
+
+particularly noticeable between 2000 and 2004, during which time the use of mobile phones tripled. 
+
+To sum up, although local landline calls were still the most popular in 2004, the gap between the 
+
+three categories had narrowed considerately over the second half of the period in question. 
+
+B18E. The chart shows the division of household tasks by gender in Great Britain. 
+
+Source: Office for National Statistics on behalf of the Controller of Her Majesty's Stationery Office. 
+
+The chart shows the average number of minutes per day men and women in Great Britain spend on 
+
+jobs around the house. 
+
+In total, men spend just over two-and-a-half hours on household tasks whereas women spend 
+
+slightly less than four hours. Women spend more than twice as much time doing kitchen tasks such as 
+
+cooking and washing up as men (74 minutes for women as opposed to 30 minutes for men. Women 
+
+are also more active in cleaning the house- it takes 58 minutes of their day compared to / with 13 
+
+minutes for men - and childcare, where women put in more than twice as much time as men. 
+
+On the other hand, men are more active in gardening and pet care, where they spend twice as longas 
+
+women, and maintenance and DIY, on which they spend 15 minutes more than women. Women 
+
+account for almost all the time spent on washing and ironing clothes. This takes them 25 
+
+24 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+minutes,while / whereas men spend just 2 minutes on this task. 
+
+Overall the figures show that women spend more time on routine domestic chores than men, while / 
+
+whereas men do more household maintenance, gardening and pet care. 
+
+B19E. The graph below gives information about the preferred leisure activities of 
+
+Australian children. 
+
+The graph shows the preferred leisure sctivities of Australian children aged 5-14. As might be 
+
+expected, it is clear from the data that sedentary pursuits are far more popular nowadays than active 
+
+ones. 
+
+Of the 10,000 children that were interviewed, all the boys and girls stated that they enjoyed watching 
+
+TV or videos in their spare time. In addition, the second most popular activity, attracting 80% of boys 
+
+and 60% of girls, was playing electronic or computer games. While girls rated activities such as art 
+
+and craft highly – just under 60% stated that they enjoyed these in their spare time – only 35% of 
+
+boys opted for creative pastimes. Bike riding, on the other hand, was almost as popular as electronic 
+
+games amongst boys and, perhaps surprisingly, almost 60% of girls said that they enjoyed this too. 
+
+Skateboarding was relatively less popular amongst both boys and girls, although it still attracted 35% 
+
+of boys and 25% of girls. 
+
+DẠNG 3: PIE CHART – BIỂU ĐỒ TRÒN 
+
+P1S. The pie charts compare the amount of electricity produced using five different 
+
+sources of fuel in two countries over two separate years. 
+
+The pie charts compare the amount of electricity produced using five different sources of fuel in two 
+
+countries over two separate years. 
+
+25 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Total electricity production increased dramatically from 1980 to 2000 in both Australia and France. 
+
+While the totals for both countries were similar, there were big differences in the fuel sources used. 
+
+Coal was used to produce 50 of the total 100 units of electricity in Australia in 1980, rising to 130 out 
+
+of 170 units in 2000. By contrast, nuclear power became the most important fuel source in France in 
+
+2000, producing almost 75% of the country’s electricity. 
+
+Australia depended on hydro power for just under 25% of its electricity in both years, but the amount 
+
+of electricity produced using this type of power fell from 5 to only 2 units in France. Oil, on the other 
+
+hand, remained a relatively important fuel source in France, but its use declined in Australia. Both 
+
+countries relied on natural gas for electricity production significantly more in 1980 than in 2000. 
+
+P2S. The pie charts compare the proportion of carbohydrates, protein and fat in three 
+
+different diets, namely an average diet, a healthy diet, and a healthy diet for sport. 
+
+Fill the gaps with these words: 
+
+constitutes, drops, amount, fifth, higher, make, one, relative, figure, up 
+
+The pie charts compare the proportion of carbohydrates, protein and fat in three different diets, 
+
+namely an average diet, a healthy diet, and a healthy diet for sport. 
+
+It is noticeable that sportspeople require a diet comprising a significantly higher proportion of 
+
+carbohydrates than an average diet or a healthy diet. The average diet contains the lowest percentage 
+
+of carbohydrates but the highest proportion of protein. 
+
+Carbohydrates ______ ______ 60% of the healthy diet for sport. This is 10% ______ than the 
+
+proportion of carbohydrates in a normal healthy diet, and 20% more than the proportion in an 
+
+average diet. On the other hand, people who eat an average diet consume a greater ______ ______ 
+
+of protein (40%) than those who eat a healthy diet (30%) and sportspeople (25%). 
+
+The third compound shown in the charts is fat. Fat ______ exactly ______ ______ of both the 
+
+average diet and the healthy diet, but the ______ ______ to only 15% for the healthy sports diet. 
+
+26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+P3S. The chart below shows the results of a survey of people who visited four types of 
+
+tourist attraction in Britain in the year 1999. 
+
+The pie chart compares figures for visitors to four categories of tourist attraction and to five different 
+
+theme parks in Britain in 1999. 
+
+It is clear that theme parks and museums / galleries were the two most popular types of tourist 
+
+attraction in that year. Blackpool Pleasure Beach received by far the highest proportion of visitors in 
+
+the theme park sector. 
+
+Looking at the information in more detail, we can see that 38% of the surveyed visitors went to a 
+
+theme park, and 37% of them went to a museum or gallery. By contrast, historic houses and 
+
+monuments were visited by only 16% of the sample, while wildlife parks and zoos were the least 
+
+popular of the four types of tourist attraction, with only 9% of visitors. 
+
+In the theme park sector, almost half of the people surveyed (47%) had been to Blackpool Pleasure 
+
+Beach. Alton Towers was the second most popular amusement park, with 17% of the sample, 
+
+followed by Pleasureland in Southport, with 16%. Finally, Chessington World of Adventures and 
+
+Legoland Windsor had each welcomed 10% of the surveyed visitors. 
+
+P4S. The charts below show the results of a questionnaire that asked visitors to the 
+
+Parkway Hotel how they rated the hotel's customer service. The same questionnaire was 
+
+given to 100 guests in the years 2005 and 2010. 
+
+The pie charts compare visitors’ responses to a survey about customer service at the Parkway Hotel in 
+
+2005 and in 2010. 
+
+It is clear that overall customer satisfaction increased considerably from 2005 to 2010. While most 
+
+hotel guests rated customer service as satisfactory or poor in 2005, a clear majority described the 
+
+hotel’s service as good or excellent in 2010. 
+
+Looking at the positive responses first, in 2005 only 5% of the hotel’s visitors rated its customer 
+
+service as excellent, but this figure rose to 28% in 2010. Furthermore, while only 14% of guests 
+
+described customer service in the hotel as good in 2005, almost three times as many people gave this 
+
+rating five years later. 
+
+27 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+With regard to negative feedback, the proportion of guests who considered the hotel’s customer 
+
+service to be poor fell from 21% in 2005 to only 12% in 2010. Similarly, the proportion of people who 
+
+thought customer service was very poor dropped from 15% to only 4% over the 5-year period. 
+
+Finally, a fall in the number of ‘satisfactory’ ratings in 2010 reflects the fact that more people gave 
+
+positive responses to the survey in that year. 
+
+P5S. The pie charts below compare water usage in San Diego, California and the rest of 
+
+the world. 
+
+The pie charts give information about the water used for residential, industrial and agricultural 
+
+purposes in San Diego County, California, and the world as a whole. 
+
+It is noticeable that more water is consumed by homes than by industry or agriculture in the two 
+
+American regions. By contrast, agriculture accounts for the vast majority of water used worldwide. 
+
+In San Diego County and California State, residential water consumption accounts for 60% and 39% 
+
+of total water usage. By contrast, a mere 8% of the water used globally goes to homes. The opposite 
+
+trend can be seen when we look at water consumption for agriculture. This accounts for a massive 
+
+69% of global water use, but only 17% and 28% of water usage in San Diego and California 
+
+respectively. 
+
+Such dramatic differences are not seen when we compare the figures for industrial water use. The 
+
+same proportion of water (23%) is used by industry in San Diego and worldwide, while the figure for 
+
+California is 10% higher, at 33%. 
+
+P6E. The pie charts show the electricity generated in Germany and France from all sources 
+
+and renewables in the year 2009.  
+
+The four pie charts compare the electricity generated between Germany and France during 2009, and 
+
+it is measured in billions kWh.  
+
+28 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Overall, while the totals for both countries were similar, there were big differences in the fuel sources 
+
+used. It can be seen that conventional thermal was the main source of electricity in Germany, whereas 
+
+nuclear was the main source in France. 
+
+The bulk of electricity in Germany, whose total output was 560 billion kWh, came from conventional 
+
+thermal, at 59.6%. In France, the total output was lower, at 510 billion kWh, and in contrast to 
+
+Germany, conventional thermal accounted for just 10.3%, with most electricity coming from nuclear 
+
+power (76%). In Germany, the proportion of nuclear power generated electricity was only one fifth of 
+
+the total. 
+
+Moving on to renewables, this accounted for quite similar proportions for both countries, at 
+
+approximately 15% of the total electricity generated.  In detail, in Germany, most of the renewables 
+
+consisted of wind and biomass, totaling around 75%, which was far higher than for hydroelectric 
+
+(17.7%) and solar (6.1%). The situation was very different in France, where hydroelectric made up 
+
+80.5% of renewable electricity, with biomass, wind and solar making up the remaining 20%. 
+
+P7E. The pie chart shows the amount of money that a children's charity located in the USA 
+
+spent and received in one year.  
+
+The pie charts show the amount of revenue and expenditures over a year of a children’s charity in the 
+
+USA. 
+
+Overall, it can be seen that donated food accounted for the majority of the income, while program 
+
+services accounted for the most expenditure. Total revenue sources just exceeded outgoings. 
+
+In detail, donated food provided most of the revenue for the charity, at 86%. Similarly, with regard to 
+
+expenditures, one category, program services, accounted for nearly all of the outgoings, at 95.8%. 
+
+The other categories were much smaller. Community contributions, which were the second largest 
+
+revenue source, brought in 10.4% of overall income, and this was followed by program revenue, at 
+
+2.2%. Investment income, government grants, and other income were very small sources of revenue, 
+
+accounting for only 0.8% combined.There were only two other expenditure items, fundraising and 
+
+29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+management and general, accounting for 2.6% and 1.6% respectively. The total amount of income 
+
+was $53,561,580, which was just enough to cover the expenditures of $53,224,896. 
+
+P8E.The two pie charts below show some employment patterns in Great Britain in 1992. 
+
+The charts provide information on the proportion of males and females in employment in 6 broad 
+
+categories, divided into manual and non-manual occupations.  
+
+In general, a greater percentage of women work in non-manual occupations than work in manual 
+
+occupations, and the reverse is true for men. 
+
+In the non-manual occupations, while a greater percentage of working women than men are found in 
+
+clerical-type positions, there is a smaller percentage of women than men employed in managerial and 
+
+professional positions. The percentage of women employed in other non-manual occupations is 
+
+slightly larger than the percentage of men in these occupations. 
+
+In manual employment, the biggest difference between the two sexes is in the employment of craft 
+
+workers, where males make up 24% of the workforce and females just 3%. Furthermore, the 
+
+percentage of women working as general working as general labourers is very small, only 1%. There 
+
+is not a great deal of difference between the percentage of men doing other forms of manual work 
+
+(26%) and women in other manual work (27%). 
+
+In summary, the two charts clearly show that women do not have the same access as men to certain 
+
+types of employment. 
+
+P9E. The two pie charts below show the online shopping sales for retail sectors in Canada in 2005 and 
+
+2010. 
+
+The two pie charts compare the percentages of online sales across different retail sectors in Canada in 
+
+the years 2005 and 2010.  
+
+30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+For three of the sectors, it is evident that over this time frame there was significant change in their 
+
+proportion of online transactions. 
+
+At 35% we can see that electronics and appliance sector accounted for the majority of online sales in 
+
+2005, but this percentage had dropped to 30% by 2010. During the same five-year period, as an 
+
+increasing number of people chose to purchase food and beverage online, we can see that 
+
+transactions went from just 22% to 32%, making it the retail sector with the largest overall proportion 
+
+of the online market. 
+
+In 2005, the home furnishing industry boasted an impressive 25% of the total online sales in Canada. 
+
+However, by 2010, the figure had fallen considerably to 15%. Interestingly, online sales of video 
+
+games eventually overtook sales of home furnishings, although video games still represented only 
+
+23% of the market. 
+
+P10E. The pie charts below give information about world population in 1900 and 2000. 
+
+The pie charts illustrate changes in the population of different areas of the world between 1900 and 
+
+2000. The major regions are represented as percentages of the total world population. 
+
+From 1900 to 2000, the percentage of people living in Africa more than doubled from 4.5% to 10%, 
+
+while Latin America’s proportion almost tripled in the same period. On the other hand, the percentage 
+
+of population in Europe and Asia decreased over the last century. Europe’s percentage dropped from 
+
+25% to 14%, while Asia declined from 60% to 54%. North America’s percentage however, remained 
+
+constant at 5% in 1900 and 2000. The Middle East and North Africa, a new category in 2000, 
+
+represented 6% of world population. 
+
+Overall, this represents a huge increase in the number of humans on the planet, from 1.6 billion to 6 
+
+billion in just one century. Most of this population growth has occurred in developing countries. 
+
+P11E. The pie charts below show electricity generation by source in New Zealand and 
+
+Germany in 1980 and 2010. 
+
+31 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The charts compare the sources of electricity in New Zealand and Germany in the years 1980 and 
+
+2010. Between these years, electricity generation almost doubled, rising from 127 units to 200 in New 
+
+Zealand, and from 107 to 214 units in Germany. 
+
+In 1980 New Zealand used coal as the main electricity source (56 units) and the remainder was 
+
+produced from natural gas, hydro power (each producing 30 units) and petroleum (which produced 
+
+only 11 units). By 2010, coal had become the fuel for more than 75% of electricity produced and only 
+
+hydro continued to be another significant source supplying approximately 20%. 
+
+In contrast, Germany used coal as a source for only 28 units of electricity in 1980, which was matched 
+
+by natural gas. The remaining 49 units were produced largely from petroleum and nuclear power, with 
+
+hydro contributing only 7 units. But by 2010 nuclear power, which was not used at all in New Zealand, 
+
+had developed into the main source, producing almost 75% of electricity, at 155 units, while coal and 
+
+petroleum together produced only 55 units. Other sources were no longer significant. 
+
+Overall, it is clear by 2010 these two countries relied on different principal fuel sources: New Zealand 
+
+relied on coal and Germany on nuclear power. 
+
+P12E. 
+
+32 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+P13E. The three pie charts below show the changes in annual spending by local 
+
+authorities in Someland in 1980, 1990 and 2000 
+
+The charts show how much local authorities spent on a range of services in Someland in three 
+
+separate years: 1980, 1990 and 2000. 
+
+In all three years, the greatest expenditure was on education. But while K-12 education saw a fall 
+
+from 25% in 1980 to only 18% of spending in 2000, higher education remained the largest proportion, 
+
+reaching 45% of total spending in 1990 and ending at 40% in 2000. 
+
+33 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Expenditure on health and human resources had increased to 20% by 1990 before decreasing to only 
+
+10% by the end of the period. In contrast, the share of transportation saw an opposite trend. This 
+
+cost decreased to only 6% of total expenditure in 1990 but rose dramatically in 2000 when it 
+
+represented 22% of the total budget. Similarly, the cost of environmental services saw a rising trend, 
+
+growing from only 4% to 9% by 2000. 
+
+Overall, higher education constituted the largest cost to local authorities, and while spending increased 
+
+for transportation and environmental services, there were corresponding drops in expenditure on 
+
+health and human resources and K-12 education. 
+
+P14E. The diagrams below give information on transport and car use in Edmonton 
+
+The table shows the reason why people in Edmonton use their cars in the city and the pie chart 
+
+explains what type of transport people prefer to use most of the time. 
+
+Looking at the pie chart first, it is clear that the car is the most popular means of transport in this city. 
+
+45% of the people say that they prefer to commute by car. The second most popular form of 
+
+transport is the LRT, while busses and taxis are the main means of transport for the rest of the 
+
+people. 
+
+The table gives more detailed information about why people use their cars. Surprisingly, 55% of the 
+
+people need to commute to work by car. Cars are also used a lot for taking children to school or 
+
+business purposes. Only 15% of drivers are doing their shopping and, similarly, 15% need to travel by 
+
+car for leisure. 
+
+Overall, people in Edmonton make good use of alternative methods of transport but there is a heavy 
+
+dependence on cars for work. 
+
+P15E. The diagrams below show UK students' responses to the question of to what extent 
+
+would they describe themselves as financially organised. 
+
+34 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The two diagrams show students' responses to the question of how good they are at managing their 
+
+finances. The pie chart illustrates the ability of UK students to manage their finances and the table 
+
+shows the proportion of students, by age, who think they are very organised at managing their 
+
+finances.  
+
+Overall, the findings suggest that students generally manage their finances well. 
+
+More than three-quarters of students (76%) believe they are either ‘very’ or ‘fairly’ organised 
+
+financially, while one in five (20%) say they are not very organised in this area. Only 4% of students 
+
+rate themselves as ‘not at all’ competent. 
+
+The ability to manage one’s finances well would seem to develop with age and experience as older 
+
+students are almost twice as likely to say they are ‘very’ organised than younger ones (31% of 
+
+students aged 26 or over compared to just 17% for those aged up to 22).  
+
+P16E. The pie charts below show the average household expenditures in a country in 1950 and 2010. 
+
+The two pie charts give information about household expenditure on goods and services in 1950 and 
+
+2010. It is immediately obvious that there are some quite significant differences between the two 
+
+charts. 
+
+In 2010 the largest proportion of expenditure was on food whereas in 1950 it was on housing, with 
+
+food for just 11.2%. There is a great difference in terms of housing expenditure between the two 
+
+years. In 1950 72.1% of the total household budget went towards housing, compared to only 22% in 
+
+2010. 
+
+There has been a notable increase in the amount of money spent on transportation between the two 
+
+dates. In addition, the charts show a significant rise in the proportion of money spent on health care in 
+
+2010 compared to 1950. 
+
+35 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+There are some similarities, however. For example, in both 1950 and 2010 the proportion of education 
+
+expenditure was roughly the same. 
+
+P17E. The two graphs show the main sources of energy in the USA in the 1980s and the 1990s. 
+
+The two graphs show that oil was the major energy source in the USA in both 1980 and 1990 and that 
+
+coal, natural gas and hydroelectric power remained in much the same proportions. On the other hand, 
+
+there was a dramatic rise in nuclear power, which doubled its percentage over the ten years. 
+
+Oil supplied the largest percentage of energy, although the percentage decreased from 42% in 1980 
+
+to 33% in 1990. Coal in 1990 was the second largest source of energy, increasing its proportion to 
+
+27% from 22% in the previous decade. Natural gas, the second largest source in 1980 at 26%, 
+
+decreased its share very slightly to provide 25% of America’s energy ten years later. There was no 
+
+change in the percentage supplied by hydroelectric power which remained at 5% of the total energy 
+
+used. Nuclear power the greatest change: in 1990 it was 10%, twice that of the 1980s. 
+
+P18E. Write a report for a university lecturer describing the information shown below. 
+
+In this analysis we will examine three pie charts. The first one is headed ‘World Spending.’ The second 
+
+is ‘World Population’ and the third is ‘Consumption of Resources.’ 
+
+To sum up, the major expenditure is on food, the population figures are the highest for Asia and the 
+
+major consumers are the USA and Europe. 
+
+In the first chart we can see that people spend most of their income (24%) on food. In some 
+
+countries this percentage would obviously be much higher. Transport and then housing are the next 
+
+major expenses at 18% and 12% respectively. Only 6% of income is spent on clothing. 
+
+In the second chart entitled ‘World Population’, it is not surprising to find that 57% of people live in 
+
+36 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Asia. In fact China and India are two of the most populated countries in the world and they are both 
+
+situated on this continent. Europe and the Americans account for nearly 30% of the total, whilst 10% 
+
+of people live in Africa. 
+
+Finally, the third chart reveals that the USA and Europe consume a huge 60% of the world’s resource. 
+
+P19E. The Bar Chart shows CO2 emissions for different forms of transport in the European 
+
+Union. The Pie Chart shows the percentage of European Union funds being spent on 
+
+different forms of transport. 
+
+The chart shows CO2 emissions per passenger kilometre for variuos methods of transport in the 
+
+European Union while the pie chart shows European Union spending on transport. Flying by air 
+
+produces by far the greatest CO2 emissions, approximately three times as much as passenger cars 
+
+which are the next largest producers. Very little is spent by the EU on air travel while roads make up 
+
+more than half of the EU transport budget. 
+
+Trains produce about three times less CO2 emissions per passenger kilometre than passenger cars 
+
+and eight times less than air travel. Nearly a third of EU transport funds are spent on railways. 
+
+Ships are a clean form of transport and produce about the same amount of CO2 per passenger 
+
+kilometre as trains do. However, only 2 percent of EU funds are spent on ports. A further one percent 
+
+is spent on inland waterways. 
+
+Coaches are the cleanest form of transport. Emissions of CO2 per passenger kilometre from coaches 
+
+are half those of buses. Buses emit less than half as much CO2 per passenger kilometre as cars. The 
+
+European Union spends 10 percent of its transport budget on public transport, such as buses and 
+
+coaches. 
+
+P20E. In June 1996, an experimental flu vaccine was trialled in a large country town on 
+
+females only 
+
+37 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The diagrams show data for a flu epidemic which hit a large country town in 1996. Figure 1 gives the 
+
+number of persons who died; Figure 2 shows the percentage breakdown of females who received a 
+
+new flu vaccine; and Figure 3 gives the number of cases of flu before and during the epidemic. 
+
+In Figure 1 it can be seen that the flu was responsible for the deaths of 2 females but no males in the 
+
+period from March to May. However, from June to August, there were 4 female deaths and 1 male 
+
+death. 
+
+According to the pie chart in Figure 2, only those females most at risk were given the new flu vaccine; 
+
+28% did not take part in the trial. Of those females who took part, 35% were aged (over 65 years 
+
+old); 24% were babies or children; and 13% were either hospitalised or receiving other medical 
+
+attention. 
+
+From Figure 3 it is clear that the new vaccine had a positive effect on the number of new cases of flu 
+
+reported in females. There were just over 1000 cases reported in March, climbing rapidly to a peak of 
+
+3500 in June. Thereafter, the number of cases dropped slowly to about 2800 in August, before 
+
+levelling off at 2500 for the rest of the year. For males, the figures were lower but showed a similar 
+
+trend throughout the epidemic. 
+
+P21E. The graphs show enrolment in different colleges in the Higher Colleges of 
+
+Technology in 1999. 
+
+The charts shows student enrolment by gender and level in different colleges of the Higher Colleges of 
+
+Technology colleges in the UAE.  
+
+In conclusion, most students in the Higher Colleges are enrolled at Diploma level or below, and the 
+
+majority of students are women. 
+
+There are clear differences in male and female enrolment. Females outnumber men in all the colleges, 
+
+with almost 25% more students in Dubai Women's college than in Dubai Men's. Ras Al-Khaimah 
+
+38 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Women's College has almost 180 students, compared to only 100 in the Men's college.  
+
+Females also outnumber males by level, with almost double the number of men at Higher Diploma 
+
+level (330 compared to 181). Only at Diploma level does the number of men slightly exceed that of 
+
+women. 
+
+Over half the students are in Certificate level, with less than a quarter at Higher Diploma or Bachelor 
+
+level. 
+
+P22E. The charts below show US spending patterns between 1966 and 1996 
+
+The pie charts show changes in American spending patterns between 1966 and 1996. 
+
+In conclusion, increased amounts spent on cars, computers, and eating out were made up for by 
+
+drops in expenditure on food and books. 
+
+Food and cars made up the two biggest items of expenditure in both years. Together they comprised 
+
+over half of household spending. Food accounted for 44% of spending in 1966, but this dropped by 
+
+two thirds to 14% in 1996. However, the outlay on cars doubled, rising from 23% in 1966 to 45% in 
+
+1996.  
+
+Other areas changed significantly. Spending on eating out doubled, climbing from 7% to 14%. The 
+
+proportion of salary spent on computers increased dramatically, up from 1% in 1996 to 10% in 1996. 
+
+However, as computer expenditure rose, the percentage of outlay on books plunged from 6% to 1%.  
+
+Some areas remained relatively unchanged. Americans spent approximately the same amount of 
+
+salary on petrol and furniture in both years. 
+
+39 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+P23E. Write a report for a university lecturer describing the information in the two graphs 
+
+below. 
+
+The pie charts compare the highest level of education achieved by women in Someland across two 
+
+years, 1945 and 1995.  
+
+It can be clearly seen that women received a much higher level of education in Someland in 1995 than 
+
+they did in 1945. We can see that in the 50 years from 1945 to 1995 there have been huge positive 
+
+developments to the education levels of women in Someland. 
+
+In 1945 only 30% of women completed their secondary education and 1% went on to a first degree. 
+
+No women had completed post-graduate studies. This situation had changed radically by 1995. In 
+
+1995, 90% of women in Someland had completed secondary education and of those, half had 
+
+graduated from an initial degree and 20% had gone on to postgraduate studies. At the other end of 
+
+the scale we can see that by 1995 all girls were completing lower secondary, although 10% ended 
+
+their schooling at this point. This is in stark contrast with 1945 when only 30% of girls completed 
+
+primary school, 35% had no schooling at all and 35% only completed the third grade. 
+
+P24E. The chart and graph below give information about sales and share prices for Coca-
+
+Cola 
+
+The pie chart shows the worldwide distribution of sales of Coca-Cola in the year 2000 and the graph 
+
+shows the change in share prices between 1996 and 2001. 
+
+In the year 2000, Coca-Cola sold a total of 17.1 billion cases of their fizzy drink product worldwide. 
+
+The largest consumer was North America, where 30.4 per cent of the total volume was purchased. 
+
+The second largest consumer was Latin America. Europe and Asia purchased 20.5 and 16.4 per cent 
+
+of the total volume respectively, while Africa and the Middle East remained fairly small consumers at 7 
+
+per cent of the total volume of sales. 
+
+Since 1996, share prices for Coca-Cola have fluctuated. In that year, shares were valued at 
+
+40 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+approximately $35. Between 1996 and 1997, however, prices rose significantly to $70 per share. They 
+
+dipped a little in mid-1997 and then peaked at $80 per share in mid-98. From then until 2000 their 
+
+value fell consistently but there was a slight rise in mid-2000. 
+
+DẠNG 4: TABLE – BẢNG BIỂU 
+
+T1S. The table below gives information about the underground railway systems in six 
+
+cities. 
+
+The table compares the six networks in terms of their age, size and the number of people who use 
+
+them each year.  
+
+It is clear that the three oldest underground systems are larger and serve significantly more 
+
+passengers than the newer systems. 
+
+The London underground is the oldest system, having opened in 1863. It is also the largest system, 
+
+with 394 kilometres of route. The second largest system, in Paris, is only about half the size of the 
+
+London underground, with 199 kilometres of route. However, it serves more people per year. While 
+
+only third in terms of size, the Tokyo system is easily the most used, with 1927 million passengers per 
+
+year. 
+
+Of the three newer networks, the Washington DC underground is the most extensive, with 126 
+
+kilometres of route, compared to only 11 kilometres and 28 kilometres for the Kyoto and Los Angeles 
+
+systems. The Los Angeles network is the newest, having opened in 2001, while the Kyoto network is 
+
+the smallest and serves only 45 million passengers per year. 
+
+T2S. The table below shows the proportion of different categories of families living in 
+
+poverty in Australia in 1999. 
+
+41 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The table gives information about poverty rates among six types of household in Australia in the year 
+
+1999. 
+
+It is noticeable that levels of poverty were higher for single people than for couples, and people with 
+
+children were more likely to be poor than those without. Poverty rates were considerably lower among 
+
+elderly people. 
+
+Overall, 11% of Australians, or 1,837,000 people, were living in poverty in 1999. Aged people were 
+
+the least likely to be poor, with poverty levels of 6% and 4% for single aged people and aged couples 
+
+respectively. 
+
+Just over one fifth of single parents were living in poverty, whereas only 12% of parent living with a 
+
+partner were classed as poor. The same pattern can be seen for people with no children: while 19% 
+
+of single people in this group were living below the poverty line, the figure for couples was much 
+
+lower, at only 7%. 
+
+T3S. The chart below shows average hours and minutes spent by UK males and females 
+
+on different daily activities. 
+
+The table compares the average ______ of time per day that men and women in the UK spend 
+
+______ different activities. 
+
+It is clear that people in the UK spend more time ______ than doing any other daily activity. Also, 
+
+there are significant differences between the time ______ by men and women on employment/study 
+
+and housework. 
+
+On average, men and women in the UK ______ for about 8 hours per day. Leisure ______ ______ the 
+
+second largest proportion of their time. Men spend 5 hours and 25 minutes doing various leisure 
+
+activities, such as watching TV or doing sport, ______ women have 4 hours and 53 minutes of leisure 
+
+time. 
+
+42 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+It is noticeable that men work or study for an average of 79 minutes more than women every day. By 
+
+contrast, women spend 79 minutes more than men doing housework, and they spend ______ ______ 
+
+as much time looking after children. 
+
+Fill the gaps using these words: doing, up, over, spent, while, sleeping, sleep, twice, amount, 
+
+takes 
+
+T4S. The table below gives information on consumer spending on different items in five 
+
+different countries in 2002. 
+
+The table shows percentages of consumer expenditure for three categories of products and services in 
+
+five countries in 2002. 
+
+It is clear that the largest proportion of consumer spending in each country spent on food, drinks and 
+
+tobacco. On the other hand, the leisure/education category has the lowest percentages in the table. 
+
+Out of the five countries, consumer spending on food, drinks and tobacco was noticeably higher in 
+
+Turkey, at 32.14%, and Ireland, at nearly 29%. The proportion of spending on leisure and education 
+
+was also highest in Turkey, at 4.35%, while expenditure on clothing and footwear was significantly 
+
+higher in Italy, at 9%, than in any of the other countries. 
+
+It can be seen that Sweden had the lowest percentages of national consumer expenditure for 
+
+food/drinks/tobacco and for clothing/footwear, at nearly 16% and just over 5% respectively. Spain 
+
+had slightly higher figures for these categories, but the lowest figure for leisure/education, at only 
+
+1.98%. 
+
+T5S. The table below shows the amount of waste production (in millions of tonnes) in six 
+
+different countries over a twenty-year period. 
+
+The chart compares the amounts of waste that were produced in six countries in the years 1980, 1990 
+
+and 2000. 
+
+43 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In each of these years, the US produced more waste than Ireland, Japan, Korea, Poland and Portugal 
+
+combined. It is also noticeable that Korea was the only country that managed to reduce its waste 
+
+output by the year 2000. 
+
+Between 1980 and 2000, waste production in the US rose from 131 to 192 million tonnes, and rising 
+
+trends were also seen in Japan, Poland and Portugal. Japan’s waste output increased from 28 to 53 
+
+million tonnes, while Poland and Portugal saw waste totals increase from 4 to 6.6 and from 2 to 5 
+
+million tonnes respectively. 
+
+The trends for Ireland and Korea were noticeably different from those described above. In Ireland, 
+
+waste production increased more than eightfold, from only 0.6 million tonnes in 1980 to 5 million 
+
+tonnes in 2000. Korea, by contrast, cut its waste output by 12 million tonnes between 1990 and 2000. 
+
+T6S. The table below gives information about the problems faced by children in two 
+
+primary schools in 2005 and 2015. 
+
+The table compares two primary schools in terms of the proportions of their pupils who experienced 
+
+seven different educational problems in the years 2005 and 2015. 
+
+It is noticeable that school A had higher proportions of children with all seven educational difficulties in 
+
+both years. However, while school A managed to reduce the incidence of most of the problems 
+
+between 2005 and 2015, school B saw an overall rise in the percentage of children who were 
+
+struggling. 
+
+In 2005, 42% of school A’s pupils found it difficult to follow instructions, whereas only 6% of pupils in 
+
+school B experienced this problem. Similarly, between 30 and 40 per cent of children attending school 
+
+A had problems in the areas of spelling, listening, verbal expression and concentration in lessons, 
+
+while the equivalent figures for school B stood at between 5 and 15 per cent. 
+
+In 2015, the difference between the two schools was less pronounced. Notably, the proportion of 
+
+children who struggled to follow instructions fell by 24% in school A, and this school also saw falls of 
+
+22%, 15%, 14% and 5% in the figures for children who had problems with concentration, listening, 
+
+verbal expression and spelling. In school B, however, the proportion of children who struggled with 
+
+spelling and following instructions doubled, to 10% and 12% respectively, and there was almost no 
+
+change in the incidence of listening, verbal or concentration problems. 
+
+44 
+
+ 
+ 
+ 
+ 
+ 
+ 
+T7E. The table below describes percentages of home schooled students in SomeCountry in 1999-2004.  
+
+This table shows homeschooled students in Somecountry in year 1999-2004 in percenages. 
+
+The main trend is that all grades including kindergarten is growing every year.  
+
+Kindergarten started highest at 2.4 and ended with percentage of 2.9 percent with a constant 
+
+increase.   
+
+But grades 1-2 and grades 5-6 show a little different trend, both started at 1,5 percent in 1999 and 
+
+declines (declined) a little bit in 2000.  
+
+Both of them increased slowly in 2002 and both held that course to 2004 where grades 1-2 reached 
+
+2,1 percent and grades 5-6 reached 2.6 percent. 
+
+Grades 3-4 had a slow but steady growth throughout all six years. It started at 1.6 percent in 1999 
+
+and increased by 0.1 every year except in 2003 when it peaked up at 0.2 percent.  
+
+Grades 7-8 started at 1.6 percent and stays there for three years until it rapidly rised up to 2.2 and 
+
+peaked at 2.5 in 2004. 
+
+Overall, all grades including kindergarten has had a rise at roughly minimum 1 percent and more in 6 
+
+years. 
+
+T8E. Sales: week of October 7-13 
+
+45 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The sales at this small restaurant during the week of October 7 to 13th followed a fairly set pattern 
+
+from Monday to Friday, and then showed notable shift on the weekend. The lunch and dinner sales 
+
+during the week peaked on Friday and then dipper down as the weekend set in. 
+
+During the week of October 7-14th, the lunch sales averaged at approximately $2,400. The highest 
+
+lunch sales occurred on Friday, and the lowest occurred on Sunday. Sunday's lunch sales were 
+
+approximately $1,000 less than the average lunch sales during the rest of the week. 
+
+Dinner sales, which generated at least $1,000 to $1,500 more a day than lunch sales, also remained 
+
+steady during the week. Just like the lunch sales, the dinner sales peak on Friday and dipped down for 
+
+the weekend. 
+
+Excluding Wednesday and Thursday, the lunch and dinner sales from October 7-11 rose gradually until 
+
+the end of the business week. Midweek, on Wednesday and Thursday, the sales were slightly lower 
+
+than they were on Tuesday. 
+
+According to the sales report, this restaurant has a steady lunch and dinner crowd. The most 
+
+profitable day during the second week of October was Friday. Sunday, was the least prof¬itable day, 
+
+with the full day's sales totaling/totalling less than the Friday dinner sales. These numbers are 
+
+reflective of a restaurant that is located in a business/financial district where business hours are 
+
+Monday through Friday. 
+
+T9E. The Table below shows the results of a survey that asked 6800 Scottish adults (aged 
+
+16 years and over) whether they had taken part in different cultural activities in the past 
+
+12 months. 
+
+The table shows details of participation in a variety of cultural activities over a year, according to the 
+
+age of the participants. 
+
+Overall, any performance, which includes dancing, singing, playing musical instruments and acting, 
+
+had the highest level of participation, with 22% of respondents participating in the previous 12 
+
+months. By contrast, computer based activities had the lowest level of participation (6 per cent). 
+
+46 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+People aged between 45 and 74 years old were most likely to undertake any activity to do with crafts 
+
+(22 per cent), while performances were more likely to be participated in by those aged 16 to 24 (35 
+
+per cent). The differences between age groups were particularly marked in the case of visual arts and 
+
+writing categories, where participation rates were around three times higher for younger people than 
+
+for the older ones. It is clear from the evidence that age plays a significant role in the popularity of the 
+
+cultural activities listed. 
+
+T10E. The table below shows the cinema viewing figures for films by country, in millions. 
+
+The table compares four countries in terms of the number of people who watch four different genres 
+
+of film at the cinema: Action, Romance, Comedy and Horror. 
+
+The table indicates that more Indian people watch films at the cinema than the other three 
+
+nationalities. In all four countries, Action is the most popular genre of film.  
+
+The total number of viewers for action films is nearly 30 million and in each country about 7-8 million 
+
+people watch them. 
+
+Not many people like watching horror films at the cinema compared to the other genres of film. In 
+
+India and Japan only 2-2.5 million people watch horror films but they are more popular in New 
+
+Zealand and Ireland. On the other hand, romance films are very popular in India with 7.5 million 
+
+viewers but it is not as popular in the other countries. New Zealand and Japan come next with 4.5 
+
+million viewers each. 
+
+T11E. The table below shows the average band scores for students from different 
+
+language groups taking the IELTS General Test in 2010. 
+
+The table illustrates the breakdown of scores for the IELTS General Test in 2010. It shows separate 
+
+scores for all four modules (Listening, Reading, Writing and Speaking), together with the overall band 
+
+scores for students from four different language groups around the world. 
+
+47 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+From an overall perspective, German speakers achieved the highest overall band score. Moreover, 
+
+they scored the highest of all four language groups in three modules of the test (Listening, Writing, 
+
+Speaking). 
+
+French speaking candidates scored the second highest overall score of 6.7 out of 9, closely followed 
+
+by Malay and Indonesian speakers. Although French speakers did not do so well in the Reading, 
+
+Speaking and Listening modules compared to Indonesian and Malay speakers, there was a significant 
+
+difference in their grades for the Writing module. These grades were high relative to Indonesian and 
+
+Malay candidates. Surprisingly, Malay speakers, who achieved the second lowest result overall, 
+
+achieved the highest results of all four language groups for the Reading module. 
+
+As a final point, it is interesting to note that the scores for each module show that all students, on 
+
+average, scored the highest marks for the Speaking module and the lowest marks for the Reading 
+
+module. 
+
+T12E. 
+
+The table compares the five highest ranking countries in terms of the numbers of visits and the money 
+
+spent by tourists over a period of two years. 
+
+It is clear that France was the world’s most popular tourist destination in the years 2012 and 2013. 
+
+However, the USA earned by far the most revenue from tourism over the same period. 
+
+In 2012, 83 million tourists visited France, and the USA was the second most visited country, with 66.7 
+
+million tourists. Spain and China each received just under 58 million visitors, while Italy was ranked fifth 
+
+with 46.4 million tourists. 2013 saw a rise of between 1 and 4 million tourist visits to each country, with 
+
+the exception of China, which received 2 million fewer visitors than in the previous year. 
+
+Spending by tourists visiting the USA increased from $126.2 billion in 2012 to $139.6 billion in 2013, 
+
+and these figures were well over twice as high as those for any other country. Spain received the second 
+
+highest amounts of tourist revenue, rising from $56.3 billion to $60.4 billion, followed by France, China 
+
+and Italy. Interestingly, despite falling numbers of tourists, Chinese revenue from tourism rose by $1.7 
+
+billion in 2013. 
+
+48 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+T13E. The table compares the proportions of 6-11 and 12-16-year-old boys taking part in 
+
+5 kinds of sport in the UK in 2010. 
+
+The table compares the proportions of 6-11 and 12-16-year-old boys taking part in 5 kinds of sport in 
+
+the UK in 2010. 
+
+It is clear from the table that boys aged 6-11 were generally more likely to play sports than the other 
+
+group. Additionally, football was the most popular type of sport for both age groups. 
+
+For the 6-11 age group, the rate of boys playing football was highest, at 87%, while the figure for 
+
+basketball was significantly lower, at 35%. Boys who took part in playing cricket accounted for 45% of 
+
+the total group. Meanwhile, the percentages of boys who participated in rugby and swimming were 
+
+lowest, at 23% and 19% respectively. 
+
+For 12-16-year-olds, the proportion of boys who played football was also highest among 5 types of 
+
+sport, at 78%. Basketball and rugby players made up 25% and 21% of this group respectively, while 
+
+34% of boys aged 12-16 chose to play cricket. The figure for swimming was lowest, at only 19%. 
+
+T14E. The timetables illustrate the sessions which are currently held on Saturdays and 
+
+Sundays at Newtown Swimming Pool and compare those with a proposed new schedule 
+
+The timetables illustrate the sessions which are currently held on Saturdays and Sundays at Newtown 
+
+Swimming Pool and compare those with a proposed new schedule. 
+
+It is clear from the new timetable that children will take part in activities on Saturdays, while all 
+
+adults’ sessions will be held on Sundays. Additionally, most of the activities on Saturday afternoons 
+
+and Sunday mornings are expected to be removed from the timetable. 
+
+ On Saturday mornings, three swimming sessions are currently held for children from three levels, 
+
+namely Beginners, Intermediate and Advanced. These will remain the same in the new timetable. 
+
+On Saturday afternoons, while adults currently can take part in swimming activities for 
+
+49 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Intermediate and Advanced levels, these two sessions will be eliminated. Meanwhile, a new class 
+
+for children called Water Polo will be introduced. 
+
+ On Sunday mornings, while there are several sessions taking place in the current timetable, 
+
+they will all disappear. On Sunday afternoons, four will be held for adults including two Water 
+
+Safety classes. Adults’ session for Beginners will also be removed, leaving two classes 
+
+available for Intermediate and Advanced levels. 
+
+T15E. The table shows how people in different age groups spend their leisure time in 
+
+Someland over the course of a year 
+
+It can be clearly seen that the amount of leisure time available varies considerably across the age 
+
+groups and that people of different age levels have very different ways of spending their leisure time. 
+
+According to the figures, as people age in Someland their social lives reduce. Teenagers and people in 
+
+their twenties spend on average 500 hours per year on socialising and 350 hours of that time is with a 
+
+group of more than 4 people. Although the total hours of socialising in their 30s, 40s, 50s and 60s is 
+
+fairly constant (between 300-350), socialising with more than 4 people drops dramatically to 50 hours 
+
+in the 30s and 40s age groups and only 25 from 50 years old. Group and individual exercise follow a 
+
+similar pattern. 
+
+People of all ages spend a good part of their leisure time on entertainment such as TV/video viewing 
+
+and cinema. In both cases, teenagers and retired people spend around twice as much time as those 
+
+who are at working age. Home entertainment ranges from just over a thousand hours for teenagers 
+
+and retired people and an average of 600 hours for everyone else. Cinema accounts for 100 hours of 
+
+the teenagers and retired people’s leisure time and 25-50 hours for the rest. 
+
+In conclusion we can see there is a significant trend towards solitary and smaller group activities as 
+
+people grow older and that teenagers and retired people spend a lot more time on entertainment than 
+
+those of working age do. 
+
+50 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+T16E. The table below gives information about rail transport in four countries in 2007. 
+
+The given table data shows the railway route, passenger number and cargo goods carried in Malaysia, 
+
+Canada, China and UAE in the year 2007.  
+
+As is observed from the data, Chinese people used the railway system more than the people of other 
+
+countries but the cargoes carried more goods in Canada among the given countries. 
+
+According to the data, 27 million people used rail transports (excluding metro) in China compared to 
+
+the just 5-6 million railway users in UAE and Malaysia. Only 0.3 million Canadian people used railway 
+
+transportations in 2007, which was least among the given four countries. The distance passed by 
+
+passengers who used railway in these four countries was similar to the data provided for the railway 
+
+passengers in these four countries for the year 2007. Around two thousand km were passed by 
+
+Chinese people compared to the less than eight hundred km in UAE and Malaysia. As only 0.3 million 
+
+Canadian people used railway in 2007, the distance passed by each passenger was only 80 km which 
+
+was the least among the figure given for four countries. Interestingly, the cargos that transported 
+
+goods carried the highest amount in Canada (over 28 tonnes) though the passengers used railway 
+
+system lesser than other countries. On an average, all of the given four countries had an average of 
+
+21- 28 billion tonnes goods carried through the railway system. 
+
+In summary, Chinese people used the railway more than the people of other country and cargo 
+
+carried more goods in Canada among the given countries. 
+
+T17E. The table below shows the results of a survey to find out what members of a city 
+
+sports club think about the club’s activities, facilities, and opening hours. 
+
+The table illustrates the preference levels of male and female members of a sport club about their 
+
+activities, facilities and opening hours.  
+
+It is clear that the greater proportion of male members is contented about the club’s activities (91%) 
+
+whereas this figure is true only for 70% of female members. 
+
+51 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Moreover, more than 85% of both male and female are happy about the facilities and 63% of male 
+
+members and 64% female members are extremely satisfied in this regard. In fact, only 14% of female 
+
+members and 10% of male members are negative about this. 
+
+In addition, opening hours are in the best interest of women as 97% of them are positive about it. In 
+
+contrast, more than one third of men have expressed their dissatisfaction in this regard. 
+
+In conclusion, it is clear that male and female members hold different opinion about the activities and 
+
+facilities and opening hours of the club. 
+
+T18E. The table compares the monthly spending among five major categories by an 
+
+average Australian household in two years: 1991 and 2001. 
+
+The table compares the monthly spending among five major categories by an average Australian 
+
+household in two years: 1991 and 2001. 
+
+At a glance we can see that total spending was higher in 2001, by a small increase of 40 dollars, than 
+
+in 1991. 
+
+Besides expenditure on various non-essential goods and services, each month, Australian families, on 
+
+average, allocated the biggest part of their budget to food, 155 dollars in 1991, 5 dollars 
+
+more in 2001. They spent the smallest part on clothing, just 30 and 20 dollars in 1991 and 2001 
+
+respectively, which is a fifth and just over a tenth of that spent on food in the two years. 
+
+Monthly spending on electricity and water rose dramatically by 40% over the ten-year period, from 
+
+AU$ 75 to AU$ 120. Also increasing during the decade was outlay on food, but compared to the 
+
+increase seen in electricity and water, that rise was negligible. 
+
+On the other hand, money spent on transport noticeably decreased from 1991 to 2001, standing at 
+
+AU$ 70 and $ 45 in the two respective years. Also falling during the decade was household outlay on 
+
+clothing, which declined a huge 33%, or AU$ 10. Notably, clothing garnered the least expenditure 
+
+among the categories in both years. 
+
+52 
+
+ 
+ 
+ 
+ 
+ 
+ 
+T19E. The table shows source of student income over a five-year period in the United 
+
+States.  
+
+The data shows the main sources of income for students in America from 2010-2015. 
+
+A clear rising trend can be observed for students’ loans and student earnings over the 5 year period, 
+
+whereas parental contribution and grant aid have both dropped. Student total income rose overall by 
+
+over US$2000; from US$9,153 in 2010/11 to US$11,563 in 2014/15. 
+
+Student bank loans in 2010/11 comprised only 6% of total student income and student earnings were 
+
+only 10% in 2010/11. By 2014/15, student loans had increased dramatically to 29% of total income 
+
+and student earnings from jobs had similarly experienced a significant rise to 30% over the same 
+
+period. 
+
+In contrast, in 2010/11, grants were the main source of student income (52%) and this drastically fell 
+
+over the 5 year period to a mere 16% in 2015. Parental contribution suffered a less dramatic decline, 
+
+but saw a reduction from 32% in 2010 to 25% in 2015. 
+
+In conclusion, the figures indicate that students have taken on more responsibility in paying for their 
+
+education and the government and parents play less of a financially supportive role. 
+
+T20E. The given two tables indicate the average amount of time which both full-time and 
+
+part-time employees worked in three distinctive European nations in the year of 2002 
+
+compared to the average number of hours dedicated to jobs of European citizens. 
+
+The given two tables indicate the average amount of time which both full-time and part-time 
+
+employees worked in three distinctive European nations in the year of 2002 compared to the average 
+
+number of hours dedicated to jobs of European citizens. 
+
+53 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Overall, the tables point out that men, regardless of their types of jobs, usually spent more hours 
+
+working than women. The Greek employees appeared to be the most career-devoted ones while UK 
+
+citizens enjoyed shorter working time. 
+
+The longest working time was observed in Greece where female workers worked 39.9 hours on an 
+
+average, around 2.6 hours less than their male counterparts. This amount was noticeably higher than 
+
+the European average figure of 39.2 hours for females and 40.4 hours for males, in contrast to the 
+
+other two nations with shorter working time. Dutch women and men allocated an equal amount of 
+
+time — 38 hours – for work, 1 hour and 1.5 hours longer than their UK counterparts. 
+
+With regard to part-time jobs, citizens in the three listed nations devoted smaller and comparable 
+
+amounts of time to their career compared to the European average. The Greek stilled worked hardest, 
+
+with 29.3 hours spent by women and 30 hours by men, slightly longer than the figures for UK citizens. 
+
+It is interesting that only in the Netherlands were females more committed to their part-time jobs 
+
+(with 29.2 hours) than their male counterparts with less than one hour in difference. 
+
+T21E. The table  compares the leading mobile phone producers in terms of their share of 
+
+the global market in 2005 and 2006. 
+
+The table compares the leading mobile phone producers in terms of their share of the global market in 
+
+2005 and 2006. 
+
+Overall, it is clear that Nokia had the largest market share in both years. While the percentage of the 
+
+market share of most companies fell between 2005 and 2006, that of Nokia, Motorola and Sony 
+
+Ericsson rose.  
+
+Nokia was the leader in the global mobile phone market in 2005 and 2006. Its market share  increased  
+
+from  32.5%  to  35%.   Its  nearest  competitor, Motorola  saw  a significant rise in sales from 17.7% 
+
+to 21.1% in this period. Sony Ericsson also increased its sales by just over 1% from 2005 to reach 
+
+7.4% in 2006. 
+
+In contrast, the market share of Samsung decreased by almost 1% to 11.8% in 2006. L.G. sales also 
+
+declined, from 6.7% in 2005 to 6.3% in 2006. The global market share of BenQ Mobile fell to just 
+
+2.4% in 2006, a decline of 2.5% from the previous  
+
+54 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+year. Finally, there was a fall in the  market share of other manufacturers by 3% to  
+
+16.2% in 2006. 
+
+T22E. The table illustrates how leisure time was spent in Ottawa among different age 
+
+groups in the year 2009. The popularity of most activities appears to vary widely between 
+
+ages. 
+
+The table illustrates how leisure time was spent in Ottawa among different age groups in the year 
+
+2009.  
+
+The popularity of most activities appears to vary widely between ages. 
+
+At 42 monthly hours, Internet, computer and television use among teenagers was the highest for all 
+
+age groups in 2009. This number was only 32 for those aged 20 to 39 and 27 for those 40 to 49 years 
+
+of age. The lowest rate of engagement for this pastime was seen among those 50 to 59 years of age, 
+
+at 25 monthly hours. A figure of 36 monthly hours was recorded for those 60 and older. 
+
+The popularity of exercise, however, moved in tandem with age, as figures of 15, 17, 22 and 23 
+
+monthly hours were noted for the first four age groups in the table. Significantly smaller values of 18 
+
+and 15 monthly hours are seen among those 50 to 59 years of age and those 60 and older, 
+
+respectively. 
+
+The popularity of reading increased in an even more linear manner. In order of age group, 16, 21, 22, 
+
+24, 26 and 33 monthly hours were reported in 2009. However, the opposite trend was seen for 
+
+socialising, with teens allotting a staggering 58 hours per month to the pastime. Declining figures of 
+
+26, 14, 12 and finally 8 monthly hours were seen among the subsequent age groups. A slight increase 
+
+in popularity to 12 monthly hours was experienced among those 60 and older. 
+
+T23E. The table provides data about the use and production of natural gas in nine 
+
+different countries in 2001. 
+
+55 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The table provides data about the use and production of natural gas in nine different countries in 
+
+2001. 
+
+The most striking trend can be seen in the USA, where figures are over five times higher than those of 
+
+any other country. With the exception of the former Soviet Union, other countries’ production figures 
+
+were higher than their consumption figures, although there is no data provided for either Japan or 
+
+South Korea. 
+
+New Zealand had the lowest consumption and the closest correlation to its production, with 0.2 million 
+
+tonnes excess. Australia produced nearly one- third more natural gas than it consumed. The United 
+
+Kingdom produced over 10 million tonnes more than it used, twice the excess produced by the United 
+
+Arab Emirates. China consumed only 0.7 million tonnes less than its production. In contrast, the 
+
+former Soviet Union accounted for far less production than it did consumption, using nearly 18 times 
+
+the amount it produced. 
+
+Although the majority of countries produced more gas than they used in the same year, the rate the 
+
+of both production and consumption was markedly different between them. 
+
+T24E. The table below shows the percentage of the population by age groups in one town 
+
+who rode bicycles in 2011. 
+
+The table compares the proportions of people who rode a bike, by age and gender, in 2011. 
+
+In general, children under nine years old used bicycles the most, while middle-aged people were the 
+
+least likely to ride a bicycle. Also, men tended to cycle more than women during the period shown. 
+
+Among males, children under 9 years old made up the largest proportion of cyclists, at 52%. However, 
+
+with the older groups, the rates fell to 42% for teenagers aged from 10 to 17, and 17% for people aged 
+
+between 18 and 39. The proportion of 40 to 50 year old male cyclists was the lowest, at just 12%, while 
+
+this activity was a little more common among men aged over 60, with nearly a fifth riding a bicycle. 
+
+The percentage of girls who cycled younger than 9 years old was nearly the same as that of boys, at 
+
+over a half. However, the figure for girls aged 10 to 17 was just under a quarter, much lower than that 
+
+56 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+of their counterparts. Similar to men of the same age groups, women aged 40 to 50, and 60 or over, 
+
+did not prefer cycling very much, making up only 8% and 14% of total female participants respectively. 
+
+T25E. The table shows the Proportions of Pupils Attending Four Secondary School Types 
+
+Between Between 2000 and 2009. 
+
+The table illustrates the percentage of school children attending four different types of secondary 
+
+school from 2000 to 2009.  
+
+It is evident that the specialist, grammar and voluntary-controlled schools experienced declines in 
+
+numbers of pupils, whereas the community schools became the most important providers of 
+
+secondary school education during the same period. 
+
+To begin, the proportion in voluntary-controlled schools fell from just over half to only 20% or one 
+
+fifth from 2000 to 2009. Similarly, the relative number of children in grammar schools — just under 
+
+one quarter — dropped by half in the same period. As for the specialist schools, the relatively small 
+
+percentage of pupils attending this type of school (12%) also fell, although not significantly. 
+
+However, while the other three types of school declined in importance, the opposite was true in the 
+
+case of community schools. In fact, while only a small minority of 12% were educated in these schools 
+
+in 2000, this figure increased to well over half of all pupils during the following nine years. 
+
+T26E. The table gives an overview of how students in different sex groups and school 
+
+levels have performed in a standardized math test in the percentage scale. 
+
+The table gives an overview of how students in different sex groups and school levels have performed 
+
+in a standardized math test in the percentage scale.  
+
+It can be clearly seen that the point level between 34 and 66 has been achieved by a majority of 
+
+students but only a small proportion can score higher than 66 points. 
+
+57 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+School girls have proved to be better than boys at math as 9 out of 10 female students score higher 
+
+than 33 points and 15% of them has the results between 67 points and 100 points. On the contrary, 
+
+there is only 75% of male students can score higher than 33 points and a mere 1% score between 67 
+
+and 100 
+
+In consideration of school levels, Upper Secondary School has the largest proportion of student 
+
+scoring between 67 points and 100 points, which is exactly 50% , followed by Lower Secondary School 
+
+with just over 40%. Notably, the greatest percentage of student having the result of 34 - 66 points, 
+
+which accounts for more than a half, goes to Primary School far higher than that of Lower and Upper 
+
+Secondary School, which make up 19% and 37% respectively. At the other end of the scale, Lower 
+
+Secondary School has the highest figure of student score the lowest- between 0 points and 33 points 
+
+(39%), which is considerably higher than Primary School (28%) and triple that of Upper Secondary 
+
+School. 
+
+Overall, female students perform better than male students in math and the proportion of student 
+
+scoring in 3 different point levels varies significantly across genders and school grades. 
+
+T27E. The table shows the amount of money given to developing countries by the USA, EU 
+
+countries and other countries from 2006 to 2010.  (Figures are in millions of dollars) 
+
+The table illustrates how much money was given to developing countries by the USA, European countries 
+
+and other countries, between 2006 and 2010. 
+
+Overall, it can be seen that the USA was the biggest contributor to developing nations in all measured 
+
+years. In addition, European countries and other countries gave similar amounts of money to developing 
+
+nations each year. 
+
+In 2006, the USA gave over three times as much money to developing nations, with a donation of $9.8 
+
+million. European and other countries donated $3.1 million and $2.8 million respectively. All countries 
+
+increased their donations to developing nations over the following two years, reaching a total of $24.4 
+
+million. 
+
+In 2009 however, the donations from all countries slightly decreased from the 2008 figures, with a total 
+
+figure of $23.5 million. However, these figures saw an increase again in 2010, with a total contribution 
+
+58 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+of $28.1 million. Of this, the USA donated $20.3 million, while European and other countries gave $4.1 
+
+and $3.7 million respectively. 
+
+T28E. The table gives data about the quantity of coal used by 5 sectors in the UK within a 
+
+period of 25 years; in addition, the level of consumption at each year is illustrated. 
+
+The table gives data about the quantity of coal used by 5 sectors in the UK within a period of 25 
+
+years; in addition, the level of consumption at each year is illustrated. 
+
+From 1975 to 1985, the largest amount consumed was by Power stations and Other energy industries, 
+
+whereas three other sectors used considerably less. To illustrate, Services used 7.2 million of tonnes 
+
+from 1975 to 1985, but power stations figures for the same period of time were 250.8 million tonnes. 
+
+It was striking the fact that in 1985 Power stations used more than three quarters of the total 
+
+quantity. 
+
+In the following decade from 1990 to 2000, consuming of coal decreased in all sectors. However, 
+
+power stations remained still the highest user of coal, followed by other energy industries which 
+
+utilized significantly less compared to power stations and over three times more than they did in 1975. 
+
+Overall, the trend of coal consumption experienced decline for all sectors with one exception in 1980 
+
+when power stations increased just under 10%. Domestic consumption levelled off in 1990 and 1995 
+
+whereas other energy industries reached a plateau in 1995 and 2000. 
+
+T29E. 
+
+59 
+
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+60 
+
+ 
+ 
+ 
+ 
+ 
+T30E. The table below gives information about Favorite Pastimes in different countries. 
+
+The table compares the percentage of people aged 30-50 doing in seven favourite pastimes in eight 
+
+countries.  
+
+Overall, it is clear that most people are in their 30-50 years old in all mentioned nations read books in 
+
+their spare time. Also, the favourite pastime of Japanese is only reading books. 
+
+To begin, Canadians, Australians and Americans like watching TV with 60 percent. The percentage of 
+
+Chineses do the same activity is lower, only 15%. The highest percentage of Japanese, Koreans, 
+
+Chineses and France enjoy reading books, with 62%, 60% and 30% compared with other pastime 
+
+activity whereas only 15% people in other countries doing the same way. Interestingly, 20% of people 
+
+in England like sleeping whereas there is a minor percent of 2 to 5% people in other countries like 
+
+doing the same way. On the other hand, about 50% Chineses are interested in doing hobbies but only 
+
+61 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5% like going to the Beach and 0% listen to music. These figures are different to the number of 
+
+Australian and American, with 30% people going to the beach and 23% of Americans listen to music 
+
+in the pastime. The last but not the least, approximately 20-30% people in mentioned countries 
+
+except France, England and Japan prefer playing the sport. It seems that the pastimes of people of 
+
+different nationalities are influenced by the number of factors such as socio-economic and climate. 
+
+T31E. The table below shows the worldwide market share of the notebook computer 
+
+market for manufacturers in the years 2006 and 2007. 
+
+The table gives information on the market share of notebook computer manufacturers for two 
+
+consecutive years, 2006 and 2007. 
+
+In both years, HP was clearly the market leader, selling 31.4% of all notebook computers in 2006, and 
+
+slightly more (34%) in 2007. This is a greater market share than its two closest competitors, Dell and 
+
+Acer, added together. 
+
+Dell increased its market share from 16.6% in 2006 to 20.2% in 2007. In contrast, Acer saw its share 
+
+of the market decline slightly from 11.6% to 10.7%. 
+
+The other companies listed each had a much smaller share of the market. Toshiba’s share increased 
+
+from 6.2% in 2006 to 7.3% in 2007, whereas Lenovo’s decreased slightly from 6.6% to 6.2%. Fujitsu-
+
+Siemens’ share more than halved from 2006 to 2007: from 4.8% of the market to only 2.3%. 
+
+Other notebook computer manufacturers accounted for 22.8% of the market in 2006 – more than all 
+
+the companies mentioned except HP. However, in 2007 the other companies only made 19.3% of 
+
+notebook computer sales – less than both HP and Dell. 
+
+DẠNG 5: MULTIPLE GRAPH - BIỂU ĐỒ KẾT HỢP 
+
+C1S. The graph and table below give information about water use worldwide and water 
+
+consumption in two different countries. 
+
+62 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The charts compare the amount of water used for agriculture, industry and homes around the world, 
+
+and water use in Brazil and the Democratic Republic of Congo. 
+
+It is clear that global water needs rose significantly between 1900 and 2000, and that agriculture 
+
+accounted for the largest proportion of water used. We can also see that water consumption was 
+
+considerably higher in Brazil than in the Congo. 
+
+In 1900, around 500km³ of water was used by the agriculture sector worldwide. The figures for 
+
+industrial and domestic water consumption stood at around one fifth of that amount. By 2000, global 
+
+water use for agriculture had increased to around 3000km³, industrial water use had risen to just 
+
+under half that amount, and domestic consumption had reached approximately 500km³. 
+
+In the year 2000, the populations of Brazil and the Congo were 176 million and 5.2 million 
+
+respectively. Water consumption per person in Brazil, at 359m³, was much higher than that in the 
+
+Congo, at only 8m³, and this could be explained by the fact that Brazil had 265 times more irrigated 
+
+land. 
+
+C2S. The first chart below gives information about the money spent by British parents on 
+
+their children’s sports between 2008 and 2014. The second chart shows the number of 
+
+children who participated in three sports in Britain over the same time period. 
+
+The line graphs show the average monthly amount that parents in Britain spent on their children’s 
+
+sporting activities and the number of British children who took part in three different sports from 2008 
+
+to 2014. 
+
+It is clear that parents spent more money each year on their children’s participation in sports over the 
+
+six-year period. In terms of the number of children taking part, football was significantly more popular 
+
+than athletics and swimming. 
+
+63 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In 2008, British parents spent an average of around £20 per month on their children’s sporting 
+
+activities. Parents’ spending on children’s sports increased gradually over the following six years, and 
+
+by 2014 the average monthly amount had risen to just over £30. 
+
+Looking at participation numbers, in 2008 approximately 8 million British children played football, 
+
+while only 2 million children were enrolled in swimming clubs and less than 1 million practised 
+
+athletics. The figures for football participation remained relatively stable over the following 6 years. By 
+
+contrast, participation in swimming almost doubled, to nearly 4 million children, and there was a near 
+
+fivefold increase in the number of children doing athletics. 
+
+C3S. The bar chart below shows the proportions of English men and women of different 
+
+ages who were living alone in 2011. The pie chart compares the numbers of bedrooms in 
+
+these one-person households. 
+
+The two charts give information about single-occupant households in England in the year 2011. The 
+
+bar chart compares figures for occupants' age and gender, and the pie chart shows data about the 
+
+number of bedrooms in these homes. 
+
+Overall, females made up a higher proportion of people living alone than males, and this difference is 
+
+particularly noticeable in the older age categories. We can also see that the most common number of 
+
+bedrooms in a single-occupant home was two. 
+
+A significant majority of the people aged 65 or over who were living alone in England in 2011 were 
+
+female. Women made up around 72% of single occupants aged 75 to 84, and 76% of those aged 85 
+
+or over. By contrast, among younger adults the figures for males were higher. For example, in the 35-
+
+49 age category, men accounted for nearly 65% of people living alone. 
+
+In the same year, 35.4% of one-person households in England had two bedrooms, while one-bedroom 
+
+and three-bedroom homes accounted for 28% and 29.8% of the total. Under 7% of single-occupant 
+
+homes had four or more bedrooms. 
+
+C4S. The tables below give information about sales of Fairtrade*-labelled coffee and 
+
+bananas in 1999 and 2004 in five European countries. 
+
+64 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The tables show the amount of money spent on Fairtrade coffee and bananas in two separate years in 
+
+the UK, Switzerland, Denmark, Belgium and Sweden. 
+
+It is clear that sales of Fairtrade coffee rose in all five European countries from 1999 to 2004, but 
+
+sales of Fairtrade bananas only went up in three out of the five countries. Overall, the UK saw by far 
+
+the highest levels of spending on the two products. 
+
+In 1999, Switzerland had the highest sales of Fairtrade coffee, at €3 million, while revenue from 
+
+Fairtrade bananas was highest in the UK, at €15 million. By 2004, however, sales of Fairtrade coffee in 
+
+the UK had risen to €20 million, and this was over three times higher than Switzerland’s sales figure 
+
+for Fairtrade coffee in that year. The year 2004 also saw dramatic increases in the money spent on 
+
+Fairtrade bananas in the UK and Switzerland, with revenues rising by €32 million and €4.5 million 
+
+respectively. 
+
+Sales of the two Fairtrade products were far lower in Denmark, Belgium and Sweden. Small increases 
+
+in sales of Fairtrade coffee can be seen, but revenue remained at €2 million or below in all three 
+
+countries in both years. Finally, it is noticeable that the money spent on Fairtrade bananas actually fell 
+
+in Belgium and Sweden. 
+
+C5S. The charts below compare the age structure of the populations of France and India 
+
+in 1984. 
+
+The two charts compare the populations of France and India in terms of age distribution by gender in 
+
+the year 1984. 
+
+It is clear that the population of India was younger than that of France in 1984, with a noticeably 
+
+larger proportion of people aged under 20. France, on the other hand, had a significantly larger 
+
+percentage of elderly inhabitants. 
+
+In India, close to 14% of people were aged 5 or under, and each five-year age bracket above this 
+
+contained an increasingly smaller proportion of the population. France’s population, by contrast, was 
+
+more evenly distributed across the age ranges, with similar figures (around 7% to 8% of all people) 
+
+for each five-year cohort between the ages of 0 and 40. Somewhere between 10% and 15% of all 
+
+French people were aged 70 or older, but the equivalent figure for India was only 2%. 
+
+Looking more closely at gender, there was a noticeably higher proportion of French women than men 
+
+in every cohort from age 50 upwards. For example, almost 3% of French 70- to 75-year-olds were 
+
+65 
+
+ 
+ 
+ 
+ 
+ 
+ 
+women, while just under 2% were men. No significant gender differences can be seen on the Indian 
+
+population chart. 
+
+C6S. The charts below show reasons for travel and the main issues for the travelling 
+
+public in the US in 2009. 
+
+The bar chart and pie chart give information about why US residents travelled and what travel 
+
+problems they experienced in the year 2009. 
+
+It is clear that the principal reason why Americans travelled in 2009 was to commute to and from 
+
+work. In the same year, the primary concern of Americans, with regard to the trips they made, was 
+
+the cost of travelling. 
+
+Looking more closely at the bar chart, we can see that 49% of the trips made by Americans in 2009 
+
+were for the purpose of commuting. By contrast, only 6% of trips were visits to friends or relatives, 
+
+and one in ten trips were for social or recreation reasons. Shopping was cited as the reason for 16% 
+
+of all travel, while unspecific ‘personal reasons’ accounted for the remaining 19%. 
+
+According to the pie chart, price was the key consideration for 36% of American travellers. Almost one 
+
+in five people cited safety as their foremost travel concern, while aggressive driving and highway 
+
+congestion were the main issues for 17% and 14% of the travelling public. Finally, a total of 14% of 
+
+those surveyed thought that access to public transport or space for pedestrians were the most 
+
+important travel issues. 
+
+C7E. The pie chart shows the percentage of persons arrested in the five years ending 1994 
+
+and the bar chart shows the most recent reasons for arrest.  
+
+The pie chart illustrates the percentage of males and females who were arrested from 1989 to 1994, 
+
+while the bar chart compares the main reasons that the different genders were arrested most 
+
+recently.  
+
+It is evident from the charts that males were arrested more than females and that public drinking was 
+
+the most common reason for arrest for both.  
+
+66 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+To begin, the proportion of males arrested was much greater than for females. 32% were arrested 
+
+compared to only 9% for women. Turning to the reasons for the most recent arrests, there were some 
+
+clear differences between men and women. Men were twice as likely to be arrested for drink driving 
+
+than women, at 26% and 14% respectively. Breach of order, assault, and other reasons were also 
+
+slightly higher for men, all standing at around 12-18%.  
+
+Interestingly though, women experienced a higher percentage of arrest rates for assault and public 
+
+drinking. The figures for assault were fairly similar at approximately 18%, whereas public drinking 
+
+represented the main reason for arrest, with women at a massive 38%, compared to 31% for men. 
+
+C8E. The line graph shows visits to and from the UK from 1979 to 1999, and the bar graph 
+
+shows the most popular countries visited by UK residents in 1999.  
+
+The line graph illustrates the number of visitors in millions from the UK who went abroad and those 
+
+that came to the UK between 1979 and 1999, while the bar chart shows which countries were the 
+
+most popular for UK residents to visit in 1999.  
+
+Overall, it can be seen that visits to and from the UK increased, and that France was the most popular 
+
+country to go to.  
+
+To begin, the number of visits abroad by UK residents was higher than for those that came to the UK, 
+
+and this remained so throughout the period. The figures started at a similar amount, around 10 
+
+million, but visits abroad increased significantly to over 50 million, whereas the number of overseas 
+
+residents rose steadily to reach just under 30 million.  
+
+By far the most popular countries to visit in 1999 were France at approximately 11 million visitors, 
+
+followed by Spain at 9 million. The USA, Greece, and Turkey were far less popular at around 4, 3 and 
+
+2 million visitors respectively. 
+
+67 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C9E. 
+
+Over the past 30 years, the average family has dramatically increased the number of meals that they 
+
+eat at restaurants. The percentage of the family's food budget spent on restaurant meals steadily 
+
+climbed.  
+
+Just 10 percent of the food budget was spent on restaurant meals in 1970, and 15 percent in 1980. 
+
+That percentage more than doubled in 1990, to 35 percent, and rose again in 2000 to 50 percent. 
+
+Where families eat their restaurant meals also changed during that 30-year period. In 1970, families 
+
+ate the same number of meals at fast food and sit-down restaurants.  
+
+In 1980, families ate slightly more frequently at sit-down restaurants.  
+
+However, since 1990, fast food restaurants serve more meals to the families than do the sit-down 
+
+restaurants. Most of the restaurant meals from 2000 were eaten at fast food restaurants. If this 
+
+pattern continues, eventually the number of meals that families eat at fast food restaurants could 
+
+double the number of meals they eat at sit-down restaurants. 
+
+C10E. The charts give information about two genres of TV programmes watched by men and women 
+
+and four different age groups in Australia. 
+
+The charts give information about the genres of TV programmes that Australian men and women and 
+
+different age groups watch.  
+
+It is clear from the charts that women tend to watch more television than man overall, although they 
+
+watch slightly fewer game shows. The people who watch the most television are in the 45+ age 
+
+group. 
+
+Nearly 70% of women watch reality shows, which is almost twice as many as the percentage of men 
+
+who choose this genre of programme. Nevertheless, most age groups watch more reality shows than 
+
+game shows revealing that game shows are generally less popular than reality shows. 
+
+68 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The percentage of people watching reality shows increases steadily from ages 16 to 45 with thelowest 
+
+/ smallest percentage of viewers, at just over 50% of the age group 16-24 and the highest / biggest / 
+
+largest / greatest percentage, at 68% of the over-45s. 
+
+However, the pattern is different for game shows. The number of programmes watched by 25- to 44-
+
+year-olds is significantly / considerably lower than the number watched by 16- to 24-year-olds and 
+
+those over 45. Just over 50% of 16- to 24-year-olds watch game shows, but this share is not ashigh 
+
+as the share of people aged 45 and over watching game shows, at nearly 70%. Only 41% of 35- to 
+
+44-year-olds watch game shows, and the share of 24- to 34-year-olds is slightly / even lower at 38%. 
+
+C11E. The graphs below provide information on global population figures and figures for 
+
+urban populations in different world regions. 
+
+The first graph shows the trend in world population growth between 1800 and 2100, while the second 
+
+graph gives predicted urban population figures for the next 25 years. 
+
+The graphs show that the global population increase will not occur evenly throughout the world, but 
+
+will be greater in some areas than others. 
+
+The world population has experienced continuous growth since 1800. Between 1800 and 1950, the 
+
+population grew slowly from just under 1 billion to 2.5 billion people. After that, the growth rate 
+
+increased and currently the figure is around 6.5 billion. Projections show a continued increase in 
+
+population in the near future, but a steady decline in the population growth rate. The global 
+
+population is expected to peak at 8.2 billion by 2050, and then decline to around 6.2 billion by 2100. 
+
+The predictions also show that almost all urban population growth in the next 25 years will occur in 
+
+cities of developing countries. In developed regions, on the other hand, the urban population is 
+
+expected to remain unchanged at about 1.3 billion people over the next two decades. 
+
+C12E. The diagrams below show UK students' responses to the question of to what extent would they 
+
+describe themselves as financially organized. 
+
+69 
+
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+The two diagrams show students' responses to the question of how good they are at managing their 
+
+finances. The pie chart illustrates the ability of UK students to manage their finances and the table 
+
+shows the proportion of students, by age, who think they are very organised at managing their 
+
+finances.  
+
+Overall, the findings suggest that students generally manage their finances well. 
+
+More than three-quarters of students (76%) believe they are either ‘very’ or ‘fairly’ organised 
+
+financially, while one in five (20%) say they are not very organised in this area. Only 4% of students 
+
+rate themselves as ‘not at all’ competent. 
+
+The ability to manage one’s finances well would seem to develop with age and experience as older 
+
+students are almost twice as likely to say they are ‘very’ organised than younger ones (31% of 
+
+students aged 26 or over compared to just 17% for those aged up to 22).  
+
+C13E. The bar chart below gives information about the number of students studying 
+
+Computer Science at a UK university between 2010 and 2012. 
+
+The bar chart illustrates the number of male and female students studying Computer Science at a UK 
+
+university over three years. It also indicates whether they were home or international students.  
+
+Compared to the number of home students, the number of international students was significantly 
+
+smaller. Nevertheless, there was clear statistical growth in the latter group from 2010-2012.  
+
+Furthermore, the number of female home students eventually overtook the number of males from the 
+
+same group, reaching a high of 45 in 2012. 
+
+The year 2011 saw the most dramatic developments; the number of male home students fell from just 
+
+below 40 to 24 and the number of females rose from 32 to 44. There was also significant growth in 
+
+the number of male students from overseas, climbing from 20 in 2010 to 39 in 2012. Overall, we can 
+
+see an upward trend in the number of students at the university. 
+
+70 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C14E. The graph below shows the demand for electricity in England during typical days in 
+
+winter and summer. The pie chart shows how electricity is used in an average English 
+
+home. 
+
+The Demand for electricity in England during typical days in winter and summer is illustrated in the 
+
+graph. The use of electricity in an average English home is shown in the pie chart.  
+
+From the graph it is generally obvious that the demand is in its maximum around 2100 in winter times 
+
+and in its minimum around 400 being almost constant between 1200 and 2100 in winter times. During 
+
+summer times on the other hand the demand reaches its top point around 1300 and the bottom point 
+
+around 900 being almost constant between 1550 and 2000. 
+
+In wither times the curve gradually increases to reach 40000 units of electricity by 3 o’clock in the 
+
+morning. This is followed by gradual decline to its lowest limit of 30000 units at 9 o’clock. A gradual 
+
+rise is obvious again to reach a stationary level between 3 o’clock and 9 o’clock of about 40000 units 
+
+again. Then there is a sharp rise in the next hour to reach its maximum before collapsing again to a 
+
+lower level by the end of the day. 
+
+In summer time the curve gradually decrease to reach its lower limit around 9 o’clock of a bit more 
+
+that 10000 units. A gradual increase is noticed to reach its top of 20000 after which a stationary phase 
+
+is obvious between 3 o’clock and 10 o’clock at night of about 15000 units. 
+
+The pie chart on the other hand shows that 52.5% of the electricity is used for heating rooms and 
+
+water. 17.5% is consumed for ovens kettles and washing machines 15% is used in lighting TV and 
+
+radio and finally 15% is consumed in the sue of vacuum cleaners food mixtures and electric tools. 
+
+C15E. The charts below show the main reasons for study among students of different age 
+
+groups and the amount of support they received from employers. 
+
+The first graph shows that there is a gradual decrease in study for career reasons with age. Nearly 
+
+80% of students under 26 years, study for their career. This percentage gradually declines by 10-20% 
+
+71 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+every decade. Only 40% of 40-49yr olds and 18% of over 49yr olds studing for career reasons in late 
+
+adulthood. 
+
+Conversely, the first graph also shows that study stemming from interest increases with age. There 
+
+are only 10% of under 26yr olds studing out of interest. The percentage increases slowly till the 
+
+beginning of the fourth decade, and increases dramatically in late adulthood. Nearly same number of 
+
+40-49yr olds study for career and interest. However 70% of over 49yr olds study for interest in 
+
+comparison to 18% studing for career reasons in that age group. 
+
+The second graph shows that employer support is maximum (approximately 60%) for the under 26yr 
+
+students. It drops rapidly to 32% up to the third decade of life, and then increses in late adulthood up 
+
+to about 44%. It is unclear whether employer support is only for career-focused study, but the highest 
+
+level is for those students who mainly study for career purposes. 
+
+C16E. The chart below shows the amount of money per week spent on fast foods in 
+
+Britain. The graph shows the trends in consumption of fast foods. 
+
+The chart shows that high income earners consumed considerably more fast foods than the other 
+
+income groups, spending more than twice as much on hamburgers (43 pence per person per week) 
+
+than on fish and chips or pizza (both under 20 pence). Average income earners also favoured 
+
+hamburgers, spending 33 pence per person per week, followed by fish and chips at 24 pence, then 
+
+pizza at 11 pence. Low income earners appear to spend less than other income groups on fast foods, 
+
+though fish and chips remains their most popular fast food, followed by hamburgers and then pizza. 
+
+From the graph we can see that in 1970, fish and chips were twice as popular as burgers, pizza being 
+
+at that time the least popular fast food. The consumption of hamburgers and pizza has risen steadily 
+
+over the 20 year period to 1990 while the consumption of fish and chips has been in decline over that 
+
+same period with a slight increase in popularity since 1985. 
+
+72 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C17E. Write a report for a university lecturer describing the information below. 
+
+The graphs show health and education spending and changes in life expectancy and infant mortality in 
+
+the UAE. Overall, as the percentage spent on health and education increases, infant mortality and life 
+
+expectancy improve. 
+
+Graph 1 shows the percentage of GDP spent on health and education between 1985 and 1993. There 
+
+were big increases in both areas. Health spending stood at about 8% in 1985 but rose to 9% in 1990 
+
+and 10% in 1993. Spending on education was even higher. It was 10% in 1985, and shot up to 14% 
+
+in 1990 and 15% in 1993, a 50% increase in just 8 years. 
+
+Graph 2 shows improvements in life expectancy and infant mortality between 1970 and 1992. Life 
+
+expectancy was just 60 in 1970 but rose to almost 72 in 1992. In contrast, the number of babies dying 
+
+dropped dramatically, from 60 per 1000 in 1970 to only 22 in 1992. 
+
+In conclusion, people in the UAE are living longer and healthier lives because of the government's 
+
+spending on education and medical facilities. 
+
+DẠNG 6: PROCESS – QUY TRÌNH 
+
+Tips for process diagram 
+
+Process diagrams show how something is done or made. They always show steps/stages. Here's some 
+
+advice about how to describe them: 
+
+•  Try to write 4 paragraphs - introduction, summary of main points, 2 detail paragraphs. 
+
+•  Write the introduction by paraphrasing the question (rewrite it by changing some of the 
+
+words). 
+
+• 
+
+For your summary, first say how many steps there are in the process. Then say where/how 
+
+the process begins and ends (look at the first and last stages). 
+
+73 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+• 
+
+In paragraphs 3 and 4, describe the process step by step. Include the first and last steps that 
+
+you mentioned in the summary, but try to describe them in more detail or in a different way. 
+
+•  You could describe the steps in one paragraph, but it looks more organised if you break the 
+
+description into two paragraphs. Just start paragraph 4 somewhere in the middle of the 
+
+process. 
+
+•  Mention every stage in the process. 
+
+•  Use 'sequencing' language e.g. at the first / second / following / final stage of the process, 
+
+next, after that, then, finally etc. 
+
+•  Times (e.g. past dates) are not usually shown, so use the present simple tense. 
+
+• 
+
+It's usually a good idea to use the passive e.g. 'At the final stage, the product is delivered to 
+
+shops' (because we don't need to know who delivered the product). 
+
+74 
+
+ 
+ 
+ 
+ 
+ 
+ 
+PR1S. The diagram below shows how the Australian Bureau of Meteorology collects up- to-the-minute 
+
+information on the weather in order to produce reliable forecasts. 
+
+The figure illustrates the process used by the Australian Bureau of Meteorology to forecast the 
+
+weather. 
+
+There are four stages in the process, beginning with the collection of information about the weather. 
+
+This information is then analysed, prepared for presentation, and finally broadcast to the public. 
+
+Looking at the first and second stages of the process, there are three ways of collecting weather data 
+
+and three ways of analysing it. Firstly, incoming information can be received by satellite and presented 
+
+for analysis as a satellite photo. The same data can also be passed to a radar station and presented 
+
+on a radar screen or synoptic chart. Secondly, incoming information may be collected directly by radar 
+
+and analysed on a radar screen or synoptic chart. Finally, drifting buoys also receive data which can 
+
+be shown on a synoptic chart. 
+
+At the third stage of the process, the weather broadcast is prepared on computers. Finally, it is 
+
+delivered to the public on television, on the radio, or as a recorded telephone announcement. 
+
+PR2S. Brick manufacturing 
+
+Here are my 2 main paragraphs describing the steps: 
+
+At the beginning of the process, clay is dug from the ground. The clay is put through a metal grid, and 
+
+it passes onto a roller where it is mixed with sand and water. After that, the clay can be shaped into 
+
+bricks in two ways: either it is put in a mould, or a wire cutter is used. 
+
+At the fourth stage in the process, the clay bricks are placed in a drying oven for one to two days. 
+
+Next, the bricks are heated in a kiln at a moderate temperature (200 - 900 degrees Celsius) and then 
+
+at a high temperature (up to 1300 degrees), before spending two to three days in a cooling chamber. 
+
+Finally, the finished bricks are packaged and delivered. 
+
+PR3S. The diagram below shows the water cycle, which is the continuous movement of 
+
+water on, above and below the surface of the Earth. 
+
+75 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The picture illustrates the way in which water passes from ocean to air to land during the natural 
+
+process known as the water cycle. 
+
+Three main stages are shown on the diagram. Ocean water evaporates, falls as rain, and eventually 
+
+runs back into the oceans again. 
+
+Beginning at the evaporation stage, we can see that 80% of water vapour in the air comes from the 
+
+oceans. Heat from the sun causes water to evaporate, and water vapour condenses to form clouds. At 
+
+the second stage, labelled ‘precipitation’ on the diagram, water falls as rain or snow. 
+
+At the third stage in the cycle, rainwater may take various paths. Some of it may fall into lakes or 
+
+return to the oceans via ‘surface runoff’. Otherwise, rainwater may filter through the ground, reaching 
+
+the impervious layer of the earth. Salt water intrusion is shown to take place just before groundwater 
+
+passes into the oceans to complete the cycle. 
+
+PR4S The chart below shows the process of waste paper recycling. 
+
+The flow chart shows how waste paper is recycled.  
+
+It is clear that there are six distinct stages in this process, from the initial collection of waste paper to 
+
+the eventual production of usable paper. 
+
+At the first stage in the paper recycling process, waste paper is collected either from paper banks, 
+
+where members of the public leave their used paper, or directly from businesses. This paper is then 
+
+sorted by hand and separated according to its grade, with any paper that is not suitable for recycling 
+
+being removed. Next, the graded paper is transported to a paper mill. 
+
+Stages four and five of the process both involve cleaning. The paper is cleaned and pulped, and 
+
+foreign objects such as staples are taken out. Following this, all remnants of ink and glue are removed 
+
+from the paper at the de-inking stage. Finally, the pulp can be processed in a paper making machine, 
+
+which makes the end product: usable paper. 
+
+76 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PR5S. The diagram below shows the life cycle of a salmon, from egg to adult fish. 
+
+... 
+
+The diagram illustrates the stages in the life of the salmon, from birth to maturity. 
+
+It is clear that there are six* main stages as the salmon develops from egg to mature adult. We can 
+
+also see that salmon spend time in three distinct locations during the cycle, moving from river to 
+
+estuary to ocean and then back upstream. 
+
+Salmon begin their lives in rivers where the adult fish lay and incubate their eggs. After emerging from 
+
+eggs, the young salmon spend the next stage of their lives being reared in freshwater areas. Then, at 
+
+some point in their development, the fish swim downstream to river estuaries where rearing 
+
+continues. 
+
+Following the estuary rearing period, the maturing salmon migrate to the ocean, where they 
+
+eventually become fully grown adults. Finally, the adult fish travel back upstream to spawning areas of 
+
+rivers; here they reproduce and lay their eggs, and the life cycle begins anew. 
+
+PR6E. The diagrams show a structure that is used to generate electricity from wave power. 
+
+The two diagrams show how electricity can be generated from the rise and fall of water caused by sea 
+
+waves. 
+
+The process involves a structure which is mounted on the side of a cliff or sea wall. This structure 
+
+consists of a large chamber. One end is open to the sea, and the other leads into a vertical column, 
+
+which is open to the atmosphere. A turbine is installed inside this column and this is used to generate 
+
+the electricity in two phases. 
+
+The first diagram indicates that when a wave approaches the device, water is forced into the 
+
+chamber, applying pressure on the air within the column. This air escapes to atmosphere through the 
+
+turbine, thereby producing electricity. 
+
+The second diagram illustrates the next part of the process when wave retreats. As the water level 
+
+77 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+falls, the air from outside the column is sucked back in through the turbine. As a result, electricity 
+
+continues to be generated. The turbine rotates only in one direction, regardless of the direction of the 
+
+air flow. 
+
+In conclusion, we can see that this structure is useful as electricity is generated in both phases: 
+
+entering and retreating of water. 
+
+PR7E. The diagram below shows the production of steam using a gas cooled nuclear 
+
+reactor. 
+
+A gas-cooled nuclear reactor consists of the reactor itself and a heat exchanger.  
+
+The reactor contains uranium fuel elements which are surrounded by graphite moderators and topped 
+
+by charge tubes for loading fuel elements, and boron control rods. The whole reactor is contained in a 
+
+pressure vessel surrounded by a concrete shield. 
+
+From the reactor the hot gas flows through a duct into the heat exchanger which is outside the 
+
+concrete radiation shielding. In the heat exchanger, steam is generated in a secondary loop. There a 
+
+pipe brings in water which is heated to steam, and this then flows out to the turbo-alternator. 
+
+Meanwhile the hot gas sinks to the bottom of the heat exchanger and passes through a gas blower 
+
+which pushes it into a cool gas duct and back to the reactor. 
+
+As can be seen, this is a continuous cycle that keeps the reactor from overheating, while carrying 
+
+away the heat and steam, which will power the turbines. 
+
+PR8E. The following diagram shows how greenhouse gases trap energy from the Sun. 
+
+Energy from the Sun reaches the Earth as heat. Some of this heat energy is subsequently/then 
+
+radiated into space, while some of it is trapped by greenhouse gases in the atmosphere and reflected 
+
+back to Earth. This is a natural process, but in recent decades, human activities have led to an 
+
+78 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+increase in the amounts of greenhouse gases in the atmosphere which is now trapping too much 
+
+heat. 
+
+One of the main greenhouse gases is carbon dioxide, and extra quantities of this are released/have 
+
+been released into the atmosphere as a result of burning fossil fuels as a source of energy in 
+
+power stations, factories and homes. Exhaust gases from cars and lorries result in/have resulted 
+
+in further emissions of carbon dioxide. 
+
+Plants serve to remove some of the carbon dioxide from the atmosphere by absorbing it through their 
+
+leaves. However, as large areas of forest are (being) felled/have been felled in the Amazon and 
+
+elsewhere, less carbon dioxide is removed in this way. 
+
+Energy from the Sun reaches the Earth as heat. Some of this heat energy is subsequently/then 
+
+radiated into space, while some of it is trapped by greenhouse gases in the atmosphere and reflected 
+
+back to Earth. This is a natural process, but in recent decades, human activities have led to an 
+
+increase in the amounts of greenhouse gases in the atmosphere which is now trapping too much 
+
+heat. 
+
+One of the main greenhouse gases is carbon dioxide, and extra quantities of this are released/have 
+
+been released into the atmosphere as a result of burning fossil fuels as a source of energy in 
+
+power stations, factories and homes. Exhaust gases from cars and lorries result in/have resulted 
+
+in further emissions of carbon dioxide. 
+
+Plants serve to remove some of the carbon dioxide from the atmosphere by absorbing it through their 
+
+leaves. However, as large areas of forest are (being) felled/have been felled in the Amazon and 
+
+elsewhere, less carbon dioxide is removed in this way. 
+
+PR9E. The flowchart illustrates the production of coloured plastic paper clips in a small 
+
+factory. 
+
+The flowchart illustrates the production of coloured plastic paper clips in a small factory. 
+
+79 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+There are four main stages in the production of plastic paper clips from this small factory. Two of 
+
+these stages involve actual preparation of the clips, while the other two consist of quality control 
+
+before the clips are sent out from the factory to the retailers to be sold to the public. 
+
+To begin with, molten plastic is poured into three different moulds depending on the colour required; 
+
+the colours are red, blue and yellow. Once these clips emerge from the moulds a quality control 
+
+machine checks them for strength. Unsatisfactory clips are rejected.  
+
+In the third stage in the process the clips are stored by hand into two groups, mixed and single 
+
+colours. When this stage is complete the groups are checked a second time to ensure that the colour 
+
+mixtures are divided correctly into single colours and mixed colour batches. Finally, the clips are 
+
+packed and dispatched to the markets. 
+
+PR10E.he diagram below shows how a central heating system in a house works. 
+
+This diagram provides an overview of a domestic central heating system. It shows how the tank, 
+
+boiler and pipes ensure a constant flow of hot water to both the radiators and the taps. 
+
+The cold water enters the house and is stored in a water storage tank in the roof. From there ü flows 
+
+down to the boiler, located on the ground floor of the house. 
+
+The boiler, which is fuelled by gas or oil, heats up the water as it passes through it. The hot water is 
+
+then pumped round the house through a system of pipes and flows into the radiators, located in 
+
+different rooms. The water circulates through the radiators, which have small tubes inside them to 
+
+help distribute the heat, and this warms each of the rooms. Some of the water is directed to the taps 
+
+to provide hot water for the house. 
+
+Once the water has been through the pipes and radiators, it is returned to the boiler to be re-heated 
+
+and circulated round the house again. 
+
+80 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PR11E. The diagram below shows the typical stages of consumer goods manufacturing, 
+
+including the process by which information is fed back to earlier stages to enable 
+
+adjustment. 
+
+The diagram below shows the typical stages of consumer goods manufacturing, including the process 
+
+by which information is fed back to earlier stages to enable adjustment. 
+
+The given diagram shows the stages of manufacturing and process adjustment of the consumer 
+
+goods. As is observed from the flow chart, the goods manufacturing is a complex process which is 
+
+done in several stages and information is sometimes fed back to earlier stages to make some 
+
+adjustments. 
+
+Firstly, raw materials and other components are stored together and production planning is done. 
+
+There are two major process involves in the overall manufacturing process: one is manufacturing 
+
+process itself and another one is the information feedback process with which the adjustment of the 
+
+manufacturing is done. After the product research, the design part is done and this input is used in 
+
+product planning stage. After the production planning is complete the assembly, inspection, testing 
+
+and packaging stages are done sequentially. Feedback from testing phase is used in design stage and 
+
+which led back to product planning stage. Again, the market research affects the design and 
+
+advertising stages and inputs from the market research stage is used in packaging stage. The final 
+
+two stages are dispatch and sales. The information flow stages gives feedback to other stages to 
+
+refine and adjust the process. 
+
+In summary, the consumer goods manufacturing process involves both the multi-staged 
+
+manufacturing and research methods. The manufacturing stages involve the storage, assembly, 
+
+inspection, packing to the sales methods whereas the research stages include market & product 
+
+research, design and advertisement. 
+
+PR12E. The diagram illustrates the various stages in the life of a honey bee. 
+
+nymph = immature form of an insect 
+
+moult = shed or lose old feathers, hair or skin to allow for new growth 
+
+The diagram illustrates the various stages in the life of a honey bee.  
+
+81 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+We can see that the complete life cycle lasts between 34 and 36 days. It is also noticeable that there 
+
+are five main stages in the development of the honey bee, from egg to mature adult insect. 
+
+The life cycle of the honey bee begins when the female adult lays an egg; the female typically lays 
+
+one or two eggs every 3 days. Between 9 and 10 days later, each egg hatches and the immature 
+
+insect, or nymph, appears. 
+
+During the third stage of the life cycle, the nymph grows in size and sheds its skin three times. This 
+
+moulting first takes place 5 days after the egg hatches, then 7 days later, and again another 9 days 
+
+later. After a total of 30 to 31 days from the start of the cycle, the young adult honey bee emerges 
+
+from its final moulting stage, and in the space of only 4 days it reaches full maturity. 
+
+PR13E. The diagram reveals a long process in which rainwater is contained, treated and 
+
+reused for domestic purposes 
+
+The process starts with rains brought by clouds which provide water for natural lakes, pools or 
+
+artificial reservoirs likes dams. At the same time, rain water is collected into tanks from gutters, then is 
+
+used directly by people without any treatment. Water in dams, however, must be filtered and made 
+
+clean at water treatment plants to become drinking water before being delivered to people’s homes 
+
+for daily usage. 
+
+The next step is treating waste water, the output of domestic consumption. This type of water is 
+
+collected from people’s houses to waste water treatment plant, where it is turned to recycled water 
+
+and flowed back to houses, while the excess treated water is released to river. Also, any storm water 
+
+must be passed through the storm water treatment before running to its clean, natural state. 
+
+To conclude, the diagram may well reflect the steps by which rainwater is reused. With two steps of 
+
+treatment applied, water is made clean before being provided to people’s usage and released to 
+
+natural environment. 
+
+PR14E. The diagram shows how electricity is generated by a hydroelectric dam. 
+
+82 
+
+ 
+ 
+ 
+ 
+ 
+ 
+The diagram illustrates the basic principles of hydroelectric power. The process requires the 
+
+construction of a large dam connected to a powerhouse. The dam creates a large reservoir and the 
+
+powerhouse is where the electricity is generated. 
+
+First of all, water trapped in the reservoir behind the dam is forced through an intake. It then flows 
+
+into a narrow chamber called a penstock, where the resulting high pressure turns a turbine. The 
+
+turbine is connected to a generator in the powerhouse above, and this is where the movement of the 
+
+turbine is converted into electricity. The resulting electricity leaves the powerhouse via cables that 
+
+carry it over long distances to where it can be used. 
+
+It is interesting to note that a hydroelectric dam creates no harmful byproducts and relies entirely on 
+
+natural forces to produce electricity. After the turbine stage, water flows out through a second channel 
+
+and into a river. The process is renewable, thanks to the water cycle in nature. 
+
+PR15E. The illustrations show how chocolate is produced. 
+
+ The diagram explains the process for the making of chocolate.  
+
+There are a total of ten stages in the process, beginning with the growing of the pods on the cacao 
+
+trees and culminating in the production of the chocolate. 
+
+To begin, the cocoa comes from the cacao tree, which is grown in the South American and African 
+
+continents and the country of Indonesia.  Once the pods are ripe and red, they are harvested and the 
+
+white cocoa beans are removed. Following a period of fermentation, they are then laid out on a large 
+
+tray so they can dry under the sun.  
+
+Next, they are placed into large sacks and delivered to the factory. They are then roasted at a 
+
+temperature of 350 degrees, after which the beans are crushed and separated from their outer shell. 
+
+In the final stage, this inner part that is left is pressed and the chocolate is produced. 
+
+83 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PR16E. The picture reveals how milk is produced in two major stages. It is clear that the 
+
+first main procedure takes place on the farm, while the other involves several small 
+
+processing steps at the dairy. 
+
+The picture reveals how milk is produced in two major stages. 
+
+ It is clear that the first main procedure takes place on the farm, while the other involves several small 
+
+processing steps at the dairy. 
+
+Milk is produced on farms from cows that are largely fed on grass. First, the cows are milked, which 
+
+usually happens twice a day, using a milking machine as this produces more milk overall than once a 
+
+day. The next step is when the milk is cooled and stored in large, refrigerated containers because it 
+
+stays fresher longer at around 4 degrees C. 
+
+Refrigerated tankers collect the milk on a daily basis from many small farms and deliver it to the dairy, 
+
+where milk is made into various products including cheese, cream, butter and liquid milk for drinking. 
+
+Liquid milk is usually pasteurized in order to kill any bacteria and therefore ensure that it is safe for 
+
+consumption. After that, the milk is again cooled and then homogenized, which results in a product 
+
+that does not separate into milk and cream. Following this, the milk is packaged in plastic containers, 
+
+which could be of various sizes from 0.5 litres to 2 litres. Finally, these are delivered to supermarkets 
+
+and shops so that they can be sold. 
+
+PR17E. The diagram below shows the production of electricity using a system called 
+
+Ocean Thermal Energy Conversion (OTEC). 
+
+Ocean thermal energy conversion (OTEC) is a system that converts heat energy into the electric 
+
+power using the temperature difference between surface seawater, which can be up to 29 degrees 
+
+Celsius, and deep seawater, which is only 5 degrees Celsius. 
+
+The main components of the system are an evacuated evaporation chamber, a turbine and a 
+
+condensing chamber. The solar energy of the sun heats up the surface water and this warm water is 
+
+introduced into the evacuated evaporation chamber, where it boils. As it boils, salt is deposited and 
+
+water vapour is generated. This vapour then drives a turbine to generate electricity. After it powers 
+
+84 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+the turbine, the water vapour enters the condensing chamber, which is cooled by the water from the 
+
+depths of the ocean. The water vapour is condensed in this chamber, producing drinking water. 
+
+Meanwhile, waste salt water is discharged into the ocean and the process can be repeated. 
+
+DẠNG 7: MAP– BẢN ĐỒ 
+
+M1S. The map shows the growth of a village called Chorleywood between 1868 and 1994. 
+
+The map shows the growth of a village called Chorleywood between 1868 and 1994. 
+
+It is clear that the village grew as the transport infrastructure was improved. Four periods of 
+
+development are shown on the map, and each of the populated areas is near to the main roads, the 
+
+railway or the motorway. 
+
+From 1868 to 1883, Chorleywood covered a small area next to one of the main roads. Chorleywood 
+
+Park and Golf Course is now located next to this original village area. The village grew along the main 
+
+road to the south between 1883 and 1922, and in 1909 a railway line was built crossing this area from 
+
+west to east. Chorleywood station is in this part of the village. 
+
+The expansion of Chorleywood continued to the east and west alongside the railway line until 1970. At 
+
+that time, a motorway was built to the east of the village, and from 1970 to 1994, further 
+
+development of the village took place around motorway intersections with the railway and one of the 
+
+main roads. 
+
+M2S. The first picture shows the layout of an art gallery, and the second shows some 
+
+proposed changes to the gallery space. 
+
+The first picture shows the layout of an art gallery, and the second shows some proposed changes to 
+
+the gallery space. 
+
+It is clear that significant changes will be made in terms of the use of floor space in the gallery. There 
+
+will be a completely new entrance and more space for exhibitions. 
+
+85 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+At present, visitors enter the gallery through doors which lead into a lobby. However, the plan is to 
+
+move the entrance to the Parkinson Court side of the building, and visitors will walk straight into the 
+
+exhibition area. In place of the lobby and office areas, which are shown on the existing plan, the new 
+
+gallery plan shows an education area and a small storage area. 
+
+The permanent exhibition space in the redeveloped gallery will be about twice as large as it is now 
+
+because it will occupy the area that is now used for temporary exhibitions. There will also be a new 
+
+room for special exhibitions. This room is shown in red on the existing plan and is not currently part of 
+
+the gallery.  
+
+M3S. The diagrams show how house designs differ according to climate. 
+
+The diagrams show how house designs differ according to climate. 
+
+The most noticeable difference between houses designed for cool and warm climates is in the shape 
+
+of the roof. The designs also differ with regard to the windows and the use of insulation. 
+
+We can see that the cool climate house has a high-angled roof, which allows sunlight to enter through 
+
+the window. By contrast, the roof of the warm climate house has a peak in the middle and roof 
+
+overhangs to shade the windows. Insulation and thermal building materials are used in cool climates 
+
+to reduce heat loss, whereas insulation and reflective materials are used to keep the heat out in warm 
+
+climates. 
+
+Finally, the cool climate house has one window which faces the direction of the sun, while the warm 
+
+climate house has windows on two sides which are shaded from the sun. By opening the two windows 
+
+at night, the house designed for warm climates can be ventilated. 
+
+M4S. The map below is of the town of Garlsdon.  A new supermarket (S) is planned for the 
+
+town. The map shows two possible sites for the supermarket. 
+
+The map shows two potential locations (S1 and S2) for a new supermarket in a town called Garlsdon. 
+
+86 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The main difference between the two sites is that S1 is outside the town, whereas S2 is in the town 
+
+centre. The sites can also be compared in terms of access by road or rail, and their positions relative 
+
+to three smaller towns. 
+
+Looking at the information in more detail, S1 is in the countryside to the north west of Garlsdon, but it 
+
+is close to the residential area of the town. S2 is also close to the housing area, which surrounds the 
+
+town centre. 
+
+There are main roads from Hindon, Bransdon and Cransdon to Garlsdon town centre, but this is a no 
+
+traffic zone, so there would be no access to S2 by car. By contrast, S1 lies on the main road to 
+
+Hindon, but it would be more difficult to reach from Bransdon and Cransdon. Both supermarket sites 
+
+are close to the railway that runs through Garlsdon from Hindon to Cransdon. (171) 
+
+M5S. The diagrams below show the site of a school in 2004 and the plan for changes to 
+
+the school site in 2024. 
+
+The two pictures compare the layout of a school as it was in the year 2004 with a proposed site 
+
+design for the year 2024. 
+
+It is clear that the main change for 2024 involves the addition of a new school building. The school will 
+
+then be able to accommodate a considerably larger number of students. 
+
+In 2004, there were 600 pupils attending the school, and the two school buildings were separated by 
+
+a path running from the main entrance to the sports field. By 2024, it is expected that there will be 
+
+1000 pupils, and a third building will have been constructed. Furthermore, the plan is to join the two 
+
+original buildings together, creating a shorter path that links the buildings only. 
+
+As the third building and a second car park will be built on the site of the original sports field, a new, 
+
+smaller sports field will need to be laid. A new road will also be built from the main entrance to the 
+
+second car park. Finally, no changes will be made to the main entrance and original car park. 
+
+M6S. The diagrams below show how houses can be protected in areas which are prone to 
+
+flooding. 
+
+87 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The diagrams compare two different methods of defence for homes which are at risk of being flooded. 
+
+The key difference between the diagrams is that they show flood protection with and without a 
+
+stopbank. In either case, the at-risk home is raised on stilts above ground level. 
+
+The first diagram shows how a stopbank acts as a flood barrier to stop river water from flooding 
+
+homes. The stopbank is a small mound of land next to the river that is higher than the 100-year flood 
+
+level, and prevents the river from bursting its banks. Nearby houses can be built on stilts to prevent 
+
+flooding from rainwater, and a floodgate beneath the stopbank can be opened to allow this ‘ponding’ 
+
+to drain off into the river. 
+
+When there is no stopbank, as shown in the second diagram, there will be nothing to stop the river 
+
+from flooding. In this case, the solution is to put buildings on stilts. The height of the stilts is 
+
+measured so that the floor of the house is 300mm above the 100-year flood level. This measurement 
+
+is called the ‘freeboard’. 
+
+M7S. The maps below show the centre of a small town called Islip as it is now, and plans 
+
+for its development. 
+
+The diagrams illustrate some proposed changes to the central area of the town of Islip. 
+
+It is clear that the principal change to the town will be the construction of a ring road around the 
+
+centre. Various other developments with regard to shops and housing will accompany the building of 
+
+this road. 
+
+Looking at the map of Islip as it is now, we can see that a main road runs through its centre from east 
+
+to west. The second map shows the planned pedestrianisation of this road. Traffic will be diverted on 
+
+to a dual carriageway that will form a ring around the town centre. 
+
+Currently there is a row of shops along either side of the main road. However, it appears that the 
+
+shops along the north side of the new pedestrian street will be demolished to make way for a bus 
+
+station, shopping centre, car park and new housing area. The shops along the south side of the street 
+
+will remain, but it seems that the town’s park will be reduced in size so that more new houses can be 
+
+built within the ring road. 
+
+88 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+M8E. The diagrams below show the existing ground floor plan of a house and a proposed plan for 
+
+some building work. 
+
+The diagrams illustrate the modification of building a ground floor from an existing plan 
+
+It is noticeable that one of internal walls and storage in old plan were removed to make the hall to be 
+
+a part of living room while both entrance doors remain unchanged in new plan 
+
+In new plan, two internal doors were relocated from two sides of the hall in old plan to one end of 
+
+internal wall where both internal doors are next to each other. At the same time, the position of the 
+
+stairs in the old plan was moved to the one corner of living room. By doing so, more space can be 
+
+seen in living room in proposed plan and make it easier for people to access kitchen from living room 
+
+or living room from kitchen 
+
+Furthermore, one more change can be noticed in the kitchen, in old plan, there was no kitchen 
+
+furniture while kitchen furniture in new plan was proposed  
+
+M9E. The diagrams illustrate some changes to a small island which has been developed 
+
+for tourism. 
+
+The diagrams illustrate some changes to a small island which has been developed for tourism. 
+
+It is clear that the island has changed considerably with the introduction of tourism, and six new 
+
+features can be seen in the second diagram. The main developments are that the island is accessible 
+
+and visitors have somewhere to stay. 
+
+Looking at the maps in more detail, we can see that small huts have been built to accommodate 
+
+visitors to the island. The other physical structures that have been added are a reception building, in 
+
+the middle of the island, and a restaurant to the north of the reception. Before these developments, 
+
+the island was completely bare apart from a few trees. 
+
+As well as the buildings mentioned above, the new facilities on the island include a pier, where boats 
+
+can dock. There is also a short road linking the pier with the reception and restaurant, and footpaths 
+
+connect the huts. Finally, there is a designated swimming area for tourists off a beach on the western 
+
+tip of the island. 
+
+89 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+M10E. The map below shows the development of the village of Ryemouth between 1995 
+
+and present. 
+
+These two given maps illustrate the shifts in appearance of the Ryemouth village in 1995 into the 
+
+current one. 
+
+From an overall perspective, this village in 1995 was a much greener area than the latter, but over the 
+
+20-year period, it experienced a number of dramatic changes.  
+
+To be more specific, the most striking transformation belonged to the farmland which was turned into 
+
+the golf in the northeast of this area. Plus, the forest nearby was cut down to make the way for tennis 
+
+courts. Towards the northwest of the village, a new road on the left of the main one was constructed 
+
+and more houses were built up on the left of that road. 
+
+As regards the south of this region, it is clear that where were greater changes. In fact, the fishing 
+
+port was destroyed. In addition, the fish market was replaced by apartments at the seaside, while the 
+
+shop on the opposite side of the fish market was modified to become restaurants. Further 
+
+development was the new construction of the car park nearby the hotel in the corner of the road. 
+
+M11E. The plans illustrate the development of a health centre from 2005 to the present 
+
+day. Overall, it is clear that some major changes have been taken place to the health 
+
+centre. 
+
+The plans illustrate the development of a health centre from 2005 to the present day. Overall, it is 
+
+clear that some major changes have been taken place to the health centre. 
+
+First of all, the only room which remained unchanged in health centre since 2005 is physiotherapy 
+
+room. There is an extra minor operations room being added next to it, thus the size of the garden has 
+
+decreased. In present day, there are more seats available to the patients than that in 2005. In 
+
+addition, there are 4 consulting rooms now compared to that in the year 2005 which had only 3 
+
+rooms. The main entrance is, noticeably, shifted to the bottom left corner of the health centre with 
+
+90 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+additional children's play area. The reception desk is now placed near the entrance which is opposite 
+
+of children's play area. 
+
+Lastly, the car park slots have been increased to 30 spaces in present day from only 12 spaces in the 
+
+year 2005. 
+
+M12E. The maps below show the changes that have taken place at the seaside resort of 
+
+Templetion between 1990 and 2005. 
+
+The two maps illustrate the (1)________________ of a seaside resort called Templeton 
+
+(2)________________ the period from 1990 to 2005. 
+
+The most (3)________________ change is that the resort has become a much more industrial area 
+
+with (4)________________. 
+
+In 1990 there were trees all most everywhere in Templeton resort. However, the trees and the small 
+
+building located (5)________________ the lake in the north-west of the resort were replaced by two 
+
+skyscrapers. (6)________________, the trees between the two roads were cut down for the 
+
+(7)________________ of several buildings. In addition, the buildings in the south-west of the area 
+
+were also removed and replaced by a supermarket and larger buildings. 
+
+Among the most (8)________________ developments in the north-east was the airport next to the 
+
+school that was remained from 1990. The hospital was also (9)________________, but new buildings 
+
+were built next to it. Furthermore, the railway was extended, running along the coast. 
+
+(10)________________ 2005 a ferry has also been constructed at the (11)________________ of the 
+
+place. 
+
+M13E. The maps below show the village of Stokeford in 1930 and in 2010. 
+
+Bài viết tham khảo 1: 
+
+91 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The two maps show what happened in the village of Stokeford, over a eighty-years period between 
+
+1930 and 2010. 
+
+Overall, It can be clearly seen in 1930, Stokeford wash as a few houses and covered with lots of 
+
+farmlands, gardens and a large house, but 2010 it has become much more residental as well as with 
+
+considerably new houses and retirement home. 
+
+Looking at in detail, two areas which have been improvement were south-west and north-east of the 
+
+village. These areas used to be full of farmlands, but now the farmlands have been removed and were 
+
+replaced by a host of new houses. After all shops knocked down, new roads had been constructed to 
+
+link new houses near the bridge and post office at around new houses. 
+
+Another change was the replacement of retirement home surrounding with new houses in the place of 
+
+gardens and large home. The primary school was modified in 2010 with 2 more buildings while river 
+
+stoke was on the same place in both the time period. 
+
+Bài viết tham khảo 2: 
+
+The maps illustrate the development carried-out in the town of Stokeford between 1930 and 2010. In 
+
+general, Stokeford town witnessed a dramatic transformation especially with the expense of farmlands 
+
+to meet its increasing population. 
+
+In the commencement, exactly 10 houses surrounded the village. The number increased five times by 
+
+2010. Moreover, a large proportion of Stokeford was occupied by farmlands in its north-eastern and 
+
+south-western parts. In 2010, these were totally transformed into residential areas, building massive 
+
+numbers of houses. The shops in the east of Stoke River were also replaced with townhouses with 
+
+new roads being constructed.  
+
+Furthermore, the primary school remained in the same area in the central part of the town, however, 
+
+it later extended with two additional buildings. The huge house located in the far east of Stoke River 
+
+was expanded and converted into a retirement home in 2010. The garden surrounding it was then 
+
+occupied by rows of neighbouring houses. 
+
+Over the eight-year period, the post office, bridge, and Stoke River maintained distinct areas despite 
+
+the extensive constructions in the surrounding areas. 
+
+92 
+
+ 
+ 
+ 
+ 
+ 
+M14E. The diagrams show changes to a university campus between 1985 and the present 
+
+day. 
+
+The diagrams show changes to a university campus between 1985 and the present day. 
+
+The given diagram depicts the changes incorporated in a university campus between 1985 and the 
+
+today. 
+
+In 1985 the three science blocks (physics, chemistry and biology) were housed in separate premises 
+
+which now have been integrated into single building called science laboratories. 
+
+The library block has been extended by adding IT center to it. Furthermore, the administration block 
+
+has also been retained in the south eastern part of campus though its size has been reduced. There 
+
+were two car parking areas in 1985. The parking in south west has given way to shuttle bus terminal.  
+
+Similarly, the parking in north eastern part has been built upon to accommodate lecture theatre. 
+
+One other major change incorporated in the campus layout  is removal of road surface except one 
+
+connecting shuttle bus terminal with outside world. The roads have been replaced by footpaths which 
+
+connect all the buildings and blocks. The campus now also has many trees which give it a greener 
+
+look. 
+
+The campus is now more greener and organized than before. 
+
+M15E. The diagrams illustrate changes affected in the district park between 2004 and 
+
+2014. 
+
+The diagrams illustrate changes affected in the district park between 2004 and 2014. 
+
+A cycling track has been added on the outer periphery of park. The entrance in northwest of park and 
+
+the football ground have not been disturbed. 
+
+93 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Substantial changes have been made in other locations starting with tennis courts that lie close to 
+
+entrance. The number of tennis courts has been doubled. Similarly, the capacity of the car park has 
+
+also been expanded from 20 in 2004 to 50. 
+
+Furthermore, the children’s play area in north east corner of the park has also been developed further 
+
+by adding an area for soft play. Additionally, toilets have been constructed south of play area. The 
+
+green area in south east portion of park has shrunk and a café has been established in this area. The 
+
+pond in west of green area has been developed into boating area and a picnic spot has also been 
+
+developed west of boating area. 
+
+To conclude, substantial changes have been made in district park. 
+
+M16E. The diagrams below give information about two world-famous tunnels, Mont-Blanc 
+
+Road Tunnel and Seikan Railway Tunnel. 
+
+The diagram illustrates the cross-sections of the Mont-Blanc Road Tunnel and the Seikan Railway 
+
+tunnel 
+
+Overall, It is clear that the Mont-Blanc Road tunnel is much longer than Seikan Railway tunnel and 
+
+while Mont-Blanc Road is through the mountain, Seikan Railway tunnel is located below the strait. 
+
+Obviously, The length of Mont-Blanc Road tunnel is 11.6 km and it took 8 years for the installation 
+
+from 1957. Additionally this tunnel links between two countries of France and Italia through a 
+
+mountain which has the height of 3.5 km. 
+
+However, The construction of Seikan railway appears to be more complicated and took more time 
+
+than Mont-Blanc Road. The construction time for Seikan Railway is six times longer (42 years). The 
+
+total length is 53.85 km, connecting two cities of Hakodate and Aomori, located in Hokkaido and 
+
+Japanese Islands respectively. Besides, the railway lies underneath the Tsugaru Strait with the 
+
+distance of 240m. 
+
+M17E. The civic centre will be planned to change. There are two maps: one is the existing 
+
+and the other is the plan for new. 
+
+94 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The picture illustrate the alterations that may take place at the civic centre. 
+
+It is clear that all facilities will be changed in position, with exceptions for the library, the concert hall 
+
+and the shopping center. The theater, the hotel & restaurant and the open park are three new 
+
+facilities which will be added into the civic center area. 
+
+The concert hall and the shopping center are two areas that will be remained unchanged in size and 
+
+position. The library will be totally destroyed and will not be reconstructed. The exhibition hall will be 
+
+built at the place where the library used to be and it will be decreased in size. Besides, there is an 
+
+increase in size of the council office, which will replace the old exhibition hall. 
+
+The car park will be converted to the theater and the hotel & restaurant. The theater will locate to the 
+
+left of the concert hall and in the corner, while the hotel & restaurant will situate to the right of the 
+
+concert hall, right beside the shopping center. Open park and underground car park will be erected 
+
+between the council office and the exhibition hall. 
+
+M18E. The map below gives information about a school in 2004 and the change of the 
+
+same school in 2010. 
+
+These given data sources clearly communicate the development of a school namely Hogward 
+
+Grammar School from 2004 to 2010. 
+
+A brief inspection reveals that the number of students attended has increase over the period due to 
+
+the contruction of new infrastructures. 
+
+In 2004, there was only one school building connected to the central Sport Field by a walking path. To 
+
+the south of the Sport field, there is a main road which led to a car park located in the west. At that 
+
+time, the number of students that the Hogward school was able to admit was 600 students. 
+
+Six years later, two additional school buildings were erected to the right and the bottom of the 
+
+previous one. The Sport Field was reconstructed to be smaller and the walking path was also relocated 
+
+95 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+to connect 3 school buildings. In addition, the infrastructure of the school was also developed with an 
+
+addition of new car park built to the east of the first school building. As a result, the number of pupils 
+
+rised to 1000 individuals expectedly. 
+
+M19E. The plans below show the South Wing of Walton Museum in 2008 and in 2012 after 
+
+it was redeveloped. 
+
+The maps reveal the change of the South Wing of Walton Museum in the period of 2008 to 2012. 
+
+In 2008, the South Wing was a two-storey building with a path on the west. On the ground floor, 
+
+there was a special exhibition room, a shop and a cloaks room. The reception was on the first floor, 
+
+and there was also a reading room next to the reception. Visitors can take the stairs between the shop 
+
+and the cloaks room to the ground floor. 
+
+By the year 2012, the building had four floors with a life from the ground floor to the top floor. 
+
+Children play area had replaced the cloaks room and the cloaks room had been moved to the 
+
+reception. On the eastern side of the lift, there was a new cafe where visitors can serve themselves 
+
+and on the top floor was another exhibition room. Opposite to the cafe was a new-built restaurant. In 
+
+the west of the building, an entrance hall was constructed on the first floor and it should be noted that 
+
+on the second floor there was a terrace. 
+
+M20E. The depicted diagram illustrates the alterations in Kelsby village across 120 years. 
+
+The depicted diagram illustrates the alterations in Kelsby village across 120 years.  
+
+It is apparent that the village was settled by people and had become more facilitated during the given 
+
+period. All in all, the maps suggest that there were significant improvements in the village. 
+
+Looking at the information in more detail, we can easily pinpoint that in 1780 there were four farms 
+
+on the left side of the river and the opposite side of houses was full of woods. After 80 years a new 
+
+bridge was built up over the river and a road, which was lying between the river and homes began to 
+
+serve for people. Additionally, while the number of woods halved and farms became only 2, the 
+
+quantity of homes almost doubled and reached 200. 
+
+96 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In XXI century, new schools with sports fields were ready for use and a new road between the homes, 
+
+which soared by 300 in numbers, made the schools easily accessible. In addition, the farms were 
+
+removed completely and instead of them new shops were constructed along the left side of the river. 
+
+A special area for birds, standing at the end of the river, seems to be one of the most striking 
+
+discrepancies. 
+
+M21E. The graphs below show the development of the cutting tools made by stone, one 
+
+was made 1.4 million years ago, and the other was made 800 thousand years ago, 
+
+viewing from back view, front view and side view.  
+
+The given diagram illustrates the cutting stone tool and how it was advanced, from 1.4 million years 
+
+ago to 800 thousand years ago.  
+
+It can be clearly seen that the stone tool was improved into a sharper and better one, over the years. 
+
+Overall, it can be observed that the tool was improved over the years to a more refined and finer 
+
+cutting tool. 
+
+The stone tool made 1.4 million years ago was more rounded at the top and bottom edges. From the 
+
+front and the back view of the tool it is clear that the diameter in the middle was almost 5 cm and 
+
+towards the top and bottom, it was around 3 cm wide. The side view shows that the tool was wider in 
+
+the middle, with a diameter of around 3 cm and it tapered towards the top and the bottom ends. The 
+
+back of the stone had fewer cuts than the front and they were also not very fine. 
+
+800 thousand years ago, this tool developed into a sharper, more refined tool. In the front and the 
+
+back view it can be seen that the maximum diameter of the tool was the same as in the older tool, but 
+
+it was more towards the lower side. The bottom tapered into a 1 cm point, but the top tapered more 
+
+sharply into a 1 cm point. The side view makes it clear that it was much lesser in width (1.5 cm) than 
+
+the older tool. The stone was more chiseled than the previous one. 
+
+EXTRA EXERCISES 
+
+E1. The chart below shows the value of one country's exports in various categories during 
+2015 and 2016. The table shows the percentage change in each category or exports in 
+2016 compared with 2015. 
+
+97 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The bar chart and table give information about a country's export earnings from five groups of 
+
+products in 2015 and 2016. 
+
+It is noticeable that export revenues in all but one of the five product categories increased over the 
+
+period shown. While petroleum products were the highest earning exports in both years, the textile 
+
+industry saw the most significant growth in earnings. 
+
+Export earnings from petroleum products rose from around $61 billion in 2015 to $63 billion in 2016, 
+
+which was an increase of 3%. Income from engineered goods reached a similar level. The country’s 
+
+export earnings from these goods went up by 8.5% to approximately $62 billion in 2016. 
+
+From 2015 to 2016, there was a 15.24% increase in export revenue from textiles, with earnings rising 
+
+from roughly $25 billion to over $30 billion. By contrast, there was almost no change in the amount of 
+
+money earned from agricultural products, which remained at just over $30 billion. Finally, the only 
+
+decline in income occurred in the gems and jewellery product group, where export earnings fell by 
+
+around 5% to approximately $40 billion in 2016. 
+
+E2. The table below gives information about changes in modes of travel in England 
+between 1985 and 2000. 
+m 
+
+The chart shows average distances that people in England travelled using different forms of transport 
+
+in the years 1985 and 2000. 
+
+It is clear that the total number of miles travelled by English people using all modes of transport 
+
+increased significantly between 1985 and 2000. The car was by far the most used form of transport in 
+
+both years. 
+
+In 1985, the average person travelled 3,199 miles by car, and this rose to 4,806 miles in the year 
+
+2000. The figures for miles travelled by train, long distance bus, taxi and other modes also increased 
+
+from 1985 to 2000. Travel by taxi saw the most significant change, with more than a threefold 
+
+increase from 13 miles per person per year in 1985 to 42 miles in 2000. 
+
+There was a fall in the average distances for three forms of transport, namely walking, bicycle and 
+
+local bus. In 1985, English people walked an average of 255 miles, but this figure fell by 18 miles in 
+
+2000. Bicycle use fell from 51 to 41 miles over the period shown, while the biggest downward change 
+
+was in the use of local buses, with average miles per person falling from 429 to 274 over the 15-year 
+
+period. 
+
+98 
+
+ 
+ 
+ 
+ 
+ 
+E3. The diagrams below give information about the manufacture of frozen fish pies. 
+
+The pictures illustrate the ingredients that go into a factory-made fish pie, and the various steps in its 
+
+production. 
+
+The pie contains salmon, peas, sauce and potatoes, and there are ten stages in its manufacture, from 
+
+delivery to dispatch. One of the ingredients, potato, goes through its own six-stage preparation 
+
+process before it can be added to the pie. 
+
+Potatoes are the first ingredient to be prepared on the production line. They are delivered to the 
+
+factory up to a month before the process begins, and they must be cleaned, peeled and sliced. Potato 
+
+peelings are thrown away, and the sliced potatoes are boiled, then chilled and stored. 
+
+When fresh salmon arrives at the factory, lemon juice and salt are added, and the fish is cooked in a 
+
+steam oven within 12 hours of delivery. Next, factory workers remove and dispose of the skin and 
+
+bones, and the fish is inspected. Following inspection, pre-prepared peas, sauce and potatoes are 
+
+added. The resulting fish pies are wrapped, frozen and then stored or dispatched. 
+
+E4.The maps illustrate some changes that were made to a city hospital's transport 
+infrastructure between the years 2007 and 2010. 
+
+The maps illustrate some changes that were made to a city hospital's transport infrastructure between 
+
+the years 2007 and 2010. 
+
+It is noticeable that three main modifications were made to the hospital’s vehicle access. These 
+
+involved the building of a new bus station, new roundabouts and new parking facilities. 
+
+Looking at the changes in more detail, we can see that in 2007 there were three bus stops on either 
+
+side of Hospital Road. These were no longer present in 2010, and instead we see the addition of a bus 
+
+station on the west side of Hospital Road. This bus station is accessed via two new roundabouts; the 
+
+first roundabout is at the intersection of City Road and Hospital Road, while the second is at the other 
+
+end of Hospital Road, at the junction with the hospital ring road. 
+
+The two maps also show that changes were made to public and staff parking areas. In 2007, staff and 
+
+visitors used the same car park, which was situated to the east of Hospital Road and accessed via the 
+
+ring road. However, by 2010 this original car park had become a designated area for staff parking 
+
+99 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+only. A new car park, located on the east side of the ring road, provided parking for members of the 
+
+public. 
+
+E5.The charts below show the proportions of British students at one university in England 
+who were able to speak other languages in addition to English, in 2000 and 2010. 
+
+The tables compare the percentages of British university students who spoke different languages in 
+
+addition to English in two separate years. 
+
+It is noticeable that in both years, 2000 and 2010, the majority of British students at the university in 
+
+question were able to speak at least one other language. We can also see an increase in the 
+
+proportion of second and third language speakers over the 10-year period. 
+
+In the year 2000, 80% of the students were able to speak one or two foreign languages, and 20% 
+
+only spoke English. Ten years later, there was a rise of 5% in the proportion of those who spoke a 
+
+second language. There was also an increase, from 10% to 15%, in the proportion of students who 
+
+were able to speak two foreign languages. 
+
+Looking at the specific second languages spoken, in 2000, 30% of the students were able to speak 
+
+Spanish, 15% spoke French, and 10% spoke German. By 2010, the proportion of Spanish speakers 
+
+had risen to 35%, there were 5% fewer French speakers, and the figure for German speakers 
+
+remained at one in ten. Finally, we can see that the percentage of speakers of other second 
+
+languages, apart from Spanish, French and German, rose from 15% to 20% over the period shown. 
+
+E6.The bar chart below shows the percentage of Australian men and women in different 
+age groups who did regular physical activity in 2010. 
+
+The chart compares the proportions of Australian males and females in six age categories who were 
+
+physically active on a regular basis in the year 2010. 
+
+Roughly speaking, close to half of Australian adults did some kind of routine physical activity in 2010. 
+
+Middle aged females were the most physically active, proportionally, while males aged 35 to 44 did the 
+
+least physical activity. 
+
+In the youngest age category (15 to 24), almost 53% of Australian men but only 47.7% of women did 
+
+regular physical activity in 2010. However, between the ages of 25 and 44, men were much less active 
+
+on average than women. In fact, in the 35 to 44 age group, a mere 39.5% of males did some form of 
+
+regular exercise, compared to 52.5% of females. 
+
+100 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Between the ages of 45 and 64, the figure for male physical activity rose to around 45%, while the 
+
+proportion of active females remained around 8% higher, at 53%. Finally, the percentages of 
+
+Australian women and men aged 65 and over who exercised regularly were almost identical, at 
+
+approximately 47%. 
+
+E7.The diagrams below show the stages and equipment used in the cement-making 
+process, and how cement is used to produce concrete for building purposes. 
+
+The first diagram illustrates the process of cement manufacture, and the second diagram shows the 
+
+materials that go into the production of concrete. 
+
+It is clear that there are five stages in the production of cement, beginning with the input of raw 
+
+materials and ending with bags of the finished product. To produce concrete, four different materials 
+
+are mixed together. 
+
+At the first stage in the production of cement, limestone and clay are crushed to form a powder. This 
+
+powder is then mixed before it passes into a rotating heater. After heating, the resulting mixture is 
+
+ground, and cement is produced. Finally, the cement is packaged in large bags. 
+
+Cement is one of the four raw materials that are used in the production of concrete, along with gravel, 
+
+sand and water. To be exact, concrete consists of 50% gravel, 25% sand, 15% cement and 10% 
+
+water. All four materials are blended together in a rotating machine called a concrete mixer. 
+
+E8.The chart below shows how frequently people in the USA ate in fast food restaurants 
+between 2003 and 2013. 
+
+The bar chart illustrates the frequency with which Americans ate in fast food establishments from 
+2003 to 2013. 
+
+It is clear that the majority of Americans ate in fast food restaurants between once a week and once a 
+
+month in all three years. We can also see a shift towards eating in these restaurants less frequently by 
+
+the end of the 10-year period. 
+
+In each of the years shown on the chart, close to 60% of people in the US ate in fast food restaurants 
+
+between once and four times a month. Roughly 15 to 20% of Americans reported eating in fast food 
+
+101 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+outlets several times per week, while 3 to 4% of people ate in these outlets daily. At the other end of 
+
+the scale, around 4% of people avoided fast food restaurants completely. 
+
+Between 2006 and 2013, the total proportion of Americans who ate in fast food establishments either 
+
+once a week or several times a week fell by almost 10%. At the same time, there was an increase of 
+
+around 8% in the ‘once or twice a month’ category. In other words, the weekly fast food habit that 
+
+was common in 2003 and 2006 became a monthly or twice monthly habit in 2013. 
+
+102 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,2893 @@
+1 
+
+WRTING 21 – THỰC HÀNH MẪU CÂU THƯỜNG SỬ DỤNG 
+TASK 1 
+
+NO 
+
+KEY 
+
+TOPIC  VIETNAMESE 
+
+1 
+
+C5S 
+
+Không có sự khác biệt đáng kể về giới tính trên biểu đồ dân số Ấn 
+
+746 
+Độ.  
+
+1 
+
+B2S 
+
+76 
+Ba biểu đồ cột cho thấy số năm đi học trung bình, số lượng các nhà 
+khoa học và kỹ thuật viên, và chi tiêu nghiên cứu và phát triển ở các nước đang phát triển và 
+phát triển.  
+
+844 
+năm 1985 đến 1993.  
+
+1 
+
+C17E  Biểu đồ 1 cho thấy tỷ lệ phần trăm GDP chi cho y tế và giáo dục từ 
+
+848 
+sinh từ năm 1970 đến năm 1992.  
+
+1 
+
+C17E  Biểu đồ 2 cho thấy sự cải thiện về tuổi thọ và tỷ lệ tử vong ở trẻ sơ 
+
+792 
+đều trên toàn thế giới, nhưng sẽ lớn hơn ở một số khu vực so với những khu vực khác. 
+
+C11E  Biểu đồ cho thấy sự gia tăng dân số toàn cầu sẽ không diễn ra đồng 
+
+1 
+
+196 
+loại tổ chức giáo dục ở Anh trong năm 2010.  
+
+1 
+
+B16E  Biểu đồ cột cung cấp thông tin về giới tính của giáo viên trong sáu 
+
+1 
+
+167 
+toàn thời gian và bán thời gian trong những năm sau: 1970 đến 1971, 1980 đến 1981 và 
+1990 đến 1991.  
+
+B13E  Biểu đồ cột minh họa có bao nhiêu nam và nữ đã học trong giáo dục 
+
+85 
+hàng khác nhau ở Đức, Ý, Pháp và Anh.  
+
+B3S 
+
+1 
+
+Biểu đồ cột so sánh chi tiêu của người tiêu dùng đối với sáu mặt 
+
+285 
+sáu nhóm lớn, được chia thành các nghề thủ công và phi thủ công.  
+
+Biểu đồ cung cấp thông tin về tỷ lệ nam và nữ đang làm việc trong 
+
+P8E 
+
+1 
+
+826 
+theo độ tuổi. 
+
+1 
+
+C15E  Biểu đồ đầu tiên cho thấy việc học tập vì lý do nghề nghiệp giảm dần 
+
+1 
+
+C8E 
+
+Biểu đồ đường minh họa số lượng hàng triệu du khách đến từ Vương 
+
+765 
+quốc Anh đã ra nước ngoài và những người đến Vương quốc Anh từ năm 1979 đến 1999, 
+trong khi biểu đồ thanh cho thấy những quốc gia nào được người dân Vương quốc Anh đến 
+thăm phổ biến nhất vào năm 1999.  
+
+275 
+chức từ thiện dành cho trẻ em ở Hoa Kỳ. 
+
+P7E 
+
+1 
+
+Biểu đồ hình tròn biểu thị số tiền thu và chi trong một năm của tổ 
+
+1 
+
+801 
+Vương quốc Anh và bảng này cho thấy tỷ lệ sinh viên theo độ tuổi cho rằng họ quản lý tài 
+chính rất có tổ chức. 
+
+C12E  Biểu đồ hình tròn minh họa khả năng quản lý tài chính của sinh viên 
+
+747 
+sao cư dân Hoa Kỳ đi du lịch và những vấn đề đi lại mà họ gặp phải trong năm 2009.  
+
+Biểu đồ thanh và biểu đồ hình tròn cung cấp thông tin về lý do tại 
+
+C6S 
+
+1 
+
+266 
+trong năm 2009, và nó được đo bằng hàng tỷ kwh.  
+
+P6E 
+
+1 
+
+Bốn biểu đồ hình tròn so sánh điện được tạo ra giữa Đức và Pháp 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+
+1 
+
+189 
+nghiệp trong năm 2014.  
+
+B15E  Cả hai quốc gia đều chứng kiến sự suy giảm về tỷ lệ phụ nữ thất 
+
+Các biểu đồ hình tròn cung cấp thông tin về nước được sử dụng cho 
+257 
+mục đích dân cư, công nghiệp và nông nghiệp ở Hạt San Diego, California và toàn thế giới.  
+
+P5S 
+
+1 
+
+104 
+máy chơi game hơn là trò chuyện trực tuyến.  
+
+B5S 
+
+1 
+
+Các cậu bé trong độ tuổi từ 10 đến 15 rõ ràng thích chơi trên các 
+
+1 
+
+C8E 
+
+769 
+Các con số bắt đầu ở mức tương tự, khoảng 10 triệu, nhưng các 
+chuyến thăm nước ngoài tăng đáng kể lên hơn 50 triệu, trong khi số lượng cư dân ở nước 
+ngoài tăng đều đặn, chỉ đạt dưới 30 triệu.  
+
+1 
+
+C7E 
+
+764 
+uống rượu nơi công cộng là lý do chính dẫn đến việc bị bắt giữ, với phụ nữ là 38%, so với 
+31% ở nam giới.  
+
+Các con số về hành hung khá giống nhau với khoảng 18%, trong khi 
+
+1 
+
+796 
+nhưng tốc độ tăng dân số giảm đều.  
+
+C11E  Các dự báo cho thấy dân số sẽ tiếp tục tăng trong tương lai gần, 
+
+798 
+thị trong 25 năm tới sẽ xảy ra ở các thành phố của các nước đang phát triển.  
+
+C11E  Các dự đoán cũng chỉ ra rằng hầu như tất cả sự gia tăng dân số đô 
+
+1 
+
+1 
+
+B6S 
+
+Các số liệu thấp nhất trên biểu đồ là cho các cuộc gọi di động, 
+112 
+nhưng danh mục/hạng mục này cũng chứng kiến sự gia tăng mạnh mẽ nhất về số phút 
+người dùng.  
+
+708 
+khoảng 1/5 con số đó.  
+
+C1S 
+
+1 
+
+Các số liệu về tiêu thụ nước công nghiệp và sinh hoạt chỉ bằng 
+
+773 
+hàng vào năm 1970 và 15% vào năm 1980.  
+
+C9E 
+
+1 
+
+Chỉ 10% ngân sách cho thực phẩm được chi cho các bữa ăn tại nhà 
+
+828 
+lý do nghề nghiệp vào cuối tuổi trưởng thành. 
+
+1 
+
+C15E  Chỉ 40% người từ 40-49 tuổi và 18% người trên 49 tuổi theo học vì 
+
+1 
+
+790 
+trình trò chơi và tỷ lệ của những người từ 24 đến 34 tuổi là thấp hơn một chút / thậm chí là 
+38%.  
+
+C10E  Chỉ 41% trong số những người từ 35 đến 44 tuổi xem các chương 
+
+23 
+
+1 
+
+L3S 
+
+Chỉ hơn 2 triệu tấn khí mưa axit đến từ các ngành công nghiệp khác. 
+
+789 
+này không cao bằng tỷ lệ người từ 45 tuổi trở lên xem game show, gần 70%.  
+
+C10E  Chỉ hơn 50% người từ 16 đến 24 tuổi xem game show, nhưng tỷ lệ 
+
+1 
+
+1 
+
+83 
+trưởng nhanh chóng ở các quốc gia này, đạt 350 tỷ đô la vào năm 1990.  
+
+Chi tiêu cho nghiên cứu và phát triển cũng chứng kiến sự tăng 
+
+B2S 
+
+1 
+
+846 
+lên 9% vào năm 1990 và 10% vào năm 1993.  
+
+C17E  Chi tiêu cho y tế ở mức khoảng 8% vào năm 1985 nhưng đã tăng 
+
+1 
+
+768 
+là Pháp với khoảng 11 triệu du khách, tiếp theo là Tây Ban Nha với 9 triệu.  
+
+Cho đến nay, các quốc gia phổ biến nhất để đến thăm vào năm 1999 
+
+C8E 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+94 
+1995, nhưng hầu hết các thành phố đều thấy/chứng kiến giá tăng từ năm 1996 đến 2002.  
+
+Chúng ta có thể thấy rằng giá nhà giảm chung giữa năm 1990 và 
+
+B4S 
+
+1 
+
+3 
+
+706 
+đáng kể so với ở Congo.  
+
+C1S 
+
+1 
+
+Chúng ta cũng có thể thấy rằng lượng nước tiêu thụ ở Brazil cao hơn 
+
+90 
+160.000 bảng.  
+
+1 
+
+B3S 
+
+Con số chi tiêu cho đồ chơi là giống nhau ở cả Pháp và Ý, ở mức gần 
+
+237 
+uống lành mạnh bình thường và cao hơn 20% so với tỷ lệ trong chế độ ăn trung bình.  
+
+Con số này cao hơn 10% so với tỷ lệ carbohydrate trong chế độ ăn 
+
+P2S 
+
+1 
+
+195 
+gia có/với tỷ lệ thất nghiệp nữ cao nhất trong bốn quốc gia.  
+
+B15E  Con số này tăng lên 6,7% trong năm 2014, khiến nó trở thành quốc 
+
+1 
+
+1 
+
+P6E 
+
+273 
+khối/sinh học, tổng cộng khoảng 75%, cao hơn nhiều so với thủy điện (17,7%) và năng 
+lượng mặt trời (6,1%). 
+
+Cụ thể, ở Đức, hầu hết các năng lượng tái tạo bao gồm gió và sinh 
+
+278 
+chức từ thiện, ở mức 86%.  
+
+P7E 
+
+1 
+
+Cụ thể, thực phẩm quyên góp đóng góp phần lớn doanh thu cho tổ 
+
+737 
+CS4 
+1 
+ở Bỉ và Thụy Điển.  
+
+Cuối cùng, đáng chú ý là số tiền chi cho chuối Fairtrade thực sự giảm 
+
+1 
+
+143 
+chăm sóc khẩn cấp ở những người từ 16 đến 44, 45 đến 64 và 65 đến 74.  
+
+Cuối cùng, hầu như không có sự khác biệt trong các số liệu về việc 
+
+B9S 
+
+28 
+
+1 
+
+L4S 
+
+Đặc biệt, số hộ có/với hai xe tăng, trong khi số hộ không có xe giảm.  
+
+258 
+nghiệp hoặc nông nghiệp ở hai khu vực Mỹ.  
+
+P5S 
+
+1 
+
+Đáng chú ý là nhiều nước được tiêu thụ bởi các gia đình hơn là công 
+
+1 
+
+234 
+kiêng bao gồm tỷ lệ carbohydrate cao hơn đáng kể so với chế độ ăn trung bình hoặc chế độ 
+ăn uống lành mạnh.  
+
+Đáng chú ý là những người chơi thể thao đòi hỏi một chế độ ăn 
+
+P2S 
+
+767 
+so với những người đến Vương quốc Anh, và con số này vẫn như vậy trong suốt thời kỳ.  
+
+Đầu tiên, số lần ra nước ngoài của cư dân Vương quốc Anh cao hơn 
+
+C8E 
+
+1 
+
+758 
+
+1 
+
+C7E 
+
+Đầu tiên, tỷ lệ nam giới bị bắt lớn hơn nhiều so với nữ giới.  
+
+1 
+
+116 
+gọi nội hạt sử dụng điện thoại cố định đã đạt đến đỉnh điểm ở mức 90 tỷ phút.  
+
+Đến năm 1999/Trước năm 1999, lượng thời gian dành cho các cuộc 
+
+B6S 
+
+1 
+
+C1S 
+
+Đến năm 2000, lượng nước sử dụng cho nông nghiệp trên toàn cầu 
+709 
+đã tăng lên khoảng 3000km³, lượng nước sử dụng cho công nghiệp đã tăng lên chỉ dưới một 
+nửa lượng nước đó và lượng tiêu thụ sinh hoạt đã đạt khoảng 500km³.  
+
+1 
+
+263 
+17% và 28% lượng nước sử dụng ở San Diego và California tương ứng.  
+
+Điều này chiếm tới 69% lượng nước sử dụng toàn cầu, nhưng chỉ có 
+
+P5S 
+
+199 
+1 
+chiếm trên 95%.  
+
+B16E  Điều này đặc biệt đúng với trường mẫu giáo, nơi tỷ lệ nữ giáo viên 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+
+1 
+
+P9E 
+
+299 
+vượt qua doanh số bán đồ nội thất gia đình, mặc dù trò chơi điện tử vẫn chỉ chiếm 23% thị 
+trường.  
+
+Điều thú vị là doanh số bán trò chơi điện tử trực tuyến cuối cùng đã 
+
+1 
+
+B9S 
+
+Điều thú vị là, những người ở độ tuổi 65 đến 74 có khả năng phải 
+140 
+điều trị khẩn cấp/yêu cầu điều trị khẩn cấp ít hơn một nửa, với khoảng 30 người tham gia 
+trên 1000 dân trong cả hai tháng. 
+
+1 
+
+74 
+trong tổng số.  
+
+B1S 
+
+Đồng thời, tỷ lệ người chưa kết hôn và ly hôn tăng khoảng 10% 
+
+1 
+
+CS3 
+
+Dưới 7% các ngôi nhà dành cho một người ở có bốn phòng ngủ trở 
+
+729 
+lên. 
+
+1 
+
+C6S 
+
+754 
+Gần 1/5 số người cho rằng an toàn là mối quan tâm hàng đầu khi đi 
+lại của họ, trong khi lái xe quá khích và tắc nghẽn đường cao tốc là những vấn đề chính đối 
+với 17% và 14% công chúng đi du lịch.  
+
+1 
+
+108 
+trực tuyến mỗi ngày, so với khoảng 50% nhóm người mà chơi trò chơi trên máy tính này.  
+
+Gần 70% các cô gái từ 10 đến 15 tuổi tham gia vào cuộc trò chuyện 
+
+B5S 
+
+784 
+đôi so với tỷ lệ nam giới chọn thể loại chương trình này.  
+
+1 
+
+C10E  Gần 70% phụ nữ xem các chương trình thực tế, con số này gần gấp 
+
+827 
+dần 10-20% sau mỗi thập kỷ.  
+
+1 
+
+C15E  Gần 80% sinh viên dưới 26 tuổi học để lập nghiệp. Tỷ lệ này giảm 
+
+800 
+lý tài chính tốt đến mức nào. 
+
+1 
+
+C12E  Hai biểu đồ cho thấy câu trả lời của sinh viên đối với câu hỏi họ quản 
+
+720 
+1 
+trong năm 2011.  
+
+CS3 
+
+Hai biểu đồ cung cấp thông tin về các hộ gia đình độc thân ở Anh 
+
+293 
+trực tuyến trên các lĩnh vực bán lẻ khác nhau ở Canada trong những năm 2005 và 2010. 
+
+Hai biểu đồ hình tròn so sánh tỷ lệ phần trăm doanh số bán hàng 
+
+P9E 
+
+1 
+
+779 
+1 
+thức ăn nhanh.  
+
+C9E 
+
+Hầu hết các bữa ăn nhà hàng từ năm 2000 được ăn tại các nhà hàng 
+
+303 
+
+1 
+
+P10E  Hầu hết sự gia tăng dân số này xảy ra ở các nước đang phát triển.  
+
+1 
+
+45 
+đó, một mối tương quan mạnh mẽ (93,6%) được đề xuất.  
+
+L7S 
+
+Hơn nữa, các xu hướng cho cả hai mặt hàng rất giống nhau, và do 
+
+106 
+một giờ mỗi ngày và 10% thực hiện hoạt động này trong bốn giờ trở lên.  
+
+Hơn nữa, phần lớn các cậu bé chơi trên bảng điều khiển của họ hơn 
+
+B5S 
+
+1 
+
+850 
+chính phủ chi tiêu cho giáo dục và cơ sở y tế.  
+
+1 
+
+C17E  Kết luận, người dân UAE đang sống lâu hơn và khỏe mạnh hơn do 
+
+30 
+1 
+có hai chiếc ô tô.  
+
+L4S 
+
+Khoảng 44% hộ gia đình có một chiếc ô tô, nhưng chỉ có khoảng 7% 
+
+73 
+nhưng tỷ lệ này đã giảm xuống chỉ còn dưới 60% vào năm 2000.  
+
+Khoảng 70% người Mỹ trưởng thành đã kết hôn vào năm 1970, 
+
+B1S 
+
+1 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+
+1 
+
+31 
+chiếc ô tô trở lên, với khoảng 2% hộ gia đình thuộc nhóm này. 
+
+Không có gì lạ/Thật sự không phổ biến khi các gia đình sở hữu ba 
+
+L4S 
+
+123 
+tuyến trong năm đó.  
+
+B7S 
+
+1 
+
+Không có số liệu được đưa ra cho các trò chơi di động hoặc trực 
+
+1 
+
+C15E  Không rõ liệu hỗ trợ của nhà tuyển dụng có chỉ dành cho việc học 
+836 
+tập trung vào nghề nghiệp hay không, nhưng mức cao nhất dành cho những sinh viên chủ 
+yếu học tập vì mục đích nghề nghiệp.  
+
+1 
+
+254 
+vụ khách hàng của khách sạn là kém đã giảm từ 21% năm 2005 xuống chỉ còn 12% trong 
+năm 2010.  
+
+Liên quan đến phản hồi tiêu cực, tỷ lệ khách hàng người mà coi dịch 
+
+P4S 
+
+166 
+B12E  Mặc dù số lượng du khách đến Pháp tăng vọt lên tới gần 35.000 vào 
+năm 2005, nhưng đây là quốc gia ít di cư nhất vào cuối thời kỳ này, chỉ dưới 20.000 người.  
+
+1 
+
+164 
+
+1 
+
+B12E  Mặc dù vậy, con số này vẫn cao hơn so với ba quốc gia còn lại.  
+
+1 
+
+824 
+dụng để sưởi ấm các phòng và nước. 
+
+C14E  Mặt khác, biểu đồ hình tròn cho thấy 52,5% lượng điện được sử 
+
+1 
+
+81 
+năm học năm 1980 lên gần 11 năm vào năm 1990.  
+
+B2S 
+
+Mặt khác, các số liệu cho các nước công nghiệp đã tăng từ gần 9 
+
+177 
+thời kỳ.  
+
+1 
+
+B14E  Một điểm thú vị khác là sân bay LaGuardia là phổ biến nhất ở cuối 
+
+823 
+tĩnh hiển nhiên trong khoảng từ 3 giờ đến 10 giờ vào ban đêm là khoảng 15000 đơn vị. 
+
+C14E  Một sự gia tăng dần được chú ý để đạt đến đỉnh 20000, sau đó pha 
+
+1 
+
+820 
+trong khoảng từ 3 giờ đến 9 giờ là khoảng 40000 đơn vị một lần nữa.   
+
+C14E  Một sự tăng dần một lần nữa là rõ ràng để đạt đến mức đứng yên 
+
+1 
+
+707 
+nghiệp trên toàn thế giới. 
+
+C1S 
+
+1 
+
+Năm 1900, khoảng 500km³ nước đã được sử dụng bởi ngành nông 
+
+79 
+giáo dục và khoa học từ 1980 đến 1990.  
+
+B2S 
+
+1 
+
+Ngoài ra, các biểu đồ cho thấy sự gia tăng chung về sự tham gia vào 
+
+138 
+cấp ở tất cả sáu nhóm tuổi từ tháng 12 năm 2016 đến tháng 12 năm 2017.  
+
+Ngoài ra, có một sự gia tăng nhẹ về tỷ lệ tham gia chăm sóc khẩn 
+
+B9S 
+
+1 
+
+1 
+
+829 
+sự quan tâm tăng lên theo độ tuổi.  
+
+C15E  Ngược lại, biểu đồ đầu tiên cũng cho thấy nghiên cứu bắt nguồn từ 
+
+107 
+
+1 
+
+B5S 
+
+Ngược lại, các cô gái thích trò chuyện trực tuyến.  
+
+802 
+1 
+chính của họ tốt.  
+
+C12E  Nhìn chung, các phát hiện cho thấy rằng sinh viên thường quản lý tài 
+
+731 
+cao nhất cho hai sản phẩm. 
+
+CS4 
+
+1 
+
+Nhìn chung, cho đến nay, Vương quốc Anh chứng kiến mức chi tiêu 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6 
+
+1 
+
+C6S 
+
+Nhìn kỹ hơn vào biểu đồ thanh, chúng ta có thể thấy rằng 49% các 
+
+750 
+chuyến đi của người Mỹ trong năm 2009 là nhằm mục đích đi lại.  
+178 
+bắt đầu từ 26m vào năm 1995, và sau đó tăng đáng kể để đạt điểm cao nhất 47m vào năm 
+1997.  
+
+B14E  Nhìn vào chi tiết, số lượng khách du lịch tại sân bay John F. Kennedy 
+
+1 
+
+197 
+nhiêu phần trăm là nữ.  
+
+1 
+
+B16E  Nó cho thấy/thể hiện bao nhiêu phần trăm giáo viên là nam và bao 
+
+807 
+
+1 
+
+C13E  Nó cũng cho biết họ là sinh viên trong nước hay sinh viên quốc tế. 
+
+741 
+cao hơn tỷ lệ dân số này ngày càng nhỏ hơn.  
+
+C5S 
+
+1 
+
+Ở Ấn Độ, gần 14% dân số từ 5 tuổi trở xuống, và mỗi độ tuổi 5 tuổi 
+
+1 
+
+190 
+giảm xuống còn 5%.  
+
+B15E  Ở Bắc Ireland, tỷ lệ này giảm xuống 4,6% và tại Wales, tỷ lệ này đã 
+
+1 
+
+P9E 
+
+295 
+chiếm phần lớn doanh số bán hàng trực tuyến trong năm 2005, nhưng tỷ lệ này đã giảm 
+xuống 30% vào năm 2010.  
+
+Ở mức 35%, chúng ta có thể thấy rằng lĩnh vực điện tử và thiết bị 
+
+1 
+
+69 
+tỷ lệ người trưởng thành độc thân cao hơn vào năm 2000.  
+
+B1S 
+
+Phần lớn người Mỹ trưởng thành đã kết hôn trong cả hai năm, nhưng 
+
+724 
+1 
+năm 2011 là nữ.  
+
+CS3 
+
+Phần lớn những người từ 65 tuổi trở lên sống một mình ở Anh vào 
+
+774 
+trở lại vào năm 2000 lên 50%. 
+
+C9E 
+
+1 
+
+Phần trăm đó đã tăng hơn gấp đôi vào năm 1990, lên 35% và tăng 
+
+772 
+bữa ăn tại nhà hàng đã tăng đều dần.  
+
+C9E 
+
+1 
+
+Phần trăm ngân sách cho thực phẩm của gia đình chi trả cho các 
+
+288 
+chút so với phần trăm nam giới làm các nghề này.  
+
+P8E 
+
+1 
+
+Phần trăm phụ nữ làm các công việc phi tay chân khác lớn hơn một 
+
+1 
+216 
+quần áo.  
+
+B18E  Phụ nữ chiếm gần như toàn bộ thời gian dành cho việc giặt và ủi 
+
+725 
+84 tuổi và 76% trong số những người từ 85 tuổi trở lên.   
+
+CS3 
+
+1 
+
+Phụ nữ chiếm khoảng 72% trong số những người độc thân từ 75 đến 
+
+713 
+họ tham gia các môn thể thao trong khoảng thời gian sáu năm.  
+
+Rõ ràng là các bậc cha mẹ đã chi nhiều tiền hơn mỗi năm để con cái 
+
+C2S 
+
+1 
+
+1 
+
+B6S 
+
+111 
+nội hạt là loại phổ biến nhất, về mặt sử dụng tổng thể, trong suốt thời gian được hiển thị/thời 
+kỳ đã được thể hiện.  
+
+Rõ ràng là các cuộc gọi được thực hiện qua các đường dây cố định 
+
+821 
+đa trước khi lại sụp đổ xuống mức thấp hơn vào cuối ngày. 
+
+C14E  Sau đó, có một mức tăng mạnh trong giờ tiếp theo để đạt mức tối 
+
+1 
+
+117 
+nhưng sự gia tăng trong hai loại cuộc gọi điện thoại khác vẫn tiếp tục.  
+
+Sau đó, số liệu cho hạng mục này/con số cho thể loại này đã giảm, 
+
+B6S 
+
+1 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+183 
+
+1 
+
+B14E  Sau thời điểm này, xu hướng tăng đáng kể lên 42m vào năm 1998.  
+
+7 
+
+121 
+so với các nền tảng khác trong hầu hết các năm.  
+
+B7S 
+
+1 
+
+Số liệu bán hàng cho các trò chơi cầm tay cao là hơn ít nhất gấp đôi 
+
+1 
+
+5 
+và 5%.  
+
+L1S 
+
+Số liệu của Canada và Mexico là thấp hơn, lần lượt vào khoảng 10% 
+
+77 
+
+1 
+
+B2S 
+
+Số liệu được đưa ra cho năm 1980 và 1990.  
+
+1 
+
+788 
+C10E  Số lượng các chương trình được xem bởi những người từ 25 đến 44 
+tuổi thấp hơn đáng kể / đáng kể so với số lượng xem của những người từ 16 đến 24 tuổi và 
+những người trên 45 tuổi.  
+
+172 
+nghìn vào năm 1971 lên chỉ hơn 200 nghìn vào năm 1991.  
+
+B13E  Số lượng phụ nữ trong giáo dục toàn thời gian đã tăng dần từ 100 
+
+1 
+
+171 
+1,2 triệu trong giai đoạn hai mươi năm.  
+
+1 
+
+B13E  Số lượng sinh viên nữ bán thời gian tăng đáng kể từ 700 nghìn đến 
+
+1 
+
+49 
+năm 2007 đến 2008, với giá dầu đạt mức cao nhất khoảng 130 USD / thùng và chỉ số giá 
+lương thực tăng lên 220 điểm.  
+
+Sự gia tăng mạnh mẽ của cả hai giá hàng hóa đã được nhìn thấy từ 
+
+L7S 
+
+264 
+các số liệu cho sử dụng nước công nghiệp.  
+
+P5S 
+
+1 
+
+Sự khác biệt lớn như vậy không được nhìn thấy khi chúng ta so sánh 
+
+20 
+cấp điện, khí đốt và nước.  
+
+L3S 
+
+1 
+
+Sự sụt giảm đáng kể nhất được thấy/chứng kiến trong lĩnh vực cung 
+
+1 
+
+33 
+đình không có xe hơi, mà đã giảm dần trong giai đoạn 36 năm xuống còn khoảng 25% trong 
+năm 2007.  
+
+Sự thay đổi lớn nhất được nhìn thấy/được chứng kiến ở tỷ lệ hộ gia 
+
+L4S 
+
+753 
+1 
+khách du lịch Mỹ.  
+
+C6S 
+
+Theo biểu đồ hình tròn, giá cả là yếu tố quan trọng đối với 36% 
+
+105 
+ngày, chỉ 55% trò chuyện trực tuyến hàng ngày.  
+
+B5S 
+
+1 
+
+Theo biểu đồ, trong khi 85% bé trai chơi game trên máy tính mỗi 
+
+170 
+
+1 
+
+B13E  Theo như phụ nữ, con số tăng lên trong cả hai lĩnh vực giáo dục.  
+
+292 
+năng tiếp cận một số loại việc làm như nam giới.  
+
+P8E 
+
+1 
+
+Tóm lại, hai biểu đồ cho thấy rõ ràng rằng phụ nữ không có khả 
+
+1 
+
+174 
+B13E  Tóm lại, số lượng phụ nữ trong cả hai lĩnh vực tăng đáng kể trong 
+khi dường như rằng tỷ lệ nam giới tham gia giáo dục bán thời gian giảm một chút và đang 
+dao động.  
+
+212 
+gia đình trong khi phụ nữ dành ít hơn bốn giờ một chút. 
+
+1 
+
+B18E  Tổng cộng, đàn ông chỉ dành hơn hai tiếng rưỡi cho các công việc 
+
+277 
+
+1 
+
+P7E 
+
+Tổng nguồn thu vừa vượt quá các khoản chi.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 
+
+Tổng sản lượng điện tăng đáng kể từ 1980 đến 2000 ở cả Úc và 
+
+Tổng thu nhập là $ 53,561,580, chỉ vừa đủ để trang trải các khoản 
+
+1 
+
+226 
+Pháp.  
+284 
+1 
+chi $ 53,224,896. 
+
+P1S 
+
+P7E 
+
+1 
+
+124 
+tăng khoảng 4 tỷ đô la, nhưng con số cho các máy chơi game giảm 2 tỷ đô la.  
+
+Trong 3 năm tiếp theo, doanh số của các trò chơi video cầm tay đã 
+
+B7S 
+
+1 
+
+771 
+bữa ăn mà họ ăn tại nhà hàng.  
+
+C9E 
+
+Trong 30 năm qua, các gia đình trung bình đã tăng đáng kể số lượng 
+
+1 
+
+39 
+khoảng 2 tấn, nhưng con số của công ty A đã giảm khoảng 1 tấn.  
+
+Trong 5 năm sau đó, sản lượng chất thải của các công ty B và C tăng 
+
+L5S 
+
+96 
+Tokyo và London đã giảm khoảng 7%, trong khi giá nhà ở New York giảm xuống khoảng 5%.  
+
+Trong 5 năm sau năm 1989, chi phí của các ngôi nhà trung bình ở 
+
+B4S 
+
+1 
+
+47 
+trước khi tăng đều đặn giữa năm 2004 và 2007.  
+
+L7S 
+
+1 
+
+Trong bốn năm sau đó, cả hai giá vẫn duy trì tương đối ổn định, 
+
+115 
+đều đặn tăng lên dần dần.  
+
+B6S 
+
+1 
+
+Trong bốn năm sau đó, các số liệu cho cả ba loại cuộc gọi điện thoại 
+
+147 
+hai thành phần đứng giữa 6 và chỉ hơn 8%.  
+
+1 
+
+B10E  Trong bốn năm tiếp theo, các cấp độ trở nên giống nhau hơn, với cả 
+
+1 
+
+P9E 
+
+296 
+chọn mua thực phẩm và đồ uống trực tuyến, chúng ta có thể thấy rằng các giao dịch tăng từ 
+22% đến 32%, làm nó trở thành lĩnh vực bán lẻ có tỷ trọng tổng thể lớn nhất trên thị trường 
+trực tuyến.  
+
+Trong cùng khoảng thời gian 5 năm, khi ngày càng có nhiều người 
+
+728 
+phòng ngủ, trong khi nhà một phòng ngủ và ba phòng ngủ chiếm 28% và 29,8% tổng số.  
+
+Trong cùng năm đó, 35,4% hộ gia đình một người ở Anh có hai 
+
+CS3 
+
+1 
+
+184 
+khách du lịch  
+
+1 
+
+B14E  Trong hai năm qua/cuối cùng, nó duy trì ổn định ở mức 42 triệu 
+
+155 
+khoảng một nửa xuống còn 43 vào năm 2004.  
+
+1 
+
+B11E  Trong hai năm tiếp theo, số điểm của đội B giảm khá đáng kể, giảm 
+
+1 
+
+37 
+giảm trong giai đoạn 15 năm, lượng chất thải được sản xuất bởi công ty C/do công ty C sản 
+xuất tăng lên đáng kể.  
+
+Trong khi các công ty A và B thấy/chứng kiến sản lượng chất thải 
+
+L5S 
+
+1 
+
+251 
+Trong khi hầu hết khách của khách sạn đánh giá dịch vụ khách hàng 
+là đạt yêu cầu hoặc kém trong năm 2005, thì phần lớn rõ ràng mô tả dịch vụ khách sạn là tốt 
+hoặc xuất sắc trong năm 2010.  
+
+P4S 
+
+1 
+
+L3S 
+
+25 
+Trong khi khí mưa axit từ domestic sector và các ngành công nghiệp 
+khác giảm dần, ngành vận tải đã chứng kiến sự gia tăng nhẹ về khí thải, đạt mức cao nhất là 
+1 triệu tấn trong năm 2005.  
+
+1 
+
+227 
+những sự khác biệt lớn về nguồn nhiên liệu được sử dụng.  
+
+P1S 
+
+Trong khi tổng số của cả hai quốc gia là tương tự nhau, nhưng có 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9 
+
+1 
+
+P8E 
+
+289 
+Trong lao động chân tay, sự khác biệt lớn nhất giữa hai giới là việc 
+làm của lao động thủ công, trong đó nam giới chiếm 24% lực lượng lao động và nữ giới chỉ 
+chiếm 3%.  
+
+1 
+
+B11E  Trong năm cuối, đội B vẫn vượt lên trước/duy trì đứng đầu các đội 
+
+158 
+khác khi điểm của họ tăng trở lại 55, trong khi đội A và C thấy/chứng kiến điểm của họ giảm 
+xuống 8 và 5 tương ứng.  
+
+1 
+
+B5S 
+
+109 
+một giờ, trong khi hầu hết các cô gái trò chuyện trực tuyến làm như vậy trong hơn một giờ 
+và gần 10% trò chuyện trong bốn giờ trở lên.  
+
+Trong số các cô gái chơi trên máy chơi game, hầu hết họ chơi ít hơn 
+
+818 
+đơn vị điện vào lúc 3 giờ sáng.  
+
+1 
+
+C14E  Trong thời gian mùa đông, đường cong tăng dần để đạt được 40000 
+
+1 
+
+L5S 
+
+42 
+Trước 2015, sản lượng chất thải của công ty C đã tăng lên 10 tấn, 
+trong khi lượng chất thải tương ứng từ các công ty A và B đã giảm xuống còn 8 tấn và chỉ 
+còn 3 tấn.  
+
+48 
+60 đô la / thùng và giá thực phẩm đã tăng khoảng 50 điểm.  
+
+L7S 
+
+1 
+
+Trước năm 2007, giá dầu trung bình đã tăng hơn gấp đôi, lên tới gần 
+
+1 
+
+C16E  Từ biểu đồ, chúng ta có thể thấy rằng vào năm 1970, cá và khoai 
+
+840 
+tây chiên phổ biến gấp đôi so với bánh mì kẹp thịt, lúc đó pizza là thức ăn nhanh ít phổ biến 
+nhất.  
+
+1 
+
+816 
+C14E  Từ biểu đồ, rõ ràng là nhu cầu ở mức tối đa vào khoảng 2100 vào 
+mùa đông và tối thiểu là khoảng 400, gần như không đổi trong khoảng từ 1200 đến 2100 
+vào mùa đông.  
+
+794 
+2,5 tỷ người.   
+
+1 
+
+C11E  Từ năm 1800 đến năm 1950, dân số tăng chậm từ chỉ dưới 1 tỷ lên 
+
+1 
+
+304 
+hơn gấp đôi từ 4,5% lên 10%, trong khi tỷ lệ của châu Mỹ Latinh gần như tăng gấp ba trong 
+cùng thời kỳ.  
+
+P10E  Từ năm 1900 đến năm 2000, tỷ lệ người sống ở châu Phi đã tăng 
+
+82 
+viên ở các nước công nghiệp tăng gần gấp đôi lên khoảng 70 trên 1000 người.  
+
+Từ năm 1980 đến năm 1990, số lượng các nhà khoa học và kỹ thuật 
+
+B2S 
+
+1 
+
+98 
+12% so với mức trung bình năm 1989.  
+
+B4S 
+
+1 
+
+Từ năm 1996 đến 2002, giá nhà ở London đã tăng vọt lên khoảng 
+
+40 
+khoảng 3 tấn và công ty B đã giảm khoảng 7 tấn chất thải.  
+
+L5S 
+
+1 
+
+Từ năm 2005 đến 2015, công ty A đã cắt giảm sản lượng chất thải 
+
+1 
+
+200 
+giáo viên cũng là nữ.  
+
+B16E  Tương tự một phía là tình huống ở trường tiểu học, nơi hơn 90% 
+
+1 
+
+279 
+trình, chiếm gần như tất cả các khoản chi, ở mức 95,8%. 
+
+P7E 
+
+Tương tự, đối với các khoản chi, một hạng mục, dịch vụ chương 
+
+1 
+
+255 
+đã giảm từ 15% xuống chỉ còn 4% trong thời gian 5 năm.  
+
+P4S 
+
+Tương tự, tỷ lệ những người nghĩ rằng dịch vụ khách hàng rất kém 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+833 
+học vì lý do nghề nghiệp ở nhóm tuổi đó.  
+
+1 
+
+C15E  Tuy nhiên, 70% người trên 49 tuổi nghiên cứu vì sở thích so với 18% 
+
+10 
+
+809 
+từ năm 2010-2012.  
+
+1 
+
+C13E  Tuy nhiên, có sự tăng trưởng thống kê rõ ràng trong nhóm thứ hai 
+
+50 
+chỉ số giá lương thực đã giảm khoảng 80 điểm.  
+
+L7S 
+
+1 
+
+Tuy nhiên, đến đầu năm 2009, giá dầu đã giảm khoảng 90 đô la và 
+
+763 
+rượu nơi công cộng cao hơn. 
+
+C7E 
+
+1 
+
+Tuy nhiên, điều thú vị là phụ nữ có tỷ lệ bị bắt vì hành hung và uống 
+
+1 
+
+785 
+nhiều hơn các chương trình trò chơi cho thấy rằng các chương trình trò chơi thường ít phổ 
+biến hơn các chương trình thực tế. 
+
+C10E  Tuy nhiên, hầu hết các nhóm tuổi xem các chương trình thực tế 
+
+787 
+
+1 
+
+C10E  Tuy nhiên, mô hình này là khác nhau đối với các game show. 
+
+1 
+
+71 
+xuống còn 2 triệu vào năm 2000.  
+
+B1S 
+
+Tỷ lệ kết hôn vẫn duy trì ổn định vào năm 1980, nhưng đã giảm 
+
+75 
+
+1 
+
+B1S 
+
+Tỷ lệ người Mỹ góa chồng thấp hơn một chút vào năm 2000.  
+
+1 
+
+786 
+C10E  Tỷ lệ người xem chương trình thực tế tăng đều đặn từ độ tuổi 16 
+đến 45 với tỷ lệ người xem thấp nhất / nhỏ nhất, chỉ hơn 50% ở nhóm tuổi 16-24 và tỷ lệ 
+phần trăm cao nhất / lớn nhất / lớn nhất, là 68% trên 45 tuổi. 
+
+265 
+San Diego và trên toàn thế giới, trong khi con số ở California cao hơn 10%, ở mức 33%.  
+
+Tỷ lệ nước tương tự (23%) được sử dụng bởi ngành công nghiệp ở 
+
+P5S 
+
+1 
+
+151 
+1 
+với ngành Dịch vụ.  
+
+B10E  Vào cuối giai đoạn này, tỷ lệ phần trăm GDP từ CNTT gần gấp đôi so 
+
+146 
+4% GDP, trong khi CNTT vượt quá mức này, chỉ hơn 6%.  
+
+B10E  Vào đầu giai đoạn này, vào năm 1992, Công nghiệp Dịch vụ chiếm 
+
+1 
+
+710 
+1 
+5,2 triệu.  
+
+C1S 
+
+Vào năm 2000, dân số của Brazil và Congo lần lượt là 176 triệu và 
+
+1 
+
+46 
+chỉ số giá lương thực chỉ đứng ở mức dưới 90 điểm.  
+
+L7S 
+
+Vào năm 2000, giá dầu trung bình toàn cầu là gần 25 đô la/thùng và 
+
+1 
+
+745 
+dưới 2% là nam giới.  
+
+C5S 
+
+Ví dụ, gần 3% người Pháp từ 70 đến 75 tuổi là phụ nữ, trong khi chỉ 
+
+1 
+727 
+một mình. 
+
+CS3 
+
+Ví dụ, ở nhóm tuổi 35-49, nam giới chiếm gần 65% số người sống 
+
+815 
+hiện trong biểu đồ hình tròn.  
+
+1 
+
+C14E  Việc sử dụng điện trong một ngôi nhà ở Anh trung bình được thể 
+
+1 
+
+C16E  Việc tiêu thụ bánh mì kẹp thịt và bánh pizza đã tăng đều đặn trong 
+
+841 
+khoảng thời gian 20 năm đến năm 1990 trong khi tiêu thụ cá và khoai tây chiên đã giảm 
+trong cùng thời kỳ đó với mức độ phổ biến tăng nhẹ kể từ năm 1985. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+165 
+Kỳ dao động trong khoảng 20-25.000 người trong giai đoạn này.  
+
+B12E  Xấp xỉ 20.000 người di cư đến New Zealand mỗi năm, trong khi Hoa 
+
+1 
+
+11 
+
+744 
+kể so với nam giới trong mỗi nhóm từ 50 tuổi trở lên.  
+
+C5S 
+
+1 
+
+Xem xét kỹ hơn về giới tính, có một tỷ lệ phụ nữ Pháp cao hơn đáng 
+
+714 
+so với điền kinh và bơi lội.  
+
+C2S 
+
+1 
+
+Xét về số lượng trẻ em tham gia, bóng đá là phổ biến hơn đáng kể 
+
+262 
+thụ nước cho nông nghiệp. 
+
+P5S 
+
+1 
+
+Xu hướng ngược lại có thể được nhìn thấy khi chúng ta nhìn vào tiêu 
+
+TASK 2 
+
+NO 
+506 
+chủ và nhân viên có thể giảm xuống.  
+
+VIETNAMESE 
+Bằng cách ban hành một giới hạn về thu nhập, khoảng cách tiền lương giữa các ông 
+
+264 
+sự cân bằng tự nhiên của tất cả sự sống trên Trái Đất. 
+
+Bằng cách bảo vệ động vật hoang dã và môi trường sống của chúng, chúng ta duy trì 
+
+16 
+thành công nếu họ làm việc chăm chỉ để đạt điểm cao ở trường.  
+
+Bằng cách này, cả nam và nữ đều có cơ hội như nhau, và ứng viên biết rằng họ sẽ 
+
+121 
+con người về lịch sử, văn hóa, khoa học và nhiều khía cạnh khác của cuộc sống. 
+
+Bằng cách này, các bảo tàng có thể đóng một vai trò quan trọng trong việc giảng dạy 
+
+Bên cạnh ảnh hưởng của Internet, toàn cầu hóa đang làm cho thế giới nhỏ hơn và 
+
+588 
+khiến vấn đề này trở nên quá nhiều sự lựa chọn.  
+
+Bên cạnh đó, không ai có thể dự đoán những lĩnh vực tri thức nào sẽ hữu ích nhất 
+
+378 
+cho xã hội trong tương lai, và có thể là nhà tuyển dụng bắt đầu đánh giá cao các kỹ năng tư 
+duy sáng tạo hơn là các kỹ năng thực hành hoặc kỹ thuật.  
+
+Cá nhân tôi đồng ý với việc cấm thử nghiệm động vật cho các sản phẩm phi y tế, 
+
+83 
+nhưng tôi cảm thấy rằng có thể là một điều ác cần thiết, nơi các loại thuốc mới và thủ tục y 
+tế được xem xét.  
+
+421 
+
+Cá nhân tôi hoàn toàn không đồng ý với quan điểm này. 
+
+Chẳng hạn, cháu gái 10 tuổi của tôi dường như có một sở thích mới mỗi tháng, khi 
+
+598 
+nó tham gia với cơn sốt mới nhất quét qua trường tiểu học của mình.  
+
+454 
+chạm đến bởi sự phát triển công nghệ của thế giới phát triển.  
+
+Chẳng hạn, có những bộ tộc trong Rừng nhiệt đới Amazon, đã hoàn toàn không được 
+
+183 
+mô tả ở trên.  
+
+Có một số hành động mà chính phủ có thể thực hiện để giải quyết các vấn đề được 
+
+101 
+phí tiền bạc.  
+
+Có một số lý do tại sao bảo vệ các ngôn ngữ thiểu số có thể được coi là một sự lãng 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12 
+
+217 
+quốc gia, và theo tôi, giáo dục là quan trọng nhất trong tất cả. 
+
+Có một số yếu tố khác, ngoài nền kinh tế, có thể được sử dụng để đánh giá một 
+
+409 
+được sản xuất tại chính đất nước họ.  
+
+Có nhiều lý do khiến nhiều người thấy phim nước ngoài thú vị hơn những bộ phim 
+
+500 
+lương rất cao.  
+
+Có nhiều lý do tại sao có thể được coi là có lợi khi cho phép mọi người được trả 
+
+205 
+nặng không cần thiết đối với trẻ em.  
+
+Có nhiều lý do tại sao mọi người có thể tranh luận rằng bài tập về nhà là một gánh 
+
+408 
+đẩy làm phim địa phương bằng cách trợ cấp cho ngành công nghiệp này. 
+
+Có thể có một số lý do cho trường hợp này, và tôi tin rằng các chính phủ nên thúc 
+
+242 
+
+Có thể có một vài lý do cho việc này, và tôi coi đó là một xu hướng rất tích cực. 
+
+571 
+Có vẻ hợp lý rằng ưu tiên của bất kỳ công ty nào là phải trang trải chi phí hoạt động 
+của nó, chẳng hạn như tiền lương của nhân viên và các khoản thanh toán cho các tòa nhà và 
+các tiện ích.  
+
+585 
+nhạc, nhiều trong số đó là miễn phí.  
+
+Có vô số trang web cung cấp giải trí, tin tức, video, truyền hình theo yêu cầu và phát 
+
+392 
+hội cho những người trẻ tuổi tương tác và đặt câu hỏi. 
+
+Cuối cùng, các bộ phim giáo dục có thể mang tính thông tin, nhưng sẽ không có cơ 
+
+Cuối cùng, các chính phủ hoặc hội đồng địa phương có thể giảm tai nạn giao thông 
+
+239 
+bằng cách đầu tư vào phương tiện giao thông công cộng tốt hơn, điều đó có nghĩa là ít người 
+sẽ phải đi bằng xe hơi hơn. 
+
+567 
+những lợi thế và bất lợi của việc đưa ra một chính sách như vậy. 
+
+Để kết luận, giải pháp này đáng để xem xét để cải thiện tình hình hiện tại, nhưng có 
+
+77 
+người một loại bệnh để có thể đo lường hiệu quả của một loại thuốc mới.  
+
+Để lấy một ví dụ phổ biến của thực hành này, chuột thí nghiệm có thể được đưa vào 
+
+556 
+cũng giảm các vấn đề giao thông và ô nhiễm.  
+
+Điều này có nghĩa là họ sẽ bắt đầu sử dụng giao thông công cộng thay vào đó, do đó 
+
+565 
+có thể mua được.  
+
+Điều này có nghĩa là nó sẽ đánh vào những người có ít tiền hơn, trong khi người giàu 
+
+517 
+rác thải cho mọi người. 
+
+Do đó, hành vi cải thiện của chủ nhà có thể dẫn đến một môi trường sạch sẽ, không 
+
+Do đó, khi các cặp vợ chồng có con, họ có thể quyết định ai làm việc và ai ở nhà tùy 
+
+247 
+theo sở thích cá nhân của từng người bạn đời, hoặc dựa trên người bạn đời nào kiếm được 
+nhiều tiền nhất. 
+
+29 
+người dân địa phương đến thăm các di tích và tượng đài quan trọng.  
+
+Đôi khi người ta cho rằng khách du lịch từ nước ngoài nên được tính phí nhiều hơn 
+
+398 
+niên tự lựa chọn về người nào và khi nào kết hôn.  
+
+Đồng thời, "quy tắc" xung quanh các mối quan hệ đang bị xói mòn khi các vị thành 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13 
+
+151 
+
+Đúng là các công nghệ mới đã có ảnh hưởng đến giao tiếp giữa con người.  
+
+Đúng là các cựu tù nhân có thể trở thành những thành viên bình thường, có ích cho 
+
+Hai trong số các mối đe dọa lớn nhất đối với môi trường là ô nhiễm không khí và chất 
+
+381 
+xã hội.  
+
+191 
+thải.  
+
+Hạn chế chính của xu hướng đối với các khóa học đại học trực tuyến là có ít tương 
+
+435 
+tác trực tiếp hơn. 
+
+Hàng triệu người sẽ phải di dời do lũ lụt, đặc biệt là ở các quốc gia không có phương 
+
+494 
+tiện để bảo vệ các khu vực trũng thấp.  
+
+200 
+'ngân hàng' cho việc tái chế thủy tinh, nhựa và giấy trong bãi đậu xe của họ.  
+
+Hầu hết các siêu thị hiện nay cung cấp túi tái sử dụng cho người mua sắm cũng như 
+
+295 
+phép để họ trang trải những nhu cầu này và có một chất lượng cuộc sống hợp lý.  
+
+Hầu hết mọi người coi nó là một ưu tiên để ít nhất kiếm được một mức lương cho 
+
+31 
+vào du khách đến đất nước để xem những nơi như Lâu đài Windsor hoặc Nhà thờ Saint Paul.  
+
+Hãy lấy nước Anh làm ví dụ, ngành du lịch và nhiều công việc liên quan phụ thuộc 
+
+Hiện nay, sự khác biệt giữa lương bình thường và tiền lương hàng đầu là rất lớn, và 
+
+507 
+điều này có thể làm mất tinh thần những người lao động cảm thấy rằng tình cảnh này là 
+không công bằng.  
+
+72 
+
+Hiện tại, không ai bị buộc phải tình nguyện, và đây chắc chắn là hệ thống tốt nhất. 
+
+348 
+thông, và các đường phố và hệ thống giao thông công cộng thường quá đông đúc.  
+
+Hơn nữa, chất lượng không khí ở các thành phố thường kém, do ô nhiễm từ giao 
+
+Hơn nữa, công chúng có thể ảnh hưởng đến hành động của các chính phủ bằng cách 
+
+491 
+bỏ phiếu cho các chính trị gia đề nghị giải quyết biến đổi khí hậu, thay vì cho những người 
+muốn bỏ qua nó. 
+
+234 
+hơn, và rằng họ tuân thủ các quy tắc cẩn thận hơn. 
+
+Kết quả là, chúng tôi hy vọng rằng những người lái xe trở nên có kỷ luật và cảnh giác 
+
+349 
+
+Kết quả là, cuộc sống thành phố có thể không lành mạnh và căng thẳng. 
+
+266 
+
+Không nghi ngờ gì là đa số mọi người muốn được hạnh phúc trong cuộc sống của họ.  
+
+126 
+phương tiện học ngôn ngữ, hoặc đơn giản là một hình thức thụ hưởng.  
+
+Là trẻ em, chúng ta được dạy các bài hát của cha mẹ và giáo viên như là một 
+
+529 
+sử dụng như một phương án thay thế cho các sĩ quan cảnh sát tuần tra trên đường phố.  
+
+Lập luận thứ hai chống lại sự phổ biến của các camera quan sát là chúng đang được 
+
+210 
+trọng trong việc học của trẻ em.  
+
+Mặc dù các bình luận trên, tôi ủng hộ quan điểm rằng bài tập về nhà có vai trò quan 
+
+177 
+thực hiện các bước để giảm thiểu những vấn đề tiềm ẩn này. 
+
+Mặc dù chắc chắn sẽ có một số hậu quả tiêu cực của xu hướng này, xã hội có thể 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14 
+
+575 
+họ có vai trò rộng hơn trong xã hội.  
+
+Mặt khác, các công ty không nên chạy với mục đích duy nhất là tối đa hóa lợi nhuận; 
+
+80 
+không phải lúc nào cũng có sẵn.  
+
+Mặt khác, các phương án thay thế đáng tin cậy để thử nghiệm động vật có thể 
+
+228 
+của chúng ta an toàn hơn.  
+
+Mọi người có quan điểm khác nhau liên quan đến câu hỏi về cách làm cho con đường 
+
+330 
+của các nước họ. 
+
+Mọi người có quan điểm khác nhau về cách các chính phủ nên đo lường sự tiến bộ 
+
+369 
+gì họ có thể học tại trường đại học.  
+
+Mọi người có quan điểm khác nhau về mức độ lựa chọn của sinh viên đối với những 
+
+111 
+
+Mọi người có quan điểm khác nhau về vai trò và chức năng của bảo tàng.  
+
+Mối nguy hiểm đầu tiên và rõ ràng nhất là những đứa trẻ này sẽ trở thành những 
+
+545 
+người trưởng thành tự cho mình là những người ít quan tâm đến cảm xúc hoặc nhu cầu của 
+người khác.  
+
+186 
+người lớn làm việc nộp thuế.  
+
+Một biện pháp thứ hai cho chính phủ sẽ là khuyến khích nhập cư để tăng số lượng 
+
+Một cách công bằng, dường như chỉ có công bằng rằng đàn ông nên được tự do rời 
+250 
+bỏ công việc của mình để nhận trách nhiệm chăm sóc trẻ em nếu đây là điều họ muốn làm.  
+
+521 
+chẽ hơn cho các công ty sản xuất bao bì cho các sản phẩm gia dụng.  
+
+Một chiến thuật khác mà các chính phủ có thể sử dụng là tạo ra các quy định chặt 
+
+547 
+
+Một đặc điểm tiêu cực thứ hai ở những người như vậy có thể là sự bốc đồng.  
+
+Một giải pháp khả thi cho vấn đề này là đánh thuế nặng đối với người lái xe ô tô và 
+
+552 
+sử dụng số tiền này để làm cho giao thông công cộng tốt hơn.  
+
+Một kết quả có thể có của sự bình đẳng lớn hơn là tỷ lệ nghèo đói và tội phạm giảm 
+
+509 
+vì dân số nói chung sẽ trải nghiệm một mức sống được cải thiện. 
+
+557 
+dụng nhiều hơn nếu nó được cải thiện.  
+
+Một lợi ích khác là việc sử dụng nhiều phương tiện giao thông công cộng sẽ được sử 
+
+389 
+những người trẻ tuổi. 
+
+Một lựa chọn là cho nhân viên cảnh sát đến thăm trường học và nói chuyện với 
+
+354 
+Một lựa chọn thứ ba sẽ là phát triển các thị trấn và khu vực nông thôn, bằng cách di 
+chuyển công nghiệp và việc làm đến những vùng đó, để giảm áp lực lên các thành phố lớn. 
+
+391 
+Một lựa chọn thứ hai là để giáo viên nhà trường nói chuyện với học sinh của họ về tội 
+phạm, nhưng tôi nghi ngờ rằng học sinh sẽ thấy giáo viên là nguồn thông tin đáng tin cậy về 
+chủ đề này.  
+
+97 
+người trong lĩnh vực khác, và do đó họ nên kiếm tiền bằng cách bán tác phẩm của họ. 
+
+Một lý do khác cho ý kiến này là các nghệ sĩ làm một công việc như bất kỳ những 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15 
+
+412 
+Một lý do khác khiến những bộ phim lớn này rất thành công là họ thường mời những 
+diễn viên nam và nữ nổi tiếng nhất, và chúng được làm bởi những nhà sản xuất và đạo diễn 
+xuất sắc nhất.  
+
+461 
+ăn mừng.  
+
+Một mặt, các lễ hội tôn giáo và truyền thống chắc chắn đã trở thành thời gian cho sự 
+
+76 
+
+Một mặt, có những lập luận đạo đức rõ ràng chống lại thử nghiệm động vật.  
+
+113 
+
+Một mặt, có thể lập luận rằng vai trò chính của một bảo tàng là để giải trí.  
+
+Một số người cho rằng chúng ta không còn nhớ ý nghĩa ban đầu của lễ hội, và rằng 
+
+459 
+hầu hết chúng ta xem chúng như những cơ hội để vui chơi.  
+
+253 
+con người chúng ta không cần chúng.  
+
+Một số người cho rằng việc bỏ tiền vào bảo vệ động vật hoang dã là vô nghĩa bởi vì 
+
+420 
+cho các trường công lập thông qua các loại thuế.  
+
+Một số người tin rằng cha mẹ của trẻ em theo học trường tư không nên đóng góp 
+
+347 
+phạm và đói nghèo cao so với khu vực nông thôn.  
+
+Một vấn đề nữa là khu vực đô thị có xu hướng bị các vấn đề xã hội như tỷ lệ tội 
+
+Một ví dụ cá nhân về xu hướng này sẽ là việc tôi có lựa chọn chỉ bốn kênh truyền 
+
+587 
+hình khi còn nhỏ, trong khi tôi có quyền truy cập vào hàng ngàn bộ phim và loạt phim thông 
+qua các dịch vụ như Netflix.  
+
+282 
+
+Một ví dụ điển hình là Paris Hilton, người giàu có và nổi tiếng vì những lý do sai lầm.  
+
+Mục đích của bất kỳ triển lãm nào là để dạy cho du khách một điều gì đó mà trước 
+
+118 
+đây họ chưa biết. 
+
+Mục đích của những hình phạt này là để cho những người lái xe nguy hiểm thấy rằng 
+
+233 
+hành động của họ có những hậu quả tiêu cực.  
+
+532 
+
+Mục tiêu chính của giám sát video là để ngăn chặn tội phạm.  
+
+Nếu các chính phủ giúp đỡ với những chi phí này, họ sẽ thấy sự gia tăng việc làm 
+417 
+trong ngành công nghiệp điện ảnh, thu nhập từ việc bán phim và thậm chí có thể tăng số 
+lượng khách du lịch.  
+
+501 
+năng nhất trong lĩnh vực của họ để làm việc cho họ.  
+
+Nếu các công ty cung cấp các gói trả tiền cao, họ có thể thu hút những người tài 
+
+539 
+kỷ luật nhất định là cần thiết.  
+
+Nếu cha mẹ muốn nuôi dạy những đứa trẻ tôn trọng và cư xử tốt, tôi tin rằng một số 
+
+452 
+họ không biết những người hàng xóm gần nhất của họ. 
+
+Ngày nay hầu hết các ngôi làng của Anh đều có người đi làm, nhiều người trong số 
+
+Ngày nay, các tương tác qua email, điện thoại hoặc video gần cũng đã tốt như các 
+
+160 
+cuộc họp mặt đối mặt và nhiều người trong chúng ta được hưởng lợi từ những tương tác 
+này, trong bối cảnh công việc hoặc xã hội.  
+
+185 
+cuộc sống làm việc hiệu quả.  
+
+Ngày nay, những người ở độ tuổi này có xu hướng đủ khỏe mạnh để tiếp tục một 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16 
+
+Ngay từ đầu, tất cả chúng ta nên tự do quyết định cách chúng ta dành thời gian giải 
+
+480 
+trí của mình; miễn là chúng ta hiểu những rủi ro, tôi không tin rằng các chính trị gia nên 
+ngăn chúng ta khỏi tận hưởng chính mình.  
+
+21 
+công bằng khi cung cấp những khóa học đại học dựa vào giới tính.  
+
+Ngoài các mối quan tâm thực tế được trình bày ở trên, tôi cũng tin rằng sẽ không 
+
+572 
+nếu họ muốn tiếp tục thành công.  
+
+Ngoài những chi phí này, các công ty cũng cần đầu tư vào những cải tiến và đổi mới 
+
+564 
+
+Ngoài ra, loại thuế này có thể sẽ được đặt ở một mức cố định.  
+
+341 
+sức khỏe, sự thịnh vượng và hạnh phúc của cư dân của họ. 
+
+Ngoài ra, sự thành công của một quốc gia có thể được đo lường bằng cách nhìn vào 
+
+132 
+quốc gia.  
+
+Ngược lại, âm nhạc truyền thống thể hiện văn hóa, phong tục và lịch sử của một 
+
+Ngược lại, tôi tin rằng hầu hết mọi người sẽ cảm thấy có động lực hơn để làm việc 
+
+326 
+chăm chỉ và đạt được tiềm năng của họ nếu họ nghĩ rằng họ sống trong một xã hội công 
+bằng.  
+
+291 
+
+Nhiều người chọn công việc của họ dựa trên số tiền lương được đề ra.  
+
+Nhiều người quyết định khi còn nhỏ, những gì họ muốn làm khi trưởng thành, và 
+
+55 
+điều đó mang lại cho họ cảm giác hài lòng tuyệt vời để làm việc hướng tới mục tiêu của họ 
+và dần dần đạt được chúng.  
+
+Nhiều người tìm thấy điều này xâm phạm và cảm thấy rằng việc ghi lại các chuyển 
+
+528 
+động của họ là một hình thức kiểm soát nhà nước nhằm kiềm chế sự tự do cá nhân của họ.  
+
+Những biện pháp này sẽ đóng vai trò ngăn chặn và khuyến khích mọi người tuân thủ 
+
+516 
+luật tái chế.  
+
+Nhưng có lẽ sự khác biệt lớn nhất giữa các thế hệ có thể được nhìn thấy trong thái 
+
+399 
+độ của họ đối với vai trò giới tính.  
+
+439 
+nhóm mặt đối mặt mang lại. 
+
+Những người học này cũng có thể thiếu động lực và yếu tố cạnh tranh mà công việc 
+
+327 
+họ.  
+
+Những người không thực hiện cùng một nỗ lực sẽ biết rằng họ đã lãng phí cơ hội của 
+
+495 
+đến các thành phố lân cận hoặc có lẽ đến các quốc gia khác.  
+
+Những người này sẽ mất nhà cửa và công việc của họ, và họ sẽ bị buộc phải di cư 
+
+Những người ủng hộ việc sử dụng động vật trong nghiên cứu y học tin rằng một 
+
+81 
+lượng đau khổ nhất định trên một phần của chuột có thể được biện minh nếu cuộc sống của 
+con người được cứu.  
+
+225 
+Nó ảnh hưởng đến sức khỏe của con người theo nghĩa là các bác sĩ và y tá cần được 
+đào tạo, và các nhà khoa học cần được giáo dục đến mức cao nhất trước khi họ có thể thực 
+hiện nghiên cứu y học. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+17 
+
+428 
+lượng cao với cơ hội bình đẳng cho tất cả những người trẻ tuổi.  
+
+Nó có lợi cho tất cả các thành viên của xã hội để có một hệ thống giáo dục chất 
+
+519 
+của một chiến dịch tái chế.  
+
+Nó có thể hiệu quả hơn nếu các chính trị giáo dục, thay vì trừng phạt, tại trung tâm 
+
+Nó cũng ảnh hưởng đến nền kinh tế theo nghĩa là một lực lượng lao động được giáo 
+
+226 
+dục tốt sẽ cho phép nhiều công ty và ngành công nghiệp phát triển, dẫn đến giao dịch với 
+các quốc gia khác và gia tăng sự giàu có. 
+
+134 
+cách nhạc quốc gia này biến mất. 
+
+Nó sẽ là một điều đáng tiếc nếu nhạc pop trở nên quá nổi bật đến nỗi các phong 
+
+325 
+hoặc họ không được phép thất bại.  
+
+Nói cách khác, bình đẳng không có nghĩa là mọi người mất động lực để thành công, 
+
+181 
+lớn làm việc.  
+
+Nói cách khác, dân số già hóa sẽ có nghĩa là gánh nặng thuế lớn hơn đối với người 
+
+574 
+chính tốt. 
+
+Nói cách khác, một công ty chỉ có thể đóng góp tích cực cho xã hội nếu nó có tài 
+
+Ở cấp độ cá nhân, những người chọn sống một mình có thể trở nên độc lập và tự 
+
+359 
+chủ hơn những người sống chung với các thành viên trong gia đình.  
+
+Ở hầu hết các quốc gia, các gia đình đang trở nên nhỏ hơn và phân tán hơn, có 
+
+313 
+nghĩa là mọi người không thể trông cậy vào người thân nhiều như họ đã từng.  
+
+415 
+có cơ hội để chứng minh bản thân.  
+
+Ở mỗi quốc gia, có thể có những nhà làm phim tài năng nghiệp dư người mà chỉ cần 
+
+46 
+với những người trong cộng đồng của chúng ta, và nó thậm chí còn dễ dàng hơn để giúp đỡ.  
+
+Ở một số quốc gia, những vấn đề mà mọi người đối mặt nghiêm trọng hơn nhiều so 
+
+554 
+đáng chú ý.  
+
+Rõ ràng là việc áp thuế nặng đối với người lái xe ô tô có một số tác động tích cực 
+
+229 
+dụng cùng nhau để thúc đẩy thói quen lái xe tốt hơn. 
+
+Theo quan điểm của tôi, cả hình phạt và một loạt các biện pháp khác có thể được sử 
+
+414 
+phương về tài chính.  
+
+Theo quan điểm của tôi, các chính phủ nên hỗ trợ ngành công nghiệp điện ảnh địa 
+
+305 
+người trong quá khứ. 
+
+Theo quan điểm của tôi, cuộc sống hiện đại buộc chúng ta phải độc lập hơn những 
+
+Theo quan điểm của tôi, điều quan trọng là trẻ em phải phát triển một thói quen học 
+
+214 
+tập độc lập bởi vì điều này chuẩn bị cho chúng làm việc một mình như người lớn. 
+
+Theo tôi, âm nhạc truyền thống nên được đánh giá cao hơn âm nhạc quốc tế cái mà 
+
+130 
+đã trở nên phổ biến.  
+
+Theo tôi, bất cứ ai cũng có thể chụp những bức ảnh thú vị mà không cần biết quá 
+
+10 
+nhiều về kỹ thuật vận hành máy ảnh.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+18 
+
+344 
+cho người dân. 
+
+Theo tôi, các chính phủ có thể làm nhiều hơn nữa để cải thiện đời sống thành phố 
+
+427 
+các trường công lập.  
+
+Theo ý kiến của tôi, tất cả chúng ta đều vui lòng trả phần tiền của chúng ta hỗ trợ 
+
+383 
+người có thể nói từ kinh nghiệm.  
+
+Theo ý kiến của tôi, thanh thiếu niên có nhiều khả năng chấp nhận lời khuyên từ một 
+
+357 
+trên cùng 1 sự đo lường. 
+
+Theo ý kiến của tôi, xu hướng này có thể có cả những hậu quả tích cực và tiêu cực 
+
+119 
+cần được giải thích và điều này có thể được thực hiện theo nhiều cách khác nhau.  
+
+Thông thường điều này có nghĩa là lịch sử đằng sau các cuộc triển lãm của bảo tàng 
+
+Thứ hai, các chính trị gia có quyền cấm xe từ các trung tâm thành phố và thúc đẩy 
+
+352 
+việc sử dụng phương tiện giao thông công cộng sạch hơn, giúp giảm thiểu ô nhiễm không khí 
+và tắc nghẽn giao thông.  
+
+155 
+sinh viên và giáo viên.  
+
+Thứ hai, các dịch vụ như Skype tạo ra các khả năng mới cho các mối quan hệ giữa 
+
+145 
+
+Thứ nhất, bằng cấp được yêu cầu trong rất nhiều ngành nghề.  
+
+Thứ nhất, các ngành công nghiệp điện ảnh được thành lập ở một số quốc gia có 
+
+410 
+ngân sách khổng lồ cho cảnh hành động, hiệu ứng đặc biệt và quay cảnh ở những địa điểm 
+ngoạn mục.  
+
+70 
+buộc một nhóm người làm điều gì đó chống lại ý muốn của họ.  
+
+Thực tế, tôi cho rằng nó chống lại các giá trị của một xã hội tự do và công bằng khi 
+
+261 
+Thường thì chính sự bảo vệ môi trường sống tự nhiên đã đảm bảo sự sống còn của 
+động vật hoang dã, và hầu hết các nhà khoa học đồng ý rằng những sinh vật này cũng rất 
+quan trọng cho sự sống còn của con người.  
+
+Tiềm năng cho sự đau khổ của con người sẽ rất lớn, và có khả năng chúng ta sẽ 
+
+496 
+chứng kiến sự bùng phát của bệnh tật và nạn đói, cũng như tình trạng vô gia cư và nghèo 
+đói gia tăng. 
+
+Tôi cho rằng quyền bình đẳng và cơ hội không xung đột với sự tự do của mọi người 
+
+324 
+trong việc thành công hay thất bại.  
+
+260 
+
+Tôi cũng không đồng ý với ý tưởng bảo vệ động vật là một sự lãng phí tài nguyên.  
+
+605 
+
+Tôi cũng sẽ nói như vậy về nhiều sở thích khác, từ đọc sách đến bơi lội.  
+
+Tôi cũng thích ý tưởng rằng các doanh nghiệp có thể sử dụng một phần lợi nhuận 
+
+578 
+của họ để hỗ trợ các tổ chức từ thiện địa phương, các dự án môi trường hoặc các sáng kiến 
+giáo dục.  
+
+Tôi đồng ý một phần với sự khẳng định này; trong khi nó có thể đúng trong trường 
+
+447 
+hợp của một số xã hội,một số khác dường như không bị ảnh hưởng bởi công nghệ và thế giới 
+hiện đại. 
+
+319 
+này. 
+
+Tôi hoàn toàn đồng ý rằng mọi người có thể đạt được nhiều hơn trong loại xã hội 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+19 
+
+582 
+tố chính liên quan. 
+
+Tôi hoàn toàn đồng ý với điều này và tôi tin rằng Internet và toàn cầu hóa là hai yếu 
+
+382 
+thanh thiếu niên về kinh nghiệm của họ là cách tốt nhất để ngăn cản họ vi phạm pháp luật. 
+
+Tôi hoàn toàn đồng ý với ý tưởng cho phép những người như vậy nói chuyện với 
+
+47 
+càng nhiều người càng tốt.  
+
+Tôi không đồng ý với quan điểm này bởi vì tôi tin rằng chúng ta nên cố gắng giúp đỡ 
+
+483 
+trên mặt núi hoặc lướt trên bãi biển cô lập. 
+
+Tôi không thể tưởng tượng cảnh sát được kêu gọi để ngăn chặn mọi người nhảy dù 
+
+Tôi không tin rằng hành tinh Trái đất tồn tại chỉ vì lợi ích của con người, và không có 
+
+256 
+gì đặc biệt về thế kỷ này có nghĩa là chúng ta đột nhiên có quyền cho phép hoặc khuyến 
+khích sự tuyệt chủng của bất kỳ loài nào.  
+
+Tôi sẽ lập luận rằng sự phong phú của phương tiện truyền thông này dẫn đến sự 
+
+586 
+nhầm lẫn về phía người dùng trung bình, vì chúng ta phải đưa ra rất nhiều quyết định về nội 
+dung mà chúng ta tiếp cận/tiêu thụ.  
+
+12 
+đạt được mức độ hiệu suất cao hơn vì kết quả tốt hơn và cảm giác thành tích lớn hơn. 
+
+Tôi tin rằng nhiều sở thích mang đến cho chúng ta nhiều niềm vui hơn khi chúng ta 
+
+215 
+những lợi ích lớn hơn những hạn chế này trong dài hạn. 
+
+Tóm lại, bài tập về nhà chắc chắn có những hạn chế của nó, nhưng tôi tin rằng 
+
+202 
+trường. 
+
+Tóm lại, cả chính phủ và cá nhân đều phải đóng vai trò quan tâm bảo vệ đến môi 
+
+Trong hầu hết các cộng đồng có những người bị nghèo khó hoặc thiệt thòi theo một 
+
+49 
+cách nào đó.  
+
+267 
+Trong khi bản chất cá nhân của hạnh phúc gây khó khăn cho việc mô tả, dường như 
+có một số nhu cầu chung mà tất cả chúng ta đều chia sẻ về trải nghiệm hoặc đạt được hạnh 
+phúc. 
+
+137 
+cho rằng tốt hơn là nên đi học cao đẳng hoặc đại học. 
+
+Trong khi có 1 số lợi ích khi kiếm 1 công việc ngay sau khi kết thúc học ở trường, tôi 
+
+Trong khi tôi hướng tới quan điểm rằng thử nghiệm động vật là sai về mặt đạo đức, 
+
+75 
+tôi sẽ phải ủng hộ cho sự giới hạn số lượng thử nghiệm trên động vật cho sự phát triển của y 
+tế. 
+
+479 
+sai, và gần như không thể, để cấm các môn thể thao mạo hiểm.  
+
+Trong khi tôi ủng hộ các quy định và các biện pháp an toàn, tôi tin rằng nó có thể là 
+
+Trong khoảng một năm qua, cô đã bị ám ảnh bởi những khối Rubik, những con quay 
+
+599 
+fidget, mực và chất nhờn.  
+
+Trong một xã hội không có giáo dục miễn phí hoặc giáo dục đại học giá cả phải 
+
+322 
+chăng, chỉ có trẻ em và thanh thiếu niên từ các gia đình giàu có mới có cơ hội học tập tốt 
+nhất, và do đó họ sẽ chuẩn bị tốt hơn cho thị trường việc làm.  
+
+Trong ngắn hạn, có khả năng chúng ta sẽ thấy tình trạng thất nghiệp gia tăng khi 
+
+615 
+người lao động trong các ngành công nghiệp khác nhau được thay thế bằng máy móc hoặc 
+chương trình phần mềm. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+20 
+
+Trong những năm gần đây nó đã trở nên quá bình thường khi nhiều người hơn sống 
+
+356 
+1 mình, đặc biệt là ở các thành phố lớn trong thế giới phát triển.  
+
+Trong quá khứ, ví dụ, mọi người được khuyên nên học nghề và tìm một công việc an 
+
+397 
+toàn cho cuộc sống, nhưng ngày nay nhân viên mong đợi sự đa dạng và phong phú hơn 
+nhiều từ sự nghiệp của họ. 
+
+Trong thế giới toàn cầu hoá của chúng ta, thanh niên có thể mong đợi tiếp xúc với 
+404 
+mọi người từ nhiều nguồn gốc khác nhau, và điều quan trọng hơn bao giờ hết để đối xử với 
+người khác một cách tôn trọng.  
+
+25 
+không thực tế để nhắm đến tỷ lệ ngang nhau.  
+
+Trong thực tế, nhiều khóa học phổ biến hơn với giới tính này so với giới khác, và sẽ 
+
+617 
+Trong trung hạn, nếu các công nghệ thông minh dần dần lấy đi công việc của con 
+người, chúng ta có thể thấy rằng mọi người trở nên gượng gạo và mất ý thức về mục đích 
+trong cuộc sống.  
+
+14 
+Trong trường hợp của tôi, tôi mất khoảng hai năm trước khi tôi trở thành người có 
+năng lực trong hoạt động này, nhưng bây giờ tôi đã tận hưởng nó nhiều hơn tôi đã làm khi 
+tôi bắt đầu.  
+
+Từ quan điểm cá nhân, có thể lập luận rằng các khóa học này cung cấp nhiều cơ hội 
+
+373 
+việc làm, tiến bộ nghề nghiệp, lương cao hơn, và do đó cải thiện chất lượng cuộc sống cho 
+những sinh viên người mà lựa chọn những môn đó. 
+
+361 
+
+Từ quan điểm kinh tế, xu hướng sống một mình sẽ dẫn đến nhu cầu nhà ở lớn hơn.  
+
+Tương tự, sinh viên học trực tuyến không tiếp xúc trực tiếp với nhau, và điều này có 
+
+437 
+thể có tác động tiêu cực đến hỗ trợ trang lứa, thảo luận và trao đổi ý tưởng.  
+
+Tuy nhiên, các lập luận cá nhân và kinh tế được đưa ra ở trên có thể được xem xét 
+
+363 
+từ góc đối diện. 
+
+Tuy nhiên, có nhiều cách khác nhau mà chính phủ có thể thực hiện để giải quyết 
+
+350 
+những vấn đề này. 
+
+ừ góc độ giáo dục, các trò chơi này khuyến khích trí tưởng tượng và sáng tạo, cũng 
+
+168 
+như tập trung, tư duy logic và giải quyết vấn đề, tất cả đều là những kỹ năng hữu ích bên 
+ngoài ngữ cảnh chơi game. 
+
+Vấn đề chính đối với bất cứ ai hy vọng di cư đến một thành phố lớn là chi phí sinh 
+
+345 
+hoạt có thể cao hơn nhiều so với ở một thị trấn nhỏ hoặc một ngôi làng nhỏ.  
+
+179 
+kiện nhận trợ cấp. 
+
+Vấn đề chính là rõ ràng sẽ có nhiều người ở tuổi nghỉ hưu, những người sẽ đủ điều 
+
+504 
+có nghĩa là trả lương cao sẽ mang lại lợi ích cho tất cả mọi người. 
+
+Về lý thuyết, điều này sẽ dẫn đến một nền kinh tế phát triển mạnh và tăng thu thuế, 
+
+Về mặt xã hội, bằng cách buộc mọi người chọn các môn học đại học cụ thể, chính 
+
+374 
+phủ có thể đảm bảo rằng bất kỳ khoảng cách về kiến thức và kỹ năng nào trong nền kinh tế 
+đều được bao quát.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+21 
+
+141 
+tập, có thể tiến bộ nhanh hơn.  
+
+Về sự nghiệp của họ, những người trẻ quyết định tìm việc làm, thay vì tiếp tục học 
+
+213 
+chúng về các khái niệm được giảng dạy bởi giáo viên ở trường.  
+
+Ví dụ, bằng cách thực hiện các bài tập toán ở nhà, học sinh củng cố sự hiểu biết của 
+
+Ví dụ, bất cứ ai muốn thử nhảy dù sẽ cần phải đăng ký các bài học với một câu lạc 
+
+477 
+bộ và người mới bắt đầu không được phép nhảy một mình; họ phải được đi kèm bởi một 
+chuyên gia có kinh nghiệm. 
+
+422 
+lầm. 
+
+Vì nhiều lý do, việc giảm thuế cho các gia đình trả tiền cho giáo dục tư nhân là sai 
+
+Vì những lý do nêu trên, có vẻ như với tôi rằng sinh viên có nhiều khả năng thành 
+
+150 
+công trong sự nghiệp của họ hơn nếu họ tiếp tục học nhiều hơn trình độ trung cấp tại 
+trường. 
+
+138 
+lý do.  
+
+Việc chọn bắt đầu làm việc ngay sau khi kết thúc việc học ở trường hấp dẫn vì nhiều 
+
+413 
+nếu so sánh với phim nước ngoài. 
+
+Việc sản xuất phim chất lượng kém và kinh phí eo hẹp ở nhiều nước bị ảnh hưởng 
+
+203 
+tập về nhà. 
+
+Ý kiến của mọi người khác nhau về việc học sinh nên hay không nên được giao bài 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+22 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

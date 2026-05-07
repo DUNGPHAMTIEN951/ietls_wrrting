@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3. Sự Suy Giảm | IELTS Task 1 Mastery</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* 3D Flashcard Logic */
+        .perspective-1000 { perspective: 1000px; }
+        .flashcard-inner {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+        .flashcard.flipped .flashcard-inner {
+            transform: rotateY(180deg);
+        }
+        .flashcard-front, .flashcard-back {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .flashcard-back {
+            transform: rotateY(180deg);
+        }
+
+        /* Zebra Striping */
+        .zebra-table tr:nth-child(even) {
+            background-color: #fff1f2; /* Light rose for decrease */
+        }
+        
+        /* Smooth Transitions */
+        .hover-card {
+            transition: all 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom SVG arrows coloring */
+        .trend-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body class="bg-[#ffffff] text-slate-800 antialiased min-h-screen">
+
+    <div class="max-w-4xl mx-auto px-6 py-12 lg:py-20">
+        
+        <!-- HEADER -->
+        <header class="mb-12 flex items-center justify-between">
+            <div class="space-y-2">
+                <div class="flex items-center gap-3 text-rose-600 font-bold text-xs uppercase tracking-[0.2em]">
+                    <i data-lucide="layers" class="w-4 h-4"></i> Nhóm A: Từ vựng & Cụm từ
+                </div>
+                <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight flex items-center gap-4">
+                    A3. Sự Suy Giảm (Decrease)
+                    <i data-lucide="trending-down" class="w-10 h-10 text-rose-500"></i>
+                </h1>
+                <p class="text-slate-500 text-lg font-medium">Bí kíp mô tả xu hướng đi xuống chuyên nghiệp cho Band 8.5.</p>
+            </div>
+            <div class="flex gap-2">
+                 <a href="task1_a2_sharp_increase.html" class="p-3 bg-slate-50 rounded-2xl text-slate-400 hover:text-blue-500 hover:bg-blue-50 transition-all">
+                    <i data-lucide="arrow-left" class="w-6 h-6"></i>
+                </a>
+                <a href="task1_index_menu.html" class="p-3 bg-slate-50 rounded-2xl text-slate-400 hover:text-blue-500 hover:bg-blue-50 transition-all">
+                    <i data-lucide="grid" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- QUICK TIPS -->
+        <section class="mb-16">
+            <div class="bg-rose-50 border-l-4 border-rose-500 p-8 rounded-2xl relative overflow-hidden group">
+                <div class="absolute -right-8 -top-8 w-32 h-32 bg-rose-500/5 rounded-full blur-3xl group-hover:bg-rose-500/10 transition-all"></div>
+                <div class="flex gap-6">
+                    <div class="shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-rose-600 shadow-sm">
+                        <i data-lucide="target" class="w-6 h-6"></i>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="font-black text-rose-900 uppercase text-xs tracking-widest">Mẹo Vàng Band 8.5</h3>
+                        <ul class="space-y-2 text-rose-800 text-sm font-medium leading-relaxed">
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-400 mt-1">•</span> 
+                                <strong class="underline decoration-rose-300">Phân biệt:</strong> "Decline" thường dùng cho xu hướng dài hạn, "Dip" dùng cho sự giảm nhẹ mang tính tạm thời.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-400 mt-1">•</span> 
+                                Đa dạng hóa: "witness a decline" hoặc "experience a downward trend" thay vì chỉ dùng động từ.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-rose-400 mt-1">•</span> 
+                                Đừng quên giới từ: <span class="bg-white/50 px-1 rounded italic">fall to</span> (mức cuối), <span class="bg-white/50 px-1 rounded italic">fall by</span> (khoảng chênh).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN TABLE -->
+        <section class="mb-20">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="w-8 h-8 rounded-lg bg-rose-100 flex items-center justify-center text-rose-600">
+                    <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </span>
+                <h2 class="text-xl font-black text-slate-900 uppercase tracking-tighter">Từ vựng & Cấu trúc Mô tả Suy Giảm</h2>
+            </div>
+            
+            <div class="overflow-hidden border border-slate-100 rounded-[2rem] shadow-sm">
+                <table class="w-full text-left border-collapse zebra-table">
+                    <thead>
+                        <tr class="bg-rose-50/50">
+                            <th class="p-5 text-[10px] font-black uppercase text-rose-400 tracking-[0.2em] w-1/3">Động từ / Danh từ</th>
+                            <th class="p-5 text-[10px] font-black uppercase text-rose-400 tracking-[0.2em]">Ý nghĩa & Sắc thái</th>
+                            <th class="p-5 text-[10px] font-black uppercase text-rose-400 tracking-[0.2em]">Ví dụ Band 8.0+</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-700">
+                        <tr>
+                            <td class="p-5">
+                                <div class="font-bold text-slate-900">Fall / Decrease / Drop</div>
+                                <div class="text-[10px] text-rose-500 font-black uppercase mt-1">General Terms</div>
+                            </td>
+                            <td class="p-5 font-medium">Sử dụng cho hầu hết các tình huống giảm phổ thông.</td>
+                            <td class="p-5 italic">"The production of steel <span class="text-rose-600 font-bold">dropped</span> to 100 tons."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5">
+                                <div class="font-bold text-slate-900">Decline <span class="trend-icon text-rose-500"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></span></div>
+                                <div class="text-[10px] text-blue-500 font-black uppercase mt-1">Steady & Long-term</div>
+                            </td>
+                            <td class="p-5 font-medium">Nhấn mạnh sự sụt giảm dần dần nhưng liên tục qua nhiều năm.</td>
+                            <td class="p-5 italic">"There was a <span class="text-blue-600 font-bold">steady decline</span> in birth rates over the decade."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5">
+                                <div class="font-bold text-slate-900">Dip / Slump <span class="trend-icon text-amber-500"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div>
+                                <div class="text-[10px] text-amber-600 font-black uppercase mt-1">Small / Temporary</div>
+                            </td>
+                            <td class="p-5 font-medium">"Dip" là giảm nhẹ rồi tăng lại. "Slump" là sụt giảm đột ngột do tác động ngoại cảnh.</td>
+                            <td class="p-5 italic">"Sales <span class="text-amber-600 font-bold">dipped</span> slightly in the second quarter."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5">
+                                <div class="font-bold text-slate-900">Experience a downward trend</div>
+                                <div class="text-[10px] text-fuchsia-500 font-black uppercase mt-1">High-end Structure</div>
+                            </td>
+                            <td class="p-5 font-medium">Sử dụng danh từ "trend" để bao quát toàn bộ quá trình đi xuống.</td>
+                            <td class="p-5 italic">"Unemployment rates <span class="text-fuchsia-600 font-bold">experienced a marginal downward trend</span>."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5">
+                                <div class="font-bold text-slate-900">Reduced / Diminished</div>
+                                <div class="text-[10px] text-emerald-500 font-black uppercase mt-1">Passive / Precision</div>
+                            </td>
+                            <td class="p-5 font-medium">Dùng trong các câu bị động hoặc khi muốn nhấn mạnh kết quả của sự giảm.</td>
+                            <td class="p-5 italic">"Carbon emissions were <span class="text-emerald-600 font-bold">diminished</span> by nearly 20%."</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- EXAMPLES CARDS -->
+        <section class="mb-24">
+            <div class="flex items-center gap-3 mb-8">
+                 <span class="w-8 h-8 rounded-lg bg-rose-100 flex items-center justify-center text-rose-600 font-black text-xs">8.5</span>
+                 <h2 class="text-xl font-black text-slate-900 uppercase tracking-tighter">Bài mẫu & Phân tích cấu trúc</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 bg-white border border-slate-100 rounded-3xl hover-card shadow-sm">
+                    <div class="text-[10px] font-black text-rose-500 uppercase tracking-[0.2em] mb-4">SỰ SUY GIẢM LIÊN TỤC</div>
+                    <p class="text-lg font-bold text-slate-800 leading-snug">"The figure for coal usage <span class="text-rose-600 underline decoration-rose-200">witnessed a gradual decline</span>, falling to a low of 5% by the end of the period."</p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-rose-50 text-rose-600 text-[10px] font-black rounded-lg">WITNESSED A DECLINE</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-400 text-[10px] font-black rounded-lg">FALLING TO A LOW OF</span>
+                    </div>
+                </div>
+                <div class="p-8 bg-white border border-slate-100 rounded-3xl hover-card shadow-sm">
+                    <div class="text-[10px] font-black text-indigo-400 uppercase tracking-[0.2em] mb-4">CẤU TRÚC DANH TỪ</div>
+                    <p class="text-lg font-bold text-slate-800 leading-snug">"There was a <span class="text-indigo-600 underline decoration-indigo-200">marginal dip</span> in the number of participants, which was followed by a era of stability."</p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-black rounded-lg">MARGINAL DIP</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-400 text-[10px] font-black rounded-lg">RELATIVE CLAUSE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FLASHCARDS SECTION -->
+        <section class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Vòng Lặp Ôn Tập (3D Flashcards)</h2>
+                <p class="text-slate-500 mt-2 font-medium italic">Click để xem đáp án các từ vựng Band 8.5 cho phần Suy Giảm.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center" id="flashcard-grid">
+                
+                <!-- Card 1 -->
+                <div class="flashcard w-full max-w-[280px] h-64 perspective-1000 group cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center">
+                        <div class="flashcard-front bg-slate-50 border-2 border-dashed border-slate-200 rounded-[2.5rem] p-8 flex flex-col items-center justify-center">
+                            <span class="text-[10px] font-black text-rose-400 uppercase tracking-widest mb-4">Từ vựng</span>
+                            <h3 class="text-xl font-black text-slate-800 italic">"Giảm nhẹ rồi tăng lại ngay"</h3>
+                            <p class="text-slate-400 text-[10px] mt-6 flex items-center gap-2 italic">Chạm để lật... <i data-lucide="refresh-cw" class="w-3 h-3"></i></p>
+                        </div>
+                        <div class="flashcard-back bg-rose-600 rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-white shadow-xl shadow-rose-500/20">
+                            <span class="text-[10px] font-black text-white/50 uppercase tracking-widest mb-4">Đáp án</span>
+                            <h3 class="text-2xl font-black mb-2 tracking-tight">Dip</h3>
+                            <p class="text-[10px] font-bold opacity-70">Example: A slight dip in 2010.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flashcard w-full max-w-[280px] h-64 perspective-1000 group cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center">
+                        <div class="flashcard-front bg-slate-50 border-2 border-dashed border-slate-200 rounded-[2.5rem] p-8 flex flex-col items-center justify-center">
+                             <span class="text-[10px] font-black text-blue-400 uppercase tracking-widest mb-4">Cấu trúc</span>
+                            <h3 class="text-xl font-black text-slate-800 italic">"Chứng kiến một sự suy giảm"</h3>
+                            <p class="text-slate-400 text-[10px] mt-6 flex items-center gap-2 italic">Chạm để lật... <i data-lucide="refresh-cw" class="w-3 h-3"></i></p>
+                        </div>
+                        <div class="flashcard-back bg-blue-600 rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-white shadow-xl shadow-blue-500/20">
+                            <span class="text-[10px] font-black text-white/50 uppercase tracking-widest mb-4">Đáp án</span>
+                            <h3 class="text-base font-black mb-2 tracking-tight">Witnessed / Saw a decline</h3>
+                            <p class="text-[10px] font-bold opacity-70">Sử dụng cho Band 7.5+.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flashcard w-full max-w-[280px] h-64 perspective-1000 group cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center">
+                        <div class="flashcard-front bg-slate-50 border-2 border-dashed border-slate-200 rounded-[2.5rem] p-8 flex flex-col items-center justify-center">
+                             <span class="text-[10px] font-black text-indigo-400 uppercase tracking-widest mb-4">Giới từ</span>
+                            <h3 class="text-lg font-black text-slate-800 italic">"Giảm xuống tới mức..."</h3>
+                            <p class="text-slate-400 text-[10px] mt-6 flex items-center gap-2 italic">Chạm để lật... <i data-lucide="refresh-cw" class="w-3 h-3"></i></p>
+                        </div>
+                        <div class="flashcard-back bg-indigo-600 rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-white shadow-xl shadow-indigo-500/20">
+                            <span class="text-[10px] font-black text-white/50 uppercase tracking-widest mb-4">Đáp án</span>
+                            <h3 class="text-lg font-black mb-2 tracking-tight">Drop TO + number</h3>
+                            <p class="text-[10px] font-bold opacity-70">Example: Dropped to 20%.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flashcard w-full max-w-[280px] h-64 perspective-1000 group cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center">
+                        <div class="flashcard-front bg-slate-50 border-2 border-dashed border-slate-200 rounded-[2.5rem] p-8 flex flex-col items-center justify-center">
+                             <span class="text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-4">Sắc thái</span>
+                            <h3 class="text-xl font-black text-slate-800 italic">"Giảm nhẹ, không đáng kể"</h3>
+                            <p class="text-slate-400 text-[10px] mt-6 flex items-center gap-2 italic">Chạm để lật... <i data-lucide="refresh-cw" class="w-3 h-3"></i></p>
+                        </div>
+                        <div class="flashcard-back bg-emerald-600 rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-white shadow-xl shadow-emerald-500/20">
+                            <span class="text-[10px] font-black text-white/50 uppercase tracking-widest mb-4">Đáp án</span>
+                            <h3 class="text-2xl font-black mb-2 tracking-tight">Marginal / Slight</h3>
+                            <p class="text-[10px] font-bold opacity-70">Dùng: A marginal decrease.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flashcard w-full max-w-[280px] h-64 perspective-1000 group cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center">
+                        <div class="flashcard-front bg-slate-50 border-2 border-dashed border-slate-200 rounded-[2.5rem] p-8 flex flex-col items-center justify-center">
+                             <span class="text-[10px] font-black text-amber-400 uppercase tracking-widest mb-4">Xu hướng</span>
+                            <h3 class="text-xl font-black text-slate-800 italic">"Ghi nhận xu hướng đi xuống"</h3>
+                            <p class="text-slate-400 text-[10px] mt-6 flex items-center gap-2 italic">Chạm để lật... <i data-lucide="refresh-cw" class="w-3 h-3"></i></p>
+                        </div>
+                        <div class="flashcard-back bg-amber-500 rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-white shadow-xl shadow-amber-500/20">
+                            <span class="text-[10px] font-black text-white/50 uppercase tracking-widest mb-4">Đáp án</span>
+                            <h3 class="text-lg font-black mb-2 tracking-tight">Experience a downward trend</h3>
+                            <p class="text-[10px] font-bold opacity-70">Cấu trúc ăn điểm Lexical Resource.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NEXT STEP -->
+        <section class="text-center pt-8 border-t border-slate-100">
+            <p class="text-slate-400 text-sm font-bold uppercase tracking-widest mb-6">Bạn đã sẵn sàng cho những cú rơi tự do?</p>
+            <a href="task1_a4_sharp_decrease.html" class="inline-flex items-center gap-4 px-12 py-5 bg-slate-900 text-white rounded-[2rem] font-black text-lg hover:bg-rose-600 hover:shadow-2xl hover:shadow-rose-500/30 transition-all group">
+                Học phần tiếp theo: A4. Suy Giảm Mạnh
+                <i data-lucide="arrow-right" class="w-6 h-6 group-hover:translate-x-2 transition-transform"></i>
+            </a>
+        </section>
+
+    </div>
+
+    <!-- INITIALIZATION -->
+    <script src="../../js/theory_loader.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

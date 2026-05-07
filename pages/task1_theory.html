@@ -1,164 +1,580 @@
 <!DOCTYPE html>
 <html lang="vi" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://unpkg.com https://cdn.jsdelivr.net; img-src 'self' data:;">
     <title>Task 1 Mastery | IELTS Writing Platform</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    
+
     <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
-        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
-        .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); }
-        
+        :root {
+            --sidebar-width: 280px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
         .sidebar-item.active {
-            background: rgba(59, 130, 246, 0.1);
-            border-right: 3px solid #3b82f6;
+            background: #eff6ff;
             color: #2563eb;
             font-weight: 600;
+            box-shadow: inset 4px 0 0 -1px #2563eb;
         }
-        
+
+        .dark .sidebar-item.active {
+            background: #1e293b;
+            color: #60a5fa;
+            box-shadow: inset 4px 0 0 -1px #60a5fa;
+        }
+
         .tab-btn.active {
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
             background: white;
             color: #2563eb;
+            box-shadow: 0 4px 12px -2px rgba(37, 99, 235, 0.15);
         }
+
         .dark .tab-btn.active {
             background: #1e293b;
             color: #60a5fa;
         }
 
-        /* Flashcard 3D */
+        /* Flashcard 3D - Advanced */
+        .perspective-2000 {
+            perspective: 2000px;
+        }
+
         .flashcard-inner {
-            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
             transform-style: preserve-3d;
         }
+
         .flashcard.flipped .flashcard-inner {
             transform: rotateY(180deg);
         }
+
         .flashcard-face {
             backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
         }
+
         .flashcard-back {
             transform: rotateY(180deg);
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* Visual-Linkage Hover Effect */
+        .chart-highlight {
+            filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.6));
+            stroke-width: 4px;
         }
-        .animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+
+        .text-highlight {
+            background: rgba(219, 234, 254, 0.7);
+            border-radius: 4px;
+            padding: 0 4px;
+            border-bottom: 2px solid #3b82f6;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .dark .text-highlight {
+            background: rgba(30, 41, 59, 0.7);
+            border-bottom-color: #60a5fa;
+        }
+
+        /* Animation */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-up {
+            animation: slideInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Glassmorphism */
+        .glass-premium {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass-premium {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Comparison Table & Callouts (Notion-style) */
+        .callout {
+            display: flex;
+            gap: 1rem;
+            padding: 1.25rem;
+            border-radius: 1.25rem;
+            margin: 1.5rem 0;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .callout:hover {
+            transform: translateX(4px);
+        }
+
+        .callout-tip {
+            background: #fefce8;
+            border-color: #fef08a;
+            color: #854d0e;
+        }
+
+        .callout-error {
+            background: #fef2f2;
+            border-color: #fecaca;
+            color: #991b1b;
+        }
+
+        .dark .callout-tip {
+            background: rgba(254, 252, 232, 0.05);
+            border-color: rgba(254, 240, 138, 0.2);
+            color: #fde047;
+        }
+
+        .dark .callout-error {
+            background: rgba(254, 242, 242, 0.05);
+            border-color: rgba(254, 202, 202, 0.2);
+            color: #f87171;
+        }
+
+        /* Learning Blocks */
+        .learning-block {
+            background: white;
+            border-radius: 2rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 10px 40px -10px rgba(0, 0, 0, 0.02);
+            border: 1px solid #f1f5f9;
+            margin-bottom: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .dark .learning-block {
+            background: #0f172a;
+            border-color: #1e293b;
+            box-shadow: none;
+        }
+
+        .learning-block:hover {
+            box-shadow: 0 20px 50px -12px rgba(37, 99, 235, 0.08);
+            border-color: #e2e8f0;
+        }
+
+        /* Labels to Badges */
+        .lbl {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .lbl-verb {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+
+        .lbl-noun {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+
+        /* Comparison Table & Badges */
+        .comp-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            border: 1px solid #f1f5f9;
+            margin: 1.5rem 0;
+            background: white;
+        }
+
+        .dark .comp-table {
+            border-color: #1e293b;
+            background: transparent;
+        }
+
+        .comp-table th {
+            background: #f8fafc;
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748b;
+        }
+
+        .comp-table td {
+            padding: 1rem;
+            border-top: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+            vertical-align: middle;
+            transition: all 0.2s;
+        }
+
+        .dark .comp-table th {
+            background: #0f172a;
+            color: #94a3b8;
+        }
+
+        .dark .comp-table td {
+            border-top-color: #1e293b;
+        }
+
+        .comp-table tr:nth-child(even) {
+            background: #f8fafc/30;
+        }
+
+        .dark .comp-table tr:nth-child(even) {
+            background: rgba(30, 41, 59, 0.2);
+        }
+
+        .comp-table tr:hover td {
+            background: #f1f5f9/50;
+        }
+
+        .dark .comp-table tr:hover td {
+            background: rgba(30, 41, 59, 0.4);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.5rem;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .badge-up {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge-down {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .dark .badge-up {
+            background: rgba(16, 185, 129, 0.2);
+            color: #6ee7b7;
+        }
+
+        .dark .badge-down {
+            background: rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+        }
     </style>
 </head>
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased font-['Inter']">
+
+<body
+    class="bg-slate-50 dark:bg-[#0a0f1d] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased font-['Inter']">
 
     <!-- Navbar -->
-    <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
-        <div class="flex items-center gap-3">
-            <!-- Breadcrumb -->
-            <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-blue-500 transition-colors text-sm font-medium">
-                <i data-lucide="home" class="w-4 h-4"></i>
-                <span class="hidden sm:inline">Hub</span>
+    <nav class="sticky top-0 z-50 glass-premium px-4 md:px-8 py-3 shadow-sm border-b flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <a href="../index.html"
+                class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all text-slate-500 hover:text-blue-500">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
             </a>
-            <span class="text-slate-300 text-sm">/</span>
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                    <i data-lucide="bar-chart-2" class="text-white w-4 h-4"></i>
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
+                    <i data-lucide="graduation-cap" class="text-white w-6 h-6"></i>
                 </div>
                 <div>
-                    <h1 class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Task 1 Mastery</h1>
-                    <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Theory & Practice Hub</p>
+                    <h1 class="font-bold text-lg leading-tight tracking-tight text-slate-800 dark:text-white">IELTS
+                        Mastery</h1>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                        <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Writing Task 1 Theory
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <nav class="hidden lg:flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
-            <button onclick="switchTab('theory')" data-tab="theory" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg transition-all active">Lý thuyết</button>
-            <button onclick="switchTab('flashcards')" data-tab="flashcards" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg transition-all">Flashcards</button>
-            <button onclick="switchTab('practice')" data-tab="practice" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg transition-all">Luyện tập</button>
+        <nav
+            class="hidden lg:flex items-center gap-2 bg-slate-100/50 dark:bg-slate-800/50 p-1.5 rounded-2xl border border-slate-200 dark:border-slate-700">
+            <button onclick="switchTab('theory')" data-tab="theory"
+                class="tab-btn px-6 py-2 text-sm font-semibold rounded-xl transition-all active">Lý thuyết</button>
+            <button onclick="switchTab('flashcards')" data-tab="flashcards"
+                class="tab-btn px-6 py-2 text-sm font-semibold rounded-xl transition-all">Flashcards</button>
+            <button onclick="switchTab('practice')" data-tab="practice"
+                class="tab-btn px-6 py-2 text-sm font-semibold rounded-xl transition-all">Luyện tập</button>
         </nav>
 
-        <div class="flex items-center gap-3">
-            <div id="stats-badge" class="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold border border-amber-200 dark:border-amber-800">
-                <i data-lucide="zap" class="w-3.5 h-3.5 fill-current"></i>
-                <span id="streak-val">5 Days</span>
+        <div class="flex items-center gap-4">
+            <div id="global-progress-nav"
+                class="hidden sm:flex items-center gap-3 px-4 py-2 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div class="flex flex-col items-end">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter leading-none">Hoàn
+                        thành</span>
+                    <span id="progress-percent" class="text-sm font-black text-blue-600">0%</span>
+                </div>
+                <div class="w-24 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div id="progress-bar-fill"
+                        class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-1000"
+                        style="width: 0%"></div>
+                </div>
             </div>
-            <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-                <i data-lucide="moon" class="w-5 h-5"></i>
+            <button onclick="toggleDarkMode()"
+                class="p-3 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition-all text-slate-600 dark:text-slate-300">
+                <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
             </button>
         </div>
     </nav>
 
-    <div class="flex flex-1 overflow-hidden">
-        
-        <!-- SIDEBAR: THEORY NAVIGATION -->
-        <aside id="sidebar" class="w-72 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hidden md:flex flex-col shrink-0 overflow-y-auto custom-scrollbar">
-            <div class="p-4 sticky top-0 bg-white dark:bg-slate-900 z-10 border-b border-slate-100 dark:border-slate-800">
-                <div class="relative">
-                    <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4"></i>
-                    <input type="text" id="sidebar-search" placeholder="Tìm kiến thức..." class="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+    <div class="flex flex-1 overflow-hidden relative">
+
+        <!-- SIDEBAR -->
+        <aside id="sidebar"
+            class="w-72 border-r border-slate-200/60 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl hidden md:flex flex-col shrink-0 overflow-y-auto custom-scrollbar">
+            <div class="p-5 sticky top-0 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md z-10 space-y-4">
+                <div class="relative group">
+                    <i data-lucide="search"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4 group-focus-within:text-blue-500 transition-colors"></i>
+                    <input type="text" id="sidebar-search" placeholder="Tìm kiến thức..."
+                        class="w-full pl-11 pr-4 py-3 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl text-sm focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400">
+                </div>
+
+                <div class="flex items-center justify-between px-2">
+                    <span class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Danh sách bài
+                        học</span>
+                    <i data-lucide="layers" class="w-3.5 h-3.5 text-slate-400"></i>
                 </div>
             </div>
-            <nav id="theory-menu" class="p-2 space-y-1">
+
+            <nav id="theory-menu" class="p-3 space-y-4">
                 <!-- Populated by JS -->
-                <div class="flex justify-center p-8">
-                    <i data-lucide="loader-2" class="w-6 h-6 animate-spin text-blue-500"></i>
+                <div class="flex justify-center p-12">
+                    <div class="w-8 h-8 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
                 </div>
             </nav>
         </aside>
 
         <!-- MAIN VIEWPORT -->
-        <main class="flex-1 overflow-y-auto custom-scrollbar relative px-4 py-8 sm:px-6 lg:px-10 bg-slate-50 dark:bg-slate-950">
-            
+        <main
+            class="flex-1 overflow-y-auto custom-scrollbar relative px-4 py-8 sm:px-8 lg:px-12 bg-slate-50 dark:bg-[#0a0f1d]">
+
             <!-- VIEW: THEORY -->
-            <div id="view-theory" class="max-w-4xl mx-auto space-y-8 animate-fade-in">
+            <div id="view-theory" class="max-w-4xl mx-auto space-y-10 animate-slide-up">
                 <div id="theory-container">
-                    <div class="glass dark:glass-dark rounded-2xl p-12 text-center">
-                        <div class="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-3xl flex items-center justify-center mx-auto mb-6 text-blue-600 dark:text-blue-400">
-                            <i data-lucide="book-open" class="w-10 h-10"></i>
+                    <div
+                        class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-16 text-center shadow-2xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 relative overflow-hidden">
+                        <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl"></div>
+
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-[2rem] flex items-center justify-center mx-auto mb-8 shadow-inner">
+                            <i data-lucide="compass" class="w-12 h-12 text-blue-600 dark:text-blue-400"></i>
                         </div>
-                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white mb-2">Chọn một bài học từ Sidebar</h2>
-                        <p class="text-slate-500 dark:text-slate-400 max-w-sm mx-auto">Tất cả từ vựng, cụm từ và cấu trúc câu Task 1 được hệ thống hóa tại đây để bạn dễ dàng tra cứu.</p>
+                        <h2 class="text-3xl font-black text-slate-800 dark:text-white mb-4 tracking-tight">Cùng Chinh
+                            Phục Task 1!</h2>
+                        <p class="text-slate-500 dark:text-slate-400 max-w-sm mx-auto text-lg leading-relaxed mb-8">Hệ
+                            thống hóa toàn bộ kiến thức, từ vựng và cấu trúc câu đắt giá nhất cho Writing Task 1.</p>
+
+                        <div class="flex justify-center gap-4">
+                            <div
+                                class="px-6 py-3 bg-blue-50 dark:bg-blue-900/20 rounded-2xl text-blue-700 dark:text-blue-400 text-sm font-bold border border-blue-100 dark:border-blue-800">
+                                <span class="block text-[10px] uppercase tracking-widest opacity-60">Tổng bài học</span>
+                                <span id="total-lessons-badge">--</span> Bài học
+                            </div>
+                            <div
+                                class="px-6 py-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-2xl text-emerald-700 dark:text-emerald-400 text-sm font-bold border border-emerald-100 dark:border-emerald-800">
+                                <span class="block text-[10px] uppercase tracking-widest opacity-60">Đã hoàn
+                                    thành</span>
+                                <span id="completed-lessons-badge">0</span> Bài học
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- VIEW: FLASHCARDS -->
-            <div id="view-flashcards" class="hidden max-w-6xl mx-auto animate-fade-in">
-                <div class="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-                    <div>
-                        <h2 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Từ vựng (3D)</h2>
-                        <p class="text-slate-500 dark:text-slate-400 mt-1">Ghi nhớ nhanh các cụm từ đắt giá qua thẻ 3D.</p>
+            <div id="view-flashcards" class="hidden max-w-6xl mx-auto animate-slide-up pb-20">
+                <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div class="space-y-2">
+                        <div
+                            class="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-[0.2em]">
+                            <i data-lucide="zap" class="w-4 h-4 fill-current"></i>
+                            <span>Học qua thẻ 3D</span>
+                        </div>
+                        <h2 class="text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
+                            Flashcards Tiếng Anh</h2>
+                        <p class="text-slate-500 dark:text-slate-400 font-medium">Lật thẻ để ghi nhớ, đánh giá để theo
+                            dõi tiến độ của bạn.</p>
                     </div>
-                    <div class="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-x-auto" id="fc-tabs">
-                        <!-- Populated by JS -->
+
+                    <div class="flex flex-col gap-3 min-w-[300px]">
+                        <div class="flex justify-between text-xs font-bold text-slate-400 px-1">
+                            <span id="fc-progress-text">Thẻ hiện tại: 0/0</span>
+                            <span id="fc-completion-val">0%</span>
+                        </div>
+                        <div
+                            class="h-3 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden border border-white dark:border-slate-700 shadow-inner">
+                            <div id="fc-progress-bar"
+                                class="h-full bg-gradient-to-r from-emerald-400 to-emerald-600 transition-all duration-500 shadow-[0_0_12px_rgba(16,185,129,0.3)]"
+                                style="width: 0%"></div>
+                        </div>
                     </div>
                 </div>
-                <div id="flashcard-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                <!-- Tabs for Categories -->
+                <div class="flex gap-2 p-1.5 bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 overflow-x-auto mb-10 no-scrollbar items-center shadow-sm"
+                    id="fc-tabs">
                     <!-- Populated by JS -->
+                </div>
+
+                <div id="flashcard-grid" class="flex flex-col items-center justify-center min-h-[400px]">
+                    <!-- Single Hero Card Layout -->
+                    <div id="current-hero-card" class="w-full max-w-2xl relative perspective-2000">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div class="mt-12 flex items-center gap-8">
+                        <button onclick="prevCard()"
+                            class="p-4 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-xl hover:-translate-x-1 transition-all text-slate-400 hover:text-blue-500">
+                            <i data-lucide="arrow-left-circle" class="w-8 h-8"></i>
+                        </button>
+                        <div class="flex items-center gap-3">
+                            <button onclick="evaluateCard('red')"
+                                class="px-6 py-4 bg-rose-50 hover:bg-rose-100 dark:bg-rose-900/20 dark:hover:bg-rose-900/40 text-rose-600 dark:text-rose-400 rounded-3xl font-black text-sm transition-all flex flex-col items-center border border-rose-100 dark:border-rose-800">
+                                <i data-lucide="frown" class="w-6 h-6 mb-1"></i>
+                                Chưa thuộc
+                            </button>
+                            <button onclick="evaluateCard('yellow')"
+                                class="px-6 py-4 bg-amber-50 hover:bg-amber-100 dark:bg-amber-900/20 dark:hover:bg-amber-900/40 text-amber-600 dark:text-amber-400 rounded-3xl font-black text-sm transition-all flex flex-col items-center border border-amber-100 dark:border-amber-800">
+                                <i data-lucide="meh" class="w-6 h-6 mb-1"></i>
+                                Tạm ổn
+                            </button>
+                            <button onclick="evaluateCard('green')"
+                                class="px-6 py-4 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/20 dark:hover:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 rounded-3xl font-black text-sm transition-all flex flex-col items-center border border-emerald-100 dark:border-emerald-800">
+                                <i data-lucide="smile" class="w-6 h-6 mb-1"></i>
+                                Đã thuộc
+                            </button>
+                        </div>
+                        <button onclick="nextCard()"
+                            class="p-4 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-xl hover:translate-x-1 transition-all text-slate-400 hover:text-blue-500">
+                            <i data-lucide="arrow-right-circle" class="w-8 h-8"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <!-- VIEW: PRACTICE -->
-            <div id="view-practice" class="hidden max-w-4xl mx-auto animate-fade-in">
-                 <div class="mb-8">
-                    <h2 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Luyện dịch câu</h2>
-                    <p class="text-slate-500 dark:text-slate-400 mt-1">Áp dụng ngay các cấu trúc vừa học vào việc dịch câu thực tế.</p>
+            <div id="view-practice" class="hidden max-w-4xl mx-auto animate-slide-up pb-20">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                    <div class="space-y-1">
+                        <div
+                            class="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-black text-[10px] uppercase tracking-widest mb-2">
+                            <i data-lucide="edit-3" class="w-4 h-4 fill-current"></i>
+                            <span>Thực hành dịch câu</span>
+                        </div>
+                        <h2 class="text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-none">Luyện
+                            tập Task 1</h2>
+                        <p class="text-slate-500 dark:text-slate-400 font-medium">Luyện dịch hàng trăm câu bài tập được
+                            trích xuất từ lý thuyết.</p>
+                    </div>
+
+                    <div
+                        class="bg-blue-600 dark:bg-blue-900/50 rounded-3xl p-6 text-white shadow-xl shadow-blue-500/20 flex items-center gap-4 border border-blue-400/20">
+                        <div class="p-3 bg-white/20 rounded-2xl backdrop-blur-md">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-black uppercase tracking-tighter opacity-70">Tiến độ luyện tập
+                            </p>
+                            <h4 class="text-xl font-black" id="practice-progress-val">0/0</h4>
+                        </div>
+                    </div>
                 </div>
-                <div id="translation-grid" class="space-y-6">
+
+                <div class="w-full flex flex-wrap gap-2 p-1.5 bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 overflow-x-auto mb-10 no-scrollbar items-center shadow-sm"
+                    id="practice-tabs">
+                    <button onclick="setPracticeCategory('all')" id="ptab-all"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400">Tất
+                        cả</button>
+                    <button onclick="setPracticeCategory('Introduction')" id="ptab-Introduction"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Mở
+                        bài</button>
+                    <button onclick="setPracticeCategory('Overview')" id="ptab-Overview"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Tổng
+                        quan</button>
+                    <button onclick="setPracticeCategory('Trends')" id="ptab-Trends"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Xu
+                        hướng</button>
+                    <button onclick="setPracticeCategory('Process')" id="ptab-Process"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Quy
+                        trình</button>
+                    <button onclick="setPracticeCategory('Maps')" id="ptab-Maps"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Bản
+                        đồ</button>
+                    <button onclick="setPracticeCategory('Table')" id="ptab-Table"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Bảng
+                        biểu</button>
+                    <button onclick="setPracticeCategory('Multiple')" id="ptab-Multiple"
+                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Kết
+                        hợp</button>
+                    <div class="flex-grow"></div>
+                    <button onclick="window._shuffledTranslations = null; renderTranslations();"
+                        class="p-2 text-slate-400 hover:text-blue-500 transition-colors" title="Trộn lại câu hỏi">
+                        <i data-lucide="shuffle" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <div id="translation-grid" class="w-full space-y-6">
                     <!-- Populated by JS -->
                 </div>
+
+                <div id="pagination-container" class="mt-12 flex justify-center items-center py-4 w-full"></div>
             </div>
 
         </main>
@@ -170,7 +586,7 @@
     <script src="../data/task1_flashcards.js"></script>
     <script src="../data/task1_translations.js"></script>
     <script src="../assets/js/utils.js"></script>
-    
+
     <script>
         // DOM Elements
         const views = {
@@ -184,23 +600,162 @@
         const flashcardGrid = document.getElementById('flashcard-grid');
         const translationGrid = document.getElementById('translation-grid');
 
-        // State
+        // State & Tracking
         let currentTab = 'theory';
+        let progress = JSON.parse(localStorage.getItem('task1_progress') || '{"lessons": [], "flashcards": {}, "practice": []}');
+        let currentFlashcards = [];
+        let curFcIndex = 0;
 
-        // Initialization
+        let currentPracticeCategory = 'all';
+        let itemsPerPage = 5;
+        let currentPracticePage = 1;
+
+        // --- CORE INITIALIZATION ---
         function init() {
             lucide.createIcons();
             renderMenu();
             renderTranslations();
-            
-            // Check URL hash for direct navigation
+            updateGlobalProgress();
+
             const hash = window.location.hash.slice(1);
             if (['theory', 'flashcards', 'practice'].includes(hash)) {
                 switchTab(hash);
             }
         }
 
-        // Tab Switching
+        // --- PROGRESS TRACKING ---
+        function saveProgress() {
+            localStorage.setItem('task1_progress', JSON.stringify(progress));
+            updateGlobalProgress();
+        }
+
+        function updateGlobalProgress() {
+            const totalItems = TASK1_THEORY_MENU.reduce((acc, section) => acc + section.sub.length, 0);
+            const completedItems = progress.lessons.length;
+            const percent = totalItems > 0 ? Math.round((completedItems / totalItems) * 100) : 0;
+
+            document.getElementById('progress-percent').innerText = `${percent}%`;
+            document.getElementById('progress-bar-fill').style.width = `${percent}%`;
+            document.getElementById('completed-lessons-badge').innerText = completedItems;
+            document.getElementById('total-lessons-badge').innerText = totalItems;
+        }
+
+        function markLessonComplete(id) {
+            if (!progress.lessons.includes(id)) {
+                progress.lessons.push(id);
+                saveProgress();
+                renderMenu(); // Refresh checkmarks
+            }
+        }
+
+        // --- THEORY ENHANCER ---
+        const TheoryEnhancer = {
+            enhance: function (content) {
+                if (!content) return "";
+
+                // 1. Process labels into styled badges
+                let html = content.replace(/<strong class='inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded mt-2 text-sm uppercase'>(.*?)<\/strong>/gi, (match, label) => {
+                    const lClass = label.toLowerCase().trim();
+                    return `<span class="lbl lbl-${lClass}">${label}</span>`;
+                });
+
+                // 2. Convert Legacy HTML Callouts
+                html = html.replace(/<div class='bg-blue-50 border-l-4 border-blue-500 p-4 my-4 font-mono text-sm overflow-x-auto'>(.*?)<\/div>/g, (match, p1) => {
+                    const isTip = p1.toLowerCase().includes('tip') || p1.toLowerCase().includes('lưu ý') || p1.toLowerCase().include('1.');
+                    return `
+                        <div class="callout ${isTip ? 'callout-tip' : 'callout-error'}">
+                            <i data-lucide="${isTip ? 'lightbulb' : 'alert-circle'}" class="w-6 h-6 shrink-0"></i>
+                            <div class="text-sm font-medium leading-relaxed">${p1}</div>
+                        </div>
+                    `;
+                });
+
+                // 3. Mini Trend Icons for keyword tracking
+                const trendMap = {
+                    'rise': 'up', 'increase': 'up', 'grow': 'up', 'climb': 'up', 'soar': 'up', 'rocket': 'up', 'peak': 'up',
+                    'fall': 'down', 'decrease': 'down', 'drop': 'down', 'decline': 'down', 'plummet': 'down', 'plunge': 'down', 'bottom': 'down'
+                };
+
+                Object.keys(trendMap).forEach(word => {
+                    const regex = new RegExp(`\\b(${word})\\b`, 'gi');
+                    html = html.replace(regex, (match) => {
+                        const dir = trendMap[word.toLowerCase()];
+                        const color = dir === 'up' ? 'text-emerald-500' : 'text-rose-500';
+                        return `<span class="inline-flex items-center gap-1 font-bold ${color}">${match}${this.getMiniTrendSVG(dir)}</span>`;
+                    });
+                });
+
+                // 4. Advanced Table Conversion (Detect sequences like VERB list, NOUN list)
+                // This is a bit specialized for TASK1_THEORY_CONTENT structure
+                if (html.includes('lbl-verb') && html.includes('lbl-noun')) {
+                    const sections = html.split(/<span class="lbl /);
+                    let tableHTML = `<table class="comp-table"><thead><tr><th>Category</th><th>Word / Structure</th></tr></thead><tbody>`;
+                    let hasTableData = false;
+
+                    html = sections.map((part, i) => {
+                        if (i === 0 && !part.trim()) return "";
+                        const prefix = i === 0 ? "" : '<span class="lbl ';
+                        const fullPart = prefix + part;
+
+                        // If part contains a label and a list of paragraphs, we can cardify it or table-ify it
+                        // Let's stick to cardifying (Learning Blocks) as the main structure, 
+                        // but make the lists inside look like zebra-striped items.
+                        const items = part.split(/<p/);
+                        const processedItems = items.map((item, idx) => {
+                            if (idx === 0) return item;
+                            const zebraClass = idx % 2 === 0 ? 'bg-slate-50/50 dark:bg-slate-800/10' : '';
+                            return `<div class="p-3 ${zebraClass} rounded-lg flex items-center justify-between group">
+                                <p ${item}
+                                <i data-lucide="chevron-right" class="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all text-slate-300"></i>
+                            </div>`;
+                        }).join('');
+
+                        return `<div class="learning-block animate-fade-in" style="animation-delay: ${i * 100}ms">${prefix}${processedItems}</div>`;
+                    }).join('');
+                } else {
+                    html = `<div class="learning-block">${html}</div>`;
+                }
+
+                return html;
+            },
+
+            getMiniTrendSVG: function (direction) {
+                if (direction === 'up') {
+                    return `<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>`;
+                }
+                return `<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>`;
+            },
+            showHighlightFeedback: function (el) {
+                confetti({
+                    particleCount: 20,
+                    spread: 50,
+                    origin: { x: el.getBoundingClientRect().left / window.innerWidth, y: el.getBoundingClientRect().top / window.innerHeight },
+                    colors: ['#3b82f6', '#60a5fa']
+                });
+            }
+        };
+
+        // --- MINI CHARTS ---
+        const ChartProvider = {
+            render: function (type, data = [10, 40, 25, 70, 45]) {
+                const w = 200, h = 100, p = 10;
+                if (type === 'line') {
+                    const points = data.map((v, i) => `${p + (i * (w - 2 * p) / (data.length - 1))},${h - p - (v * (h - 2 * p) / 100)}`).join(' ');
+                    return `
+                        <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm inline-block my-4 animate-fade-in group hover:shadow-xl transition-all">
+                            <svg width="${w}" height="${h}" class="overflow-visible">
+                                <path d="M ${points}" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" class="transition-all duration-700 group-hover:stroke-[#2563eb]"/>
+                                ${data.map((v, i) => `<circle cx="${p + (i * (w - 2 * p) / (data.length - 1))}" cy="${h - p - (v * (h - 2 * p) / 100)}" r="4" fill="white" stroke="#3b82f6" stroke-width="2" class="group-hover:r-6 transition-all"/>`).join('')}
+                            </svg>
+                            <p class="text-[10px] font-bold text-slate-400 mt-2 uppercase tracking-widest text-center">Mô phỏng xu hướng</p>
+                        </div>
+                    `;
+                }
+                return '';
+            }
+        };
+
+        // --- VIEW SWITCHING ---
         function switchTab(tabId) {
             Object.keys(views).forEach(k => {
                 views[k].classList.toggle('hidden', k !== tabId);
@@ -210,29 +765,37 @@
             });
             currentTab = tabId;
             window.location.hash = tabId;
-            
+
             if (tabId === 'flashcards') renderFlashcards();
             lucide.createIcons();
         }
 
-        // Sidebar Menu Rendering
+        // --- SIDEBAR ---
         function renderMenu() {
-            if (!window.TASK1_THEORY_MENU) return;
-            
+            if (typeof TASK1_THEORY_MENU === 'undefined') return;
+
             let html = '';
             TASK1_THEORY_MENU.forEach(section => {
                 html += `
                     <div class="mb-4">
-                        <button onclick="loadTheory('${section.id}')" class="w-full text-left px-3 py-2 text-xs font-bold text-slate-400 uppercase tracking-widest hover:text-blue-500 transition-colors">
+                        <div class="px-4 py-2 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">
                             ${section.title}
-                        </button>
-                        <div class="mt-1 space-y-0.5">
-                            ${section.sub.map(s => `
-                                <button onclick="loadTheory('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-all truncate group flex items-center justify-between">
-                                    <span>${s.title}</span>
-                                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                                </button>
-                            `).join('')}
+                        </div>
+                        <div class="space-y-1">
+                            ${section.sub.map(s => {
+                    const isDone = progress.lessons.includes(s.id);
+                    return `
+                                    <button onclick="loadTheory('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-3 text-sm text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all group flex items-center justify-between">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-6 h-6 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-400 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 group-hover:text-blue-600 transition-colors">
+                                                <i data-lucide="${isDone ? 'check-circle' : 'circle'}" class="w-3.5 h-3.5 ${isDone ? 'text-emerald-500 fill-emerald-500/10' : ''}"></i>
+                                            </div>
+                                            <span class="font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">${s.title}</span>
+                                        </div>
+                                        <i data-lucide="chevron-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"></i>
+                                    </button>
+                                `;
+                }).join('')}
                         </div>
                     </div>
                 `;
@@ -241,9 +804,8 @@
             lucide.createIcons();
         }
 
-        // Theory Content Loading
+        // --- THEORY CONTENT ---
         function loadTheory(id) {
-            // Update UI Sidebar
             document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
             const btn = document.getElementById(`btn-${id}`);
             if (btn) btn.classList.add('active');
@@ -252,129 +814,321 @@
             if (!section) return;
 
             const menuInfo = TASK1_THEORY_MENU.flatMap(m => [m, ...m.sub]).find(i => i.id === id);
-            
+
+            // Mark as complete after reading
+            markLessonComplete(id);
+
+            const enhancedContent = TheoryEnhancer.enhance(section.content);
+
+            // Inject mini chart randomly for visual appeal if relevant
+            const chartHtml = (id.includes('trend') || id.includes('theory-290')) ? ChartProvider.render('line') : '';
+
             theoryContainer.innerHTML = `
-                <div class="animate-fade-in space-y-6">
-                    <div class="flex items-center gap-3 text-blue-600 dark:text-blue-400 font-bold text-sm uppercase tracking-wide">
-                        <i data-lucide="book-open" class="w-4 h-4"></i>
-                        <span>Task 1 Theory</span>
+                <div class="animate-slide-up space-y-8 pb-20">
+                    <div class="flex items-center gap-4 text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-[0.2em]">
+                        <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-lg">Bài học: ${id.split('-')[1] || '01'}</span>
+                        <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
                     </div>
-                    <h2 class="text-3xl font-black text-slate-900 dark:text-white leading-tight">${menuInfo ? menuInfo.title : ''}</h2>
-                    <div class="glass dark:glass-dark rounded-2xl p-6 md:p-8 theory-content-rich leading-relaxed space-y-4">
-                        ${section.content}
+                    
+                    <div class="space-y-4">
+                        <h2 class="text-4xl font-black text-slate-900 dark:text-white leading-tight tracking-tight">${menuInfo ? menuInfo.title : 'Theory Content'}</h2>
+                        <div class="flex items-center gap-4 text-slate-400">
+                             <div class="flex items-center gap-1.5 text-xs font-semibold">
+                                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                                <span>5 phút đọc</span>
+                             </div>
+                             <div class="w-1 h-1 bg-slate-300 rounded-full"></div>
+                             <div class="flex items-center gap-1.5 text-xs font-semibold">
+                                <i data-lucide="book" class="w-3.5 h-3.5"></i>
+                                <span>IELTS Task 1</span>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 prose prose-slate dark:prose-invert max-w-none leading-relaxed">
+                        ${chartHtml}
+                        ${enhancedContent}
+                    </div>
+                    
+                    <div class="flex items-center justify-between p-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[2rem] text-white shadow-xl shadow-blue-500/20">
+                        <div class="space-y-1">
+                            <p class="text-xs font-bold uppercase tracking-widest text-blue-100">Bạn đã hoàn thành bài học này!</p>
+                            <h3 class="text-xl font-black">Tiếp tục chủ đề tiếp theo?</h3>
+                        </div>
+                        <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="px-6 py-3 bg-white text-blue-600 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 flex items-center gap-2">
+                            <span>Lên đầu trang</span>
+                            <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                        </button>
                     </div>
                 </div>
             `;
-            
-            // Re-render icons if any in content
+
             lucide.createIcons();
-            
-            // Smooth scroll to top of content
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Flashcard Rendering
+        // --- FLASHCARDS (HERO MODE) ---
         function renderFlashcards(category = 'all') {
-            if (!window.TASK1_FLASHCARDS) return;
-            
+            if (typeof TASK1_FLASHCARDS === 'undefined') return;
+
             const cats = Object.keys(TASK1_FLASHCARDS);
             const fcTabs = document.getElementById('fc-tabs');
-            fcTabs.innerHTML = `<button onclick="renderFlashcards('all')" class="px-4 py-1.5 rounded-lg text-sm font-bold transition-all ${category === 'all' ? 'bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400' : 'text-slate-500 hover:text-slate-800'}">Tất cả</button>` + 
-                cats.map(c => `<button onclick="renderFlashcards('${c}')" class="px-4 py-1.5 rounded-lg text-sm font-bold transition-all ${category === c ? 'bg-white dark:bg-slate-700 shadow-sm text-blue-600 dark:text-blue-400' : 'text-slate-500 hover:text-slate-800'}">${c}</button>`).join('');
 
-            let allCards = [];
+            fcTabs.innerHTML = `<button onclick="setFcCategory('all')" class="px-6 py-2 rounded-xl text-sm font-bold transition-all ${category === 'all' ? 'bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400' : 'text-slate-500 hover:text-slate-800'}">Tất cả</button>` +
+                cats.map(c => `<button onclick="setFcCategory('${c}')" class="px-6 py-2 rounded-xl text-sm font-bold transition-all ${category === c ? 'bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400' : 'text-slate-500 hover:text-slate-800'}">${c}</button>`).join('');
+
+            currentFlashcards = [];
             if (category === 'all') {
-                cats.forEach(c => allCards = [...allCards, ...TASK1_FLASHCARDS[c]]);
+                cats.forEach(c => currentFlashcards = [...currentFlashcards, ...TASK1_FLASHCARDS[c]]);
             } else {
-                allCards = TASK1_FLASHCARDS[category];
+                currentFlashcards = TASK1_FLASHCARDS[category];
             }
 
-            flashcardGrid.innerHTML = allCards.map((card, i) => `
-                <div class="flashcard group perspective-1000 h-48 cursor-pointer" onclick="this.classList.toggle('flipped')">
-                    <div class="flashcard-inner relative w-full h-full text-center transition-transform duration-500 transform-style-3d">
+            curFcIndex = 0;
+            updateHeroCard();
+        }
+
+        function setFcCategory(cat) {
+            renderFlashcards(cat);
+        }
+
+        function updateHeroCard() {
+            const card = currentFlashcards[curFcIndex];
+            const heroContainer = document.getElementById('current-hero-card');
+
+            if (!card) return;
+
+            heroContainer.innerHTML = `
+                <div class="flashcard group min-h-[320px] cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flashcard-inner relative w-full h-full text-center transition-transform duration-700 transform-style-3d">
                         <!-- Front -->
-                        <div class="flashcard-face absolute w-full h-full backface-hidden glass dark:glass-dark rounded-2xl p-6 flex flex-col items-center justify-center border-t-4 ${card.trans ? 'border-t-blue-500' : 'border-t-amber-500'}">
-                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">${category === 'all' ? '' : category}</span>
-                            <h3 class="text-xl font-bold text-slate-800 dark:text-white leading-tight">${card.front}</h3>
-                            <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                                <i data-lucide="rotate-cw" class="w-4 h-4 text-slate-300"></i>
-                            </div>
+                        <div class="flashcard-face absolute w-full h-full backface-hidden bg-white dark:bg-slate-900 rounded-[3rem] p-12 flex flex-col items-center justify-center shadow-2xl border-4 border-slate-50 dark:border-slate-800">
+                             <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-500/5 pointer-events-none"></div>
+                             <span class="px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-6">Nghĩa tiếng Việt</span>
+                             <h3 class="text-4xl font-black text-slate-800 dark:text-white leading-tight tracking-tight italic">"${card.back}"</h3>
+                             <p class="text-slate-400 mt-6 text-sm font-medium flex items-center gap-2">
+                                <i data-lucide="mouse-pointer-2" class="w-4 h-4"></i>
+                                Chạm để xem cấu trúc...
+                             </p>
                         </div>
                         <!-- Back -->
-                        <div class="flashcard-face flashcard-back absolute w-full h-full backface-hidden bg-blue-600 rounded-2xl p-6 flex flex-col items-center justify-center text-white text-center">
-                            <p class="text-lg font-medium">${card.back}</p>
-                            ${card.hint ? `<span class="mt-3 text-[10px] bg-blue-500/50 px-2 py-0.5 rounded-full uppercase font-bold tracking-wider">${card.hint}</span>` : ''}
+                        <div class="flashcard-face flashcard-back absolute w-full h-full backface-hidden bg-gradient-to-br from-indigo-600 via-blue-600 to-indigo-700 rounded-[3rem] p-12 flex flex-col items-center justify-center text-white shadow-2xl overflow-hidden relative">
+                             <div class="absolute -top-12 -right-12 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+                             <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-blue-400/20 rounded-full blur-3xl"></div>
+                             
+                             <span class="px-4 py-1.5 bg-white/20 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-6 backdrop-blur-md">Cấu trúc / Ví dụ</span>
+                             <h3 class="text-5xl font-black mb-4 tracking-tighter text-center leading-tight drop-shadow-lg">${card.front}</h3>
+                             ${card.hint ? `<span class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl text-sm font-bold tracking-wide shadow-xl">${card.hint}</span>` : ''}
+                             
+                             <div class="absolute bottom-8 flex items-center gap-1.5 text-white/50 text-[10px] font-bold uppercase tracking-widest">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                                Premium Education
+                             </div>
                         </div>
                     </div>
                 </div>
-            `).join('');
-            
+            `;
+
+            // Update Progress UI
+            document.getElementById('fc-progress-text').innerText = `Thẻ hiện tại: ${curFcIndex + 1}/${currentFlashcards.length}`;
+            const percent = Math.round(((curFcIndex + 1) / currentFlashcards.length) * 100);
+            document.getElementById('fc-completion-val').innerText = `${percent}%`;
+            document.getElementById('fc-progress-bar').style.width = `${percent}%`;
+
             lucide.createIcons();
         }
 
-        // Translation Practice Rendering
+        function nextCard() {
+            if (curFcIndex < currentFlashcards.length - 1) {
+                curFcIndex++;
+                updateHeroCard();
+            }
+        }
+        function prevCard() {
+            if (curFcIndex > 0) {
+                curFcIndex--;
+                updateHeroCard();
+            }
+        }
+
+        function evaluateCard(level) {
+            if (level === 'green') {
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+            }
+            nextCard();
+        }
+
+        // --- PRACTICE ---
+        function setPracticeCategory(cat) {
+            currentPracticeCategory = cat;
+            currentPracticePage = 1;
+
+            // Update tabs UI
+            document.querySelectorAll('.ptab').forEach(btn => {
+                btn.className = "ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800";
+            });
+            const activeBtn = document.getElementById(`ptab-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = "ptab px-6 py-2 rounded-xl text-sm font-bold transition-all bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400";
+            }
+
+            renderTranslations();
+        }
+
+        function setPracticePage(page) {
+            currentPracticePage = page;
+            renderTranslations();
+            // Scroll to practice section top smoothly
+            const practiceTop = document.getElementById('view-practice').getBoundingClientRect().top + window.pageYOffset - 100;
+            window.scrollTo({ top: practiceTop, behavior: 'smooth' });
+        }
+
         function renderTranslations() {
-            if (!window.TASK1_TRANSLATIONS) return;
-            
-            translationGrid.innerHTML = TASK1_TRANSLATIONS.slice(0, 20).map((item, i) => `
-                <div class="glass dark:glass-dark rounded-2xl p-6 border border-slate-200 dark:border-slate-800 transition-all hover:shadow-xl hover:shadow-blue-500/5">
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-[10px] font-bold rounded uppercase">Câu ${i+1}</span>
-                        <div class="flex gap-2">
-                             <button onclick="toggleHint(${i})" class="p-1.5 hover:bg-amber-50 dark:hover:bg-amber-900/20 text-amber-600 rounded-lg transition-colors" title="Gợi ý">
-                                <i data-lucide="help-circle" class="w-4 h-4"></i>
+            if (typeof TASK1_TRANSLATIONS === 'undefined') return;
+
+            // Shuffle check
+            if (!window._shuffledTranslations) {
+                window._shuffledTranslations = [...TASK1_TRANSLATIONS].sort(() => Math.random() - 0.5);
+            }
+
+            let filtered = window._shuffledTranslations;
+            if (currentPracticeCategory !== 'all') {
+                filtered = window._shuffledTranslations.filter(t => t.category === currentPracticeCategory);
+            }
+
+            // Pagination Logic
+            const totalItems = filtered.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const startIndex = (currentPracticePage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const visible = filtered.slice(startIndex, endIndex);
+
+            // Update progress
+            const completedCount = filtered.filter(t => progress.practice && progress.practice.includes(t.id)).length;
+            document.getElementById('practice-progress-val').innerText = `${completedCount}/${totalItems}`;
+
+            translationGrid.innerHTML = visible.map((item, i) => {
+                const isCompleted = progress.practice && progress.practice.includes(item.id);
+                return `
+                <div class="bg-white dark:bg-slate-900 rounded-[2rem] p-8 border ${isCompleted ? 'border-emerald-100 dark:border-emerald-900 shadow-emerald-500/5' : 'border-slate-100 dark:border-slate-800'} transition-all hover:shadow-2xl hover:shadow-blue-500/5 group relative">
+                    ${isCompleted ? '<div class="absolute top-6 right-6 text-emerald-500"><i data-lucide="check-circle-2" class="w-6 h-6"></i></div>' : ''}
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-4 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-[10px] font-black rounded-full uppercase tracking-widest">${item.category || 'Trends'}</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase">#${item.id}</span>
+                            <button onclick="toggleHint('${item.id}')" class="p-2 hover:bg-amber-50 dark:hover:bg-amber-900/20 text-amber-600 rounded-xl transition-colors" title="Gợi ý">
+                                <i data-lucide="lightbulb" class="w-5 h-5"></i>
                             </button>
                         </div>
                     </div>
-                    <p class="text-lg font-semibold text-slate-800 dark:text-white mb-4 italic">"${item.vietnamese}"</p>
+                    <p class="text-2xl font-bold text-slate-800 dark:text-white mb-8 italic leading-snug">"${item.vietnamese}"</p>
                     
-                    <div id="hint-${i}" class="hidden mb-4 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800 text-amber-700 dark:text-amber-400 text-sm rounded-xl font-medium">
-                         <span class="font-bold uppercase text-[10px] block mb-1 tracking-widest">Gợi ý từ vựng</span>
+                    <div id="hint-${item.id}" class="hidden mb-6 p-5 bg-amber-50/50 dark:bg-amber-900/10 border-2 border-dashed border-amber-200 dark:border-amber-800/50 text-amber-800 dark:text-amber-400 text-sm rounded-2xl font-medium animate-fade-in">
+                         <span class="font-black uppercase text-[10px] block mb-2 tracking-widest opacity-60">Gợi ý từ vựng</span>
                          ${item.hint || 'Sử dụng các cấu trúc đã học trong phần Theory.'}
                     </div>
 
-                    <div class="relative group">
-                        <textarea id="ans-${i}" class="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-slate-700 dark:text-slate-100 focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder:text-slate-400" rows="2" placeholder="Dịch câu sang tiếng Anh..."></textarea>
-                        <button onclick="checkAnswer(${i})" class="absolute right-3 bottom-3 p-2 bg-blue-600 text-white rounded-lg shadow-lg shadow-blue-500/20 hover:bg-blue-700 active:scale-95 transition-all">
-                            <i data-lucide="check" class="w-5 h-5"></i>
+                    <div class="relative group/input">
+                        <textarea id="ans-${item.id}" class="w-full bg-slate-50 dark:bg-slate-800/50 border-2 border-slate-100 dark:border-slate-700 rounded-2xl p-6 text-lg text-slate-700 dark:text-slate-100 focus:bg-white dark:focus:bg-slate-800 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" rows="3" placeholder="Nhập câu dịch của bạn tại đây...">${isCompleted ? (localStorage.getItem(`ans_${item.id}`) || '') : ''}</textarea>
+                        <button onclick="checkAnswer('${item.id}')" class="absolute right-4 bottom-4 p-4 bg-blue-600 text-white rounded-2xl shadow-xl shadow-blue-600/30 hover:bg-blue-700 active:scale-95 transition-all">
+                            <i data-lucide="send" class="w-6 h-6"></i>
                         </button>
                     </div>
 
-                    <div id="result-${i}" class="hidden mt-4 animate-fade-in">
-                        <div class="p-4 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 rounded-xl">
-                            <span class="font-bold text-emerald-700 dark:text-emerald-400 text-[10px] uppercase tracking-widest block mb-2">Đáp án mẫu</span>
-                            <p class="text-slate-700 dark:text-slate-300 font-medium">${item.english}</p>
+                    <div id="result-${item.id}" class="${isCompleted ? '' : 'hidden'} mt-6 animate-slide-up">
+                        <div class="p-6 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 rounded-2xl">
+                            <div class="flex items-center gap-2 mb-3">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                <span class="font-black text-emerald-700 dark:text-emerald-400 text-[10px] uppercase tracking-widest">Đáp án mẫu tiêu chuẩn</span>
+                            </div>
+                            <p class="text-slate-700 dark:text-slate-300 font-bold text-lg">${item.english}</p>
                         </div>
                     </div>
                 </div>
-            `).join('');
-            
+            `}).join('');
+
+            renderPagination(totalItems);
             lucide.createIcons();
         }
 
-        function toggleHint(i) {
-            const h = document.getElementById(`hint-${i}`);
+        function renderPagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const container = document.getElementById('pagination-container');
+
+            if (totalPages <= 1) {
+                container.innerHTML = '';
+                return;
+            }
+
+            let html = `
+                <div class="flex items-center gap-2">
+                    <button onclick="setPracticePage(${currentPracticePage - 1})" ${currentPracticePage === 1 ? 'disabled' : ''} class="p-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-400 hover:text-blue-500 disabled:opacity-30 disabled:pointer-events-none transition-all shadow-sm">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+            `;
+
+            // Simple Page Numbers
+            const maxVisible = 5;
+            let startPage = Math.max(1, currentPracticePage - 2);
+            let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+            if (endPage - startPage < maxVisible - 1) {
+                startPage = Math.max(1, endPage - maxVisible + 1);
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                html += `
+                    <button onclick="setPracticePage(${i})" class="w-12 h-12 flex items-center justify-center rounded-xl font-black text-sm transition-all shadow-sm ${currentPracticePage === i ? 'bg-blue-600 text-white shadow-blue-500/20' : 'bg-white dark:bg-slate-800 text-slate-500 hover:border-blue-500 hover:text-blue-600 border border-slate-200 dark:border-slate-700'}">${i}</button>
+                `;
+            }
+
+            html += `
+                    <button onclick="setPracticePage(${currentPracticePage + 1})" ${currentPracticePage === totalPages ? 'disabled' : ''} class="p-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-400 hover:text-blue-500 disabled:opacity-30 disabled:pointer-events-none transition-all shadow-sm">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                    <div class="ml-4 text-xs font-bold text-slate-400 uppercase tracking-widest">Trang ${currentPracticePage} / ${totalPages}</div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+            container.className = "mt-12 flex justify-center items-center py-4";
+        }
+
+        function toggleHint(id) {
+            const h = document.getElementById(`hint-${id}`);
             h.classList.toggle('hidden');
         }
 
-        function checkAnswer(i) {
-            const res = document.getElementById(`result-${i}`);
-            const area = document.getElementById(`ans-${i}`);
-            
+        function checkAnswer(id) {
+            const res = document.getElementById(`result-${id}`);
+            const area = document.getElementById(`ans-${id}`);
             res.classList.remove('hidden');
-            area.classList.add('border-emerald-500', 'bg-emerald-50/50', 'dark:bg-emerald-900/10');
-            
+            area.classList.add('border-emerald-500', 'bg-emerald-50/20');
+
+            // Save progress
+            if (!progress.practice) progress.practice = [];
+            if (!progress.practice.includes(id)) {
+                progress.practice.push(id);
+                saveProgress();
+                // We don't full re-render here to keep focus, but we mark as completed
+                renderTranslations(); // Partial re-render is better but keep it simple for now
+            }
+
+            // Save the answer text for persistence
+            localStorage.setItem(`ans_${id}`, area.value);
+
             confetti({
-                particleCount: 40,
+                particleCount: 60,
                 spread: 70,
-                origin: { y: 0.6 },
-                colors: ['#3b82f6', '#10b981', '#60a5fa']
+                origin: { y: 0.8 },
+                colors: ['#10b981', '#3b82f6', '#6366f1']
             });
         }
 
-        // Theme Toggle logic removed as it's now in utils.js
-
-        // Search in Sidebar
+        // --- SEARCH ---
         document.getElementById('sidebar-search').addEventListener('input', (e) => {
             const val = e.target.value.toLowerCase();
             document.querySelectorAll('.sidebar-item').forEach(item => {
@@ -383,8 +1137,8 @@
             });
         });
 
-        // Run
         init();
     </script>
 </body>
+
 </html>

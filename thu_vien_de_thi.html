@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;">
     <title>IELTS Writing Task 2 Practice</title>
 
     <!-- Libraries -->
@@ -71,6 +72,7 @@
         .dark body {
             background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
         }
+
         .dark .glass-panel {
             background: rgba(15, 23, 42, 0.9);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -153,21 +155,34 @@
         }
 
         /* Toast animation */
-        .toast-enter { transform: translateY(100%); opacity: 0; }
-        .toast-active { transform: translateY(0); opacity: 1; }
-        .toast-exit { transform: scale(0.9); opacity: 0; }
+        .toast-enter {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        .toast-active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .toast-exit {
+            transform: scale(0.9);
+            opacity: 0;
+        }
 
         .filter-chip {
             transition: all 0.2s;
         }
+
         .filter-chip.active {
             background-color: #0ea5e9;
             color: white;
             border-color: #0ea5e9;
         }
-        
+
         #bookmarkBtn.active i {
-            color: #f59e0b; /* Amber 500 */
+            color: #f59e0b;
+            /* Amber 500 */
         }
 
         .stats-card {
@@ -179,14 +194,16 @@
 <body class="flex flex-col h-screen text-slate-800 dark:text-slate-200 relative transition-colors duration-300">
 
     <!-- Navbar -->
-    <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
+    <nav
+        class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800">
         <div class="flex items-center gap-3">
             <div
                 class="w-10 h-10 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-sky-500/30">
                 <i class="fas fa-pen-nib"></i>
             </div>
             <div>
-                <h1 id="navTitle" class="font-heading font-bold text-lg leading-tight text-slate-800 dark:text-white">IELTS Writing Library</h1>
+                <h1 id="navTitle" class="font-heading font-bold text-lg leading-tight text-slate-800 dark:text-white">
+                    IELTS Writing Library</h1>
                 <p id="navSubTitle" class="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wider">
                     Thư viện đề và bài mẫu</p>
             </div>
@@ -194,12 +211,15 @@
 
         <div class="flex items-center gap-2 md:gap-4">
             <!-- Stats Toggle -->
-            <button onclick="showStats()" class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center transition-all hover:bg-indigo-100 dark:hover:bg-indigo-900/50" title="Thống kê học tập">
+            <button onclick="showStats()"
+                class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center transition-all hover:bg-indigo-100 dark:hover:bg-indigo-900/50"
+                title="Thống kê học tập">
                 <i class="fas fa-chart-pie text-lg"></i>
             </button>
 
             <!-- Dark Mode Toggle -->
-            <button onclick="toggleDarkMode()" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+            <button onclick="toggleDarkMode()"
+                class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
                 <i class="fas fa-moon dark:hidden"></i>
                 <i class="fas fa-sun hidden dark:block"></i>
             </button>
@@ -228,10 +248,16 @@
                     class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm font-bold rounded-xl focus:ring-brand focus:border-brand block p-2.5 shadow-sm cursor-pointer outline-none">
                 </select>
                 <div id="typeFilters" class="flex gap-2 ml-2 overflow-x-auto pb-1 md:pb-0">
-                    <button onclick="filterByType('all')" class="filter-chip active px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Tất cả</button>
-                    <button onclick="filterByType('Opinion')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Opinion</button>
-                    <button onclick="filterByType('Discussion')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Discussion</button>
-                    <button onclick="filterByType('bookmarked')" class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand"><i class="fas fa-star text-amber-500 mr-1"></i> Đã lưu</button>
+                    <button onclick="filterByType('all')"
+                        class="filter-chip active px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Tất
+                        cả</button>
+                    <button onclick="filterByType('Opinion')"
+                        class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Opinion</button>
+                    <button onclick="filterByType('Discussion')"
+                        class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand">Discussion</button>
+                    <button onclick="filterByType('bookmarked')"
+                        class="filter-chip px-3 py-1.5 text-xs font-bold rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-brand"><i
+                            class="fas fa-star text-amber-500 mr-1"></i> Đã lưu</button>
                 </div>
             </div>
 
@@ -257,24 +283,34 @@
                         <span id="qTypeBadge"
                             class="px-2 py-1 bg-sky-100 text-brand text-[10px] font-bold rounded uppercase tracking-wider">Opinion
                             Essay</span>
-                        <button onclick="toggleBookmark()" id="bookmarkBtn" class="text-slate-400 hover:text-amber-500 transition-all p-1" title="Lưu đề bài này">
+                        <button onclick="toggleBookmark()" id="bookmarkBtn"
+                            class="text-slate-400 hover:text-amber-500 transition-all p-1" title="Lưu đề bài này">
                             <i class="far fa-star text-xl"></i>
                         </button>
                     </div>
-                    <h2 id="qTopicTitle" class="text-lg font-heading font-bold text-slate-800 dark:text-slate-100 mb-3">Chủ đề: Education
+                    <h2 id="qTopicTitle" class="text-lg font-heading font-bold text-slate-800 dark:text-slate-100 mb-3">
+                        Chủ đề: Education
                     </h2>
                     <!-- Infographic Display -->
-                    <div id="diagramContainer" class="hidden mb-4 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all">
-                        <img id="topicDiagram" src="" alt="Topic Diagram" class="w-full h-auto diagram-zoom transition-transform duration-500 cursor-zoom-in" onclick="showImageGallery(this.src)">
-                        <div class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">Click để phóng to</div>
+                    <div id="diagramContainer"
+                        class="hidden mb-4 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all">
+                        <img id="topicDiagram" src="" alt="Topic Diagram"
+                            class="w-full h-auto diagram-zoom transition-transform duration-500 cursor-zoom-in"
+                            onclick="showImageGallery(this.src)">
+                        <div
+                            class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click để phóng to</div>
                     </div>
                     <!-- Chart Container (Task 1) -->
-                    <div id="chartContainer" class="hidden mb-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm aspect-video">
+                    <div id="chartContainer"
+                        class="hidden mb-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm aspect-video">
                         <canvas id="task1Chart"></canvas>
                     </div>
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700 relative">
+                    <div
+                        class="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700 relative">
                         <i class="fas fa-quote-left absolute top-2 text-slate-200 text-2xl"></i>
-                        <p id="qText" class="text-slate-700 dark:text-slate-300 font-medium leading-relaxed relative z-10 pl-6 text-[15px]">
+                        <p id="qText"
+                            class="text-slate-700 dark:text-slate-300 font-medium leading-relaxed relative z-10 pl-6 text-[15px]">
                             Loading question...
                         </p>
                     </div>
@@ -284,24 +320,30 @@
                 <div class="p-4 overflow-y-auto custom-scroll flex-grow space-y-3 bg-slate-50/50 dark:bg-slate-950/20">
 
                     <!-- Accordion 0: Kho ý tưởng (Infographics) -->
-                    <div id="ideaAcc" class="hidden bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-xl overflow-hidden shadow-sm">
+                    <div id="ideaAcc"
+                        class="hidden bg-white dark:bg-slate-900 border border-indigo-200 dark:border-indigo-900/50 rounded-xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('ideaAcc')"
                             class="w-full px-4 py-3 text-left bg-indigo-50/50 dark:bg-indigo-900/20 hover:bg-indigo-100/50 flex justify-between items-center transition-colors font-bold text-indigo-700 dark:text-indigo-400">
-                            <span class="flex items-center gap-2"><i class="fas fa-lightbulb"></i> Kho Ý tưởng ZIM</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-lightbulb"></i> Kho Ý tưởng
+                                ZIM</span>
                             <i id="ideaAcc-icon"
                                 class="fas fa-chevron-down text-indigo-400 transition-transform duration-300"></i>
                         </button>
                         <div id="ideaAcc-content"
                             class="accordion-content px-4 bg-white dark:bg-slate-900 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                             <div class="py-4">
-                                <p class="mb-3 font-medium text-slate-500 italic">Sơ đồ phân tích các khía cạnh của chủ đề:</p>
-                                <img id="topicDiagramInAccordion" src="" class="w-full rounded-lg border dark:border-slate-800 shadow-sm cursor-zoom-in" alt="Infographic" onclick="showImageGallery(this.src)">
+                                <p class="mb-3 font-medium text-slate-500 italic">Sơ đồ phân tích các khía cạnh của chủ
+                                    đề:</p>
+                                <img id="topicDiagramInAccordion" src=""
+                                    class="w-full rounded-lg border dark:border-slate-800 shadow-sm cursor-zoom-in"
+                                    alt="Infographic" onclick="showImageGallery(this.src)">
                             </div>
                         </div>
                     </div>
 
                     <!-- Accordion 1: Hướng dẫn & Phân tích -->
-                    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+                    <div
+                        class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
                         <button onclick="toggleAccordion('guideAcc')"
                             class="w-full px-4 py-3 text-left bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 flex justify-between items-center transition-colors font-bold text-slate-700 dark:text-slate-300">
                             <span class="flex items-center gap-2"><i class="fas fa-lightbulb text-amber-500"></i> Hướng
@@ -450,10 +492,12 @@
     <div id="toastContainer" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
 
     <!-- Result Modal -->
-    <div id="resultModal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+    <div id="resultModal"
+        class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
         <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-slide-up">
             <div class="bg-gradient-to-br from-brand to-blue-700 p-8 text-white text-center">
-                <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
+                <div
+                    class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
                     <i class="fas fa-trophy text-3xl text-yellow-300"></i>
                 </div>
                 <h3 class="text-2xl font-bold font-heading">Hoàn thành bài viết!</h3>
@@ -462,119 +506,173 @@
             <div class="p-8 space-y-6">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
-                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-1">Số từ viết được</p>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-1">Số từ viết được
+                        </p>
                         <p id="modalWordCount" class="text-2xl font-black text-slate-800">0</p>
                     </div>
                     <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
-                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-1">Thời gian làm bài</p>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-wider mb-1">Thời gian làm bài
+                        </p>
                         <p id="modalTimeSpent" class="text-2xl font-black text-slate-800">00:00</p>
                     </div>
                 </div>
                 <div class="space-y-3">
-                    <button onclick="exportToPDF()" class="w-full py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
+                    <button onclick="exportToPDF()"
+                        class="w-full py-4 bg-emerald-600 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/30 hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
                         <i class="fas fa-file-pdf"></i> Xuất PDF bài viết
                     </button>
-                    <button onclick="document.getElementById('resultModal').classList.replace('flex', 'hidden')" class="w-full py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-sky-500/30 hover:bg-sky-600 transition-all">Xem lại bài làm</button>
-                    <button onclick="location.reload()" class="w-full py-4 bg-slate-100 text-slate-600 font-bold rounded-2xl hover:bg-slate-200 transition-all text-sm">Luyện tập đề khác</button>
+                    <button onclick="document.getElementById('resultModal').classList.replace('flex', 'hidden')"
+                        class="w-full py-4 bg-brand text-white font-bold rounded-2xl shadow-lg shadow-sky-500/30 hover:bg-sky-600 transition-all">Xem
+                        lại bài làm</button>
+                    <button onclick="location.reload()"
+                        class="w-full py-4 bg-slate-100 text-slate-600 font-bold rounded-2xl hover:bg-slate-200 transition-all text-sm">Luyện
+                        tập đề khác</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Daily Challenge Modal -->
-    <div id="dailyChallengeModal" class="fixed inset-0 z-[200] hidden items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md">
-        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden animate-slide-up border dark:border-slate-800">
+    <div id="dailyChallengeModal"
+        class="fixed inset-0 z-[200] hidden items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden animate-slide-up border dark:border-slate-800">
             <div class="bg-gradient-to-br from-rose-500 to-orange-600 p-8 text-white text-center relative">
                 <div class="absolute top-4 right-4">
                     <button onclick="closeDailyChallenge()" class="text-white/50 hover:text-white transition-colors">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
-                <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
+                <div
+                    class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/30">
                     <i class="fas fa-fire text-3xl text-yellow-300"></i>
                 </div>
                 <h3 class="text-2xl font-bold font-heading">Thử thách hàng ngày!</h3>
                 <p class="text-rose-100 text-sm mt-1">Hoàn thành bài viết này để duy trì chuỗi luyện tập (Streak)</p>
             </div>
             <div class="p-8 space-y-6">
-                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
-                    <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">Đề bài ngẫu nhiên</p>
-                    <p id="dailyChallengeTopic" class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-tight">Đang chọn đề bài...</p>
+                <div
+                    class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+                    <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                        Đề bài ngẫu nhiên</p>
+                    <p id="dailyChallengeTopic"
+                        class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-tight">Đang chọn đề bài...
+                    </p>
                     <div class="mt-4 flex items-center gap-2">
-                        <span id="dailyChallengeType" class="px-2 py-1 bg-rose-100 text-rose-600 text-[10px] font-bold rounded uppercase tracking-wider">Task 2</span>
+                        <span id="dailyChallengeType"
+                            class="px-2 py-1 bg-rose-100 text-rose-600 text-[10px] font-bold rounded uppercase tracking-wider">Task
+                            2</span>
                         <span class="text-xs text-slate-500"><i class="fas fa-clock mr-1"></i> 40 Phút</span>
                     </div>
                 </div>
-                <div class="mt-4 p-4 bg-rose-50 dark:bg-rose-900/20 rounded-xl border border-rose-100 dark:border-rose-900/50">
-                    <p class="text-[10px] text-rose-500 dark:text-rose-400 uppercase font-black tracking-widest mb-1"><i class="fas fa-lightbulb"></i> Mẹo làm bài nhanh</p>
-                    <p id="dailyChallengeTip" class="text-xs text-rose-700 dark:text-rose-300 italic">Đang tải mẹo hữu ích...</p>
+                <div
+                    class="mt-4 p-4 bg-rose-50 dark:bg-rose-900/20 rounded-xl border border-rose-100 dark:border-rose-900/50">
+                    <p class="text-[10px] text-rose-500 dark:text-rose-400 uppercase font-black tracking-widest mb-1"><i
+                            class="fas fa-lightbulb"></i> Mẹo làm bài nhanh</p>
+                    <p id="dailyChallengeTip" class="text-xs text-rose-700 dark:text-rose-300 italic">Đang tải mẹo hữu
+                        ích...</p>
                 </div>
                 <div class="space-y-3">
-                    <button onclick="startDailyChallenge()" class="w-full py-4 bg-rose-500 text-white font-bold rounded-2xl shadow-lg shadow-rose-500/30 hover:bg-rose-600 transition-all flex items-center justify-center gap-2">
+                    <button onclick="startDailyChallenge()"
+                        class="w-full py-4 bg-rose-500 text-white font-bold rounded-2xl shadow-lg shadow-rose-500/30 hover:bg-rose-600 transition-all flex items-center justify-center gap-2">
                         Bắt đầu ngay <i class="fas fa-play"></i>
                     </button>
-                    <button onclick="closeDailyChallenge()" class="w-full py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-sm">Để sau</button>
+                    <button onclick="closeDailyChallenge()"
+                        class="w-full py-4 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-sm">Để
+                        sau</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Stats Modal -->
-    <div id="statsModal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
-        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden animate-slide-up border dark:border-slate-800">
+    <div id="statsModal"
+        class="fixed inset-0 z-[150] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden animate-slide-up border dark:border-slate-800">
             <div class="bg-gradient-to-br from-indigo-600 to-blue-700 p-6 text-white flex justify-between items-center">
                 <div class="flex items-center gap-3">
                     <i class="fas fa-chart-bar text-2xl"></i>
                     <h3 class="text-xl font-bold font-heading uppercase tracking-wider">Thống kê học tập</h3>
                 </div>
-                <button onclick="document.getElementById('statsModal').classList.replace('flex', 'hidden')" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center">
+                <button onclick="document.getElementById('statsModal').classList.replace('flex', 'hidden')"
+                    class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 transition-colors flex items-center justify-center">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="p-8 space-y-8 max-h-[80vh] overflow-y-auto custom-scroll">
                 <!-- Time Filter -->
                 <div class="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl w-fit">
-                    <button onclick="showStats('all')" id="statFilter-all" class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all bg-white dark:bg-slate-700 shadow-sm text-brand">Tất cả</button>
-                    <button onclick="showStats('week')" id="statFilter-week" class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500">Tuần này</button>
-                    <button onclick="showStats('month')" id="statFilter-month" class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500">Tháng này</button>
+                    <button onclick="showStats('all')" id="statFilter-all"
+                        class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all bg-white dark:bg-slate-700 shadow-sm text-brand">Tất
+                        cả</button>
+                    <button onclick="showStats('week')" id="statFilter-week"
+                        class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500">Tuần này</button>
+                    <button onclick="showStats('month')" id="statFilter-month"
+                        class="px-4 py-1.5 text-xs font-bold rounded-lg transition-all text-slate-500">Tháng
+                        này</button>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
-                        <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">Độ dài câu TB</p>
+                    <div
+                        class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p
+                            class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                            Độ dài câu TB</p>
                         <p id="statsAvgSentLength" class="text-3xl font-black text-slate-800 dark:text-white">0</p>
                     </div>
-                    <div class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
-                        <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">Số câu TB / Bài</p>
+                    <div
+                        class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p
+                            class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                            Số câu TB / Bài</p>
                         <p id="statsAvgSentCount" class="text-3xl font-black text-slate-800 dark:text-white">0</p>
                     </div>
-                    <div class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
-                        <p class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">Tổng số bài làm</p>
+                    <div
+                        class="stats-card bg-slate-50 dark:bg-slate-800/50 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p
+                            class="text-[10px] text-slate-400 dark:text-slate-500 uppercase font-black tracking-widest mb-2">
+                            Tổng số bài làm</p>
                         <p id="statsTotalTasks" class="text-3xl font-black text-slate-800 dark:text-white">0</p>
                     </div>
-                    <div class="stats-card bg-orange-50/50 dark:bg-orange-900/20 p-5 rounded-2xl border border-orange-100/50 dark:border-orange-900/50">
-                        <p class="text-[10px] text-orange-400 dark:text-orange-500 uppercase font-black tracking-widest mb-2">Streak hiện tại</p>
-                        <p id="statsCurrentStreak" class="text-3xl font-black text-orange-600 dark:text-orange-400">0</p>
+                    <div
+                        class="stats-card bg-orange-50/50 dark:bg-orange-900/20 p-5 rounded-2xl border border-orange-100/50 dark:border-orange-900/50">
+                        <p
+                            class="text-[10px] text-orange-400 dark:text-orange-500 uppercase font-black tracking-widest mb-2">
+                            Streak hiện tại</p>
+                        <p id="statsCurrentStreak" class="text-3xl font-black text-orange-600 dark:text-orange-400">0
+                        </p>
                     </div>
-                    <div class="stats-card bg-indigo-50/50 dark:bg-indigo-900/20 p-5 rounded-2xl border border-indigo-100/50 dark:border-indigo-900/50">
-                        <p class="text-[10px] text-indigo-400 dark:text-indigo-500 uppercase font-black tracking-widest mb-2">Tổng từ đã viết</p>
+                    <div
+                        class="stats-card bg-indigo-50/50 dark:bg-indigo-900/20 p-5 rounded-2xl border border-indigo-100/50 dark:border-indigo-900/50">
+                        <p
+                            class="text-[10px] text-indigo-400 dark:text-indigo-500 uppercase font-black tracking-widest mb-2">
+                            Tổng từ đã viết</p>
                         <p id="statsTotalWords" class="text-3xl font-black text-indigo-600 dark:text-indigo-400">0</p>
                     </div>
-                    <div class="stats-card bg-emerald-50/50 dark:bg-emerald-900/20 p-5 rounded-2xl border border-emerald-100/50 dark:border-emerald-900/50">
-                        <p class="text-[10px] text-emerald-400 dark:text-emerald-500 uppercase font-black tracking-widest mb-2">Đã hoàn thành</p>
-                        <p id="statsCompletedTasks" class="text-3xl font-black text-emerald-600 dark:text-emerald-400">0</p>
+                    <div
+                        class="stats-card bg-emerald-50/50 dark:bg-emerald-900/20 p-5 rounded-2xl border border-emerald-100/50 dark:border-emerald-900/50">
+                        <p
+                            class="text-[10px] text-emerald-400 dark:text-emerald-500 uppercase font-black tracking-widest mb-2">
+                            Đã hoàn thành</p>
+                        <p id="statsCompletedTasks" class="text-3xl font-black text-emerald-600 dark:text-emerald-400">0
+                        </p>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2"><i class="fas fa-tasks text-indigo-500"></i> Tiến độ theo dạng bài</h4>
+                    <h4
+                        class="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                        <i class="fas fa-tasks text-indigo-500"></i> Tiến độ theo dạng bài</h4>
                     <div id="statsByType" class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                         <!-- Bars injected here -->
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2"><i class="fas fa-history text-emerald-500"></i> Lịch sử làm bài</h4>
+                    <h4
+                        class="text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                        <i class="fas fa-history text-emerald-500"></i> Lịch sử làm bài</h4>
                     <div id="statsHistory" class="space-y-3">
                         <!-- History items injected here -->
                     </div>
@@ -584,30 +682,49 @@
     </div>
 
     <!-- Comparison Modal -->
-    <div id="compareModal" class="fixed inset-0 z-[160] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
-        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-6xl w-full h-[90vh] flex flex-col overflow-hidden border dark:border-slate-800">
-            <div class="p-6 border-b dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
-                <h3 id="compareTitle" class="text-lg font-bold text-slate-800 dark:text-white truncate pr-4">So sánh bài viết</h3>
-                <button onclick="document.getElementById('compareModal').classList.replace('flex', 'hidden')" class="w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center">
+    <div id="compareModal"
+        class="fixed inset-0 z-[160] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div
+            class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-6xl w-full h-[90vh] flex flex-col overflow-hidden border dark:border-slate-800">
+            <div
+                class="p-6 border-b dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
+                <h3 id="compareTitle" class="text-lg font-bold text-slate-800 dark:text-white truncate pr-4">So sánh bài
+                    viết</h3>
+                <button onclick="document.getElementById('compareModal').classList.replace('flex', 'hidden')"
+                    class="w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <div class="flex-1 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x dark:divide-slate-800 overflow-hidden">
+            <div
+                class="flex-1 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x dark:divide-slate-800 overflow-hidden">
                 <!-- User's Essay -->
                 <div class="flex-1 flex flex-col p-6 overflow-hidden">
-                    <h4 class="text-xs font-black text-brand uppercase tracking-widest mb-4 flex items-center justify-between">
+                    <h4
+                        class="text-xs font-black text-brand uppercase tracking-widest mb-4 flex items-center justify-between">
                         <span class="flex items-center gap-2"><i class="fas fa-user-edit"></i> Bài viết của bạn</span>
                         <div class="flex gap-2">
-                            <span class="text-[9px] font-normal lowercase tracking-normal bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 px-2 py-0.5 rounded-full">Liên từ</span>
-                            <span class="text-[9px] font-normal lowercase tracking-normal bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 px-2 py-0.5 rounded-full">Từ lặp/Yếu</span>
+                            <span
+                                class="text-[9px] font-normal lowercase tracking-normal bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 px-2 py-0.5 rounded-full">Liên
+                                từ</span>
+                            <span
+                                class="text-[9px] font-normal lowercase tracking-normal bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 px-2 py-0.5 rounded-full">Từ
+                                lặp/Yếu</span>
                         </div>
                     </h4>
-                    <div id="compareUserEssay" class="flex-1 overflow-y-auto custom-scroll text-slate-700 dark:text-slate-300 leading-loose font-editor text-lg pr-4"></div>
+                    <div id="compareUserEssay"
+                        class="flex-1 overflow-y-auto custom-scroll text-slate-700 dark:text-slate-300 leading-loose font-editor text-lg pr-4">
+                    </div>
                 </div>
                 <!-- Sample Answer -->
                 <div class="flex-1 flex flex-col p-6 bg-slate-50/30 dark:bg-slate-950/20 overflow-hidden">
-                    <h4 class="text-xs font-black text-emerald-500 uppercase tracking-widest mb-4 flex items-center gap-2"><i class="fas fa-award"></i> Bài mẫu tham khảo <span class="text-[9px] font-normal lowercase tracking-normal bg-emerald-100 dark:bg-emerald-900/40 px-2 py-0.5 rounded-full">(Đã highlight từ vựng)</span></h4>
-                    <div id="compareSample" class="flex-1 overflow-y-auto custom-scroll text-slate-700 dark:text-slate-300 leading-loose font-editor text-lg whitespace-pre-line pr-4"></div>
+                    <h4
+                        class="text-xs font-black text-emerald-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <i class="fas fa-award"></i> Bài mẫu tham khảo <span
+                            class="text-[9px] font-normal lowercase tracking-normal bg-emerald-100 dark:bg-emerald-900/40 px-2 py-0.5 rounded-full">(Đã
+                            highlight từ vựng)</span></h4>
+                    <div id="compareSample"
+                        class="flex-1 overflow-y-auto custom-scroll text-slate-700 dark:text-slate-300 leading-loose font-editor text-lg whitespace-pre-line pr-4">
+                    </div>
                 </div>
             </div>
             <!-- Teacher Notes Section -->
@@ -617,26 +734,35 @@
                         <i class="fas fa-comment-medical"></i> Ghi chú của giáo viên / Tự nhận xét
                     </h4>
                     <div class="flex gap-2">
-                        <button onclick="rewriteEssay()" class="px-4 py-1.5 bg-rose-500 text-white text-[10px] font-bold rounded-lg hover:bg-rose-600 transition-colors shadow-sm flex items-center gap-1">
+                        <button onclick="rewriteEssay()"
+                            class="px-4 py-1.5 bg-rose-500 text-white text-[10px] font-bold rounded-lg hover:bg-rose-600 transition-colors shadow-sm flex items-center gap-1">
                             <i class="fas fa-redo"></i> Luyện tập lại
                         </button>
-                        <button onclick="saveNote()" class="px-4 py-1.5 bg-brand text-white text-[10px] font-bold rounded-lg hover:bg-sky-600 transition-colors shadow-sm flex items-center gap-1">
+                        <button onclick="saveNote()"
+                            class="px-4 py-1.5 bg-brand text-white text-[10px] font-bold rounded-lg hover:bg-sky-600 transition-colors shadow-sm flex items-center gap-1">
                             <i class="fas fa-save"></i> Lưu ghi chú
                         </button>
                     </div>
                 </div>
-                <textarea id="compareNote" class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-300 focus:ring-brand focus:border-brand custom-scroll transition-colors" rows="3" placeholder="Nhập những điểm cần cải thiện, lỗi ngữ pháp hoặc từ vựng hay học được từ bài mẫu..."></textarea>
+                <textarea id="compareNote"
+                    class="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-300 focus:ring-brand focus:border-brand custom-scroll transition-colors"
+                    rows="3"
+                    placeholder="Nhập những điểm cần cải thiện, lỗi ngữ pháp hoặc từ vựng hay học được từ bài mẫu..."></textarea>
             </div>
         </div>
     </div>
 
     <!-- Image Gallery Modal -->
-    <div id="imageGalleryModal" class="fixed inset-0 z-[200] hidden bg-black/95 items-center justify-center p-4 transition-all duration-300">
-        <button onclick="closeImageGallery()" class="absolute top-6 right-6 text-white text-3xl hover:text-brand transition-colors z-[210]">
+    <div id="imageGalleryModal"
+        class="fixed inset-0 z-[200] hidden bg-black/95 items-center justify-center p-4 transition-all duration-300">
+        <button onclick="closeImageGallery()"
+            class="absolute top-6 right-6 text-white text-3xl hover:text-brand transition-colors z-[210]">
             <i class="fas fa-times"></i>
         </button>
         <div class="w-full h-full flex items-center justify-center overflow-auto custom-scroll">
-            <img id="galleryImage" src="" class="max-w-full max-h-full object-contain transition-transform duration-300 cursor-zoom-in" onclick="toggleGalleryZoom(event)">
+            <img id="galleryImage" src=""
+                class="max-w-full max-h-full object-contain transition-transform duration-300 cursor-zoom-in"
+                onclick="toggleGalleryZoom(event)">
         </div>
     </div>
 
@@ -677,7 +803,7 @@
                 guide: "Phân tích xu hướng chung: Số lượng khách tăng dần từ 2015 đến 2019 trước khi giảm vào 2020.",
                 barem: "Intro: Paraphrase... \nOverview: Overall increase... \nBody 1: 2015-2017... \nBody 2: 2018-2020...",
                 sample: "The line graph illustrates the changes in museum attendance in London over a six-year period...",
-                vocab: [{word: "fluctuate", meaning: "biến động"}, {word: "peak", meaning: "đạt đỉnh"}]
+                vocab: [{ word: "fluctuate", meaning: "biến động" }, { word: "peak", meaning: "đạt đỉnh" }]
             },
             {
                 id: "demo-bar",
@@ -707,7 +833,7 @@
                 guide: "So sánh các quốc gia: Thailand dẫn đầu về tỉ lệ truy cập internet.",
                 barem: "Intro... Overview... Comparison...",
                 sample: "The bar chart compares the proportion of households having access to the internet...",
-                vocab: [{word: "predominate", meaning: "chiếm ưu thế"}]
+                vocab: [{ word: "predominate", meaning: "chiếm ưu thế" }]
             }
         ];
 
@@ -1041,7 +1167,7 @@
 
         async function init() {
             // Check dark mode preference
-            if (localStorage.getItem('darkMode') === 'enabled' || 
+            if (localStorage.getItem('darkMode') === 'enabled' ||
                 (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark');
             }
@@ -1110,7 +1236,7 @@
             // Default to Task 2 on first load
             switchTask(2);
             initResizer();
-            
+
             // Check for Daily Challenge
             checkDailyChallenge();
         }
@@ -1300,7 +1426,7 @@
             document.getElementById('qTopicTitle').innerText = q.topic;
             document.getElementById('qTypeBadge').innerText = q.type;
             document.getElementById('qText').innerText = q.q;
-            
+
             // Handle Diagram
             const diagramAcc = document.getElementById('ideaAcc');
             if (q.diagram) {
@@ -1379,7 +1505,7 @@
             } else {
                 const isBar = q.type.toLowerCase().includes('bar');
                 const isPie = q.type.toLowerCase().includes('pie');
-                
+
                 config = {
                     type: isPie ? 'pie' : (isBar ? 'bar' : 'line'),
                     data: {
@@ -1397,8 +1523,8 @@
                     options: {
                         responsive: true,
                         maintainAspectRatio: false,
-                        plugins: { 
-                            legend: { display: isPie, labels: { color: textColor } } 
+                        plugins: {
+                            legend: { display: isPie, labels: { color: textColor } }
                         },
                         scales: isPie ? {} : {
                             y: { beginAtZero: true, grid: { color: gridColor }, ticks: { color: textColor } },
@@ -1512,13 +1638,13 @@
         function showToast(message, type = 'success') {
             const container = document.getElementById('toastContainer');
             const toast = document.createElement('div');
-            
+
             const bgColor = type === 'success' ? 'bg-slate-900' : 'bg-rose-600';
             const icon = type === 'success' ? 'fa-check-circle text-emerald-400' : 'fa-exclamation-triangle';
 
             toast.className = `pointer-events-auto flex items-center gap-3 px-5 py-4 rounded-2xl shadow-2xl text-white font-medium min-w-[280px] transition-all duration-500 toast-enter`;
             toast.classList.add(bgColor);
-            
+
             toast.innerHTML = `
                 <i class="fas ${icon} text-lg"></i>
                 <span class="flex-grow">${message}</span>
@@ -1546,7 +1672,7 @@
             const essayText = document.getElementById('essayInput').value;
             const initialTime = currentTask === 1 ? 20 * 60 : 40 * 60;
             const timeSpentSec = initialTime - timeLeft;
-            
+
             const mins = Math.floor(timeSpentSec / 60).toString().padStart(2, '0');
             const secs = (timeSpentSec % 60).toString().padStart(2, '0');
 
@@ -1560,17 +1686,17 @@
                         const yesterday = new Date();
                         yesterday.setDate(yesterday.getDate() - 1);
                         const yesterdayStr = yesterday.toDateString();
-                        
+
                         if (streakData.lastCompleted === yesterdayStr) {
                             streakData.current++;
                         } else {
                             streakData.current = 1;
                         }
-                        
+
                         if (streakData.current > streakData.longest) {
                             streakData.longest = streakData.current;
                         }
-                        
+
                         streakData.lastCompleted = today;
                         localStorage.setItem('ieltsStreakData', JSON.stringify(streakData));
                         showToast(`Tuyệt vời! Bạn đã đạt chuỗi ${streakData.current} ngày luyện tập!`, 'success');
@@ -1583,7 +1709,7 @@
 
                 // Ask for self-score
                 const score = prompt("Bạn tự đánh giá bài viết này bao nhiêu điểm? (ví dụ: 6.5)", "6.0");
-                
+
                 // Save to history
                 const historyEntry = {
                     id: Date.now(),
@@ -1597,14 +1723,14 @@
                 };
                 userHistory.unshift(historyEntry);
                 localStorage.setItem('ieltsHistory', JSON.stringify(userHistory));
-                
+
                 // Populate and show Modal
                 document.getElementById('modalWordCount').innerText = wordCount;
                 document.getElementById('modalTimeSpent').innerText = `${mins}:${secs}`;
-                
+
                 const modal = document.getElementById('resultModal');
                 modal.classList.replace('hidden', 'flex');
-                
+
                 // Trigger Confetti effect
                 confetti({
                     particleCount: 150,
@@ -1636,7 +1762,7 @@
         function toggleBookmark() {
             const currentId = writingData[currentIndex].id;
             const index = bookmarkedIds.indexOf(currentId);
-            
+
             if (index === -1) {
                 bookmarkedIds.push(currentId);
                 showToast("Đã lưu đề bài vào mục yêu thích");
@@ -1644,7 +1770,7 @@
                 bookmarkedIds.splice(index, 1);
                 showToast("Đã xóa khỏi mục yêu thích", "info");
             }
-            
+
             localStorage.setItem('ieltsBookmarks', JSON.stringify(bookmarkedIds));
             updateBookmarkUI();
         }
@@ -1663,7 +1789,7 @@
 
             const now = Date.now();
             const msPerDay = 24 * 60 * 60 * 1000;
-            
+
             const filteredHistory = userHistory.filter(item => {
                 if (timeFilter === 'week') return item.id > now - (7 * msPerDay);
                 if (timeFilter === 'month') return item.id > now - (30 * msPerDay);
@@ -1755,13 +1881,13 @@
 
             const allData = [...task2Data, ...task1DataAcademic, ...task1DataGT, ...review2020Data];
             const question = allData.find(q => q.id === entry.topicId);
-            
+
             document.getElementById('compareTitle').innerText = entry.topicTitle;
-            
+
             // Highlight linking words in user essay
             let essayHtml = highlightLinkingWords(entry.essay || "");
             document.getElementById('compareUserEssay').innerHTML = detectOverusedWords(essayHtml);
-            
+
             // Highlight vocabulary in sample
             if (question && question.sample) {
                 document.getElementById('compareSample').innerHTML = highlightVocab(question.sample, question.vocab);
@@ -1771,7 +1897,7 @@
 
             // Load notes
             document.getElementById('compareNote').value = entry.notes || "";
-            
+
             const modal = document.getElementById('compareModal');
             modal.classList.replace('hidden', 'flex');
         }
@@ -1785,12 +1911,12 @@
                 "Nonetheless", "Admittedly", "On the contrary", "For example", "For instance",
                 "Specifically", "In other words", "Notably", "Significantly"
             ];
-            
+
             let highlightedText = text.replace(/\n/g, '<br>'); // Preserve line breaks
-            
+
             // Sort by length to avoid partial matches
             const sortedConnectors = [...connectors].sort((a, b) => b.length - a.length);
-            
+
             sortedConnectors.forEach(word => {
                 const regex = new RegExp(`\\b${word}\\b`, 'gi');
                 highlightedText = highlightedText.replace(regex, (match) => {
@@ -1804,10 +1930,10 @@
             if (!text) return "";
             // Danh sách các từ thường bị lạm dụng hoặc quá đơn giản trong IELTS
             const overused = [
-                "very", "good", "bad", "thing", "really", "get", "got", "so", "lot", "nice", 
+                "very", "good", "bad", "thing", "really", "get", "got", "so", "lot", "nice",
                 "basically", "actually", "big", "small", "happy", "sad", "important"
             ];
-            
+
             let highlightedText = text;
             overused.forEach(word => {
                 // Chỉ highlight nếu là từ đứng độc lập và không nằm trong tag HTML đã có
@@ -1843,15 +1969,15 @@
         function checkDailyChallenge() {
             const lastDate = localStorage.getItem('lastDailyChallengeDate');
             const today = new Date().toDateString();
-            
+
             if (lastDate !== today) {
                 // Pick random from Task 2 data
                 dailyChallengeIndex = Math.floor(Math.random() * task2Data.length);
                 const q = task2Data[dailyChallengeIndex];
-                
+
                 document.getElementById('dailyChallengeTopic').innerText = q.topic;
                 document.getElementById('dailyChallengeType').innerText = q.type;
-                
+
                 // Pick random tip based on type
                 let tipType = "default";
                 const t = q.type.toLowerCase();
@@ -1863,7 +1989,7 @@
                 const tips = quickTipsData[tipType] || quickTipsData["default"];
                 const randomTip = tips[Math.floor(Math.random() * tips.length)];
                 document.getElementById('dailyChallengeTip').innerText = randomTip;
-                
+
                 setTimeout(() => {
                     document.getElementById('dailyChallengeModal').classList.replace('hidden', 'flex');
                 }, 1000);
@@ -1893,7 +2019,7 @@
             let highlightedText = text;
             // Sắp xếp từ dài trước để tránh việc highlight đè lên nhau (ví dụ: 'pivotal role' trước 'role')
             const sortedVocab = [...vocabList].sort((a, b) => b.word.length - a.word.length);
-            
+
             sortedVocab.forEach(v => {
                 const regex = new RegExp(`\\b${v.word}\\b`, 'gi');
                 highlightedText = highlightedText.replace(regex, (match) => {
