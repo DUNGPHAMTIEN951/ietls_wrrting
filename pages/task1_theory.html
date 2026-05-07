@@ -593,6 +593,34 @@
         let currentPracticeCategory = 'all';
         let itemsPerPage = 10;
         let currentPracticePage = 1;
+        
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+
+        function switchTab(tabId) {
+            currentTab = tabId;
+            Object.keys(views).forEach(k => {
+                if (views[k]) views[k].classList.toggle('hidden', k !== tabId);
+            });
+            tabs.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tabId);
+            });
+            window.location.hash = tabId;
+            lucide.createIcons();
+            if (tabId === 'theory') renderMenu();
+            if (tabId === 'flashcards') renderFlashcards();
+            if (tabId === 'practice') {
+                renderPracticeTabs();
+                renderTranslations();
+            }
+        }
 
         // --- CORE INITIALIZATION ---
         function init() {
