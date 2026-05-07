@@ -73,7 +73,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Rõ ràng từ biểu đồ cho thấy tỷ lệ người thất nghiệp đã tăng đáng kể.",
         "english": "It is clear from the chart that the proportion of unemployed people increased significantly.",
         "hint": "Sử dụng cấu trúc 'It is clear from the chart that...' kết hợp với 'the proportion of'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t011"
     },
     {
@@ -87,7 +87,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sự gia tăng đột ngột về giá cả đã được ghi nhận trong giai đoạn này.",
         "english": "A dramatic increase in prices was recorded during this period.",
         "hint": "Sử dụng tính từ 'dramatic'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t013"
     },
     {
@@ -143,21 +143,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ đường so sánh tỷ lệ phần trăm của những người ở ba quốc gia người mà đã sử dụng Internet từ năm 1999 đến 2009.",
         "english": "The line graph compares the percentage of people in three countries who used the Internet between 1999 and 2009.",
         "hint": "Sử dụng cấu trúc 'The line graph compares the percentage of...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t021"
     },
     {
         "vietnamese": "Rõ ràng là tỷ lệ dân số người mà sử dụng Internet đã tăng lên ở mỗi quốc gia trong khoảng thời gian được thể hiện.",
         "english": "It is clear that the proportion of the population who used the Internet increased in each country over the period shown.",
         "hint": "Sử dụng cấu trúc 'It is clear that...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t022"
     },
     {
         "vietnamese": "Biểu đồ cung cấp thông tin về sự nhập cư, di cư và di cư ròng của Vương quốc Anh giữa năm 1999 và 2008.",
         "english": "The chart gives information about UK immigration, emigration and net migration.",
         "hint": "Sử dụng 'The chart gives information about...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t023"
     },
     {
@@ -178,49 +178,49 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ đường so sánh bốn lĩnh vực về lượng phát thải mưa axit mà chúng tạo ra trong khoảng thời gian 17 năm ở Anh.",
         "english": "The line graph compares four sectors in terms of the amount of acid rain emissions that they produced over a period of 17 years in the UK.",
         "hint": "Sử dụng cấu trúc 'The line graph compares four sectors in terms of...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t026"
     },
     {
         "vietnamese": "Biểu đồ cung cấp thông tin về sự nhập cư, di cư và di cư ròng của Vương quốc Anh giữa năm 1999 và 2008.",
         "english": "The chart gives information about UK immigration, emigration and net migration between 1999 and 2008.",
         "hint": "Sử dụng 'The chart gives information about...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t027"
     },
     {
         "vietnamese": "Rõ ràng là tổng lượng phát thải mưa axit ở Anh đã giảm đáng kể từ năm 1990 đến năm 2007.",
         "english": "It is clear that the total amount of acid rain emissions in the UK fell considerably between 1990 and 2007.",
         "hint": "Sử dụng 'It is clear that... fell considerably between...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t028"
     },
     {
         "vietnamese": "Biểu đồ cho thấy những thay đổi về số lượng ô tô trên mỗi hộ gia đình ở Vương quốc Anh trong khoảng thời gian 36 năm.",
         "english": "The graph shows changes in the number of cars per household in Great Britain over a period of 36 years.",
         "hint": "Sử dụng 'The graph shows changes in...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t029"
     },
     {
         "vietnamese": "Biểu đồ đường so sánh ba công ty về sản lượng chất thải của họ giữa những năm 2000 và 2015.",
         "english": "The line graph compares three companies in terms of their waste output between the years 2000 and 2015.",
         "hint": "Sử dụng cấu trúc so sánh bằng cụm từ 'in terms of'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t030"
     },
     {
         "vietnamese": "Biểu đồ hình tròn so sánh số liệu của du khách với bốn loại điểm thu hút khách du lịch và năm công viên chủ đề khác nhau ở Anh vào năm 1999.",
         "english": "The pie chart compares figures for visitors to four categories of tourist attraction and to five different theme parks in Britain in 1999.",
         "hint": "Sử dụng 'The pie chart compares figures for visitors to...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t031"
     },
     {
         "vietnamese": "Đáng chú ý là những người chơi thể thao đòi hỏi một chế độ ăn kiêng bao gồm tỷ lệ carbohydrate cao hơn đáng kể so với chế độ ăn trung bình hoặc chế độ ăn uống lành mạnh.",
         "english": "It is noticeable that sportspeople require a diet comprising a significantly higher proportion of carbohydrates than an average diet or a healthy diet.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that... comprise...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t032"
     },
     {
@@ -402,21 +402,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Các dự đoán cho thấy lượng năng lượng được sản xuất sẽ tăng lên khoảng 80 đơn vị vào năm 2025.",
         "english": "Predictions show that the amount of energy produced will increase to approximately 80 units in 2025.",
         "hint": "Sử dụng cấu trúc 'Predictions show that ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t058"
     },
     {
         "vietnamese": "Các kỳ vọng cho thấy số người thất nghiệp sẽ dao động trong khoảng 1200 đến 1800 vào những năm 2030.",
         "english": "Expectations reveal that the number of jobless people will fluctuate between 1200 and 1800 in the 2030s.",
         "hint": "Sử dụng cấu trúc 'Expectations reveal that ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t059"
     },
     {
         "vietnamese": "Người ta dự đoán rằng lượng năng lượng được sản xuất sẽ tăng lên khoảng 80 đơn vị vào năm 2025.",
         "english": "It is predicted that the amount of energy produced will increase to approximately 80 units in 2025.",
         "hint": "Sử dụng cấu trúc 'It is predicted that ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t060"
     },
     {
@@ -430,7 +430,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Lượng năng lượng sản xuất được dự đoán sẽ tăng lên khoảng 80 đơn vị vào năm 2025.",
         "english": "The amount of energy produced is predicted to increase to approximately 80 units in 2025.",
         "hint": "Sử dụng cấu trúc 'Subject + is predicted to ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t062"
     },
     {
@@ -486,7 +486,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Gần một phần tư sinh viên cho thấy hứng thú với việc học tiếng Đức, cũng như tiếng Tây Ban Nha.",
         "english": "Almost a quarter of students shows to have taken interest in studying German, as well as, Spanish.",
         "hint": "Sử dụng cấu trúc 'Almost a quarter of students shows to have taken interest in...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t070"
     },
     {
@@ -514,7 +514,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Trong số dữ liệu thu thập được, sô cô la cho thấy là hương vị bán chạy nhất tại trường.",
         "english": "Of the data gathered, chocolate shows as the best-selling flavor in the school.",
         "hint": "Sử dụng cấu trúc 'Of the data gathered...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t074"
     },
     {
@@ -528,7 +528,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Vòng đời của ong mật bắt đầu khi ong chúa đẻ một quả trứng, thường đẻ một hoặc hai quả trứng cứ sau 3 ngày.",
         "english": "The life cycle of the honey bee begins when the female adult lays an egg; the female typically lays one or two eggs every 3 days.",
         "hint": "Sử dụng cấu trúc câu miêu tả Process.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t076"
     },
     {
@@ -556,56 +556,56 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Trong giai đoạn thứ ba của vòng đời, nhộng lớn lên và lột da ba lần.",
         "english": "During the third stage of the life cycle, the nymph grows in size and sheds its skin three times.",
         "hint": "Sử dụng 'During the third stage of the life cycle...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t080"
     },
     {
         "vietnamese": "Trong giai đoạn cuối, phần bên trong còn lại này được ép và sô cô la được tạo ra.",
         "english": "In the final stage, this inner part that is left is pressed and the chocolate is produced.",
         "hint": "Sử dụng 'In the final stage...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t081"
     },
     {
         "vietnamese": "Nhìn chung, quy trình sản xuất hàng tiêu dùng liên quan đến cả quá trình sản xuất nhiều giai đoạn và phương pháp nghiên cứu.",
         "english": "In summary, the consumer goods manufacturing process involves both the multi-staged manufacturing and research methods.",
         "hint": "Sử dụng 'In summary...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t082"
     },
     {
         "vietnamese": "Biểu đồ lưu đồ minh họa quá trình sản xuất kẹp giấy nhựa màu trong một nhà máy nhỏ.",
         "english": "The flowchart illustrates the production of coloured plastic paper clips in a small factory.",
         "hint": "Sử dụng 'The flowchart illustrates the production of...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t083"
     },
     {
         "vietnamese": "Biểu đồ giải thích quá trình làm sô cô la.",
         "english": "The diagram explains the process for the making of chocolate.",
         "hint": "Sử dụng 'The diagram explains the process for...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t084"
     },
     {
         "vietnamese": "Sau khi sản xuất quy hoạch hoàn tất, các giai đoạn lắp ráp, kiểm tra, thử nghiệm và đóng gói được thực hiện theo thứ tự.",
         "english": "After the production planning is complete the assembly, inspection, testing and packaging stages are done sequentially.",
         "hint": "Sử dụng cấu trúc 'After the production planning is complete... done sequentially'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t085"
     },
     {
         "vietnamese": "Rõ ràng là có sáu giai đoạn chính khi cá hồi phát triển từ trứng thành con trưởng thành.",
         "english": "It is clear that there are six main stages as the salmon develops from egg to mature adult.",
         "hint": "Sử dụng 'It is clear that there are six main stages as...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t086"
     },
     {
         "vietnamese": "Tại giai đoạn thứ tư trong quy trình, các viên gạch đất sét được đặt trong lò sấy trong một đến hai ngày.",
         "english": "At the fourth stage in the process, the clay bricks are placed in a drying oven for one to two days.",
         "hint": "Sử dụng cấu trúc 'At the fourth stage in the process...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t087"
     },
     {
@@ -682,7 +682,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bản đồ thứ hai cho thấy kế hoạch biến con đường này thành khu vực dành cho người đi bộ.",
         "english": "The second map shows the planned pedestrianisation of this road.",
         "hint": "Sử dụng cấu trúc 'The second map shows the planned pedestrianisation...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t098"
     },
     {
@@ -696,21 +696,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bản đồ minh họa sự phát triển được thực hiện tại thị trấn Stokeford trong khoảng từ năm 1930 đến năm 2010.",
         "english": "The maps illustrate the development carried-out in the town of Stokeford between 1930 and 2010.",
         "hint": "Sử dụng cấu trúc 'The maps illustrate the development ... between ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t100"
     },
     {
         "vietnamese": "Các cửa hàng ở phía đông của sông Stoke cũng được thay thế bằng những ngôi nhà phố với các con đường mới được xây dựng.",
         "english": "The shops in the east of Stoke River were also replaced with townhouses with new roads being constructed.",
         "hint": "Sử dụng cấu trúc 'The shops ... were also replaced with ... with ... being constructed.'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t101"
     },
     {
         "vietnamese": "Các sơ đồ minh họa sự sửa đổi xây dựng tầng trệt từ một mặt bằng có sẵn.",
         "english": "The diagrams illustrate the modification of building a ground floor from an existing plan.",
         "hint": "Sử dụng cấu trúc 'The diagrams illustrate the modification of ... from an existing plan.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t102"
     },
     {
@@ -724,7 +724,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Ngoài các tòa nhà đã đề cập ở trên, các tiện ích mới trên đảo bao gồm một cầu tàu, nơi thuyền có thể cập bến.",
         "english": "As well as the buildings mentioned above, the new facilities on the island include a pier, where boats can dock.",
         "hint": "Sử dụng cấu trúc 'As well as ... include ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t104"
     },
     {
@@ -738,14 +738,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Đáng chú ý là một trong những bức tường bên trong và tủ lưu trữ ở mặt bằng cũ đã được loại bỏ để biến hành lang thành một phần của phòng khách, trong khi cả hai cửa ra vào vẫn không thay đổi ở mặt bằng mới.",
         "english": "It is noticeable that one of internal walls and storage in old plan were removed to make the hall to be a part of living room while both entrance doors remain unchanged in new plan.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that ... were removed to ... while ... remain unchanged.'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t106"
     },
     {
         "vietnamese": "Khi không có đê bao, như được hiển thị trong sơ đồ thứ hai, sẽ không có gì ngăn cản dòng sông gây lũ lụt.",
         "english": "When there is no stopbank, as shown in the second diagram, there will be nothing to stop the river from flooding.",
         "hint": "Sử dụng cấu trúc 'When there is no ... as shown in ... there will be nothing to ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t107"
     },
     {
@@ -780,56 +780,56 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Một đường đua xe đạp đã được thêm vào ở phần ngoại vi của công viên.",
         "english": "A cycling track has been added on the outer periphery of park.",
         "hint": "Sử dụng cấu trúc 'A cycling track has been added on ... of park.'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t112"
     },
     {
         "vietnamese": "Trong năm 2004, có 600 học sinh theo học tại trường và hai tòa nhà của trường được ngăn cách bởi một con đường chạy từ cổng chính đến sân thể thao.",
         "english": "In 2004, there were 600 pupils attending the school, and the two school buildings were separated by a path running from the main entrance to the sports field.",
         "hint": "Sử dụng cấu trúc 'In 2004, there were ... and the two ... were separated by ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t113"
     },
     {
         "vietnamese": "Ngoài ra, các trang trại đã được dỡ bỏ hoàn toàn và thay vào đó là các cửa hàng mới được xây dựng dọc theo phía bên trái của dòng sông.",
         "english": "In addition, the farms were removed completely and instead of them new shops were constructed along the left side of the river.",
         "hint": "Sử dụng cấu trúc 'In addition, the farms were removed completely and instead of them ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t114"
     },
     {
         "vietnamese": "Ngoài ra, chợ cá đã được thay thế bằng các căn hộ ở bờ biển, trong khi cửa hàng ở phía đối diện của chợ cá đã được sửa đổi để trở thành nhà hàng.",
         "english": "In addition, the fish market was replaced by apartments at the seaside, while the shop on the opposite side of the fish market was modified to become restaurants.",
         "hint": "Sử dụng cấu trúc 'In addition, the fish market was replaced by ... while the shop ... was modified to become ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t115"
     },
     {
         "vietnamese": "Năm 2015, số lượng đơn xin việc cho thấy sự gia tăng nhẹ.",
         "english": "In 2015, the number of job applications experienced a slight increase.",
         "hint": "Sử dụng cấu trúc 'experienced a slight increase'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t116"
     },
     {
         "vietnamese": "Tỷ lệ thất nghiệp duy trì ổn định trong suốt cả năm.",
         "english": "The unemployment rate remained stable throughout the year.",
         "hint": "Sử dụng cấu trúc 'remained stable'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t117"
     },
     {
         "vietnamese": "Có sự dao động nhẹ về doanh số bán hàng trong giai đoạn từ tháng 1 đến tháng 6.",
         "english": "There was a slight fluctuation in sales between January and June.",
         "hint": "Sử dụng cấu trúc 'There was a slight fluctuation'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t118"
     },
     {
         "vietnamese": "Lượng năng lượng được sản xuất đã cho thấy sự ổn định trong những năm qua.",
         "english": "The amount of energy produced has shown stability over the past years.",
         "hint": "Sử dụng từ vựng 'stability'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t119"
     },
     {
@@ -843,14 +843,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ thể hiện dữ liệu về số lượng người thất nghiệp giữa năm 2005 và 2009.",
         "english": "The chart illustrates data about the number of jobless people between 2005 and 2009.",
         "hint": "Sử dụng cấu trúc 'illustrates data about'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t121"
     },
     {
         "vietnamese": "Có một sự gia tăng đáng kể về lượng năng lượng được sản xuất.",
         "english": "There was a significant increase in the amount of energy produced.",
         "hint": "Sử dụng cấu trúc 'There was a significant increase in'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t122"
     },
     {
@@ -864,7 +864,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bảng này cung cấp thông tin về tỷ lệ thất nghiệp.",
         "english": "The table provides information about the unemployment rate.",
         "hint": "Sử dụng cấu trúc 'provides information about'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t124"
     },
     {
@@ -878,28 +878,28 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Như có thể được thấy từ biểu đồ, tỷ lệ thất nghiệp đã trải qua một sự thay đổi nhỏ.",
         "english": "As can be seen from the chart, the unemployment rate experienced a slight change.",
         "hint": "Sử dụng cấu trúc 'As can be seen from the chart'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t126"
     },
     {
         "vietnamese": "Như được minh họa trong biểu đồ, con số này đã đạt đến điểm cao nhất.",
         "english": "As illustrated in the chart, the figure reached a peak.",
         "hint": "Sử dụng cấu trúc 'As illustrated in the chart'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t127"
     },
     {
         "vietnamese": "Đáng chú ý là xu hướng chung của dữ liệu không đổi.",
         "english": "It is noticeable that the overall trend remains unchanged.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t128"
     },
     {
         "vietnamese": "Nhìn chung, số lượng nhân viên đã tăng trong suốt khoảng thời gian này.",
         "english": "Overall, the number of employees increased throughout this period.",
         "hint": "Sử dụng từ vựng 'Overall'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t129"
     },
     {
@@ -948,21 +948,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ đường so sánh tỷ lệ phần trăm của những người ở ba quốc gia người mà đã sử dụng Internet từ năm 1999 đến 2009.",
         "english": "The line chart compares the percentage of people in three countries who used the Internet from 1999 to 2009.",
         "hint": "Sử dụng cấu trúc 'The chart compares the proportion of...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t136"
     },
     {
         "vietnamese": "Rõ ràng là tỷ lệ dân số người mà sử dụng Internet đã tăng lên ở mỗi quốc gia trong khoảng thời gian được hiển thị/thể hiện.",
         "english": "It is clear that the proportion of the population that used the Internet increased in each country over the period shown.",
         "hint": "Sử dụng cấu trúc 'It is clear that ... increased in each country over the period shown.'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t137"
     },
     {
         "vietnamese": "Biểu đồ cung cấp thông tin về sự nhập cư, di cư và di cư ròng của Vương quốc Anh giữa năm 1999 và 2008.",
         "english": "The chart provides information about immigration, emigration and net migration of the UK between 1999 and 2008.",
         "hint": "Sử dụng cấu trúc 'The chart provides information about ... between ... and ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t138"
     },
     {
@@ -983,35 +983,35 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Cả tỷ lệ nhập cư và xuất cư đều tăng trong giai đoạn được hiển thị, nhưng các số liệu về nhập cư cao hơn đáng kể. Di cư ròng đạt đỉnh điểm vào năm 2004 và 2007.",
         "english": "Both immigration and emigration rates rose over the period shown, but the figures for immigration were significantly higher. Net migration peaked in 2004 and 2007.",
         "hint": "Sử dụng cấu trúc 'Both ... and ... rose over the period shown, but ... were significantly higher.'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t141"
     },
     {
         "vietnamese": "Rõ ràng là tổng lượng phát thải mưa axit ở Anh đã giảm đáng kể từ năm 1990 đến năm 2007.",
         "english": "It is clear that the total volume of acid rain emissions in the UK decreased significantly from 1990 to 2007.",
         "hint": "Sử dụng cấu trúc 'It is clear that ... decreased significantly from ... to ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t142"
     },
     {
         "vietnamese": "Nhìn chung, quyền sở hữu xe hơi ở Anh đã tăng từ năm 1971 đến 2007.",
         "english": "Overall, car ownership in the UK rose between 1971 and 2007.",
         "hint": "Sử dụng cấu trúc 'Overall, ... rose between ... and ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t143"
     },
     {
         "vietnamese": "Rõ ràng là có một sự sụt giảm số lượng các cuộc hôn nhân ở Hoa Kỳ giữa năm 1970 và 2000.",
         "english": "It is clear that there was a decline in the number of marriages in the US between 1970 and 2000.",
         "hint": "Sử dụng cấu trúc 'It is clear that there was a decline in ... between ... and ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t144"
     },
     {
         "vietnamese": "Đáng chú ý là những người chơi thể thao đòi hỏi một chế độ ăn kiêng bao gồm tỷ lệ carbohydrate cao hơn đáng kể so với chế độ ăn trung bình hoặc chế độ ăn uống lành mạnh.",
         "english": "It is noticeable that athletes require a diet comprising a significantly higher proportion of carbohydrates than the average or healthy diet.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that ... require a diet comprising a significantly higher proportion of ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t145"
     },
     {
@@ -1053,14 +1053,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Rõ ràng là sự hài lòng của khách hàng nói chung tăng đáng kể từ năm 2005 đến 2010.",
         "english": "It is clear that customer satisfaction increased significantly from 2005 to 2010.",
         "hint": "Sử dụng cấu trúc 'It is clear that customer satisfaction increased significantly from ... to ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t151"
     },
     {
         "vietnamese": "Đáng chú ý là nhiều nước được tiêu thụ bởi các gia đình hơn là công nghiệp hoặc nông nghiệp ở hai khu vực Mỹ.",
         "english": "It is noticeable that more water is consumed by households than by industry or agriculture in the two US regions.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that more ... is consumed by ... than by ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t152"
     },
     {
@@ -1186,21 +1186,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Các dự đoán cho thấy lượng năng lượng được sản xuất sẽ tăng lên khoảng 80 đơn vị vào năm 2025.",
         "english": "The forecasts indicate that the amount of energy produced will rise to approximately 80 units by 2025.",
         "hint": "Sử dụng cấu trúc 'The forecasts indicate that...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t170"
     },
     {
         "vietnamese": "Các kỳ vọng cho thấy số người thất nghiệp sẽ dao động trong khoảng 1200 đến 1800 vào những năm 2030.",
         "english": "Expectations show that the number of unemployed people will fluctuate between 1,200 and 1,800 in the 2030s.",
         "hint": "Sử dụng cấu trúc 'Expectations show that...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t171"
     },
     {
         "vietnamese": "Người ta dự đoán rằng lượng năng lượng được sản xuất sẽ tăng lên khoảng 80 đơn vị vào năm 2025.",
         "english": "It is predicted that the amount of energy produced will increase to about 80 units by 2025.",
         "hint": "Sử dụng cấu trúc 'It is predicted that...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t172"
     },
     {
@@ -1242,7 +1242,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Vòng đời của ong mật bắt đầu khi con cái trưởng thành đẻ trứng; con cái thường đẻ một hoặc hai quả trứng sau mỗi 3 ngày.",
         "english": "The life cycle of a honey bee begins when the mature female lays eggs; she usually lays one or two eggs every 3 days.",
         "hint": "Sử dụng cấu trúc 'The life cycle of a ... begins when...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t178"
     },
     {
@@ -1256,7 +1256,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Trong giai đoạn thứ ba của vòng đời, nhộng phát triển về kích thước và lột da ba lần.",
         "english": "In the third stage of the life cycle, the pupa grows in size and sheds its skin three times.",
         "hint": "Sử dụng cấu trúc 'In the third stage of the ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t180"
     },
     {
@@ -1270,21 +1270,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sơ đồ này cung cấp một cái nhìn tổng quan về một hệ thống sưởi ấm trung tâm trong nước.",
         "english": "The diagram provides an overview of a domestic central heating system.",
         "hint": "Sử dụng cấu trúc 'The diagram provides an overview of...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t182"
     },
     {
         "vietnamese": "Sơ đồ minh họa các giai đoạn khác nhau trong cuộc đời của một con ong mật.",
         "english": "The diagram illustrates the different stages in the life of a honey bee.",
         "hint": "Sử dụng cấu trúc 'The diagram illustrates...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t183"
     },
     {
         "vietnamese": "Sơ đồ giải thích quy trình sản xuất sô cô la.",
         "english": "The diagram explains the chocolate production process.",
         "hint": "Sử dụng cấu trúc 'The diagram explains...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t184"
     },
     {
@@ -1312,7 +1312,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sau khi trồi ra khỏi trứng, cá hồi con trải qua giai đoạn tiếp theo của cuộc đời chúng được nuôi trong các khu vực nước ngọt.",
         "english": "After emerging from the eggs, the young salmon go through the next stage of their lives being nurtured in freshwater areas.",
         "hint": "Sử dụng cấu trúc 'After emerging from the eggs, ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t188"
     },
     {
@@ -1326,21 +1326,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Rõ ràng là có sáu giai đoạn chính khi cá hồi phát triển từ trứng đến khi trưởng thành.",
         "english": "It is clear that there are six main stages as the salmon develops from an egg to maturity.",
         "hint": "Sử dụng cấu trúc 'It is clear that there are six main stages as...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t190"
     },
     {
         "vietnamese": "Ở giai đoạn thứ tư của quy trình, những viên gạch đất sét được đặt trong lò sấy từ một đến hai ngày.",
         "english": "In the fourth stage of the process, the clay bricks are placed in a drying oven for one to two days.",
         "hint": "Sử dụng cấu trúc 'In the fourth stage of the process...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t191"
     },
     {
         "vietnamese": "Rõ ràng là quy trình chính đầu tiên diễn ra tại trang trại, trong khi quy trình khác liên quan đến một số bước chế biến nhỏ tại cơ sở chăn nuôi bò sữa.",
         "english": "It is clear that the first main process takes place at the farm, while the other involves several minor processing steps at the dairy facility.",
         "hint": "Sử dụng cấu trúc 'It is clear that ... takes place at the farm, while ... involves several ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t192"
     },
     {
@@ -1361,14 +1361,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Như quan sát từ biểu đồ, sản xuất hàng hóa là một quá trình phức tạp được thực hiện trong nhiều giai đoạn và thông tin đôi khi được đưa trở lại các giai đoạn trước đó để thực hiện một số điều chỉnh.",
         "english": "As observed from the chart, goods production is a complex process carried out in multiple stages and information is sometimes fed back to previous stages to make certain adjustments.",
         "hint": "Sử dụng cấu trúc 'As observed from ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t195"
     },
     {
         "vietnamese": "Nhìn vào giai đoạn đầu tiên và thứ hai của quá trình, có ba cách thu thập dữ liệu thời tiết và ba cách phân tích nó.",
         "english": "Looking at the first and second stages of the process, there are three ways of collecting weather data and three ways of analyzing it.",
         "hint": "Sử dụng cấu trúc 'Looking at ... there are ... ways of ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t196"
     },
     {
@@ -1410,14 +1410,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bản đồ cho thấy hai vị trí tiềm năng (S1 và S2) cho một siêu thị mới ở thị trấn có tên Garlsdon.",
         "english": "The map shows two potential locations (S1 and S2) for a new supermarket in a town named Garlsdon.",
         "hint": "Sử dụng cấu trúc 'The map shows ... for a new supermarket ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t202"
     },
     {
         "vietnamese": "Bản đồ cho thấy sự phát triển của một ngôi làng có tên Chorleywood từ năm 1868 đến năm 1994.",
         "english": "The map shows the development of a village named Chorleywood from 1868 to 1994.",
         "hint": "Sử dụng cấu trúc 'The map shows the development of ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t203"
     },
     {
@@ -1445,7 +1445,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Các bản đồ minh họa sự phát triển được thực hiện ở thị trấn Stokeford từ năm 1930 đến năm 2010.",
         "english": "The maps illustrate the development carried out in the town of Stokeford from 1930 to 2010.",
         "hint": "Sử dụng cấu trúc 'The maps illustrate the development carried out in ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t207"
     },
     {
@@ -1473,7 +1473,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Các sơ đồ minh họa một số thay đổi được đề xuất đối với khu vực trung tâm của thị trấn Islip.",
         "english": "The diagrams illustrate some proposed changes to the central area of Islip town.",
         "hint": "Sử dụng cấu trúc 'The diagrams illustrate some proposed changes to ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t211"
     },
     {
@@ -1508,7 +1508,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Đáng chú ý là một trong những bức tường bên trong và kho lưu trữ trong kế hoạch cũ đã được dỡ bỏ để biến sảnh thành một phần của phòng khách trong kế hoạch mới.",
         "english": "It is noticeable that one of the internal walls and the storage in the old plan was removed to make the hall part of the living room in the new plan.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that ... was removed to make ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t216"
     },
     {
@@ -1529,14 +1529,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai bản đồ đưa ra này minh họa sự thay đổi diện mạo của làng Ryemouth vào năm 1995 thành hiện tại.",
         "english": "The two provided maps illustrate the change in the appearance of Ryemouth village from 1995 to the present.",
         "hint": "Sử dụng cấu trúc 'The two provided maps illustrate ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t219"
     },
     {
         "vietnamese": "Hình ảnh đầu tiên cho thấy bố cục của một phòng trưng bày nghệ thuật và hình thứ hai cho thấy một số thay đổi được đề xuất cho không gian phòng trưng bày.",
         "english": "The first image shows the layout of an art gallery and the second one reveals several proposed changes for the gallery space.",
         "hint": "Sử dụng cấu trúc 'The first image shows ... and the second one shows ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t220"
     },
     {
@@ -1564,21 +1564,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Năm 1985, ba khối khoa học (vật lý, hóa học và sinh học) được đặt trong các cơ sở riêng biệt mà hiện nay đã được tích hợp vào một tòa nhà duy nhất được gọi là phòng thí nghiệm khoa học.",
         "english": "In 1985, the three science blocks (physics, chemistry, and biology) were located in separate facilities which have now been integrated into a single building known as the science laboratory.",
         "hint": "Sử dụng cấu trúc 'In 1985, the ... were located in ... which have now been ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t224"
     },
     {
         "vietnamese": "Năm 2004, chỉ có một tòa nhà trường học được kết nối với Sân thể thao trung tâm bằng một con đường đi bộ.",
         "english": "In 2004, there was only one school building connected to the central sports field by a footpath.",
         "hint": "Sử dụng cấu trúc 'In 2004, there was only ... connected to ... by ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t225"
     },
     {
         "vietnamese": "Ngoài ra, các trang trại đã bị dỡ bỏ hoàn toàn và thay vào đó là các cửa hàng mới được xây dựng dọc theo bên trái sông.",
         "english": "In addition, the farms were completely removed, and new shops were built along the left side of the river instead.",
         "hint": "Sử dụng cấu trúc 'In addition, the ... were completely removed, and ... were built along ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t226"
     },
     {
@@ -1606,14 +1606,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ đường so sánh ba loại khách du lịch đến New Zealand trong khoảng thời gian từ 1997 đến 2017 về chi tiêu trung bình hàng ngày của họ.",
         "english": "The line graph compares three types of tourists to New Zealand in the period from 1997 to 2017 in terms of their average daily expenditure.",
         "hint": "Sử dụng cấu trúc 'The line graph compares... in terms of...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t230"
     },
     {
         "vietnamese": "Biểu đồ đường so sánh ba công ty về sản lượng chất thải của họ giữa những năm 2000 và 2015.",
         "english": "The line graph compares three companies in terms of their waste output between 2000 and 2015.",
         "hint": "Sử dụng cấu trúc 'The line graph compares... in terms of...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t231"
     },
     {
@@ -1641,7 +1641,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nhìn chung, khách du lịch kinh doanh chi tiêu nhiều nhất mỗi ngày, trong khi những người đến thăm bạn bè hoặc người thân chi tiêu ít nhất.",
         "english": "Overall, business tourists spend the most per day, while those visiting friends or relatives spend the least.",
         "hint": "Sử dụng cấu trúc 'Overall, ... spend ..., while ... spend ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t235"
     },
     {
@@ -1655,14 +1655,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ cột cho thấy tỷ lệ thất nghiệp của phụ nữ ở các quốc gia mà tạo nên Vương quốc Anh, cả năm 2013 và 2014.",
         "english": "The bar chart shows the female unemployment rates in the countries that make up the UK, in both 2013 and 2014.",
         "hint": "Sử dụng cấu trúc 'The bar chart shows... in both...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t237"
     },
     {
         "vietnamese": "Biểu đồ cột so sánh chi phí của một ngôi nhà trung bình ở năm thành phố lớn trong khoảng thời gian 13 năm kể từ năm 1989.",
         "english": "The bar chart compares the cost of an average house in five major cities over a 13-year period starting from 1989.",
         "hint": "Sử dụng cấu trúc 'The bar chart compares... over a ... period starting from ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t238"
     },
     {
@@ -1683,7 +1683,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Chi phí của một ngôi nhà trung bình ở Madrid đã tăng thêm 2%, trong khi giá ở Frankfurt vẫn duy trì ổn định.",
         "english": "The cost of an average house in Madrid increased by an additional 2%, while prices in Frankfurt remained stable.",
         "hint": "Sử dụng cấu trúc 'The ... increased by ..., while ... remained stable.'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t241"
     },
     {
@@ -1711,14 +1711,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Người dân ở Anh đã chi hơn 170.000 bảng cho phim ảnh, mà là con số cao nhất được thể hiện trên biểu đồ.",
         "english": "People in the UK spent over 170,000 pounds on films, which is the highest figure shown on the chart.",
         "hint": "Sử dụng cấu trúc 'People in ... spent over ... on ..., which is the highest figure shown on the chart.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t245"
     },
     {
         "vietnamese": "Biểu đồ cho thấy các hoạt động giải trí ưa thích của trẻ em Úc trong độ tuổi 5-14.",
         "english": "The chart shows the preferred leisure activities of Australian children aged 5-14.",
         "hint": "Sử dụng cấu trúc 'The chart shows the preferred leisure activities of ... aged ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t246"
     },
     {
@@ -1732,14 +1732,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Rõ ràng là có một sự sụt giảm số lượng các cuộc hôn nhân ở Hoa Kỳ giữa năm 1970 và 2000.",
         "english": "It is clear that there was a decline in the number of marriages in the US between 1970 and 2000.",
         "hint": "Sử dụng cấu trúc 'It is clear that there was a decline in ... between ... and ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t248"
     },
     {
         "vietnamese": "Nhìn chung, đã từng có sự suy giảm nhẹ về tỉ lệ thất nghiệp của phụ nữ từ năm 2013 đến 2014, ngoại trừ ở Scotland.",
         "english": "Overall, there was a slight decrease in the female unemployment rate from 2013 to 2014, except in Scotland.",
         "hint": "Sử dụng cấu trúc 'Overall, there was a slight decrease in ... from ... to ..., except in ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t249"
     },
     {
@@ -1781,7 +1781,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Úc phụ thuộc vào thủy điện chỉ dưới 25% điện trong cả hai năm, nhưng lượng điện được sản xuất bằng loại điện này đã giảm từ 5 xuống chỉ còn 2 đơn vị tại Pháp.",
         "english": "Australia relied on hydroelectricity for just under 25% of its electricity in both years, but the amount of electricity produced by this type decreased from 5 to just 2 units in France.",
         "hint": "Sử dụng cấu trúc 'Australia relied on ... for ... in both years, but the ... decreased from ... to ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t255"
     },
     {
@@ -1809,7 +1809,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Từ Hình 3, rõ ràng là vắc xin mới đã có tác động tích cực đến số trường hợp mắc bệnh cúm mới được ghi nhận ở phụ nữ.",
         "english": "From Figure 3, it is clear that the new vaccine has had a positive impact on the number of newly recorded flu cases in women.",
         "hint": "Sử dụng cấu trúc 'From Figure ..., it is clear that ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t259"
     },
     {
@@ -1851,14 +1851,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nhìn chung, rõ ràng là vào năm 2010, hai quốc gia này dựa vào các nguồn nhiên liệu chính khác nhau: New Zealand dựa vào than đá và Đức dựa vào năng lượng hạt nhân.",
         "english": "Overall, it is clear that in 2010, these two countries relied on different main fuel sources: New Zealand relied on coal and Germany relied on nuclear power.",
         "hint": "Sử dụng cấu trúc 'Overall, it is clear that in 2010, ... relied on different main fuel sources: ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t265"
     },
     {
         "vietnamese": "Nhìn chung, người dân ở Edmonton tận dụng tốt các phương thức giao thông thay thế nhưng phụ thuộc nhiều vào ô tô cho công việc.",
         "english": "Overall, the residents of Edmonton make good use of alternative transport methods but are heavily dependent on cars for work.",
         "hint": "Sử dụng cấu trúc 'Overall, the residents of ... make good use of ... but are heavily dependent on ... for ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t266"
     },
     {
@@ -1872,7 +1872,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai biểu đồ hình tròn minh họa tỷ trọng của năm loại năng lượng sản xuất từ 1995 đến 2005.",
         "english": "The two pie charts illustrate the proportion of five types of energy produced from 1995 to 2005.",
         "hint": "Sử dụng cấu trúc 'The two pie charts illustrate the proportion of five types of energy produced from ... to ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t268"
     },
     {
@@ -1886,7 +1886,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Đáng chú ý là những người chơi thể thao đòi hỏi một chế độ ăn kiêng bao gồm tỷ lệ carbohydrate cao hơn đáng kể so với chế độ ăn trung bình hoặc chế độ ăn uống lành mạnh.",
         "english": "It is noteworthy that athletes require a diet that includes a significantly higher proportion of carbohydrate than the average or healthy diet.",
         "hint": "Sử dụng cấu trúc 'It is noteworthy that ... require a diet that includes a significantly higher proportion of ... than ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t270"
     },
     {
@@ -1914,7 +1914,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bảng so sánh bốn quốc gia về số lượng người xem bốn thể loại phim khác nhau tại rạp: Hành động, Lãng mạn, Hài và Kinh dị.",
         "english": "The table compares four countries in terms of the number of people who watch four different film genres at the cinema: Action, Romance, Comedy, and Horror.",
         "hint": "Sử dụng cấu trúc 'The table compares four countries in terms of the number of people who watch four different film genres at the cinema: ...'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t274"
     },
     {
@@ -1928,7 +1928,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bảng này cho thấy tỷ lệ phần trăm chi tiêu của người tiêu dùng cho ba loại sản phẩm và dịch vụ ở năm quốc gia vào năm 2002.",
         "english": "This table shows the percentage of consumer expenditure on three categories of products and services in five countries in 2002.",
         "hint": "Sử dụng cấu trúc 'This table shows the percentage of consumer expenditure on ... in ... in ...'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t276"
     },
     {
@@ -1942,21 +1942,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Bảng này cung cấp dữ liệu về việc sử dụng và sản xuất khí đốt tự nhiên ở 9 quốc gia khác nhau vào năm 2001.",
         "english": "This table provides data on the usage and production of natural gas in 9 different countries in 2001.",
         "hint": "Sử dụng cấu trúc 'This table provides data on the usage and production of ... in ... different countries in ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t278"
     },
     {
         "vietnamese": "Bảng này đưa ra thông tin về thị phần của các nhà sản xuất máy tính xách tay trong hai năm liên tiếp 2006 và 2007.",
         "english": "This table gives information on the market share of laptop manufacturers in two consecutive years, 2006 and 2007.",
         "hint": "Sử dụng cấu trúc 'This table gives information on the market share of ... in two consecutive years, ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t279"
     },
     {
         "vietnamese": "Bảng so sánh tỷ lệ trẻ em trai 6-11 tuổi và 12-16 tuổi tham gia 5 môn thể thao ở Vương quốc Anh năm 2010.",
         "english": "The table compares the proportion of boys aged 6-11 and 12-16 participating in 5 sports in the UK in 2010.",
         "hint": "Sử dụng cấu trúc 'The table compares the proportion of ... participating in ...'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t280"
     },
     {
@@ -1970,14 +1970,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Điều đáng chú ý là vào năm 1985, các trạm điện đã sử dụng hơn 3/4 tổng số lượng.",
         "english": "It is noteworthy that in 1985, power stations used more than three-quarters of the total amount.",
         "hint": "Sử dụng cấu trúc 'It is noteworthy that in ..., power stations used more than ... of the total amount.'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t282"
     },
     {
         "vietnamese": "Đáng chú ý là nam giới làm việc hoặc học tập trung bình nhiều hơn phụ nữ 79 phút mỗi ngày.",
         "english": "It is notable that men work or study an average of 79 minutes per day more than women.",
         "hint": "Sử dụng cấu trúc 'It is notable that men work or study an average of ... more than women.'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t283"
     },
     {
@@ -1998,7 +1998,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai bảng đã cho chỉ ra lượng thời gian trung bình mà cả nhân viên toàn thời gian và bán thời gian đã làm việc tại ba quốc gia châu Âu đặc biệt trong năm 2002 so với số giờ trung bình dành cho công việc của công dân châu Âu.",
         "english": "The two given tables indicate the average amount of time that both full-time and part-time employees worked in three specific European countries in 2002 compared with the average hours spent on work by European citizens.",
         "hint": "Sử dụng cấu trúc 'The two given tables indicate the average amount of time ... compared with the average hours spent on work by ...'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t286"
     },
     {
@@ -2026,7 +2026,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Điều đáng chú ý là vào năm 1985, các trạm điện đã sử dụng hơn 3/4 tổng số lượng.",
         "english": "It is noteworthy that in 1985, power stations used more than three-quarters of the total amount.",
         "hint": "Sử dụng cấu trúc 'It is noteworthy that in ..., power stations used more than ... of the total amount.'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t290"
     },
     {
@@ -2040,14 +2040,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nhìn chung, học sinh nữ có thành tích tốt hơn học sinh nam trong môn toán và tỷ lệ học sinh đạt điểm ở 3 mức điểm khác nhau khác nhau đáng kể giữa các giới tính và cấp học.",
         "english": "Overall, female students performed better than male students in math and the proportion of students scoring in the 3 different grade bands varied significantly across genders and school levels.",
         "hint": "Sử dụng cấu trúc 'Overall, ... performed better than ... and the proportion of ... varied significantly across ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t292"
     },
     {
         "vietnamese": "Ngược lại, trong năm 2010/11, các khoản trợ cấp là nguồn thu nhập chính của sinh viên (52%) và con số này đã giảm mạnh trong giai đoạn 5 năm xuống chỉ còn 16% vào năm 2015.",
         "english": "By contrast, in 2010/11, grants were the main source of income for students (52%), and this figure fell sharply over the 5-year period to only 16% in 2015.",
         "hint": "Sử dụng cấu trúc 'By contrast, in ..., ... were the main source of income for ..., and this figure fell sharply over the ...-year period to only ... in ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t293"
     },
     {
@@ -2110,7 +2110,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nhìn chung, rõ ràng Nokia đã chiếm thị phần lớn nhất trong cả hai năm.",
         "english": "Overall, it is clear that Nokia held the largest market share in both years.",
         "hint": "Sử dụng cấu trúc 'Overall, it is clear that Nokia held the largest market share in both years.'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t302"
     },
     {
@@ -2124,21 +2124,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sơ đồ minh họa các mặt cắt của đường hầm Mont-Blanc và đường hầm đường sắt Seikan.",
         "english": "The diagram illustrates the cross-sections of the Mont-Blanc tunnel and the Seikan railway tunnel.",
         "hint": "Sử dụng cấu trúc 'The diagram illustrates the cross-sections of ... and ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t304"
     },
     {
         "vietnamese": "Sơ đồ cho trước mô tả những thay đổi trong khuôn viên trường đại học từ năm 1985 đến nay.",
         "english": "The given diagram describes the changes in the university campus from 1985 to the present.",
         "hint": "Sử dụng cấu trúc 'The given diagram describes the changes in ... from ... to ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t305"
     },
     {
         "vietnamese": "Sơ đồ so sánh hai phương pháp phòng thủ khác nhau cho những ngôi nhà có nguy cơ bị ngập lụt.",
         "english": "The diagram compares two different defense methods for houses at risk of flooding.",
         "hint": "Sử dụng cấu trúc 'The diagram compares two different ... for houses at risk of ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t306"
     },
     {
@@ -2166,14 +2166,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sơ đồ mô tả minh họa những thay đổi ở làng Kelsby trong suốt 120 năm.",
         "english": "The diagram illustrates the changes in Kelsby village over a period of 120 years.",
         "hint": "Sử dụng cấu trúc 'The diagram illustrates the changes in ... over a period of ... years.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t310"
     },
     {
         "vietnamese": "Rõ ràng là thay đổi chính đối với thị trấn sẽ là xây dựng một đường vành đai xung quanh trung tâm.",
         "english": "It is clear that the main change to the town will be the construction of a ring road around the center.",
         "hint": "Sử dụng cấu trúc 'It is clear that the main change to ... will be the construction of ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t311"
     },
     {
@@ -2194,7 +2194,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Năm 1985, ba khối khoa học (vật lý, hóa học và sinh học) được đặt trong các cơ sở riêng biệt mà hiện nay đã được tích hợp vào một tòa nhà duy nhất được gọi là phòng thí nghiệm khoa học.",
         "english": "In 1985, three science blocks (physics, chemistry, and biology) were located in separate facilities, which have now been integrated into a single building known as the science laboratory.",
         "hint": "Sử dụng cấu trúc 'In 1985, ... were located in separate facilities, which have now been integrated into ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t314"
     },
     {
@@ -2208,14 +2208,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai bản đồ đưa ra này minh họa sự thay diện mạo của làng Ryemouth vào năm 1995 thành hiện tại.",
         "english": "The two given maps illustrate the changes in the layout of Ryemouth village from 1995 to the present day.",
         "hint": "Sử dụng cấu trúc 'The two given maps illustrate the changes in the layout of ... from ... to ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t316"
     },
     {
         "vietnamese": "Rõ ràng là hòn đảo đã thay đổi đáng kể với sự ra đời của ngành du lịch, và sáu đặc điểm mới có thể được nhìn thấy trong biểu đồ thứ hai.",
         "english": "It is clear that the island has changed significantly with the introduction of the tourism industry, and six new features can be seen in the second chart.",
         "hint": "Sử dụng cấu trúc 'It is clear that ... has changed significantly with the introduction of ..., and ... new features can be seen in ...'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t317"
     },
     {
@@ -2250,14 +2250,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Có hai quy trình chính liên quan đến quy trình sản xuất tổng thể: một là chính quy trình sản xuất và một quy trình khác là quy trình phản hồi thông tin để điều chỉnh quá trình sản xuất được thực hiện.",
         "english": "There are two main processes involved in the overall production process: one is the production process itself, and another is the information feedback process to adjust the manufacturing process being carried out.",
         "hint": "Sử dụng cấu trúc 'There are two main processes involved in the overall production process: one is ..., and another is ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t322"
     },
     {
         "vietnamese": "Biểu đồ cho thấy cách thức tái chế giấy thải.",
         "english": "The chart shows how waste paper is recycled.",
         "hint": "Sử dụng cấu trúc 'The chart shows how + [Subject] + is recycled.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t323"
     },
     {
@@ -2271,7 +2271,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Có tổng cộng mười giai đoạn trong quá trình này, bắt đầu từ việc trồng vỏ quả trên cây cacao và đỉnh cao là sản xuất sôcôla.",
         "english": "There are a total of ten stages in this process, starting with growing pods on cacao trees and culminating in the production of chocolate.",
         "hint": "Sử dụng cấu trúc 'There are a total of [Number] stages in this process, starting with ... and culminating in ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t325"
     },
     {
@@ -2292,14 +2292,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai sơ đồ cho thấy cách điện có thể được tạo ra từ sự dâng lên và hạ xuống của nước do sóng biển gây ra.",
         "english": "Two diagrams show how electricity can be generated from the rise and fall of water caused by sea waves.",
         "hint": "Sử dụng cấu trúc 'Two diagrams show how + [Subject] + can be generated from + [noun phrase]'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t328"
     },
     {
         "vietnamese": "Hình ảnh minh họa cách thức mà nước đi từ đại dương sang không khí vào đất liền trong quá trình tự nhiên được gọi là vòng tuần hoàn của nước.",
         "english": "The image illustrates the way water travels from the oceans to the air and onto the land in a natural process called the water cycle.",
         "hint": "Sử dụng cấu trúc 'The image illustrates the way + [Subject] + travels from + [noun phrase] + in a natural process called...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t329"
     },
     {
@@ -2313,7 +2313,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Ở giai đoạn đầu tiên của quy trình tái chế giấy, giấy thải được thu gom từ các ngân hàng giấy, nơi các thành viên của công chúng để lại giấy đã sử dụng của họ hoặc trực tiếp từ các doanh nghiệp.",
         "english": "In the first stage of the paper recycling process, waste paper is collected from paper banks, where members of the public leave their used paper, or directly from businesses.",
         "hint": "Sử dụng cấu trúc 'In the first stage of the ... process, ... is collected from ..., or directly from ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t331"
     },
     {
@@ -2327,7 +2327,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Có tổng cộng mười giai đoạn trong quá trình này, bắt đầu từ việc trồng vỏ quả trên cây cacao và đỉnh cao là sản xuất sôcôla.",
         "english": "There are a total of ten stages in this process, starting from growing pods on the cacao trees and culminating in the production of chocolate.",
         "hint": "Sử dụng cấu trúc 'There are a total of [Number] stages in this process, starting from ... and culminating in ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t333"
     },
     {
@@ -2341,63 +2341,63 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sơ đồ đã cho cho thấy các giai đoạn sản xuất và điều chỉnh quá trình của hàng tiêu dùng.",
         "english": "The given diagram shows the production stages and process adjustment of consumer goods.",
         "hint": "Sử dụng cấu trúc 'The given diagram shows the ... stages and ... adjustment of ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t335"
     },
     {
         "vietnamese": "Sơ đồ giải thích quy trình sản xuất sô cô la.",
         "english": "The diagram explains the process of making chocolate.",
         "hint": "Sử dụng cấu trúc 'The diagram explains the process of ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t336"
     },
     {
         "vietnamese": "Sơ đồ minh họa quá trình sản xuất kẹp giấy nhựa màu trong một nhà máy nhỏ.",
         "english": "The diagram illustrates the manufacturing process of colored plastic paper clips in a small factory.",
         "hint": "Sử dụng cấu trúc 'The diagram illustrates the ... process of ... in a ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t337"
     },
     {
         "vietnamese": "Sơ đồ này cung cấp một cái nhìn tổng quan về một hệ thống sưởi ấm trung tâm trong nước.",
         "english": "This diagram provides an overview of a domestic central heating system.",
         "hint": "Sử dụng cấu trúc 'This diagram provides an overview of ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t338"
     },
     {
         "vietnamese": "Hai sơ đồ cho thấy cách điện có thể được tạo ra từ sự dâng lên và hạ xuống của nước do sóng biển gây ra.",
         "english": "Two diagrams show how electricity can be generated from the rise and fall of water caused by sea waves.",
         "hint": "Sử dụng cấu trúc 'Two diagrams show how ... can be generated from ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t339"
     },
     {
         "vietnamese": "Sơ đồ minh họa các giai đoạn khác nhau trong cuộc đời của một con ong mật.",
         "english": "The diagram illustrates the different stages in the life of a honeybee.",
         "hint": "Sử dụng cấu trúc 'The diagram illustrates the different stages in the life of ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t340"
     },
     {
         "vietnamese": "Sữa được sản xuất tại các trang trại từ những con bò chủ yếu được cho ăn cỏ.",
         "english": "Milk is produced on farms from cows that are primarily fed grass.",
         "hint": "Sử dụng cấu trúc '... is produced on ... from ... that are primarily ...'.",
-        "category": "Trends",
+        "category": "Process",
         "id": "t341"
     },
     {
         "vietnamese": "Sơ đồ mô tả minh họa những thay đổi ở làng Kelsby trong suốt 120 năm.",
         "english": "The diagram illustrates the changes in Kelsby village over a period of 120 years.",
         "hint": "Sử dụng cấu trúc 'The diagram illustrates the changes in ... over a period of ... years'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t342"
     },
     {
         "vietnamese": "Rõ ràng là ngôi làng đã phát triển khi cơ sở hạ tầng giao thông được cải thiện.",
         "english": "It is clear that the village has developed as the transport infrastructure has improved.",
         "hint": "Sử dụng cấu trúc 'It is clear that ... has developed as ... has improved'.",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t343"
     },
     {
@@ -2425,21 +2425,21 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sơ đồ đã cho minh họa công cụ đá cắt và cách nó được phát triển, từ 1,4 triệu năm trước đến 800 nghìn năm trước.",
         "english": "The given diagram illustrates a cutting stone tool and how it developed from 1.4 million years ago to 800,000 years ago.",
         "hint": "Sử dụng cấu trúc 'The given diagram illustrates ... and how it developed from ... to ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t347"
     },
     {
         "vietnamese": "Sơ đồ cho trước mô tả những thay đổi trong khuôn viên trường đại học từ năm 1985 đến nay.",
         "english": "The given plan describes the changes in the university campus from 1985 to the present day.",
         "hint": "Sử dụng cấu trúc 'The given plan describes the changes in ... from ... to ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t348"
     },
     {
         "vietnamese": "Những con đường đã được thay thế bằng những lối đi bộ nối tất cả các tòa nhà và dãy nhà.",
         "english": "The roads were replaced by footpaths connecting all the buildings and blocks.",
         "hint": "Sử dụng cấu trúc 'The ... were replaced by ... connecting ...'.",
-        "category": "Trends",
+        "category": "Maps",
         "id": "t349"
     },
     {
@@ -2481,42 +2481,42 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Không có sự khác biệt đáng kể về giới tính trên biểu đồ dân số Ấn Độ.",
         "english": "There is no significant difference in gender on the Indian population chart.",
         "hint": "Sử dụng cấu trúc 'There is no significant difference in ... on the ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t355"
     },
     {
         "vietnamese": "Ba biểu đồ cột cho thấy số năm đi học trung bình, số lượng các nhà khoa học và kỹ thuật viên, và chi tiêu nghiên cứu và phát triển ở các nước đang phát triển và phát triển.",
         "english": "The three bar charts show the average number of years of schooling, the number of scientists and technicians, and research and development expenditure in developing and developed countries.",
         "hint": "Sử dụng cấu trúc 'The three bar charts show ... and ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t356"
     },
     {
         "vietnamese": "Biểu đồ cho thấy sự gia tăng dân số toàn cầu sẽ không diễn ra đồng đều trên toàn thế giới, nhưng sẽ lớn hơn ở một số khu vực so với những khu vực khác.",
         "english": "The chart shows that the global population increase will not take place uniformly worldwide, but will be greater in some regions than in others.",
         "hint": "Sử dụng cấu trúc 'The chart shows that ... will not take place uniformly worldwide, but will be greater in ... than in ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t357"
     },
     {
         "vietnamese": "Biểu đồ cột so sánh chi tiêu của người tiêu dùng đối với sáu mặt hàng khác nhau ở Đức, Ý, Pháp và Anh.",
         "english": "The bar chart compares consumer spending on six different items in Germany, Italy, France, and the UK.",
         "hint": "Sử dụng cấu trúc 'The bar chart compares ... on ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t358"
     },
     {
         "vietnamese": "Biểu đồ hình tròn biểu thị số tiền thu và chi trong một năm của tổ chức từ thiện dành cho trẻ em ở Hoa Kỳ.",
         "english": "The pie chart illustrates the money raised and spent in a single year by a children's charity in the USA.",
         "hint": "Sử dụng cấu trúc 'The pie chart illustrates the ... in a single year by ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t359"
     },
     {
         "vietnamese": "Bốn biểu đồ hình tròn so sánh điện được tạo ra giữa Đức và Pháp trong năm 2009, và nó được đo bằng hàng tỷ kwh.",
         "english": "The four pie charts compare the electricity generated between Germany and France in 2009, and it is measured in billions of kWh.",
         "hint": "Sử dụng cấu trúc 'The four pie charts compare ... in ..., and it is measured in ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t360"
     },
     {
@@ -2530,7 +2530,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Các biểu đồ hình tròn cung cấp thông tin về nước được sử dụng cho mục đích dân cư, công nghiệp và nông nghiệp ở Hạt San Diego, California và toàn thế giới.",
         "english": "The pie charts provide information about the water used for residential, industrial, and agricultural purposes in San Diego County, California, and the whole world.",
         "hint": "Sử dụng cấu trúc 'The pie charts provide information about the ... used for ...'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t362"
     },
     {
@@ -2551,7 +2551,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Các dự báo cho thấy dân số sẽ tiếp tục tăng trong tương lai gần, nhưng tốc độ tăng dân số giảm đều.",
         "english": "The projections show that the population will continue to rise in the near future, but the population growth rate is declining steadily.",
         "hint": "Sử dụng cấu trúc 'The projections show that ... but ... is declining steadily.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t365"
     },
     {
@@ -2607,7 +2607,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Đáng chú ý là những người chơi thể thao đòi hỏi một chế độ ăn kiêng bao gồm tỷ lệ carbohydrate cao hơn đáng kể so với chế độ ăn trung bình hoặc chế độ ăn uống lành mạnh.",
         "english": "It is notable that people who play sports require a diet containing a significantly higher proportion of carbohydrates than an average or healthy diet.",
         "hint": "Sử dụng cấu trúc 'It is notable that ... require a diet containing a significantly higher ... than an average ...'.",
-        "category": "Trends",
+        "category": "Table",
         "id": "t373"
     },
     {
@@ -2670,7 +2670,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai biểu đồ hình tròn so sánh tỷ lệ phần trăm doanh số bán hàng trực tuyến trên các lĩnh vực bán lẻ khác nhau ở Canada trong những năm 2005 và 2010.",
         "english": "The pie charts compare the percentage of online sales across different retail sectors in Canada in the years 2005 and 2010.",
         "hint": "Sử dụng cấu trúc 'The pie charts compare the percentage of online sales across ... in the years ... and ...'.",
-        "category": "Trends",
+        "category": "Multiple",
         "id": "t382"
     },
     {
@@ -2726,7 +2726,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Ngoài ra, các biểu đồ cho thấy sự gia tăng chung về sự tham gia vào giáo dục và khoa học từ 1980 đến 1990.",
         "english": "In addition, the charts show a general increase in participation in education and science from 1980 to 1990.",
         "hint": "Sử dụng cấu trúc 'In addition, the charts show a general increase in ... from [Year] to [Year].'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t390"
     },
     {
@@ -2740,7 +2740,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Ngược lại, biểu đồ đầu tiên cũng cho thấy nghiên cứu bắt nguồn từ sự quan tâm tăng lên theo độ tuổi.",
         "english": "Conversely, the first chart also shows that research interest increases with age.",
         "hint": "Sử dụng cấu trúc 'Conversely, the first chart also shows that interest increases with age.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t392"
     },
     {
@@ -2754,7 +2754,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nó cho thấy bao nhiêu phần trăm giáo viên là nam và bao nhiêu phần trăm là nữ.",
         "english": "It shows what percentage of teachers are male and what percentage are female.",
         "hint": "Sử dụng cấu trúc 'It shows what percentage of ... are male and what percentage are female.'.",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t394"
     },
     {
@@ -2845,14 +2845,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sự thay đổi lớn nhất được nhìn thấy ở tỷ lệ hộ gia đình không có xe hơi, mà đã giảm dần trong giai đoạn 36 năm xuống còn khoảng 25% trong năm 2007.",
         "english": "The largest change was seen in the proportion of households without a car, which gradually decreased over the 36-year period to about 25% in 2007.",
         "hint": "Sử dụng cấu trúc 'The largest change was seen in the ... of ..., which gradually decreased over the ... period to about ... in ...', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t407"
     },
     {
         "vietnamese": "Theo biểu đồ hình tròn, giá cả là yếu tố quan trọng đối với 36% khách du lịch Mỹ.",
         "english": "According to the pie chart, price was an important factor for 36% of American tourists.",
         "hint": "Sử dụng cấu trúc 'According to the pie chart, ... was an important factor for ...', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t408"
     },
     {
@@ -2922,7 +2922,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Từ biểu đồ, chúng ta có thể thấy rằng vào năm 1970, cá và khoai tây chiên phổ biến gấp đôi so với bánh mì kẹp thịt, lúc đó pizza là thức ăn nhanh ít phổ biến nhất.",
         "english": "From the chart, we can see that in 1970, fish and chips were twice as popular as burgers, at which time pizza was the least popular fast food.",
         "hint": "Sử dụng cấu trúc 'From the chart, we can see that in [Year], [item] were twice as popular as [item], at which time [item] was the least popular fast food.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t418"
     },
     {
@@ -2978,7 +2978,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Vào đầu giai đoạn này, vào năm 1992, Công nghiệp Dịch vụ chiếm 4% GDP, trong khi CNTT vượt quá mức này, chỉ hơn 6%.",
         "english": "At the beginning of this period, in 1992, the service industry accounted for 4% of GDP, while IT exceeded this level, at just over 6%.",
         "hint": "Sử dụng cấu trúc 'At the beginning of this period, in [Year], the ... accounted for [Percentage] of GDP, while ... exceeded this level, at just over [Percentage].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t426"
     },
     {
@@ -3027,7 +3027,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Việc sử dụng điện trong một ngôi nhà ở Anh trung bình được thể hiện trong biểu đồ hình tròn.",
         "english": "The electricity usage in an average English home is illustrated in the pie chart.",
         "hint": "Sử dụng cấu trúc 'The ... in an average ... is illustrated in the ...', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t433"
     },
     {
@@ -3041,7 +3041,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Xấp xỉ 20.000 người di cư đến New Zealand mỗi năm, trong khi Hoa Kỳ dao động trong khoảng 20-25.000 người trong giai đoạn này.",
         "english": "Approximately 20,000 people migrate to New Zealand each year, while the United States fluctuated between 20,000 and 25,000 people during this period.",
         "hint": "Sử dụng cấu trúc 'Approximately [number] people migrate to ... each year, while ... fluctuated between ... and ... during this period.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t435"
     },
     {
@@ -3454,70 +3454,70 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ cột so sánh chi tiêu của người tiêu dùng cho sáu mặt hàng khác nhau vào năm 2009.",
         "english": "The bar chart compares consumer spending on six different items in 2009.",
         "hint": "Sử dụng cấu trúc 'The bar chart compares [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t494"
     },
     {
         "vietnamese": "Các biểu đồ cung cấp thông tin về tỷ lệ nam và nữ.",
         "english": "The charts provide information on the proportion of males and females.",
         "hint": "Sử dụng cấu trúc 'The charts provide information on [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t495"
     },
     {
         "vietnamese": "Biểu đồ đường minh họa số lượng du khách hàng triệu người từ Vương quốc Anh.",
         "english": "The line graph illustrates the number of visitors in millions from the UK.",
         "hint": "Sử dụng cấu trúc 'The line graph illustrates [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t496"
     },
     {
         "vietnamese": "Biểu đồ 1 cho thấy phần trăm GDP chi cho y tế và giáo dục.",
         "english": "Graph 1 shows the percentage of GDP spent on health and education.",
         "hint": "Sử dụng cấu trúc 'Graph 1 shows [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t497"
     },
     {
         "vietnamese": "Biểu đồ 2 cho thấy sự cải thiện về tuổi thọ và tỷ lệ tử vong ở trẻ sơ sinh từ năm 1970 đến 1992.",
         "english": "Graph 2 shows improvements in life expectancy and infant mortality between 1970 and 1992.",
         "hint": "Sử dụng cấu trúc 'Graph 2 shows improvements in [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t498"
     },
     {
         "vietnamese": "Không có sự khác biệt đáng kể nào về giới tính có thể được nhìn thấy trên biểu đồ dân số Ấn Độ.",
         "english": "No significant gender differences can be seen on the Indian population chart.",
         "hint": "Sử dụng cấu trúc 'No significant [adjective] can be seen on [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t499"
     },
     {
         "vietnamese": "Ba biểu đồ cột cho thấy số năm học trung bình, số lượng nhà khoa học và kỹ thuật viên, cũng như chi tiêu cho nghiên cứu và phát triển ở các nước đang phát triển và phát triển.",
         "english": "The three bar charts show average years of schooling, numbers of scientists and technicians, and research and development spending in developing and developed countries.",
         "hint": "Sử dụng cấu trúc 'The three bar charts show [nouns].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t500"
     },
     {
         "vietnamese": "Biểu đồ cột cung cấp thông tin về giới tính của giáo viên ở sáu loại cơ sở giáo dục ở Anh vào năm 2010.",
         "english": "The bar chart gives information about the gender of teachers in six types of educational institutions in the UK in 2010.",
         "hint": "Sử dụng cấu trúc 'The bar chart gives information about [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t501"
     },
     {
         "vietnamese": "Các dự báo cho thấy sự gia tăng liên tục của dân số trong tương lai gần, nhưng sự suy giảm đều đặn của tỷ lệ tăng trưởng dân số.",
         "english": "Projections show a continued increase in population in the near future, but a steady decline in the population growth rate.",
         "hint": "Sử dụng cấu trúc 'Projections show a continued increase in population in the near future, but a steady decline in the population growth rate.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t502"
     },
     {
         "vietnamese": "Biểu đồ hình tròn minh họa khả năng quản lý tài chính của sinh viên Vương quốc Anh.",
         "english": "The pie chart illustrates the ability of UK students to manage their finances.",
         "hint": "Sử dụng cấu trúc 'The pie chart illustrates [noun phrase].', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t503"
     },
     {
@@ -3580,7 +3580,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Đáng chú ý là lượng nước tiêu thụ ở các hộ gia đình nhiều hơn so với ngành công nghiệp hoặc nông nghiệp ở hai khu vực của châu Mỹ.",
         "english": "It is noticeable that more water is consumed by homes than by industry or agriculture in the two American regions.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that more water is consumed by homes than by industry or agriculture in the two American regions.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t512"
     },
     {
@@ -3615,7 +3615,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Đáng chú ý là những người chơi thể thao yêu cầu một chế độ ăn uống bao gồm tỷ lệ carbohydrate khác biệt đáng kể.",
         "english": "It is noticeable that sportspeople require a diet comprising a significantly different proportion of carbohydrates.",
         "hint": "Sử dụng cấu trúc 'It is noticeable that sportspeople require a diet comprising a significantly different proportion of carbohydrates.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t517"
     },
     {
@@ -3636,7 +3636,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Hai biểu đồ cung cấp thông tin về các hộ gia đình ở một mình ở Anh.",
         "english": "The two charts give information about single-occupant households in England.",
         "hint": "Sử dụng cấu trúc 'The two charts give information about single-occupant households in England.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Multiple",
         "id": "t520"
     },
     {
@@ -3678,7 +3678,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Biểu đồ hình tròn, mặt khác, cho thấy 52,5% lượng điện được sử dụng để sưởi ấm phòng và nước.",
         "english": "The pie chart on the other hand shows that 52.5% of the electricity is used for heating rooms and water.",
         "hint": "Sử dụng cấu trúc 'The pie chart on the other hand shows that 52.5% of the electricity is used for heating rooms and water.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t526"
     },
     {
@@ -3692,7 +3692,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Một sự gia tăng dần dần được nhận thấy để đạt mức cao nhất là 20.000, sau đó một giai đoạn ổn định là rõ ràng.",
         "english": "A gradual increase is noticed to reach its top of 20000 after which a stationary phase is obvious.",
         "hint": "Sử dụng cấu trúc 'A gradual increase is noticed to reach its top of 20000 after which a stationary phase is obvious.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t528"
     },
     {
@@ -3713,7 +3713,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nhìn chung, Vương quốc Anh có mức chi tiêu cao nhất cho hai mặt hàng.",
         "english": "Overall, the UK saw by far the highest levels of spending on the two.",
         "hint": "Sử dụng cấu trúc 'Overall, the UK saw by far the highest levels of spending on the two.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t531"
     },
     {
@@ -3727,7 +3727,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Xem xét kỹ hơn biểu đồ cột, chúng ta có thể thấy rằng 49% các chuyến đi thực hiện bởi người Mỹ vào năm 2009 là cho mục đích đi làm.",
         "english": "Looking more closely at the bar chart, we can see that 49% of the trips made by Americans in 2009 were for the purpose of commuting.",
         "hint": "Sử dụng cấu trúc 'Looking more closely at the bar chart, we can see that 49% of the trips made by Americans in 2009 were for the purpose of commuting.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t533"
     },
     {
@@ -3748,7 +3748,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Nhìn chung, các phát hiện cho thấy sinh viên nói chung quản lý tài chính của họ tốt.",
         "english": "Overall, the findings suggest that students generally manage their finances well.",
         "hint": "Sử dụng cấu trúc 'Overall, the findings suggest that students generally manage their finances well.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Overview",
         "id": "t536"
     },
     {
@@ -3783,7 +3783,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Rõ ràng là các cuộc gọi thực hiện qua đường dây cố định địa phương là loại phổ biến nhất, xét về mức độ sử dụng tổng thể trong suốt giai đoạn được hiển thị.",
         "english": "It is clear that calls made via local, fixed lines were the most popular type, in terms of overall usage, throughout the period shown.",
         "hint": "Sử dụng cấu trúc 'It is clear that calls made via local, fixed lines were the most popular type, in terms of overall usage, throughout the period shown.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t541"
     },
     {
@@ -3811,14 +3811,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Theo biểu đồ hình tròn, giá cả là yếu tố cân nhắc chính đối với 36% du khách Mỹ.",
         "english": "According to the pie chart, price was the key consideration for 36% of American travellers.",
         "hint": "Sử dụng cấu trúc 'According to the pie chart, price was the key consideration for 36% of American travellers.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t545"
     },
     {
         "vietnamese": "Nhìn chung, hai biểu đồ cho thấy rõ ràng rằng phụ nữ không có cùng cơ hội tiếp cận một số loại hình việc làm như nam giới.",
         "english": "In summary, the two charts clearly show that women do not have the same access as men to certain types of employment.",
         "hint": "Sử dụng cấu trúc 'In summary, the two charts clearly show that women do not have the same access as men to certain types of employment.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Multiple",
         "id": "t546"
     },
     {
@@ -3839,7 +3839,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Theo biểu đồ, trong khi 85% các bạn nam chơi trò chơi điện tử mỗi ngày, thì chỉ có 55% trò chuyện trực tuyến mỗi ngày.",
         "english": "According to the chart, while 85% of boys play computer games every day, only 55% chat online daily.",
         "hint": "Sử dụng cấu trúc 'According to the chart, while 85% of boys play computer games every day, only 55% chat online daily.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t549"
     },
     {
@@ -3881,14 +3881,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Trong bốn năm qua, cả hai mức giá vẫn tương đối ổn định.",
         "english": "Over the following four years both prices remained relatively stable.",
         "hint": "Sử dụng cấu trúc 'Over the following four years both prices remained relatively stable.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Table",
         "id": "t555"
     },
     {
         "vietnamese": "Trong hai năm qua nó vẫn ổn định ở mức 42 triệu du khách.",
         "english": "In the last two years it remained stable at 42m travellers.",
         "hint": "Sử dụng cấu trúc 'In the last two years it remained stable at 42m travellers.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Table",
         "id": "t556"
     },
     {
@@ -3909,7 +3909,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Từ biểu đồ, chúng ta có thể thấy rằng vào năm 1970, cá và khoai tây chiên phổ biến gấp đôi so với bánh mì kẹp thịt, trong đó pizza lúc bấy giờ là thức ăn nhanh ít phổ biến nhất.",
         "english": "From the graph we can see that in 1970, fish and chips were twice as popular as burgers, pizza being at that time the least popular fast food.",
         "hint": "Sử dụng cấu trúc 'From the graph we can see that in 1970, fish and chips were twice as popular as burgers, pizza being at that time the least popular fast food.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Introduction",
         "id": "t559"
     },
     {
@@ -3965,7 +3965,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Vào đầu giai đoạn, năm 1992, ngành Dịch vụ chiếm 4% GDP, trong khi CNTT vượt mức này, ở mức hơn 6%.",
         "english": "At the beginning of the period, in 1992, the Service Industry accounted for 4 per cent of GDP, whereas IT exceeded this, at just over 6 per cent.",
         "hint": "Sử dụng cấu trúc 'At the beginning of the period, in 1992, the Service Industry accounted for 4 per cent of GDP, whereas IT exceeded this, at just over 6 per cent.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t567"
     },
     {
@@ -3979,14 +3979,14 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Sự tiêu thụ hamburger và pizza đã tăng đều đặn trong suốt giai đoạn 20 năm đến năm 1990 trong khi sự tiêu thụ cá và khoai tây chiên đã giảm trong suốt thời gian đó.",
         "english": "The consumption of hamburgers and pizza has risen steadily over the 20 year period to 1990 while the consumption of fish and chips has been in decline over that.",
         "hint": "Sử dụng cấu trúc 'The consumption of hamburgers and pizza has risen steadily over the 20 year period to 1990 while the consumption of fish and chips has been in decline over that.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t569"
     },
     {
         "vietnamese": "Trong giai đoạn đó, số lượng người di cư đến New Zealand là khoảng 20.000 người mỗi năm, trong khi con số của Mỹ dao động trong khoảng 20-25.000 người.",
         "english": "Approximately 20,000 people emigrated to New Zealand each year, while the USA fluctuated between 20-25,000 people over the period.",
         "hint": "Sử dụng cấu trúc 'Approximately 20,000 people emigrated to New Zealand each year, while the USA fluctuated between 20-25,000 people over the period.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t570"
     },
     {
@@ -4028,7 +4028,7 @@ const TASK1_TRANSLATIONS = [
         "vietnamese": "Có nhiều lý do khác nhau khiến nhiều người thấy phim nước ngoài thú vị hơn các bộ phim được sản xuất tại đất nước của họ.",
         "english": "There are various reasons why many people find foreign films more enjoyable than the films produced in their own countries.",
         "hint": "Sử dụng cấu trúc 'There are various reasons why many people find foreign films more enjoyable than the films produced in their own countries.', category: 'Trends'",
-        "category": "Trends",
+        "category": "Process",
         "id": "t576"
     },
     {
@@ -4371,7 +4371,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "never",
         "explanation_vi": "Lời khuyên trong bài là không bao giờ mô tả từng đường riêng biệt vì giám khảo muốn thấy sự so sánh (comparisons).",
-        "id": "t624"
+        "id": "t624",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4379,7 +4380,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "emigration",
         "explanation_vi": "Dựa trên văn bản, biểu đồ mô tả 3 đối tượng: nhập cư (immigration), di cư (emigration) và di cư thuần (net migration).",
-        "id": "t625"
+        "id": "t625",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4392,7 +4394,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "is predicted to",
         "explanation_vi": "Đối với các năm trong tương lai, văn bản hướng dẫn sử dụng 'will' hoặc 'is expected/predicted to'.",
-        "id": "t626"
+        "id": "t626",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4400,7 +4403,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "millions",
         "explanation_vi": "Văn bản L3S ghi rõ đơn vị đo lường là 'measured in millions of tonnes'.",
-        "id": "t627"
+        "id": "t627",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4413,7 +4417,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Specific numbers",
         "explanation_vi": "Phần tóm tắt (Summary/Overview) chỉ nên nêu xu hướng chung, không cần đưa số liệu cụ thể (specific figures).",
-        "id": "t628"
+        "id": "t628",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4426,7 +4431,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "produced",
         "explanation_vi": "Đối với chất thải (waste), chúng ta dùng động từ 'produce' (tạo ra/thải ra).",
-        "id": "t629"
+        "id": "t629",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4434,7 +4440,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "illustrates / shows",
         "explanation_vi": "'Illustrate' là từ đồng nghĩa học thuật thường dùng để thay thế cho 'show' trong Task 1.",
-        "id": "t630"
+        "id": "t630",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4447,7 +4454,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "representation",
         "explanation_vi": "'Representation of women' nói về sự hiện diện hoặc tỷ lệ phụ nữ trong một lĩnh vực nào đó.",
-        "id": "t631"
+        "id": "t631",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4455,7 +4463,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "rates",
         "explanation_vi": "Cụm từ cố định 'unemployment rates' có nghĩa là tỷ lệ thất nghiệp.",
-        "id": "t632"
+        "id": "t632",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4468,7 +4477,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "average",
         "explanation_vi": "'Average' (trung bình) là tính từ bổ nghĩa cho mức chi tiêu (spend) trong văn cảnh này.",
-        "id": "t633"
+        "id": "t633",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4481,7 +4491,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "number",
         "explanation_vi": "Với danh từ đếm được số nhiều như 'minutes', chúng ta sử dụng 'number'.",
-        "id": "t634"
+        "id": "t634",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4489,7 +4500,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "spending",
         "explanation_vi": "'Consumer spending' là cụm danh từ phổ biến trong IELTS Task 1 để chỉ việc người dân tiêu tiền vào việc gì.",
-        "id": "t635"
+        "id": "t635",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4502,7 +4514,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "divided",
         "explanation_vi": "'Be divided into' (được chia thành) là cấu trúc chuẩn để phân loại dữ liệu trong biểu đồ.",
-        "id": "t636"
+        "id": "t636",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4510,7 +4523,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "participation",
         "explanation_vi": "'Participation' là danh từ của động từ 'participate', thường đi với giới từ 'in'.",
-        "id": "t637"
+        "id": "t637",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4523,7 +4537,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "change",
         "explanation_vi": "Dựa vào văn bản L14E, biểu đồ mô tả sự thay đổi dân số (population change).",
-        "id": "t638"
+        "id": "t638",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4536,7 +4551,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "emigrated",
         "explanation_vi": "'Emigrated' (di cư đi) phù hợp với ngữ cảnh người Anh rời bỏ đất nước mình để đến các điểm đến khác.",
-        "id": "t639"
+        "id": "t639",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4544,7 +4560,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "components",
         "explanation_vi": "'Components' là từ chuyên dụng để chỉ các phần cấu thành nên một tổng thể (như GDP).",
-        "id": "t640"
+        "id": "t640",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4557,7 +4574,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "attendances",
         "explanation_vi": "'Attendances' dùng để chỉ số lượt người có mặt/tham dự (trong trường hợp này là tại khoa cấp cứu).",
-        "id": "t641"
+        "id": "t641",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4565,7 +4583,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "part-time",
         "explanation_vi": "Đây là cặp từ đối lập phổ biến trong giáo dục: toàn thời gian (full-time) và bán thời gian (part-time).",
-        "id": "t642"
+        "id": "t642",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4578,7 +4597,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "environmentally",
         "explanation_vi": "Cụm từ 'environmentally friendly' (thân thiện với môi trường) là một collocation cực kỳ phổ biến.",
-        "id": "t643"
+        "id": "t643",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4591,7 +4611,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "proportion",
         "explanation_vi": "Trong biểu đồ tròn (pie chart), từ 'proportion' (tỷ lệ phần trăm của một tổng thể) là từ chuyên dụng nhất.",
-        "id": "t644"
+        "id": "t644",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4599,7 +4620,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "questionnaire",
         "explanation_vi": "'Questionnaire' là danh từ chỉ tập hợp các câu hỏi dùng trong khảo sát.",
-        "id": "t645"
+        "id": "t645",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4612,7 +4634,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "leisure",
         "explanation_vi": "'Leisure time' (thời gian rảnh) đi kèm với 'leisure activities' (hoạt động giải trí).",
-        "id": "t646"
+        "id": "t646",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4620,7 +4643,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "division of tasks / task division",
         "explanation_vi": "'Division' dùng để chỉ sự phân chia một tổng thể thành các phần cho các đối tượng khác nhau.",
-        "id": "t647"
+        "id": "t647",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4633,7 +4657,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sources",
         "explanation_vi": "'Sources of fuel/energy' (nguồn nhiên liệu/năng lượng) là một collocation phổ biến trong bài Writing Task 1.",
-        "id": "t648"
+        "id": "t648",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4646,7 +4671,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "renewables",
         "explanation_vi": "'Renewables' (năng lượng tái tạo) thường được so sánh với các nguồn năng lượng truyền thống trong các bài Task 1 về năng lượng.",
-        "id": "t649"
+        "id": "t649",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4654,7 +4680,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "expenditure / spending",
         "explanation_vi": "'Expenditure' là danh từ học thuật thường dùng trong IELTS để thay thế cho 'spending'.",
-        "id": "t650"
+        "id": "t650",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4667,7 +4694,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commute",
         "explanation_vi": "'Commute' là động từ chuyên dùng để chỉ việc đi làm hàng ngày bằng phương tiện giao thông.",
-        "id": "t651"
+        "id": "t651",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4675,7 +4703,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "patterns",
         "explanation_vi": "'Employment patterns' là một collocation chỉ xu hướng hoặc mô hình phân bổ việc làm.",
-        "id": "t652"
+        "id": "t652",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4688,7 +4717,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sectors",
         "explanation_vi": "'Retail sectors' (các phân khúc bán lẻ) dùng để chỉ các nhóm ngành hàng trong kinh doanh bán lẻ.",
-        "id": "t653"
+        "id": "t653",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4701,7 +4731,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "household",
         "explanation_vi": "Cụm từ 'household expenditures' có nghĩa là chi tiêu hộ gia đình, một chủ đề phổ biến trong IELTS Task 1.",
-        "id": "t654"
+        "id": "t654",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4709,7 +4740,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "enrolment",
         "explanation_vi": "'Enrolment' chỉ số lượng người đăng ký vào một tổ chức giáo dục.",
-        "id": "t655"
+        "id": "t655",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4722,7 +4754,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "trialed",
         "explanation_vi": "'Trialed' có nghĩa là được đưa vào thử nghiệm (thường dùng cho thuốc hoặc vắc-xin).",
-        "id": "t656"
+        "id": "t656",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4730,7 +4763,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "funds",
         "explanation_vi": "'Funds' là tiền quỹ được dành riêng cho một mục đích cụ thể.",
-        "id": "t657"
+        "id": "t657",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4743,7 +4777,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "extent",
         "explanation_vi": "Cụm từ 'to what extent' là cấu trúc cố định dùng để hỏi về mức độ.",
-        "id": "t658"
+        "id": "t658",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4756,7 +4791,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "proportion",
         "explanation_vi": "Trong thống kê về các nhóm đối tượng chiếm bao nhiêu phần trăm của tổng thể, từ 'proportion' (tỷ lệ) là chính xác nhất.",
-        "id": "t659"
+        "id": "t659",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4764,7 +4800,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "share",
         "explanation_vi": "'Share price' là một thuật ngữ kinh tế chỉ giá cổ phiếu của một công ty.",
-        "id": "t660"
+        "id": "t660",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4777,7 +4814,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "expenditure",
         "explanation_vi": "'Expenditure' (chi tiêu) là danh từ học thuật thường dùng trong biểu đồ về ngân sách hoặc tiêu dùng.",
-        "id": "t661"
+        "id": "t661",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4785,7 +4823,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "production",
         "explanation_vi": "'Waste production' dùng để chỉ lượng rác thải được tạo ra bởi một quốc gia hoặc tổ chức.",
-        "id": "t662"
+        "id": "t662",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4798,7 +4837,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "spending",
         "explanation_vi": "'Spending patterns' là cụm từ chỉ thói quen chi tiêu tiền bạc vào các hạng mục khác nhau.",
-        "id": "t663"
+        "id": "t663",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4811,7 +4851,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "results",
         "explanation_vi": "Dựa trên văn bản T9E, 'results' (kết quả) của cuộc khảo sát được trình bày trong bảng.",
-        "id": "t664"
+        "id": "t664",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4819,7 +4860,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "home schooled",
         "explanation_vi": "'Home schooled' là tính từ dùng để mô tả việc học tập tại nhà.",
-        "id": "t665"
+        "id": "t665",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4832,7 +4874,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "aged",
         "explanation_vi": "'Aged' là dạng rút gọn của mệnh đề quan hệ (who are aged...), dùng để chỉ độ tuổi.",
-        "id": "t666"
+        "id": "t666",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4840,7 +4883,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "problems",
         "explanation_vi": "'Problems' là danh từ chỉ các vấn đề hoặc khó khăn được đề cập trong đề bài T6S.",
-        "id": "t667"
+        "id": "t667",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4853,7 +4897,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "took",
         "explanation_vi": "Cụm từ cố định là 'take part in' (quá khứ là 'took part in') nghĩa là tham gia vào.",
-        "id": "t668"
+        "id": "t668",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4866,7 +4911,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "figures",
         "explanation_vi": "Trong IELTS Writing Task 1, 'figures' thường được dùng để chỉ các số liệu thống kê.",
-        "id": "t669"
+        "id": "t669",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4874,7 +4920,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "millions",
         "explanation_vi": "Đơn vị 'in millions' (tính theo hàng triệu) xuất hiện trong tiêu đề của bảng T10E.",
-        "id": "t670"
+        "id": "t670",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4887,7 +4934,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "genre",
         "explanation_vi": "'Genre' là thuật ngữ học thuật để chỉ thể loại phim (như Horror, Romance).",
-        "id": "t671"
+        "id": "t671",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4895,7 +4943,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "overall",
         "explanation_vi": "'Overall band score' là điểm trung bình cộng của cả 4 kỹ năng trong IELTS.",
-        "id": "t672"
+        "id": "t672",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4908,7 +4957,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "taking",
         "explanation_vi": "Cụm từ đi kèm với 'test' thường là 'take a test' (tham gia kỳ thi).",
-        "id": "t673"
+        "id": "t673",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4921,7 +4971,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "in terms of",
         "explanation_vi": "'In terms of' dùng để chỉ khía cạnh hoặc tiêu chí được đưa ra để so sánh.",
-        "id": "t674"
+        "id": "t674",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4929,7 +4980,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "timetable",
         "explanation_vi": "'Timetable' là từ phù hợp nhất để chỉ lịch trình thời gian cho các hoạt động.",
-        "id": "t675"
+        "id": "t675",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4942,7 +4994,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "facilities",
         "explanation_vi": "'Facilities' (cơ sở vật chất) là yếu tố thường được đánh giá trong các câu lạc bộ thể thao.",
-        "id": "t676"
+        "id": "t676",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4950,7 +5003,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "proposed",
         "explanation_vi": "'Proposed' dùng để chỉ một kế hoạch mới đang được đưa ra để xem xét, chưa thực hiện.",
-        "id": "t677"
+        "id": "t677",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4963,7 +5017,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "over",
         "explanation_vi": "Cụm từ 'over the course of' là một collocation cố định có nghĩa là 'trong suốt khoảng thời gian'.",
-        "id": "t678"
+        "id": "t678",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4976,7 +5031,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "production",
         "explanation_vi": "Dựa trên nội dung T23E, bảng cung cấp dữ liệu về sử dụng và sản xuất (production) khí đốt.",
-        "id": "t679"
+        "id": "t679",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -4984,7 +5040,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "market share",
         "explanation_vi": "'Market share' là thuật ngữ chỉ phần trăm thị trường mà một công ty chiếm lĩnh.",
-        "id": "t680"
+        "id": "t680",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -4997,7 +5054,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dedicated",
         "explanation_vi": "'Dedicated to' (dành cho) thường đi kèm với 'time' hoặc 'hours' để chỉ thời gian bỏ ra cho việc gì.",
-        "id": "t681"
+        "id": "t681",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5005,7 +5063,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "pupils",
         "explanation_vi": "'Pupils' là danh từ chỉ học sinh, thường dùng trong ngữ cảnh trường tiểu học hoặc trung học.",
-        "id": "t682"
+        "id": "t682",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5018,7 +5077,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "vary",
         "explanation_vi": "Động từ 'vary' (biến đổi, khác nhau) đi với trạng từ 'widely' để mô tả sự khác biệt lớn.",
-        "id": "t683"
+        "id": "t683",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5031,7 +5091,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "developing",
         "explanation_vi": "'Developing countries' (quốc gia đang phát triển) là đối tượng thường nhận viện trợ tài chính trong các báo cáo kinh tế.",
-        "id": "t684"
+        "id": "t684",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5039,7 +5100,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "consumption",
         "explanation_vi": "'Consumption' là danh từ chỉ sự tiêu thụ tài nguyên như than đá, điện, nước.",
-        "id": "t685"
+        "id": "t685",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5052,7 +5114,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "pastimes",
         "explanation_vi": "'Pastimes' đồng nghĩa với 'hobbies' hoặc 'leisure activities' (hoạt động giải trí).",
-        "id": "t686"
+        "id": "t686",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5060,7 +5123,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "market",
         "explanation_vi": "'Market share' là cụm từ cố định nghĩa là thị phần.",
-        "id": "t687"
+        "id": "t687",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5073,7 +5137,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "standardized",
         "explanation_vi": "'Standardized test' là loại bài thi mà tất cả thí sinh đều trả lời cùng một bộ câu hỏi dưới cùng một điều kiện.",
-        "id": "t688"
+        "id": "t688",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5086,7 +5151,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "structure",
         "explanation_vi": "Cụm từ 'age structure' được dùng để chỉ cơ cấu độ tuổi của một nhóm dân số.",
-        "id": "t689"
+        "id": "t689",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5094,7 +5160,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "participated",
         "explanation_vi": "'Participate in' có nghĩa là tham gia vào một hoạt động hoặc tổ chức.",
-        "id": "t690"
+        "id": "t690",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5107,7 +5174,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "alone",
         "explanation_vi": "'Living alone' là cụm từ chỉ việc sống một mình trong một hộ gia đình.",
-        "id": "t691"
+        "id": "t691",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5115,7 +5183,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "population",
         "explanation_vi": "'Population figures' có nghĩa là số liệu về dân số.",
-        "id": "t692"
+        "id": "t692",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5128,7 +5197,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "period",
         "explanation_vi": "'Period' dùng để chỉ một khoảng thời gian (ví dụ: a period of 20 years).",
-        "id": "t693"
+        "id": "t693",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5141,7 +5211,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sequencing",
         "explanation_vi": "Ngôn ngữ chỉ trình tự (sequencing language) cực kỳ quan trọng để liên kết các bước trong một quy trình.",
-        "id": "t694"
+        "id": "t694",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5149,7 +5220,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "demand",
         "explanation_vi": "'Demand' là danh từ chỉ nhu cầu sử dụng một dịch vụ hoặc hàng hóa nào đó.",
-        "id": "t695"
+        "id": "t695",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5162,7 +5234,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "present simple",
         "explanation_vi": "Vì quy trình thường là một sự thật hiển nhiên hoặc quy định chung, thì hiện tại đơn được ưu tiên sử dụng.",
-        "id": "t696"
+        "id": "t696",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5170,7 +5243,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "paraphrasing",
         "explanation_vi": "Paraphrasing là kỹ năng cốt lõi trong IELTS để chứng minh vốn từ vựng phong phú.",
-        "id": "t697"
+        "id": "t697",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5183,7 +5257,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "support",
         "explanation_vi": "Dựa trên văn bản C15E, biểu đồ đề cập đến sự hỗ trợ (support) mà sinh viên nhận được từ phía chủ doanh nghiệp.",
-        "id": "t698"
+        "id": "t698",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5196,7 +5271,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "up-to-the-minute",
         "explanation_vi": "Dựa trên PR1S, 'up-to-the-minute' dùng để nhấn mạnh tính cập nhật tức thời của thông tin thời tiết.",
-        "id": "t699"
+        "id": "t699",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5204,7 +5280,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "trap",
         "explanation_vi": "'Trap' là động từ chuyên dụng để mô tả việc giữ lại nhiệt hoặc năng lượng trong môi trường.",
-        "id": "t700"
+        "id": "t700",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5217,7 +5294,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "generate",
         "explanation_vi": "Cụm từ 'generate electricity' là collocation phổ biến nhất để nói về việc sản xuất điện.",
-        "id": "t701"
+        "id": "t701",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5225,7 +5303,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "continuous",
         "explanation_vi": "'Continuous' mô tả một chu kỳ diễn ra mãi mãi không có điểm dừng.",
-        "id": "t702"
+        "id": "t702",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5238,7 +5317,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "production",
         "explanation_vi": "'Production' được dùng trong PR9E để chỉ quy trình chế tạo ra sản phẩm (kẹp giấy nhựa).",
-        "id": "t703"
+        "id": "t703",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5251,7 +5331,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "various",
         "explanation_vi": "Dựa trên văn bản PR12E, 'various' (đa dạng/khác nhau) được dùng để chỉ các giai đoạn trong vòng đời.",
-        "id": "t704"
+        "id": "t704",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5259,7 +5340,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "domestic",
         "explanation_vi": "'Domestic purposes' là cụm từ học thuật chỉ các mục đích sử dụng trong gia đình như nấu ăn, tắm rửa.",
-        "id": "t705"
+        "id": "t705",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5272,7 +5354,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "proposed",
         "explanation_vi": "Trong mô tả bản đồ (M2S), 'proposed' dùng để chỉ những thay đổi đang được lập kế hoạch, chưa thực hiện.",
-        "id": "t706"
+        "id": "t706",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5280,7 +5363,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "adjustment",
         "explanation_vi": "'Adjustment' là danh từ chỉ việc sửa đổi hoặc điều chỉnh cho phù hợp hơn.",
-        "id": "t707"
+        "id": "t707",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5293,7 +5377,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "procedure",
         "explanation_vi": "Dựa trên PR16E, 'procedure' (quy trình/thủ tục) là từ thích hợp để chỉ một phần của quá trình sản xuất sữa.",
-        "id": "t708"
+        "id": "t708",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5306,7 +5391,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "prone",
         "explanation_vi": "Cụm từ 'prone to' thường được dùng để chỉ khu vực dễ gặp thiên tai như ngập lụt (flooding).",
-        "id": "t709"
+        "id": "t709",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5314,7 +5400,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "sites",
         "explanation_vi": "'Sites' là danh từ chỉ vị trí hoặc địa điểm xây dựng công trình.",
-        "id": "t710"
+        "id": "t710",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5327,7 +5414,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "developed",
         "explanation_vi": "Trong ngữ cảnh bản đồ, 'developed for tourism' nghĩa là được quy hoạch/phát triển để phục vụ du lịch.",
-        "id": "t711"
+        "id": "t711",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5335,7 +5423,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "differ",
         "explanation_vi": "Động từ 'differ' được dùng để chỉ sự khác nhau giữa các thiết kế.",
-        "id": "t712"
+        "id": "t712",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5348,7 +5437,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "existing",
         "explanation_vi": "'Existing' dùng để chỉ trạng thái hiện tại của ngôi nhà trước khi có sự thay đổi.",
-        "id": "t713"
+        "id": "t713",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5361,7 +5451,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "campus",
         "explanation_vi": "Trong ngữ cảnh giáo dục đại học, 'campus' là từ chuyên dụng để chỉ khuôn viên trường.",
-        "id": "t714"
+        "id": "t714",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5369,7 +5460,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "taken place",
         "explanation_vi": "Cụm từ 'take place' thường được dùng trong IELTS Writing Task 1 để mô tả sự thay đổi trên bản đồ.",
-        "id": "t715"
+        "id": "t715",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5382,7 +5474,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "affected",
         "explanation_vi": "Dựa trên văn bản M15E, 'changes affected' mang nghĩa là những thay đổi được thực hiện/tác động lên.",
-        "id": "t716"
+        "id": "t716",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5390,7 +5483,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "civic",
         "explanation_vi": "'Civic centre' là cụm từ chỉ trung tâm các hoạt động hành chính hoặc văn hóa của một thành phố.",
-        "id": "t717"
+        "id": "t717",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5403,7 +5497,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "existing",
         "explanation_vi": "'Existing' dùng để đối lập với cái mới hoặc cái được đề xuất (proposed/plan).",
-        "id": "t718"
+        "id": "t718",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5416,7 +5511,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "redeveloped",
         "explanation_vi": "Dựa trên ngữ cảnh văn bản M19E, 'redeveloped' là từ phù hợp nhất để chỉ việc quy hoạch lại một công trình.",
-        "id": "t719"
+        "id": "t719",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5424,7 +5520,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "proportions",
         "explanation_vi": "'Proportions' thường được dùng trong IELTS Writing Task 1 để chỉ tỉ lệ phần trăm.",
-        "id": "t720"
+        "id": "t720",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5437,7 +5534,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "manufacture",
         "explanation_vi": "Văn bản E3 đề cập đến quy trình sản xuất (manufacture) thực phẩm.",
-        "id": "t721"
+        "id": "t721",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5445,7 +5543,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "infrastructure",
         "explanation_vi": "'Infrastructure' là từ học thuật dùng để chỉ hệ thống cầu đường, điện nước của một khu vực.",
-        "id": "t722"
+        "id": "t722",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5458,7 +5557,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "side",
         "explanation_vi": "Trong mô tả vật thể (M21E), 'side view' (góc nhìn nghiêng/cạnh) được dùng để mô tả độ dày hoặc hình dáng bên cạnh.",
-        "id": "t723"
+        "id": "t723",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5471,7 +5571,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong mô tả biểu đồ, 'respectively' dùng để chỉ các con số tương ứng theo thứ tự danh từ đã liệt kê.",
-        "id": "t724"
+        "id": "t724",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5479,7 +5580,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "peaked",
         "explanation_vi": "Số liệu đạt mức cao nhất (250,000) nên ta dùng động từ 'peaked'.",
-        "id": "t725"
+        "id": "t725",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5492,7 +5594,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "'Joblessness' là danh từ đồng nghĩa với 'unemployment' (tình trạng thất nghiệp).",
-        "id": "t726"
+        "id": "t726",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5500,7 +5603,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "terms",
         "explanation_vi": "Cấu trúc 'in terms of' dùng để giới thiệu tiêu chí so sánh (ở đây là lượng rác thải đầu ra).",
-        "id": "t727"
+        "id": "t727",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5513,7 +5617,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Theo văn bản, con số này thay đổi lên xuống không ổn định, nên dùng 'fluctuated'.",
-        "id": "t728"
+        "id": "t728",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5526,7 +5631,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Correlation' chỉ sự tương quan/mối liên hệ giữa hai đối tượng biến thiên cùng chiều hoặc ngược chiều.",
-        "id": "t729"
+        "id": "t729",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5534,7 +5640,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "dropped",
         "explanation_vi": "Trong ngữ cảnh này, 'dropped' được dùng để chỉ sự sụt giảm mạnh về giá cả.",
-        "id": "t730"
+        "id": "t730",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5547,7 +5654,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản sử dụng 'visiting loved ones' hoặc 'visiting relations' để thay thế cho cụm 'visiting friends or relatives'.",
-        "id": "t731"
+        "id": "t731",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5555,7 +5663,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "sharp",
         "explanation_vi": "Cụm 'a sharp decline' mô tả sự sụt giảm nhanh và mạnh mẽ.",
-        "id": "t732"
+        "id": "t732",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5568,7 +5677,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa vào văn bản: 'In 1995 Austria spent the least amount of money on books'.",
-        "id": "t733"
+        "id": "t733",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5581,7 +5691,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong đoạn văn bản có ghi 'was triple what it had been in 1940', nghĩa là gấp 3 lần.",
-        "id": "t734"
+        "id": "t734",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5589,7 +5700,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "consistent",
         "explanation_vi": "Văn bản dùng từ 'consistent drop' để chỉ sự sụt giảm đều đặn, liên tục.",
-        "id": "t735"
+        "id": "t735",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5602,7 +5714,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Trong IELTS Writing, 'industrialised countries' và 'developed countries' thường được dùng thay thế cho nhau.",
-        "id": "t736"
+        "id": "t736",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5610,7 +5723,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "by far",
         "explanation_vi": "Cụm 'by far the greatest' dùng để nhấn mạnh mức độ cao nhất vượt trội.",
-        "id": "t737"
+        "id": "t737",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5623,7 +5737,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Cohort' là thuật ngữ học thuật để chỉ một nhóm đối tượng có cùng đặc điểm trong nghiên cứu.",
-        "id": "t738"
+        "id": "t738",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5636,7 +5751,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Austria",
         "explanation_vi": "Văn bản nêu rõ: 'Austria and Belgium are the most environmentally friendly... recycling around 60% and 50% respectively'.",
-        "id": "t739"
+        "id": "t739",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5644,7 +5760,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "rose",
         "explanation_vi": "Dựa trên ngữ cảnh mô tả sự tăng trưởng của cuộc gọi di động từ mức thấp lên 45 tỷ.",
-        "id": "t740"
+        "id": "t740",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5657,7 +5774,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Seasons that follow each other without interruption",
         "explanation_vi": "'Consecutive' có nghĩa là liên tiếp, liền kề nhau.",
-        "id": "t741"
+        "id": "t741",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5665,7 +5783,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "exceeded",
         "explanation_vi": "Văn bản cho biết IT (6%) cao hơn Service Industry (4%), nên dùng 'exceeded'.",
-        "id": "t742"
+        "id": "t742",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5673,7 +5792,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "twice",
         "explanation_vi": "Văn bản ghi nhận 'twice as high as' để so sánh lượng di cư đến Úc so với các nước khác.",
-        "id": "t743"
+        "id": "t743",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5686,7 +5806,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "LaGuardia",
         "explanation_vi": "Văn bản nêu rõ: 'LaGuardia airport was the most popular at the end'.",
-        "id": "t744"
+        "id": "t744",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5699,7 +5820,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "outnumbered",
         "explanation_vi": "'Outnumbered' nghĩa là đông hơn về số lượng, phù hợp với ngữ cảnh so sánh nam và nữ giáo viên.",
-        "id": "t745"
+        "id": "t745",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5712,7 +5834,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Watching TV",
         "explanation_vi": "Watching TV là hoạt động ngồi một chỗ (sedentary), trái ngược với bike riding hay skateboarding là active pursuits.",
-        "id": "t746"
+        "id": "t746",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5720,7 +5843,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "tripled",
         "explanation_vi": "Văn bản ghi: 'during which time the use of mobile phones tripled' (tăng gấp 3 lần).",
-        "id": "t747"
+        "id": "t747",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5733,7 +5857,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "one fifth",
         "explanation_vi": "One fifth tương ứng với 20%. Văn bản điền từ có câu 'Fat constitutes exactly one fifth (1/5) of both...'.",
-        "id": "t748"
+        "id": "t748",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5741,7 +5866,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "accounts",
         "explanation_vi": "Cụm từ 'accounts for' mang nghĩa là chiếm (bao nhiêu phần trăm).",
-        "id": "t749"
+        "id": "t749",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5754,7 +5880,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Good or excellent",
         "explanation_vi": "Đoạn văn ghi: 'a clear majority described the hotel’s service as good or excellent in 2010'.",
-        "id": "t750"
+        "id": "t750",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5762,7 +5889,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "tripled",
         "explanation_vi": "Văn bản nêu: 'Latin America’s proportion almost tripled in the same period'.",
-        "id": "t751"
+        "id": "t751",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5775,7 +5903,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Nuclear power",
         "explanation_vi": "Văn bản xác nhận: 'nuclear was the main source in France (76%)'.",
-        "id": "t752"
+        "id": "t752",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5783,7 +5912,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "exceeded",
         "explanation_vi": "'Exceeded' có nghĩa là vượt quá, văn bản ghi: 'Total revenue sources just exceeded outgoings'.",
-        "id": "t753"
+        "id": "t753",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5796,7 +5926,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "New Zealand",
         "explanation_vi": "Văn bản nêu: 'By 2010, coal had become the fuel for more than 75% of electricity produced [in New Zealand]'.",
-        "id": "t754"
+        "id": "t754",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5804,7 +5935,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "higher education",
         "explanation_vi": "Văn bản xác nhận: 'higher education remained the largest proportion... reaching 45% of total spending'.",
-        "id": "t755"
+        "id": "t755",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5817,7 +5949,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Commuting to work",
         "explanation_vi": "Dựa trên bảng số liệu: '55% of the people need to commute to work by car'.",
-        "id": "t756"
+        "id": "t756",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5825,7 +5958,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "housing",
         "explanation_vi": "Văn bản chỉ rõ: 'In 1950 72.1% of the total household budget went towards housing'.",
-        "id": "t757"
+        "id": "t757",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5838,7 +5972,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Coaches",
         "explanation_vi": "Văn bản khẳng định: 'Coaches are the cleanest form of transport'.",
-        "id": "t758"
+        "id": "t758",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5851,7 +5986,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It dropped slowly and then levelled off",
         "explanation_vi": "Văn bản mô tả số ca bệnh giảm chậm (dropped slowly) rồi chững lại (levelling off) ở mức 2500.",
-        "id": "t759"
+        "id": "t759",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5864,7 +6000,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "outlay",
         "explanation_vi": "'Outlay' đồng nghĩa với expenditure (chi tiêu), phù hợp với ngữ cảnh chi tiền mua xe.",
-        "id": "t760"
+        "id": "t760",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5877,7 +6014,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "London",
         "explanation_vi": "Văn bản khẳng định: 'The London underground is the oldest system, having opened in 1863'.",
-        "id": "t761"
+        "id": "t761",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5885,7 +6023,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "single",
         "explanation_vi": "Văn bản nêu: 'levels of poverty were higher for single people than for couples'.",
-        "id": "t762"
+        "id": "t762",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5898,7 +6037,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "radically",
         "explanation_vi": "Từ 'radically' được dùng để chỉ sự thay đổi triệt để/hoàn toàn về trình độ học vấn của phụ nữ.",
-        "id": "t763"
+        "id": "t763",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5911,7 +6051,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "twice",
         "explanation_vi": "Trong câu so sánh gấp đôi số lần, ta dùng cấu trúc 'twice as much... as'.",
-        "id": "t764"
+        "id": "t764",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5924,7 +6065,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Korea",
         "explanation_vi": "Văn bản nêu rõ: 'Korea was the only country that managed to reduce its waste output by the year 2000'.",
-        "id": "t765"
+        "id": "t765",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5937,7 +6079,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Italy",
         "explanation_vi": "Dữ liệu đoạn T4S ghi: 'expenditure on clothing and footwear was significantly higher in Italy, at 9%...'",
-        "id": "t766"
+        "id": "t766",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5950,7 +6093,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "set",
         "explanation_vi": "Cụm từ 'a set pattern' nghĩa là một khuôn mẫu cố định, không thay đổi.",
-        "id": "t767"
+        "id": "t767",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5963,7 +6107,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Three times",
         "explanation_vi": "Văn bản đoạn T9E ghi: 'participation rates were around three times higher for younger people'.",
-        "id": "t768"
+        "id": "t768",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -5976,7 +6121,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Malay",
         "explanation_vi": "Văn bản nêu: 'Malay speakers... achieved the highest results of all four language groups for the Reading module'.",
-        "id": "t769"
+        "id": "t769",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -5989,7 +6135,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "fewer",
         "explanation_vi": "Văn bản xác nhận: 'China... received 2 million fewer visitors than in the previous year'.",
-        "id": "t770"
+        "id": "t770",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6002,7 +6149,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Children will take part in activities",
         "explanation_vi": "Văn bản ghi: 'children will take part in activities on Saturdays'.",
-        "id": "t771"
+        "id": "t771",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6010,7 +6158,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "social lives",
         "explanation_vi": "Dựa trên câu: 'as people age in Someland their social lives reduce'.",
-        "id": "t772"
+        "id": "t772",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6023,7 +6172,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Canada",
         "explanation_vi": "Văn bản nêu: 'cargo carried more goods in Canada among the given countries (over 28 tonnes)'.",
-        "id": "t773"
+        "id": "t773",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6036,7 +6186,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "negligible",
         "explanation_vi": "Dựa vào sự đối lập với 'dramatic jump', từ cần điền phải mang nghĩa 'không đáng kể'.",
-        "id": "t774"
+        "id": "t774",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6049,7 +6200,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Teenagers",
         "explanation_vi": "Văn bản nêu teens dành tới 58 giờ/tháng cho việc giao lưu, trong khi các nhóm sau đều giảm (26, 14, 12, 8).",
-        "id": "t775"
+        "id": "t775",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6062,7 +6214,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "counterparts",
         "explanation_vi": "'Counterparts' là từ chuyên dụng trong Writing Task 1 để chỉ đối tượng tương ứng (nam so với nữ).",
-        "id": "t776"
+        "id": "t776",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6075,7 +6228,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It decreased by almost 1%",
         "explanation_vi": "Dữ liệu trong đoạn T21E ghi rõ: 'the market share of Samsung decreased by almost 1% to 11.8% in 2006'.",
-        "id": "t777"
+        "id": "t777",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6088,7 +6242,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "comprised",
         "explanation_vi": "'Comprised' (+ %) được dùng để chỉ thành phần cấu thành nên tổng thể.",
-        "id": "t778"
+        "id": "t778",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6101,7 +6256,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ 'Fujitsu-Siemens’ share more than halved from 2006 to 2007: from 4.8% to only 2.3%'.",
-        "id": "t779"
+        "id": "t779",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6109,7 +6265,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "true",
         "explanation_vi": "Cấu trúc 'The opposite was true' dùng để chỉ xu hướng trái ngược.",
-        "id": "t780"
+        "id": "t780",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6122,7 +6279,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản xác nhận 'Water consumption per person in Brazil... was much higher than that in the Congo'.",
-        "id": "t781"
+        "id": "t781",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6130,7 +6288,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "quarters",
         "explanation_vi": "Cụm 'three quarters' tương đương với 75%.",
-        "id": "t782"
+        "id": "t782",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6143,7 +6302,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu '20% of people in England (aged 30-50) like sleeping whereas there is a minor percent in other countries'.",
-        "id": "t783"
+        "id": "t783",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6151,7 +6311,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "risen",
         "explanation_vi": "Dựa trên câu: 'by 2014 the average monthly amount had risen to just over £30'.",
-        "id": "t784"
+        "id": "t784",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6164,7 +6325,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'in the 35-49 age category, men accounted for nearly 65% of people living alone'.",
-        "id": "t785"
+        "id": "t785",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6177,7 +6339,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản ghi rõ: 'Overall, the UK saw by far the highest levels of spending on the two products'.",
-        "id": "t786"
+        "id": "t786",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6185,7 +6348,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "commute",
         "explanation_vi": "Lý do chính yếu được nhắc đến là 'commute' (đi làm hàng ngày).",
-        "id": "t787"
+        "id": "t787",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6198,7 +6362,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Biểu đồ cho thấy 'public drinking was the most common reason for arrest for both'.",
-        "id": "t788"
+        "id": "t788",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6211,7 +6376,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Văn bản nêu: 'The people who watch the most television are in the 45+ age group'.",
-        "id": "t789"
+        "id": "t789",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6219,7 +6385,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "decline",
         "explanation_vi": "Dựa trên câu: 'expected to peak at 8.2 billion by 2050, and then decline to around 6.2 billion by 2100'.",
-        "id": "t790"
+        "id": "t790",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6232,7 +6399,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản ghi rõ: 'Only 4% of students rate themselves as ‘not at all’ competent'.",
-        "id": "t791"
+        "id": "t791",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6240,7 +6408,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "overtook",
         "explanation_vi": "Văn bản đề cập: 'the number of female home students eventually overtook the number of males... in 2012'.",
-        "id": "t792"
+        "id": "t792",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6253,7 +6422,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'fish and chips remains their most popular fast food (for low income earners)'.",
-        "id": "t793"
+        "id": "t793",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6266,7 +6436,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'At the beginning of the process, clay is dug from the ground'.",
-        "id": "t794"
+        "id": "t794",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6274,7 +6445,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "80%",
         "explanation_vi": "Thông tin nằm ở đoạn PR3S: '80% of water vapour in the air comes from the oceans'.",
-        "id": "t795"
+        "id": "t795",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6287,7 +6459,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn PR6E giải thích: 'As the water level falls, the air from outside the column is sucked back in through the turbine'.",
-        "id": "t796"
+        "id": "t796",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6295,7 +6468,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "grade",
         "explanation_vi": "Quy trình tái chế giấy ghi: 'This paper is then sorted by hand and separated according to its grade'.",
-        "id": "t797"
+        "id": "t797",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6308,7 +6482,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Cá hồi di chuyển 'back upstream to spawning areas of rivers' để đẻ trứng.",
-        "id": "t798"
+        "id": "t798",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6321,7 +6496,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'it then flows into a narrow chamber called a penstock, where the resulting high pressure turns a turbine'.",
-        "id": "t799"
+        "id": "t799",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6329,7 +6505,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "rejected",
         "explanation_vi": "Thông tin ở đoạn PR9E: 'Unsatisfactory clips are rejected' (Những chiếc kẹp không đạt yêu cầu sẽ bị loại bỏ).",
-        "id": "t800"
+        "id": "t800",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6342,7 +6519,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Đoạn PR12E xác nhận: 'the nymph grows in size and sheds its skin three times'.",
-        "id": "t801"
+        "id": "t801",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6350,7 +6528,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "trapping",
         "explanation_vi": "Dựa trên câu: '...increase in the amounts of greenhouse gases... which is now trapping too much heat'.",
-        "id": "t802"
+        "id": "t802",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6363,7 +6542,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản mô tả: 'Feedback from testing phase is used in design stage'.",
-        "id": "t803"
+        "id": "t803",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6376,7 +6556,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'Liquid milk is usually pasteurized in order to kill any bacteria'.",
-        "id": "t804"
+        "id": "t804",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6384,7 +6565,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "drinking water",
         "explanation_vi": "Đoạn văn mô tả: 'The water vapour is condensed in this chamber, producing drinking water'.",
-        "id": "t805"
+        "id": "t805",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6397,7 +6579,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản ghi: 'the cool climate house has a high-angled roof, which allows sunlight to enter'.",
-        "id": "t806"
+        "id": "t806",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6405,7 +6588,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "railway",
         "explanation_vi": "Thông tin từ bài: 'The expansion of Chorleywood continued... alongside the railway line until 1970'.",
-        "id": "t807"
+        "id": "t807",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6418,7 +6602,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản định nghĩa: 'The stopbank is a small mound of land next to the river that is higher than the 100-year flood level'.",
-        "id": "t808"
+        "id": "t808",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6431,7 +6616,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'separate premises which now have been integrated into single building called science laboratories'.",
-        "id": "t809"
+        "id": "t809",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6439,7 +6625,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "demolished",
         "explanation_vi": "Dựa trên câu: 'shops... will be demolished to make way for a bus station'.",
-        "id": "t810"
+        "id": "t810",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6452,7 +6639,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản ghi: 'the most striking transformation belonged to the farmland which was turned into the golf'.",
-        "id": "t811"
+        "id": "t811",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6460,7 +6648,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "transformation",
         "explanation_vi": "Văn bản mô tả: 'Stokeford town witnessed a dramatic transformation'.",
-        "id": "t812"
+        "id": "t812",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6473,7 +6662,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản xác nhận: 'the only room which remained unchanged... is physiotherapy room'.",
-        "id": "t813"
+        "id": "t813",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6486,7 +6676,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn ghi rõ: 'The parking in south west has given way to shuttle bus terminal'.",
-        "id": "t814"
+        "id": "t814",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6494,7 +6685,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "below/underneath",
         "explanation_vi": "Dựa trên câu mô tả vị trí của hầm Seikan: 'Seikan Railway tunnel is located below the strait'.",
-        "id": "t815"
+        "id": "t815",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6507,7 +6699,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản mô tả sự phát triển từ công cụ tròn ('rounded') sang công cụ sắc nét và tinh xảo hơn ('sharper, more refined... more chiseled').",
-        "id": "t816"
+        "id": "t816",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6515,7 +6708,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "50",
         "explanation_vi": "Thông tin trong bài: 'the capacity of the car park has also been expanded from 20 in 2004 to 50'.",
-        "id": "t817"
+        "id": "t817",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6528,7 +6722,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'The library will be totally destroyed and will not be reconstructed'.",
-        "id": "t818"
+        "id": "t818",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6541,7 +6736,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'the textile industry saw the most significant growth in earnings' (tăng 15.24%).",
-        "id": "t819"
+        "id": "t819",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6549,7 +6745,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "threefold",
         "explanation_vi": "Con số 42 xấp xỉ gấp 3 lần 13, văn bản sử dụng từ 'threefold increase'.",
-        "id": "t820"
+        "id": "t820",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6562,7 +6759,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản ghi: 'this original car park had become a designated area for staff parking only'.",
-        "id": "t821"
+        "id": "t821",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6570,7 +6768,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "concrete mixer",
         "explanation_vi": "Dựa trên câu cuối của đoạn E7 mô tả về thiết bị trộn bê tông.",
-        "id": "t822"
+        "id": "t822",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6583,7 +6782,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản xác nhận: 'the majority of Americans ate in fast food restaurants between once a week and once a month'.",
-        "id": "t823"
+        "id": "t823",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6596,7 +6796,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Từ 'respectively' (lần lượt) được dùng để liệt kê các con số tương ứng với danh sách các đối tượng đã nêu trước đó.",
-        "id": "t824"
+        "id": "t824",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6604,7 +6805,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "fluctuated",
         "explanation_vi": "Động từ 'fluctuate' diễn tả sự biến động tăng giảm không ổn định.",
-        "id": "t825"
+        "id": "t825",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6617,7 +6819,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Văn bản nêu ngành điện, khí đốt và nước tạo ra khoảng 3,3 triệu tấn vào năm 1990, cao nhất trong các lĩnh vực.",
-        "id": "t826"
+        "id": "t826",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6625,7 +6828,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "peaked",
         "explanation_vi": "Dùng 'peaked' hoặc 'reached a peak' để chỉ việc đạt mức cao nhất trên biểu đồ.",
-        "id": "t827"
+        "id": "t827",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6638,7 +6842,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Di cư ròng (net migration) là con số chênh lệch giữa lượng người nhập cư và xuất cư.",
-        "id": "t828"
+        "id": "t828",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6651,7 +6856,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "They both decreased significantly.",
         "explanation_vi": "Văn bản L7S cho biết đến đầu năm 2009, giá dầu giảm khoảng 90 đô và chỉ số lương thực giảm khoảng 80 điểm.",
-        "id": "t829"
+        "id": "t829",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6664,7 +6870,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Business",
         "explanation_vi": "Phần L8S nêu rõ: 'khách du lịch kinh doanh chi tiêu nhiều nhất mỗi ngày'.",
-        "id": "t830"
+        "id": "t830",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6677,7 +6884,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "United Kingdom",
         "explanation_vi": "Văn bản L9E khẳng định: 'vụ trộm xe hơi ở Anh cao hơn nhiều so với ba quận khác trong toàn bộ khung thời gian'.",
-        "id": "t831"
+        "id": "t831",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6690,7 +6898,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "60",
         "explanation_vi": "Phần B1S ghi: '70% người Mỹ... kết hôn vào năm 1970, nhưng tỷ lệ này đã giảm xuống chỉ còn dưới 60% vào năm 2000'.",
-        "id": "t832"
+        "id": "t832",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6703,7 +6912,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It decreased from $50 billion to $25 billion.",
         "explanation_vi": "Văn bản B2S chỉ ra chi tiêu nghiên cứu ở các nước đang phát triển 'đã giảm từ khoảng 50 tỷ đô la xuống chỉ còn 25 tỷ đô la'.",
-        "id": "t833"
+        "id": "t833",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6716,7 +6926,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'giá nhà ở London đã tăng vọt lên khoảng 12% so với mức trung bình năm 1989', mức cao nhất trong các thành phố.",
-        "id": "t834"
+        "id": "t834",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6724,7 +6935,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "respectively",
         "explanation_vi": "Sử dụng 'respectively' (lần lượt) để liệt kê các số liệu tương ứng với thứ tự các danh từ đã nêu.",
-        "id": "t835"
+        "id": "t835",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6737,7 +6949,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'Các cậu bé trong độ tuổi từ 10 đến 15 rõ ràng thích chơi trên các máy chơi game hơn là trò chuyện trực tuyến'.",
-        "id": "t836"
+        "id": "t836",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6745,7 +6958,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "incinerate",
         "explanation_vi": "Văn bản đề cập bốn quốc gia (bao gồm Đan Mạch và Hà Lan) 'đốt rác thải nhiều hơn so với chôn lấp' (incinerate).",
-        "id": "t837"
+        "id": "t837",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6758,7 +6972,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'hạng mục này (di động) cũng chứng kiến sự gia tăng mạnh mẽ nhất về số phút người dùng'.",
-        "id": "t838"
+        "id": "t838",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6771,7 +6986,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ: 'người già và trẻ nhỏ là những vị khách thường xuyên nhất đến các khoa A & E'.",
-        "id": "t839"
+        "id": "t839",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6779,7 +6995,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "15",
         "explanation_vi": "Theo đoạn văn: 'gần 15 vào năm 2000'.",
-        "id": "t840"
+        "id": "t840",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6792,7 +7009,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Văn bản ghi: 'ngoại trừ ở Scotland... Scotland là quốc gia duy nhất mà có tỷ lệ ngày càng tăng về phụ nữ thất nghiệp'.",
-        "id": "t841"
+        "id": "t841",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6800,7 +7018,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "popular",
         "explanation_vi": "Dựa trên câu: 'nơi phổ biến nhất để chuyển đến là Úc'.",
-        "id": "t842"
+        "id": "t842",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6813,7 +7032,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu phụ nữ chiếm trên 95% ở mẫu giáo nhưng ở giáo dục cấp cao, nam giới lại cao gấp đôi nữ giới.",
-        "id": "t843"
+        "id": "t843",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6826,7 +7046,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'khoảng cách giữa ba loại đã được thu hẹp đáng kể'.",
-        "id": "t844"
+        "id": "t844",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6834,7 +7055,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "constitutes",
         "explanation_vi": "Sử dụng 'constitutes' hoặc 'accounts for' để diễn tả thành phần chiếm bao nhiêu %.",
-        "id": "t845"
+        "id": "t845",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6847,7 +7069,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản cho biết đàn ông dành gấp đôi thời gian cho việc làm vườn và thú cưng so với phụ nữ.",
-        "id": "t846"
+        "id": "t846",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6855,7 +7078,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "triple",
         "explanation_vi": "Dựa trên câu: 'gần gấp ba lần số người đưa ra đánh giá này năm năm sau đó'.",
-        "id": "t847"
+        "id": "t847",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6868,7 +7092,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Văn bản ghi: 'năng lượng hạt nhân trở thành nguồn nhiên liệu quan trọng nhất ở Pháp vào năm 2000'.",
-        "id": "t848"
+        "id": "t848",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6881,7 +7106,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn nêu rõ: 'nuclear is the main source in France' (năng lượng hạt nhân là nguồn chính ở Pháp).",
-        "id": "t849"
+        "id": "t849",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6889,7 +7115,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "accounts for",
         "explanation_vi": "Cấu trúc 'accounts for' được dùng phổ biến để mô tả tỷ lệ phần trăm trong biểu đồ Task 1.",
-        "id": "t850"
+        "id": "t850",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6902,7 +7129,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Đoạn văn nói rằng thực phẩm và đồ uống tăng lên 32%, trở thành lĩnh vực bán lẻ có tỷ trọng lớn nhất.",
-        "id": "t851"
+        "id": "t851",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6910,7 +7138,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "income",
         "explanation_vi": "Dựa trên ngữ cảnh mô tả về tài chính của tổ chức từ thiện: 'Total income was $53,561,580'.",
-        "id": "t852"
+        "id": "t852",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6923,7 +7152,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Đoạn văn ghi: 'men accounted for 24% of the workforce' trong lĩnh vực lao động thủ công (skilled craft).",
-        "id": "t853"
+        "id": "t853",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6936,7 +7166,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu tỷ lệ người sống ở châu Phi tăng từ 4,5% lên 10% (hơn gấp đôi).",
-        "id": "t854"
+        "id": "t854",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6944,7 +7175,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "nuclear",
         "explanation_vi": "Đoạn văn xác nhận năng lượng hạt nhân trở thành nguồn chính của Đức vào năm 2010.",
-        "id": "t855"
+        "id": "t855",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6957,7 +7189,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản cho biết năm 1950, 72,1% ngân sách dành cho nhà ở (housing).",
-        "id": "t856"
+        "id": "t856",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -6965,7 +7198,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "60",
         "explanation_vi": "Thông tin nằm ở đoạn cuối: 'USA and Europe consume 60% of the world's resources'.",
-        "id": "t857"
+        "id": "t857",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6978,7 +7212,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'Khả năng quản lý tài chính tốt... phát triển theo độ tuổi và kinh nghiệm'.",
-        "id": "t858"
+        "id": "t858",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -6991,7 +7226,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Coach",
         "explanation_vi": "Văn bản P19E khẳng định: 'Xe khách (Coach) là hình thức vận chuyển sạch sẽ nhất'.",
-        "id": "t859"
+        "id": "t859",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7004,7 +7240,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "two-thirds",
         "explanation_vi": "Theo P22E: 'Thực phẩm chiếm 44%... con số này đã giảm 2/3 xuống còn 14% vào năm 1996'.",
-        "id": "t860"
+        "id": "t860",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7017,7 +7254,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "They peaked and then slowly decreased.",
         "explanation_vi": "Văn bản P20E ghi: 'đạt đỉnh điểm là 3500 vào tháng Sáu. Sau đó, số trường hợp mắc bệnh giảm từ từ'.",
-        "id": "t861"
+        "id": "t861",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7030,7 +7268,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "1863",
         "explanation_vi": "Đoạn T1S xác nhận: 'Tàu điện ngầm London là hệ thống lâu đời nhất, được khai trương vào năm 1863'.",
-        "id": "t862"
+        "id": "t862",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7043,7 +7282,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "30%",
         "explanation_vi": "Văn bản P23E nêu: 'Năm 1945, chỉ có 30% phụ nữ hoàn thành chương trình giáo dục trung học'.",
-        "id": "t863"
+        "id": "t863",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7056,7 +7296,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Sole parents",
         "explanation_vi": "Văn bản T2S nêu rõ: 'Chỉ hơn 1/5 (hơn 20%) số cha mẹ đơn thân sống trong cảnh nghèo đói', cao nhất trong các nhóm được liệt kê.",
-        "id": "t864"
+        "id": "t864",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7069,7 +7310,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "79",
         "explanation_vi": "Văn bản T3S ghi: 'Đáng chú ý là nam giới làm việc hoặc học tập trung bình nhiều hơn phụ nữ 79 phút mỗi ngày'.",
-        "id": "t865"
+        "id": "t865",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7082,7 +7324,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Turkey",
         "explanation_vi": "Văn bản T4S xác nhận: 'Tỷ lệ chi tiêu cho giải trí và giáo dục cũng cao nhất ở Thổ Nhĩ Kỳ, ở mức 4,35%'.",
-        "id": "t866"
+        "id": "t866",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7095,7 +7338,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "South Korea",
         "explanation_vi": "Văn bản T5S nêu: 'Hàn Quốc là quốc gia duy nhất đã thành công để mà giảm sản lượng rác thải vào năm 2000'.",
-        "id": "t867"
+        "id": "t867",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7108,7 +7352,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It doubled to 10%.",
         "explanation_vi": "Văn bản T6S cho biết: 'Tại trường B... tỷ lệ trẻ em gặp khó khăn với việc đánh vần... đã tăng gấp đôi, đến 10%'.",
-        "id": "t868"
+        "id": "t868",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7121,7 +7366,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Sunday",
         "explanation_vi": "Văn bản T8E khẳng định: 'Chủ nhật là ngày kiếm được ít lợi nhuận nhất'.",
-        "id": "t869"
+        "id": "t869",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7134,7 +7380,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "30",
         "explanation_vi": "Theo T10E: 'Tổng số khán giả của các bộ phim hành động là gần 30 triệu'.",
-        "id": "t870"
+        "id": "t870",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7147,7 +7394,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "German",
         "explanation_vi": "Văn bản T11E nêu rõ: 'những người nói tiếng Đức đạt được điểm tổng thể cao nhất'.",
-        "id": "t871"
+        "id": "t871",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7160,7 +7408,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "1.7",
         "explanation_vi": "Đoạn T12E ghi: 'doanh thu từ du lịch của Trung Quốc đã tăng 1,7 tỷ USD trong năm 2013'.",
-        "id": "t872"
+        "id": "t872",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7173,7 +7422,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Football",
         "explanation_vi": "Văn bản T13E khẳng định: 'Bóng đá là loại thể thao phổ biến nhất cho cả hai nhóm tuổi'.",
-        "id": "t873"
+        "id": "t873",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7186,7 +7436,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Their social life decreases and they move towards solitary activities.",
         "explanation_vi": "Văn bản T15E ghi: 'khi người dân ở Someland già đi, đời sống xã hội của họ giảm đi' và có xu hướng chuyển sang các hoạt động đơn độc.",
-        "id": "t874"
+        "id": "t874",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7199,7 +7450,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Canada",
         "explanation_vi": "Theo T16E: 'lượng hàng hóa vận chuyển được vận chuyển cao nhất ở Canada (trên 28 tấn)'.",
-        "id": "t875"
+        "id": "t875",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7212,7 +7464,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Electricity and Water",
         "explanation_vi": "Văn bản T18E nêu: 'Chi tiêu hàng tháng cho điện và nước đã tăng đáng kể 40%... từ 75 đô la Úc lên 120 đô la Úc'.",
-        "id": "t876"
+        "id": "t876",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7225,7 +7478,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "29-30%",
         "explanation_vi": "Đoạn T19E ghi nhận các khoản vay tăng lên 29% và thu nhập từ việc làm tăng lên 30% vào năm 2014/15.",
-        "id": "t877"
+        "id": "t877",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7238,7 +7492,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Nokia",
         "explanation_vi": "Văn bản T21E khẳng định: 'rõ ràng Nokia đã chiếm thị phần lớn nhất trong cả hai năm'.",
-        "id": "t878"
+        "id": "t878",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7251,7 +7506,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Teenagers",
         "explanation_vi": "Văn bản T22E nêu rõ thanh thiếu niên dành đến 58 giờ mỗi tháng cho hoạt động xã hội, cao nhất trong các nhóm.",
-        "id": "t879"
+        "id": "t879",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7264,7 +7520,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "18",
         "explanation_vi": "Văn bản T23E ghi: 'Liên Xô cũ... sử dụng gần 18 lần lượng sản xuất'.",
-        "id": "t880"
+        "id": "t880",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7277,7 +7534,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Middle-aged people",
         "explanation_vi": "Văn bản T24E khẳng định: 'người trung niên ít đi xe đạp nhất'.",
-        "id": "t881"
+        "id": "t881",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7290,7 +7548,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "half",
         "explanation_vi": "Văn bản T25E cho biết tỷ lệ ở trường cộng đồng tăng từ 12% lên 'hơn một nửa tổng số học sinh'.",
-        "id": "t882"
+        "id": "t882",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7303,7 +7562,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Power stations",
         "explanation_vi": "Văn bản T28E xác nhận: 'lượng tiêu thụ lớn nhất là các nhà máy điện (power stations)'.",
-        "id": "t883"
+        "id": "t883",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7316,7 +7576,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Fujitsu-Siemens",
         "explanation_vi": "Văn bản T31E xác nhận thị phần của Fujitsu-Siemens giảm từ 4,8% xuống chỉ còn 2,3% (giảm hơn một nửa).",
-        "id": "t884"
+        "id": "t884",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7329,7 +7590,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "3000",
         "explanation_vi": "Theo đoạn C1S, lượng nước sử dụng cho nông nghiệp trên toàn cầu đạt khoảng 3000km³ vào năm 2000.",
-        "id": "t885"
+        "id": "t885",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7342,7 +7604,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Males",
         "explanation_vi": "Đoạn CS3 ghi rõ: 'ở nhóm tuổi 35-49, nam giới chiếm gần 65% số người sống một mình'.",
-        "id": "t886"
+        "id": "t886",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7355,7 +7618,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "5",
         "explanation_vi": "Văn bản C2S cho biết số trẻ em tập luyện điền kinh tăng gần gấp 5 lần trong giai đoạn này.",
-        "id": "t887"
+        "id": "t887",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7368,7 +7632,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "UK",
         "explanation_vi": "Đoạn CS4 nêu: 'doanh thu từ chuối Fairtrade cao nhất ở Anh, với 15 triệu euro' vào năm 1999.",
-        "id": "t888"
+        "id": "t888",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7381,7 +7646,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Commuting to work",
         "explanation_vi": "Văn bản C6S nêu rõ: 'lý do chính khiến người Mỹ đi du lịch vào năm 2009 là để đi làm và đi làm (commuting)' chiếm 49%.",
-        "id": "t889"
+        "id": "t889",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7394,7 +7660,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "2",
         "explanation_vi": "Đoạn C5S chỉ ra: 'con số tương đương ở Ấn Độ chỉ là 2%' đối với nhóm 70 tuổi trở lên.",
-        "id": "t890"
+        "id": "t890",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7407,7 +7674,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Public drinking",
         "explanation_vi": "Văn bản C7E khẳng định: 'uống rượu nơi công cộng (public drinking) là lý do phổ biến nhất khiến cả giới bị bắt'.",
-        "id": "t891"
+        "id": "t891",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7420,7 +7688,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "50",
         "explanation_vi": "Đoạn C9E cho thấy tỷ lệ này tăng từ 35% năm 1990 lên 50% vào năm 2000.",
-        "id": "t892"
+        "id": "t892",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7433,7 +7702,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "France",
         "explanation_vi": "Đoạn C8E ghi rõ: 'Pháp là quốc gia phổ biến nhất để đến' với khoảng 11 triệu du khách.",
-        "id": "t893"
+        "id": "t893",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7446,7 +7716,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'Dân số toàn cầu dự kiến sẽ đạt đỉnh 8,2 tỷ người vào năm 2050'.",
-        "id": "t894"
+        "id": "t894",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7454,7 +7725,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "22",
         "explanation_vi": "Dựa trên số liệu: 'giảm đáng kể, từ 60 trên 1000 trẻ vào năm 1970 xuống chỉ còn 22 trẻ vào năm 1992'.",
-        "id": "t895"
+        "id": "t895",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7467,7 +7739,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản ghi: 'vào năm 1970, cá và khoai tây chiên (fish and chips) phổ biến gấp đôi so với bánh mì kẹp thịt'.",
-        "id": "t896"
+        "id": "t896",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7475,7 +7748,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "improve / develop",
         "explanation_vi": "Văn bản đề cập: 'Khả năng quản lý tài chính tốt của một người dường như sẽ phát triển (develop) theo độ tuổi và kinh nghiệm'.",
-        "id": "t897"
+        "id": "t897",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7488,7 +7762,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản chỉ rõ: 'nhu cầu ở mức tối đa vào khoảng 2100 (21:00) vào mùa đông'.",
-        "id": "t898"
+        "id": "t898",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7501,7 +7776,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'đất sét... đi vào một con lăn, nơi nó được trộn với cát và nước'.",
-        "id": "t899"
+        "id": "t899",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7509,7 +7785,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "80",
         "explanation_vi": "Theo đoạn văn về chu trình nước: '80% hơi nước trong không khí đến từ các đại dương'.",
-        "id": "t900"
+        "id": "t900",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7522,7 +7799,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản giải thích: 'nước bị ép vào buồng, tạo áp lực... Không khí này thoát ra khí quyển thông qua tuabin'.",
-        "id": "t901"
+        "id": "t901",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7530,7 +7808,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "ocean",
         "explanation_vi": "Quy trình vòng đời cá hồi nêu: 'cá hồi trưởng thành di cư đến đại dương, nơi chúng cuối cùng trở thành những con trưởng thành hoàn toàn'.",
-        "id": "t902"
+        "id": "t902",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7543,7 +7822,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Đoạn văn về lò phản ứng hạt nhân nhắc đến 'thanh điều khiển boron (boron control rods)'.",
-        "id": "t903"
+        "id": "t903",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7556,7 +7836,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ: 'Các kẹp giấy không đạt yêu cầu bị loại (rejected)'.",
-        "id": "t904"
+        "id": "t904",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7564,7 +7845,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "ground",
         "explanation_vi": "Đoạn văn về hệ thống sưởi mô tả lò hơi (boiler) nằm ở tầng trệt (ground floor).",
-        "id": "t905"
+        "id": "t905",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7577,7 +7859,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản cho biết: 'nhuộng phát triển về kích thước và lột da ba lần (shed its skin three times)'.",
-        "id": "t906"
+        "id": "t906",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7585,7 +7868,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "350",
         "explanation_vi": "Dựa trên quy trình sản xuất sô cô la: 'chúng được rang ở nhiệt độ 350 độ'.",
-        "id": "t907"
+        "id": "t907",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7598,7 +7882,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản giải thích: 'sữa tươi lâu hơn ở khoảng 4 độ C (fresh milk lasts longer)'.",
-        "id": "t908"
+        "id": "t908",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7611,7 +7896,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu: 'Ngôi làng phát triển dọc theo con đường chính về phía nam từ năm 1883 đến năm 1922'.",
-        "id": "t909"
+        "id": "t909",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7619,7 +7905,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "temporary",
         "explanation_vi": "Văn bản giải thích diện tích triển lãm cố định rộng gấp đôi vì chiếm diện tích hiện dùng cho triển lãm tạm thời (temporary).",
-        "id": "t910"
+        "id": "t910",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7632,7 +7919,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản so sánh: nhà vùng lạnh có mái cao góc cạnh, trong khi nhà vùng ấm có mái nhô ra (overhanging roof) để che cửa sổ.",
-        "id": "t911"
+        "id": "t911",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7640,7 +7928,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "car",
         "explanation_vi": "Văn bản ghi rõ S2 nằm trong khu vực cấm giao thông nên không thể đến bằng ô tô (car).",
-        "id": "t912"
+        "id": "t912",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7653,7 +7942,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản dự kiến: 'Đến năm 2024, dự kiến sẽ có 1000 học sinh'.",
-        "id": "t913"
+        "id": "t913",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7666,7 +7956,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "To allow rainwater to escape into the river",
         "explanation_vi": "Văn bản M6S đề cập: 'có thể mở một cửa xả lũ (floodgate) để cho phép dòng nước này (nước mưa) thoát ra sông'.",
-        "id": "t914"
+        "id": "t914",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7679,7 +7970,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dual carriageway",
         "explanation_vi": "Theo M7S, giao thông được chuyển hướng sang đường hai chiều (dual carriageway) tạo thành vòng vành đai.",
-        "id": "t915"
+        "id": "t915",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7692,7 +7984,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A pier was added for boats to dock",
         "explanation_vi": "Văn bản M9E nêu: 'các cơ sở mới bao gồm một bến tàu (pier), nơi tàu thuyền có thể cập bến'.",
-        "id": "t916"
+        "id": "t916",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7705,7 +7998,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "increased",
         "explanation_vi": "Đoạn M11E xác nhận: 'Hiện nay số lượng bệnh nhân còn nhiều hơn (more) so với năm 2005'.",
-        "id": "t917"
+        "id": "t917",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7718,7 +8012,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The conversion of farmland into a golf course",
         "explanation_vi": "Đoạn M10E ghi: 'sự chuyển đổi nổi bật nhất thuộc về đất nông nghiệp được biến thành sân gôn'.",
-        "id": "t918"
+        "id": "t918",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7726,7 +8021,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "integrated",
         "explanation_vi": "Văn bản đề cập ba khối khoa học trước đây riêng biệt hiện đã được tích hợp (integrated) vào một tòa nhà duy nhất.",
-        "id": "t919"
+        "id": "t919",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7739,7 +8035,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản ghi rõ: 'Thư viện sẽ bị phá hủy hoàn toàn (completely demolished) và sẽ không được xây dựng lại'.",
-        "id": "t920"
+        "id": "t920",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7747,7 +8044,8 @@ const TASK1_TRANSLATIONS = [
         "options": [],
         "answer": "six",
         "explanation_vi": "Văn bản so sánh thời gian xây dựng đường sắt Seikan dài gấp sáu lần (42 năm so với 8 năm).",
-        "id": "t921"
+        "id": "t921",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7760,7 +8058,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'sau 80 năm... số lượng ngôi nhà gần như tăng gấp đôi và đạt 200 ngôi'.",
-        "id": "t922"
+        "id": "t922",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7773,7 +8072,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Văn bản mô tả công cụ 800 nghìn năm trước: 'Phần dưới thon dần thành điểm 1 cm (point 1 cm)'.",
-        "id": "t923"
+        "id": "t923",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7786,7 +8086,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Opinion",
         "explanation_vi": "Theo thống kê trong đoạn văn, dạng Opinion xuất hiện nhiều nhất với 14 lần.",
-        "id": "t924"
+        "id": "t924",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7799,7 +8100,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "mission",
         "explanation_vi": "Từ 'mission' (sứ mệnh) được dùng trong văn bản để chỉ mục tiêu dài hạn của tổ chức.",
-        "id": "t925"
+        "id": "t925",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7812,7 +8114,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Have a solid foundation in English and IELTS Writing",
         "explanation_vi": "Văn bản nêu rõ: 'Sách đặc biệt phù hợp và phát huy tác dụng tốt nhất đối với người sử dụng có kiến thức nền vững chắc'.",
-        "id": "t926"
+        "id": "t926",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7825,7 +8128,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "supplies",
         "explanation_vi": "Cấu trúc 'supply someone with something' nghĩa là cung cấp cho ai cái gì đó.",
-        "id": "t927"
+        "id": "t927",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7838,7 +8142,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "February, March, April, July and August",
         "explanation_vi": "Văn bản liệt kê cụ thể các tháng 2, 3, 4, 7 và 8 là những tháng đề thi khó.",
-        "id": "t928"
+        "id": "t928",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7851,7 +8156,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Trong đoạn mẫu, tác giả viết: 'both of them are equally essential for young learners'.",
-        "id": "t929"
+        "id": "t929",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7864,7 +8170,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "patriotism",
         "explanation_vi": "Theo văn bản, việc hiểu biết về lịch sử địa phương giúp phát triển lòng yêu nước (patriotism).",
-        "id": "t930"
+        "id": "t930",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7877,7 +8184,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Indispensable có nghĩa là không thể thiếu, tương đương với 'essential' hoặc 'vital'.",
-        "id": "t931"
+        "id": "t931",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7890,7 +8198,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "in",
         "explanation_vi": "Cấu trúc đúng là 'take pride in something' (tự hào về điều gì).",
-        "id": "t932"
+        "id": "t932",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7903,7 +8212,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản khẳng định: 'having thorough insights into what happened... develops his patriotism'.",
-        "id": "t933"
+        "id": "t933",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7916,7 +8226,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Theo văn bản, người dân địa phương thường đã quen thuộc với phong tục và lịch sử của họ, nên việc đi xem lại những gì đã biết được coi là lãng phí.",
-        "id": "t934"
+        "id": "t934",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7929,7 +8240,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "selling",
         "explanation_vi": "Cụm từ 'selling point' nghĩa là điểm mạnh, ưu thế cạnh tranh giúp ích cho sự nghiệp tương lai.",
-        "id": "t935"
+        "id": "t935",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7942,7 +8254,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "in terms of",
         "explanation_vi": "Cấu trúc 'in terms of' dùng để giới hạn phạm vi so sánh (xét về mặt tốc độ cập nhật).",
-        "id": "t936"
+        "id": "t936",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7955,7 +8268,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả đề xuất phục vụ cả mục đích giáo dục lẫn giải trí, tổ chức các cuộc thi và cải tạo nội thất.",
-        "id": "t937"
+        "id": "t937",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7968,7 +8282,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "unfolded",
         "explanation_vi": "'Unfold the possibility' mang nghĩa là mở ra khả năng/cơ hội mới.",
-        "id": "t938"
+        "id": "t938",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -7981,7 +8296,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ nhà tù là nơi 'keep people who have broken the law contained, ensuring the safety of other citizens'.",
-        "id": "t939"
+        "id": "t939",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -7994,7 +8310,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "intention",
         "explanation_vi": "Cụm từ 'having the intention of committing illegalities' nghĩa là có ý định thực hiện hành vi bất hợp pháp.",
-        "id": "t940"
+        "id": "t940",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8007,7 +8324,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập: 'racing games help develop motor skills in later life'.",
-        "id": "t941"
+        "id": "t941",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8020,7 +8338,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "eclipsed",
         "explanation_vi": "Kết bài sử dụng cụm 'eclipsed by' để chỉ ra rằng các tác hại đã vượt xa hoặc làm lu mờ đi các lợi ích.",
-        "id": "t942"
+        "id": "t942",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8033,7 +8352,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dispel",
         "explanation_vi": "Động từ 'dispel' thường đi với 'ideas/doubts/fears' mang nghĩa xua tan hoặc loại bỏ.",
-        "id": "t943"
+        "id": "t943",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8046,7 +8366,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong văn bản, tác giả lập luận rằng chủ xe cá nhân ngày càng tăng và họ ít khi dùng tàu vì xe riêng thuận tiện hơn, nên mở rộng đường là giải pháp thiết thực hơn.",
-        "id": "t944"
+        "id": "t944",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8059,7 +8380,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "attributable",
         "explanation_vi": "Cấu trúc 'A is attributable to B' dùng để chỉ A là kết quả của B hoặc do B gây ra.",
-        "id": "t945"
+        "id": "t945",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8072,7 +8394,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả khẳng định: 'both volunteers and the community gain equal benefits'.",
-        "id": "t946"
+        "id": "t946",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8085,7 +8408,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "polished",
         "explanation_vi": "'Polish one's resume' là cụm từ mang nghĩa làm đẹp hồ sơ xin việc bằng các hoạt động tích cực.",
-        "id": "t947"
+        "id": "t947",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8098,7 +8422,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "altruism",
         "explanation_vi": "'Altruism' (lòng vị tha) thường đi kèm với 'humanity' để chỉ những phẩm chất tốt đẹp của con người khi làm từ thiện.",
-        "id": "t948"
+        "id": "t948",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8111,7 +8436,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ: do rất ít công việc có thể đảm bảo sự ổn định cho gia đình chỉ có một người thu nhập, nên cả bố và mẹ đều phải đi làm.",
-        "id": "t949"
+        "id": "t949",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8124,7 +8450,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "liberty",
         "explanation_vi": "Cấu trúc 'at liberty to do something' nghĩa là có quyền tự do làm gì đó.",
-        "id": "t950"
+        "id": "t950",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8137,7 +8464,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài viết đề cập rằng các chương trình từ các quốc gia phát triển giúp kích hoạt tư duy văn minh và loại bỏ các hủ tục.",
-        "id": "t951"
+        "id": "t951",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8150,7 +8478,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "exotic",
         "explanation_vi": "'Exotic practices' là những tục lệ xa lạ từ bên ngoài, nếu tiếp thu thiếu chọn lọc sẽ gây hại cho văn hóa bản địa.",
-        "id": "t952"
+        "id": "t952",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8163,7 +8492,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "ease",
         "explanation_vi": "'Ease the burden' là collocation phổ biến nghĩa là giảm bớt gánh nặng.",
-        "id": "t953"
+        "id": "t953",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8176,7 +8506,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn nêu rõ rằng chất lượng có thể chỉ là thứ yếu khi lợi nhuận là mục tiêu hàng đầu của doanh nghiệp.",
-        "id": "t954"
+        "id": "t954",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8189,7 +8520,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "in",
         "explanation_vi": "Cụm từ cố định 'in terms of' dùng để chỉ về mặt/về phương diện nào đó.",
-        "id": "t955"
+        "id": "t955",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8202,7 +8534,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản cho rằng hành động từ thiện quốc gia sẽ khiến công dân thần tượng ý tưởng cống hiến vì một thế giới tốt đẹp hơn.",
-        "id": "t956"
+        "id": "t956",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8215,7 +8548,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "ever-increasing",
         "explanation_vi": "Cụm 'ever-increasing rate of birth' dùng để chỉ tỉ lệ sinh không ngừng gia tăng.",
-        "id": "t957"
+        "id": "t957",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8228,7 +8562,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Việc mở rộng nhà máy sẽ gây hại nghiêm trọng cho môi trường xung quanh do chất thải và khí thải độc hại.",
-        "id": "t958"
+        "id": "t958",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8241,7 +8576,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ trong dài hạn, các yếu tố thiết yếu để duy trì sự sống sẽ mất dần, đe dọa sự sinh tồn của con người.",
-        "id": "t959"
+        "id": "t959",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8254,7 +8590,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "fix",
         "explanation_vi": "Dựa trên bài mẫu, việc 'fix retirement age' (ấn định tuổi nghỉ hưu) là một giải pháp để giảm cạnh tranh việc làm.",
-        "id": "t960"
+        "id": "t960",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8267,7 +8604,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Người trẻ phải cạnh tranh với người già vốn đã 'accumulated more experience', dẫn đến nguy cơ thất nghiệp cho người trẻ.",
-        "id": "t961"
+        "id": "t961",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8280,7 +8618,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "over-exploited",
         "explanation_vi": "'Over-exploited' nghĩa là khai thác quá mức, phù hợp với ngữ cảnh nói về tài nguyên thiên nhiên.",
-        "id": "t962"
+        "id": "t962",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8293,7 +8632,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "social benefits",
         "explanation_vi": "Các chính sách mới giúp cung cấp 'social benefits' (phúc lợi xã hội) như lương hưu và chăm sóc y tế.",
-        "id": "t963"
+        "id": "t963",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8306,7 +8646,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ các môn khoa học đòi hỏi sự chăm chỉ (diligence) và mức độ cam kết (commitment) cao, gây nản lòng cho sinh viên.",
-        "id": "t964"
+        "id": "t964",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8319,7 +8660,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "marital",
         "explanation_vi": "'Marital harmony' (hòa thuận hôn nhân) là yếu tố quan trọng quyết định việc các cặp đôi có muốn sinh con sớm hay không.",
-        "id": "t965"
+        "id": "t965",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8332,7 +8674,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A",
         "explanation_vi": "Việc thiếu sinh viên ngành khoa học trong khi các ngành khác quá đông dẫn đến sự mất cân bằng lực lượng lao động (imbalance in future workforce).",
-        "id": "t966"
+        "id": "t966",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8345,7 +8688,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "heighten",
         "explanation_vi": "'Heighten' (làm tăng thêm/nâng cao) thường dùng với 'risk' hoặc 'possibility' để chỉ rủi ro tăng lên.",
-        "id": "t967"
+        "id": "t967",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8358,7 +8702,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "verge",
         "explanation_vi": "Cụm từ 'on the verge of' có nghĩa là sắp sửa/đang trên bờ vực của một tình huống (thường là tiêu cực).",
-        "id": "t968"
+        "id": "t968",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8371,7 +8716,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả lập luận rằng chỉ có trường học mới tạo ra môi trường tương tác hiệu quả để trẻ phát triển toàn diện cả năng lực và tính cách.",
-        "id": "t969"
+        "id": "t969",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8384,7 +8730,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "go against",
         "explanation_vi": "Dùng 'go against' để chỉ việc các hành động của ngôi sao trái ngược với giá trị văn hóa địa phương.",
-        "id": "t970"
+        "id": "t970",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8397,7 +8744,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài viết đưa ra ví dụ về sự hỗn loạn (chaos) và đám đông mất kiểm soát (uncontrollable) khi fan hâm mộ các ban nhạc Hàn Quốc.",
-        "id": "t971"
+        "id": "t971",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8410,7 +8758,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "distance",
         "explanation_vi": "'Distance learning' (học từ xa) là thuật ngữ chính xác cho việc học qua mạng khi không có trường lớp ở gần.",
-        "id": "t972"
+        "id": "t972",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8423,7 +8772,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sugar-coat",
         "explanation_vi": "'Sugar-coat' nghĩa là bao biện, nói giảm nói tránh để làm cho một tình huống xấu (scandal) trông có vẻ tốt đẹp hơn.",
-        "id": "t973"
+        "id": "t973",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8436,7 +8786,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "emission",
         "explanation_vi": "'Emission' (sự phát thải) là từ chuyên dụng khi nói về khí thải (exhaust/gas).",
-        "id": "t974"
+        "id": "t974",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8449,7 +8800,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản lập luận rằng việc trả thuế và tạo việc làm đã là sự đóng góp to lớn cho cộng đồng rồi.",
-        "id": "t975"
+        "id": "t975",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8462,7 +8814,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "pace",
         "explanation_vi": "Cụm từ 'pace of life' (nhịp sống) được dùng để chỉ tốc độ sinh hoạt và làm việc.",
-        "id": "t976"
+        "id": "t976",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8475,7 +8828,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Đoạn văn có đề cập: 'property prices would certainly accelerate owing to the growth in customers’ demand'.",
-        "id": "t977"
+        "id": "t977",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8488,7 +8842,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "domestic",
         "explanation_vi": "'Domestic problems' chỉ các vấn đề trong nước, thuộc phạm vi giải quyết của chính phủ quốc gia đó.",
-        "id": "t978"
+        "id": "t978",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8501,7 +8856,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn nêu rõ việc tổ chức các 'monthly green days' sẽ giúp hình thành thói quen đi xe đạp trong dài hạn.",
-        "id": "t979"
+        "id": "t979",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8514,7 +8870,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "heighten",
         "explanation_vi": "Cụm từ 'heighten social awareness' (nâng cao nhận thức xã hội) là một collocation cực kỳ phổ biến trong IELTS.",
-        "id": "t980"
+        "id": "t980",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8527,7 +8884,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả lập luận rằng các mối đe dọa từ dịch bệnh (contagions) và tai nạn bất ngờ đòi hỏi sự đầu tư cho điều trị.",
-        "id": "t981"
+        "id": "t981",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8540,7 +8898,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sedentary",
         "explanation_vi": "'Sedentary lifestyle' (lối sống ngồi nhiều/ít vận động) là nguyên nhân gây ra nhiều vấn đề sức khỏe.",
-        "id": "t982"
+        "id": "t982",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8553,7 +8912,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "allocated",
         "explanation_vi": "Động từ 'allocate' thường đi với giới từ 'to' để chỉ việc phân bổ nguồn lực/tiền bạc.",
-        "id": "t983"
+        "id": "t983",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8566,7 +8926,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản đề cập rằng đồ họa độ phân giải cao và hàng trăm kênh truyền hình (như Cartoon Network) là lý do thu hút trẻ em.",
-        "id": "t984"
+        "id": "t984",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8579,7 +8940,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "resort",
         "explanation_vi": "Cụm từ 'resort to' nghĩa là phải dùng đến biện pháp nào đó như một lựa chọn cuối cùng.",
-        "id": "t985"
+        "id": "t985",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8592,7 +8954,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Nguyên nhân chính được nêu là người tiêu dùng thiếu kế hoạch kỹ lưỡng, dẫn đến việc mua sắm quá đà các sản phẩm không dùng tới.",
-        "id": "t986"
+        "id": "t986",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8605,7 +8968,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "advance",
         "explanation_vi": "'In advance of' là cấu trúc đồng nghĩa với 'before', dùng để chỉ sự chuẩn bị trước.",
-        "id": "t987"
+        "id": "t987",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8618,7 +8982,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "cited",
         "explanation_vi": "'Be cited as' dùng để chỉ một điều gì đó được nêu ra hoặc trích dẫn như một lý do/nguyên nhân.",
-        "id": "t988"
+        "id": "t988",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8631,7 +8996,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "breeding ground",
         "explanation_vi": "Cụm 'breeding ground' thường dùng để chỉ một môi trường nảy sinh những vấn đề tiêu cực.",
-        "id": "t989"
+        "id": "t989",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8644,7 +9010,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề xuất xây trường và cử giáo viên giỏi đến những vùng chưa biết đến lợi ích của Internet.",
-        "id": "t990"
+        "id": "t990",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8657,7 +9024,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "levied",
         "explanation_vi": "Động từ 'levy' (thường đi với 'tax') có nghĩa là đánh thuế.",
-        "id": "t991"
+        "id": "t991",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8670,7 +9038,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Theo bài viết, khi nghèo đói hạn chế khả năng tiếp cận dịch vụ, người yếu thế có thể tìm đến bạo lực (resort to violence).",
-        "id": "t992"
+        "id": "t992",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8683,7 +9052,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "counter-productive",
         "explanation_vi": "'Counter-productive' nghĩa là phản tác dụng, phù hợp với ngữ cảnh đầu tư không đúng chỗ.",
-        "id": "t993"
+        "id": "t993",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8696,7 +9066,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "advent",
         "explanation_vi": "'Advent' (sự ra đời/xuất hiện) thường dùng cho các phát minh hoặc xu hướng lớn.",
-        "id": "t994"
+        "id": "t994",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8709,7 +9080,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ nguyên nhân là do truyền thông đại chúng và sự mở rộng của các tập đoàn phương Tây.",
-        "id": "t995"
+        "id": "t995",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8722,7 +9094,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "engrossed",
         "explanation_vi": "Cấu trúc 'to be engrossed in something' có nghĩa là quá mải mê vào việc gì đó.",
-        "id": "t996"
+        "id": "t996",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8735,7 +9108,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản lo ngại về việc thế hệ trẻ đánh giá thấp giá trị truyền thống và bị đồng hóa văn hóa.",
-        "id": "t997"
+        "id": "t997",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8748,7 +9122,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "do more harm than good",
         "explanation_vi": "'Do more harm than good' là cụm từ dùng để chỉ những tác động tiêu cực vượt trội hơn tích cực.",
-        "id": "t998"
+        "id": "t998",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8761,7 +9136,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ mỗi sự kiện lịch sử được giải thích khác nhau dựa trên các sự thật và góc nhìn khác nhau.",
-        "id": "t999"
+        "id": "t999",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8774,7 +9150,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "intruders",
         "explanation_vi": "'Intruders' (kẻ xâm lược) là từ phù hợp nhất trong ngữ cảnh bảo vệ quốc gia.",
-        "id": "t1000"
+        "id": "t1000",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8787,7 +9164,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả cho rằng việc cấm quảng cáo là không công bằng cho nhà sản xuất và gây bất lợi cho người tiêu dùng vì họ không được thông tin về sản phẩm.",
-        "id": "t1001"
+        "id": "t1001",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8800,7 +9178,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "basis",
         "explanation_vi": "Cụm từ cố định 'on a regular basis' nghĩa là một cách thường xuyên.",
-        "id": "t1002"
+        "id": "t1002",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8813,7 +9192,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "unprecedented",
         "explanation_vi": "'Unprecedented rate' dùng để nhấn mạnh một tốc độ tăng trưởng nhanh chưa từng thấy trước đây.",
-        "id": "t1003"
+        "id": "t1003",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8826,7 +9206,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản khẳng định việc đốt nhiên liệu hóa thạch (combustion of fossil fuels) là thủ phạm chính gây ra phát thải khí nhà kính.",
-        "id": "t1004"
+        "id": "t1004",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8839,7 +9220,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "direct",
         "explanation_vi": "Cụm từ 'in direct correlation with' có nghĩa là tỷ lệ thuận trực tiếp.",
-        "id": "t1005"
+        "id": "t1005",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8852,7 +9234,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Hillary Clinton được dẫn chứng như một minh chứng cho thấy phụ nữ có thể thành công trong chính trị, bác bỏ quan niệm nghề nghiệp theo giới tính.",
-        "id": "t1006"
+        "id": "t1006",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8865,7 +9248,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "justified",
         "explanation_vi": "'Justified' có nghĩa là được bào chữa hoặc biện minh một cách hợp lý.",
-        "id": "t1007"
+        "id": "t1007",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8878,7 +9262,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "versatility",
         "explanation_vi": "'Versatility' (sự linh hoạt/đa năng) phù hợp để mô tả việc đảm nhiệm tốt nhiều loại công việc khác nhau.",
-        "id": "t1008"
+        "id": "t1008",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8891,7 +9276,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "levy",
         "explanation_vi": "Động từ 'levy' thường đi với 'tax' để chỉ việc đánh thuế.",
-        "id": "t1009"
+        "id": "t1009",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8904,7 +9290,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập rằng số lượng sinh viên tăng lên khiến giáo viên không thể chăm sóc kỹ lưỡng cho từng cá nhân.",
-        "id": "t1010"
+        "id": "t1010",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8917,7 +9304,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "adequate",
         "explanation_vi": "'Adequate employment opportunities' nghĩa là có đầy đủ các cơ hội việc làm.",
-        "id": "t1011"
+        "id": "t1011",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8930,7 +9318,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Ở phần kết bài về giáo dục, tác giả khẳng định học bổng và miễn giảm học phí là phương pháp tốt nhất.",
-        "id": "t1012"
+        "id": "t1012",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8943,7 +9332,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "detriment",
         "explanation_vi": "'Detriment' nghĩa là sự gây hại hoặc thiệt hại, phù hợp với ngữ cảnh về tỉ lệ tội phạm.",
-        "id": "t1013"
+        "id": "t1013",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8956,7 +9346,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "surge",
         "explanation_vi": "'Surge' (sự gia tăng đột ngột/mạnh mẽ) dùng để chỉ lượng lớn quảng cáo xuất hiện.",
-        "id": "t1014"
+        "id": "t1014",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8969,7 +9360,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản đề cập rằng việc đón khách quốc tế có thể làm tăng chi phí sinh hoạt, gây áp lực lên người dân địa phương.",
-        "id": "t1015"
+        "id": "t1015",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -8982,7 +9374,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commercialize",
         "explanation_vi": "Thương mại hóa (commercialize) là bước cần thiết để đưa sản phẩm đến tay người dùng.",
-        "id": "t1016"
+        "id": "t1016",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -8995,7 +9388,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Hình ảnh người nổi tiếng được dùng để kích thích (stimulate) mong muốn mua hàng của người tiêu dùng.",
-        "id": "t1017"
+        "id": "t1017",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9008,7 +9402,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "tedious",
         "explanation_vi": "'Tedious' (tẻ nhạt/nhàm chán) thường dùng để miêu tả các thủ tục hành chính rắc rối.",
-        "id": "t1018"
+        "id": "t1018",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9021,7 +9416,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "detriment",
         "explanation_vi": "Trong ngữ cảnh này, 'detriment' (sự gây hại) là từ phù hợp nhất để chỉ tác động tiêu cực.",
-        "id": "t1019"
+        "id": "t1019",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9034,7 +9430,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ đọc sách là lựa chọn 'educational and less time-consuming' (mang tính giáo dục và ít tốn thời gian hơn).",
-        "id": "t1020"
+        "id": "t1020",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9047,7 +9444,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "capability",
         "explanation_vi": "'Capability' có nghĩa là khả năng/năng lực thực hiện một việc gì đó.",
-        "id": "t1021"
+        "id": "t1021",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9060,7 +9458,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản chỉ ra rằng việc chơi game thường xuyên dẫn đến việc giảm thời gian dành cho học tập (reduction of time for study).",
-        "id": "t1022"
+        "id": "t1022",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9073,7 +9472,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "side",
         "explanation_vi": "Cấu trúc 'side with the opinion' có nghĩa là đồng tình/ủng hộ một quan điểm nào đó.",
-        "id": "t1023"
+        "id": "t1023",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9086,7 +9486,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "severely",
         "explanation_vi": "'Severely polluted' là một collocation phổ biến mang nghĩa bị ô nhiễm nghiêm trọng.",
-        "id": "t1024"
+        "id": "t1024",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9099,7 +9500,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ sự tương tác và cạnh tranh với bạn cùng lớp là 'great stimuli for scholastic success'.",
-        "id": "t1025"
+        "id": "t1025",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9112,7 +9514,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "struggle",
         "explanation_vi": "'Struggle with' có nghĩa là vật lộn hoặc gặp khó khăn với việc gì đó.",
-        "id": "t1026"
+        "id": "t1026",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9125,7 +9528,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dữ liệu Task 1 cho thấy Iceland đạt hơn 70% vào năm 2010, cao nhất trong 4 nước.",
-        "id": "t1027"
+        "id": "t1027",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9138,7 +9542,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "alternative",
         "explanation_vi": "'Alternative to' có nghĩa là sự thay thế cho cái gì đó.",
-        "id": "t1028"
+        "id": "t1028",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9151,7 +9556,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ đào tạo nghề giúp tăng cơ hội việc làm và sự đảm bảo nghề nghiệp.",
-        "id": "t1029"
+        "id": "t1029",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9164,7 +9570,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "bankruptcy",
         "explanation_vi": "'Bankruptcy' (phá sản) là rủi ro được nhắc tới khi chính phủ chi quá nhiều cho giáo dục đắt đỏ.",
-        "id": "t1030"
+        "id": "t1030",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9177,7 +9584,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Số liệu Task 1 xác nhận Việt Nam và Morocco không sử dụng năng lượng hạt nhân.",
-        "id": "t1031"
+        "id": "t1031",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9190,7 +9598,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "resentment",
         "explanation_vi": "'Resentment' (sự phẫn uất/bực bội) là kết quả tiêu cực khi sinh viên bị ép học môn không thích.",
-        "id": "t1032"
+        "id": "t1032",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9203,7 +9612,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "contributed",
         "explanation_vi": "'Contributed to' (đóng góp vào) được dùng để mô tả tỉ trọng của một nguồn trong tổng thể.",
-        "id": "t1033"
+        "id": "t1033",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9216,7 +9626,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "advent",
         "explanation_vi": "'Advent' (sự ra đời) phù hợp nhất để nói về tầm ảnh hưởng của Internet.",
-        "id": "t1034"
+        "id": "t1034",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9229,7 +9640,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập việc sống xa nhà có thể ảnh hưởng tiêu cực đến quan hệ gia đình và văn hóa lâu đời.",
-        "id": "t1035"
+        "id": "t1035",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9242,7 +9654,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "ease",
         "explanation_vi": "Cụm 'ease the reliance' nghĩa là giảm bớt sự lệ thuộc.",
-        "id": "t1036"
+        "id": "t1036",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9255,7 +9668,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dữ liệu Task 1 xác nhận England có sự tăng vọt (surge) trong chi tiêu cho hàng hóa khác.",
-        "id": "t1037"
+        "id": "t1037",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9268,7 +9682,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "lured",
         "explanation_vi": "'Be lured into' có nghĩa là bị dụ dỗ/cuốn vào việc gì đó.",
-        "id": "t1038"
+        "id": "t1038",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9281,7 +9696,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "foster",
         "explanation_vi": "'Foster' (thúc đẩy) là động từ phù hợp nhất đi kèm với 'economic growth'.",
-        "id": "t1039"
+        "id": "t1039",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9294,7 +9710,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nhấn mạnh tăng trưởng bền vững phụ thuộc vào cách quản trị (governed) và ngoại giao (diplomacy), không chỉ tiền bạc.",
-        "id": "t1040"
+        "id": "t1040",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9307,7 +9724,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "emits",
         "explanation_vi": "'Emit' có nghĩa là thải ra/phát ra (khí, ánh sáng, nhiệt).",
-        "id": "t1041"
+        "id": "t1041",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9320,7 +9738,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Dữ liệu Task 1 cho biết 'General Science' bắt đầu ở mức thấp nhất là 2.5 tỷ USD.",
-        "id": "t1042"
+        "id": "t1042",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9333,7 +9752,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "well-rounded",
         "explanation_vi": "'Well-rounded education' là cụm từ chỉ nền giáo dục toàn diện, phát triển mọi mặt.",
-        "id": "t1043"
+        "id": "t1043",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9346,7 +9766,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "counter-productive",
         "explanation_vi": "'Counter-productive' nghĩa là phản tác dụng, phù hợp với ngữ cảnh tạo ra thị trường đen thay vì giảm tiêu dùng sugar.",
-        "id": "t1044"
+        "id": "t1044",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9359,7 +9780,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề xuất các giải pháp như quy định hạn chế xe cá nhân và khuyến khích đi xe đạp.",
-        "id": "t1045"
+        "id": "t1045",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9372,7 +9794,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "plunged",
         "explanation_vi": "'Plunged' (giảm mạnh/lao dốc) mô tả sự sụt giảm số liệu từ 55,000 xuống 32,000.",
-        "id": "t1046"
+        "id": "t1046",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9385,7 +9808,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Lý do chính được nêu là các môn này thường đi kèm với rủi ro chấn thương nặng hoặc tử vong.",
-        "id": "t1047"
+        "id": "t1047",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9398,7 +9822,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "encourage",
         "explanation_vi": "'Encourage the use of public transport' là cụm từ phổ biến nghĩa là khuyến khích sử dụng phương tiện công cộng.",
-        "id": "t1048"
+        "id": "t1048",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9411,7 +9836,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng sản phẩm mới sẽ 'remain relatively unknown' (không ai biết đến) nếu không có quảng cáo để tiếp cận khách hàng quy mô lớn.",
-        "id": "t1049"
+        "id": "t1049",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9424,7 +9850,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "temporary",
         "explanation_vi": "'Temporary financial support' nghĩa là hỗ trợ tài chính tạm thời, phù hợp với ngữ cảnh trợ cấp thất nghiệp.",
-        "id": "t1050"
+        "id": "t1050",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9437,7 +9864,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "fees",
         "explanation_vi": "'Parking fees' (phí đỗ xe) là lý do được nhắc đến trong Task 1 khiến tỷ lệ đi xe hơi giảm.",
-        "id": "t1051"
+        "id": "t1051",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9450,7 +9878,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn cuối bài Task 2 cảnh báo về việc hình thành 'certain negative beliefs and ideas' ở trẻ em.",
-        "id": "t1052"
+        "id": "t1052",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9463,7 +9892,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "susceptible",
         "explanation_vi": "'Susceptible to' mang nghĩa dễ bị ảnh hưởng bởi cái gì đó.",
-        "id": "t1053"
+        "id": "t1053",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9476,7 +9906,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ việc chỉ dùng một ngôn ngữ sẽ khiến bản sắc cốt lõi và sự đa dạng văn hóa bị hy sinh (sacrificed).",
-        "id": "t1054"
+        "id": "t1054",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9489,7 +9920,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "find",
         "explanation_vi": "Việc khám phá nhiều con đường sự nghiệp giúp giới trẻ tìm được công việc phù hợp về lâu dài.",
-        "id": "t1055"
+        "id": "t1055",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9502,7 +9934,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong quy trình tái chế, sau khi thu gom, chai nhựa được đưa đến nhà kho phân loại (sorting houses).",
-        "id": "t1056"
+        "id": "t1056",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9515,7 +9948,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "severe",
         "explanation_vi": "'Severe lack' (thiếu hụt trầm trọng) là collocation phù hợp nhất trong ngữ cảnh này.",
-        "id": "t1057"
+        "id": "t1057",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9528,7 +9962,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản kết luận rằng một ngôn ngữ toàn cầu duy nhất là mối đe dọa lớn đối với bản sắc, văn hóa và lịch sử.",
-        "id": "t1058"
+        "id": "t1058",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9541,7 +9976,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "national",
         "explanation_vi": "'National budget' (ngân sách quốc gia) là cụm từ chính xác nhất trong ngữ cảnh này.",
-        "id": "t1059"
+        "id": "t1059",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9554,7 +9990,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ ưu điểm của y tế tư nhân là 'short waiting times for appointments and operations'.",
-        "id": "t1060"
+        "id": "t1060",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9567,7 +10004,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "color",
         "explanation_vi": "Theo quy trình tái chế thủy tinh, các chai được 'sorted according to color' (phân loại theo màu sắc).",
-        "id": "t1061"
+        "id": "t1061",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9580,7 +10018,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả lập luận rằng sự gắn kết nảy sinh từ 'shared interests' và 'long hours in the workplace'.",
-        "id": "t1062"
+        "id": "t1062",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9593,7 +10032,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "cause",
         "explanation_vi": "'Cause a heavy load' có nghĩa là tạo ra gánh nặng lớn.",
-        "id": "t1063"
+        "id": "t1063",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9606,7 +10046,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "proliferation",
         "explanation_vi": "'Proliferation' (sự gia tăng nhanh chóng) phù hợp nhất khi nói về số lượng xe cộ.",
-        "id": "t1064"
+        "id": "t1064",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9619,7 +10060,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Dữ liệu cho thấy tỷ lệ người trên 65 tuổi ở Australia là 12.4%, cao hơn nhiều so với Malaysia.",
-        "id": "t1065"
+        "id": "t1065",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9632,7 +10074,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "over-indulge",
         "explanation_vi": "'Over-indulge' (quá nuông chiều) dẫn đến việc trẻ bị phụ thuộc.",
-        "id": "t1066"
+        "id": "t1066",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9645,7 +10088,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả lập luận rằng hệ thống giao thông là nhu cầu cơ bản và là xương sống của nền kinh tế, nên chính phủ phải có trách nhiệm.",
-        "id": "t1067"
+        "id": "t1067",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9658,7 +10102,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "exorbitant",
         "explanation_vi": "'Exorbitant taxes' (thuế cao ngất ngưởng) dùng để mô tả mức thuế 40-50% như trong bài.",
-        "id": "t1068"
+        "id": "t1068",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9671,7 +10116,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "taken",
         "explanation_vi": "Cụm từ cố định là 'take a heavy toll on' (gây thiệt hại nặng nề).",
-        "id": "t1069"
+        "id": "t1069",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9684,7 +10130,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong biểu đồ Pie Chart, 'Suitable degree courses' chiếm tỷ lệ cao nhất (37%) vào năm 2007.",
-        "id": "t1070"
+        "id": "t1070",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9697,7 +10144,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "technological innovations",
         "explanation_vi": "Những đổi mới về công nghệ giúp bảo vệ môi trường khỏi các tác hại.",
-        "id": "t1071"
+        "id": "t1071",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9710,7 +10158,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ khí thải từ tên lửa làm tăng nhiệt độ ở các cực, dẫn đến biến đổi khí hậu.",
-        "id": "t1072"
+        "id": "t1072",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9723,7 +10172,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "substantially",
         "explanation_vi": "Theo biểu đồ đường (Line graph), người dùng internet có sự tăng trưởng mạnh mẽ (most growth).",
-        "id": "t1073"
+        "id": "t1073",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9736,7 +10186,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "soared",
         "explanation_vi": "Trong ngữ cảnh so sánh với con số dự báo thấp hơn, 'soared' (tăng vọt) là từ mô tả chính xác nhất.",
-        "id": "t1074"
+        "id": "t1074",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9749,7 +10200,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ xe tự lái sẽ ảnh hưởng xấu đến tỷ lệ việc làm của tài xế thương mại.",
-        "id": "t1075"
+        "id": "t1075",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9762,7 +10214,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "make way",
         "explanation_vi": "Cấu trúc 'make way for' có nghĩa là nhường chỗ cho cái gì đó mới.",
-        "id": "t1076"
+        "id": "t1076",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9775,7 +10228,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả lập luận rằng những nghề thực hành như thợ xây, thợ điện không nhất thiết phải học ở trường đến năm 18 tuổi.",
-        "id": "t1077"
+        "id": "t1077",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9788,7 +10242,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "inflict",
         "explanation_vi": "'Inflict damage' là một collocation mạnh dùng để chỉ việc gây ra thiệt hại nặng nề.",
-        "id": "t1078"
+        "id": "t1078",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9801,7 +10256,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "driving force",
         "explanation_vi": "'Driving force' (động lực/nguyên nhân chính) là cụm từ phù hợp nhất để nói về lý do dẫn đến thảm kịch.",
-        "id": "t1079"
+        "id": "t1079",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9814,7 +10270,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài viết nêu rằng 'discipline' (kỷ luật) và 'resourcefulness' có thể được phát triển thông qua sự nuôi dưỡng (upbringing).",
-        "id": "t1080"
+        "id": "t1080",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9827,7 +10284,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "double",
         "explanation_vi": "Số liệu năm 1996: Reef (1,670,000) gấp đôi Rainforest (810,000).",
-        "id": "t1081"
+        "id": "t1081",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9840,7 +10298,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Biểu đồ cột (bar chart) cho thấy ở các nước A, B, C, 'living cost' (chi phí sinh hoạt) là cột cao nhất.",
-        "id": "t1082"
+        "id": "t1082",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9853,7 +10312,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "imperative",
         "explanation_vi": "'Imperative' (cấp bách/bắt buộc) được dùng để nhấn mạnh tầm quan trọng của việc thực hiện các biện pháp bảo vệ.",
-        "id": "t1083"
+        "id": "t1083",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9866,7 +10326,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ đây là cách tốt để dạy trẻ em về lịch sử và cách tổ tiên sinh sống gắn liền với truyền thống gia đình.",
-        "id": "t1084"
+        "id": "t1084",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9879,7 +10340,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "replaced",
         "explanation_vi": "Dựa trên bài Task 1 Map, phòng hòa nhạc đã được thay thế bởi một khu vực triển lãm mới.",
-        "id": "t1085"
+        "id": "t1085",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9892,7 +10354,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "detrimental",
         "explanation_vi": "Ô nhiễm bầu không khí gây ra những tác động 'có hại' (detrimental) tới sức khỏe con người.",
-        "id": "t1086"
+        "id": "t1086",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9905,7 +10368,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Biểu đồ cột chỉ ra rằng đa số sinh viên chọn đi theo con đường 'Professional' (Chuyên gia/Nghề nghiệp chuyên môn).",
-        "id": "t1087"
+        "id": "t1087",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9918,7 +10382,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "riddled",
         "explanation_vi": "Cấu trúc 'riddled with corruption' dùng để mô tả tình trạng tham nhũng tràn lan.",
-        "id": "t1088"
+        "id": "t1088",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9931,7 +10396,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "spent",
         "explanation_vi": "Cấu trúc 'spend time doing something' hoặc 'spend time working' thường dùng để mô tả việc dành thời gian làm gì.",
-        "id": "t1089"
+        "id": "t1089",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9944,7 +10410,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng kỹ năng máy tính giúp học sinh tiếp cận nguồn kiến thức vô hạn và các tài liệu trực tuyến (online materials).",
-        "id": "t1090"
+        "id": "t1090",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9957,7 +10424,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "fell",
         "explanation_vi": "Dựa trên số liệu giảm từ 6500 xuống 4700, từ 'fell' (giảm) là chính xác.",
-        "id": "t1091"
+        "id": "t1091",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9970,7 +10438,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả lập luận rằng cha mẹ có ảnh hưởng lớn hơn và cần chịu trách nhiệm cho chế độ ăn uống và vận động của con cái.",
-        "id": "t1092"
+        "id": "t1092",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -9983,7 +10452,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sedentary",
         "explanation_vi": "'Sedentary lifestyle' (lối sống ít vận động) là thuật ngữ chuyên ngành để chỉ nguyên nhân gây béo phì.",
-        "id": "t1093"
+        "id": "t1093",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -9996,7 +10466,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong văn bản mô tả Map, thay đổi đáng chú ý nhất là việc xây dựng cầu đường bộ thay thế cho phà (ferry).",
-        "id": "t1094"
+        "id": "t1094",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10009,7 +10480,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "globalisation",
         "explanation_vi": "'Globalisation' (toàn cầu hóa) là bối cảnh phù hợp nhất cho việc giao thương xuyên quốc gia và múi giờ.",
-        "id": "t1095"
+        "id": "t1095",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10022,7 +10494,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "make way",
         "explanation_vi": "Cụm từ 'make way for' có nghĩa là nhường chỗ cho một công trình hoặc sự thay đổi mới.",
-        "id": "t1096"
+        "id": "t1096",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10035,7 +10508,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu lý do chính là học sinh sống với bố mẹ và hoàn toàn phụ thuộc tài chính nên không hiểu về thực tế của việc kiếm và tiết kiệm tiền.",
-        "id": "t1097"
+        "id": "t1097",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10048,7 +10522,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "mentally",
         "explanation_vi": "Cụm từ đi kèm thường là 'mentally and physically healthy' (khỏe mạnh cả về tinh thần và thể chất).",
-        "id": "t1098"
+        "id": "t1098",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10061,7 +10536,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng áp lực tiêu cực từ bạn bè thường dẫn đến việc sử dụng chất kích thích, là tác nhân chính gây ra tội phạm.",
-        "id": "t1099"
+        "id": "t1099",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10074,7 +10550,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "bonding",
         "explanation_vi": "'Family bonding' nghĩa là sự gắn kết gia đình, là một điểm cộng của việc sống trong không gian nhỏ được nhắc đến trong bài.",
-        "id": "t1100"
+        "id": "t1100",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10087,7 +10564,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "lower",
         "explanation_vi": "Theo bảng số liệu năm 1980, ý kiến trung lập cho nhà ở là 34%, còn giao thông là 31% (thấp hơn một chút).",
-        "id": "t1101"
+        "id": "t1101",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10100,7 +10578,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Frivolous spending' ám chỉ việc chi tiêu vào những thứ phù phiếm, không thực sự cần thiết.",
-        "id": "t1102"
+        "id": "t1102",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10113,7 +10592,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "highest",
         "explanation_vi": "Số liệu năm 2010 cho thấy healthcare đạt 83% đánh giá 'Good', cao nhất trong các hạng mục.",
-        "id": "t1103"
+        "id": "t1103",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10126,7 +10606,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả lập luận rằng dù internet quan trọng, nhưng điện và máy tính mới là nền tảng quan trọng hơn vì internet không thể tồn tại nếu thiếu chúng.",
-        "id": "t1104"
+        "id": "t1104",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10139,7 +10620,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "emergence",
         "explanation_vi": "'Emergence' (sự xuất hiện) là từ chính xác để mô tả sự ra đời của các công cụ mới.",
-        "id": "t1105"
+        "id": "t1105",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10152,7 +10634,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Dựa trên số liệu biểu đồ tròn, Hydropower giữ nguyên tỷ lệ 4% ở cả năm 1983 và 2003.",
-        "id": "t1106"
+        "id": "t1106",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10165,7 +10648,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "neglect",
         "explanation_vi": "'Neglect of production' nghĩa là sự bỏ bê sản xuất trong nước do quá tập trung vào dòng vốn ngoại hoặc xuất khẩu.",
-        "id": "t1107"
+        "id": "t1107",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10178,7 +10662,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "soared",
         "explanation_vi": "Trong mô tả biểu đồ đường, 'soared' được dùng để chỉ sự tăng vọt lên mức cao nhất.",
-        "id": "t1108"
+        "id": "t1108",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10191,7 +10676,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ việc sàng lọc lượng tài liệu khổng lồ để tìm nguồn chính xác là một vấn đề mà giáo viên có thể giúp giải quyết.",
-        "id": "t1109"
+        "id": "t1109",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10204,7 +10690,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dropped",
         "explanation_vi": "Dựa trên số liệu, chi tiêu cho thực phẩm giảm mạnh từ 32% (1958) xuống 12% (2008).",
-        "id": "t1110"
+        "id": "t1110",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10217,7 +10704,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "burden",
         "explanation_vi": "'Burden' (gánh nặng) phù hợp với ngữ cảnh mô tả về chi phí lương hưu và áp lực tài chính lên người nộp thuế.",
-        "id": "t1111"
+        "id": "t1111",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10230,7 +10718,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Biểu đồ cho thấy đến năm 2008, 'Burning' (đốt rác) đã tăng lên 900 triệu tấn, vượt qua chôn lấp (landfill).",
-        "id": "t1112"
+        "id": "t1112",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10243,7 +10732,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "enhance",
         "explanation_vi": "'Enhance' (tăng cường/nâng cao) thường đi cùng với 'productivity' (hiệu suất).",
-        "id": "t1113"
+        "id": "t1113",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10256,7 +10746,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "self-esteem",
         "explanation_vi": "Dựa trên bài đọc, trẻ em thiếu sự quan tâm của gia đình thường lớn lên với sự tự ti (low self-esteem).",
-        "id": "t1114"
+        "id": "t1114",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10269,7 +10760,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dữ liệu cho thấy Shippers (người vận chuyển) chiếm tới 55% lợi nhuận, cao nhất trong các nhóm.",
-        "id": "t1115"
+        "id": "t1115",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10282,7 +10774,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "incite",
         "explanation_vi": "'Incite violence' nghĩa là kích động bạo lực, phù hợp với tác động tiêu cực của truyền thông được nhắc đến.",
-        "id": "t1116"
+        "id": "t1116",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10295,7 +10788,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả lập luận rằng sự hướng dẫn của giáo viên và sự hỗ trợ của bạn bè là cực kỳ quan trọng cho sự phát triển trí tuệ mà học tại nhà khó có được.",
-        "id": "t1117"
+        "id": "t1117",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10308,7 +10802,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "leading",
         "explanation_vi": "Với 44%, South America đóng vai trò là nhà cung cấp hàng đầu (leading supplier).",
-        "id": "t1118"
+        "id": "t1118",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10321,7 +10816,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ cha mẹ lo ngại về môi trường không an toàn (bắt cóc, giết hại) nên giữ con cái bên mình.",
-        "id": "t1119"
+        "id": "t1119",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10334,7 +10830,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "lakes",
         "explanation_vi": "Theo phân tích biểu đồ đường, khu vực 'the lakes' đạt đỉnh vào năm 2002 với khoảng 75.000 lượt khách.",
-        "id": "t1120"
+        "id": "t1120",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10347,7 +10844,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Việc lạm dụng ngôn ngữ không trang trọng và biểu tượng cảm xúc làm giảm khả năng viết trong các tình huống đòi hỏi sự trang trọng.",
-        "id": "t1121"
+        "id": "t1121",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10360,7 +10858,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "interaction",
         "explanation_vi": "'Social interaction' (tương tác xã hội) là yếu tố bị thiếu hụt nếu trẻ em bắt đầu đi học muộn.",
-        "id": "t1122"
+        "id": "t1122",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10373,7 +10872,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "enslaved",
         "explanation_vi": "'Enslaved' được dùng để chỉ sự lệ thuộc quá mức vào các nền tảng mạng xã hội.",
-        "id": "t1123"
+        "id": "t1123",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10386,7 +10886,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "enhance",
         "explanation_vi": "'Enhance' (nâng cao/cải thiện) là động từ phù hợp nhất đi kèm với 'skills'.",
-        "id": "t1124"
+        "id": "t1124",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10399,7 +10900,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu ghi rõ: 'By June, the number of in person enquires soared... to peak at 1,900'.",
-        "id": "t1125"
+        "id": "t1125",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10412,7 +10914,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "tripled",
         "explanation_vi": "Số lượng tăng từ 272 lên 761 là xấp xỉ gấp 3 lần (tripled).",
-        "id": "t1126"
+        "id": "t1126",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10425,7 +10928,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu nêu cá nhân chơi thể thao một mình sẽ có cơ hội 'build confidence and self-esteem'.",
-        "id": "t1127"
+        "id": "t1127",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10438,7 +10942,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "telephone",
         "explanation_vi": "Dựa trên số liệu bài mẫu Task 1: 'In January, the Tourist Information Office received 900 telephone enquiries'.",
-        "id": "t1128"
+        "id": "t1128",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10451,7 +10956,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong Body 1 bài mẫu City Life, tác giả nêu việc giảm chất lượng không khí (degradation of air quality) là nguyên nhân chính dẫn đến bệnh hô hấp.",
-        "id": "t1129"
+        "id": "t1129",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10464,7 +10970,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "feed animals",
         "explanation_vi": "Đoạn văn mô tả quá trình sản xuất nước cam nêu rõ: 'solid waste... is collected and used to feed animals'.",
-        "id": "t1130"
+        "id": "t1130",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10477,7 +10984,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu về Library giải thích rằng người cao tuổi thường sợ công nghệ (technophobes) nên vẫn ưu tiên thư viện truyền thống.",
-        "id": "t1131"
+        "id": "t1131",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10490,7 +10998,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "degradation",
         "explanation_vi": "Cụm từ 'degradation of air quality' dùng để chỉ sự suy giảm chất lượng không khí.",
-        "id": "t1132"
+        "id": "t1132",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10503,7 +11012,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu Business Meetings liệt kê 'technical limitations' và 'malfunction' là những bất lợi lớn.",
-        "id": "t1133"
+        "id": "t1133",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10516,7 +11026,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Trong phần Overview của bài mẫu Task 1 ngày 01/02, văn bản ghi: 'middle-aged people were the least likely to ride a bicycle'.",
-        "id": "t1134"
+        "id": "t1134",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10529,7 +11040,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "renewable",
         "explanation_vi": "Dựa trên bài mẫu về nghiên cứu khoa học, 'renewable energies' là giải pháp để đối phó với biến đổi khí hậu.",
-        "id": "t1135"
+        "id": "t1135",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10542,7 +11054,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ: 'the implementation of rules can act as a deterrent to would-be lawbreakers'.",
-        "id": "t1136"
+        "id": "t1136",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10555,7 +11068,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "expenditure",
         "explanation_vi": "'Expenditure' (chi tiêu) là từ phù hợp nhất để mô tả việc dùng tiền vào thực phẩm và quần áo.",
-        "id": "t1137"
+        "id": "t1137",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10568,7 +11082,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa trên bài mẫu Task 1 ngày 10/02: 'The majority of full-time... felt very happy with current opening hours, at 87%'.",
-        "id": "t1138"
+        "id": "t1138",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10581,7 +11096,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ nguyên nhân đầu tiên là do khối lượng công việc nặng nề và lịch trình bận rộn hơn trước.",
-        "id": "t1139"
+        "id": "t1139",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10594,7 +11110,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "fell",
         "explanation_vi": "Theo bài mẫu Task 1 (24/02), số liệu trẻ em tăng lên 16% năm 2006 trước khi giảm nhẹ (fell marginally) xuống 14%.",
-        "id": "t1140"
+        "id": "t1140",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10607,7 +11124,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản giải thích rằng bằng cấp được coi là công cụ để đo lường trình độ kiến thức của sinh viên.",
-        "id": "t1141"
+        "id": "t1141",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10620,7 +11138,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "reflects",
         "explanation_vi": "Cụm 'reflects the wealth' mang nghĩa là ngôi nhà phản ánh/thể hiện sự giàu có của chủ nhân.",
-        "id": "t1142"
+        "id": "t1142",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10633,7 +11152,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Bài mẫu Task 1 (03/03) khẳng định: 'US doctors earned the largest amount of money compared to those in the other six countries'.",
-        "id": "t1143"
+        "id": "t1143",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10646,7 +11166,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ những ngôi nhà quá khác biệt có thể biến chủ sở hữu thành mục tiêu của sự đàm tiếu hoặc trộm cắp.",
-        "id": "t1144"
+        "id": "t1144",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10659,7 +11180,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "as",
         "explanation_vi": "Cấu trúc so sánh gấp nhiều lần: 'three times as much + noun + as'.",
-        "id": "t1145"
+        "id": "t1145",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10672,7 +11194,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả khẳng định: 'the purpose of a building... is the key consideration when designing it'.",
-        "id": "t1146"
+        "id": "t1146",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10685,7 +11208,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "mother",
         "explanation_vi": "Cụm từ cố định 'mother tongue' nghĩa là tiếng mẹ đẻ.",
-        "id": "t1147"
+        "id": "t1147",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10698,7 +11222,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Đoạn văn bản Task 1 ngày 15/03 xác nhận: 'walking was by far the most popular physical activity in all surveyed years'.",
-        "id": "t1148"
+        "id": "t1148",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10711,7 +11236,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng các tác phẩm quốc tế giúp tăng sự hấp dẫn và hỗ trợ bảo tàng thu hút thêm khách tham quan.",
-        "id": "t1149"
+        "id": "t1149",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10724,7 +11250,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "surge",
         "explanation_vi": "Dựa trên ngữ cảnh giá tăng từ 5 euro lên 25 euro, từ 'surge' (tăng vọt) là chính xác nhất.",
-        "id": "t1150"
+        "id": "t1150",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10737,7 +11264,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản đề cập sự xuống cấp của hạ tầng giao thông là nguyên nhân chính dẫn đến sự gia tăng tai nạn giao thông.",
-        "id": "t1151"
+        "id": "t1151",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10750,7 +11278,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "grave",
         "explanation_vi": "Cụm từ 'in grave danger' (trong tình trạng nguy hiểm nghiêm trọng) là collocation được sử dụng trong bài.",
-        "id": "t1152"
+        "id": "t1152",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10763,7 +11292,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Báo cáo Task 1 ngày 14/04 khẳng định Britain có tốc độ tăng trưởng lớn nhất với 230%.",
-        "id": "t1153"
+        "id": "t1153",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10776,7 +11306,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa vào bài mẫu Task 1, nhóm tuổi 0-14 được ước tính sẽ giảm xuống còn khoảng 10% vào năm 2040.",
-        "id": "t1154"
+        "id": "t1154",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10789,7 +11320,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "undergo",
         "explanation_vi": "Cấu trúc 'undergo changes' mang nghĩa là trải qua những sự thay đổi.",
-        "id": "t1155"
+        "id": "t1155",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10802,7 +11334,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả đồng ý vì nhiều căn bệnh ngày nay xuất phát trực tiếp từ thói quen không lành mạnh của con người.",
-        "id": "t1156"
+        "id": "t1156",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10815,7 +11348,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "appreciation",
         "explanation_vi": "Cụm từ 'appreciation of life' nghĩa là sự trân trọng cuộc sống.",
-        "id": "t1157"
+        "id": "t1157",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10828,7 +11362,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài viết đề cập đến việc khách du lịch xả rác và người dân chặt phá rừng (hy sinh tài nguyên) gây suy thoái môi trường.",
-        "id": "t1158"
+        "id": "t1158",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10841,7 +11376,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "single-use",
         "explanation_vi": "Trong ngữ cảnh 'throwaway society', các sản phẩm rẻ tiền thường là loại 'dùng một lần' (single-use).",
-        "id": "t1159"
+        "id": "t1159",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10854,7 +11390,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ phần lớn thời gian và tiền bạc cho việc này đến từ công việc tình nguyện và các tổ chức từ thiện.",
-        "id": "t1160"
+        "id": "t1160",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10867,7 +11404,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu ghi 'While the percentage of overweight women increased, the reverse was true for men', nghĩa là tỷ lệ nam giới thừa cân giảm.",
-        "id": "t1161"
+        "id": "t1161",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10880,7 +11418,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "responsible",
         "explanation_vi": "Cấu trúc 'be responsible for' mang nghĩa chịu trách nhiệm cho việc gì đó.",
-        "id": "t1162"
+        "id": "t1162",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10893,7 +11432,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Phần phân tích Task 1 ngày 19/05 xác nhận nhóm 14-24 tuổi là những người đi xem phim thường xuyên nhất.",
-        "id": "t1163"
+        "id": "t1163",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10906,7 +11446,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Theo văn bản, công nghệ nâng cao năng suất, tăng lợi nhuận cho công ty và làm cho các chủ doanh nghiệp giàu có trở nên giàu hơn.",
-        "id": "t1164"
+        "id": "t1164",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10919,7 +11460,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dramatic",
         "explanation_vi": "Văn bản sử dụng từ 'dramatic fall' để mô tả sự sụt giảm mạnh gần 10% của xăng dầu.",
-        "id": "t1165"
+        "id": "t1165",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10932,7 +11474,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tin tức tích cực giúp mọi người trở nên lạc quan hơn và cải thiện sức khỏe thể chất lẫn tinh thần.",
-        "id": "t1166"
+        "id": "t1166",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10945,7 +11488,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "negligible",
         "explanation_vi": "'Negligible' nghĩa là không đáng kể, phù hợp để mô tả các lĩnh vực có tỉ lệ tiêu thụ điện rất thấp.",
-        "id": "t1167"
+        "id": "t1167",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10958,7 +11502,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả tin rằng du lịch quốc tế giúp thúc đẩy sự hiểu biết giữa những người có nền tảng văn hóa khác nhau.",
-        "id": "t1168"
+        "id": "t1168",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10971,7 +11516,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "relieve",
         "explanation_vi": "Cấu trúc 'relieve pressure' có nghĩa là giảm bớt áp lực, phù hợp với việc giải quyết vấn đề nhà ở đô thị.",
-        "id": "t1169"
+        "id": "t1169",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -10984,7 +11530,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ việc đón nhận sự khác biệt văn hóa là chìa khóa để thiết lập và duy trì các mối quan hệ xã hội.",
-        "id": "t1170"
+        "id": "t1170",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -10997,7 +11544,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "predicted",
         "explanation_vi": "Dùng 'predicted' (hoặc projected) để nói về xu hướng trong tương lai (năm 2020) trên biểu đồ.",
-        "id": "t1171"
+        "id": "t1171",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11010,7 +11558,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập rằng con người ngày càng định hướng nghề nghiệp (career-oriented), dẫn đến mất cân bằng và suy yếu tương tác gia đình.",
-        "id": "t1172"
+        "id": "t1172",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11023,7 +11572,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "misconduct",
         "explanation_vi": "Từ 'misconduct' (hành vi sai trái) giải thích lý do tại sao một nhóm cá nhân có thể gây ra mâu thuẫn hoặc sự phẫn nộ từ công chúng.",
-        "id": "t1173"
+        "id": "t1173",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11036,7 +11586,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu: 'figures for train passengers dropping to around 60,000' và 'train passengers decreased over the period'.",
-        "id": "t1174"
+        "id": "t1174",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11049,7 +11600,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "drive",
         "explanation_vi": "Cụm từ 'drive someone out of business' có nghĩa là khiến ai đó/công ty nào đó phải ngừng kinh doanh/phá sản.",
-        "id": "t1175"
+        "id": "t1175",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11062,7 +11614,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bảng số liệu cho thấy Sao Paulo có dân số cao nhất (15 triệu năm 1990 và 18 triệu năm 2000).",
-        "id": "t1176"
+        "id": "t1176",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11075,7 +11628,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "regardless",
         "explanation_vi": "Cấu trúc 'regardless of' (bất kể) phù hợp để nói về việc không phân biệt độ tuổi hay điểm số khi xét tuyển.",
-        "id": "t1177"
+        "id": "t1177",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11088,7 +11642,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản so sánh: 'while... Derby either increased or stayed the same, the figures for Nottingham saw greater fluctuations'.",
-        "id": "t1178"
+        "id": "t1178",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11101,7 +11656,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn bản giải thích rằng do các quy trình tự động hóa, nhiều công việc tay chân bị cắt giảm, khiến người mù chữ bị mất việc.",
-        "id": "t1179"
+        "id": "t1179",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11114,7 +11670,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "set aside",
         "explanation_vi": "Cụm từ 'set aside' có nghĩa là gạt bỏ sang một bên, ở đây là gạt bỏ nỗi lo tài chính.",
-        "id": "t1180"
+        "id": "t1180",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11127,7 +11684,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu ghi rõ: 'While the figures for industry and households decreased... the figures for transport saw an increase'.",
-        "id": "t1181"
+        "id": "t1181",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11140,7 +11698,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "directly",
         "explanation_vi": "'Directly responsible' (chịu trách nhiệm trực tiếp) là một collocation phổ biến được dùng trong bài mẫu kinh tế.",
-        "id": "t1182"
+        "id": "t1182",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11153,7 +11712,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Biểu đồ ghi nhận nhóm tuổi 55-64 có tỷ lệ người sống một mình cao nhất trong tất cả các năm được đo lường.",
-        "id": "t1183"
+        "id": "t1183",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11166,7 +11726,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "rampant",
         "explanation_vi": "Từ 'rampant' thường được dùng để mô tả một vấn đề tiêu cực đang diễn ra tràn lan, không kiểm soát được.",
-        "id": "t1184"
+        "id": "t1184",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11179,7 +11740,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu nêu rõ: 'these advantages are overshadowed by the drawbacks', nghĩa là nhược điểm lớn hơn lợi ích.",
-        "id": "t1185"
+        "id": "t1185",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11192,7 +11754,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "underprivileged",
         "explanation_vi": "'Underprivileged backgrounds' chỉ những người có hoàn cảnh khó khăn, cần sự hỗ trợ từ tăng trưởng kinh tế.",
-        "id": "t1186"
+        "id": "t1186",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11205,7 +11768,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Theo bài mẫu: 'China witnessed an increase in both the production and consumption of oil over the period shown'.",
-        "id": "t1187"
+        "id": "t1187",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11218,7 +11782,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "culprit",
         "explanation_vi": "'Culprit' (thủ phạm) được dùng theo nghĩa bóng để chỉ nguyên nhân chính gây ra một hậu quả tiêu cực.",
-        "id": "t1188"
+        "id": "t1188",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11231,7 +11796,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu nêu: 'In 1965, city A held about 35 international meetings, which was the highest figure'.",
-        "id": "t1189"
+        "id": "t1189",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11244,7 +11810,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "justify",
         "explanation_vi": "'Justify' nghĩa là bào chữa hoặc làm cho một điều gì đó trở nên hợp lý.",
-        "id": "t1190"
+        "id": "t1190",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11257,7 +11824,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu Task 1 mô tả: 'In 2050, India is predicted to have the largest population... to nearly 20%'.",
-        "id": "t1191"
+        "id": "t1191",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11270,7 +11838,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "engrossed",
         "explanation_vi": "Cấu trúc 'to be engrossed in something' dùng để chỉ sự quá mải mê vào việc gì đó.",
-        "id": "t1192"
+        "id": "t1192",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11283,7 +11852,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Đoạn văn khẳng định trẻ em trải qua một lượng lớn 'parental influence' (ảnh hưởng từ cha mẹ) trước khi gặp giáo viên.",
-        "id": "t1193"
+        "id": "t1193",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11296,7 +11866,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn nêu rõ mục tiêu cơ bản của giáo dục tiểu học là đặt nền móng cho sự phát triển nhận thức.",
-        "id": "t1194"
+        "id": "t1194",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11309,7 +11880,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "depletion",
         "explanation_vi": "'Depletion' (sự cạn kiệt) là từ phù hợp nhất để mô tả việc tài nguyên bị dùng hết.",
-        "id": "t1195"
+        "id": "t1195",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11322,7 +11894,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Biểu đồ cột cho thấy 'commuting to work' (đi làm) là lý do phổ biến nhất của cả nam và nữ.",
-        "id": "t1196"
+        "id": "t1196",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11335,7 +11908,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "charitable",
         "explanation_vi": "'Charitable organizations' (tổ chức từ thiện) là cụm từ đi cùng với hành động quyên góp tiền của người giàu.",
-        "id": "t1197"
+        "id": "t1197",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11348,7 +11922,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa trên bài mẫu, Mexico có tỷ lệ xuất khẩu sang Mỹ cao nhất, chiếm 82%.",
-        "id": "t1198"
+        "id": "t1198",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11361,7 +11936,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rằng môi trường cạnh tranh quá mức có thể khiến nhân viên rời bỏ tổ chức để tìm nơi làm việc tốt hơn.",
-        "id": "t1199"
+        "id": "t1199",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11374,7 +11950,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commences / culminates",
         "explanation_vi": "Cụm 'commence with' (bắt đầu với) và 'culminate with' (kết thúc bằng) dùng để mô tả điểm đầu và điểm cuối của một quy trình.",
-        "id": "t1200"
+        "id": "t1200",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11387,7 +11964,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Một trong những nhược điểm được nhắc đến là gánh nặng tài chính (financial burden) đối với gia đình học sinh.",
-        "id": "t1201"
+        "id": "t1201",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11400,7 +11978,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "cooperation",
         "explanation_vi": "'Active cooperation' (sự hợp tác tích cực) là yếu tố cần thiết bên cạnh nỗ lực của chính phủ.",
-        "id": "t1202"
+        "id": "t1202",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11413,7 +11992,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Sau khi rửa bằng nước áp lực cao, bước tiếp theo là phân loại (sorted) dựa trên màu sắc.",
-        "id": "t1203"
+        "id": "t1203",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11426,7 +12006,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong bài mẫu Task 1, Turkey được nhắc đến là 'the main exporter' của chanh với 500,000 tấn.",
-        "id": "t1204"
+        "id": "t1204",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11439,7 +12020,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "struggling",
         "explanation_vi": "Cụm từ 'struggle to make ends meet' có nghĩa là vật lộn để kiếm sống, phù hợp với ngữ cảnh thiếu thốn tài chính.",
-        "id": "t1205"
+        "id": "t1205",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11452,7 +12034,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu đề xuất giải pháp chính quyền nên cho phép cư dân địa phương tham quan miễn phí vào một số ngày nhất định.",
-        "id": "t1206"
+        "id": "t1206",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11465,7 +12048,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "pour",
         "explanation_vi": "Cấu trúc 'pour money into something' nghĩa là rót vốn/đầu tư một lượng tiền lớn vào việc gì đó.",
-        "id": "t1207"
+        "id": "t1207",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11478,7 +12062,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu chỉ ra một bất lợi là ông bà có thể không ở gần để giúp đỡ chăm sóc con cái trong cấu trúc gia đình hạt nhân.",
-        "id": "t1208"
+        "id": "t1208",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11491,7 +12076,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "levy",
         "explanation_vi": "Động từ 'levy' đi với 'taxes' có nghĩa là đánh thuế.",
-        "id": "t1209"
+        "id": "t1209",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11504,7 +12090,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu Task 1 nêu rõ: 'people aged 15-64 accounted for the greatest percentage of the population'.",
-        "id": "t1210"
+        "id": "t1210",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11517,7 +12104,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "minimize",
         "explanation_vi": "'Minimize' (giảm thiểu) rủi ro và chi phí là lợi ích của việc làm việc tại nhà.",
-        "id": "t1211"
+        "id": "t1211",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11530,7 +12118,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả đề xuất xây dựng thêm làn đường cho xe đạp (cycling lanes) để việc di chuyển an toàn và thuận tiện hơn.",
-        "id": "t1212"
+        "id": "t1212",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11543,7 +12132,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "make up",
         "explanation_vi": "Cụm từ 'make up' được dùng để chỉ chiếm một tỷ lệ nào đó trong biểu đồ.",
-        "id": "t1213"
+        "id": "t1213",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11556,7 +12146,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng việc giảm thời gian di chuyển giúp tăng thời gian nghỉ ngơi, từ đó dẫn đến tăng năng suất lao động.",
-        "id": "t1214"
+        "id": "t1214",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11569,7 +12160,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "exerted",
         "explanation_vi": "Collocation đi với 'effect' trong ngữ cảnh này là 'exert a detrimental effect on' (gây ra ảnh hưởng có hại).",
-        "id": "t1215"
+        "id": "t1215",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11582,7 +12174,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Học một mình cho phép học sinh làm việc theo tốc độ riêng của họ (work at their own pace) mà không phụ thuộc vào người khác.",
-        "id": "t1216"
+        "id": "t1216",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11595,7 +12188,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "awareness",
         "explanation_vi": "'Raise awareness' là cụm từ cố định nghĩa là nâng cao nhận thức.",
-        "id": "t1217"
+        "id": "t1217",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11608,7 +12202,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Theo biểu đồ Task 1, Glass (Thủy tinh) là loại rác thải được tái chế nhiều nhất vào cuối giai đoạn.",
-        "id": "t1218"
+        "id": "t1218",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11621,7 +12216,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ việc mất cân bằng công việc - cuộc sống sẽ dẫn đến stress và các bệnh liên quan đến stress.",
-        "id": "t1219"
+        "id": "t1219",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11634,7 +12230,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "real-life",
         "explanation_vi": "Cụm từ 'real-life experience' nghĩa là kinh nghiệm thực tế, phù hợp với lợi ích của gap year.",
-        "id": "t1220"
+        "id": "t1220",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11647,7 +12244,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Phần phân tích biểu đồ khẳng định 'car ownership in this country rose over the period shown'.",
-        "id": "t1221"
+        "id": "t1221",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11660,7 +12258,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "unity",
         "explanation_vi": "'Sense of unity' mang nghĩa là tinh thần đoàn kết, một lợi ích xã hội của thể thao.",
-        "id": "t1222"
+        "id": "t1222",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11673,7 +12272,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Bài mẫu ghi rõ: 'the figure for brown bread saw the biggest change'.",
-        "id": "t1223"
+        "id": "t1223",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11686,7 +12286,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn văn bản đề cập nấm và đậu phụ chứa hàm lượng protein cao, loại dưỡng chất được cho là chỉ có trong thịt.",
-        "id": "t1224"
+        "id": "t1224",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11699,7 +12300,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "overwhelmed",
         "explanation_vi": "Từ 'overwhelmed' có nghĩa là bị choáng ngợp, phù hợp với ngữ cảnh bố mẹ lần đầu có con cảm thấy áp lực với trách nhiệm.",
-        "id": "t1225"
+        "id": "t1225",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11712,7 +12314,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa trên phần phân tích bảng biểu, quảng cáo trên TV là hình thức thịnh hành nhất (by far the most popular).",
-        "id": "t1226"
+        "id": "t1226",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11725,7 +12328,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "justify",
         "explanation_vi": "'Justify' nghĩa là bào chữa hoặc biện minh, ý nói nhu cầu của con người không thể biện minh cho sự đau đớn của động vật.",
-        "id": "t1227"
+        "id": "t1227",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11738,7 +12342,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu so sánh phòng đôi và phòng đơn dựa trên các điểm chính là giá cả ($350 vs $200) và diện tích (24m2 vs 15m2).",
-        "id": "t1228"
+        "id": "t1228",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11751,7 +12356,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Deterrent' có nghĩa là sự răn đe, ngăn chặn ai đó làm điều sai trái thông qua việc đe dọa về hình phạt.",
-        "id": "t1229"
+        "id": "t1229",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11764,7 +12370,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "allocate",
         "explanation_vi": "'Allocate' (phân bổ) thường đi với 'resources' để chỉ việc chia nguồn lực cho một mục đích cụ thể.",
-        "id": "t1230"
+        "id": "t1230",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11777,7 +12384,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ người cao tuổi đã hình thành thói quen đọc báo giấy từ lâu và không muốn thay đổi.",
-        "id": "t1231"
+        "id": "t1231",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11790,7 +12398,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "stems",
         "explanation_vi": "Cấu trúc 'stems from' dùng để chỉ nguồn gốc hoặc nguyên nhân của một vấn đề/xu hướng.",
-        "id": "t1232"
+        "id": "t1232",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11803,7 +12412,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dữ liệu bài mẫu ghi: 'This figure remained unchanged until 2008' đối với số năm đi học của nữ giới.",
-        "id": "t1233"
+        "id": "t1233",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11816,7 +12426,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ dù có quản lý giỏi nhất thế giới nhưng nếu thiếu lực lượng lao động lành nghề và đáng tin cậy thì tiến độ sẽ chậm.",
-        "id": "t1234"
+        "id": "t1234",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11829,7 +12440,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "aesthetic",
         "explanation_vi": "'Aesthetic appeal' nghĩa là sức hấp dẫn về mặt thẩm mỹ, phù hợp để miêu tả vẻ đẹp của tòa nhà thu hút khách du lịch.",
-        "id": "t1235"
+        "id": "t1235",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11842,7 +12454,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Nếu nhân viên hiểu sai quyết định, hậu quả có thể dẫn đến những trở ngại nghiêm trọng cho tổ chức.",
-        "id": "t1236"
+        "id": "t1236",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11855,7 +12468,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "exorbitant",
         "explanation_vi": "'Exorbitant prices' chỉ giá cả cực kỳ đắt đỏ, thường dùng cho hàng xa xỉ.",
-        "id": "t1237"
+        "id": "t1237",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11868,7 +12482,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản đề cập khách du lịch đến Louvre không chỉ vì các kiệt tác quốc gia mà còn vì vẻ đẹp kiến trúc Pháp của nó.",
-        "id": "t1238"
+        "id": "t1238",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11881,7 +12496,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ công nhân nhà máy mất việc vì bị thay thế bởi máy móc có khả năng làm việc nhanh và hiệu quả hơn.",
-        "id": "t1239"
+        "id": "t1239",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11894,7 +12510,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "outsource",
         "explanation_vi": "'Outsource' là thuê ngoài nhân lực từ các quốc gia khác để cắt giảm chi phí.",
-        "id": "t1240"
+        "id": "t1240",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11907,7 +12524,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản khuyên mọi người nên cập nhật công nghệ hiện đại để không bị tụt hậu trước những thay đổi.",
-        "id": "t1241"
+        "id": "t1241",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11920,7 +12538,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "educational",
         "explanation_vi": "Phim tài liệu (documentaries) thường được biết đến với các giá trị giáo dục (educational values).",
-        "id": "t1242"
+        "id": "t1242",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11933,7 +12552,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Theo sơ đồ và bài mẫu, 'snow saw' (cưa tuyết) được sử dụng để cắt các khối tuyết.",
-        "id": "t1243"
+        "id": "t1243",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11946,7 +12566,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ người già thường thoải mái về tài chính và sẵn sàng làm tình nguyện giúp ích cho cộng đồng.",
-        "id": "t1244"
+        "id": "t1244",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11959,7 +12580,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "emitted",
         "explanation_vi": "'Emitted' có nghĩa là được thải ra (thường dùng cho khí thải, ánh sáng, nhiệt).",
-        "id": "t1245"
+        "id": "t1245",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11972,7 +12594,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Theo phân tích bản đồ, sự thay đổi lớn nhất là sự xuất hiện của một hồ nước lớn bao phủ rừng và đất nông nghiệp cũ.",
-        "id": "t1246"
+        "id": "t1246",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -11985,7 +12608,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "housing",
         "explanation_vi": "Áp lực về hệ thống cung cấp nhà ở (housing supply) là hệ quả trực tiếp của việc quá tải dân số tại các đô thị.",
-        "id": "t1247"
+        "id": "t1247",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -11998,7 +12622,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A",
         "explanation_vi": "Văn bản đề cập rằng người lớn bận rộn làm việc, trẻ em thì nhìn chằm chằm vào màn hình, dẫn đến việc mất kết nối với thế giới tự nhiên.",
-        "id": "t1248"
+        "id": "t1248",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12011,7 +12636,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ việc vận chuyển thực phẩm đường dài tạo ra lượng lớn khí thải carbon, góp phần gây biến đổi khí hậu.",
-        "id": "t1249"
+        "id": "t1249",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12024,7 +12650,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "playing",
         "explanation_vi": "Cấu trúc 'spend time + V-ing' được dùng để nói về việc dành thời gian làm gì đó.",
-        "id": "t1250"
+        "id": "t1250",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12037,7 +12664,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa trên bài mẫu, sản lượng bán xe tại Châu Á đã tăng mạnh (soared) và đạt mức 50% vào năm 2010.",
-        "id": "t1251"
+        "id": "t1251",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12050,7 +12678,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "hectic",
         "explanation_vi": "Từ 'hectic' (hối hả, bận rộn) thường được dùng để miêu tả lối sống tại các thành phố hiện đại.",
-        "id": "t1252"
+        "id": "t1252",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12063,7 +12692,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Sống trong gia đình nhỏ thay vì gia đình đa thế hệ khiến trẻ em ít được học hỏi kinh nghiệm sống quý giá từ ông bà.",
-        "id": "t1253"
+        "id": "t1253",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12076,7 +12706,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập rằng nhiều người cho rằng có quá nhiều yếu tố ảnh hưởng đến tương lai, khiến nó nằm ngoài tầm kiểm soát của chúng ta.",
-        "id": "t1254"
+        "id": "t1254",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12089,7 +12720,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "equip",
         "explanation_vi": "Cấu trúc 'equip somebody with something' thường dùng để nói về việc trang bị kỹ năng hoặc kiến thức cần thiết.",
-        "id": "t1255"
+        "id": "t1255",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12102,7 +12734,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Lý do là game ít đòi hỏi thể lực và phù hợp với lối sống thụ động (sedentary lifestyle) của trẻ em thành phố.",
-        "id": "t1256"
+        "id": "t1256",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12115,7 +12748,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "attributable",
         "explanation_vi": "Cấu trúc 'be attributable to' mang nghĩa là có thể được quy cho/do nguyên nhân từ đâu.",
-        "id": "t1257"
+        "id": "t1257",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12128,7 +12762,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Phần phân tích biểu đồ nêu rõ việc sở hữu một xe là tình trạng phổ biến nhất trong suốt giai đoạn được khảo sát.",
-        "id": "t1258"
+        "id": "t1258",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12141,7 +12776,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ quảng cáo thông tin đôi khi không chính xác (phóng đại) và chi phí quảng cáo cao làm tăng giá bán sản phẩm.",
-        "id": "t1259"
+        "id": "t1259",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12154,7 +12790,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "cosmopolitan",
         "explanation_vi": "'Cosmopolitan' mô tả một không gian đa văn hóa, hiện đại, phù hợp với ngữ cảnh về sự đa dạng kiến trúc thu hút người từ nhiều nơi.",
-        "id": "t1260"
+        "id": "t1260",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12167,7 +12804,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Trong bài mẫu về Bar Chart Employment, tỷ lệ người tự làm chủ (self-employed) tăng gần gấp ba, từ khoảng 10% lên hơn 30%.",
-        "id": "t1261"
+        "id": "t1261",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12180,7 +12818,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "weigh up",
         "explanation_vi": "Cụm từ 'weigh up the pros and cons' nghĩa là cân nhắc mặt lợi và mặt hại.",
-        "id": "t1262"
+        "id": "t1262",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12193,7 +12832,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập du lịch là nguyên nhân chính gây ô nhiễm môi trường, đặc biệt là tạo ra 'núi rác thải nhựa'.",
-        "id": "t1263"
+        "id": "t1263",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12206,7 +12846,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản nêu rõ giáo viên ở Luxembourg có mức lương khởi điểm là 80,000 USD/năm, cao nhất trong các nước.",
-        "id": "t1264"
+        "id": "t1264",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12219,7 +12860,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "freedom",
         "explanation_vi": "Dựa trên bài mẫu, việc sống một mình mang lại cho người trẻ 'sự tự do' (freedom) làm những gì họ thích.",
-        "id": "t1265"
+        "id": "t1265",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12232,7 +12874,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập rằng trẻ em có thể bỏ lỡ những bài học cuộc sống quan trọng từ kinh nghiệm của ông bà.",
-        "id": "t1266"
+        "id": "t1266",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12245,7 +12888,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "arouse",
         "explanation_vi": "Từ 'arouse' (khơi dậy) phù hợp trong ngữ cảnh kích thích sự quan tâm của người dân.",
-        "id": "t1267"
+        "id": "t1267",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12258,7 +12902,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Theo bảng số liệu và phân tích, giáo viên tại Denmark chỉ mất 8 năm để đạt mức lương tối đa.",
-        "id": "t1268"
+        "id": "t1268",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12271,7 +12916,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Đoạn tổng quan (Overall) khẳng định đa số sinh viên hoàn thành bài luận đúng hạn trong cả 3 năm.",
-        "id": "t1269"
+        "id": "t1269",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12284,7 +12930,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "embodiment",
         "explanation_vi": "Cụm 'embodiment of justice' có nghĩa là hiện thân/biểu tượng của công lý.",
-        "id": "t1270"
+        "id": "t1270",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12297,7 +12944,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Tác giả dẫn chứng rằng thực tế có nhiều người được giáo dục tốt vẫn phạm những tội ác kinh hoàng (heinous crimes).",
-        "id": "t1271"
+        "id": "t1271",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12310,7 +12958,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "global warming",
         "explanation_vi": "Việc vận chuyển thực phẩm toàn cầu thải ra nhiều khí các-bon, góp phần gây ra hiện tượng nóng lên toàn cầu.",
-        "id": "t1272"
+        "id": "t1272",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12323,7 +12972,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Biểu đồ cho thấy đa số thanh niên (64%) mong đợi sự cải thiện trong giao tiếp giữa người với người (communication between people).",
-        "id": "t1273"
+        "id": "t1273",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12336,7 +12986,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng đọc sách kích thích não bộ vì người đọc phải dùng trí tưởng tượng để hình dung nhân vật và cốt truyện.",
-        "id": "t1274"
+        "id": "t1274",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12349,7 +13000,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "detrimental",
         "explanation_vi": "Từ 'detrimental' (có hại) phù hợp để mô tả tác động tiêu cực của tin tức xấu lên sức khỏe tâm thần.",
-        "id": "t1275"
+        "id": "t1275",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12362,7 +13014,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Đoạn tổng quan của biểu đồ xuất khẩu Úc xác nhận Trung Quốc trở thành thị trường xuất khẩu lớn nhất từ khoảng năm 2007.",
-        "id": "t1276"
+        "id": "t1276",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12375,7 +13028,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "tertiary",
         "explanation_vi": "'Tertiary education' là thuật ngữ học thuật chỉ giáo dục bậc đại học.",
-        "id": "t1277"
+        "id": "t1277",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12388,7 +13042,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản giải thích kỹ năng sống giúp sinh viên ở xa nhà tự chuẩn bị bữa ăn và là cách để thư giãn (unwind) sau giờ học.",
-        "id": "t1278"
+        "id": "t1278",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12401,7 +13056,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ nhiều người phải làm nhiều việc để xoay xở cuộc sống do chi phí sinh hoạt tăng cao.",
-        "id": "t1279"
+        "id": "t1279",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12414,7 +13070,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "budget",
         "explanation_vi": "'Budget their income' nghĩa là lập kế hoạch chi tiêu thu nhập một cách hiệu quả.",
-        "id": "t1280"
+        "id": "t1280",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12427,7 +13084,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Đoạn tổng quát của bài mẫu so sánh: Mumbai ấm hơn nhưng có ít giờ nắng hơn so với Moscow.",
-        "id": "t1281"
+        "id": "t1281",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12440,7 +13098,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "preserve",
         "explanation_vi": "'Preserve' (bảo tồn) là hành động bảo vệ động vật khỏi các mối đe dọa như săn trộm.",
-        "id": "t1282"
+        "id": "t1282",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12453,7 +13112,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả chỉ ra rằng ở nhiều vườn thú, động vật bị đối xử tệ, thiếu thức ăn và chăm sóc y tế.",
-        "id": "t1283"
+        "id": "t1283",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12466,7 +13126,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Dựa trên bài mẫu Writing Task 1, bước đầu tiên là 'harvesting of the mature fruit from olive trees'.",
-        "id": "t1284"
+        "id": "t1284",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12479,7 +13140,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "boycott",
         "explanation_vi": "'Boycott' (tẩy chay) là hành động ngừng mua sản phẩm để tạo áp lực lên doanh nghiệp.",
-        "id": "t1285"
+        "id": "t1285",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12492,7 +13154,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Tác giả khẳng định trách nhiệm không chỉ thuộc về chính trị gia mà công dân bình thường cũng đóng góp đáng kể.",
-        "id": "t1286"
+        "id": "t1286",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12505,7 +13168,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "punishments",
         "explanation_vi": "'Impose punishments' (áp đặt hình phạt) là cụm từ phù hợp khi nói về việc xử lý các hành vi vi phạm pháp luật như chặt cây lậu.",
-        "id": "t1287"
+        "id": "t1287",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12518,7 +13182,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Theo quy trình, 'olive paste' được đưa qua 'pressing machine' để ép lấy dầu.",
-        "id": "t1288"
+        "id": "t1288",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12531,7 +13196,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rằng khi nhiều hàng hóa được sản xuất, nhiều chất thải độc hại từ nhà máy được thải ra tự nhiên làm ô nhiễm nguồn nước.",
-        "id": "t1289"
+        "id": "t1289",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12544,7 +13210,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "increases",
         "explanation_vi": "Sự thiếu hụt tương tác trực tiếp được đề cập là làm gia tăng (increases) nguy cơ các vấn đề sức khỏe tâm thần.",
-        "id": "t1290"
+        "id": "t1290",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12557,7 +13224,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "D",
         "explanation_vi": "Đoạn tổng quát của bài mẫu Task 1 chỉ ra rằng các hoạt động giải trí (leisure activities) được các cặp đôi nghỉ hưu quan tâm nhất.",
-        "id": "t1291"
+        "id": "t1291",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12570,7 +13238,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "lifespan",
         "explanation_vi": "'Short lifespan' (vòng đời ngắn) dùng để mô tả các sản phẩm sử dụng một lần rồi bị vứt bỏ ngay.",
-        "id": "t1292"
+        "id": "t1292",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12583,7 +13252,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Kết luận của bài mẫu Task 2 đề xuất chính phủ và công ty nên hợp tác chuyển sang các vật liệu xanh hơn (greener materials).",
-        "id": "t1293"
+        "id": "t1293",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12596,7 +13266,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ: 'many traditional customs are modified for commercialization, and eventually lose their originality and value'.",
-        "id": "t1294"
+        "id": "t1294",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12609,7 +13280,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "that solely",
         "explanation_vi": "'Solely' có nghĩa là 'duy nhất/chỉ', phù hợp với ngữ cảnh bảo tàng chỉ trưng bày về văn hóa dân tộc thiểu số.",
-        "id": "t1295"
+        "id": "t1295",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12622,7 +13294,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản cung cấp số liệu: chi phí trung bình để lắp đặt một tuabin gió là khoảng 3 triệu đô la, gây gánh nặng tài chính.",
-        "id": "t1296"
+        "id": "t1296",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12635,7 +13308,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "finite",
         "explanation_vi": "'Finite' (hữu hạn) là từ chính xác để mô tả tài nguyên hóa thạch như dầu mỏ và khí đốt.",
-        "id": "t1297"
+        "id": "t1297",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12648,7 +13322,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu Task 1 mô tả lối đi cũ được thay thế bằng lối đi mới dẫn đến cả 4 phía của công viên.",
-        "id": "t1298"
+        "id": "t1298",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12661,7 +13336,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản nêu rõ: 'due to biological similarities, medical research needs to be implemented on animals...'",
-        "id": "t1299"
+        "id": "t1299",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12674,7 +13350,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "health",
         "explanation_vi": "Theo đoạn văn về Commuting: 'breathing in toxic fumes... in the long term can lead to a number of serious health issues.'",
-        "id": "t1300"
+        "id": "t1300",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12687,7 +13364,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Văn bản ghi: 'large amounts of money are expended... This can be a burden on a country’s national budget.'",
-        "id": "t1301"
+        "id": "t1301",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12700,7 +13378,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commuting to work",
         "explanation_vi": "Dựa trên phân tích biểu đồ cột: 'the most number of trips... are made for commuting to and from work and for shopping.'",
-        "id": "t1302"
+        "id": "t1302",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12713,7 +13392,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Đoạn văn cuối về Commuting chỉ ra: 'the majority of people are... keep their eyes glued to their smartphone browsing social media.'",
-        "id": "t1303"
+        "id": "t1303",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12726,7 +13406,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Văn bản đề cập rằng báo truyền thống không thể cạnh tranh về tốc độ cập nhật do các quy trình kéo dài như biên tập và in ấn.",
-        "id": "t1304"
+        "id": "t1304",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12739,7 +13420,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "producers",
         "explanation_vi": "Dựa trên bảng số liệu và phần phân tích, Asia và South America là những nhà sản xuất (producers) lớn nhất.",
-        "id": "t1305"
+        "id": "t1305",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12752,7 +13434,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "Bài mẫu khẳng định yếu tố quan trọng nhất của một xã hội lý tưởng là lòng vị tha (altruism).",
-        "id": "t1306"
+        "id": "t1306",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12765,7 +13448,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "faster",
         "explanation_vi": "Phần phân tích biểu đồ đường nêu rõ lượng dầu tiêu thụ tăng nhanh hơn nhiều (faster) so với lượng dầu sản xuất.",
-        "id": "t1307"
+        "id": "t1307",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12778,7 +13462,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Phần phân tích chỉ ra việc đi tù khiến tội phạm bị xa lánh, khó hòa nhập và có khả năng tái phạm (re-offending) cao.",
-        "id": "t1308"
+        "id": "t1308",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12791,7 +13476,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A remedy for the origin of crimes",
         "explanation_vi": "Trong văn bản, tác giả mô tả giáo dục đóng vai trò như một phương thuốc (remedy) giải quyết nguồn gốc của tội phạm.",
-        "id": "t1309"
+        "id": "t1309",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12804,7 +13490,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "adversely",
         "explanation_vi": "Từ 'adversely' mang nghĩa 'một cách tiêu cực/bất lợi', phù hợp để mô tả ảnh hưởng của việc xây dựng hạ tầng lên môi trường.",
-        "id": "t1310"
+        "id": "t1310",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12817,7 +13504,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "of necessity",
         "explanation_vi": "Theo cấu trúc 'to be + of + Noun', ta dùng danh từ 'necessity' để mang nghĩa 'cần thiết'.",
-        "id": "t1311"
+        "id": "t1311",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12830,7 +13518,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Creating more occupations to accommodate tourists",
         "explanation_vi": "Văn bản nêu rõ du lịch bùng nổ giúp tạo ra nhiều nghề nghiệp (occupations) để đáp ứng nhu cầu của du khách.",
-        "id": "t1312"
+        "id": "t1312",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12843,7 +13532,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Due to the ubiquitous social media posts and tedious teaching methods",
         "explanation_vi": "Văn bản liệt kê nguyên nhân là do sự phổ biến của tin tức về người nổi tiếng trên mạng xã hội và phương pháp dạy lịch sử nhàm chán.",
-        "id": "t1313"
+        "id": "t1313",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12856,7 +13546,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "safe",
         "explanation_vi": "Cụm từ cố định 'safe, hygienic food standards' nghĩa là các tiêu chuẩn thực phẩm an toàn và vệ sinh.",
-        "id": "t1314"
+        "id": "t1314",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12869,7 +13560,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It creates employment opportunities for workers.",
         "explanation_vi": "Bài mẫu nêu rằng quảng cáo (như Coca Cola) tạo ra hàng ngàn cơ hội việc làm, giúp ổn định kinh tế.",
-        "id": "t1315"
+        "id": "t1315",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12882,7 +13574,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "play",
         "explanation_vi": "Cấu trúc 'play one's part in' có nghĩa là đóng góp phần mình vào việc gì đó.",
-        "id": "t1316"
+        "id": "t1316",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12895,7 +13588,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Loss of cultural identity and traditions.",
         "explanation_vi": "Khi một ngôn ngữ thống trị, các giá trị văn hóa như thơ ca, nhạc họa gắn liền với ngôn ngữ bản địa sẽ bị mất đi.",
-        "id": "t1317"
+        "id": "t1317",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12908,7 +13602,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "aimed",
         "explanation_vi": "Cụm từ 'be aimed at' mang nghĩa là được nhắm vào đối tượng nào đó.",
-        "id": "t1318"
+        "id": "t1318",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12921,7 +13616,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Waste water and storm water will be recycled for use in the city.",
         "explanation_vi": "Theo bài mẫu, thay đổi đáng kể nhất trong tương lai là quy trình tái chế nước (nước mưa và nước thải) để sử dụng lại trong thành phố.",
-        "id": "t1319"
+        "id": "t1319",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12934,7 +13630,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "head start",
         "explanation_vi": "Cụm từ 'head start' nghĩa là một lợi thế ban đầu hoặc khởi đầu sớm hơn so với người khác.",
-        "id": "t1320"
+        "id": "t1320",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12947,7 +13644,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The increase in population matches the growth of the residential area.",
         "explanation_vi": "Văn bản nêu rằng dân số tăng 10 lần tỷ lệ thuận (directly proportional) với kích thước khu dân cư.",
-        "id": "t1321"
+        "id": "t1321",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12960,7 +13658,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "devoted",
         "explanation_vi": "Cấu trúc 'be devoted to something' nghĩa là dành toàn bộ thời gian hoặc sự chú ý vào việc gì đó.",
-        "id": "t1322"
+        "id": "t1322",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12973,7 +13672,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It is an inevitable trend in the era of globalisation.",
         "explanation_vi": "Văn bản kết luận rằng xu hướng một số ngôn ngữ phổ biến hơn là một xu hướng không thể tránh khỏi (inevitable) trong kỷ nguyên toàn cầu hóa.",
-        "id": "t1323"
+        "id": "t1323",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -12986,7 +13686,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Letter of reference",
         "explanation_vi": "'Letter of reference' là thư giới thiệu từ người quen hoặc sếp cũ để giúp bạn xin việc.",
-        "id": "t1324"
+        "id": "t1324",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -12999,7 +13700,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "complain",
         "explanation_vi": "Sau 'to' cần một động từ nguyên mẫu. 'Complain' là động từ khiếu nại.",
-        "id": "t1325"
+        "id": "t1325",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13012,7 +13714,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "faulty",
         "explanation_vi": "'Faulty' nghĩa là bị lỗi hoặc hỏng hóc, không hoạt động bình thường.",
-        "id": "t1326"
+        "id": "t1326",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13025,7 +13728,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "ask",
         "explanation_vi": "Cụm từ cố định là 'ask permission' (xin phép).",
-        "id": "t1327"
+        "id": "t1327",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13038,7 +13742,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Accommodation",
         "explanation_vi": "'Accommodation' là thuật ngữ trang trọng chỉ chỗ ở (nhà thuê, ký túc xá, v.v.).",
-        "id": "t1328"
+        "id": "t1328",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13051,7 +13756,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Strive",
         "explanation_vi": "'Endeavour' và 'Strive' đều mang nghĩa nỗ lực, cố gắng đạt được điều gì đó.",
-        "id": "t1329"
+        "id": "t1329",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13064,7 +13770,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "complaint",
         "explanation_vi": "Sau mạo từ 'a' cần một danh từ. 'Complaint' là danh từ, 'Complain' là động từ.",
-        "id": "t1330"
+        "id": "t1330",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13077,7 +13784,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "They must be kept secret.",
         "explanation_vi": "'Confidential' nghĩa là tuyệt mật, không được phép tiết lộ rộng rãi.",
-        "id": "t1331"
+        "id": "t1331",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13090,7 +13798,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "promises",
         "explanation_vi": "Cấu trúc 'promises to do something' thường dùng để chỉ một sự kiện/khóa học cam kết mang lại lợi ích gì đó.",
-        "id": "t1332"
+        "id": "t1332",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13103,7 +13812,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "I look forward to your positive reply",
         "explanation_vi": "Đây là câu kết thư trang trọng, phù hợp trong môi trường công sở.",
-        "id": "t1333"
+        "id": "t1333",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13116,7 +13826,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "disruptive",
         "explanation_vi": "'Disruptive' nghĩa là gây gián đoạn, phù hợp nhất khi nói về kết nối internet không ổn định.",
-        "id": "t1334"
+        "id": "t1334",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13129,7 +13840,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "extremely",
         "explanation_vi": "Trạng từ 'extremely' dùng để nhấn mạnh tính từ 'professional' (cực kỳ chuyên nghiệp).",
-        "id": "t1335"
+        "id": "t1335",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13142,7 +13854,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Money paid for work or a service",
         "explanation_vi": "'Remuneration' là thuật ngữ học thuật chỉ tiền lương hoặc thù lao cho công việc.",
-        "id": "t1336"
+        "id": "t1336",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13155,7 +13868,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "express",
         "explanation_vi": "Cụm từ 'express my delight' (bày tỏ sự hài lòng/vui mừng) là collocation phổ biến trong thư cảm ơn.",
-        "id": "t1337"
+        "id": "t1337",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13168,7 +13882,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Akin to",
         "explanation_vi": "'Akin to' mang ý nghĩa tương tự hoặc có tính chất giống với cái gì đó.",
-        "id": "t1338"
+        "id": "t1338",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13181,7 +13896,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "relentless",
         "explanation_vi": "'Relentless' (không ngừng nghỉ/gay gắt) phù hợp nhất để mô tả cơn bão.",
-        "id": "t1339"
+        "id": "t1339",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13194,7 +13910,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Never happened before",
         "explanation_vi": "'Unprecedented' nghĩa là chưa từng thấy, chưa từng có trong quá khứ.",
-        "id": "t1340"
+        "id": "t1340",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13207,7 +13924,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "on behalf of",
         "explanation_vi": "Cụm 'on behalf of' dùng khi muốn nói 'thay mặt cho'.",
-        "id": "t1341"
+        "id": "t1341",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13220,7 +13938,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Salary",
         "explanation_vi": "'Remuneration' là thuật ngữ trang trọng cho tiền lương hoặc tiền thù lao.",
-        "id": "t1342"
+        "id": "t1342",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13233,7 +13952,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dilapidated",
         "explanation_vi": "'Dilapidated' dùng để mô tả những thứ bị hư hỏng, xuống cấp.",
-        "id": "t1343"
+        "id": "t1343",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13246,7 +13966,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "reverse",
         "explanation_vi": "Trong ngữ cảnh thanh toán, 'reverse' có nghĩa là hủy giao dịch và hoàn tiền.",
-        "id": "t1344"
+        "id": "t1344",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13259,7 +13980,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Apologetic",
         "explanation_vi": "'Contrite' thể hiện sự hối lỗi, tương đồng với 'Apologetic'.",
-        "id": "t1345"
+        "id": "t1345",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13272,7 +13994,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "permission",
         "explanation_vi": "'Seek permission' là cụm từ phổ biến để xin phép làm điều gì đó.",
-        "id": "t1346"
+        "id": "t1346",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13285,7 +14008,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Acting as a bridge/connection",
         "explanation_vi": "'Liaison' có nghĩa là giữ mối liên lạc hoặc làm cầu nối giữa các bộ phận.",
-        "id": "t1347"
+        "id": "t1347",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13298,7 +14022,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "nerve-racking",
         "explanation_vi": "'Nerve-racking' dùng để miêu tả những tình huống cực kỳ căng thẳng, phù hợp với trận chung kết.",
-        "id": "t1348"
+        "id": "t1348",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13311,7 +14036,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Based on observation or experience",
         "explanation_vi": "'Empirical' (thực nghiệm) nghĩa là thông tin thu thập được từ thực tế, quan sát thay vì chỉ lý thuyết suông.",
-        "id": "t1349"
+        "id": "t1349",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13324,7 +14050,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "bear",
         "explanation_vi": "Cụm từ cố định là 'bear the costs/expenses' (chịu chi phí).",
-        "id": "t1350"
+        "id": "t1350",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13337,7 +14064,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "misrepresentation",
         "explanation_vi": "'Misrepresentation' chỉ việc quảng cáo sai sự thật, không đúng như thực tế.",
-        "id": "t1351"
+        "id": "t1351",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13350,7 +14078,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Strive",
         "explanation_vi": "'Endeavour' và 'Strive' đều mang nghĩa nỗ lực hết mình, trang trọng hơn từ 'try'.",
-        "id": "t1352"
+        "id": "t1352",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13363,7 +14092,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "detriment",
         "explanation_vi": "'Detriment' ở đây đóng vai trò động từ, nghĩa là gây tổn hại cho danh tiếng.",
-        "id": "t1353"
+        "id": "t1353",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13376,7 +14106,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "wings",
         "explanation_vi": "Cụm từ 'give wings to' có nghĩa là chắp cánh, giúp cái gì đó phát triển mạnh mẽ.",
-        "id": "t1354"
+        "id": "t1354",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13389,7 +14120,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The expenses are very high/expensive",
         "explanation_vi": "Trong ngữ cảnh này, tác giả đang than phiền về chi phí sinh hoạt đắt đỏ.",
-        "id": "t1355"
+        "id": "t1355",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13402,7 +14134,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "affirm",
         "explanation_vi": "'Affirm' (xác nhận/khẳng định) phù hợp để cam đoan việc sẽ tiếp đón bạn mình.",
-        "id": "t1356"
+        "id": "t1356",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13415,7 +14148,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Someone you hope to work for in the future",
         "explanation_vi": "'Prospective' chỉ những thứ thuộc về tương lai hoặc tiềm năng.",
-        "id": "t1357"
+        "id": "t1357",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13428,7 +14162,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "daunted",
         "explanation_vi": "'Daunted' thể hiện cảm giác sửng sốt hoặc lo ngại trước một vấn đề tiêu cực.",
-        "id": "t1358"
+        "id": "t1358",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13441,7 +14176,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "grateful",
         "explanation_vi": "Dựa trên ngữ cảnh thư gửi bạn bè (informal/semi-formal), 'grateful' là từ phù hợp nhất. 'Obliged' thường dùng trong văn phong cực kỳ trang trọng.",
-        "id": "t1359"
+        "id": "t1359",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13454,7 +14190,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Producing a lot of profit or money",
         "explanation_vi": "'Lucrative' đồng nghĩa với 'profitable' (sinh lời) hoặc mang lại thu nhập cao.",
-        "id": "t1360"
+        "id": "t1360",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13467,7 +14204,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "tranquillity",
         "explanation_vi": "'Tranquillity' (sự yên tĩnh) đối lập với 'noise' (tiếng ồn) trong câu.",
-        "id": "t1361"
+        "id": "t1361",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13480,7 +14218,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "My sincere apology in advance",
         "explanation_vi": "Cụm 'in advance' có nghĩa là 'trước', dùng để xin lỗi về một sự phiền toái sắp xảy ra.",
-        "id": "t1362"
+        "id": "t1362",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13493,7 +14232,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sentimental",
         "explanation_vi": "'Sentimental value' là giá trị về mặt tình cảm/kỷ niệm của một món đồ.",
-        "id": "t1363"
+        "id": "t1363",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13506,7 +14246,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "attrition",
         "explanation_vi": "'Attrition rate' là thuật ngữ chỉ tỉ lệ nhân viên nghỉ việc trong doanh nghiệp.",
-        "id": "t1364"
+        "id": "t1364",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13519,7 +14260,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Equipped with tables, chairs, and beds",
         "explanation_vi": "'Furnished' nghĩa là đã có sẵn đồ đạc nội thất cơ bản.",
-        "id": "t1365"
+        "id": "t1365",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13532,7 +14274,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dearth",
         "explanation_vi": "'Dearth of' mang nghĩa là sự thiếu hụt, rất phù hợp khi nói về việc thiếu hụt lao động.",
-        "id": "t1366"
+        "id": "t1366",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13545,7 +14288,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Promises to pay the debt if you cannot",
         "explanation_vi": "Người bảo lãnh (guarantor) là người cam kết chịu trách nhiệm trả nợ nếu người vay chính không đủ khả năng.",
-        "id": "t1367"
+        "id": "t1367",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13558,7 +14302,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "captivating",
         "explanation_vi": "'Captivating' mô tả thứ gì đó cực kỳ hấp dẫn và lôi cuốn sự chú ý.",
-        "id": "t1368"
+        "id": "t1368",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13571,7 +14316,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "remuneration",
         "explanation_vi": "'Remuneration' là thuật ngữ trang trọng để chỉ tổng số tiền lương và các lợi ích nhận được từ công việc.",
-        "id": "t1369"
+        "id": "t1369",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13584,7 +14330,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Making it easy for something to happen",
         "explanation_vi": "'Conducive' có nghĩa là tạo điều kiện thuận lợi hoặc giúp ích cho điều gì đó xảy ra.",
-        "id": "t1370"
+        "id": "t1370",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13597,7 +14344,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "draw",
         "explanation_vi": "Cụm từ cố định 'draw someone's attention to something' nghĩa là hướng sự chú ý của ai đó vào việc gì.",
-        "id": "t1371"
+        "id": "t1371",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13610,7 +14358,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Before the rental period begins",
         "explanation_vi": "'Upfront' có nghĩa là thanh toán ngay từ đầu, trước khi sử dụng dịch vụ.",
-        "id": "t1372"
+        "id": "t1372",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13623,7 +14372,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "keep pace",
         "explanation_vi": "'Keep pace with' là collocation có nghĩa là giữ vững nhịp độ hoặc bắt kịp với sự thay đổi.",
-        "id": "t1373"
+        "id": "t1373",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13636,7 +14386,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Sluggish",
         "explanation_vi": "'Lethargic' và 'Sluggish' đều có nghĩa là uể oải, chậm chạp, thiếu sức sống.",
-        "id": "t1374"
+        "id": "t1374",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13649,7 +14400,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "owing",
         "explanation_vi": "Cấu trúc 'owing to' dùng để chỉ nguyên nhân một cách trang trọng.",
-        "id": "t1375"
+        "id": "t1375",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13662,7 +14414,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "indebted",
         "explanation_vi": "'Indebted' được dùng trong thư từ trang trọng để bày tỏ sự biết ơn sâu sắc khi ai đó giúp đỡ mình.",
-        "id": "t1376"
+        "id": "t1376",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13675,7 +14428,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "To start a journey",
         "explanation_vi": "'Embark on' nghĩa là bắt đầu một hành trình hoặc một giai đoạn mới.",
-        "id": "t1377"
+        "id": "t1377",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13688,7 +14442,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commemorate",
         "explanation_vi": "'Commemorate' phù hợp nhất trong ngữ cảnh tổ chức sự kiện để kỷ niệm một mốc thời gian.",
-        "id": "t1378"
+        "id": "t1378",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13701,7 +14456,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Very poor",
         "explanation_vi": "'Indigent' là từ học thuật đồng nghĩa với 'very poor', thường dùng trong văn cảnh trang trọng hoặc y tế/xã hội.",
-        "id": "t1379"
+        "id": "t1379",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13714,7 +14470,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "adversely",
         "explanation_vi": "'Adversely affect' là một collocation phổ biến nghĩa là gây ra tác động tiêu cực/bất lợi.",
-        "id": "t1380"
+        "id": "t1380",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13727,7 +14484,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Polite",
         "explanation_vi": "'Courteous' có nghĩa là lịch sự, nhã nhặn, đồng nghĩa với 'polite'.",
-        "id": "t1381"
+        "id": "t1381",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13740,7 +14498,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "effective",
         "explanation_vi": "Cụm từ 'effective from' thường dùng trong thư từ công việc để chỉ mốc thời gian một quyết định có hiệu lực.",
-        "id": "t1382"
+        "id": "t1382",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13753,7 +14512,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Falling into disrepair",
         "explanation_vi": "'Dilapidation' chỉ tình trạng hư hỏng, xuống cấp của một công trình do tuổi tác hoặc không được bảo trì.",
-        "id": "t1383"
+        "id": "t1383",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13766,7 +14526,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Causing harm or damage",
         "explanation_vi": "'Detrimental' có nghĩa là gây hại, thường dùng để mô tả những tác động tiêu cực của một sự phát triển.",
-        "id": "t1384"
+        "id": "t1384",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13779,7 +14540,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "endeavour",
         "explanation_vi": "'Endeavour' (nỗ lực) là động từ phù hợp nhất để diễn tả sự cố gắng hoàn thành công việc.",
-        "id": "t1385"
+        "id": "t1385",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13792,7 +14554,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Below the required quality",
         "explanation_vi": "'Substandard' có nghĩa là kém chất lượng, không đạt chuẩn.",
-        "id": "t1386"
+        "id": "t1386",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13805,7 +14568,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "weigh",
         "explanation_vi": "Cụm từ 'weigh the utility' nghĩa là cân nhắc lợi ích/giá trị của một thứ gì đó.",
-        "id": "t1387"
+        "id": "t1387",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13818,7 +14582,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "I am writing to bring your attention to...",
         "explanation_vi": "Đây là cấu trúc trang trọng dùng để bắt đầu trình bày một vấn đề cần giải quyết với người có thẩm quyền.",
-        "id": "t1388"
+        "id": "t1388",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13831,7 +14596,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Send greetings to family members",
         "explanation_vi": "Cụm 'convey my regards' thường dùng cuối thư để gửi lời hỏi thăm đến người thân của người nhận.",
-        "id": "t1389"
+        "id": "t1389",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13844,7 +14610,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "unbearable",
         "explanation_vi": "'Unbearable' (không thể chịu đựng nổi) thường đi với 'noise' trong các lá thư phàn nàn.",
-        "id": "t1390"
+        "id": "t1390",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13857,7 +14624,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Start",
         "explanation_vi": "'Commence' là từ trang trọng hơn của 'start' (bắt đầu).",
-        "id": "t1391"
+        "id": "t1391",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13870,7 +14638,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "revert",
         "explanation_vi": "'Revert' có nghĩa là quay trở lại (tình trạng hoặc phương pháp cũ).",
-        "id": "t1392"
+        "id": "t1392",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13883,7 +14652,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It is certain to happen",
         "explanation_vi": "'Inevitable' nghĩa là điều gì đó chắc chắn sẽ xảy ra, không thể tránh khỏi.",
-        "id": "t1393"
+        "id": "t1393",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13896,7 +14666,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commence",
         "explanation_vi": "'Commence' có nghĩa là bắt đầu, phù hợp để nói về việc khởi động một dự án hoặc khóa học.",
-        "id": "t1394"
+        "id": "t1394",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13909,7 +14680,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Neighborhood",
         "explanation_vi": "'Vicinity' có nghĩa là vùng lân cận hoặc khu vực xung quanh, tương đồng với 'neighborhood'.",
-        "id": "t1395"
+        "id": "t1395",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13922,7 +14694,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "in-line",
         "explanation_vi": "Cấu trúc 'to be in-line with' nghĩa là phù hợp hoặc nhất quán với điều gì đó.",
-        "id": "t1396"
+        "id": "t1396",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13935,7 +14708,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Very early in the morning",
         "explanation_vi": "'In the wee hours' chỉ thời gian sau nửa đêm và trước khi trời sáng (thường từ 1-4 giờ sáng).",
-        "id": "t1397"
+        "id": "t1397",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13948,7 +14722,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "manufacturing",
         "explanation_vi": "'Manufacturing flaw' là một cụm từ cố định chỉ lỗi phát sinh từ quá trình sản xuất sản phẩm.",
-        "id": "t1398"
+        "id": "t1398",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13961,7 +14736,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "exacerbate",
         "explanation_vi": "'Exacerbate' nghĩa là làm trầm trọng thêm một tình huống xấu đã có sẵn.",
-        "id": "t1399"
+        "id": "t1399",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -13974,7 +14750,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "benevolent",
         "explanation_vi": "'Benevolent' (nhân từ) phù hợp nhất để mô tả tính cách tốt bụng của người quản lý.",
-        "id": "t1400"
+        "id": "t1400",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -13987,7 +14764,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "To inform",
         "explanation_vi": "'Apprise' là một từ trang trọng mang nghĩa là thông báo hoặc cho ai đó biết thông tin.",
-        "id": "t1401"
+        "id": "t1401",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14000,7 +14778,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "compelled",
         "explanation_vi": "Cấu trúc 'be compelled to' diễn tả việc bị hoàn cảnh bắt buộc phải làm gì.",
-        "id": "t1402"
+        "id": "t1402",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14013,7 +14792,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Rough or rude",
         "explanation_vi": "'Coarse' khi nói về thái độ (demeanour) có nghĩa là thô lỗ, thiếu văn hóa.",
-        "id": "t1403"
+        "id": "t1403",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14026,7 +14806,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "misuse",
         "explanation_vi": "'Misuse' (sự sử dụng sai mục đích/trái phép) thường dùng với thẻ ngân hàng bị mất.",
-        "id": "t1404"
+        "id": "t1404",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14039,7 +14820,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "bestowed",
         "explanation_vi": "'Bestow something on/upon someone' nghĩa là ban tặng hoặc truyền lại cái gì đó (thường là kiến thức, danh dự).",
-        "id": "t1405"
+        "id": "t1405",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14052,7 +14834,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Compensate for",
         "explanation_vi": "'Compensate for' có nghĩa là bồi thường cho một thiệt hại hoặc mất mát.",
-        "id": "t1406"
+        "id": "t1406",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14065,7 +14848,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "acknowledge",
         "explanation_vi": "'Acknowledge receipt' là cụm từ trang trọng dùng để xác nhận đã nhận được thứ gì đó.",
-        "id": "t1407"
+        "id": "t1407",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14078,7 +14862,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Friendly and pleasant",
         "explanation_vi": "'Amiable' đồng nghĩa với friendly (thân thiện, dễ mến).",
-        "id": "t1408"
+        "id": "t1408",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14091,7 +14876,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "stipulated",
         "explanation_vi": "'Stipulated date' là ngày đã được quy định hoặc thỏa thuận trong hợp đồng/văn bản.",
-        "id": "t1409"
+        "id": "t1409",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14104,7 +14890,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Indispensable",
         "explanation_vi": "'Indispensable' có nghĩa là không thể thiếu được, cực kỳ quan trọng.",
-        "id": "t1410"
+        "id": "t1410",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14117,7 +14904,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "oblivious",
         "explanation_vi": "'Oblivious' diễn tả trạng thái không nhận thức được hoặc không để ý đến những gì đang xảy ra xung quanh.",
-        "id": "t1411"
+        "id": "t1411",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14130,7 +14918,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Expressing gratitude for a big favor",
         "explanation_vi": "Đây là cách nói thân mật để cảm ơn ai đó vì đã giúp đỡ mình rất nhiều.",
-        "id": "t1412"
+        "id": "t1412",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14143,7 +14932,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "ineffectual",
         "explanation_vi": "'Ineffectual' chỉ một thứ gì đó (như máy móc) không hoạt động hiệu quả hoặc không mang lại kết quả mong muốn.",
-        "id": "t1413"
+        "id": "t1413",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14156,7 +14946,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "impeccable",
         "explanation_vi": "'Impeccable' nghĩa là hoàn hảo, thường dùng để mô tả dịch vụ hoặc kỹ năng không có sai sót.",
-        "id": "t1414"
+        "id": "t1414",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14169,7 +14960,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "apprise",
         "explanation_vi": "Cấu trúc 'apprise someone of something' nghĩa là thông báo cho ai đó biết về việc gì.",
-        "id": "t1415"
+        "id": "t1415",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14182,7 +14974,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Career advancement and promotions",
         "explanation_vi": "Đây là một thành ngữ phổ biến chỉ việc thăng tiến trong thứ bậc công ty.",
-        "id": "t1416"
+        "id": "t1416",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14195,7 +14988,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "deteriorated",
         "explanation_vi": "'Deteriorated' có nghĩa là trở nên tệ hơn, thường dùng cho tình hình an ninh hoặc chất lượng khu phố.",
-        "id": "t1417"
+        "id": "t1417",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14208,7 +15002,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Tertiary",
         "explanation_vi": "'Tertiary education' là thuật ngữ học thuật chỉ giáo dục bậc cao (Đại học/Cao đẳng).",
-        "id": "t1418"
+        "id": "t1418",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14221,7 +15016,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "entitled",
         "explanation_vi": "'Entitled' được dùng khi ai đó có quyền hợp pháp để nhận được quyền lợi hoặc bồi thường.",
-        "id": "t1419"
+        "id": "t1419",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14234,7 +15030,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "whereabouts",
         "explanation_vi": "'Whereabouts' dùng để chỉ vị trí hoặc nơi chốn của một người hoặc vật đang bị thất lạc.",
-        "id": "t1420"
+        "id": "t1420",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14247,7 +15044,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "anomaly",
         "explanation_vi": "'Anomaly' chỉ sự bất thường trong hệ thống hoặc hành vi của máy móc.",
-        "id": "t1421"
+        "id": "t1421",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14260,7 +15058,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "reprimand",
         "explanation_vi": "'Reprimand' là hành động khiển trách chính thức một ai đó vì làm sai.",
-        "id": "t1422"
+        "id": "t1422",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14273,7 +15072,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A formal complaint",
         "explanation_vi": "Cụm từ này thường dùng trong thư phàn nàn để hướng sự chú ý của quản lý vào một vấn đề cụ thể.",
-        "id": "t1423"
+        "id": "t1423",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14286,7 +15086,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "biggest",
         "explanation_vi": "Dựa vào bảng số liệu, tỷ lệ 30.7% là mức tăng trưởng lớn nhất so với các loại xe khác.",
-        "id": "t1424"
+        "id": "t1424",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14294,7 +15095,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "compared",
         "explanation_vi": "Cấu trúc 'compared to' dùng để so sánh hai số liệu với nhau.",
-        "id": "t1425"
+        "id": "t1425",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14307,7 +15109,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "case",
         "explanation_vi": "Cụm từ 'Why is this the case?' là một cách hỏi 'Tại sao điều này lại xảy ra?' thường gặp trong IELTS Writing Task 2.",
-        "id": "t1426"
+        "id": "t1426",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14315,7 +15118,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "will make",
         "explanation_vi": "Vì câu đề cập đến dự báo trong tương lai (2050), chúng ta dùng thì tương lai đơn hoặc cấu trúc dự đoán.",
-        "id": "t1427"
+        "id": "t1427",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14328,7 +15132,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "mode",
         "explanation_vi": "'Mode of communication' là một collocation học thuật chỉ cách thức giao tiếp.",
-        "id": "t1428"
+        "id": "t1428",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14336,7 +15141,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "through",
         "explanation_vi": "Cụm 'put through a process' nghĩa là đưa qua một quy trình xử lý.",
-        "id": "t1429"
+        "id": "t1429",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14349,7 +15155,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "outweigh",
         "explanation_vi": "'Outweigh' (vượt xa/nặng ký hơn) thường được dùng để so sánh lợi ích và tác hại.",
-        "id": "t1430"
+        "id": "t1430",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14357,7 +15164,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "convey",
         "explanation_vi": "'Convey' là từ học thuật dùng để chỉ việc truyền đạt thông tin hoặc cảm xúc.",
-        "id": "t1431"
+        "id": "t1431",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14370,7 +15178,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "legal",
         "explanation_vi": "'Legal matters' (các vấn đề pháp lý) là cụm từ cố định trong ngữ cảnh văn bản hành chính.",
-        "id": "t1432"
+        "id": "t1432",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14378,7 +15187,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "comprised",
         "explanation_vi": "Động từ 'comprise' mang nghĩa là bao gồm hoặc chiếm một phần trong tổng số.",
-        "id": "t1433"
+        "id": "t1433",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14391,7 +15201,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "impose",
         "explanation_vi": "Cấu trúc 'impose taxes on something' nghĩa là đánh thuế lên cái gì đó.",
-        "id": "t1434"
+        "id": "t1434",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14399,7 +15210,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "visualize",
         "explanation_vi": "Visualize có nghĩa là dùng trí tưởng tượng để tạo ra hình ảnh trong đầu.",
-        "id": "t1435"
+        "id": "t1435",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14412,7 +15224,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sedentary",
         "explanation_vi": "Sedentary lifestyle là lối sống ít vận động, ngồi nhiều.",
-        "id": "t1436"
+        "id": "t1436",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14420,7 +15233,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "consecutive",
         "explanation_vi": "Consecutive dùng để chỉ các khoảng thời gian nối tiếp nhau không ngắt quãng.",
-        "id": "t1437"
+        "id": "t1437",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14433,7 +15247,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "facilitate",
         "explanation_vi": "Facilitate có nghĩa là làm cho một quá trình trở nên dễ dàng hơn hoặc thúc đẩy nó.",
-        "id": "t1438"
+        "id": "t1438",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14441,7 +15256,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "e-commerce",
         "explanation_vi": "E-commerce là từ viết tắt của electronic commerce, dùng để chỉ hoạt động kinh doanh trên mạng.",
-        "id": "t1439"
+        "id": "t1439",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14454,7 +15270,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "unemployment",
         "explanation_vi": "Trong ngữ cảnh mất việc làm (lose their jobs), 'unemployment' (thất nghiệp) là từ phù hợp nhất.",
-        "id": "t1440"
+        "id": "t1440",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14462,7 +15279,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "exhaust fumes",
         "explanation_vi": "Exhaust fumes là cụm từ chuyên dùng để chỉ khí thải độc hại từ phương tiện giao thông.",
-        "id": "t1441"
+        "id": "t1441",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14475,7 +15293,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "tertiary",
         "explanation_vi": "Tertiary education là thuật ngữ học thuật chỉ giáo dục bậc cao (đại học/cao đẳng).",
-        "id": "t1442"
+        "id": "t1442",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14483,7 +15302,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "commitment",
         "explanation_vi": "Organizational commitment là sự cam kết và gắn bó lâu dài của nhân viên với công ty.",
-        "id": "t1443"
+        "id": "t1443",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14496,7 +15316,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "preparation",
         "explanation_vi": "Dựa trên bài mẫu về quy trình làm phân bón, bước đầu tiên là chuẩn bị thùng chứa nhựa.",
-        "id": "t1444"
+        "id": "t1444",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14504,7 +15325,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "togetherness",
         "explanation_vi": "Cảm giác 'togetherness' là sự gắn bó, hòa mình cùng đám đông khi tham gia sự kiện trực tiếp.",
-        "id": "t1445"
+        "id": "t1445",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14517,7 +15339,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "boycott",
         "explanation_vi": "'Boycott' nghĩa là tẩy chay, một hành động tập thể để phản đối các thực hành không đạo đức của công ty.",
-        "id": "t1446"
+        "id": "t1446",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14525,7 +15348,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "additions",
         "explanation_vi": "Trong mô tả bản đồ, 'additions' dùng để chỉ những khu vực/phòng được xây thêm.",
-        "id": "t1447"
+        "id": "t1447",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14538,7 +15362,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "distractions",
         "explanation_vi": "'Distractions' là những tác nhân gây xao nhãng, mất tập trung (như tiếng ồn đám đông).",
-        "id": "t1448"
+        "id": "t1448",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14546,7 +15371,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "budget",
         "explanation_vi": "Cụm từ 'national budget' nghĩa là ngân sách quốc gia.",
-        "id": "t1449"
+        "id": "t1449",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14559,7 +15385,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "neglected",
         "explanation_vi": "'Neglected' nghĩa là bị bỏ mặc, thờ ơ, phù hợp với ngữ cảnh thiếu sự quan tâm của cha mẹ.",
-        "id": "t1450"
+        "id": "t1450",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14567,7 +15394,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "decline",
         "explanation_vi": "'Decline' (giảm xuống) là động từ phù hợp để mô tả xu hướng đi xuống của số lượng nhân viên.",
-        "id": "t1451"
+        "id": "t1451",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14580,7 +15408,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "installation",
         "explanation_vi": "'Installation' nghĩa là sự lắp đặt (thiết bị, hệ thống đèn giao thông).",
-        "id": "t1452"
+        "id": "t1452",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14593,7 +15422,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "undertake",
         "explanation_vi": "'Undertake research' là collocation phổ biến có nghĩa là thực hiện nghiên cứu.",
-        "id": "t1453"
+        "id": "t1453",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14606,7 +15436,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "potable",
         "explanation_vi": "'Potable' nghĩa là nước có thể uống được một cách an toàn.",
-        "id": "t1454"
+        "id": "t1454",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14614,7 +15445,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "edge",
         "explanation_vi": "Cụm từ 'competitive edge' có nghĩa là lợi thế cạnh tranh.",
-        "id": "t1455"
+        "id": "t1455",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14627,7 +15459,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "constitutes",
         "explanation_vi": "'Constitutes for' (hoặc 'constitutes') được dùng để chỉ việc chiếm một tỉ lệ/tỉ trọng nào đó.",
-        "id": "t1456"
+        "id": "t1456",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14635,7 +15468,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "expectancy",
         "explanation_vi": "Cụm từ 'life expectancy' có nghĩa là tuổi thọ.",
-        "id": "t1457"
+        "id": "t1457",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14648,7 +15482,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "subjective",
         "explanation_vi": "'Subjective' (chủ quan) có nghĩa là tùy thuộc vào cảm nhận riêng của mỗi cá nhân.",
-        "id": "t1458"
+        "id": "t1458",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14661,7 +15496,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "converted",
         "explanation_vi": "'Converted into' nghĩa là được chuyển đổi công năng từ phòng này sang phòng khác.",
-        "id": "t1459"
+        "id": "t1459",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14669,7 +15505,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "profitable",
         "explanation_vi": "Tính từ 'profitable' nghĩa là có lợi nhuận, phù hợp với mục tiêu của công ty.",
-        "id": "t1460"
+        "id": "t1460",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14682,7 +15519,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "first-hand",
         "explanation_vi": "'First-hand experience' là trải nghiệm trực tiếp, thực tế.",
-        "id": "t1461"
+        "id": "t1461",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14690,7 +15528,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "intact",
         "explanation_vi": "'Stay intact' nghĩa là vẫn giữ nguyên trạng, không bị tác động hay thay đổi.",
-        "id": "t1462"
+        "id": "t1462",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14703,7 +15542,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "undesirable",
         "explanation_vi": "'Undesirable consequences' là những hậu quả không mong muốn.",
-        "id": "t1463"
+        "id": "t1463",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14716,7 +15556,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "allocate",
         "explanation_vi": "'Allocate' (phân bổ) là động từ phù hợp nhất khi nói về việc dành quỹ đất cho mục đích cụ thể.",
-        "id": "t1464"
+        "id": "t1464",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14724,7 +15565,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "vertical",
         "explanation_vi": "Dựa trên bài mẫu về Housing, 'vertical city' (thành phố phát triển theo chiều dọc/nhà cao tầng) giúp tiết kiệm đất.",
-        "id": "t1465"
+        "id": "t1465",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14737,7 +15579,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "aging",
         "explanation_vi": "Sinh con muộn dẫn đến việc số lượng người già tăng cao trong khi trẻ em ít đi, gọi là 'aging population'.",
-        "id": "t1466"
+        "id": "t1466",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14745,7 +15588,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "conscious",
         "explanation_vi": "Cấu trúc 'be conscious of' (có ý thức về) được dùng trong bài mẫu về chủ đề thành công.",
-        "id": "t1467"
+        "id": "t1467",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14758,7 +15602,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "alleviate",
         "explanation_vi": "'Alleviate' có nghĩa là làm giảm bớt (vấn đề tiêu cực như tắc nghẽn giao thông).",
-        "id": "t1468"
+        "id": "t1468",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14771,7 +15616,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "predicted",
         "explanation_vi": "Trong ngữ cảnh dự báo tương lai của biểu đồ, 'predicted' (được dự đoán) là từ phù hợp nhất.",
-        "id": "t1469"
+        "id": "t1469",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14779,7 +15625,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "squander",
         "explanation_vi": "Động từ 'squander' có nghĩa là lãng phí tiền bạc hoặc thời gian vào những việc vô bổ.",
-        "id": "t1470"
+        "id": "t1470",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14792,7 +15639,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "adept",
         "explanation_vi": "Cấu trúc 'be adept at' nghĩa là tinh thông, giỏi về một kỹ năng nào đó.",
-        "id": "t1471"
+        "id": "t1471",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14800,7 +15648,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "hone",
         "explanation_vi": "Cụm từ 'hone skills' thường được dùng để chỉ việc rèn luyện, mài giũa kỹ năng.",
-        "id": "t1472"
+        "id": "t1472",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14813,7 +15662,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "advance",
         "explanation_vi": "'Advance one's career' là collocation mang nghĩa thăng tiến hoặc phát triển sự nghiệp.",
-        "id": "t1473"
+        "id": "t1473",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14826,7 +15676,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Getting a promotion",
         "explanation_vi": "'Climbing the career ladder' là thành ngữ chỉ việc thăng tiến, đạt được vị trí cao hơn trong công việc.",
-        "id": "t1474"
+        "id": "t1474",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14834,7 +15685,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "trigger",
         "explanation_vi": "'Trigger' (gây ra/kích hoạt) là động từ thường đi kèm với 'conflict'.",
-        "id": "t1475"
+        "id": "t1475",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14847,7 +15699,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "deteriorates",
         "explanation_vi": "'Deteriorate' nghĩa là trở nên xấu đi, thường dùng cho tình trạng sức khỏe hoặc chất lượng.",
-        "id": "t1476"
+        "id": "t1476",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14855,7 +15708,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "keep",
         "explanation_vi": "Cụm từ cố định 'keep abreast of' nghĩa là cập nhật thông tin mới nhất.",
-        "id": "t1477"
+        "id": "t1477",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14868,7 +15722,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "obligation",
         "explanation_vi": "Trong ngữ cảnh bài đọc, việc làm thêm giờ do chi phí sinh hoạt cao được coi là một 'obligation' (nghĩa vụ/sự bắt buộc) hơn là lựa chọn.",
-        "id": "t1478"
+        "id": "t1478",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14881,7 +15736,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "imposing a heavy fine",
         "explanation_vi": "Dựa vào ngữ cảnh xử phạt nhà máy xả thải, cụm 'imposing a heavy fine' (phạt tiền nặng) là phù hợp nhất.",
-        "id": "t1479"
+        "id": "t1479",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14889,7 +15745,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "well-rounded",
         "explanation_vi": "Cụm 'well-rounded individuals' chỉ những người phát triển toàn diện về cả kiến thức lẫn kỹ năng.",
-        "id": "t1480"
+        "id": "t1480",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14902,7 +15759,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "chronic illnesses",
         "explanation_vi": "Tiểu đường (diabetes) là một loại bệnh mãn tính (chronic illness).",
-        "id": "t1481"
+        "id": "t1481",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14910,7 +15768,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "short term",
         "explanation_vi": "Cấu trúc 'in the short term' (trong ngắn hạn) được dùng để đối lập với 'in the future' (trong tương lai).",
-        "id": "t1482"
+        "id": "t1482",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14923,7 +15782,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "separate",
         "explanation_vi": "'Separate students' nghĩa là phân loại/tách riêng học sinh để giáo viên dễ dàng điều chỉnh tốc độ giảng dạy.",
-        "id": "t1483"
+        "id": "t1483",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14936,7 +15796,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "allocated to",
         "explanation_vi": "Cụm 'allocated to' dùng để chỉ việc phân bổ ngân sách cho một mục đích cụ thể.",
-        "id": "t1484"
+        "id": "t1484",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14944,7 +15805,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "catastrophe",
         "explanation_vi": "Từ 'catastrophe' (thảm họa) phù hợp để mô tả hậu quả nghiêm trọng của biến đổi khí hậu.",
-        "id": "t1485"
+        "id": "t1485",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14957,7 +15819,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "backbone",
         "explanation_vi": "'Backbone' (xương sống) là cách nói ẩn dụ cho ngành đóng vai trò quan trọng nhất.",
-        "id": "t1486"
+        "id": "t1486",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14965,7 +15828,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "harness",
         "explanation_vi": "'Harness energy' là cụm từ chuyên dụng cho việc khai thác và sử dụng nguồn năng lượng.",
-        "id": "t1487"
+        "id": "t1487",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14978,7 +15842,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "public transportation infrastructure",
         "explanation_vi": "Cải thiện cơ sở hạ tầng giao thông công cộng là giải pháp trực tiếp cho vấn đề tắc nghẽn giao thông.",
-        "id": "t1488"
+        "id": "t1488",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -14991,7 +15856,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "rely on",
         "explanation_vi": "Cụm 'rely on' (phụ thuộc vào) là hợp lý nhất trong ngữ cảnh tổ chức từ thiện cần quyên góp để hoạt động.",
-        "id": "t1489"
+        "id": "t1489",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -14999,7 +15865,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "bankruptcy",
         "explanation_vi": "Cụm 'face bankruptcy' có nghĩa là đối mặt với sự phá sản, phù hợp với hậu quả của việc thiếu kinh phí.",
-        "id": "t1490"
+        "id": "t1490",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15012,7 +15879,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "drastically reduce",
         "explanation_vi": "'Drastically reduce' (giảm đáng kể) dùng để chỉ tác động tiêu cực mạnh mẽ của việc cắt giảm ngân sách lên mục tiêu doanh số.",
-        "id": "t1491"
+        "id": "t1491",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15020,7 +15888,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "think outside the box",
         "explanation_vi": "Thành ngữ 'think outside the box' có nghĩa là suy nghĩ sáng tạo, thoát khỏi lối mòn.",
-        "id": "t1492"
+        "id": "t1492",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15033,7 +15902,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "exposure to",
         "explanation_vi": "'Exposure to' (sự tiếp xúc với) là danh từ phái sinh từ cấu trúc 'be exposed to', phù hợp để chỉ việc tiếp xúc liên tục với mạng xã hội.",
-        "id": "t1493"
+        "id": "t1493",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15046,7 +15916,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "tensions between employees",
         "explanation_vi": "Sự thiếu hụt các tín hiệu phi ngôn ngữ trong email thường dẫn đến căng thẳng giữa các nhân viên (tensions between employees).",
-        "id": "t1494"
+        "id": "t1494",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15054,7 +15925,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "enormous",
         "explanation_vi": "Từ 'enormous' được dùng để nhấn mạnh lượng tiền bạc rất lớn được tiết kiệm.",
-        "id": "t1495"
+        "id": "t1495",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15067,7 +15939,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "break down",
         "explanation_vi": "'Break down' có nghĩa là phân hủy, phù hợp với ngữ cảnh rác thải nhựa tại các bãi chôn lấp.",
-        "id": "t1496"
+        "id": "t1496",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15075,7 +15948,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "on the go",
         "explanation_vi": "Thành ngữ 'on the go' chỉ trạng thái luôn bận rộn và di chuyển.",
-        "id": "t1497"
+        "id": "t1497",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15088,7 +15962,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "recyclable materials",
         "explanation_vi": "Chuyển sang sử dụng vật liệu có thể tái chế (recyclable materials) là bước quan trọng để giải quyết khủng hoảng ô nhiễm nhựa.",
-        "id": "t1498"
+        "id": "t1498",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15101,7 +15976,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "comprehensive",
         "explanation_vi": "'Comprehensive' (toàn diện) mô tả thông tin chi tiết và đầy đủ trên internet.",
-        "id": "t1499"
+        "id": "t1499",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15109,7 +15985,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "disparity",
         "explanation_vi": "Dựa theo văn bản, 'population disparity' (sự chênh lệch dân số) dùng để chỉ sự khác biệt về số lượng giữa hai khu vực.",
-        "id": "t1500"
+        "id": "t1500",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15122,7 +15999,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "first-hand",
         "explanation_vi": "'First-hand' có nghĩa là trải nghiệm trực tiếp bằng giác quan của chính mình.",
-        "id": "t1501"
+        "id": "t1501",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15130,7 +16008,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "lined",
         "explanation_vi": "Cấu trúc 'to be lined with something' có nghĩa là được lót bằng một lớp gì đó.",
-        "id": "t1502"
+        "id": "t1502",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15143,7 +16022,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "lagged",
         "explanation_vi": "'Lagged' có nghĩa là tụt hậu hoặc kém hơn về mặt số lượng so với đối tượng khác.",
-        "id": "t1503"
+        "id": "t1503",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15156,7 +16036,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "placing",
         "explanation_vi": "Cụm từ cố định (collocation) là 'place a burden on something' (đặt gánh nặng lên cái gì).",
-        "id": "t1504"
+        "id": "t1504",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15164,7 +16045,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "making",
         "explanation_vi": "Cấu trúc 'make way for' có nghĩa là nhường chỗ cho cái gì đó mới.",
-        "id": "t1505"
+        "id": "t1505",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15177,7 +16059,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "stress-relieving",
         "explanation_vi": "'Stress-relieving activities' là các hoạt động giúp giải tỏa căng thẳng, phù hợp với ngữ cảnh kết nối với thiên nhiên.",
-        "id": "t1506"
+        "id": "t1506",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15185,7 +16068,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "problems",
         "explanation_vi": "Dựa trên bài mẫu: 'globalisation only causes more problems than it solves'.",
-        "id": "t1507"
+        "id": "t1507",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15198,7 +16082,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "adjacent",
         "explanation_vi": "'Adjacent to' có nghĩa là nằm ngay cạnh, tiếp giáp với.",
-        "id": "t1508"
+        "id": "t1508",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15211,7 +16096,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "myriad",
         "explanation_vi": "Cụm 'a myriad of' dùng để chỉ một số lượng rất lớn, vô số.",
-        "id": "t1509"
+        "id": "t1509",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15219,7 +16105,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "drive",
         "explanation_vi": "Cụm từ 'drive the economy' có nghĩa là thúc đẩy hoặc là động lực cho nền kinh tế.",
-        "id": "t1510"
+        "id": "t1510",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15232,7 +16119,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "no exception",
         "explanation_vi": "Dùng 'no exception' để khẳng định đối tượng này cũng nằm trong quy luật/tầm quan trọng đã nêu trước đó.",
-        "id": "t1511"
+        "id": "t1511",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15240,7 +16128,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "deteriorate",
         "explanation_vi": "Động từ 'deteriorate' mô tả quá trình suy giảm chất lượng, trở nên tệ đi.",
-        "id": "t1512"
+        "id": "t1512",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15253,7 +16142,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "projected",
         "explanation_vi": "'Projected figures' là các số liệu được dự báo hoặc ước tính cho tương lai.",
-        "id": "t1513"
+        "id": "t1513",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15266,7 +16156,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "sedentary",
         "explanation_vi": "Lối sống thụ động (sedentary lifestyle) là nguyên nhân gây ra nhiều vấn đề sức khỏe hiện nay.",
-        "id": "t1514"
+        "id": "t1514",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15274,7 +16165,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "refined",
         "explanation_vi": "Dựa trên bài mẫu, 'refined' được dùng để chỉ công cụ đã được tinh chỉnh, cải tiến.",
-        "id": "t1515"
+        "id": "t1515",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15287,7 +16179,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "focus",
         "explanation_vi": "Cụm từ 'focus their efforts on' nghĩa là tập trung nỗ lực vào việc gì.",
-        "id": "t1516"
+        "id": "t1516",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15295,7 +16188,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "unbiased",
         "explanation_vi": "Ý kiến khách quan, không thiên vị được gọi là 'unbiased opinion'.",
-        "id": "t1517"
+        "id": "t1517",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15308,7 +16202,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "ramifications",
         "explanation_vi": "'Ramifications' chỉ những hệ quả hoặc tác động phức tạp, thường là tiêu cực.",
-        "id": "t1518"
+        "id": "t1518",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15321,7 +16216,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "elimination",
         "explanation_vi": "Dựa trên bài mẫu Task 1 Map, 'elimination' (sự loại bỏ) bãi đậu xe giúp rạp phim có không gian mở rộng.",
-        "id": "t1519"
+        "id": "t1519",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15329,7 +16225,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "erode",
         "explanation_vi": "Cụm từ 'erode social relationships' nghĩa là làm xói mòn hoặc phá hủy các mối quan hệ xã hội.",
-        "id": "t1520"
+        "id": "t1520",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15342,7 +16239,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "outsourced",
         "explanation_vi": "'Outsourced' có nghĩa là thuê ngoài hoặc giao việc cho bên thứ ba có chuyên môn.",
-        "id": "t1521"
+        "id": "t1521",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15350,7 +16248,8 @@ const TASK1_TRANSLATIONS = [
         "options": null,
         "answer": "advent",
         "explanation_vi": "'The advent of something' có nghĩa là sự xuất hiện hoặc ra đời của một điều gì đó quan trọng.",
-        "id": "t1522"
+        "id": "t1522",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15363,7 +16262,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "practical",
         "explanation_vi": "'Practical value' nghĩa là giá trị thực tế.",
-        "id": "t1523"
+        "id": "t1523",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15376,7 +16276,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong ngữ cảnh miêu tả bản đồ (Maps), 'demolish' có nghĩa là phá dỡ một công trình cũ để lấy không gian cho mục đích khác.",
-        "id": "t1524"
+        "id": "t1524",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15389,7 +16290,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "has changed",
         "explanation_vi": "Sử dụng thì hiện tại hoàn thành để diễn tả sự thay đổi kéo dài từ quá khứ đến hiện tại trong câu mở bài Task 1.",
-        "id": "t1525"
+        "id": "t1525",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15402,7 +16304,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Cấu trúc 'both of which' được dùng làm mệnh đề quan hệ để thay thế cho hai danh từ đã nhắc đến ở phía trước.",
-        "id": "t1526"
+        "id": "t1526",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15415,7 +16318,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "make way",
         "explanation_vi": "Cụm từ 'make way for' có nghĩa là nhường chỗ cho cái gì đó mới.",
-        "id": "t1527"
+        "id": "t1527",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15428,7 +16332,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Relatively' mang nghĩa là 'tương đối', dùng để giảm nhẹ mức độ của tính từ đứng sau.",
-        "id": "t1528"
+        "id": "t1528",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15441,7 +16346,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "'Demolished to make way for' mang nghĩa là bị phá dỡ để nhường chỗ cho cái gì đó mới, phù hợp nhất với ngữ cảnh này.",
-        "id": "t1529"
+        "id": "t1529",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15454,7 +16360,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "accommodate",
         "explanation_vi": "'Accommodate' có nghĩa là đáp ứng hoặc cung cấp đủ chỗ cho một lượng người/vật nào đó.",
-        "id": "t1530"
+        "id": "t1530",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15467,7 +16374,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A",
         "explanation_vi": "Cấu trúc '[danh từ], some of which + V' là cấu trúc mệnh đề quan hệ nâng cao chuẩn xác.",
-        "id": "t1531"
+        "id": "t1531",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15480,7 +16388,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "respectively",
         "explanation_vi": "'Respectively' (lần lượt là) được dùng khi liệt kê hai đối tượng tương ứng với hai vị trí/số liệu đã nêu.",
-        "id": "t1532"
+        "id": "t1532",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15493,7 +16402,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "'Radical' mang nghĩa là triệt để hoặc rất lớn, do đó 'radical modifications' là những thay đổi đáng kể.",
-        "id": "t1533"
+        "id": "t1533",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15506,7 +16416,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "repurpose",
         "explanation_vi": "'Repurpose' có nghĩa là thay đổi mục đích sử dụng từ một nhà kho cũ thành trung tâm cộng đồng.",
-        "id": "t1534"
+        "id": "t1534",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15519,7 +16430,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Something was removed to make way for the new construction.",
         "explanation_vi": "Cụm từ này chỉ sự đánh đổi: loại bỏ cái cũ (như rừng, cửa hàng) để xây cái mới.",
-        "id": "t1535"
+        "id": "t1535",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15532,7 +16444,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "intact",
         "explanation_vi": "'Intact' có nghĩa là còn nguyên vẹn, không bị phá hủy hay thay đổi bởi quá trình hiện đại hóa.",
-        "id": "t1536"
+        "id": "t1536",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15545,7 +16458,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "In the north of the farmyard was placed a barn.",
         "explanation_vi": "Đây là cấu trúc đảo ngữ: Trạng từ chỉ nơi chốn + Động từ + Chủ ngữ.",
-        "id": "t1537"
+        "id": "t1537",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15558,7 +16472,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "bifurcates",
         "explanation_vi": "'Bifurcates' (chia làm hai nhánh) phù hợp nhất để miêu tả việc con đường dẫn đến hai ngôi làng khác nhau.",
-        "id": "t1538"
+        "id": "t1538",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15571,7 +16486,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "intact",
         "explanation_vi": "'Intact' phù hợp nhất để chỉ một khu vực không bị tác động (còn nguyên vẹn).",
-        "id": "t1539"
+        "id": "t1539",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15584,7 +16500,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Bifurcated",
         "explanation_vi": "'Bifurcated' là thuật ngữ chuyên ngành dùng để chỉ sự rẽ nhánh của đường xá hoặc sông ngòi.",
-        "id": "t1540"
+        "id": "t1540",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15597,7 +16514,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "repurposed",
         "explanation_vi": "Khi thay đổi công năng sử dụng từ rạp phim sang trung tâm thương mại, ta dùng 'repurposed'.",
-        "id": "t1541"
+        "id": "t1541",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15610,7 +16528,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The park was removed to make space for the school.",
         "explanation_vi": "Cụm 'in the original site of' ngụ ý vật thể mới đã thay thế hoàn toàn vật thể cũ tại cùng một vị trí.",
-        "id": "t1542"
+        "id": "t1542",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15623,7 +16542,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "accessed",
         "explanation_vi": "Cấu trúc 'accessed via' dùng để chỉ cách thức đi vào một địa điểm.",
-        "id": "t1543"
+        "id": "t1543",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15636,7 +16556,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "No, 'linear' is only for processes that have a definite start and finish.",
         "explanation_vi": "Từ 'linear' chỉ dùng cho quy trình có điểm bắt đầu và kết thúc rõ ràng, không dùng cho quy trình khép kín/lặp lại.",
-        "id": "t1544"
+        "id": "t1544",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15649,7 +16570,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "commences / culminates",
         "explanation_vi": "'Commences' (bắt đầu) và 'culminates' (kết thúc) là cặp động từ học thuật thường dùng trong phần Overview của bài Task 1 Process.",
-        "id": "t1545"
+        "id": "t1545",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15662,7 +16584,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "being",
         "explanation_vi": "Sau giới từ 'before' trong cấu trúc bị động rút gọn, ta sử dụng 'being + Vp(ii)'.",
-        "id": "t1546"
+        "id": "t1546",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15675,7 +16598,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The combination of substances formed from the previous step.",
         "explanation_vi": "'Resulting mixture' dùng để ám chỉ hỗn hợp thu được sau một bước xử lý trước đó, giúp tránh lặp từ.",
-        "id": "t1547"
+        "id": "t1547",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15688,7 +16612,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "refine / impurities",
         "explanation_vi": "'Refine impurities' nghĩa là loại bỏ các tạp chất/cặn bã thông qua quá trình lọc (filter).",
-        "id": "t1548"
+        "id": "t1548",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15701,7 +16626,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "capital-intensive",
         "explanation_vi": "Sản xuất chip công nghệ cao đòi hỏi vốn đầu tư rất lớn vào nhà máy và thiết bị.",
-        "id": "t1549"
+        "id": "t1549",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15714,7 +16640,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It takes the mixture 2 hours to be heated.",
         "explanation_vi": "Cấu trúc chuẩn: It takes + tân ngữ + thời gian + to be + Vp(ii).",
-        "id": "t1550"
+        "id": "t1550",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15727,7 +16654,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "condense",
         "explanation_vi": "'Condense' có nghĩa là làm đặc lại, phù hợp với việc biến nước ép thành siro đặc.",
-        "id": "t1551"
+        "id": "t1551",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15740,7 +16668,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "To ensure any residue is eliminated.",
         "explanation_vi": "Bộ lọc (filter) được dùng để loại bỏ các tạp chất hoặc cặn bã (residue).",
-        "id": "t1552"
+        "id": "t1552",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15753,7 +16682,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "proceeds",
         "explanation_vi": "'Proceeds to be heated' có nghĩa là tiếp tục/tiến hành bước đun nóng.",
-        "id": "t1553"
+        "id": "t1553",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15766,7 +16696,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "details",
         "explanation_vi": "Chủ ngữ 'The diagram' là số ít, nên động từ 'detail' phải thêm 's' để hòa hợp chủ ngữ - động từ.",
-        "id": "t1554"
+        "id": "t1554",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15779,7 +16710,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Ready to be packed and consumed",
         "explanation_vi": "Cụm từ này miêu tả trạng thái cuối cùng của sản phẩm khi đã hoàn tất mọi công đoạn chế biến.",
-        "id": "t1555"
+        "id": "t1555",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15792,7 +16724,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "referred to",
         "explanation_vi": "Cấu trúc bị động đầy đủ là 'be referred to as' (được gọi là).",
-        "id": "t1556"
+        "id": "t1556",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15805,7 +16738,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It involves a lot of manual work by factory workers.",
         "explanation_vi": "'Labor-intensive' nhấn mạnh vào việc sử dụng nhiều sức lao động của con người thay vì máy móc hoàn toàn.",
-        "id": "t1557"
+        "id": "t1557",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15818,7 +16752,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Following",
         "explanation_vi": "'Following' được dùng để bắt đầu một mệnh đề chỉ sự tiếp nối ngay sau một quá trình nào đó.",
-        "id": "t1558"
+        "id": "t1558",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15831,7 +16766,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "witnessed",
         "explanation_vi": "Dùng 'witnessed' để miêu tả việc số liệu trải qua một sự thay đổi nhất định.",
-        "id": "t1559"
+        "id": "t1559",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15844,7 +16780,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The same was true for...",
         "explanation_vi": "'The same was true for' dùng để chỉ sự tương đồng, 'the opposite' dùng cho sự tương phản.",
-        "id": "t1560"
+        "id": "t1560",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15857,7 +16794,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "picked up again",
         "explanation_vi": "'Picked up again' là cụm từ thích hợp nhất để diễn tả sự phục hồi sau khi giảm.",
-        "id": "t1561"
+        "id": "t1561",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15870,7 +16808,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "It provides a comment/summary on the data just mentioned.",
         "explanation_vi": "V-ing (marking) ở đây được dùng để đưa ra nhận xét hoặc đánh giá về số liệu đã nêu trước đó.",
-        "id": "t1562"
+        "id": "t1562",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15883,7 +16822,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "corresponding figure",
         "explanation_vi": "'Corresponding figure' dùng để thay thế cho danh từ 'price' đã nhắc tới ở vế trước nhằm tránh lặp từ.",
-        "id": "t1563"
+        "id": "t1563",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15896,7 +16836,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "opposite",
         "explanation_vi": "Cấu trúc 'the opposite was true for' được dùng để diễn tả sự tương phản (một bên tăng, một bên giảm).",
-        "id": "t1564"
+        "id": "t1564",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15909,7 +16850,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Picked up again",
         "explanation_vi": "'Pick up again' có nghĩa là phục hồi hoặc tăng trở lại sau một giai đoạn chững lại hoặc giảm.",
-        "id": "t1565"
+        "id": "t1565",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15922,7 +16864,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "except",
         "explanation_vi": "Cấu trúc 'All..., except for...' dùng để chỉ ngoại lệ trong một xu hướng chung.",
-        "id": "t1566"
+        "id": "t1566",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15935,7 +16878,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The data related to the same category but in a different time or group",
         "explanation_vi": "'Corresponding figure' là con số tương ứng của cùng một hạng mục khi so sánh giữa các năm hoặc các nhóm khác nhau.",
-        "id": "t1567"
+        "id": "t1567",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15948,7 +16892,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "marking",
         "explanation_vi": "Sử dụng hiện tại phân từ (V-ing) 'marking' để giải thích kết quả hoặc nhận xét cho mệnh đề phía trước.",
-        "id": "t1568"
+        "id": "t1568",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15961,7 +16906,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "by",
         "explanation_vi": "Cấu trúc cố định là 'by a wide margin' để chỉ sự cách biệt lớn.",
-        "id": "t1569"
+        "id": "t1569",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -15974,7 +16920,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Albeit",
         "explanation_vi": "'Albeit' là liên từ mang nghĩa mặc dù, thường dùng trước một cụm từ hoặc tính từ.",
-        "id": "t1570"
+        "id": "t1570",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -15987,7 +16934,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "hit",
         "explanation_vi": "Trong văn viết IELTS Task 1, 'hit an all-time high' là collocation phổ biến để chỉ việc đạt đỉnh.",
-        "id": "t1571"
+        "id": "t1571",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16000,7 +16948,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Mệnh đề quan hệ",
         "explanation_vi": "'Where' ở đây đóng vai trò là trạng từ quan hệ bổ nghĩa cho tình huống/lĩnh vực được nhắc đến ở vế trước.",
-        "id": "t1572"
+        "id": "t1572",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16013,7 +16962,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "lagging",
         "explanation_vi": "Sau 'albeit' thường sử dụng cấu trúc V-ing nếu cùng chủ ngữ với mệnh đề chính.",
-        "id": "t1573"
+        "id": "t1573",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16026,7 +16976,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "disproportionately",
         "explanation_vi": "Trạng từ 'disproportionately' dùng để chỉ sự chênh lệch cực kỳ lớn, không cân xứng.",
-        "id": "t1574"
+        "id": "t1574",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16039,7 +16990,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A",
         "explanation_vi": "Cấu trúc đảo ngữ: Not until + mốc thời gian + trợ động từ (did) + S + V.",
-        "id": "t1575"
+        "id": "t1575",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16052,7 +17004,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "hovered",
         "explanation_vi": "'Hovered around' dùng để mô tả số liệu duy trì ổn định hoặc biến động rất ít quanh một mức nào đó.",
-        "id": "t1576"
+        "id": "t1576",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16065,7 +17018,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Quotidian' là tính từ học thuật mang nghĩa hàng ngày, thường dùng trong văn viết trang trọng.",
-        "id": "t1577"
+        "id": "t1577",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16078,7 +17032,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "whose",
         "explanation_vi": "Dùng đại từ quan hệ 'whose' để chỉ sở hữu (lượng dầu hàng ngày của Nigeria).",
-        "id": "t1578"
+        "id": "t1578",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16091,7 +17046,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Starting",
         "explanation_vi": "Sử dụng hiện tại phân từ (V-ing) đứng đầu câu để rút gọn mệnh đề trạng ngữ, chỉ trạng thái bắt đầu.",
-        "id": "t1579"
+        "id": "t1579",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16104,7 +17060,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "'Reach a peak' có nghĩa là đạt đến điểm cao nhất trên biểu đồ.",
-        "id": "t1580"
+        "id": "t1580",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16117,7 +17074,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "striking",
         "explanation_vi": "'Striking difference' là collocation dùng để chỉ một sự khác biệt rất lớn và dễ nhận thấy.",
-        "id": "t1581"
+        "id": "t1581",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16130,7 +17088,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Trong cấu trúc đảo ngữ với 'Only until', trợ động từ (were/did) phải đảo lên trước chủ ngữ.",
-        "id": "t1582"
+        "id": "t1582",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16143,7 +17102,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "hovered",
         "explanation_vi": "'Hovered' được dùng để chỉ số liệu dao động nhẹ hoặc duy trì ổn định quanh một mức cụ thể.",
-        "id": "t1583"
+        "id": "t1583",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16156,7 +17116,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A",
         "explanation_vi": "Cụm từ 'This dominance was challenged' dùng để chỉ việc vị trí dẫn đầu/thống trị của một số liệu bị đe dọa hoặc thay đổi.",
-        "id": "t1584"
+        "id": "t1584",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16169,7 +17130,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "all-time",
         "explanation_vi": "'All-time high' là cụm từ cố định chỉ mức cao nhất trong toàn bộ thời gian được nhắc tới.",
-        "id": "t1585"
+        "id": "t1585",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16182,7 +17144,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "C",
         "explanation_vi": "'Witness an opposite pattern' dùng khi hai số liệu có xu hướng chuyển động trái ngược nhau (tăng vs giảm).",
-        "id": "t1586"
+        "id": "t1586",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16195,7 +17158,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "the former / the latter",
         "explanation_vi": "Cặp từ 'the former/the latter' dùng để thay thế cho hai danh từ/ý tưởng đã liệt kê trước đó nhằm tránh lặp từ.",
-        "id": "t1587"
+        "id": "t1587",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16208,7 +17172,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "B",
         "explanation_vi": "Cấu trúc đảo ngữ 'Only after/until' dùng để nhấn mạnh mốc thời gian mà tại đó một sự kiện/thay đổi quan trọng xảy ra.",
-        "id": "t1588"
+        "id": "t1588",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16221,7 +17186,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "regained",
         "explanation_vi": "Dựa vào ngữ cảnh 'sau một giai đoạn ổn định ngắn', ta dùng 'regain' để chỉ việc lấy lại đà tăng.",
-        "id": "t1589"
+        "id": "t1589",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16234,7 +17200,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The value at the beginning of the period",
         "explanation_vi": "'Initial value' là giá trị tại thời điểm bắt đầu được ghi nhận trong biểu đồ.",
-        "id": "t1590"
+        "id": "t1590",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16247,7 +17214,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "consecutive",
         "explanation_vi": "'Consecutive years' là cụm từ học thuật để chỉ các năm liên tiếp nhau.",
-        "id": "t1591"
+        "id": "t1591",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16260,7 +17228,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Both B and C are correct.",
         "explanation_vi": "Cả hai cách diễn đạt đều đúng ngữ pháp, quan trọng là phải có 'the' trước former/latter.",
-        "id": "t1592"
+        "id": "t1592",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16273,7 +17242,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "as",
         "explanation_vi": "Cấu trúc 'as age advanced' là một collocation hay để chỉ sự thay đổi theo độ tuổi.",
-        "id": "t1593"
+        "id": "t1593",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16286,7 +17256,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "had reached",
         "explanation_vi": "Khi dùng 'By + mốc thời gian quá khứ', ta phải sử dụng thì Quá khứ hoàn thành.",
-        "id": "t1594"
+        "id": "t1594",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16299,7 +17270,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Volatile",
         "explanation_vi": "'Volatile' dùng để chỉ sự thay đổi bất ngờ, liên tục và mạnh mẽ.",
-        "id": "t1595"
+        "id": "t1595",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16312,7 +17284,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "similar",
         "explanation_vi": "Vì cả hai đường đều 'giảm mạnh', xu hướng của chúng là giống nhau (similar).",
-        "id": "t1596"
+        "id": "t1596",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16325,7 +17298,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Dao động nhưng nhìn chung là giảm",
         "explanation_vi": "Cụm này miêu tả sự lên xuống của số liệu nhưng điểm kết thúc thấp hơn điểm bắt đầu.",
-        "id": "t1597"
+        "id": "t1597",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16338,7 +17312,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "dropped gradually",
         "explanation_vi": "Để trở về 'mức ban đầu' (initial level) từ một mức cao hơn, số liệu cần phải giảm (dropped).",
-        "id": "t1598"
+        "id": "t1598",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16351,7 +17326,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Headed the list",
         "explanation_vi": "'Headed the list' có nghĩa là đứng đầu danh sách/xếp hạng.",
-        "id": "t1599"
+        "id": "t1599",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16364,7 +17340,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "bouncing",
         "explanation_vi": "Cụm từ 'bounce back' dùng để chỉ sự phục hồi về mức cũ.",
-        "id": "t1600"
+        "id": "t1600",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16377,7 +17354,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "out of",
         "explanation_vi": "Cấu trúc 'X out of Y' dùng để chỉ tỉ lệ hoặc số lượng trong một nhóm.",
-        "id": "t1601"
+        "id": "t1601",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16390,7 +17368,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "A persistent/continuous decrease",
         "explanation_vi": "'Relentless' chỉ sự liên tục, không ngừng nghỉ, thường dùng cho các xu hướng thay đổi mạnh mẽ.",
-        "id": "t1602"
+        "id": "t1602",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16403,7 +17382,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "identical",
         "explanation_vi": "'Identical' (giống hệt) là cấp độ cao hơn 'similar' (tương tự), thường dùng khi hai đường tiệm cận nhau.",
-        "id": "t1603"
+        "id": "t1603",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16416,7 +17396,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "expanded",
         "explanation_vi": "Dựa vào cụm 'over the course of a decade', ta chọn 'expanded' để chỉ sự mở rộng/tăng trưởng.",
-        "id": "t1604"
+        "id": "t1604",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16429,7 +17410,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Constitute the largest share",
         "explanation_vi": "'Constitute the largest share' là cụm từ chuyên dụng để chỉ phần chiếm tỷ trọng lớn nhất trong biểu đồ tròn.",
-        "id": "t1605"
+        "id": "t1605",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16442,7 +17424,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "small",
         "explanation_vi": "Với số liệu 'only 2%', trạng từ 'disproportionately' phải đi kèm với 'small'.",
-        "id": "t1606"
+        "id": "t1606",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16455,7 +17438,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Over the course of 50 years",
         "explanation_vi": "'Over the course of' là cấu trúc đồng nghĩa với 'during a period of'.",
-        "id": "t1607"
+        "id": "t1607",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16468,7 +17452,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "took the lead",
         "explanation_vi": "Cụm 'instead of' ám chỉ sự thay thế vị trí dẫn đầu, do đó 'took the lead' là đáp án chính xác.",
-        "id": "t1608"
+        "id": "t1608",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16481,7 +17466,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "S1 and S2 gain 20% each",
         "explanation_vi": "Từ 'each' đặt sau số liệu dùng để chỉ mỗi đối tượng trong danh sách đều có cùng giá trị đó.",
-        "id": "t1609"
+        "id": "t1609",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16494,7 +17480,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "leaving",
         "explanation_vi": "Cấu trúc 'leaving someone far behind' dùng để chỉ sự chênh lệch lớn về số liệu.",
-        "id": "t1610"
+        "id": "t1610",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16507,7 +17494,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The country that produces the most coffee",
         "explanation_vi": "'Leading' là dẫn đầu, 'manufacturer' là nhà sản xuất. Cụm này chỉ đối tượng sản xuất nhiều nhất.",
-        "id": "t1611"
+        "id": "t1611",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16520,7 +17508,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "distribution",
         "explanation_vi": "'Distribution' (sự phân bổ) là từ phù hợp nhất để nói về việc tiền bạc/tài sản được chia như thế nào.",
-        "id": "t1612"
+        "id": "t1612",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16533,7 +17522,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Both 'went' and 'belong' are possible",
         "explanation_vi": "Cả 'go to' (hoặc 'went to') và 'belong to' đều dùng được để chỉ sự sở hữu hoặc thuộc về nhóm nào.",
-        "id": "t1613"
+        "id": "t1613",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16546,7 +17536,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "Substantial",
         "explanation_vi": "'Profound' và 'Substantial' đều dùng để chỉ sự khác biệt lớn, đáng kể.",
-        "id": "t1614"
+        "id": "t1614",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16559,7 +17550,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "threefold",
         "explanation_vi": "$90 gấp 3 lần $30, cấu trúc 'threefold that of' là chính xác về mặt ngữ pháp.",
-        "id": "t1615"
+        "id": "t1615",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16572,7 +17564,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "counterparts",
         "explanation_vi": "'Counterpart' dùng để chỉ đối tượng ở vị trí tương đương trong một phép so sánh (nam - nữ).",
-        "id": "t1616"
+        "id": "t1616",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16585,7 +17578,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "With the exception of",
         "explanation_vi": "Cụm 'With the exception of' được dùng để chỉ ngoại lệ duy nhất (năm 2000).",
-        "id": "t1617"
+        "id": "t1617",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16598,7 +17592,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The difference was difficult to see because it was small.",
         "explanation_vi": "'Less pronounced' có nghĩa là không rõ rệt, tức là sự khác biệt giữa các con số là rất ít.",
-        "id": "t1618"
+        "id": "t1618",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16611,7 +17606,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "identical",
         "explanation_vi": "Khi hai số liệu bằng nhau (120mm), ta dùng 'identical' để chỉ sự giống hệt.",
-        "id": "t1619"
+        "id": "t1619",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16624,7 +17620,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "As briefly mentioned above",
         "explanation_vi": "Cụm từ này đóng vai trò là từ nối để nhắc lại thông tin đã đề cập trước đó.",
-        "id": "t1620"
+        "id": "t1620",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16637,7 +17634,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "narrow lead",
         "explanation_vi": "Khoảng cách 0.5% là rất nhỏ, nên 'narrow lead' (dẫn đầu sít sao) là lựa chọn phù hợp.",
-        "id": "t1621"
+        "id": "t1621",
+        "category": "Trends"
     },
     {
         "type": "fill",
@@ -16650,7 +17648,8 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "reached its disproportionate high",
         "explanation_vi": "Cấu trúc này dùng để miêu tả số liệu cao nhất và nhấn mạnh sự vượt trội so với các năm khác.",
-        "id": "t1622"
+        "id": "t1622",
+        "category": "Trends"
     },
     {
         "type": "mcq",
@@ -16663,8 +17662,7 @@ const TASK1_TRANSLATIONS = [
         ],
         "answer": "The figure saw a decrease.",
         "explanation_vi": "'Pullback' đồng nghĩa với 'decrease' hoặc 'fall', dùng để chỉ sự sụt giảm của số liệu.",
-        "id": "t1623"
+        "id": "t1623",
+        "category": "Trends"
     }
 ];
-
-if (typeof module !== 'undefined') { module.exports = TASK1_TRANSLATIONS; }
