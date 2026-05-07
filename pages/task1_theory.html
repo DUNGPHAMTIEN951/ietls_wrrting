@@ -995,9 +995,9 @@
                 window._shuffledTranslations = [...TASK1_TRANSLATIONS].sort(() => Math.random() - 0.5);
             }
 
-            let filtered = window._shuffledTranslations;
+            let filtered = window._shuffledTranslations.filter(t => t.vietnamese && t.english);
             if (currentPracticeCategory !== 'all') {
-                filtered = window._shuffledTranslations.filter(t => t.category === currentPracticeCategory);
+                filtered = filtered.filter(t => t.category === currentPracticeCategory);
             }
 
             // Pagination Logic
