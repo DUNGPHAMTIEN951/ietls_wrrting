@@ -556,6 +556,7 @@
     <!-- Scripts -->
     <script src="../data/task1_theory_menu.js"></script>
     <script src="../data/task1_theory_content.js"></script>
+    <script src="../data/theory_mapping.js"></script>
     <script src="../data/task1_flashcards.js"></script>
     <script src="../data/task1_translations.js"></script>
     <script src="../assets/js/utils.js"></script>
@@ -759,7 +760,8 @@
                             ${section.sub.map(s => {
                     const isDone = progress.lessons.includes(s.id);
                     return `
-                                    <button onclick="loadTheory('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-3 text-sm text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all group flex items-center justify-between">
+                    return `
+                                    <a href="${THEORY_MAPPING[s.id] || '#'}" onclick="markLessonComplete('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-3 text-sm text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all group flex items-center justify-between">
                                         <div class="flex items-center gap-3">
                                             <div class="w-6 h-6 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-400 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 group-hover:text-blue-600 transition-colors">
                                                 <i data-lucide="${isDone ? 'check-circle' : 'circle'}" class="w-3.5 h-3.5 ${isDone ? 'text-emerald-500 fill-emerald-500/10' : ''}"></i>
@@ -767,7 +769,8 @@
                                             <span class="font-medium group-hover:text-slate-900 dark:group-hover:text-white transition-colors">${s.title}</span>
                                         </div>
                                         <i data-lucide="chevron-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"></i>
-                                    </button>
+                                    </a>
+                                `;
                                 `;
                 }).join('')}
                         </div>
