@@ -975,14 +975,14 @@ async def generate_theory_perfection(filename: str) -> str:
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    prompt = f"""Bạn là một chuyên gia IELTS Writing hàng đầu và là một AI Engineer chuyên về UX/UI giáo dục.
+    prompt = f"""Bạn là một chuyên gia IELTS Writing hàng đầu và là một chuyên gia giáo dục chuyên về UX/UI giáo dục.
 Tôi có một trang lý thuyết IELTS Writing Task 1 hiện tại (HTML/Tailwind). Hãy viết lại TOÀN BỘ file này để nó trở nên hoàn hảo, đẳng cấp và giàu tính sư phạm hơn.
 
 Nội dung hiện tại:
 {content}
 
 YÊU CẦU NÂNG CẤP:
-1. **Chuyên gia AI giải thích**: Thêm các đoạn phân tích chuyên sâu về cách sử dụng từ vựng/cấu trúc, sắc thái ý nghĩa (connotation).
+1. **chuyên gia giải thích**: Thêm các đoạn phân tích chuyên sâu về cách sử dụng từ vựng/cấu trúc, sắc thái ý nghĩa (connotation).
 2. **Ví dụ (VD) Band 8-9**: Bổ sung ít nhất 5 ví dụ thực tế minh họa cho các cấu trúc trong bài. Mỗi ví dụ có dịch nghĩa và phân tích điểm đắt giá.
 3. **Sơ đồ/Trực quan**: Sử dụng các thành phần Tailwind (div, flex, grid) để tạo sơ đồ tư duy hoặc quy trình học tập ngay trong trang.
 4. **Bảng so sánh (Tables)**: Sử dụng table Tailwind để phân loại từ vựng (ví dụ: Động từ vs Danh từ, Mức độ nhẹ vs Mạnh).

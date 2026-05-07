@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .font-mono { font-family: 'Roboto Mono', monospace; }
+        .gradient-text { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-morphism { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 1); }
+        .tab-active { border-bottom: 3px solid #2563eb; color: #2563eb; font-weight: 700; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-item.active .accordion-content { max-height: 2000px; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Top Navigation / Brand -->
+    <nav class="sticky top-0 z-50 glass-morphism px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">I</div>
+                <span class="text-xl font-bold tracking-tight text-slate-800 uppercase">IELTS Masterclass</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-medium text-sm text-slate-600">
+                <a href="#strategies" class="hover:text-blue-600 transition">Chiến Thuật</a>
+                <a href="#samples" class="hover:text-blue-600 transition">Bài Mẫu Band 8-9</a>
+                <a href="#practice" class="hover:text-blue-600 transition">Thực Hành</a>
+            </div>
+            <div class="text-xs font-bold text-slate-400 italic">
+                By: <span class="text-blue-600 uppercase tracking-widest">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-16 px-6 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tighter">
+                <span class="gradient-text">General Training Writing Task 1</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 font-light">
+                Chinh phục kỹ năng viết thư (Letter Writing) với cấu trúc chuẩn mực, từ vựng chuyên sâu và chiến thuật xử lý đa dạng các tình huống thực tế.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">#Formal_Letter</span>
+                <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">#Informal_Letter</span>
+                <span class="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">#Band8.5_Vocabulary</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        
+        <!-- Section: Strategic Overview -->
+        <section id="strategies" class="mb-20">
+            <h2 class="text-3xl font-bold mb-10 flex items-center gap-4">
+                <span class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm">01</span>
+                Cấu trúc một bức thư chuẩn mực (Standard Structure)
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-morphism p-8 rounded-2xl shadow-sm border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">1. Salutation (Chào hỏi)</h3>
+                    <p class="text-sm text-slate-600 mb-4 italic">Lựa chọn tùy theo mức độ trang trọng:</p>
+                    <ul class="space-y-2 font-mono text-xs">
+                        <li class="p-2 bg-white rounded border border-slate-100"><strong>Formal:</strong> Dear Sir or Madam,</li>
+                        <li class="p-2 bg-white rounded border border-slate-100"><strong>Semi-Formal:</strong> Dear Mr. George,</li>
+                        <li class="p-2 bg-white rounded border border-slate-100"><strong>Informal:</strong> Dear Emily,</li>
+                    </ul>
+                </div>
+
+                <div class="glass-morphism p-8 rounded-2xl shadow-sm border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold mb-4 text-emerald-900">2. Opening (Mục đích)</h3>
+                    <p class="text-sm text-slate-600 mb-4">Lý do viết thư (The purpose of writing):</p>
+                    <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-100 italic text-sm">
+                        "I am writing to express my interest in..." <br>
+                        "I am writing to register a complaint regarding..."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mermaid-like Table for Logic -->
+            <div class="mt-8 overflow-hidden rounded-xl border border-slate-200">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-800 text-white font-bold">
+                        <tr>
+                            <th class="p-4">Phần bức thư</th>
+                            <th class="p-4">Nội dung chi tiết</th>
+                            <th class="p-4">Mục tiêu Band điểm</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr class="border-b">
+                            <td class="p-4 font-bold text-blue-600 italic">Body Paragraph 1</td>
+                            <td class="p-4">Phản hồi Bullet Point #1 (Background/Context)</td>
+                            <td class="p-4">Clear purpose</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-bold text-blue-600 italic">Body Paragraph 2</td>
+                            <td class="p-4">Phản hồi Bullet Point #2 (Details/Reasons)</td>
+                            <td class="p-4">Logical sequencing</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4 font-bold text-blue-600 italic">Body Paragraph 3</td>
+                            <td class="p-4">Phản hồi Bullet Point #3 (Action/Request)</td>
+                            <td class="p-4">Appropriate tone</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-blue-600 italic">Closing</td>
+                            <td class="p-4">Sign-off (Yours sincerely / Yours faithfully)</td>
+                            <td class="p-4">Consistency</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Core Lessons with Samples -->
+        <section id="samples" class="mb-20">
+            <h2 class="text-3xl font-bold mb-10 flex items-center gap-4">
+                <span class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm">02</span>
+                Phân tích các tình huống điển hình (Case Studies)
+            </h2>
+
+            <!-- Case 1: Workplace Interest -->
+            <div class="mb-12">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="px-2 py-1 bg-slate-900 text-white text-[10px] uppercase font-bold tracking-widest rounded">Case #219</span>
+                    <h3 class="text-xl font-bold">Thư gửi quản lý xin làm việc tại trụ sở chính</h3>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm italic text-slate-700">
+                            "I am writing to express my interest in working at our company headquarters... to further enhance my skills and get exposure to the global market trends..."
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                            <h4 class="font-bold text-blue-800 text-sm mb-2 uppercase tracking-wide">Từ vựng nâng cao (High-end Vocab):</h4>
+                            <div class="grid grid-cols-2 gap-4 text-xs">
+                                <div><span class="font-bold">Exposure:</span> Sự tiếp xúc/trải nghiệm thực tế.</div>
+                                <div><span class="font-bold">Endeavour:</span> Nỗ lực làm gì đó (trang trọng hơn 'try').</div>
+                                <div><span class="font-bold">Collaberate:</span> Hợp tác chuyên sâu.</div>
+                                <div><span class="font-bold">Catch up:</span> Bắt kịp tiến độ.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200">
+                        <h4 class="font-bold text-amber-800 text-xs mb-3 uppercase flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Teacher's Note
+                        </h4>
+                        <p class="text-xs text-amber-900 leading-relaxed italic">
+                            "Khi xin phép đi vắng, hãy luôn cung cấp <strong>Contingency Plan</strong> (Kế hoạch dự phòng). Ví dụ: 'Julian has agreed to take up my responsibilities'. Điều này thể hiện sự trách nhiệm của bạn (Accountability)." 
+                            <br><br>— <strong>Phạm Tiến Dũng Gia Sư</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-slate-200 my-10">
+
+            <!-- Case 2: Complaint -->
+            <div class="mb-12">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="px-2 py-1 bg-red-600 text-white text-[10px] uppercase font-bold tracking-widest rounded">Case #217</span>
+                    <h3 class="text-xl font-bold">Thư phàn nàn về thái độ nhân viên (Complaint Letter)</h3>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="p-6 bg-slate-900 rounded-2xl text-slate-300 font-mono text-sm leading-loose">
+                        "I am writing to <span class="text-blue-400 font-bold underline italic">register a complaint</span> with you regarding poor service, and the <span class="text-blue-400 font-bold underline italic">rude attitude</span> by your staff... I was not there to ask a favour, rather purchase a product... the professional employees you have are surely going to cost your business."
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl border-l-4 border-red-500 shadow-sm">
+                            <h4 class="font-bold text-red-800 text-sm mb-2">Cấu trúc phàn nàn (The Logic of Complaint):</h4>
+                            <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside">
+                                <li>State clearly the date and intent of visit.</li>
+                                <li>Describe the offense (Lack of assistance, watching TV).</li>
+                                <li>The consequence (Humiliation, business loss).</li>
+                                <li>Desired outcome (Take initiatives/Hire professionals).</li>
+                            </ol>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 shadow-sm">
+                            <h4 class="font-bold text-blue-800 text-sm mb-2">Pro Tip:</h4>
+                            <p class="text-xs text-slate-700 italic">
+                                "Sử dụng các trạng từ như <strong>'Extremely'</strong>, <strong>'Utterly'</strong>, hoặc cụm từ <strong>'I regret to have been...'</strong> để gia tăng trọng lượng cho bức thư mà vẫn giữ được sự lịch sự cần thiết trong IELTS."
+                                <br><br>— <strong>Phạm Tiến Dũng Gia Sư</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Section: Vocabulary & Tone -->
+        <section class="mb-20 bg-slate-900 text-white p-10 rounded-3xl">
+            <h2 class="text-2xl font-bold mb-8 text-center uppercase tracking-widest text-blue-400 underline decoration-2 underline-offset-8">Phân biệt Sắc thái (Formal vs Informal)</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold border-b border-slate-700 pb-2 text-slate-400">Formal (Công việc/Cấp trên)</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="text-xs font-mono bg-slate-800 p-3 rounded-lg flex-1 border border-slate-700">"I would like to profoundly thank..."</div>
+                            <div class="text-[10px] text-blue-400 uppercase font-bold">Very High</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-xs font-mono bg-slate-800 p-3 rounded-lg flex-1 border border-slate-700">"In parallel promote your brand..."</div>
+                            <div class="text-[10px] text-blue-400 uppercase font-bold">Academic</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-xs font-mono bg-slate-800 p-3 rounded-lg flex-1 border border-slate-700">"Implement the suggested changes..."</div>
+                            <div class="text-[10px] text-blue-400 uppercase font-bold">Standard</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-lg font-bold border-b border-slate-700 pb-2 text-slate-400">Informal (Bạn bè/Thần tượng)</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="text-xs font-mono bg-slate-800 p-3 rounded-lg flex-1 border border-slate-700 italic">"I am a huge fan of..."</div>
+                            <div class="text-[10px] text-emerald-400 uppercase font-bold">Natural</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-xs font-mono bg-slate-800 p-3 rounded-lg flex-1 border border-slate-700 italic">"I have always dreamt of..."</div>
+                            <div class="text-[10px] text-emerald-400 uppercase font-bold">Emotional</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-xs font-mono bg-slate-800 p-3 rounded-lg flex-1 border border-slate-700 italic">"I owe you a big one!"</div>
+                            <div class="text-[10px] text-emerald-400 uppercase font-bold">Idiomatic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice & Quiz -->
+        <section id="practice" class="mb-20">
+            <h2 class="text-3xl font-bold mb-10 text-center">Kiểm tra kiến thức (Self-Check Quiz)</h2>
+            
+            <div class="max-w-2xl mx-auto space-y-4">
+                <!-- Q1 -->
+                <div class="accordion-item glass-morphism rounded-xl border border-slate-200">
+                    <button class="w-full text-left p-6 flex justify-between items-center" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="font-bold text-sm">Q1: Trong thư phàn nàn, nếu chưa biết tên người nhận, kết thư dùng gì?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content bg-slate-50">
+                        <div class="p-6 text-sm text-blue-700 font-medium">
+                            Đáp án: <span class="bg-blue-600 text-white px-2 py-1 rounded">Yours faithfully,</span>. <br>
+                            Lưu ý: Nếu đã biết tên (Ví dụ Dear Mr. Barron), hãy dùng <span class="italic">Yours sincerely,</span>.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item glass-morphism rounded-xl border border-slate-200">
+                    <button class="w-full text-left p-6 flex justify-between items-center" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="font-bold text-sm">Q2: "Endeavour" nên dùng trong ngữ cảnh nào?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content bg-slate-50">
+                        <div class="p-6 text-sm text-emerald-700 font-medium">
+                            Đáp án: Dùng trong <span class="font-bold">Formal Letter</span> để thể hiện sự cam kết và nỗ lực chuyên nghiệp.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 border-t border-slate-200 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-slate-800 rounded flex items-center justify-center text-white font-bold">I</div>
+                <span class="font-bold text-slate-800">IELTS Senior Tutor</span>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-sm text-slate-500 italic">"Kiến thức là nền tảng, kỹ năng là bệ phóng."</p>
+                <p class="text-xs font-bold text-slate-900 mt-2 uppercase tracking-widest">Nội dung biên soạn bởi: Phạm Tiến Dũng Gia Sư</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to enhance interactivity if needed
+        document.querySelectorAll('.accordion-item button').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                    if (otherItem !== item) otherItem.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
