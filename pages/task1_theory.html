@@ -747,6 +747,9 @@
 
         // --- SIDEBAR ---
         function renderMenu() {
+            const theoryMenu = document.getElementById('theory-menu');
+            const progress = loadProgress();
+            
             if (typeof TASK1_THEORY_MENU === 'undefined') return;
 
             let html = '';
@@ -760,7 +763,6 @@
                             ${section.sub.map(s => {
                     const isDone = progress.lessons.includes(s.id);
                     return `
-                    return `
                                     <a href="${THEORY_MAPPING[s.id] || '#'}" onclick="markLessonComplete('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-3 text-sm text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all group flex items-center justify-between">
                                         <div class="flex items-center gap-3">
                                             <div class="w-6 h-6 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-400 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 group-hover:text-blue-600 transition-colors">
@@ -770,7 +772,6 @@
                                         </div>
                                         <i data-lucide="chevron-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"></i>
                                     </a>
-                                `;
                                 `;
                 }).join('')}
                         </div>
