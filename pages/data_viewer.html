@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Viewer — IELTS Writing Mastery</title>
+  <meta name="description" content="Khám phá toàn bộ dữ liệu gốc của hệ thống IELTS Writing Mastery.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            brand: '#0ea5e9',
+            accent: '#6366f1',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .dark body {
+      background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+    }
+    .custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scroll::-webkit-scrollbar-track { background: transparent; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: rgba(14, 165, 233, 0.2); border-radius: 10px; }
+    
+    .file-item {
+      transition: all 0.2s ease;
+    }
+    .file-item:hover, .file-item.active {
+      background: rgba(14, 165, 233, 0.1);
+      color: #0ea5e9;
+      border-left: 4px solid #0ea5e9;
+    }
+    .dark .file-item:hover, .dark .file-item.active {
+      background: rgba(14, 165, 233, 0.2);
+    }
+  </style>
+</head>
+
+<body class="text-slate-800 dark:text-slate-200">
+  <nav class="glass-panel sticky top-0 z-40 px-4 md:px-6 py-3 shadow-sm flex justify-between items-center dark:bg-slate-900/95 dark:border-slate-800 shrink-0">
+    <div class="flex items-center gap-3">
+      <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-brand transition-colors text-sm font-medium">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">Hub</span>
+      </a>
+      <span class="text-slate-300 text-sm">/</span>
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center text-white">
+          <i data-lucide="database" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <h1 class="font-heading font-bold text-base leading-tight text-slate-800 dark:text-white">Data Viewer</h1>
+          <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Raw Source Archive</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button onclick="toggleDarkMode()" 
+        class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 flex items-center justify-center transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+        <i data-lucide="moon" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="flex flex-1 overflow-hidden h-[calc(100vh-64px)]">
+    <!-- Sidebar -->
+    <aside class="w-80 border-r border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md flex flex-col shrink-0">
+      <div class="p-4 border-b border-slate-200 dark:border-slate-800">
+        <div class="relative group">
+          <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-brand transition-colors"></i>
+          <input type="text" id="fileSearch" placeholder="Tìm kiếm file..." oninput="filterFiles()"
+            class="w-full pl-10 pr-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm outline-none focus:border-brand transition-all">
+        </div>
+      </div>
+      <div class="flex-1 overflow-y-auto custom-scroll p-2 space-y-1" id="fileList">
+        <!-- Loaded via JS -->
+        <div class="p-4 text-center text-slate-400 text-sm">
+          <i class="fas fa-spinner fa-spin mb-2 text-brand"></i><br>
+          Đang tải danh sách...
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col bg-white dark:bg-[#0a0f1d] overflow-hidden relative">
+      <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#0ea5e9 1px, transparent 1px); background-size: 20px 20px;"></div>
+      
+      <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-10">
+        <h2 id="currentFileName" class="font-heading font-bold text-lg truncate">Vui lòng chọn một file</h2>
+        <div class="flex gap-2">
+          <button id="btnCopy" onclick="copyContent()" class="px-4 py-1.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-semibold transition-all hidden items-center gap-2">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+        </div>
+      </div>
+      
+      <div class="flex-1 overflow-y-auto custom-scroll p-6 md:p-8 relative z-10">
+        <div id="fileContent" class="max-w-4xl mx-auto whitespace-pre-wrap font-sans text-sm md:text-base leading-relaxed text-slate-700 dark:text-slate-300">
+          <div class="h-full flex flex-col items-center justify-center text-slate-400 opacity-50 mt-20">
+            <i class="fas fa-file-alt text-6xl mb-4"></i>
+            <p>Chọn một file từ danh sách bên trái để xem nội dung.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/utils.js"></script>
+  <script>
+    let files = [];
+    let currentActive = null;
+
+    async function loadFileList() {
+      try {
+        const response = await fetch('../data/filenames.json');
+        files = await response.json();
+        renderFiles(files);
+      } catch (e) {
+        document.getElementById('fileList').innerHTML = '<div class="p-4 text-center text-rose-500 text-sm">Lỗi tải danh sách file.</div>';
+      }
+    }
+
+    function renderFiles(list) {
+      const container = document.getElementById('fileList');
+      if (list.length === 0) {
+        container.innerHTML = '<div class="p-4 text-center text-slate-400 text-sm">Không tìm thấy file nào.</div>';
+        return;
+      }
+      container.innerHTML = list.map((f, i) => `
+        <button id="file-btn-${i}" onclick="loadFile('${f}', ${i})" class="file-item w-full text-left p-3 rounded-lg border-l-4 border-transparent flex items-start gap-3">
+          <i class="fas fa-file-lines mt-1 text-slate-400"></i>
+          <span class="text-sm font-medium line-clamp-2">${f}</span>
+        </button>
+      `).join('');
+    }
+
+    function filterFiles() {
+      const q = document.getElementById('fileSearch').value.toLowerCase();
+      const filtered = files.filter(f => f.toLowerCase().includes(q));
+      renderFiles(filtered);
+    }
+
+    async function loadFile(filename, index) {
+      // Update UI
+      if (currentActive !== null) {
+        const prev = document.getElementById(`file-btn-${currentActive}`);
+        if (prev) prev.classList.remove('active');
+      }
+      currentActive = index;
+      const curr = document.getElementById(`file-btn-${index}`);
+      if (curr) curr.classList.add('active');
+
+      document.getElementById('currentFileName').textContent = filename;
+      const contentEl = document.getElementById('fileContent');
+      contentEl.innerHTML = '<div class="text-center text-brand mt-10"><i class="fas fa-spinner fa-spin text-2xl"></i></div>';
+      document.getElementById('btnCopy').classList.add('hidden');
+
+      try {
+        const res = await fetch('../data/txt/' + encodeURIComponent(filename));
+        if (!res.ok) throw new Error('Not found');
+        const text = await res.text();
+        contentEl.textContent = text;
+        document.getElementById('btnCopy').classList.remove('hidden');
+        document.getElementById('btnCopy').classList.add('flex');
+      } catch (e) {
+        contentEl.innerHTML = '<div class="text-rose-500 mt-10"><i class="fas fa-exclamation-triangle"></i> Không thể tải file này.</div>';
+      }
+    }
+
+    function copyContent() {
+      const text = document.getElementById('fileContent').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('btnCopy');
+        const original = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check text-emerald-500"></i> Đã copy';
+        setTimeout(() => btn.innerHTML = original, 2000);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      loadFileList();
+    });
+  </script>
+</body>
+</html>
