@@ -537,39 +537,10 @@
                     </div>
                 </div>
 
+                <!-- Dynamic Tabs for Practice -->
                 <div class="w-full flex flex-wrap gap-2 p-1.5 bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 overflow-x-auto mb-10 no-scrollbar items-center shadow-sm"
                     id="practice-tabs">
-                    <button onclick="setPracticeCategory('all')" id="ptab-all"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400">Tất
-                        cả</button>
-                    <button onclick="setPracticeCategory('Introduction')" id="ptab-Introduction"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Mở
-                        bài</button>
-                    <button onclick="setPracticeCategory('Overview')" id="ptab-Overview"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Tổng
-                        quan</button>
-                    <button onclick="setPracticeCategory('Trends')" id="ptab-Trends"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Xu
-                        hướng</button>
-                    <button onclick="setPracticeCategory('Process')" id="ptab-Process"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Quy
-                        trình</button>
-                    <button onclick="setPracticeCategory('Maps')" id="ptab-Maps"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Bản
-                        đồ</button>
-                    <button onclick="setPracticeCategory('Table')" id="ptab-Table"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Bảng
-                        biểu</button>
-                    <button onclick="setPracticeCategory('Multiple')" id="ptab-Multiple"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Kết
-                        hợp</button>
-                    <button onclick="setPracticeCategory('General')" id="ptab-General"
-                        class="ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800">Chung</button>
-                    <div class="flex-grow"></div>
-                    <button onclick="window._shuffledTranslations = null; renderTranslations();"
-                        class="p-2 text-slate-400 hover:text-blue-500 transition-colors" title="Trộn lại câu hỏi">
-                        <i data-lucide="shuffle" class="w-5 h-5"></i>
-                    </button>
+                    <!-- Populated by JS -->
                 </div>
 
                 <div id="translation-grid" class="w-full space-y-6">
@@ -616,6 +587,7 @@
         function init() {
             lucide.createIcons();
             renderMenu();
+            renderPracticeTabs();
             renderTranslations();
             updateGlobalProgress();
 
@@ -968,17 +940,44 @@
         function setPracticeCategory(cat) {
             currentPracticeCategory = cat;
             currentPracticePage = 1;
-
-            // Update tabs UI
-            document.querySelectorAll('.ptab').forEach(btn => {
-                btn.className = "ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800";
-            });
-            const activeBtn = document.getElementById(`ptab-${cat}`);
-            if (activeBtn) {
-                activeBtn.className = "ptab px-6 py-2 rounded-xl text-sm font-bold transition-all bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400";
-            }
-
+            renderPracticeTabs(); // Re-render to update active state
             renderTranslations();
+        }
+
+        function renderPracticeTabs() {
+            const container = document.getElementById('practice-tabs');
+            if (!container || typeof TASK1_TRANSLATIONS === 'undefined') return;
+
+            // Get unique categories
+            const cats = ['all', ...new Set(TASK1_TRANSLATIONS.map(t => t.category))].filter(Boolean);
+            
+            // Mapping for display names
+            const catMap = {
+                'all': 'Tất cả',
+                'Introduction': 'Mở bài',
+                'Overview': 'Tổng quan',
+                'Trends': 'Xu hướng',
+                'Process': 'Quy trình',
+                'Maps': 'Bản đồ',
+                'Table': 'Bảng biểu',
+                'Multiple': 'Kết hợp',
+                'General': 'Tổng quát'
+            };
+
+            container.innerHTML = cats.map(cat => {
+                const isActive = currentPracticeCategory === cat;
+                const displayName = catMap[cat] || cat;
+                const activeClass = "ptab px-6 py-2 rounded-xl text-sm font-bold transition-all bg-white dark:bg-slate-700 shadow-md text-blue-600 dark:text-blue-400";
+                const idleClass = "ptab px-6 py-2 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-800";
+                
+                return `<button onclick="setPracticeCategory('${cat}')" id="ptab-${cat}" class="${isActive ? activeClass : idleClass}">${displayName}</button>`;
+            }).join('') + `
+                <div class="flex-grow"></div>
+                <button onclick="window._shuffledTranslations = null; renderTranslations();"
+                    class="p-2 text-slate-400 hover:text-blue-500 transition-colors" title="Trộn lại câu hỏi">
+                    <i data-lucide="shuffle" class="w-5 h-5"></i>
+                </button>
+            `;
         }
 
         function setPracticePage(page) {
