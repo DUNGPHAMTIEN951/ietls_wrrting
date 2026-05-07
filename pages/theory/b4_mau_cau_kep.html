@@ -4,9 +4,9 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>B4. ADVANCED SYNTAX ARCHITECTURE | IELTS Writing Mastery</title>
-    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
-    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
-    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://unpkg.com/lucide@latest'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .mastery-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
@@ -19,6 +19,17 @@
         .step-line::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: #e2e8f0; z-index: 0; }
         .syntax-pill { @apply px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest; }
     </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
 </head>
 <body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24'>
     <div class='max-w-6xl mx-auto px-6 pt-12'>

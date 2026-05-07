@@ -20,6 +20,17 @@
         @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
         .animate-pulse-soft { animation: pulse-soft 3s infinite; }
     </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
 </head>
 <body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24'>
     <div class='max-w-6xl mx-auto px-6 pt-8'>

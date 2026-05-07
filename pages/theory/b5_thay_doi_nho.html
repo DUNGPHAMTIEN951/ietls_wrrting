@@ -4,9 +4,9 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>B5. PRECISION IN SUBTLE CHANGES | IELTS Writing Mastery</title>
-    <script src='[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)'></script>
-    <script src='[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)'></script>
-    <link href='[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap)' rel='stylesheet'>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://unpkg.com/lucide@latest'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap' rel='stylesheet'>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .mastery-gradient { background: linear-gradient(135deg, #0369a1 0%, #075985 100%); }
@@ -21,6 +21,17 @@
         }
         .text-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
 </head>
 <body class='bg-[#f8fafc] text-slate-900 min-h-screen pb-24 subtle-grid'>
     <div class='max-w-6xl mx-auto px-6 pt-12'>

@@ -772,7 +772,7 @@
                             ${section.sub.map(s => {
                     const isDone = progress.lessons.includes(s.id);
                     return `
-                                    <a href="${THEORY_MAPPING[s.id] || '#'}" onclick="markLessonComplete('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-3 text-sm text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all group flex items-center justify-between">
+                                    <a href="javascript:void(0)" onclick="loadTheory('${s.id}')" id="btn-${s.id}" class="sidebar-item w-full text-left px-4 py-3 text-sm text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all group flex items-center justify-between">
                                         <div class="flex items-center gap-3">
                                             <div class="w-6 h-6 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-400 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 group-hover:text-blue-600 transition-colors">
                                                 <i data-lucide="${isDone ? 'check-circle' : 'circle'}" class="w-3.5 h-3.5 ${isDone ? 'text-emerald-500 fill-emerald-500/10' : ''}"></i>
@@ -797,59 +797,36 @@
             const btn = document.getElementById(`btn-${id}`);
             if (btn) btn.classList.add('active');
 
-            const section = TASK1_THEORY_CONTENT.find(d => d.id === id);
-            if (!section) return;
+            const container = document.getElementById('theory-container');
+            const targetUrl = THEORY_MAPPING[id];
 
-            const menuInfo = TASK1_THEORY_MENU.flatMap(m => [m, ...m.sub]).find(i => i.id === id);
-
-            // Mark as complete after reading
+            // Mark as complete
             markLessonComplete(id);
 
+            if (targetUrl) {
+                // Load modular HTML in iframe for panel-style view
+                container.innerHTML = `
+                    <div class="w-full h-[calc(100vh-160px)] bg-white dark:bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 animate-slide-up">
+                        <iframe src="${targetUrl}" class="w-full h-full border-none"></iframe>
+                    </div>
+                `;
+                return;
+            }
+
+            // Fallback for old content
+            const section = TASK1_THEORY_CONTENT.find(d => d.id === id);
+            if (!section) return;
+            const menuInfo = TASK1_THEORY_MENU.flatMap(m => [m, ...m.sub]).find(i => i.id === id);
             const enhancedContent = TheoryEnhancer.enhance(section.content);
 
-            // Inject mini chart randomly for visual appeal if relevant
-            const chartHtml = (id.includes('trend') || id.includes('theory-290')) ? ChartProvider.render('line') : '';
-
-            theoryContainer.innerHTML = `
+            container.innerHTML = `
                 <div class="animate-slide-up space-y-8 pb-20">
-                    <div class="flex items-center gap-4 text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-[0.2em]">
-                        <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-lg">Bài học: ${id.split('-')[1] || '01'}</span>
-                        <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
-                    </div>
-                    
-                    <div class="space-y-4">
+                    <div class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-slate-100 dark:border-slate-800 prose prose-slate dark:prose-invert max-w-none leading-relaxed">
                         <h2 class="text-4xl font-black text-slate-900 dark:text-white leading-tight tracking-tight">${menuInfo ? menuInfo.title : 'Theory Content'}</h2>
-                        <div class="flex items-center gap-4 text-slate-400">
-                             <div class="flex items-center gap-1.5 text-xs font-semibold">
-                                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
-                                <span>5 phút đọc</span>
-                             </div>
-                             <div class="w-1 h-1 bg-slate-300 rounded-full"></div>
-                             <div class="flex items-center gap-1.5 text-xs font-semibold">
-                                <i data-lucide="book" class="w-3.5 h-3.5"></i>
-                                <span>IELTS Task 1</span>
-                             </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-12 shadow-xl shadow-blue-500/5 border border-slate-100 dark:border-slate-800 prose prose-slate dark:prose-invert max-w-none leading-relaxed">
-                        ${chartHtml}
                         ${enhancedContent}
-                    </div>
-                    
-                    <div class="flex items-center justify-between p-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[2rem] text-white shadow-xl shadow-blue-500/20">
-                        <div class="space-y-1">
-                            <p class="text-xs font-bold uppercase tracking-widest text-blue-100">Bạn đã hoàn thành bài học này!</p>
-                            <h3 class="text-xl font-black">Tiếp tục chủ đề tiếp theo?</h3>
-                        </div>
-                        <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="px-6 py-3 bg-white text-blue-600 rounded-2xl font-bold hover:shadow-lg transition-all active:scale-95 flex items-center gap-2">
-                            <span>Lên đầu trang</span>
-                            <i data-lucide="arrow-up" class="w-4 h-4"></i>
-                        </button>
                     </div>
                 </div>
             `;
-
             lucide.createIcons();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }

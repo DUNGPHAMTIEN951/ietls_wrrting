@@ -16,6 +16,17 @@
         .answer-panel.show { display: block; transform: translateY(0); opacity: 1; }
         .flow-line { height: 2px; background: repeating-linear-gradient(to right, #10b981 0, #10b981 5px, transparent 5px, transparent 10px); }
     </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
 </head>
 <body class='bg-[#fcfdfe] text-slate-900 min-h-screen pb-24 selection:bg-emerald-100 selection:text-emerald-900'>
     <div class='max-w-6xl mx-auto px-6 pt-12'>
