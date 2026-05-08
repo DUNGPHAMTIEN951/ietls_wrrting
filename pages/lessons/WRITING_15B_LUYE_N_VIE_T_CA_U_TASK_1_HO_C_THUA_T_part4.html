@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1: Pie Chart & Data Comparison Mastery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .glass-morphism { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .pro-tip { border-left: 4px solid #f59e0b; }
+        .teacher-note { border-left: 4px solid #10b981; }
+        details summary::-webkit-details-marker { display:none; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-indigo-900 text-white py-16 px-4 shadow-lg">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <span class="bg-indigo-700 text-indigo-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Masterclass Series</span>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-2 tracking-tight">Kỹ thuật Phân tích Biểu đồ Tròn (Pie Chart)</h1>
+                    <p class="text-indigo-300 text-lg italic">Tác giả: <span class="font-semibold text-white">Phạm Tiến Dũng Gia Sư</span></p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-white/10 p-4 rounded-2xl backdrop-blur-md border border-white/20">
+                        <p class="text-xs uppercase opacity-70">Target Band</p>
+                        <p class="text-3xl font-bold">7.5 - 9.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Section 1: Introduction to Data Structures -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold italic">I. Giới thiệu Cấu trúc Dữ liệu (Introduction)</h2>
+            </div>
+            
+            <p class="mb-6 text-lg text-slate-600">Để bắt đầu một bài Writing Task 1 chuyên nghiệp, việc sử dụng các động từ như <span class="font-bold italic text-indigo-600">compare, illustrate, provide information about</span> là tối quan trọng.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h4 class="font-bold text-sm text-indigo-500 uppercase mb-4">Mẫu câu Introduction Band 8.0+</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-3">
+                            <span class="bg-indigo-100 text-indigo-600 h-6 w-6 flex items-center justify-center rounded-full shrink-0 font-bold">1</span>
+                            <span>"Biểu đồ hình tròn minh họa những thay đổi về dân số của các khu vực khác nhau trên thế giới từ năm 1900 đến năm 2000." <span class="text-slate-400 italic">(P10E 300)</span></span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="bg-indigo-100 text-indigo-600 h-6 w-6 flex items-center justify-center rounded-full shrink-0 font-bold">2</span>
+                            <span>"Hai biểu đồ hình tròn minh họa tỷ trọng của năm loại năng lượng sản xuất từ 1995 đến 2005." <span class="text-slate-400 italic">(P12E 318)</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="teacher-note bg-emerald-50 p-6 rounded-r-2xl">
+                    <h4 class="font-bold text-emerald-800 mb-2">Teacher's Note</h4>
+                    <p class="text-sm italic text-emerald-900 leading-relaxed">
+                        "Khi viết Introduction, đừng chỉ chép lại đề bài. Hãy cố gắng đa dạng hóa bằng cách dùng các từ đồng nghĩa như <strong>'proportion'</strong> thay cho <strong>'percentage'</strong> hoặc <strong>'different sectors'</strong> thay cho <strong>'different areas'</strong>." - <span class="font-bold">Phạm Tiến Dũng Gia Sư</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Comparing Data Points -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold italic">II. So sánh Số liệu (Comparing Data)</h2>
+            </div>
+
+            <div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden mb-8">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-100 border-b border-slate-200">
+                        <tr>
+                            <th class="p-5 font-bold italic text-indigo-900">Mối quan hệ</th>
+                            <th class="p-5 font-bold italic text-indigo-900">Cấu trúc đề xuất (Band 8+)</th>
+                            <th class="p-5 font-bold italic text-indigo-900">Ví dụ thực tế</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <tr>
+                            <td class="p-5 font-semibold">Tương phản (Contrast)</td>
+                            <td class="p-5 italic text-blue-600 font-medium">Ngược lại / Trái ngược với...</td>
+                            <td class="p-5">"Ngược lại, chỉ 8% nước được sử dụng trên toàn cầu dùng cho gia đình." <span class="text-slate-400 italic">(P5S 261)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 font-semibold">Gấp bội (Multiples)</td>
+                            <td class="p-5 italic text-blue-600 font-medium">Twice as much as / Double...</td>
+                            <td class="p-5">"Sinh viên lớn tuổi nói rằng họ 'vất có tổ chức' gần như gấp đôi so với những người trẻ tuổi." <span class="text-slate-400 italic">(P15E 347)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 font-semibold">Vượt mặt (Surpass)</td>
+                            <td class="p-5 italic text-blue-600 font-medium">Overtake / Exceed...</td>
+                            <td class="p-5">"Doanh số trò chơi điện tử trực tuyến cuối cùng đã vượt qua doanh số bán đồ nội thất gia đình." <span class="text-slate-400 italic">(P9E 299)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+
+            <div class="pro-tip p-6 rounded-2xl shadow-sm mb-6 bg-amber-50">
+                <h4 class="text-amber-800 font-bold mb-2 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Pro Tip: Tránh lặp từ "Percentage"
+                </h4>
+                <p class="text-sm italic text-amber-900">
+                    Hãy thay thế bằng các từ như: <strong>The figure for, The proportion of, The share of</strong>. Ví dụ: "Dầu cung cấp phần trăm năng lượng lớn nhất, mặc dù thị phần (share) giảm từ 42% xuống 33%."
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Visual Logic Flow -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold italic">III. Tư duy Logic trong Phân tích (Visual Logic)</h2>
+            </div>
+            
+            <p class="mb-8 text-slate-600 italic">Quy trình phân tích dữ liệu một cách khoa học được <strong>Phạm Tiến Dũng Gia Sư</strong> hệ thống hóa như sau:</p>
+
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-inner overflow-x-auto">
+                <div class="mermaid">
+                    graph LR
+                    A[Xác định Xu hướng Chung] --> B{So sánh hạng mục}
+                    B --> C[Điểm cao nhất/thấp nhất]
+                    B --> D[Sự thay đổi theo thời gian]
+                    C --> E[Cấu trúc: Peaked at / Accounted for the majority]
+                    D --> F[Cấu trúc: Rose slightly / Doubled]
+                    style A fill:#e0e7ff,stroke:#4338ca
+                    style B fill:#fdf2f8,stroke:#be185d
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Practice Lab -->
+        <section class="mb-16">
+            <div class="bg-indigo-900 text-white rounded-[2rem] p-8 md:p-12 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-6 italic text-indigo-300 underline decoration-indigo-500 underline-offset-8">IV. Practice Lab - Bài tập thực hành</h3>
+                
+                <div class="space-y-8">
+                    <div class="border-b border-indigo-800 pb-8">
+                        <p class="text-lg mb-4 font-medium">1. Chọn từ phù hợp để hoàn thành câu so sánh:</p>
+                        <p class="italic text-indigo-200 mb-4">"Năm 1950, 72,1% ngân sách dành cho nhà ở, _________ chỉ 22% vào năm 2010."</p>
+                        <div class="flex flex-wrap gap-3">
+                            <button onclick="checkAnswer(this, false)" class="px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition text-sm">A. because</button>
+                            <button onclick="checkAnswer(this, true)" class="px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition text-sm">B. compared to</button>
+                            <button onclick="checkAnswer(this, false)" class="px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition text-sm">C. although</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-lg mb-4 font-medium italic underline">2. Phân tích ngữ pháp chuyên sâu (Grammar Analysis):</p>
+                        <div class="bg-indigo-800/50 p-6 rounded-xl border border-indigo-700">
+                            <p class="mb-3 font-semibold text-indigo-300">Câu gốc:</p>
+                            <p class="italic mb-4">"Hơn một nửa số sinh viên đang ở cấp độ Chứng chỉ, với ít hơn một phần tư ở cấp độ Cao đẳng hoặc Cử nhân."</p>
+                            
+                            <details class="group">
+                                <summary class="cursor-pointer text-sm font-bold text-indigo-400 hover:text-indigo-300 transition flex items-center gap-2">
+                                    [XEM GIẢI THÍCH CHI TIẾT TỪ PHẠM TIẾN DŨNG GIA SƯ]
+                                    <svg class="w-4 h-4 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </summary>
+                                <div class="mt-4 text-sm leading-relaxed text-indigo-100">
+                                    <p>Cấu trúc: <strong>"More than half of... with less than a quarter..."</strong></p>
+                                    <p class="mt-2">Đây là cấu trúc dùng mệnh đề trạng ngữ rút gọn với <strong>"with"</strong> để bổ sung thông tin so sánh trong cùng một câu, giúp câu văn trở nên phức tạp và ăn điểm <span class="italic font-bold">Grammatical Range & Accuracy</span> cao hơn.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Vocabulary Summary Table -->
+        <section>
+            <h3 class="text-2xl font-bold mb-6 italic border-b-2 border-indigo-100 pb-2">V. Bảng tổng hợp Từ vựng nâng cao (Academic Vocabulary)</h3>
+            <div class="overflow-hidden rounded-2xl border border-slate-200">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-6 bg-white">
+                        <h5 class="font-bold text-indigo-600 mb-4 uppercase text-xs tracking-widest">Mô tả Sự thay đổi</h5>
+                        <ul class="space-y-3 text-sm">
+                            <li><span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-indigo-700">Fluctuate:</span> Biến động (P24E 431)</li>
+                            <li><span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-indigo-700">Peak at:</span> Đạt đỉnh điểm (P24E 434)</li>
+                            <li><span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-indigo-700">Remain unchanged:</span> Không thay đổi (P22E 414)</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t md:border-t-0 md:border-l border-slate-200">
+                        <h5 class="font-bold text-indigo-600 mb-4 uppercase text-xs tracking-widest">Mô tả Sự phân bổ</h5>
+                        <ul class="space-y-3 text-sm">
+                            <li><span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-indigo-700">Constitute:</span> Cấu thành / Chiếm (P2S 240)</li>
+                            <li><span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-indigo-700">Distribution:</span> Sự phân bổ (P24E 426)</li>
+                            <li><span class="font-mono bg-slate-100 px-2 py-0.5 rounded text-indigo-700">Account for:</span> Chiếm bao nhiêu % (P12E 321)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 mt-20 border-t-4 border-indigo-500">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <p class="text-xl font-bold italic mb-2">Phạm Tiến Dũng Gia Sư</p>
+                <p class="text-slate-400 text-sm">Chuyên gia luyện thi IELTS Senior - Đột phá Band điểm Writing.</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="text-right">
+                    <p class="text-xs text-indigo-400 uppercase font-bold tracking-widest">Năm học</p>
+                    <p class="text-lg">2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+        
+        function checkAnswer(btn, isCorrect) {
+            if(isCorrect) {
+                btn.classList.remove('bg-indigo-800');
+                btn.classList.add('bg-emerald-600');
+                btn.innerHTML = "Đúng! 🎉";
+            } else {
+                btn.classList.remove('bg-indigo-800');
+                btn.classList.add('bg-rose-600');
+                btn.innerHTML = "Sai rồi! ❌";
+            }
+        }
+    </script>
+</body>
+</html>

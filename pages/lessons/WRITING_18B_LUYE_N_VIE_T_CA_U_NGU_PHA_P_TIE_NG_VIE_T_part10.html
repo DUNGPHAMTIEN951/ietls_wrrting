@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Advanced Grammar Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .heading-font { font-family: 'Roboto', sans-serif; }
+        .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .accordion-item.active .accordion-body { display: block; }
+        .accordion-body { display: none; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165627'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header Section -->
+        <header class="mb-12 text-center p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
+            <h1 class="heading-font text-3xl md:text-5xl font-extrabold text-slate-900 mb-4">
+                IELTS Writing & Speaking: <span class="text-blue-600">Advanced Sentence Structures</span>
+            </h1>
+            <p class="text-slate-500 text-lg italic">Biên soạn bởi chuyên gia: <span class="font-bold text-slate-700">Phạm Tiến Dũng Gia Sư</span></p>
+            <div class="mt-6 flex justify-center gap-4">
+                <span class="px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">Band 7.5+ Target</span>
+                <span class="px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Expert Content</span>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="flex flex-wrap gap-2 mb-8 bg-slate-200/50 p-2 rounded-xl">
+            <button onclick="openTab(event, 'inversions')" class="tab-btn px-6 py-2 rounded-lg font-medium hover:bg-white active-tab transition-all">Inversions (Đảo ngữ)</button>
+            <button onclick="openTab(event, 'sv-agreement')" class="tab-btn px-6 py-2 rounded-lg font-medium hover:bg-white transition-all">Subject-Verb Agreement</button>
+            <button onclick="openTab(event, 'relative-clauses')" class="tab-btn px-6 py-2 rounded-lg font-medium hover:bg-white transition-all">Relative Clauses</button>
+            <button onclick="openTab(event, 'phrasal-verbs')" class="tab-btn px-6 py-2 rounded-lg font-medium hover:bg-white transition-all">Phrasal Verbs</button>
+        </div>
+
+        <!-- Section 1: Inversions -->
+        <section id="inversions" class="tab-content active space-y-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    01. Inversions - Đảo ngữ: Chìa khóa nâng điểm Grammatical Range
+                </h2>
+                
+                <p class="text-slate-600 mb-6">Đảo ngữ là cấu trúc đưa trợ động từ hoặc từ hạn định lên trước chủ ngữ nhằm nhấn mạnh. Đây là "vũ khí" cực mạnh trong <strong>IELTS Writing Task 2</strong> để khẳng định quan điểm.</p>
+
+                <div class="pro-tip p-4 mb-6 rounded-lg">
+                    <p class="text-amber-800 font-bold uppercase text-xs tracking-widest mb-1">🔥 Pro Tip by Phạm Tiến Dũng Gia Sư</p>
+                    <p class="text-amber-900 text-sm italic">Trong Writing, hãy dùng <strong>"Under no circumstances"</strong> thay vì "Never" để thể hiện phong cách trang trọng bậc cao.</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse bg-slate-50 rounded-xl overflow-hidden">
+                        <thead class="bg-slate-800 text-white">
+                            <tr>
+                                <th class="p-4">Dạng thức</th>
+                                <th class="p-4">Câu gốc (Normal)</th>
+                                <th class="p-4">Câu đảo ngữ (Inverted)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr>
+                                <td class="p-4 font-semibold">Negative Adverbs</td>
+                                <td class="p-4">You should never be late for the exam.</td>
+                                <td class="p-4 italic text-blue-700 underline">Under no circumstances should you be late for the exam.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Only after/when</td>
+                                <td class="p-4">You can get a job only after you graduate.</td>
+                                <td class="p-4 italic text-blue-700 underline">Only after graduation can you get a job.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Not until</td>
+                                <td class="p-4">They couldn't continue until the rain stopped.</td>
+                                <td class="p-4 italic text-blue-700 underline">Not until the rain stopped could they continue working.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Hardly/Scarcely</td>
+                                <td class="p-4">We had just got home when it rained.</td>
+                                <td class="p-4 italic text-blue-700 underline">Hardly had we got home when it rained.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: SV Agreement -->
+        <section id="sv-agreement" class="tab-content space-y-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    02. Subject-Verb Agreement (Sự hòa hợp Chủ - Vị)
+                </h2>
+
+                <div class="mermaid mb-8 flex justify-center">
+                    graph TD
+                    A[Chủ ngữ Subject] --> B{Phân loại?}
+                    B --> C[Số ít Singular]
+                    B --> D[Số nhiều Plural]
+                    C --> E[V + s/es]
+                    D --> F[V nguyên mẫu]
+                    style A fill:#3b82f6,color:#fff
+                </div>
+
+                <div class="teacher-note p-4 mb-6 rounded-lg">
+                    <p class="text-blue-800 font-bold uppercase text-xs tracking-widest mb-1">🎓 Teacher's Note</p>
+                    <p class="text-blue-900 text-sm italic">Lưu ý các chủ ngữ tập hợp (Collective Nouns) như "Family", "Majority". Nếu coi là một đơn vị -> chia số ít; nếu coi là từng cá nhân -> chia số nhiều.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-6 bg-slate-50 rounded-2xl">
+                        <h3 class="font-bold text-slate-700 mb-4">Các trường hợp đặc biệt (Số ít)</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-500">●</span> 
+                                <span><strong>Gerund/Phrase:</strong> Jogging daily <u>is</u> good for your health.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-500">●</span> 
+                                <span><strong>Indefinite Pronouns:</strong> Everyone <u>knows</u> Tom.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-500">●</span> 
+                                <span><strong>The number of:</strong> The number of days in a week <u>is</u> seven.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl">
+                        <h3 class="font-bold text-slate-700 mb-4">Cấu trúc đi kèm (Số nhiều/Hỗn hợp)</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">●</span> 
+                                <span><strong>A number of:</strong> A number of students <u>are</u> absent.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">●</span> 
+                                <span><strong>Adjectives as Nouns:</strong> The poor <u>need</u> help.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-500">●</span> 
+                                <span><strong>As well as/Along with:</strong> Ms. Smith along with her sons <u>is</u> (chia theo chủ ngữ 1) going on holiday.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Relative Clauses -->
+        <section id="relative-clauses" class="tab-content space-y-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    03. Relative Clauses & Reduced Forms (Mệnh đề quan hệ & Rút gọn)
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-lg text-blue-600 italic">Cấu trúc nâng cao (Advanced)</h3>
+                        <div class="p-4 bg-indigo-50 border border-indigo-100 rounded-xl">
+                            <p class="font-semibold text-slate-800">Cấu trúc "Which" bổ nghĩa cả câu:</p>
+                            <p class="text-sm italic mt-2">"The buses, most of which were full, began to pull out."</p>
+                        </div>
+                        <div class="p-4 bg-indigo-50 border border-indigo-100 rounded-xl">
+                            <p class="font-semibold text-slate-800">Cấu trúc "Whose":</p>
+                            <p class="text-sm italic mt-2">"James, whose father is the CEO, received a promotion."</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-lg text-emerald-600 italic">Reduced Clauses (Rút gọn)</h3>
+                        <div class="p-4 bg-emerald-50 border border-emerald-100 rounded-xl">
+                            <p class="font-semibold text-slate-800">V-ing (Active):</p>
+                            <p class="text-sm italic mt-2">"The girl <u>running</u> (who is running) down the street is my sister."</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 border border-emerald-100 rounded-xl">
+                            <p class="font-semibold text-slate-800">V3/ed (Passive):</p>
+                            <p class="text-sm italic mt-2">"The value <u>obtained</u> (which was obtained) from the data is significant."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Phrasal Verbs -->
+        <section id="phrasal-verbs" class="tab-content space-y-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    04. Essential Phrasal Verbs & Phrases for Speaking
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <p class="font-bold text-blue-600">Add up</p>
+                        <p class="text-sm text-slate-600">Có ý nghĩa / Tổng cộng</p>
+                        <p class="text-xs italic text-slate-400 mt-2">"Her story doesn't add up."</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <p class="font-bold text-blue-600">Bear with someone</p>
+                        <p class="text-sm text-slate-600">Kiên nhẫn với ai đó</p>
+                        <p class="text-xs italic text-slate-400 mt-2">"Please bear with me while I fill in the forms."</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <p class="font-bold text-blue-600">Back up</p>
+                        <p class="text-sm text-slate-600">Ủng hộ / Minh chứng</p>
+                        <p class="text-xs italic text-slate-400 mt-2">"You need examples to back up your opinion."</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <p class="font-bold text-blue-600">Pull through</p>
+                        <p class="text-sm text-slate-600">Vượt qua (khó khăn/bệnh tật)</p>
+                        <p class="text-xs italic text-slate-400 mt-2">"How did he pull through under such pressure?"</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <p class="font-bold text-blue-600">Act up</p>
+                        <p class="text-sm text-slate-600">Trục trặc / Giở quẻ</p>
+                        <p class="text-xs italic text-slate-400 mt-2">"My car is acting up again."</p>
+                    </div>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition">
+                        <p class="font-bold text-blue-600">Blow over</p>
+                        <p class="text-sm text-slate-600">Đi qua / Bị quên lãng</p>
+                        <p class="text-xs italic text-slate-400 mt-2">"The scandal will blow over in a few weeks."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice -->
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6">Luyện tập Thực tế (Band 8.0 Challenge)</h2>
+            <div class="space-y-4">
+                <div class="accordion-item bg-white rounded-xl border border-slate-200">
+                    <button onclick="toggleAccordion(this)" class="w-full text-left p-6 font-semibold flex justify-between items-center">
+                        Bài 1: Chuyển sang câu đảo ngữ - "He couldn't buy a car if the bank didn't lend him money."
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-body p-6 bg-slate-50 border-t border-slate-200 text-blue-800 font-medium">
+                        Đáp án: <span class="italic underline decoration-slate-300">Only with a bank loan could he buy a car.</span>
+                    </div>
+                </div>
+                <div class="accordion-item bg-white rounded-xl border border-slate-200">
+                    <button onclick="toggleAccordion(this)" class="w-full text-left p-6 font-semibold flex justify-between items-center">
+                        Bài 2: Chia động từ - "Ms. Smith along with her sons (go) on holiday every summer."
+                        <span>+</span>
+                    </button>
+                    <div class="accordion-body p-6 bg-slate-50 border-t border-slate-200 text-blue-800 font-medium">
+                        Đáp án: <span class="italic underline decoration-slate-300">goes</span> (Chủ ngữ chính là Ms. Smith - số ít).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 border-t border-slate-200 pt-8 pb-12 text-center text-slate-400 text-sm italic">
+            <p>© 2026 Toàn bộ nội dung thuộc về: <span class="text-slate-600 font-bold">Phạm Tiến Dũng Gia Sư</span></p>
+            <p>IELTS Senior Tutor Masterclass - Advanced Grammar Series</p>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Tab functionality
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("bg-white", "shadow-sm", "text-blue-600");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("bg-white", "shadow-sm", "text-blue-600");
+        }
+
+        // Set default tab
+        document.querySelector('.tab-btn').classList.add("bg-white", "shadow-sm", "text-blue-600");
+
+        // Accordion functionality
+        function toggleAccordion(btn) {
+            const item = btn.parentElement;
+            item.classList.toggle('active');
+            btn.querySelector('span').innerText = item.classList.contains('active') ? '-' : '+';
+        }
+    </script>
+</body>
+</html>

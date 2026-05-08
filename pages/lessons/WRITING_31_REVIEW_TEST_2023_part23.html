@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Mastery: Writing Task 1 & 2 - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .prose-expert h1 { @apply text-3xl font-bold text-slate-900 mb-6; }
+        .prose-expert h2 { @apply text-2xl font-semibold text-indigo-700 mt-8 mb-4 border-b pb-2; }
+        .prose-expert p { @apply text-slate-600 leading-relaxed mb-4; }
+        .band-9-vocab { @apply font-bold text-indigo-600 underline decoration-indigo-300; }
+        .note-card { @apply bg-amber-50 border-l-4 border-amber-400 p-4 my-6 rounded-r-lg shadow-sm; }
+        .pro-tip { @apply bg-indigo-50 border-l-4 border-indigo-500 p-4 my-6 rounded-r-lg shadow-sm; }
+        .key-words-box { @apply bg-white border border-slate-200 p-6 rounded-xl shadow-md my-6; }
+        .interactive-exercise { @apply bg-slate-50 border border-slate-200 p-6 rounded-xl my-8; }
+        .btn-toggle { @apply px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 font-medium text-sm mt-4; }
+        .answer-hidden { display: none; }
+        .tab-btn.active { @apply border-indigo-600 text-indigo-600 border-b-2; }
+    </style>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+    <script src='../../assets/js/security.js?v=1778171068'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-lg">
+                    <span class="text-white font-bold">PTD</span>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-800">Phạm Tiến Dũng <span class="text-indigo-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#task1" class="hover:text-indigo-600">Task 1: Line & Maps</a>
+                <a href="#task2" class="hover:text-indigo-600">Task 2: Discussion</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-6">
+        
+        <!-- Lesson Introduction -->
+        <section class="mb-16 text-center">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full uppercase tracking-widest">IELTS Senior Tutor Series</span>
+            <h1 class="mt-4 text-4xl font-extrabold text-slate-900 tracking-tight sm:text-5xl">Chinh phục Writing Task 1 & 2</h1>
+            <p class="mt-4 text-lg text-slate-600">Tối ưu hóa điểm số thông qua phân tích cấu trúc, từ vựng học thuật và chiến thuật xử lý đề bài đẳng cấp Band 7.0+.</p>
+        </header>
+
+        <hr class="my-12 border-slate-200">
+
+        <!-- PART 1: TASK 1 ANALYSIS -->
+        <section id="task1" class="prose-expert mb-20">
+            <div class="flex items-center space-x-2 mb-6">
+                <div class="h-8 w-1 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-slate-800 m-0 border-none">PHẦN 1: IELTS WRITING TASK 1</h2>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-800 mb-4 italic">Case Study 1: Line Graph (Museum Visitors)</h3>
+            <p>Phân tích sự biến động lượng khách tham quan bảo tàng tại Anh vào hai mùa trong năm 2005.</p>
+
+            <div class="mermaid bg-white p-4 rounded-lg shadow-sm mb-6 flex justify-center">
+                graph LR
+                    A[Museum Attendance] --> B(Summer: Peak 1500)
+                    A --> C(Winter: Peak 600)
+                    B --> B1[Open: 9 AM]
+                    B --> B2[Close: 6 PM]
+                    C --> C1[Open: 9 AM]
+                    C --> C2[Close: 3 PM]
+            </div>
+
+            <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 my-8 rounded-r-xl">
+                <h4 class="font-bold text-indigo-800 mb-2">Bài mẫu đạt chuẩn Band 7.0+</h4>
+                <p class="italic text-slate-700">"In the summer, the number of visitors <span class="band-9-vocab">soared/surged</span> from 9 to 12 o’clock in the morning, <span class="band-9-vocab">peaking at</span> approximately 1500 at noon. Subsequently, the museum saw a <span class="band-9-vocab">gradual drop</span> of 700 visitors by 4 p.m., followed by another <span class="band-9-vocab">sharp fall</span> towards 6 p.m..."</p>
+            </div>
+
+            <div class="key-words-box">
+                <h4 class="font-bold text-indigo-900 mb-4 uppercase text-xs tracking-widest">Từ vựng "ăn điểm" cho biểu đồ xu hướng</h4>
+                <table class="min-w-full text-sm">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="text-left py-2 font-bold text-slate-700">English Term</th>
+                            <th class="text-left py-2 font-bold text-slate-700">Vietnamese Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-600">
+                        <tr><td class="py-1 font-semibold">Attendance rate/figure</td><td class="py-1">Tỷ lệ khách tham quan</td></tr>
+                        <tr><td class="py-1 font-semibold">Soar/Surge</td><td class="py-1">Tăng mạnh và nhanh</td></tr>
+                        <tr><td class="py-1 font-semibold">Albeit</td><td class="py-1">Mặc dù (Dùng thay cho 'Although' để nâng band)</td></tr>
+                        <tr><td class="py-1 font-semibold">At midday/noon</td><td class="py-1">Giữa trưa</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr class="my-12">
+
+            <h3 class="text-xl font-bold text-slate-800 mb-4 italic">Case Study 2: Map Comparison (Small Theatre)</h3>
+            <p>Mô tả sự thay đổi của nhà hát từ năm 2010 đến 2012. Trọng tâm là sự mở rộng (expansion) và thay đổi công năng (repurposing).</p>
+
+            <div class="pro-tip">
+                <span class="font-bold text-indigo-600">Pro Tip:</span> Khi miêu tả bản đồ so sánh hai thời điểm trong quá khứ, hãy kết hợp linh hoạt <strong>Past Simple</strong> (cho các sự kiện cụ thể) và <strong>Past Perfect</strong> (để nhấn mạnh sự thay đổi đã hoàn tất tính đến mốc thời gian thứ hai).
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-3">Expansion Verbs</h4>
+                    <ul class="text-sm space-y-1 text-slate-600">
+                        <li>• <span class="font-bold">Expand / Enlarged:</span> Mở rộng diện tích</li>
+                        <li>• <span class="font-bold">Extend:</span> Kéo dài/Mở rộng</li>
+                        <li>• <span class="font-bold">Make way for:</span> Nhường chỗ cho</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-800 border-b pb-2 mb-3">Relocation Phrases</h4>
+                    <ul class="text-sm space-y-1 text-slate-600">
+                        <li>• <span class="font-bold">Relocate / Reposition:</span> Di dời vị trí</li>
+                        <li>• <span class="font-bold">Repurpose:</span> Tái sử dụng/Đổi mục đích</li>
+                        <li>• <span class="font-bold">Overtake:</span> Chiếm lấy (không gian)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PART 2: TASK 2 DISCUSSION -->
+        <section id="task2" class="prose-expert mb-20">
+            <div class="flex items-center space-x-2 mb-6">
+                <div class="h-8 w-1 bg-rose-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-slate-800 m-0 border-none">PHẦN 2: IELTS WRITING TASK 2</h2>
+            </div>
+
+            <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-xl mb-10 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                </div>
+                <h4 class="text-rose-400 font-bold text-sm tracking-widest mb-2 uppercase">Topic Analysis</h4>
+                <p class="text-xl font-medium leading-relaxed mb-6">"Manufacturers and supermarkets should be responsible for reducing packaging VS Customers should avoid buying goods with a lot of packaging."</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white/10 rounded-md text-xs border border-white/20">Discussion Essay</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-md text-xs border border-white/20">Environmental Responsibility</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-md text-xs border border-white/20">Collective Effort</span>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-800 mb-4">Chiến thuật lập dàn ý (Brainstorming)</h3>
+            <p>Tác giả <strong>Phạm Tiến Dũng Gia Sư</strong> khuyên người học nên tiếp cận theo hướng <strong>"Collective Effort" (Nỗ lực tập thể)</strong> để bài viết sâu sắc hơn.</p>
+
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+                <div class="space-y-4">
+                    <h4 class="font-bold text-indigo-700 flex items-center">
+                        <span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mr-2 text-xs">1</span> 
+                        Supply Side (Nhà sản xuất)
+                    </h4>
+                    <p class="text-sm text-slate-600">Sử dụng bao bì dư thừa (<span class="italic">redundant packaging</span>) để tiết kiệm chi phí (<span class="italic">manufacturing overheads</span>). Cần áp dụng quy trình xanh (<span class="italic">environmentally-friendly practices</span>).</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-rose-700 flex items-center">
+                        <span class="w-6 h-6 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mr-2 text-xs">2</span> 
+                        Demand Side (Người tiêu dùng)
+                    </h4>
+                    <p class="text-sm text-slate-600">Thay đổi thói quen mua sắm (<span class="italic">shopping habits</span>). Tạo áp lực buộc các tập đoàn phải cải tổ chính sách nếu họ có ý thức về môi trường (<span class="italic">environmentally conscious</span>).</p>
+                </div>
+            </div>
+
+            <div class="note-card">
+                <h4 class="font-bold text-amber-800 uppercase text-xs mb-2 italic">Teacher's Note: Cấu trúc Discussion</h4>
+                <p class="m-0 text-amber-900 text-sm italic">Trong đoạn Body 1, hãy sử dụng <strong>"On the one hand"</strong> để thảo luận quan điểm đầu tiên. Ở Body 2, dùng <strong>"On the other hand"</strong> cho quan điểm còn lại và lồng ghép khéo léo ý kiến cá nhân của mình.</p>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-800 mb-4">Collocations High-Band (Cụm từ cố định)</h3>
+            <div class="bg-white rounded-xl border shadow-sm overflow-hidden">
+                <div class="p-4 bg-slate-50 border-b font-bold text-slate-700 text-sm">Topic: Environmental Sustainability</div>
+                <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-xs font-bold text-indigo-500 uppercase">Verbs & Phrases</p>
+                        <ul class="text-sm space-y-2 mt-2">
+                            <li>• <span class="font-bold">Curtailing plastic waste:</span> Cắt giảm rác thải nhựa</li>
+                            <li>• <span class="font-bold">Necessitates a collective effort:</span> Đòi hỏi nỗ lực tập thể</li>
+                            <li>• <span class="font-bold">Shoulder a fair share of responsibility:</span> Gánh vác trách nhiệm</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-indigo-500 uppercase">Nouns & Adjectives</p>
+                        <ul class="text-sm space-y-2 mt-2">
+                            <li>• <span class="font-bold">Non-biodegradable waste:</span> Rác không phân hủy</li>
+                            <li>• <span class="font-bold">Eco-friendly / Green packaging:</span> Bao bì xanh</li>
+                            <li>• <span class="font-bold">Visual appeal:</span> Vẻ bề ngoài hấp dẫn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICE SECTION -->
+        <section class="interactive-exercise">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                Thực hành củng cố (Practice)
+            </h2>
+
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg border shadow-sm">
+                    <p class="font-medium text-slate-800 mb-4 italic">Bài tập 1: Điền từ thích hợp vào chỗ trống để hoàn thành câu mô tả biểu đồ:</p>
+                    <p class="text-slate-600 text-sm italic">"The winter season followed a similar pattern, <span class="font-bold border-b border-dotted px-2">(1)</span> at a lower rate. Despite a <span class="font-bold border-b border-dotted px-2">(2)</span> at 11 a.m, there was a considerable <span class="font-bold border-b border-dotted px-2">(3)</span> in visitor numbers between 9 and 12 o’clock."</p>
+                    <button onclick="toggleAnswer('ans1')" class="btn-toggle">Xem đáp án</button>
+                    <div id="ans1" class="answer-hidden mt-4 p-4 bg-green-50 text-green-800 rounded text-sm italic">
+                        (1) albeit | (2) slight fall | (3) rise
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border shadow-sm">
+                    <p class="font-medium text-slate-800 mb-4 italic">Bài tập 2: Brainstorming nhanh cho đề bài tài trợ thể thao (Sponsorship):</p>
+                    <p class="text-slate-600 text-sm mb-4 italic">Hãy liệt kê 1 ưu điểm và 1 nhược điểm của việc các công ty tài trợ cho các sự kiện thể thao lớn.</p>
+                    <button onclick="toggleAnswer('ans2')" class="btn-toggle">Xem gợi ý ý tưởng</button>
+                    <div id="ans2" class="answer-hidden mt-4 p-4 bg-green-50 text-green-800 rounded text-sm italic">
+                        <strong>Pros:</strong> Provide financial support for facilities and training (<span class="font-bold">boost sport world</span>).<br>
+                        <strong>Cons:</strong> Companies may prioritize profits or promote unhealthy products like fast food/alcohol (<span class="font-bold">ethical issues</span>).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Info -->
+        <footer class="mt-20 pt-10 border-t border-slate-200 text-center">
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-white text-xs font-bold italic">PTD</span>
+                </div>
+                <p class="text-sm font-bold text-slate-800">Phạm Tiến Dũng Gia Sư</p>
+                <p class="text-xs text-slate-500 mt-1 italic">Chuyên gia đào tạo IELTS chuyên sâu & hiện đại</p>
+                <div class="mt-4 flex space-x-4 text-[10px] text-slate-400 uppercase tracking-tighter">
+                    <span>Mã đơn hàng: Z021241122</span>
+                    <span>•</span>
+                    <span>Phone: 0963758090</span>
+                    <span>•</span>
+                    <span>Email: thaykienchuyenanh@gmail.com</span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Tab switching logic can be added here if needed for interactive tabs
+    </script>
+</body>
+</html>

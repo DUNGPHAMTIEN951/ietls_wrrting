@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass-morphism { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-item.active .accordion-content { max-height: 1000px; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; padding: 1rem; margin: 1rem 0; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #ecfdf5; padding: 1rem; margin: 1rem 0; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171103'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 glass-morphism shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-600 p-2 rounded-lg text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-800">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#vocabulary" class="hover:text-blue-600 transition">Từ vựng Topic-Specific</a>
+                <a href="#task1" class="hover:text-blue-600 transition">Task 1: Bar Chart</a>
+                <a href="#practice" class="hover:text-blue-600 transition">Thực hành</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Mastering <span class="gradient-text">IELTS Writing</span></h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Chuyên đề: Di sản văn hóa & Phân tích hiệu suất vận tải (Punctuality & Customer Satisfaction)</p>
+        </section>
+
+        <!-- Section 1: Vocabulary -->
+        <section id="vocabulary" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold uppercase">Phần 1</span>
+                <h2 class="text-3xl font-bold text-slate-800">Từ vựng IELTS Band 8.0+</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Word 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Historical and cultural value</h3>
+                    <p class="text-sm font-semibold text-slate-500 mb-4 italic">(Giá trị lịch sử và văn hóa)</p>
+                    <p class="mb-4">Dùng để chỉ giá trị quan trọng và ý nghĩa của một vật phẩm, di tích hoặc tác phẩm nghệ thuật đối với việc bảo tồn di sản.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg border-l-4 border-blue-400 text-sm italic">
+                        "The ancient temple holds great <strong>historical and cultural value</strong> to the local community."
+                    </div>
+                </div>
+
+                <!-- Word 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Stringent safety standards</h3>
+                    <p class="text-sm font-semibold text-slate-500 mb-4 italic">(Tiêu chuẩn an toàn nghiêm ngặt)</p>
+                    <p class="mb-4">Chỉ các quy định an toàn được áp dụng khắt khe để bảo vệ con người và môi trường.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg border-l-4 border-blue-400 text-sm italic">
+                        "The factory follows <strong>stringent safety standards</strong> to ensure the well-being of its employees."
+                    </div>
+                </div>
+
+                <!-- Word 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">A tangible link</h3>
+                    <p class="text-sm font-semibold text-slate-500 mb-4 italic">(Mối liên kết thực tế/hữu hình)</p>
+                    <p class="mb-4">Mối kết nối rõ ràng có thể cảm nhận hoặc nhìn thấy giữa các đối tượng hoặc thời kỳ lịch sử.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg border-l-4 border-blue-400 text-sm italic">
+                        "The ancient ruins serve as a <strong>tangible link</strong> to the past."
+                    </div>
+                </div>
+
+                <!-- Word 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">Inadequate fire safety measures</h3>
+                    <p class="text-sm font-semibold text-slate-500 mb-4 italic">(Biện pháp PCCC không đầy đủ)</p>
+                    <p class="mb-4">Chỉ sự thiếu hụt các phương án bảo vệ khỏi nguy cơ cháy nổ.</p>
+                    <div class="bg-blue-50 p-3 rounded-lg border-l-4 border-blue-400 text-sm italic">
+                        "The building was engulfed in flames due to <strong>inadequate fire safety measures</strong>."
+                    </div>
+                </div>
+            </div>
+
+            <div class="teacher-note">
+                <span class="font-bold text-emerald-800">🎓 Teacher's Note:</span> Khi viết về chủ đề History & Culture, thay vì dùng "Old things", hãy sử dụng <strong>"Rich heritage and vibrant history"</strong> hoặc <strong>"Historical landmarks"</strong> để nâng điểm Lexical Resource lên Band 7.5+.
+            </div>
+        </section>
+
+        <!-- Section 2: Task 1 Bar Chart -->
+        <section id="task1" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold uppercase">Phần 2</span>
+                <h2 class="text-3xl font-bold text-slate-800">Task 1: Performance Analysis (Bar Chart)</h2>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 mb-10">
+                <div class="mb-6 p-4 bg-slate-100 rounded-xl font-medium">
+                    <p><strong>Đề bài:</strong> The charts below show the performance of a bus company in terms of punctuality both actual and target, and the number of complaints from passengers (1999 - 2003).</p>
+                </div>
+
+                <div class="mermaid flex justify-center mb-10">
+                    graph TD
+                        A[Punctuality Data] --> B[Target Set by Company]
+                        A --> C[Actual Performance]
+                        A --> D[Passenger Complaints]
+                        B --- B1[Decreased over years 86% to 84.5%]
+                        C --- C1[Failed targets until 2003]
+                        D --- D1[Gradually rose from 70 to 120]
+                </div>
+
+                <h3 class="text-2xl font-bold mb-6 text-slate-800 border-b pb-2">Chiến thuật triển khai bài viết</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold text-blue-800 mb-3 uppercase text-sm tracking-widest">Đoạn 1: Punctuality</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <strong>1999-2000:</strong> Mục tiêu 86%, thực tế chỉ 82-85% (Không đạt).</li>
+                            <li>• <strong>2001-2002:</strong> Hạ mục tiêu xuống 85%, vẫn thiếu hụt khoảng 1%.</li>
+                            <li>• <strong>2003:</strong> Vượt mục tiêu (Exceeded target) khi target là 84.5% và thực tế là 85%.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="font-bold text-blue-800 mb-3 uppercase text-sm tracking-widest">Đoạn 2: Complaints</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <strong>Khởi đầu:</strong> 70 khiếu nại/1000 lượt (1999).</li>
+                            <li>• <strong>Kết thúc:</strong> Tăng lên 120 (2003).</li>
+                            <li>• <strong>Nghịch lý:</strong> Năm 2003 đạt mục tiêu đúng giờ nhưng lại có số khiếu nại cao nhất.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sample Answer -->
+                <div class="border-t pt-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <h4 class="text-xl font-bold text-slate-800">Bài mẫu (Band 7.0 - 7.5)</h4>
+                        <span class="bg-slate-800 text-white px-3 py-1 rounded text-xs">Author: Phạm Tiến Dũng Gia Sư</span>
+                    </div>
+                    <div class="prose prose-blue max-w-none text-slate-700 italic">
+                        <p class="mb-4">The bar charts illustrate how well a bus company performed regarding punctuality, showing both the <span class="font-bold text-blue-600">achieved results</span> and the <span class="font-bold text-blue-600">desired targets</span> set by the company, along with the frequency of passenger complaints between 1999 and 2003.</p>
+                        <p class="mb-4">Overall, although the company lowered its performance targets over the years, it <span class="font-bold text-blue-600">consistently failed to meet such expectations</span>, except for 2003. Additionally, there was a <span class="font-bold text-blue-600">growing number of</span> complaints from passengers throughout the period.</p>
+                        <p class="mb-4">In the first two years, the bus company <span class="font-bold text-blue-600">aimed for</span> 86% of its buses to be <span class="font-bold text-blue-600">punctual</span>, but this goal was not <span class="font-bold text-blue-600">attained</span>. By 2003, however, the company had <span class="font-bold text-blue-600">exceeded</span> its target, as the rate of actual on-time services rose minimally to 85%.</p>
+                        <p>Turning to complaint numbers, they started at about 70 per thousand passenger trips in 1999 before gradually climbing to reach 120 at the end of the period, in spite of a small dip in 2001.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-tip">
+                <span class="font-bold text-amber-800">💡 Pro Tip:</span> Thay vì lặp lại từ "Goal", hãy dùng đa dạng các từ như: <strong>Target, Expectation, Objective, Aspiration</strong>. Để nói về việc đạt được mục tiêu, dùng: <strong>Attain, Meet, Reach, Accomplish, Exceed</strong> (vượt qua).
+            </div>
+        </section>
+
+        <!-- Section 3: Interactive Practice -->
+        <section id="practice" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold uppercase">Phần 3</span>
+                <h2 class="text-3xl font-bold text-slate-800">Thực hành tương tác</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="accordion-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm" onclick="this.classList.toggle('active')">
+                    <button class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+                        <span>1. Tại sao năm 2003 được coi là năm thành công nhất về mặt kỹ thuật của hãng bus?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <p>Vì năm 2003 là năm duy nhất công ty <strong>vượt mục tiêu (exceeded target)</strong> đề ra. Dù mục tiêu bị hạ xuống 84.5%, thực tế hãng đạt 85%. Tuy nhiên, bài học cần lưu ý là đây cũng là năm khiếu nại cao nhất, tạo ra một sự đối lập thú vị (paradox) để phân tích.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm" onclick="this.classList.toggle('active')">
+                    <button class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+                        <span>2. "Fall short" và "Failed to meet expectations" khác nhau như thế nào?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>Fall short:</strong> Thường mang nghĩa không đạt được mục tiêu một cách suýt soát (thường đi kèm giới từ "by" + con số).</li>
+                            <li><strong>Failed to meet expectations:</strong> Một cụm từ mang tính trang trọng hơn, dùng để chỉ việc hiệu suất không đạt được kỳ vọng chung của khách hàng hoặc ban quản lý.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm" onclick="this.classList.toggle('active')">
+                    <button class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-800 hover:bg-slate-50 transition">
+                        <span>3. Điền từ vào chỗ trống: "The company consistently ____ to meet its targets."</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-5 pb-5 text-slate-600">
+                        <p>Đáp án đúng: <strong>failed</strong>. Cấu trúc <i>fail to do something</i> là cấu trúc ghi điểm trong Writing Task 1 khi nói về số liệu không đạt mốc mong muốn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Table -->
+        <section class="mb-20">
+            <h3 class="text-2xl font-bold mb-6 text-slate-800">Vocabulary Checklist</h3>
+            <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-slate-800 text-white">
+                        <tr>
+                            <th class="p-4">Key Word</th>
+                            <th class="p-4">Part of Speech</th>
+                            <th class="p-4">Vietnamese Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-4 font-mono font-bold text-blue-600 underline">Achieved results</td>
+                            <td class="p-4">Noun Phrase</td>
+                            <td class="p-4">Kết quả thực tế đã đạt được</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-mono font-bold text-blue-600 underline">Punctual</td>
+                            <td class="p-4">Adjective</td>
+                            <td class="p-4">Đúng giờ, đúng hẹn</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-mono font-bold text-blue-600 underline">A growing number of</td>
+                            <td class="p-4">Phrase</td>
+                            <td class="p-4">Số lượng ngày càng tăng</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-mono font-bold text-blue-600 underline">Hazardous</td>
+                            <td class="p-4">Adjective</td>
+                            <td class="p-4">Nguy hiểm, có rủi ro</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-4 font-bold text-xl">Phạm Tiến Dũng Gia Sư</p>
+            <p class="text-slate-400 mb-6 italic">"Đồng hành cùng sĩ tử IELTS chinh phục mọi mục tiêu điểm số."</p>
+            <div class="flex justify-center space-x-6 mb-8 text-slate-400 text-sm">
+                <span>Mã đơn hàng: Z021241122</span>
+                <span>Phone: 0963758090</span>
+                <span>Email: thaykienchuyenanh@gmail.com</span>
+            </div>
+            <div class="text-[10px] text-slate-600 uppercase tracking-widest">
+                © 2023 Phạm Tiến Dũng Gia Sư. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Init Mermaid with a delay to ensure font loading
+        window.onload = function() {
+            mermaid.initialize({
+                startOnLoad: true,
+                theme: 'neutral',
+                securityLevel: 'loose',
+                fontFamily: 'Inter'
+            });
+        };
+    </script>
+</body>
+</html>

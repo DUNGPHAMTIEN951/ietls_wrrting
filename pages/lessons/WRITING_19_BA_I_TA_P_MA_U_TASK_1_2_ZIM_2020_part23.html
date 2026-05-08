@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .heading-font { font-family: 'Roboto', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
+        .pro-tip { border-left: 4px solid #f59e0b; background: #fffbeb; }
+        .teacher-note { border-left: 4px solid #3b82f6; background: #eff6ff; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .accordion-content { display: none; }
+        .accordion-content.active { display: block; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165736'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12 py-10 bg-white rounded-3xl shadow-sm border border-slate-100">
+            <h1 class="heading-font text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">IELTS Writing Expert Series</h1>
+            <p class="text-lg text-slate-600 italic">Giảng viên cao cấp: <span class="font-bold text-blue-600">Phạm Tiến Dũng Gia Sư</span></p>
+            <div class="h-1 w-24 bg-blue-600 mx-auto mt-6 rounded-full"></div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="flex flex-wrap gap-2 mb-8 justify-center">
+            <button onclick="showTab('travel')" class="tab-btn px-6 py-2.5 rounded-full font-semibold transition-all bg-blue-600 text-white shadow-md hover:scale-105" id="defaultTab">Travel & Culture</button>
+            <button onclick="showTab('process')" class="tab-btn px-6 py-2.5 rounded-full font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200" id="btn-process">Modern Landfill (Process)</button>
+            <button onclick="showTab('child')" class="tab-btn px-6 py-2.5 rounded-full font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200" id="btn-child">Childhood vs Teenage</button>
+            <button onclick="showTab('tv')" class="tab-btn px-6 py-2.5 rounded-full font-semibold transition-all bg-white text-slate-600 hover:bg-slate-50 border border-slate-200" id="btn-tv">TV Preferences (Table)</button>
+        </div>
+
+        <!-- Section: Travel & Culture -->
+        <section id="travel" class="tab-content active space-y-8">
+            <div class="glass-card rounded-3xl p-8 shadow-sm">
+                <h2 class="heading-font text-3xl font-bold text-slate-800 mb-6 border-b pb-4">Topic: Internet vs. Real Travel</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-10">
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-blue-700 uppercase tracking-wider text-sm flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            Key Vocabulary (Band 8.0+)
+                        </h3>
+                        <div class="overflow-hidden rounded-xl border border-slate-100 shadow-sm">
+                            <table class="w-full text-sm">
+                                <thead class="bg-slate-50 text-slate-700">
+                                    <tr><th class="py-3 px-4 text-left">Thuật ngữ</th><th class="py-3 px-4 text-left">Giải nghĩa</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 bg-white">
+                                    <tr><td class="py-3 px-4 font-bold text-blue-600">Cultures and customs</td><td class="py-3 px-4">Phong tục và văn hoá</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold text-blue-600">Experiencing first-hand</td><td class="py-3 px-4">Trải nghiệm trực tiếp</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold text-blue-600">Up-to-date</td><td class="py-3 px-4">Cập nhật</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold text-blue-600">Comprehensive</td><td class="py-3 px-4">Toàn diện</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold text-blue-600">Deeper insight</td><td class="py-3 px-4">Hiểu biết sâu sắc hơn</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold text-blue-600">Last a lifetime</td><td class="py-3 px-4">Kéo dài suốt đời</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pro-tip p-6 rounded-2xl shadow-sm">
+                            <p class="font-bold text-amber-800 mb-2 flex items-center">
+                                <span class="mr-2">🔥</span> Pro Tip by Phạm Tiến Dũng Gia Sư
+                            </p>
+                            <p class="text-sm text-slate-700 leading-relaxed italic">
+                                Trong Task 2, khi so sánh hai thực thể (như Internet vs Thực tế), hãy sử dụng các cặp liên từ đối lập như <strong>"On the one hand... On the other hand..."</strong> để cấu trúc bài rõ ràng. Đừng quên đưa ra ví dụ cụ thể (ví dụ: Running of the bulls, Hanoi street food) để tăng điểm <strong>Task Response</strong>.
+                            </p>
+                        </div>
+                        <div class="teacher-note p-6 rounded-2xl shadow-sm">
+                            <p class="font-bold text-blue-800 mb-2">💡 Grammar Focus: Comparison</p>
+                            <p class="text-sm text-slate-700">Cấu trúc <strong>"is vastly different to..."</strong> mạnh hơn nhiều so với "is different from". Nó thể hiện sự chênh lệch lớn về tính chất.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-slate-800 font-bold text-6xl opacity-10 uppercase">Sample</div>
+                    <h3 class="font-bold mb-6 text-blue-400 text-xl border-b border-slate-700 pb-2">Full Band 8.5+ Sample Extract</h3>
+                    <p class="italic leading-relaxed text-slate-300">
+                        "On the other hand, reading information about a country or watching documentaries can only give someone a limited amount of knowledge. Travelling to another country seeing and <strong>experiencing it first-hand</strong> will give one a <strong>deeper insight</strong>. Being there to experience the emotion and atmosphere will <strong>create memories that will last a lifetime</strong>."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Process Modern Landfill -->
+        <section id="process" class="tab-content space-y-8">
+            <div class="glass-card rounded-3xl p-8 shadow-sm">
+                <h2 class="heading-font text-3xl font-bold text-slate-800 mb-6">Task 1: Modern Landfill Process</h2>
+                
+                <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-8">
+                    <h3 class="font-bold text-blue-800 mb-4">Life Cycle Overview</h3>
+                    <div class="mermaid flex justify-center">
+                    graph LR
+                        A[Construction] --> B[Usage]
+                        B --> C[Closure]
+                        style A fill:#bfdbfe,stroke:#3b82f6
+                        style B fill:#fde68a,stroke:#d97706
+                        style C fill:#fca5a5,stroke:#dc2626
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-slate-800 border-l-4 border-blue-600 pl-3">Vocabulary List</h4>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li>• <strong>Bed of natural rock:</strong> Nền đá tự nhiên</li>
+                            <li>• <strong>Lined with:</strong> Được lót bằng</li>
+                            <li>• <strong>Synthetic material:</strong> Chất liệu tổng hợp</li>
+                            <li>• <strong>Toxic waste liquids:</strong> Chất thải lỏng độc hại</li>
+                            <li>• <strong>Degrades over time:</strong> Suy giảm/phân huỷ theo thời gian</li>
+                        </ul>
+                    </div>
+                    <div class="teacher-note p-6 rounded-2xl">
+                        <h4 class="font-bold text-blue-800 mb-2">📝 Task 1 Logic</h4>
+                        <p class="text-sm text-slate-700">Với dạng bài Process, <strong>Câu bị động (Passive Voice)</strong> là bắt buộc vì chủ thể thực hiện hành động không quan trọng bằng chính hành động đó. <br><br> <em>Ví dụ: "A giant hole is dug..." thay vì "Workers dig a hole..."</em></p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Section: Personal Development -->
+        <section id="child" class="tab-content space-y-8">
+            <div class="glass-card rounded-3xl p-8 shadow-sm">
+                <h2 class="heading-font text-3xl font-bold text-slate-800 mb-6">Task 2: Discuss Both Views</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white border border-slate-200 p-6 rounded-2xl">
+                        <h3 class="font-bold text-indigo-600 mb-3">View 1: Early Years (<7)</h3>
+                        <ul class="text-sm space-y-3 text-slate-600">
+                            <li class="flex items-start"><span class="text-indigo-500 mr-2">✔</span> Family bonds and moral values.</li>
+                            <li class="flex items-start"><span class="text-indigo-500 mr-2">✔</span> Rapid neural pathway development.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white border border-slate-200 p-6 rounded-2xl">
+                        <h3 class="font-bold text-green-600 mb-3">View 2: Teenage Years</h3>
+                        <ul class="text-sm space-y-3 text-slate-600">
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> Interactions outside immediate family.</li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> Learning from consequences of decisions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 p-6 rounded-2xl border border-amber-100">
+                    <h4 class="font-bold text-amber-900 mb-2">Highlight Phrases by Phạm Tiến Dũng Gia Sư</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-amber-800 font-medium">
+                        <div>1. Nurture and nourishment</div>
+                        <div>2. Strong family bonds</div>
+                        <div>3. Immediate family</div>
+                        <div>4. Neural pathways</div>
+                        <div>5. Fall in with the wrong crowd</div>
+                        <div>6. Bear the consequences</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Section: TV Preferences -->
+        <section id="tv" class="tab-content space-y-8">
+            <div class="glass-card rounded-3xl p-8 shadow-sm">
+                <h2 class="heading-font text-3xl font-bold text-slate-800 mb-6">Task 1: TV Programme Survey (2012)</h2>
+                
+                <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm mb-10">
+                    <table class="w-full text-center text-sm border-collapse">
+                        <thead class="bg-blue-600 text-white">
+                            <tr>
+                                <th class="p-4 text-left">TV Programs</th>
+                                <th class="p-4">11-15 (Age)</th>
+                                <th class="p-4">15-20 (Age)</th>
+                                <th class="p-4">21-25 (Age)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 bg-white">
+                            <tr><td class="p-4 text-left font-semibold bg-slate-50">Cartoon</td><td class="p-4 text-blue-600 font-bold">29%</td><td class="p-4">18%</td><td class="p-4">6%</td></tr>
+                            <tr><td class="p-4 text-left font-semibold bg-slate-50">Features Film</td><td class="p-4">18%</td><td class="p-4">23%</td><td class="p-4">19%</td></tr>
+                            <tr><td class="p-4 text-left font-semibold bg-slate-50">News</td><td class="p-4">6%</td><td class="p-4">12%</td><td class="p-4 text-blue-600 font-bold">23%</td></tr>
+                            <tr><td class="p-4 text-left font-semibold bg-slate-50">Soap Opera</td><td class="p-4">17%</td><td class="p-4">10%</td><td class="p-4">18%</td></tr>
+                            <tr><td class="p-4 text-left font-semibold bg-slate-50">Sports</td><td class="p-4">19%</td><td class="p-4">13%</td><td class="p-4">21%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="pro-tip p-6 rounded-2xl">
+                        <h4 class="font-bold text-amber-800 mb-3 underline">Comparative Structures</h4>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            • <strong>"Showed the biggest disparity":</strong> Thể hiện sự chênh lệch lớn nhất.<br>
+                            • <strong>"The biggest similarities":</strong> Những điểm tương đồng lớn nhất.<br>
+                            • <strong>"In contrast... compared to...":</strong> Ngược lại... so với...
+                        </p>
+                    </div>
+                    <div class="teacher-note p-6 rounded-2xl shadow-sm">
+                        <h4 class="font-bold text-blue-800 mb-2">💡 Expert Insight</h4>
+                        <p class="text-sm text-slate-700">Trong Writing Task 1 (Table), đừng bao giờ liệt kê hết mọi số liệu. Hãy <strong>grouping</strong> (nhóm) các số liệu có xu hướng giống nhau hoặc nêu bật sự khác biệt cực đoan (như Cartoons vs News giữa hai nhóm tuổi 11-15 và 21-25).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice -->
+        <section class="mt-16 mb-20 bg-white rounded-3xl p-10 shadow-lg border border-blue-50">
+            <h2 class="heading-font text-3xl font-extrabold text-center mb-10 text-slate-900">Check Your Knowledge</h2>
+            <div class="space-y-6">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <p class="font-bold text-slate-800 mb-4">1. Cụm từ nào đồng nghĩa với "Trải nghiệm trực tiếp"?</p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="checkAns(this, true)" class="px-5 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium hover:border-blue-500 transition-all">First-hand experience</button>
+                        <button onclick="checkAns(this, false)" class="px-5 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium hover:border-blue-500 transition-all">Second-hand news</button>
+                        <button onclick="checkAns(this, false)" class="px-5 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium hover:border-blue-500 transition-all">Digital learning</button>
+                    </div>
+                    <p class="ans-feedback hidden mt-3 text-sm font-bold"></p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <p class="font-bold text-slate-800 mb-4">2. Dạng bài "Modern Landfill" nên sử dụng thì nào chủ yếu?</p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="checkAns(this, false)" class="px-5 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium hover:border-blue-500 transition-all">Past Simple</button>
+                        <button onclick="checkAns(this, true)" class="px-5 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium hover:border-blue-500 transition-all">Present Simple (Passive)</button>
+                        <button onclick="checkAns(this, false)" class="px-5 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium hover:border-blue-500 transition-all">Future Continuous</button>
+                    </div>
+                    <p class="ans-feedback hidden mt-3 text-sm font-bold"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-12 border-t border-slate-200">
+            <p class="text-slate-400 text-sm">© 2026 Toàn bộ nội dung thuộc quyền sở hữu của <span class="text-blue-600 font-bold">Phạm Tiến Dũng Gia Sư</span></p>
+            <p class="text-xs text-slate-300 mt-2 italic font-medium">Lớp học IELTS Premium - Học thuật & Tư duy chiều sâu</p>
+        </footer>
+    </div>
+
+    <script>
+        // Tab Functionality
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const btns = document.querySelectorAll('.tab-btn');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            btns.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white', 'shadow-md', 'scale-105');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.remove('bg-white', 'text-slate-600');
+            event.currentTarget.classList.add('bg-blue-600', 'text-white', 'shadow-md', 'scale-105');
+        }
+
+        // Quiz Logic
+        function checkAns(btn, isCorrect) {
+            const feedback = btn.parentElement.nextElementSibling;
+            feedback.classList.remove('hidden');
+            if (isCorrect) {
+                feedback.innerText = "✅ Chính xác! Chúc mừng bạn đã nắm vững kiến thức.";
+                feedback.style.color = "#10b981";
+                btn.style.borderColor = "#10b981";
+                btn.style.backgroundColor = "#ecfdf5";
+            } else {
+                feedback.innerText = "❌ Sai mất rồi, hãy đọc lại phần 'Teacher's Note' phía trên nhé.";
+                feedback.style.color = "#ef4444";
+                btn.style.borderColor = "#ef4444";
+                btn.style.backgroundColor = "#fef2f2";
+            }
+        }
+
+        // Mermaid Init
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

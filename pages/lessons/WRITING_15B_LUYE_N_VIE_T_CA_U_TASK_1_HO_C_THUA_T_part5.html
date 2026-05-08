@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1: Master Class - Tables & Pie Charts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #f0fdf4; }
+        details summary::-webkit-details-marker { display:none; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 w-full glass-card border-b border-slate-200 py-4 px-6 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">D</div>
+                <span class="text-xl font-bold tracking-tight">IELTS MASTERCLASS</span>
+            </div>
+            <div class="hidden md:block text-sm font-medium text-slate-500">
+                Tác giả: <span class="text-blue-600 font-bold italic">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <header class="mb-16 text-center">
+            <span class="px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-widest">Writing Task 1 Academic</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-6 mb-4 gradient-text">Phân Tích Dữ Liệu Bảng (Table) & Biểu Đồ Tròn (Pie Chart)</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Chinh phục tiêu chí Coherence và Lexical Resource thông qua các mẫu câu mô tả xu hướng và so sánh phức hợp.</p>
+        </header>
+
+        <!-- Section 1: Introduction Phrases -->
+        <section class="mb-12">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold tracking-tight">I. Cấu Trúc Mở Bài (Introduction Phrases)</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-blue-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Mô tả Bảng (Table)
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-600 italic">
+                        <li>• "The table gives figures for the amount of coal used by five sectors in the UK..." (T28E)</li>
+                        <li>• "The table illustrates the breakdown of scores for the IELTS General Test in 2010." (T11E)</li>
+                        <li>• "The table provides an overview of how students in different gender and level groups..." (T26E)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-blue-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                        Mô tả Biểu đồ Tròn (Pie Chart)
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-600 italic">
+                        <li>• "The pie chart explains the types of transport that people prefer to use most." (P14E)</li>
+                        <li>• "The pie charts compare the highest level of education achieved by women..." (P23E)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="teacher-note p-6 rounded-2xl mb-8">
+                <p class="text-sm font-semibold text-emerald-800 uppercase tracking-wider mb-2">Teacher's Note</p>
+                <p class="text-emerald-900 italic">"Đừng chỉ dùng 'show'. Hãy linh hoạt sử dụng các động từ học thuật như: <strong>illustrates, compares, provides data on, displays details of</strong> để nâng điểm Lexical Resource ngay từ câu đầu tiên." - <span class="font-bold">Phạm Tiến Dũng Gia Sư</span></p>
+            </div>
+        </section>
+
+        <!-- Section 2: Comparison & Contrast -->
+        <section class="mb-16">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-orange-500 rounded-full"></div>
+                <h2 class="text-3xl font-bold tracking-tight">II. Kỹ Thuật So Sánh & Đối Lập (Comparison & Contrast)</h2>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 mb-8 overflow-hidden">
+                <div class="mermaid mb-8">
+                    graph LR
+                    A[So sánh Dữ liệu] --> B(Tương Đồng)
+                    A --> C(Đối Lập)
+                    B --> B1[Follow a similar pattern]
+                    B --> B2[Equal amount of time]
+                    C --> C1[In contrast to]
+                    C --> C2[Conversely / On the other hand]
+                    style A fill:#eff6ff,stroke:#1d4ed8
+                    style B fill:#f0fdf4,stroke:#166534
+                    style C fill:#fff7ed,stroke:#9a3412
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-slate-800">Ví dụ Band 8-9 (Đối lập)</h4>
+                        <blockquote class="p-4 bg-slate-50 rounded-xl border-l-4 border-blue-600 italic text-sm">
+                            "Greek employees seem to be the most career-dedicated while UK citizens have shorter working hours." (T20E)
+                        </blockquote>
+                        <blockquote class="p-4 bg-slate-50 rounded-xl border-l-4 border-blue-600 italic text-sm">
+                            "South Korea, conversely, cut waste production by 12 million tonnes..." (T5S)
+                        </blockquote>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-slate-800">Ví dụ Band 8-9 (Tương đồng)</h4>
+                        <blockquote class="p-4 bg-slate-50 rounded-xl border-l-4 border-emerald-500 italic text-sm">
+                            "Dutch women and men allocate an equal amount of time - 38 hours - for work." (T20E)
+                        </blockquote>
+                        <blockquote class="p-4 bg-slate-50 rounded-xl border-l-4 border-emerald-500 italic text-sm">
+                            "Group and individual assignments follow a similar pattern." (T15E)
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: High-Level Vocabulary -->
+        <section class="mb-16">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold tracking-tight">III. Từ Vựng & Cấu Trúc Miêu Tả Số Liệu Đặc Biệt</h2>
+            </div>
+
+            <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-800 text-white">
+                        <tr>
+                            <th class="p-4 font-bold">Cấu trúc / Từ vựng</th>
+                            <th class="p-4 font-bold">Ý nghĩa học thuật</th>
+                            <th class="p-4 font-bold">Mẫu câu minh họa</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white">
+                        <tr>
+                            <td class="p-4 font-bold text-indigo-700 italic">Significantly higher / lower</td>
+                            <td class="p-4">Cao hơn / thấp hơn đáng kể</td>
+                            <td class="p-4 italic">"This figure is significantly higher than the European average of 39.2 hours..."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-indigo-700 italic">Account for / Constitute</td>
+                            <td class="p-4">Chiếm bao nhiêu (phần trăm/số lượng)</td>
+                            <td class="p-4 italic">"Bank loans only accounted for 6% of total student income."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-indigo-700 italic">Followed by</td>
+                            <td class="p-4">Theo sau là (dùng để liệt kê thứ tự)</td>
+                            <td class="p-4 italic">"Spain received the second highest tourist revenue... followed by France."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-indigo-700 italic">The majority of / More than half</td>
+                            <td class="p-4">Phần lớn / Hơn một nửa</td>
+                            <td class="p-4 italic">"Australian families spend the largest portion of their budget on food."</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: Interactive Practice Lab -->
+        <section class="mb-16">
+            <div class="bg-slate-900 text-white rounded-[2.5rem] p-10 md:p-14 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-40 h-40" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>
+                </div>
+                
+                <h3 class="text-3xl font-extrabold mb-8 italic underline decoration-blue-500 underline-offset-8">IV. Practice Lab (Thực hành)</h3>
+                <p class="text-slate-300 mb-10 text-lg">Dựa trên các dữ liệu thô, hãy thử hoàn thành các bài tập sau để nắm vững cấu trúc bài viết.</p>
+
+                <div class="space-y-8">
+                    <!-- Exercise 1 -->
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                        <p class="font-bold text-blue-400 mb-4">Bài tập 1: Sắp xếp số liệu đúng cấu trúc so sánh (T20E)</p>
+                        <p class="italic text-slate-300 mb-6 italic italic italic">"Dutch women and men allocate an ________ (1) amount of time for work - 38 hours - ________ (2) than their British counterparts."</p>
+                        <details class="group">
+                            <summary class="inline-flex items-center px-6 py-2.5 bg-blue-600 text-white rounded-full font-bold cursor-pointer hover:bg-blue-700 transition tracking-wide">
+                                Xem Đáp Án
+                            </summary>
+                            <div class="mt-6 p-6 bg-slate-900 rounded-xl border border-slate-700 text-emerald-400 font-medium leading-relaxed">
+                                (1) <strong>equal</strong><br>
+                                (2) <strong>longer</strong> (1 hour and 1.5 hours respectively)
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Exercise 2 -->
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                        <p class="font-bold text-blue-400 mb-4">Bài tập 2: Phân tích Overview (T19E)</p>
+                        <p class="italic text-slate-300 mb-6 italic italic">"Có thể thấy xu hướng tăng rõ ràng đối với ________ (1) và ________ (2) trong 5 năm, trong khi ________ (3) và ________ (4) đều giảm."</p>
+                        <details class="group">
+                            <summary class="inline-flex items-center px-6 py-2.5 bg-blue-600 text-white rounded-full font-bold cursor-pointer hover:bg-blue-700 transition tracking-wide">
+                                Xem Đáp Án
+                            </summary>
+                            <div class="mt-6 p-6 bg-slate-900 rounded-xl border border-slate-700 text-emerald-400 font-medium leading-relaxed">
+                                (1) student loans / (2) student earnings<br>
+                                (3) parental contributions / (4) grants
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Tip Section -->
+        <section class="mb-16">
+            <div class="pro-tip p-8 rounded-3xl shadow-sm flex flex-col md:flex-row items-center gap-6">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center shrink-0">
+                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.674a1 1 0 00.951-.658l1.703-5.11a1 1 0 00-.951-1.342H13V7a1 1 0 00-1-1H7.854a1 1 0 00-.951.658l-1.703 5.11a1 1 0 00.951 1.342H10v5z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold text-orange-800 text-xl mb-2 italic">Pro Tip: Xử lý dữ liệu "Đáng kinh ngạc" (Unexpected Data)</h4>
+                    <p class="text-slate-700 italic">"Khi gặp các dữ liệu trái ngược hoàn toàn với logic thông thường, hãy dùng các trạng từ như: <strong>Surprisingly, Notably, Interestingly</strong>. Ví dụ: 'Surprisingly, 55% of people needed to commute by car' (P14E). Điều này giúp bài viết của bạn có tính phân tích (analytical) thay vì chỉ là liệt kê số liệu (reporting)." - <span class="font-bold">Phạm Tiến Dũng Gia Sư</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Summary Table -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-6 text-slate-800">Tóm tắt các trạng từ chỉ mức độ (Adverbs of Degree)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-white border border-slate-200 rounded-xl text-center">
+                    <span class="block font-bold text-blue-600">Significantly</span>
+                    <span class="text-xs text-slate-500 italic">Đáng kể</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl text-center">
+                    <span class="block font-bold text-blue-600">Slightly</span>
+                    <span class="text-xs text-slate-500 italic">Nhẹ / Một chút</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl text-center">
+                    <span class="block font-bold text-blue-600">Considerably</span>
+                    <span class="text-xs text-slate-500 italic">Đáng chú ý</span>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl text-center">
+                    <span class="block font-bold text-blue-600">Rapidly</span>
+                    <span class="text-xs text-slate-500 italic">Nhanh chóng</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Signature -->
+        <footer class="mt-24 pt-12 border-t border-slate-200 text-center">
+            <div class="inline-block px-6 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-bold tracking-widest uppercase mb-4 italic italic">Academic Writing Center</div>
+            <p class="text-slate-400 text-sm mb-2 uppercase tracking-widest font-medium">Biên soạn bởi chuyên gia</p>
+            <p class="text-3xl font-extrabold text-slate-900 tracking-tighter">Phạm Tiến Dũng Gia Sư</p>
+            <p class="mt-6 text-slate-500 text-sm">© 2026 Toàn bộ quyền sở hữu trí tuệ thuộc về tác giả.</p>
+        </footer>
+    </main>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#eff6ff',
+                primaryTextColor: '#1e40af',
+                lineColor: '#3b82f6',
+                secondaryColor: '#f0fdf4',
+                tertiaryColor: '#fff7ed'
+            }
+        });
+    </script>
+</body>
+</html>

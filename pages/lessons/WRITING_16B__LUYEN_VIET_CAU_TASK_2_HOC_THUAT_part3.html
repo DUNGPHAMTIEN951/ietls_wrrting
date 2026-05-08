@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 2 Mastery - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Roboto', sans-serif; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #f0fdf4; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-slate-200 py-10 shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-black text-slate-900 tracking-tight uppercase">
+                    IELTS Writing Task 2 <span class="text-blue-600">Mastery</span>
+                </h1>
+                <p class="text-slate-500 mt-1 font-medium italic">Tác giả: <span class="text-blue-600">Phạm Tiến Dũng Gia Sư</span></p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest">Advanced Lesson</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-6 md:p-12 space-y-16">
+
+        <!-- Introduction Section -->
+        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold mb-6 text-slate-900 border-l-4 border-blue-600 pl-4 uppercase">Tổng Quan Bài Học</h2>
+            <p class="text-slate-600 mb-6">
+                Trong bài học này, chúng ta sẽ đi sâu vào việc phân tích và xây dựng các câu văn học thuật (Academic Sentences) cho 10 chủ đề phổ biến trong IELTS Writing Task 2. Mục tiêu là giúp học viên nắm vững cách triển khai ý tưởng đa chiều và sử dụng từ nối (Linking Words) một cách tinh tế.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
+                    <h4 class="font-bold text-blue-800 mb-2">Mục tiêu 1: Cấu trúc hóa luận điểm</h4>
+                    <p class="text-sm text-slate-600 font-medium italic">Cách sử dụng "On the one hand" & "At the same time".</p>
+                </div>
+                <div class="p-5 bg-emerald-50 rounded-xl border border-emerald-100">
+                    <h4 class="font-bold text-emerald-800 mb-2">Mục tiêu 2: Từ vựng Band 8.0+</h4>
+                    <p class="text-sm text-slate-600 font-medium italic">Sử dụng Collocations chuyên sâu về Y tế, Văn hóa và Xã hội.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Tabs -->
+        <section>
+            <div class="flex border-b border-slate-200 mb-8 overflow-x-auto">
+                <button onclick="openTab(event, 'tab1')" class="tab-link px-6 py-3 font-bold text-slate-500 border-b-2 border-transparent hover:text-blue-600 active-tab transition-all">Y tế & Xã hội</button>
+                <button onclick="openTab(event, 'tab2')" class="tab-link px-6 py-3 font-bold text-slate-500 border-b-2 border-transparent hover:text-blue-600 transition-all">Văn hóa & Ngôn ngữ</button>
+                <button onclick="openTab(event, 'tab3')" class="tab-link px-6 py-3 font-bold text-slate-500 border-b-2 border-transparent hover:text-blue-600 transition-all">Giáo dục & Công nghệ</button>
+            </div>
+
+            <!-- TAB 1: Y TẾ & XÃ HỘI -->
+            <div id="tab1" class="tab-content active space-y-10 animate-fade-in">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">1. Thử nghiệm động vật (Animal Testing)</h3>
+                    <p class="mb-4">Dưới đây là cách triển khai quan điểm cân bằng (Balanced View) cho chủ đề đạo đức trong y học:</p>
+                    
+                    <div class="bg-slate-900 text-slate-100 p-6 rounded-xl font-mono text-sm mb-6 leading-relaxed">
+                        <p class="mb-2"><span class="text-blue-400">Context:</span> Medicines and other products are routinely tested on animals.</p>
+                        <p class="mb-2"><span class="text-emerald-400 text-bold font-bold">Example:</span> Laboratory mice might be given a disease so that the effectiveness of a new drug can be measured.</p>
+                        <p><span class="text-orange-400 font-bold italic">Conclusion:</span> Personally, I agree with banning animal testing for non-medical products, but I feel that it may be a <span class="underline">necessary evil</span> where new drugs and medical procedures are concerned.</p>
+                    </div>
+
+                    <div class="teacher-note p-6 rounded-xl">
+                        <h4 class="font-bold text-emerald-800 flex items-center mb-2">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.827c.73-.54 1.728-.38 2.247.35l.421.593c.33.463.856.745 1.423.774l.713.036c.91.045 1.6 1.054 1.343 1.93l-.201.688a2.183 2.183 0 00.125 1.614l.321.643c.41.822.128 1.834-.658 2.308l-.612.37a2.183 2.183 0 00-1.002 1.298l-.134.701c-.172.9-.99 1.488-1.854 1.325l-.678-.128a2.183 2.183 0 00-1.614.125l-.643.321c-.822.41-1.834.128-2.308-.658l-.37-.612a2.183 2.183 0 00-1.298-1.002l-.701-.134c-.901-.172-1.488-.99-1.325-1.854l.128-.678a2.183 2.183 0 00-.125-1.614l-.321-.643c-.41-.822-.128-1.834.658-2.308l.612-.37a2.183 2.183 0 001.002-1.298l.134-.701c.172-.9.99-1.488 1.854-1.325l.678.128a2.183 2.183 0 001.614-.125l.643-.321z"></path></svg>
+                            Teacher's Note by Phạm Tiến Dũng Gia Sư
+                        </h4>
+                        <p class="text-emerald-700 text-sm">
+                            Sử dụng cụm từ <strong class="text-emerald-900 font-bold">"necessary evil"</strong> (một điều ác cần thiết) là cách ghi điểm Lexical Resource cực mạnh khi nói về các vấn đề có mâu thuẫn đạo đức. Nó thể hiện sự hiểu biết sâu sắc về tình huống.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900">2. Nghĩa vụ giúp đỡ (Charity & Responsibility)</h3>
+                    <div class="mermaid flex justify-center py-4">
+                        graph LR
+                        A[Trách nhiệm] --> B(Địa phương)
+                        A --> C(Quốc tế)
+                        B --> B1[Người vô gia cư]
+                        B --> B2[Tình nguyện thời gian]
+                        C --> C1[Vượt qua biên giới]
+                        C --> C2[Nghĩa vụ nhân đạo]
+                    </div>
+                    <p class="text-slate-600 italic text-sm mt-4 text-center">Biểu đồ tư duy về trách nhiệm cộng đồng trong Writing Task 2.</p>
+                </div>
+            </div>
+
+            <!-- TAB 2: VĂN HÓA & NGÔN NGỮ -->
+            <div id="tab2" class="tab-content space-y-10 animate-fade-in">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-bold mb-6 text-slate-900">Sự biến mất của Ngôn ngữ thiểu số</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-slate-200 border border-slate-200">
+                            <thead class="bg-slate-50">
+                                <tr>
+                                    <th class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase">Đối tượng</th>
+                                    <th class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase">Luận điểm (Lãng phí tiền)</th>
+                                    <th class="px-6 py-4 text-left text-xs font-bold text-slate-500 uppercase">Luận điểm (Nên bảo vệ)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 text-sm">
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-slate-700">Chính phủ</td>
+                                    <td class="px-6 py-4">Cắt giảm chi phí giao tiếp với từng nhóm thiểu số.</td>
+                                    <td class="px-6 py-4">Bảo tồn truyền thống, phong tục và lịch sử đất nước.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-slate-700">Xã hội</td>
+                                    <td class="px-6 py-4 text-slate-400 italic">Không áp dụng</td>
+                                    <td class="px-6 py-4">Giữ gìn đa dạng bản sắc văn hóa (cultural identity).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="pro-tip p-6 rounded-xl">
+                    <h4 class="text-amber-800 font-bold flex items-center mb-2">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                        Pro Tip by Phạm Tiến Dũng Gia Sư
+                    </h4>
+                    <p class="text-amber-700 text-sm">
+                        Khi nhắc đến di sản, đừng chỉ dùng "culture". Hãy dùng cụm <strong class="text-amber-900">"traditions, customs and behaviours"</strong> để làm cho câu văn cụ thể và mang tính mô tả cao hơn.
+                    </p>
+                </div>
+            </div>
+
+            <!-- TAB 3: GIÁO DỤC & CÔNG NGHỆ -->
+            <div id="tab3" class="tab-content space-y-10 animate-fade-in">
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-blue-800 mb-4 uppercase tracking-tighter">Về Trò chơi điện tử</h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> Vừa giải trí, vừa mang tính giáo dục.</li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> Thế giới ảo hấp dẫn hơn thực tại.</li>
+                            <li class="flex items-start"><span class="text-red-500 mr-2">✘</span> Nguy cơ nghiện: Thiếu ngủ, bỏ bê bài tập.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-blue-800 mb-4 uppercase tracking-tighter">Về Giáo dục (Gap Year)</h4>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-start"><span class="text-green-500 mr-2">✔</span> Kiếm tiền sớm giúp tự chủ tài chính.</li>
+                            <li class="flex items-start"><span class="text-blue-500 mr-2">ℹ</span> Tuy nhiên: Tiếp tục học đại học có lợi hơn về lâu dài.</li>
+                            <li class="flex items-start"><span class="text-red-500 mr-2">✘</span> Không bằng cấp = Mất khả năng cạnh tranh.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>
+        </section>
+
+        <!-- Interactive Practice Section -->
+        <section class="bg-slate-900 text-white p-10 rounded-3xl shadow-xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-400 uppercase tracking-widest">Luyện Tập Phản Xạ</h2>
+            <div class="space-y-4">
+                
+                <!-- Q1 -->
+                <div class="border border-slate-700 rounded-xl overflow-hidden">
+                    <button onclick="toggleAccordion('acc1')" class="w-full flex justify-between items-center p-5 font-bold hover:bg-slate-800 transition-all">
+                        <span>1. Hãy chuyển câu sau sang Tiếng Anh: "Xã hội có thể thực hiện các bước để giảm thiểu những vấn đề này."</span>
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="acc1" class="accordion-content bg-slate-800">
+                        <div class="p-5 text-emerald-400 font-mono text-sm italic italic">
+                            "Society can take steps to mitigate these potential problems."
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-slate-700 rounded-xl overflow-hidden">
+                    <button onclick="toggleAccordion('acc2')" class="w-full flex justify-between items-center p-5 font-bold hover:bg-slate-800 transition-all">
+                        <span>2. Dùng từ nào để thay thế cho "decrease" trong bối cảnh gánh nặng thuế?</span>
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="acc2" class="accordion-content bg-slate-800">
+                        <div class="p-5">
+                            <p class="text-emerald-400 font-mono text-sm">Đáp án: "Alleviate" hoặc "Reduce the tax burden".</p>
+                            <p class="text-xs text-slate-400 mt-2 italic italic">Gợi ý từ Phạm Tiến Dũng Gia Sư: "Alleviate" mang sắc thái giảm nhẹ một nỗi đau hoặc áp lực, rất phù hợp cho Writing Task 2.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <footer class="text-center pt-10 border-t border-slate-200">
+            <p class="text-slate-400 text-sm mb-2 uppercase tracking-widest">Nội dung bài học được bảo mật & biên soạn bởi</p>
+            <h3 class="text-2xl font-black text-slate-900 tracking-tighter italic">PHẠM TIẾN DŨNG GIA SƯ</h3>
+            <p class="text-blue-600 font-bold mt-2">Đồng hành cùng bạn trên lộ trình chinh phục IELTS 8.0+</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Mermaid Initialization
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Tab Logic
+        function openTab(evt, tabId) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("text-blue-600", "border-blue-600");
+                tablinks[i].classList.add("text-slate-500", "border-transparent");
+            }
+            document.getElementById(tabId).style.display = "block";
+            evt.currentTarget.classList.add("text-blue-600", "border-blue-600");
+            evt.currentTarget.classList.remove("text-slate-500", "border-transparent");
+        }
+
+        // Accordion Logic
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+
+        // Set initial tab
+        document.getElementById("tab1").style.display = "block";
+        document.getElementsByClassName("tab-link")[0].classList.add("text-blue-600", "border-blue-600");
+    </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .academic-font { font-family: 'Roboto', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e40af, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pro-tip { border-left: 4px solid #10b981; background-color: #f0fdf4; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        .exercise-card { transition: all 0.3s ease; }
+        .exercise-card:hover { transform: translateY(-2px); }
+        details summary::-webkit-details-marker { display: none; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">D</div>
+                <div>
+                    <h1 class="text-lg font-bold leading-none italic">IELTS Writing Masterclass</h1>
+                    <p class="text-xs text-slate-500 font-medium tracking-widest uppercase italic">Phạm Tiến Dũng Gia Sư</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold uppercase tracking-wider">
+                <a href="#map" class="hover:text-indigo-600 transition italic">Map Analysis</a>
+                <a href="#process" class="hover:text-indigo-600 transition italic">Process Description</a>
+                <a href="#vocabulary" class="hover:text-indigo-600 transition italic">Lexical Resource</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Hero Section -->
+        <section class="mb-16 text-center">
+            <span class="px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold uppercase tracking-widest italic">Band 8.0+ Advanced Series</span>
+            <h2 class="mt-6 text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+                Làm Chủ Ngôn Ngữ <span class="gradient-text italic">Maps & Processes</span>
+            </h2>
+            <p class="mt-4 text-slate-600 text-lg max-w-2xl mx-auto academic-font italic">
+                Tổng hợp cấu trúc tinh hoa để mô tả sự thay đổi địa điểm và quy trình sản xuất theo tiêu chuẩn giám khảo.
+            </p>
+        </section>
+
+        <!-- Chapter 1: Map Analysis -->
+        <section id="map" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-1 bg-indigo-600"></div>
+                <h3 class="text-2xl font-bold uppercase tracking-tight italic">Phần 1: Phân tích Sự Thay Đổi Trên Bản Đồ (Map Changes)</h3>
+            </div>
+
+            <!-- Visualization 1 -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 mb-10 italic">
+                <h4 class="font-bold text-slate-700 mb-6 flex items-center italic">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                    Mô hình hóa sự thay đổi cơ sở hạ tầng
+                </h4>
+                <div class="mermaid italic">
+                    graph TD
+                    A[Hiện tại: Đất nông nghiệp/Cây xanh] -- "Phá bỏ (Demolished)" --> B(Xây dựng mới)
+                    B -- "Mở rộng (Expanded)" --> C[Sân Golf/Căn hộ]
+                    A -- "Thu hẹp (Shrunk)" --> D[Quán Cafe/Nhà hàng]
+                    style A fill:#f8fafc,stroke:#cbd5e1
+                    style B fill:#eef2ff,stroke:#6366f1
+                    style C fill:#f0fdf4,stroke:#22c55e
+                    style D fill:#fff7ed,stroke:#f97316
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 italic">
+                <!-- Group 1: Infrastructure -->
+                <div class="space-y-4 italic">
+                    <div class="p-6 bg-white rounded-2xl border border-slate-200 hover:border-indigo-300 transition italic">
+                        <h5 class="text-indigo-600 font-bold mb-2 uppercase text-xs italic">Cấu trúc Xây dựng & Mở rộng</h5>
+                        <p class="text-sm academic-font mb-2 italic">"Lối vào chính được dịch chuyển về góc dưới cùng bên trái với khu vui chơi bổ sung cho trẻ em."</p>
+                        <p class="text-sm font-semibold text-slate-500 italic italic underline decoration-indigo-200 italic">Band 8.0: The main entrance was notably relocated to the bottom left corner, complemented by an additional children's play area.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl border border-slate-200 hover:border-indigo-300 transition italic">
+                        <h5 class="text-indigo-600 font-bold mb-2 uppercase text-xs italic">Cấu trúc Chuyển đổi Mục đích</h5>
+                        <p class="text-sm academic-font mb-2 italic">"Đất nông nghiệp được biến thành sân gôn ở phía đông bắc."</p>
+                        <p class="text-sm font-semibold text-slate-500 italic italic underline decoration-indigo-200 italic">Band 8.0: Farmland was transformed into a golf course in the north-eastern part of the area.</p>
+                    </div>
+                </div>
+
+                <!-- Group 2: Nature -->
+                <div class="space-y-4 italic">
+                    <div class="teacher-note p-6 rounded-2xl italic">
+                        <h5 class="text-blue-800 font-bold mb-2 flex items-center italic">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                            Teacher's Note by Phạm Tiến Dũng Gia Sư
+                        </h5>
+                        <p class="text-sm text-blue-700 leading-relaxed italic italic">
+                            Khi mô tả môi trường, thay vì nói "có nhiều cây hơn", hãy dùng các tính từ như <strong>"lush"</strong> (tươi tốt), <strong>"verdant"</strong> (xanh mướt) hoặc cấu trúc: <em>"The campus has become more verdant and organized than its predecessor."</em>
+                        </p>
+                    </div>
+                    <div class="pro-tip p-6 rounded-2xl italic">
+                        <h5 class="text-emerald-800 font-bold mb-2 flex items-center italic italic">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.047a1 1 0 01.974 0l7 4A1 1 0 0119 5.895v8.21a1 1 0 01-.526.877l-7 4a1 1 0 01-.948 0l-7-4A1 1 0 013 14.105V5.895a1 1 0 01.526-.877l7-4zM8 6.382V13.618l5.714-3.265L8 6.382z" clip-rule="evenodd"></path></svg>
+                            Pro Tip: So sánh tỷ lệ
+                        </h5>
+                        <p class="text-sm text-emerald-700 italic italic italic">
+                            Sử dụng <strong>"At the expense of"</strong> để nói về việc mất đi cái này để xây cái kia. 
+                            Ví dụ: <em>"The expansion was carried out at the expense of the surrounding garden."</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Vocabulary Table -->
+            <div class="overflow-hidden rounded-3xl border border-slate-200 shadow-sm mb-10 italic">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <thead class="bg-slate-900">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-slate-300 uppercase italic">Đối tượng</th>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-slate-300 uppercase italic">Động từ nâng cao</th>
+                            <th class="px-6 py-4 text-left text-xs font-bold text-slate-300 uppercase italic">Ví dụ thực tế</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-slate-100 academic-font italic">
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-slate-900 italic">Cây xanh</td>
+                            <td class="px-6 py-4 italic">Cut down, Chopped down, Cleared</td>
+                            <td class="px-6 py-4 italic italic">Khu vực cây xanh phía ĐN đã bị thu hẹp (shrunk/cleared).</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-slate-900 italic italic">Dân số/Số lượng</td>
+                            <td class="px-6 py-4 italic">Increased five-fold, Soared to, Projected to</td>
+                            <td class="px-6 py-4 italic italic italic">Số lượng học sinh dự kiến lên đến 1000 (projected to reach).</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-slate-900 italic italic italic">Vị trí địa lý</td>
+                            <td class="px-6 py-4 italic">Situated, Nestled, Bordered by</td>
+                            <td class="px-6 py-4 italic italic italic italic">Sân Gôn nằm bên cạnh khu làng nguyên thủy (bordered by/adjacent to).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 mb-20 italic">
+
+        <!-- Chapter 2: Process Description -->
+        <section id="process" class="mb-20 italic">
+            <div class="flex items-center space-x-4 mb-8 italic">
+                <div class="h-8 w-1 bg-purple-600"></div>
+                <h3 class="text-2xl font-bold uppercase tracking-tight italic italic">Phần 2: Mô tả Quy trình & Chu kỳ (Process & Cycles)</h3>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white p-10 rounded-[2.5rem] shadow-2xl mb-12 relative overflow-hidden italic">
+                <div class="absolute top-0 right-0 p-8 opacity-10 italic">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold mb-6 text-indigo-300 italic italic italic">Quy trình sản xuất - Tổng quan</h4>
+                <p class="text-slate-300 leading-relaxed mb-6 italic italic">
+                    Một bài viết Process xuất sắc cần thể hiện rõ tính tuần tự và các giai đoạn chuyển đổi vật chất.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 italic italic italic">
+                    <div class="bg-white/5 p-5 rounded-2xl border border-white/10 italic">
+                        <span class="text-indigo-400 font-bold italic">Bắt đầu:</span>
+                        <p class="text-sm mt-1 italic italic italic">"Có mười giai đoạn trong quá trình này, bắt đầu từ việc trồng vỏ quả..."</p>
+                    </div>
+                    <div class="bg-white/5 p-5 rounded-2xl border border-white/10 italic italic">
+                        <span class="text-indigo-400 font-bold italic italic">Trung gian:</span>
+                        <p class="text-sm mt-1 italic italic italic">"Bước tiếp theo là xử lý nước thải, đầu ra của nước thải sinh hoạt."</p>
+                    </div>
+                    <div class="bg-white/5 p-5 rounded-2xl border border-white/10 italic italic italic">
+                        <span class="text-indigo-400 font-bold italic italic italic">Kết thúc:</span>
+                        <p class="text-sm mt-1 italic italic italic italic">"Cuối cùng, bột giấy có thể được xử lý trong một máy làm giấy để tạo ra sản phẩm cuối cùng."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Visualization -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 italic">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 italic">
+                    <h5 class="font-bold mb-4 text-slate-800 italic italic">Chu kỳ sinh học (Biological Cycle)</h5>
+                    <div class="mermaid italic">
+                        graph LR
+                        A[Trứng] --> B[Ấu trùng]
+                        B --> C[Cá hồi con]
+                        C --> D[Cá trưởng thành]
+                        D -->|Di chuyển ngược dòng| A
+                        style A fill:#fff1f2,stroke:#fb7185
+                        style D fill:#f0f9ff,stroke:#0ea5e9
+                    </div>
+                    <p class="mt-6 text-xs text-slate-500 academic-font italic italic italic">
+                        <strong>Teacher's Note by Phạm Tiến Dũng Gia Sư:</strong> Đừng quên sử dụng các trạng từ chỉ thời gian như <em>"Subsequently", "Simultaneously", "Prior to this"</em> để liên kết các bước.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 italic italic">
+                    <h5 class="font-bold mb-4 text-slate-800 italic italic italic">Sản xuất Công nghiệp (Manufacturing)</h5>
+                    <div class="space-y-4 italic italic">
+                        <div class="flex items-start italic italic italic">
+                            <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 font-bold text-sm italic">1</div>
+                            <p class="ml-4 text-sm italic italic italic italic">Đất sét được đưa qua <strong>lưới kim loại (metal grid)</strong>, trộn với cát và nước.</p>
+                        </div>
+                        <div class="flex items-start italic italic italic italic">
+                            <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 font-bold text-sm italic italic">2</div>
+                            <p class="ml-4 text-sm italic italic italic italic italic">Sữa được làm lạnh ở khoảng <strong>4 độ C</strong> để bảo quản tươi lâu hơn.</p>
+                        </div>
+                        <div class="flex items-start italic italic italic italic italic">
+                            <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 font-bold text-sm italic italic italic">3</div>
+                            <p class="ml-4 text-sm italic italic italic italic italic italic">Năng lượng nhiệt đại dương (OTEC) tận dụng <strong>chênh lệch nhiệt độ</strong> giữa bề mặt và tầng sâu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice Section -->
+        <section class="bg-indigo-50 p-10 rounded-[3rem] border border-indigo-100 italic italic">
+            <h3 class="text-2xl font-bold mb-8 text-center uppercase tracking-widest italic italic italic">Luyện Tập Thực Hành (Practice Zone)</h3>
+            
+            <div class="space-y-6 italic">
+                <!-- Question 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm exercise-card italic">
+                    <p class="font-bold text-slate-700 mb-4 italic italic">Câu 1: Điền động từ thích hợp vào chỗ trống (Dựa trên ngữ cảnh Map):</p>
+                    <p class="academic-font text-slate-600 italic italic italic">"By 2010, the agricultural land in the north-east had been ___________ into a massive golf course."</p>
+                    <details class="mt-4">
+                        <summary class="cursor-pointer text-indigo-600 font-bold text-sm hover:underline italic italic italic italic">Xem đáp án</summary>
+                        <div class="mt-2 p-4 bg-slate-50 rounded-lg text-slate-700 text-sm italic italic italic italic italic">
+                            <strong>Đáp án:</strong> transformed / converted / repurposed.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm exercise-card italic italic">
+                    <p class="font-bold text-slate-700 mb-4 italic italic italic">Câu 2: Sắp xếp các bước trong quy trình xử lý sữa:</p>
+                    <ol class="list-decimal list-inside text-sm text-slate-600 space-y-2 italic italic italic italic">
+                        <li>Vắt sữa bằng máy (Milking)</li>
+                        <li>Lưu trữ lạnh ở 4 độ C (Refrigerated storage)</li>
+                        <li>Chuyển đến nhà máy sản xuất (Transfer to dairy plant)</li>
+                        <li>Đóng gói và vận chuyển đến siêu thị (Packaging & Delivery)</li>
+                    </ol>
+                    <details class="mt-4">
+                        <summary class="cursor-pointer text-indigo-600 font-bold text-sm hover:underline italic italic italic italic italic">Kiểm tra Logic</summary>
+                        <div class="mt-2 p-4 bg-slate-50 rounded-lg text-slate-700 text-sm italic italic italic italic italic italic">
+                            Thứ tự đúng: 1 -> 2 -> 3 -> 4. 
+                            <strong>Mẹo từ Phạm Tiến Dũng Gia Sư:</strong> Luôn sử dụng bị động (Passive Voice) cho quy trình sản xuất!
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Note -->
+        <footer class="mt-20 text-center border-t border-slate-200 pt-10 italic italic">
+            <p class="text-slate-500 text-sm italic italic italic">Bài học được biên soạn chuyên sâu bởi</p>
+            <p class="text-lg font-black text-slate-900 mt-2 uppercase tracking-tighter italic italic italic italic">Phạm Tiến Dũng Gia Sư</p>
+            <div class="flex justify-center space-x-4 mt-6 italic italic italic italic italic">
+                <span class="w-2 h-2 bg-indigo-600 rounded-full"></span>
+                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                <span class="w-2 h-2 bg-emerald-600 rounded-full"></span>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Grammar Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .glass-morphism { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #ecfdf5; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .active .accordion-content { max-height: 1000px; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165199'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="antialiased text-slate-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full glass-morphism border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">P</div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">Phạm Tiến Dũng <span class="text-blue-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#" class="text-blue-600">Bài giảng</a>
+                <a href="#" class="hover:text-blue-600 transition">Tài liệu</a>
+                <a href="#" class="hover:text-blue-600 transition">Khóa học</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-1 rounded">IELTS BAND 7.5+ Focus</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <div class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                Làm Chủ Cấu Trúc Câu <span class="gradient-text">Complex & Compound</span>
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                Chinh phục tiêu chí <strong>Grammatical Range and Accuracy</strong> trong IELTS Writing và Speaking thông qua hệ thống mệnh đề và thì động từ thực dụng.
+            </p>
+        </div>
+
+        <!-- Section 1: Purpose & Reason -->
+        <section class="mb-12 bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
+            <div class="p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="p-2 bg-blue-50 text-blue-600 rounded-lg">01</span>
+                    Mục đích & Nguyên nhân (Purpose & Reason)
+                </h2>
+                
+                <p class="mb-6 text-slate-600">Trong IELTS Writing Task 2, việc giải thích "tại sao" và "để làm gì" là chìa khóa để mở rộng ý tưởng.</p>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="font-bold text-blue-800 mb-3 underline">Mục đích (Purpose)</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li><span class="font-mono text-blue-600">so that / in order that + clause:</span> Để mà...</li>
+                            <li class="italic text-slate-500">Ex: Some people eat <strong>so that</strong> they may live.</li>
+                            <li><span class="font-mono text-blue-600">for fear that:</span> Vì sợ rằng...</li>
+                            <li class="italic text-slate-500">Ex: I am telling you this <strong>for fear that</strong> you should make a mistake.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="font-bold text-green-800 mb-3 underline">Nguyên nhân (Reason)</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li><span class="font-mono text-green-600">Seeing that:</span> Xét thấy rằng...</li>
+                            <li class="italic text-slate-500">Ex: <strong>Seeing that</strong> you won't help me, I must do it myself.</li>
+                            <li><span class="font-mono text-green-600">Since / As:</span> Vì...</li>
+                            <li class="italic text-slate-500">Ex: <strong>Since</strong> we have no money, we can't buy it.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pro-tip p-5 rounded-2xl mb-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <svg class="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM5.884 6.68a1 1 0 101.44-1.392L6.713 4.677a1 1 0 10-1.44 1.392l.611.61zm8.232 0l.611-.61a1 1 0 00-1.44-1.392l-.611.61a1 1 0 101.44 1.392zM9 9a1 1 0 011-1h2a1 1 0 110 2H10a1 1 0 01-1-1zM8 11a1 1 0 100-2H6a1 1 0 100 2h2zm6 2a1 1 0 100-2h-2a1 1 0 100 2h2zm-7 2a1 1 0 101.44 1.392l.61-.611a1 1 0 10-1.44-1.392l-.61.611zM11 13a1 1 0 10-2 0v1a1 1 0 102 0v-1z"></path></svg>
+                        <span class="font-bold text-amber-900">Pro Tip by Phạm Tiến Dũng Gia Sư</span>
+                    </div>
+                    <p class="text-sm text-amber-800">Sử dụng <strong>"Seeing that"</strong> hoặc <strong>"Now that"</strong> thay cho "Because" ở đầu câu sẽ giúp câu văn mang sắc thái trang trọng (formal) hơn trong bài Writing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Relative Clauses & Comparison -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <span class="p-2 bg-indigo-50 text-indigo-600 rounded-lg">02</span>
+                Mệnh đề Quan hệ & So sánh (Relative & Comparison)
+            </h2>
+
+            
+
+            <div class="overflow-x-auto mb-8 shadow-sm rounded-2xl">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-indigo-600 text-white text-sm uppercase">
+                        <tr>
+                            <th class="px-6 py-4 rounded-tl-2xl">Cấu trúc</th>
+                            <th class="px-6 py-4">Chức năng</th>
+                            <th class="px-6 py-4 rounded-tr-2xl">Ví dụ thực tế</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-slate-100">
+                        <tr>
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600">Who / Whom</td>
+                            <td class="px-6 py-4">Thay cho người</td>
+                            <td class="px-6 py-4 italic">The man whom you met last week...</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600">Which</td>
+                            <td class="px-6 py-4">Thay cho vật</td>
+                            <td class="px-6 py-4 italic">That is a company which produces rings.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600">Whose</td>
+                            <td class="px-6 py-4">Chỉ sở hữu</td>
+                            <td class="px-6 py-4 italic">Carta has a sister whose name is Juma.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-mono font-bold text-red-600">Rich as he is</td>
+                            <td class="px-6 py-4">Mệnh đề nhượng bộ</td>
+                            <td class="px-6 py-4 italic">Dù giàu có nhưng anh ta...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 3: Tenses Mastery -->
+        <section class="mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-lg">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-slate-900">
+                <span class="p-2 bg-rose-50 text-rose-600 rounded-lg">03</span>
+                Làm Chủ Thì Hiện Tại & Quá Khứ
+            </h2>
+
+            <div class="space-y-8">
+                <!-- Present Simple -->
+                <div class="border-b border-slate-100 pb-6">
+                    <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-rose-400 rounded"></span> Hiện Tại Đơn (Facts & Habits)
+                    </h3>
+                    <div class="bg-rose-50/50 p-4 rounded-xl space-y-2">
+                        <p class="text-sm">Sử dụng cho sự thật hiển nhiên (Task 1 Map/Process) hoặc thói quen.</p>
+                        <ul class="grid md:grid-cols-2 gap-2 text-xs italic text-slate-500">
+                            <li>• The sun rises in the east.</li>
+                            <li>• Does water boil at 100 degrees Celsius?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Past Simple -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-slate-400 rounded"></span> Quá Khứ Đơn (Completed Actions)
+                    </h3>
+                    <div class="bg-slate-100/50 p-4 rounded-xl space-y-4">
+                        <div class="text-sm">
+                            <p class="font-bold text-slate-700 mb-2">Narrative Style (Lối kể chuyện):</p>
+                            <p class="italic">"Yesterday, I went to the restaurant... we drove around... we saw a small grocery store."</p>
+                        </div>
+                        <div class="teacher-note p-4 rounded-xl">
+                            <p class="text-xs font-bold text-green-900 uppercase tracking-widest mb-1">Teacher's Note</p>
+                            <p class="text-sm text-green-800 italic">Lưu ý sự khác biệt giữa động từ có quy tắc (visit -> visited) và bất quy tắc (go -> went, see -> saw). Đây là lỗi cơ bản khiến thí sinh bị trừ điểm Accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise & Interaction -->
+        <section class="mb-12 bg-slate-900 rounded-3xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-6 text-center">Luyện tập Thực tế</h2>
+            <p class="text-slate-400 text-center mb-10 text-sm">Chuyển đổi các ý sau sang cấu trúc câu phức Band 7.0+</p>
+
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-slate-800 p-5 rounded-2xl border border-slate-700 cursor-pointer hover:border-blue-500 transition group" onclick="this.classList.toggle('active')">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium">1. Anh ta hành động như thể anh ta là sếp ở đây.</span>
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="pt-4 text-blue-400 font-mono text-sm">
+                            He acts <span class="underline">as if</span> he <strong>were</strong> the boss here. (Lưu ý: Dùng "were" cho giả định).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-slate-800 p-5 rounded-2xl border border-slate-700 cursor-pointer hover:border-blue-500 transition group" onclick="this.classList.toggle('active')">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium">2. Mặc dù mệt, cô ấy vẫn hoàn thành bài tập về nhà.</span>
+                        <svg class="w-5 h-5 text-slate-500 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="pt-4 text-blue-400 font-mono text-sm">
+                            <span class="underline">Though</span> she was tired, she finished her homework. <br>
+                            <span class="text-slate-400 italic">Level up:</span> <strong>Tired as she was</strong>, she completed her assignment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 border-t border-slate-200 pt-8 text-center text-slate-500">
+            <p class="text-sm">Bản quyền nội dung thuộc về <span class="font-bold text-slate-900">Phạm Tiến Dũng Gia Sư</span></p>
+            <p class="text-xs mt-2">Hệ thống giáo trình luyện thi IELTS chuyên sâu 2024</p>
+        </footer>
+    </main>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

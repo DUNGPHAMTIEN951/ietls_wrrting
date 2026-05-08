@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 2 Masterclass - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .academic-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .glass-morphism { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .pro-tip { border-left: 4px solid #f59e0b; }
+        .teacher-note { border-left: 4px solid #10b981; }
+        .answer-hidden { display: none; }
+        .show-answer:checked ~ .answer-content { display: block; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header Section -->
+    <header class="academic-gradient text-white py-16 px-4 shadow-lg">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">IELTS Writing Task 2 Masterclass</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90 mb-6 italic">Nghệ Thuật Xây Dựng Câu Văn Học Thuật & Logic Phản Biện</p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+                <span class="bg-white/20 px-4 py-2 rounded-full border border-white/30 uppercase tracking-widest">Tác giả: Phạm Tiến Dũng Gia Sư</span>
+                <span class="bg-white/20 px-4 py-2 rounded-full border border-white/30">Chuyên sâu Band 7.5 - 9.0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <!-- Introduction & Logic Flow -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 flex items-center">
+                <span class="mr-3">🚀</span> Phân Tích Cấu Trúc Lập Luận (Logic Flow)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                        Trong IELTS Writing Task 2, việc kết nối các ý tưởng (Cohesion) không chỉ đơn thuần là dùng từ nối, mà là xây dựng một hệ sinh thái các câu văn hỗ trợ lẫn nhau. Dưới đây là sơ đồ tư duy cho một đoạn văn học thuật tiêu biểu.
+                    </p>
+                    <div class="teacher-note bg-emerald-50 p-6 rounded-r-2xl shadow-sm italic text-emerald-800">
+                        <strong>Teacher's Note:</strong> Đừng chỉ liệt kê ý tưởng. Hãy sử dụng cấu trúc "By doing this..." (Bằng cách này...) hoặc "As a result..." để chỉ ra hệ quả logic của hành động.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md">
+                    <div class="mermaid">
+                        graph TD
+                        A[Quan điểm/Giải pháp] -- "Phương thức" --> B[Hành động cụ thể]
+                        B -- "Kết quả/Hệ quả" --> C[Lợi ích xã hội/Cá nhân]
+                        C -- "Kết luận" --> D[Band 8.0+ Writing]
+                        style A fill:#bfdbfe,stroke:#1e40af
+                        style D fill:#bbf7d0,stroke:#15803d
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topic 1: Education & University Selection -->
+        <section class="mb-16">
+            <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+                <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b pb-4">1. Chủ Đề: Giáo Dục & Lựa Chọn Nghề Nghiệp (Education & Career)</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100">
+                                <th class="p-4 border-b font-semibold text-blue-800">Cấu trúc Anh ngữ (Band 8+)</th>
+                                <th class="p-4 border-b font-semibold text-blue-800">Phân tích Tiếng Việt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-4 border-b font-medium italic">"Universities should continue to select the best candidates... based on their qualifications."</td>
+                                <td class="p-4 border-b">Các trường đại học nên tiếp tục lựa chọn ứng cử viên dựa trên trình độ thay vì các yếu tố khác.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 border-b font-medium italic">"In this way, both men and women have equal opportunities..."</td>
+                                <td class="p-4 border-b">Cấu trúc <strong>"In this way"</strong> giúp liên kết hệ quả: tạo cơ hội bình đẳng cho mọi giới tính.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pro-tip bg-amber-50 p-6 rounded-2xl mt-8 flex gap-4">
+                    <div class="text-3xl text-amber-500">💡</div>
+                    <div>
+                        <h4 class="font-bold text-amber-800 mb-1">Pro Tip by Phạm Tiến Dũng Gia Sư:</h4>
+                        <p class="text-amber-700">Khi viết về chủ đề bình đẳng giới (Gender Equality), hãy dùng cụm <strong>"based on merit/qualifications"</strong> thay vì chỉ dùng "points" để tăng tính học thuật cho bài viết.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topic 2: Technology & Games -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold text-slate-800 mb-8">2. Chủ Đề: Công Nghệ & Trò Chơi Điện Tử (Technology & Gaming)</h3>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-blue-900 text-white p-8 rounded-3xl shadow-xl">
+                    <h4 class="text-xl font-bold mb-4 text-blue-300">Hệ quả tiêu cực (Negative Impacts)</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">●</span>
+                            <span><strong>Nghiện game (Addiction):</strong> Dẫn đến thiếu ngủ và bỏ bê bài tập về nhà (sacrificing homework).</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400 font-bold">●</span>
+                            <span><strong>Sức khỏe (Health):</strong> Liên kết chặt chẽ với lối sống ít vận động (sedentary lifestyle) và béo phì.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h4 class="text-xl font-bold mb-4 text-emerald-600">Mặt tích cực (Positive Perspective)</h4>
+                    <p class="italic text-slate-600 mb-4">"Video games can be both entertaining and educational..."</p>
+                    <p class="text-slate-700">Người dùng được đắm chìm trong thế giới ảo (virtual worlds) thường hấp dẫn hơn so với đời thực, giúp kích thích tư duy sáng tạo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topic 3: Social Issues & Aging Population -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold text-slate-800 mb-8">3. Vấn Đề Xã Hội: Dân Số Già (Aging Population)</h3>
+            
+            <div class="bg-indigo-50 border border-indigo-100 rounded-3xl p-8">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h4 class="font-bold text-indigo-900 mb-4 uppercase tracking-wider text-sm">Vấn đề & Giải pháp</h4>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <p class="text-xs font-bold text-indigo-500 uppercase">Vấn đề</p>
+                                <p class="font-bold">Gánh nặng thuế (Tax Burden)</p>
+                                <p class="text-sm text-slate-600 italic">"An aging population means a greater tax burden on working adults."</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <p class="text-xs font-bold text-emerald-500 uppercase">Giải pháp 1</p>
+                                <p class="font-bold">Tăng tuổi nghỉ hưu (Raising retirement age)</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <p class="text-xs font-bold text-emerald-500 uppercase">Giải pháp 2</p>
+                                <p class="font-bold">Khuyến khích nhập cư (Encouraging immigration)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        
+                        <p class="mt-4 text-sm text-slate-500 text-center italic font-light italic">Biểu đồ: Mối liên hệ giữa nhân khẩu học và kinh tế học (Economic-Demographic link)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complex Sentence Structures -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 flex items-center">
+                <span class="mr-3">⚖️</span> Mệnh Đề Nhượng Bộ (Concession Clauses)
+            </h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:shadow-md transition">
+                    <p class="font-mono text-sm text-blue-600 mb-2 font-bold">Structure: Although + [Clause 1], [Clause 2]</p>
+                    <p class="text-slate-800 leading-relaxed font-semibold">
+                        "Mặc dù chắc chắn sẽ có một số hậu quả tiêu cực của xu hướng này, xã hội có thể thực hiện các bước để giảm thiểu những vấn đề tiềm ẩn này."
+                    </p>
+                    <p class="text-slate-500 text-sm mt-2 italic">Ref: (S15-177)</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:shadow-md transition">
+                    <p class="font-mono text-sm text-blue-600 mb-2 font-bold">Structure: In conclusion, [Clause 1], but I believe [Clause 2]</p>
+                    <p class="text-slate-800 leading-relaxed font-semibold">
+                        "Tóm lại, bài tập về nhà chắc chắn có những hạn chế của nó, nhưng tôi tin rằng những lợi ích lớn hơn những hạn chế này trong dài hạn."
+                    </p>
+                    <p class="text-slate-500 text-sm mt-2 italic">Ref: (S17-215)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Lab -->
+        <section class="mb-16 bg-slate-900 text-white p-10 rounded-[3rem] shadow-2xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-400">Interactive Practice Lab</h2>
+            
+            <div class="space-y-10">
+                <!-- Question 1 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Bài tập 1: Hoàn thiện câu điều kiện loại 1</h4>
+                    <p class="text-slate-400 mb-4 italic italic font-light italic">"Nếu người trẻ không có bằng cấp đại học, họ __________ (không thể cạnh tranh) trên thị trường việc làm."</p>
+                    <label class="block cursor-pointer">
+                        <input type="checkbox" class="show-answer hidden">
+                        <span class="bg-blue-600 px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">Xem đáp án gợi ý</span>
+                        <div class="answer-content answer-hidden mt-6 bg-slate-800 p-6 rounded-2xl border-l-4 border-emerald-400">
+                            <p class="text-emerald-400 font-mono italic">"...will not be able to compete in the increasingly competitive job market." (Ref: S12-149)</p>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Question 2 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Bài tập 2: Paraphrasing (Viết lại câu)</h4>
+                    <p class="text-slate-400 mb-4 italic italic font-light italic italic font-light italic font-light">"Sự thành công của một quốc gia thường được đo bằng kinh tế, nhưng hệ thống giáo dục mới là chỉ số quan trọng nhất."</p>
+                    <label class="block cursor-pointer">
+                        <input type="checkbox" class="show-answer hidden">
+                        <span class="bg-blue-600 px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">Xem đáp án gợi ý</span>
+                        <div class="answer-content answer-hidden mt-6 bg-slate-800 p-6 rounded-2xl border-l-4 border-emerald-400">
+                            <p class="text-emerald-400 font-mono italic">"While national success is often defined in economic terms, I believe a national education system should be considered the most important indicator of development." (Ref: S18-216/223)</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocabulary Footer Table -->
+        <section class="mt-20">
+            <h3 class="text-2xl font-bold text-slate-800 mb-6">Bảng Từ Vựng Học Thuật Cần Ghi Nhớ</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+                    <p class="text-xs text-gray-400 uppercase">Tiếng Việt</p>
+                    <p class="font-bold text-blue-600">Thú vui/Sở thích</p>
+                    <p class="text-sm italic italic font-light italic font-light font-light">Pastimes/Hobbies</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+                    <p class="text-xs text-gray-400 uppercase">Tiếng Việt</p>
+                    <p class="font-bold text-blue-600">Trợ cấp</p>
+                    <p class="text-sm italic italic font-light italic font-light font-light">Subsidise</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+                    <p class="text-xs text-gray-400 uppercase">Tiếng Việt</p>
+                    <p class="font-bold text-blue-600">Vượt qua giới hạn</p>
+                    <p class="text-sm italic italic font-light italic font-light font-light">Mitigate problems</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center">
+                    <p class="text-xs text-gray-400 uppercase">Tiếng Việt</p>
+                    <p class="font-bold text-blue-600">Tình nguyện</p>
+                    <p class="text-sm italic italic font-light italic font-light font-light">Volunteer</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-900 text-white py-16 mt-20 border-t-4 border-blue-500">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <p class="text-2xl font-bold tracking-tighter">Phạm Tiến Dũng Gia Sư</p>
+                <p class="text-slate-400 text-sm mt-2">Chuyên gia giảng dạy IELTS Writing & Critical Thinking</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-400 hover:text-white transition">Tài liệu Task 1</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">Tài liệu Task 2</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">Khóa học Pro</a>
+            </div>
+            <div class="text-slate-500 text-xs text-center md:text-right">
+                <p>© 2026 Toàn bộ bản quyền thuộc về Phạm Tiến Dũng Gia Sư</p>
+                <p>Designed for Academic Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 Mastery - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .academic-font { font-family: 'Roboto', sans-serif; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fef3c7; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        details summary::-webkit-details-marker { display:none; }
+        details summary { list-style: none; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171247'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold text-indigo-700">IELTS Senior Tutor</h1>
+                <p class="text-sm text-slate-500">Tác giả: <span class="font-semibold">Phạm Tiến Dũng Gia Sư</span></p>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-slate-600">
+                <a href="#section-table" class="hover:text-indigo-600 transition">Table Mastery</a>
+                <a href="#section-mixed" class="hover:text-indigo-600 transition">Mixed Charts</a>
+                <a href="#section-practice" class="hover:text-indigo-600 transition">Practice</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <!-- Intro Banner -->
+        <div class="bg-gradient-to-r from-indigo-600 to-violet-600 rounded-3xl p-8 mb-12 text-white shadow-xl shadow-indigo-100">
+            <h2 class="text-3xl font-bold mb-4">Bài học: Phân tích Dữ liệu Bảng (Table) & Biểu đồ Kết hợp (Mixed Charts)</h2>
+            <p class="text-indigo-100 text-lg">Nắm vững tư duy so sánh và mô tả xu hướng từ Band 7.5+ cùng chuyên gia Phạm Tiến Dũng Gia Sư.</p>
+        </div>
+
+        <!-- Section 1: Table Analysis -->
+        <section id="section-table" class="mb-16">
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold">MODULE 1</span>
+                <h3 class="text-2xl font-bold text-slate-900">Chiến thuật xử lý số liệu Bảng (Tables)</h3>
+            </div>
+
+            <!-- Content Case 1: Cycling Habits -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-8">
+                <h4 class="text-xl font-semibold mb-4 text-indigo-600">Case Study 1: Tỷ lệ người đi xe đạp theo giới tính & độ tuổi (2011)</h4>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-6">
+                    <div class="prose academic-font italic text-slate-600 text-sm leading-relaxed">
+                        "Nhìn chung, trẻ em dưới chín tuổi sử dụng xe đạp nhiều nhất, trong khi người trung niên ít đi xe đạp nhất. Nam giới có xu hướng đạp xe nhiều hơn phụ nữ trong khoảng thời gian được chỉ ra..."
+                    </div>
+                    <div class="teacher-note p-4 rounded-r-xl">
+                        <p class="text-sm font-bold text-blue-800 mb-1 italic">Teacher's Note:</p>
+                        <p class="text-sm text-blue-700">Khi gặp bảng dữ liệu về giới tính và độ tuổi, hãy luôn tìm kiếm <strong>điểm cực trị (highest/lowest)</strong> và <strong>mối tương quan (correlation)</strong> giữa các nhóm.</p>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto rounded-lg border border-slate-200 mb-6">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-50 text-slate-700 uppercase font-bold">
+                            <tr>
+                                <th class="px-6 py-3">Nhóm độ tuổi</th>
+                                <th class="px-6 py-3">Nam giới</th>
+                                <th class="px-6 py-3">Nữ giới</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr><td class="px-6 py-4">Dưới 9 tuổi</td><td class="px-6 py-4 font-semibold text-indigo-600">52% (Highest)</td><td class="px-6 py-4 italic">Gần bằng nam giới</td></tr>
+                            <tr><td class="px-6 py-4">40 - 50 tuổi</td><td class="px-6 py-4">12% (Lowest)</td><td class="px-6 py-4 font-semibold text-red-500">8% (Lowest)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pro-tip p-4 rounded-r-xl border-l-4 border-amber-500 bg-amber-50">
+                    <p class="text-sm font-bold text-amber-800 italic uppercase">Pro Tip: Collocation nâng điểm</p>
+                    <p class="text-sm text-amber-900 mt-1">Thay vì dùng "the same", hãy thử: <code class="bg-white px-1 rounded">matched by</code>, <code class="bg-white px-1 rounded">a similar pattern was seen in</code>, hoặc <code class="bg-white px-1 rounded">almost identical to</code>.</p>
+                </div>
+            </div>
+
+            <!-- Content Case 2: Natural Gas -->
+            <div class="bg-slate-900 text-white rounded-2xl p-8 mb-8">
+                <h4 class="text-xl font-semibold mb-6 text-indigo-400">Case Study 2: Sản xuất và Tiêu thụ Khí đốt</h4>
+                <div class="mermaid mb-6">
+                    graph LR
+                        A[Australia] -->|Production| B(1/3 more than)
+                        A -->|Consumption| B
+                        C[UK] -->|Production| D(10m tons more than)
+                        C -->|Consumption| D
+                        E[USSR] -->|Consumption| F(18 times)
+                        E -->|Production| F
+                        style E fill:#f43f5e,stroke:#fff
+                </div>
+                <div class="space-y-4 text-slate-300 italic academic-font">
+                    <p class="border-l-2 border-indigo-500 pl-4">"Ngoại trừ Liên Xô cũ, số liệu sản xuất của các nước khác cao hơn số liệu tiêu thụ..."</p>
+                    <p class="border-l-2 border-indigo-500 pl-4">"Liên Xô cũ sử dụng gần 18 lần lượng sản xuất (consumes nearly 18 times its production)."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Mixed Charts -->
+        <section id="section-mixed" class="mb-16">
+            <div class="flex items-center space-x-3 mb-6">
+                <span class="bg-violet-100 text-violet-700 px-3 py-1 rounded-full text-sm font-bold">MODULE 2</span>
+                <h3 class="text-2xl font-bold text-slate-900">Xử lý Biểu đồ kết hợp (Multiple/Mixed Graphs)</h3>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+                <h4 class="text-xl font-semibold mb-4 text-violet-600">So sánh Nguồn nước: Global vs Brazil/Congo</h4>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="bg-violet-50 p-4 rounded-xl">
+                            <p class="text-xs font-bold text-violet-800 uppercase mb-2">Từ vựng then chốt (Key Lexis)</p>
+                            <ul class="text-sm space-y-2 text-violet-900 list-disc list-inside">
+                                <li><strong>Accounts for the lion's share:</strong> Chiếm tỷ trọng lớn nhất.</li>
+                                <li><strong>Significantly higher:</strong> Cao hơn đáng kể.</li>
+                                <li><strong>A fraction of:</strong> Một phần nhỏ của.</li>
+                            </ul>
+                        </div>
+                        <div class="academic-font text-slate-600 text-sm italic">
+                            "Năm 1900, 500km³ nước sử dụng cho nông nghiệp. Con số này tăng lên 3000km³ vào năm 2000. Ngược lại, Congo chỉ tiêu thụ 8m³ mỗi người - một khoảng cách khổng lồ so với Brazil (359m³)."
+                        </div>
+                    </div>
+                    <div>
+                        
+                        <p class="text-xs text-center text-slate-400 mt-2 italic italic">Biểu đồ minh họa xu hướng tiêu thụ nước toàn cầu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Practice & Interactive Quiz -->
+        <section id="section-practice" class="mb-16">
+            <div class="bg-indigo-50 rounded-3xl p-8 border border-indigo-100">
+                <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    Luyện tập: Vocabulary Check
+                </h3>
+
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm italic italic">
+                        <p class="text-slate-800 mb-4"><strong>Câu 1:</strong> Điền từ phù hợp vào chỗ trống để mô tả số liệu Liên Xô cũ:</p>
+                        <p class="academic-font text-lg text-slate-600 bg-slate-50 p-4 rounded-lg italic">
+                            "In contrast, the former USSR consumed far more than it produced, using nearly 18 ______ its production."
+                        </p>
+                        <details class="mt-4 group">
+                            <summary class="cursor-pointer text-indigo-600 font-bold hover:underline">Xem đáp án</summary>
+                            <div class="mt-2 text-green-600 font-bold bg-green-50 p-3 rounded-lg">Đáp án: TIMES (lần)</div>
+                        </details>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm italic">
+                        <p class="text-slate-800 mb-4"><strong>Câu 2:</strong> Chọn cấu trúc so sánh đúng cho dữ liệu UK và UAE:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 italic italic">
+                            <button class="p-4 border-2 border-slate-100 rounded-xl hover:border-indigo-500 transition text-left">
+                                A. The UK produced 10 million tons, <span class="text-indigo-600 font-bold">doubling</span> the amount of the UAE.
+                            </button>
+                            <button class="p-4 border-2 border-slate-100 rounded-xl hover:border-indigo-500 transition text-left italic">
+                                B. The UK produced 10 million tons, <span class="text-indigo-600 font-bold">twice as many as</span> the UAE.
+                            </button>
+                        </div>
+                         <details class="mt-4 group">
+                            <summary class="cursor-pointer text-indigo-600 font-bold hover:underline">Xem giải thích</summary>
+                            <div class="mt-2 text-slate-700 bg-indigo-50 p-3 rounded-lg text-sm italic">
+                                Cả hai đều đúng về ngữ nghĩa, nhưng cấu trúc <code class="bg-white px-1">doubling</code> (hiện tại phân từ) giúp câu văn trôi chảy và chuyên nghiệp hơn trong Writing Task 1.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Footer -->
+        <footer class="text-center py-12 border-t border-slate-200">
+            <p class="text-slate-400 text-sm italic uppercase tracking-widest mb-2">Designed for Excellence</p>
+            <p class="text-indigo-900 font-bold text-lg">Phạm Tiến Dũng Gia Sư</p>
+            <p class="text-slate-500 italic">IELTS Senior Tutor - Chuyên luyện thi Writing Band 7.5+</p>
+        </footer>
+    </main>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'forest' });
+    </script>
+</body>
+</html>

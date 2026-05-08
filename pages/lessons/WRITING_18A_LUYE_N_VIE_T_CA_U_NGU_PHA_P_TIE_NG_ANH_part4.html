@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Grammar Masterclass: Subordinate Clauses & Complex Structures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        h1, h2, h3 { font-family: 'Roboto Slab', serif; }
+        .gradient-border { border-image: linear-gradient(to right, #2563eb, #7c3aed) 1; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #f0fdf4; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165175'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="text-slate-800 leading-relaxed">
+
+    <!-- Navigation / Header -->
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">D</div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">Phạm Tiến Dũng <span class="text-blue-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#clauses" class="hover:text-blue-600 transition">Mệnh đề phụ</a>
+                <a href="#comparison" class="hover:text-blue-600 transition">So sánh</a>
+                <a href="#relative" class="hover:text-blue-600 transition">Mệnh đề quan hệ</a>
+                <a href="#practice" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Luyện tập</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">
+                Chuyên đề: <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Complex Sentence Structures</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto italic">Nâng cấp kỹ năng viết và nói từ Band 6.0 lên 8.0+ thông qua việc sử dụng thành thạo các loại mệnh đề phụ và cấu trúc nối.</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <span class="px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">IELTS Writing Task 2</span>
+                <span class="px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">IELTS Speaking</span>
+            </div>
+        </section>
+
+        <!-- Section 1: Adverbial Clauses of Time & Condition -->
+        <section id="clauses" class="mb-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+            <div class="p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="w-2 h-8 bg-blue-600 rounded mr-4"></span>
+                    1. Mệnh đề trạng ngữ (Adverbial Clauses)
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-blue-600">A. Thời gian (Time) & Điều kiện (Condition)</h3>
+                        <p class="text-slate-600">Sử dụng <i>"as long as", "provided that", "unless"</i> để tạo ra những lập luận logic chặt chẽ trong Writing Task 2.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span>
+                                <span><strong>Provided that:</strong> I will pardon him provided that he acknowledge his fault.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span>
+                                <span><strong>As long as:</strong> I don't care who you are as long as you love me.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">✔</span>
+                                <span><strong>Unless:</strong> Unless you work hard, you will not pass the exams.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <div class="mermaid">
+                            graph TD
+                            A[Sentence Strength] --> B(Simple: if)
+                            A --> C(Advanced: Provided that)
+                            A --> D(Advanced: As long as)
+                            style C fill:#dbeafe,stroke:#2563eb
+                            style D fill:#dbeafe,stroke:#2563eb
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-tip p-5 rounded-xl mb-6">
+                    <p class="text-sm"><strong>Pro Tip:</strong> Thay vì chỉ dùng "If", hãy dùng <strong>"Provided that"</strong> hoặc <strong>"In the event of"</strong> trong các bối cảnh học thuật để tăng điểm Grammatical Range.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Comparison & Contrast -->
+        <section id="comparison" class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center">
+                <span class="w-2 h-8 bg-purple-600 rounded mr-4"></span>
+                2. Cấu trúc So sánh & Đối lập (Comparison & Concession)
+            </h2>
+            
+            <div class="overflow-x-auto rounded-2xl border border-slate-200">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-slate-50 text-slate-600 uppercase text-xs font-bold">
+                        <tr>
+                            <th class="px-6 py-4">Cấu trúc</th>
+                            <th class="px-6 py-4">Ví dụ (Sentence)</th>
+                            <th class="px-6 py-4">Lưu ý sư phạm</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="px-6 py-4 font-semibold">As... as</td>
+                            <td class="px-6 py-4">He dances as if he were a professional dancer.</td>
+                            <td class="px-6 py-4 text-sm">Dùng <i>"were"</i> cho mọi ngôi trong câu giả định.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-purple-600">Even if / Though</td>
+                            <td class="px-6 py-4">Even if the sky is falling down, I will love you.</td>
+                            <td class="px-6 py-4 text-sm">Nhấn mạnh sự đối lập mạnh mẽ hơn "Although".</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-semibold text-blue-600">In order that / So that</td>
+                            <td class="px-6 py-4">We left early in order that we wouldn't be caught in a traffic jam.</td>
+                            <td class="px-6 py-4 text-sm text-red-500 font-bold">Band 7.5+ Structure</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="teacher-note p-6 mt-8 rounded-2xl italic text-slate-700">
+                <strong>Teacher's Note:</strong> Lưu ý cấu trúc đảo ngữ với tính từ để tạo điểm nhấn (Inversion): <br>
+                <code class="bg-white px-2 py-1 rounded border">Rich as he is, he never gives anybody anything.</code> 
+                (Dù giàu có, anh ta chẳng bao giờ cho ai cái gì). Cấu trúc: <strong>Adj + as/though + S + be</strong>.
+            </div>
+        </section>
+
+        <!-- Section 3: Relative Clauses -->
+        <section id="relative" class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center">
+                <span class="w-2 h-8 bg-green-600 rounded mr-4"></span>
+                3. Mệnh đề quan hệ (Relative Clauses) - Chìa khóa Band 8.0
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 transition cursor-default">
+                    <h4 class="font-bold text-blue-600 mb-2">WHO / WHOM</h4>
+                    <p class="text-sm text-slate-600">Dùng cho người. <br>Ex: The man whom I saw yesterday is John.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-purple-500 transition cursor-default">
+                    <h4 class="font-bold text-purple-600 mb-2">WHICH</h4>
+                    <p class="text-sm text-slate-600">Dùng cho vật hoặc cả mệnh đề. <br>Ex: The Thames, which flows through London, is a beautiful river.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-slate-100 hover:border-green-500 transition cursor-default">
+                    <h4 class="font-bold text-green-600 mb-2">WHOSE</h4>
+                    <p class="text-sm text-slate-600">Sở hữu cách. <br>Ex: A child whose parents are dead is called an orphan.</p>
+                </div>
+            </div>
+
+            
+
+            <div class="mt-8 p-8 bg-slate-900 text-white rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h4 class="text-xl font-bold mb-4 text-blue-400">Advanced Academic Style: Prepositions in Relative Clauses</h4>
+                <p class="mb-4">Trong IELTS Writing Task 2, hãy đưa giới từ lên trước đại từ quan hệ để tăng tính trang trọng (Formal tone).</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-slate-800 p-4 rounded-xl">
+                        <p class="text-xs text-slate-400 mb-1">Normal</p>
+                        <p class="italic">"This is the boy that I told you <strong>of</strong>."</p>
+                    </div>
+                    <div class="bg-blue-900/40 p-4 rounded-xl border border-blue-500/30">
+                        <p class="text-xs text-blue-300 mb-1">Expert Style</p>
+                        <p class="italic">"This is the boy <strong>of whom</strong> I told you."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Result Clauses -->
+        <section class="mb-16">
+             <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center">
+                <span class="w-2 h-8 bg-red-600 rounded mr-4"></span>
+                4. Mệnh đề chỉ kết quả (Result Clauses)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-red-50 rounded-2xl border border-red-100">
+                    <h4 class="font-bold text-red-700 mb-3 underline decoration-2 underline-offset-4">Cấu trúc So... that</h4>
+                    <p class="text-slate-700 italic">"The coffee is <strong>so</strong> hot <strong>that</strong> I cannot drink it."</p>
+                    <p class="mt-4 text-sm text-slate-500 italic">Sử dụng để nhấn mạnh cường độ của một tính chất dẫn đến một kết quả cụ thể.</p>
+                </div>
+                <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+                    <h4 class="font-bold text-orange-700 mb-3 underline decoration-2 underline-offset-4">Cấu trúc Such... that</h4>
+                    <p class="text-slate-700 italic">"It was <strong>such</strong> a hot day <strong>that</strong> I took off my jacket."</p>
+                    <p class="mt-4 text-sm text-slate-500 italic">Dùng với cụm danh từ (Noun phrase) để nhấn mạnh sự đặc biệt của sự vật/sự việc.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Practice & Interactive Area -->
+        <section id="practice" class="mb-16 p-8 md:p-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl text-white">
+            <h2 class="text-3xl font-bold mb-8 text-center italic">Workshop Thực Hành - Phạm Tiến Dũng Gia Sư</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                    <p class="font-medium mb-4">Câu 1: Viết lại câu sau sử dụng "Provided that": <br> "I will lend you the book if you promise to return it next week."</p>
+                    <button onclick="toggleAnswer('ans1')" class="text-xs font-bold uppercase tracking-widest bg-white text-blue-700 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Check Answer</button>
+                    <div id="ans1" class="hidden mt-4 p-4 bg-blue-900/50 rounded-xl text-blue-100 border border-blue-400/30 italic">
+                        "I will lend you the book <strong>provided that</strong> you promise to return it next week."
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                    <p class="font-medium mb-4">Câu 2: Kết hợp câu sử dụng Mệnh đề quan hệ không xác định: <br> "The Thames is a beautiful river. It flows through London."</p>
+                    <button onclick="toggleAnswer('ans2')" class="text-xs font-bold uppercase tracking-widest bg-white text-blue-700 px-4 py-2 rounded-lg hover:bg-blue-50 transition">Check Answer</button>
+                    <div id="ans2" class="hidden mt-4 p-4 bg-blue-900/50 rounded-xl text-blue-100 border border-blue-400/30 italic">
+                        "The Thames, <strong>which flows through London</strong>, is a beautiful river."
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm mb-4 uppercase tracking-widest font-bold">Biên soạn bởi</p>
+            <h3 class="text-2xl font-bold text-white mb-2">Phạm Tiến Dũng Gia Sư</h3>
+            <p class="text-slate-500 italic max-w-md mx-auto">"Hành trình vạn dặm bắt đầu từ một bước chân, và hành trình 8.0 IELTS bắt đầu từ một cấu trúc ngữ pháp chuẩn xác."</p>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-xs opacity-50">
+                © 2026 Phạm Tiến Dũng Gia Sư - Academic English Center.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Mermaid diagrams
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Toggle Answers
+        function toggleAnswer(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

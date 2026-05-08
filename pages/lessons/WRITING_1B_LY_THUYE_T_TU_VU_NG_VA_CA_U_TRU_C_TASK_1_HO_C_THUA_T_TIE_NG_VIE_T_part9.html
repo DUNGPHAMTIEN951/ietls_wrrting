@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1: Map & Diagram Mastery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .lesson-card { transition: all 0.3s ease; }
+        .lesson-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        details summary::-webkit-details-marker { display: none; }
+        .pro-tip { border-left: 4px solid #f59e0b; }
+        .teacher-note { border-left: 4px solid #10b981; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778166837'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="text-slate-800 leading-relaxed">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tight">
+                <span class="text-blue-600">IELTS</span> <span class="text-slate-400">Mastery</span>
+            </div>
+            <div class="text-sm font-medium text-slate-500 uppercase tracking-widest">
+                Tác giả: Phạm Tiến Dũng Gia Sư
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        
+        <!-- Header Section -->
+        <header class="mb-16 text-center">
+            <span class="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-blue-700 uppercase bg-blue-100 rounded-full">
+                Writing Task 1
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 gradient-text">
+                Chiến Thuật Xử Lý Dạng Bài Map & Diagram
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Làm chủ kỹ thuật mô tả sự thay đổi, quy hoạch đô thị và cấu trúc công cụ với hệ thống câu mẫu Band 8.0+.
+            </p>
+        </header>
+
+        <!-- Section 1: Intro Logic -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-2 bg-blue-600 rounded-lg text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-1-4m0 0l-3-2m3 2l3-2m-3 2V4" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold">1. Kỹ Thuật Viết Introduction & Overview</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 lesson-card">
+                    <h3 class="font-bold text-blue-700 mb-4 italic underline text-lg">Cấu trúc 1: Sự thay đổi qua thời gian</h3>
+                    <p class="text-slate-600 mb-4 italic">"The maps illustrate some changes to [Place] that have been developed for [Purpose]."</p>
+                    <div class="bg-blue-50 p-4 rounded-lg text-sm">
+                        <strong>Ví dụ (Sent. 25):</strong> Các sơ đồ minh họa một số thay đổi đối với một hòn đảo nhỏ đã được phát triển cho du lịch.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 lesson-card">
+                    <h3 class="font-bold text-blue-700 mb-4 italic underline text-lg">Cấu trúc 2: Đề xuất trong tương lai</h3>
+                    <p class="text-slate-600 mb-4 italic text-sm">"The pictures compare the layout of [Place] in [Year] with the proposed design for [Future Year]."</p>
+                    <div class="bg-blue-50 p-4 rounded-lg text-sm">
+                        <strong>Ví dụ (Sent. 58):</strong> Hai bức tranh so sánh cách bố trí của một ngôi trường vào năm 2004 với thiết kế địa điểm được đề xuất cho năm 2024.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mermaid Diagram -->
+            <div class="bg-slate-900 p-8 rounded-3xl mb-8 overflow-hidden">
+                <h4 class="text-white text-center mb-6 font-medium">Quy trình Phân tích Map/Diagram</h4>
+                <div class="mermaid flex justify-center">
+                    graph LR
+                    A[Phân tích Thời gian] --> B[Xác định Đối tượng chính]
+                    B --> C[Liệt kê các sự Thay đổi/Đề xuất]
+                    C --> D[Sử dụng cấu trúc Bị động/Hoàn thành]
+                    style A fill:#3b82f6,stroke:#fff,color:#fff
+                    style B fill:#3b82f6,stroke:#fff,color:#fff
+                    style C fill:#3b82f6,stroke:#fff,color:#fff
+                    style D fill:#10b981,stroke:#fff,color:#fff
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Vocabulary Deep Dive -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-2 bg-indigo-600 rounded-lg text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold">2. Từ vựng & Collocation "Ăn điểm" (Band 8.0+)</h2>
+            </div>
+
+            <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200 mb-8">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-50 border-b border-slate-200">
+                        <tr>
+                            <th class="px-6 py-4 font-bold text-slate-700">Chức năng</th>
+                            <th class="px-6 py-4 font-bold text-slate-700">Cấu trúc / Từ vựng</th>
+                            <th class="px-6 py-4 font-bold text-slate-700">Ví dụ từ bài giảng</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-blue-600">Thay thế/Nhường chỗ</td>
+                            <td class="px-6 py-4">Make way for / Be replaced by</td>
+                            <td class="px-6 py-4 italic">The parking lot made way for a bus station. (Sent. 33)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-blue-600">Chuyển hướng</td>
+                            <td class="px-6 py-4">Be diverted to / Redirect</td>
+                            <td class="px-6 py-4 italic">Traffic will be diverted to a dual carriageway. (Sent. 55)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-blue-600">Xóa bỏ/Dỡ bỏ</td>
+                            <td class="px-6 py-4">Removed / Demolished / Cleared</td>
+                            <td class="px-6 py-4 italic">One of the internal walls was removed. (Sent. 46)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-blue-600">Sửa đổi kiến trúc</td>
+                            <td class="px-6 py-4">Modification / Modification of...</td>
+                            <td class="px-6 py-4 italic">Modifying a ground floor building from an existing plan. (Sent. 27)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="teacher-note bg-emerald-50 p-6 rounded-2xl">
+                <h4 class="text-emerald-800 font-bold mb-2 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                    </svg>
+                    Teacher's Note by Phạm Tiến Dũng Gia Sư
+                </h4>
+                <p class="text-emerald-700 text-sm leading-relaxed">
+                    Trong dạng bài Map, việc sử dụng các giới từ chỉ phương hướng (southwest, northeast) kết hợp với các cụm từ chỉ sự thay đổi (make way for, transformation) là chìa khóa để đạt điểm cao ở tiêu chí <strong>Lexical Resource</strong>. Lưu ý sử dụng thì Hiện tại hoàn thành (Present Perfect) cho những thay đổi từ quá khứ đến hiện tại.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Detailed Explanations -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-2 bg-amber-500 rounded-lg text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold">3. Phân Tích Các Mẫu Câu Đặc Biệt</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Accordion Item 1 -->
+                <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-slate-50 transition">
+                        <span class="font-semibold">Phân tích mô tả sự chuyển đổi đất đai (Land transformation)</span>
+                        <span class="transition group-open:rotate-180 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        </span>
+                    </summary>
+                    <div class="p-6 border-t border-slate-100 bg-slate-50">
+                        <p class="mb-4"><strong>Câu mẫu (Sent. 39):</strong> "Specifically, the most striking transformation belongs to farmland being turned into a golf course in the northeast of this area."</p>
+                        <ul class="list-disc ml-5 space-y-2 text-sm text-slate-600">
+                            <li><strong>Striking transformation:</strong> Sự thay đổi nổi bật (Từ vựng mạnh).</li>
+                            <li><strong>Belongs to:</strong> Thuộc về (Cách diễn đạt tự nhiên).</li>
+                            <li><strong>Farmland being turned into:</strong> Đất nông nghiệp được biến thành (Sử dụng danh động từ bị động).</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Accordion Item 2 -->
+                <details class="group bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-slate-50 transition">
+                        <span class="font-semibold">Phân tích mô tả quy trình kỹ thuật (Technical Diagram)</span>
+                        <span class="transition group-open:rotate-180 text-slate-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                        </span>
+                    </summary>
+                    <div class="p-6 border-t border-slate-100 bg-slate-50">
+                        <p class="mb-4"><strong>Câu mẫu (Sent. 31):</strong> "The height of the stilt house is measured so that the floor is 300mm above the 100-year flood level."</p>
+                        <ul class="list-disc ml-5 space-y-2 text-sm text-slate-600">
+                            <li><strong>Is measured:</strong> Được đo đạc (Bị động).</li>
+                            <li><strong>So that:</strong> Để mà (Liên từ chỉ mục đích).</li>
+                            <li><strong>Flood level:</strong> Mực nước lũ (Thuật ngữ chuyên ngành).</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Section 4: Practice Exercise -->
+        <section class="mb-16">
+            <div class="bg-blue-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl">
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-bold mb-6">Mini Practice: Paraphrasing Skill</h2>
+                    <p class="mb-8 text-blue-100">Dựa trên các câu mẫu của <strong>Phạm Tiến Dũng Gia Sư</strong>, hãy thử viết lại các ý tưởng sau sang Tiếng Anh chuyên sâu.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
+                            <p class="font-medium mb-3">1. Con số này đã tăng lên 5 lần vào năm 2010.</p>
+                            <details class="group">
+                                <summary class="text-sm font-bold text-yellow-300 cursor-pointer underline">Xem đáp án Band 8.5</summary>
+                                <p class="mt-3 text-white italic">"The figure experienced a five-fold increase by 2010." (Hoặc theo Sent. 35: "The figure had increased five times by 2010.")</p>
+                            </details>
+                        </div>
+
+                        <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20">
+                            <p class="font-medium mb-3">2. Đối diện với quán cà phê là một nhà hàng mới xây.</p>
+                            <details class="group">
+                                <summary class="text-sm font-bold text-yellow-300 cursor-pointer underline">Xem đáp án Band 8.5</summary>
+                                <p class="mt-3 text-white italic">"A newly constructed restaurant is situated opposite the café." (Sent. 50)</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <!-- Abstract circle background -->
+                <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-50"></div>
+            </div>
+        </section>
+
+        <!-- Pro Tip Section -->
+        <section class="mb-16">
+            <div class="pro-tip bg-amber-50 p-8 rounded-2xl border border-amber-100 shadow-sm">
+                <h3 class="text-amber-800 font-extrabold text-xl mb-4 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-5.636l-.707-.707m12.728 0l-.707.707M6.364 17.636l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Pro Tip từ Phạm Tiến Dũng Gia Sư
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-amber-900 leading-relaxed">
+                    <p>
+                        <strong>Mẹo 1:</strong> Đừng chỉ liệt kê các thay đổi. Hãy cố gắng nhóm chúng lại (Grouping). Ví dụ: Nhóm các thay đổi về hạ tầng giao thông vào một đoạn, các thay đổi về cơ sở vật chất giải trí vào một đoạn khác.
+                    </p>
+                    <p>
+                        <strong>Mẹo 2:</strong> Khi mô tả "Today" hoặc "Hiện nay", hãy sử dụng thì Hiện tại đơn (Present Simple) hoặc Hiện tại hoàn thành (Present Perfect). Ví dụ: <em>"A new shopping mall has been erected"</em>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-200 pt-8 text-center text-slate-400 text-sm">
+            <p>© 2024 - Bài học được thiết kế chuyên biệt bởi <strong>Phạm Tiến Dũng Gia Sư</strong></p>
+            <p class="mt-2 italic">Lưu ý: Nội dung này thuộc bản quyền của tác giả, vui lòng không sao chép dưới mọi hình thức.</p>
+        </footer>
+    </main>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

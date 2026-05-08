@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Grammar Mastery - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .heading-font { font-family: 'Roboto', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 1); }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .answer-box { display: none; }
+        .show-answer:checked ~ .answer-box { display: block; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165091'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">PTD</div>
+                <span class="text-xl font-bold heading-font tracking-tight">Phạm Tiến Dũng <span class="text-blue-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-sm text-slate-600 uppercase tracking-wider">
+                <a href="#inversion" class="hover:text-blue-600 transition">Đảo ngữ</a>
+                <a href="#subject-verb" class="hover:text-blue-600 transition">Hòa hợp S-V</a>
+                <a href="#clauses" class="hover:text-blue-600 transition">Mệnh đề quan hệ</a>
+                <a href="#phrasal" class="hover:text-blue-600 transition">Cụm động từ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Hero Lesson -->
+        <section class="mb-16 text-center">
+            <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">IELTS WRITING ADVANCED</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 heading-font gradient-text">Luyện Viết Câu Ngữ Pháp Chuyên Sâu</h1>
+            <p class="text-slate-500 text-lg max-w-2xl mx-auto">Nâng cấp kỹ năng viết từ câu đơn sang cấu trúc phức (Complex Structures) để bứt phá band 7.0+ Grammatical Range and Accuracy.</p>
+        </section>
+
+        <!-- Section 1: Cấu trúc Đảo Ngữ -->
+        <section id="inversion" class="mb-20 scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">I. Cấu trúc Đảo ngữ (Inversion)</h2>
+            </div>
+            
+            <div class="glass-card rounded-2xl p-6 mb-8">
+                <p class="mb-4">Sử dụng đảo ngữ giúp câu văn trở nên trang trọng (formal) và nhấn mạnh ý nghĩa. Đây là tiêu chí "rare structures" trong IELTS Writing.</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse bg-white rounded-xl">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-700 uppercase text-xs">
+                                <th class="p-4 border-b">Cấu trúc gốc (Normal)</th>
+                                <th class="p-4 border-b">Cấu trúc Đảo ngữ (Inversion)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b">
+                                <td class="p-4">You will get a job <strong>only after</strong> you graduate.</td>
+                                <td class="p-4 font-semibold text-blue-700"><strong>Only after</strong> graduation <strong>will you</strong> be able to get a job.</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">I <strong>didn't know</strong> she was famous <strong>until</strong>...</td>
+                                <td class="p-4 font-semibold text-blue-700"><strong>Not until</strong> her friends told me <strong>did I know</strong>...</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">She <strong>seldom</strong> misses a lecture.</td>
+                                <td class="p-4 font-semibold text-blue-700"><strong>Seldom does she</strong> miss a lecture.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">We had <strong>no sooner</strong> come home than...</td>
+                                <td class="p-4 font-semibold text-blue-700"><strong>No sooner had we</strong> come home than...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-xl">
+                <h4 class="font-bold text-amber-800 uppercase text-sm mb-2 italic">Teacher's Note by Phạm Tiến Dũng Gia Sư</h4>
+                <p class="text-sm">Khi sử dụng các trạng từ phủ định hoặc cụm từ bắt đầu bằng "Only" ở đầu câu, chúng ta phải mượn trợ động từ (do/does/did/have/has) đảo lên trước chủ ngữ. Tuy nhiên, lưu ý với <strong>"Only when/after/until"</strong>, phép đảo ngữ chỉ xảy ra ở <strong>mệnh đề chính</strong>, không phải mệnh đề phụ.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Sự hòa hợp S-V -->
+        <section id="subject-verb" class="mb-20 scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">II. Sự hòa hợp Chủ ngữ & Động từ</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card rounded-2xl p-6">
+                    <h3 class="font-bold text-xl mb-4 flex items-center">
+                        <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-2 text-sm">!</span>
+                        Các trường hợp dễ nhầm lẫn
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2 font-bold">•</span>
+                            <div><strong>A number of + N(plural) + V(plural):</strong> Một số lượng... (A number of students <u>are</u> going...)</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2 font-bold">•</span>
+                            <div><strong>The number of + N(plural) + V(singular):</strong> Con số của... (The number of days <u>is</u> seven.)</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2 font-bold">•</span>
+                            <div><strong>Each/Every + V(singular):</strong> Mỗi/Mọi... (Each of the boys <u>has</u> a bicycle.)</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 border-blue-200 bg-blue-50/30">
+                    <h3 class="font-bold text-xl mb-4 flex items-center text-blue-800 italic">Pro Tip: "Together with/As well as"</h3>
+                    <p class="text-sm mb-4">Khi chủ ngữ được nối bởi các cụm <i>as well as, together with, with, along with</i>, động từ được chia theo <strong>chủ ngữ thứ nhất</strong>.</p>
+                    <div class="bg-white p-4 rounded-lg border border-blue-100 italic text-sm">
+                        "Mr. Johnson <strong>as well as</strong> his assistants <strong>has</strong> arrived."
+                    </div>
+                    <p class="text-xs mt-4 text-slate-500">Mặc dù có "assistants" (số nhiều), nhưng động từ vẫn chia là "has" vì phụ thuộc vào "Mr. Johnson".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Mệnh đề quan hệ -->
+        <section id="clauses" class="mb-20 scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">III. Mệnh đề quan hệ (Relative Clauses)</h2>
+            </div>
+
+            <div class="mermaid mb-8 flex justify-center">
+                graph TD
+                RC[Mệnh đề quan hệ] --> DRC[Xác định - Restrictive]
+                RC --> NDRC[Không xác định - Non-restrictive]
+                DRC --> D1[Không dùng dấu phẩy]
+                DRC --> D2[Có thể dùng 'That']
+                NDRC --> N1[Bắt buộc có dấu phẩy]
+                NDRC --> N2[KHÔNG dùng 'That']
+                NDRC --> N3[Dùng cho danh từ riêng/đã rõ ràng]
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white border p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-bold text-lg text-slate-700 italic">So sánh sự khác biệt về ý nghĩa:</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6 text-sm">
+                        <div class="p-4 bg-slate-50 rounded-lg">
+                            <p class="font-bold mb-2 text-red-600 underline">Xác định (Restrictive):</p>
+                            <p>The wine <strong>that</strong> was stored in the cellar was ruined.</p>
+                            <p class="text-slate-500 mt-2 italic">(Chỉ loại rượu trong hầm bị hỏng, các loại rượu khác có thể vẫn tốt)</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg">
+                            <p class="font-bold mb-2 text-green-600 underline">Không xác định (Non-restrictive):</p>
+                            <p>The wine, <strong>which</strong> was stored in the cellar, was ruined.</p>
+                            <p class="text-slate-500 mt-2 italic">(Tất cả số rượu đó đều bị hỏng, việc nó ở trong hầm chỉ là thông tin thêm)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Phrasal Verbs & Vocabulary -->
+        <section id="phrasal" class="mb-20 scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-8 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">IV. Cụm động từ nâng cao (Academic Phrasal Verbs)</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 bg-white border rounded-xl shadow-sm">
+                    <h4 class="font-bold text-blue-600">Add up</h4>
+                    <p class="text-xs text-slate-500 italic mb-2">Academic: make sense</p>
+                    <p class="text-sm">"Her story doesn't <strong>add up</strong>."</p>
+                </div>
+                <div class="p-4 bg-white border rounded-xl shadow-sm">
+                    <h4 class="font-bold text-blue-600">Back up</h4>
+                    <p class="text-xs text-slate-500 italic mb-2">Academic: support</p>
+                    <p class="text-sm">"You need examples to <strong>back up</strong> your opinion."</p>
+                </div>
+                <div class="p-4 bg-white border rounded-xl shadow-sm">
+                    <h4 class="font-bold text-blue-600">Bear with</h4>
+                    <p class="text-xs text-slate-500 italic mb-2">Academic: be patient</p>
+                    <p class="text-sm">"Please <strong>bear with</strong> me during the process."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Exercise -->
+        <section class="bg-blue-900 rounded-[2.5rem] p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold heading-font mb-8">Thực hành cùng Phạm Tiến Dũng Gia Sư</h2>
+                
+                <div class="space-y-6">
+                    <!-- Ques 1 -->
+                    <div class="bg-blue-800/50 p-6 rounded-2xl border border-blue-700">
+                        <p class="mb-4 font-medium">1. Chuyển sang câu đảo ngữ: "Humans didn't travel into space until the early 1960s."</p>
+                        <input type="checkbox" id="ans1" class="show-answer hidden">
+                        <label for="ans1" class="cursor-pointer bg-white text-blue-900 px-4 py-1 rounded-full text-xs font-bold hover:bg-blue-100 transition">XEM ĐÁP ÁN</label>
+                        <div class="answer-box mt-4 p-4 bg-blue-700/50 rounded-xl font-mono text-sm border-l-4 border-green-400">
+                            Not until the early 1960s did humans fly into space.
+                        </div>
+                    </div>
+
+                    <!-- Ques 2 -->
+                    <div class="bg-blue-800/50 p-6 rounded-2xl border border-blue-700">
+                        <p class="mb-4 font-medium">2. Sửa lỗi sai: "A number of students is absent today."</p>
+                        <input type="checkbox" id="ans2" class="show-answer hidden">
+                        <label for="ans2" class="cursor-pointer bg-white text-blue-900 px-4 py-1 rounded-full text-xs font-bold hover:bg-blue-100 transition">XEM ĐÁP ÁN</label>
+                        <div class="answer-box mt-4 p-4 bg-blue-700/50 rounded-xl font-mono text-sm border-l-4 border-green-400">
+                            Sửa "is" thành "are". (A number of + N-plural + V-plural)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-bold heading-font text-slate-400 uppercase tracking-widest text-sm mb-4">IELTS Mastery Series</p>
+            <p class="text-slate-600 font-medium">Nội dung biên soạn bởi: <span class="text-blue-600">Phạm Tiến Dũng Gia Sư</span></p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <span class="w-2 h-2 bg-blue-200 rounded-full"></span>
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
+    </script>
+</body>
+</html>

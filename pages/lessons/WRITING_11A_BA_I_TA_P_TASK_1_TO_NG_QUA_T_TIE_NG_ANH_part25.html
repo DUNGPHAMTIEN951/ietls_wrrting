@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 General Training - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .font-header { font-family: 'Roboto', sans-serif; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        .accordion-content { display: none; }
+        .accordion-content.active { display: block; }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">D</div>
+                <span class="text-xl font-bold font-header text-gray-900 tracking-tight">Phạm Tiến Dũng <span class="text-blue-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#overview" class="hover:text-blue-600">Tổng quan</a>
+                <a href="#formal" class="hover:text-blue-600">Formal Letters</a>
+                <a href="#informal" class="hover:text-blue-600">Informal Letters</a>
+                <a href="#practice" class="hover:text-blue-600">Thực hành</a>
+            </nav>
+        <!-- Mode Switcher -->
+        <div class="flex justify-center gap-4 mb-12 sticky top-6 z-50">
+            <button onclick="switchMode('theory')" id="btn-theory" class="px-8 py-3 rounded-2xl bg-slate-900 text-white font-bold shadow-xl border border-white/10 transition-all flex items-center gap-2">
+                <i data-lucide="book-open" class="w-5 h-5"></i> Lý thuyết
+            </button>
+            <button onclick="switchMode('practice')" id="btn-practice" class="px-8 py-3 rounded-2xl bg-white text-slate-900 font-bold shadow-lg border border-slate-100 transition-all flex items-center gap-2">
+                <i data-lucide="edit-3" class="w-5 h-5"></i> Luyện tập (200 câu)
+                <span class="bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full animate-pulse">HOT</span>
+            </button>
+        </div>
+        <div id="theory-section" class="mode-section animate-fade-in">
+        
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black font-header mb-4 gradient-text uppercase">IELTS General Writing Task 1</h1>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">Chinh phục kỹ năng viết thư chuyên nghiệp với hệ thống bài mẫu Band 8.0+ và phân tích chuyên sâu từ <span class="font-bold">Phạm Tiến Dũng Gia Sư</span>.</p>
+        </section>
+
+        <!-- Structure Comparison Table -->
+        <section id="overview" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="bg-blue-100 text-blue-600 p-2 rounded-md mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </span>
+                So sánh cấu trúc Thư Trang trọng & Thân mật
+            </h2>
+            <div class="overflow-x-auto rounded-xl shadow-sm border border-gray-200">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-gray-50 border-b border-gray-200">
+                        <tr>
+                            <th class="px-6 py-4 font-bold text-gray-700">Đặc điểm</th>
+                            <th class="px-6 py-4 font-bold text-blue-700">Formal (Trang trọng)</th>
+                            <th class="px-6 py-4 font-bold text-green-700">Informal (Thân mật)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 font-medium">Salutation</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 italic">Dear Sir or Madam, / Dear Mr. Smith,</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 italic">Dear Samuel, / Hi Anna,</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">Opening</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 italic">I am writing to inform/enquire/request...</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 italic">I hope you are doing excellent! / It was great seeing you...</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">Signing off</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 italic">Yours faithfully, / Yours sincerely,</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 italic">Warm wishes, / Best regards, / Yours truly,</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Lesson Content: Formal Letters -->
+        <section id="formal" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 border-l-8 border-blue-600 pl-4">PHẦN 1: FORMAL LETTERS (THƯ TRANG TRỌNG)</h2>
+            
+            <!-- Case 25 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-8 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Employment</span>
+                    <span class="text-gray-400 text-sm font-medium">Task #25</span>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Hoãn ngày bắt đầu công việc (Job Postponement)</h3>
+                <div class="pro-tip p-4 mb-6 rounded-r-lg italic text-gray-700 text-sm">
+                    <strong>Pro Tip:</strong> Khi viết thư hoãn (decline/postpone), hãy luôn bắt đầu bằng sự biết ơn (gratitude) trước khi đưa ra lý do (reason). Điều này giữ được sự chuyên nghiệp trong môi trường công sở.
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-gray-300 mb-6 font-serif italic text-gray-800">
+                    "I am very grateful to you for the job opportunity... however, I regret to inform you that I can not join on the pre-agreed date. I sincerely apologise for any inconvenience..."
+                </div>
+                <div class="teacher-note p-4 rounded-r-lg text-sm">
+                    <strong>Teacher's Note:</strong> Sử dụng các trạng từ như <strong>"Sincerely"</strong>, <strong>"Practically impossible"</strong>, <strong>"Stipulated date"</strong> giúp bài viết đạt Band cao về Vocabulary (LR).
+                </div>
+            </div>
+
+            <!-- Case 23 & 20 -->
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-lg mb-3 text-blue-800 uppercase">Tổ chức chuyến đi (Organising a Trip)</h4>
+                    <p class="text-sm text-gray-600 mb-4 italic">Yêu cầu thông tin về chỗ ở cho một nhóm học sinh.</p>
+                    <ul class="text-sm space-y-2 text-gray-700">
+                        <li><span class="font-bold">Key Vocab:</span> Study excursion, attached bathrooms, availability of accommodation.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-lg mb-3 text-blue-800 uppercase">Khảo sát & Triển lãm (Survey & Exhibition)</h4>
+                    <p class="text-sm text-gray-600 mb-4 italic">Hỏi về nội dung trưng bày và các ưu đãi giảm giá cho nhóm.</p>
+                    <ul class="text-sm space-y-2 text-gray-700">
+                        <li><span class="font-bold">Key Vocab:</span> Elucidate on content, apprise me of, eligible for, highly obliged.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Aid: The Tone Spectrum -->
+        <section class="mb-16 py-12 bg-blue-900 rounded-3xl text-white px-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Biểu đồ: Sắc thái ngôn từ (The Tone Spectrum)</h2>
+            <div class="flex flex-col items-center space-y-4">
+                <div class="w-full bg-gray-200 rounded-full h-4 max-w-3xl overflow-hidden flex">
+                    <div class="bg-blue-400 h-full w-1/3 text-center text-[10px] pt-0.5">FORMAL</div>
+                    <div class="bg-purple-400 h-full w-1/3 text-center text-[10px] pt-0.5 border-x border-white">SEMI-FORMAL</div>
+                    <div class="bg-green-400 h-full w-1/3 text-center text-[10px] pt-0.5">INFORMAL</div>
+                </div>
+                <div class="grid grid-cols-3 w-full max-w-3xl text-xs text-center">
+                    <div>Gửi người lạ, Giám đốc, HR</div>
+                    <div>Gửi đồng nghiệp, hàng xóm</div>
+                    <div>Gửi bạn thân, gia đình</div>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-blue-200 italic text-sm">Hướng dẫn chuyên sâu bởi Phạm Tiến Dũng Gia Sư</p>
+        </section>
+
+        <!-- Lesson Content: Informal Letters -->
+        <section id="informal" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 border-l-8 border-green-600 pl-4">PHẦN 2: INFORMAL LETTERS (THƯ THÂN MẬT)</h2>
+            
+            <!-- Case 24 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-8 hover:shadow-md transition">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Experience</span>
+                    <span class="text-gray-400 text-sm font-medium">Task #24</span>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Kể về một địa điểm gây ấn tượng mạnh</h3>
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-green-300 mb-6 font-serif italic text-gray-800">
+                    "I am writing to inform you about a place I had been for the first time and the experience is overwhelming... it infused me of an idea to gather a few more and ask for their help..."
+                </div>
+                <div class="teacher-note p-4 rounded-r-lg text-sm">
+                    <strong>Teacher's Note:</strong> Trong thư thân mật, hãy dùng các từ ngữ miêu tả cảm xúc (Emotional words) như <strong>"Overwhelming"</strong>, <strong>"Surprised"</strong>, <strong>"Nostalgic"</strong> để tăng tính kết nối.
+                </div>
+            </div>
+
+            <!-- Case 26 & 21 -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-lg mb-3 text-green-800 uppercase">Mời bạn đến chơi (Invitation)</h4>
+                    <p class="text-sm text-gray-600 mb-4 italic">Mời bạn thân đến tham dự sinh nhật tại một trạm nghỉ dưỡng vùng đồi.</p>
+                    <div class="text-xs bg-gray-50 p-3 rounded">
+                        <strong>Lưu ý:</strong> Dùng câu trúc mời mọc: "I will expect you to be with me", "Please try to make it".
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <h4 class="font-bold text-lg mb-3 text-green-800 uppercase">Nhờ tư vấn du học (Education Help)</h4>
+                    <p class="text-sm text-gray-600 mb-4 italic">Hỏi bạn về các khóa học kiểm toán viên tại London.</p>
+                    <div class="text-xs bg-gray-50 p-3 rounded">
+                        <strong>Lưu ý:</strong> Cung cấp Background trước khi nhờ vả: "I have been stuck with the same designation for more than 2 years."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Vocabulary Table -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 uppercase">Từ vựng nâng cao (Academic & Professional Lexis)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex items-center p-4 bg-white border border-gray-100 rounded-lg shadow-sm">
+                    <div class="text-blue-600 font-bold w-40">Stipulated date</div>
+                    <div class="text-gray-500 text-sm italic">Ngày đã được quy định/thỏa thuận</div>
+                </div>
+                <div class="flex items-center p-4 bg-white border border-gray-100 rounded-lg shadow-sm">
+                    <div class="text-blue-600 font-bold w-40">Dire circumstances</div>
+                    <div class="text-gray-500 text-sm italic">Hoàn cảnh khốn khó/nghiêm trọng</div>
+                </div>
+                <div class="flex items-center p-4 bg-white border border-gray-100 rounded-lg shadow-sm">
+                    <div class="text-blue-600 font-bold w-40">Copious amount</div>
+                    <div class="text-gray-500 text-sm italic">Một lượng cực kỳ nhiều</div>
+                </div>
+                <div class="flex items-center p-4 bg-white border border-gray-100 rounded-lg shadow-sm">
+                    <div class="text-blue-600 font-bold w-40">Highly obliged</div>
+                    <div class="text-gray-500 text-sm italic">Cực kỳ biết ơn</div>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-400 text-right">Biên soạn bởi: Phạm Tiến Dũng Gia Sư</p>
+        </section>
+
+        <!-- Interactive Practice Section -->
+        <section id="practice" class="bg-gray-900 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-2">BÀI TẬP THỰC HÀNH (Practice Task)</h2>
+                <p class="text-gray-400 italic text-sm">Hãy tự kiểm tra kiến thức trước khi xem đáp án</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Question 1 -->
+                <div class="border border-gray-700 rounded-2xl overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center hover:bg-gray-800 transition" onclick="document.getElementById('ans1').classList.toggle('active')">
+                        <span>Câu hỏi: Khi viết thư cho HR để từ chối một lời mời làm việc, câu nào sau đây thể hiện sự chuyên nghiệp nhất?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="ans1" class="accordion-content bg-gray-800 p-6 border-t border-gray-700 text-gray-300">
+                        <p class="mb-4">A. I don't want to work for you because I like my current boss.<br>
+                        B. I regret to say that I cannot accept the offer right now as I am happy with my current role.</p>
+                        <hr class="border-gray-700 my-4">
+                        <p class="text-green-400 font-bold">Đáp án: B</p>
+                        <p class="text-sm">Giải thích: Trong môi trường Formal, cụm từ <strong>"Regret to say"</strong> và <strong>"Current role"</strong> mang sắc thái lịch sự và khách quan hơn.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="border border-gray-700 rounded-2xl overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center hover:bg-gray-800 transition" onclick="document.getElementById('ans2').classList.toggle('active')">
+                        <span>Câu hỏi: Trong thư phàn nàn dịch vụ nhà hàng, cụm từ "The taste of the food was just out of the world" có ý nghĩa gì?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="ans2" class="accordion-content bg-gray-800 p-6 border-t border-gray-700 text-gray-300">
+                        <p class="text-green-400 font-bold">Đáp án: Thức ăn cực kỳ ngon (Excellent/Delicious).</p>
+                        <p class="text-sm">Giải thích: "Out of the world" là một idiom dùng để khen ngợi điều gì đó tuyệt vời đến mức khó tin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    </div> <!-- End Theory Section -->
+
+    <!-- Practice Section -->
+    <div id="practice-section" class="mode-section hidden animate-fade-in pb-20">
+        
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+        <div class="bg-slate-50 dark:bg-slate-800/50 p-8 border-b border-slate-200 dark:border-slate-800">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-2">Luyện tập Chuyên sâu</h2>
+                    <p class="text-slate-500 dark:text-slate-400">Hoàn thành bộ 200 câu hỏi để làm chủ kiến thức.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-inner">
+                    <div class="text-center">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Tiến độ</p>
+                        <p class="text-2xl font-black text-blue-600" id="practice-progress">0/200</p>
+                    </div>
+                    <div class="w-px h-10 bg-slate-100 dark:bg-slate-800"></div>
+                    <div class="text-center">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Đúng</p>
+                        <p class="text-2xl font-black text-emerald-500" id="practice-correct">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-8">
+                <button onclick="filterPractice('all')" class="cat-btn active">Tất cả</button>
+                <button onclick="filterPractice('Bài tập Dịch')" class="cat-btn">Dịch thuật</button>
+                <button onclick="filterPractice('Word Box')" class="cat-btn">Word Box</button>
+                <button onclick="filterPractice('Fill in the blank')" class="cat-btn">Điền từ</button>
+                <button onclick="filterPractice('Chart Analysis')" class="cat-btn">Biểu đồ</button>
+            </div>
+        </div>
+        <div class="p-8 md:p-12 min-h-[400px]" id="question-container"></div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 p-6 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+            <button onclick="prevQuestion()" class="btn-nav"><i data-lucide="chevron-left"></i> Câu trước</button>
+            <div class="text-sm font-bold text-slate-400" id="question-index">Câu 1 / 200</div>
+            <button onclick="nextQuestion()" class="btn-nav">Câu tiếp <i data-lucide="chevron-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let allQuestions = [{"id": 1, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi viết thư này để thông báo cho bạn về việc hoãn ngày bắt đầu công việc của tôi.", "options": null, "answer": "I am writing to inform you that I have to postpone my starting date.", "hint": "Sử dụng cấu trúc 'I am writing to...' và động từ 'postpone'.", "explanation": "Trong thư trang trọng, cấu trúc 'I am writing to inform you' là cách mở đầu chuẩn mực để thông báo một tin tức."}, {"id": 2, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi vô cùng biết ơn bạn vì cơ hội việc làm này.", "options": null, "answer": "I am very grateful to you for this job opportunity.", "hint": "Dùng tính từ 'grateful' và danh từ 'opportunity'.", "explanation": "Lý thuyết nhấn mạnh việc bắt đầu bằng sự biết ơn (gratitude) trước khi đưa ra lý do hoãn hoặc từ chối để giữ sự chuyên nghiệp."}, {"id": 3, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Hy vọng bạn đang làm việc rất tốt!", "options": null, "answer": "I hope you are doing excellent!", "hint": "Sử dụng cụm từ 'doing excellent' cho thư thân mật.", "explanation": "Đây là cách mở đầu phổ biến trong thư Informal để hỏi thăm tình hình đối phương một cách tự nhiên."}, {"id": 4, "type": "Bài tập Dịch", "question": "Dịch cụm từ sau sang tiếng Anh chuyên nghiệp: 'Ngày đã thỏa thuận trước'.", "options": null, "answer": "Pre-agreed date", "hint": "Sử dụng tiền tố 'pre-' và tính từ 'agreed'.", "explanation": "Cụm từ này thường dùng trong ngữ cảnh công sở để nói về các mốc thời gian đã được chốt trong hợp đồng hoặc phỏng vấn."}, {"id": 5, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi thành thật xin lỗi vì bất kỳ sự bất tiện nào đã gây ra.", "options": null, "answer": "I sincerely apologise for any inconvenience caused.", "hint": "Dùng trạng từ 'sincerely' và danh từ 'inconvenience'.", "explanation": "Đây là mẫu câu xin lỗi tiêu chuẩn trong Business English để thể hiện sự lịch sự và chuyên nghiệp."}, {"id": 6, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi viết thư này để hỏi về chỗ ở cho một nhóm học sinh.", "options": null, "answer": "I am writing to enquire about accommodation for a group of students.", "hint": "Dùng động từ 'enquire' thay vì 'ask' và danh từ 'accommodation'.", "explanation": "'Enquire' là biến thể trang trọng hơn của 'ask', phù hợp với tiêu chuẩn Writing Task 1 General."}, {"id": 7, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi rất tiếc phải thông báo với bạn rằng tôi không thể tham gia vào ngày đã định.", "options": null, "answer": "I regret to inform you that I cannot join on the stipulated date.", "hint": "Dùng cụm 'regret to inform' và tính từ 'stipulated'.", "explanation": "'Stipulated' (được quy định/ấn định) là từ vựng thuộc Band cao (LR) giúp tăng điểm tiêu chí Vocabulary."}, {"id": 8, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Rất vui được gặp lại bạn vào tuần trước.", "options": null, "answer": "It was great seeing you last week.", "hint": "Dùng cấu trúc 'It was great + V-ing'.", "explanation": "Trong thư thân mật, cách diễn đạt này giúp tạo sự gần gũi ngay từ đầu thư."}, {"id": 9, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Thư trang trọng'.", "options": null, "answer": "Formal letters", "hint": "Từ đối lập với 'informal'.", "explanation": "Đây là phân loại chính trong Task 1 General Training dành cho đối tượng là người lạ hoặc tổ chức."}, {"id": 10, "type": "Bài tập Dịch", "question": "Dịch cụm từ kết thúc thư (Formal - khi không biết tên người nhận): 'Trân trọng'.", "options": null, "answer": "Yours faithfully", "hint": "Bắt đầu bằng chữ 'Y' và kết thúc bằng 'f'.", "explanation": "Quy tắc: 'Dear Sir/Madam' đi kèm với 'Yours faithfully'."}, {"id": 11, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Thực tế là không thể'.", "options": null, "answer": "Practically impossible", "hint": "Sử dụng trạng từ 'practically'.", "explanation": "Cụm từ này mạnh và chuyên nghiệp hơn so với 'very difficult' khi giải thích lý do không thể thực hiện điều gì đó."}, {"id": 12, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi viết thư này để yêu cầu sự giúp đỡ của bạn.", "options": null, "answer": "I am writing to request your assistance.", "hint": "Dùng động từ 'request' và danh từ 'assistance'.", "explanation": "Dùng 'assistance' thay vì 'help' để đảm bảo sắc thái trang trọng (Formal tone)."}, {"id": 13, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Chúc bạn những điều tốt đẹp nhất.", "options": null, "answer": "Warm wishes", "hint": "Bắt đầu bằng 'W'.", "explanation": "Đây là một cách 'signing off' (kết thư) phổ biến và ấm áp trong thư cho bạn bè/người thân."}, {"id": 14, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Gửi Ngài hoặc Bà (Lời chào đầu thư).", "options": null, "answer": "Dear Sir or Madam", "hint": "Dùng khi không biết tên người nhận.", "explanation": "Đây là lời chào mặc định cho các bức thư trang trọng gửi đến một phòng ban hoặc người chưa quen biết."}, {"id": 15, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Hoãn ngày bắt đầu công việc'.", "options": null, "answer": "Job postponement", "hint": "Danh từ của động từ 'postpone'.", "explanation": "Sử dụng danh từ hóa giúp tiêu đề bài viết hoặc câu văn trở nên súc tích, chuyên nghiệp hơn."}, {"id": 16, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Cảm ơn bạn vì sự thấu hiểu của bạn trong vấn đề này.", "options": null, "answer": "Thank you for your understanding in this matter.", "hint": "Cụm từ cố định 'understanding in this matter'.", "explanation": "Cách diễn đạt này thường dùng ở cuối thư sau khi đã đưa ra một yêu cầu hoặc giải thích một tình huống khó khăn."}, {"id": 17, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Hệ thống bài mẫu Band 8.0+'.", "options": null, "answer": "Band 8.0+ model answer system", "hint": "Dịch sát nghĩa các thành phần.", "explanation": "Cụm từ này mô tả tài liệu học tập chất lượng cao theo tiêu chuẩn IELTS."}, {"id": 18, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Chào Anna (Lời chào).", "options": null, "answer": "Hi Anna,", "hint": "Dùng 'Hi' + Tên riêng.", "explanation": "Trong thư Informal, việc sử dụng tên riêng và từ chào hỏi thân mật là bắt buộc."}, {"id": 19, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tổ chức một chuyến đi'.", "options": null, "answer": "Organising a trip", "hint": "Động từ 'organise' ở dạng V-ing.", "explanation": "Đây là một chủ đề thường gặp trong Writing Task 1 General."}, {"id": 20, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Gửi ông Smith (Lời chào khi biết họ).", "options": null, "answer": "Dear Mr. Smith,", "hint": "Sử dụng tước hiệu Mr. và họ (Surname).", "explanation": "Khi biết tên người nhận trong thư trang trọng, ta dùng Dear + Title + Surname."}, {"id": 21, "type": "Bài tập Dịch", "question": "Dịch cụm từ kết thúc thư (Formal - khi biết tên người nhận): 'Trân trọng'.", "options": null, "answer": "Yours sincerely", "hint": "Bắt đầu bằng chữ 'Y' và kết thúc bằng 's'.", "explanation": "Quy tắc: Khi chào bằng tên (Mr. Smith), ta kết thúc bằng 'Yours sincerely'."}, {"id": 22, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Thân ái (Kết thư).", "options": null, "answer": "Best regards,", "hint": "Bắt đầu bằng 'B'.", "explanation": "Cách kết thư này trung tính, có thể dùng cho cả thư thân mật và thư bán trang trọng (Semi-formal)."}, {"id": 23, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Phân tích chuyên sâu'.", "options": null, "answer": "In-depth analysis", "hint": "Sử dụng tính từ ghép 'in-depth'.", "explanation": "Cụm từ này thể hiện mức độ chi tiết của việc nghiên cứu hoặc giảng dạy."}, {"id": 24, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi viết thư này để hỏi thông tin về...", "options": null, "answer": "I am writing to enquire about...", "hint": "Dùng 'enquire' thay cho 'ask for information'.", "explanation": "Cách mở đầu ngắn gọn và đúng trọng tâm cho thư yêu cầu thông tin."}, {"id": 25, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Mong sớm nhận được tin từ bạn.", "options": null, "answer": "Hope to hear from you soon.", "hint": "Sử dụng cấu trúc 'Hope to...'.", "explanation": "Trong thư thân mật, có thể lược bỏ chủ ngữ 'I' ở đầu câu để tạo cảm giác tự nhiên."}, {"id": 26, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi xin lỗi vì sự trì hoãn này.", "options": null, "answer": "I apologise for this delay.", "hint": "Dùng động từ 'apologise' thay vì 'sorry'.", "explanation": "Động từ 'apologise' mang sắc thái trang trọng, phù hợp cho môi trường công việc."}, {"id": 27, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Bạn có thể vui lòng cho tôi biết...?", "options": null, "answer": "Could you please let me know...?", "hint": "Sử dụng động từ khuyết thiếu 'Could' để tăng tính lịch sự.", "explanation": "Đây là cách đặt câu hỏi gián tiếp rất phổ biến trong thư trang trọng."}, {"id": 28, "type": "Bài tập Dịch", "question": "Dịch cụm từ sau: 'Cơ hội việc làm'.", "options": null, "answer": "Job opportunity", "hint": "Dùng danh từ 'opportunity'.", "explanation": "Cụm danh từ cơ bản trong chủ đề Employment của IELTS General."}, {"id": 29, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Thân mến (Kết thư).", "options": null, "answer": "Yours truly,", "hint": "Sử dụng trạng từ 'truly'.", "explanation": "Đây là một lựa chọn kết thư thân mật khác, thường dùng cho bạn bè thân thiết."}, {"id": 30, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi mong nhận được phản hồi của bạn.", "options": null, "answer": "I look forward to receiving your response.", "hint": "Lưu ý cấu trúc 'Look forward to + V-ing'.", "explanation": "Đây là câu kết thư kinh điển để nhắc nhở người nhận về việc trả lời thư."}, {"id": 31, "type": "Bài tập Dịch", "question": "Dịch cụm từ: 'Chinh phục kỹ năng viết thư'.", "options": null, "answer": "Mastering letter writing skills", "hint": "Dùng động từ 'Master' hoặc 'Conquer'.", "explanation": "'Mastering' thể hiện việc thành thục một kỹ năng nào đó."}, {"id": 32, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Vui lòng chấp nhận lời xin lỗi của tôi.", "options": null, "answer": "Please accept my apologies.", "hint": "Sử dụng danh từ số nhiều 'apologies'.", "explanation": "Cách diễn đạt lịch sự và trang trọng hơn so với chỉ nói 'I am sorry'."}, {"id": 33, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Sự biết ơn'.", "options": null, "answer": "Gratitude", "hint": "Danh từ bắt đầu bằng chữ 'G'.", "explanation": "Trong bài học, 'gratitude' được nhấn mạnh là yếu tố cần có khi viết thư hoãn/từ chối."}, {"id": 34, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Bạn khỏe không?", "options": null, "answer": "How have you been?", "hint": "Thì hiện tại hoàn thành để hỏi thăm tình hình dạo gần đây.", "explanation": "Đây là câu hỏi thăm sức khỏe tự nhiên hơn 'How are you?' trong văn nói và thư thân mật."}, {"id": 35, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi muốn hỏi xem liệu có chỗ trống nào không.", "options": null, "answer": "I would like to enquire if there are any vacancies.", "hint": "Dùng 'enquire' và 'vacancies'.", "explanation": "Sử dụng 'vacancies' khi hỏi về chỗ trống trong việc làm hoặc phòng ở."}, {"id": 36, "type": "Bài tập Dịch", "question": "Dịch cụm từ: 'Giữ được sự chuyên nghiệp'.", "options": null, "answer": "Maintain professionalism", "hint": "Dùng động từ 'maintain'.", "explanation": "Đạt được điểm 'Tone' trong Writing yêu cầu người viết giữ được sự chuyên nghiệp xuyên suốt bài."}, {"id": 37, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Lý do hoãn'.", "options": null, "answer": "Reason for postponement", "hint": "Dùng giới từ 'for'.", "explanation": "Cấu trúc danh từ giúp trình bày lý do một cách rõ ràng."}, {"id": 38, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Thật vui khi nhận được thư bạn.", "options": null, "answer": "It was great to hear from you.", "hint": "Dùng cụm 'hear from someone'.", "explanation": "Câu mở đầu thân thiện cho thư phản hồi cho một người bạn."}, {"id": 39, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi đính kèm lý lịch của tôi để bạn xem xét.", "options": null, "answer": "I am attaching my CV for your consideration.", "hint": "Dùng động từ 'attach' và danh từ 'consideration'.", "explanation": "Câu này thường dùng trong thư xin việc hoặc yêu cầu hoãn việc kèm minh chứng."}, {"id": 40, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'So sánh cấu trúc'.", "options": null, "answer": "Structure comparison", "hint": "Sử dụng danh từ 'comparison'.", "explanation": "Việc phân biệt cấu trúc Formal và Informal là bước đầu tiên để làm đúng Task 1 General."}, {"id": 41, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi xin thông báo rằng...", "options": null, "answer": "I wish to inform you that...", "hint": "Dùng 'wish to' thay vì 'want to'.", "explanation": "'I wish to' cực kỳ trang trọng và thường dùng trong các thông báo chính thức."}, {"id": 42, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Chúc mọi điều tốt đẹp (Kết thư).", "options": null, "answer": "All the best,", "hint": "Bắt đầu bằng 'A'.", "explanation": "Một cách kết thư cực kỳ phổ biến và linh hoạt cho thư thân mật."}, {"id": 43, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Môi trường công sở'.", "options": null, "answer": "Professional environment", "hint": "Dùng tính từ 'professional'.", "explanation": "Cụm từ này mô tả bối cảnh của các bức thư Formal."}, {"id": 44, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Đừng ngần ngại liên hệ với tôi.", "options": null, "answer": "Please do not hesitate to contact me.", "hint": "Sử dụng động từ 'hesitate'.", "explanation": "Câu này thể hiện sự sẵn lòng hỗ trợ thêm, thường đặt ở cuối thư."}, {"id": 45, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Gửi Samuel (Lời chào).", "options": null, "answer": "Dear Samuel,", "hint": "Dùng 'Dear' + Tên riêng.", "explanation": "Thư Informal có thể dùng 'Hi' hoặc 'Dear' đi kèm tên riêng."}, {"id": 46, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Thư thân mật'.", "options": null, "answer": "Informal letters", "hint": "Ngược lại với 'formal'.", "explanation": "Đây là loại thư dành cho bạn bè, gia đình hoặc người quen thân."}, {"id": 47, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Formal): Tôi không thể tham gia vào ngày đã thỏa thuận trước.", "options": null, "answer": "I am unable to join on the pre-agreed date.", "hint": "Dùng 'unable to' thay vì 'cannot' để tăng tính trang trọng.", "explanation": "Trong văn viết trang trọng, 'unable to' được ưu tiên hơn 'cannot'."}, {"id": 48, "type": "Bài tập Dịch", "question": "Dịch cụm từ: 'Thành thật xin lỗi'.", "options": null, "answer": "Sincerely apologise", "hint": "Kết hợp trạng từ 'sincerely' và động từ 'apologise'.", "explanation": "Sử dụng trạng từ nhấn mạnh giúp thể hiện thái độ cầu thị của người viết."}, {"id": 49, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tổng quan'.", "options": null, "answer": "Overview", "hint": "Bắt đầu bằng 'O'.", "explanation": "Phần cung cấp cái nhìn chung về yêu cầu của bài thi."}, {"id": 50, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh (Informal): Gặp lại bạn sớm nhé!", "options": null, "answer": "See you soon!", "hint": "Cụm từ 3 chữ bắt đầu bằng 'S'.", "explanation": "Cách kết thúc thư ngắn gọn, tự nhiên giữa bạn bè."}, {"id": 51, "type": "Word Box", "question": "In a formal letter, when you don't know the recipient's name, you should start with 'Dear ______ or Madam'.", "options": ["Sir", "Mister", "Gentle", "Friend"], "answer": "Sir", "hint": "Đây là cặp từ cố định trong lời chào thư trang trọng.", "explanation": "Cụm từ 'Dear Sir or Madam' là quy chuẩn bắt buộc trong thư Formal khi không xác định được danh tính cụ thể của người nhận."}, {"id": 52, "type": "Word Box", "question": "To get a high score in Lexical Resource, you should use ______ instead of 'fixed date'.", "options": ["stipulated date", "normal date", "old date", "fast date"], "answer": "stipulated date", "hint": "Từ này có nghĩa là 'ngày đã được ấn định/quy định'.", "explanation": "'Stipulated' là từ vựng nâng cao (C1/C2) giúp tăng điểm tiêu chí LR thay vì các từ phổ thông."}, {"id": 53, "type": "Word Box", "question": "When writing to a close friend, a suitable opening is 'I hope you are doing ______!'.", "options": ["excellent", "faithfully", "sincerely", "stipulated"], "answer": "excellent", "hint": "Một trạng từ tích cực dùng trong văn phong thân mật.", "explanation": "Trong thư Informal, việc sử dụng các trạng từ biểu cảm như 'excellent' giúp tạo tông giọng thân thiện."}, {"id": 54, "type": "Word Box", "question": "If you start a letter with 'Dear Mr. Smith', you must end it with 'Yours ______'.", "options": ["sincerely", "faithfully", "truly", "excellent"], "answer": "sincerely", "hint": "Dùng khi bạn biết tên (họ) của người nhận.", "explanation": "Quy tắc thư tín Anh ngữ: Dear + Name đi với Yours sincerely; Dear Sir/Madam đi với Yours faithfully."}, {"id": 55, "type": "Word Box", "question": "Before giving a reason for postponement, you should express ______ to maintain professionalism.", "options": ["gratitude", "anger", "sadness", "surprise"], "answer": "gratitude", "hint": "Sự biết ơn.", "explanation": "Theo Pro Tip, bắt đầu bằng sự biết ơn (gratitude) giúp giữ vững mối quan hệ chuyên nghiệp khi đưa ra tin không mong muốn."}, {"id": 56, "type": "Word Box", "question": "I am writing to ______ you that I cannot join on the pre-agreed date.", "options": ["inform", "say", "tell", "whisper"], "answer": "inform", "hint": "Từ trang trọng hơn của 'tell'.", "explanation": "'Inform' là động từ chuẩn trong thư Formal để cung cấp thông tin hoặc thông báo."}, {"id": 57, "type": "Word Box", "question": "It is ______ impossible for me to attend the meeting tomorrow.", "options": ["practically", "very", "not", "maybe"], "answer": "practically", "hint": "Trạng từ đi kèm để nhấn mạnh tính chất 'gần như/thực tế là'.", "explanation": "'Practically impossible' là một collocation nâng cao thường dùng để giải thích lý do bất khả kháng."}, {"id": 58, "type": "Word Box", "question": "In an informal letter, 'Warm ______' is a common way to sign off.", "options": ["wishes", "sincerely", "faithfully", "inform"], "answer": "wishes", "hint": "Lời chúc ấm áp.", "explanation": "'Warm wishes' phù hợp cho thư Informal hoặc Semi-formal gửi cho người quen."}, {"id": 59, "type": "Word Box", "question": "I am writing to ______ about accommodation for a group of students.", "options": ["enquire", "ask", "look", "want"], "answer": "enquire", "hint": "Động từ trang trọng dùng để hỏi thông tin.", "explanation": "'Enquire' là từ vựng đặc trưng của Formal Writing Task 1 khi yêu cầu thông tin."}, {"id": 60, "type": "Word Box", "question": "I sincerely ______ for any inconvenience caused by this delay.", "options": ["apologise", "regret", "grateful", "inform"], "answer": "apologise", "hint": "Động từ xin lỗi trong văn phong trang trọng.", "explanation": "'Sincerely apologise' là cụm từ chuẩn mực để nhận lỗi trong môi trường công sở."}, {"id": 61, "type": "Word Box", "question": "I regret to inform you that I cannot join on the ______ date.", "options": ["pre-agreed", "last", "old", "near"], "answer": "pre-agreed", "hint": "Ngày đã được thỏa thuận trước đó.", "explanation": "Sử dụng 'pre-agreed' thể hiện tính chính xác và chuyên nghiệp trong thư tín công việc."}, {"id": 62, "type": "Word Box", "question": "I ______ grateful to you for the job opportunity.", "options": ["am very", "is very", "be very", "was very"], "answer": "am very", "hint": "Chia động từ to-be phù hợp với ngôi 'I'.", "explanation": "Cấu trúc 'I am very grateful to you' dùng để mở đầu thư hoãn nhận việc một cách lịch sự."}, {"id": 63, "type": "Word Box", "question": "Which word is an informal salutation?", "options": ["Hi Anna", "Dear Sir", "Dear Mr. Smith", "Yours truly"], "answer": "Hi Anna", "hint": "Cách chào hỏi dùng cho bạn bè.", "explanation": "'Hi + [First Name]' là đặc điểm nhận dạng của thư Informal."}, {"id": 64, "type": "Word Box", "question": "Which 'Signing off' is NOT suitable for a formal letter?", "options": ["Best regards", "Yours faithfully", "Yours sincerely", "Yours truly"], "answer": "Yours truly", "hint": "Lưu ý bảng so sánh trong bài học.", "explanation": "Theo bảng so sánh, 'Yours truly' được xếp vào nhóm Informal (Thân mật)."}, {"id": 65, "type": "Word Box", "question": "I ______ to inform you that I cannot join the company next week.", "options": ["regret", "happy", "want", "like"], "answer": "regret", "hint": "Dùng khi thông báo tin buồn hoặc tin từ chối.", "explanation": "'I regret to inform you' là cấu trúc cố định dùng trong thư Formal."}, {"id": 66, "type": "Word Box", "question": "The ______ of the letter should be 'I am writing to inform...' in a formal context.", "options": ["Opening", "Salutation", "Signing off", "Body"], "answer": "Opening", "hint": "Phần bắt đầu bức thư.", "explanation": "Phần 'Opening' xác định mục đích của bức thư ngay từ câu đầu tiên."}, {"id": 67, "type": "Word Box", "question": "Using 'Sincerely' as an adverb helps improve your ______ score.", "options": ["LR", "TA", "CC", "GRA"], "answer": "LR", "hint": "Tiêu chí chấm điểm về từ vựng (Lexical Resource).", "explanation": "Việc sử dụng trạng từ phù hợp giúp làm giàu vốn từ vựng, tăng điểm LR."}, {"id": 68, "type": "Word Box", "question": "Which of these is a formal salutation?", "options": ["Dear Mr. Smith", "Hi Samuel", "Dear Anna", "Warm wishes"], "answer": "Dear Mr. Smith", "hint": "Dùng họ và tước hiệu.", "explanation": "'Dear Mr. Smith' là cách chào trang trọng khi biết tên người nhận."}, {"id": 69, "type": "Word Box", "question": "The task is about 'Organising a ______' for students.", "options": ["Trip", "Job", "Party", "Meeting"], "answer": "Trip", "hint": "Nội dung của Task yêu cầu thông tin về chỗ ở.", "explanation": "Chủ đề 'Organising a Trip' yêu cầu học sinh hỏi về accommodation."}, {"id": 70, "type": "Word Box", "question": "In Task #25, the candidate needs to ______ the start date of a job.", "options": ["postpone", "cancel", "accept", "change"], "answer": "postpone", "hint": "Nghĩa là 'hoãn lại'.", "explanation": "Nội dung bài học tập trung vào việc 'Job Postponement' (Hoãn ngày bắt đầu công việc)."}, {"id": 71, "type": "Word Box", "question": "I am writing to ______ information regarding the vacancy.", "options": ["request", "give", "say", "talk"], "answer": "request", "hint": "Dùng để hỏi/yêu cầu điều gì đó một cách trang trọng.", "explanation": "'Request' thường đi với 'information' hoặc 'assistance' trong thư Formal."}, {"id": 72, "type": "Word Box", "question": "What is the opposite style of 'Formal'?", "options": ["Informal", "Professional", "Strict", "Official"], "answer": "Informal", "hint": "Phong cách thân mật.", "explanation": "Trong IELTS General Task 1, hai phong cách chính là Formal và Informal."}, {"id": 73, "type": "Word Box", "question": "The word 'Accommodation' is related to ______.", "options": ["Housing", "Employment", "Greeting", "Closing"], "answer": "Housing", "hint": "Nơi ở, chỗ ở.", "explanation": "Khi tổ chức chuyến đi, việc hỏi về 'accommodation' là hỏi về nơi ăn chốn ở."}, {"id": 74, "type": "Word Box", "question": "Which phrase is an informal opening?", "options": ["It was great seeing you", "I am writing to inform", "Dear Sir", "Yours sincerely"], "answer": "It was great seeing you", "hint": "Cách mở đầu nhắc lại một sự kiện gặp gỡ trước đó.", "explanation": "Đây là cách mở đầu tự nhiên, thân thiết trong thư gửi bạn bè."}, {"id": 75, "type": "Word Box", "question": "The phrase 'Sincerely apologise' uses an ______ to modify a verb.", "options": ["adverb", "adjective", "noun", "pronoun"], "answer": "adverb", "hint": "Từ loại của 'Sincerely'.", "explanation": "Sử dụng trạng từ (adverb) để bổ nghĩa cho động từ giúp diễn đạt trở nên tinh tế hơn."}, {"id": 76, "type": "Word Box", "question": "A job opportunity is part of the ______ category.", "options": ["Employment", "Travel", "Complaint", "Personal"], "answer": "Employment", "hint": "Lĩnh vực liên quan đến việc làm.", "explanation": "Hoãn ngày nhận việc (Postponement) thuộc phạm vi Employment trong IELTS."}, {"id": 77, "type": "Word Box", "question": "Which closing is appropriate when you don't know the person's name?", "options": ["Yours faithfully", "Yours sincerely", "Best regards", "Warm wishes"], "answer": "Yours faithfully", "hint": "Đi đôi với 'Dear Sir or Madam'.", "explanation": "Đây là quy tắc cứng trong thư tín trang trọng."}, {"id": 78, "type": "Word Box", "question": "The word 'Gratitude' means showing ______.", "options": ["thanks", "anger", "regret", "request"], "answer": "thanks", "hint": "Lòng biết ơn.", "explanation": "Gratitude là sự trân trọng và cảm ơn đối với một cơ hội hoặc sự giúp đỡ."}, {"id": 79, "type": "Word Box", "question": "'I am writing to inform/enquire/request' is a ______ opening.", "options": ["Formal", "Informal", "Personal", "Casual"], "answer": "Formal", "hint": "Phong cách dùng trong công việc.", "explanation": "Cấu trúc 'I am writing to + verb' là đặc trưng của thư trang trọng."}, {"id": 80, "type": "Word Box", "question": "'Best regards' can be used in ______ letters.", "options": ["Informal", "Formal", "Strict", "Very formal"], "answer": "Informal", "hint": "Xem cột Informal trong bảng so sánh.", "explanation": "Mặc dù 'Best regards' khá chuyên nghiệp nhưng trong IELTS nó thường được dùng cho Informal hoặc Semi-formal."}, {"id": 81, "type": "Word Box", "question": "The teacher suggests using ______ to get a Band 8.0+ in Task 1.", "options": ["model answers", "short notes", "slang", "abbreviations"], "answer": "model answers", "hint": "Các bài mẫu chất lượng cao.", "explanation": "Học từ 'model answers' giúp thí sinh nắm bắt được cấu trúc và từ vựng chuẩn Band cao."}, {"id": 82, "type": "Word Box", "question": "Which of these is a key feature of a professional letter?", "options": ["Clarity", "Slang", "Jokes", "Emoticons"], "answer": "Clarity", "hint": "Sự rõ ràng.", "explanation": "Thư chuyên nghiệp cần sự rõ ràng, mạch lạc và trang trọng, không dùng tiếng lóng hay biểu cảm."}, {"id": 83, "type": "Word Box", "question": "'Yours ______' is used for an informal sign-off in the lesson.", "options": ["truly", "faithfully", "sincerely", "inform"], "answer": "truly", "hint": "Kết thúc bằng một trạng từ thể hiện sự chân thành.", "explanation": "Theo bảng so sánh, 'Yours truly' được dùng để kết thúc thư thân mật."}, {"id": 84, "type": "Word Box", "question": "To enquire about something is to ______ it.", "options": ["ask about", "forget", "ignore", "cancel"], "answer": "ask about", "hint": "Hỏi thông tin.", "explanation": "'Enquire' là động từ đồng nghĩa trang trọng của 'ask about'."}, {"id": 85, "type": "Word Box", "question": "A ______ letter is sent to someone you know well, like a friend.", "options": ["Informal", "Formal", "Business", "Official"], "answer": "Informal", "hint": "Ngược lại với Formal.", "explanation": "Thư Informal dùng cho các mối quan hệ cá nhân, bạn bè."}, {"id": 86, "type": "Word Box", "question": "If you are 'grateful', you feel ______.", "options": ["thankful", "sorry", "bad", "happy"], "answer": "thankful", "hint": "Cảm thấy biết ơn.", "explanation": "'Grateful' đồng nghĩa với 'thankful' nhưng trang trọng hơn."}, {"id": 87, "type": "Word Box", "question": "'Stipulated' is a ______.", "options": ["Vocabulary", "Grammar", "Punctuation", "Greeting"], "answer": "Vocabulary", "hint": "Nó thuộc tiêu chí Lexical Resource.", "explanation": "'Stipulated' là một từ vựng chuyên ngành/trang trọng dùng để nâng band LR."}, {"id": 88, "type": "Word Box", "question": "'Hi Anna' is a ______.", "options": ["Salutation", "Opening", "Body", "Closing"], "answer": "Salutation", "hint": "Lời chào đầu thư.", "explanation": "Salutation là phần chào hỏi người nhận ở đầu bức thư."}, {"id": 89, "type": "Word Box", "question": "The ______ Section explains the overall purpose of the lesson.", "options": ["Overview", "Practice", "Formal", "Informal"], "answer": "Overview", "hint": "Phần tổng quan.", "explanation": "Phần Overview cung cấp cái nhìn khái quát về chủ đề bài học."}, {"id": 90, "type": "Word Box", "question": "'Inconvenience' means ______.", "options": ["trouble", "comfort", "happiness", "easy"], "answer": "trouble", "hint": "Sự bất tiện, phiền toái.", "explanation": "Trong thư tín, ta thường xin lỗi vì gây ra 'inconvenience' cho đối tác."}, {"id": 91, "type": "Word Box", "question": "I am ______ to inform you...", "options": ["writing", "wrote", "write", "written"], "answer": "writing", "hint": "Thì hiện tại tiếp diễn.", "explanation": "Cấu trúc 'I am writing to...' mô tả hành động đang thực hiện là viết bức thư này."}, {"id": 92, "type": "Word Box", "question": "Which word is a formal signing off?", "options": ["Yours faithfully", "Warm wishes", "Yours truly", "Hi"], "answer": "Yours faithfully", "hint": "Dùng trong trường hợp trang trọng nhất.", "explanation": "'Yours faithfully' là cách kết thư trang trọng nhất khi không biết tên người nhận."}, {"id": 93, "type": "Word Box", "question": "Task #25 is an example of a ______ letter.", "options": ["Formal", "Informal", "Personal", "Funny"], "answer": "Formal", "hint": "Liên quan đến công việc (Employment).", "explanation": "Vì gửi cho nhà tuyển dụng/quản lý nên đây là thư Formal."}, {"id": 94, "type": "Word Box", "question": "The phrase 'I hope you are doing excellent' is used in ______.", "options": ["Informal Letters", "Formal Letters", "Job Applications", "Business Reports"], "answer": "Informal Letters", "hint": "Xem phần Informal trong bài học.", "explanation": "Đây là câu hỏi thăm thân tình, không phù hợp với văn phong trang trọng."}, {"id": 95, "type": "Word Box", "question": "To ______ a job means to delay the starting date.", "options": ["postpone", "cancel", "start", "quit"], "answer": "postpone", "hint": "Trì hoãn.", "explanation": "Postpone là hành động dời lịch sang một thời điểm muộn hơn."}, {"id": 96, "type": "Word Box", "question": "What does 'stipulated date' mean?", "options": ["fixed date", "wrong date", "early date", "unknown date"], "answer": "fixed date", "hint": "Ngày đã được chốt/quy định.", "explanation": "Trong ngữ cảnh trang trọng, 'stipulated' đồng nghĩa với 'fixed' hoặc 'agreed upon'."}, {"id": 97, "type": "Word Box", "question": "You should use '______' when you are sorry in a professional way.", "options": ["apologise", "sorry", "sad", "unhappy"], "answer": "apologise", "hint": "Động từ xin lỗi chính thức.", "explanation": "'Apologise' mang sắc thái chuyên nghiệp hơn từ 'sorry'."}, {"id": 98, "type": "Word Box", "question": "The ______ text in the hero section says 'IELTS General Writing Task 1'.", "options": ["gradient", "blue", "red", "black"], "answer": "gradient", "hint": "Một hiệu ứng màu sắc được nhắc đến trong mã CSS.", "explanation": "Lớp 'gradient-text' được dùng để tạo điểm nhấn cho tiêu đề chính."}, {"id": 99, "type": "Word Box", "question": "'Yours sincerely' is used with 'Dear ______ Smith'.", "options": ["Mr.", "Sir", "Madam", "Everyone"], "answer": "Mr.", "hint": "Dùng cho nam giới khi biết tên.", "explanation": "'Dear Mr. Smith' đi kèm với 'Yours sincerely' để kết thúc thư."}, {"id": 100, "type": "Word Box", "question": "The lesson aims to help you ______ professional letter writing skills.", "options": ["conquer", "lose", "hate", "ignore"], "answer": "conquer", "hint": "Nghĩa là 'chinh phục'.", "explanation": "Mục tiêu của bài học là giúp học viên chinh phục (conquer) kỹ năng viết thư."}];
+    let currentFiltered = [];
+    let currentIndex = 0;
+    let score = 0;
+    let answered = new Set();
+
+    function initPractice(data) {
+        allQuestions = data;
+        currentFiltered = [...allQuestions];
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        const q = currentFiltered[currentIndex];
+        const container = document.getElementById('question-container');
+        document.getElementById('question-index').innerText = `Câu ${currentIndex + 1} / ${currentFiltered.length}`;
+        let html = `
+            <div class="animate-fade-in">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black uppercase tracking-widest rounded-full">${q.type}</span>
+                    <span class="text-slate-300 dark:text-slate-600">#${q.id}</span>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-relaxed">${q.question}</h3>
+                <div class="space-y-3 mb-8">
+        `;
+        if (q.options && q.options.length > 0) {
+            q.options.forEach(opt => {
+                html += `<button onclick="checkAnswer(this, '${opt}')" class="option-btn w-full text-left p-4 rounded-2xl border-2 border-slate-100 dark:border-slate-800 hover:border-blue-500 transition-all mb-3 font-medium text-slate-700 dark:text-slate-300">${opt}</button>`;
+            });
+        } else {
+            html += `
+                <input type="text" id="ans-input" placeholder="Nhập đáp án của bạn..." class="w-full p-6 rounded-3xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:border-blue-500 outline-none transition-all font-bold text-lg mb-4">
+                <button onclick="checkInputAnswer()" class="w-full py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-2xl font-bold shadow-xl">Kiểm tra đáp án</button>
+            `;
+        }
+        html += `
+                </div>
+                <div id="feedback-area" class="hidden p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700">
+                    <p class="font-bold mb-2" id="result-text"></p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4" id="explanation-text"></p>
+                    <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-1">Đáp án đúng:</p>
+                        <p class="font-mono text-emerald-600 dark:text-emerald-400 font-bold">${q.answer}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML = html;
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function checkAnswer(btn, val) {
+        if (answered.has(currentFiltered[currentIndex].id)) return;
+        const q = currentFiltered[currentIndex];
+        const isCorrect = val === q.answer;
+        if (isCorrect) { btn.classList.add('border-emerald-500', 'bg-emerald-50'); score++; }
+        else { btn.classList.add('border-rose-500', 'bg-rose-50'); }
+        showFeedback(isCorrect);
+    }
+
+    function checkInputAnswer() {
+        const val = document.getElementById('ans-input').value.trim();
+        const q = currentFiltered[currentIndex];
+        const isCorrect = val.toLowerCase() === q.answer.toLowerCase();
+        if (isCorrect) score++;
+        showFeedback(isCorrect);
+    }
+
+    function showFeedback(isCorrect) {
+        const q = currentFiltered[currentIndex];
+        answered.add(q.id);
+        document.getElementById('feedback-area').classList.remove('hidden');
+        document.getElementById('result-text').innerText = isCorrect ? 'Chính xác! 🎉' : 'Chưa đúng rồi... ✍️';
+        document.getElementById('result-text').className = isCorrect ? 'font-bold text-emerald-600' : 'font-bold text-rose-600';
+        document.getElementById('explanation-text').innerText = q.explanation;
+        updateStats();
+    }
+
+    function updateStats() {
+        document.getElementById('practice-progress').innerText = `${answered.size}/${allQuestions.length}`;
+        document.getElementById('practice-correct').innerText = score;
+    }
+
+    function nextQuestion() { if (currentIndex < currentFiltered.length - 1) { currentIndex++; renderQuestion(); } }
+    function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
+
+    function filterPractice(type) {
+        currentIndex = 0;
+        currentFiltered = type === 'all' ? [...allQuestions] : allQuestions.filter(q => q.type === type);
+        document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.toggle('active', btn.innerText.includes(type) || (type==='all' && btn.innerText==='Tất cả')));
+        renderQuestion();
+    }
+</script>
+
+    </div>
+    
+<footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm mb-4">Bài học được biên soạn độc quyền bởi đội ngũ học thuật tại</p>
+            <div class="flex items-center justify-center space-x-2 mb-8">
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold">D</div>
+                <span class="text-lg font-bold font-header text-gray-900">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="#" class="hover:text-blue-600">Facebook</a>
+                <a href="#" class="hover:text-blue-600">Website</a>
+                <a href="#" class="hover:text-blue-600">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Accordion script
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                const content = document.getElementById(target);
+                // The toggle is handled by the inline onclick for simplicity in this HTML output
+            });
+        });
+    </script>
+
+    <script>
+        function switchMode(mode) {
+            const theory = document.getElementById('theory-section');
+            const practice = document.getElementById('practice-section');
+            const btnTheory = document.getElementById('btn-theory');
+            const btnPractice = document.getElementById('btn-practice');
+            if (mode === 'theory') {
+                theory.classList.remove('hidden'); practice.classList.add('hidden');
+                btnTheory.className = btnTheory.className.replace('bg-white', 'bg-slate-900').replace('text-slate-900', 'text-white');
+                btnPractice.className = btnPractice.className.replace('bg-slate-900', 'bg-white').replace('text-white', 'text-slate-900');
+            } else {
+                theory.classList.add('hidden'); practice.classList.remove('hidden');
+                btnPractice.className = btnPractice.className.replace('bg-white', 'bg-slate-900').replace('text-slate-900', 'text-white');
+                btnTheory.className = btnTheory.className.replace('bg-slate-900', 'bg-white').replace('text-white', 'text-slate-900');
+                if (typeof allQuestions !== 'undefined' && allQuestions.length > 0 && document.getElementById('question-container').innerHTML.trim() === "") initPractice(allQuestions);
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>

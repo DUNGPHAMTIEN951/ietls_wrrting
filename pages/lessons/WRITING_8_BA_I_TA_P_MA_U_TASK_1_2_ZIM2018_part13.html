@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(to right, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tab-active { border-bottom: 3px solid #1e40af; color: #1e40af; font-weight: bold; }
+        .answer-hidden { display: none; }
+        .pro-tip { border-left: 4px solid #f59e0b; }
+        .teacher-note { border-left: 4px solid #10b981; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171431'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-bold text-xl tracking-tight text-blue-900">Phạm Tiến Dũng <span class="font-light">Gia Sư</span></div>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm uppercase">
+                <a href="#task1" class="hover:text-blue-600 transition">Writing Task 1</a>
+                <a href="#task2" class="hover:text-blue-600 transition">Writing Task 2</a>
+                <a href="#vocab" class="hover:text-blue-600 transition">Từ Vựng Chuyên Sâu</a>
+            </nav>
+            <div class="bg-blue-600 text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">IELTS Expert</div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <!-- Main Title -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-4 leading-tight">CHƯƠNG TRÌNH IELTS WRITING <br><span class="gradient-text underline">ACADEMIC EXCELLENCE</span></h1>
+            <p class="text-slate-500 text-lg italic">Biên soạn bởi chuyên gia: <span class="font-bold">Phạm Tiến Dũng Gia Sư</span></p>
+        </div>
+
+        <!-- Section 1: Task 1 Table Analysis -->
+        <section id="task1" class="bg-white rounded-3xl shadow-xl shadow-slate-200 overflow-hidden mb-16 border border-slate-100">
+            <div class="bg-blue-900 p-8 text-white">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-blue-500 text-[10px] px-2 py-1 rounded-md font-bold uppercase">Report</span>
+                    <span class="text-blue-200 text-sm">Actual Test 07/07/2018</span>
+                </div>
+                <h2 class="text-2xl font-bold">TASK 1: Phân Tích Bảng Số Liệu Dân Số (Population Projections)</h2>
+            </div>
+            
+            <div class="p-8">
+                <p class="mb-6 leading-relaxed italic text-slate-600">"The table below compares actual and predicted figures for populations in three different cities."</p>
+
+                <!-- Data Table -->
+                <div class="overflow-hidden rounded-xl border border-slate-200 mb-8">
+                    <table class="w-full text-left border-collapse">
+                        <thead class="bg-slate-50">
+                            <tr>
+                                <th class="p-4 border-b border-slate-200 font-bold text-slate-700">City (Millions)</th>
+                                <th class="p-4 border-b border-slate-200 font-bold text-blue-600 italic">Actual 1990</th>
+                                <th class="p-4 border-b border-slate-200 font-bold text-slate-700">Predicted 2000</th>
+                                <th class="p-4 border-b border-slate-200 font-bold text-green-600 italic">Actual 2000</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 border-b border-slate-100 font-semibold">Sao Paulo</td>
+                                <td class="p-4 border-b border-slate-100">15</td>
+                                <td class="p-4 border-b border-slate-100">24</td>
+                                <td class="p-4 border-b border-slate-100 font-bold">18</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 border-b border-slate-100 font-semibold">Jakarta</td>
+                                <td class="p-4 border-b border-slate-100">9.5</td>
+                                <td class="p-4 border-b border-slate-100">14</td>
+                                <td class="p-4 border-b border-slate-100 font-bold">11.5</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 border-b border-slate-100 font-semibold">Shanghai</td>
+                                <td class="p-4 border-b border-slate-100">13.5</td>
+                                <td class="p-4 border-b border-slate-100">17</td>
+                                <td class="p-4 border-b border-slate-100 font-bold text-red-500">12.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Teacher's Note Section -->
+                <div class="teacher-note bg-emerald-50 p-6 rounded-r-xl mb-8">
+                    <h4 class="text-emerald-800 font-bold flex items-center gap-2 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10.394 2.827a1 1 0 00-.788 0L2.606 6A1 1 0 001 6.91V14a1 1 0 00.553.894l6.783 3.391a1 1 0 00.788 0l6.783-3.39a1 1 0 00.553-.895V6.91a1 1 0 00-.606-.913l-6.783-3.17z" />
+                        </svg>
+                        Teacher's Note by Phạm Tiến Dũng Gia Sư
+                    </h4>
+                    <p class="text-sm text-emerald-700 leading-relaxed">
+                        Điểm quan trọng nhất ở đây là sự tương phản giữa <strong>Dự đoán (Forecasted/Predicted)</strong> và <strong>Thực tế (Actual)</strong>. Trong bài viết, các em cần dùng cấu trúc so sánh hoặc từ nối như "instead of", "fewer than forecasted" để làm nổi bật sự chênh lệch này.
+                    </p>
+                </div>
+
+                <!-- Analysis Diagram -->
+                <div class="mb-10">
+                    <h3 class="text-lg font-bold text-slate-900 mb-4">Cấu trúc bài viết (Logical Structure)</h3>
+                    <div class="mermaid flex justify-center">
+                        graph TD
+                        A[Intro: Paraphrase Đề] --> B[Overview: Xu hướng & Độ lớn]
+                        B --> C[Body 1: Sao Paulo & Jakarta - Thực tế vs Dự đoán]
+                        B --> D[Body 2: Shanghai - Điểm đặc biệt: Giảm số liệu]
+                        style A fill:#f1f5f9,stroke:#334155
+                        style B fill:#dbeafe,stroke:#1e40af
+                    </div>
+                </div>
+
+                <!-- Model Answer Accordion -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button onclick="toggleAnswer('ans1')" class="w-full flex justify-between items-center p-5 bg-slate-50 font-bold text-slate-700 hover:bg-slate-100 transition">
+                        <span>XEM BÀI MẪU (BAND 8.5)</span>
+                        <svg id="icon-ans1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <div id="ans1" class="answer-hidden p-6 text-slate-700 leading-relaxed border-t border-slate-200">
+                        The table gives information about the <strong>actual number of inhabitants</strong> in three different cities, in 1990 and 2000, as well as the <strong>estimated population</strong> for 2000.<br><br>
+                        Overall, while the population of Sao Paulo and Jakarta increased between 1990 and 2000, there was a decline in the population of Shanghai. Meanwhile, Sao Paulo remained the <strong>most populous city</strong> during the period shown.<br><br>
+                        In 1990, Sao Paulo recorded the highest population, at 15 million, followed by Shanghai and Jakarta, with 13.5 million and 9.5 million respectively. Although Sao Paulo’s population was <strong>predicted to reach</strong> 24 million by 2000, it only rose to 18 million. Similarly, the number of residents in Jakarta increased by 2 million in 2000, to 11.5 million, which was about 2.5 million <strong>fewer than forecasted</strong>.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Task 2 University Admission -->
+        <section id="task2" class="bg-white rounded-3xl shadow-xl shadow-slate-200 overflow-hidden mb-16 border border-slate-100">
+            <div class="bg-indigo-900 p-8 text-white">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-indigo-500 text-[10px] px-2 py-1 rounded-md font-bold uppercase">Discussion Essay</span>
+                    <span class="text-indigo-200 text-sm">University Admission Criteria</span>
+                </div>
+                <h2 class="text-2xl font-bold text-white">TASK 2: Tuyển sinh Đại học - Điểm số hay Sự đa dạng?</h2>
+            </div>
+
+            <div class="p-8">
+                <div class="bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-r-xl mb-8">
+                    <p class="text-indigo-900 font-medium italic">"Some claim universities should only offer places to young students with the highest marks, while others say they should accept people of all ages, even if they did not do well at school. Discuss both views and give your opinion."</p>
+                </div>
+
+                <!-- Comparison Table -->
+                <h3 class="text-lg font-bold text-slate-900 mb-4">So sánh Hai Quan Điểm</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-blue-700 mb-3 uppercase text-sm tracking-widest">Side A: Elite Education</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex gap-2"><span class="text-blue-500 font-bold">✓</span> Xứng đáng dựa trên <strong>superior academic skills</strong>.</li>
+                            <li class="flex gap-2"><span class="text-blue-500 font-bold">✓</span> Có khả năng <strong>handle immense workload</strong>.</li>
+                            <li class="flex gap-2"><span class="text-blue-500 font-bold">✓</span> Đảm bảo chất lượng đầu ra.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-indigo-700 mb-3 uppercase text-sm tracking-widest">Side B: Inclusive Education</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex gap-2"><span class="text-indigo-500 font-bold">✓</span> Điểm số không phản ánh hết tiềm năng.</li>
+                            <li class="flex gap-2"><span class="text-indigo-500 font-bold">✓</span> Duy trì <strong>diverse community</strong> (thể thao, nghệ thuật).</li>
+                            <li class="flex gap-2"><span class="text-indigo-500 font-bold">✓</span> Quyền bình đẳng học tập.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pro Tip -->
+                <div class="pro-tip bg-amber-50 p-6 rounded-r-xl mb-8">
+                    <h4 class="text-amber-800 font-bold flex items-center gap-2 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                        Pro Tip by Phạm Tiến Dũng Gia Sư
+                    </h4>
+                    <p class="text-sm text-amber-700 leading-relaxed">
+                        Khi thảo luận về Đại học, đừng chỉ dùng "students". Hãy linh hoạt chuyển sang <strong>"undergraduates"</strong>, <strong>"academically-gifted individuals"</strong>, hoặc <strong>"tertiary students"</strong> để nâng điểm Lexical Resource.
+                    </p>
+                </div>
+
+                <!-- Interactive Exercise -->
+                <div class="bg-slate-900 rounded-2xl p-8 text-white mb-8 shadow-lg">
+                    <h4 class="font-bold mb-4 text-blue-400 uppercase text-xs tracking-widest">Interactive Practice</h4>
+                    <p class="mb-6">Chọn từ thích hợp điền vào chỗ trống: <br> "Universities should aim to maintain a _______ community where various talents are valued."</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="checkQuiz(false)" class="bg-slate-800 border border-slate-700 py-3 rounded-lg hover:bg-red-900/30 transition">A. Uniform</button>
+                        <button onclick="checkQuiz(true)" class="bg-slate-800 border border-slate-700 py-3 rounded-lg hover:bg-green-900/30 transition">B. Diverse</button>
+                    </div>
+                    <p id="quiz-msg" class="mt-4 text-sm font-medium hidden"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Vocabulary Bank -->
+        <section id="vocab" class="mb-16">
+            <h2 class="text-3xl font-black text-slate-900 mb-8 border-l-8 border-blue-600 pl-4 uppercase">Advanced Vocabulary Bank</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Word Card 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex justify-between items-center group hover:border-blue-500 transition">
+                    <div>
+                        <p class="text-blue-600 font-bold text-lg">The acquisition of knowledge</p>
+                        <p class="text-slate-500 text-sm italic">Sự tích lũy kiến thức</p>
+                    </div>
+                    <span class="text-slate-300 group-hover:text-blue-200 transition">#Task2</span>
+                </div>
+                <!-- Word Card 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex justify-between items-center group hover:border-blue-500 transition">
+                    <div>
+                        <p class="text-blue-600 font-bold text-lg">Immense workload</p>
+                        <p class="text-slate-500 text-sm italic">Khối lượng công việc khổng lồ</p>
+                    </div>
+                    <span class="text-slate-300 group-hover:text-blue-200 transition">#Task2</span>
+                </div>
+                <!-- Word Card 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex justify-between items-center group hover:border-blue-500 transition">
+                    <div>
+                        <p class="text-blue-600 font-bold text-lg">Most populous city</p>
+                        <p class="text-slate-500 text-sm italic">Thành phố đông dân nhất</p>
+                    </div>
+                    <span class="text-slate-300 group-hover:text-blue-200 transition">#Task1</span>
+                </div>
+                <!-- Word Card 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex justify-between items-center group hover:border-blue-500 transition">
+                    <div>
+                        <p class="text-blue-600 font-bold text-lg">Formal qualifications</p>
+                        <p class="text-slate-500 text-sm italic">Bằng cấp chính quy</p>
+                    </div>
+                    <span class="text-slate-300 group-hover:text-blue-200 transition">#Task2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Footer -->
+        <footer class="text-center py-12 border-t border-slate-200 mt-20">
+            <p class="text-slate-400 text-sm uppercase tracking-widest font-bold">Designed for Excellence</p>
+            <p class="text-slate-900 font-black text-2xl mt-2 tracking-tighter">PHẠM TIẾN DŨNG GIA SƯ</p>
+            <div class="flex justify-center gap-4 mt-4 text-slate-400 text-xs">
+                <span>© 2026 Academic English School</span>
+                <span>•</span>
+                <span>IELTS Specialist</span>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Mermaid Initialization
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Toggle Model Answer
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            el.classList.toggle('answer-hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Quiz Logic
+        function checkQuiz(isCorrect) {
+            const msg = document.getElementById('quiz-msg');
+            msg.classList.remove('hidden');
+            if(isCorrect) {
+                msg.innerText = "Chính xác! 'Diverse community' (Cộng đồng đa dạng) là colocation đắt giá cho chủ đề Giáo dục.";
+                msg.className = "mt-4 text-sm font-medium text-green-400";
+            } else {
+                msg.innerText = "Chưa đúng rồi! 'Uniform' là đồng nhất, trong khi đề bài đang nói về sự đa dạng các nhóm học sinh.";
+                msg.className = "mt-4 text-sm font-medium text-red-400";
+            }
+        }
+    </script>
+</body>
+</html>

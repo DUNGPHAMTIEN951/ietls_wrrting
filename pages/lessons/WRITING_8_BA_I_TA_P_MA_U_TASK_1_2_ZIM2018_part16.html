@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        details summary::-webkit-details-marker { display:none; }
+        details summary { list-style: none; outline: none; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171436'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12 px-6 shadow-xl">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">IELTS Writing Lesson</h1>
+                <p class="text-xl opacity-90 font-light italic">Chuyên sâu: Environment, Internet & Education</p>
+                <div class="mt-4 flex items-center">
+                    <span class="bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Expert Level</span>
+                    <span class="ml-4 border-l pl-4 border-blue-300">Tác giả: <strong>Phạm Tiến Dũng Gia Sư</strong></span>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-white/20">
+                    <p class="text-sm uppercase tracking-widest opacity-70">Target Band</p>
+                    <p class="text-4xl font-bold">7.5 - 8.5+</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-10 px-4">
+        
+        <!-- Section 1: Wildlife Vocabulary -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 flex items-center">
+                <span class="bg-blue-900 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-4">01</span>
+                Wildlife & Ecosystem Vocabulary
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-4 border-b pb-2">Academic Collocations</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-start">
+                            <span class="font-semibold text-slate-700">Endanger natural habitats</span>
+                            <span class="text-sm text-slate-500 text-right">Làm nguy hại môi trường sống tự nhiên</span>
+                        </li>
+                        <li class="flex justify-between items-start">
+                            <span class="font-semibold text-slate-700">Disturb the food chain</span>
+                            <span class="text-sm text-slate-500 text-right">Ảnh hưởng chuỗi thức ăn</span>
+                        </li>
+                        <li class="flex justify-between items-start">
+                            <span class="font-semibold text-slate-700">Rampant poaching</span>
+                            <span class="text-sm text-slate-500 text-right">Nạn săn trộm tràn lan</span>
+                        </li>
+                        <li class="flex justify-between items-start">
+                            <span class="font-semibold text-slate-700">Rectify the situation</span>
+                            <span class="text-sm text-slate-500 text-right">Giải quyết triệt để vấn đề</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-xl">
+                        <h4 class="font-bold text-blue-800 mb-1">Teacher's Note</h4>
+                        <p class="text-sm text-blue-700 italic">Thay vì dùng "fix the problem" (vốn quá đơn giản), hãy sử dụng <strong>"rectify the situation"</strong> để ghi điểm Lexical Resource Band 8.0+.</p>
+                    </div>
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-xl">
+                        <h4 class="font-bold text-amber-800 mb-1">Pro Tip: Collocation</h4>
+                        <p class="text-sm text-amber-700">Sử dụng cụm <strong>"Aesthetic and socio-cultural values"</strong> khi nói về lý do tại sao cần bảo tồn động vật hoang dã để bài viết có chiều sâu hơn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-slate-200">
+
+        <!-- Section 2: Line Graph Analysis -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 flex items-center">
+                <span class="bg-blue-900 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-4">02</span>
+                Task 1: Line Chart Analysis (18/08/2018)
+            </h2>
+
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-200">
+                <div class="p-8 border-b border-slate-100 bg-slate-50">
+                    <h3 class="text-lg font-bold text-slate-700 uppercase tracking-widest mb-2">Đề bài: The number of international conferences in three cities (1965 - 2010)</h3>
+                    <div class="flex gap-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">Đánh giá: Dễ</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-xs font-bold">Dạng: Line Graph</span>
+                    </div>
+                </div>
+
+                <div class="p-8">
+                    <div class="mermaid flex justify-center mb-10">
+                        graph LR
+                        A[Introduction] --> B[Overview]
+                        B --> C[Body 1: So sánh năm 1965]
+                        B --> D[Body 2: Xu hướng 35 năm sau]
+                        style A fill:#e0f2fe,stroke:#0ea5e9
+                        style B fill:#e0f2fe,stroke:#0ea5e9
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg text-blue-800">Sample Extract (Band 8.0+)</h4>
+                            <p class="text-slate-600 leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100 italic">
+                                "It is clear that while the number of international conferences held in <strong>city C increased dramatically</strong>, there were some <strong>fluctuations</strong> in the figures for the other cities... Additionally, city C saw the <strong>biggest change</strong> in its figures."
+                            </p>
+                            <table class="w-full text-sm">
+                                <tr class="border-b"><td class="py-2 font-bold">International meetings</td><td class="py-2 italic text-blue-600">= International conferences</td></tr>
+                                <tr class="border-b"><td class="py-2 font-bold">To be held</td><td class="py-2 italic text-blue-600">= To take place / organize</td></tr>
+                            </table>
+                        </div>
+
+                        <div class="bg-indigo-900 text-white p-6 rounded-2xl">
+                            <h4 class="font-bold mb-4 text-indigo-300">Tư duy xử lý số liệu (By Phạm Tiến Dũng Gia Sư)</h4>
+                            <ul class="space-y-3 text-sm opacity-90">
+                                <li class="flex items-start"><span class="mr-2">✔</span><span><strong>Thì:</strong> 1965-2010 là quá khứ -> Dùng Past Simple.</span></li>
+                                <li class="flex items-start"><span class="mr-2">✔</span><span><strong>Overview:</strong> Phải nêu được City C tăng mạnh nhất và vượt trội.</span></li>
+                                <li class="flex items-start"><span class="mr-2">✔</span><span><strong>Body:</strong> Nhóm City A và B vào một đoạn vì có xu hướng dao động tương đồng.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Task 2 - Internet & Relationships -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 flex items-center">
+                <span class="bg-blue-900 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-4">03</span>
+                Task 2: Internet vs Face-to-face Contact
+            </h2>
+
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-200">
+                <div class="mb-8">
+                    <blockquote class="border-l-4 border-indigo-500 pl-6 py-2 italic text-xl text-slate-700">
+                        "In the modern world, it is possible to shop, work and communicate via internet and live without any face-to-face contact. Is it positive or negative?"
+                    </blockquote>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+                            <h4 class="font-bold text-green-800 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Benefits (Positive)
+                            </h4>
+                            <ul class="text-sm space-y-2 text-green-900">
+                                <li><strong>Online purchase:</strong> Hàng hóa có sẵn, giao tận nhà.</li>
+                                <li><strong>Employment:</strong> Làm việc từ xa qua Skype/Hangouts.</li>
+                                <li><strong>Streamlined workplace:</strong> Tăng hiệu quả vận hành.</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-red-50 rounded-2xl border border-red-100">
+                            <h4 class="font-bold text-red-800 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                                Drawbacks (Negative)
+                            </h4>
+                            <ul class="text-sm space-y-2 text-red-900">
+                                <li><strong>Engrossed in media hype:</strong> Mải mê thế giới ảo.</li>
+                                <li><strong>Eyes glued to phones:</strong> Dính chặt mắt vào điện thoại.</li>
+                                <li><strong>Undervaluing real relationships:</strong> Xem nhẹ giá trị đời thực.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bg-slate-900 text-white p-8 rounded-3xl h-full">
+                            <h4 class="text-xl font-bold mb-6 text-blue-400">Advanced Vocabulary List</h4>
+                            <div class="space-y-4 text-sm">
+                                <div class="flex justify-between border-b border-slate-700 pb-2">
+                                    <span class="font-mono text-blue-200 underline cursor-help" title="Duy trì giao tiếp hiệu quả">Maintain effective communication</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-700 pb-2">
+                                    <span class="font-mono text-blue-200 underline cursor-help" title="Làm cho nơi làm việc tinh gọn và hiệu quả">More streamlined and efficient</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-700 pb-2">
+                                    <span class="font-mono text-blue-200 underline cursor-help" title="Thúc đẩy/giúp việc giao tiếp dễ dàng hơn">Facilitates our communication</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-700 pb-2">
+                                    <span class="font-mono text-blue-200 underline cursor-help" title="Gây thiệt hại nghiêm trọng">Inflicting severe damage</span>
+                                </div>
+                                <div class="mt-6 p-4 bg-blue-800/30 rounded-lg italic text-blue-100">
+                                    "The benefits do not justify the fact that it is inflicting severe damage on our relationships."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Interactive Practice -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 flex items-center">
+                <span class="bg-blue-900 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-4">04</span>
+                Interactive Quiz: Word Matching
+            </h2>
+
+            <div class="bg-white rounded-3xl shadow-lg p-8 border border-slate-200">
+                <p class="mb-6 font-medium text-slate-700">Chọn từ phù hợp để điền vào chỗ trống:</p>
+                <div class="p-6 bg-slate-50 rounded-2xl mb-6">
+                    <p class="text-lg leading-relaxed">
+                        "Modern children are often too <strong>(1) ______</strong> in social media, with their eyes <strong>(2) ______</strong> to their smart devices, which <strong>(3) ______</strong> severe damage on their real-life social skills."
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <details class="group flex-1 min-w-[200px]">
+                        <summary class="list-none p-4 bg-indigo-600 text-white rounded-xl font-bold text-center cursor-pointer hover:bg-indigo-700 transition">
+                            Check Answers
+                        </summary>
+                        <div class="mt-4 p-6 bg-indigo-50 rounded-2xl border border-indigo-100 animate-fadeIn">
+                            <ul class="space-y-2 font-semibold text-indigo-900">
+                                <li>(1) engrossed</li>
+                                <li>(2) glued</li>
+                                <li>(3) inflicts</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6">Grammar Comparison: Predictions</h2>
+            <div class="overflow-x-auto rounded-2xl shadow-sm">
+                <table class="w-full text-left bg-white border-collapse">
+                    <thead class="bg-slate-800 text-white">
+                        <tr>
+                            <th class="p-4">Cấu trúc</th>
+                            <th class="p-4">Ví dụ (India Population)</th>
+                            <th class="p-4">Mức độ Band Score</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="p-4 font-semibold italic text-slate-600">Will + Verb</td>
+                            <td class="p-4">India's population will increase to 20%.</td>
+                            <td class="p-4"><span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs font-bold">Band 6.0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold italic text-slate-600">Is predicted to V</td>
+                            <td class="p-4">India is predicted to have the largest population.</td>
+                            <td class="p-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-bold">Band 7.0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold italic text-slate-600">Is projected to V</td>
+                            <td class="p-4">The figure is projected to rise to nearly 20%.</td>
+                            <td class="p-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-bold">Band 8.0+</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 px-6 mt-20">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-bold">Phạm Tiến Dũng Gia Sư</h2>
+                <p class="text-slate-400 mt-1">Academic English School - Premium IELTS Training</p>
+            </div>
+            <div class="flex gap-6">
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-blue-400">100%</p>
+                    <p class="text-xs uppercase tracking-widest text-slate-500">Academic focus</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-bold text-blue-400">Band 8+</p>
+                    <p class="text-xs uppercase tracking-widest text-slate-500">Methodology</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            © 2026 Phạm Tiến Dũng Gia Sư. Designed for Excellence in IELTS Writing.
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 2 Masterclass: Cybercrime & Punishment | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        .vocabulary-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-item.active .accordion-content { max-height: 1000px; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778168267'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b sticky top-0 z-50 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">P</div>
+                <span class="text-xl font-bold tracking-tight text-indigo-900">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <div class="hidden md:block text-sm font-medium text-slate-500 uppercase tracking-widest">IELTS Senior Tutor Series</div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-12 py-10 max-w-5xl">
+        
+        <!-- Lesson Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Chuyên đề: Cybercrime - Tội phạm mạng</h1>
+                <div class="my-10 p-4 glass-card rounded-3xl shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
+                    <div class="text-xs font-semibold text-indigo-500 mb-2 uppercase tracking-widest text-center">Conceptual Visualization</div>
+                    <img src="../../assets/task2_diagrams/unit8_cybercrime_diagram.jpg" alt="Concept Diagram" class="w-full h-auto rounded-2xl">
+                </div>
+                
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto italic">Phân tích chuyên sâu về nguyên nhân, hệ quả và các giải pháp chiến lược cho bài thi IELTS Writing Task 2.</p>
+        </div>
+
+        <!-- Section 1: The Impacts of Cybercrime -->
+        <section class="mb-16 bg-white rounded-3xl p-8 shadow-sm border border-slate-200">
+            <h2 class="text-3xl font-bold mb-8 text-indigo-800 flex items-center">
+                <span class="mr-3">⚠️</span> Tác động của Cybercrime
+            </h2>
+            
+            <p class="mb-6 text-slate-700">Cybercrime không chỉ dừng lại ở việc mất mát dữ liệu mà còn gây ra những hậu quả nghiêm trọng trên diện rộng, ảnh hưởng từ cá nhân đến an ninh quốc gia.</p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="p-5 bg-rose-50 rounded-2xl border border-rose-100">
+                    <h3 class="font-bold text-rose-700 mb-3 uppercase text-sm tracking-widest">Kinh tế & Uy tín</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><strong>Financial losses:</strong> Mất tiền qua thẻ tín dụng hoặc chi phí sửa chữa hệ thống sau tấn công.</li>
+                        <li><strong>Damage to reputation:</strong> Làm xói mòn niềm tin khách hàng (loss of public trust) đối với doanh nghiệp/chính phủ.</li>
+                    </ul>
+                </div>
+                <div class="p-5 bg-amber-50 rounded-2xl border border-amber-100">
+                    <h3 class="font-bold text-amber-700 mb-3 uppercase text-sm tracking-widest">An ninh & Cá nhân</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><strong>Identity theft:</strong> Đánh cắp số an sinh xã hội, mật khẩu để trục lợi bất chính.</li>
+                        <li><strong>Critical Infrastructure:</strong> Tấn công lưới điện (power grids), bệnh viện, đe dọa trực tiếp đến tính mạng.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mermaid Diagram -->
+            <div class="p-6 bg-slate-50 rounded-2xl mb-8">
+                <h4 class="text-center font-bold mb-4 text-slate-500 uppercase text-xs">Sơ đồ hóa các hệ lụy (Effects)</h4>
+                <div class="mermaid flex justify-center">
+                    graph TD
+                    A[Cybercrime] --> B[Financial Losses]
+                    A --> C[Erosion of Trust]
+                    A --> D[Identity Theft]
+                    A --> E[Infrastructural Disruption]
+                    A --> F[Psychological Trauma]
+                    E --> E1[Power Outages]
+                    E --> E2[Medical Equipment Malfunction]
+                </div>
+            </div>
+
+            <div class="teacher-note p-6 rounded-2xl">
+                <span class="font-bold text-blue-800 flex items-center mb-2 italic">
+                    👨‍🏫 Teacher's Note:
+                </span>
+                Khi viết về hậu quả, hãy sử dụng các tính từ mạnh như <span class="font-mono text-indigo-600 font-bold">"severe and far-reaching"</span> để nhấn mạnh mức độ ảnh hưởng của tội phạm mạng.
+            </div>
+        </section>
+
+        <!-- Section 2: Strategy & Solutions -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-indigo-800 flex items-center">
+                <span class="mr-3">🛡️</span> Giải pháp chiến lược (Solutions)
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-10">
+                <div class="vocabulary-card bg-white p-6 rounded-2xl border border-indigo-100 shadow-sm">
+                    <div class="text-indigo-600 font-bold mb-2">Government Level</div>
+                    <p class="text-sm text-slate-600 italic mb-4">"Stringent regulations and legal frameworks"</p>
+                    <p class="text-xs text-slate-500">Ban hành các khung pháp lý và quy định chặt chẽ hơn.</p>
+                </div>
+                <div class="vocabulary-card bg-white p-6 rounded-2xl border border-indigo-100 shadow-sm">
+                    <div class="text-indigo-600 font-bold mb-2">Technological Level</div>
+                    <p class="text-sm text-slate-600 italic mb-4">"Cybersecurity technologies and infrastructure"</p>
+                    <p class="text-xs text-slate-500">Đầu tư vào cơ sở hạ tầng an ninh mạng tiên tiến.</p>
+                </div>
+                <div class="vocabulary-card bg-white p-6 rounded-2xl border border-indigo-100 shadow-sm">
+                    <div class="text-indigo-600 font-bold mb-2">Individual Level</div>
+                    <p class="text-sm text-slate-600 italic mb-4">"Cybersecurity best practices"</p>
+                    <p class="text-xs text-slate-500">Nâng cao nhận thức và giáo dục cho người dân.</p>
+                </div>
+            </div>
+
+            <div class="pro-tip p-6 rounded-2xl shadow-sm mb-10">
+                <h4 class="text-amber-800 font-bold mb-2 flex items-center">
+                    💡 Pro Tip from Phạm Tiến Dũng Gia Sư:
+                </h4>
+                <p class="text-amber-900 text-sm">
+                    Trong bài viết Solutions, hãy luôn đề cập đến <span class="font-bold italic text-amber-700">"International Cooperation"</span> vì tội phạm mạng không có biên giới quốc gia. Điều này giúp tăng tính thuyết phục cho bài luận Band 8+.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Summary Table -->
+        <section class="mb-16 overflow-hidden bg-white rounded-3xl border border-slate-200 shadow-sm">
+            <div class="bg-indigo-900 p-4">
+                <h3 class="text-white font-bold text-center uppercase tracking-widest">Bảng tổng hợp từ vựng chuyên sâu</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="bg-indigo-50 text-indigo-900 border-b">
+                            <th class="p-4 font-bold">Category</th>
+                            <th class="p-4 font-bold">Key Collocations (High Band)</th>
+                            <th class="p-4 font-bold">Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="p-4 font-bold text-slate-500 uppercase text-xs">Causes</td>
+                            <td class="p-4 italic">Interconnectivity of devices</td>
+                            <td class="p-4">Sự kết nối lẫn nhau của các thiết bị</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-500 uppercase text-xs">Effects</td>
+                            <td class="p-4 italic">Erode public trust</td>
+                            <td class="p-4">Làm xói mòn niềm tin công chúng</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-500 uppercase text-xs">Effects</td>
+                            <td class="p-4 italic">Psychological distress and trauma</td>
+                            <td class="p-4">Khủng hoảng và chấn thương tâm lý</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-500 uppercase text-xs">Solutions</td>
+                            <td class="p-4 italic">Transparency and accountability</td>
+                            <td class="p-4">Tính minh bạch và trách nhiệm giải trình</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: Practice & Application -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-indigo-800">Luyện tập thực chiến (Practice)</h2>
+            
+            <div class="space-y-6">
+                <!-- Question 1 -->
+                <div class="accordion-item bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-slate-800">1. Đề bài: Nurturing environment & Crime (Disagree)</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content bg-slate-50">
+                        <div class="p-6">
+                            <p class="text-sm font-bold text-indigo-600 mb-2 underline decoration-2">Sample Argument by Phạm Tiến Dũng Gia Sư:</p>
+                            <p class="text-slate-700 italic">"Due to this unhappy childhood, children become more vulnerable to cognitive distortion; they tend to have low-esteem, think more negatively, feel worthless, and consider social offenses a way to prove their worth to the world."</p>
+                            <div class="mt-4 p-4 bg-white rounded-xl border border-slate-200 text-xs">
+                                <strong>Vocabulary:</strong> Cognitive distortion (Lệch lạc nhận thức), Vulnerable (Dễ bị tổn thương).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-slate-800">2. Đề bài: Technology in solving crimes (Agree)</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content bg-slate-50">
+                        <div class="p-6">
+                            <p class="text-slate-700 italic">"For more serious crimes, technological advancements play a crucial role in bringing justice to the victims. For example, a cold case was recently solved using DNA technology, whereas in the past, law enforcement had to rely on unreliable human memories."</p>
+                            <div class="mt-4 p-4 bg-white rounded-xl border border-slate-200 text-xs">
+                                <strong>Grammar Tip:</strong> Sử dụng cấu trúc <span class="font-mono bg-slate-100 px-1 italic">"whereas"</span> để so sánh đối lập giữa quá khứ và hiện tại.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Exercise Section -->
+        <section class="bg-indigo-900 rounded-3xl p-10 text-white shadow-xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-2xl font-bold mb-6 italic">Bài tập củng cố (Fill in the blanks)</h2>
+                <div class="space-y-6">
+                    <p class="text-lg">Cybercriminals may steal personal information, such as social security numbers, which they can use for (1) _________ _________.</p>
+                    <div id="exercise-answer" class="hidden p-4 bg-white/10 rounded-xl border border-white/20 italic">
+                        Đáp án: Identity theft (Đánh cắp danh tính)
+                    </div>
+                    <button onclick="document.getElementById('exercise-answer').classList.toggle('hidden')" class="bg-amber-400 text-indigo-900 px-6 py-3 rounded-full font-bold hover:bg-amber-300 transition-all uppercase text-sm tracking-widest shadow-lg">Check Answer</button>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+        </section>
+
+        </div> <!-- End Theory Section -->
+
+    <!-- Practice Section -->
+    <div id="practice-section" class="mode-section hidden animate-fade-in pb-20">
+        
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+        <div class="bg-slate-50 dark:bg-slate-800/50 p-8 border-b border-slate-200 dark:border-slate-800">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-2">Luyện tập Chuyên sâu</h2>
+                    <p class="text-slate-500 dark:text-slate-400">Hoàn thành bộ 200 câu hỏi để làm chủ kiến thức.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-inner">
+                    <div class="text-center">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Tiến độ</p>
+                        <p class="text-2xl font-black text-blue-600" id="practice-progress">0/200</p>
+                    </div>
+                    <div class="w-px h-10 bg-slate-100 dark:bg-slate-800"></div>
+                    <div class="text-center">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Đúng</p>
+                        <p class="text-2xl font-black text-emerald-500" id="practice-correct">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-8">
+                <button onclick="filterPractice('all')" class="cat-btn active">Tất cả</button>
+                <button onclick="filterPractice('Bài tập Dịch')" class="cat-btn">Dịch thuật</button>
+                <button onclick="filterPractice('Word Box')" class="cat-btn">Word Box</button>
+                <button onclick="filterPractice('Fill in the blank')" class="cat-btn">Điền từ</button>
+                <button onclick="filterPractice('Chart Analysis')" class="cat-btn">Biểu đồ</button>
+            </div>
+        </div>
+        <div class="p-8 md:p-12 min-h-[400px]" id="question-container"></div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 p-6 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+            <button onclick="prevQuestion()" class="btn-nav"><i data-lucide="chevron-left"></i> Câu trước</button>
+            <div class="text-sm font-bold text-slate-400" id="question-index">Câu 1 / 200</div>
+            <button onclick="nextQuestion()" class="btn-nav">Câu tiếp <i data-lucide="chevron-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let allQuestions = [{"id": 1, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng đã trở thành một mối đe dọa đáng kể đối với an ninh toàn cầu.'", "options": null, "answer": "Cybercrime has become a significant threat to global security.", "hint": "Sử dụng cụm từ 'significant threat' và 'global security'.", "explanation": "Câu này sử dụng thì hiện tại hoàn thành để diễn tả một sự việc đã xảy ra và vẫn đang tiếp diễn, 'significant threat' là một collocation phổ biến trong IELTS."}, {"id": 2, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các cá nhân thường trở thành nạn nhân của các vụ lừa đảo trực tuyến do thiếu nhận thức.'", "options": null, "answer": "Individuals often fall victim to online scams due to a lack of awareness.", "hint": "Cụm từ 'fall victim to' nghĩa là trở thành nạn nhân của cái gì đó.", "explanation": "'Fall victim to' là một cụm động từ học thuật rất tốt cho chủ đề Crime. 'Lack of awareness' giải thích nguyên nhân phổ biến của tội phạm mạng."}, {"id": 3, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Việc đánh cắp danh tính có thể dẫn đến những tổn thất tài chính nghiêm trọng cho người dùng.'", "options": null, "answer": "Identity theft can lead to severe financial losses for users.", "hint": "Sử dụng 'Identity theft' cho đánh cắp danh tính và 'severe financial losses'.", "explanation": "'Identity theft' là thuật ngữ chuyên ngành trong cybercrime. 'Severe financial losses' mô tả mức độ nghiêm trọng của hậu quả."}, {"id": 4, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Chính phủ cần ban hành các bộ luật nghiêm khắc hơn để trừng phạt tin tặc.'", "options": null, "answer": "Governments need to enact stricter laws to punish hackers.", "hint": "Dùng động từ 'enact' thay cho 'make' và 'stricter laws'.", "explanation": "'Enact laws' là cách dùng từ trang trọng (formal) thay cho 'pass' hoặc 'make' laws, rất phù hợp với Writing Task 2."}, {"id": 5, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Sự ẩn danh trên internet tạo điều kiện cho các hoạt động bất hợp pháp phát triển.'", "options": null, "answer": "Anonymity on the internet facilitates the growth of illegal activities.", "hint": "Sử dụng từ 'Anonymity' và động từ 'facilitate'.", "explanation": "'Anonymity' là một trong những đặc điểm chính của môi trường mạng. 'Facilitate' (tạo điều kiện thuận lợi) là động từ học thuật cao cấp."}, {"id": 6, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng có thể xâm nhập vào các hệ thống nhạy cảm của quốc gia.'", "options": null, "answer": "Cybercriminals can infiltrate sensitive national systems.", "hint": "Dùng động từ 'infiltrate' cho việc xâm nhập trái phép.", "explanation": "'Infiltrate' (thâm nhập/xâm nhập) thường dùng để nói về việc truy cập trái phép vào các hệ thống an ninh hoặc máy tính."}, {"id": 7, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Phần mềm độc hại là một công cụ phổ biến được sử dụng bởi các tổ chức tội phạm.'", "options": null, "answer": "Malicious software is a common tool used by criminal organizations.", "hint": "Sử dụng từ 'Malicious software' hoặc 'Malware'.", "explanation": "'Malicious software' mô tả các phần mềm có ý đồ xấu, là một khái niệm quan trọng trong bài học."}, {"id": 8, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Giáo dục người dùng về an toàn mạng là bước đầu tiên để ngăn chặn tội phạm.'", "options": null, "answer": "Educating users about cyber safety is the first step to prevent crime.", "hint": "Sử dụng 'Educating users' làm chủ ngữ và 'cyber safety'.", "explanation": "Cấu trúc Gerund làm chủ ngữ giúp câu văn trở nên trang trọng và nhấn mạnh hành động giáo dục."}, {"id": 9, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Hợp tác quốc tế là yếu tố then chốt trong việc truy vết tội phạm mạng xuyên biên giới.'", "options": null, "answer": "International cooperation is key in tracking cross-border cybercriminals.", "hint": "Sử dụng 'International cooperation' và 'cross-border'.", "explanation": "Vì internet không có biên giới, 'international cooperation' và 'cross-border' là các từ vựng thiết yếu cho giải pháp."}, {"id": 10, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Nhiều doanh nghiệp đã bị phá sản sau một cuộc tấn công mạng quy mô lớn.'", "options": null, "answer": "Many businesses went bankrupt after a large-scale cyber attack.", "hint": "Sử dụng cụm 'go bankrupt' và 'large-scale'.", "explanation": "'Large-scale' (quy mô lớn) mô tả tính chất nghiêm trọng của cuộc tấn công, ảnh hưởng đến kinh tế."}, {"id": 11, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các lỗ hổng bảo mật trong phần mềm thường bị khai thác bởi tội phạm mạng.'", "options": null, "answer": "Security vulnerabilities in software are often exploited by cybercriminals.", "hint": "Sử dụng 'Security vulnerabilities' và động từ 'exploit'.", "explanation": "'Vulnerability' (lỗ hổng) và 'exploit' (khai thác) là bộ đôi từ vựng chuyên sâu về chủ đề kỹ thuật mạng."}, {"id": 12, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Dữ liệu cá nhân nhạy cảm thường được bán trên thị trường chợ đen.'", "options": null, "answer": "Sensitive personal data is often sold on the black market.", "hint": "Cụm từ 'black market' dùng để chỉ thị trường chợ đen.", "explanation": "Câu này mô tả một khía cạnh thực tế của hệ quả tội phạm mạng liên quan đến dữ liệu người dùng."}, {"id": 13, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng có thể phá hoại cơ sở hạ tầng quan trọng của một quốc gia.'", "options": null, "answer": "Cybercrime can sabotage a country's critical infrastructure.", "hint": "Dùng động từ 'sabotage' và cụm 'critical infrastructure'.", "explanation": "'Sabotage' (phá hoại) và 'critical infrastructure' (cơ sở hạ tầng trọng yếu) nhấn mạnh mức độ đe dọa an ninh quốc gia."}, {"id": 14, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các hình phạt nghiêm khắc như bỏ tù là cần thiết để răn đe tội phạm.'", "options": null, "answer": "Strict punishments such as imprisonment are necessary to deter criminals.", "hint": "Sử dụng 'imprisonment' và động từ 'deter'.", "explanation": "'Deter' (răn đe) là mục tiêu chính của việc đưa ra các hình phạt trong hệ thống tư pháp."}, {"id": 15, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Phishing là một phương pháp phổ biến để đánh lừa mọi người cung cấp mật khẩu của họ.'", "options": null, "answer": "Phishing is a common method to trick people into providing their passwords.", "hint": "Sử dụng 'Phishing' và cấu trúc 'trick someone into doing something'.", "explanation": "'Phishing' (tấn công giả mạo) là một thuật ngữ cơ bản nhưng quan trọng trong lĩnh vực tội phạm mạng."}, {"id": 16, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các quốc gia cần đầu tư nhiều hơn vào các đơn vị an ninh mạng chuyên dụng.'", "options": null, "answer": "Countries need to invest more in specialized cyber security units.", "hint": "Dùng cụm 'specialized units' cho các đơn vị chuyên dụng.", "explanation": "Giải pháp 'investing in specialized units' cho thấy hướng tiếp cận chuyên nghiệp trong việc đối phó tội phạm công nghệ cao."}, {"id": 17, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Ransomware đã gây ra sự đình trệ cho nhiều bệnh viện trên thế giới.'", "options": null, "answer": "Ransomware has caused disruption to many hospitals worldwide.", "hint": "Sử dụng 'Ransomware' và danh từ 'disruption'.", "explanation": "'Ransomware' (mã độc tống tiền) là một ví dụ điển hình về sự nguy hiểm của tội phạm mạng đối với dịch vụ công."}, {"id": 18, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Lực lượng cảnh sát thường thiếu nguồn lực kỹ thuật để đấu tranh với tội phạm mạng.'", "options": null, "answer": "Police forces often lack technical resources to combat cybercrime.", "hint": "Dùng động từ 'combat' thay cho 'fight'.", "explanation": "'Combat' là động từ học thuật thường dùng trong các bài luận Writing về chủ đề tội phạm hoặc các vấn đề xã hội."}, {"id": 19, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các vụ vi phạm dữ liệu có thể làm xói mòn niềm tin của công chúng vào các nền tảng số.'", "options": null, "answer": "Data breaches can erode public trust in digital platforms.", "hint": "Sử dụng cụm 'Data breaches' và động từ 'erode'.", "explanation": "'Erode trust' (xói mòn niềm tin) là một cách diễn đạt ẩn dụ hay để nói về hệ quả phi tài chính."}, {"id": 20, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Việc sử dụng các công nghệ mã hóa tiên tiến là một biện pháp bảo vệ hiệu quả.'", "options": null, "answer": "The use of advanced encryption technologies is an effective protective measure.", "hint": "Sử dụng 'advanced encryption' và 'protective measure'.", "explanation": "'Encryption' (mã hóa) là thuật ngữ kỹ thuật cốt lõi trong phòng chống tội phạm mạng."}, {"id": 21, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng ngày càng trở nên tinh vi và khó phát hiện hơn.'", "options": null, "answer": "Cybercrime is becoming increasingly sophisticated and harder to detect.", "hint": "Dùng trạng từ 'increasingly' và tính từ 'sophisticated'.", "explanation": "'Sophisticated' (tinh vi) mô tả chính xác sự phát triển của tội phạm công nghệ hiện nay."}, {"id": 22, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các cơ quan thực thi pháp luật phải thích ứng với sự thay đổi nhanh chóng của công nghệ.'", "options": null, "answer": "Law enforcement agencies must adapt to the rapid changes in technology.", "hint": "Cụm từ 'Law enforcement agencies' chỉ các cơ quan thực thi pháp luật.", "explanation": "'Law enforcement agencies' là thuật ngữ trang trọng để chỉ cảnh sát và các cơ quan tư pháp."}, {"id": 23, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Mục tiêu chính của nhiều tin tặc là tống tiền các công ty lớn.'", "options": null, "answer": "The primary goal of many hackers is to extort money from large companies.", "hint": "Dùng động từ 'extort' cho hành động tống tiền.", "explanation": "'Extort' (tống tiền) là một hành vi phạm tội cụ thể liên quan đến tài chính."}, {"id": 24, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Một hệ thống tường lửa mạnh mẽ có thể ngăn chặn các nỗ lực truy cập trái phép.'", "options": null, "answer": "A robust firewall system can block unauthorized access attempts.", "hint": "Dùng tính từ 'robust' (mạnh mẽ/vững chắc) và cụm 'unauthorized access'.", "explanation": "'Unauthorized access' (truy cập trái phép) là thuật ngữ pháp lý và kỹ thuật quan trọng."}, {"id": 25, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Lỗ hổng con người vẫn là liên kết yếu nhất trong an ninh mạng.'", "options": null, "answer": "Human vulnerability remains the weakest link in cyber security.", "hint": "Sử dụng cụm 'weakest link' (mắt xích yếu nhất).", "explanation": "Đây là một luận điểm phổ biến trong Writing Task 2 khi nói về việc giáo dục ý thức người dùng."}, {"id": 26, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng có thể hoạt động từ bất cứ nơi nào trên thế giới.'", "options": null, "answer": "Cybercriminals can operate from anywhere in the world.", "hint": "Sử dụng động từ 'operate'.", "explanation": "Câu này nhấn mạnh tính toàn cầu và sự khó khăn trong việc bắt giữ tội phạm mạng."}, {"id": 27, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Dịch vụ ngân hàng trực tuyến rất tiện lợi nhưng cũng tiềm ẩn nhiều rủi ro.'", "options": null, "answer": "Online banking services are convenient but also pose many risks.", "hint": "Dùng cấu trúc 'pose risks' cho việc tiềm ẩn rủi ro.", "explanation": "'Pose a risk/threat' là collocation cực kỳ quan trọng trong IELTS Writing."}, {"id": 28, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Việc cập nhật phần mềm thường xuyên là rất quan trọng để vá các lỗ hổng.'", "options": null, "answer": "Regular software updates are crucial to patch vulnerabilities.", "hint": "Dùng động từ 'patch' (vá) cho các lỗ hổng phần mềm.", "explanation": "'Patch vulnerabilities' là cụm từ chuyên môn mô tả hành động sửa lỗi bảo mật."}, {"id": 29, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Sự trỗi dậy của tội phạm mạng đòi hỏi một cách tiếp cận đa diện.'", "options": null, "answer": "The rise of cybercrime requires a multi-faceted approach.", "hint": "Sử dụng tính từ 'multi-faceted' cho cách tiếp cận đa diện.", "explanation": "'Multi-faceted approach' là cụm từ cao cấp dùng để nói về giải pháp phức hợp cho một vấn đề khó."}, {"id": 30, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Bằng chứng kỹ thuật số rất dễ bị thay đổi hoặc tiêu hủy.'", "options": null, "answer": "Digital evidence is easily altered or destroyed.", "hint": "Dùng động từ 'alter' cho việc thay đổi.", "explanation": "Nói về khó khăn trong điều tra tội phạm mạng: bằng chứng (evidence) dễ bị tác động."}, {"id": 31, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các chiến dịch nâng cao nhận thức cộng đồng có thể giúp giảm bớt tỉ lệ tội phạm.'", "options": null, "answer": "Public awareness campaigns can help reduce crime rates.", "hint": "Cụm 'Public awareness campaigns' là chiến dịch nâng cao nhận thức.", "explanation": "Đây là giải pháp xã hội tiêu chuẩn cho hầu hết các vấn đề trong Task 2."}, {"id": 32, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tin tặc thường nhắm vào trẻ em và người già, những người ít am hiểu về công nghệ.'", "options": null, "answer": "Hackers often target children and the elderly, who are less tech-savvy.", "hint": "Dùng tính từ 'tech-savvy' cho người am hiểu công nghệ.", "explanation": "'Tech-savvy' là từ vựng hiện đại, rất phù hợp khi thảo luận về các vấn đề công nghệ."}, {"id": 33, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Sự hợp tác giữa khu vực công và tư là rất quan trọng.'", "options": null, "answer": "Collaboration between the public and private sectors is vital.", "hint": "Cụm 'public and private sectors' chỉ khu vực công và tư.", "explanation": "'Collaboration' là sự hợp tác chặt chẽ, 'vital' mang nghĩa cực kỳ quan trọng."}, {"id": 34, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng gây ra một gánh nặng tài chính khổng lồ cho nền kinh tế.'", "options": null, "answer": "Cybercrime imposes a huge financial burden on the economy.", "hint": "Dùng động từ 'impose' và cụm 'financial burden'.", "explanation": "'Impose a burden on' là cách nói học thuật để chỉ việc gây ra gánh nặng cho ai/cái gì."}, {"id": 35, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Định danh số cần được bảo vệ bằng các phương pháp xác thực mạnh.'", "options": null, "answer": "Digital identities need to be protected by strong authentication methods.", "hint": "Dùng từ 'authentication' cho việc xác thực.", "explanation": "'Authentication' (xác thực) là khái niệm kỹ thuật để đảm bảo tính chính danh trên mạng."}, {"id": 36, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Sự thiếu hụt các chuyên gia an ninh mạng là một vấn đề cấp bách.'", "options": null, "answer": "The shortage of cyber security experts is a pressing issue.", "hint": "Dùng 'shortage' và tính từ 'pressing' (cấp bách).", "explanation": "'Pressing issue' là một collocation tuyệt vời để mở đầu đoạn văn về sự cần thiết của giải pháp."}, {"id": 37, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Hầu hết các vụ tội phạm mạng không bị trừng phạt do khó khăn về mặt pháp lý.'", "options": null, "answer": "Most cybercrimes go unpunished due to legal difficulties.", "hint": "Dùng cụm 'go unpunished' (không bị trừng phạt).", "explanation": "Câu này nêu bật một trong những thách thức lớn nhất của việc xử lý tội phạm mạng hiện nay."}, {"id": 38, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các nền tảng truyền thông xã hội là nơi thuận lợi cho việc phát tán tin giả.'", "options": null, "answer": "Social media platforms are fertile ground for the spread of fake news.", "hint": "Dùng cụm 'fertile ground' (mảnh đất màu mỡ/nơi thuận lợi).", "explanation": "'Fertile ground' là một cách diễn đạt hình ảnh và học thuật để chỉ nơi điều gì đó dễ dàng phát triển."}, {"id": 39, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Pháp luật hiện hành có thể không đủ để đối phó với các hình thức tội phạm mới.'", "options": null, "answer": "Existing legislation may be insufficient to deal with new forms of crime.", "hint": "Dùng 'legislation' thay cho 'laws' và 'insufficient' thay cho 'not enough'.", "explanation": "'Legislation' (hệ thống pháp luật) và 'insufficient' (không đủ/thiếu hụt) làm câu văn trang trọng hơn."}, {"id": 40, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'An ninh mạng nên được ưu tiên hàng đầu trong chương trình nghị sự quốc gia.'", "options": null, "answer": "Cyber security should be a top priority on the national agenda.", "hint": "Dùng cụm 'top priority' và 'national agenda'.", "explanation": "'National agenda' (chương trình nghị sự quốc gia) chỉ những vấn đề quan trọng cần chính phủ giải quyết."}, {"id": 41, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Hành vi bắt nạt qua mạng có thể gây ra những chấn thương tâm lý lâu dài.'", "options": null, "answer": "Cyberbullying can cause long-lasting psychological trauma.", "hint": "Dùng 'Cyberbullying' và 'psychological trauma'.", "explanation": "'Psychological trauma' là hậu quả về mặt tinh thần của các hành vi tội phạm trên mạng xã hội."}, {"id": 42, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Công nghệ Blockchain cung cấp một cách mới để bảo mật các giao dịch.'", "options": null, "answer": "Blockchain technology offers a new way to secure transactions.", "hint": "Sử dụng 'Blockchain' và 'secure transactions'.", "explanation": "Đề cập đến công nghệ mới như một phần của giải pháp tiên tiến."}, {"id": 43, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Các cá nhân cần phải thận trọng khi chia sẻ thông tin cá nhân trực tuyến.'", "options": null, "answer": "Individuals need to be cautious when sharing personal information online.", "hint": "Dùng tính từ 'cautious' (thận trọng).", "explanation": "'Be cautious' là một lời khuyên/giải pháp thực tế cho người dùng internet."}, {"id": 44, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Tội phạm mạng có tổ chức đang thay thế các loại tội phạm truyền thống.'", "options": null, "answer": "Organized cybercrime is replacing traditional types of crime.", "hint": "Dùng cụm 'Organized cybercrime' và 'traditional types'.", "explanation": "Câu này phản ánh xu hướng chuyển dịch của tội phạm trong kỷ nguyên số."}, {"id": 45, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Đạo đức mạng nên được đưa vào chương trình giảng dạy ở trường học.'", "options": null, "answer": "Cyber ethics should be included in the school curriculum.", "hint": "Dùng 'Cyber ethics' và 'school curriculum'.", "explanation": "Giáo dục về 'cyber ethics' (đạo đức mạng) là một giải pháp phòng ngừa từ sớm."}, {"id": 46, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Việc giám sát internet làm dấy lên những lo ngại về quyền riêng tư.'", "options": null, "answer": "Internet surveillance raises concerns about privacy rights.", "hint": "Dùng 'surveillance' (sự giám sát) và 'raises concerns'.", "explanation": "'Raise concerns' (dấy lên lo ngại) là cách diễn đạt hay khi nói về những mặt trái của giải pháp."}, {"id": 47, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Trí tuệ nhân tạo có thể được sử dụng để phát hiện các mối đe dọa mạng nhanh hơn.'", "options": null, "answer": "Artificial intelligence can be used to detect cyber threats faster.", "hint": "Sử dụng 'Artificial intelligence' và 'detect threats'.", "explanation": "Ứng dụng AI trong an ninh mạng là một chủ đề hiện đại và ghi điểm cao."}, {"id": 48, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Sự gia tăng của làm việc từ xa đã tạo ra những thách thức mới cho bảo mật dữ liệu.'", "options": null, "answer": "The rise of remote work has created new challenges for data security.", "hint": "Dùng cụm 'remote work' và 'data security'.", "explanation": "Đây là bối cảnh thực tế sau đại dịch, ảnh hưởng lớn đến tình hình tội phạm mạng."}, {"id": 49, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Một giao diện thân thiện với người dùng giúp mọi người dễ dàng báo cáo tội phạm mạng hơn.'", "options": null, "answer": "A user-friendly interface makes it easier for people to report cybercrime.", "hint": "Dùng cụm 'user-friendly interface' và động từ 'report'.", "explanation": "Nói về giải pháp kỹ thuật hỗ trợ người dùng tương tác với cơ quan chức năng."}, {"id": 50, "type": "Bài tập Dịch", "question": "Dịch sang tiếng Anh: 'Chúng ta không được phép lơ là cảnh giác trước những mối nguy hiểm tiềm ẩn trên mạng.'", "options": null, "answer": "We must not let our guard down against potential online dangers.", "hint": "Sử dụng idiom 'let one's guard down' (lơ là cảnh giác).", "explanation": "Idiom 'let one's guard down' rất phù hợp để kết thúc bài viết một cách ấn tượng và tự nhiên."}, {"id": 51, "type": "Word Box", "question": "The ______ of the internet allows cybercriminals to hide their true identities and locations.", "options": ["Anonymity", "Visibility", "Popularity", "Connectivity"], "answer": "Anonymity", "hint": "The state of being unknown or unidentifiable.", "explanation": "Anonymity (sự ẩn danh) là một trong những đặc điểm chính của internet khiến việc truy vết tội phạm trở nên khó khăn."}, {"id": 52, "type": "Word Box", "question": "Government agencies are working hard to ______ the networks used by hackers for illegal data trading.", "options": ["infiltrate", "abandon", "neglect", "support"], "answer": "infiltrate", "hint": "To gain access to an organization or place surreptitiously.", "explanation": "Infiltrate (xâm nhập) được dùng để chỉ việc các cơ quan chức năng thâm nhập vào mạng lưới tội phạm để điều tra."}, {"id": 53, "type": "Word Box", "question": "Many elderly people fall ______ to phishing emails because they are not tech-savvy.", "options": ["victim", "prey", "target", "both victim and prey"], "answer": "both victim and prey", "hint": "Both terms describe someone harmed or targeted by a criminal.", "explanation": "Cả 'fall victim to' và 'fall prey to' đều là những collocations phổ biến chỉ việc trở thành nạn nhân của tội phạm."}, {"id": 54, "type": "Word Box", "question": "Cyber attacks can ______ critical national infrastructure, such as power grids and water systems.", "options": ["sabotage", "enhance", "renovate", "construct"], "answer": "sabotage", "hint": "Deliberately destroy, damage, or obstruct something.", "explanation": "Sabotage (phá hoại) thường được dùng trong ngữ cảnh các cuộc tấn công mạng nhắm vào cơ sở hạ tầng trọng yếu."}, {"id": 55, "type": "Word Box", "question": "The company suffered a massive ______ breach, exposing the private information of millions of users.", "options": ["data", "money", "physical", "verbal"], "answer": "data", "hint": "Information processed or stored by a computer.", "explanation": "Data breach (vi phạm dữ liệu) là cụm từ chuyên ngành chỉ việc thông tin bị rò rỉ hoặc bị đánh cắp."}, {"id": 56, "type": "Word Box", "question": "Law enforcement agencies need to improve their ______ capabilities to catch sophisticated hackers.", "options": ["technical", "manual", "physical", "emotional"], "answer": "technical", "hint": "Relating to a particular subject, art, or craft, or its techniques.", "explanation": "Technical capabilities (năng lực kỹ thuật) là yếu tố sống còn để đối phó với tội phạm công nghệ cao."}, {"id": 57, "type": "Word Box", "question": "Stricter ______ is required to regulate the activities of large technology companies regarding user privacy.", "options": ["legislation", "negotiation", "observation", "imagination"], "answer": "legislation", "hint": "Laws, considered collectively.", "explanation": "Legislation (hệ thống pháp luật/việc ban hành luật) là thuật ngữ trang trọng thay thế cho 'laws' trong Writing Task 2."}, {"id": 58, "type": "Word Box", "question": "Hackers often exploit ______ in outdated software to gain unauthorized access to systems.", "options": ["vulnerabilities", "strengths", "features", "updates"], "answer": "vulnerabilities", "hint": "Weaknesses that can be attacked or harmed.", "explanation": "Vulnerabilities (lỗ hổng bảo mật) là điểm yếu mà tin tặc thường lợi dụng để tấn công."}, {"id": 59, "type": "Word Box", "question": "Identity ______ has become a prevalent crime where criminals use someone else's personal info for fraud.", "options": ["theft", "gift", "loan", "borrowing"], "answer": "theft", "hint": "The action or crime of stealing.", "explanation": "Identity theft (đánh cắp danh tính) là một loại hình tội phạm mạng phổ biến."}, {"id": 60, "type": "Word Box", "question": "International ______ is essential because cybercrime often involves perpetrators and victims in different countries.", "options": ["cooperation", "competition", "isolation", "dispute"], "answer": "cooperation", "hint": "The process of working together to the same end.", "explanation": "International cooperation (hợp tác quốc tế) là giải pháp then chốt cho tội phạm xuyên biên giới."}, {"id": 61, "type": "Word Box", "question": "One effective way to prevent cybercrime is to ______ public awareness about online safety.", "options": ["raise", "lower", "ignore", "suppress"], "answer": "raise", "hint": "To increase or improve something.", "explanation": "Raise awareness (nâng cao nhận thức) là một cụm động từ đi kèm (collocation) cố định rất hữu ích."}, {"id": 62, "type": "Word Box", "question": "Cyberbullying can cause severe ______ trauma to young victims.", "options": ["psychological", "physical", "economic", "political"], "answer": "psychological", "hint": "Relating to the mental and emotional state of a person.", "explanation": "Psychological trauma (chấn thương tâm lý) là hệ quả nghiêm trọng của việc bị bắt nạt qua mạng."}, {"id": 63, "type": "Word Box", "question": "The use of advanced ______ makes it nearly impossible for third parties to read intercepted messages.", "options": ["encryption", "description", "prescription", "subscription"], "answer": "encryption", "hint": "The process of converting information or data into a code.", "explanation": "Encryption (mã hóa) là biện pháp bảo mật dữ liệu hàng đầu hiện nay."}, {"id": 64, "type": "Word Box", "question": "Heavy fines and long prison sentences serve as a ______ to potential cybercriminals.", "options": ["deterrent", "reward", "incentive", "catalyst"], "answer": "deterrent", "hint": "A thing that discourages someone from doing something.", "explanation": "Deterrent (biện pháp răn đe) là mục đích của các hình phạt nghiêm khắc trong pháp luật."}, {"id": 65, "type": "Word Box", "question": "Organized criminal ______ are increasingly shifting their operations to the digital realm.", "options": ["syndicates", "clubs", "teams", "unions"], "answer": "syndicates", "hint": "A group of individuals or organizations combined to promote some common interest.", "explanation": "Criminal syndicates (băng nhóm tội phạm có tổ chức) là các đơn vị đứng sau nhiều vụ tấn công quy mô lớn."}, {"id": 66, "type": "Word Box", "question": "Malware can be used to ______ money from victims by locking their files and demanding a ransom.", "options": ["extort", "donate", "earn", "invest"], "answer": "extort", "hint": "Obtain something by force, threats, or other unfair means.", "explanation": "Extort (tống tiền) mô tả hành vi của ransomware (mã độc tống tiền)."}, {"id": 67, "type": "Word Box", "question": "Digital ______ is often fragile and can be easily deleted by criminals before police arrive.", "options": ["evidence", "furniture", "clothing", "equipment"], "answer": "evidence", "hint": "Information indicating whether a belief or proposition is true or valid.", "explanation": "Digital evidence (bằng chứng kỹ thuật số) rất dễ bị thay đổi hoặc tiêu hủy."}, {"id": 68, "type": "Word Box", "question": "The ______ growth of technology often outpaces the development of legal frameworks.", "options": ["rapid", "sluggish", "steady", "stagnant"], "answer": "rapid", "hint": "Happening in a short time or at a great rate.", "explanation": "Rapid growth (sự phát triển nhanh chóng) tạo ra kẽ hở cho tội phạm khi luật pháp chưa kịp cập nhật."}, {"id": 69, "type": "Word Box", "question": "Internet ______ is a controversial topic, as it balances security with personal privacy.", "options": ["surveillance", "connection", "speed", "addiction"], "answer": "surveillance", "hint": "Close observation, especially of a suspected spy or criminal.", "explanation": "Surveillance (sự giám sát) là một giải pháp gây tranh cãi để ngăn chặn tội phạm."}, {"id": 70, "type": "Word Box", "question": "Educating the younger generation about cyber ______ is crucial for long-term prevention.", "options": ["ethics", "speed", "games", "marketing"], "answer": "ethics", "hint": "Moral principles that govern a person's behavior.", "explanation": "Cyber ethics (đạo đức mạng) giúp định hướng hành vi đúng đắn của giới trẻ trên internet."}, {"id": 71, "type": "Word Box", "question": "Many businesses have gone ______ due to the financial losses caused by cyber extortion.", "options": ["bankrupt", "online", "global", "public"], "answer": "bankrupt", "hint": "Declared in law as unable to pay outstanding debts.", "explanation": "Bankrupt (phá sản) là hậu quả kinh tế nặng nề nhất đối với các doanh nghiệp bị tấn công."}, {"id": 72, "type": "Word Box", "question": "Hackers use ______ techniques to trick users into revealing sensitive passwords.", "options": ["manipulative", "generous", "helpful", "transparent"], "answer": "manipulative", "hint": "Characterized by unscrupulous control of a situation or person.", "explanation": "Manipulative techniques (thủ đoạn thao túng) được dùng trong các vụ lừa đảo như Phishing."}, {"id": 73, "type": "Word Box", "question": "A ______ approach involving technology, law, and education is needed to combat cybercrime.", "options": ["multi-faceted", "one-sided", "simple", "narrow"], "answer": "multi-faceted", "hint": "Having many sides or aspects.", "explanation": "Multi-faceted approach (cách tiếp cận đa diện) là cụm từ ghi điểm cao khi đề xuất giải pháp."}, {"id": 74, "type": "Word Box", "question": "Authorities must not ______ their guard, as cyber threats are constantly evolving.", "options": ["lower", "raise", "keep", "change"], "answer": "lower", "hint": "To become less vigilant.", "explanation": "Lower one's guard (lơ là cảnh giác) là một thành ngữ phù hợp để nói về sự cần thiết của việc duy trì an ninh."}, {"id": 75, "type": "Word Box", "question": "The ______ of fake news on social media can destabilize political systems.", "options": ["proliferation", "reduction", "elimination", "limitation"], "answer": "proliferation", "hint": "Rapid increase in numbers.", "explanation": "Proliferation (sự bùng nổ/tăng nhanh) thường dùng cho sự lan truyền của tin giả (fake news)."}, {"id": 76, "type": "Word Box", "question": "Software developers should release ______ regularly to fix security bugs.", "options": ["patches", "advertisements", "trailers", "manuals"], "answer": "patches", "hint": "A piece of software designed to update a computer program or its supporting data.", "explanation": "Patches (bản vá lỗi) là thuật ngữ kỹ thuật để sửa các lỗ hổng bảo mật."}, {"id": 77, "type": "Word Box", "question": "Financial ______ is the primary motivation for the majority of cybercrimes today.", "options": ["gain", "loss", "aid", "crisis"], "answer": "gain", "hint": "An increase in wealth or resources.", "explanation": "Financial gain (lợi ích tài chính) là động cơ hàng đầu của tội phạm mạng."}, {"id": 78, "type": "Word Box", "question": "The internet has become a ______ ground for fraudulent activities due to lack of regulation.", "options": ["fertile", "barren", "dry", "cold"], "answer": "fertile", "hint": "Producing many new ideas or results; encouraging growth.", "explanation": "Fertile ground (mảnh đất màu mỡ) là ẩn dụ chỉ môi trường thuận lợi cho tội phạm phát triển."}, {"id": 79, "type": "Word Box", "question": "Users should be ______ when clicking on links from unknown sources.", "options": ["cautious", "careless", "indifferent", "bold"], "answer": "cautious", "hint": "Careful to avoid potential problems or dangers.", "explanation": "Cautious (thận trọng) là thái độ cần thiết để tự bảo vệ mình trên không gian mạng."}, {"id": 80, "type": "Word Box", "question": "The ______ impact of a cyber attack can be felt for years by a victimized company.", "options": ["long-term", "instant", "temporary", "minor"], "answer": "long-term", "hint": "Occurring over or relating to a long period of time.", "explanation": "Long-term impact (tác động lâu dài) mô tả hệ quả kéo dài của tội phạm."}, {"id": 81, "type": "Word Box", "question": "Blockchain technology can provide more ______ and secure ways to handle digital transactions.", "options": ["transparent", "hidden", "complex", "fragile"], "answer": "transparent", "hint": "Allowing light to pass through; easy to perceive or detect.", "explanation": "Transparent (minh bạch) là đặc tính của công nghệ blockchain giúp tăng cường bảo mật."}, {"id": 82, "type": "Word Box", "question": "National ______ is at risk when foreign hackers target government databases.", "options": ["security", "holiday", "park", "anthem"], "answer": "security", "hint": "The state of being free from danger or threat.", "explanation": "National security (an ninh quốc gia) là vấn đề vĩ mô bị đe dọa bởi tội phạm mạng."}, {"id": 83, "type": "Word Box", "question": "Most cybercrimes currently go ______, as it is very hard to pinpoint the culprit.", "options": ["unpunished", "rewarded", "noticed", "organized"], "answer": "unpunished", "hint": "Not penalized for a fault or crime.", "explanation": "Go unpunished (không bị trừng phạt) phản ánh thực trạng khó khăn trong việc xử lý tội phạm mạng."}, {"id": 84, "type": "Word Box", "question": "Artificial ______ is being used to develop smarter antivirus software.", "options": ["intelligence", "appearance", "flavor", "satellite"], "answer": "intelligence", "hint": "The capacity of a computer to perform tasks commonly associated with intelligent beings.", "explanation": "Artificial intelligence (trí tuệ nhân tạo) là công nghệ mới giúp phát hiện các mối đe dọa mạng."}, {"id": 85, "type": "Word Box", "question": "A ______ link in a system's security can be a simple, weak password.", "options": ["weak", "strong", "missing", "broken"], "answer": "weak", "hint": "The part of a system that is most likely to fail.", "explanation": "Weak link (mắt xích yếu) thường dùng để chỉ con người hoặc mật khẩu yếu trong bảo mật."}, {"id": 86, "type": "Word Box", "question": "Online ______ involves misrepresenting oneself to steal money or data.", "options": ["fraud", "shopping", "gaming", "dating"], "answer": "fraud", "hint": "Wrongful or criminal deception intended to result in financial or personal gain.", "explanation": "Online fraud (lừa đảo trực tuyến) là thuật ngữ chung cho các hành vi gian lận mạng."}, {"id": 87, "type": "Word Box", "question": "Digital platforms must be held ______ for the content posted by their users.", "options": ["accountable", "invisible", "irresponsible", "capable"], "answer": "accountable", "hint": "Required or expected to justify actions or decisions; responsible.", "explanation": "Be held accountable (bị quy trách nhiệm) là một lập luận quan trọng về vai trò của các tập đoàn công nghệ."}, {"id": 88, "type": "Word Box", "question": "Cyber security should be a ______ priority for any modern organization.", "options": ["top", "low", "minimal", "rare"], "answer": "top", "hint": "Highest in importance or rank.", "explanation": "Top priority (ưu tiên hàng đầu) nhấn mạnh mức độ khẩn cấp của vấn đề."}, {"id": 89, "type": "Word Box", "question": "The ______ of data breaches can be devastating for a person's reputation.", "options": ["consequences", "origins", "advantages", "benefits"], "answer": "consequences", "hint": "A result or effect of an action or condition.", "explanation": "Consequences (hệ quả) là những gì xảy ra sau khi dữ liệu bị rò rỉ."}, {"id": 90, "type": "Word Box", "question": "Remote work has ______ the surface area for potential cyber attacks.", "options": ["expanded", "reduced", "shrunk", "removed"], "answer": "expanded", "hint": "Become or make larger or more extensive.", "explanation": "Expanded (mở rộng) chỉ việc làm từ xa tạo ra nhiều mục tiêu tấn công hơn cho tin tặc."}, {"id": 91, "type": "Word Box", "question": "A ______ firewall is the first line of defense against network intrusions.", "options": ["robust", "fragile", "transparent", "flexible"], "answer": "robust", "hint": "Strong and healthy; vigorous.", "explanation": "Robust (mạnh mẽ/vững chắc) thường đi kèm với hệ thống phòng thủ hoặc tường lửa."}, {"id": 92, "type": "Word Box", "question": "Criminals use ______ websites that look identical to real bank pages to steal login details.", "options": ["deceptive", "honest", "official", "public"], "answer": "deceptive", "hint": "Giving an appearance or impression different from the true one; misleading.", "explanation": "Deceptive websites (trang web lừa đảo) là công cụ chính của tội phạm Phishing."}, {"id": 93, "type": "Word Box", "question": "To ______ cybercrime effectively, we need to address its root causes.", "options": ["combat", "promote", "ignore", "encourage"], "answer": "combat", "hint": "Take action to reduce or prevent something bad or undesirable.", "explanation": "Combat (chiến đấu/đối phó) là động từ mạnh dùng cho việc giải quyết các vấn đề xã hội hoặc tội phạm."}, {"id": 94, "type": "Word Box", "question": "The ______ of technology has brought both immense benefits and new dangers.", "options": ["evolution", "extinction", "regression", "stagnation"], "answer": "evolution", "hint": "The gradual development of something.", "explanation": "Evolution of technology (sự tiến hóa của công nghệ) đặt ra bối cảnh cho bài luận."}, {"id": 95, "type": "Word Box", "question": "Information ______ is now a multibillion-dollar industry for criminal groups.", "options": ["trafficking", "sharing", "cleaning", "donation"], "answer": "trafficking", "hint": "Deal or trade in something illegal.", "explanation": "Trafficking (buôn bán bất hợp pháp) thường dùng cho dữ liệu, người hoặc hàng cấm."}, {"id": 96, "type": "Word Box", "question": "Legal ______ across different jurisdictions make it hard to prosecute global hackers.", "options": ["discrepancies", "agreements", "similitudes", "harmonies"], "answer": "discrepancies", "hint": "A lack of compatibility or similarity between two or more facts.", "explanation": "Legal discrepancies (sự khác biệt/mâu thuẫn về luật pháp) giữa các nước gây khó khăn cho việc truy tố."}, {"id": 97, "type": "Word Box", "question": "Many internet users are ______ to the risks of public Wi-Fi networks.", "options": ["oblivious", "aware", "sensitive", "attentive"], "answer": "oblivious", "hint": "Not aware of or not concerned about what is happening around one.", "explanation": "Oblivious (không nhận thức được/thờ ơ) chỉ sự thiếu cảnh giác của người dùng."}, {"id": 98, "type": "Word Box", "question": "Strict ______ of existing laws could help reduce the rate of cyber offenses.", "options": ["enforcement", "violation", "cancellation", "amendment"], "answer": "enforcement", "hint": "The act of compelling observance of or compliance with a law.", "explanation": "Law enforcement (thực thi pháp luật) là hành động cần thiết từ phía chính phủ."}, {"id": 99, "type": "Word Box", "question": "Hackers are often ______ by the challenge of breaking into 'unbreakable' systems.", "options": ["motivated", "discouraged", "frightened", "annoyed"], "answer": "motivated", "hint": "Stimulated to do something.", "explanation": "Motivated (có động lực) giải thích tại sao một số tin tặc tấn công không vì tiền mà vì sự thách thức."}, {"id": 100, "type": "Word Box", "question": "The ______ of digital traces makes it possible for forensic experts to track criminals.", "options": ["persistence", "disappearance", "absence", "fragility"], "answer": "persistence", "hint": "The quality of continuing to exist over a long period.", "explanation": "Persistence (tính lâu bền/sự tồn tại dai dẳng) của dấu vết số giúp các chuyên gia điều tra lần ra tội phạm."}];
+    let currentFiltered = [];
+    let currentIndex = 0;
+    let score = 0;
+    let answered = new Set();
+
+    function initPractice(data) {
+        allQuestions = data;
+        currentFiltered = [...allQuestions];
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        const q = currentFiltered[currentIndex];
+        const container = document.getElementById('question-container');
+        document.getElementById('question-index').innerText = `Câu ${currentIndex + 1} / ${currentFiltered.length}`;
+        let html = `
+            <div class="animate-fade-in">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black uppercase tracking-widest rounded-full">${q.type}</span>
+                    <span class="text-slate-300 dark:text-slate-600">#${q.id}</span>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-relaxed">${q.question}</h3>
+                <div class="space-y-3 mb-8">
+        `;
+        if (q.options && q.options.length > 0) {
+            q.options.forEach(opt => {
+                html += `<button onclick="checkAnswer(this, '${opt}')" class="option-btn w-full text-left p-4 rounded-2xl border-2 border-slate-100 dark:border-slate-800 hover:border-blue-500 transition-all mb-3 font-medium text-slate-700 dark:text-slate-300">${opt}</button>`;
+            });
+        } else {
+            html += `
+                <input type="text" id="ans-input" placeholder="Nhập đáp án của bạn..." class="w-full p-6 rounded-3xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:border-blue-500 outline-none transition-all font-bold text-lg mb-4">
+                <button onclick="checkInputAnswer()" class="w-full py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-2xl font-bold shadow-xl">Kiểm tra đáp án</button>
+            `;
+        }
+        html += `
+                </div>
+                <div id="feedback-area" class="hidden p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700">
+                    <p class="font-bold mb-2" id="result-text"></p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4" id="explanation-text"></p>
+                    <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-1">Đáp án đúng:</p>
+                        <p class="font-mono text-emerald-600 dark:text-emerald-400 font-bold">${q.answer}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML = html;
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function checkAnswer(btn, val) {
+        if (answered.has(currentFiltered[currentIndex].id)) return;
+        const q = currentFiltered[currentIndex];
+        const isCorrect = val === q.answer;
+        if (isCorrect) { btn.classList.add('border-emerald-500', 'bg-emerald-50'); score++; }
+        else { btn.classList.add('border-rose-500', 'bg-rose-50'); }
+        showFeedback(isCorrect);
+    }
+
+    function checkInputAnswer() {
+        const val = document.getElementById('ans-input').value.trim();
+        const q = currentFiltered[currentIndex];
+        const isCorrect = val.toLowerCase() === q.answer.toLowerCase();
+        if (isCorrect) score++;
+        showFeedback(isCorrect);
+    }
+
+    function showFeedback(isCorrect) {
+        const q = currentFiltered[currentIndex];
+        answered.add(q.id);
+        document.getElementById('feedback-area').classList.remove('hidden');
+        document.getElementById('result-text').innerText = isCorrect ? 'Chính xác! 🎉' : 'Chưa đúng rồi... ✍️';
+        document.getElementById('result-text').className = isCorrect ? 'font-bold text-emerald-600' : 'font-bold text-rose-600';
+        document.getElementById('explanation-text').innerText = q.explanation;
+        updateStats();
+    }
+
+    function updateStats() {
+        document.getElementById('practice-progress').innerText = `${answered.size}/${allQuestions.length}`;
+        document.getElementById('practice-correct').innerText = score;
+    }
+
+    function nextQuestion() { if (currentIndex < currentFiltered.length - 1) { currentIndex++; renderQuestion(); } }
+    function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
+
+    function filterPractice(type) {
+        currentIndex = 0;
+        currentFiltered = type === 'all' ? [...allQuestions] : allQuestions.filter(q => q.type === type);
+        document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.toggle('active', btn.innerText.includes(type) || (type==='all' && btn.innerText==='Tất cả')));
+        renderQuestion();
+    }
+</script>
+
+    </div>
+    
+<footer class="mt-20 text-center text-slate-400 text-sm border-t pt-10">
+            <p>© 2026 Nội dung bản quyền thuộc về <span class="font-bold text-slate-600 uppercase">Phạm Tiến Dũng Gia Sư</span></p>
+            <p class="mt-2 tracking-widest italic opacity-50">Empowering your IELTS journey with professional guidance</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleAccordion(btn) {
+            const item = btn.parentNode;
+            item.classList.toggle('active');
+            const svg = btn.querySelector('svg');
+            svg.classList.toggle('rotate-180');
+        }
+    </script>
+
+    <script>
+        function switchMode(mode) {
+            const theory = document.getElementById('theory-section');
+            const practice = document.getElementById('practice-section');
+            const btnTheory = document.getElementById('btn-theory');
+            const btnPractice = document.getElementById('btn-practice');
+            if (mode === 'theory') {
+                theory.classList.remove('hidden'); practice.classList.add('hidden');
+                btnTheory.className = btnTheory.className.replace('bg-white', 'bg-slate-900').replace('text-slate-900', 'text-white');
+                btnPractice.className = btnPractice.className.replace('bg-slate-900', 'bg-white').replace('text-white', 'text-slate-900');
+            } else {
+                theory.classList.add('hidden'); practice.classList.remove('hidden');
+                btnPractice.className = btnPractice.className.replace('bg-white', 'bg-slate-900').replace('text-slate-900', 'text-white');
+                btnTheory.className = btnTheory.className.replace('bg-slate-900', 'bg-white').replace('text-white', 'text-slate-900');
+                if (typeof allQuestions !== 'undefined' && allQuestions.length > 0 && document.getElementById('question-container').innerHTML.trim() === "") initPractice(allQuestions);
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>

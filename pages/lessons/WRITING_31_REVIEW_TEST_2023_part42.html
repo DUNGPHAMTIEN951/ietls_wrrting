@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171102'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 glass-card shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-xl">D</div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">Phạm Tiến Dũng <span class="text-blue-600 italic">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest text-slate-600">
+                <a href="#vocabulary" class="hover:text-blue-600 transition">Vocabulary</a>
+                <a href="#task1" class="hover:text-blue-600 transition">Task 1 Analysis</a>
+                <a href="#task2" class="hover:text-blue-600 transition">Task 2 Strategy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
+
+        <!-- Section 1: Advanced Vocabulary -->
+        <section id="vocabulary" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Advanced Academic Collocations</h2>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-slate-500 italic">Nâng cấp vốn từ vựng Academic cho chủ đề Y tế và Tài chính.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Word Card 1 -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full">Medical Advancement</span>
+                        <span class="text-slate-300 text-sm font-mono">#08</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Advancements in medicine and healthcare</h3>
+                    <p class="text-blue-600 font-medium mb-4 italic italic">Tiến bộ trong y học và chăm sóc sức khỏe</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Chỉ các bước phát triển vượt bậc về công nghệ y tế, phương pháp chẩn đoán và hiệu suất điều trị.</p>
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                        <p class="text-sm font-semibold text-slate-900 mb-1">Example (Band 8.0):</p>
+                        <p class="text-sm italic italic text-slate-700">"The <strong>advancements in medicine and healthcare</strong> have led to significant improvements in diagnosing diseases, resulting in better outcomes for patients."</p>
+                    </div>
+                </div>
+
+                <!-- Word Card 2 -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">Pregnancy Care</span>
+                        <span class="text-slate-300 text-sm font-mono">#09</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Prenatal screening tests</h3>
+                    <p class="text-green-600 font-medium mb-4 italic italic">Các bài kiểm tra sàng lọc tiền sản</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Cụm danh từ chuyên ngành dùng để chỉ các xét nghiệm máu, siêu âm nhằm phát hiện vấn đề sức khỏe của thai nhi.</p>
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-green-600">
+                        <p class="text-sm font-semibold text-slate-900 mb-1">Example (Band 8.0):</p>
+                        <p class="text-sm italic italic text-slate-700">"<strong>Prenatal screening tests</strong> provide expectant parents with valuable information, helping them make informed decisions regarding potential interventions."</p>
+                    </div>
+                </div>
+
+                <!-- Word Card 3 -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full">Genetics</span>
+                        <span class="text-slate-300 text-sm font-mono">#10</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Genetic abnormalities</h3>
+                    <p class="text-red-600 font-medium mb-4 italic italic">Bất thường di truyền</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Thuật ngữ chỉ các biến thể gen, đột biến hoặc rối loạn nhiễm sắc thể (như Down syndrome).</p>
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-red-600">
+                        <p class="text-sm font-semibold text-slate-900 mb-1">Example (Band 8.0):</p>
+                        <p class="text-sm italic italic text-slate-700">"These tests are commonly used to identify <strong>genetic abnormalities</strong> such as chromosomal disorders or genetic mutations."</p>
+                    </div>
+                </div>
+
+                <!-- Word Card 4 -->
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-bold rounded-full">Finance</span>
+                        <span class="text-slate-300 text-sm font-mono">#11</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Establish financial stability</h3>
+                    <p class="text-amber-600 font-medium mb-4 italic italic">Thiết lập sự ổn định tài chính</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Xây dựng nền tảng tài chính vững chắc thông qua việc tiết kiệm và đầu tư thông minh.</p>
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-amber-600">
+                        <p class="text-sm font-semibold text-slate-900 mb-1">Example (Band 8.0):</p>
+                        <p class="text-sm italic italic text-slate-700">"It is crucial to <strong>establish financial stability</strong> by budgeting wisely and making informed financial decisions."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-blue-50 rounded-2xl border-2 border-dashed border-blue-200 flex items-center space-x-6">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center text-white text-2xl">💡</div>
+                <div>
+                    <h4 class="font-bold text-blue-900">Teacher's Note by Phạm Tiến Dũng Gia Sư</h4>
+                    <p class="text-sm text-blue-800 leading-relaxed">Đừng chỉ học từ đơn lẻ (ví dụ: 'stability'). Hãy học theo <strong>Collocations</strong> (ví dụ: 'Establish financial stability'). Việc sử dụng đúng cụm từ sẽ giúp bạn ghi điểm tuyệt đối ở tiêu chí <em>Lexical Resource</em>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Task 1 Analysis -->
+        <section id="task1" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 italic">IELTS Writing Task 1: Bar Chart Analysis</h2>
+                <p class="text-slate-500">Phân tích sự thay đổi tỷ lệ các loại tạp chí được bán (1975 - 2015).</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+                <div class="p-8 md:p-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <!-- Logic Column -->
+                        <div class="lg:col-span-1 space-y-6">
+                            <h4 class="text-lg font-bold flex items-center text-blue-700">
+                                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                Data Organization
+                            </h4>
+                            <div class="mermaid">
+                                graph TD
+                                A[Magazine Sales] --> B(Sports: Upward Trend)
+                                A --> C(Fashion & Health: Downward)
+                                A --> D(Food & Others: Fluctuated)
+                            </div>
+                            <div class="space-y-4 pt-4">
+                                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Key Trend</p>
+                                    <p class="text-sm font-semibold">Sports magazines remained the best-selling publication throughout.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Answer Column -->
+                        <div class="lg:col-span-2">
+                            <div class="flex items-center justify-between mb-6">
+                                <h4 class="text-xl font-bold italic italic">Model Answer (Band 7.5+)</h4>
+                                <span class="px-3 py-1 bg-slate-900 text-white text-xs font-mono rounded">Word Count: 232</span>
+                            </div>
+                            <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed text-base">
+                                <p>The bar chart gives information about the percentage of different kinds of magazines sold by a particular company in three separate years, namely 1975, 1995 and 2015. Overall, there was an increase in the sales of <strong>sports magazines</strong>, whereas the opposite was true in the cases of <strong>fashion and health magazines</strong>. It is also noteworthy that sports magazines were consistently the company’s <strong>best-selling publications</strong>.</p>
+                                
+                                <p>Sports magazines were the only category that experienced an upward trend. Specifically, they <strong>outsold</strong> other types of magazines throughout the period, beginning at about 32% before rising steadily to end the period at just over 40%.</p>
+                                
+                                <p>Regarding magazine <strong>genres</strong> with downward trends, the proportion of fashion magazines sold started at just above 20% in 1995, after which it had <strong>slumped dramatically</strong> to 5% by the end of the timeframe. Health magazines witnessed a drop to 20%, followed by a <strong>leveling off</strong> in the final year.</p>
+                            </div>
+                            
+                            <!-- Vocabulary Breakdown Table -->
+                            <div class="mt-8 overflow-x-auto">
+                                <table class="w-full text-sm text-left">
+                                    <thead class="bg-slate-100 border-b border-slate-200">
+                                        <tr>
+                                            <th class="p-3 font-bold text-slate-600">Keyword</th>
+                                            <th class="p-3 font-bold text-slate-600 italic italic italic">Phạm Tiến Dũng Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-100">
+                                        <tr>
+                                            <td class="p-3 font-mono font-bold text-blue-700">Outsell (v)</td>
+                                            <td class="p-3 italic italic italic text-slate-600 italic">Bán chạy hơn đối thủ cạnh tranh.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-mono font-bold text-blue-700">Slump (v)</td>
+                                            <td class="p-3 italic italic italic text-slate-600 italic italic">Sụt giảm mạnh một cách đột ngột.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-mono font-bold text-blue-700">Leveling off (n)</td>
+                                            <td class="p-3 italic italic italic text-slate-600 italic italic">Sự chững lại, đi ngang sau biến động.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Task 2 Strategy -->
+        <section id="task2" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">IELTS Writing Task 2: Critical Thinking</h2>
+                <p class="text-slate-500 italic italic">Topic: Preservation of Old Buildings vs. Modern Architecture.</p>
+            </div>
+
+            <div class="bg-slate-900 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 opacity-10 rounded-full -mr-20 -mt-20"></div>
+                
+                <div class="relative z-10">
+                    <div class="inline-block px-4 py-1 bg-blue-500 rounded-full text-xs font-bold mb-6">OPINION ESSAY STRATEGY</div>
+                    <h3 class="text-2xl font-bold mb-8 italic italic">"Too much money is spent on old buildings. Should we knock them down for modern ones?"</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        <div class="p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/20 transition cursor-pointer">
+                            <h4 class="text-blue-400 font-bold mb-2 uppercase text-xs">Option A</h4>
+                            <p class="font-semibold italic italic">AGREE</p>
+                            <p class="text-sm text-slate-300 mt-2 italic italic italic">Phá bỏ hoàn toàn để tối ưu chi phí và không gian hiện đại.</p>
+                        </div>
+                        <div class="p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/20 transition cursor-pointer">
+                            <h4 class="text-red-400 font-bold mb-2 uppercase text-xs">Option B</h4>
+                            <p class="font-semibold italic italic italic">DISAGREE</p>
+                            <p class="text-sm text-slate-300 mt-2 italic italic italic italic">Bảo tồn mọi công trình để duy trì bản sắc văn hóa lịch sử.</p>
+                        </div>
+                        <div class="p-6 bg-blue-600/40 rounded-2xl border border-blue-400 hover:bg-blue-600/60 transition cursor-pointer">
+                            <h4 class="text-blue-200 font-bold mb-2 uppercase text-xs italic italic italic italic italic">Phạm Tiến Dũng Recommendation</h4>
+                            <p class="font-semibold italic italic italic italic italic italic">PARTLY AGREE</p>
+                            <p class="text-sm text-slate-100 mt-2 italic italic italic italic italic italic italic">Giữ lại các di tích lịch sử, phá bỏ các nhà cũ nát gây nguy hiểm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Argument Deep Dive -->
+                    <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+                        <h4 class="text-xl font-bold mb-6 italic italic italic italic italic italic italic italic">Lập luận hỗ trợ "AGREE" (Mẫu phân tích)</h4>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-blue-500 rounded-lg flex-shrink-0 flex items-center justify-center font-bold mr-4">1</div>
+                                <div>
+                                    <p class="font-bold text-blue-300 mb-1 italic italic italic italic italic italic italic italic italic">Cost-Effectiveness (Hiệu quả chi phí)</p>
+                                    <p class="text-sm text-slate-400 italic italic italic italic italic italic italic italic italic italic">Bảo trì đồ cũ tốn kém hơn việc xây mới bằng công nghệ hiện đại ngay từ đầu.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-blue-500 rounded-lg flex-shrink-0 flex items-center justify-center font-bold mr-4">2</div>
+                                <div>
+                                    <p class="font-bold text-blue-300 mb-1 italic italic italic italic italic italic italic italic italic italic italic">Safety Standards (Tiêu chuẩn an toàn)</p>
+                                    <p class="text-sm text-slate-400 italic italic italic italic italic italic italic italic italic italic italic italic">Công trình cũ tiềm ẩn nguy cơ sập đổ, hệ thống điện lỗi thời gây cháy nổ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Interactive Practice -->
+        <section class="scroll-mt-24 pb-20">
+            <div class="bg-blue-600 rounded-3xl p-1 md:p-1">
+                <div class="bg-white rounded-[1.4rem] p-8 md:p-12">
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-8 text-center italic italic italic italic italic italic italic italic italic italic italic italic italic">Quick Practice Lab</h2>
+                    
+                    <div class="max-w-3xl mx-auto space-y-8">
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <p class="font-bold text-slate-800 mb-4 italic italic italic italic italic italic italic italic italic italic italic italic italic italic">1. Fill in the blank using the collocations learned:</p>
+                            <p class="text-lg italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic text-slate-600 mb-6">
+                                "Modern medicine has successfully identified various _________ during the pregnancy period."
+                            </p>
+                            <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="px-6 py-2 bg-slate-900 text-white rounded-lg font-bold text-sm hover:bg-blue-700 transition">Show Answer</button>
+                            <div class="hidden mt-4 p-4 bg-green-50 text-green-700 font-mono font-bold rounded-lg italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">
+                                genetic abnormalities
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                            <p class="font-bold text-slate-800 mb-4 italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">2. Which word best describes a sharp decrease?</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <button class="p-3 border border-slate-300 rounded-lg hover:bg-blue-50 transition font-semibold italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">Leveling off</button>
+                                <button class="p-3 border border-blue-600 bg-blue-50 text-blue-700 rounded-lg font-semibold italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">Slumped dramatically</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm font-medium italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">IELTS Education Specialist</p>
+            <h2 class="text-2xl font-bold text-slate-900 mt-2 italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">Phạm Tiến Dũng Gia Sư</h2>
+            <div class="flex justify-center space-x-6 mt-6 text-slate-400 text-xs font-mono">
+                <span>Mã đơn hàng: Z021241122</span>
+                <span>Phone: 0963758090</span>
+                <span>Email: thaykienchuyenanh@gmail.com</span>
+            </div>
+            <p class="mt-8 text-slate-300 text-[10px] italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic italic">© 2024 Pham Tien Dung. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mermaid Initialization
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

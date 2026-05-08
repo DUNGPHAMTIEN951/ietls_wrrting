@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1: Masterclass Series - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Roboto', sans-serif; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        .sample-card { transition: all 0.3s ease; border: 1px solid #e2e8f0; }
+        .sample-card:hover { transform: translateY(-5px); shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-toggle.active + .accordion-content { max-height: 2000px; padding: 1.5rem; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171237'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">PTD</div>
+                <span class="text-xl font-bold tracking-tight text-gray-900">Phạm Tiến Dũng <span class="text-blue-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#intro" class="hover:text-blue-600 transition">Tổng quan</a>
+                <a href="#lessons" class="hover:text-blue-600 transition">Bài mẫu phân tích</a>
+                <a href="#vocabulary" class="hover:text-blue-600 transition">Từ vựng</a>
+            </nav>
+            <div class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold">IELTS Senior Tutor</div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section id="intro" class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">IELTS Writing Task 1 <br><span class="text-blue-600">Report Writing Masterclass</span></h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                Chào mừng bạn đến với chuyên mục phân tích bài mẫu IELTS Writing Task 1 chuyên sâu. Bài học này tập trung vào cách mô tả dữ liệu từ nhiều dạng biểu đồ (Bar, Pie, Line, Table) và cách kết hợp dữ liệu thông minh để đạt Band 7.5+.
+            </p>
+            <div class="flex justify-center gap-4">
+                <div class="flex items-center space-x-2 bg-green-100 text-green-700 px-4 py-2 rounded-lg">
+                    <span class="font-bold">✓</span> <span>Phân tích logic</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-lg">
+                    <span class="font-bold">✓</span> <span>Từ vựng Band 8.0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sơ đồ tư duy Task 1 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">01</span>
+                Quy trình viết bài Report (Task 1 Strategy)
+            </h2>
+            <div class="mermaid flex justify-center bg-white p-6 rounded-xl shadow-sm border">
+                graph TD
+                A[Analyze Task] --> B[Write Introduction]
+                B --> C[Identify Overall Trends]
+                C --> D[Body Paragraph 1: Specific Data]
+                D --> E[Body Paragraph 2: Comparisons]
+                subgraph "Expert Tip by Phạm Tiến Dũng Gia Sư"
+                C
+                end
+            </div>
+        </section>
+
+        <!-- Main Content: Analysing Samples -->
+        <section id="lessons" class="space-y-12">
+            <h2 class="text-2xl font-bold mb-8 flex items-center">
+                <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">02</span>
+                Phân tích các Case Study thực tế
+            </h2>
+
+            <!-- Case 1: Mixed Charts (Bar & Pie) -->
+            <div class="sample-card bg-white p-8 rounded-2xl shadow-sm overflow-hidden border-t-4 border-blue-500">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-blue-500">Case Study #1</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Travel Purposes & Concerns (US 2009)</h3>
+                    </div>
+                    <div class="bg-gray-100 px-3 py-1 rounded text-sm font-mono mt-2 md:mt-0">Type: Bar & Pie Chart</div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="prose prose-blue max-w-none text-gray-700">
+                        <p class="font-semibold text-gray-900 underline decoration-blue-300">Bài mẫu tiêu biểu:</p>
+                        <p class="italic text-sm">"It is clear that the principal reason why Americans travelled in 2009 was to commute to and from work. In the same year, the primary concern of Americans, with regard to the trips they made, was the cost of travelling..."</p>
+                        <p class="text-sm">Looking more closely at the bar chart, 49% of trips were for commuting, while only 6% were for visiting friends/relatives. Personal reasons accounted for 19%. Regarding concerns, price was key (36%), followed by safety (almost 1/5).</p>
+                    </div>
+                    <div class="teacher-note p-6 rounded-xl">
+                        <h4 class="font-bold text-blue-700 mb-2 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Teacher's Note
+                        </h4>
+                        <ul class="list-disc pl-5 text-sm space-y-2 text-blue-900">
+                            <li><strong>Phạm Tiến Dũng Gia Sư khuyên:</strong> Khi gặp biểu đồ hỗn hợp, Introduction nên gộp chung, nhưng Overall phải chỉ ra được đặc điểm nổi bật của CẢ HAI biểu đồ.</li>
+                            <li>Sử dụng cấu trúc: <code class="bg-blue-200 px-1 rounded">"It is clear that..."</code> để bắt đầu Overall một cách chuyên nghiệp.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 2: Comparative Bar & Pie (Arrests) -->
+            <div class="sample-card bg-white p-8 rounded-2xl shadow-sm overflow-hidden border-t-4 border-red-500">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-red-500">Case Study #2</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Arrest Rates & Reasons (Gender Focus)</h3>
+                    </div>
+                    <div class="bg-gray-100 px-3 py-1 rounded text-sm font-mono mt-2 md:mt-0 text-red-600">Complex Comparison</div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="bg-red-50 border border-red-100 p-4 rounded-lg">
+                            <h5 class="font-bold text-red-800 text-sm mb-2">Key Data Highlights:</h5>
+                            <ul class="text-sm space-y-1 text-red-700">
+                                <li><strong>Males:</strong> 32% arrest rate</li>
+                                <li><strong>Females:</strong> 9% arrest rate</li>
+                                <li><strong>Main reason:</strong> Public drinking (Women 38% > Men 31%)</li>
+                            </ul>
+                        </div>
+                        <p class="text-sm leading-relaxed">
+                            "Interestingly though, women experienced a higher percentage of arrest rates for assault and public drinking. The figures for assault were fairly similar at approximately 18%, whereas public drinking represented the main reason for arrest, with women at a massive 38%."
+                        </p>
+                    </div>
+                    <div>
+                        <div class="pro-tip p-6 rounded-xl">
+                            <h4 class="font-bold text-amber-700 mb-2 flex items-center">
+                                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM11 2a1 1 0 011-1h2a1 1 0 110 2h-2V3a1 1 0 01-1-1zm0 10a1 1 0 011-1h2a1 1 0 110 2h-2v1a1 1 0 01-1-1zM11 6a1 1 0 011-1h2a1 1 0 110 2h-2V7a1 1 0 01-1-1zm0 10a1 1 0 011-1h2a1 1 0 110 2h-2v1a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                                Pro Tip: Comparing Genders
+                            </h4>
+                            <p class="text-sm text-amber-900 leading-relaxed">
+                                Đừng chỉ liệt kê số liệu từng giới tính. Hãy so sánh! Sử dụng các trạng từ so sánh như <code class="bg-amber-200 px-1 rounded">"respectively"</code>, <code class="bg-amber-200 px-1 rounded">"twice as likely to"</code>, hoặc <code class="bg-amber-200 px-1 rounded">"compared to"</code>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 3: Line Graphs & Trends (UK Visits) -->
+            <div class="sample-card bg-white p-8 rounded-2xl shadow-sm border-l-4 border-green-500">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Case Study #3: Dynamic Line Graph Trends</h3>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border border-gray-200">
+                        <thead class="bg-green-50 text-green-800">
+                            <tr>
+                                <th class="px-6 py-3 border-b text-left text-xs font-bold uppercase tracking-wider">Trend Category</th>
+                                <th class="px-6 py-3 border-b text-left text-xs font-bold uppercase tracking-wider">Useful Phrase</th>
+                                <th class="px-6 py-3 border-b text-left text-xs font-bold uppercase tracking-wider">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Strong Growth</td>
+                                <td class="px-6 py-4 italic text-blue-600 font-mono">increased significantly / shot up</td>
+                                <td class="px-6 py-4">Visits abroad increased to over 50 million.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Stability/Slow Growth</td>
+                                <td class="px-6 py-4 italic text-blue-600 font-mono">rose steadily / remained unchanged</td>
+                                <td class="px-6 py-4">Overseas residents rose steadily to reach 30m.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Peak/Maximum</td>
+                                <td class="px-6 py-4 italic text-blue-600 font-mono">peak at / reach a high of</td>
+                                <td class="px-6 py-4">Population is expected to peak at 8.2 billion.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-gray-600 text-sm italic border-l-2 pl-4">"The figures started at a similar amount, around 10 million, but visits abroad increased significantly to over 50 million, whereas the number of overseas residents rose steadily..."</p>
+            </div>
+        </section>
+
+        <!-- Vocabulary Explorer Section -->
+        <section id="vocabulary" class="mt-20">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-blue-600 inline-block pb-2">Academic Vocabulary Vault</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-600 text-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-bold mb-4">Verbs of Change</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• <span class="font-bold">Accounted for:</span> Chiếm (bao nhiêu %)</li>
+                        <li>• <span class="font-bold">Overtook:</span> Vượt qua</li>
+                        <li>• <span class="font-bold">Fluctuated:</span> Dao động</li>
+                        <li>• <span class="font-bold">Projected/Predicted:</span> Được dự báo</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">Adverbs of Degree</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>• <span class="font-bold text-blue-600 underline">Significantly / Considerably:</span> Đáng kể</li>
+                        <li>• <span class="font-bold text-blue-600 underline">Dramatically:</span> Đột ngột/Mạnh mẽ</li>
+                        <li>• <span class="font-bold text-blue-600 underline">Marginally / Slightly:</span> Một chút/Không đáng kể</li>
+                        <li>• <span class="font-bold text-blue-600 underline">Steadily:</span> Đều đặn</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 text-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-bold mb-4">Linking Phrases</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>• <span class="font-bold">By contrast / Conversely:</span> Ngược lại</li>
+                        <li>• <span class="font-bold">In the same period:</span> Trong cùng kỳ</li>
+                        <li>• <span class="font-bold">Respectively:</span> Lần lượt là</li>
+                        <li>• <span class="font-bold">Overall, it can be seen:</span> Nhìn chung</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice & Quiz Section -->
+        <section class="mt-20">
+            <div class="bg-indigo-50 rounded-3xl p-10 border border-indigo-100">
+                <h2 class="text-2xl font-bold text-indigo-900 mb-6">Interactive Practice: Test Your Knowledge</h2>
+                <div class="space-y-8">
+                    <div class="accordion-item">
+                        <button class="accordion-toggle w-full flex justify-between items-center py-4 text-left font-bold text-indigo-800 focus:outline-none" onclick="this.classList.toggle('active')">
+                            <span>Q1: Cụm từ nào phù hợp nhất để mô tả sự thay đổi từ 10% lên 50% trong 30 năm?</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content bg-white rounded-lg">
+                            <p class="text-gray-700">Đáp án từ bài mẫu: <span class="font-mono text-blue-600 font-bold">"Steadily climbed"</span> hoặc <span class="font-mono text-blue-600 font-bold">"More than doubled"</span>. <br><br><strong>Giải thích:</strong> "Steadily climbed" mô tả quá trình tăng dần qua các mốc thời gian, trong khi "more than doubled" nhấn mạnh vào độ lớn của sự tăng trưởng (từ 15% lên 35%).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-toggle w-full flex justify-between items-center py-4 text-left font-bold text-indigo-800 focus:outline-none" onclick="this.classList.toggle('active')">
+                            <span>Q2: Cách xử lý dữ liệu biểu đồ "Demand for Electricity" (C14E) như thế nào cho hiệu quả?</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content bg-white rounded-lg">
+                            <p class="text-gray-700"><strong>Chiến thuật của Phạm Tiến Dũng Gia Sư:</strong><br> Đối với các biểu đồ mô tả theo chu kỳ ngày đêm (24h), hãy tập trung vào các điểm <strong>Peak (Cực đại)</strong> và <strong>Trough (Cực tiểu)</strong>. Ví dụ: Max vào 21:00 (winter) và Min vào 04:00. Đồng thời so sánh sự khác biệt giữa hai mùa (Winter vs Summer).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 mb-2">Biên soạn bởi giảng viên cấp cao</p>
+            <p class="text-2xl font-bold mb-6">Phạm Tiến Dũng Gia Sư</p>
+            <div class="flex justify-center space-x-6 text-sm text-gray-500 mb-8">
+                <span>📍 IELTS Writing Task 1 Specialist</span>
+                <span>📧 thaykienchuyenanh@gmail.com</span>
+                <span>📞 0963758090</span>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-xs text-gray-600">
+                © 2026 Phạm Tiến Dũng Gia Sư. Toàn bộ nội dung bài giảng thuộc bản quyền của tác giả. Mọi sự sao chép phải có sự đồng ý của tác giả.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

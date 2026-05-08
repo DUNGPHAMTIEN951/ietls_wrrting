@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass - Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .heading-font { font-family: 'Roboto', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .pro-tip { border-left: 4px solid #f59e0b; }
+        .teacher-note { border-left: 4px solid #3b82f6; }
+        .accordion-content { display: none; }
+        .accordion-content.active { display: block; }
+        .band-9-vocab { color: #1e40af; font-weight: 600; text-decoration: underline; text-decoration-color: #93c5fd; cursor: help; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165909'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="text-slate-800 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2 rounded-lg font-bold text-xl">PTD</div>
+                <span class="font-bold text-xl tracking-tight text-slate-900">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <a href="#lesson-1" class="hover:text-blue-600 transition">Writing Task 2: Children</a>
+                <a href="#lesson-2" class="hover:text-blue-600 transition">Writing Task 1: Process</a>
+                <a href="#lesson-3" class="hover:text-blue-600 transition">Writing Task 2: Rules & Laws</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <!-- SECTION 1: CHILDREN DEVELOPMENT -->
+        <section id="lesson-1" class="mb-20">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase">IELTS Writing Task 2</span>
+                <span class="text-slate-400">|</span>
+                <span class="text-sm font-medium text-slate-500 italic text-sm">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold heading-font text-slate-900 mb-6 italic">Outdoor Activities vs. Computer Games</h1>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-8">
+                <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Đề bài phân tích
+                </h3>
+                <p class="text-slate-700 bg-slate-50 p-4 rounded-lg italic">"Some people believe that outdoor activities provide more benefit for a child’s development than playing computer games. Discuss both views and give your opinion."</p>
+            </div>
+
+            <!-- Analysis Table -->
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-6">
+                    <h4 class="font-bold text-emerald-800 mb-2">Ưu điểm của Outdoor Activities</h4>
+                    <ul class="text-sm space-y-2 text-emerald-900">
+                        <li>• Human beings are <span class="band-9-vocab" title="Một phần của thiên nhiên">a part of nature</span>.</li>
+                        <li>• Phát triển thể chất: <span class="band-9-vocab" title="Kích thích và tăng cường cơ bắp">stimulate muscles</span>.</li>
+                        <li>• Mental health: <span class="band-9-vocab" title="Ổn định về tinh thần và cảm xúc">mentally and emotionally stable</span>.</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 border border-red-100 rounded-xl p-6">
+                    <h4 class="font-bold text-red-800 mb-2">Rủi ro của Computer Games</h4>
+                    <ul class="text-sm space-y-2 text-red-900">
+                        <li>• <span class="band-9-vocab" title="Gây ra một số rủi ro">Poses several risks</span> to development.</li>
+                        <li>• Vấn đề xương khớp: <span class="band-9-vocab" title="Các vấn đề về xương khớp">musculoskeletal problems</span>.</li>
+                        <li>• <span class="band-9-vocab" title="Các tác động tiêu cực vượt xa mọi lợi ích">Negative impacts far outweigh benefits</span>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="teacher-note bg-blue-50 p-6 rounded-r-xl mb-8">
+                <h4 class="font-bold text-blue-800 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.827a1 1 0 00-.788 0l-7 3a1 1 0 000 1.848l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.848l-7-3zM14 9.581l-4 1.715-4-1.715V12l4 1.714L14 12V9.581z"></path></svg>
+                    Teacher's Note: Argumentative Strategy
+                </h4>
+                <p class="text-sm mt-2">Khi viết bài Opinion, hãy sử dụng các trạng từ chỉ mức độ (e.g., <span class="italic">detrimental, inevitably</span>) để làm cho lập luận sắc bén hơn. Lưu ý sự cân bằng giữa phát triển Thể chất (Physically) và Tinh thần (Mentally).</p>
+            </div>
+
+            <!-- Band 9 Sample -->
+            <div class="bg-slate-900 text-slate-300 rounded-2xl p-8 overflow-hidden relative">
+                <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 text-xs font-bold uppercase rounded-bl-xl">Band 8.5+ Sample</div>
+                <h3 class="text-white font-bold mb-4 border-b border-slate-700 pb-2">Sample Essay</h3>
+                <div class="space-y-4 text-sm leading-relaxed">
+                    <p>Some people believe that outdoor activities provide more benefit for a child’s development than playing computer games. Not only do I completely agree with this idea, but I also believe that computer games are quite <span class="text-blue-400 font-semibold underline decoration-blue-500/30">detrimental</span> to a child’s development.</p>
+                    <p>Outdoor activities are beneficial to children in many ways. Human beings are <span class="text-blue-400">meant to be a part of nature</span>, and constantly being trapped in unnatural environments limits children’s ability to develop physically, mentally, and emotionally. For example, humans are not designed to sit in a chair for long periods of time, as it has <span class="text-blue-400">detrimental effects</span> on their bodies...</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 mb-20">
+
+        <!-- SECTION 2: PROCESS (TASK 1) -->
+        <section id="lesson-2" class="mb-20">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded-full uppercase">IELTS Writing Task 1</span>
+                <span class="text-slate-400">|</span>
+                <span class="text-sm font-medium text-slate-500">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <h2 class="text-3xl font-bold heading-font text-slate-900 mb-6">Process: Water Filtering Systems</h2>
+
+            <div class="mermaid mb-8 bg-white p-6 rounded-xl border border-slate-200">
+                graph LR
+                A[Untreated Water] -- Inlet Pipe --> B(Sand Filter)
+                B --> C(Tiny Stones/Gravel)
+                C --> D(Pipe Holes)
+                D --> E[Outlet/Tap]
+                style A fill:#f1f5f9,stroke:#64748b
+                style E fill:#dcfce7,stroke:#22c55e
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="space-y-4">
+                    <h3 class="font-bold text-slate-800">So sánh 2 hệ thống (Overview)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th class="p-3 border">Đặc điểm</th>
+                                    <th class="p-3 border">Hệ thống 1</th>
+                                    <th class="p-3 border">Hệ thống 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-3 border font-semibold">Cấu trúc</td>
+                                    <td class="p-3 border">Compact, self-contained</td>
+                                    <td class="p-3 border">Multi-stage system</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-3 border font-semibold">Thành phần</td>
+                                    <td class="p-3 border">3 filtering elements</td>
+                                    <td class="p-3 border">Single element (Sand)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="pro-tip bg-amber-50 p-6 rounded-r-xl">
+                    <h4 class="font-bold text-amber-800 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                        Pro Tip: Process Language
+                    </h4>
+                    <p class="text-sm mt-2 italic text-amber-900">"Khi mô tả quy trình, hãy sử dụng linh hoạt các 'Sequencing words' như: Firstly, Subsequently, Finally. Đặc biệt, Passive Voice (Bị động) là chìa khóa để đạt Band 7.0+ ở dạng bài Diagram này."</p>
+                </div>
+            </div>
+
+            <!-- Practice Interactive Section -->
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                <button onclick="toggleAccordion('practice-1')" class="w-full flex justify-between items-center p-5 font-bold text-slate-800 hover:bg-slate-50">
+                    <span>Thực hành Vocabulary Task 1</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="practice-1" class="accordion-content p-6 border-t border-slate-200 bg-slate-50">
+                    <p class="mb-4 text-sm">Điền từ thích hợp vào chỗ trống: "The water flows into the system via the _________."</p>
+                    <button onclick="alert('Đáp án: inlet pipe')" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-700">Xem đáp án</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SOCIETY & LAWS -->
+        <section id="lesson-3" class="mb-20">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full uppercase">IELTS Writing Task 2</span>
+                <span class="text-slate-400">|</span>
+                <span class="text-sm font-medium text-slate-500 italic">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <h2 class="text-3xl font-bold heading-font text-slate-900 mb-6 uppercase tracking-tight">Society, Rules and Laws</h2>
+
+            <div class="bg-blue-900 text-white rounded-2xl p-8 mb-8">
+                <p class="text-lg opacity-90 italic">"Society is based on rules and laws. If individuals were free to do whatever they want to do, it could not function. To what extent do you agree or disagree?"</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs mr-2">1</span>
+                        Lập luận "Chaos" (Hỗn loạn)
+                    </h4>
+                    <p class="text-sm text-slate-600">Nếu không có ranh giới (<span class="italic">boundaries</span>), xã hội sẽ rơi vào tình trạng biến động (<span class="italic">upheaval</span>). Tuy nhiên, bản chất con người có thiện chí bẩm sinh (<span class="italic">innate goodwill</span>).</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs mr-2">2</span>
+                        Mặt trái của Luật pháp
+                    </h4>
+                    <p class="text-sm text-slate-600">Nhiều bộ luật hiện nay có xu hướng ủng hộ người giàu và chống lại người nghèo (<span class="italic">favour the rich and oppose the poor</span>), gây hại nhiều hơn lợi.</p>
+                </div>
+            </div>
+
+            <!-- Vocabulary Highlight Table -->
+            <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-md">
+                <h3 class="font-bold text-xl mb-6 border-l-4 border-blue-600 pl-4">Premium Vocabulary List</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold text-blue-800 italic">Deteriorate into chaos</span>
+                        <span class="text-xs text-slate-500">Trở nên hỗn loạn</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold text-blue-800 italic">Enforce rules</span>
+                        <span class="text-xs text-slate-500">Thực thi quy định</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold text-blue-800 italic">Innate goodwill</span>
+                        <span class="text-xs text-slate-500">Thiện chí bẩm sinh</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                        <span class="font-bold text-blue-800 italic">Endless amounts of</span>
+                        <span class="text-xs text-slate-500">Vô số thứ gì đó</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 py-12 border-t border-slate-200 text-center">
+            <p class="text-slate-400 text-sm">Nội dung bài học được biên soạn bởi</p>
+            <p class="font-bold text-lg text-slate-900">Phạm Tiến Dũng Gia Sư</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <span class="px-3 py-1 bg-slate-100 rounded text-xs font-bold text-slate-500 uppercase tracking-widest">Premium Content</span>
+                <span class="px-3 py-1 bg-slate-100 rounded text-xs font-bold text-slate-500 uppercase tracking-widest">IELTS Specialist</span>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Mermaid Init
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Simple Accordion Logic
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 General Training - Masterclass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-heading { font-family: 'Roboto', sans-serif; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #3b82f6; background-color: #eff6ff; }
+        .gradient-text { background: linear-gradient(90deg, #1e3a8a, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-slate-200 py-10 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold gradient-text mb-4">IELTS WRITING TASK 1 GENERAL TRAINING</h1>
+            <p class="text-lg text-slate-600 font-medium">Chinh phục kỹ năng viết thư từ căn bản đến nâng cao (Band 8.0+)</p>
+            <div class="mt-6 inline-block bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-semibold">
+                Tác giả: Phạm Tiến Dũng Gia Sư
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Introduction Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-heading text-slate-900 mb-6 flex items-center">
+                <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-lg">1</span>
+                Tổng quan & Phân loại thư (Tone & Structure)
+            </h2>
+            <p class="mb-6 leading-relaxed">
+                Trong bài thi IELTS General Training Writing Task 1, thí sinh phải viết một bức thư ít nhất 150 từ. Điều quan trọng nhất là xác định được <strong>Tone</strong> (sắc thái) của lá thư: <em>Formal</em> (Trang trọng), <em>Semi-formal</em> (Bán trang trọng), hoặc <em>Informal</em> (Thân mật).
+            </p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
+                    <thead class="bg-slate-800 text-white font-heading">
+                        <tr>
+                            <th class="p-4 border border-slate-700">Loại thư</th>
+                            <th class="p-4 border border-slate-700">Đối tượng nhận</th>
+                            <th class="p-4 border border-slate-700">Lời mở đầu</th>
+                            <th class="p-4 border border-slate-700">Lời kết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 border border-slate-200 font-bold text-blue-700 italic">Informal</td>
+                            <td class="p-4 border border-slate-200 text-sm italic text-slate-500">Bạn bè, người thân thiết</td>
+                            <td class="p-4 border border-slate-200 font-mono text-sm">Dear James,</td>
+                            <td class="p-4 border border-slate-200 font-mono text-sm">Warm wishes, / Love,</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 border border-slate-200 font-bold text-indigo-700 italic">Semi-formal</td>
+                            <td class="p-4 border border-slate-200 text-sm italic text-slate-500">Đồng nghiệp, chủ nhà, giáo viên</td>
+                            <td class="p-4 border border-slate-200 font-mono text-sm">Dear Mr. Smith,</td>
+                            <td class="p-4 border border-slate-200 font-mono text-sm">Yours sincerely,</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 border border-slate-200 font-bold text-slate-700 italic">Formal</td>
+                            <td class="p-4 border border-slate-200 text-sm italic text-slate-500">Quản lý, cơ quan chức năng</td>
+                            <td class="p-4 border border-slate-200 font-mono text-sm">Dear Sir or Madam,</td>
+                            <td class="p-4 border border-slate-200 font-mono text-sm">Yours faithfully,</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Lesson Modules (Tabs) -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-heading text-slate-900 mb-8 flex items-center">
+                <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-lg">2</span>
+                Các bài học mẫu chuyên sâu (Case Studies)
+            </h2>
+
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap border-b border-slate-300 mb-8">
+                <button onclick="openTab(event, 'informal')" class="tab-btn px-6 py-3 font-bold border-b-2 border-transparent hover:text-blue-600 active-tab text-blue-600 border-blue-600">Thư Thân Mật (Informal)</button>
+                <button onclick="openTab(event, 'formal')" class="tab-btn px-6 py-3 font-bold border-b-2 border-transparent text-slate-500 hover:text-blue-600">Thư Trang Trọng (Formal)</button>
+                <button onclick="openTab(event, 'mixed')" class="tab-btn px-6 py-3 font-bold border-b-2 border-transparent text-slate-500 hover:text-blue-600">Tình huống đặc biệt</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div id="informal" class="tab-content active">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Column 1: Analysis -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 italic underline">Chủ đề: Thông báo thay đổi công việc</h3>
+                        <p class="text-sm text-slate-600 mb-4">Mục tiêu: Giải thích lý do nghỉ việc, mô tả công việc mới và cập nhật tình hình cá nhân.</p>
+                        
+                        <div class="pro-tip p-5 rounded-lg mb-6">
+                            <h4 class="font-bold text-amber-800 text-sm uppercase tracking-wider mb-2">🔥 Pro Tip: Natural Flow</h4>
+                            <p class="text-sm text-amber-900 leading-relaxed italic italic text-slate-500">
+                                Để đạt điểm 8.0+ ở phần Informal, hãy sử dụng các cụm từ kết nối tự nhiên như: <strong>"To be honest"</strong>, <strong>"By the way"</strong>, <strong>"Anyway"</strong>. Tránh dùng từ vựng quá cứng nhắc (academic) khi viết cho bạn bè.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                            <h4 class="font-bold mb-3 border-b pb-2">Vocabulary Highlight (Band 8.0+)</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-center text-sm">
+                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded mr-3 font-mono">Resigned from</span> 
+                                    Từ chức, nghỉ việc
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded mr-3 font-mono">Remuneration</span> 
+                                    Mức thù lao (Tiền lương & thưởng)
+                                </li>
+                                <li class="flex items-center text-sm">
+                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded mr-3 font-mono">Notorious traffic</span> 
+                                    Giao thông khét tiếng (ùn tắc)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Sample -->
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-2xl shadow-xl font-mono text-sm leading-loose relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-4 opacity-10">
+                            <svg class="w-20 h-20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <p class="text-blue-400 mb-4 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">Dear Angela,</p>
+                        <p class="mb-4">...Well, I have joined a travel agency last month and the new job is <span class="text-yellow-400">exciting</span>. In my previous job, I was working really long hours and, to be honest, the pay wasn’t great. I thought it was a <span class="text-yellow-400">good fit</span> for my expectations and took the opportunity...</p>
+                        <p class="mb-4">The remuneration in the new job is better, the working conditions are great and I don’t have to work long hours anymore...</p>
+                        <p class="text-blue-400 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">With love,<br>Emma</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="formal" class="tab-content">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Analysis -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-slate-900 italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline italic underline">Chủ đề: Phàn nàn dịch vụ công cộng</h3>
+                        <p class="mb-4 text-sm text-slate-600">Mô tả vấn đề: Phương tiện công cộng chậm trễ, ảnh hưởng đến người lao động.</p>
+                        
+                        <div class="teacher-note p-5 rounded-lg mb-6">
+                            <h4 class="font-bold text-blue-800 text-sm uppercase tracking-wider mb-2">🎓 Giảng viên cao cấp: Phạm Tiến Dũng Gia Sư Note</h4>
+                            <p class="text-sm text-blue-900 italic italic text-slate-500">
+                                Trong thư phàn nàn cho Manager, hãy sử dụng <strong>Passive Voice</strong> (Câu bị động) để giữ tính khách quan và chuyên nghiệp. Ví dụ: <em>"Issues inflicted upon me"</em> thay vì chỉ nói <em>"You cause me problems"</em>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Sample -->
+                    <div class="bg-white border-2 border-slate-200 p-8 rounded-xl shadow-md">
+                        <h4 class="text-center font-bold mb-6 text-slate-700 underline italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">Mẫu Thư Phàn nàn (Formal)</h4>
+                        <div class="space-y-4 text-sm leading-relaxed text-slate-700 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">
+                            <p>Dear Sir or Madam,</p>
+                            <p>I am writing to bring to your attention a few <span class="font-bold text-red-600">critical issues</span> inflicted upon me and other commuters who use your service. I am hoping you would address these issues promptly.</p>
+                            <p>First, during the last couple of weeks, your buses are making <span class="font-bold text-red-600">reoccurring delays</span> and this is affecting our arrival in our workplaces on time. To add more grief, a few buses do not arrive at all...</p>
+                            <p>I suggest that you add a few more transport to accommodate the passengers and manage the timetable rigidly.</p>
+                            <p>Yours faithfully,<br>John Andrews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mixed" class="tab-content">
+                <div class="bg-indigo-50 p-8 rounded-2xl border border-indigo-100">
+                    <h3 class="text-2xl font-heading text-indigo-900 mb-6">Xử lý tình huống "Từ chối" hoặc "Hủy bỏ" (Declining)</h3>
+                    <p class="mb-6">Khi được nhận vào một khóa học nhưng không thể tham gia, cấu trúc thư cần tuân thủ:</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-t-4 border-indigo-500 text-center">
+                            <p class="font-bold text-indigo-700 mb-2">Bước 1</p>
+                            <p class="text-xs">Bày tỏ sự vui mừng & Thông báo hủy (Regret to inform)</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-t-4 border-indigo-500 text-center">
+                            <p class="font-bold text-indigo-700 mb-2">Bước 2</p>
+                            <p class="text-xs">Nêu lý do khách quan (Ví dụ: Bị từ chối Visa)</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-t-4 border-indigo-500 text-center">
+                            <p class="font-bold text-indigo-700 mb-2">Bước 3</p>
+                            <p class="text-xs">Đề xuất giải pháp tương lai (Apply again/Next semester)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparative Grammar Section -->
+        <section class="mb-16 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-3xl font-heading text-slate-900 mb-8 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">So sánh Cấu trúc Ngữ pháp (Grammar Comparison)</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-red-600 mb-4">Lỗi thường gặp (Band 5.0)</h4>
+                    <ul class="space-y-4">
+                        <li class="p-3 bg-red-50 rounded border-l-4 border-red-400 text-sm">
+                            "The room is small. We have no space."<br>
+                            <span class="text-slate-500 text-xs italic">=> Câu quá đơn giản, cụt ngủn.</span>
+                        </li>
+                        <li class="p-3 bg-red-50 rounded border-l-4 border-red-400 text-sm">
+                            "I want to move to another room now."<br>
+                            <span class="text-slate-500 text-xs italic">=> Thiếu sự lịch sự trong văn phong Formal.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-emerald-600 mb-4">Nâng cấp (Band 8.0+)</h4>
+                    <ul class="space-y-4">
+                        <li class="p-3 bg-emerald-50 rounded border-l-4 border-emerald-400 text-sm">
+                            "The room is too cramped to accommodate two students, leaving almost no open space for movement."<br>
+                            <span class="text-slate-500 text-xs italic">=> Sử dụng cấu trúc "too...to" và cụm phân từ.</span>
+                        </li>
+                        <li class="p-3 bg-emerald-50 rounded border-l-4 border-emerald-400 text-sm">
+                            "I humbly request your permission to relocate to a more spacious room with adequate ventilation."<br>
+                            <span class="text-slate-500 text-xs italic">=> Ngôn từ trang trọng, lịch thiệp.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-heading text-slate-900 mb-8 flex items-center">
+                <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-lg">3</span>
+                Thực hành & Kiểm tra (Interactive Quiz)
+            </h2>
+            
+            <div class="bg-slate-800 p-8 rounded-3xl text-white">
+                <p class="text-lg mb-6 italic underline italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">Thử thách cùng Phạm Tiến Dũng Gia Sư: Điền từ vào chỗ trống cho bức thư xin lỗi bạn học sau khi mượn sách.</p>
+                
+                <div class="font-mono bg-slate-700/50 p-6 rounded-xl leading-loose mb-6">
+                    Dear Francisco,<br>
+                    I am writing this letter to (1) __________ for not returning your book as promised. I borrowed the 'Behavioral Economics' textbook during the last term and I am (2) __________ to you for lending it to me. I intended to return it sooner, but to my (3) __________, I totally forgot.
+                </div>
+
+                <div class="flex gap-4">
+                    <button onclick="toggleAnswer('answer1')" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-bold transition">Xem Đáp Án</button>
+                    <div id="answer1" class="hidden text-emerald-400 font-bold self-center">
+                        (1) apologize | (2) indebted | (3) bad
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <p class="font-heading text-slate-500 font-bold text-lg mb-2">Học IELTS cùng Chuyên Gia</p>
+            <p class="text-slate-400 text-sm">© 2026 Nội dung được tinh chỉnh bởi: <span class="font-bold text-blue-600 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500 italic text-slate-500">Phạm Tiến Dũng Gia Sư</span></p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-tab", "text-blue-600", "border-blue-600");
+                tablinks[i].classList.add("text-slate-500");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active-tab", "text-blue-600", "border-blue-600");
+            evt.currentTarget.classList.remove("text-slate-500");
+        }
+
+        function toggleAnswer(id) {
+            var x = document.getElementById(id);
+            if (x.classList.contains("hidden")) {
+                x.classList.remove("hidden");
+            } else {
+                x.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

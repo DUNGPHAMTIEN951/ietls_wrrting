@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 2 Mastery | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; }
+        .heading-font { font-family: 'Roboto', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 1); }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #f0fdf4; }
+        .tab-active { border-bottom: 3px solid #2563eb; color: #2563eb; font-weight: 700; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="text-slate-800">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12 px-6 shadow-lg">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl md:text-5xl font-bold heading-font tracking-tight">IELTS Writing Task 2 Mastery</h1>
+                <div class="hidden md:block text-right">
+                    <p class="text-blue-200 text-sm uppercase tracking-widest">Expert Series</p>
+                    <p class="font-bold text-lg text-white">Phạm Tiến Dũng Gia Sư</p>
+                </div>
+            </div>
+            <p class="mt-4 text-blue-100 text-lg max-w-2xl italic">Chuyên sâu về cấu trúc lập luận (Argumentation) và từ vựng Band 8.0+ cho các chủ đề xã hội hiện đại.</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-10 px-4 md:px-0">
+        
+        <!-- Navigation Tabs -->
+        <div class="flex space-x-4 mb-8 border-b border-slate-200 overflow-x-auto">
+            <button onclick="switchTab('tab1')" id="btn-tab1" class="tab-btn px-4 py-2 tab-active transition-all">Đời sống & Xã hội</button>
+            <button onclick="switchTab('tab2')" id="btn-tab2" class="tab-btn px-4 py-2 text-slate-500 hover:text-blue-600 transition-all">Giáo dục & Tội phạm</button>
+            <button onclick="switchTab('tab3')" id="btn-tab3" class="tab-btn px-4 py-2 text-slate-500 hover:text-blue-600 transition-all">Văn hóa & Điện ảnh</button>
+        </div>
+
+        <!-- Section 1: Single-person households -->
+        <div id="tab1" class="tab-content block space-y-10 animate-fade-in">
+            <section class="glass-card rounded-2xl p-6 md:p-8 shadow-sm">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="bg-blue-600 text-white p-2 rounded-lg font-bold">01</span>
+                    <h2 class="text-2xl font-bold heading-font">Xu hướng sống một mình (Single-person Households)</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-blue-800 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+                            Mặt Tích Cực (Benefits)
+                        </h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><span class="font-semibold">Cá nhân:</span> Phát triển sự tự chủ (self-reliance) và kỹ năng sống (life skills).</li>
+                            <li><span class="font-semibold">Kinh tế:</span> Kích cầu ngành xây dựng và bất động sản (real estate).</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-red-800 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+                            Mặt Tiêu Cực (Drawbacks)
+                        </h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><span class="font-semibold">Cá nhân:</span> Cảm giác cô đơn (loneliness) và thiếu hỗ trợ tình cảm.</li>
+                            <li><span class="font-semibold">Kinh tế:</span> Đẩy giá nhà và chi phí sinh hoạt lên cao.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mermaid mt-8 flex justify-center">
+                    graph LR
+                    A[Single-person Household] --> B(Personal)
+                    A --> C(Economic)
+                    B --> B1[Independence]
+                    B --> B2[Loneliness/Isolation]
+                    C --> C1[Demand for housing]
+                    C --> C2[Increased cost of living]
+                    style A fill:#3b82f6,color:#fff
+                </div>
+            </section>
+
+            <div class="pro-tip p-5 rounded-xl shadow-inner">
+                <p class="font-bold text-amber-800 mb-1">💡 Pro Tip by Phạm Tiến Dũng Gia Sư:</p>
+                <p class="text-slate-700">Khi thảo luận về xu hướng, hãy sử dụng cụm từ <strong>"can be viewed from the opposite angle"</strong> để chuyển ý một cách mượt mà giữa hai mặt lợi/hại.</p>
+            </div>
+        </div>
+
+        <!-- Section 2: Education & Crime -->
+        <div id="tab2" class="tab-content hidden space-y-10">
+            <section class="glass-card rounded-2xl p-6 md:p-8">
+                <h2 class="text-2xl font-bold heading-font mb-6 border-b pb-2">Giáo dục đại học & Tội phạm vị thành niên</h2>
+                
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold text-blue-700 underline decoration-2 underline-offset-4">1. Lựa chọn môn học (Subject Selection)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                            <thead class="bg-slate-100">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-slate-500 uppercase">Trường phái</th>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-slate-500 uppercase">Luận điểm chính</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr>
+                                    <td class="px-6 py-4 font-medium italic italic">Thực tế (Practicality)</td>
+                                    <td class="px-6 py-4">Tập trung vào Medicine, Engineering, IT để đảm bảo việc làm và kinh tế.</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-medium italic italic">Tự do (Freedom)</td>
+                                    <td class="px-6 py-4">Học theo đam mê (passion). Xã hội cần cả tư duy sáng tạo (Creative thinking) từ Arts/Philosophy.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-blue-700 underline decoration-2 underline-offset-4 mt-8">2. Ngăn ngừa tội phạm (Crime Prevention)</h3>
+                    <p class="text-slate-600 mb-4">Sử dụng <strong>reformed offenders</strong> (tội phạm đã cải tạo) để giáo dục thanh thiếu niên là phương pháp tối ưu nhờ sự trải nghiệm thực tế.</p>
+                    
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                        <h4 class="font-bold mb-3 text-slate-800">Tại sao giáo viên & cảnh sát kém hiệu quả hơn?</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm border-t-4 border-red-400">
+                                <p class="font-bold text-sm">Police/Teachers</p>
+                                <p class="text-xs text-slate-500">Bị coi là Authority figures (nhân vật có thẩm quyền), thanh niên thường thờ ơ (indifferent).</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border-t-4 border-green-400">
+                                <p class="font-bold text-sm">Reformed Offenders</p>
+                                <p class="text-xs text-slate-500">Cung cấp "vivid and shocking stories" (câu chuyện sinh động/gây sốc), tạo tác động mạnh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section 3: Culture & Film -->
+        <div id="tab3" class="tab-content hidden space-y-10">
+            <section class="glass-card rounded-2xl p-6 md:p-8">
+                <h2 class="text-2xl font-bold heading-font mb-6">Văn hóa Truyền thống & Công nghiệp Điện ảnh</h2>
+                
+                <!-- Traditional Values Accordion -->
+                <div class="space-y-4 mb-8">
+                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                        <button onclick="toggleAccordion('acc1')" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 transition-colors font-bold">
+                            <span>Giá trị truyền thống (Traditional Values) còn hữu ích?</span>
+                            <svg id="icon-acc1" class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="acc1" class="accordion-content">
+                            <div class="p-4 text-slate-600 space-y-3">
+                                <p><span class="font-bold text-red-600">Lỗi thời (Outdated):</span> Vai trò trụ cột/nội trợ (breadwinner/housewife), sự nghiệp cả đời (job for life).</p>
+                                <p><span class="font-bold text-green-600">Còn giá trị (Relevant):</span> Làm việc chăm chỉ (hard work), sự lịch sự (politeness), tính cộng đồng (sense of community).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Film Industry Table -->
+                <div class="bg-blue-900 text-white p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Sức mạnh của Hollywood vs. Phim nội địa</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-blue-700 pb-2">
+                            <span>Ngân sách (Budget)</span>
+                            <span class="font-bold">Khổng lồ (Huge/Vast)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-blue-700 pb-2">
+                            <span>Yếu tố hút khách</span>
+                            <span class="font-bold">Famous actors, stunning locations</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Giải pháp Chính phủ</span>
+                            <span class="font-bold text-yellow-400 italic">Financial subsidies (Trợ cấp tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Practice Section -->
+        <section class="mt-12 mb-20">
+            <h2 class="text-2xl font-bold heading-font mb-6 flex items-center">
+                <svg class="w-7 h-7 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                Bài tập thực hành (Practice Lab)
+            </h2>
+            <div class="glass-card rounded-2xl p-6 md:p-8">
+                <p class="font-bold text-slate-700 mb-4">Hoàn thành câu sau bằng cách sử dụng từ vựng gợi ý:</p>
+                <div class="p-4 bg-slate-100 rounded-lg italic text-slate-600 mb-6">
+                    "Sống một mình giúp thanh niên phát triển kỹ năng (v1) _________ và (v2) _________, đồng thời kích thích (v3) _________ cho thị trường bất động sản."
+                </div>
+                <button onclick="showAnswer()" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-md">Xem Đáp Án</button>
+                <div id="answer" class="hidden mt-6 p-4 bg-green-50 text-green-800 rounded-lg border border-green-200">
+                    <p><strong>Đáp án gợi ý:</strong> (v1) <strong>self-reliance</strong> | (v2) <strong>independence</strong> | (v3) <strong>demand</strong></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 px-6 mt-20">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-6 md:mb-0">
+                <h3 class="text-white font-bold text-xl heading-font italic">Phạm Tiến Dũng Gia Sư</h3>
+                <p class="text-sm mt-1">Hệ thống giáo trình IELTS Writing chuyên sâu</p>
+            </div>
+            <div class="flex space-x-6">
+                <span class="text-xs uppercase tracking-widest">© 2026 IELTS Mastery</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching logic
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+            document.getElementById(tabId).classList.remove('hidden');
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('tab-active'));
+            document.getElementById('btn-' + tabId).classList.add('tab-active');
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                if(!btn.classList.contains('tab-active')) btn.classList.add('text-slate-500');
+            });
+        }
+
+        // Accordion logic
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Answer toggle
+        function showAnswer() {
+            document.getElementById('answer').classList.toggle('hidden');
+        }
+
+        // Mermaid Init
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

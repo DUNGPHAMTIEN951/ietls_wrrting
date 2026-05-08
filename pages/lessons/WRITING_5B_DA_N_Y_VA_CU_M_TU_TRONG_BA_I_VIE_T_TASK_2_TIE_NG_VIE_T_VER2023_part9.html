@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Vocabulary Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        details summary::-webkit-details-marker { display:none; }
+        details summary { list-style: none; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778171370'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12 px-6 shadow-lg">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-2 italic">IELTS Writing Task 2</h1>
+                <p class="text-xl opacity-90 font-light italic">Ultimate Vocabulary & Ideas Compilation</p>
+                <div class="mt-4 flex items-center">
+                    <span class="bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Expert Level</span>
+                    <span class="ml-4 border-l pl-4 border-blue-300">Tác giả: <strong>Phạm Tiến Dũng Gia Sư</strong></span>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/20">
+                    <p class="text-sm">Target Band</p>
+                    <p class="text-3xl font-bold">7.5 - 8.5+</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-10 px-4">
+        
+        <!-- Introduction & Teacher's Note -->
+        <section class="mb-12">
+            <div class="bg-blue-50 border-l-8 border-blue-500 p-6 rounded-r-xl shadow-sm">
+                <h3 class="flex items-center text-blue-800 font-bold text-xl mb-2">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Teacher's Note
+                </h3>
+                <p class="text-blue-700 leading-relaxed italic">
+                    Chào các bạn, đây là bộ từ vựng "xương sống" được <strong>Phạm Tiến Dũng Gia Sư</strong> tổng hợp từ các đề thi thật. Thay vì học từ đơn lẻ, hãy học theo <strong>Collocations</strong> (cụm từ) và <strong>Contextual Ideas</strong> (ý tưởng theo ngữ cảnh). Điều này giúp bạn đạt điểm cao ở tiêu chí <i>Lexical Resource</i> và <i>Task Response</i>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Topic Tabs -->
+        <section class="mb-12">
+            <div class="flex flex-wrap gap-2 mb-6 border-b border-slate-200 pb-4">
+                <button onclick="showTab('gender')" class="tab-btn px-6 py-2 rounded-full font-semibold transition bg-blue-600 text-white" id="btn-gender">Gender & Work</button>
+                <button onclick="showTab('society')" class="tab-btn px-6 py-2 rounded-full font-semibold transition bg-white border border-slate-300 hover:bg-slate-100" id="btn-society">Society & Gov</button>
+                <button onclick="showTab('tech')" class="tab-btn px-6 py-2 rounded-full font-semibold transition bg-white border border-slate-300 hover:bg-slate-100" id="btn-tech">Technology</button>
+                <button onclick="showTab('environment')" class="tab-btn px-6 py-2 rounded-full font-semibold transition bg-white border border-slate-300 hover:bg-slate-100" id="btn-environment">Environment</button>
+            </div>
+
+            <!-- Tab: Gender & Work -->
+            <div id="gender" class="tab-content active space-y-8 animate-fadeIn">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <h4 class="text-indigo-600 font-bold text-lg mb-4 flex items-center">
+                            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+                            Gender-based Professional Suitability
+                        </h4>
+                        <table class="w-full text-sm">
+                            <tr class="border-b"><td class="py-3 font-medium text-slate-500">Gender-specific job compatibility</td><td class="py-3 pl-4">Sự tương thích nghề nghiệp dựa trên giới tính</td></tr>
+                            <tr class="border-b"><td class="py-3 font-medium text-slate-500">Distinct physical and mental strengths</td><td class="py-3 pl-4">Điểm mạnh thể chất và tinh thần khác biệt</td></tr>
+                            <tr class="border-b"><td class="py-3 font-medium text-slate-500">Occupational distribution</td><td class="py-3 pl-4">Sự phân bố các loại công việc</td></tr>
+                            <tr><td class="py-3 font-medium text-slate-500">Multitasking capabilities</td><td class="py-3 pl-4">Khả năng đảm nhiệm nhiều việc tốt</td></tr>
+                        </table>
+                    </div>
+                    <div class="bg-indigo-900 text-white p-6 rounded-2xl shadow-xl">
+                        <h4 class="font-bold text-lg mb-4 text-indigo-300">Pro Tip: Collocation Usage</h4>
+                        <p class="text-indigo-100 mb-4 italic">Đừng dùng "men and women work different jobs". Hãy nâng cấp lên:</p>
+                        <div class="bg-indigo-800 p-4 rounded-lg code-font text-sm leading-relaxed">
+                            "The <strong>distribution of job types</strong> between genders often stems from <strong>distinct physical and mental strengths</strong> rather than mere discrimination."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Society -->
+            <div id="society" class="tab-content space-y-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-2xl font-bold mb-6 text-slate-800">Social Issues & Solutions</h3>
+                    <div class="mermaid flex justify-center mb-6">
+                    graph LR
+                        A[Urbanization] --> B(Population Explosion)
+                        A --> C(Rural-to-urban Migration)
+                        B --> D[Overloaded Public Transport]
+                        C --> E[Job Opportunity Competition]
+                        style A fill:#3b82f6,stroke:#fff,color:#fff
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="p-4 bg-slate-50 rounded-xl">
+                            <p class="font-bold text-blue-600">Urban Issues</p>
+                            <ul class="text-sm mt-2 space-y-1">
+                                <li>• Alleviate congestion</li>
+                                <li>• Overloaded systems</li>
+                                <li>• High population density</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl">
+                            <p class="font-bold text-green-600">Career & Degrees</p>
+                            <ul class="text-sm mt-2 space-y-1">
+                                <li>• Commensurate with qualifications</li>
+                                <li>• Pursue higher education</li>
+                                <li>• Workforce imbalance</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl">
+                            <p class="font-bold text-red-600">Crime & Ethics</p>
+                            <ul class="text-sm mt-2 space-y-1">
+                                <li>• Deterrent against crime</li>
+                                <li>• Eradicate the root causes</li>
+                                <li>• Long-standing moral norms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Technology -->
+            <div id="tech" class="tab-content space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow border border-slate-200">
+                        <h4 class="text-xl font-bold text-blue-700 mb-4">Digital Era & Media</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 hover:bg-blue-50 transition rounded-lg border-b border-slate-100">
+                                <span class="font-semibold italic">Bombarded by advertisements</span>
+                                <span class="text-xs text-slate-500">Bị "bỏ bom" bởi quảng cáo</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 hover:bg-blue-50 transition rounded-lg border-b border-slate-100">
+                                <span class="font-semibold italic">Information overload</span>
+                                <span class="text-xs text-slate-500">Quá tải thông tin</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 hover:bg-blue-50 transition rounded-lg border-b border-slate-100">
+                                <span class="font-semibold italic">Sedentary lifestyle</span>
+                                <span class="text-xs text-slate-500">Lối sống thụ động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow border border-slate-200">
+                        <h4 class="text-xl font-bold text-purple-700 mb-4">Future Tech (I9/2019)</h4>
+                        <div class="space-y-4">
+                            <p class="text-sm text-slate-600"><strong>Automation:</strong> "Be replaced by automated processes" (Bị thay thế bởi quy trình tự động).</p>
+                            <p class="text-sm text-slate-600"><strong>AI:</strong> "Developments of high-tech machinery and artificial intelligence."</p>
+                            <p class="text-sm text-slate-600"><strong>Integration:</strong> "Incorporate technology into the process."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Environment -->
+            <div id="environment" class="tab-content space-y-6">
+                <div class="bg-emerald-900 text-white p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-6 text-emerald-400 italic">Global Environment & Energy (I41)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-emerald-400 font-bold mr-3">01.</span>
+                                <div>
+                                    <p class="font-bold">Energy scarcity</p>
+                                    <p class="text-sm text-emerald-200">Sự khan hiếm năng lượng</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-400 font-bold mr-3">02.</span>
+                                <div>
+                                    <p class="font-bold">Environmental degradation</p>
+                                    <p class="text-sm text-emerald-200">Sự thoái hóa môi trường</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-emerald-400 font-bold mr-3">03.</span>
+                                <div>
+                                    <p class="font-bold">Combustion of fossil fuels</p>
+                                    <p class="text-sm text-emerald-200">Sự đốt cháy năng lượng hóa thạch</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-400 font-bold mr-3">04.</span>
+                                <div>
+                                    <p class="font-bold">Endless source of cheap energy</p>
+                                    <p class="text-sm text-emerald-200">Nguồn năng lượng rẻ bất tận</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section: Interactive Quiz -->
+        <section class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+            <div class="bg-slate-800 px-8 py-4 text-white font-bold flex justify-between items-center">
+                <span>Interactive Practice</span>
+                <span class="text-xs font-normal opacity-70 italic">Presented by Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <div class="p-8">
+                <h4 class="text-lg font-bold mb-4">Exercise: Fill in the blanks with the correct collocation</h4>
+                <div class="space-y-6">
+                    <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-indigo-500">
+                        <p class="text-slate-800 leading-relaxed">
+                            "The rapid <strong>(1) ________</strong> of information today has led to <strong>(2) ________</strong>, causing many people to feel overwhelmed. To counter this, governments should <strong>(3) ________</strong> public awareness campaigns."
+                        </p>
+                    </div>
+                    
+                    <details class="group">
+                        <summary class="inline-flex items-center px-6 py-2 bg-indigo-600 text-white rounded-full font-bold cursor-pointer hover:bg-indigo-700 transition">
+                            <span>Check Answers</span>
+                            <svg class="w-4 h-4 ml-2 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </summary>
+                        <div class="mt-4 p-4 bg-indigo-50 rounded-xl border border-indigo-100 text-indigo-900 font-semibold animate-slideDown">
+                            1. Explosion / Proliferation <br>
+                            2. Information overload <br>
+                            3. Implement / Carry out
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Comparison Section -->
+        <section class="mt-12">
+            <h3 class="text-2xl font-bold mb-6 text-slate-800 italic">Comparative Analysis: Economic Terminology</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-xl shadow shadow-slate-200">
+                    <thead class="bg-slate-100">
+                        <tr>
+                            <th class="py-4 px-6 text-left font-bold text-slate-600">Band 6.0 Phrase</th>
+                            <th class="py-4 px-6 text-left font-bold text-blue-600">Band 8.0+ Upgrade</th>
+                            <th class="py-4 px-6 text-left font-bold text-slate-600">Vietnamese Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 italic">People buy more things</td>
+                            <td class="py-4 px-6 font-bold">A surge in consumer demand</td>
+                            <td class="py-4 px-6">Sự gia tăng nhu cầu khách hàng</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 italic">Cheap products</td>
+                            <td class="py-4 px-6 font-bold">Low-cost commodities</td>
+                            <td class="py-4 px-6">Mặt hàng giá rẻ</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 italic">Poor countries</td>
+                            <td class="py-4 px-6 font-bold">Impoverished regions / Underdeveloped nations</td>
+                            <td class="py-4 px-6">Vùng nghèo khó / Nước kém phát triển</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-4 px-6 italic">Help society better</td>
+                            <td class="py-4 px-6 font-bold">Enhance social standards / Well-being of citizens</td>
+                            <td class="py-4 px-6">Nâng cao mức sống / Sự sung túc của công dân</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 mt-20">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-6 md:mb-0">
+                <h2 class="text-2xl font-bold">Phạm Tiến Dũng Gia Sư</h2>
+                <p class="text-slate-400 mt-1">High-end IELTS Tutoring & Curriculum Design</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-sm opacity-50 uppercase tracking-widest">© 2016-2019 Vocabulary Collection</p>
+                <div class="mt-2 space-x-4">
+                    <span class="text-blue-400">Expertise</span>
+                    <span class="text-blue-400">Integrity</span>
+                    <span class="text-blue-400">Success</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mermaid Initialization
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Tab functionality
+        function showTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            // Reset button styles
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-900', 'border', 'border-slate-300');
+            });
+            
+            // Show selected content
+            document.getElementById(tabId).classList.add('active');
+            // Active button style
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.remove('bg-white', 'text-slate-900', 'border-slate-300');
+            activeBtn.classList.add('bg-blue-600', 'text-white');
+        }
+    </script>
+</body>
+</html>

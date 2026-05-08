@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Grammar Masterclass - Luyện Viết Câu Chuyên Sâu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Roboto', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pro-tip { border-left: 4px solid #f59e0b; }
+        .teacher-note { border-left: 4px solid #10b981; }
+        .accordion-content { transition: max-height 0.3s ease-out; overflow: hidden; max-height: 0; }
+        .accordion-toggle:checked + label + .accordion-content { max-height: 1000px; }
+        .tab-content { display: none; }
+        .tab-input:checked + label + .tab-content { display: block; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165594'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header & Brand -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">P</div>
+                <span class="text-xl font-bold tracking-tight text-slate-800 italic">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-sm text-slate-600">
+                <a href="#articles" class="hover:text-blue-600 transition">Articles</a>
+                <a href="#adjectives" class="hover:text-blue-600 transition">Adjectives</a>
+                <a href="#comparisons" class="hover:text-blue-600 transition">Comparisons</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 gradient-text uppercase tracking-tight">Writing 18B: Luyện Viết Câu Ngữ Pháp</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Nâng tầm kỹ năng viết (IELTS Writing Task 1 & 2) thông qua việc làm chủ các cấu trúc mạo từ, tính từ và so sánh từ cơ bản đến Band 8.0+.</p>
+        </section>
+
+        <!-- Chapter 1: Mạo từ (Articles) -->
+        <section id="articles" class="mb-20 bg-white rounded-3xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100">
+            <div class="p-8 bg-blue-600 text-white">
+                <h2 class="text-3xl font-bold">I. Mạo Từ (Articles): A, An, The & Zero Article</h2>
+                <p class="mt-2 text-blue-100 italic">Hầu hết thí sinh IELTS mất điểm Task 2 vì lỗi sử dụng mạo từ không nhất quán.</p>
+            </div>
+
+            <div class="p-8">
+                <div class="mermaid mb-8 flex justify-center">
+                    graph TD
+                    A[Mạo từ - Articles] --> B[Xác định - THE]
+                    A --> C[Bất định - A/AN]
+                    A --> D[Mạo từ rỗng - Zero Article]
+                    B --> B1[Vật duy nhất: The Sun, The Earth]
+                    B --> B2[Đã nhắc tới trước đó]
+                    C --> C1[Đếm được số ít: A whale]
+                    D --> D1[Chung chung: Vietnamese, Butter]
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-10 text-sm">
+                    <div class="teacher-note bg-emerald-50 p-6 rounded-2xl">
+                        <h3 class="font-bold text-emerald-800 text-lg mb-2">Teacher's Note: Rules for IELTS</h3>
+                        <ul class="space-y-2 text-emerald-900">
+                            <li>• <strong>Generalization:</strong> Không dùng mạo từ khi nói về một nhóm chung chung ở số nhiều (Vietnamese people) hoặc danh từ không đếm được (Butter).</li>
+                            <li>• <strong>Abstract vs Specific:</strong> Dùng "The" cho những danh từ đã được giới hạn bởi cụm từ theo sau (The dinner we had at that restaurant).</li>
+                        </ul>
+                    </div>
+                    <div class="pro-tip bg-amber-50 p-6 rounded-2xl">
+                        <h3 class="font-bold text-amber-800 text-lg mb-2">Pro Tip: "School/Church/Bed"</h3>
+                        <p class="text-amber-900 italic">Dùng "Zero Article" khi đến đó vì mục đích chính (Go to church to pray). Dùng "The" khi đến đó vì mục đích khác (Go to the church to meet her).</p>
+                    </div>
+                </div>
+
+                <!-- Article Practice Table -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200">
+                    <table class="w-full text-left">
+                        <thead class="bg-slate-50 border-b">
+                            <tr>
+                                <th class="p-4 font-bold text-slate-700">STT</th>
+                                <th class="p-4 font-bold text-slate-700">Ngữ cảnh Việt Nam</th>
+                                <th class="p-4 font-bold text-slate-700">IELTS Band 8.0 Translation</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 text-slate-400">01</td>
+                                <td class="p-4 italic">Người Việt Nam thường uống trà.</td>
+                                <td class="p-4 font-semibold text-blue-700">Vietnamese people usually drink tea.</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 text-slate-400">04</td>
+                                <td class="p-4 italic">Bữa ăn tối chúng tôi đã ăn ở nhà hàng đó thật tồi tệ.</td>
+                                <td class="p-4 font-semibold text-blue-700">The dinner we had at that restaurant was terrible.</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 text-slate-400">09</td>
+                                <td class="p-4 italic">Cá voi là động vật có vú.</td>
+                                <td class="p-4 font-semibold text-blue-700">The whale is a mammal. / Whales are mammals.</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-4 text-slate-400">20</td>
+                                <td class="p-4 italic">Trái đất quay xung quanh mặt trời.</td>
+                                <td class="p-4 font-semibold text-blue-700">The Earth revolves around the Sun.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 2: Tính từ (Adjectives) -->
+        <section id="adjectives" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-extrabold text-slate-800">II. Tính Từ (Adjectives) & Compound Adjectives</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Word Formation -->
+                <div class="md:col-span-2 space-y-6">
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v10a7.968 7.968 0 00-3.5-.804c-1.669 0-3.218.51-4.5 1.385V4.804z"></path></svg>
+                            Tính từ ghép (Compound Adjectives) - Chìa khóa Vocabulary Band 7.0+
+                        </h3>
+                        <p class="text-slate-600 mb-6 italic">Thay vì dùng những câu dài dòng, hãy sử dụng tính từ ghép để bài viết súc tích hơn.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Nổi tiếng thế giới</span>
+                                <span class="text-lg font-bold text-blue-600">World-famous</span>
+                                <p class="text-xs text-slate-500 mt-1 italic">His books are world-famous.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Trọn đời</span>
+                                <span class="text-lg font-bold text-blue-600">Life-long</span>
+                                <p class="text-xs text-slate-500 mt-1 italic">A life-long interest in science.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Làm bằng tay</span>
+                                <span class="text-lg font-bold text-blue-600">Hand-made</span>
+                                <p class="text-xs text-slate-500 mt-1 italic">These items are hand-made.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <span class="block text-xs font-bold text-slate-400 uppercase tracking-widest">Thẳng thắn</span>
+                                <span class="text-lg font-bold text-blue-600">Straightforward</span>
+                                <p class="text-xs text-slate-500 mt-1 italic">She is always straightforward.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Position of Adjectives -->
+                <div class="space-y-6">
+                    <div class="bg-blue-900 text-white p-8 rounded-3xl h-full shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">Vị trí của Tính từ</h3>
+                        <ul class="space-y-4 text-blue-100">
+                            <li>
+                                <span class="block font-bold text-blue-400">1. Trước danh từ:</span>
+                                A charming woman (55)
+                            </li>
+                            <li>
+                                <span class="block font-bold text-blue-400">2. Sau hệ từ (Linking verbs):</span>
+                                The soldier looks ill (47)
+                            </li>
+                            <li>
+                                <span class="block font-bold text-blue-400">3. Sau đại từ bất định:</span>
+                                Nothing interesting (72)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 3: Comparisons -->
+        <section id="comparisons" class="mb-20">
+            <div class="p-8 bg-white rounded-3xl border border-slate-200 shadow-sm">
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-6">III. Cấu Trúc So Sánh (Comparisons)</h2>
+                
+                
+
+                <div class="overflow-x-auto mt-8">
+                    <table class="w-full text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-800 text-white">
+                                <th class="p-4 text-left rounded-tl-xl border-r border-slate-700">Dạng thức</th>
+                                <th class="p-4 text-left border-r border-slate-700">Công thức</th>
+                                <th class="p-4 text-left rounded-tr-xl">Ví dụ chuyển ngữ</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 bg-white">
+                            <tr>
+                                <td class="p-4 font-bold border-r">Bằng (Equal)</td>
+                                <td class="p-4 font-mono text-blue-600 border-r">as + adj + as</td>
+                                <td class="p-4 italic">John is as tall as his father. (126)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold border-r">Hơn (Comparative)</td>
+                                <td class="p-4 font-mono text-blue-600 border-r">adj-er / more + adj</td>
+                                <td class="p-4 italic">John is stronger than his brother. (129)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold border-r">Nhất (Superlative)</td>
+                                <td class="p-4 font-mono text-blue-600 border-r">the + adj-est / the most + adj</td>
+                                <td class="p-4 italic">Maria is the most beautiful in my class. (133)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-8 pro-tip bg-amber-50 p-6 rounded-2xl">
+                    <h3 class="font-bold text-amber-800 text-lg mb-2 italic">Phạm Tiến Dũng Gia Sư's Mastery:</h3>
+                    <p class="text-amber-900 leading-relaxed">Trong IELTS Writing Task 1 (Bar chart/Line graph), hãy sử dụng linh hoạt so sánh hơn và so sánh nhất để làm nổi bật số liệu: <strong>"Competition is getting hotter and hotter" (138)</strong> - Diễn tả sự biến đổi liên tục.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice Section -->
+        <section class="bg-slate-900 rounded-3xl p-8 md:p-12 text-white">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4 text-center">Practice Area: Thử thách chuyển ngữ</h2>
+                <p class="text-slate-400 text-center mb-10">Dịch các câu sau sang tiếng Anh (Sử dụng kiến thức đã học)</p>
+
+                <div class="space-y-4 text-left">
+                    <!-- Exercise 1 -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <p class="font-medium mb-3">Câu 1: "Đó là ngày hạnh phúc nhất trong cuộc đời tôi."</p>
+                        <input type="checkbox" id="ans1" class="accordion-toggle hidden">
+                        <label for="ans1" class="cursor-pointer text-sm font-bold text-blue-400 hover:text-blue-300 transition">👉 Xem đáp án gợi ý</p>
+                        <div class="accordion-content text-emerald-400 mt-3 pt-3 border-t border-slate-700 font-mono">
+                            That was the happiest day of my life.
+                        </div>
+                    </div>
+
+                    <!-- Exercise 2 -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <p class="font-medium mb-3">Câu 2: "Cô giả vờ say xe để bắt anh ta kéo xe."</p>
+                        <input type="checkbox" id="ans2" class="accordion-toggle hidden">
+                        <label for="ans2" class="cursor-pointer text-sm font-bold text-blue-400 hover:text-blue-300 transition">👉 Xem đáp án gợi ý</p>
+                        <div class="accordion-content text-emerald-400 mt-3 pt-3 border-t border-slate-700 font-mono">
+                            She pretended to be sea-sick to make him pull the cart.
+                        </div>
+                    </div>
+
+                    <!-- Exercise 3 -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <p class="font-medium mb-3">Câu 3: "Người đàn ông một mắt là vua của những người mù."</p>
+                        <input type="checkbox" id="ans3" class="accordion-toggle hidden">
+                        <label for="ans3" class="cursor-pointer text-sm font-bold text-blue-400 hover:text-blue-300 transition">👉 Xem đáp án gợi ý</p>
+                        <div class="accordion-content text-emerald-400 mt-3 pt-3 border-t border-slate-700 font-mono">
+                            The one-eyed man is the king of the blind.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <footer class="mt-20 text-center py-12 border-t border-slate-200">
+            <div class="inline-block p-2 px-4 bg-slate-100 rounded-full text-sm font-bold text-slate-500 mb-4 uppercase tracking-widest">Lesson By</div>
+            <h2 class="text-3xl font-extrabold text-slate-800 mb-2 italic">Phạm Tiến Dũng Gia Sư</h2>
+            <p class="text-slate-500 italic">Chuyên sâu luyện thi IELTS Writing & Grammar Foundation</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+                <div class="w-12 h-1 bg-blue-400 rounded-full"></div>
+                <div class="w-12 h-1 bg-blue-200 rounded-full"></div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</body>
+</html>

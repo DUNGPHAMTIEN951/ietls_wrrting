@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('hidden');
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .prose-capsule { transition: all 0.3s ease; }
+        .teacher-note { border-left: 4px solid #f59e0b; }
+        .pro-tip { border-left: 4px solid #10b981; }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778166101'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="text-slate-800 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">P</div>
+                <span class="font-bold text-xl tracking-tight">Phạm Tiến Dũng <span class="text-blue-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-sm text-slate-600">
+                <a href="#task1" class="hover:text-blue-600">Writing Task 1</a>
+                <a href="#task2" class="hover:text-blue-600">Writing Task 2</a>
+                <a href="#vocab" class="hover:text-blue-600">Vocabulary</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Lesson Introduction -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 gradient-text">IELTS Writing Masterclass</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Phân tích chuyên sâu các đề thi thực tế (2010 - 2020) với lộ trình đạt Band 8.0+ Writing.</p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">Tác giả: Phạm Tiến Dũng Gia Sư</span>
+                <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Level: Advanced (6.5 - 8.5)</span>
+            </div>
+        </section>
+
+        <!-- LESSON 1: TABLE - KIWI EXPORTS -->
+        <section id="task1" class="mb-20 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+            <div class="bg-blue-600 px-8 py-6 text-white">
+                <h2 class="text-2xl font-bold">Chủ đề 1: Kiwi Fruit Export Values (Table)</h2>
+                <p class="opacity-90">Kỹ thuật so sánh số liệu đa quốc gia trong bảng (2010-2012)</p>
+            </div>
+            
+            <div class="p-8">
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            Phân tích dữ liệu (Data Analysis)
+                        </h3>
+                        <table class="w-full border-collapse border border-slate-200 text-sm mb-6 bg-slate-50">
+                            <thead>
+                                <tr class="bg-slate-200">
+                                    <th class="border p-2">Country</th>
+                                    <th class="border p-2">2010 (NZ$)</th>
+                                    <th class="border p-2">2012 (NZ$)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="border p-2 font-semibold">Japan</td><td class="border p-2">$287,400,000</td><td class="border p-2">$325,300,000</td></tr>
+                                <tr><td class="border p-2 font-semibold">China</td><td class="border p-2">$74,900,000</td><td class="border p-2">$94,000,000</td></tr>
+                                <tr><td class="border p-2 font-semibold">Mexico</td><td class="border p-2">$1,200,000</td><td class="border p-2">$3,300,000</td></tr>
+                                <tr><td class="border p-2 font-semibold text-red-600">Saudi Arabia</td><td class="border p-2 text-red-600">$29,000,000</td><td class="border p-2 text-red-600">$82,000</td></tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="teacher-note p-4 bg-amber-50 rounded-r-lg mb-6 text-sm">
+                            <span class="font-bold text-amber-800 block mb-1 underline">Teacher's Note:</span>
+                            Đối với bảng số liệu có thời gian, cần tập trung vào: 
+                            (1) Xu hướng chung (tăng/giảm), 
+                            (2) Điểm nổi bật nhất (Japan là "market leader"), 
+                            (3) Sự nghịch thường (Saudi Arabia giảm mạnh).
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-700">Kiến thức trọng tâm (Key Concepts)</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-bold">The reverse ~ The opposite</p>
+                                <p class="text-sm text-slate-600">Sử dụng để chỉ sự tương phản hoàn toàn. Ví dụ: A tăng, trong khi "the reverse" (điều ngược lại) xảy ra với B.</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-bold">Revenue & Earnings</p>
+                                <p class="text-sm text-slate-600">Dùng thay thế cho "export values" để tránh lặp từ (lexical resource).</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="font-bold">Consecutive years</p>
+                                <p class="text-sm text-slate-600">Số năm liên tiếp. "Japan topped the list in three consecutive years."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 p-6 bg-slate-900 text-slate-300 rounded-2xl">
+                    <h4 class="text-white font-bold mb-4 flex items-center">
+                        <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                        Bài mẫu Band 8.0+ | Phạm Tiến Dũng Gia Sư
+                    </h4>
+                    <p class="mb-4">The table shows changes in the export values of kiwi fruit from New Zealand to five nations from 2010 to 2012.</p>
+                    <p class="mb-4 italic text-blue-400">Overall, the value of exports of kiwi to Saudi Arabia dropped significantly over the course of three years, while the <span class="underline">reverse</span> was seen in the remaining countries. Additionally, the exports of kiwi to Japan generated the biggest amount of money in three consecutive years.</p>
+                    <p class="mb-4">The value of exports to Japan topped the list in 2010, at more than 270 million dollars, nearly 3 times higher than the figure for China and 10 times higher than that of Saudi Arabia. Meanwhile, exports to Mexico and Russia brought much smaller <span class="text-white font-semibold">revenues</span>, with NZ$1.2 million and NZ$968,000 respectively.</p>
+                    <p>By 2012, the value of exports to Japan had risen considerably, and reached over NZ$325 million in value. The figures for China, Mexico and Russia also saw increases to NZ$94 million, NZ$3.3 million and NZ$2.4 million respectively. On the other hand, the value of exports to Saudi Arabia dropped to only NZ$106,000 by 2011, before ending up at NZ$82,000 in 2012.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LESSON 2: TASK 2 - SOCIAL MEDIA -->
+        <section id="task2" class="mb-20 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+            <div class="bg-indigo-700 px-8 py-6 text-white">
+                <h2 class="text-2xl font-bold">Chủ đề 2: Social Media vs Face-to-face Interaction</h2>
+                <p class="opacity-90">Dạng bài: Advantages vs Disadvantages (Outweigh?)</p>
+            </div>
+
+            <div class="p-8">
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4">Sơ đồ Tư duy (Ideation Map)</h3>
+                    <div class="mermaid flex justify-center">
+                        graph TD
+                            A[Social Media Trends] --> B(Advantages)
+                            A --> C(Disadvantages)
+                            B --> B1[Global Connection]
+                            B --> B2[Free Educational Access]
+                            C --> C1[Online Bullying/Abuse]
+                            C --> C2[Mental Health Issues]
+                            C --> C3[Relationship Erosion]
+                            style B fill:#dcfce7,stroke:#16a34a
+                            style C fill:#fee2e2,stroke:#dc2626
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-indigo-700 mb-3 uppercase tracking-wider text-sm">Vocabulary Highlights</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong class="text-indigo-600 italic">Infiltrate (v):</strong> Thâm nhập sâu vào cuộc sống.</li>
+                            <li><strong class="text-indigo-600 italic">Facilitate communication:</strong> Thúc đẩy/tạo điều kiện cho giao tiếp.</li>
+                            <li><strong class="text-indigo-600 italic">Fall prey to (idiom):</strong> Trở thành nạn nhân của...</li>
+                            <li><strong class="text-indigo-600 italic">Toxic environment:</strong> Môi trường độc hại.</li>
+                            <li><strong class="text-indigo-600 italic">Reclusive users:</strong> Người sống khép kín/ngại giao tiếp thực.</li>
+                        </ul>
+                    </div>
+                    <div class="pro-tip p-6 bg-emerald-50 rounded-r-xl border border-emerald-100">
+                        <span class="font-bold text-emerald-800 block mb-2 underline">Pro Tip by Phạm Tiến Dũng Gia Sư:</span>
+                        Trong dạng "Outweigh", bạn phải làm rõ bên nào mạnh hơn. Ở bài mẫu này, tác giả chọn <span class="font-bold">Disadvantages</span> là yếu tố quan trọng hơn (concerning) trong dài hạn.
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative bg-white border border-slate-200 rounded-2xl p-8">
+                        <h4 class="text-xl font-bold mb-6 flex justify-between items-center">
+                            <span>High-Scoring Essay Sample</span>
+                            <span class="text-sm font-normal text-slate-400">Word count: ~295 words</span>
+                        </h4>
+                        <div class="space-y-4 text-slate-700 leading-relaxed">
+                            <p>Social media has deeply <span class="font-semibold text-indigo-600">infiltrated</span> everyone’s life and is believed to be replacing our face-to-face interaction. This situation, although advantageous in certain aspects, is generally a detriment to true human communication in the long run.</p>
+                            
+                            <p><span class="font-bold">On the one hand</span>, there are a number of benefits from using social networks to communicate. Firstly, they <span class="italic">facilitate communication</span> in modern times as people can now globally connect with old friends and relatives. For example, Facebook currently provides service for 2.4 billion users. Secondly, study sessions frequently occur on social networking websites through <span class="italic">live streaming services</span>. Therefore, learners have free access to online classes.</p>
+                            
+                            <p><span class="font-bold">On the other hand</span>, the disadvantages are much more concerning. People can <span class="font-semibold text-red-600 underline">fall prey to online communication abuse</span>, such as bullying and harassment. Social networking websites can become a <span class="italic text-red-600 font-medium">toxic environment</span> where users are verbally abused because rules are often loose. Furthermore, overuse can lead to people downplaying real-life relationships. Nowadays, many <span class="italic">reclusive users</span> prefer living in a virtual world, which may cause serious mental effects like anxiety and loneliness.</p>
+                            
+                            <p><span class="font-bold">In conclusion</span>, the downsides of social media replacing face-to-face interaction are more significant than the benefits users could reap from those sites.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PRACTICE & COMPARISON -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">So sánh & Thực hành (Deep Dive)</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education Comparison -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-blue-500">
+                    <h3 class="font-bold text-lg mb-4">Reading vs. TV (Imagination)</h3>
+                    <p class="text-sm text-slate-600 mb-4">Phân tích sự khác biệt giữa việc kích thích trí não thông qua Đọc sách và Xem TV:</p>
+                    <table class="w-full text-sm">
+                        <tr class="border-b">
+                            <td class="py-2 font-semibold">Reading Books</td>
+                            <td class="py-2">Visualize events, create images in mind.</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="py-2 font-semibold">Watching TV</td>
+                            <td class="py-2">Pre-made vibrant colorful images & sound.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 font-semibold text-blue-600">Result</td>
+                            <td class="py-2 text-blue-600 font-bold">Enhance creativity vs. Passive consumption.</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Work Comparison -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-orange-500">
+                    <h3 class="font-bold text-lg mb-4">Job Security vs. Satisfaction</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="w-2 h-2 bg-orange-500 rounded-full mt-1.5 mr-2"></span>
+                            <p class="text-sm"><span class="font-bold">Job Security:</span> Financial stability, control over bills, organizational commitment.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mt-1.5 mr-2"></span>
+                            <p class="text-sm"><span class="font-bold">Job Satisfaction:</span> Reduced burnout, higher morale, lower turnover rate.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-slate-50 rounded italic text-sm">
+                        "I believe the importance of job satisfaction exceeds that of job security." - <span class="text-blue-600">Phạm Tiến Dũng Gia Sư</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE EXERCISE -->
+        <section class="bg-indigo-50 p-8 md:p-12 rounded-3xl border-2 border-dashed border-indigo-200">
+            <h2 class="text-2xl font-bold mb-4 text-indigo-900">Kiểm tra kiến thức (Quick Quiz)</h2>
+            <p class="text-indigo-700 mb-8 font-medium">Chọn từ đúng để hoàn thành câu (Collocations check):</p>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <p class="mb-4">1. The rise of e-commerce has ______ communication in modern times.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="alert('Sai rồi! Thử lại nhé.')" class="px-4 py-2 border rounded-lg hover:bg-slate-100 transition">A. infiltrated</button>
+                        <button onclick="alert('Chính xác! Facilitate (tạo điều kiện/thúc đẩy).')" class="px-4 py-2 border rounded-lg hover:bg-slate-100 transition">B. facilitated</button>
+                        <button onclick="alert('Sai rồi! Thử lại nhé.')" class="px-4 py-2 border rounded-lg hover:bg-slate-100 transition">C. downplayed</button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <p class="mb-4">2. Children ______ a wide range of vocabulary through reading.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="alert('Chính xác! To be exposed to (được tiếp cận/tiếp xúc với).')" class="px-4 py-2 border rounded-lg hover:bg-slate-100 transition">A. are exposed to</button>
+                        <button onclick="alert('Sai rồi!')" class="px-4 py-2 border rounded-lg hover:bg-slate-100 transition">B. enhance to</button>
+                        <button onclick="alert('Gần đúng, nhưng cấu trúc sai!')" class="px-4 py-2 border rounded-lg hover:bg-slate-100 transition">C. visualizes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-20">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center space-x-2 mb-4">
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold">P</div>
+                <span class="font-bold text-white tracking-tight">Phạm Tiến Dũng <span class="text-blue-500">Gia Sư</span></span>
+            </div>
+            <p class="text-sm">© 2026 Nội dung độc quyền bởi Phạm Tiến Dũng Gia Sư. Mọi hình thức sao chép không ghi nguồn đều vi phạm bản quyền.</p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="#" class="hover:text-white transition">Facebook</a>
+                <a href="#" class="hover:text-white transition">Youtube</a>
+                <a href="#" class="hover:text-white transition">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

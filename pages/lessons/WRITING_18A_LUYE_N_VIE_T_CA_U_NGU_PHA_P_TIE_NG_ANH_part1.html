@@ -1,0 +1,295 @@
+</<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Grammar Mastery | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .heading-font { font-family: 'Roboto', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .active .accordion-content { max-height: 1000px; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778165065'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 line-height-relaxed">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">D</div>
+                <span class="text-xl font-bold tracking-tight heading-font italic">Phạm Tiến Dũng <span class="text-indigo-600">Gia Sư</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest text-slate-600">
+                <a href="#articles" class="hover:text-indigo-600 transition">Mạo từ</a>
+                <a href="#adjectives" class="hover:text-indigo-600 transition">Tính từ</a>
+                <a href="#comparison" class="hover:text-indigo-600 transition">So sánh</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        
+        <!-- Hero Section -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 heading-font text-slate-900 uppercase">
+                IELTS Writing <span class="text-indigo-600">Grammar & Accuracy</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto italic">
+                Làm chủ mạo từ, tính từ ghép và các cấu trúc so sánh để đạt Band 7.0+ Accuracy. Biên soạn bởi <span class="font-bold border-b-2 border-indigo-600">Phạm Tiến Dũng Gia Sư</span>.
+            </p>
+        </section>
+
+        <!-- Phần 1: Mạo từ Articles -->
+        <section id="articles" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">Chuyên đề 1: Mạo từ (Articles)</h2>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden mb-10">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Phân biệt mục đích sử dụng địa điểm (Zero vs The)
+                    </h3>
+                    
+                    <div class="mermaid mb-8">
+                        graph LR
+                        A[Địa điểm: School/Church/Bed/Hospital] --> B{Mục đích?}
+                        B -- "Đúng chức năng (Học/Cầu nguyện/Ngủ)" --> C[Không dùng 'The']
+                        B -- "Mục đích khác (Tham quan/Gặp gỡ)" --> D[Dùng 'The']
+                        style C fill:#dcfce7,stroke:#166534
+                        style D fill:#fee2e2,stroke:#991b1b
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-indigo-700 mb-2 italic">General Purpose (Chức năng chính)</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><strong>Go to school:</strong> Đi học (Học sinh)</li>
+                                <li><strong>Go to church:</strong> Đi lễ (Giáo dân)</li>
+                                <li><strong>Go to bed:</strong> Đi ngủ</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-indigo-700 mb-2 italic">Specific Purpose (Mục đích cụ thể)</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><strong>Go to the school:</strong> Đến trường (để gặp giáo viên)</li>
+                                <li><strong>Go to the church:</strong> Đến nhà thờ (để gặp ai đó)</li>
+                                <li><strong>Go to the bed:</strong> Đến chỗ cái giường (để lấy đồ)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 bg-amber-50 rounded-2xl border-l-4 border-amber-400 mb-10">
+                <h4 class="font-bold text-amber-800 mb-2 flex items-center italic">
+                    Teacher's Note by Phạm Tiến Dũng Gia Sư
+                </h4>
+                <p class="text-sm">
+                    Trong IELTS Writing, mạo từ <strong>"The"</strong> còn được dùng với <strong>tính từ</strong> để chỉ một nhóm người (The poor, the rich, the disabled). Hãy nhớ động từ đi kèm luôn ở dạng <strong>số nhiều</strong>.
+                </p>
+                <blockquote class="mt-2 text-sm italic border-l-2 border-amber-200 pl-4 text-slate-700">
+                    "The rich <strong>do</strong> not know how the poor <strong>live</strong>." (Người giàu không biết người nghèo sống thế nào)
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Phần 2: Tính từ & Tính từ ghép -->
+        <section id="adjectives" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">Chuyên đề 2: Tính từ & Tính từ ghép (Compound Adjectives)</h2>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 mb-10">
+                <h3 class="text-xl font-bold mb-6">Cấu trúc tạo tính từ ghép thông dụng</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <div class="p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+                        <span class="text-xs font-bold text-indigo-600 uppercase">Noun + Adjective</span>
+                        <p class="font-bold mt-1">Lifelong (Trọn đời)</p>
+                        <p class="text-xs text-slate-500 italic">"A lifelong interest in science."</p>
+                    </div>
+                    <div class="p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+                        <span class="text-xs font-bold text-indigo-600 uppercase">Noun + P.P</span>
+                        <p class="font-bold mt-1">Handmade (Thủ công)</p>
+                        <p class="text-xs text-slate-500 italic">"They're handmade."</p>
+                    </div>
+                    <div class="p-4 bg-indigo-50 rounded-xl border border-indigo-100">
+                        <span class="text-xs font-bold text-indigo-600 uppercase">Adverb + P.P</span>
+                        <p class="font-bold mt-1">World-famous (Nổi tiếng TG)</p>
+                        <p class="text-xs text-slate-500 italic">"A world-famous scientist."</p>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-slate-100">
+                                <th class="py-4 font-bold text-indigo-600">Tính từ ghép</th>
+                                <th class="py-4 font-bold text-indigo-600">Nghĩa Tiếng Việt</th>
+                                <th class="py-4 font-bold text-indigo-600">Ví dụ tiêu biểu</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-50">
+                            <tr>
+                                <td class="py-3 font-mono">Worldly-wise</td>
+                                <td class="py-3 italic">Từng trải</td>
+                                <td class="py-3">He is a worldly-wise businessman.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-mono">Heart-warming</td>
+                                <td class="py-3 italic">Ấm lòng</td>
+                                <td class="py-3">A heart-warming letter.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-mono">Outspoken</td>
+                                <td class="py-3 italic">Thẳng thắn</td>
+                                <td class="py-3">Always outspoken and fun.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-mono">Well-built</td>
+                                <td class="py-3 italic">Tráng kiện</td>
+                                <td class="py-3">He's tall and well-built.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="p-6 bg-slate-900 rounded-2xl text-white">
+                <h4 class="text-amber-400 font-bold mb-2 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Pro Tip: Hyphens (-) in Compound Adjectives
+                </h4>
+                <p class="text-sm italic italic">
+                    Khi tính từ ghép đứng <strong>trước danh từ</strong>, hãy sử dụng dấu gạch nối: <strong>"A four-year-old girl"</strong>. Nếu đứng sau, không cần dấu gạch nối: <strong>"The girl is four years old"</strong>. Lỗi này rất phổ biến trong Task 1 miêu tả người hoặc vật.
+                </p>
+            </div>
+        </section>
+
+        <!-- Phần 3: So sánh Comparison -->
+        <section id="comparison" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-indigo-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold heading-font uppercase">Chuyên đề 3: Các dạng so sánh (Comparison)</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-10">
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-indigo-300 transition">
+                    <h4 class="font-bold text-indigo-600 mb-2 italic">So sánh bằng</h4>
+                    <p class="text-xs text-slate-500 mb-4 italic">as + adj + as</p>
+                    <p class="text-sm italic">"John is as tall as his father."</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-indigo-300 transition">
+                    <h4 class="font-bold text-indigo-600 mb-2 italic">So sánh hơn</h4>
+                    <p class="text-xs text-slate-500 mb-4 italic">adj-er / more + adj + than</p>
+                    <p class="text-sm italic">"You are taller than I am."</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-indigo-300 transition">
+                    <h4 class="font-bold text-indigo-600 mb-2 italic">So sánh nhất</h4>
+                    <p class="text-xs text-slate-500 mb-4 italic">the + adj-est / the most + adj</p>
+                    <p class="text-sm italic">"The most beautiful in my class."</p>
+                </div>
+            </div>
+
+            <!-- Bài tập Practice -->
+            <div class="bg-indigo-600 rounded-[2rem] p-8 text-white shadow-xl">
+                <h3 class="text-2xl font-bold mb-6 heading-font italic">Interactive Practice: Check your Accuracy</h3>
+                <p class="mb-6 italic">Chuyển các câu sau sang Tiếng Anh, chú ý mạo từ và tính từ:</p>
+                
+                <div class="space-y-4">
+                    <div class="bg-indigo-500 p-4 rounded-xl cursor-pointer hover:bg-indigo-400 transition" onclick="this.classList.toggle('active')">
+                        <p class="text-sm font-semibold">1. "Tôi học tiếng Anh; Anh ấy học lịch sử tại trường."</p>
+                        <div class="accordion-content mt-2 text-indigo-100 font-mono text-sm">
+                            > I learn English; He learns history at school. (No 'the' before subjects)
+                        </div>
+                    </div>
+                    <div class="bg-indigo-500 p-4 rounded-xl cursor-pointer hover:bg-indigo-400 transition" onclick="this.classList.toggle('active')">
+                        <p class="text-sm font-semibold">2. "Một ký ức không bao giờ bị lãng quên."</p>
+                        <div class="accordion-content mt-2 text-indigo-100 font-mono text-sm">
+                            > A never-to-be-forgotten memory.
+                        </div>
+                    </div>
+                    <div class="bg-indigo-500 p-4 rounded-xl cursor-pointer hover:bg-indigo-400 transition" onclick="this.classList.toggle('active')">
+                        <p class="text-sm font-semibold">3. "Cạnh tranh đang ngày càng nóng hơn."</p>
+                        <div class="accordion-content mt-2 text-indigo-100 font-mono text-sm">
+                            > Competition is getting hotter day by day.
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-6 text-xs text-indigo-200 italic italic">*Click vào mỗi câu để xem đáp án ẩn.</p>
+            </div>
+        </section>
+
+        <!-- Tổng kết: Small but Noteworthy Detail -->
+        <section class="mb-20">
+            <h3 class="text-2xl font-bold mb-6 heading-font uppercase">Lưu ý về từ "Small" & "Nice" trong IELTS</h3>
+            <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+                <div class="grid md:grid-cols-2 gap-8 italic italic">
+                    <div>
+                        <h4 class="font-bold text-slate-800 mb-4 border-b pb-2 italic">Cách dùng "Small"</h4>
+                        <ul class="space-y-2 text-sm text-slate-600">
+                            <li>● <strong>Small changes:</strong> Những thay đổi nhỏ.</li>
+                            <li>● <strong>Small problem:</strong> Vấn đề nhỏ (Don't worry).</li>
+                            <li>● <strong>To the smallest detail:</strong> Đến từng chi tiết nhỏ nhất.</li>
+                            <li>● <strong>No small achievement:</strong> Một thành tựu không hề nhỏ.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 mb-4 border-b pb-2 italic italic">Cách dùng "Nice"</h4>
+                        <ul class="space-y-2 text-sm text-slate-600 italic">
+                            <li>● <strong>Nice to meet you:</strong> Rất vui được gặp.</li>
+                            <li>● <strong>The nicest thing about...:</strong> Điều tốt đẹp nhất về...</li>
+                            <li>● <strong>Look very nice:</strong> Trông rất tuyệt/đẹp.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm mb-2 italic">Bài giảng chuyên sâu về Ngữ pháp Viết IELTS</p>
+            <p class="font-bold text-xl heading-font italic uppercase">Tác giả: Phạm Tiến Dũng Gia Sư</p>
+            <p class="text-xs text-slate-500 mt-8 italic italic italic">© 2026 Toàn bộ bản quyền thuộc về Phạm Tiến Dũng Gia Sư. Nghiêm cấm sao chép dưới mọi hình thức.</p>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+        
+        // Hỗ trợ toggle cho mobile hoặc các div bài tập
+        function setupAccordion() {
+            const items = document.querySelectorAll('.bg-indigo-500');
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        }
+        setupAccordion();
+    </script>
+</body>
+</html>

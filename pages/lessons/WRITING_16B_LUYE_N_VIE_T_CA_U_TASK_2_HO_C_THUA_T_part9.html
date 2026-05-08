@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 2: Advanced Argumentation | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pro-tip { border-left: 4px solid #f59e0b; background-color: #fffbeb; }
+        .teacher-note { border-left: 4px solid #10b981; background-color: #f0fdf4; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .band-9-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .band-9-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        details summary::-webkit-details-marker { display:none; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">D</div>
+                <span class="text-2xl font-bold tracking-tight text-slate-800">IELTS <span class="text-blue-600 font-extrabold">MASTERCLASS</span></span>
+            </div>
+            <div class="hidden md:block text-sm font-medium text-slate-500">
+                Chuyên gia: <span class="text-blue-700 font-bold">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Hero Title -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black mb-6 gradient-text uppercase tracking-tight italic">
+                Nghệ Thuật Xây Dựng Câu Kết & Phản Biện
+            </h1>
+            <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                Học cách biến các ý tưởng thô thành những đoạn văn <strong>Band 8.0+</strong> thông qua các chủ đề nóng hổi: AI, Biến đổi khí hậu, Trách nhiệm doanh nghiệp và Giáo dục gia đình.
+            </p>
+        </section>
+
+        <!-- Topic 1: Business & Social Responsibility -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-2 bg-blue-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-slate-800">1. Trách Nhiệm Xã Hội Của Doanh Nghiệp (CSR)</h2>
+            </div>
+            
+            <p class="mb-6">Một bài viết cân bằng (Balanced Essay) cần thể hiện được hai mặt của vấn đề: Lợi nhuận vs. Đạo đức.</p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 band-9-card">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4 flex items-center uppercase text-sm italic">Mặt A: Tài chính là cốt lõi</h3>
+                    <p class="text-slate-600 text-sm mb-4">"Một công ty chỉ có thể đóng góp tích cực cho xã hội nếu nó có tài chính tốt. Nếu không thể trả hóa đơn, mọi trách nhiệm xã hội đều vô nghĩa." (S47-573)</p>
+                    <div class="bg-blue-50 p-3 rounded-lg text-xs font-mono text-blue-700">
+                        Keywords: financial viability, survival in a competitive world.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 band-9-card">
+                    <h3 class="text-xl font-bold text-green-800 mb-4 flex items-center uppercase text-sm italic">Mặt B: Nghĩa vụ xã hội</h3>
+                    <p class="text-slate-600 text-sm mb-4">"Sử dụng lợi nhuận để hỗ trợ từ thiện, dự án môi trường và giáo dục. Tránh khai thác nhân viên (exploit)." (S47-578)</p>
+                    <div class="bg-green-50 p-3 rounded-lg text-xs font-mono text-green-700">
+                        Keywords: social initiatives, humanitarian aid, employee welfare.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mermaid flex justify-center mb-10 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                graph LR
+                A[Doanh nghiệp thành công] --> B{Mục tiêu kép}
+                B --> C[Lợi nhuận tài chính]
+                B --> D[Trách nhiệm xã hội]
+                C --> E[Đầu tư cải tiến/đổi mới]
+                D --> F[Từ thiện/Môi trường/Giáo dục]
+                style A fill:#dbeafe,stroke:#1e40af
+                style B fill:#fef9c3,stroke:#ca8a04
+            </div>
+        </section>
+
+        <!-- Topic 2: Parenting & Discipline -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-2 bg-red-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-slate-800">2. Phương Pháp Nuôi Dạy & Kỷ Luật</h2>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+                <div class="bg-slate-800 px-8 py-4 text-white font-bold flex justify-between items-center">
+                    <span>So sánh Hậu quả (Cause & Effect)</span>
+                    <span class="text-xs text-slate-400">Analysis by Phạm Tiến Dũng Gia Sư</span>
+                </div>
+                <div class="p-0">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 text-slate-700 text-sm uppercase">
+                                <th class="p-6 border-b">Phong cách nuôi dạy</th>
+                                <th class="p-6 border-b">Hậu quả tiêu cực (Negative Impacts)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-6 border-b font-semibold text-red-700">Quá nuông chiều (Giving in to demands)</td>
+                                <td class="p-6 border-b text-slate-600">
+                                    <ul class="list-disc ml-4 space-y-2">
+                                        <li>Thiếu kiên nhẫn khi ra quyết định (Lack of patience).</li>
+                                        <li>Tính bốc đồng (Impulsiveness).</li>
+                                        <li>Khó khăn khi làm việc nhóm (Inability to work in teams).</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-6 border-b font-semibold text-green-700">Có kỷ luật & ranh giới (Discipline & Boundaries)</td>
+                                <td class="p-6 border-b text-slate-600 italic italic font-light italic font-light italic italic font-light italic font-light italic">
+                                    "Phát triển sự tự chủ (self-control) và lòng tôn trọng người khác." (S45-550)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topic 3: Climate Change & Technology -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-2 bg-emerald-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-slate-800">3. Biến Đổi Khí Hậu & Trí Tuệ Nhân Tạo (AI)</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Climate Change -->
+                <div class="space-y-6">
+                    <div class="bg-emerald-50 p-6 rounded-3xl border border-emerald-100">
+                        <h4 class="font-bold text-emerald-900 mb-2 uppercase text-xs tracking-widest">Climate Crisis</h4>
+                        <p class="text-slate-700 text-sm mb-4 italic">"Hậu quả thảm họa: Bệnh tật, nạn đói, vô gia cư và nghèo đói gia tăng do di cư cưỡng bức." (S41-496)</p>
+                        <div class="teacher-note p-4 rounded-xl text-sm italic italic font-light italic font-light">
+                            <strong>Teacher's Note:</strong> Đừng chỉ nói "it's bad". Hãy liệt kê cụ thể các hậu quả xã hội như "forced migration" hay "outbreak of disease".
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-3xl border border-blue-100">
+                        <h4 class="font-bold text-blue-900 mb-2 uppercase text-xs tracking-widest">AI Intelligence</h4>
+                        <p class="text-slate-700 text-sm mb-4 italic">"Robot phẫu thuật chính xác hơn bác sĩ; xe tự lái giảm lỗi con người." (S50-611)</p>
+                        <p class="text-red-600 text-xs font-bold underline">Rủi ro: Máy tính đưa ra quyết định thiếu sự giám sát của con người.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Phrases Section (Band 8+) -->
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                Template Câu Kết (Concluding Sentences) - By Phạm Tiến Dũng Gia Sư
+            </h2>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                <div class="space-y-4">
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                        <span class="text-blue-700 font-bold italic">Cấu trúc:</span> "In conclusion, while [A - Side 1], [B - Side 2 / Opinion]."
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                        <span class="text-blue-700 font-bold italic italic font-light italic font-light italic">Ví dụ (AI):</span> "In conclusion, while intelligent machines will certainly improve our lives in many ways, the potential risks of such technologies should not be ignored." (S50-619)
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                        <span class="text-blue-700 font-bold italic italic font-light italic font-light italic">Ví dụ (CCTV):</span> "In conclusion, it seems to me that we gain more than we lose from the enhanced security that CCTV cameras bring to our cities." (S44-536)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section class="mb-20 bg-blue-600 rounded-3xl p-10 text-white">
+            <h2 class="text-3xl font-bold mb-6 text-center">Luyện Tập Phản Biện (Interactive Lab)</h2>
+            <div class="space-y-4">
+                <details class="group bg-blue-700 rounded-2xl">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center list-none">
+                        <span class="font-bold">Bài tập 1: Phân tích luận điểm "Thuế nặng lên ô tô"</span>
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div class="p-6 border-t border-blue-500 text-blue-100">
+                        <p class="mb-4">Dựa trên văn bản thô (S46-552), liệt kê 2 lợi ích của việc đánh thuế nặng lên người lái xe ô tô:</p>
+                        <ul class="list-decimal ml-6 space-y-2">
+                            <li><strong>Khuyến khích dùng phương tiện công cộng:</strong> Giảm chi phí vận hành nếu hệ thống công cộng được cải thiện bằng chính tiền thuế đó.</li>
+                            <li><strong>Giảm thiểu ùn tắc & ô nhiễm:</strong> Thuế cao ngăn cản việc sử dụng xe cá nhân không cần thiết.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="group bg-blue-700 rounded-2xl">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center list-none">
+                        <span class="font-bold italic italic font-light italic font-light italic font-light">Pro Tip: Cách viết câu mở đoạn (Topic Sentence)</span>
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div class="p-6 border-t border-blue-500 text-blue-100">
+                        <p>Hãy sử dụng cụm: <strong>"It is often said that..."</strong> hoặc <strong>"There is a growing concern that..."</strong> để bắt đầu một cách khách quan.</p>
+                        <p class="mt-2 text-yellow-300">Ví dụ: "It is often said that modern life offers us an overwhelming number of choices." (S48-581)</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center border-t border-slate-200 pt-10">
+            <p class="text-slate-400 text-sm mb-4">Tài liệu học thuật chuyên sâu được biên soạn bởi</p>
+            <div class="text-3xl font-black italic italic font-light italic font-light italic font-light font-light italic font-light italic font-light font-light italic font-light font-light italic">Phạm Tiến Dũng Gia Sư</div>
+            <p class="text-slate-500 mt-6 text-xs uppercase tracking-widest">© 2026 - Bản quyền thuộc về lộ trình IELTS Band 8.0+</p>
+        </footer>
+    </main>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            fontFamily: 'Inter',
+            themeVariables: {
+                primaryColor: '#dbeafe',
+                edgeLabelBackground: '#ffffff',
+                mainBkg: '#ffffff'
+            }
+        });
+    </script>
+</body>
+</html>

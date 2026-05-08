@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1: Masterclass on Data Description</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .code-font { font-family: 'Roboto Mono', monospace; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 1); }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold italic">D</div>
+                <span class="font-bold text-xl tracking-tight">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600 uppercase tracking-widest">
+                <a href="#trends" class="hover:text-blue-600 transition">Trends</a>
+                <a href="#comparison" class="hover:text-blue-600 transition">Comparison</a>
+                <a href="#structure" class="hover:text-blue-600 transition">Structure</a>
+            </nav>
+            <div class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">IELTS SENIOR TUTOR</div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <!-- Hero -->
+        <section class="mb-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight italic">
+                <span class="gradient-text">IELTS Writing Task 1</span><br>Bí Quyết Mô Tả Số Liệu Vạn Năng
+            </h1>
+            <p class="text-slate-500 text-lg max-w-2xl mx-auto">
+                Chuyển đổi các số liệu thô thành bài phân tích học thuật Band 8.5+ với các cấu trúc so sánh và xu hướng chuyên sâu.
+            </p>
+        </section>
+
+        <!-- Section 1: Overview & Trend Analysis -->
+        <section id="trends" class="mb-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-blue-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold">1. Phân Tích Xu Hướng (Trend Analysis)</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="glass-card p-8 rounded-3xl shadow-xl">
+                    <h3 class="text-xl font-bold mb-4 text-blue-800 italic">Mô tả Sự Tăng Trưởng (Upward Trends)</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                            <p class="text-sm font-semibold text-slate-400 uppercase mb-2">Vietnamese Source</p>
+                            <p class="text-slate-700 italic">"Năm 2000, LaGuardia đạt điểm cao nhất với 68 triệu khách du lịch."</p>
+                        </div>
+                        <div class="p-4 bg-blue-900 rounded-xl text-blue-100">
+                            <p class="text-xs font-bold text-blue-400 uppercase mb-2">Band 8.5+ Lexical Resource</p>
+                            <p class="code-font italic">"In 2000, LaGuardia <strong>reached a peak</strong> of 68 million travelers, marking the highest figure in the period."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <div class="p-6 bg-amber-50 rounded-2xl border-l-4 border-amber-400">
+                        <h4 class="font-bold text-amber-900 mb-2 flex items-center">
+                            <span class="mr-2">💡</span> Teacher's Note: Peak Phrases
+                        </h4>
+                        <p class="text-sm text-amber-800">
+                            Thay vì dùng "the highest point", hãy linh hoạt với:
+                            <ul class="list-disc ml-5 mt-2 space-y-1">
+                                <li>Culminate at...</li>
+                                <li>Reach its zenith of...</li>
+                                <li>Hit a record high of...</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table for Fluctuations -->
+            <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-lg">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-slate-900 text-white">
+                        <tr>
+                            <th class="p-4 uppercase text-xs tracking-wider">Context</th>
+                            <th class="p-4 uppercase text-xs tracking-wider">Description Structure (Standard)</th>
+                            <th class="p-4 uppercase text-xs tracking-wider">Advanced (Phạm Tiến Dũng Gia Sư style)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-4 font-bold text-blue-600">Fluctuation</td>
+                            <td class="p-4 italic">The number changed a lot.</td>
+                            <td class="p-4 text-slate-700 italic">"The number of passengers <strong>witnessed a fluctuating trend</strong> throughout the period."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-blue-600">Significant Rise</td>
+                            <td class="p-4 italic">It increased very fast.</td>
+                            <td class="p-4 text-slate-700 italic">"The figures for London <strong>soared</strong> to approximately 12% by 2002."</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-blue-600">Stability</td>
+                            <td class="p-4 italic">It stayed the same.</td>
+                            <td class="p-4 text-slate-700 italic">"The figure <strong>remained steady</strong> at 42 million travelers for the final two years."</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 2: Comparison & Contrast -->
+        <section id="comparison" class="mb-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="h-10 w-2 bg-purple-600 rounded-full"></div>
+                <h2 class="text-3xl font-bold">2. Kỹ Thuật So Sánh Đối Nghịch (Contrast & Comparison)</h2>
+            </div>
+
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-2xl border border-slate-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-100 rounded-full -mr-16 -mt-16 opacity-50"></div>
+                
+                <div class="relative z-10">
+                    <p class="text-lg text-slate-600 mb-8">
+                        Để đạt điểm cao phần <span class="font-bold text-purple-700 underline decoration-wavy">Coherence & Cohesion</span>, bạn cần kết hợp các liên từ đối lập (Contrastive linkers).
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <span class="text-purple-600 font-bold block mb-2">Cấu trúc "In contrast"</span>
+                            <p class="text-sm italic">"<strong>Ngược lại</strong>, giá nhà ở Madrid và Frankfurt chỉ tăng khoảng 2%."</p>
+                            <p class="mt-4 text-xs font-mono text-slate-400 tracking-tighter">"In contrast, prices rose by approximately 2% in both Madrid and Frankfurt."</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <span class="text-purple-600 font-bold block mb-2">Cấu trúc "While / Whereas"</span>
+                            <p class="text-sm italic">"<strong>Trong khi</strong> đàn ông làm vườn nhiều hơn, phụ nữ lại thống trị việc dọn dẹp."</p>
+                            <p class="mt-4 text-xs font-mono text-slate-400 tracking-tighter">"While men were more active in gardening, women dominated household cleaning."</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <span class="text-purple-600 font-bold block mb-2">Cấu trúc "The opposite"</span>
+                            <p class="text-sm italic">"Trình độ càng cao, nam giáo viên càng đông và <strong>điều ngược lại</strong> với nữ."</p>
+                            <p class="mt-4 text-xs font-mono text-slate-400 tracking-tighter">"...the opposite was true for their female counterparts."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                
+            </div>
+        </section>
+
+        <!-- Section 3: Professional Vocabulary -->
+        <section id="structure" class="mb-24">
+            <h2 class="text-3xl font-bold mb-10 text-center">Từ Vựng "Ăn Điểm" Theo Chủ Đề</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Energy & Environment -->
+                <div class="p-6 rounded-3xl bg-emerald-50 border border-emerald-100 shadow-sm">
+                    <h4 class="font-bold text-emerald-800 mb-4 uppercase tracking-widest text-xs">Energy & Environment</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> <strong>Account for:</strong> Chiếm (bao nhiêu %)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> <strong>A source of:</strong> Là một nguồn của...</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> <strong>Emit:</strong> Thải ra (khí thải)</li>
+                    </ul>
+                </div>
+                <!-- Employment & Gender -->
+                <div class="p-6 rounded-3xl bg-rose-50 border border-rose-100 shadow-sm">
+                    <h4 class="font-bold text-rose-800 mb-4 uppercase tracking-widest text-xs">Employment & Gender</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-rose-500 rounded-full mr-2"></span> <strong>Dominate:</strong> Thống trị/Chiếm ưu thế</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-rose-500 rounded-full mr-2"></span> <strong>Counterpart:</strong> Đối tượng tương đương</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-rose-500 rounded-full mr-2"></span> <strong>Unemployment rate:</strong> Tỷ lệ thất nghiệp</li>
+                    </ul>
+                </div>
+                <!-- Transport & Facilities -->
+                <div class="p-6 rounded-3xl bg-blue-50 border border-blue-100 shadow-sm">
+                    <h4 class="font-bold text-blue-800 mb-4 uppercase tracking-widest text-xs">Transport & Facilities</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> <strong>Passenger throughput:</strong> Lượt khách thông qua</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> <strong>Destination:</strong> Điểm đến</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> <strong>Fluctuate:</strong> Biến động</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice Section -->
+        <section class="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white mb-24">
+            <h2 class="text-3xl font-bold mb-8 text-center italic">Interactive Practice: Test Your Knowledge</h2>
+            
+            <div class="space-y-6">
+                <!-- Question 1 -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <p class="mb-4 font-medium">1. Chọn cách viết Band cao cho câu sau: "Số liệu về tỷ lệ ly hôn tăng lên cao nhất năm 1980."</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button class="text-left p-4 rounded-xl border border-slate-600 hover:bg-slate-700 transition active:scale-95" onclick="alert('Incorrect! Hơi đơn giản quá bạn ơi.')">
+                            A. The number of divorces increased to the top in 1980.
+                        </button>
+                        <button class="text-left p-4 rounded-xl border border-slate-600 hover:bg-slate-700 transition active:scale-95" onclick="alert('Correct! Expert Choice: Divorce rates peaked at nearly 1.5 million in 1980.')">
+                            B. Divorce rates peaked at nearly 1.5 million in 1980.
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-blue-600 p-6 rounded-2xl">
+                    <h4 class="font-bold mb-2 flex items-center">
+                        <span class="mr-2">⭐</span> Pro Tip by Phạm Tiến Dũng Gia Sư
+                    </h4>
+                    <p class="text-blue-50 text-sm">
+                        Khi mô tả sự so sánh gấp nhiều lần, hãy dùng cấu trúc: <strong>"Three times as many... as"</strong> hoặc <strong>"Triple the amount of..."</strong>. Ví dụ: "Xe lửa thải khí CO2 ít hơn 3 lần so với ô tô" => "Trains emit <strong>three times less</strong> CO2 per passenger kilometer <strong>than</strong> cars."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Call to Action -->
+        <section class="text-center py-20 border-t border-slate-200">
+            <h3 class="text-2xl font-bold mb-4">Bạn muốn nâng trình Writing hơn nữa?</h3>
+            <p class="text-slate-500 mb-8">Học cùng chuyên gia, phá đảo mọi biểu đồ IELTS.</p>
+            <div class="flex justify-center space-x-4">
+                <span class="px-6 py-2 bg-blue-600 text-white rounded-full font-bold shadow-lg shadow-blue-200">Phạm Tiến Dũng Gia Sư</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-100 py-10 text-center text-slate-400 text-sm">
+        <p>© 2026 IELTS Academic Resource Portfolio. Designed for excellence.</p>
+        <p class="mt-2 tracking-widest uppercase font-semibold text-slate-500">Tác giả: Phạm Tiến Dũng Gia Sư</p>
+    </footer>
+
+</body>
+</html>

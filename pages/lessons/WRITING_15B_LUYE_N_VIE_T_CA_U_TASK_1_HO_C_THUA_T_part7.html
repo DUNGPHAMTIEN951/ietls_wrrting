@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-content.active { max-height: 1000px; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778164436'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">Phạm Tiến Dũng Gia Sư</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <span class="text-slate-500 font-medium">IELTS Writing Task 1 Expert Series</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative py-16 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
+                    <span class="block">Kỹ Thuật Viết Câu</span>
+                    <span class="block text-blue-600">Band 8.0+ Writing Task 1</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-slate-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Học cách biến các số liệu thô thành những câu văn so sánh và phân tích xu hướng chuyên nghiệp.
+                </p>
+                <div class="mt-5 flex justify-center">
+                    <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                        Giảng viên: Phạm Tiến Dũng Gia Sư
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Section 1: Data Reporting & Comparisons -->
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold mr-4">01</div>
+                <h2 class="text-3xl font-bold text-slate-900">Mô tả Số liệu & So sánh (Static & Dynamic)</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-700 underline decoration-2 underline-offset-4">Cấu trúc So sánh Thị phần</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-white rounded-lg border border-slate-100">
+                            <p class="text-sm font-bold text-slate-400 uppercase">Ví dụ Band 8.5:</p>
+                            <p class="italic text-slate-700">"Thị phần của Toshiba tăng từ 6,2% năm 2006 lên 7,3% năm 2007, trong khi Lenovo giảm nhẹ từ 6,6% xuống 6,2%."</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                            <h4 class="font-bold text-blue-900 text-sm uppercase mb-1">Teacher's Note:</h4>
+                            <p class="text-sm">Sử dụng liên từ <strong>"While"</strong> hoặc <strong>"In contrast"</strong> để kết nối hai xu hướng đối lập trong cùng một câu giúp tăng điểm <strong>Coherence and Cohesion</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-700 underline decoration-2 underline-offset-4">Tóm tắt Tổng quan (Overview)</h3>
+                    <div class="mermaid mb-4">
+                        graph LR
+                        A[Overview] --> B(Xu hướng chính)
+                        A --> C(Điểm nổi bật nhất)
+                        B --> D[Người TQ dùng đường sắt nhiều nhất]
+                        C --> E[Canada vận chuyển hàng hóa dẫn đầu]
+                    </div>
+                    <p class="text-sm text-slate-600">"Tóm lại, người Trung Quốc sử dụng đường sắt nhiều hơn người dân nước khác và hàng hóa vận chuyển nhiều hơn ở Canada trong số các quốc gia nhất định."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Comparing Different Groups -->
+        <section class="mb-16 bg-blue-900 text-white p-8 rounded-3xl shadow-xl">
+            <h2 class="text-2xl font-bold mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                So sánh số liệu đa quốc gia & độ tuổi
+            </h2>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left bg-blue-800 rounded-xl overflow-hidden">
+                    <thead>
+                        <tr class="bg-blue-700">
+                            <th class="px-6 py-4 font-bold">Lĩnh vực</th>
+                            <th class="px-6 py-4 font-bold">Số liệu nổi bật</th>
+                            <th class="px-6 py-4 font-bold">Phân tích (Phạm Tiến Dũng Gia Sư)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-blue-700">
+                        <tr>
+                            <td class="px-6 py-4">Giao thông</td>
+                            <td class="px-6 py-4">Trung Quốc: 27 triệu lượt khách</td>
+                            <td class="px-6 py-4 text-blue-200">Gấp gần 5 lần so với UAE & Malaysia.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Lao động</td>
+                            <td class="px-6 py-4">Nữ giới Hy Lạp: 39,9 giờ/tuần</td>
+                            <td class="px-6 py-4 text-blue-200">Làm việc ít hơn nam giới 2,6 giờ.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Chi tiêu</td>
+                            <td class="px-6 py-4">Thổ Nhĩ Kỳ: 32,14% cho thực phẩm</td>
+                            <td class="px-6 py-4 text-blue-200">Tỷ lệ cao nhất trong 5 quốc gia.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 p-4 bg-blue-800/50 border border-blue-400 rounded-xl">
+                <p class="text-sm font-medium italic">
+                    <span class="text-yellow-400 font-bold">Pro Tip:</span> Thay vì liệt kê số liệu đơn thuần, hãy sử dụng các trạng từ nhấn mạnh như "đáng kinh ngạc" (staggering 58 hours) hoặc "chỉ dưới" (just under a quarter).
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Process & Maps (Sơ đồ & Bản đồ) -->
+        <section class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold mr-4">02</div>
+                <h2 class="text-3xl font-bold text-slate-900">Mô tả Bản đồ & Quy trình (Map/Process)</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <h4 class="font-bold text-slate-900 mb-2">Thay đổi Cơ cấu</h4>
+                    <p class="text-sm text-slate-600 mb-4">"Khu rừng gần đó đã bị chặt phá để làm sân tennis."</p>
+                    <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">Vocabulary: Clear/Deforest</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <h4 class="font-bold text-slate-900 mb-2">Mở rộng & Kết nối</h4>
+                    <p class="text-sm text-slate-600 mb-4">"Việc mở rộng Chorleywood tiếp tục về phía đông và phía tây cùng với tuyến đường sắt."</p>
+                    <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">Vocabulary: Expansion/Alongside</span>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <h4 class="font-bold text-slate-900 mb-2">So sánh Phức tạp</h4>
+                    <p class="text-sm text-slate-600 mb-4">"Thời gian xây dựng đường sắt Seikan dài gấp sáu lần (42 năm)."</p>
+                    <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">Vocabulary: Sixfold/Duration</span>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Section 4: Practice Exercise -->
+        <section class="mb-16">
+            <div class="bg-slate-900 rounded-3xl p-8 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold mb-4">Thực hành cùng Phạm Tiến Dũng Gia Sư</h2>
+                <p class="mb-6 text-slate-400 font-roboto">Chọn đáp án đúng nhất để hoàn thành câu mô tả xu hướng:</p>
+                
+                <div class="space-y-6">
+                    <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+                        <p class="mb-4">1. Thị phần của Fujitsu-Siemens ______ từ năm 2006 đến năm 2007: từ 4,8% thị trường xuống chỉ còn 2,3%.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <button onclick="checkAns(this, 'wrong')" class="px-6 py-2 bg-slate-700 hover:bg-slate-600 rounded-full transition">Tăng nhẹ</button>
+                            <button onclick="checkAns(this, 'correct')" class="px-6 py-2 bg-slate-700 hover:bg-slate-600 rounded-full transition">Giảm hơn một nửa</button>
+                            <button onclick="checkAns(this, 'wrong')" class="px-6 py-2 bg-slate-700 hover:bg-slate-600 rounded-full transition">Chững lại</button>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button onclick="toggleAccordion('ans-1')" class="text-blue-400 hover:text-blue-300 font-medium transition underline decoration-dotted">Xem đáp án & Giải thích</button>
+                        <div id="ans-1" class="accordion-content bg-slate-800 mt-4 p-4 rounded-lg text-left">
+                            <p class="text-green-400 font-bold mb-2">Đáp án: Giảm hơn một nửa (Halved)</p>
+                            <p class="text-sm text-slate-300 italic">Giải thích: Dữ liệu từ 4,8% xuống 2,3% là mức giảm xấp xỉ 50%. Trong IELTS Writing Task 1, việc sử dụng các từ ngữ mang tính phân tích thay vì chỉ mô tả con số sẽ được đánh giá cao hơn (e.g., 'halved' thay vì 'decreased by 2.5%').</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 font-medium">Bản quyền nội dung thuộc về</p>
+            <h3 class="text-xl font-bold text-slate-900 mt-2 italic">Phạm Tiến Dũng Gia Sư</h3>
+            <p class="text-slate-400 text-sm mt-4">Chuyên đào tạo IELTS học thuật chuyên sâu và cá nhân hóa.</p>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        function checkAns(el, status) {
+            if(status === 'correct') {
+                el.classList.remove('bg-slate-700');
+                el.classList.add('bg-green-600', 'text-white');
+            } else {
+                el.classList.remove('bg-slate-700');
+                el.classList.add('bg-red-600', 'text-white');
+            }
+        }
+
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

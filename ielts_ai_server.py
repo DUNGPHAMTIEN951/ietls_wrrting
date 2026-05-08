@@ -1,3 +1,8 @@
+def print_and_flush(*args, **kwargs):
+    print(*args, **kwargs)
+    import sys
+    sys.stdout.flush()
+
 """
 IELTS AI Proxy Server
 - Nhận transcript từ web app (POST /analyze)
@@ -28,7 +33,7 @@ try:
     logger.remove()
     logger.add(sys.stderr, level="WARNING")
 except ImportError:
-    print("Đang cài đặt gemini-webapi...")
+    print_and_flush("Đang cài đặt gemini-webapi...")
     import subprocess
     subprocess.check_call([sys.executable, "-m", "pip", "install", "gemini-webapi"])
     from loguru import logger
@@ -37,17 +42,121 @@ except ImportError:
     logger.add(sys.stderr, level="WARNING")
 
 # ============================================================
-# GLOBAL: Gemini client & chat (khởi tạo 1 lần duy nhất)
+# GLOBAL: Dual Gemini clients (Pro + Free)
 # ============================================================
-gemini_client = None
-gemini_chat = None
+gemini_client_pro  = None   # Pro account → content generation
+gemini_chat_pro    = None
+gemini_client_free = None   # Free account → image prompts
+gemini_chat_free   = None
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-COOKIE_FILE = os.path.join(SCRIPT_DIR, "cookie.js")
+# Keep these aliases so old code referencing gemini_chat still works
+gemini_client = None
+gemini_chat   = None
+
+SCRIPT_DIR       = os.path.dirname(os.path.abspath(__file__))
+COOKIE_FILE_PRO  = os.path.join(SCRIPT_DIR, "cookie_pro.js")
+COOKIE_FILE_FREE = os.path.join(SCRIPT_DIR, "cookie_free.js")
+COOKIE_FILE      = COOKIE_FILE_PRO   # legacy alias
+
+FREE_TYPES = ['vocab', 'ielts_quiz']
+PRO_TYPES = ['practice_generation', 'writing_sample', 'writing_guide', 'barem', 'task1_chart', 'theory_perfection', 'vocab']
+
+IMAGE_DIR = os.path.join(SCRIPT_DIR, "public", "image")
+os.makedirs(IMAGE_DIR, exist_ok=True)
+
+# TOGGLES
+ENABLE_LESSON_IMAGES = False # Tạm thời tắt để ưu tiên tạo nội dung câu hỏi
+
+def get_chat_for_task(task_type: str):
+    """Return the appropriate chat session based on task type."""
+    if task_type in FREE_TYPES:
+        return gemini_chat_free if gemini_chat_free else gemini_chat_pro
+    return gemini_chat_pro if gemini_chat_pro else gemini_chat_free
 
 # Directory for AI Output in the writing app
 WRITING_APP_DATA_DIR = r"d:\ietls_wrrting\data\ai_output"
 os.makedirs(WRITING_APP_DATA_DIR, exist_ok=True)
+
+# ============================================================
+# NETWORK BINDING (For using 4G/Hotspot alongside WiFi)
+# ============================================================
+# Set this to your 4G interface IP (e.g., "192.168.118.133") or name (e.g., "Ethernet 2")
+# Leave as None to use the system default network (usually WiFi)
+BIND_4G_INTERFACE = None # Changed to None to test WiFi instead of 4G
+
+def get_ip_of_interface(name_or_ip):
+    """Helper to get IP of a named interface or return the IP directly."""
+    if not name_or_ip: return None
+    if "." in name_or_ip: return name_or_ip # Already an IP
+    
+    import subprocess
+    try:
+        # Use powershell to find the IP of an alias
+        cmd = f'Get-NetIPAddress -InterfaceAlias "{name_or_ip}" -AddressFamily IPv4 | Select-Object -ExpandProperty IPAddress'
+        res = subprocess.check_output(['powershell', '-Command', cmd], text=True).strip()
+        if res:
+            return res.split('\n')[0].strip()
+    except:
+        pass
+    return name_or_ip
+
+def patch_gemini_interface(interface_name_or_ip):
+    """Monkey-patch Gemini library to bind requests to a specific network interface."""
+    resolved_ip = get_ip_of_interface(interface_name_or_ip)
+    if not resolved_ip:
+        return
+        
+    from curl_cffi.requests import AsyncSession
+    import functools
+    
+    # Store the original AsyncSession class
+    original_init = AsyncSession.__init__
+    
+    @functools.wraps(original_init)
+    def patched_init(self, *args, **kwargs):
+        if 'interface' not in kwargs:
+            kwargs['interface'] = resolved_ip
+        original_init(self, *args, **kwargs)
+        
+    AsyncSession.__init__ = patched_init
+    print_and_flush(f"[NETWORK] Gemini requests will be BINDED to IP: {resolved_ip}")
+
+async def engineer_optimized_prompt(target_content_desc: str, chat=None) -> str:
+    """Step 1: Use AI to create a perfect, specialized prompt for a specific task."""
+    meta_prompt = f"""
+    Act as an expert IELTS Prompt Engineer. 
+    I need to generate high-quality content for: {target_content_desc}
+    
+    Task: Write a highly detailed, professional, and specialized prompt that I should send to an AI to get the absolute best, most accurate, and pedagogically sound result for this specific topic.
+    The prompt you create should include specific constraints, tone, and formatting instructions.
+    
+    Return ONLY the text of the generated prompt. No preamble.
+    """
+    try:
+        response = await (chat or gemini_chat_pro).send_message(meta_prompt)
+        return response.text.strip()
+    except Exception as e:
+        print_and_flush(f"[PROMPT-ENG] Failed to engineer prompt: {e}. Falling back to default.")
+        return target_content_desc
+
+async def generate_ielts_quiz(word_or_topic: str, chat=None) -> str:
+    """Step 2: Use the engineered prompt to generate a professional quiz."""
+    # First, get the optimized prompt
+    optimized_instruction = await engineer_optimized_prompt(f"A set of 3 diverse IELTS practice questions (MCQ, Fill in the blanks, and Synonyms) for the vocabulary: '{word_or_topic}'", chat=chat)
+    
+    print_and_flush(f"[PROMPT-ENG] Using specialized prompt for {word_or_topic}...")
+    
+    # Second, generate the actual content
+    response = await (chat or gemini_chat_pro).send_message(optimized_instruction)
+    return response.text.strip()
+
+def save_quiz_to_file(task_id, result):
+    path = os.path.join(WRITING_APP_DATA_DIR, f"quiz_{task_id}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(result)
+
+
+
 
 # Speaking project AI vocab directory (served directly by http.server)
 SPEAKING_VOCAB_DIR = os.path.join(SCRIPT_DIR, "ai_vocab")
@@ -57,6 +166,201 @@ os.makedirs(SPEAKING_SUGGESTIONS_DIR, exist_ok=True)
 
 DICTIONARY_CACHE_FILE = os.path.join(SCRIPT_DIR, "dictionary_cache.json")
 THEORY_DIR = r"d:\ietls_wrrting\pages\theory"
+
+PRACTICE_UI_TEMPLATE = """
+<div class="max-w-4xl mx-auto">
+    <div class="bg-white dark:bg-slate-900 rounded-[3rem] border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+        <div class="bg-slate-50 dark:bg-slate-800/50 p-8 border-b border-slate-200 dark:border-slate-800">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-2">Luyện tập Chuyên sâu</h2>
+                    <p class="text-slate-500 dark:text-slate-400">Hoàn thành bộ 200 câu hỏi để làm chủ kiến thức.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-inner">
+                    <div class="text-center">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Tiến độ</p>
+                        <p class="text-2xl font-black text-blue-600" id="practice-progress">0/200</p>
+                    </div>
+                    <div class="w-px h-10 bg-slate-100 dark:bg-slate-800"></div>
+                    <div class="text-center">
+                        <p class="text-[10px] font-bold text-slate-400 uppercase">Đúng</p>
+                        <p class="text-2xl font-black text-emerald-500" id="practice-correct">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-8">
+                <button onclick="filterPractice('all')" class="cat-btn active">Tất cả</button>
+                <button onclick="filterPractice('Bài tập Dịch')" class="cat-btn">Dịch thuật</button>
+                <button onclick="filterPractice('Word Box')" class="cat-btn">Word Box</button>
+                <button onclick="filterPractice('Fill in the blank')" class="cat-btn">Điền từ</button>
+                <button onclick="filterPractice('Chart Analysis')" class="cat-btn">Biểu đồ</button>
+            </div>
+        </div>
+        <div class="p-8 md:p-12 min-h-[400px]" id="question-container"></div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 p-6 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+            <button onclick="prevQuestion()" class="btn-nav"><i data-lucide="chevron-left"></i> Câu trước</button>
+            <div class="text-sm font-bold text-slate-400" id="question-index">Câu 1 / 200</div>
+            <button onclick="nextQuestion()" class="btn-nav">Câu tiếp <i data-lucide="chevron-right"></i></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let allQuestions = [];
+    let currentFiltered = [];
+    let currentIndex = 0;
+    let score = 0;
+    let answered = new Set();
+
+    function initPractice(data) {
+        allQuestions = data;
+        currentFiltered = [...allQuestions];
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        const q = currentFiltered[currentIndex];
+        const container = document.getElementById('question-container');
+        document.getElementById('question-index').innerText = `Câu ${currentIndex + 1} / ${currentFiltered.length}`;
+        let html = `
+            <div class="animate-fade-in">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black uppercase tracking-widest rounded-full">${q.type}</span>
+                    <span class="text-slate-300 dark:text-slate-600">#${q.id}</span>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-relaxed">${q.question}</h3>
+                <div class="space-y-3 mb-8">
+        `;
+        if (q.options && q.options.length > 0) {
+            q.options.forEach(opt => {
+                html += `<button onclick="checkAnswer(this, '${opt}')" class="option-btn w-full text-left p-4 rounded-2xl border-2 border-slate-100 dark:border-slate-800 hover:border-blue-500 transition-all mb-3 font-medium text-slate-700 dark:text-slate-300">${opt}</button>`;
+            });
+        } else {
+            html += `
+                <input type="text" id="ans-input" placeholder="Nhập đáp án của bạn..." class="w-full p-6 rounded-3xl border-2 border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 focus:border-blue-500 outline-none transition-all font-bold text-lg mb-4">
+                <button onclick="checkInputAnswer()" class="w-full py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-2xl font-bold shadow-xl">Kiểm tra đáp án</button>
+            `;
+        }
+        html += `
+                </div>
+                <div id="feedback-area" class="hidden p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700">
+                    <p class="font-bold mb-2" id="result-text"></p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4" id="explanation-text"></p>
+                    <div class="p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-1">Đáp án đúng:</p>
+                        <p class="font-mono text-emerald-600 dark:text-emerald-400 font-bold">${q.answer}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML = html;
+        if (window.lucide) lucide.createIcons();
+    }
+
+    function checkAnswer(btn, val) {
+        if (answered.has(currentFiltered[currentIndex].id)) return;
+        const q = currentFiltered[currentIndex];
+        const isCorrect = val === q.answer;
+        if (isCorrect) { btn.classList.add('border-emerald-500', 'bg-emerald-50'); score++; }
+        else { btn.classList.add('border-rose-500', 'bg-rose-50'); }
+        showFeedback(isCorrect);
+    }
+
+    function checkInputAnswer() {
+        const val = document.getElementById('ans-input').value.trim();
+        const q = currentFiltered[currentIndex];
+        const isCorrect = val.toLowerCase() === q.answer.toLowerCase();
+        if (isCorrect) score++;
+        showFeedback(isCorrect);
+    }
+
+    function showFeedback(isCorrect) {
+        const q = currentFiltered[currentIndex];
+        answered.add(q.id);
+        document.getElementById('feedback-area').classList.remove('hidden');
+        document.getElementById('result-text').innerText = isCorrect ? 'Chính xác! 🎉' : 'Chưa đúng rồi... ✍️';
+        document.getElementById('result-text').className = isCorrect ? 'font-bold text-emerald-600' : 'font-bold text-rose-600';
+        document.getElementById('explanation-text').innerText = q.explanation;
+        updateStats();
+    }
+
+    function updateStats() {
+        document.getElementById('practice-progress').innerText = `${answered.size}/${allQuestions.length}`;
+        document.getElementById('practice-correct').innerText = score;
+    }
+
+    function nextQuestion() { if (currentIndex < currentFiltered.length - 1) { currentIndex++; renderQuestion(); } }
+    function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
+
+    function filterPractice(type) {
+        currentIndex = 0;
+        currentFiltered = type === 'all' ? [...allQuestions] : allQuestions.filter(q => q.type === type);
+        document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.toggle('active', btn.innerText.includes(type) || (type==='all' && btn.innerText==='Tất cả')));
+        renderQuestion();
+    }
+</script>
+"""
+
+def inject_practice_to_html(html_content, all_questions):
+    import json
+    practice_data_js = f"let allQuestions = {json.dumps(all_questions, ensure_ascii=False)};"
+    practice_ui = PRACTICE_UI_TEMPLATE.replace('let allQuestions = [];', practice_data_js)
+    
+    # Mode Switcher Logic
+    if 'id="theory-section"' not in html_content:
+        nav_end_marker = '</nav>'
+        tabs_html = """
+        <!-- Mode Switcher -->
+        <div class="flex justify-center gap-4 mb-12 sticky top-6 z-50">
+            <button onclick="switchMode('theory')" id="btn-theory" class="px-8 py-3 rounded-2xl bg-slate-900 text-white font-bold shadow-xl border border-white/10 transition-all flex items-center gap-2">
+                <i data-lucide="book-open" class="w-5 h-5"></i> Lý thuyết
+            </button>
+            <button onclick="switchMode('practice')" id="btn-practice" class="px-8 py-3 rounded-2xl bg-white text-slate-900 font-bold shadow-lg border border-slate-100 transition-all flex items-center gap-2">
+                <i data-lucide="edit-3" class="w-5 h-5"></i> Luyện tập (200 câu)
+                <span class="bg-red-500 text-white text-[10px] px-2 py-0.5 rounded-full animate-pulse">HOT</span>
+            </button>
+        </div>
+        <div id="theory-section" class="mode-section animate-fade-in">
+        """
+        html_content = html_content.replace(nav_end_marker, nav_end_marker + tabs_html)
+        html_content = html_content.replace('<footer', '</div> <!-- End Theory Section -->\n<footer')
+
+    practice_wrapper = f"""
+    <!-- Practice Section -->
+    <div id="practice-section" class="mode-section hidden animate-fade-in pb-20">
+        {practice_ui}
+    </div>
+    """
+    if 'id="practice-section"' in html_content:
+        import re
+        html_content = re.sub(r'<!-- Practice Section -->.*?</div> <!-- End Practice -->', practice_wrapper, html_content, flags=re.DOTALL)
+    else:
+        html_content = html_content.replace('</div> <!-- End Theory Section -->', '</div> <!-- End Theory Section -->\n' + practice_wrapper)
+
+    js_switch = """
+    <script>
+        function switchMode(mode) {
+            const theory = document.getElementById('theory-section');
+            const practice = document.getElementById('practice-section');
+            const btnTheory = document.getElementById('btn-theory');
+            const btnPractice = document.getElementById('btn-practice');
+            if (mode === 'theory') {
+                theory.classList.remove('hidden'); practice.classList.add('hidden');
+                btnTheory.className = btnTheory.className.replace('bg-white', 'bg-slate-900').replace('text-slate-900', 'text-white');
+                btnPractice.className = btnPractice.className.replace('bg-slate-900', 'bg-white').replace('text-white', 'text-slate-900');
+            } else {
+                theory.classList.add('hidden'); practice.classList.remove('hidden');
+                btnPractice.className = btnPractice.className.replace('bg-white', 'bg-slate-900').replace('text-slate-900', 'text-white');
+                btnTheory.className = btnTheory.className.replace('bg-slate-900', 'bg-white').replace('text-white', 'text-slate-900');
+                if (typeof allQuestions !== 'undefined' && allQuestions.length > 0 && document.getElementById('question-container').innerHTML.trim() === "") initPractice(allQuestions);
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    """
+    if 'function switchMode' not in html_content:
+        html_content = html_content.replace('</body>', js_switch + '\n</body>')
+    return html_content
 
 def load_dictionary_cache():
     if os.path.exists(DICTIONARY_CACHE_FILE):
@@ -74,64 +378,80 @@ def save_to_dictionary_cache(word, data):
         with open(DICTIONARY_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(cache, f, ensure_ascii=False, indent=4)
     except Exception as e:
-        print(f"[CACHE ERROR] {e}")
+        print_and_flush(f"[CACHE ERROR] {e}")
 
 
-def load_cookies(cookie_file: str) -> tuple[str, str]:
+def load_cookies(cookie_file: str) -> tuple[str, str, str]:
     with open(cookie_file, "r", encoding="utf-8") as f:
         cookies = json.load(f)
     cookie_map = {c["name"]: c["value"] for c in cookies if "name" in c}
     psid   = cookie_map.get("__Secure-1PSID", "")
     psidts = cookie_map.get("__Secure-1PSIDTS", "")
+    psidcc = cookie_map.get("__Secure-1PSIDCC", "")
     if not psid or not psidts:
         raise ValueError("Không tìm thấy cookie __Secure-1PSID hoặc __Secure-1PSIDTS!")
-    return psid, psidts
+    return psid, psidts, psidcc
+
+
+async def _init_gemini_client(cookie_file: str, label: str, use_pro_model: bool = False):
+    """Generic initializer. Returns (client, chat) or raises."""
+    from gemini_webapi.constants import Model
+    psid, psidts, psidcc = load_cookies(cookie_file)
+    client = GeminiClient(psid=psid, psidts=psidts, psidcc=psidcc)
+    await client.init(timeout=60, auto_refresh=True)
+
+    available = [name for name, m in client._model_registry.items() if m.is_available]
+    print_and_flush(f"[{label}] Status: {client.account_status} | Models: {len(available)} ({', '.join(available[:3])})")
+
+    # Start a new chat (always fresh — no resume for dual mode to avoid cross-account issues)
+    if use_pro_model:
+        try:
+            chat = client.start_chat(model=Model.BASIC_PRO)
+            print_and_flush(f"[{label}] Using model: Gemini Pro (BASIC_PRO)")
+        except Exception:
+            chat = client.start_chat()
+            print_and_flush(f"[{label}] Fallback to Flash")
+    else:
+        chat = client.start_chat()
+        print_and_flush(f"[{label}] Using model: Gemini Flash (BASIC_FLASH)")
+
+    return client, chat
 
 
 async def init_gemini():
-    global gemini_client, gemini_chat
-    psid, psidts = load_cookies(COOKIE_FILE)
-    gemini_client = GeminiClient(psid, psidts)
-    await gemini_client.init()
-    
-    # 1. Thử tìm chat_name từ Database trước
-    db_chat_name = None
-    try:
-        conn = get_db_connection()
-        if conn:
-            cursor = conn.cursor()
-            cursor.execute("SELECT chat_name FROM ai_tasks WHERE status = 'success' AND chat_name IS NOT NULL ORDER BY completed_at DESC LIMIT 1")
-            row = cursor.fetchone()
-            if row: db_chat_name = row[0]
-            cursor.close()
-            conn.close()
-    except: pass
+    """Initialize both Pro and Free Gemini sessions in parallel."""
+    global gemini_client_pro, gemini_chat_pro, gemini_client_free, gemini_chat_free
+    global gemini_client, gemini_chat  # legacy aliases
 
-    print("Đang đồng bộ cuộc trò chuyện từ Gemini...")
-    conversations = gemini_client.list_chats()
-    
-    selected_conv = None
-    
-    # Ưu tiên 1: Theo Database
-    if db_chat_name:
-        selected_conv = next((c for c in conversations if c.title == db_chat_name), None)
-        if selected_conv:
-            print(f"[REUSE] Khôi phục hội thoại từ DB: {db_chat_name}")
+    # Apply network binding patch if configured
+    patch_gemini_interface(BIND_4G_INTERFACE)
 
-    # Ưu tiên 2: Theo tiêu đề mặc định
-    if not selected_conv:
-        target_title = "chuyên gia về ielts speaking"
-        selected_conv = next((c for c in conversations if target_title.lower() in c.title.lower()), None)
-        if selected_conv:
-            print(f"[FOUND] Tìm thấy hội thoại chuyên gia: {selected_conv.title}")
+    results = await asyncio.gather(
+        _init_gemini_client(COOKIE_FILE_PRO,  "GEMINI-PRO",  use_pro_model=True),
+        _init_gemini_client(COOKIE_FILE_FREE, "GEMINI-FREE", use_pro_model=False),
+        return_exceptions=True
+    )
 
-    if selected_conv:
-        gemini_chat = gemini_client.start_chat(cid=selected_conv.cid)
+    pro_result, free_result = results
+
+    if isinstance(pro_result, Exception):
+        print_and_flush(f"[GEMINI-PRO] Init FAILED: {pro_result}")
     else:
-        print(f"[NEW] Không tìm thấy hội thoại cũ, đang tạo mới...")
-        gemini_chat = gemini_client.start_chat()
-        
-    print("[OK] Gemini đã sẵn sàng!")
+        gemini_client_pro, gemini_chat_pro = pro_result
+        gemini_client = gemini_client_pro
+        gemini_chat   = gemini_chat_pro
+        print_and_flush("[GEMINI-PRO] Ready ✓")
+
+    if isinstance(free_result, Exception):
+        print_and_flush(f"[GEMINI-FREE] Init FAILED: {free_result} (will use Pro as fallback)")
+    else:
+        gemini_client_free, gemini_chat_free = free_result
+        print_and_flush("[GEMINI-FREE] Ready ✓")
+
+    if gemini_chat_pro is None and gemini_chat_free is None:
+        raise RuntimeError("Both Gemini accounts failed to initialize!")
+
+    print_and_flush("[OK] Gemini đã sẵn sàng! (Pro + Free)")
 
 
 # ============================================================
@@ -161,30 +481,30 @@ def save_json_queue(queue):
         with open(JSON_QUEUE_FILE, "w", encoding="utf-8") as f:
             json.dump(queue, f, ensure_ascii=False, indent=2)
     except Exception as e:
-        print(f"[JSON QUEUE ERROR] {e}")
+        print_and_flush(f"[JSON QUEUE ERROR] {e}")
 
 def get_db_connection():
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
         return conn
     except Error as e:
-        print(f"[DB ERROR] Connection failed: {e}")
+        print_and_flush(f"[DB ERROR] Connection failed: {e}")
         return None
 
 def init_db():
-    print("[DB] Initializing database...")
+    print_and_flush("[DB] Initializing database...")
     sys.stdout.flush()
     try:
         # Connect without database to create it
         temp_config = DB_CONFIG.copy()
         db_name = temp_config.pop("database")
-        print(f"[DB] Connecting to MySQL at {temp_config['host']}...")
+        print_and_flush(f"[DB] Connecting to MySQL at {temp_config['host']}...")
         sys.stdout.flush()
         conn = mysql.connector.connect(**temp_config)
         cursor = conn.cursor()
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {db_name} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")
         cursor.execute(f"USE {db_name}")
-        print(f"[DB] Using database {db_name}")
+        print_and_flush(f"[DB] Using database {db_name}")
         sys.stdout.flush()
         
         # Create tasks table
@@ -203,9 +523,9 @@ def init_db():
         conn.commit()
         cursor.close()
         conn.close()
-        print("[DB OK] Database and tables initialized.")
+        print_and_flush("[DB OK] Database and tables initialized.")
     except Error as e:
-        print(f"[DB ERROR] Initialization failed: {e}")
+        print_and_flush(f"[DB ERROR] Initialization failed: {e}")
 
 def add_to_queue(task_type, data):
     # Create hash to avoid duplicates
@@ -214,7 +534,7 @@ def add_to_queue(task_type, data):
     
     conn = get_db_connection()
     if not conn:
-        print(f"[QUEUE] DB Connection failed. Using JSON fallback for {task_type}.")
+        print_and_flush(f"[QUEUE] DB Connection failed. Using JSON fallback for {task_type}.")
         queue = load_json_queue()
         hash_str = f"{task_type}_{json.dumps(data, sort_keys=True)}"
         task_hash = hashlib.sha256(hash_str.encode()).hexdigest()
@@ -240,7 +560,7 @@ def add_to_queue(task_type, data):
         if existing:
             status = existing[0]
             if status == 'pending':
-                print(f"[QUEUE] Task already exists with status: pending. Skipping.")
+                print_and_flush(f"[QUEUE] Task already exists with status: pending. Skipping.")
                 return {"status": "pending"}
             if status == 'success':
                 # Check if the file actually exists
@@ -259,10 +579,10 @@ def add_to_queue(task_type, data):
                     exists = os.path.exists(os.path.join(WRITING_APP_DATA_DIR, "suggestions", filename))
                 
                 if exists:
-                    print(f"[QUEUE] Task already exists with status: success and file exists. Skipping.")
+                    print_and_flush(f"[QUEUE] Task already exists with status: success and file exists. Skipping.")
                     return {"status": "success"}
                 else:
-                    print(f"[QUEUE] Task marked as success but file missing. Re-queuing...")
+                    print_and_flush(f"[QUEUE] Task marked as success but file missing. Re-queuing...")
         
         # Insert new task
         sql = "INSERT INTO ai_tasks (task_hash, task_type, task_data, status) VALUES (%s, %s, %s, 'pending')"
@@ -272,7 +592,7 @@ def add_to_queue(task_type, data):
         conn.close()
         return {"status": "enqueued"}
     except Error as e:
-        print(f"[DB ERROR] Add to queue failed: {e}. Using JSON fallback.")
+        print_and_flush(f"[DB ERROR] Add to queue failed: {e}. Using JSON fallback.")
         queue = load_json_queue()
         # Check if already exists
         if any(t['task_hash'] == task_hash for t in queue):
@@ -302,9 +622,58 @@ def get_queue_size():
     except:
         return len([t for t in load_json_queue() if t['status'] == 'pending'])
 
+async def _run_pro_worker():
+    """PRO worker: handles all content tasks (vocab, quiz, writing, etc.)"""
+    print_and_flush(f"[WORKER-PRO] Started. Handling: {', '.join(PRO_TYPES)}...")
+    _consecutive_429 = 0
+    while True:
+        try:
+            await _process_loop_step(worker_type="PRO")
+            _consecutive_429 = 0
+        except Exception as e:
+            err_str = str(e).lower()
+            if "429" in err_str or isinstance(e, asyncio.TimeoutError):
+                _consecutive_429 += 1
+                wait = min(300, 60 * _consecutive_429)
+                print_and_flush(f"[WORKER-PRO] Rate-limit #{_consecutive_429}. Waiting {wait}s...")
+                await asyncio.sleep(wait)
+            elif "unauthenticated" in err_str or "expired" in err_str:
+                print_and_flush("[WORKER-PRO] Auth error. Reinit in 30s...")
+                await asyncio.sleep(30)
+                try:
+                    await init_gemini()
+                except: pass
+            else:
+                await asyncio.sleep(10)
+
+async def _run_free_worker():
+    """FREE worker: handles ONLY image tasks."""
+    print_and_flush(f"[WORKER-FREE] Started. Handling: {', '.join(FREE_TYPES)}...")
+    _consecutive_429 = 0
+    while True:
+        try:
+            await _process_loop_step(worker_type="FREE")
+            _consecutive_429 = 0
+        except Exception as e:
+            err_str = str(e).lower()
+            if "429" in err_str or isinstance(e, asyncio.TimeoutError):
+                _consecutive_429 += 1
+                wait = min(300, 60 * _consecutive_429)
+                print_and_flush(f"[WORKER-FREE] Rate-limit #{_consecutive_429}. Waiting {wait}s...")
+                await asyncio.sleep(wait)
+            elif "unauthenticated" in err_str or "expired" in err_str:
+                print_and_flush("[WORKER-FREE] Auth error. Reinit in 30s...")
+                await asyncio.sleep(30)
+                try:
+                    await init_gemini()
+                except: pass
+            else:
+                await asyncio.sleep(10)
+
 async def process_queue_worker():
     global gemini_chat
-    print("[WORKER] MySQL Queue worker started.")
+    print_and_flush("[WORKER] MySQL Queue worker started.")
+
     
     # Initial session recovery attempt
     try:
@@ -316,216 +685,320 @@ async def process_queue_worker():
             if row and gemini_client:
                 # If we have a previous chat name, try to find it in the client
                 # This depends on your gemini_web_api library capabilities
-                print(f"[WORKER] Found previous chat session: {row[0]}")
+                print_and_flush(f"[WORKER] Found previous chat session: {row[0]}")
             cursor.close()
             conn.close()
     except Exception as e:
-        print(f"[WORKER] Recovery error: {e}")
+        print_and_flush(f"[WORKER] Recovery error: {e}")
+
+    _consecutive_429 = 0
 
     while True:
-        conn = get_db_connection()
-        if not conn:
-            # Try JSON Queue Fallback
-            queue = load_json_queue()
-            pending_tasks = [t for t in queue if t['status'] == 'pending']
-            if pending_tasks:
-                task = pending_tasks[0]
-                task_id = task['id']
-                task_type = task['task_type']
-                data = json.loads(task['task_data'])
-                
-                if gemini_chat is None:
-                    await asyncio.sleep(5)
-                    continue
-                
-                print(f"\n\n[WORKER-JSON] --- PROCESSING TASK #{task_id} ---")
+        try:
+            await _process_loop_step()
+            _consecutive_429 = 0  # reset on success
+        except Exception as e:
+            import traceback
+            err_str = str(e).lower()
+            print_and_flush(f"[WORKER CRITICAL ERROR] {type(e).__name__}: {e}")
+            print_and_flush(f"[WORKER CRITICAL TRACEBACK]\n{traceback.format_exc()}")
+            sys.stdout.flush()
+            if "429" in err_str or isinstance(e, asyncio.TimeoutError):
+                _consecutive_429 += 1
+                wait = min(300, 60 * _consecutive_429)  # 60s, 120s, 180s... max 5min
+                print_and_flush(f"[WORKER] Rate-limit/Timeout (#{_consecutive_429}). Waiting {wait}s WITHOUT reinit...")
+                await asyncio.sleep(wait)
+            elif "unauthenticated" in err_str or "expired" in err_str:
+                print_and_flush("[WORKER] Auth error detected. Reinitializing Gemini in 30s...")
+                await asyncio.sleep(30)
                 try:
-                    if task_type == "theory_perfection":
-                        result = await generate_theory_perfection(data["filename"])
-                        save_theory_to_file(data["filename"], result)
-                    elif task_type == "txt_to_html_lesson":
-                        result = await generate_txt_to_html_lesson(data["filename"])
-                        save_lesson_to_file(data["filename"], result)
-                    
-                    # Mark as success
-                    for t in queue:
-                        if t['id'] == task_id:
-                            t['status'] = 'success'
-                            t['completed_at'] = datetime.datetime.now().isoformat()
-                    save_json_queue(queue)
-                    print(f"[WORKER-JSON] Task #{task_id} success.")
-                except Exception as ex:
-                    print(f"[WORKER-JSON ERROR] {ex}")
-                    for t in queue:
-                        if t['id'] == task_id:
-                            t['status'] = 'failed'
-                    save_json_queue(queue)
-                
-                await asyncio.sleep(5)
+                    await init_gemini()
+                    print_and_flush("[WORKER] Gemini reinitialized successfully.")
+                except Exception as reinit_err:
+                    print_and_flush(f"[WORKER] Reinit failed: {reinit_err}")
             else:
                 await asyncio.sleep(10)
-            continue
-            
-        try:
-            cursor = conn.cursor(dictionary=True)
-            
-            # Real-time progress stats
-            cursor.execute("SELECT status, COUNT(*) as count FROM ai_tasks GROUP BY status")
-            rows = cursor.fetchall()
-            stats = {row['status']: row['count'] for row in rows}
-            total = sum(stats.values())
-            done = stats.get('success', 0) + stats.get('failed', 0)
-            pending = stats.get('pending', 0)
-            percent = (done / total * 100) if total > 0 else 0
 
-            # Prioritize BAREM and IMAGE over VOCAB to avoid early rate limits
-            cursor.execute("""
-                SELECT * FROM ai_tasks 
-                WHERE status = 'pending' 
+async def _process_loop_step(worker_type: str = "PRO"):
+    global gemini_chat
+    conn = get_db_connection()
+    if not conn:
+        print_and_flush(f"[WORKER-{worker_type}] DB connection failed. Sleeping 5s...")
+        await asyncio.sleep(5)
+        return
+    
+    try:
+        cursor = conn.cursor(dictionary=True)
+        
+        # Real-time progress stats
+        cursor.execute("SELECT status, COUNT(*) as count FROM ai_tasks GROUP BY status")
+        rows = cursor.fetchall()
+        stats = {row['status']: row['count'] for row in rows}
+        total = sum(stats.values())
+        done = stats.get('success', 0) + stats.get('failed', 0)
+        pending = stats.get('pending', 0)
+        percent = (done / total * 100) if total > 0 else 0
+
+        # Increased pacing to 10s per user request to avoid "Ban/429"
+        print_and_flush(f"[WORKER-{worker_type}] Pacing... waiting 10s before request.")
+        await asyncio.sleep(10)
+
+        # Set task filter based on worker type for PARALLEL optimization
+        if worker_type == "FREE":
+            # FREE worker handles lightweight tasks
+            task_type_filter = "AND task_type IN ('vocab', 'ielts_quiz')"
+            active_chat = gemini_chat_free if gemini_chat_free else gemini_chat_pro
+            account_label = "FREE"
+        else:  # PRO
+            # PRO worker handles heavy content generation
+            task_type_filter = "AND task_type IN ('practice_generation', 'writing_sample', 'writing_guide', 'barem', 'task1_chart', 'theory_perfection', 'vocab')"
+            active_chat = gemini_chat_pro
+            account_label = "PRO"
+
+        if active_chat is None:
+            print_and_flush(f"\n[WORKER-{worker_type}] Gemini ({account_label}) not ready. Waiting...")
+            cursor.close()
+            conn.close()
+            await asyncio.sleep(5)
+            return
+
+        # Atomically claim a task using worker_id with PRIORITY
+        import random as _random
+        worker_id = f"{worker_type}_{_random.randint(1000, 9999)}"
+        
+        # Priority logic: practice_generation > writing_sample > barem > others
+        priority_sql = ""
+        if worker_type == "PRO":
+            priority_sql = """
                 ORDER BY 
                     CASE 
-                        WHEN task_type = 'writing_guide' THEN 1
-                        WHEN task_type = 'theory_perfection' THEN 1
-                        WHEN task_type = 'writing_sample' THEN 1
-                        WHEN task_type = 'barem' THEN 2 
-                        WHEN task_type = 'image' THEN 3
-                        ELSE 4
+                        WHEN task_type = 'practice_generation' THEN 1
+                        WHEN task_type = 'writing_sample' THEN 2
+                        WHEN task_type = 'writing_guide' THEN 2
+                        WHEN task_type = 'barem' THEN 3
+                        WHEN task_type = 'ielts_quiz' THEN 4
+                        ELSE 5
                     END, 
-                    created_at ASC 
-                LIMIT 1
-            """)
-            task = cursor.fetchone()
-            
-            if pending > 0:
-                print(f"\r[PROGRESS] {done}/{total} tasks ({percent:.1f}%) | {pending} pending", end="", flush=True)
-            
-            if task:
-                task_id = task['id']
-                task_type = task['task_type']
-                data = json.loads(task['task_data'])
-                
-                # Check Gemini readiness
-                if gemini_chat is None:
-                    print(f"\n[WORKER] Gemini not ready. Waiting for initialization...")
-                    await asyncio.sleep(5)
-                    continue
+                    created_at ASC
+            """
+        else:
+            priority_sql = "ORDER BY created_at ASC"
 
-                # Super safe title access
-                chat_title = "IELTS Expert"
-                try:
-                    if gemini_chat:
-                        if hasattr(gemini_chat, 'title'):
-                            chat_title = str(gemini_chat.title)
-                        elif hasattr(gemini_chat, 'metadata'):
-                            if isinstance(gemini_chat.metadata, dict):
-                                chat_title = gemini_chat.metadata.get("title", "IELTS Session")
-                            else:
-                                chat_title = "IELTS Session"
-                except:
-                    pass
+        cursor.execute(f"""
+            UPDATE ai_tasks SET status = 'processing', worker_id = %s
+            WHERE status = 'pending' {task_type_filter}
+            {priority_sql}
+            LIMIT 1
+        """, (worker_id,))
+
+        conn.commit()
+
+        cursor.execute("SELECT * FROM ai_tasks WHERE worker_id = %s AND status = 'processing' LIMIT 1", (worker_id,))
+        task = cursor.fetchone()
+        
+        if pending > 0:
+            print_and_flush(f"\r[PROGRESS] {done}/{total} tasks ({percent:.1f}%) | {pending} pending", end="", flush=True)
+        
+        if task:
+            task_id = task['id']
+            task_type = task['task_type']
+            data = json.loads(task['task_data'])
+
+            # Super safe title access
+            chat_title = "IELTS Session"
+            try:
+                if hasattr(active_chat, 'title') and active_chat.title:
+                    chat_title = str(active_chat.title)
+            except:
+                pass
+            
+            print_and_flush(f"\n\n[WORKER] --- PROCESSING TASK #{task_id} [{account_label}] ---")
+            print_and_flush(f"[TYPE] {task_type.upper()}")
+            print_and_flush(f"[CHAT] {chat_title}")
+            
+            error_occurred = False
+            try:
+
+                if task['task_type'] == "barem":
+                    result = await generate_barem_suggestion(data["question"], data["band"], chat=active_chat)
+                    save_barem_to_file(data["id"], data["band"], result)
+                elif task['task_type'] == "vocab":
+                    # Pass the chunk number to ensure diversity
+                    chunk_num = data.get("chunk", 1)
+                    result_json = await generate_vocab_for_question(
+                        data["question"], 
+                        data["count"], 
+                        data.get("vocab_type", "vocabulary"),
+                        chunk=chunk_num,
+                        chat=active_chat
+                    )
+                    save_vocab_to_file(data["id"], result_json, data.get("vocab_type", "vocabulary"))
+                elif task['task_type'] == "writing_guide":
+                    result = await generate_writing_guide(data["question"], data.get("task_type_num", 2), chat=active_chat)
+                    save_writing_guide_to_file(data["id"], result)
+                elif task['task_type'] == "writing_sample":
+                    result = await generate_writing_sample(data["question"], data.get("task_type_num", 2), data.get("band", 8), chat=active_chat)
+                    save_writing_sample_to_file(data["id"], data.get("band", 8), result)
+                elif task['task_type'] == "practice_generation":
+                    filename = data.get("filename")
+                    # Support full path override for lesson files outside THEORY_DIR
+                    file_path = data.get("file_path") or os.path.join(THEORY_DIR, filename)
+                    if os.path.exists(file_path):
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            html_content = f.read()
+                        all_questions = []
+                        
+                        # STEP 1: Generate a Master Illustration (Skipped if ENABLE_LESSON_IMAGES is False)
+                        if ENABLE_LESSON_IMAGES:
+                            try:
+                                print_and_flush(f"[WORKER] Generating Master Illustration for {filename}...")
+                                img_success = await generate_lesson_illustration(html_content, filename, chat=active_chat)
+                            except Exception as img_e:
+                                print_and_flush(f"[IMAGE ERROR] {img_e}")
+                        else:
+                            print_and_flush(f"[WORKER] Skipping Illustration for {filename} (Priority: Content)")
+
+                        # STEP 2: Generate Questions (2 chunks x 50)
+                        for i in range(1, 3): 
+                            chunk_json = await generate_comprehensive_practice(html_content, filename, i, 50, chat=active_chat)
+                            try:
+                                chunk_data = json.loads(chunk_json)
+                                if isinstance(chunk_data, list): all_questions.extend(chunk_data)
+                            except: pass
+                        if all_questions:
+                            # Use the buffer if generate_lesson_illustration modified it
+                            final_html = current_html_buffer if current_html_buffer else html_content
+                            updated_html = inject_practice_to_html(final_html, all_questions)
+                            with open(file_path, "w", encoding="utf-8") as f:
+                                f.write(updated_html)
+                            print_and_flush(f"[WORKER] Injected Illustration and {len(all_questions)} questions into {filename}")
+                            # Reset buffer
+                            globals()['current_html_buffer'] = ""
+                    else:
+                        print_and_flush(f"[WORKER] File not found: {file_path}")
+                elif task['task_type'] == "task1_chart":
+                    result = await generate_task1_chart_data(data["question"], data["sample"], data.get("guide", ""), chat=active_chat)
+                    save_chart_to_file(data["id"], result)
+                elif task['task_type'] == "theory_perfection":
+                    result = await generate_theory_perfection(data["filename"], chat=active_chat)
+                    save_theory_to_file(data["filename"], result)
+                elif task['task_type'] == "txt_to_html_lesson":
+                    result = await generate_txt_to_html_lesson(data["filename"], chat=active_chat)
+                    save_lesson_to_file(data["filename"], result)
+                elif task['task_type'] == "ielts_quiz":
+                    result = await generate_ielts_quiz(data["word"], chat=active_chat)
+                    save_quiz_to_file(data["id"], result)
+
                 
-                print(f"\n\n[WORKER] --- PROCESSING TASK #{task_id} ---")
-                print(f"[TYPE] {task_type.upper()}")
-                print(f"[CHAT] {chat_title}")
-                
-                error_occurred = False
-                try:
-                    if task['task_type'] == "barem":
-                        result = await generate_barem_suggestion(data["question"], data["band"])
-                        save_barem_to_file(data["id"], data["band"], result)
-                    elif task['task_type'] == "vocab":
-                        # Pass the chunk number to ensure diversity
-                        chunk_num = data.get("chunk", 1)
-                        result_json = await generate_vocab_for_question(
-                            data["question"], 
-                            data["count"], 
-                            data.get("vocab_type", "vocabulary"),
-                            chunk=chunk_num
-                        )
-                        save_vocab_to_file(data["id"], result_json, data.get("vocab_type", "vocabulary"))
-                    elif task['task_type'] == "writing_guide":
-                        result = await generate_writing_guide(data["question"], data.get("task_type_num", 2))
-                        save_writing_guide_to_file(data["id"], result)
-                    elif task['task_type'] == "writing_sample":
-                        result = await generate_writing_sample(data["question"], data.get("task_type_num", 2), data.get("band", 8))
-                        save_writing_sample_to_file(data["id"], data.get("band", 8), result)
-                    elif task['task_type'] == "task1_chart":
-                        result = await generate_task1_chart_data(data["question"], data["sample"], data.get("guide", ""))
-                        save_chart_to_file(data["id"], result)
-                    elif task['task_type'] == "theory_perfection":
-                        result = await generate_theory_perfection(data["filename"])
-                        save_theory_to_file(data["filename"], result)
-                    elif task['task_type'] == "txt_to_html_lesson":
-                        result = await generate_txt_to_html_lesson(data["filename"])
-                        save_lesson_to_file(data["filename"], result)
-                    
+                cursor.execute(
+                    "UPDATE ai_tasks SET status = 'success', chat_name = %s, completed_at = %s WHERE id = %s",
+                    (chat_title, datetime.datetime.now(), task_id)
+                )
+                conn.commit()
+                # Trigger manifest update
+                update_ai_data_list()
+            except Exception as e:
+                import traceback
+                error_occurred = True
+                err_msg = str(e)
+                err_lower = err_msg.lower()
+                print_and_flush(f"[ERROR] Task #{task_id} ({task_type}) FAILED: {type(e).__name__}: {err_msg}")
+                print_and_flush(f"[ERROR TRACEBACK]\n{traceback.format_exc()}")
+                sys.stdout.flush()
+
+                is_rate_limit = "429" in err_msg or "1097" in err_msg or isinstance(e, asyncio.TimeoutError)
+                is_auth_error = (
+                    "unauthenticated" in err_lower
+                    or "expired" in err_lower
+                ) and not is_rate_limit
+
+                if is_rate_limit:
+                    print_and_flush(f"[!] Rate-limit (429/Timeout) on task #{task_id}. Resetting to pending. Waiting 5 minutes...")
                     cursor.execute(
-                        "UPDATE ai_tasks SET status = 'success', chat_name = %s, completed_at = %s WHERE id = %s",
-                        (chat_title, datetime.datetime.now(), task_id)
+                        "UPDATE ai_tasks SET status = 'pending' WHERE id = %s",
+                        (task_id,)
                     )
                     conn.commit()
-                    # Trigger manifest update
-                    update_ai_data_list()
-                except Exception as e:
-                    error_occurred = True
-                    err_msg = str(e)
-                    print(f"[ERROR] Task #{task_id} FAILED: {err_msg}")
-                    
-                    if "aborted" in err_msg.lower() or "429" in err_msg or "expired" in err_msg.lower():
-                        print(f"[!] [WARNING] Google Limit or Auth issue detected.")
-                    
+                    cursor.close()
+                    conn.close()
+                    await asyncio.sleep(300)  # Wait 5 minutes, no reinit
+                    return
+                elif is_auth_error:
+                    print_and_flush(f"[!] Auth error on task #{task_id}. Resetting to pending + reinitializing...")
+                    cursor.execute(
+                        "UPDATE ai_tasks SET status = 'pending' WHERE id = %s",
+                        (task_id,)
+                    )
+                    conn.commit()
+                    cursor.close()
+                    conn.close()
+                    await asyncio.sleep(30)
+                    try:
+                        await init_gemini()
+                        print_and_flush("[WORKER] Gemini reinitialized OK.")
+                    except Exception as reinit_err:
+                        print_and_flush(f"[WORKER] Reinit failed: {reinit_err}")
+                    await asyncio.sleep(10)
+                    return
+                else:
                     cursor.execute(
                         "UPDATE ai_tasks SET status = 'failed', chat_name = %s, completed_at = %s WHERE id = %s",
                         (chat_title, datetime.datetime.now(), task_id)
                     )
-                
-                conn.commit()
-                # Nghỉ 30s nếu lỗi để tránh bị ban, nghỉ 2s nếu thành công
-                wait_time = 30 if error_occurred else 2
-                print(f"[WORKER] Task #{task_id} finished. Next in {wait_time}s...")
-                await asyncio.sleep(wait_time)
-            else:
-                await asyncio.sleep(2)
             
-            cursor.close()
-            conn.close()
-        except Error as e:
-            # Try JSON Queue
-            queue = load_json_queue()
-            pending_tasks = [t for t in queue if t['status'] == 'pending']
-            if pending_tasks:
-                task = pending_tasks[0]
-                task_id = task['id']
-                task_type = task['task_type']
-                data = json.loads(task['task_data'])
-                
-                if gemini_chat is None:
-                    await asyncio.sleep(5)
-                    continue
-                
-                print(f"\n\n[WORKER-JSON] --- PROCESSING TASK #{task_id} ---")
-                try:
-                    if task_type == "theory_perfection":
-                        result = await generate_theory_perfection(data["filename"])
-                        save_theory_to_file(data["filename"], result)
-                    
-                    # Mark as success
-                    for t in queue:
-                        if t['id'] == task_id:
-                            t['status'] = 'success'
-                            t['completed_at'] = datetime.datetime.now().isoformat()
-                    save_json_queue(queue)
-                    print(f"[WORKER-JSON] Task #{task_id} success.")
-                except Exception as ex:
-                    print(f"[WORKER-JSON ERROR] {ex}")
-                    for t in queue:
-                        if t['id'] == task_id:
-                            t['status'] = 'failed'
-                    save_json_queue(queue)
-                
+            conn.commit()
+            # Nghỉ 30s nếu lỗi để tránh bị ban, nghỉ 5s nếu thành công
+            wait_time = 30 if error_occurred else 5
+            print_and_flush(f"[WORKER] Task #{task_id} finished. Next in {wait_time}s...")
+            await asyncio.sleep(wait_time)
+
+        else:
+            await asyncio.sleep(2)
+        
+        cursor.close()
+        conn.close()
+    except Error as e:
+        print_and_flush(f"[WORKER DB ERROR] {e}")
+        # Try JSON Queue
+        queue = load_json_queue()
+        pending_tasks = [t for t in queue if t['status'] == 'pending']
+        if pending_tasks:
+            task = pending_tasks[0]
+            task_id = task['id']
+            task_type = task['task_type']
+            data = json.loads(task['task_data'])
+            
+            if gemini_chat is None:
                 await asyncio.sleep(5)
-            else:
-                await asyncio.sleep(10)
+                return
+            
+            print_and_flush(f"\n\n[WORKER-JSON] --- PROCESSING TASK #{task_id} ---")
+            try:
+                if task_type == "theory_perfection":
+                    result = await generate_theory_perfection(data["filename"])
+                    save_theory_to_file(data["filename"], result)
+                elif task_type == "txt_to_html_lesson":
+                    result = await generate_txt_to_html_lesson(data["filename"])
+                    save_lesson_to_file(data["filename"], result)
+                
+                # Mark as success
+                for t in queue:
+                    if t['id'] == task_id:
+                        t['status'] = 'success'
+                        t['completed_at'] = datetime.datetime.now().isoformat()
+                save_json_queue(queue)
+                print_and_flush(f"[WORKER-JSON] Task #{task_id} success.")
+            except Exception as ex:
+                print_and_flush(f"[WORKER-JSON ERROR] {ex}")
+                for t in queue:
+                    if t['id'] == task_id:
+                        t['status'] = 'failed'
+                save_json_queue(queue)
+            
+            await asyncio.sleep(5)
+        else:
+            await asyncio.sleep(10)
+
 
 def save_barem_to_file(qid, band, content):
     suggestions_dir = os.path.join(WRITING_APP_DATA_DIR, "suggestions")
@@ -574,9 +1047,10 @@ def save_vocab_to_file(qid, vocab_list, vocab_type="vocabulary"):
     speaking_path = os.path.join(SPEAKING_VOCAB_DIR, speaking_filename)
     with open(speaking_path, "w", encoding="utf-8") as f:
         json.dump({"id": qid, "vocab": vocab_list, "type": vocab_type}, f, ensure_ascii=False, indent=2)
-    print(f"[VOCAB] Saved {len(vocab_list)} words to ai_vocab/{speaking_filename}")
+    print_and_flush(f"[VOCAB] Saved {len(vocab_list)} words to ai_vocab/{speaking_filename}")
     
     # Also update image prompts
+    # Update image prompts (Only for vocabulary)
     update_image_prompts(vocab_list)
 
 def save_writing_guide_to_file(qid, content):
@@ -610,7 +1084,7 @@ def save_theory_to_file(filename, content):
     file_path = os.path.join(THEORY_DIR, filename)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"[THEORY] Saved perfected file: {filename}")
+    print_and_flush(f"[THEORY] Saved perfected file: {filename}")
 
 def update_image_prompts(vocab_list):
     conn = get_db_connection()
@@ -635,9 +1109,9 @@ def update_image_prompts(vocab_list):
         conn.commit()
         cursor.close()
         conn.close()
-        print(f"[QUEUE] Enqueued {len(vocab_list)} image tasks.")
+        print_and_flush(f"[QUEUE] Enqueued {len(vocab_list)} image tasks.")
     except Exception as e:
-        print(f"[DB ERROR] Image enqueuing failed: {e}")
+        print_and_flush(f"[DB ERROR] Image enqueuing failed: {e}")
 
 def update_ai_data_list():
     try:
@@ -651,11 +1125,11 @@ def update_ai_data_list():
                 "ai_vocab": v_files,
                 "ai_suggestions": s_files
             }, f, ensure_ascii=False, indent=2)
-        print(f"[LIST] Updated ai_data_list.json: {len(v_files)} vocab, {len(s_files)} suggestions.")
+        print_and_flush(f"[LIST] Updated ai_data_list.json: {len(v_files)} vocab, {len(s_files)} suggestions.")
     except Exception as e:
-        print(f"[LIST ERROR] {e}")
+        print_and_flush(f"[LIST ERROR] {e}")
 
-async def generate_vocab_for_question(question, count, vocab_type="vocabulary", chunk=1):
+async def generate_vocab_for_question(question, count, vocab_type="vocabulary", chunk=1, chat=None):
     global gemini_chat
     
     type_prompts = {
@@ -685,8 +1159,12 @@ Ví dụ: [{{ "word": "penchant for", "ipa": "/ˈpentʃənt/", "meaning": "sở 
 
 (Unique ID: {seed})
 """
-    response = await gemini_chat.send_message(prompt)
+    print_and_flush(f"[VOCAB] Gửi prompt tới Gemini (chunk={chunk}, type={vocab_type})...")
+    sys.stdout.flush()
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     txt = response.text.strip()
+    print_and_flush(f"[VOCAB] Phản hồi nhận được ({len(txt)} ký tự): {txt[:200]}...")
+    sys.stdout.flush()
     if "```json" in txt:
         txt = txt.split("```json")[1].split("```")[0].strip()
     elif "```" in txt:
@@ -755,7 +1233,7 @@ async def analyze_recordings(recordings: list) -> dict:
     
     try:
         prompt = build_ielts_prompt(recordings)
-        response = await gemini_chat.send_message(prompt)
+        response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
         
         if not response or not response.text:
             return {"error": "AI returned an empty response"}
@@ -814,7 +1292,7 @@ async def analyze_recordings(recordings: list) -> dict:
         return {"error": "Gemini request timed out (120s)"}
     except Exception as e:
         raw_output = response.text if 'response' in locals() and hasattr(response, 'text') else "N/A"
-        print(f"AI Process Error: {e}\nRaw Output: {raw_output[:500]}...")
+        print_and_flush(f"AI Process Error: {e}\nRaw Output: {raw_output[:500]}...")
         return {"error": f"AI Process Error: {str(e)}", "raw": raw_output}
 
 
@@ -825,13 +1303,13 @@ async def lookup_word(word: str) -> dict:
     word_clean = word.lower().strip()
     cache = load_dictionary_cache()
     if word_clean in cache:
-        print(f"[CACHE HIT] {word_clean}")
+        print_and_flush(f"[CACHE HIT] {word_clean}")
         return cache[word_clean]
 
     if gemini_chat is None:
         raise RuntimeError("Gemini chưa được khởi tạo!")
     
-    print(f"[AI LOOKUP] {word_clean} (Querying Gemini...)")
+    print_and_flush(f"[AI LOOKUP] {word_clean} (Querying Gemini...)")
     prompt = f"""Bạn là một từ điển IELTS thông minh. Hãy giải thích từ/cụm từ sau: "{word_clean}"
     
     Yêu cầu trả về định dạng JSON (không có văn bản dẫn nhập) với các trường:
@@ -843,7 +1321,7 @@ async def lookup_word(word: str) -> dict:
     
     Ví dụ: {{ "word": "mitigate", "ipa": "/ˈmɪt.ɪ.ɡeɪt/", "meaning": "giảm thiểu, làm nhẹ bớt", "example": "Government should implement policies to mitigate the effects of climate change.", "context": "Dùng trong formal writing/speaking khi nói về việc giảm bớt hậu quả tiêu cực." }}
     """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     txt = response.text.strip()
     if "```json" in txt:
         txt = txt.split("```json")[1].split("```")[0].strip()
@@ -855,12 +1333,12 @@ async def lookup_word(word: str) -> dict:
         save_to_dictionary_cache(word_clean, data)
         return data
     except Exception as e:
-        print(f"[AI ERROR] JSON parsing failed: {e}")
-        print(f"[RAW RESPONSE] {txt}")
+        print_and_flush(f"[AI ERROR] JSON parsing failed: {e}")
+        print_and_flush(f"[RAW RESPONSE] {txt}")
         raise e
 
 
-async def generate_barem_suggestion(question: str, band: int) -> str:
+async def generate_barem_suggestion(question: str, band: int, chat=None) -> str:
     """Yêu cầu Gemini tạo câu trả lời mẫu cho một band điểm cụ thể."""
     global gemini_chat
     if gemini_chat is None:
@@ -876,11 +1354,11 @@ Yêu cầu cực kỳ quan trọng:
 4. ĐỊNH DẠNG: Chỉ trả về nội dung câu trả lời mẫu, KHÔNG bao gồm bất kỳ lời dẫn nào.
 5. Cố gắng chia đoạn nếu cần thiết để dễ đọc.
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     return response.text.strip()
 
 
-async def generate_writing_guide(question: str, task_type_num: int = 2) -> str:
+async def generate_writing_guide(question: str, task_type_num: int = 2, chat=None) -> str:
     """Tạo hướng dẫn lập dàn ý và ý tưởng cho Writing Task 1 hoặc 2."""
     global gemini_chat
     if gemini_chat is None: raise RuntimeError("Gemini chưa được khởi tạo!")
@@ -908,7 +1386,7 @@ LƯU Ý THẨM MỸ:
 - TUYỆT ĐỐI KHÔNG dùng ký hiệu LaTeX như `$\rightarrow$`. Hãy dùng ký tự `→` thông thường.
 - Ngôn ngữ trình bày: Tiếng Việt (kèm thuật ngữ Tiếng Anh chuyên môn).
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     return response.text.strip()
 
 
@@ -931,11 +1409,11 @@ Yêu cầu phản hồi bằng tiếng Việt với định dạng HTML (chỉ l
 
 Hãy sử dụng các class Tailwind CSS (đã có sẵn trong web app) để trang trí cho đẹp mắt (ví dụ: bg-indigo-50, text-indigo-700, rounded-xl, v.v.).
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     return response.text
 
 
-async def generate_writing_sample(question: str, task_type_num: int = 2, band: int = 8) -> str:
+async def generate_writing_sample(question: str, task_type_num: int = 2, band: int = 8, chat=None) -> str:
     """Tạo bài mẫu IELTS Writing Task 1 hoặc 2."""
     global gemini_chat
     if gemini_chat is None: raise RuntimeError("Gemini chưa được khởi tạo!")
@@ -960,10 +1438,10 @@ Yêu cầu:
 - Dùng từ vựng Band 8-9, cấu trúc phức hợp.
 - ĐỊNH DẠNG: Chỉ trả về nội dung bài mẫu.
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     return response.text.strip()
 
-async def generate_theory_perfection(filename: str) -> str:
+async def generate_theory_perfection(filename: str, chat=None) -> str:
     """Hoàn thiện trang lý thuyết IELTS Writing Task 1."""
     global gemini_chat
     if gemini_chat is None: raise RuntimeError("Gemini chưa được khởi tạo!")
@@ -995,7 +1473,7 @@ QUY TẮC TRẢ VỀ:
 - Giữ nguyên các script tag (Lucide, Tailwind, navigation links).
 - Đảm bảo file có thể chạy độc lập.
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     new_content = response.text.strip()
     
     # Extract HTML if wrapped in triple backticks
@@ -1011,7 +1489,161 @@ QUY TẮC TRẢ VỀ:
 
 
 
-async def generate_txt_to_html_lesson(filename: str) -> str:
+async def generate_comprehensive_practice(theory_html: str, filename: str, chunk_index: int = 1, count: int = 50, chat=None) -> str:
+    """Tạo một đợt bài tập (mặc định 50 câu) cho một trang lý thuyết."""
+    global gemini_chat
+    if gemini_chat is None: raise RuntimeError("Gemini chưa được khởi tạo!")
+
+    types = ["Bài tập Dịch", "Word Box", "Fill in the blank", "Chart Analysis"]
+    current_type = types[(chunk_index - 1) % len(types)]
+
+    prompt = f"""Bạn là một chuyên gia khảo thí IELTS. 
+Nhiệm vụ: Tạo đợt thứ {chunk_index} (gồm {count} câu hỏi) cho bộ bài tập 200 câu của bài học sau:
+
+FILE: {filename}
+DẠNG BÀI TẬP CẦN TẬP TRUNG TRONG ĐỢT NÀY: {current_type}
+
+NỘI DUNG LÝ THUYẾT GỐC:
+{theory_html[:3000]}...
+
+YÊU CẦU:
+1. Tạo đúng {count} câu hỏi chất lượng cao, bám sát lý thuyết.
+2. Định dạng trả về: Chỉ trả về một mảng JSON các đối tượng câu hỏi. 
+3. Mỗi đối tượng câu hỏi phải có: 
+   - `id`: số thứ tự (từ {(chunk_index-1)*count + 1} đến {chunk_index*count})
+   - `type`: "{current_type}"
+   - `question`: nội dung câu hỏi
+   - `options`: mảng các lựa chọn (nếu là Word Box) hoặc null
+   - `answer`: đáp án đúng
+   - `hint`: gợi ý
+   - `explanation`: giải thích chi tiết tại sao chọn đáp án đó.
+
+CHỈ TRẢ VỀ MẢNG JSON, KHÔNG GIẢI THÍCH GÌ THÊM.
+"""
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=300)
+    json_str = response.text.strip()
+    
+    # Clean JSON
+    if "```json" in json_str:
+        json_str = json_str.split("```json")[1].split("```")[0].strip()
+    elif "```" in json_str:
+        json_str = json_str.split("```")[1].split("```")[0].strip()
+    
+    return json_str
+
+async def generate_image_with_gemini(word: str, original_prompt: str, task_id: str, chat=None) -> bool:
+    """Generate and save image using Gemini Pro's native capabilities."""
+    global gemini_chat
+    active_chat = chat or gemini_chat
+    if active_chat is None: return False
+
+    # 1. Meta-Prompting for the image
+    educational_prompt = f"""Create a professional, high-quality educational illustration for the IELTS vocabulary word: '{word}'.
+Style: Minimalist, clean, modern, white background, vector-like or realistic 3D, suitable for a premium educational platform.
+Context: {original_prompt}
+Please generate the image now."""
+
+    print_and_flush(f"[IMAGE] Requesting generation for: {word}...")
+    try:
+        response = await asyncio.wait_for(active_chat.send_message(educational_prompt), timeout=180)
+        
+        # gemini-webapi response.images is a list of image objects
+        if hasattr(response, 'images') and response.images:
+            img_obj = response.images[0]
+            target_path = os.path.join(IMAGE_DIR, f"{task_id}.jpg")
+            
+            if hasattr(img_obj, 'save'):
+                # Some versions require keyword argument 'filename'
+                try:
+                    img_obj.save(filename=target_path)
+                except:
+                    img_obj.save(target_path)
+            elif hasattr(img_obj, 'content'):
+                with open(target_path, "wb") as f:
+                    f.write(img_obj.content)
+            elif isinstance(img_obj, bytes):
+                with open(target_path, "wb") as f:
+                    f.write(img_obj)
+            else:
+                print_and_flush(f"[IMAGE] Warning: Unsupported image object type: {type(img_obj)}")
+                return False
+                
+            print_and_flush(f"[IMAGE] SUCCESS: Saved to {os.path.abspath(target_path)}")
+            return True
+        else:
+            print_and_flush(f"[IMAGE] FAILED: Gemini did not return an image object for '{word}'.")
+            return False
+    except Exception as e:
+        print_and_flush(f"[IMAGE ERROR] {e}")
+        return False
+
+async def generate_lesson_illustration(html_content: str, filename: str, chat=None) -> bool:
+    """Generate a high-quality master illustration for the entire lesson and inject it."""
+    active_chat = chat or gemini_chat
+    if active_chat is None: return False
+
+    # 1. Clean HTML to save tokens for analysis
+    text_content = re.sub(r'<[^>]+>', ' ', html_content)[:4000]
+    
+    prompt = f"""You are a professional educational designer. 
+Analyze this IELTS lesson content and create a MASTER ILLUSTRATION that visualizes the core concept.
+CONTENT: {text_content}
+
+STYLE: Professional, artistic, high-quality 3D or detailed vector illustration, white/clean background, cinematic lighting.
+The image should look like a premium cover or a core infographic banner for a top-tier learning platform.
+Please generate the image now."""
+
+    try:
+        response = await asyncio.wait_for(active_chat.send_message(prompt), timeout=300)
+        if hasattr(response, 'images') and response.images:
+            img_obj = response.images[0]
+            safe_name = filename.replace(".html", "").replace(" ", "_")
+            img_filename = f"lesson_{safe_name}.jpg"
+            target_path = os.path.join(IMAGE_DIR, img_filename)
+            
+            if hasattr(img_obj, 'save'):
+                try:
+                    img_obj.save(filename=target_path)
+                except:
+                    img_obj.save(target_path)
+            elif hasattr(img_obj, 'content'):
+                with open(target_path, "wb") as f:
+                    f.write(img_obj.content)
+            elif isinstance(img_obj, bytes):
+                with open(target_path, "wb") as f:
+                    f.write(img_obj)
+            
+            # 2. Inject into HTML (usually at the start of body or after H1)
+            img_tag = f'\n<div class="my-8 text-center"><img src="../../public/image/{img_filename}" alt="Lesson Illustration" class="mx-auto rounded-2xl shadow-2xl border-4 border-white max-w-full lg:max-w-4xl hover:scale-[1.02] transition-transform duration-500"></div>\n'
+            
+            # Simple injection after <body> or the first <h1>
+            updated_html = html_content
+            if '</h1>' in updated_html:
+                updated_html = updated_html.replace('</h1>', '</h1>' + img_tag, 1)
+            elif '<body>' in updated_html:
+                updated_html = updated_html.replace('<body>', '<body>' + img_tag, 1)
+            
+            global current_html_buffer
+            current_html_buffer = updated_html 
+            
+            # Pacing: Pro images are heavy, wait 10s after success
+            print_and_flush("[WORKER-PRO] Image generated. Cooling down 10s...")
+            await asyncio.sleep(10)
+            return True
+        return False
+    except Exception as e:
+        err_msg = str(e)
+        if "429" in err_msg:
+            print_and_flush("[RATE LIMIT] Gemini Pro is tired of making images. Waiting 2 minutes...")
+            await asyncio.sleep(120)
+        print_and_flush(f"[LESSON IMAGE ERROR] {err_msg}")
+        return False
+
+# Global buffer to pass modified HTML between functions in a task
+current_html_buffer = ""
+
+async def generate_txt_to_html_lesson(filename: str, chat=None) -> str:
+
     """Chuyển đổi file TXT đã chia nhỏ thành bài học IELTS HTML chuyên nghiệp."""
     global gemini_chat
     if gemini_chat is None: raise RuntimeError("Gemini chưa được khởi tạo!")
@@ -1049,7 +1681,7 @@ VĂN BẢN THÔ CẦN CHUYỂN ĐỔI:
 
 CHỈ TRẢ VỀ MÃ HTML HOÀN CHỈNH (CÓ ĐỦ THẺ DOCTYPE, HTML, HEAD, BODY), KHÔNG GIẢI THÍCH GÌ THÊM.
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     new_html = response.text.strip()
     
     # 1. Clean code blocks
@@ -1066,13 +1698,13 @@ CHỈ TRẢ VỀ MÃ HTML HOÀN CHỈNH (CÓ ĐỦ THẺ DOCTYPE, HTML, HEAD, BO
     silencer = f"""
     {security_tag}
     <script>
-        (function() {
+        (function() {{
             const originalWarn = console.warn;
-            console.warn = function(...args) {
+            console.warn = function(...args) {{
                 if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
                 originalWarn.apply(console, args);
-            };
-        })();
+            }};
+        }})();
     </script>
     """
     if "</head>" in new_html:
@@ -1091,9 +1723,9 @@ def save_lesson_to_file(filename, html):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"[LESSON] Saved perfected lesson: {output_filename}")
+    print_and_flush(f"[LESSON] Saved perfected lesson: {output_filename}")
 
-async def generate_task1_chart_data(question: str, sample: str, guide: str = "") -> dict:
+async def generate_task1_chart_data(question: str, sample: str, guide: str = "", chat=None) -> dict:
     """Trích xuất dữ liệu từ câu hỏi, bài mẫu và hướng dẫn Task 1 để tạo JSON cho Chart.js."""
     global gemini_chat
     if gemini_chat is None:
@@ -1120,7 +1752,7 @@ GHI CHÚ:
 2. Sử dụng "Hướng dẫn/Gợi ý" để xác định xu hướng hoặc các mốc dữ liệu quan trọng nếu bài mẫu chưa mô tả chi tiết.
 3. Trả về đúng 1 khối code JSON DUY NHẤT.
 """
-    response = await gemini_chat.send_message(prompt)
+    response = await asyncio.wait_for((chat or gemini_chat).send_message(prompt), timeout=120)
     txt = response.text.strip()
     if "```json" in txt:
         txt = txt.split("```json")[1].split("```")[0].strip()
@@ -1130,7 +1762,7 @@ GHI CHÚ:
     try:
         return json.loads(txt)
     except Exception as e:
-        print(f"[AI ERROR] JSON parsing failed: {e}")
+        print_and_flush(f"[AI ERROR] JSON parsing failed: {e}")
         # Return a fallback empty structure
         return {"type": "bar", "labels": [], "datasets": []}
 
@@ -1142,7 +1774,7 @@ class IELTSHandler(BaseHTTPRequestHandler):
 
     def log_message(self, format, *args):
         # In log gọn hơn
-        print(f"[{self.command}] {self.path} — {args[1] if len(args) > 1 else ''}")
+        print_and_flush(f"[{self.command}] {self.path} — {args[1] if len(args) > 1 else ''}")
 
     def send_cors_headers(self):
         self.send_header("Access-Control-Allow-Origin", "*")
@@ -1158,7 +1790,7 @@ class IELTSHandler(BaseHTTPRequestHandler):
         # Clean path: remove query params and trailing slashes
         clean_path = self.path.split('?')[0].rstrip('/')
         if clean_path == "": clean_path = "/"
-        print(f"[SERVER] GET: {clean_path} (Full: {self.path})")
+        print_and_flush(f"[SERVER] GET: {clean_path} (Full: {self.path})")
 
         if clean_path == "/health":
             self._json_response(200, {"status": "ok", "queue_size": get_queue_size()})
@@ -1187,13 +1819,13 @@ class IELTSHandler(BaseHTTPRequestHandler):
                 v_files = [f for f in os.listdir(v_dir) if f.endswith('.json')] if os.path.exists(v_dir) else []
                 s_files = [f for f in os.listdir(s_dir) if f.endswith('.json')] if os.path.exists(s_dir) else []
                 
-                print(f"[SERVER] Found {len(v_files)} vocab, {len(s_files)} suggestions.")
+                print_and_flush(f"[SERVER] Found {len(v_files)} vocab, {len(s_files)} suggestions.")
                 self._json_response(200, {
                     "ai_vocab": v_files,
                     "ai_suggestions": s_files
                 })
             except Exception as e:
-                print(f"[SERVER] Error: {e}")
+                print_and_flush(f"[SERVER] Error: {e}")
                 self._json_response(500, {"error": str(e)})
         elif clean_path == "/reports":
             reports_dir = os.path.join(WRITING_APP_DATA_DIR, "reports")
@@ -1267,222 +1899,144 @@ class IELTSHandler(BaseHTTPRequestHandler):
             self._json_response(404, {"error": "Endpoint không tồn tại"})
 
     def do_POST(self):
-        # Chuẩn hóa path: loại bỏ query params và trailing slash
         path = self.path.split('?')[0].rstrip('/')
         if not path: path = "/"
         
-        print(f"[SERVER] POST: {self.path} (Clean: {path})")
-        
-        if path == "/analyze":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
+        print_and_flush(f">>> [DEBUG] Nhận yêu cầu POST tại: {self.path} (Path sạch: {path})")
+        content_len = int(self.headers.get("Content-Length", 0))
+        body = self.rfile.read(content_len)
+        try:
+            data = json.loads(body) if content_len > 0 else {}
+        except:
+            data = {}
+
+        if path == "/generate_practice":
             try:
-                data = json.loads(body)
+                chunk_index = int(data.get("chunk_index", 1))
+                count = int(data.get("count", 50))
+                
+                print_and_flush(f"[PRACTICE] Đang tạo chunk {chunk_index} ({count} câu) cho: {filename}")
+                result = asyncio.run_coroutine_threadsafe(
+                    generate_comprehensive_practice(html_content, filename, chunk_index, count),
+                    _event_loop
+                ).result(timeout=300)
+                
+                self._json_response(200, {"practice_json": result})
+            except Exception as e:
+                self._json_response(500, {"error": str(e)})
+            return
+
+        elif path == "/analyze" or path == "/analyze-voices-txt":
+            try:
                 recordings = data.get("recordings", [])
-                if not recordings:
-                    self._json_response(400, {"error": "Thiếu dữ liệu recordings"})
-                    return
-
-                print(f"[ANALYZE] Nhận {len(recordings)} bản ghi, đang gửi tới Gemini...")
-                # Chạy async trong thread loop
-                result = asyncio.run_coroutine_threadsafe(
-                    analyze_recordings(recordings),
-                    _event_loop
-                ).result(timeout=120)
-
-                # Lưu báo cáo vào folder
-                reports_dir = os.path.join(WRITING_APP_DATA_DIR, "reports")
-                os.makedirs(reports_dir, exist_ok=True)
+                if not recordings and path == "/analyze-voices-txt":
+                    # Fallback to voices.txt if empty
+                    voices_path = os.path.join(SCRIPT_DIR, "voices.txt")
+                    if os.path.exists(voices_path):
+                        with open(voices_path, "r", encoding="utf-8") as f:
+                            content = f.read()
+                        import re
+                        recordings = []
+                        chunks = re.split(r'Entry \d+:', content)
+                        for chunk in chunks:
+                            if not chunk.strip(): continue
+                            topic_match = re.search(r'Topic:\s*(.*)', chunk)
+                            question_match = re.search(r'Question:\s*(.*)', chunk)
+                            transcript_match = re.search(r'Transcript:\s*(.*)', chunk, re.DOTALL)
+                            if topic_match and question_match and transcript_match:
+                                recordings.append({
+                                    "topic": topic_match.group(1).strip(),
+                                    "question": question_match.group(1).strip(),
+                                    "transcript": transcript_match.group(1).strip()
+                                })
                 
-                import datetime
-                timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-                filename = f"report_{timestamp}.json"
-                
-                # Lưu dưới dạng JSON
-                with open(os.path.join(reports_dir, filename), "w", encoding="utf-8") as f:
-                    json.dump(result, f, ensure_ascii=False, indent=2)
-
-                self._json_response(200, result)
-            except json.JSONDecodeError:
-                self._json_response(400, {"error": "JSON không hợp lệ"})
-            except Exception as e:
-                print(f"[ERROR] {e}")
-                self._json_response(500, {"error": str(e)})
-        elif self.path == "/analyze-voices-txt":
-            try:
-                # Đọc file voices.txt từ thư mục script
-                voices_path = os.path.join(SCRIPT_DIR, "voices.txt")
-                if not os.path.exists(voices_path):
-                    self._json_response(404, {"error": "Không tìm thấy file voices.txt"})
-                    return
-                
-                with open(voices_path, "r", encoding="utf-8") as f:
-                    content = f.read()
-                
-                import re
-                recordings = []
-                chunks = re.split(r'Entry \d+:', content)
-                for chunk in chunks:
-                    if not chunk.strip(): continue
-                    topic_match = re.search(r'Topic:\s*(.*)', chunk)
-                    question_match = re.search(r'Question:\s*(.*)', chunk)
-                    transcript_match = re.search(r'Transcript:\s*(.*)', chunk, re.DOTALL)
-                    if topic_match and question_match and transcript_match:
-                        recordings.append({
-                            "topic": topic_match.group(1).strip(),
-                            "question": question_match.group(1).strip(),
-                            "transcript": transcript_match.group(1).strip()
-                        })
-                
-                if not recordings:
-                    self._json_response(400, {"error": "File voices.txt không có dữ liệu hợp lệ"})
-                    return
-
-                print(f"[FILE-ANALYZE] Đang phân tích {len(recordings)} bản ghi từ voices.txt...")
-                result = asyncio.run_coroutine_threadsafe(
-                    analyze_recordings(recordings),
-                    _event_loop
-                ).result(timeout=120)
-
-                # Lưu báo cáo dưới dạng JSON
-                reports_dir = os.path.join(WRITING_APP_DATA_DIR, "reports")
-                os.makedirs(reports_dir, exist_ok=True)
-                import datetime
-                filename = f"report_voices_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-                
-                with open(os.path.join(reports_dir, filename), "w", encoding="utf-8") as f:
-                    json.dump(result, f, ensure_ascii=False, indent=2)
-
+                print_and_flush(f"[ANALYZE] Đang phân tích {len(recordings)} bản ghi...")
+                result = asyncio.run_coroutine_threadsafe(analyze_recordings(recordings), _event_loop).result(timeout=180)
                 self._json_response(200, result)
             except Exception as e:
-                print(f"[ERROR] {e}")
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/enqueue_barem":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
                 count = int(data.get("count", 1))
-                for i in range(count):
-                    add_to_queue("barem", {
-                        "id": data.get("id"),
-                        "question": data.get("question"),
-                        "band": data.get("band", 8)
-                    })
+                for _ in range(count):
+                    add_to_queue("barem", {"id": data.get("id"), "question": data.get("question"), "band": data.get("band", 8)})
                 self._json_response(200, {"status": "enqueued", "count": count})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/enqueue_vocab":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
-                import time
-                add_to_queue("vocab", {
-                    "id": data.get("id"),
-                    "question": data.get("question"),
-                    "count": int(data.get("count", 10)),
-                    "vocab_type": data.get("vocab_type", "vocabulary"),
-                    "request_time": time.time() # To allow multiple requests for same question
-                })
+                add_to_queue("vocab", {"id": data.get("id"), "question": data.get("question"), "count": int(data.get("count", 10)), "vocab_type": data.get("vocab_type", "vocabulary")})
                 self._json_response(200, {"status": "enqueued"})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/enqueue_writing":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
-                qid = data.get("id")
-                question = data.get("question")
-                task_type_num = int(data.get("task_type_num", 2))
-                band = int(data.get("band", 8))
-                
-                # Add all 3 tasks to queue
-                add_to_queue("writing_guide", {"id": qid, "question": question, "task_type_num": task_type_num})
+                qid, question = data.get("id"), data.get("question")
+                add_to_queue("writing_guide", {"id": qid, "question": question, "task_type_num": int(data.get("task_type_num", 2))})
                 add_to_queue("vocab", {"id": qid, "question": question, "count": 10, "vocab_type": "vocabulary"})
-                add_to_queue("writing_sample", {"id": qid, "question": question, "task_type_num": task_type_num, "band": band})
-                
+                add_to_queue("writing_sample", {"id": qid, "question": question, "task_type_num": int(data.get("task_type_num", 2)), "band": int(data.get("band", 8))})
                 self._json_response(200, {"status": "all_enqueued", "id": qid})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/enqueue_task1_chart":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
-                add_to_queue("task1_chart", {
-                    "id": data.get("id"),
-                    "question": data.get("question"),
-                    "sample": data.get("sample"),
-                    "guide": data.get("guide", "")
-                })
+                add_to_queue("task1_chart", {"id": data.get("id"), "question": data.get("question"), "sample": data.get("sample"), "guide": data.get("guide", "")})
                 self._json_response(200, {"status": "enqueued", "id": data.get("id")})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/enqueue_theory":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
                 filenames = data.get("filenames", [])
-                for fname in filenames:
-                    add_to_queue("theory_perfection", {"filename": fname})
+                for fname in filenames: add_to_queue("theory_perfection", {"filename": fname})
                 self._json_response(200, {"status": "enqueued", "count": len(filenames)})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/enqueue_lessons":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
                 filenames = data.get("filenames", [])
-                for fname in filenames:
-                    add_to_queue("txt_to_html_lesson", {"filename": fname})
+                for fname in filenames: add_to_queue("txt_to_html_lesson", {"filename": fname})
                 self._json_response(200, {"status": "enqueued_lessons", "count": len(filenames)})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
+            return
+
         elif path == "/check_draft":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
             try:
-                data = json.loads(body)
-                question = data.get("question")
-                draft = data.get("draft")
-                if not question or not draft:
-                    self._json_response(400, {"error": "Cần cung cấp question và draft"})
-                    return
-                
-                print(f"[DRAFT] Đang kiểm tra bản thảo cho: {question[:30]}...")
-                result = asyncio.run_coroutine_threadsafe(
-                    check_draft(question, draft),
-                    _event_loop
-                ).result(timeout=120)
-                
+                result = asyncio.run_coroutine_threadsafe(check_draft(data.get("question"), data.get("draft")), _event_loop).result(timeout=120)
                 self._json_response(200, {"feedback": result})
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
-        elif path == "/lookup":
-            content_len = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_len)
+            return
+
+        elif path == "/enqueue_practice_v2":
             try:
-                data = json.loads(body)
-                word = data.get("word")
-                if not word:
-                    self._json_response(400, {"error": "Cần cung cấp từ khóa"})
-                    return
-                
-                print(f"[LOOKUP] Đang tra cứu: {word}")
-                result = asyncio.run_coroutine_threadsafe(
-                    lookup_word(word),
-                    _event_loop
-                ).result(timeout=60)
-                
+                filenames = data.get("filenames", [])
+                for fname in filenames:
+                    add_to_queue("practice_generation", {"filename": fname})
+                self._json_response(200, {"status": "enqueued", "count": len(filenames)})
+            except Exception as e:
+                self._json_response(500, {"error": str(e)})
+            return
+
+        elif path == "/lookup":
+            try:
+                result = asyncio.run_coroutine_threadsafe(lookup_word(data.get("word")), _event_loop).result(timeout=60)
                 self._json_response(200, result)
             except Exception as e:
                 self._json_response(500, {"error": str(e)})
-        else:
-            self._json_response(404, {"error": "Endpoint không tồn tại"})
+            return
 
     def _html_response(self, code: int, html: str):
         body = html.encode("utf-8")
@@ -1509,16 +2063,17 @@ class IELTSHandler(BaseHTTPRequestHandler):
 _event_loop: asyncio.AbstractEventLoop = None
 
 def run_server():
-    server = HTTPServer(("0.0.0.0", 5679), IELTSHandler)
-    print("=" * 55)
-    print("  IELTS AI Proxy Server")
-    print("  http://localhost:5679")
-    print("  POST /lookup   — tra cứu từ vựng")
-    print("  POST /analyze  — phân tích voices.txt")
-    print("  POST /check_draft — chấm nháp cá nhân")
-    print("  POST /enqueue_barem — yêu cầu tạo barem mới")
-    print("  GET  /health   — kiểm tra trạng thái")
-    print("=" * 55)
+    server = HTTPServer(("0.0.0.0", 5680), IELTSHandler)
+    print_and_flush("=" * 55)
+    print_and_flush("  IELTS AI Proxy Server")
+    print_and_flush("  http://localhost:5680")
+    print_and_flush("  POST /lookup   — tra cứu từ vựng")
+    print_and_flush("  POST /analyze  — phân tích bài viết (V2)")
+    print_and_flush("  POST /enqueue_practice_v2 — xếp hàng tạo bài tập 200 câu")
+    print_and_flush("  POST /check_draft — chấm nháp cá nhân")
+    print_and_flush("  POST /enqueue_barem — yêu cầu tạo barem mới")
+    print_and_flush("  GET  /health   — kiểm tra trạng thái")
+    print_and_flush("=" * 55)
     server.serve_forever()
 
 
@@ -1526,36 +2081,38 @@ async def main():
     global _event_loop
     _event_loop = asyncio.get_event_loop()
 
-    print("[1/3] Khởi động HTTP server...")
+    print_and_flush("[1/3] Khởi động HTTP server...")
     sys.stdout.flush()
     import threading
     t_server = threading.Thread(target=run_server, daemon=True)
     t_server.start()
 
-    print("[2/3] Khởi tạo Database...")
+    print_and_flush("[2/3] Khởi tạo Database...")
     sys.stdout.flush()
     init_db()
     update_ai_data_list()  # Rebuild manifest from speaking project on every startup
     
-    # Start Queue Worker
-    asyncio.create_task(process_queue_worker())
+    # Start dual parallel workers: PRO for content, FREE for image tasks
+    asyncio.create_task(_run_pro_worker())
+    asyncio.create_task(_run_free_worker())
 
-    print("[3/3] Kết nối Gemini (chạy ngầm)...")
+
+    print_and_flush("[3/3] Kết nối Gemini (chạy ngầm)...")
     sys.stdout.flush()
     try:
         await init_gemini()
     except Exception as e:
-        print(f"[ERROR] Gemini initialization failed: {e}")
+        print_and_flush(f"[ERROR] Gemini initialization failed: {e}")
         sys.stdout.flush()
 
-    print("\n[READY] Server sẵn sàng.\n")
+    print_and_flush("\n[READY] Server sẵn sàng.\n")
     sys.stdout.flush()
 
     try:
         while True:
             await asyncio.sleep(1)
     except KeyboardInterrupt:
-        print("\n[STOP] Server đã dừng.")
+        print_and_flush("\n[STOP] Server đã dừng.")
         sys.stdout.flush()
 
 

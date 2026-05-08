@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Masterclass | Phạm Tiến Dũng Gia Sư</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .prose-container { max-width: 1000px; margin: 0 auto; }
+        .gradient-border { border-image: linear-gradient(to right, #3b82f6, #8b5cf6) 1; }
+        .accordion-content { display: none; }
+        .accordion-content.active { display: block; }
+    </style>
+
+    <script src='../../assets/js/security.js?v=1778169168'></script>
+    <script>
+        (function() {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+                originalWarn.apply(console, args);
+            };
+        })();
+    </script>
+    
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="prose-container bg-white shadow-2xl rounded-2xl overflow-hidden border border-slate-100">
+        
+        <!-- Header Section -->
+        <header class="bg-slate-900 text-white p-8 md:p-12">
+            <div class="flex justify-between items-center mb-6">
+                <span class="px-4 py-1 bg-blue-600 rounded-full text-xs font-bold uppercase tracking-widest">IELTS Writing Task 2</span>
+                <span class="text-slate-400 text-sm italic font-medium">Expert Series</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Traffic Solutions & Urban Challenges</h1>
+                <div class="my-10 p-4 glass-card rounded-3xl shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden">
+                    <div class="text-xs font-semibold text-indigo-500 mb-2 uppercase tracking-widest text-center">Conceptual Visualization</div>
+                    <img src="../../assets/task2_diagrams/unit2_energy_diagram.jpg" alt="Concept Diagram" class="w-full h-auto rounded-2xl">
+                </div>
+                
+            <p class="text-slate-300 text-lg">Phân tích chuyên sâu về giải pháp giao thông và vấn đề đô thị hóa.</p>
+            <div class="mt-8 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center font-bold text-xl">PT</div>
+                <div>
+                    <p class="text-sm text-slate-400">Giảng viên phụ trách</p>
+                    <p class="font-bold text-white uppercase">Phạm Tiến Dũng Gia Sư</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-6 md:p-10 space-y-12">
+
+            <!-- Introduction Section -->
+            <section>
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                    <span class="w-2 h-8 bg-blue-600 rounded-full"></span>
+                    I. Giải pháp năng lượng xanh & Giao thông công cộng
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Benefits Card -->
+                    <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                        <h3 class="text-xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
+                            🚀 Benefits (Lợi ích)
+                        </h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <strong class="text-emerald-700 block">Reducing the number of cars</strong>
+                                <p class="text-slate-600 text-sm">Giảm ùn tắc giao thông (alleviate traffic congestion). Minh chứng: Tokyo, Singapore.</p>
+                            </li>
+                            <li>
+                                <strong class="text-emerald-700 block">Improving air quality</strong>
+                                <p class="text-slate-600 text-sm">Giảm phát thải nhà kính (greenhouse gases). Xe hydro chỉ thải ra hơi nước (water vapor).</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Drawbacks Card -->
+                    <div class="bg-rose-50 p-6 rounded-xl border border-rose-100">
+                        <h3 class="text-xl font-bold text-rose-800 mb-4 flex items-center gap-2">
+                            ⚠️ Drawbacks (Hạn chế)
+                        </h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <strong class="text-rose-700 block">Discomfort</strong>
+                                <p class="text-slate-600 text-sm">Tình trạng quá tải (crowding) vào giờ cao điểm (peak hours) gây mệt mỏi.</p>
+                            </li>
+                            <li>
+                                <strong class="text-rose-700 block">Reliability issues</strong>
+                                <p class="text-slate-600 text-sm">Lịch trình không ổn định và thiếu các trạm sạc/nhiên liệu (charging/refueling stations).</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visual Flowchart -->
+            <section class="bg-slate-50 p-8 rounded-2xl">
+                <h3 class="text-center text-xl font-bold text-slate-700 mb-8 uppercase tracking-widest">Sơ đồ tổng quan giải pháp (Traffic Solutions)</h3>
+                <div class="mermaid flex justify-center">
+                    graph TD
+                    A[Traffic Problems Solutions] --> B[Increase Petrol Price]
+                    A --> C[Widening/Building Roads]
+                    A --> D[Public Transport/Green Vehicles]
+                    
+                    B --> B1[Discourage Driving]
+                    B --> B2[Higher costs for low-income]
+                    
+                    C --> C1[Increase capacity]
+                    C --> C2[Increased travel demand]
+                    
+                    D --> D1[Better air quality]
+                    D --> D2[Reliability & Discomfort]
+                    
+                    style A fill:#1e293b,color:#fff,stroke-width:2px
+                    style B fill:#3b82f6,color:#fff
+                    style C fill:#8b5cf6,color:#fff
+                    style D fill:#10b981,color:#fff
+                </div>
+            </section>
+
+            <!-- Teacher's Note Section -->
+            <div class="bg-amber-50 border-l-4 border-amber-400 p-6 italic text-slate-700">
+                <strong class="text-amber-800 block mb-2 font-bold not-italic">💡 PRO TIP by Phạm Tiến Dũng Gia Sư:</strong>
+                Trong Writing Task 2, khi bàn về "Green Fuel", hãy sử dụng các cụm từ chuyên sâu như <strong>"tailpipe emissions"</strong> (khí thải ống xả) hoặc <strong>"environmentally sustainable alternatives"</strong> để nâng band Vocabulary lên 8.0+.
+            </div>
+
+            <!-- Practice Section 1 -->
+            <section>
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                    <span class="w-2 h-8 bg-indigo-600 rounded-full"></span>
+                    II. Thử thách Tư duy (Practice 1)
+                </h2>
+                <p class="mb-6 text-slate-600 italic font-medium underline uppercase tracking-tight">Viết đoạn văn dựa trên Topic Sentence và gợi ý từ Phạm Tiến Dũng Gia Sư.</p>
+
+                <div class="space-y-6">
+                    <!-- Exercise 1 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-slate-100 p-4 font-bold text-slate-700 flex justify-between items-center">
+                            <span>1. Business Relocation (Di dời doanh nghiệp)</span>
+                            <span class="text-xs text-blue-600">Band 8.0 Sample</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-slate-500 mb-4 text-sm font-semibold">Đề bài: Di dời doanh nghiệp ra khỏi thành phố có tác động tiêu cực gì?</p>
+                            <div class="bg-slate-50 p-4 rounded-lg text-slate-700 leading-relaxed">
+                                A trend toward relocating businesses outside of cities is that there is a <strong>lack of diverse and highly educated workforces</strong> in rural regions... Thus, companies may face significant increases in <strong>funding for training new staff</strong>. Moreover, moving away from potential customers in cities can <strong>significantly reduce revenue</strong>.
+                            </div>
+                            <button onclick="toggleAccordion('ans1')" class="mt-4 text-blue-600 font-bold hover:underline">Xem giải thích chi tiết & mẫu câu ⬇️</button>
+                            <div id="ans1" class="accordion-content mt-4 p-4 border-t border-slate-100 text-sm text-slate-600">
+                                <strong>Key Structures:</strong> <br>
+                                - <em>Be equipped with a wide range of vocational skills:</em> Được trang bị kỹ năng nghề nghiệp đa dạng. <br>
+                                - <em>Put companies at risk:</em> Đưa doanh nghiệp vào thế rủi ro.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exercise 2 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-slate-100 p-4 font-bold text-slate-700 flex justify-between items-center">
+                            <span>2. Cycling vs. Cars (Xe đạp và Ô tô)</span>
+                            <span class="text-xs text-emerald-600">High Score</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-slate-500 mb-4 text-sm font-semibold">Đề bài: Tại sao xe đạp là lựa chọn tốt hơn trong dài hạn?</p>
+                            <div class="bg-slate-50 p-4 rounded-lg text-slate-700 leading-relaxed italic">
+                                "First, bikes produce <strong>no emissions</strong> and require <strong>no fossil fuels</strong> to operate... Second, cycling is an excellent form of exercise, reducing the risk of <strong>chronic diseases</strong> such as obesity and diabetes."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vocabulary Table -->
+            <section>
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                    <span class="w-2 h-8 bg-rose-600 rounded-full"></span>
+                    III. Expert Vocabulary Lexicon
+                </h2>
+                <div class="overflow-x-auto rounded-xl border border-slate-200">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-slate-900 text-white">
+                                <th class="p-4">Academic Phrase</th>
+                                <th class="p-4">Vietnamese Meaning</th>
+                                <th class="p-4">Context / Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-mono font-bold text-blue-700">Proximity to suppliers</td>
+                                <td class="p-4 italic">Sự gần gũi với nhà cung cấp</td>
+                                <td class="p-4 text-sm">Urban business advantages</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-mono font-bold text-blue-700">Make ends meet</td>
+                                <td class="p-4 italic">Trang trải cuộc sống</td>
+                                <td class="p-4 text-sm">Financial burden of citizens</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-mono font-bold text-blue-700">Depreciate in value</td>
+                                <td class="p-4 italic">Giảm giá trị (khấu hao)</td>
+                                <td class="p-4 text-sm">Cars/Vehicles drawbacks</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-mono font-bold text-blue-700">Foster social cohesion</td>
+                                <td class="p-4 italic">Thúc đẩy gắn kết xã hội</td>
+                                <td class="p-4 text-sm">Public transport benefits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Final Summary Action Card -->
+            <section class="relative bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 md:p-12 text-white overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold mb-4">Bạn đã sẵn sàng cho Band 8.0+?</h3>
+                    <p class="text-blue-100 mb-8 max-w-2xl text-lg">Hệ thống Mind Map và từ vựng trên được thiết kế bởi <strong>Phạm Tiến Dũng Gia Sư</strong> giúp học viên tối ưu hóa thời gian làm bài và tăng tính logic trong Writing Task 2.</p>
+                    <div class="flex flex-wrap gap-4 font-bold">
+                        <span class="px-6 py-2 bg-white text-blue-700 rounded-lg">#TrafficSolutions</span>
+                        <span class="px-6 py-2 bg-white/20 backdrop-blur text-white rounded-lg">#ExpertWriting</span>
+                        <span class="px-6 py-2 bg-white/20 backdrop-blur text-white rounded-lg">#PhamTienDungGiaSu</span>
+                    </div>
+                </div>
+                <!-- Decorative Circle -->
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="p-8 border-t border-slate-100 bg-slate-50 text-center">
+            <p class="text-slate-500 text-sm">Bản quyền nội dung thuộc về: <span class="font-bold text-slate-800">Phạm Tiến Dũng Gia Sư</span></p>
+            <p class="text-slate-400 text-xs mt-2">Professional Training Program - All Rights Reserved © 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        // Mermaid.js Initialization
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+
+        // Accordion Toggle
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
