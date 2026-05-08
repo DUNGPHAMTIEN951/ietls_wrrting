@@ -56,9 +56,14 @@
 
         <div class="flex items-center gap-4">
             <div class="hidden lg:flex gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+                <button onclick="changeCategory('review')" class="cat-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all active" data-cat="review">Thực chiến</button>
+                <button onclick="changeCategory('task2')" class="cat-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-cat="task2">Thư viện Task 2</button>
+                <button onclick="changeCategory('old_essays')" class="cat-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-cat="old_essays">Kho đề cũ</button>
+                <button onclick="changeCategory('gt')" class="cat-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-cat="gt">General Training</button>
+            </div>
+            <div id="year-filter" class="hidden lg:flex gap-1 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
                 <button onclick="changeYear(2023)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all active" data-year="2023">2023</button>
                 <button onclick="changeYear(2022)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-year="2022">2022</button>
-                <button onclick="changeYear(2021)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-year="2021">2021</button>
                 <button onclick="changeYear(2020)" class="year-btn filter-btn px-4 py-1.5 text-xs font-bold rounded-lg transition-all" data-year="2020">2020</button>
             </div>
             <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
@@ -109,87 +114,133 @@
             <!-- Modal Content (Scrollable) -->
             <div class="flex-1 overflow-y-auto p-6 md:p-10 custom-scrollbar space-y-12">
                 
-                <!-- Task 1 -->
-                <section class="space-y-6">
-                    <div class="flex items-center gap-4">
-                        <span class="px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs font-black uppercase rounded-full">Writing Task 1</span>
-                        <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
-                    </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                        <div class="space-y-6">
-                            <div>
-                                <h4 id="t1-type" class="text-emerald-500 font-bold text-sm uppercase tracking-widest mb-1 italic">Bar Chart</h4>
-                                <h5 id="t1-title" class="text-2xl font-bold text-slate-800 dark:text-white leading-snug"></h5>
+                <!-- Single Task Detailed View (For Libraries) -->
+                <div id="single-task-view" class="hidden space-y-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Sidebar: Guide & Barem -->
+                            <div id="guide-panel" class="p-6 bg-blue-50 dark:bg-blue-900/10 rounded-3xl border border-blue-100 dark:border-blue-800/50">
+                                <h4 class="text-blue-700 dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <i data-lucide="lightbulb" class="w-4 h-4"></i> Hướng dẫn làm bài
+                                </h4>
+                                <div id="st-guide" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"></div>
                             </div>
-                            <div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
-                                <p id="t1-q" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+                            <div id="barem-panel" class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-100 dark:border-slate-700">
+                                <h4 class="text-slate-800 dark:text-white font-bold text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <i data-lucide="list-checks" class="w-4 h-4"></i> Dàn ý chi tiết (Barem)
+                                </h4>
+                                <div id="st-barem" class="text-sm text-slate-600 dark:text-slate-400 whitespace-pre-line leading-relaxed"></div>
                             </div>
-                            <div class="space-y-4">
-                                <h6 class="font-bold text-slate-800 dark:text-white flex items-center gap-2">
-                                    <i data-lucide="eye" class="w-4 h-4 text-emerald-500"></i> Key Overview
-                                </h6>
-                                <ul id="t1-overview" class="space-y-2 list-disc list-inside text-slate-600 dark:text-slate-400 text-sm"></ul>
-                            </div>
-                        </div>
-                        <div class="space-y-6">
-                            <div class="p-6 glass dark:glass-dark rounded-2xl">
-                                <h6 class="font-bold text-slate-800 dark:text-white mb-4">Sample Analysis (Body)</h6>
-                                <div id="t1-body" class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed whitespace-pre-line"></div>
-                            </div>
-                            <div class="p-6 bg-emerald-50 dark:bg-emerald-900/10 rounded-2xl border border-emerald-100 dark:border-emerald-800">
-                                <h6 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3 text-xs uppercase tracking-widest">Key Vocabulary</h6>
-                                <div id="t1-vocab" class="flex flex-wrap gap-2"></div>
+                            <div id="topic-panel" class="hidden p-6 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-100 dark:border-slate-700">
+                                <h4 class="text-emerald-600 font-bold text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <i data-lucide="help-circle" class="w-4 h-4"></i> Đề bài gốc
+                                </h4>
+                                <div id="st-topic" class="text-sm text-slate-600 dark:text-slate-400 font-medium italic"></div>
                             </div>
                         </div>
+                        <!-- Main: Sample & Vocab -->
+                        <div class="lg:col-span-2 space-y-6">
+                            <div class="p-8 glass dark:glass-dark rounded-[2.5rem] border border-slate-200 dark:border-slate-800">
+                                <h4 class="text-slate-800 dark:text-white font-bold mb-6 flex items-center justify-between">
+                                    <span>Nội dung bài viết</span>
+                                    <div id="lang-toggle-group" class="flex gap-2">
+                                        <button onclick="switchLang('en')" class="lang-btn px-3 py-1 bg-blue-600 text-white text-[10px] font-bold rounded-lg">English</button>
+                                        <button onclick="switchLang('vi')" class="lang-btn px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold rounded-lg">Tiếng Việt</button>
+                                    </div>
+                                </h4>
+                                <div id="st-sample" class="text-slate-700 dark:text-slate-300 leading-relaxed space-y-6"></div>
+                            </div>
+                            <div id="vocab-panel" class="p-6 bg-emerald-50 dark:bg-emerald-900/10 rounded-3xl border border-emerald-100 dark:border-emerald-800">
+                                <h4 class="text-emerald-700 dark:text-emerald-400 font-bold text-xs uppercase tracking-widest mb-4">Từ vựng tinh hoa</h4>
+                                <div id="st-vocab" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                </div>
 
-                <div class="h-px w-full bg-slate-100 dark:bg-slate-800"></div>
-
-                <!-- Task 2 -->
-                <section class="space-y-6 pb-10">
-                    <div class="flex items-center gap-4">
-                        <span class="px-4 py-1.5 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 text-xs font-black uppercase rounded-full">Writing Task 2</span>
-                        <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
-                    </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                        <div class="space-y-6">
-                            <div>
-                                <h4 id="t2-type" class="text-rose-500 font-bold text-sm uppercase tracking-widest mb-1 italic">Opinion Essay</h4>
-                                <h5 id="t2-title" class="text-2xl font-bold text-slate-800 dark:text-white leading-snug"></h5>
-                            </div>
-                            <div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
-                                <p id="t2-q" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
-                            </div>
-                            <div class="p-6 bg-amber-50 dark:bg-amber-900/10 rounded-2xl border border-amber-100 dark:border-amber-800/50">
-                                <h6 class="font-bold text-amber-700 dark:text-amber-400 mb-2 flex items-center gap-2">
-                                     <i data-lucide="help-circle" class="w-4 h-4"></i> Topic Intro (VN)
-                                </h6>
-                                <p id="t2-vi" class="text-sm text-slate-700 dark:text-slate-300 italic"></p>
-                            </div>
+                <!-- Dual Task View (For Annual Reviews) -->
+                <div id="dual-task-view" class="space-y-12">
+                    <!-- Existing Task 1 content -->
+                    <section class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs font-black uppercase rounded-full">Writing Task 1</span>
+                            <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
                         </div>
-                        <div class="space-y-6">
-                            <div class="space-y-4">
-                                <div class="p-4 rounded-2xl border border-emerald-100 dark:border-emerald-800">
-                                    <h6 class="font-bold text-emerald-700 mb-2 text-xs uppercase tracking-widest">View 1 / Advantage</h6>
-                                    <p id="t2-v1" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 id="t1-type" class="text-emerald-500 font-bold text-sm uppercase tracking-widest mb-1 italic">Bar Chart</h4>
+                                    <h5 id="t1-title" class="text-2xl font-bold text-slate-800 dark:text-white leading-snug"></h5>
                                 </div>
-                                <div class="p-4 rounded-2xl border border-rose-100 dark:border-rose-800">
-                                    <h6 class="font-bold text-rose-700 mb-2 text-xs uppercase tracking-widest">View 2 / Disadvantage</h6>
-                                    <p id="t2-v2" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                                <div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
+                                    <p id="t1-q" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+                                </div>
+                                <div class="space-y-4">
+                                    <h6 class="font-bold text-slate-800 dark:text-white flex items-center gap-2">
+                                        <i data-lucide="eye" class="w-4 h-4 text-emerald-500"></i> Key Overview
+                                    </h6>
+                                    <ul id="t1-overview" class="space-y-2 list-disc list-inside text-slate-600 dark:text-slate-400 text-sm"></ul>
                                 </div>
                             </div>
-                            <div class="p-6 glass dark:glass-dark rounded-2xl">
-                                <h6 class="font-bold text-slate-800 dark:text-white mb-2">Final Opinion</h6>
-                                <p id="t2-op" class="text-slate-600 dark:text-slate-400 text-sm"></p>
-                            </div>
-                            <div class="p-6 bg-amber-50 dark:bg-amber-900/10 rounded-2xl border border-amber-100 dark:border-amber-800">
-                                <h6 class="font-bold text-amber-700 dark:text-amber-400 mb-3 text-xs uppercase tracking-widest">Key Vocabulary</h6>
-                                <div id="t2-vocab" class="flex flex-wrap gap-2"></div>
+                            <div class="space-y-6">
+                                <div class="p-6 glass dark:glass-dark rounded-2xl">
+                                    <h6 class="font-bold text-slate-800 dark:text-white mb-4">Sample Analysis (Body)</h6>
+                                    <div id="t1-body" class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed whitespace-pre-line"></div>
+                                </div>
+                                <div class="p-6 bg-emerald-50 dark:bg-emerald-900/10 rounded-2xl border border-emerald-100 dark:border-emerald-800">
+                                    <h6 class="font-bold text-emerald-700 dark:text-emerald-400 mb-3 text-xs uppercase tracking-widest">Key Vocabulary</h6>
+                                    <div id="t1-vocab" class="flex flex-wrap gap-2"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+
+                    <div class="h-px w-full bg-slate-100 dark:bg-slate-800"></div>
+
+                    <!-- Task 2 -->
+                    <section class="space-y-6 pb-10">
+                        <div class="flex items-center gap-4">
+                            <span class="px-4 py-1.5 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-400 text-xs font-black uppercase rounded-full">Writing Task 2</span>
+                            <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 id="t2-type" class="text-rose-500 font-bold text-sm uppercase tracking-widest mb-1 italic">Opinion Essay</h4>
+                                    <h5 id="t2-title" class="text-2xl font-bold text-slate-800 dark:text-white leading-snug"></h5>
+                                </div>
+                                <div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
+                                    <p id="t2-q" class="text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+                                </div>
+                                <div class="p-6 bg-amber-50 dark:bg-amber-900/10 rounded-2xl border border-amber-100 dark:border-amber-800/50">
+                                    <h6 class="font-bold text-amber-700 dark:text-amber-400 mb-2 flex items-center gap-2">
+                                         <i data-lucide="help-circle" class="w-4 h-4"></i> Topic Intro (VN)
+                                    </h6>
+                                    <p id="t2-vi" class="text-sm text-slate-700 dark:text-slate-300 italic"></p>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="space-y-4">
+                                    <div class="p-4 rounded-2xl border border-emerald-100 dark:border-emerald-800">
+                                        <h6 class="font-bold text-emerald-700 mb-2 text-xs uppercase tracking-widest">View 1 / Advantage</h6>
+                                        <p id="t2-v1" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                                    </div>
+                                    <div class="p-4 rounded-2xl border border-rose-100 dark:border-rose-800">
+                                        <h6 class="font-bold text-rose-700 mb-2 text-xs uppercase tracking-widest">View 2 / Disadvantage</h6>
+                                        <p id="t2-v2" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                                    </div>
+                                </div>
+                                <div class="p-6 glass dark:glass-dark rounded-2xl">
+                                    <h6 class="font-bold text-slate-800 dark:text-white mb-2">Final Opinion</h6>
+                                    <p id="t2-op" class="text-slate-600 dark:text-slate-400 text-sm"></p>
+                                </div>
+                                <div class="p-6 bg-amber-50 dark:bg-amber-900/10 rounded-2xl border border-amber-100 dark:border-amber-800">
+                                    <h6 class="font-bold text-amber-700 dark:text-amber-400 mb-3 text-xs uppercase tracking-widest">Key Vocabulary</h6>
+                                    <div id="t2-vocab" class="flex flex-wrap gap-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
@@ -197,12 +248,14 @@
     <!-- Scripts -->
     <script src="../assets/js/utils.js"></script>
     <script>
+        let currentSource = 'review';
         let currentYear = 2023;
         let examsData = [];
+        let currentViewIdx = -1;
 
         async function init() {
             lucide.createIcons();
-            await loadYear(currentYear);
+            await loadSource(currentSource);
             
             // Search listener
             document.getElementById('exam-search').addEventListener('input', (e) => {
@@ -210,140 +263,259 @@
             });
         }
 
-        async function loadYear(year) {
-            currentYear = year;
-            document.getElementById('year-title').innerText = year;
+        async function loadSource(source) {
+            currentSource = source;
+            const yearFilter = document.getElementById('year-filter');
+            const yearTitle = document.getElementById('year-title');
             
             // Update UI buttons
-            document.querySelectorAll('.year-btn').forEach(btn => {
-                btn.classList.toggle('active', parseInt(btn.dataset.year) === year);
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.cat === source);
             });
 
-            // Show shimmer
             const grid = document.getElementById('exam-grid');
             grid.innerHTML = `<div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl col-span-full"></div>`;
 
+            let url = '';
+            if (source === 'review') {
+                yearFilter.classList.remove('hidden');
+                yearTitle.innerText = currentYear;
+                url = `../data/writing_${currentYear}_review.json`;
+            } else if (source === 'task2') {
+                yearFilter.classList.add('hidden');
+                yearTitle.innerText = "Task 2 Library";
+                url = `../data/writing_task2_library.json`;
+            } else if (source === 'old_essays') {
+                yearFilter.classList.add('hidden');
+                yearTitle.innerText = "Kho đề cũ (Song ngữ)";
+                url = `../data/essays_data_fixed.json`;
+            } else if (source === 'gt') {
+                yearFilter.classList.add('hidden');
+                yearTitle.innerText = "General Training Task 1";
+                url = `../data/writing_gt_task1.json`;
+            }
+
             try {
-                // Fetch data using mock path for now, but in reality it's in /data/
-                const response = await fetch(`../data/writing_${year}_review.json`);
+                const response = await fetch(url);
                 const data = await response.json();
-                examsData = data.exams;
+                
+                if (source === 'review') {
+                    examsData = data.exams;
+                } else if (source === 'task2' || source === 'old_essays') {
+                    examsData = data; // Array of tasks
+                } else if (source === 'gt') {
+                    examsData = data.samples; // Array of GT tasks
+                }
+                
                 renderExams(examsData);
             } catch (err) {
-                grid.innerHTML = `<div class="col-span-full text-center py-20 text-slate-400">Không tìm thấy dữ liệu năm ${year}.</div>`;
+                grid.innerHTML = `<div class="col-span-full text-center py-20 text-slate-400">Không tìm thấy dữ liệu nguồn ${source}.</div>`;
             }
         }
 
         function renderExams(exams) {
             const grid = document.getElementById('exam-grid');
-            if (exams.length === 0) {
+            if (!exams || exams.length === 0) {
                 grid.innerHTML = `<div class="col-span-full text-center py-20 text-slate-400 font-medium">Không tìm thấy đề thi phù hợp.</div>`;
                 return;
             }
 
-            grid.innerHTML = exams.map((ex, idx) => `
+            grid.innerHTML = exams.map((ex, idx) => {
+                let badge = '';
+                let title1 = '';
+                let title2 = '';
+                let type1 = '';
+                let type2 = '';
+                
+                if (currentSource === 'review') {
+                    badge = ex.date;
+                    title1 = ex.task_1.title;
+                    title2 = ex.task_2.title;
+                    type1 = ex.task_1.type;
+                    type2 = ex.task_2.type;
+                } else {
+                    badge = ex.id || 'TASK';
+                    title1 = ex.title || ex.topic || 'Untitled Task';
+                    type1 = ex.type || 'Writing Task';
+                }
+
+                return `
                 <div class="exam-card glass dark:glass-dark rounded-3xl p-6 border border-slate-200 dark:border-slate-800 group cursor-pointer" onclick="openModal(${idx})">
                     <div class="flex justify-between items-start mb-4">
                         <div class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-black rounded-lg uppercase tracking-widest">
-                            ${ex.date}
+                            ${badge}
                         </div>
                         <i data-lucide="external-link" class="w-4 h-4 text-slate-300 group-hover:text-emerald-500 transition-colors"></i>
                     </div>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
                             <span class="mt-1 w-2 h-2 rounded-full bg-blue-500 shrink-0"></span>
-                            <p class="text-sm font-bold text-slate-800 dark:text-white line-clamp-1">${ex.task_1.title}</p>
+                            <p class="text-sm font-bold text-slate-800 dark:text-white line-clamp-2">${title1}</p>
                         </div>
+                        ${title2 ? `
                         <div class="flex items-start gap-3">
                             <span class="mt-1 w-2 h-2 rounded-full bg-rose-500 shrink-0"></span>
-                            <p class="text-sm font-bold text-slate-800 dark:text-white line-clamp-1">${ex.task_2.title}</p>
-                        </div>
+                            <p class="text-sm font-bold text-slate-800 dark:text-white line-clamp-1">${title2}</p>
+                        </div>` : ''}
                     </div>
                     <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800/50 flex gap-2">
-                         <span class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${ex.task_1.type}</span>
-                         <span class="text-slate-300">•</span>
-                         <span class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${ex.task_2.type}</span>
+                         <span class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${type1}</span>
+                         ${type2 ? `<span class="text-slate-300">•</span><span class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter">${type2}</span>` : ''}
                     </div>
-                </div>
-            `).join('');
+                </div>`;
+            }).join('');
             lucide.createIcons();
         }
 
         function filterExams(query) {
             const q = query.toLowerCase();
-            const filtered = examsData.filter(ex => 
-                ex.date.includes(q) || 
-                ex.task_1.title.toLowerCase().includes(q) || 
-                ex.task_2.title.toLowerCase().includes(q) ||
-                ex.task_1.type.toLowerCase().includes(q) ||
-                ex.task_2.type.toLowerCase().includes(q)
-            );
+            const filtered = examsData.filter(ex => {
+                if (currentSource === 'review') {
+                    return ex.date.includes(q) || 
+                           ex.task_1.title.toLowerCase().includes(q) || 
+                           ex.task_2.title.toLowerCase().includes(q) ||
+                           ex.task_1.type.toLowerCase().includes(q) ||
+                           ex.task_2.type.toLowerCase().includes(q);
+                } else {
+                    return (ex.title || ex.topic || '').toLowerCase().includes(q) ||
+                           (ex.type || '').toLowerCase().includes(q) ||
+                           (ex.id || '').toLowerCase().includes(q);
+                }
+            });
             renderExams(filtered);
         }
 
         function openModal(idx) {
+            currentViewIdx = idx;
             const ex = examsData[idx];
-            const modal = document.getElementById('exam-modal');
             const backdrop = document.getElementById('modal-backdrop');
+            const dualView = document.getElementById('dual-task-view');
+            const singleView = document.getElementById('single-task-view');
 
-            // Populate Task 1
-            document.getElementById('modal-date').innerText = ex.date;
-            document.getElementById('t1-type').innerText = ex.task_1.type;
-            document.getElementById('t1-title').innerText = ex.task_1.title;
-            document.getElementById('t1-q').innerText = ex.task_1.question;
-            document.getElementById('t1-overview').innerHTML = ex.task_1.overview.map(o => `<li>${o}</li>`).join('');
-            document.getElementById('t1-body').innerText = ex.task_1.body_1 + "\n\n" + ex.task_1.body_2;
-            document.getElementById('t1-vocab').innerHTML = ex.task_1.key_vocab.map(v => `
-                <div class="px-2 py-1 bg-white dark:bg-slate-800 border border-emerald-200 dark:border-emerald-800 rounded text-[10px] text-emerald-700 dark:text-emerald-400 lowercase">
-                    <span class="font-bold">${v.word}:</span> ${v.meaning}
-                </div>
-            `).join('');
+            if (currentSource === 'review') {
+                dualView.classList.remove('hidden');
+                singleView.classList.add('hidden');
+                
+                document.getElementById('modal-date').innerText = ex.date;
+                // Populate Task 1
+                document.getElementById('t1-type').innerText = ex.task_1.type;
+                document.getElementById('t1-title').innerText = ex.task_1.title;
+                document.getElementById('t1-q').innerText = ex.task_1.question;
+                document.getElementById('t1-overview').innerHTML = ex.task_1.overview.map(o => `<li>${o}</li>`).join('');
+                document.getElementById('t1-body').innerText = (ex.task_1.body_1 || '') + "\n\n" + (ex.task_1.body_2 || '');
+                document.getElementById('t1-vocab').innerHTML = (ex.task_1.key_vocab || []).map(v => `
+                    <div class="px-2 py-1 bg-white dark:bg-slate-800 border border-emerald-200 dark:border-emerald-800 rounded text-[10px] text-emerald-700 dark:text-emerald-400 lowercase">
+                        <span class="font-bold">${v.word}:</span> ${v.meaning}
+                    </div>
+                `).join('');
 
-            // Populate Task 2
-            document.getElementById('t2-type').innerText = ex.task_2.type;
-            document.getElementById('t2-title').innerText = ex.task_2.title;
-            document.getElementById('t2-q').innerText = ex.task_2.question;
-            document.getElementById('t2-vi').innerText = ex.task_2.topic_vi;
-            document.getElementById('t2-v1').innerText = ex.task_2.view_1;
-            document.getElementById('t2-v2').innerText = ex.task_2.view_2;
-            document.getElementById('t2-op').innerText = ex.task_2.opinion;
-            document.getElementById('t2-vocab').innerHTML = ex.task_2.key_vocab.map(v => `
-                <div class="px-2 py-1 bg-white dark:bg-slate-800 border border-amber-200 dark:border-amber-800 rounded text-[10px] text-amber-700 dark:text-amber-400 lowercase">
-                    <span class="font-bold">${v.word}:</span> ${v.meaning}
-                </div>
-            `).join('');
+                // Populate Task 2
+                document.getElementById('t2-type').innerText = ex.task_2.type;
+                document.getElementById('t2-title').innerText = ex.task_2.title;
+                document.getElementById('t2-q').innerText = ex.task_2.question;
+                document.getElementById('t2-vi').innerText = ex.task_2.topic_vi;
+                document.getElementById('t2-v1').innerText = ex.task_2.view_1;
+                document.getElementById('t2-v2').innerText = ex.task_2.view_2;
+                document.getElementById('t2-op').innerText = ex.task_2.opinion;
+                document.getElementById('t2-vocab').innerHTML = (ex.task_2.key_vocab || []).map(v => `
+                    <div class="px-2 py-1 bg-white dark:bg-slate-800 border border-amber-200 dark:border-amber-800 rounded text-[10px] text-amber-700 dark:text-amber-400 lowercase">
+                        <span class="font-bold">${v.word}:</span> ${v.meaning}
+                    </div>
+                `).join('');
+            } else if (currentSource === 'old_essays') {
+                dualView.classList.add('hidden');
+                singleView.classList.remove('hidden');
+                
+                // Toggle panels
+                document.getElementById('guide-panel').classList.add('hidden');
+                document.getElementById('barem-panel').classList.add('hidden');
+                document.getElementById('topic-panel').classList.remove('hidden');
+                document.getElementById('vocab-panel').classList.add('hidden');
+
+                document.getElementById('modal-date').innerText = `Đề số #${ex.id}`;
+                document.getElementById('st-topic').innerText = ex.topic;
+                
+                // Paragraph-based bilingual view
+                const container = document.getElementById('st-sample');
+                container.innerHTML = ex.paragraphs.map((p, pIdx) => `
+                    <div class="group/p border-l-4 border-slate-100 dark:border-slate-800 pl-6 py-2 hover:border-emerald-500 transition-colors">
+                        <p class="text-slate-800 dark:text-white font-medium mb-3">${p.en}</p>
+                        <p class="text-slate-500 dark:text-slate-400 italic text-sm leading-relaxed">${p.vi}</p>
+                    </div>
+                `).join('');
+                
+                document.getElementById('lang-toggle-group').classList.add('hidden'); // No need for toggle since both are shown
+            } else {
+                dualView.classList.add('hidden');
+                singleView.classList.remove('hidden');
+                
+                // Reset panels
+                document.getElementById('guide-panel').classList.remove('hidden');
+                document.getElementById('barem-panel').classList.remove('hidden');
+                document.getElementById('topic-panel').classList.add('hidden');
+                document.getElementById('vocab-panel').classList.remove('hidden');
+                document.getElementById('lang-toggle-group').classList.remove('hidden');
+
+                document.getElementById('modal-date').innerText = ex.id || 'Task View';
+                document.getElementById('st-guide').innerHTML = ex.guide || '<p class="italic text-slate-400 underline">Chưa có hướng dẫn cho bài này.</p>';
+                document.getElementById('st-barem').innerText = ex.barem || 'Đang cập nhật dàn ý...';
+                
+                // Vocab
+                const vocab = ex.vocab || [];
+                document.getElementById('st-vocab').innerHTML = vocab.map(v => `
+                    <div class="p-3 bg-white dark:bg-slate-800 border border-emerald-100 dark:border-emerald-800/50 rounded-2xl flex justify-between items-center group/v">
+                        <div>
+                            <p class="font-bold text-sm text-emerald-700 dark:text-emerald-400 capitalize">${v.word}</p>
+                            <p class="text-xs text-slate-500 mt-1">${v.meaning}</p>
+                        </div>
+                        <button class="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center opacity-0 group-hover/v:opacity-100 transition-opacity">
+                            <i data-lucide="plus" class="w-3 h-3 text-emerald-600"></i>
+                        </button>
+                    </div>
+                `).join('');
+                
+                switchLang('en'); // Default to English sample
+            }
 
             backdrop.classList.remove('hidden');
             setTimeout(() => {
                 backdrop.classList.add('opacity-100');
-                modal.classList.remove('scale-95');
-                modal.classList.add('scale-100');
+                document.getElementById('exam-modal').classList.remove('scale-95');
+                document.getElementById('exam-modal').classList.add('scale-100');
             }, 10);
             
             document.body.style.overflow = 'hidden';
             lucide.createIcons();
         }
 
+        function switchLang(lang) {
+            const ex = examsData[currentViewIdx];
+            const container = document.getElementById('st-sample');
+            const text = (lang === 'en') ? (ex.en || ex.sample) : (ex.vi || "Bản dịch Tiếng Việt đang được cập nhật...");
+            
+            container.innerHTML = text.split('\n').map(p => `<p>${p}</p>`).join('');
+            
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                const isMatch = (lang === 'en' && btn.innerText === 'English') || (lang === 'vi' && btn.innerText === 'Tiếng Việt');
+                btn.className = `lang-btn px-4 py-2 rounded-xl text-[10px] font-bold transition-all ${isMatch ? 'bg-blue-600 text-white shadow-lg shadow-blue-200' : 'bg-slate-100 text-slate-600'}`;
+            });
+        }
+
         function closeModal() {
             const modal = document.getElementById('exam-modal');
             const backdrop = document.getElementById('modal-backdrop');
-            
             backdrop.classList.remove('opacity-100');
             modal.classList.add('scale-95');
-            
             setTimeout(() => {
                 backdrop.classList.add('hidden');
                 document.body.style.overflow = 'auto';
             }, 300);
         }
 
-        function changeYear(year) {
-            loadYear(year);
-        }
+        function changeCategory(cat) { loadSource(cat); }
+        function changeYear(year) { currentYear = year; loadSource('review'); }
 
-        // Theme Toggle logic handled by utils.js
-
-        // Close modal on backdrop click
         document.getElementById('modal-backdrop').addEventListener('click', (e) => {
             if (e.target.id === 'modal-backdrop') closeModal();
         });
