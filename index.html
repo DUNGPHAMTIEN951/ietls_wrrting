@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="vi" class="">
+<html lang="vi" class="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Nền tảng luyện IELTS Writing toàn diện — Flashcard, Đề thi, Bài mẫu, Kho ý tưởng, Simon's Guide và phòng thi ảo.">
+    content="IELTS Writing Mastery — Nền tảng luyện thi toàn diện từ lý thuyết đến thực chiến. Lộ trình Band 7.5+ bài bản.">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS & Google Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Shared CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
-
-  <!-- Font Awesome (for consistency with other pages) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script>
     tailwind.config = {
@@ -25,12 +20,15 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            heading: ['Poppins', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
           },
           colors: {
-            brand: '#0ea5e9',
-            accent: '#6366f1',
+            primary: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 
+              400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8'
+            },
+            accent: '#8b5cf6',
           }
         }
       }
@@ -38,553 +36,346 @@
   </script>
 
   <style>
-    /* Page-specific styles complement main.css */
-    .hero-bg {
-      background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 40%, #eef2ff 100%);
-      position: relative;
-      overflow: hidden;
+    :root {
+      --glass: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.4);
     }
 
-    .hero-bg::before {
-      content: '';
-      position: absolute;
-      top: -20%;
-      left: -10%;
-      width: 60%;
-      height: 100%;
-      background: radial-gradient(ellipse, rgba(14, 165, 233, .12) 0%, transparent 70%);
-      pointer-events: none;
+    body {
+      background: #f8fafc;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.05) 0px, transparent 50%);
+      scroll-behavior: smooth;
     }
 
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      bottom: -30%;
-      right: -10%;
-      width: 50%;
-      height: 100%;
-      background: radial-gradient(ellipse, rgba(99, 102, 241, .10) 0%, transparent 70%);
-      pointer-events: none;
+    .glass {
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
     }
 
-    /* Glow orb behind book icon */
-    .glow-orb {
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(14, 165, 233, .25) 0%, transparent 70%);
-      animation: pulse-glow 3s ease-in-out infinite;
+    .gradient-text {
+      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    /* Card color themes */
-    .card-task1 {
-      --gradient: linear-gradient(135deg, #eff6ff, #dbeafe);
-      --icon-bg: #dbeafe;
-      --icon-color: #1d4ed8;
+    .hero-animate {
+      animation: float 6s ease-in-out infinite;
     }
 
-    .card-task2 {
-      --gradient: linear-gradient(135deg, #fdf4ff, #ede9fe);
-      --icon-bg: #ede9fe;
-      --icon-color: #7c3aed;
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
     }
 
-    .card-ideas {
-      --gradient: linear-gradient(135deg, #fffbeb, #fef3c7);
-      --icon-bg: #fef3c7;
-      --icon-color: #d97706;
+    .roadmap-line {
+      background: linear-gradient(to bottom, #3b82f6 0%, #8b5cf6 50%, #10b981 100%);
     }
 
-    .card-library {
-      --gradient: linear-gradient(135deg, #f0fdf4, #dcfce7);
-      --icon-bg: #dcfce7;
-      --icon-color: #15803d;
+    .card-premium {
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
-    .card-simon {
-      --gradient: linear-gradient(135deg, #fff1f2, #ffe4e6);
-      --icon-bg: #ffe4e6;
-      --icon-color: #be123c;
+    .card-premium:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+      border-color: rgba(59, 130, 246, 0.3);
     }
 
-    .card-flash {
-      --gradient: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-      --icon-bg: #e0f2fe;
-      --icon-color: #0369a1;
-    }
-
-    /* Stat card micro-animation */
-    .stat-card {
-      transition: transform .2s ease;
-    }
-
-    .stat-card:hover {
-      transform: translateY(-3px);
-    }
-
-    /* nav hover underline */
-    .nav-pill {
-      padding: .4rem 1rem;
-      border-radius: 9999px;
-      font-size: .875rem;
-      font-weight: 600;
-      color: #64748b;
-      transition: all .2s ease;
-    }
-
-    .nav-pill:hover,
-    .nav-pill.active {
-      background: #f0f9ff;
-      color: #0284c7;
-    }
-
-    /* Scroll reveal helper */
     .reveal {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity .6s ease, transform .6s ease;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
     }
 
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
+
+    .btn-glow:hover {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
   </style>
 </head>
 
-<body class="min-h-screen mesh-bg font-sans antialiased">
+<body class="min-h-screen text-slate-800">
 
-  <!-- =====================================================================
-       NAVBAR (Glassmorphism)
-  ====================================================================== -->
-  <nav id="navbar" class="sticky top-0 z-50 glass border-b border-white/50 shadow-sm transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
-
-      <!-- Brand -->
-      <a href="index.html" class="flex items-center gap-3 group">
-        <div
-          class="w-10 h-10 bg-gradient-to-br from-sky-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-sky-500/30 group-hover:shadow-sky-500/50 transition-shadow">
-          <i data-lucide="pen-line" class="w-5 h-5"></i>
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 glass border-b border-white/50 transition-all">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+          <i data-lucide="award" class="w-6 h-6"></i>
         </div>
-        <div class="hidden sm:block">
-          <p class="font-heading font-bold text-base text-slate-800 leading-tight">IELTS Writing</p>
-          <p class="text-[10px] text-slate-400 font-semibold uppercase tracking-widest">Mastery Platform</p>
+        <div>
+          <h1 class="font-display font-bold text-lg leading-none">IELTS Writing</h1>
+          <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Mastery Platform</p>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="index.html" class="nav-pill active">🏠 Hub</a>
-        <a href="pages/task1_theory.html" class="nav-pill">📊 Task 1</a>
-        <a href="pages/task2_practice.html" class="nav-pill">✍️ Task 2</a>
-        <a href="pages/ideas_bank.html" class="nav-pill">💡 Ý tưởng</a>
-        <a href="pages/exam_library.html" class="nav-pill">📚 Giải đề Phạm Tiến Dũng</a>
-        <a href="pages/simon_guide.html" class="nav-pill">🧠 Simon's Guide</a>
-      </nav>
-
-      <!-- Right Controls -->
-      <div class="flex items-center gap-2">
-        <!-- Dark mode toggle -->
-        <button onclick="toggleDarkMode()" id="darkToggle" class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400
-                 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition-all"
-          title="Đổi giao diện">
-          <i data-lucide="moon" class="dark-icon-moon w-4 h-4"></i>
-          <i data-lucide="sun" class="dark-icon-sun w-4 h-4 hidden"></i>
-        </button>
-        <!-- Mobile menu -->
-        <button onclick="toggleMobileMenu()"
-          class="lg:hidden w-9 h-9 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-slate-200 transition-all">
-          <i data-lucide="menu" class="w-4 h-4" id="menuOpenIcon"></i>
-          <i data-lucide="x" class="w-4 h-4 hidden" id="menuCloseIcon"></i>
-        </button>
+      <div class="hidden lg:flex items-center gap-2">
+        <a href="index.html" class="px-4 py-2 rounded-full bg-primary-50 text-primary-700 font-semibold text-sm">🏠 Hub</a>
+        <a href="pages/task1_theory.html" class="px-4 py-2 rounded-full hover:bg-slate-100 text-slate-600 font-semibold text-sm transition-all">📊 Task 1</a>
+        <a href="pages/task2_practice.html" class="px-4 py-2 rounded-full hover:bg-slate-100 text-slate-600 font-semibold text-sm transition-all">✍️ Task 2</a>
+        <a href="pages/ideas_bank.html" class="px-4 py-2 rounded-full hover:bg-slate-100 text-slate-600 font-semibold text-sm transition-all">💡 Ý tưởng</a>
+        <a href="pages/exam_library.html" class="px-4 py-2 rounded-full hover:bg-slate-100 text-slate-600 font-semibold text-sm transition-all">📚 Giải đề</a>
+        <a href="pages/simon_guide.html" class="px-4 py-2 rounded-full hover:bg-slate-100 text-slate-600 font-semibold text-sm transition-all">🧠 Simon</a>
       </div>
-    </div>
 
-    <!-- Mobile Menu Dropdown -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-100 px-4 py-3">
-      <div class="grid grid-cols-2 gap-2">
-        <a href="pages/task1_theory.html"
-          class="flex items-center gap-2 p-3 rounded-xl hover:bg-sky-50 text-slate-700 font-medium text-sm transition-all"><span
-            class="text-lg">📊</span> Task 1 Theory</a>
-        <a href="pages/task2_practice.html"
-          class="flex items-center gap-2 p-3 rounded-xl hover:bg-indigo-50 text-slate-700 font-medium text-sm transition-all"><span
-            class="text-lg">✍️</span> Task 2 Practice</a>
-        <a href="pages/ideas_bank.html"
-          class="flex items-center gap-2 p-3 rounded-xl hover:bg-amber-50 text-slate-700 font-medium text-sm transition-all"><span
-            class="text-lg">💡</span> Kho Ý tưởng</a>
-        <a href="pages/exam_library.html"
-          class="flex items-center gap-2 p-3 rounded-xl hover:bg-emerald-50 text-slate-700 font-medium text-sm transition-all"><span
-            class="text-lg">📚</span> Giải đề Phạm Tiến Dũng</a>
-        <a href="pages/simon_guide.html"
-          class="flex items-center gap-2 p-3 rounded-xl hover:bg-rose-50 text-slate-700 font-medium text-sm transition-all"><span
-            class="text-lg">🧠</span> Simon's Guide</a>
-        <a href="pages/task1_theory.html#flashcards"
-          class="flex items-center gap-2 p-3 rounded-xl hover:bg-sky-50 text-slate-700 font-medium text-sm transition-all"><span
-            class="text-lg">🃏</span> Flashcards</a>
-      </div>
+      <button class="lg:hidden p-2 bg-slate-100 rounded-lg"><i data-lucide="menu" class="w-6 h-6"></i></button>
     </div>
   </nav>
 
-  <!-- =====================================================================
-       HERO SECTION
-  ====================================================================== -->
-  <section class="hero-bg py-20 md:py-28 relative">
-    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-
-      <!-- Floating book icon with glow -->
-      <div class="relative inline-block mb-8">
-        <div class="glow-orb" style="left:50%;top:50%;transform:translate(-50%,-50%);"></div>
-        <div
-          class="relative w-24 h-24 md:w-28 md:h-28 bg-gradient-to-br from-sky-500 via-sky-400 to-indigo-500 rounded-3xl flex items-center justify-center shadow-2xl shadow-sky-500/40 animate-float mx-auto">
-          <i data-lucide="book-open" class="w-12 h-12 md:w-14 md:h-14 text-white"></i>
-        </div>
+  <!-- HERO SECTION -->
+  <section class="relative pt-20 pb-32 px-6 overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-xs font-bold mb-8 animate-bounce">
+        <span class="w-2 h-2 bg-primary-600 rounded-full"></span>
+        Cập nhật: 170+ Module mới nhất 2026
       </div>
-
-      <!-- Headline -->
-      <h1 class="font-heading font-black text-4xl md:text-6xl text-slate-900 leading-tight mb-4">
+      <h1 class="font-display font-black text-5xl md:text-7xl leading-tight mb-6">
         IELTS Writing<br>
-        <span class="gradient-text">Mastery</span>
+        <span class="gradient-text">Mastery Platform</span>
       </h1>
-      <p class="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-        Hệ thống luyện thi toàn diện — từ lý thuyết, flashcard đến phòng thi ảo.
-        Tất cả trong một <strong class="text-slate-700">nền tảng duy nhất</strong>.
+      <p class="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        Hệ thống luyện thi toàn diện — từ lý thuyết, flashcard đến phòng thi ảo. 
+        Tất cả trong <span class="text-slate-900 font-bold underline decoration-primary-500">một nền tảng duy nhất</span>.
       </p>
-
-      <!-- CTA Buttons -->
+      
       <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="pages/task2_practice.html"
-          class="btn btn-primary text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-sky-500/30 hover:scale-105 transition-transform">
-          <i data-lucide="pencil" class="w-5 h-5"></i>
-          Bắt đầu luyện tập
-        </a>
-        <a href="pages/exam_library.html" class="btn btn-outline text-base px-8 py-3.5 rounded-2xl">
-          <i data-lucide="library" class="w-5 h-5"></i>
-          Xem giải đề Phạm Tiến Dũng
-        </a>
+        <a href="pages/task2_practice.html" class="btn-glow px-10 py-4 bg-primary-600 text-white rounded-2xl font-bold shadow-xl shadow-primary-500/20 hover:bg-primary-700 transition-all">Bắt đầu luyện tập</a>
+        <a href="pages/exam_library.html" class="px-10 py-4 bg-white border border-slate-200 text-slate-700 rounded-2xl font-bold hover:bg-slate-50 transition-all">Xem giải đề Phạm Tiến Dũng</a>
+      </div>
+    </div>
+
+    <!-- Background Orbs -->
+    <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary-200/20 rounded-full blur-[120px] -z-10"></div>
+  </section>
+
+  <!-- STATS GRID -->
+  <section class="max-w-6xl mx-auto px-6 -mt-16 mb-24">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass p-6 rounded-3xl shadow-sm text-center">
+        <p class="text-3xl font-black text-slate-900 mb-1" id="stat-total">0</p>
+        <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Bài đã làm</p>
+      </div>
+      <div class="glass p-6 rounded-3xl shadow-sm text-center border-b-4 border-primary-500">
+        <p class="text-3xl font-black text-primary-600 mb-1" id="stat-words">0</p>
+        <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Tổng từ đã viết</p>
+      </div>
+      <div class="glass p-6 rounded-3xl shadow-sm text-center">
+        <p class="text-3xl font-black text-violet-600 mb-1" id="stat-streak">0</p>
+        <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Streak 🔥 ngày</p>
+      </div>
+      <div class="glass p-6 rounded-3xl shadow-sm text-center">
+        <p class="text-3xl font-black text-emerald-600 mb-1" id="stat-progress">0%</p>
+        <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">Tiến độ</p>
       </div>
     </div>
   </section>
 
-  <!-- =====================================================================
-       STATS BAR
-  ====================================================================== -->
-  <section class="bg-white/80 backdrop-blur-md border-y border-slate-100 py-5">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-
-        <div class="stat-card">
-          <p class="text-2xl md:text-3xl font-black text-slate-800" id="stat-total">0</p>
-          <p class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider mt-1">Bài đã làm</p>
-        </div>
-        <div class="stat-card">
-          <p class="text-2xl md:text-3xl font-black text-sky-600" id="stat-words">0</p>
-          <p class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider mt-1">Tổng từ đã viết</p>
-        </div>
-        <div class="stat-card">
-          <p class="text-2xl md:text-3xl font-black text-indigo-600" id="stat-streak">0</p>
-          <p class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider mt-1">Streak 🔥 ngày</p>
-        </div>
-        <div class="stat-card">
-          <div class="flex items-center justify-center gap-1.5 mb-1">
-            <p class="text-2xl md:text-3xl font-black text-emerald-600" id="stat-progress">0%</p>
-          </div>
-          <p class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Tiến độ</p>
-          <div class="progress-track mt-2 mx-auto max-w-[120px]">
-            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================================================================
-       ROADMAP SECTION
-  ====================================================================== -->
-  <section class="max-w-5xl mx-auto px-6 py-20 relative">
-    <div class="text-center mb-16 reveal">
-      <h2 class="font-heading font-black text-3xl md:text-5xl text-slate-900 mb-4">Lộ trình học Band 7.5+</h2>
-      <p class="text-slate-500 max-w-2xl mx-auto">Hệ thống hóa kiến thức Writing theo từng chặng đường cụ thể. Đừng học
-        lan man, hãy đi theo lộ trình.</p>
+  <!-- ROADMAP SECTION -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <div class="text-center mb-20 reveal">
+      <h2 class="font-display font-black text-4xl md:text-5xl mb-4">Lộ trình học Band 7.5+</h2>
+      <p class="text-slate-500">Hệ thống hóa kiến thức Writing theo từng chặng đường cụ thể. <br class="hidden md:block"> Đừng học lan man, hãy đi theo lộ trình.</p>
     </div>
 
-    <!-- The Path -->
     <div class="relative">
-      <!-- SVG Connecting Line (Visible on Desktop) -->
-      <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-slate-100 -translate-x-1/2 hidden md:block z-0">
-        <div id="roadmap-progress" class="w-full bg-blue-500 transition-all duration-1000" style="height: 0%"></div>
-      </div>
+      <!-- Roadmap Line -->
+      <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-1 roadmap-line rounded-full opacity-20 -translate-x-1/2"></div>
 
-      <!-- Roadmap Steps -->
-      <div class="space-y-12 relative z-10">
-
-        <!-- Step 1 -->
-        <div class="flex flex-col md:flex-row items-center gap-8 reveal">
-          <div class="md:w-1/2 text-right hidden md:block">
-            <h3 class="font-black text-xl text-slate-800">Chặng 1: Nền tảng Task 1</h3>
-            <p class="text-slate-500 text-sm">Hiểu rõ các loại biểu đồ và cấu trúc câu mô tả cơ bản.</p>
-          </div>
-          <div
-            class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-black shadow-xl shadow-blue-500/40 relative">
-            1
-            <div class="absolute -inset-2 rounded-full border-2 border-blue-100 animate-ping opacity-20"></div>
-          </div>
-          <div
-            class="md:w-1/2 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-            <div class="md:hidden mb-4">
-              <h3 class="font-black text-xl text-slate-800">Chặng 1: Nền tảng Task 1</h3>
+      <div class="space-y-24 relative">
+        <!-- STEP 1 -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-12 reveal">
+          <div class="md:w-1/2 md:text-right order-2 md:order-1">
+            <h3 class="font-display font-black text-2xl mb-3">Chặng 1: Nền tảng Task 1</h3>
+            <p class="text-slate-500 text-sm mb-6">Hiểu rõ các loại biểu đồ và cấu trúc câu mô tả cơ bản.</p>
+            <div class="flex flex-wrap md:justify-end gap-2">
+              <a href="pages/task1_theory.html" class="px-4 py-2 bg-primary-50 text-primary-600 rounded-xl text-xs font-bold hover:bg-primary-600 hover:text-white transition-all">Lý thuyết chung</a>
+              <a href="pages/master_task1_theory.html" class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl text-xs font-bold hover:bg-indigo-600 hover:text-white transition-all">Master Guide</a>
             </div>
-            <div class="flex gap-4 mb-4">
-              <a href="pages/task1_theory.html"
-                class="px-4 py-2 bg-blue-50 text-blue-600 rounded-xl font-bold text-xs hover:bg-blue-600 hover:text-white transition-all">Lý
-                thuyết chung</a>
-              <a href="pages/master_task1_theory.html"
-                class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold text-xs hover:bg-indigo-600 hover:text-white transition-all">Master
-                Guide</a>
-            </div>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">Nắm vững cách viết Introduction và Overview cho mọi
-              dạng bài từ Line Graph đến Map.</p>
-            <a href="pages/task1_theory.html"
-              class="flex items-center gap-2 text-blue-600 font-black text-xs uppercase tracking-widest group-hover:gap-3 transition-all">Bắt
-              đầu ngay <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+          <div class="z-10 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-black shadow-xl shadow-primary-500/40 shrink-0 order-1 md:order-2">1</div>
+          <div class="md:w-1/2 order-3">
+             <div class="glass p-6 rounded-3xl border-l-4 border-primary-500 card-premium">
+               <p class="text-slate-600 text-sm italic">"Nắm vững cách viết Introduction và Overview cho mọi dạng bài từ Line Graph đến Map."</p>
+               <a href="pages/task1_theory.html" class="mt-4 inline-flex items-center gap-2 text-primary-600 font-bold text-xs uppercase tracking-wider">Bắt đầu ngay <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+             </div>
           </div>
         </div>
 
-        <!-- Step 2 -->
-        <div class="flex flex-col md:flex-row-reverse items-center gap-8 reveal">
-          <div class="md:w-1/2 text-left hidden md:block">
-            <h3 class="font-black text-xl text-slate-800">Chặng 2: Phân tích Xu hướng</h3>
-            <p class="text-slate-500 text-sm">Nâng cấp từ vựng miêu tả sự biến động chuyên sâu.</p>
+        <!-- STEP 2 -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-12 reveal">
+          <div class="md:w-1/2 order-3 md:order-1">
+             <div class="glass p-6 rounded-3xl border-r-4 border-emerald-500 card-premium">
+               <p class="text-slate-600 text-sm italic">"Sử dụng linh hoạt các trạng từ, tính từ và động từ miêu tả xu hướng một cách chính xác nhất."</p>
+               <a href="pages/theory/task1_a1_increase.html" class="mt-4 inline-flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-wider">Học từ vựng <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+             </div>
           </div>
-          <div
-            class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black shadow-xl shadow-emerald-500/40">
-            2</div>
-          <div
-            class="md:w-1/2 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-            <div class="md:hidden mb-4">
-              <h3 class="font-black text-xl text-slate-800">Chặng 2: Phân tích Xu hướng</h3>
+          <div class="z-10 w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center font-black shadow-xl shadow-emerald-500/40 shrink-0 order-1 md:order-2">2</div>
+          <div class="md:w-1/2 order-2 md:order-3">
+            <h3 class="font-display font-black text-2xl mb-3 text-emerald-600">Chặng 2: Phân tích Xu hướng</h3>
+            <p class="text-slate-500 text-sm mb-6">Nâng cấp từ vựng miêu tả sự biến động chuyên sâu.</p>
+            <div class="flex flex-wrap gap-2">
+              <a href="pages/theory/task1_a1_increase.html" class="px-4 py-2 bg-emerald-50 text-emerald-600 rounded-xl text-xs font-bold hover:bg-emerald-600 hover:text-white">Tăng</a>
+              <a href="pages/theory/task1_a2_sharp_increase.html" class="px-4 py-2 bg-orange-50 text-orange-600 rounded-xl text-xs font-bold hover:bg-orange-600 hover:text-white">Tăng mạnh</a>
+              <a href="pages/theory/task1_a3_decrease.html" class="px-4 py-2 bg-rose-50 text-rose-600 rounded-xl text-xs font-bold hover:bg-rose-600 hover:text-white">Giảm</a>
             </div>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <a href="pages/theory/task1_a1_increase.html"
-                class="px-4 py-2 bg-emerald-50 text-emerald-600 rounded-xl font-bold text-xs hover:bg-emerald-600 hover:text-white transition-all">Tăng</a>
-              <a href="pages/theory/task1_a2_sharp_increase.html"
-                class="px-4 py-2 bg-orange-50 text-orange-600 rounded-xl font-bold text-xs hover:bg-orange-600 hover:text-white transition-all">Tăng
-                mạnh</a>
-              <a href="pages/theory/task1_a3_decrease.html"
-                class="px-4 py-2 bg-rose-50 text-rose-600 rounded-xl font-bold text-xs hover:bg-rose-600 hover:text-white transition-all">Giảm</a>
-            </div>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">Sử dụng linh hoạt các trạng từ, tính từ và động từ
-              miêu tả xu hướng một cách chính xác nhất.</p>
-            <a href="pages/theory/task1_a1_increase.html"
-              class="flex items-center gap-2 text-emerald-600 font-black text-xs uppercase tracking-widest group-hover:gap-3 transition-all">Học
-              từ vựng <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
 
-        <!-- Step 3 -->
-        <div class="flex flex-col md:flex-row items-center gap-8 reveal">
-          <div class="md:w-1/2 text-right hidden md:block">
-            <h3 class="font-black text-xl text-slate-800">Chặng 3: Phương pháp & Ý tưởng</h3>
-            <p class="text-slate-500 text-sm">Học cách triển khai ý tưởng cho Task 2.</p>
+        <!-- STEP 3 -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-12 reveal">
+          <div class="md:w-1/2 md:text-right order-2 md:order-1">
+            <h3 class="font-display font-black text-2xl mb-3 text-violet-600">Chặng 3: Phương pháp & Ý tưởng</h3>
+            <p class="text-slate-500 text-sm mb-6">Học cách triển khai ý tưởng cho Task 2.</p>
+            <div class="flex flex-wrap md:justify-end gap-2">
+              <a href="pages/simon_guide.html" class="px-4 py-2 bg-violet-50 text-violet-600 rounded-xl text-xs font-bold hover:bg-violet-600 hover:text-white">Simon's Method</a>
+              <a href="pages/ideas_bank.html" class="px-4 py-2 bg-amber-50 text-amber-600 rounded-xl text-xs font-bold hover:bg-amber-600 hover:text-white">Ideas Bank</a>
+            </div>
           </div>
-          <div
-            class="w-12 h-12 rounded-full bg-violet-600 text-white flex items-center justify-center font-black shadow-xl shadow-violet-500/40">
-            3</div>
-          <div
-            class="md:w-1/2 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-            <div class="md:hidden mb-4">
-              <h3 class="font-black text-xl text-slate-800">Chặng 3: Phương pháp & Ý tưởng</h3>
-            </div>
-            <div class="flex gap-4 mb-4">
-              <a href="pages/simon_guide.html"
-                class="px-4 py-2 bg-violet-50 text-violet-600 rounded-xl font-bold text-xs hover:bg-violet-600 hover:text-white transition-all">Simon's
-                Method</a>
-              <a href="pages/ideas_bank.html"
-                class="px-4 py-2 bg-amber-50 text-amber-600 rounded-xl font-bold text-xs hover:bg-amber-600 hover:text-white transition-all">Ideas
-                Bank</a>
-            </div>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">Phương pháp viết 4 đoạn chuẩn Simon và kho ý tưởng
-              cho 15 chủ đề phổ biến nhất.</p>
-            <a href="pages/simon_guide.html"
-              class="flex items-center gap-2 text-violet-600 font-black text-xs uppercase tracking-widest group-hover:gap-3 transition-all">Xây
-              dựng ý tưởng <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          <div class="z-10 w-12 h-12 bg-violet-600 text-white rounded-full flex items-center justify-center font-black shadow-xl shadow-violet-500/40 shrink-0 order-1 md:order-2">3</div>
+          <div class="md:w-1/2 order-3">
+             <div class="glass p-6 rounded-3xl border-l-4 border-violet-500 card-premium">
+               <p class="text-slate-600 text-sm italic">"Phương pháp viết 4 đoạn chuẩn Simon và kho ý tưởng cho 15 chủ đề phổ biến nhất."</p>
+               <a href="pages/simon_guide.html" class="mt-4 inline-flex items-center gap-2 text-violet-600 font-bold text-xs uppercase tracking-wider">Xây dựng ý tưởng <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+             </div>
           </div>
         </div>
 
-        <!-- Step 4 -->
-        <div class="flex flex-col md:flex-row-reverse items-center gap-8 reveal">
-          <div class="md:w-1/2 text-left hidden md:block">
-            <h3 class="font-black text-xl text-slate-800">Chặng 4: Thực chiến & Giải đề</h3>
-            <p class="text-slate-500 text-sm">Luyện tập với đề thi thật và bài mẫu Band 8.0.</p>
+        <!-- STEP 4 -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-12 reveal">
+          <div class="md:w-1/2 order-3 md:order-1">
+             <div class="glass p-6 rounded-3xl border-r-4 border-slate-900 card-premium">
+               <p class="text-slate-600 text-sm italic">"Môi trường giả lập phòng thi thật với bộ đếm giờ và phân tích bài viết chi tiết."</p>
+               <a href="pages/task2_practice.html" class="mt-4 inline-flex items-center gap-2 text-slate-900 font-bold text-xs uppercase tracking-wider">Bắt đầu thực chiến <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+             </div>
           </div>
-          <div
-            class="w-12 h-12 rounded-full bg-slate-900 text-white flex items-center justify-center font-black shadow-xl shadow-slate-500/40">
-            4</div>
-          <div
-            class="md:w-1/2 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-            <div class="md:hidden mb-4">
-              <h3 class="font-black text-xl text-slate-800">Chặng 4: Thực chiến & Giải đề</h3>
+          <div class="z-10 w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center font-black shadow-xl shadow-slate-500/40 shrink-0 order-1 md:order-2">4</div>
+          <div class="md:w-1/2 order-2 md:order-3">
+            <h3 class="font-display font-black text-2xl mb-3">Chặng 4: Thực chiến & Giải đề</h3>
+            <p class="text-slate-500 text-sm mb-6">Luyện tập với đề thi thật và bài mẫu Band 8.0.</p>
+            <div class="flex flex-wrap gap-2">
+              <a href="pages/exam_library.html" class="px-4 py-2 bg-slate-100 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-900 hover:text-white transition-all">Giải đề Phạm Tiến Dũng</a>
+              <a href="pages/all_lessons.html" class="px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 shadow-lg shadow-blue-500/20 transition-all">Kho 170+ Bài học</a>
+              <a href="pages/task2_practice.html" class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl text-xs font-bold hover:bg-indigo-600 hover:text-white">Phòng thi ảo</a>
             </div>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <a href="pages/exam_library.html"
-                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-xl font-bold text-xs hover:bg-slate-900 hover:text-white transition-all">Giải
-                đề Phạm Tiến Dũng</a>
-              <a href="thu_vien_de_thi.html"
-                class="px-4 py-2 bg-sky-50 text-sky-600 rounded-xl font-bold text-xs hover:bg-sky-600 hover:text-white transition-all">Thư
-                viện đề</a>
-              <a href="pages/task2_practice.html"
-                class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold text-xs hover:bg-indigo-600 hover:text-white transition-all">Phòng
-                thi ảo</a>
-            </div>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">Môi trường giả lập phòng thi thật với bộ đếm giờ và
-              phân tích bài viết chi tiết.</p>
-            <a href="pages/task2_practice.html"
-              class="flex items-center gap-2 text-slate-900 font-black text-xs uppercase tracking-widest group-hover:gap-3 transition-all">Bắt
-              đầu thực chiến <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================================================================
-       FEATURE CARDS GRID (Additional Resources)
-  ====================================================================== -->
-  <section class="max-w-7xl mx-auto px-4 md:px-6 py-16 bg-slate-50/50 rounded-[4rem] mb-20 border border-slate-100">
-    <div class="text-center mb-12 reveal">
-      <h2 class="font-heading font-black text-3xl text-slate-900">Tiện ích bổ trợ</h2>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Re-using existing cards from your code but styled as resources -->
-      <a href="pages/task1_theory.html#flashcards"
-        class="p-8 bg-white rounded-3xl border border-slate-100 hover:shadow-xl transition-all group">
-        <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6"><i
-            data-lucide="layers"></i></div>
-        <h4 class="font-bold text-lg mb-2">Flashcards 3D</h4>
-        <p class="text-slate-500 text-sm">Hệ thống thẻ ghi nhớ từ vựng Task 1 & 2 với AI.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- =====================================================================
-       QUICK TIPS SECTION
-  ====================================================================== -->
-  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 relative overflow-hidden">
-    <!-- Decorative -->
-    <div
-      class="absolute top-0 left-0 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-    </div>
-    <div
-      class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none">
-    </div>
-
-    <div class="max-w-5xl mx-auto px-6 relative z-10">
-      <div class="text-center mb-10">
-        <p class="text-xs font-bold text-sky-400 uppercase tracking-[.2em] mb-2">Mẹo học hiệu quả</p>
-        <h2 class="font-heading font-black text-2xl md:text-3xl text-white">Chiến lược IELTS Writing Band 7+</h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/8 transition-all">
-          <div class="w-10 h-10 bg-sky-500/20 rounded-xl flex items-center justify-center mb-4">
-            <i data-lucide="clock" class="w-5 h-5 text-sky-400"></i>
-          </div>
-          <h3 class="font-bold text-white mb-2">Task 1: 20 phút</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">150–200 từ. Tập trung vào Overview rõ ràng trước, sau đó mới
-            đi vào chi tiết.</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/8 transition-all">
-          <div class="w-10 h-10 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-4">
-            <i data-lucide="target" class="w-5 h-5 text-indigo-400"></i>
-          </div>
-          <h3 class="font-bold text-white mb-2">Task 2: 40 phút</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">250+ từ. Dành 5 phút lập dàn ý trước khi viết. Kết luận phải
-            restate thesis không copy y chang.</p>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/8 transition-all">
-          <div class="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4">
-            <i data-lucide="repeat" class="w-5 h-5 text-emerald-400"></i>
-          </div>
-          <h3 class="font-bold text-white mb-2">Luyện tập mỗi ngày</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">15 phút/ngày đều đặn hiệu quả hơn 3 giờ/tuần. Dùng Streak để
-            duy trì động lực.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- =====================================================================
-       FOOTER
-  ====================================================================== -->
-  <div class="max-w-7xl mx-auto px-6 py-12 border-t border-slate-200 dark:border-slate-800">
-    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="flex items-center gap-3">
-        <span class="font-heading font-bold text-slate-700">IELTS Writing Mastery</span>
+  <!-- FEATURES -->
+  <section class="bg-white py-24 px-6 border-y border-slate-100">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <h2 class="font-display font-black text-3xl mb-6">Tiện ích bổ trợ thông minh</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-2xl flex items-center justify-center shrink-0">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Flashcards 3D</h4>
+              <p class="text-slate-500 text-sm">Hệ thống thẻ ghi nhớ từ vựng Task 1 & 2 với AI, giúp bạn nhớ từ lâu hơn qua hình ảnh trực quan.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center shrink-0">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Mẹo học hiệu quả</h4>
+              <p class="text-slate-500 text-sm">Kho lưu trữ các chiến thuật làm bài "nhanh-gọn-lẹ" để tối ưu hóa điểm số trong phòng thi.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex items-center gap-6 text-sm text-slate-400">
-        <a href="pages/task1_theory.html" class="hover:text-sky-500 transition-colors">Task 1</a>
-        <a href="pages/task2_practice.html" class="hover:text-sky-500 transition-colors">Task 2</a>
-        <a href="pages/ideas_bank.html" class="hover:text-sky-500 transition-colors">Ý tưởng</a>
-        <a href="pages/exam_library.html" class="hover:text-sky-500 transition-colors">Đề thi</a>
-        <a href="pages/simon_guide.html" class="hover:text-sky-500 transition-colors">Simon</a>
+      <div class="reveal">
+        <div class="bg-gradient-to-br from-primary-600 to-indigo-700 p-10 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+           <i data-lucide="lightbulb" class="absolute -right-10 -bottom-10 w-64 h-64 opacity-10 rotate-12"></i>
+           <h3 class="text-2xl font-black mb-8">Chiến lược Band 7+</h3>
+           <div class="space-y-6 relative z-10">
+              <div class="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                <p class="text-xs font-bold text-primary-200 mb-1">TASK 1 (20 PHÚT)</p>
+                <p class="text-sm">Tập trung vào Overview rõ ràng trước, sau đó mới đi vào chi tiết.</p>
+              </div>
+              <div class="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                <p class="text-xs font-bold text-indigo-200 mb-1">TASK 2 (40 PHÚT)</p>
+                <p class="text-sm">Dành 5 phút lập dàn ý trước khi viết. Kết luận phải restate thesis.</p>
+              </div>
+              <div class="p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                <p class="text-xs font-bold text-emerald-200 mb-1">MỖI NGÀY 15 PHÚT</p>
+                <p class="text-sm">Duy trì Streak để tạo thói quen viết bền vững.</p>
+              </div>
+           </div>
+        </div>
       </div>
-      <p class="text-xs text-slate-400">Phase 2 · 2026</p>
     </div>
-  </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-16 px-6 border-t border-slate-100">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div>
+        <h2 class="font-display font-black text-xl text-slate-900">IELTS Writing Mastery</h2>
+        <p class="text-slate-400 text-xs mt-1">Platform by IELTS Excellence · Phase 2 · 2026</p>
+      </div>
+      <div class="flex gap-6 text-sm font-bold text-slate-500">
+        <a href="pages/task1_theory.html" class="hover:text-primary-600 transition-colors">Task 1</a>
+        <a href="pages/task2_practice.html" class="hover:text-primary-600 transition-colors">Task 2</a>
+        <a href="pages/ideas_bank.html" class="hover:text-primary-600 transition-colors">Ý tưởng</a>
+        <a href="pages/exam_library.html" class="hover:text-primary-600 transition-colors">Đề thi</a>
+        <a href="pages/simon_guide.html" class="hover:text-primary-600 transition-colors">Simon</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Toast container -->
-  <div id="toastContainer" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none"></div>
-
-  <!-- Shared utilities -->
   <script src="assets/js/utils.js"></script>
-
   <script>
-    // Initialize Lucide icons
     lucide.createIcons();
 
-    // ---- Mobile menu toggle ----
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      const open = document.getElementById('menuOpenIcon');
-      const close = document.getElementById('menuCloseIcon');
-      menu.classList.toggle('hidden');
-      open.classList.toggle('hidden');
-      close.classList.toggle('hidden');
+    // Stats Animation
+    function animateStats() {
+      const stats = typeof getOverallProgress === 'function' ? getOverallProgress() : {total: 42, words: 15400, streak: 7};
+      
+      const countUp = (id, target) => {
+        let current = 0;
+        const el = document.getElementById(id);
+        const step = target / 50;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            el.innerText = target.toLocaleString();
+            clearInterval(timer);
+          } else {
+            el.innerText = Math.floor(current).toLocaleString();
+          }
+        }, 30);
+      };
+
+      countUp('stat-total', stats.total || 0);
+      countUp('stat-words', stats.words || 0);
+      countUp('stat-streak', stats.streak || 0);
+      
+      const pct = Math.min(Math.round(((stats.total || 0) / 100) * 100), 100);
+      document.getElementById('stat-progress').innerText = pct + '%';
     }
 
-    // ---- Load & display stats from localStorage ----
-    function loadStats() {
-      const stats = getOverallProgress();
-
-      animateNumber('stat-total', stats.total, '', 1000);
-      animateNumber('stat-words', stats.words, '', 1200);
-      animateNumber('stat-streak', stats.streak, '', 800);
-
-      // Progress: assume 50 total exams as 100%
-      const pct = Math.min(Math.round((stats.total / 50) * 100), 100);
-      document.getElementById('stat-progress').textContent = pct + '%';
-      setTimeout(() => {
-        document.getElementById('progress-fill').style.width = pct + '%';
-      }, 300);
-    }
-
-    function animateNumber(id, target, suffix = '', duration = 1000) {
-      const el = document.getElementById(id);
-      if (!el || target === 0) { el.textContent = '0' + suffix; return; }
-      const start = performance.now();
-      function update(now) {
-        const progress = Math.min((now - start) / duration, 1);
-        const ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-        el.textContent = Math.round(ease * target).toLocaleString('vi-VN') + suffix;
-        if (progress < 1) requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
-    }
-
-    // ---- Scroll reveal ----
+    // Scroll Reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -595,22 +386,11 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal').forEach((el, i) => {
-      el.style.transitionDelay = (i * 0.08) + 's';
+      el.style.transitionDelay = (i * 0.1) + 's';
       observer.observe(el);
     });
 
-    // ---- Init ----
-    document.addEventListener('DOMContentLoaded', () => {
-      loadStats();
-      // Navbar shadow on scroll
-      window.addEventListener('scroll', () => {
-        const nav = document.getElementById('navbar');
-        nav.style.boxShadow = window.scrollY > 20
-          ? '0 4px 24px rgba(0,0,0,.08)'
-          : '';
-      });
-    });
+    window.onload = animateStats;
   </script>
 </body>
-
 </html>
