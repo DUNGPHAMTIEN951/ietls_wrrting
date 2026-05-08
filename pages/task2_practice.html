@@ -655,10 +655,11 @@
       window.allWritingData.library = library;
 
       // Load task2 samples and questions
-      const [t2, t2prompts, t2Old] = await Promise.all([
-        loadJSON('../data/writing_task2_library.json'),
+      const [t2, t2prompts, t2Old, t2Extra] = await Promise.all([
+        loadJSON('../data/writing5a_data_cleaned.json'),
         loadJSON('../data/task2_prompts.json'),
-        loadJSON('../data/essays_data_fixed.json')
+        loadJSON('../data/essays_data_fixed.json'),
+        loadJSON('../data/writing5ab_data.json')
       ]);
       
       const t2OldMapped = (t2Old || []).map(ex => ({
@@ -669,6 +670,13 @@
           sample_vi: ex.paragraphs ? ex.paragraphs.map(p => p.vi).join('\n\n') : "",
           category: 'Old Essay',
           guide: "Đây là bài mẫu từ kho đề thi cũ với dịch thuật song ngữ."
+      }));
+
+      const t2CleanedMapped = (t2 || []).map(ex => ({
+          ...ex,
+          id: ex.id || `C-${Math.random().toString(36).substr(2, 5)}`,
+          category: ex.category || 'Library',
+          question: ex.question || ex.topic || ""
       }));
       
       // Load and flatten Review Data
@@ -738,7 +746,7 @@
       }
 
       // Merge Task 2
-      const t2Base = [...t2Core, ...(t2 || []), ...(t2prompts || []), ...t2OldMapped];
+      const t2Base = [...t2Core, ...t2CleanedMapped, ...(t2prompts || []), ...t2OldMapped, ...(t2Extra || [])];
       const t2Review = [...r2020.task2, ...r2022.task2, ...r2023.task2];
       
       // Deduplicate Task 2
